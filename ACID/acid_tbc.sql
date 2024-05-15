@@ -26549,7 +26549,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tempest Keep: The Botanica - (4.3.4 Official Data - Normal/Heroic)
 -- ==================================================================
 -- High Botanist Freywinn (17975) - boss_high_botanist_freywinn
--- Commander Sarannis 17976 (4.3.4 Official Data - Normal/Heroic) - (Adds Summon Spell: 34803 / Casts - 34810 (NPC: 20083 5 Yards Behind) and 34817 / 34818 / 34819 (NPC: 20078 5 Yards Sides and Front)
+-- Commander Sarannis 17976 - spell_list
 ('1797601','17976','11','0','100','0','0','0','0','0','0','0','11','19818','0','34','11','34792','0','34','0','0','0','0','Commander Sarannis - Cast Double Attack and Arcane Resonance on Spawn'),
 ('1797602','17976','4','0','100','0','0','0','0','0','0','0','1','19936','0','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Aggro'),
 ('1797603','17976','6','0','100','0','0','0','0','0','0','0','1','19942','0','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Death'),
@@ -26579,7 +26579,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunseeker Botanist - spell_list - guid based rp scriots
 ('5530068','-5530068','1','0','100','1','0','20000','50000','80000','0','0','53','5530012','0','0','0','0','0','0','0','0','0','0','Sunseeker Botanist - Start RelayScript'),
 ('5530069','-5530069','1','0','100','1','0','20000','50000','80000','0','0','53','5530012','0','0','0','0','0','0','0','0','0','0','Sunseeker Botanist - Start RelayScript'),
--- Frayer (4.3.4 Official Data - Normal/Heroic)
+-- Frayer 18587
 ('1858701','18587','8','0','100','1','34167','-1','1000','1000','0','0','11','34202','0','33','0','0','0','0','0','0','0','0','Frayer - Cast Frost Form on Blizzard SpellHit'),
 ('1858702','18587','8','0','100','1','34169','-1','1000','1000','0','0','11','34203','0','33','0','0','0','0','0','0','0','0','Frayer - Cast Fire Form on Rain of Fire SpellHit'),
 ('1858703','18587','8','0','100','1','34170','-1','1000','1000','0','0','11','34204','0','33','0','0','0','0','0','0','0','0','Frayer - Cast Arcane Form on Arcane Explosion SpellHit'),
@@ -26592,9 +26592,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunseeker Gene-Splicer - spell_list
 -- Sunseeker Herbalist - spell_list
 -- Sunseeker Harvester - spell_list
--- Nethervine Inciter (19511,21563) - creature_spell_list
+-- Nethervine Inciter (19511,21563) - spell_list
 ('1951101','19511','8','0','100','1','34222','-1','0','0','0','0','11','34173','0','0','0','0','0','0','0','0','0','0','Nethervine Inciter - Cast Sunseeker Blessing on Sunseeker Blessing Spellhit'),
--- Nethervine Reaper 19512 (4.3.4 Official Data - Normal/Heroic)
+-- Nethervine Reaper 19512 - spell_list
 ('1951201','19512','8','0','100','1','34222','-1','0','0','0','0','11','34173','0','0','0','0','0','0','0','0','0','0','Nethervine Reaper - Cast Sunseeker Blessing on Sunseeker Blessing Spellhit'),
 -- Mutate Fear-Shrieker - spell_list
 -- Greater Frayer - spell_list
@@ -26602,24 +26602,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Frayer Wildling - spell_list
 -- Bloodwarder Mender 19633 - spell_list
 ('1963301','19633','27','0','100','1','34809','1','15000','30000','0','0','11','34809','0','0','0','0','0','0','0','0','0','0','Bloodwarder Mender - Cast Holy Fury on Missing Buff'),
--- Nethervine Trickster (4.3.4 Official Data - Normal/Heroic)
+-- Nethervine Trickster 
 ('1984301','19843','1','0','100','0','1000','1000','0','0','0','0','11','30831','0','32','0','0','0','0','0','0','0','0','Nethervine Trickster - Cast Stealth OOC'),
 ('1984302','19843','33','0','100','1025','0','0','4100','9700','0','0','11','34614','1','0','0','0','0','0','0','0','0','0','Nethervine Trickster - Cast Backstab on Facing Target Back'),
 -- Mutate Horror (19865) - NSR
--- Thorn Lasher (4.3.4 Official Data - Normal/Heroic)
-('1991901','19919','9','0','100','1025','0','35','5000','10000','0','0','11','35071','1','0','0','0','0','0','0','0','0','0','Thorn Lasher - Cast Thorn Missiles'),
--- Thorn Flayer (4.3.4 Official Data - Normal/Heroic)
-('1992001','19920','9','0','100','1025','0','35','9600','15700','0','0','11','35507','1','0','0','0','0','0','0','0','0','0','Thorn Flayer - Cast Mind Flay'),
+-- Thorn Lasher - spell_list
+-- Thorn Flayer - spell_list
 -- Sapling (19949) - mob_warp_splinter_treant
--- Frayer Protector 19953 (4.3.4 Official Data - Normal/Heroic)
-('1995301','19953','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Frayer Protector - Enable Range Mode on Aggro'),
-('1995302','19953','9','0','100','1025','5','30','2300','3900','0','0','11','34745','1','256','0','0','0','0','0','0','0','0','Frayer Protector - Cast Shoot Thorns'),
--- White Seedling (4.3.4 Official Data - Normal/Heroic)
-('1995801','19958','9','0','100','1025','0','5','500','500','0','0','11','34752','1','32','0','0','0','0','0','0','0','0','White Seedling - Cast Freezing Touch'),
+-- Frayer Protector 19953 - spell_list
+('1995301','19953','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Frayer Protector - Enable Range Mode on Spawn'),
+-- White Seedling - spell_list
 -- Blue Seedling
 ('1996201','19962','11','0','100','0','0','0','0','0','0','0','11','34781','0','0','0','0','0','0','0','0','0','0','Green Seedling - Cast Bind Feet on Spawn'),
--- Red Seedling (4.3.4 Official Data - Normal/Heroic)
-('1996401','19964','9','0','100','1025','0','20','2400','4800','0','0','11','36339','1','0','0','0','0','0','0','0','0','0','Red Seedling - Cast Fire Blast'),
+-- Red Seedling - spell_list
 -- Green Seedling (4.3.4 Official Data - Normal/Heroic)
 ('1996901','19969','11','0','100','0','0','0','0','0','0','0','11','34757','0','0','0','0','0','0','0','0','0','0','Green Seedling - Cast Toxic Pollen on Spawn'),
 ('1996902','19969','6','0','100','0','0','0','0','0','0','0','28','0','34757','0','0','0','0','0','0','0','0','0','Green Seedling - Remove Toxic Pollen on Death'),
