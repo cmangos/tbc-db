@@ -9,3 +9,6 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 (105,1,51,100,5,0,0,0,0x04,0,0,0,0,0,0,0,0,'GENERIC - formation change to - Fanned out in front(5)'),
 (106,1,51,100,6,0,0,0,0x04,0,0,0,0,0,0,0,0,'GENERIC - formation change to - Circle leader(6)');
 
+-- Table `dbscripts_on_creature_movement` contain unused script, id 100 - 106
+REPLACE INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `ScriptId`,`PositionX`,`PositionY`,`PositionZ`) VALUES (1,100,1,100,0,0,0),(1,100,2,101,0,0,0),(1,100,3,102,0,0,0),(1,100,4,103,0,0,0),(1,100,5,104,0,0,0),(1,100,6,105,0,0,0),(1,100,7,106,0,0,0);
+
