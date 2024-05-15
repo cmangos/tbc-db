@@ -232,25 +232,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (17976, 0, 0, 1, 0, 0, '19818 34792'), -- Commander Sarannis
 (19843, 0, 0, 1, 0, 0, '30831'); -- Nethervine Trickster
 
-INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+157, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+159, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+160, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+161, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+162, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+163, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+164, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+165, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+166, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+167, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+168, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+169, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+170, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+171, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+172, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+173, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+174, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+176, @CGUID+175, 1155); -- Frayer Wildling -> Frayer Wildling
+-- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 -- REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
@@ -552,7 +534,6 @@ INSERT INTO `creature_spawn_data_template` (`Entry`, `UnitFlags`, `Faction`, `St
 -- [27] Flags: 33587264 - UNIT_FLAG_UNINTERACTIBLE - UNIT_FLAG_SWIMMING - UNIT_FLAG_UNK_6
 ('1950701', '33587264', '190', '0', 'The Botanica - Sunseeker Gene-Splicer');
 
-
 -- ============
 -- SPAWN GROUPS
 -- ============
@@ -596,7 +577,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+36, 'The Botanica - Group 036 - Mutate Horror (2) - Mutate Fear-Shrieker (2)', 0, 0, 0, 0, 1, 0),
 (@SGGUID+37, 'The Botanica - Group 037 - Mutate Horror (2) - Mutate Fear-Shrieker (2)', 0, 0, 0, 0, 1, 0),
 (@SGGUID+38, 'The Botanica - Group 038 - Mutate Horror (2) - Mutate Fear-Shrieker (2)', 0, 0, 0, 0, 1, 0),
-(@SGGUID+39, 'The Botanica - Group 039 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+19);
+(@SGGUID+39, 'The Botanica - Group 039 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+19),
+(@SGGUID+40, 'The Botanica - Group 040 - Frayer Wildling (10)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+41, 'The Botanica - Group 041 - Frayer Wildling (10)', 0, 0, 0, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+16, 18421, 1, 1, 0), (@SGGUID+16, 19486, 1, 1, 0), -- Sunseeker Researcher, Sunseeker Chemist
@@ -776,7 +759,29 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+38, @CGUID+139, 3, 0), -- Mutate Fear-Shrieker
 
 (@SGGUID+39, @CGUID+26, 0, 0), -- Bloodwarder Protector - left
-(@SGGUID+39, @CGUID+27, 1, 0); -- Bloodwarder Protector - right
+(@SGGUID+39, @CGUID+27, 1, 0), -- Bloodwarder Protector - right
+
+(@SGGUID+40, @CGUID+157, 0, 0), -- Frayer Wildling
+(@SGGUID+40, @CGUID+158, 1, 0), -- Frayer Wildling
+(@SGGUID+40, @CGUID+159, 2, 0), -- Frayer Wildling
+(@SGGUID+40, @CGUID+160, 3, 0), -- Frayer Wildling
+(@SGGUID+40, @CGUID+161, 4, 0), -- Frayer Wildling
+(@SGGUID+40, @CGUID+162, 5, 0), -- Frayer Wildling
+(@SGGUID+40, @CGUID+163, 6, 0), -- Frayer Wildling
+(@SGGUID+40, @CGUID+164, 7, 0), -- Frayer Wildling
+(@SGGUID+40, @CGUID+165, 8, 0), -- Frayer Wildling
+(@SGGUID+40, @CGUID+166, 9, 0), -- Frayer Wildling
+
+(@SGGUID+41, @CGUID+167, 0, 0), -- Frayer Wildling
+(@SGGUID+41, @CGUID+168, 1, 0), -- Frayer Wildling
+(@SGGUID+41, @CGUID+169, 2, 0), -- Frayer Wildling
+(@SGGUID+41, @CGUID+170, 3, 0), -- Frayer Wildling
+(@SGGUID+41, @CGUID+171, 4, 0), -- Frayer Wildling
+(@SGGUID+41, @CGUID+172, 5, 0), -- Frayer Wildling
+(@SGGUID+41, @CGUID+173, 6, 0), -- Frayer Wildling
+(@SGGUID+41, @CGUID+174, 7, 0), -- Frayer Wildling
+(@SGGUID+41, @CGUID+175, 8, 0), -- Frayer Wildling
+(@SGGUID+41, @CGUID+176, 9, 0); -- Frayer Wildling
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+20, 1, 3, 0, @SGGUID+20, 2, 'The Botanica - Group 020 - Sunseeker Botanist - Greater Frayer | Patrol 01'),
