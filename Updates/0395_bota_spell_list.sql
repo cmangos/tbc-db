@@ -411,3 +411,110 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2535401 WHERE `entry` = 25354;
 
+
+-- Frayer Wildling 19608
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19608, 21554);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1960801, 2155401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1960801, 'Botanica - Frayer Wildling - Normal', 0, 0),
+(2155401, 'Botanica - Frayer Wildling - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1960801, 2155401);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1960801, 1, 34644, 0, -1, 1, 0, 100, 0, 4000, 12000, 6000, 14000, 'Frayer Wildling - Lash - current'),
+(2155401, 1, 39122, 0, -1, 1, 0, 100, 0, 4000, 12000, 6000, 14000, 'Frayer Wildling - Lash - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1960801 WHERE `entry` = 19608;
+UPDATE `creature_template` SET `SpellList` = 2155401 WHERE `entry` = 21554;
+
+-- Thorn Lasher 19919
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19919, 21580);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1991901, 2158001);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1991901, 'Botanica - Thorn Lasher - Normal', 0, 0),
+(2158001, 'Botanica - Thorn Lasher - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1991901, 2158001);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1991901, 1, 35071, 0, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Thorn Lasher - Thorn Missiles - current'),
+(2158001, 1, 35071, 0, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Thorn Lasher - Thorn Missiles - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1991901 WHERE `entry` = 19919;
+UPDATE `creature_template` SET `SpellList` = 2158001 WHERE `entry` = 21580;
+
+-- Thorn Flayer 19920
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19920, 21579);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1992001, 2157901);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1992001, 'Botanica - Thorn Flayer - Normal', 0, 0),
+(2157901, 'Botanica - Thorn Flayer - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1992001, 2157901);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1992001, 1, 35507, 0, -1, 1, 0, 100, 0, 0, 5000, 5000, 8000, 'Thorn Flayer - Mind Flay - current'),
+(2157901, 1, 35507, 0, -1, 1, 0, 100, 0, 0, 5000, 5000, 8000, 'Thorn Flayer - Mind Flay - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1992001 WHERE `entry` = 19920;
+UPDATE `creature_template` SET `SpellList` = 2157901 WHERE `entry` = 21579;
+
+-- Frayer Protector 19953
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19953, 21553);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1995301, 2155301);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1995301, 'Botanica - Frayer Protector - Normal', 0, 0),
+(2155301, 'Botanica - Frayer Protector - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1995301, 2155301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1995301, 1, 34745, 0, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Frayer Protector - Shoot Thorns - current'),
+(2155301, 1, 34745, 0, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Frayer Protector - Shoot Thorns - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1995301 WHERE `entry` = 19953;
+UPDATE `creature_template` SET `SpellList` = 2155301 WHERE `entry` = 21553;
+
+-- White Seedling 19958
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19958, 21583);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1995801, 2158301);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1995801, 'Botanica - White Seedling - Normal', 0, 0),
+(2158301, 'Botanica - White Seedling - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1995801, 2158301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1995801, 1, 34752, 0, -1, 1, 0, 100, 0, 5000, 7000, 4000, 13000, 'White Seedling - Freezing Touch - current'),
+(2158301, 1, 34752, 0, -1, 1, 0, 100, 0, 5000, 7000, 4000, 13000, 'White Seedling - Freezing Touch - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1995801 WHERE `entry` = 19958;
+UPDATE `creature_template` SET `SpellList` = 2158301 WHERE `entry` = 21583;
+
+
+-- Red Seedling 19964
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19964, 21566);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1996401, 2156601);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1996401, 'Botanica - Red Seedling - Normal', 0, 0),
+(2156601, 'Botanica - Red Seedling - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1996401, 2156601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1996401, 1, 36339, 0, -1, 1, 0, 100, 0, 2000, 6000, 2000, 6000, 'Red Seedling - Fire Blast - current'),
+(2156601, 1, 36339, 0, -1, 1, 0, 100, 0, 2000, 6000, 2000, 6000, 'Red Seedling - Fire Blast - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1996401 WHERE `entry` = 19964;
+UPDATE `creature_template` SET `SpellList` = 2156601 WHERE `entry` = 21566;
+
+
+
+
