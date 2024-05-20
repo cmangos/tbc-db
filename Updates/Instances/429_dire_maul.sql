@@ -577,10 +577,43 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+371, 4, -12.3469, -205.185, -53.4168, 0, 0, 0),
 (@CGUID+371, 5, -5.26121, -245.339, -54.4131, 0, 0, 0),
 (@CGUID+371, 6, 20.0477, -273.791, -52.9925, 0, 0, 0),
-(@CGUID+454, 1, 14.67, 500.57, -3.56, 100, 0, 0),
-(@CGUID+454, 2, -9.69764, 411.445, -3.50271, 100, 0, 0),
-(@CGUID+454, 3, 14.67, 500.57, -3.56, 100, 0, 0),
-(@CGUID+454, 4, 60.3375, 410.765, -3.59399, 100, 0, 0),
+
+-- 3x Eldreth Spectre in the hallway between Tendris Warpwood and Immol'thar.
+-- (@CGUID+452, 1, x, y, z, 0, 0, 0),
+-- (@CGUID+452, 2, x, y, z, 0, 0, 0),
+(@CGUID+453, 1, -38.2859, 610.529, -23.3052, 0, 0, 0),
+(@CGUID+453, 2, -37.4494, 587.179, -23.3052, 0, 0, 0),
+(@CGUID+453, 3, -35.7813, 573.539, -23.2787, 0, 0, 0),
+(@CGUID+453, 4, -23.202, 560.906, -23.3052, 0, 0, 0),
+(@CGUID+453, 5, -9.39535, 556.335, -23.3052, 0, 0, 0),
+(@CGUID+453, 6, 21.5726, 556.552, -23.3053, 0, 0, 0),
+(@CGUID+453, 7, 36.2973, 552.102, -23.3049, 0, 0, 0),
+(@CGUID+453, 8, 47.8355, 539.309, -23.3049, 0, 0, 0),
+(@CGUID+453, 9, 49.903, 524.771, -23.3053, 0, 0, 0),
+(@CGUID+453, 10, 47.8355, 539.309, -23.3049, 0, 0, 0),
+(@CGUID+453, 11, 36.2973, 552.102, -23.3049, 0, 0, 0),
+(@CGUID+453, 12, 21.5726, 556.552, -23.3053, 0, 0, 0),
+(@CGUID+453, 13, -9.39535, 556.335, -23.3052, 0, 0, 0),
+(@CGUID+453, 14, -23.202, 560.906, -23.3052, 0, 0, 0),
+(@CGUID+453, 15, -35.7813, 573.539, -23.2787, 0, 0, 0),
+(@CGUID+453, 16, -37.4494, 587.179, -23.3052, 0, 0, 0),
+-- (@CGUID+454, 1, x, y, z, 0, 0, 0),
+-- (@CGUID+454, 2, x, y, z, 0, 0, 0),
+
+-- 2x Eldreth Spectre going around Tendris Warpwood's room.
+-- (@CGUID+455, 1, x, y, z, 0, 0, 0),
+-- (@CGUID+455, 2, x, y, z, 0, 0, 0),
+-- (@CGUID+456, 1, x, y, z, 0, 0, 0),
+-- (@CGUID+456, 2, x, y, z, 0, 0, 0),
+
+-- 3x Eldreth Spectre in Magister Kalendris' room.
+-- (@CGUID+457, 1, x, y, z, 0, 0, 0),
+-- (@CGUID+457, 2, x, y, z, 0, 0, 0),
+-- (@CGUID+458, 1, x, y, z, 0, 0, 0),
+-- (@CGUID+458, 2, x, y, z, 0, 0, 0),
+-- (@CGUID+459, 1, x, y, z, 0, 0, 0),
+-- (@CGUID+459, 2, x, y, z, 0, 0, 0),
+
 (@CGUID+577, 1, 197.831, -483.199, -100.907, 0, 0, 0),
 (@CGUID+577, 2, 195.416, -475.95, -98.4796, 0, 0, 0),
 (@CGUID+577, 3, 188.613, -471.149, -96.9085, 0, 0, 0),
@@ -696,6 +729,24 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+1004, 23, 445.971, 542.539, -21.5652, 0, 0, 0),
 (@CGUID+1004, 24, 494.681, 542.877, -25.3873, 0, 0, 0),
 (@CGUID+1004, 25, 445.971, 542.539, -21.5652, 0, 0, 0);
+
+-- 5x Eldreth Spectre on Illyanna Ravenoak's floor and side.
+-- (@CGUID+1054, 1, x, y, z, 100, 0, 0),
+-- (@CGUID+1054, 2, x, y, z, 100, 0, 0),
+-- (@CGUID+1055, 1, x, y, z, 100, 0, 0),
+-- (@CGUID+1055, 2, x, y, z, 100, 0, 0),
+-- (@CGUID+1056, 1, x, y, z, 100, 0, 0),
+-- (@CGUID+1056, 2, x, y, z, 100, 0, 0),
+-- (@CGUID+1057, 1, x, y, z, 100, 0, 0),
+-- (@CGUID+1057, 2, x, y, z, 100, 0, 0),
+-- (@CGUID+1058, 1, x, y, z, 100, 0, 0),
+-- (@CGUID+1058, 2, x, y, z, 100, 0, 0),
+
+-- 2x Eldreth Spectre between the pylons on Illyanna Ravenoak's floor.
+-- (@CGUID+1059, 1, x, y, z, 100, 0, 0),
+-- (@CGUID+1059, 2, x, y, z, 100, 0, 0),
+-- (@CGUID+1060, 1, x, y, z, 100, 0, 0),
+-- (@CGUID+1060, 2, x, y, z, 100, 0, 0);
 
 DELETE FROM creature_movement_template WHERE entry IN (11460,11492,13280,14321,14323,14325,14327,14351,14354,14483,14482,14241,14353,14566);
 DELETE FROM creature_movement_template WHERE entry IN (14500) AND `pathId`=1; -- Also has movement path in Scholomance, map 289
@@ -1539,14 +1590,21 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+449, 11472, 429, 33.8972, 557.805, -4.3122, 4.2586, 7200, 7200, 0, 0), -- Eldreth Spirit
 (@CGUID+450, 11472, 429, 120.586, 438.521, -4.31108, 1.65806, 7200, 7200, 0, 0), -- Eldreth Spirit
 (@CGUID+451, 11472, 429, 62.4359, 556.919, -4.3074, 0, 7200, 7200, 0, 0), -- Eldreth Spirit
-(@CGUID+452, 11473, 429, 107.537, 519.429, 28.6011, 4.88988, 7200, 7200, 0, 0), -- Eldreth Spectre
-(@CGUID+453, 11473, 429, -41.5571, 610.235, -23.3052, 1.09859, 7200, 7200, 5, 1), -- Eldreth Spectre
-(@CGUID+454, 11473, 429, 60.3375, 410.765, -3.59399, 4.22231, 7200, 7200, 0, 2), -- Eldreth Spectre
-(@CGUID+455, 11473, 429, 102.719, 427.219, -4.31514, 3.82227, 7200, 7200, 0, 0), -- Eldreth Spectre
-(@CGUID+456, 11473, 429, -24.5859, 566.612, -23.3052, 2.29767, 7200, 7200, 0, 0), -- Eldreth Spectre
-(@CGUID+457, 11473, 429, 33.9748, 547.044, 28.6048, 3.23875, 7200, 7200, 5, 1), -- Eldreth Spectre
-(@CGUID+458, 11473, 429, -38.7757, 604.689, -23.3052, 4.42281, 7200, 7200, 5, 1), -- Eldreth Spectre
-(@CGUID+459, 11473, 429, 7.15476, 551.157, -23.3052, 0.111138, 7200, 7200, 5, 1), -- Eldreth Spectre
+
+-- 3x Eldreth Spectre in the hallway between Tendris Warpwood and Immol'thar.
+(@CGUID+452, 11473, 429, -24.5859, 566.612, -23.3052, 2.29767, 7200, 7200, 0, 0), -- Eldreth Spectre
+(@CGUID+453, 11473, 429, -38.2859, 610.529, -23.3052, 0, 7200, 7200, 0, 2), -- Eldreth Spectre
+(@CGUID+454, 11473, 429, 7.15476, 551.157, -23.3052, 0.111138, 7200, 7200, 0, 0), -- Eldreth Spectre
+
+-- 2x Eldreth Spectre going around Tendris Warpwood's room.
+(@CGUID+455, 11473, 429, -45.836, 425.141, -3.57395, 4.63303, 7200, 7200, 0, 0), -- Eldreth Spectre
+(@CGUID+456, 11473, 429, -17.8705, 408.606, -3.59687, -0.107859, 7200, 7200, 0, 0), -- Eldreth Spectre
+
+-- 3x Eldreth Spectre in Magister Kalendris' room.
+(@CGUID+457, 11473, 429, -42.4116, 535.015, -4.40101, -3.07594, 7200, 7200, 0, 0), -- Eldreth Spectre
+(@CGUID+458, 11473, 429, -55.425, 541.624, -4.40321, 4.94283, 7200, 7200, 0, 0), -- Eldreth Spectre
+(@CGUID+459, 11473, 429, 102.719, 427.219, -4.31514, 3.82227, 7200, 7200, 0, 0), -- Eldreth Spectre
+
 (@CGUID+460, 11475, 429, -20.8648, 551.596, -4.39737, 4.71914, 7200, 7200, 0, 0), -- Eldreth Phantasm
 (@CGUID+461, 11475, 429, 101.293, 479.851, -4.31301, 4.50295, 7200, 7200, 0, 0), -- Eldreth Phantasm
 (@CGUID+462, 11475, 429, 88.1093, 548.942, -4.3122, 3.80482, 7200, 7200, 0, 0), -- Eldreth Phantasm
@@ -2092,54 +2150,61 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1011, 14398, 429, 5.64661, 567.147, 28.6886, 5.65487, 7200, 7200, 0, 0), -- Eldreth Darter
 (@CGUID+1012, 14398, 429, -27.428, 507.017, -3.48379, 1.85005, 7200, 7200, 0, 0), -- Eldreth Darter
 (@CGUID+1013, 14398, 429, -17.0975, 531.373, 28.6855, 0.087266, 7200, 7200, 0, 0), -- Eldreth Darter
-(@CGUID+1014, 14399, 429, -160.717, 778.77, -24.5799, 0.699583, 7200, 7200, 0, 0), -- Arcane Torrent
-(@CGUID+1015, 14399, 429, -104.205, 700.939, -24.5804, 6.22566, 7200, 7200, 0, 0), -- Arcane Torrent
-(@CGUID+1016, 14399, 429, -1.45406, 678.052, -24.5983, 0.367712, 7200, 7200, 0, 0), -- Arcane Torrent
-(@CGUID+1017, 14399, 429, 11.9354, 685.688, -24.5845, 3.38813, 7200, 7200, 0, 0), -- Arcane Torrent
-(@CGUID+1018, 14399, 429, 26.8331, 918.525, -24.5815, 3.58885, 7200, 7200, 0, 0), -- Arcane Torrent
-(@CGUID+1019, 14399, 429, -49.8265, 680.977, -24.619, 1.92656, 7200, 7200, 0, 0), -- Arcane Torrent
-(@CGUID+1020, 14399, 429, 80.4472, 837.845, -24.5804, 4.63658, 7200, 7200, 0, 0), -- Arcane Torrent
-(@CGUID+1021, 14399, 429, -163.845, 815.51, -24.5806, 1.20062, 7200, 7200, 0, 0), -- Arcane Torrent
-(@CGUID+1022, 14399, 429, -85.2492, 655.659, -24.6093, 3.36904, 7200, 7200, 0, 0), -- Arcane Torrent
-(@CGUID+1023, 14399, 429, -8.04339, 952.605, -24.5761, 0.350919, 7200, 7200, 0, 0), -- Arcane Torrent
-(@CGUID+1024, 14400, 429, 10.2301, 689.306, -24.5858, 2.01124, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1025, 14400, 429, 15.5537, 687.393, -24.5807, 2.01124, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1026, 14400, 429, -157.657, 781.345, -24.5781, 0.699599, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1027, 14400, 429, -163.293, 781.83, -24.5775, 0.699554, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1028, 14400, 429, -163.778, 776.194, -24.5799, 0.699584, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1029, 14400, 429, -158.142, 775.709, -24.5798, 0.699584, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1030, 14400, 429, -100.212, 700.709, -24.5901, 6.22567, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1031, 14400, 429, -102.022, 696.814, -24.5819, 4.94846, 7200, 7200, 5, 1), -- Arcane Feedback
-(@CGUID+1032, 14400, 429, -103.342, 656.718, -24.5913, 4.73315, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1033, 14400, 429, -104.435, 696.945, -24.5803, 6.22567, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1034, 14400, 429, 2.27855, 679.49, -24.5945, 0.367713, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1035, 14400, 429, -2.89199, 681.784, -24.5994, 0.367712, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1036, 14400, 429, -5.18667, 676.614, -24.6021, 0.367712, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1037, 14400, 429, -0.016136, 674.319, -24.5973, 0.367701, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1038, 14400, 429, 8.0564, 684.711, -24.5884, 3.38813, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1039, 14400, 429, 12.9116, 681.809, -24.5839, 3.38813, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1040, 14400, 429, 43.286, 926.417, -24.5816, 3.11783, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1041, 14400, 429, 37.9495, 928.293, -24.5813, 3.23421, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1042, 14400, 429, 36.0729, 922.957, -24.5815, 3.77034, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1043, 14400, 429, 41.4094, 921.08, -24.5818, 4.16094, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1044, 14400, 429, -51.2197, 684.726, -24.6144, 1.92656, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1045, 14400, 429, -53.576, 679.584, -24.6207, 1.92656, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1046, 14400, 429, -48.4333, 677.227, -24.6236, 1.92656, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1047, 14400, 429, -46.077, 682.37, -24.6173, 1.92656, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1048, 14400, 429, 80.1443, 833.856, -24.5804, 4.63658, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1049, 14400, 429, 84.4357, 837.542, -24.581, 4.63659, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1050, 14400, 429, 80.7502, 841.833, -24.5804, 4.63658, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1051, 14400, 429, 76.4587, 838.148, -24.5804, 4.63658, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1052, 14400, 429, -169.049, 802.1, -24.5777, 1.20062, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1053, 14400, 429, -163.649, 806.44, -24.5786, 1.20062, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1054, 14400, 429, -170.106, 808.951, -24.58, 1.20062, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1055, 14400, 429, -75.0397, 658.022, -24.6192, 3.36903, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1056, 14400, 429, -81.6663, 660.044, -24.6124, 3.36904, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1057, 14400, 429, -80.1041, 653.294, -24.6146, 3.36904, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1058, 14400, 429, -4.28716, 953.98, -24.5759, 0.35092, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1059, 14400, 429, -9.41844, 956.362, -24.5762, 0.35092, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1060, 14400, 429, -11.7996, 951.23, -24.5762, 0.35092, 7200, 7200, 0, 0), -- Arcane Feedback
-(@CGUID+1061, 14400, 429, -6.66835, 948.849, -24.5759, 0.35092, 7200, 7200, 0, 0), -- Arcane Feedback
+
+-- 8x Arcane Torrent around Immol'thar, each with 3-4x Arcane Feedback
+(@CGUID+1014, 14399, 429, -77.1996, 634.969, -24.5673, 0, 7200, 7200, 0, 0), -- Arcane Torrent (OK)
+(@CGUID+1015, 14399, 429, -156.557, 852.935, -24.5798, 1.37848, 7200, 7200, 0, 0), -- Arcane Torrent
+(@CGUID+1016, 14399, 429, -137.211, 906.215, -24.5801, 4.71761, 7200, 7200, 0, 0), -- Arcane Torrent
+(@CGUID+1017, 14399, 429, -57.0831, 937.665, -24.5816, 6.1343, 7200, 7200, 0, 0), -- Arcane Torrent
+(@CGUID+1018, 14399, 429, 76.433, 900.92, -24.5766, 1.18739, 7200, 7200, 0, 0), -- Arcane Torrent
+(@CGUID+1019, 14399, 429, 102.847, 810.583, -24.579, 1.77989, 7200, 7200, 0, 0), -- Arcane Torrent
+(@CGUID+1020, 14399, 429, -24.4887, 658.746, -24.6461, 4.20291, 7200, 7200, 0, 0), -- Arcane Torrent
+(@CGUID+1021, 14399, 429, 44.8139, 714.944, -24.5809, 0, 7200, 7200, 0, 0), -- Arcane Torrent (OK)
+(@CGUID+1022, 14400, 429, -77.1996, 634.969, -24.5673, 0, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1023, 14400, 429, -77.1996, 634.969, -24.5673, 0, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1024, 14400, 429, -77.1996, 634.969, -24.5673, 0, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1025, 14400, 429, -77.1996, 634.969, -24.5673, 0, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1026, 14400, 429, -156.557, 852.935, -24.5798, 1.37848, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1027, 14400, 429, -156.557, 852.935, -24.5798, 1.37848, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1028, 14400, 429, -156.557, 852.935, -24.5798, 1.37848, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1029, 14400, 429, -156.557, 852.935, -24.5798, 1.37848, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1030, 14400, 429, -137.211, 906.215, -24.5801, 4.71761, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1031, 14400, 429, -137.211, 906.215, -24.5801, 4.71761, 7200, 7200, 5, 1), -- Arcane Feedback
+(@CGUID+1032, 14400, 429, -137.211, 906.215, -24.5801, 4.71761, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1033, 14400, 429, -137.211, 906.215, -24.5801, 4.71761, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1034, 14400, 429, -57.0831, 937.665, -24.5816, 6.1343, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1035, 14400, 429, -57.0831, 937.665, -24.5816, 6.1343, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1036, 14400, 429, -57.0831, 937.665, -24.5816, 6.1343, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1037, 14400, 429, -57.0831, 937.665, -24.5816, 6.1343, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1038, 14400, 429, 76.433, 900.92, -24.5766, 1.18739, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1039, 14400, 429, 76.433, 900.92, -24.5766, 1.18739, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1040, 14400, 429, 76.433, 900.92, -24.5766, 1.18739, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1041, 14400, 429, 76.433, 900.92, -24.5766, 1.18739, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1042, 14400, 429, 102.847, 810.583, -24.579, 1.77989, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1043, 14400, 429, 102.847, 810.583, -24.579, 1.77989, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1044, 14400, 429, 102.847, 810.583, -24.579, 1.77989, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1045, 14400, 429, 102.847, 810.583, -24.579, 1.77989, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1046, 14400, 429, -24.4887, 658.746, -24.6461, 4.20291, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1047, 14400, 429, -24.4887, 658.746, -24.6461, 4.20291, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1048, 14400, 429, -24.4887, 658.746, -24.6461, 4.20291, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1049, 14400, 429, -24.4887, 658.746, -24.6461, 4.20291, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1050, 14400, 429, 44.8139, 714.944, -24.5809, 0, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1051, 14400, 429, 44.8139, 714.944, -24.5809, 0, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1052, 14400, 429, 44.8139, 714.944, -24.5809, 0, 7200, 7200, 0, 0), -- Arcane Feedback
+(@CGUID+1053, 14400, 429, 44.8139, 714.944, -24.5809, 0, 7200, 7200, 0, 0), -- Arcane Feedback
+
+-- 5x Eldreth Spectre on Illyanna Ravenoak's floor and side.
+(@CGUID+1054, 11473, 429, 100.607, 533.203, 28.6038, 3.33212, 7200, 7200, 0, 0), -- Eldreth Spectre
+(@CGUID+1055, 11473, 429, 112.285, 527.005, 28.6011, 1.4537, 7200, 7200, 0, 0), -- Eldreth Spectre
+(@CGUID+1056, 11473, 429, 41.2451, 547.381, 28.6051, 3.54958, 7200, 7200, 0, 0), -- Eldreth Spectre
+(@CGUID+1057, 11473, 429, 40.7394, 542.761, 28.6041, 0.996557, 7200, 7200, 0, 0), -- Eldreth Spectre
+(@CGUID+1058, 11473, 429, 107.537, 519.429, 28.6011, 4.88988, 7200, 7200, 0, 0), -- Eldreth Spectre
+
+-- 2x Eldreth Spectre between the pylons on Illyanna Ravenoak's floor.
+(@CGUID+1059, 11473, 429, 29.3244, 392.071, 25.0567, 3.12356, 7200, 7200, 0, 0), -- Eldreth Spectre
+(@CGUID+1060, 11473, 429, 23.7578, 398.095, 25.0565, -0.309803, 7200, 7200, 0, 0), -- Eldreth Spectre
+
+-- REUSE (@CGUID+1061, entry, 429, x, y, z, o, 7200, 7200, 0, 0),
 (@CGUID+1062, 16032, 429, 122.669, 444.578, -48.3768, 5.42797, 7200, 7200, 0, 0), -- Falrin Treeshaper
 (@CGUID+1063, 16045, 429, 262.09, -445.745, -119.878, 4.32842, 7200, 7200, 0, 0), -- Isalien Trigger
 (@CGUID+1064, 13160, 429, 483.631, 274.1594, 2.829807, 1.804002, 7200, 7200, 2, 1), -- Carrion Swarmer
@@ -2595,9 +2660,42 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@GROUP_ID+0, 'DM North - Gordok Mastiff Patrol #1', 0, 0, 0, 1),
 (@GROUP_ID+1, 'DM North - Gordok Mastiff Patrol #2', 0, 0, 0, 1),
 (@GROUP_ID+2, 'DM North - Gordok Mastiff Patrol #3', 0, 0, 0, 1),
-(@GROUP_ID+3, 'DM North - Gordok Mastiff Patrol #4', 0, 0, 0, 1);
+(@GROUP_ID+3, 'DM North - Gordok Mastiff Patrol #4', 0, 0, 0, 1),
+-- @GROUP_ID+4 reserved for Illyana Ravenoak + Ferra
+(@GROUP_ID+5, 'DM West - Arcane Torrent Patrol #1', 0, 0, 0, 1),
+(@GROUP_ID+6, 'DM West - Arcane Torrent Patrol #2', 0, 0, 0, 1),
+(@GROUP_ID+7, 'DM West - Arcane Torrent Patrol #3', 0, 0, 0, 1),
+(@GROUP_ID+8, 'DM West - Arcane Torrent Patrol #4', 0, 0, 0, 1),
+(@GROUP_ID+9, 'DM West - Arcane Torrent Patrol #5', 0, 0, 0, 1),
+(@GROUP_ID+10, 'DM West - Arcane Torrent Patrol #6', 0, 0, 0, 1),
+(@GROUP_ID+11, 'DM West - Arcane Torrent Patrol #7', 0, 0, 0, 1),
+(@GROUP_ID+12, 'DM West - Arcane Torrent Patrol #8', 0, 0, 0, 1);
 
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+-- DM West - Arcane Torrent Patrol #1 - Arcane Torrent + 3-4 Arcane Feedback
+(@GROUP_ID+5, 14399, 1, 1, 0),
+(@GROUP_ID+5, 14400, 3, 4, 0),
+-- DM West - Arcane Torrent Patrol #2 - Arcane Torrent + 3-4 Arcane Feedback
+(@GROUP_ID+6, 14399, 1, 1, 0),
+(@GROUP_ID+6, 14400, 3, 4, 0),
+-- DM West - Arcane Torrent Patrol #3 - Arcane Torrent + 3-4 Arcane Feedback
+(@GROUP_ID+7, 14399, 1, 1, 0),
+(@GROUP_ID+7, 14400, 3, 4, 0),
+-- DM West - Arcane Torrent Patrol #4 - Arcane Torrent + 3-4 Arcane Feedback
+(@GROUP_ID+8, 14399, 1, 1, 0),
+(@GROUP_ID+8, 14400, 3, 4, 0),
+-- DM West - Arcane Torrent Patrol #5 - Arcane Torrent + 3-4 Arcane Feedback
+(@GROUP_ID+9, 14399, 1, 1, 0),
+(@GROUP_ID+9, 14400, 3, 4, 0),
+-- DM West - Arcane Torrent Patrol #6 - Arcane Torrent + 3-4 Arcane Feedback
+(@GROUP_ID+10, 14399, 1, 1, 0),
+(@GROUP_ID+10, 14400, 3, 4, 0),
+-- DM West - Arcane Torrent Patrol #7 - Arcane Torrent + 3-4 Arcane Feedback
+(@GROUP_ID+11, 14399, 1, 1, 0),
+(@GROUP_ID+11, 14400, 3, 4, 0),
+-- DM West - Arcane Torrent Patrol #8 - Arcane Torrent + 3-4 Arcane Feedback
+(@GROUP_ID+12, 14399, 1, 1, 0),
+(@GROUP_ID+12, 14400, 3, 4, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID+0, @CGUID+144, 0),
@@ -2614,19 +2712,84 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 (@GROUP_ID+3, @CGUID+759, 0),
 (@GROUP_ID+3, @CGUID+760, 1),
-(@GROUP_ID+3, @CGUID+761, 2);
+(@GROUP_ID+3, @CGUID+761, 2),
+
+-- @GROUP_ID+4 reserved for Illyanna + Ferra
+
+-- 8x Arcane Torrent + 3-4 Arcane Feedback
+(@GROUP_ID+5, @CGUID+1014, 0),
+(@GROUP_ID+5, @CGUID+1022, 1),
+(@GROUP_ID+5, @CGUID+1023, 2),
+(@GROUP_ID+5, @CGUID+1024, 3),
+(@GROUP_ID+5, @CGUID+1025, 4),
+(@GROUP_ID+6, @CGUID+1015, 0),
+(@GROUP_ID+6, @CGUID+1026, 1),
+(@GROUP_ID+6, @CGUID+1027, 2),
+(@GROUP_ID+6, @CGUID+1028, 3),
+(@GROUP_ID+6, @CGUID+1029, 4),
+(@GROUP_ID+7, @CGUID+1016, 0),
+(@GROUP_ID+7, @CGUID+1030, 1),
+(@GROUP_ID+7, @CGUID+1031, 2),
+(@GROUP_ID+7, @CGUID+1032, 3),
+(@GROUP_ID+7, @CGUID+1033, 4),
+(@GROUP_ID+8, @CGUID+1017, 0),
+(@GROUP_ID+8, @CGUID+1034, 1),
+(@GROUP_ID+8, @CGUID+1035, 2),
+(@GROUP_ID+8, @CGUID+1036, 3),
+(@GROUP_ID+8, @CGUID+1037, 4),
+(@GROUP_ID+9, @CGUID+1018, 0),
+(@GROUP_ID+9, @CGUID+1038, 1),
+(@GROUP_ID+9, @CGUID+1039, 2),
+(@GROUP_ID+9, @CGUID+1040, 3),
+(@GROUP_ID+9, @CGUID+1041, 4),
+(@GROUP_ID+10, @CGUID+1019, 0),
+(@GROUP_ID+10, @CGUID+1042, 1),
+(@GROUP_ID+10, @CGUID+1043, 2),
+(@GROUP_ID+10, @CGUID+1044, 3),
+(@GROUP_ID+10, @CGUID+1045, 4),
+(@GROUP_ID+11, @CGUID+1020, 0),
+(@GROUP_ID+11, @CGUID+1046, 1),
+(@GROUP_ID+11, @CGUID+1047, 2),
+(@GROUP_ID+11, @CGUID+1048, 3),
+(@GROUP_ID+11, @CGUID+1049, 4),
+(@GROUP_ID+12, @CGUID+1021, 0),
+(@GROUP_ID+12, @CGUID+1050, 1),
+(@GROUP_ID+12, @CGUID+1051, 2),
+(@GROUP_ID+12, @CGUID+1052, 3),
+(@GROUP_ID+12, @CGUID+1053, 4);
+
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@GROUP_ID+0, 4, 4, 0, @PATH_ID+0, 2, 'DM North - Gordok Mastiff Patrol #1'),
 (@GROUP_ID+1, 4, 4, 0, @PATH_ID+1, 2, 'DM North - Gordok Mastiff Patrol #2'),
 (@GROUP_ID+2, 4, 4, 0, @PATH_ID+2, 2, 'DM North - Gordok Mastiff Patrol #3'),
-(@GROUP_ID+3, 3, 4, 0, @PATH_ID+3, 2, 'DM North - Gordok Mastiff Patrol #4');
+(@GROUP_ID+3, 3, 4, 0, @PATH_ID+3, 2, 'DM North - Gordok Mastiff Patrol #4'),
+-- @GROUP_ID+4 reserved for Illyanna + Ferra
+(@GROUP_ID+5, 6, 5, 0, @PATH_ID+5, 2, 'DM West - Arcane Torrent Patrol #1'),
+(@GROUP_ID+6, 6, 5, 0, @PATH_ID+6, 2, 'DM West - Arcane Torrent Patrol #2'),
+(@GROUP_ID+7, 6, 5, 0, @PATH_ID+7, 2, 'DM West - Arcane Torrent Patrol #3'),
+(@GROUP_ID+8, 6, 5, 0, @PATH_ID+8, 2, 'DM West - Arcane Torrent Patrol #4'),
+(@GROUP_ID+9, 6, 5, 0, @PATH_ID+9, 2, 'DM West - Arcane Torrent Patrol #5'),
+(@GROUP_ID+10, 6, 5, 0, @PATH_ID+10, 2, 'DM West - Arcane Torrent Patrol #6'),
+(@GROUP_ID+11, 6, 5, 0, @PATH_ID+11, 2, 'DM West - Arcane Torrent Patrol #7'),
+(@GROUP_ID+12, 6, 5, 0, @PATH_ID+12, 2, 'DM West - Arcane Torrent Patrol #8');
+
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@PATH_ID+0,'DM North - Gordok Mastiff Patrol #1'),
 (@PATH_ID+1,'DM North - Gordok Mastiff Patrol #2'),
 (@PATH_ID+2,'DM North - Gordok Mastiff Patrol #3'),
-(@PATH_ID+3,'DM North - Gordok Mastiff Patrol #4');
+(@PATH_ID+3,'DM North - Gordok Mastiff Patrol #4'),
+-- @PATH_ID+4 reserved for Illyanna + Ferra
+(@PATH_ID+5,'DM West - Arcane Torrent Patrol #1'),
+(@PATH_ID+6,'DM West - Arcane Torrent Patrol #2'),
+(@PATH_ID+7,'DM West - Arcane Torrent Patrol #3'),
+(@PATH_ID+8,'DM West - Arcane Torrent Patrol #4'),
+(@PATH_ID+9,'DM West - Arcane Torrent Patrol #5'),
+(@PATH_ID+10,'DM West - Arcane Torrent Patrol #6'),
+(@PATH_ID+11,'DM West - Arcane Torrent Patrol #7'),
+(@PATH_ID+12,'DM West - Arcane Torrent Patrol #8');
+
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 (@PATH_ID+0, 1, 468.33, 3.67, -3.9162, 100, 0, 0, ''),
@@ -2712,7 +2875,41 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH_ID+3, 17, 843.37, 516.75, 36.41, 100, 0, 0, ''),
 (@PATH_ID+3, 18, 815.88, 521.46, 36.46, 100, 0, 0, ''),
 (@PATH_ID+3, 19, 791.38, 507.63, 36.37, 100, 0, 0, ''),
-(@PATH_ID+3, 20, 780.8722, 483.79593, 36.04934, 100, 0, 0, ''); -- incomplete path
+(@PATH_ID+3, 20, 780.8722, 483.79593, 36.04934, 100, 0, 0, ''), -- incomplete path
+
+-- @PATH_ID+4 reserved for Illyanna + Ferra
+
+-- Arcane Torrent Patrol #1 (3.0.8 data)
+(@PATH_ID+5, 1, -77.1996, 634.969, -24.6193, 100, 0, 0, ''),
+(@PATH_ID+5, 2, -70.0639, 683.481, -24.6216, 100, 0, 0, ''),
+(@PATH_ID+5, 3, -111.732, 667.546, -24.582, 100, 0, 0, ''),
+(@PATH_ID+5, 4, -136.798, 668.982, -24.5794, 100, 0, 0, ''),
+(@PATH_ID+5, 5, -124.282, 702.095, -24.5774, 100, 0, 0, ''),
+(@PATH_ID+5, 6, -104.205, 700.939, -24.5804, 100, 0, 0, ''),
+(@PATH_ID+5, 7, -103.236, 651.496, -24.592, 100, 0, 0, ''),
+(@PATH_ID+5, 8, -66.4674, 660.006, -24.6275, 100, 0, 0, ''),
+(@PATH_ID+5, 9, -103.236, 651.496, -24.592, 100, 0, 0, ''),
+(@PATH_ID+5, 10, -104.205, 700.939, -24.5804, 100, 0, 0, ''),
+(@PATH_ID+5, 11, -124.282, 702.095, -24.5774, 100, 0, 0, ''),
+(@PATH_ID+5, 12, -136.798, 668.982, -24.5794, 100, 0, 0, ''),
+(@PATH_ID+5, 13, -111.732, 667.546, -24.582, 100, 0, 0, ''),
+(@PATH_ID+5, 14, -70.0639, 683.481, -24.6216, 100, 0, 0, ''),
+
+-- Arcane Torrent Patrol #8 (3.0.8 data)
+(@PATH_ID+12, 1, 44.8139, 714.944, -24.5787, 100, 0, 0, ''),
+(@PATH_ID+12, 2, 29.4286, 709.031, -24.5798, 100, 0, 0, ''),
+(@PATH_ID+12, 3, 27.6442, 690.317, -24.5686, 100, 0, 0, ''),
+(@PATH_ID+12, 4, 28.468, 650.611, -24.5716, 100, 0, 0, ''),
+(@PATH_ID+12, 5, 11.9355, 685.688, -24.5845, 100, 0, 0, ''),
+(@PATH_ID+12, 6, 38.2852, 692.319, -24.5801, 100, 0, 0, ''),
+(@PATH_ID+12, 7, 68.1965, 690.801, -24.578, 100, 0, 0, ''),
+(@PATH_ID+12, 8, 38.2852, 692.319, -24.5801, 100, 0, 0, ''),
+(@PATH_ID+12, 9, 11.9355, 685.688, -24.5845, 100, 0, 0, ''),
+(@PATH_ID+12, 10, 28.468, 650.611, -24.5716, 100, 0, 0, ''),
+(@PATH_ID+12, 11, 27.6442, 690.317, -24.5686, 100, 0, 0, ''),
+(@PATH_ID+12, 12, 29.4286, 709.031, -24.5798, 100, 0, 0, ''),
+(@PATH_ID+12, 13, 44.8139, 714.944, -24.5787, 100, 0, 0, ''),
+(@PATH_ID+12, 14, 73.0413, 691.104, -24.5777, 100, 0, 0, '');
 
 -- =========
 -- DBSCRIPTS
