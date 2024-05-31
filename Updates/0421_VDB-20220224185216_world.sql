@@ -1161,7 +1161,7 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `condition_id`) VALUES
 -- bubbly bubbles using wrong id -> req. core fix
 -- https://github.com/cmangos/mangos-tbc/commit/299e73b2c43067d40ccdc3425e6de7d755ec42bc
 -- Correct Bubbly Fissure Data
-UPDATE `gameobject_template` SET `type` = 8, `faction` = 14, `data1` = 10, `data2` = 0, `data3` = 0, `data5` = 0, `data14` = 0 WHERE `entry` = 177524; -- NOTE: USING THE CORRECT TEMPLATE DATA CAUSES THE OBJECT NOT TO FUNCTION
+UPDATE `gameobject_template` SET `type` = 8, `faction` = 14, `data1` = 10, `data2` = 0, `data3` = 0, `data5` = 0, `data14` = 0, `CustomData1` = 0 WHERE `entry` = 177524; -- NOTE: USING THE CORRECT TEMPLATE DATA CAUSES THE OBJECT NOT TO FUNCTION
 UPDATE `gameobject` SET `id` = 177524, `position_x` = -10168.7, `position_y` = 2389.03, `position_z` = -139.214, `orientation` = 0.453785, `rotation2` = 0.224951, `rotation3` = 0.97437 WHERE `guid` = 56709 AND `id` = 180057;
 UPDATE `gameobject` SET `id` = 177524, `position_x` = 840.744, `position_y` = 2208.33, `position_z` = -136.858, `orientation` = 3.4034, `rotation2` = -0.991445, `rotation3` = 0.130528 WHERE `guid` = 56708 AND `id` = 180057;
 UPDATE `gameobject` SET `position_x` = -1985.92, `position_y` = 3374.38, `position_z` = -80.1733, `orientation` = 0, `rotation2` = 0, `rotation3` = 1 WHERE `guid` = 31900 AND `id` = 177524;
