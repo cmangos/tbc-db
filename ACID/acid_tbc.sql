@@ -5677,7 +5677,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Acolyte Dellis 5386
 -- Furen Longbeard 5413
 -- Wu Shen 5479
+('547901','5479','1','0','100','1','5000','5000','10000','10000','0','0','53','30000','0','0','0','0','0','0','0','0','0','0','Wu Shen - GENERIC - emote 1 OOC'),
 -- Ilsa Corbin 5480
+('548001','5480','1','0','100','1','10000','10000','10000','10000','0','0','53','30000','0','0','0','0','0','0','0','0','0','0','Ilsa Corbin - GENERIC - emote 1 OOC'),
 -- Stephen Ryback 5482
 -- Erika Tate 5483
 -- Brother Benjamin 5484
@@ -13774,9 +13776,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ziz Fizziks (4201) - NSR
 -- Gerenzo Wrenchwhistle 4202
 ('420201','4202','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Gerenzo Wrenchwhistle - Flee at 15% HP'),
--- Deepmoss Hatchling
-('426301','4263','2','0','30','1024','30','0','0','0','0','0','11','6536','0','0','1','1414','0','0','0','0','0','0','Deepmoss Hatchling - Cast Summon Deepmoss Matriarch, Emote at 30% HP'),
--- Deepmoss Matriarch (4264) - NSR
+-- Deepmoss Hatchling 4263
+('426301','4263','2','0','30','1024','30','0','0','0','0','0','11','6536','0','0','1','1414','0','0','0','0','0','0','Deepmoss Hatchling - (30% Chance) Cast Summon Deepmoss Matriarch, Emote at 30% HP'),
+-- Deepmoss Matriarch 4264
+('426401','4264','11','0','100','0','0','0','0','0','0','0','1','1415','0','0','0','0','0','0','0','0','0','0','Deepmoss Matriarch - Emote on Spawn'),
 -- Piznik (4276) - NSR
 -- Tharm
 ('431201','4312','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','4561','0','0','0','0','0','0','Tharm - Cast Summon Enraged Wyvern and Yell on Aggro'),
@@ -14247,8 +14250,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Strigid Owl (1995) - NSR
 -- Strigid Screecher (1996) - NSR
 -- Strigid Hunter (1997) - NSR
--- Webwood Lurker
-('199801','1998','0','0','100','1025','0','10000','40000','45000','0','0','11','4167','1','0','0','0','0','0','0','0','0','0','Webwood Lurker - Cast Web'),
+-- Webwood Lurker 1998
+('199801','1998','11','0','100','0','0','0','0','0','0','0','11','11959','0','34','0','0','0','0','0','0','0','0','Webwood Lurker - Cast Poison Proc on Spawn'),
 -- Webwood Venomfang 1999
 ('199901','1999','1','0','100','0','1000','1000','0','0','0','0','11','11959','0','32','0','0','0','0','0','0','0','0','Webwood Venomfang - Cast Poison Proc OOC'),
 -- Webwood Silkspinner
@@ -15631,7 +15634,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('744901','7449','0','0','75','1025','5000','15000','30000','45000','0','0','11','3132','1','0','0','0','0','0','0','0','0','0','Chillwind Ravager - Cast Chilling Breath'),
 ('744902','7449','2','0','100','1024','25','0','0','0','0','0','11','8599','0','0','1','2384','0','0','0','0','0','0','Chillwind Ravager - Cast Enrage at 25% HP'),
 -- Ragged Owlbeast 7450
-('745001','7450','9','0','100','1025','0','5','3000','6000','0','0','11','15848','1','32','0','0','0','0','0','0','0','0','Ragged Owlbeast - Cast Festering Rash'),
+('745001','7450','0','0','100','1025','7000','21000','25000','30000','0','0','11','15848','1','32','0','0','0','0','0','0','0','0','Ragged Owlbeast - Cast Festering Rash'),
 -- Raging Owlbeast 7451
 ('745101','7451','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','1','2384','0','0','0','0','0','0','Raging Owlbeast - Cast Enrage at 30% HP'),
 ('745102','7451','9','0','100','1025','0','5','13000','18000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Raging Owlbeast - Cast Rend'),
@@ -27757,9 +27760,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blackwing Spellbinder
 ('1245701','12457','9','0','100','1025','0','30','7000','11000','0','0','11','22275','4','0','0','0','0','0','0','0','0','0','Blackwing Spellbinder - Cast Flamestrike'),
 ('1245702','12457','0','0','100','1025','6000','9000','11000','15000','0','0','11','22274','5','32','0','0','0','0','0','0','0','0','Blackwing Spellbinder - Cast Greater Polymorph'),
--- Blackwing Taskmaster
-('1245801','12458','9','0','100','1025','0','20','5000','8000','0','0','11','17289','4','0','0','0','0','0','0','0','0','0','Blackwing Taskmaster - Cast Shadow Shock'),
-('1245802','12458','0','0','100','1025','11000','19000','16000','21000','0','0','11','22458','0','0','0','0','0','0','0','0','0','0','Blackwing Taskmaster - Cast Healing Circle'),
+-- Blackwing Taskmaster 12458
+('1245801','12458','0','0','100','1025','4000','8000','3000','9000','0','0','11','17289','4','512','0','0','0','0','0','0','0','0','Blackwing Taskmaster - Cast Shadow Shock'),
+('1245802','12458','0','0','100','1025','0','15000','18000','24000','0','0','11','22458','15','0','0','0','0','0','0','0','0','0','Blackwing Taskmaster - Cast Healing Circle'),
 -- Blackwing Warlock 12459
 ('1245901','12459','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Blackwing Warlock - Enable Range Mode on Aggro'),
 ('1245902','12459','6','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Blackwing Warlock - Despawn Guardians on Death'),
