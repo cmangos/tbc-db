@@ -345,7 +345,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (190992, 4689, 1, -516.018, 1446.09, 88.6802, 0, 300, 300, 0, 0),
 (190993, 4689, 1, -516.018, 1446.09, 88.6802, 0, 300, 300, 0, 0),
 (190994, 4689, 1, -516.018, 1446.09, 88.6802, 0, 300, 300, 0, 0),
-(190995, 4689, 1, -223.012, 1480.89, 92.2696, 0, 300, 300, 0, 0);
+(190995, 4689, 1, -516.018, 1446.09, 88.6802, 0, 300, 300, 0, 0);
 DELETE FROM `spawn_group` WHERE id = 19052;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES (19052,'Desolace - Starving Bonepaw (5) - Patrol 1', 0, 0, 0, 0);
 DELETE FROM `spawn_group_formation` WHERE id = 19052;
