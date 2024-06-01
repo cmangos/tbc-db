@@ -23,7 +23,7 @@ SET @RELAYID := 5520000; -- used for dbscript_on_relay
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+9, 1, 186.8511, -17.043463, -10.028533, 100, 100, 5),
 (@CGUID+9, 2, 154.92224, 0.133047, -10.1021595, 100, 0, 0),
-(@CGUID+9, 3, 118.42155, 0.256821, -10.136737, 100, 100, 2086401),
+(@CGUID+9, 3, 118.42155, 0.256821, -10.136737, 100, 100, 6),
 (@CGUID+9, 4, 107.806114, 1.4212999, -10.160327, 100, 100, 2),
 (@CGUID+10, 1, 218.647, 8.70929, -7.46839, 0.240802, 0, 0),
 (@CGUID+10, 2, 223.847, -1.61805, -8.21044, 5.04115, 0, 0),
@@ -819,10 +819,3 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
-
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (2086401);
-INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- Protean Nightmare
-(2086401, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Nightmare - Run Mode off'),
-(2086401, 1, 1, 31, 20865, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Nightmare - Terminate Script if no Defender in range'),
-(2086401, 1, 1, 26, 0, 0, 0, 20865, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Nightmare - Attack Defender');
