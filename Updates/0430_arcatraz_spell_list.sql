@@ -26,8 +26,8 @@ DELETE FROM `creature_template_spells` WHERE `entry` IN (20864, 21608);
 
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2086401, 2160801);
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
-(2086401, 'The Arcatraz - Protean Nightmare - Normal', 0, 80),
-(2160801, 'The Arcatraz - Protean Nightmare - Heroic', 0, 80);
+(2086401, 'The Arcatraz - Protean Nightmare - Normal', 0, 0),
+(2160801, 'The Arcatraz - Protean Nightmare - Heroic', 0, 0);
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (2086401, 2160801);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
@@ -48,8 +48,8 @@ DELETE FROM `creature_template_spells` WHERE `entry` IN (20865, 21607);
 
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2086501, 2160701);
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
-(2086501, 'The Arcatraz - Protean Horror - Normal', 0, 80),
-(2160701, 'The Arcatraz - Protean Horror - Heroic', 0, 80);
+(2086501, 'The Arcatraz - Protean Horror - Normal', 0, 0),
+(2160701, 'The Arcatraz - Protean Horror - Heroic', 0, 0);
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (2086501, 2160701);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
@@ -58,3 +58,42 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2086501 WHERE `entry` = 20865;
 UPDATE `creature_template` SET `SpellList` = 2160701 WHERE `entry` = 21607;
+
+
+-- Soul Devourer
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20866, 21614);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2086601, 2161401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2086601, 'The Arcatraz - Soul Devourer - Normal', 0, 0),
+(2161401, 'The Arcatraz - Soul Devourer - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2086601, 2161401);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2086601, 1, 36644, 0, -1, 0, 0, 1, 0, 9000, 20000, 10000, 21000, 'Soul Devourer - Sightless Eye - self'),
+(2086601, 2, 36654, 0, -1, 0, 0, 1, 0, 12000, 13000, 12000, 13000, 'Soul Devourer - Fel Breath - self'),
+(2161401, 1, 36644, 0, -1, 0, 0, 1, 0, 9000, 20000, 10000, 21000, 'Soul Devourer - Sightless Eye - self'),
+(2161401, 2, 38813, 0, -1, 0, 0, 1, 0, 12000, 13000, 12000, 13000, 'Soul Devourer - Fel Breath - self');
+
+
+UPDATE `creature_template` SET `SpellList` = 2086601 WHERE `entry` = 20866;
+UPDATE `creature_template` SET `SpellList` = 2161401 WHERE `entry` = 21614;
+
+
+-- Entropic Eye
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20868, 21593);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2086801, 2159301);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2086801, 'The Arcatraz - Entropic Eye - Normal', 0, 0),
+(2159301, 'The Arcatraz - Entropic Eye - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2086801, 2159301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2086801, 1, 36677, 0, -1, 100, 0, 1, 0, 7000, 19000, 15000, 26000, 'Entropic Eye - Chaos Breath - random'),
+(2086801, 2, 36664, 0, -1, 100, 0, 1, 0, 9000, 14000, 10000, 15000, 'Entropic Eye - Tentacle Cleave - random'),
+(2159301, 1, 36677, 0, -1, 100, 0, 1, 0, 7000, 19000, 15000, 26000, 'Entropic Eye - Chaos Breath - random'),
+(2159301, 2, 38816, 0, -1, 100, 0, 1, 0, 9000, 14000, 10000, 15000, 'Entropic Eye - Tentacle Cleave - random');
+
+UPDATE `creature_template` SET `SpellList` = 2086801 WHERE `entry` = 20868;
+UPDATE `creature_template` SET `SpellList` = 2159301 WHERE `entry` = 21593;
