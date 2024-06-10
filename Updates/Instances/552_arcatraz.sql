@@ -516,18 +516,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+95, 21186, 552, 3, 118.098, 0.268171, -10.0188, 1.69297, 7200, 7200, 0, 0), -- Arcane Warder Target
 (@CGUID+96, 0, 552, 3, 197.955, -86.8133, -10.0174, 5.8294, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+97, 0, 552, 3, 206.342, -98.2784, -10.0262, 2.6529, 86400, 86400, 0, 0), -- spawn_group_entry
-(@CGUID+98, 21303, 552, 3, 213.626, -161.424, -10.0346, 2.74017, 86400, 86400, 0, 0), -- Defender Corpse
+(@CGUID+98, 0, 552, 3, 213.626, -161.424, -10.0346, 2.74017, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+99, 21303, 552, 3, 273.438, -64.07, 22.4534, 22.4534, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+100, 21303, 552, 3, 270.819, -45.4794, 22.4534, 4.46804, 86400, 86400, 0, 0), -- Defender Corpse
-(@CGUID+101, 21303, 552, 3, 226.184, -162.096, -10.0352, 0.349066, 86400, 86400, 0, 0), -- Defender Corpse
-(@CGUID+102, 21303, 552, 3, 245.982, -194.617, -10.0217, 0.872665, 86400, 86400, 0, 0), -- Defender Corpse
+(@CGUID+101, 0, 552, 3, 229.997, -162.192, -10.0346, 0.0698132, 86400, 86400, 0, 0), -- spawn_group_entry
+(@CGUID+102, 0, 552, 3, 276.173, -179.818, -10.0223, 1.43117, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+103, 21303, 552, 3, 285.416, 127.127, 22.2951, 4.69494, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+104, 21303, 552, 3, 253.689, 139.868, 22.4121, 2.30383, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+105, 21303, 552, 3, 253.951, 155.001, 22.3806, 4.93928, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+106, 21303, 552, 3, 298.848, 151.748, 22.3105, 5.70723, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+107, 21303, 552, 3, 306.976, 141.112, 22.2286, 3.0285, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+108, 21303, 552, 3, 272.501, -40.1927, 22.509, 2.9147, 86400, 86400, 0, 0), -- Defender Corpse
-(@CGUID+109, 21303, 552, 3, 232.754, -198.125, -10.023, 5.61996, 86400, 86400, 0, 0), -- Defender Corpse
+(@CGUID+109, 0, 552, 3, 232.754, -198.125, -10.023, 5.61996, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+110, 21303, 552, 3, 262.56, -65.5981, 22.4534, 1.50098, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+111, 21303, 552, 3, 312.929, -7.19062, 22.5245, 4.03171, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+112, 21303, 552, 3, 311.119, -5.50369, 22.5245, 1.5708, 86400, 86400, 0, 0), -- Defender Corpse
@@ -536,19 +536,19 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+115, 21303, 552, 3, 397.07, 25.3331, 48.296, 0.523599, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+116, 21303, 552, 3, 392.004, 18.3857, 48.296, 1.48353, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+117, 21303, 552, 3, 257.344, 155.568, 22.3321, 4.71239, 86400, 86400, 0, 0), -- Defender Corpse
--- reuse cguid+118 - cguid+119
-(@CGUID+120, 21304, 552, 3, 213.626, -161.424, -10.0346, 2.74017, 86400, 86400, 0, 0), -- Warder Corpse
+(@CGUID+118, 0, 552, 3, 210.114, -161.992, -10.0359, 6.12611, 86400, 86400, 0, 0), -- spawn_group_entry
+-- reuse cguid+119 - cguid+120
 (@CGUID+121, 21304, 552, 3, 273.438, -64.07, 22.4534, 22.4534, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+122, 21304, 552, 3, 270.819, -45.4794, 22.4534, 4.46804, 86400, 86400, 0, 0), -- Warder Corpse
-(@CGUID+123, 21304, 552, 3, 226.184, -162.096, -10.0352, 0.349066, 86400, 86400, 0, 0), -- Warder Corpse
-(@CGUID+124, 21304, 552, 3, 245.982, -194.617, -10.0217, 0.872665, 86400, 86400, 0, 0), -- Warder Corpse
+-- reuse +123
+-- reuse +124
 (@CGUID+125, 21304, 552, 3, 285.416, 127.127, 22.2951, 4.69494, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+126, 21304, 552, 3, 253.689, 139.868, 22.4121, 2.30383, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+127, 21304, 552, 3, 253.951, 155.001, 22.3806, 4.93928, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+128, 21304, 552, 3, 298.848, 151.748, 22.3105, 5.70723, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+129, 21304, 552, 3, 306.976, 141.112, 22.2286, 3.0285, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+130, 21304, 552, 3, 272.501, -40.1927, 22.509, 2.9147, 86400, 86400, 0, 0), -- Warder Corpse
-(@CGUID+131, 21304, 552, 3, 232.754, -198.125, -10.023, 5.61996, 86400, 86400, 0, 0), -- Warder Corpse
+-- reuse +131
 (@CGUID+132, 21304, 552, 3, 262.56, -65.5981, 22.4534, 1.50098, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+133, 21304, 552, 3, 312.929, -7.19062, 22.5245, 4.03171, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+134, 21304, 552, 3, 311.119, -5.50369, 22.5245, 1.5708, 86400, 86400, 0, 0), -- Warder Corpse
@@ -631,12 +631,18 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+10, 'The Arcatraz - Group 010 - Warder/Defender Corpse', 0, 0, 0, 0, 0, 0),
 -- Boss Room
 (@SGGUID+11, 'The Arcatraz - Group 011 - Protean Horror (6) | Patrol 04', 0, 0, 0, 0, 1, 0),
-(@SGGUID+12, 'The Arcatraz - Group 012 - Death Watcher / Entropic Eye', 0, 0, 0, 0, 0, 0);
+(@SGGUID+12, 'The Arcatraz - Group 012 - Death Watcher / Entropic Eye', 0, 0, 0, 0, 0, 0),
+
+(@SGGUID+13, 'The Arcatraz - Group 013 - Warder/Defender Corpse', 0, 1, 0, 0, 0, 0), -- 3 different spawns only 1 active
+(@SGGUID+14, 'The Arcatraz - Group 014 - Warder/Defender Corpse', 0, 1, 0, 0, 0, 0); -- 2 different spawns only 1 active
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+9, 21303, 0, 0, 0), (@SGGUID+9, 21304, 0, 0, 0), -- Defener Corpse, Warder Corpse
 (@SGGUID+10, 21303, 0, 0, 0), (@SGGUID+10, 21304, 0, 0, 0), -- Defener Corpse, Warder Corpse
-(@SGGUID+12, 20867, 1, 3, 0), (@SGGUID+12, 20868, 1, 3, 0); -- Death Watcher, Entropic Eye
+(@SGGUID+12, 20867, 1, 3, 0), (@SGGUID+12, 20868, 1, 3, 0), -- Death Watcher, Entropic Eye
+
+(@SGGUID+13, 21303, 0, 0, 0), (@SGGUID+13, 21304, 0, 0, 0), -- Defener Corpse, Warder Corpse
+(@SGGUID+14, 21303, 0, 0, 0), (@SGGUID+14, 21304, 0, 0, 0); -- Defener Corpse, Warder Corpse
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+5, 0, 0), -- Arcatraz Warder - left
@@ -688,7 +694,14 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+12, @CGUID+35, -1, 0), -- spawn_group_entry
 (@SGGUID+12, @CGUID+36, -1, 0), -- spawn_group_entry
 (@SGGUID+12, @CGUID+37, -1, 0), -- spawn_group_entry
-(@SGGUID+12, @CGUID+38, -1, 0); -- spawn_group_entry
+(@SGGUID+12, @CGUID+38, -1, 0), -- spawn_group_entry
+
+
+(@SGGUID+13, @CGUID+98, -1, 0), -- spawn_group_entry
+(@SGGUID+13, @CGUID+101, -1, 0), -- spawn_group_entry
+(@SGGUID+13, @CGUID+118, -1, 0), -- spawn_group_entry
+(@SGGUID+14, @CGUID+102, -1, 0), -- spawn_group_entry
+(@SGGUID+14, @CGUID+109, -1, 0); -- spawn_group_entry
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+6, 3, 3, 0, @SGGUID+6, 2, 'The Arcatraz - Group 006 - Protean Nightmare (1) - Protean Horror (2) | Patrol 01'),
@@ -751,18 +764,14 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 -- =======
 
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-(@PGUID+3, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 3'),
 (@PGUID+4, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 4'),
 (@PGUID+5, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 5'),
-(@PGUID+6, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 6'),
-(@PGUID+7, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 7'),
 (@PGUID+8, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 8'),
 (@PGUID+9, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 9'),
 (@PGUID+10, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 10'),
 (@PGUID+11, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 11'),
 (@PGUID+12, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 12'),
 (@PGUID+13, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 13'),
-(@PGUID+14, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 14'),
 (@PGUID+15, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 15'),
 (@PGUID+16, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 16'),
 (@PGUID+17, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 17'),
@@ -773,10 +782,8 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+22, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 22');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+3, 1, 'Arcatraz - Warder/Defender Corpses - Pool 3'),
 (@PGUID+4, 1, 'Arcatraz - Warder/Defender Corpses - Pool 4'),
 (@PGUID+5, 1, 'Arcatraz - Warder/Defender Corpses - Pool 5'),
-(@PGUID+6, 1, 'Arcatraz - Warder/Defender Corpses - Pool 6'),
 (@PGUID+7, 1, 'Arcatraz - Warder/Defender Corpses - Pool 7'),
 (@PGUID+8, 1, 'Arcatraz - Warder/Defender Corpses - Pool 8'),
 (@PGUID+9, 1, 'Arcatraz - Warder/Defender Corpses - Pool 9'),
@@ -784,7 +791,6 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+11, 1, 'Arcatraz - Warder/Defender Corpses - Pool 11'),
 (@PGUID+12, 1, 'Arcatraz - Warder/Defender Corpses - Pool 12'),
 (@PGUID+13, 1, 'Arcatraz - Warder/Defender Corpses - Pool 13'),
-(@PGUID+14, 1, 'Arcatraz - Warder/Defender Corpses - Pool 14'),
 (@PGUID+15, 1, 'Arcatraz - Warder/Defender Corpses - Pool 15'),
 (@PGUID+16, 1, 'Arcatraz - Warder/Defender Corpses - Pool 16'),
 (@PGUID+17, 1, 'Arcatraz - Warder/Defender Corpses - Pool 17'),
@@ -797,16 +803,10 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+24, 2, 'Arcatraz - Skulking Witch - Pool');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+98, @PGUID+3, 0, 'Arcatraz - Defender Corpse - Pool 3'),
-(@CGUID+120, @PGUID+3, 0, 'Arcatraz - Warder Corpse - Pool 3'),
 (@CGUID+99, @PGUID+4, 0, 'Arcatraz - Defender Corpse - Pool 4'),
 (@CGUID+121, @PGUID+4, 0, 'Arcatraz - Warder Corpse - Pool 4'),
 (@CGUID+100, @PGUID+5, 0, 'Arcatraz - Defender Corpse - Pool 5'),
 (@CGUID+122, @PGUID+5, 0, 'Arcatraz - Warder Corpse - Pool 5'),
-(@CGUID+101, @PGUID+6, 0, 'Arcatraz - Defender Corpse - Pool 6'),
-(@CGUID+123, @PGUID+6, 0, 'Arcatraz - Warder Corpse - Pool 6'),
-(@CGUID+102, @PGUID+7, 0, 'Arcatraz - Defender Corpse - Pool 7'),
-(@CGUID+124, @PGUID+7, 0, 'Arcatraz - Warder Corpse - Pool 7'),
 (@CGUID+103, @PGUID+8, 0, 'Arcatraz - Defender Corpse - Pool 8'),
 (@CGUID+125, @PGUID+8, 0, 'Arcatraz - Warder Corpse - Pool 8'),
 (@CGUID+104, @PGUID+9, 0, 'Arcatraz - Defender Corpse - Pool 9'),
@@ -819,8 +819,6 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 (@CGUID+129, @PGUID+12, 0, 'Arcatraz - Warder Corpse - Pool 12'),
 (@CGUID+108, @PGUID+13, 0, 'Arcatraz - Defender Corpse - Pool 13'),
 (@CGUID+130, @PGUID+13, 0, 'Arcatraz - Warder Corpse - Pool 13'),
-(@CGUID+109, @PGUID+14, 0, 'Arcatraz - Defender Corpse - Pool 14'),
-(@CGUID+131, @PGUID+14, 0, 'Arcatraz - Warder Corpse - Pool 14'),
 (@CGUID+110, @PGUID+15, 0, 'Arcatraz - Defender Corpse - Pool 15'),
 (@CGUID+132, @PGUID+15, 0, 'Arcatraz - Warder Corpse - Pool 15'),
 (@CGUID+111, @PGUID+16, 0, 'Arcatraz - Defender Corpse - Pool 16'),
