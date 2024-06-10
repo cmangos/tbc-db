@@ -295,7 +295,28 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+150, 10, 140.21, 164.22, 22.4401, 3.68492, 0, 0),
 (@CGUID+150, 11, 125.306, 157.433, 22.4401, 3.68492, 0, 0);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+-- Protean Horror 01 - Path 1 
+(20865, 1, 1, 274.492, -160.3677, -10.11127, 100, 1, 5),
+(20865, 1, 2, 261.6127, -189.98672, -10.10487, 100, 0, 0),
+(20865, 1, 3, 227.53447, -192.88065, -10.105654, 100, 0, 0),
+(20865, 1, 4, 234.71745, -166.73166, -10.107577, 100, 0, 0),
+(20865, 1, 5, 274.492, -160.3677, -10.11127, 100, 1, 2086501),
+(20865, 2, 1, 274.492, -160.3677, -10.11127, 100, 1, 5),
+(20865, 2, 2, 230.67825, -159.68645, -10.113051, 100, 0, 0),
+(20865, 2, 3, 230.01398, -122.99717, -10.118055, 100, 0, 0),
+(20865, 2, 4, 260.8361, -119.30777, -10.123237, 100, 0, 0),
+(20865, 2, 5, 274.492,-160.3677,-10.11127, 100, 1, 2086501),
+(20865, 3, 1, 274.492, -160.3677, -10.11127, 100, 1, 5),
+(20865, 3, 2, 246.39204, -144.1044, -10.109891, 100, 0, 0),
+(20865, 3, 3, 216.76047, -123.82127, -10.108683, 100, 0, 0),
+(20865, 3, 4, 202.98213, -110.55506, -10.123076, 100, 0, 0),
+(20865, 3, 5, 194.93211, -130.28767, -10.12011, 100, 0, 0),
+(20865, 3, 6, 194.4479, -140.82317, -10.118727, 100, 0, 0),
+(20865, 3, 7, 224.49347, -142.0825, -10.110895, 100, 0, 0),
+(20865, 3, 8, 253.40977, -160.71367, -10.1047535, 100, 0, 0),
+(20865, 3, 9, 274.492, -160.3677, -10.11127, 100, 1, 2086501);
+
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
@@ -354,6 +375,15 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+64, 20879), (@CGUID+64, 20880), -- Eredar Soul-Eater, Eredar Deathbringer
 (@CGUID+67, 20881), (@CGUID+67, 20883); -- Unbound Devastator, Spiteful Temptress
 
+DELETE FROM creature_spawn_data WHERE Id IN (2086501);
+INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
+-- Protean Horror
+(@CGUID+15, 2086501);
+
+DELETE FROM creature_spawn_data_template WHERE Entry IN (2086501);
+INSERT INTO `creature_spawn_data_template` (`Entry`, `RelayId`, `StringId`, `Name`) VALUES 
+(2086501, @RELAYID+1, 0, 'Protean Horror - Start relayscript on spawn');
+
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 15384, 552, 3, 466.582, -126.723, 43.1834, 3.7001, 7200, 7200, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
 (@CGUID+2, 20857, 552, 3, 101.977, -2.98757, -10.1691, 0.20944, 7200, 7200, 0, 0), -- Arcatraz Defender
@@ -369,7 +399,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+12, 20865, 552, 3, 219.948, 22.4258, 48.3374, 3.14979, 7200, 7200, 0, 2), -- Protean Horror
 (@CGUID+13, 20865, 552, 3, 285.555, 40.5121, 22.4412, 0.179863, 7200, 7200, 0, 2), -- Protean Horror
 (@CGUID+14, 20865, 552, 3, 278.648, -12.6903, 22.4479, 1.41948, 7200, 7200, 0, 2), -- Protean Horror
-(@CGUID+15, 20865, 552, 3, 253.873, -148.56, -10.1103, 2.60445, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+15, 20865, 552, 3, 274.55026,-161.28899,-10.110444, 2.60, 7200, 7200, 0, 0), -- Protean Horror
 (@CGUID+16, 20865, 552, 3, 301.17, 71.9341, 22.4508, 4.70266, 7200, 7200, 0, 2), -- Protean Horror
 (@CGUID+17, 20865, 552, 3, 212.919, 6.28938, -7.38507, 0.311741, 7200, 7200, 0, 0), -- Protean Horror
 (@CGUID+18, 20865, 552, 3, 208.762, 11.0853, -7.38507, 6.00414, 7200, 7200, 0, 0), -- Protean Horror
@@ -784,19 +814,26 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- DBSCRIPTS
 -- =========
 
--- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+14;
+INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
+-- Protean Horror 1 - 3 different paths
+(@RELAYID+1, 1, @RELAYID+2, 0, 'Protean Horror - Waypoint Path 1'),
+(@RELAYID+1, 1, @RELAYID+3, 0, 'Protean Horror - Waypoint Path 1'),
+(@RELAYID+1, 1, @RELAYID+4, 0, 'Protean Horror - Waypoint Path 1');
 
--- DELETE FROM dbscripts_on_creature_movement WHERE id IN (2086401);
--- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+37;
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Protean Horror - on spawn random waypoint movement (3 possible paths)
+(@RELAYID+1,0,0,45,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - choose random path'),
+-- Path 1
+(@RELAYID+2,0,0,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 1'),
+(@RELAYID+3,0,0,20,2,2,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 2'),
+(@RELAYID+4,0,0,20,2,3,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 3');
+
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2086501);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(2086501, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Horror - choose random path');
+
 -- Protean Nightmare
 -- Todo: 
 -- SGGUID+6 and SGGUID+7 will remove formation and let every group member have rnd movement before switching back to formation and continue waypoint rotation
@@ -804,4 +841,16 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- (2086401, 0, 1, 20, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Nightmare - Change to Movement RND'),
 -- (2086401, 19000, 1, 51, 150, @SGGUID+6, 0, 0, 0, 0, 0, 3, 0, 0, 3, 0, 0, 0, 'Protean Nightmare - Create Formation'),
 -- (2086401, 20000, 1, 20, @SGGUID+6, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Nightmare - Change to Waypoint Movement');
+
+-- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
+
+
 
