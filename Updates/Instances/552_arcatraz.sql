@@ -302,11 +302,13 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (20865, 1, 3, 227.53447, -192.88065, -10.105654, 100, 0, 0),
 (20865, 1, 4, 234.71745, -166.73166, -10.107577, 100, 0, 0),
 (20865, 1, 5, 274.492, -160.3677, -10.11127, 100, 1, 2086501),
+-- Protean Horror 01 - Path 2
 (20865, 2, 1, 274.492, -160.3677, -10.11127, 100, 1, 5),
 (20865, 2, 2, 230.67825, -159.68645, -10.113051, 100, 0, 0),
 (20865, 2, 3, 230.01398, -122.99717, -10.118055, 100, 0, 0),
 (20865, 2, 4, 260.8361, -119.30777, -10.123237, 100, 0, 0),
 (20865, 2, 5, 274.492,-160.3677,-10.11127, 100, 1, 2086501),
+-- Protean Horror 01 - Path 3
 (20865, 3, 1, 274.492, -160.3677, -10.11127, 100, 1, 5),
 (20865, 3, 2, 246.39204, -144.1044, -10.109891, 100, 0, 0),
 (20865, 3, 3, 216.76047, -123.82127, -10.108683, 100, 0, 0),
@@ -315,7 +317,37 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (20865, 3, 6, 194.4479, -140.82317, -10.118727, 100, 0, 0),
 (20865, 3, 7, 224.49347, -142.0825, -10.110895, 100, 0, 0),
 (20865, 3, 8, 253.40977, -160.71367, -10.1047535, 100, 0, 0),
-(20865, 3, 9, 274.492, -160.3677, -10.11127, 100, 1, 2086501);
+(20865, 3, 9, 274.492, -160.3677, -10.11127, 100, 1, 2086501),
+-- Protean Horror 02 - Path 1 
+(20865, 4, 1, 220.35661, -161.02452, -10.113402, 100, 1, 5),
+(20865, 4, 2, 236.75801, -193.39262, -10.107179, 100, 0, 0),
+(20865, 4, 3, 260.3886, -194.68185, -10.105082, 100, 0, 0),
+(20865, 4, 4, 268.60522, -158.09924, -10.105517, 100, 0, 0),
+(20865, 4, 5, 237.7268, -160.15494, -10.101749, 100, 0, 0),
+(20865, 4, 6, 220.80006, -160.14894, -10.113282, 100, 1, 2086502),
+-- Protean Horror 02 - Path 2
+(20865, 5, 1, 220.35661, -161.02452, -10.113402, 100, 1, 5),
+(20865, 5, 2, 202.58867, -149.75804, -10.114253, 100, 0, 0),
+(20865, 5, 3, 202.54631, -119.9808, -10.119678, 100, 0, 0),
+(20865, 5, 4, 235.29565, -126.66605, -10.1168585, 100, 0, 0),
+(20865, 5, 5, 260.4425, -120.10798, -10.123238, 100, 0, 0),
+(20865, 5, 6, 261.34445, -148.69566, -10.109158, 100, 0, 0),
+(20865, 5, 7, 220.35661, -161.02452, -10.113402, 100, 1, 2086502),
+-- Protean Horror 03 - Path 3
+(20865, 6, 1, 220.35661, -161.02452, -10.113402, 100, 1, 5),
+(20865, 6, 2, 220.80006, -160.14894, -10.113282, 100, 0, 0),
+(20865, 6, 3, 228.45674, -182.32353, -0.4047474, 100, 0, 0),
+(20865, 6, 4, 242.84274, -189.01254, 6.2220397, 100, 0, 0),
+(20865, 6, 5, 258.3724, -185.33528, 13.020767, 100, 0, 0),
+(20865, 6, 6, 267.94284, -170.10384, 20.863707, 100, 0, 0),
+(20865, 6, 7, 267.90543, -139.87071, 22.630386, 100, 0, 0),
+(20865, 6, 8, 267.39816, -90.36618, 22.497723, 100, 0, 0),
+(20865, 6, 9, 267.5015, -100.45144, 22.546911, 100, 0, 0),
+(20865, 6, 10, 267.20602, -169.32367, 21.112097, 100, 0, 0),
+(20865, 6, 11, 258.33258, -183.84918, 13.519743, 100, 0, 0),
+(20865, 6, 12, 243.24022, -187.99068, 6.286567, 100, 0, 0),
+(20865, 6, 13, 229.67354, -182.05469, -0.16981333, 100, 0, 0),
+(20865, 6, 14, 220.35661, -161.02452, -10.113402, 100, 1, 2086502);
 
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 
@@ -375,14 +407,17 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+64, 20879), (@CGUID+64, 20880), -- Eredar Soul-Eater, Eredar Deathbringer
 (@CGUID+67, 20881), (@CGUID+67, 20883); -- Unbound Devastator, Spiteful Temptress
 
-DELETE FROM creature_spawn_data WHERE Id IN (2086501);
+DELETE FROM creature_spawn_data WHERE Id IN (2086501, 2086501);
 INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
 -- Protean Horror
-(@CGUID+15, 2086501);
+(@CGUID+15, 2086501),
+(@CGUID+39, 2086502);
 
 DELETE FROM creature_spawn_data_template WHERE Entry IN (2086501);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `RelayId`, `StringId`, `Name`) VALUES 
-(2086501, @RELAYID+1, 0, 'Protean Horror - Start relayscript on spawn');
+(2086501, @RELAYID+1, 0, 'Protean Horror - Start relayscript on spawn'),
+(2086502, @RELAYID+5, 0, 'Protean Horror - Start relayscript on spawn');
+
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 15384, 552, 3, 466.582, -126.723, 43.1834, 3.7001, 7200, 7200, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
@@ -423,7 +458,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+36, 0, 552, 3, 232.225, -138.710, -10.111, 2.40855, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+37, 0, 552, 3, 244.464, -156.903, -10.0211, 2.56403, 7200, 7200, 8, 1), -- spawn_group_entry
 (@CGUID+38, 0, 552, 3, 257.83023,-125.83658,-10.123239, 0.9138, 7200, 7200, 0, 2), -- spawn_group_entry
--- PLEASE RE-USE 39
+(@CGUID+39, 20865, 552, 3, 220.35661,-161.02452,-10.113402, 2.60445, 7200, 7200, 0, 0), -- Protean Horror
 -- PLEASE RE-USE 40
 (@CGUID+41, 20869, 552, 3, 264.2865, -61.32112, 22.45335, 5.288348, 7200, 7200, 0, 0), -- Arcatraz Sentinel
 (@CGUID+42, 20869, 552, 3, 253.942, 131.8811, 22.39496, 0.7679449, 7200, 7200, 0, 0), -- Arcatraz Sentinel
@@ -814,25 +849,36 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+14;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Protean Horror 1 - 3 different paths
 (@RELAYID+1, 1, @RELAYID+2, 0, 'Protean Horror - Waypoint Path 1'),
-(@RELAYID+1, 1, @RELAYID+3, 0, 'Protean Horror - Waypoint Path 1'),
-(@RELAYID+1, 1, @RELAYID+4, 0, 'Protean Horror - Waypoint Path 1');
+(@RELAYID+1, 1, @RELAYID+3, 0, 'Protean Horror - Waypoint Path 2'),
+(@RELAYID+1, 1, @RELAYID+4, 0, 'Protean Horror - Waypoint Path 3'),
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+37;
+(@RELAYID+2, 1, @RELAYID+6, 0, 'Protean Horror - Waypoint Path 4'),
+(@RELAYID+2, 1, @RELAYID+7, 0, 'Protean Horror - Waypoint Path 5'),
+(@RELAYID+2, 1, @RELAYID+8, 0, 'Protean Horror - Waypoint Path 6');
+
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+8;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Protean Horror - on spawn random waypoint movement (3 possible paths)
 (@RELAYID+1,0,0,45,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - choose random path'),
 -- Path 1
 (@RELAYID+2,0,0,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 1'),
 (@RELAYID+3,0,0,20,2,2,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 2'),
-(@RELAYID+4,0,0,20,2,3,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 3');
+(@RELAYID+4,0,0,20,2,3,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 3'),
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (2086501);
+(@RELAYID+5,0,0,45,0,@RELAYID+2,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - choose random path'),
+-- Path 1
+(@RELAYID+6,0,0,20,2,4,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 4'),
+(@RELAYID+7,0,0,20,2,5,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 5'),
+(@RELAYID+8,0,0,20,2,6,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 6');
+
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2086501, 2086502);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(2086501, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Horror - choose random path');
+(2086501, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Horror - choose random path'),
+(2086502, 0, 0, 45, 0, @RELAYID+2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Horror - choose random path');
 
 -- Protean Nightmare
 -- Todo: 
