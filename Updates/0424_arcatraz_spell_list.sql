@@ -110,7 +110,7 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 DELETE FROM `creature_spell_list` WHERE `Id` IN (2139501, 2160901);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (2139501, 1, 36796, 0, -1, 1, 0, 1, 0, 3000, 15000, 3000, 15000, 'Protean Spawn - Acidic Biteh - current'),
-(2160901, 1, 36796, 0, -1, 1, 0, 1, 0, 3000, 15000, 3000, 15000, 'Protean Spawn - Acidic Biteh - current'),
+(2160901, 1, 36796, 0, -1, 1, 0, 1, 0, 3000, 15000, 3000, 15000, 'Protean Spawn - Acidic Biteh - current');
 
 UPDATE `creature_template` SET `SpellList` = 2139501 WHERE `entry` = 21395;
 UPDATE `creature_template` SET `SpellList` = 2160901 WHERE `entry` = 21609;

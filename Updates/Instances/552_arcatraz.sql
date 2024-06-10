@@ -784,7 +784,6 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+4, 1, 'Arcatraz - Warder/Defender Corpses - Pool 4'),
 (@PGUID+5, 1, 'Arcatraz - Warder/Defender Corpses - Pool 5'),
-(@PGUID+7, 1, 'Arcatraz - Warder/Defender Corpses - Pool 7'),
 (@PGUID+8, 1, 'Arcatraz - Warder/Defender Corpses - Pool 8'),
 (@PGUID+9, 1, 'Arcatraz - Warder/Defender Corpses - Pool 9'),
 (@PGUID+10, 1, 'Arcatraz - Warder/Defender Corpses - Pool 10'),
