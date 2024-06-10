@@ -26509,8 +26509,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2134601','21346','11','0','100','0','0','0','0','0','0','0','11','36649','0','34','38','0','0','0','0','0','0','0','Sightless Eye - Cast Sightless Eye Visual and Zone Combat Pulse on Spawn'),
 ('2134602','21346','9','0','100','1027','0','5','2400','2400','0','0','11','36646','1','0','0','0','0','0','0','0','0','0','Sightless Eye (Normal) - Cast Sightless Touch'),
 ('2134603','21346','9','0','100','1029','0','5','2400','2400','0','0','11','38815','1','0','0','0','0','0','0','0','0','0','Sightless Eye (Heroic) - Cast Sightless Touch'),
--- Protean Spawn 21395
-('2139501','21395','9','0','100','1025','0','5','8000','12000','0','0','11','36796','1','0','0','0','0','0','0','0','0','0','Protean Spawn - Cast Acidic Bite'),
+-- Protean Spawn 21395 - spell_list
 -- Negaton Field
 ('2141401','21414','11','0','100','2','0','0','0','0','0','0','11','36728','0','0','41','20000','0','0','0','0','0','0','Negaton Field (Normal) - Cast Negaton Field and Delayed Despawn on Spawn'),
 ('2141402','21414','11','0','100','4','0','0','0','0','0','0','11','38833','0','0','41','20000','0','0','0','0','0','0','Negaton Field (Heroic) - Cast Negaton Field and Delayed Despawn on Spawn'),

@@ -97,3 +97,20 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2086801 WHERE `entry` = 20868;
 UPDATE `creature_template` SET `SpellList` = 2159301 WHERE `entry` = 21593;
+
+
+-- Protean Spawn
+DELETE FROM `creature_template_spells` WHERE `entry` IN (21395, 21609);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2139501, 2160901);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2139501, 'The Arcatraz - Protean Spawn - Normal', 0, 0),
+(2160901, 'The Arcatraz - Protean Spawn - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2139501, 2160901);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2139501, 1, 36796, 0, -1, 1, 0, 1, 0, 3000, 15000, 3000, 15000, 'Protean Spawn - Acidic Biteh - current'),
+(2160901, 1, 36796, 0, -1, 1, 0, 1, 0, 3000, 15000, 3000, 15000, 'Protean Spawn - Acidic Biteh - current'),
+
+UPDATE `creature_template` SET `SpellList` = 2139501 WHERE `entry` = 21395;
+UPDATE `creature_template` SET `SpellList` = 2160901 WHERE `entry` = 21609;
