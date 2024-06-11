@@ -11,28 +11,20 @@ EndDBScriptData */
 SET @CGUID := 5520000; -- creatures
 SET @OGUID := 5520000; -- gameobjects
 SET @PGUID := 48900; -- pools
+SET @SGGUID := 5520000; -- spawn_groups
+SET @STRINGID := 5520000; -- used for StringID's
+SET @RELAYID := 5520000; -- used for dbscript_on_relay
+
 
 -- =========
 -- CREATURES
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(@CGUID+10, 1, 218.647, 8.70929, -7.46839, 0.240802, 0, 0),
-(@CGUID+10, 2, 223.847, -1.61805, -8.21044, 5.04115, 0, 0),
-(@CGUID+10, 3, 224.021, -12.193, -9.42147, 4.71993, 0, 0),
-(@CGUID+10, 4, 218.005, -17.9646, -10.1091, 3.90625, 0, 0),
-(@CGUID+10, 5, 211.044, -16.0591, -10.0852, 2.75329, 0, 0),
-(@CGUID+10, 6, 194.756, -1.59263, -10.1037, 2.45955, 0, 0),
-(@CGUID+10, 7, 193.06, 5.98199, -10.1037, 3.41381, 30000, 0),
-(@CGUID+10, 8, 184.626, 9.86983, -10.0783, 2.69596, 0, 0),
-(@CGUID+10, 9, 183.575, 14.7281, -10.1035, 1.83987, 0, 0),
-(@CGUID+10, 10, 188.755, 21.1087, -9.4469, 0.761518, 0, 0),
-(@CGUID+10, 11, 196.325, 21.5705, -8.62626, 6.09908, 0, 0),
-(@CGUID+10, 12, 205.939, 18.123, -7.58292, 5.93886, 0, 0),
-(@CGUID+10, 13, 211.359, 9.43979, -7.46838, 4.86287, 0, 0),
-(@CGUID+10, 14, 206.97, 5.47909, -7.46838, 3.94081, 30000, 0),
-(@CGUID+11, 1, 202.676, -20.5791, -10.1033, 4.52311, 25000, 0),
-(@CGUID+11, 2, 202.723, -41.737, -10.102, 4.52782, 25000, 0),
+(@CGUID+9, 1, 186.8511, -17.043463, -10.028533, 100, 100, 5),
+(@CGUID+9, 2, 154.92224, 0.133047, -10.1021595, 100, 0, 0),
+(@CGUID+9, 3, 118.42155, 0.256821, -10.136737, 100, 100, 6),
+(@CGUID+9, 4, 107.806114, 1.4212999, -10.160327, 100, 100, 2),
 (@CGUID+12, 1, 206.893, 22.9948, 48.2139, 3.20196, 1, 5),
 (@CGUID+12, 2, 223.208, 22.3428, 48.3392, 0.076076, 0, 0),
 (@CGUID+12, 3, 267.205, 21.6406, 48.3504, 0.023454, 0, 0),
@@ -105,36 +97,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+14, 28, 278.467, -9.57264, 22.4435, 1.06658, 0, 0),
 (@CGUID+14, 29, 278.335, -27.7132, 22.4453, 4.67706, 0, 0),
 (@CGUID+14, 30, 282.311, -16.8075, 22.4453, 0.962126, 0, 0),
-(@CGUID+15, 1, 219.424, -159.583, -10.1097, 3.38665, 1, 5),
-(@CGUID+15, 2, 238.577, -156.829, -10.1063, 6.27142, 0, 0),
-(@CGUID+15, 3, 238.719, -188.23, -10.1073, 4.64407, 0, 0),
-(@CGUID+15, 4, 260.301, -187.154, -10.1059, 0.113109, 0, 0),
-(@CGUID+15, 5, 273.417, -155.947, -10.1106, 1.33362, 0, 0),
-(@CGUID+15, 6, 219.424, -159.583, -10.1097, 3.38665, 1000, 0),
-(@CGUID+15, 7, 221.419, -170.111, -6.53047, 4.79173, 0, 0),
-(@CGUID+15, 8, 224.955, -180.224, -2.25272, 5.1106, 0, 0),
-(@CGUID+15, 9, 231.421, -186.305, 1.38963, 5.52843, 0, 0),
-(@CGUID+15, 10, 239.355, -189.084, 5.0713, 5.94626, 0, 0),
-(@CGUID+15, 11, 246.304, -189.989, 7.90651, 6.15361, 0, 0),
-(@CGUID+15, 12, 253.009, -187.978, 10.7346, 0.291397, 0, 0),
-(@CGUID+15, 13, 262.221, -180.072, 15.6434, 0.709229, 0, 0),
-(@CGUID+15, 14, 266.804, -170.353, 20.7583, 1.1302, 0, 0),
-(@CGUID+15, 15, 267.635, -160.139, 22.7099, 1.54568, 0, 0),
-(@CGUID+15, 16, 267.699, -98.665, 22.5331, 1.65563, 0, 0),
-(@CGUID+15, 17, 267.632, -163.2, 22.7211, 4.54197, 0, 0),
-(@CGUID+15, 18, 264.619, -176.454, 17.3917, 4.49249, 0, 0),
-(@CGUID+15, 19, 254.65, -185.509, 11.5545, 3.76129, 0, 0),
-(@CGUID+15, 20, 249.937, -187.554, 9.21583, 3.34346, 0, 0),
-(@CGUID+15, 21, 237.337, -187.445, 3.76991, 3.13297, 0, 0),
-(@CGUID+15, 22, 232.253, -185.097, 1.49248, 2.70885, 0, 0),
-(@CGUID+15, 23, 226.582, -180.258, -1.86956, 2.34286, 0, 0),
-(@CGUID+15, 24, 221.052, -168.552, -7.27301, 2.13316, 0, 0),
-(@CGUID+15, 25, 219.424, -159.583, -10.1097, 3.38665, 1000, 0),
-(@CGUID+15, 26, 203.101, -150.08, -10.1142, 2.53528, 0, 0),
-(@CGUID+15, 27, 198.944, -122.772, -10.1203, 1.69883, 0, 0),
-(@CGUID+15, 28, 258.831, -121.747, -10.1231, 0.110756, 0, 0),
-(@CGUID+15, 29, 258.965, -155.837, -10.1094, 4.6158, 0, 0),
-(@CGUID+15, 30, 219.424, -159.583, -10.1097, 3.38665, 1000, 0),
 (@CGUID+16, 1, 300.643, 132.433, 22.2279, 2.36485, 1, 5),
 (@CGUID+16, 2, 280.268, 145.768, 22.2246, 2.50858, 0, 0),
 (@CGUID+16, 3, 205.459, 147.222, 22.5299, 3.09684, 0, 0),
@@ -162,60 +124,65 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+19, 15, 209.609, -48.5543, -10.0796, 1.73731, 0, 0),
 (@CGUID+19, 16, 209.366, -22.7744, -10.0799, 1.58023, 0, 0),
 (@CGUID+19, 17, 213.747, -20.2203, -10.0749, 0.5278, 0, 0),
-(@CGUID+27, 1, 200.418, -117.797, -10.1219, 3.08269, 0, 0),
-(@CGUID+27, 2, 196.68, -138.122, -10.1186, 4.56395, 0, 0),
-(@CGUID+27, 3, 197.442, -146.304, -10.1164, 4.90953, 0, 0),
-(@CGUID+27, 4, 211.091, -156.502, -10.1145, 5.49701, 0, 0),
-(@CGUID+27, 5, 229.878, -157.159, -10.1106, 6.17795, 0, 0),
-(@CGUID+27, 6, 235.302, -161.837, -10.1077, 5.55199, 0, 0),
-(@CGUID+27, 7, 237.075, -172.45, -10.1063, 4.7823, 0, 0),
-(@CGUID+27, 8, 232.312, -181.701, -10.1092, 4.03774, 0, 0),
-(@CGUID+27, 9, 232.485, -190.903, -10.1075, 4.66684, 0, 0),
-(@CGUID+27, 10, 260.107, -192.488, -10.1063, 0.003934, 0, 0),
-(@CGUID+27, 11, 273.486, -175.799, -10.1063, 0.945627, 0, 0),
-(@CGUID+27, 12, 274.817, -164.848, -10.1055, 1.43493, 0, 0),
-(@CGUID+27, 13, 277.811, -152.978, -10.1134, 1.27942, 0, 0),
-(@CGUID+27, 14, 277.98, -139.473, -10.1194, 1.64227, 0, 0),
-(@CGUID+27, 15, 267.372, -132.869, -10.1209, 2.58475, 0, 0),
-(@CGUID+27, 16, 259.279, -120.859, -10.1224, 2.16378, 0, 0),
-(@CGUID+27, 17, 238.093, -122.443, -10.1224, 3.21621, 0, 0),
-(@CGUID+27, 18, 218.314, -121.632, -10.1206, 3.04186, 0, 0),
-(@CGUID+27, 19, 208.415, -118.459, -10.1192, 2.83137, 0, 0),
-(@CGUID+33, 1, 245.293, -129.894, -10.1202, 0.001575, 0, 0),
-(@CGUID+33, 2, 245.006, -144.436, -10.1122, 4.41237, 0, 0),
-(@CGUID+33, 3, 272.793, -144.85, -10.1177, 6.20622, 0, 0),
-(@CGUID+33, 4, 244.846, -143.878, -10.1128, 1.82763, 0, 0),
-(@CGUID+33, 5, 244.414, -130.212, -10.1198, 1.87239, 0, 0),
-(@CGUID+33, 6, 205.551, -130.426, -10.1177, 3.11647, 0, 0),
-(@CGUID+34, 1, 253.96, -147.831, -10.1116, 0.245833, 0, 0),
-(@CGUID+34, 2, 252.37, -174.19, -10.1034, 4.49719, 0, 0),
-(@CGUID+34, 3, 253.709, -148.432, -10.1107, 1.30455, 0, 0),
-(@CGUID+34, 4, 207.511, -153.823, -10.1137, 3.23977, 0, 0),
-(@CGUID+36, 1, 217.516, -138.434, -10.1154, 6.27844, 0, 0),
-(@CGUID+36, 2, 231.068, -138.498, -10.1133, 6.27844, 0, 0),
-(@CGUID+36, 3, 245.9, -138.568, -10.1147, 6.27844, 0, 0),
-(@CGUID+36, 4, 249.044, -142.178, -10.1141, 5.4145, 0, 0),
-(@CGUID+36, 5, 248.015, -135.272, -10.117, 1.62888, 0, 0),
-(@CGUID+36, 6, 242.028, -142.216, -10.1126, 3.8712, 0, 0),
-(@CGUID+36, 7, 248.264, -141.626, -10.114, 0.026671, 0, 0),
-(@CGUID+36, 8, 241.88, -135.16, -10.1154, 2.28076, 0, 0),
-(@CGUID+36, 9, 246.127, -138.66, -10.1154, 5.49697, 0, 0),
-(@CGUID+36, 10, 231.605, -138.778, -10.1132, 3.12899, 0, 0),
-(@CGUID+36, 11, 218.07, -139.14, -10.1146, 3.08972, 0, 0),
-(@CGUID+36, 12, 213.694, -135.836, -10.1174, 2.42214, 0, 0),
-(@CGUID+36, 13, 221.123, -142.049, -10.1147, 5.603, 0, 0),
-(@CGUID+36, 14, 214.64, -142.814, -10.1147, 3.30178, 0, 0),
-(@CGUID+36, 15, 221.028, -136.064, -10.1147, 0.729604, 0, 0),
-(@CGUID+39, 1, 259.678, -138.915, -10.1176, 2.44157, 0, 0),
-(@CGUID+39, 2, 256.588, -142.08, -10.1148, 3.95346, 0, 0),
-(@CGUID+39, 3, 262.804, -141.052, -10.1162, 0.163913, 0, 0),
-(@CGUID+39, 4, 262.346, -135.71, -10.1191, 1.64832, 0, 0),
-(@CGUID+39, 5, 259.746, -138.643, -10.1184, 1.55407, 0, 0),
-(@CGUID+39, 6, 259.407, -121.773, -10.1228, 1.55799, 0, 0),
-(@CGUID+39, 7, 262.854, -117.648, -10.1228, 0.874698, 0, 0),
-(@CGUID+39, 8, 263.16, -126.043, -10.1228, 4.74278, 0, 0),
-(@CGUID+39, 9, 251.495, -121.829, -10.1228, 2.90103, 0, 0),
-(@CGUID+39, 10, 259.801, -121.404, -10.1228, 0.101081, 0, 0),
+-- reworked
+(@CGUID+33, 1, 276.79434,-145.29054,-10.11652, 100, 0, 0),
+(@CGUID+33, 2, 256.17062,-143.82663,-10.110913, 100, 0, 0),
+(@CGUID+33, 3, 245.10881,-143.02563,-10.110268, 100, 0, 0),
+(@CGUID+33, 4, 245.43143,-128.669,-10.117723, 100, 0, 0),
+(@CGUID+33, 5, 221.3861,-128.95544,-10.114537, 100, 0, 0),
+(@CGUID+33, 6, 207.70795,-129.07368,-10.109515, 100, 0, 0),
+(@CGUID+34, 1, 208.53522,-152.27895,-10.112484, 100, 0, 0),
+(@CGUID+34, 2, 221.87071,-152.57721,-10.11229, 100, 0, 0),
+(@CGUID+34, 3, 237.18454,-152.618,-10.10515, 100, 0, 0),
+(@CGUID+34, 4, 253.95305,-152.81169,-10.106597, 100, 0, 0),
+(@CGUID+34, 5, 253.27829,-175.50299,-10.103562, 100, 0, 0),
+-- Entropic Eye / Death Watcher
+-- They have 2 waypoints, and they gonna rnd move for ~20-30 seconds at this position
+(@CGUID+36, 1, 232.48465,-138.72578,-10.11108, 100, 0, 0),
+(@CGUID+36, 2, 214.05183,-138.74442,-10.110648, 100, 0, 0),
+(@CGUID+38, 1, 257.83023,-125.83658,-10.123239, 100, 0, 0),
+(@CGUID+38, 2, 258.53995,-147.47809,-10.109458, 100, 0, 0),
+-- protean horror intro waypoints
+(@CGUID+46, 1, 176.223, 8.54549, -9.98461, 100, 0, 0),
+(@CGUID+46, 2, 157.84132,0.62546,-10.102133, 100, 0, 0),
+(@CGUID+46, 3, 140.85771,0.796949,-10.101937, 100, 0, 0),
+(@CGUID+46, 4, 123.21317,0.05694,-10.102104, 100, 0, 0),
+(@CGUID+46, 5, 88.4931,0.287307,-11.026913, 100, 100, 2),
+(@CGUID+47, 1, 183.572, 16.4955, -10.0309, 100, 0, 0),
+(@CGUID+47, 2, 157.84132,0.62546,-10.102133, 100, 0, 0),
+(@CGUID+47, 3, 140.85771,0.796949,-10.101937, 100, 0, 0),
+(@CGUID+47, 4, 123.21317,0.05694,-10.102104, 100, 0, 0),
+(@CGUID+47, 5, 88.4931,0.287307,-11.026913, 100, 100, 2),
+(@CGUID+48, 1, 185.691, 22.1126, -9.58162, 100, 0, 0),
+(@CGUID+48, 2, 157.84132,0.62546,-10.102133, 100, 0, 0),
+(@CGUID+48, 3, 140.85771,0.796949,-10.101937, 100, 0, 0),
+(@CGUID+48, 4, 123.21317,0.05694,-10.102104, 100, 0, 0),
+(@CGUID+48, 5, 88.4931,0.287307,-11.026913, 100, 100, 2),
+(@CGUID+49, 1, 189.86, 12.663, -10.0084, 100, 0, 0),
+(@CGUID+49, 2, 157.84132,0.62546,-10.102133, 100, 0, 0),
+(@CGUID+49, 3, 140.85771,0.796949,-10.101937, 100, 0, 0),
+(@CGUID+49, 4, 123.21317,0.05694,-10.102104, 100, 0, 0),
+(@CGUID+49, 5, 88.4931,0.287307,-11.026913, 100, 100, 2),
+(@CGUID+50, 1, 176.218, -8.04078, -10.0188, 100, 0, 0),
+(@CGUID+50, 2, 157.84132,0.62546,-10.102133, 100, 0, 0),
+(@CGUID+50, 3, 140.85771,0.796949,-10.101937, 100, 0, 0),
+(@CGUID+50, 4, 123.21317,0.05694,-10.102104, 100, 0, 0),
+(@CGUID+50, 5, 88.4931,0.287307,-11.026913, 100, 100, 2),
+(@CGUID+51, 1, 182.631, -12.4686, -10.0272, 100, 0, 0),
+(@CGUID+51, 2, 157.84132,0.62546,-10.102133, 100, 0, 0),
+(@CGUID+51, 3, 140.85771,0.796949,-10.101937, 100, 0, 0),
+(@CGUID+51, 4, 123.21317,0.05694,-10.102104, 100, 0, 0),
+(@CGUID+51, 5, 88.4931,0.287307,-11.026913, 100, 100, 2),
+(@CGUID+52, 1, 182.755, -19.8442, -10.0229, 100, 0, 0),
+(@CGUID+52, 2, 157.84132,0.62546,-10.102133, 100, 0, 0),
+(@CGUID+52, 3, 140.85771,0.796949,-10.101937, 100, 0, 0),
+(@CGUID+52, 4, 123.21317,0.05694,-10.102104, 100, 0, 0),
+(@CGUID+52, 5, 88.4931,0.287307,-11.026913, 100, 100, 2),
+(@CGUID+53, 1, 191.813, -17.5303, -10.0188, 100, 0, 0),
+(@CGUID+53, 2, 157.84132,0.62546,-10.102133, 100, 0, 0),
+(@CGUID+53, 3, 140.85771,0.796949,-10.101937, 100, 0, 0),
+(@CGUID+53, 4, 123.21317,0.05694,-10.102104, 100, 0, 0),
+(@CGUID+53, 5, 88.4931,0.287307,-11.026913, 100, 100, 2),
 (@CGUID+58, 1, 293.068, 9.06769, 22.4412, 5.20909, 0, 0),
 (@CGUID+58, 2, 299.217, 9.39975, 22.4412, 5.20909, 0, 0),
 (@CGUID+58, 3, 289.77, 4.2795, 22.4412, 5.20909, 0, 0),
@@ -328,14 +295,59 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+150, 10, 140.21, 164.22, 22.4401, 3.68492, 0, 0),
 (@CGUID+150, 11, 125.306, 157.433, 22.4401, 3.68492, 0, 0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (20865,20864);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
--- Protean Horror
-(20865, 1, 1, 123.2132, 0.05693996, -10.1021, 100, 0, 2086501),
-(20865, 1, 2, 82.020, 0.306, -11.026, 100, 0, 0),
--- Protean Nightmare
-(20864, 1, 1, 123.2132, 0.05693996, -10.1021, 100, 0, 0),
-(20864, 1, 2, 82.020, 0.306, -11.026, 100, 0, 0);
+-- Protean Horror 01 - Path 1 
+(20865, 1, 1, 274.492, -160.3677, -10.11127, 100, 1, 5),
+(20865, 1, 2, 261.6127, -189.98672, -10.10487, 100, 0, 0),
+(20865, 1, 3, 227.53447, -192.88065, -10.105654, 100, 0, 0),
+(20865, 1, 4, 234.71745, -166.73166, -10.107577, 100, 0, 0),
+(20865, 1, 5, 274.492, -160.3677, -10.11127, 100, 1, 2086501),
+-- Protean Horror 01 - Path 2
+(20865, 2, 1, 274.492, -160.3677, -10.11127, 100, 1, 5),
+(20865, 2, 2, 230.67825, -159.68645, -10.113051, 100, 0, 0),
+(20865, 2, 3, 230.01398, -122.99717, -10.118055, 100, 0, 0),
+(20865, 2, 4, 260.8361, -119.30777, -10.123237, 100, 0, 0),
+(20865, 2, 5, 274.492,-160.3677,-10.11127, 100, 1, 2086501),
+-- Protean Horror 01 - Path 3
+(20865, 3, 1, 274.492, -160.3677, -10.11127, 100, 1, 5),
+(20865, 3, 2, 246.39204, -144.1044, -10.109891, 100, 0, 0),
+(20865, 3, 3, 216.76047, -123.82127, -10.108683, 100, 0, 0),
+(20865, 3, 4, 202.98213, -110.55506, -10.123076, 100, 0, 0),
+(20865, 3, 5, 194.93211, -130.28767, -10.12011, 100, 0, 0),
+(20865, 3, 6, 194.4479, -140.82317, -10.118727, 100, 0, 0),
+(20865, 3, 7, 224.49347, -142.0825, -10.110895, 100, 0, 0),
+(20865, 3, 8, 253.40977, -160.71367, -10.1047535, 100, 0, 0),
+(20865, 3, 9, 274.492, -160.3677, -10.11127, 100, 1, 2086501),
+-- Protean Horror 02 - Path 1 
+(20865, 4, 1, 220.35661, -161.02452, -10.113402, 100, 1, 5),
+(20865, 4, 2, 236.75801, -193.39262, -10.107179, 100, 0, 0),
+(20865, 4, 3, 260.3886, -194.68185, -10.105082, 100, 0, 0),
+(20865, 4, 4, 268.60522, -158.09924, -10.105517, 100, 0, 0),
+(20865, 4, 5, 237.7268, -160.15494, -10.101749, 100, 0, 0),
+(20865, 4, 6, 220.80006, -160.14894, -10.113282, 100, 1, 2086502),
+-- Protean Horror 02 - Path 2
+(20865, 5, 1, 220.35661, -161.02452, -10.113402, 100, 1, 5),
+(20865, 5, 2, 202.58867, -149.75804, -10.114253, 100, 0, 0),
+(20865, 5, 3, 202.54631, -119.9808, -10.119678, 100, 0, 0),
+(20865, 5, 4, 235.29565, -126.66605, -10.1168585, 100, 0, 0),
+(20865, 5, 5, 260.4425, -120.10798, -10.123238, 100, 0, 0),
+(20865, 5, 6, 261.34445, -148.69566, -10.109158, 100, 0, 0),
+(20865, 5, 7, 220.35661, -161.02452, -10.113402, 100, 1, 2086502),
+-- Protean Horror 03 - Path 3
+(20865, 6, 1, 220.35661, -161.02452, -10.113402, 100, 1, 5),
+(20865, 6, 2, 220.80006, -160.14894, -10.113282, 100, 0, 0),
+(20865, 6, 3, 228.45674, -182.32353, -0.4047474, 100, 0, 0),
+(20865, 6, 4, 242.84274, -189.01254, 6.2220397, 100, 0, 0),
+(20865, 6, 5, 258.3724, -185.33528, 13.020767, 100, 0, 0),
+(20865, 6, 6, 267.94284, -170.10384, 20.863707, 100, 0, 0),
+(20865, 6, 7, 267.90543, -139.87071, 22.630386, 100, 0, 0),
+(20865, 6, 8, 267.39816, -90.36618, 22.497723, 100, 0, 0),
+(20865, 6, 9, 267.5015, -100.45144, 22.546911, 100, 0, 0),
+(20865, 6, 10, 267.20602, -169.32367, 21.112097, 100, 0, 0),
+(20865, 6, 11, 258.33258, -183.84918, 13.519743, 100, 0, 0),
+(20865, 6, 12, 243.24022, -187.99068, 6.286567, 100, 0, 0),
+(20865, 6, 13, 229.67354, -182.05469, -0.16981333, 100, 0, 0),
+(20865, 6, 14, 220.35661, -161.02452, -10.113402, 100, 1, 2086502);
 
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 
@@ -375,35 +387,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (21962, 0, 0, 1, 0, 0, '29266'); -- Udalo
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+6, @CGUID+5, 1155), -- Arcatraz Warder -> Arcatraz Warder
-(@CGUID+7, @CGUID+8, 1155), -- Arcatraz Warder -> Arcatraz Warder
-(@CGUID+2, @CGUID+3, 1155), -- Arcatraz Defender -> Arcatraz Defender
-(@CGUID+4, @CGUID+3, 1155), -- Arcatraz Defender -> Arcatraz Defender
-
--- Pack 1 - first room after intro
-(@CGUID+17, @CGUID+10, 1679), -- Protean Horror -> Protean Nightmare
-(@CGUID+18, @CGUID+10, 1679), -- Protean Horror -> Protean Nightmare
-(@CGUID+10, @CGUID+5, 1024), -- Protean Nightmare -> Arcatraz Warder (FLAG_CANT_SPAWN_IF_BOSS_DEAD)
-
--- Pack 2- first room after intro
-(@CGUID+20, @CGUID+19, 1679), -- Protean Horror -> Protean Horror
-(@CGUID+21, @CGUID+19, 1679), -- Protean Horror -> Protean Horror
-(@CGUID+22, @CGUID+19, 1679), -- Protean Horror -> Protean Horror
-(@CGUID+23, @CGUID+19, 1679), -- Protean Horror -> Protean Horror
-(@CGUID+24, @CGUID+19, 1679), -- Protean Horror -> Protean Horror
-(@CGUID+19, @CGUID+8, 1024), -- Protean Horror -> Arcatraz Warder (FLAG_CANT_SPAWN_IF_BOSS_DEAD)
-
--- Pack 3 - first room after intro
-(@CGUID+25, @CGUID+11, 1679), -- Protean Horror -> Protean Nightmare
-(@CGUID+26, @CGUID+11, 1679), -- Protean Horror -> Protean Nightmare
-(@CGUID+11, @CGUID+3, 1024), -- Protean Nightmare -> Arcatraz Defender (FLAG_CANT_SPAWN_IF_BOSS_DEAD)
-
-(@CGUID+28, @CGUID+27, 1679), -- Protean Horror -> Protean Horror
-(@CGUID+29, @CGUID+27, 1679), -- Protean Horror -> Protean Horror
-(@CGUID+30, @CGUID+27, 1679), -- Protean Horror -> Protean Horror
-(@CGUID+31, @CGUID+27, 1679), -- Protean Horror -> Protean Horror
-(@CGUID+32, @CGUID+27, 1679), -- Protean Horror -> Protean Horror
-
 (@CGUID+42, @CGUID+43, 1155), -- Arcatraz Sentinel -> Arcatraz Sentinel
 
 (@CGUID+72, @CGUID+73, 1155), -- Ethereum Slayer -> Ethereum Slayer
@@ -421,13 +404,20 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (21467, 552, 20912, 4112, 0); -- Harbinger Skyriss -> Harbinger Skyriss
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
-(@CGUID+35, 20867), (@CGUID+35, 20868), -- Death Watcher Entropic Eye
-(@CGUID+36, 20867), (@CGUID+36, 20868), -- Death Watcher Entropic Eye
-(@CGUID+37, 20867), (@CGUID+37, 20868), -- Death Watcher Entropic Eye
-(@CGUID+38, 20867), (@CGUID+38, 20868), -- Death Watcher Entropic Eye
-(@CGUID+39, 20867), (@CGUID+39, 20868), -- Death Watcher Entropic Eye
 (@CGUID+64, 20879), (@CGUID+64, 20880), -- Eredar Soul-Eater, Eredar Deathbringer
 (@CGUID+67, 20881), (@CGUID+67, 20883); -- Unbound Devastator, Spiteful Temptress
+
+DELETE FROM creature_spawn_data WHERE Id IN (2086501, 2086501);
+INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
+-- Protean Horror
+(@CGUID+15, 2086501),
+(@CGUID+39, 2086502);
+
+DELETE FROM creature_spawn_data_template WHERE Entry IN (2086501);
+INSERT INTO `creature_spawn_data_template` (`Entry`, `RelayId`, `StringId`, `Name`) VALUES 
+(2086501, @RELAYID+1, 0, 'Protean Horror - Start relayscript on spawn'),
+(2086502, @RELAYID+5, 0, 'Protean Horror - Start relayscript on spawn');
+
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 15384, 552, 3, 466.582, -126.723, 43.1834, 3.7001, 7200, 7200, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
@@ -438,44 +428,53 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+6, 20859, 552, 3, 73.3906, -16.7659, -10.0612, 0.541052, 7200, 7200, 0, 0), -- Arcatraz Warder
 (@CGUID+7, 20859, 552, 3, 76.9442, 18.8223, -10.1055, 5.68977, 7200, 7200, 0, 0), -- Arcatraz Warder
 (@CGUID+8, 20859, 552, 3, 73.8442, 17.5507, -10.0701, 5.89921, 7200, 7200, 0, 0), -- Arcatraz Warder
-(@CGUID+9, 20864, 552, 3, 108.104, 2.23135, -10.1613, 1.37852, 7200, 7200, 0, 0), -- Protean Nightmare
-(@CGUID+10, 20864, 552, 3, 208.859, 6.44106, -7.46839, 4.26597, 25, 25, 0, 2), -- Protean Nightmare
-(@CGUID+11, 20864, 552, 3, 202.329, -40.5555, -10.0961, 4.59888, 25, 25, 0, 2), -- Protean Nightmare
+(@CGUID+9, 20864, 552, 3, 186.8511, -17.043463, -10.028533, 1.75680, 10, 10, 0, 2), -- Protean Nightmare
+(@CGUID+10, 20864, 552, 3, 208.993, 6.98038, -7.38507, 0.74831, 7200, 7200, 0, 0), -- Protean Nightmare
+(@CGUID+11, 20864, 552, 3, 202.78, -41.4077, -10.0187, 5.84685, 7200, 7200, 0, 0), -- Protean Nightmare
 (@CGUID+12, 20865, 552, 3, 219.948, 22.4258, 48.3374, 3.14979, 7200, 7200, 0, 2), -- Protean Horror
 (@CGUID+13, 20865, 552, 3, 285.555, 40.5121, 22.4412, 0.179863, 7200, 7200, 0, 2), -- Protean Horror
 (@CGUID+14, 20865, 552, 3, 278.648, -12.6903, 22.4479, 1.41948, 7200, 7200, 0, 2), -- Protean Horror
-(@CGUID+15, 20865, 552, 3, 253.873, -148.56, -10.1103, 2.60445, 7200, 7200, 0, 2), -- Protean Horror
+(@CGUID+15, 20865, 552, 3, 274.55026,-161.28899,-10.110444, 2.60, 7200, 7200, 0, 0), -- Protean Horror
 (@CGUID+16, 20865, 552, 3, 301.17, 71.9341, 22.4508, 4.70266, 7200, 7200, 0, 2), -- Protean Horror
-(@CGUID+17, 20865, 552, 3, 212.562, 6.48385, -7.46839, 3.46093, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+18, 20865, 552, 3, 209.099, 10.6454, -7.4684, 4.9173, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+19, 20865, 552, 3, 208.434, -21.0154, -10.0878, 0.166969, 25, 25, 0, 2), -- Protean Horror
-(@CGUID+20, 20865, 552, 3, 206.383, -20.1627, -10.0984, 0.611504, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+21, 20865, 552, 3, 207.515, -23.0306, -10.0875, 0.361747, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+22, 20865, 552, 3, 205.901, -21.77, -10.0973, 0.187389, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+23, 20865, 552, 3, 204.041, -20.9714, -10.1009, 0.0931411, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+24, 20865, 552, 3, 205.502, -23.8515, -10.0948, 1.00813, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+25, 20865, 552, 3, 201.214, -36.4609, -10.0973, 3.43722, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+26, 20865, 552, 3, 205.26, -45.3562, -10.1119, 3.64711, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+27, 20865, 552, 3, 213.449, -120.089, -10.1083, 2.4144, 7200, 7200, 0, 2), -- Protean Horror
-(@CGUID+28, 20865, 552, 3, 216.056, -119.667, -10.1204, 3.17144, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+29, 20865, 552, 3, 217.345, -121.596, -10.1199, 2.99551, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+30, 20865, 552, 3, 217.556, -118.237, -10.1212, 3.08662, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+31, 20865, 552, 3, 215.016, -121.252, -10.1204, 3.3945, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+32, 20865, 552, 3, 214.844, -118.252, -10.1188, 2.43393, 7200, 7200, 0, 0), -- Protean Horror
-(@CGUID+33, 20866, 552, 3, 220.769, -128.934, -10.1098, 0.0107276, 7200, 7200, 0, 2), -- Soul Devourer
-(@CGUID+34, 20866, 552, 3, 219.579, -152.526, -10.1123, 6.26082, 7200, 7200, 0, 2), -- Soul Devourer
-(@CGUID+35, 0, 552, 3, 266.335, -187.128, -10.1051, 4.02795, 7200, 7200, 10, 1), -- creature_spawn_entry
-(@CGUID+36, 0, 552, 3, 217.965, -138.522, -10.1157, 1.50322, 7200, 7200, 0, 2), -- creature_spawn_entry
-(@CGUID+37, 0, 552, 3, 244.258, -156.479, -10.104, 4.38315, 7200, 7200, 10, 1), -- creature_spawn_entry
-(@CGUID+38, 0, 552, 3, 254.91, -125.087, -10.1232, 2.89044, 7200, 7200, 10, 1), -- creature_spawn_entry
-(@CGUID+39, 0, 552, 3, 259.678, -138.915, -10.1176, 2.33554, 7200, 7200, 0, 2), -- creature_spawn_entry
+(@CGUID+17, 20865, 552, 3, 212.919, 6.28938, -7.38507, 0.311741, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+18, 20865, 552, 3, 208.762, 11.0853, -7.38507, 6.00414, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+19, 20865, 552, 3, 203.914, -56.3795, -10.0144, 0.123065, 25, 25, 0, 0), -- Protean Horror
+(@CGUID+20, 20865, 552, 3, 200.566, -55.4827, -10.0178, 6.0259, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+21, 20865, 552, 3, 203.65, -60.4947, -10.0155, 0.499034, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+22, 20865, 552, 3, 202.513, -57.6073, -10.0839, 6.217, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+23, 20865, 552, 3, 198.804, -58.2479, -10.0106, 6.16678, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+24, 20865, 552, 3, 200.716, -60.7629, -10.0145, 0.159309, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+25, 20865, 552, 3, 201.551, -36.3583, -10.0187, 5.67892, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+26, 20865, 552, 3, 205.741, -44.8498, -10.0129, 3.64967, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+27, 20865, 552, 3, 200.498, -118.427, -10.0377, 3.10863, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+28, 20865, 552, 3, 200.933, -116.515, -10.0799, 3.51618, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+29, 20865, 552, 3, 200.014, -115.796, -10.0399, 3.40614, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+30, 20865, 552, 3, 201.692, -113.662, -10.0399, 3.59385, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+31, 20865, 552, 3, 200.498, -118.427, -10.0377, 3.10863, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+32, 20865, 552, 3, 203.556, -117.874, -10.0371, 3.46516, 7200, 7200, 0, 0), -- Protean Horror
+(@CGUID+33, 20866, 552, 3, 276.79434, -145.29054, -10.11652, 3.0579, 7200, 7200, 0, 4), -- Soul Devourer
+(@CGUID+34, 20866, 552, 3, 208.53522,-152.27895,-10.112484, 6.1362, 7200, 7200, 0, 4), -- Soul Devourer
+(@CGUID+35, 0, 552, 3, 265.94, -184.657, -10.105, 0.148303, 7200, 7200, 8, 1), -- spawn_group_entry
+(@CGUID+36, 0, 552, 3, 232.225, -138.710, -10.111, 2.40855, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+37, 0, 552, 3, 244.464, -156.903, -10.0211, 2.56403, 7200, 7200, 8, 1), -- spawn_group_entry
+(@CGUID+38, 0, 552, 3, 257.83023,-125.83658,-10.123239, 0.9138, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+39, 20865, 552, 3, 220.35661,-161.02452,-10.113402, 2.60445, 7200, 7200, 0, 0), -- Protean Horror
 -- PLEASE RE-USE 40
 (@CGUID+41, 20869, 552, 3, 264.2865, -61.32112, 22.45335, 5.288348, 7200, 7200, 0, 0), -- Arcatraz Sentinel
 (@CGUID+42, 20869, 552, 3, 253.942, 131.8811, 22.39496, 0.7679449, 7200, 7200, 0, 0), -- Arcatraz Sentinel
 (@CGUID+43, 20869, 552, 3, 255.4978, 158.9143, 22.36194, 5.410521, 7200, 7200, 0, 0), -- Arcatraz Sentinel
 (@CGUID+44, 20869, 552, 3, 336.5143, 27.42666, 48.42604, 3.839724, 7200, 7200, 0, 0), -- Arcatraz Sentinel
 (@CGUID+45, 20869, 552, 3, 395.413, 18.19484, 48.29602, 2.495821, 7200, 7200, 0, 0), -- Arcatraz Sentinel
--- PLEASE RE-USE 46-56
+-- Entrance RP Protean Horror
+(@CGUID+46, 20865, 552, 3, 176.223, 8.54549, -9.98461, 4.57276, 1, 1, 0, 2), -- Protean Horror
+(@CGUID+47, 20865, 552, 3, 183.572, 16.4955, -10.0309, 0.890118, 1, 1, 0, 2), -- Protean Horror
+(@CGUID+48, 20865, 552, 3, 185.691, 22.1126, -9.58162, 1.22173, 1, 1, 0, 2), -- Protean Horror
+(@CGUID+49, 20865, 552, 3, 189.86, 12.663, -10.0084, 3.03687, 1, 1, 0, 2), -- Protean Horror
+(@CGUID+50, 20865, 552, 3, 176.218, -8.04078, -10.0188, 4.01426, 1, 1, 0, 2), -- Protean Horror
+(@CGUID+51, 20865, 552, 3, 182.631, -12.4686, -10.0272, 1.58825, 1, 1, 0, 2), -- Protean Horror
+(@CGUID+52, 20865, 552, 3, 182.755, -19.8442, -10.0229, 5.21853, 1, 1, 0, 2), -- Protean Horror
+(@CGUID+53, 20865, 552, 3, 191.813, -17.5303, -10.0188, 3.28122, 1, 1, 0, 2), -- Protean Horror
+-- PLEASE RE-USE 54-56
 (@CGUID+57, 20870, 552, 3, 275.788, -123.343, -10.1232, 6.13695, 86400, 86400, 5, 1), -- Zereketh the Unbound
 (@CGUID+58, 20873, 552, 3, 292.552, 8.8547, 22.4412, 5.35439, 7200, 7200, 0, 2), -- Negaton Warp-Master
 (@CGUID+59, 20873, 552, 3, 274.324, 38.2864, 22.4412, 2.15167, 7200, 7200, 0, 2), -- Negaton Warp-Master
@@ -515,20 +514,20 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+93, 21186, 552, 3, 115.734, -1.29285, -10.0188, 0.261799, 7200, 7200, 0, 0), -- Arcane Warder Target
 (@CGUID+94, 21186, 552, 3, 114.841, 2.44889, -10.0188, 2.98451, 7200, 7200, 0, 0), -- Arcane Warder Target
 (@CGUID+95, 21186, 552, 3, 118.098, 0.268171, -10.0188, 1.69297, 7200, 7200, 0, 0), -- Arcane Warder Target
-(@CGUID+96, 21303, 552, 3, 197.795, -86.5381, -10.1018, 5.90384, 86400, 86400, 0, 0), -- Defender Corpse
-(@CGUID+97, 21303, 552, 3, 206.342, -98.2784, -10.0262, 2.6529, 86400, 86400, 0, 0), -- Defender Corpse
-(@CGUID+98, 21303, 552, 3, 213.626, -161.424, -10.0346, 2.74017, 86400, 86400, 0, 0), -- Defender Corpse
+(@CGUID+96, 0, 552, 3, 197.955, -86.8133, -10.0174, 5.8294, 86400, 86400, 0, 0), -- spawn_group_entry
+(@CGUID+97, 0, 552, 3, 206.342, -98.2784, -10.0262, 2.6529, 86400, 86400, 0, 0), -- spawn_group_entry
+(@CGUID+98, 0, 552, 3, 213.626, -161.424, -10.0346, 2.74017, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+99, 21303, 552, 3, 273.438, -64.07, 22.4534, 22.4534, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+100, 21303, 552, 3, 270.819, -45.4794, 22.4534, 4.46804, 86400, 86400, 0, 0), -- Defender Corpse
-(@CGUID+101, 21303, 552, 3, 226.184, -162.096, -10.0352, 0.349066, 86400, 86400, 0, 0), -- Defender Corpse
-(@CGUID+102, 21303, 552, 3, 245.982, -194.617, -10.0217, 0.872665, 86400, 86400, 0, 0), -- Defender Corpse
+(@CGUID+101, 0, 552, 3, 229.997, -162.192, -10.0346, 0.0698132, 86400, 86400, 0, 0), -- spawn_group_entry
+(@CGUID+102, 0, 552, 3, 276.173, -179.818, -10.0223, 1.43117, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+103, 21303, 552, 3, 285.416, 127.127, 22.2951, 4.69494, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+104, 21303, 552, 3, 253.689, 139.868, 22.4121, 2.30383, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+105, 21303, 552, 3, 253.951, 155.001, 22.3806, 4.93928, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+106, 21303, 552, 3, 298.848, 151.748, 22.3105, 5.70723, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+107, 21303, 552, 3, 306.976, 141.112, 22.2286, 3.0285, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+108, 21303, 552, 3, 272.501, -40.1927, 22.509, 2.9147, 86400, 86400, 0, 0), -- Defender Corpse
-(@CGUID+109, 21303, 552, 3, 232.754, -198.125, -10.023, 5.61996, 86400, 86400, 0, 0), -- Defender Corpse
+(@CGUID+109, 0, 552, 3, 232.754, -198.125, -10.023, 5.61996, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+110, 21303, 552, 3, 262.56, -65.5981, 22.4534, 1.50098, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+111, 21303, 552, 3, 312.929, -7.19062, 22.5245, 4.03171, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+112, 21303, 552, 3, 311.119, -5.50369, 22.5245, 1.5708, 86400, 86400, 0, 0), -- Defender Corpse
@@ -537,20 +536,19 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+115, 21303, 552, 3, 397.07, 25.3331, 48.296, 0.523599, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+116, 21303, 552, 3, 392.004, 18.3857, 48.296, 1.48353, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+117, 21303, 552, 3, 257.344, 155.568, 22.3321, 4.71239, 86400, 86400, 0, 0), -- Defender Corpse
-(@CGUID+118, 21304, 552, 3, 197.795, -86.5381, -10.1018, 5.90384, 86400, 86400, 0, 0), -- Warder Corpse
-(@CGUID+119, 21304, 552, 3, 206.342, -98.2784, -10.0262, 2.6529, 86400, 86400, 0, 0), -- Warder Corpse
-(@CGUID+120, 21304, 552, 3, 213.626, -161.424, -10.0346, 2.74017, 86400, 86400, 0, 0), -- Warder Corpse
+(@CGUID+118, 0, 552, 3, 210.114, -161.992, -10.0359, 6.12611, 86400, 86400, 0, 0), -- spawn_group_entry
+-- reuse cguid+119 - cguid+120
 (@CGUID+121, 21304, 552, 3, 273.438, -64.07, 22.4534, 22.4534, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+122, 21304, 552, 3, 270.819, -45.4794, 22.4534, 4.46804, 86400, 86400, 0, 0), -- Warder Corpse
-(@CGUID+123, 21304, 552, 3, 226.184, -162.096, -10.0352, 0.349066, 86400, 86400, 0, 0), -- Warder Corpse
-(@CGUID+124, 21304, 552, 3, 245.982, -194.617, -10.0217, 0.872665, 86400, 86400, 0, 0), -- Warder Corpse
+-- reuse +123
+-- reuse +124
 (@CGUID+125, 21304, 552, 3, 285.416, 127.127, 22.2951, 4.69494, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+126, 21304, 552, 3, 253.689, 139.868, 22.4121, 2.30383, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+127, 21304, 552, 3, 253.951, 155.001, 22.3806, 4.93928, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+128, 21304, 552, 3, 298.848, 151.748, 22.3105, 5.70723, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+129, 21304, 552, 3, 306.976, 141.112, 22.2286, 3.0285, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+130, 21304, 552, 3, 272.501, -40.1927, 22.509, 2.9147, 86400, 86400, 0, 0), -- Warder Corpse
-(@CGUID+131, 21304, 552, 3, 232.754, -198.125, -10.023, 5.61996, 86400, 86400, 0, 0), -- Warder Corpse
+-- reuse +131
 (@CGUID+132, 21304, 552, 3, 262.56, -65.5981, 22.4534, 1.50098, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+133, 21304, 552, 3, 312.929, -7.19062, 22.5245, 4.03171, 86400, 86400, 0, 0), -- Warder Corpse
 (@CGUID+134, 21304, 552, 3, 311.119, -5.50369, 22.5245, 1.5708, 86400, 86400, 0, 0), -- Warder Corpse
@@ -604,32 +602,176 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
--- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
--- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
--- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+2);
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
+(@SGGUID+1, 'The Arcatraz - Proteon Horror'),
+(@SGGUID+2, 'The Arcatraz - Proteon Nightmare');
+
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'The Arcatraz - Proteon Horror'),
+(@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'The Arcatraz - Proteon Nightmare');
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `WorldStateExpression`, `Flags`, `StringID`) VALUES
+-- Intro Researches:
+-- 9 Protean Horror (small ones) spawning in the back, respawn timer around 1 seconds, keep respawning till all Arcatraz Warders are dead
+-- Both spawn_groups 1+2 have to be dead then protean horrors stop spawning 
+(@SGGUID+1, 'The Arcatraz - Group 001 - Arcatraz Warder (2) - Right', 0, 0, 0, 0, 1, 0),
+(@SGGUID+2, 'The Arcatraz - Group 002 - Arcatraz Warder (2) - Left', 0, 0, 0, 0, 1, 0),
+-- 1 Proteon Nightmare (Big One) spawning in the back, respawn timer around 5 seconds, keep respawning till all 3 Arcatraz Defenders are dead
+(@SGGUID+3, 'The Arcatraz - Group 003 - Arcatraz Defender (3)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+4, 'The Arcatraz - Group 004 - Protean Horror (1)', 0, 0, @SGGUID+1, 0, 0, 0),
+(@SGGUID+5, 'The Arcatraz - Group 005 - Protean Nightmare (1)', 0, 0, @SGGUID+2, 0, 0, 0),
+
+(@SGGUID+6, 'The Arcatraz - Group 006 - Protean Nightmare (1) - Protean Horror (2) | Patrol 01', 0, 0, 0, 0, 1, 0),
+(@SGGUID+7, 'The Arcatraz - Group 007 - Protean Nightmare (1) - Protean Horror (2) | Patrol 02', 0, 0, 0, 0, 1, 0),
+(@SGGUID+8, 'The Arcatraz - Group 008 - Protean Horror (6) | Patrol 03', 0, 0, 0, 0, 1, 0),
+
+(@SGGUID+9, 'The Arcatraz - Group 009 - Warder/Defender Corpse', 0, 0, 0, 0, 0, 0),
+(@SGGUID+10, 'The Arcatraz - Group 010 - Warder/Defender Corpse', 0, 0, 0, 0, 0, 0),
+-- Boss Room
+(@SGGUID+11, 'The Arcatraz - Group 011 - Protean Horror (6) | Patrol 04', 0, 0, 0, 0, 1, 0),
+(@SGGUID+12, 'The Arcatraz - Group 012 - Death Watcher / Entropic Eye', 0, 0, 0, 0, 0, 0),
+
+(@SGGUID+13, 'The Arcatraz - Group 013 - Warder/Defender Corpse', 0, 1, 0, 0, 0, 0), -- 3 different spawns only 1 active
+(@SGGUID+14, 'The Arcatraz - Group 014 - Warder/Defender Corpse', 0, 1, 0, 0, 0, 0); -- 2 different spawns only 1 active
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+9, 21303, 0, 0, 0), (@SGGUID+9, 21304, 0, 0, 0), -- Defener Corpse, Warder Corpse
+(@SGGUID+10, 21303, 0, 0, 0), (@SGGUID+10, 21304, 0, 0, 0), -- Defener Corpse, Warder Corpse
+(@SGGUID+12, 20867, 1, 3, 0), (@SGGUID+12, 20868, 1, 3, 0), -- Death Watcher, Entropic Eye
+
+(@SGGUID+13, 21303, 0, 0, 0), (@SGGUID+13, 21304, 0, 0, 0), -- Defener Corpse, Warder Corpse
+(@SGGUID+14, 21303, 0, 0, 0), (@SGGUID+14, 21304, 0, 0, 0); -- Defener Corpse, Warder Corpse
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+(@SGGUID+1, @CGUID+5, 0, 0), -- Arcatraz Warder - left
+(@SGGUID+1, @CGUID+6, 1, 0), -- Arcatraz Warder - right
+
+(@SGGUID+2, @CGUID+7, 0, 0), -- Arcatraz Warder - left
+(@SGGUID+2, @CGUID+8, 1, 0), -- Arcatraz Warder - right
+
+(@SGGUID+3, @CGUID+2, 0, 0), -- Arcatraz Defender right
+(@SGGUID+3, @CGUID+3, 1, 0), -- Arcatraz Defender middle
+(@SGGUID+3, @CGUID+4, 2, 0), -- Arcatraz Defender left
+
+(@SGGUID+4, @CGUID+46, 0, 0), -- Protean Horror
+(@SGGUID+4, @CGUID+47, 1, 0), -- Protean Horror
+(@SGGUID+4, @CGUID+48, 2, 0), -- Protean Horror
+(@SGGUID+4, @CGUID+49, 3, 0), -- Protean Horror
+(@SGGUID+4, @CGUID+50, 4, 0), -- Protean Horror
+(@SGGUID+4, @CGUID+51, 5, 0), -- Protean Horror
+(@SGGUID+4, @CGUID+52, 6, 0), -- Protean Horror
+(@SGGUID+4, @CGUID+53, 7, 0), -- Protean Horror
+
+(@SGGUID+5, @CGUID+9, 0, 0), -- Protean Nightmare
+
+(@SGGUID+6, @CGUID+10, 0, 0), -- Protean Nightmare
+(@SGGUID+6, @CGUID+17, 1, 0), -- Protean Horror
+(@SGGUID+6, @CGUID+18, 2, 0), -- Protean Horror
+
+(@SGGUID+7, @CGUID+11, 0, 0), -- Protean Nightmare
+(@SGGUID+7, @CGUID+25, 1, 0), -- Protean Horror
+(@SGGUID+7, @CGUID+26, 2, 0), -- Protean Horror
+
+(@SGGUID+8, @CGUID+22, 0, 0), -- Protean Horror
+(@SGGUID+8, @CGUID+19, 1, 0), -- Protean Horror
+(@SGGUID+8, @CGUID+20, 2, 0), -- Protean Horror
+(@SGGUID+8, @CGUID+23, 3, 0), -- Protean Horror
+(@SGGUID+8, @CGUID+24, 4, 0), -- Protean Horror
+(@SGGUID+8, @CGUID+21, 5, 0), -- Protean Horror
+
+(@SGGUID+9, @CGUID+96, 0, 0), -- spawn_group_entry
+(@SGGUID+10, @CGUID+97, 0, 0), -- spawn_group_entry
+
+(@SGGUID+11, @CGUID+28, 0, 0), -- Protean Horror
+(@SGGUID+11, @CGUID+31, 1, 0), -- Protean Horror
+(@SGGUID+11, @CGUID+27, 2, 0), -- Protean Horror
+(@SGGUID+11, @CGUID+32, 3, 0), -- Protean Horror
+(@SGGUID+11, @CGUID+30, 4, 0), -- Protean Horror
+(@SGGUID+11, @CGUID+29, 5, 0), -- Protean Horror
+
+(@SGGUID+12, @CGUID+35, -1, 0), -- spawn_group_entry
+(@SGGUID+12, @CGUID+36, -1, 0), -- spawn_group_entry
+(@SGGUID+12, @CGUID+37, -1, 0), -- spawn_group_entry
+(@SGGUID+12, @CGUID+38, -1, 0), -- spawn_group_entry
+
+
+(@SGGUID+13, @CGUID+98, -1, 0), -- spawn_group_entry
+(@SGGUID+13, @CGUID+101, -1, 0), -- spawn_group_entry
+(@SGGUID+13, @CGUID+118, -1, 0), -- spawn_group_entry
+(@SGGUID+14, @CGUID+102, -1, 0), -- spawn_group_entry
+(@SGGUID+14, @CGUID+109, -1, 0); -- spawn_group_entry
+
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@SGGUID+6, 3, 3, 0, @SGGUID+6, 2, 'The Arcatraz - Group 006 - Protean Nightmare (1) - Protean Horror (2) | Patrol 01'),
+(@SGGUID+7, 3, 3, 0, @SGGUID+7, 2, 'The Arcatraz - Group 007 - Protean Nightmare (1) - Protean Horror (2) | Patrol 02'),
+(@SGGUID+8, 6, 3, 0, @SGGUID+8, 2, 'The Arcatraz - Group 008 - Protean Horror (6) | Patrol 03'),
+(@SGGUID+11, 6, 3, 0, @SGGUID+11, 2, 'The Arcatraz - Group 011 - Protean Horror (6) | Patrol 04');
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+6, 'The Arcatraz - Group 006 - Protean Nightmare (1) - Protean Horror (2) | Patrol 01'),
+(@SGGUID+7, 'The Arcatraz - Group 007 - Protean Nightmare (1) - Protean Horror (2) | Patrol 02'),
+(@SGGUID+8, 'The Arcatraz - Group 008 - Protean Horror (6) | Patrol 03'),
+(@SGGUID+11, 'The Arcatraz - Group 008 - Protean Horror (6) | Patrol 04');
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@SGGUID+6, 1, 208.34787,9.844978, -7.4684005, 2.8623, 20000, 0), -- remove formation, and rnd move around for 20 seconds
+(@SGGUID+6, 2, 217.09438, 9.082261, -7.4683995, 100, 0, 0),
+(@SGGUID+6, 3, 224.82596, -1.105318, -8.197451, 100, 0, 0),
+(@SGGUID+6, 4, 223.71288, -13.408787, -9.599378, 100, 0, 0),
+(@SGGUID+6, 5, 212.49054, -17.97817, -10.091022, 100, 0, 0),
+(@SGGUID+6, 6, 198.7105, -5.965413, -10.102091, 100, 0, 0),
+(@SGGUID+6, 7, 192.63458, 6.129091, -10.10528, 100, 200000, 0), -- remove formation, and rnd move around for 20 seconds
+(@SGGUID+6, 8, 183.20636, 12.026545, -10.096576, 100, 0, 0),
+(@SGGUID+6, 9, 187.25227, 20.871046, -9.640596, 100, 0, 0),
+(@SGGUID+6, 10, 196.87997, 22.969841, -8.600537, 100, 0, 0),
+(@SGGUID+6, 11, 205.79718, 18.459171, -7.626488, 100, 0, 0),
+(@SGGUID+7, 1, 202.77959, -41.40766, -10.095723, 100, 20000, 0), -- remove formation, and rnd move around for 20 seconds
+(@SGGUID+7, 2, 203.17947, -32.20689, -10.101378, 100, 0, 0), 
+(@SGGUID+7, 3, 203.19337, -20.843853, -10.093281, 100, 20000, 0), -- remove formation, and rnd move around for 20 seconds
+(@SGGUID+8, 1, 208.07149, -29.18059, -10.091507, 100, 0, 0),
+(@SGGUID+8, 2, 210.0403, -21.635162, -10.089756, 100, 0, 0),
+(@SGGUID+8, 3, 223.61438, -13.931542, -9.641647, 100, 0, 0),
+(@SGGUID+8, 4, 223.23763, 3.027244, -7.9025264, 100, 0, 0),
+(@SGGUID+8, 5, 201.15181, 21.944275, -8.097511, 100, 0, 0),
+(@SGGUID+8, 6, 183.84764, 17.15893, -10.106732, 100, 0, 0),
+(@SGGUID+8, 7, 186.73946, 2.564413, -10.102718, 100, 0, 0),
+(@SGGUID+8, 8, 197.93507, -17.824755, -10.097534, 100, 0, 0),
+(@SGGUID+8, 9, 197.42511, -56.04032, -10.106724, 100, 0, 0),
+(@SGGUID+8, 10, 202.3496, -61.534344, -10.108492, 100, 0, 0),
+(@SGGUID+8, 11, 208.22867, -57.986126, -10.064104, 100, 0, 0),
+(@SGGUID+11, 1, 195.13905, -118.79325,-10.12332, 100, 0, 0),
+(@SGGUID+11, 2, 195.03548, -145.50099,-10.116196, 100, 0, 0),
+(@SGGUID+11, 3, 212.1964, -157.94833,-10.113149, 100, 0, 0),
+(@SGGUID+11, 4, 231.8269, -157.86928,-10.112798, 100, 0, 0),
+(@SGGUID+11, 5, 235.90848, -164.12933,-10.106403, 100, 0, 0),
+(@SGGUID+11, 6, 235.05792, -181.03023,-10.108897, 100, 0, 0),
+(@SGGUID+11, 7, 223.98999, -186.03038,-10.10672, 100, 0, 0),
+(@SGGUID+11, 8, 230.39694, -194.16634,-10.107081, 100, 0, 0),
+(@SGGUID+11, 9, 259.7843, -195.02864,-10.10507, 100, 0, 0),
+(@SGGUID+11, 10, 272.83566, -175.49477, -10.104804, 100, 0, 0),
+(@SGGUID+11, 11, 278.45392, -153.14717, -10.1086855, 100, 0, 0),
+(@SGGUID+11, 12, 280.5827, -136.87622, -10.121723, 100, 0, 0),
+(@SGGUID+11, 13, 261.5679, -119.71741, -10.123237, 100, 0, 0),
+(@SGGUID+11, 14, 245.82552, -122.29325, -10.123243, 100, 0, 0),
+(@SGGUID+11, 15, 220.30566, -121.72503, -10.117749, 100, 0, 0),
+(@SGGUID+11, 16, 202.52419, -114.3171, -10.123289, 100, 0, 0);
+
 
 -- =======
 -- POOLING
 -- =======
 
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-(@PGUID+1, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 1'),
-(@PGUID+2, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 2'),
-(@PGUID+3, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 3'),
 (@PGUID+4, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 4'),
 (@PGUID+5, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 5'),
-(@PGUID+6, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 6'),
-(@PGUID+7, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 7'),
 (@PGUID+8, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 8'),
 (@PGUID+9, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 9'),
 (@PGUID+10, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 10'),
 (@PGUID+11, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 11'),
 (@PGUID+12, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 12'),
 (@PGUID+13, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 13'),
-(@PGUID+14, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 14'),
 (@PGUID+15, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 15'),
 (@PGUID+16, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 16'),
 (@PGUID+17, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 17'),
@@ -640,20 +782,14 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+22, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 22');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 1, 'Arcatraz - Warder/Defender Corpses - Pool 1'),
-(@PGUID+2, 1, 'Arcatraz - Warder/Defender Corpses - Pool 2'),
-(@PGUID+3, 1, 'Arcatraz - Warder/Defender Corpses - Pool 3'),
 (@PGUID+4, 1, 'Arcatraz - Warder/Defender Corpses - Pool 4'),
 (@PGUID+5, 1, 'Arcatraz - Warder/Defender Corpses - Pool 5'),
-(@PGUID+6, 1, 'Arcatraz - Warder/Defender Corpses - Pool 6'),
-(@PGUID+7, 1, 'Arcatraz - Warder/Defender Corpses - Pool 7'),
 (@PGUID+8, 1, 'Arcatraz - Warder/Defender Corpses - Pool 8'),
 (@PGUID+9, 1, 'Arcatraz - Warder/Defender Corpses - Pool 9'),
 (@PGUID+10, 1, 'Arcatraz - Warder/Defender Corpses - Pool 10'),
 (@PGUID+11, 1, 'Arcatraz - Warder/Defender Corpses - Pool 11'),
 (@PGUID+12, 1, 'Arcatraz - Warder/Defender Corpses - Pool 12'),
 (@PGUID+13, 1, 'Arcatraz - Warder/Defender Corpses - Pool 13'),
-(@PGUID+14, 1, 'Arcatraz - Warder/Defender Corpses - Pool 14'),
 (@PGUID+15, 1, 'Arcatraz - Warder/Defender Corpses - Pool 15'),
 (@PGUID+16, 1, 'Arcatraz - Warder/Defender Corpses - Pool 16'),
 (@PGUID+17, 1, 'Arcatraz - Warder/Defender Corpses - Pool 17'),
@@ -666,20 +802,10 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+24, 2, 'Arcatraz - Skulking Witch - Pool');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+96, @PGUID+1, 0, 'Arcatraz - Defender Corpse - Pool 1'),
-(@CGUID+118, @PGUID+1, 0, 'Arcatraz - Warder Corpse - Pool 1'),
-(@CGUID+97, @PGUID+2, 0, 'Arcatraz - Defender Corpse - Pool 2'),
-(@CGUID+119, @PGUID+2, 0, 'Arcatraz - Warder Corpse - Pool 2'),
-(@CGUID+98, @PGUID+3, 0, 'Arcatraz - Defender Corpse - Pool 3'),
-(@CGUID+120, @PGUID+3, 0, 'Arcatraz - Warder Corpse - Pool 3'),
 (@CGUID+99, @PGUID+4, 0, 'Arcatraz - Defender Corpse - Pool 4'),
 (@CGUID+121, @PGUID+4, 0, 'Arcatraz - Warder Corpse - Pool 4'),
 (@CGUID+100, @PGUID+5, 0, 'Arcatraz - Defender Corpse - Pool 5'),
 (@CGUID+122, @PGUID+5, 0, 'Arcatraz - Warder Corpse - Pool 5'),
-(@CGUID+101, @PGUID+6, 0, 'Arcatraz - Defender Corpse - Pool 6'),
-(@CGUID+123, @PGUID+6, 0, 'Arcatraz - Warder Corpse - Pool 6'),
-(@CGUID+102, @PGUID+7, 0, 'Arcatraz - Defender Corpse - Pool 7'),
-(@CGUID+124, @PGUID+7, 0, 'Arcatraz - Warder Corpse - Pool 7'),
 (@CGUID+103, @PGUID+8, 0, 'Arcatraz - Defender Corpse - Pool 8'),
 (@CGUID+125, @PGUID+8, 0, 'Arcatraz - Warder Corpse - Pool 8'),
 (@CGUID+104, @PGUID+9, 0, 'Arcatraz - Defender Corpse - Pool 9'),
@@ -692,8 +818,6 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 (@CGUID+129, @PGUID+12, 0, 'Arcatraz - Warder Corpse - Pool 12'),
 (@CGUID+108, @PGUID+13, 0, 'Arcatraz - Defender Corpse - Pool 13'),
 (@CGUID+130, @PGUID+13, 0, 'Arcatraz - Warder Corpse - Pool 13'),
-(@CGUID+109, @PGUID+14, 0, 'Arcatraz - Defender Corpse - Pool 14'),
-(@CGUID+131, @PGUID+14, 0, 'Arcatraz - Warder Corpse - Pool 14'),
 (@CGUID+110, @PGUID+15, 0, 'Arcatraz - Defender Corpse - Pool 15'),
 (@CGUID+132, @PGUID+15, 0, 'Arcatraz - Warder Corpse - Pool 15'),
 (@CGUID+111, @PGUID+16, 0, 'Arcatraz - Defender Corpse - Pool 16'),
@@ -722,19 +846,54 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE id IN (2086501);
-INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(2086501, 0, 48, 64+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Horror - Remove UNIT_FLAG_UNK_6, UNIT_FLAG_IMMUNE_TO_NPC');
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
+INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
+-- Protean Horror 1 - 3 different paths
+(@RELAYID+1, 1, @RELAYID+2, 0, 'Protean Horror - Waypoint Path 1'),
+(@RELAYID+1, 1, @RELAYID+3, 0, 'Protean Horror - Waypoint Path 2'),
+(@RELAYID+1, 1, @RELAYID+4, 0, 'Protean Horror - Waypoint Path 3'),
+
+(@RELAYID+2, 1, @RELAYID+6, 0, 'Protean Horror - Waypoint Path 4'),
+(@RELAYID+2, 1, @RELAYID+7, 0, 'Protean Horror - Waypoint Path 5'),
+(@RELAYID+2, 1, @RELAYID+8, 0, 'Protean Horror - Waypoint Path 6');
+
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+8;
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Protean Horror - on spawn random waypoint movement (3 possible paths)
+(@RELAYID+1,0,0,45,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - choose random path'),
+-- Path 1
+(@RELAYID+2,0,0,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 1'),
+(@RELAYID+3,0,0,20,2,2,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 2'),
+(@RELAYID+4,0,0,20,2,3,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 3'),
+
+(@RELAYID+5,0,0,45,0,@RELAYID+2,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - choose random path'),
+-- Path 1
+(@RELAYID+6,0,0,20,2,4,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 4'),
+(@RELAYID+7,0,0,20,2,5,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 5'),
+(@RELAYID+8,0,0,20,2,6,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 6');
+
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2086501, 2086502);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(2086501, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Horror - choose random path'),
+(2086502, 0, 0, 45, 0, @RELAYID+2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Horror - choose random path');
+
+-- Protean Nightmare
+-- Todo: 
+-- SGGUID+6 and SGGUID+7 will remove formation and let every group member have rnd movement before switching back to formation and continue waypoint rotation
+-- (2086401, 0, 0, 51, 151, @SGGUID+6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Nightmare - Remove Formation'),
+-- (2086401, 0, 1, 20, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Nightmare - Change to Movement RND'),
+-- (2086401, 19000, 1, 51, 150, @SGGUID+6, 0, 0, 0, 0, 0, 3, 0, 0, 3, 0, 0, 0, 'Protean Nightmare - Create Formation'),
+-- (2086401, 20000, 1, 20, @SGGUID+6, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Nightmare - Change to Waypoint Movement');
 
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
+
 
 
