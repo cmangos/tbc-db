@@ -459,7 +459,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+37, 0, 552, 3, 244.464, -156.903, -10.0211, 2.56403, 7200, 7200, 8, 1), -- spawn_group_entry
 (@CGUID+38, 0, 552, 3, 257.83023,-125.83658,-10.123239, 0.9138, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+39, 20865, 552, 3, 220.35661,-161.02452,-10.113402, 2.60445, 7200, 7200, 0, 0), -- Protean Horror
--- PLEASE RE-USE 40
+(@CGUID+40, 0, 552, 3, 226.184, -162.096, -10.0352, 0.349066, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+41, 20869, 552, 3, 264.2865, -61.32112, 22.45335, 5.288348, 7200, 7200, 0, 0), -- Arcatraz Sentinel
 (@CGUID+42, 20869, 552, 3, 253.942, 131.8811, 22.39496, 0.7679449, 7200, 7200, 0, 0), -- Arcatraz Sentinel
 (@CGUID+43, 20869, 552, 3, 255.4978, 158.9143, 22.36194, 5.410521, 7200, 7200, 0, 0), -- Arcatraz Sentinel
@@ -487,7 +487,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+66, 20881, 552, 3, 198.229, 134.81, 22.4779, 0.027622, 7200, 7200, 0, 2), -- Unbound Devastator
 (@CGUID+67, 0, 552, 3, 148.05, 146.994, 20.8982, 6.26573, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+68, 20883, 552, 3, 199.46, 154.953, 22.3714, 3.95347, 7200, 7200, 0, 2), -- Spiteful Temptress
--- PLEASE RE-USE 69
+(@CGUID+69, 0, 552, 3, 264.271, -191.28, -10.0219, 5.61996, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+70, 20885, 552, 3, 137.234, 128.506, 22.5245, 1.01229, 86400, 86400, 0, 0), -- Dalliah the Doomsayer
 (@CGUID+71, 20886, 552, 3, 136.2, 168.31, 22.5245, 5.23599, 86400, 86400, 0, 0), -- Wrath-Scryer Soccothrates
 (@CGUID+72, 20896, 552, 3, 433.027, 6.10896, 48.2954, 2.87979, 7200, 7200, 0, 0), -- Ethereum Slayer
@@ -633,8 +633,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+11, 'The Arcatraz - Group 011 - Protean Horror (6) | Patrol 04', 0, 0, 0, 0, 1, 0),
 (@SGGUID+12, 'The Arcatraz - Group 012 - Death Watcher / Entropic Eye', 0, 0, 0, 0, 0, 0),
 
-(@SGGUID+13, 'The Arcatraz - Group 013 - Warder/Defender Corpse', 0, 1, 0, 0, 0, 0), -- 3 different spawns only 1 active
-(@SGGUID+14, 'The Arcatraz - Group 014 - Warder/Defender Corpse', 0, 1, 0, 0, 0, 0); -- 2 different spawns only 1 active
+(@SGGUID+13, 'The Arcatraz - Group 013 - Warder/Defender Corpse', 0, 1, 0, 0, 0, 0), -- 4 different spawns only 1 active
+(@SGGUID+14, 'The Arcatraz - Group 014 - Warder/Defender Corpse', 0, 1, 0, 0, 0, 0); -- 3 different spawns only 1 active
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+9, 21303, 0, 0, 0), (@SGGUID+9, 21304, 0, 0, 0), -- Defener Corpse, Warder Corpse
@@ -696,10 +696,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+12, @CGUID+37, -1, 0), -- spawn_group_entry
 (@SGGUID+12, @CGUID+38, -1, 0), -- spawn_group_entry
 
-
+(@SGGUID+13, @CGUID+40, -1, 0), -- spawn_group_entry
 (@SGGUID+13, @CGUID+98, -1, 0), -- spawn_group_entry
 (@SGGUID+13, @CGUID+101, -1, 0), -- spawn_group_entry
 (@SGGUID+13, @CGUID+118, -1, 0), -- spawn_group_entry
+
+(@SGGUID+14, @CGUID+69, -1, 0), -- spawn_group_entry
 (@SGGUID+14, @CGUID+102, -1, 0), -- spawn_group_entry
 (@SGGUID+14, @CGUID+109, -1, 0); -- spawn_group_entry
 
