@@ -460,7 +460,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+38, 0, 552, 3, 257.83023,-125.83658,-10.123239, 0.9138, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+39, 20865, 552, 3, 220.35661,-161.02452,-10.113402, 2.60445, 7200, 7200, 0, 0), -- Protean Horror
 (@CGUID+40, 0, 552, 3, 226.184, -162.096, -10.0352, 0.349066, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+41, 20869, 552, 3, 264.2865, -61.32112, 22.45335, 5.288348, 7200, 7200, 0, 0), -- Arcatraz Sentinel
+(@CGUID+41, 20869, 552, 3, 264.287, -61.3211, 22.4534, 5.28835, 7200, 7200, 0, 0), -- Arcatraz Sentinel
 (@CGUID+42, 20869, 552, 3, 253.942, 131.8811, 22.39496, 0.7679449, 7200, 7200, 0, 0), -- Arcatraz Sentinel
 (@CGUID+43, 20869, 552, 3, 255.4978, 158.9143, 22.36194, 5.410521, 7200, 7200, 0, 0), -- Arcatraz Sentinel
 (@CGUID+44, 20869, 552, 3, 336.5143, 27.42666, 48.42604, 3.839724, 7200, 7200, 0, 0), -- Arcatraz Sentinel
@@ -538,7 +538,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+117, 21303, 552, 3, 257.344, 155.568, 22.3321, 4.71239, 86400, 86400, 0, 0), -- Defender Corpse
 (@CGUID+118, 0, 552, 3, 210.114, -161.992, -10.0359, 6.12611, 86400, 86400, 0, 0), -- spawn_group_entry
 -- reuse cguid+119 - cguid+120
-(@CGUID+121, 21304, 552, 3, 273.438, -64.07, 22.4534, 22.4534, 86400, 86400, 0, 0), -- Warder Corpse
+(@CGUID+121, 21304, 552, 3, 273.438, -64.07, 22.4534, 22.4534, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+122, 21304, 552, 3, 270.819, -45.4794, 22.4534, 4.46804, 86400, 86400, 0, 0), -- Warder Corpse
 -- reuse +123
 -- reuse +124
@@ -765,77 +765,12 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 -- POOLING
 -- =======
 
-INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-(@PGUID+4, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 4'),
-(@PGUID+5, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 5'),
-(@PGUID+8, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 8'),
-(@PGUID+9, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 9'),
-(@PGUID+10, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 10'),
-(@PGUID+11, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 11'),
-(@PGUID+12, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 12'),
-(@PGUID+13, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 13'),
-(@PGUID+15, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 15'),
-(@PGUID+16, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 16'),
-(@PGUID+17, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 17'),
-(@PGUID+18, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 18'),
-(@PGUID+19, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 19'),
-(@PGUID+20, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 20'),
-(@PGUID+21, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 21'),
-(@PGUID+22, @PGUID+23, 0, 'Arcatraz - Warder/Defender Corpses - Pool 22');
+-- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+4, 1, 'Arcatraz - Warder/Defender Corpses - Pool 4'),
-(@PGUID+5, 1, 'Arcatraz - Warder/Defender Corpses - Pool 5'),
-(@PGUID+8, 1, 'Arcatraz - Warder/Defender Corpses - Pool 8'),
-(@PGUID+9, 1, 'Arcatraz - Warder/Defender Corpses - Pool 9'),
-(@PGUID+10, 1, 'Arcatraz - Warder/Defender Corpses - Pool 10'),
-(@PGUID+11, 1, 'Arcatraz - Warder/Defender Corpses - Pool 11'),
-(@PGUID+12, 1, 'Arcatraz - Warder/Defender Corpses - Pool 12'),
-(@PGUID+13, 1, 'Arcatraz - Warder/Defender Corpses - Pool 13'),
-(@PGUID+15, 1, 'Arcatraz - Warder/Defender Corpses - Pool 15'),
-(@PGUID+16, 1, 'Arcatraz - Warder/Defender Corpses - Pool 16'),
-(@PGUID+17, 1, 'Arcatraz - Warder/Defender Corpses - Pool 17'),
-(@PGUID+18, 1, 'Arcatraz - Warder/Defender Corpses - Pool 18'),
-(@PGUID+19, 1, 'Arcatraz - Warder/Defender Corpses - Pool 19'),
-(@PGUID+20, 1, 'Arcatraz - Warder/Defender Corpses - Pool 20'),
-(@PGUID+21, 1, 'Arcatraz - Warder/Defender Corpses - Pool 21'),
-(@PGUID+22, 1, 'Arcatraz - Warder/Defender Corpses - Pool 22'),
-(@PGUID+23, 16, 'Arcatraz - Warder/Defender Corpses - Master Pool'),
 (@PGUID+24, 2, 'Arcatraz - Skulking Witch - Pool');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+99, @PGUID+4, 0, 'Arcatraz - Defender Corpse - Pool 4'),
-(@CGUID+121, @PGUID+4, 0, 'Arcatraz - Warder Corpse - Pool 4'),
-(@CGUID+100, @PGUID+5, 0, 'Arcatraz - Defender Corpse - Pool 5'),
-(@CGUID+122, @PGUID+5, 0, 'Arcatraz - Warder Corpse - Pool 5'),
-(@CGUID+103, @PGUID+8, 0, 'Arcatraz - Defender Corpse - Pool 8'),
-(@CGUID+125, @PGUID+8, 0, 'Arcatraz - Warder Corpse - Pool 8'),
-(@CGUID+104, @PGUID+9, 0, 'Arcatraz - Defender Corpse - Pool 9'),
-(@CGUID+126, @PGUID+9, 0, 'Arcatraz - Warder Corpse - Pool 9'),
-(@CGUID+105, @PGUID+10, 0, 'Arcatraz - Defender Corpse - Pool 10'),
-(@CGUID+127, @PGUID+10, 0, 'Arcatraz - Warder Corpse - Pool 10'),
-(@CGUID+106, @PGUID+11, 0, 'Arcatraz - Defender Corpse - Pool 11'),
-(@CGUID+128, @PGUID+11, 0, 'Arcatraz - Warder Corpse - Pool 11'),
-(@CGUID+107, @PGUID+12, 0, 'Arcatraz - Defender Corpse - Pool 12'),
-(@CGUID+129, @PGUID+12, 0, 'Arcatraz - Warder Corpse - Pool 12'),
-(@CGUID+108, @PGUID+13, 0, 'Arcatraz - Defender Corpse - Pool 13'),
-(@CGUID+130, @PGUID+13, 0, 'Arcatraz - Warder Corpse - Pool 13'),
-(@CGUID+110, @PGUID+15, 0, 'Arcatraz - Defender Corpse - Pool 15'),
-(@CGUID+132, @PGUID+15, 0, 'Arcatraz - Warder Corpse - Pool 15'),
-(@CGUID+111, @PGUID+16, 0, 'Arcatraz - Defender Corpse - Pool 16'),
-(@CGUID+133, @PGUID+16, 0, 'Arcatraz - Warder Corpse - Pool 16'),
-(@CGUID+112, @PGUID+17, 0, 'Arcatraz - Defender Corpse - Pool 17'),
-(@CGUID+134, @PGUID+17, 0, 'Arcatraz - Warder Corpse - Pool 17'),
-(@CGUID+113, @PGUID+18, 0, 'Arcatraz - Defender Corpse - Pool 18'),
-(@CGUID+135, @PGUID+18, 0, 'Arcatraz - Warder Corpse - Pool 18'),
-(@CGUID+114, @PGUID+19, 0, 'Arcatraz - Defender Corpse - Pool 19'),
-(@CGUID+136, @PGUID+19, 0, 'Arcatraz - Warder Corpse - Pool 19'),
-(@CGUID+115, @PGUID+20, 0, 'Arcatraz - Defender Corpse - Pool 20'),
-(@CGUID+137, @PGUID+20, 0, 'Arcatraz - Warder Corpse - Pool 20'),
-(@CGUID+116, @PGUID+21, 0, 'Arcatraz - Defender Corpse - Pool 21'),
-(@CGUID+138, @PGUID+21, 0, 'Arcatraz - Warder Corpse - Pool 21'),
-(@CGUID+117, @PGUID+22, 0, 'Arcatraz - Defender Corpse - Pool 22'),
-(@CGUID+139, @PGUID+22, 0, 'Arcatraz - Warder Corpse - Pool 22'),
 (@CGUID+148, @PGUID+24, 0, 'Arcatraz - Skulking Witch - Pool'),
 (@CGUID+149, @PGUID+24, 0, 'Arcatraz - Skulking Witch - Pool'),
 (@CGUID+150, @PGUID+24, 0, 'Arcatraz - Skulking Witch - Pool');
