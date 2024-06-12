@@ -612,6 +612,10 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'The Arcatraz - Proteon Horror'),
 (@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'The Arcatraz - Proteon Nightmare');
 
+DELETE FROM string_id WHERE Id = @STRINGID+1;
+INSERT INTO `string_id` (Id, Name) VALUES 
+(@STRINGID+1, 'ARCATRAZ_ENTRANCE_GROUP');
+
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `WorldStateExpression`, `Flags`, `StringID`) VALUES
 -- Intro Researches:
 -- 9 Protean Horror (small ones) spawning in the back, respawn timer around 1 seconds, keep respawning till all Arcatraz Warders are dead
@@ -620,8 +624,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+2, 'The Arcatraz - Group 002 - Arcatraz Warder (2) - Left', 0, 0, 0, 0, 1, 0),
 -- 1 Proteon Nightmare (Big One) spawning in the back, respawn timer around 5 seconds, keep respawning till all 3 Arcatraz Defenders are dead
 (@SGGUID+3, 'The Arcatraz - Group 003 - Arcatraz Defender (3)', 0, 0, 0, 0, 1, 0),
-(@SGGUID+4, 'The Arcatraz - Group 004 - Protean Horror (1)', 0, 0, @SGGUID+1, 0, 0, 0),
-(@SGGUID+5, 'The Arcatraz - Group 005 - Protean Nightmare (1)', 0, 0, @SGGUID+2, 0, 0, 0),
+(@SGGUID+4, 'The Arcatraz - Group 004 - Protean Horror (1)', 0, 0, @SGGUID+1, 0, 0, @STRINGID+1),
+(@SGGUID+5, 'The Arcatraz - Group 005 - Protean Nightmare (1)', 0, 0, @SGGUID+2, 0, 0, @STRINGID+1),
 
 (@SGGUID+6, 'The Arcatraz - Group 006 - Protean Nightmare (1) - Protean Horror (2) | Patrol 01', 0, 0, 0, 0, 1, 0),
 (@SGGUID+7, 'The Arcatraz - Group 007 - Protean Nightmare (1) - Protean Horror (2) | Patrol 02', 0, 0, 0, 0, 1, 0),
