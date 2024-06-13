@@ -147,14 +147,14 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+53, 3, 140.85771,0.796949,-10.101937, 100, 0, 0),
 (@CGUID+53, 4, 123.21317,0.05694,-10.102104, 100, 0, 0),
 (@CGUID+53, 5, 88.4931,0.287307,-11.026913, 100, 100, 2),
-(@CGUID+58, 1, 291.263, 6.76101, 22.5245, 100, 0, 0), -- move rnd around for 5-10 seconds
-(@CGUID+58, 2, 308.48526,-14.237305,22.443472, 100, 0, 0), -- move rnd around for 5-10 seconds
-(@CGUID+59, 1, 275.325, 37.1431, 22.5245, 100, 0, 0), -- move rnd around for 5-10 seconds
-(@CGUID+59, 2, 265.88467,55.07243,22.441204, 100, 0, 0), -- move rnd around for 5-10 seconds
-(@CGUID+60, 1, 267.79776, -15.569478, 22.448706, 100, 0, 0), -- move rnd around for 5-10 seconds
-(@CGUID+60, 2, 275.1938, 4.183415, 22.44412, 100, 0, 0), -- move rnd around for 5-10 seconds
-(@CGUID+61, 1, 298.612, 57.0632, 22.5251, 100, 0, 0), -- move rnd around for 5-10 seconds
-(@CGUID+61, 2, 295.16656,39.336628,22.441162, 100, 0, 0), -- move rnd around for 5-10 seconds
+(@CGUID+58, 1, 291.263, 6.76101, 22.5245, 100, 10000, 0), -- move rnd around for 5-10 seconds
+(@CGUID+58, 2, 308.48526,-14.237305,22.443472, 100, 10000, 0), -- move rnd around for 5-10 seconds
+(@CGUID+59, 1, 275.325, 37.1431, 22.5245, 100, 100000, 0), -- move rnd around for 5-10 seconds
+(@CGUID+59, 2, 265.88467,55.07243,22.441204, 100, 10000, 0), -- move rnd around for 5-10 seconds
+(@CGUID+60, 1, 267.79776, -15.569478, 22.448706, 100, 10000, 0), -- move rnd around for 5-10 seconds
+(@CGUID+60, 2, 275.1938, 4.183415, 22.44412, 100, 10000, 0), -- move rnd around for 5-10 seconds
+(@CGUID+61, 1, 298.612, 57.0632, 22.5251, 100, 10000, 0), -- move rnd around for 5-10 seconds
+(@CGUID+61, 2, 295.16656,39.336628,22.441162, 100, 10000, 0), -- move rnd around for 5-10 seconds
 (@CGUID+64, 1, 305.7355, 148.0587, 24.8633, 3.979351, 8000, 1001),
 (@CGUID+64, 2, 305.7355, 148.0587, 24.8633, 3.979351, 18000, 1001),
 (@CGUID+64, 3, 305.7355, 148.0587, 24.8633, 3.979351, 12000, 1001),
@@ -354,19 +354,18 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+64, 20879), (@CGUID+64, 20880), -- Eredar Soul-Eater, Eredar Deathbringer
 (@CGUID+67, 20881), (@CGUID+67, 20883); -- Unbound Devastator, Spiteful Temptress
 
-DELETE FROM creature_spawn_data WHERE Id IN (2086501, 2086501, 2086503);
+DELETE FROM creature_spawn_data WHERE Guid IN (@CGUID+15, @CGUID+39, @CGUID+13, @CGUID+14);
 INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
 -- Protean Horror
 (@CGUID+15, 2086501),
 (@CGUID+39, 2086502),
-(@CGUID+13, 2086503),
-(@CGUID+14, 2086503);
+(@CGUID+13, 1),
+(@CGUID+14, 1);
 
-DELETE FROM creature_spawn_data_template WHERE Entry IN (2086501, 2086502, 2086503);
+DELETE FROM creature_spawn_data_template WHERE Entry IN (2086501, 2086502);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES 
-(2086501, 0, @RELAYID+1, 0, 'Protean Horror - Start relayscript on spawn'),
-(2086502, 0, @RELAYID+5, 0, 'Protean Horror - Start relayscript on spawn'),
-(2086503, 1, 0, 'Protean Horror - Run Mode on Spawn');
+(2086501, @RELAYID+1, 0, 'Protean Horror - Start relayscript on spawn'),
+(2086502, @RELAYID+5, 0, 'Protean Horror - Start relayscript on spawn');
 
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
