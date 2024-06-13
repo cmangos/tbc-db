@@ -4,9 +4,6 @@
 -- Remove wrong creature immunities. - to fix what went wrong above and more
 -- https://github.com/vmangos/core/commit/8f93351f5ea7bd989312420512b4b7e7279c9ddb
 
-SELECT entry,SchoolImmuneMask,MechanicImmuneMask FROM creature_template where entry IN (12098);
-SELECT * FROM creature_immunities where entry IN (12098);
-
 -- gist: Devouring Plague shows elementals and mechanical immune to DISPEL_DISEASE too
 
 -- Rock Elemental
