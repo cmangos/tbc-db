@@ -591,7 +591,7 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+19, 21303, 0, 0, 0), (@SGGUID+19, 21304, 0, 0, 0), -- Defener Corpse, Warder Corpse
 (@SGGUID+20, 21303, 0, 0, 0), (@SGGUID+20, 21304, 0, 0, 0), -- Defener Corpse, Warder Corpse
 (@SGGUID+21, 21303, 0, 0, 0), (@SGGUID+21, 21304, 0, 0, 0), -- Defener Corpse, Warder Corpse
-(@SGGUID+22, 20879, 0, 0, 0), (@SGGUID+22, 20890, 0, 0, 0), -- Eredar Soul-Eater, Eredar Deathbringer
+(@SGGUID+22, 20879, 0, 0, 0), (@SGGUID+22, 20880, 0, 0, 0), -- Eredar Soul-Eater, Eredar Deathbringer
 (@SGGUID+24, 20881, 0, 0, 0), (@SGGUID+24, 20883, 0, 0, 0); -- Unbound Devastator, Spiteful Temptress
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
