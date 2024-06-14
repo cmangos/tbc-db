@@ -255,8 +255,31 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (2089801, 2159801);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(2089801, 1, 36837, 0, -1, 100, 0, 100, 0, 9000, 16000, 16000, 22000, 'Gargantuan Abyssal - Sonic Boom - random'),
-(2159801, 1, 38903, 0, -1, 100, 0, 100, 0, 9000, 16000, 16000, 22000, 'Gargantuan Abyssal - Sonic Boom - random');
+(2089801, 1, 36837, 0, -1, 100, 0, 100, 0, 9000, 16000, 16000, 22000, 'Gargantuan Abyssal - Meteor - random'),
+(2159801, 1, 38903, 0, -1, 100, 0, 100, 0, 9000, 16000, 16000, 22000, 'Gargantuan Abyssal - Meteor - random');
 
 UPDATE `creature_template` SET `SpellList` = 2089801 WHERE `entry` = 20898;
 UPDATE `creature_template` SET `SpellList` = 2159801 WHERE `entry` = 21598;
+
+
+-- Unchained Doombringer
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20900, 21621);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2090001, 2162101);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2090001, 'The Arcatraz - Unchained Doombringer - Normal', 0, 0),
+(2162101, 'The Arcatraz - Unchained Doombringer - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2090001, 2162101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2090001, 1, 36833, 0, -1, 1, 0, 100, 0, 12000, 18000, 16000, 24000, 'Unchained Doombringer - Berserker Charge - current'),
+(2090001, 2, 36835, 0, -1, 1, 0, 100, 0, 10000, 18000, 18000, 24000, 'Unchained Doombringer - War Stomp - current'),
+(2090001, 3, 36836, 0, -1, 1, 0, 100, 0, 7000, 12000, 12000, 20000, 'Unchained Doombringer - Agonizing Armor - current'),
+
+(2162101, 1, 36833, 0, -1, 1, 0, 100, 0, 12000, 18000, 16000, 24000, 'Unchained Doombringer - Berserker Charge - current'),
+(2162101, 2, 38911, 0, -1, 1, 0, 100, 0, 10000, 18000, 18000, 24000, 'Unchained Doombringer - War Stomp - current'),
+(2162101, 3, 36836, 0, -1, 1, 0, 100, 0, 7000, 12000, 12000, 20000, 'Unchained Doombringer - Agonizing Armor - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 2090001 WHERE `entry` = 20900;
+UPDATE `creature_template` SET `SpellList` = 2162101 WHERE `entry` = 21621;
