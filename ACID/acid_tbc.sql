@@ -26415,12 +26415,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2089801','20898','27','0','100','3','38855','1','2000','10000','0','0','11','38855','0','32','0','0','0','0','0','0','0','0','Gargantuan Abyssal (Normal) - Cast Fire Shield on Missing Buff'),
 ('2089802','20898','27','0','100','5','38901','1','2000','10000','0','0','11','38901','0','32','0','0','0','0','0','0','0','0','Gargantuan Abyssal (Heroic) - Cast Fire Shield on Missing Buff'),
 -- Unchained Doombringer 20900 - spell_list
--- Sargeron Archer 20901
+-- Sargeron Archer 20901 - spell_list
 ('2090101','20901','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Sargeron Archer - Enable Range Mode on Spawn'),
--- Sargeron Hellcaller 20902
-('2090201','20902','0','0','100','1025','3000','9000','21000','27000','0','0','11','36831','4','544','0','0','0','0','0','0','0','0','Sargeron Hellcaller - Cast Curse of the Elements'),
-('2090202','20902','9','0','100','1027','0','30','11000','17000','0','0','11','36832','4','512','0','0','0','0','0','0','0','0','Sargeron Hellcaller (Normal) - Cast Incinerate'),
-('2090203','20902','9','0','100','1029','0','30','9000','15000','0','0','11','38918','4','512','0','0','0','0','0','0','0','0','Sargeron Hellcaller (Heroic) - Cast Incinerate'),
+-- Sargeron Hellcaller 20902 - spell_list
 -- Warden Mellichar (20904) - npc_warden_mellichar
 -- Blazing Trickster 20905
 ('2090501','20905','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Blazing Trickster - Enable Range Mode on Spawn'),

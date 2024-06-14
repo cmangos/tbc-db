@@ -305,13 +305,34 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (2090101, 7, 22907, 2, -1, 1, 0, 100, 0, 0, 0, 2000, 4000, 'Sargeron Archer - Shoot - current'),
 
 
-(2090101, 1, 36828, 0, -1, 0, 0, 100, 0, 15000, 25000, 16000, 26000, 'Sargeron Archer - Rapid Fire - self'),
-(2090101, 2, 23601, 0, -1, 0, 0, 100, 0, 12000, 22000, 17000, 27000, 'Sargeron Archer - Scatter Shot - current'),
-(2090101, 3, 38912, 0, -1, 0, 0, 100, 0, 10000, 20000, 15000, 25000, 'Sargeron Archer - Hooked Net - current'),
-(2090101, 4, 38942, 0, -1, 1, 0, 100, 0, 12000, 15000, 17000, 23000, 'Sargeron Archer - Serpent Sting - current'),
-(2090101, 5, 38943, 0, -1, 1, 0, 50, 0, 12000, 15000, 17000, 23000, 'Sargeron Archer - Frost Arrow - current'),
-(2090101, 6, 38914, 0, -1, 1, 0, 50, 0, 12000, 15000, 17000, 23000, 'Sargeron Archer - Immolation Arrow - current'),
-(2090101, 7, 38940, 2, -1, 1, 0, 100, 0, 0, 0, 2000, 4000, 'Sargeron Archer - Shoot - current');
+(2161001, 1, 36828, 0, -1, 0, 0, 100, 0, 15000, 25000, 16000, 26000, 'Sargeron Archer - Rapid Fire - self'),
+(2161001, 2, 23601, 0, -1, 0, 0, 100, 0, 12000, 22000, 17000, 27000, 'Sargeron Archer - Scatter Shot - current'),
+(2161001, 3, 38912, 0, -1, 0, 0, 100, 0, 10000, 20000, 15000, 25000, 'Sargeron Archer - Hooked Net - current'),
+(2161001, 4, 38942, 0, -1, 1, 0, 100, 0, 12000, 15000, 17000, 23000, 'Sargeron Archer - Serpent Sting - current'),
+(2161001, 5, 38943, 0, -1, 1, 0, 50, 0, 12000, 15000, 17000, 23000, 'Sargeron Archer - Frost Arrow - current'),
+(2161001, 6, 38914, 0, -1, 1, 0, 50, 0, 12000, 15000, 17000, 23000, 'Sargeron Archer - Immolation Arrow - current'),
+(2161001, 7, 38940, 2, -1, 1, 0, 100, 0, 0, 0, 2000, 4000, 'Sargeron Archer - Shoot - current');
 
 UPDATE `creature_template` SET `SpellList` = 2090101 WHERE `entry` = 20901;
 UPDATE `creature_template` SET `SpellList` = 2161001 WHERE `entry` = 21610;
+
+-- Sargeron Hellcaller
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20902, 21611);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2090201, 2161101);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2090201, 'The Arcatraz - Sargeron Hellcaller - Normal', 0, 0),
+(2161101, 'The Arcatraz - Sargeron Hellcaller - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2090201, 2161101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2090201, 1, 36833, 0, -1, 121, 0, 100, 0, 8000, 16000, 17000, 25000, 'Sargeron Hellcaller - Curse of Elements - current'),
+(2090201, 2, 36829, 0, -1, 103, 0, 100, 0, 11000, 19000, 18000, 25000, 'Sargeron Hellcaller - Hell Rain - aoe'),
+(2090201, 3, 36832, 0, -1, 1, 0, 100, 0, 7000, 15000, 15000, 21000, 'Sargeron Hellcaller - Incinerate - current'),
+
+(2161101, 1, 36833, 0, -1, 121, 0, 100, 0, 8000, 16000, 17000, 25000, 'Sargeron Hellcaller - Curse of Elements - current'),
+(2161101, 2, 38917, 0, -1, 103, 0, 100, 0, 11000, 19000, 18000, 25000, 'Sargeron Hellcaller - Hell Rain - current'),
+(2161101, 3, 38918, 0, -1, 1, 0, 100, 0, 7000, 15000, 15000, 21000, 'Sargeron Hellcaller - Incinerate - current');
+
+UPDATE `creature_template` SET `SpellList` = 2090201 WHERE `entry` = 20902;
+UPDATE `creature_template` SET `SpellList` = 2161101 WHERE `entry` = 21611;
