@@ -304,7 +304,6 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (2090101, 6, 35932, 0, -1, 1, 0, 50, 0, 12000, 15000, 17000, 23000, 'Sargeron Archer - Immolation Arrow - current'),
 (2090101, 7, 22907, 2, -1, 1, 0, 100, 0, 0, 0, 2000, 4000, 'Sargeron Archer - Shoot - current'),
 
-
 (2161001, 1, 36828, 0, -1, 0, 0, 100, 0, 15000, 25000, 16000, 26000, 'Sargeron Archer - Rapid Fire - self'),
 (2161001, 2, 23601, 0, -1, 0, 0, 100, 0, 12000, 22000, 17000, 27000, 'Sargeron Archer - Scatter Shot - current'),
 (2161001, 3, 38912, 0, -1, 0, 0, 100, 0, 10000, 20000, 15000, 25000, 'Sargeron Archer - Hooked Net - current'),
@@ -336,3 +335,27 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2090201 WHERE `entry` = 20902;
 UPDATE `creature_template` SET `SpellList` = 2161101 WHERE `entry` = 21611;
+
+
+
+-- Ethereum Life-Binder
+DELETE FROM `creature_template_spells` WHERE `entry` IN (21702, 22346);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2170201, 2234601);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2170201, 'The Arcatraz - Ethereum Life-Binder - Normal', 0, 0),
+(2234601, 'The Arcatraz - Ethereum Life-Binder - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2170201, 2234601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2170201, 1, 37480, 0, -1, 1, 0, 100, 0, 12000, 18000, 12000, 18000, 'Ethereum Life-Binder - Bind - current'),
+(2170201, 2, 37479, 0, -1, 210, 0, 100, 0, 2000, 8000, 8000, 16000, 'Ethereum Life-Binder - Shadow Mend - friendly missing 50% including self'),
+(2170201, 3, 15654, 0, -1, 1, 0, 100, 0, 7000, 11000, 8000, 12000, 'Ethereum Life-Binder - Shadow Word: Pain - current'),
+
+(2234601, 1, 38900, 0, -1, 1, 0, 100, 0, 12000, 18000, 12000, 18000, 'Ethereum Life-Binder - Bind - current'),
+(2234601, 2, 38899, 0, -1, 210, 0, 100, 0, 2000, 8000, 8000, 16000, 'Ethereum Life-Binder - Shadow Mend - friendly missing 50% including self'),
+(2234601, 3, 34941, 0, -1, 1, 0, 100, 0, 7000, 11000, 8000, 12000, 'Ethereum Life-Binder - Shadow Word: Pain - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 2170201 WHERE `entry` = 21702;
+UPDATE `creature_template` SET `SpellList` = 2234601 WHERE `entry` = 22346;
