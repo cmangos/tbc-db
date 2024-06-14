@@ -26407,11 +26407,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spiteful Temptress 20883 - spell_list
 -- Dalliah the Doomsayer (20885) - boss_dalliah
 -- Wrath-Scryer Soccothrates (20886) - boss_soccothrates
--- Ethereum Slayer
-('2089601','20896','9','0','100','1025','0','40','12000','15000','0','0','11','36839','1','0','0','0','0','0','0','0','0','0','Ethereum Slayer - Cast Impairing Poison'),
-('2089602','20896','9','0','100','1027','0','5','7000','11000','0','0','11','36838','1','0','0','0','0','0','0','0','0','0','Ethereum Slayer (Normal) - Cast Slaying Strike'),
-('2089603','20896','9','0','100','1029','0','5','7000','11000','0','0','11','38894','1','0','0','0','0','0','0','0','0','0','Ethereum Slayer (Heroic) - Cast Slaying Strike'),
-('2089604','20896','0','0','100','1025','5000','9000','21000','25000','0','0','11','15087','0','0','0','0','0','0','0','0','0','0','Ethereum Slayer - Cast Evasion'),
+-- Ethereum Slayer - spell_list
+('2089601','20896','2','0','100','1025','25','0','6000','18000','0','0','11','15087','0','0','0','0','0','0','0','0','0','0','Ethereum Slayer - Cast Evasion at 25% Health'),
 -- Ethereum Wave-Caster 20897
 ('2089701','20897','0','0','100','1025','3000','20000','30000','33000','0','0','11','32693','0','0','0','0','0','0','0','0','0','0','Ethereum Wave-Caster - Cast Arcane Haste'),
 ('2089702','20897','0','0','100','1025','13000','17000','13000','17000','0','0','11','38897','16','512','0','0','0','0','0','0','0','0','Ethereum Wave-Caster - Cast Sonic Boom on Random Player Mana User'),

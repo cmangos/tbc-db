@@ -205,3 +205,23 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2088301 WHERE `entry` = 20883;
 UPDATE `creature_template` SET `SpellList` = 2161501 WHERE `entry` = 21615;
+
+
+-- Ethereum Slayer
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20896, 21596);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2089601, 2159601);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2089601, 'The Arcatraz - Ethereum Slayer - Normal', 0, 0),
+(2159601, 'The Arcatraz - Ethereum Slayer - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2089601, 2159601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2089601, 2, 36839, 0, -1, 100, 0, 100, 0, 6000, 18000, 6000, 18000, 'Ethereum Slayer - Impairing Poison - random'),
+(2089601, 3, 36838, 0, -1, 1, 0, 100, 0, 11000, 22000, 11000, 22000, 'Ethereum Slayer - Slaying Strike - current'),
+(2159601, 2, 36839, 0, -1, 100, 0, 100, 0, 6000, 18000, 6000, 18000, 'Ethereum Slayer - Impairing Poison - random'),
+(2159601, 3, 38894, 0, -1, 1, 0, 100, 0, 11000, 22000, 11000, 22000, 'Ethereum Slayer - Slaying Strike - current');
+
+UPDATE `creature_template` SET `SpellList` = 2089601 WHERE `entry` = 20896;
+UPDATE `creature_template` SET `SpellList` = 2159601 WHERE `entry` = 21596;
+
