@@ -217,11 +217,29 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (2089601, 2159601);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(2089601, 2, 36839, 0, -1, 100, 0, 100, 0, 6000, 18000, 6000, 18000, 'Ethereum Slayer - Impairing Poison - random'),
-(2089601, 3, 36838, 0, -1, 1, 0, 100, 0, 11000, 22000, 11000, 22000, 'Ethereum Slayer - Slaying Strike - current'),
-(2159601, 2, 36839, 0, -1, 100, 0, 100, 0, 6000, 18000, 6000, 18000, 'Ethereum Slayer - Impairing Poison - random'),
-(2159601, 3, 38894, 0, -1, 1, 0, 100, 0, 11000, 22000, 11000, 22000, 'Ethereum Slayer - Slaying Strike - current');
+(2089601, 1, 36839, 0, -1, 100, 0, 100, 0, 6000, 18000, 6000, 18000, 'Ethereum Slayer - Impairing Poison - random'),
+(2089601, 2, 36838, 0, -1, 1, 0, 100, 0, 11000, 22000, 11000, 22000, 'Ethereum Slayer - Slaying Strike - current'),
+(2159601, 1, 36839, 0, -1, 100, 0, 100, 0, 6000, 18000, 6000, 18000, 'Ethereum Slayer - Impairing Poison - random'),
+(2159601, 2, 38894, 0, -1, 1, 0, 100, 0, 11000, 22000, 11000, 22000, 'Ethereum Slayer - Slaying Strike - current');
 
 UPDATE `creature_template` SET `SpellList` = 2089601 WHERE `entry` = 20896;
 UPDATE `creature_template` SET `SpellList` = 2159601 WHERE `entry` = 21596;
 
+-- Ethereum Wave-Caster 20897
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20897, 21597);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2089701, 2159701);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2089701, 'The Arcatraz - Ethereum Wave-Caster - Normal', 0, 0),
+(2159701, 'The Arcatraz - Ethereum Wave-Caster - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2089701, 2159701);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2089701, 1, 38897, 0, -1, 105, 0, 100, 0, 8000, 16000, 8000, 16000, 'Ethereum Wave-Caster - Sonic Boom - random mana user'),
+(2089701, 2, 36840, 0, -1, 101, 0, 100, 0, 9000, 13000, 16000, 20000, 'Ethereum Wave-Caster - Polymorph - random not tank'),
+
+(2159701, 1, 38897, 0, -1, 105, 0, 100, 0, 8000, 16000, 8000, 16000, 'Ethereum Wave-Caster - Sonic Boom - random mana user'),
+(2159701, 2, 38896, 0, -1, 101, 0, 100, 0, 9000, 13000, 16000, 20000, 'Ethereum Wave-Caster - Polymorph - random not tank');
+
+UPDATE `creature_template` SET `SpellList` = 2089701 WHERE `entry` = 20897;
+UPDATE `creature_template` SET `SpellList` = 2159701 WHERE `entry` = 21597;
