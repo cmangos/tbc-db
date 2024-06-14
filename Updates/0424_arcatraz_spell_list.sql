@@ -243,3 +243,20 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2089701 WHERE `entry` = 20897;
 UPDATE `creature_template` SET `SpellList` = 2159701 WHERE `entry` = 21597;
+
+
+-- Gargantuan Abyssal
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20898, 21598);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2089801, 2159801);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2089801, 'The Arcatraz - Gargantuan Abyssal - Normal', 0, 0),
+(2159801, 'The Arcatraz - Gargantuan Abyssal - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2089801, 2159801);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2089801, 1, 36837, 0, -1, 100, 0, 100, 0, 9000, 16000, 16000, 22000, 'Gargantuan Abyssal - Sonic Boom - random'),
+(2159801, 1, 38903, 0, -1, 100, 0, 100, 0, 9000, 16000, 16000, 22000, 'Gargantuan Abyssal - Sonic Boom - random');
+
+UPDATE `creature_template` SET `SpellList` = 2089801 WHERE `entry` = 20898;
+UPDATE `creature_template` SET `SpellList` = 2159801 WHERE `entry` = 21598;
