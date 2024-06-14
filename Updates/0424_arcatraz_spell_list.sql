@@ -150,5 +150,58 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 UPDATE `creature_template` SET `SpellList` = 2087901 WHERE `entry` = 20879;
 UPDATE `creature_template` SET `SpellList` = 2159501 WHERE `entry` = 21595;
 
+-- Eredar Deathbringer
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20880, 21594);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2088001, 2159401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2088001, 'The Arcatraz - Eredar Deathbringer - Normal', 0, 0),
+(2159401, 'The Arcatraz - Eredar Deathbringer - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2088001, 2159401);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2088001, 1, 36787, 0, -1, 1, 0, 100, 0, 10000, 20000, 12000, 22000, 'Eredar Deathbringer - Soul Chill - current'),
+(2159401, 1, 38846, 0, -1, 1, 0, 100, 0, 10000, 20000, 12000, 22000, 'Eredar Deathbringer - Soul Chill - current');
+
+UPDATE `creature_template` SET `SpellList` = 2088001 WHERE `entry` = 20880;
+UPDATE `creature_template` SET `SpellList` = 2159401 WHERE `entry` = 21594;
 
 
+-- Unbound Devastator
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20881, 21619);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2088101, 2161901);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2088101, 'The Arcatraz - Unbound Devastator - Normal', 0, 0),
+(2161901, 'The Arcatraz - Unbound Devastator - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2088101, 2161901);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2088101, 1, 36891, 0, -1, 1, 0, 100, 0, 14000, 21000, 14000, 21000, 'Unbound Devastator - Devastate - current'),
+(2088101, 2, 36887, 0, -1, 0, 0, 100, 0, 5000, 12000, 12000, 19000, 'Unbound Devastator - Deafening Roar - self'),
+(2161901, 1, 38849, 0, -1, 1, 0, 100, 0, 14000, 21000, 14000, 21000, 'Unbound Devastator - Devastate - current'),
+(2161901, 2, 38850, 0, -1, 0, 0, 100, 0, 5000, 12000, 12000, 19000, 'Unbound Devastator - Deafening Roar - self');
+
+UPDATE `creature_template` SET `SpellList` = 2088101 WHERE `entry` = 20881;
+UPDATE `creature_template` SET `SpellList` = 2161901 WHERE `entry` = 21619;
+
+-- Spiteful Temptress
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20883, 21615);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2088301, 2161501);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2088301, 'The Arcatraz - Spiteful Temptress - Normal', 0, 0),
+(2161501, 'The Arcatraz - Spiteful Temptress - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2088301, 2161501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2088301, 1, 36866, 0, -1, 101, 0, 100, 0, 7000, 14000, 12000, 19000, 'Spiteful Temptress - Domination - random not tank'),
+(2088301, 2, 36868, 0, -1, 1, 0, 100, 0, 6000, 14000, 12000, 20000, 'Spiteful Temptress - Shadow Bolt - current'),
+(2088301, 3, 36886, 0, -1, 100, 0, 100, 0, 1000, 5000, 12000, 16000, 'Spiteful Temptress - Spiteful Fury - random'),
+
+(2161501, 1, 36866, 0, -1, 101, 0, 100, 0, 7000, 14000, 12000, 19000, 'Spiteful Temptress - Domination - random not tank'),
+(2161501, 2, 38892, 0, -1, 1, 0, 100, 0, 6000, 14000, 12000, 20000, 'Spiteful Temptress - Shadow Bolt - current'),
+(2161501, 3, 36886, 0, -1, 100, 0, 100, 0, 1000, 5000, 12000, 16000, 'Spiteful Temptress - Spiteful Fury - random');
+
+UPDATE `creature_template` SET `SpellList` = 2088301 WHERE `entry` = 20883;
+UPDATE `creature_template` SET `SpellList` = 2161501 WHERE `entry` = 21615;
