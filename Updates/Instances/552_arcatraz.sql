@@ -762,7 +762,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+3;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Protean Horror 1 - 3 different paths
 (@RELAYID+1, 1, @RELAYID+2, 0, 'Protean Horror - Waypoint Path 1'),
@@ -771,9 +771,13 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 
 (@RELAYID+2, 1, @RELAYID+6, 0, 'Protean Horror - Waypoint Path 4'),
 (@RELAYID+2, 1, @RELAYID+7, 0, 'Protean Horror - Waypoint Path 5'),
-(@RELAYID+2, 1, @RELAYID+8, 0, 'Protean Horror - Waypoint Path 6');
+(@RELAYID+2, 1, @RELAYID+8, 0, 'Protean Horror - Waypoint Path 6'),
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+8;
+(@RELAYID+3, 1, @RELAYID+9, 0, 'The Arcatraz - spawn_group_entry - random talk'),
+(@RELAYID+3, 1, @RELAYID+10, 0, 'The Arcatraz - spawn_group_entry - random talk'),
+(@RELAYID+3, 1, @RELAYID+11, 0, 'The Arcatraz - spawn_group_entry - random talk');
+
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+11;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Protean Horror - on spawn random waypoint movement (3 possible paths)
 (@RELAYID+1,0,0,45,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - choose random path'),
@@ -786,7 +790,16 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- Path 1
 (@RELAYID+6,0,0,20,2,4,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 4'),
 (@RELAYID+7,0,0,20,2,5,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 5'),
-(@RELAYID+8,0,0,20,2,6,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 6');
+(@RELAYID+8,0,0,20,2,6,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror - PathID 6'),
+
+(@RELAYID+9,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'The Arcatraz - spawn_group_entry - Emote Talk'),
+(@RELAYID+9,0,1,0,0,0,0,0,0,0,19129,0,0,0,0,0,0,0,'The Arcatraz - spawn_group_entry - Say Text'),
+
+(@RELAYID+10,0,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'The Arcatraz - spawn_group_entry - Emote OneShotExclamation'),
+(@RELAYID+10,0,1,0,0,0,0,0,0,0,19130,0,0,0,0,0,0,0,'The Arcatraz - spawn_group_entry - Say Text'),
+
+(@RELAYID+11,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'The Arcatraz - spawn_group_entry - Emote Talk'),
+(@RELAYID+11,0,1,0,0,0,0,0,0,0,19131,0,0,0,0,0,0,0,'The Arcatraz - spawn_group_entry - Say Text');
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (2086501, 2086502);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

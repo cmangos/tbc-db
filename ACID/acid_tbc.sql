@@ -26538,6 +26538,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2176102','21761','11','0','100','4','0','0','0','0','0','0','11','38828','0','0','0','0','0','0','0','0','0','0','Destroyed Sentinel (Heroic) - Cast Energy Discharge on Spawn'),
 -- Udalo (21962) - NSR
 -- Third Fragment Guardian (22892) - NSR
+-- GUID based RP
+('5520064','-5520064','1','0','100','1','0','10000','10000','60000','0','0','53','-5520003','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - OOC RandomScript'),
 
 
 
