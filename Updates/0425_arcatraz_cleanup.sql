@@ -64,3 +64,39 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry IN 
 -- WalkSpeed: 2.5
 -- RunSpeed: 10
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry IN (20882, 21613);
+
+-- Ethereum Slayer
+-- WalkSpeed: 2.5
+-- RunSpeed: 10
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry IN (20896, 21596);
+
+-- Ethereum Wave-Caster
+-- WalkSpeed: 2.5
+-- RunSpeed: 10
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry IN (20897, 21597);
+
+-- Ethereum Life-Binder
+-- WalkSpeed: 2.5
+-- RunSpeed: 10
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry IN (21702, 22346);
+
+
+-- Gargantuan Abyssal
+-- WalkSpeed: 4
+-- RunSpeed: 12
+UPDATE creature_template SET SpeedWalk = '1.6', SpeedRun = '1.714' WHERE entry IN (20898, 21598);
+
+-- Unchained Doombringer
+-- WalkSpeed: 2.5
+-- RunSpeed: 10
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry IN (20900, 21621);
+
+-- Sargeron Hellcaller
+-- WalkSpeed: 2.5
+-- RunSpeed: 10
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry IN (20902, 21611);
+
+-- Sargeron Archer
+-- WalkSpeed: 2.5
+-- RunSpeed: 10
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry IN (20901, 21610);
