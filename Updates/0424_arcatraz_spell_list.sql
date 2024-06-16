@@ -205,3 +205,157 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2088301 WHERE `entry` = 20883;
 UPDATE `creature_template` SET `SpellList` = 2161501 WHERE `entry` = 21615;
+
+
+-- Ethereum Slayer
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20896, 21596);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2089601, 2159601);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2089601, 'The Arcatraz - Ethereum Slayer - Normal', 0, 0),
+(2159601, 'The Arcatraz - Ethereum Slayer - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2089601, 2159601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2089601, 1, 36839, 0, -1, 100, 0, 100, 0, 6000, 18000, 6000, 18000, 'Ethereum Slayer - Impairing Poison - random'),
+(2089601, 2, 36838, 0, -1, 1, 0, 100, 0, 11000, 22000, 11000, 22000, 'Ethereum Slayer - Slaying Strike - current'),
+(2159601, 1, 36839, 0, -1, 100, 0, 100, 0, 6000, 18000, 6000, 18000, 'Ethereum Slayer - Impairing Poison - random'),
+(2159601, 2, 38894, 0, -1, 1, 0, 100, 0, 11000, 22000, 11000, 22000, 'Ethereum Slayer - Slaying Strike - current');
+
+UPDATE `creature_template` SET `SpellList` = 2089601 WHERE `entry` = 20896;
+UPDATE `creature_template` SET `SpellList` = 2159601 WHERE `entry` = 21596;
+
+-- Ethereum Wave-Caster 20897
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20897, 21597);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2089701, 2159701);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2089701, 'The Arcatraz - Ethereum Wave-Caster - Normal', 0, 0),
+(2159701, 'The Arcatraz - Ethereum Wave-Caster - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2089701, 2159701);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2089701, 1, 38897, 0, -1, 105, 0, 100, 0, 8000, 16000, 8000, 16000, 'Ethereum Wave-Caster - Sonic Boom - random mana user'),
+(2089701, 2, 36840, 0, -1, 101, 0, 100, 0, 9000, 13000, 16000, 20000, 'Ethereum Wave-Caster - Polymorph - random not tank'),
+
+(2159701, 1, 38897, 0, -1, 105, 0, 100, 0, 8000, 16000, 8000, 16000, 'Ethereum Wave-Caster - Sonic Boom - random mana user'),
+(2159701, 2, 38896, 0, -1, 101, 0, 100, 0, 9000, 13000, 16000, 20000, 'Ethereum Wave-Caster - Polymorph - random not tank');
+
+UPDATE `creature_template` SET `SpellList` = 2089701 WHERE `entry` = 20897;
+UPDATE `creature_template` SET `SpellList` = 2159701 WHERE `entry` = 21597;
+
+
+-- Gargantuan Abyssal
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20898, 21598);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2089801, 2159801);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2089801, 'The Arcatraz - Gargantuan Abyssal - Normal', 0, 0),
+(2159801, 'The Arcatraz - Gargantuan Abyssal - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2089801, 2159801);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2089801, 1, 36837, 0, -1, 100, 0, 100, 0, 9000, 16000, 16000, 22000, 'Gargantuan Abyssal - Meteor - random'),
+(2159801, 1, 38903, 0, -1, 100, 0, 100, 0, 9000, 16000, 16000, 22000, 'Gargantuan Abyssal - Meteor - random');
+
+UPDATE `creature_template` SET `SpellList` = 2089801 WHERE `entry` = 20898;
+UPDATE `creature_template` SET `SpellList` = 2159801 WHERE `entry` = 21598;
+
+
+-- Unchained Doombringer
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20900, 21621);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2090001, 2162101);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2090001, 'The Arcatraz - Unchained Doombringer - Normal', 0, 0),
+(2162101, 'The Arcatraz - Unchained Doombringer - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2090001, 2162101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2090001, 1, 36833, 0, -1, 1, 0, 100, 0, 12000, 18000, 16000, 24000, 'Unchained Doombringer - Berserker Charge - current'),
+(2090001, 2, 36835, 0, -1, 1, 0, 100, 0, 10000, 18000, 18000, 24000, 'Unchained Doombringer - War Stomp - current'),
+(2090001, 3, 36836, 0, -1, 1, 0, 100, 0, 7000, 12000, 12000, 20000, 'Unchained Doombringer - Agonizing Armor - current'),
+
+(2162101, 1, 36833, 0, -1, 1, 0, 100, 0, 12000, 18000, 16000, 24000, 'Unchained Doombringer - Berserker Charge - current'),
+(2162101, 2, 38911, 0, -1, 1, 0, 100, 0, 10000, 18000, 18000, 24000, 'Unchained Doombringer - War Stomp - current'),
+(2162101, 3, 36836, 0, -1, 1, 0, 100, 0, 7000, 12000, 12000, 20000, 'Unchained Doombringer - Agonizing Armor - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 2090001 WHERE `entry` = 20900;
+UPDATE `creature_template` SET `SpellList` = 2162101 WHERE `entry` = 21621;
+
+
+
+-- Sargeron Archer
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20901, 21610);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2090101, 2161001);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2090101, 'The Arcatraz - Sargeron Archer - Normal', 0, 80),
+(2161001, 'The Arcatraz - Sargeron Archer - Heroic', 0, 80);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2090101, 2161001);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2090101, 1, 36828, 0, -1, 0, 0, 100, 0, 15000, 25000, 16000, 26000, 'Sargeron Archer - Rapid Fire - self'),
+(2090101, 2, 23601, 0, -1, 1, 0, 100, 0, 12000, 22000, 17000, 27000, 'Sargeron Archer - Scatter Shot - current'),
+(2090101, 3, 36827, 0, -1, 1, 0, 100, 0, 10000, 20000, 15000, 25000, 'Sargeron Archer - Hooked Net - current'),
+(2090101, 4, 36984, 0, -1, 1, 0, 100, 0, 12000, 15000, 17000, 23000, 'Sargeron Archer - Serpent Sting - current'),
+(2090101, 5, 35964, 0, -1, 1, 0, 50, 0, 12000, 15000, 17000, 23000, 'Sargeron Archer - Frost Arrow - current'),
+(2090101, 6, 35932, 0, -1, 1, 0, 50, 0, 12000, 15000, 17000, 23000, 'Sargeron Archer - Immolation Arrow - current'),
+(2090101, 7, 22907, 2, -1, 1, 0, 100, 0, 0, 0, 2000, 4000, 'Sargeron Archer - Shoot - current'),
+
+(2161001, 1, 36828, 0, -1, 0, 0, 100, 0, 15000, 25000, 16000, 26000, 'Sargeron Archer - Rapid Fire - self'),
+(2161001, 2, 23601, 0, -1, 0, 0, 100, 0, 12000, 22000, 17000, 27000, 'Sargeron Archer - Scatter Shot - current'),
+(2161001, 3, 38912, 0, -1, 0, 0, 100, 0, 10000, 20000, 15000, 25000, 'Sargeron Archer - Hooked Net - current'),
+(2161001, 4, 38942, 0, -1, 1, 0, 100, 0, 12000, 15000, 17000, 23000, 'Sargeron Archer - Serpent Sting - current'),
+(2161001, 5, 38943, 0, -1, 1, 0, 50, 0, 12000, 15000, 17000, 23000, 'Sargeron Archer - Frost Arrow - current'),
+(2161001, 6, 38914, 0, -1, 1, 0, 50, 0, 12000, 15000, 17000, 23000, 'Sargeron Archer - Immolation Arrow - current'),
+(2161001, 7, 38940, 2, -1, 1, 0, 100, 0, 0, 0, 2000, 4000, 'Sargeron Archer - Shoot - current');
+
+UPDATE `creature_template` SET `SpellList` = 2090101 WHERE `entry` = 20901;
+UPDATE `creature_template` SET `SpellList` = 2161001 WHERE `entry` = 21610;
+
+-- Sargeron Hellcaller
+DELETE FROM `creature_template_spells` WHERE `entry` IN (20902, 21611);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2090201, 2161101);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2090201, 'The Arcatraz - Sargeron Hellcaller - Normal', 0, 0),
+(2161101, 'The Arcatraz - Sargeron Hellcaller - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2090201, 2161101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2090201, 1, 36833, 0, -1, 121, 0, 100, 0, 8000, 16000, 17000, 25000, 'Sargeron Hellcaller - Curse of Elements - current'),
+(2090201, 2, 36829, 0, -1, 103, 0, 100, 0, 11000, 19000, 18000, 25000, 'Sargeron Hellcaller - Hell Rain - aoe'),
+(2090201, 3, 36832, 0, -1, 1, 0, 100, 0, 7000, 15000, 15000, 21000, 'Sargeron Hellcaller - Incinerate - current'),
+
+(2161101, 1, 36833, 0, -1, 121, 0, 100, 0, 8000, 16000, 17000, 25000, 'Sargeron Hellcaller - Curse of Elements - current'),
+(2161101, 2, 38917, 0, -1, 103, 0, 100, 0, 11000, 19000, 18000, 25000, 'Sargeron Hellcaller - Hell Rain - current'),
+(2161101, 3, 38918, 0, -1, 1, 0, 100, 0, 7000, 15000, 15000, 21000, 'Sargeron Hellcaller - Incinerate - current');
+
+UPDATE `creature_template` SET `SpellList` = 2090201 WHERE `entry` = 20902;
+UPDATE `creature_template` SET `SpellList` = 2161101 WHERE `entry` = 21611;
+
+
+
+-- Ethereum Life-Binder
+DELETE FROM `creature_template_spells` WHERE `entry` IN (21702, 22346);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2170201, 2234601);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2170201, 'The Arcatraz - Ethereum Life-Binder - Normal', 0, 0),
+(2234601, 'The Arcatraz - Ethereum Life-Binder - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2170201, 2234601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2170201, 1, 37480, 0, -1, 1, 0, 100, 0, 12000, 18000, 12000, 18000, 'Ethereum Life-Binder - Bind - current'),
+(2170201, 2, 37479, 0, -1, 210, 0, 100, 0, 2000, 8000, 8000, 16000, 'Ethereum Life-Binder - Shadow Mend - friendly missing 50% including self'),
+(2170201, 3, 15654, 0, -1, 1, 0, 100, 0, 7000, 11000, 8000, 12000, 'Ethereum Life-Binder - Shadow Word: Pain - current'),
+
+(2234601, 1, 38900, 0, -1, 1, 0, 100, 0, 12000, 18000, 12000, 18000, 'Ethereum Life-Binder - Bind - current'),
+(2234601, 2, 38899, 0, -1, 210, 0, 100, 0, 2000, 8000, 8000, 16000, 'Ethereum Life-Binder - Shadow Mend - friendly missing 50% including self'),
+(2234601, 3, 34941, 0, -1, 1, 0, 100, 0, 7000, 11000, 8000, 12000, 'Ethereum Life-Binder - Shadow Word: Pain - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 2170201 WHERE `entry` = 21702;
+UPDATE `creature_template` SET `SpellList` = 2234601 WHERE `entry` = 22346;

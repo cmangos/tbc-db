@@ -33,36 +33,21 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+9, 2, 154.92224, 0.133047, -10.1021595, 100, 0, 0),
 (@CGUID+9, 3, 118.42155, 0.256821, -10.136737, 100, 100, 6),
 (@CGUID+9, 4, 107.806114, 1.4212999, -10.160327, 100, 100, 2),
-(@CGUID+12, 1, 206.893, 22.9948, 48.2139, 3.20196, 1, 5),
-(@CGUID+12, 2, 223.208, 22.3428, 48.3392, 0.076076, 0, 0),
-(@CGUID+12, 3, 267.205, 21.6406, 48.3504, 0.023454, 0, 0),
-(@CGUID+12, 4, 313.569, 22.1016, 48.3504, 6.23281, 0, 0),
-(@CGUID+12, 5, 344.487, 22.3783, 48.3379, 0.032093, 0, 0),
-(@CGUID+12, 6, 368.271, 21.9975, 48.2127, 0.01717, 0, 0),
-(@CGUID+12, 7, 400.191, 22.0121, 48.2127, 0.010102, 0, 0),
-(@CGUID+12, 8, 419.79, 22.2101, 48.2133, 0.010102, 0, 0),
-(@CGUID+12, 9, 424.231, 14.8928, 48.2133, 4.5984, 0, 0),
-(@CGUID+12, 10, 425.881, 3.23986, 48.2061, 4.83402, 0, 0),
-(@CGUID+12, 11, 443.302, -0.542986, 48.2114, 6.26109, 0, 0),
-(@CGUID+12, 12, 457.661, 1.59947, 48.2307, 0.164825, 0, 0),
-(@CGUID+12, 13, 464.795, 5.55337, 48.4041, 0.537104, 0, 0),
-(@CGUID+12, 14, 468.035, 13.9639, 49.4229, 1.15207, 0, 0),
-(@CGUID+12, 15, 467.408, 18.2939, 49.7933, 1.71442, 0, 0),
-(@CGUID+12, 16, 463.347, 27.6971, 50.7511, 1.92019, 0, 0),
-(@CGUID+12, 17, 459.654, 36.5773, 50.8465, 2.1134, 0, 0),
-(@CGUID+12, 18, 455.16, 39.4752, 50.8465, 2.56893, 0, 0),
-(@CGUID+12, 19, 445.222, 41.1223, 50.3475, 2.97734, 0, 0),
-(@CGUID+12, 20, 437.781, 43.6748, 49.5498, 2.81633, 0, 0),
-(@CGUID+12, 21, 432.252, 42.9315, 48.983, 3.2106, 0, 0),
-(@CGUID+12, 22, 427.619, 39.6984, 48.3121, 3.75096, 0, 0),
-(@CGUID+12, 23, 423.374, 27.9096, 48.2301, 4.36671, 0, 0),
-(@CGUID+12, 24, 410.734, 22.5105, 48.2164, 3.56874, 0, 0),
-(@CGUID+12, 25, 401.738, 22.0779, 48.2137, 3.15405, 0, 0),
-(@CGUID+12, 26, 368.434, 21.9003, 48.2137, 3.11949, 0, 0),
-(@CGUID+12, 27, 346.604, 22.3952, 48.3335, 3.11321, 0, 0),
-(@CGUID+12, 28, 304.418, 22.7126, 48.3504, 3.15562, 0, 0),
-(@CGUID+12, 29, 264.007, 22.3188, 48.3504, 3.11086, 0, 0),
-(@CGUID+12, 30, 229.906, 22.6008, 48.3142, 3.10065, 0, 0),
+(@CGUID+12, 1, 208.37445, 22.330988, 48.193367, 100, 1, 5),
+(@CGUID+12, 2, 216.14856, 22.3947, 48.27127, 100, 0, 0),
+(@CGUID+12, 3, 280.1431, 22.352139, 48.35042, 100, 0, 0),
+(@CGUID+12, 4, 327.02222, 22.415138, 48.35042, 100, 0, 0),
+(@CGUID+12, 5, 365.33887, 22.197266, 48.212696, 100, 0, 0),
+(@CGUID+12, 6, 414.51904, 22.458496, 48.214485, 100, 0, 0),
+(@CGUID+12, 7, 458.984, 1.867482, 48.221653, 100, 0, 0),
+(@CGUID+12, 8, 468.03598, 14.782437, 49.484177, 100, 0, 0),
+(@CGUID+12, 9, 459.82727, 37.411278, 50.84645, 100, 0, 0),
+(@CGUID+12, 10, 434.82935, 44.72688, 49.352238, 100, 0, 0),
+(@CGUID+12, 11, 414.516, 22.780737, 48.215786, 100, 0, 0),
+(@CGUID+12, 12, 365.25113, 22.579336, 48.212696, 100, 0, 0),
+(@CGUID+12, 13, 326.98926, 22.717283, 48.35042, 100, 0, 0),
+(@CGUID+12, 14, 280.14618, 22.75021, 48.35042, 100, 0, 0),
+(@CGUID+12, 15, 233.10696, 22.53368, 48.33978, 100, 0, 0),
 (@CGUID+16, 1, 166.14273, 146.77989, 22.441147, 100, 1, 5),
 (@CGUID+16, 2, 176.24336, 130.70343, 22.441147, 100, 0, 0),
 (@CGUID+16, 3, 206.13625, 147.05757, 22.540552, 100, 0, 0),
@@ -174,26 +159,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+68, 4, 198.717, 156.83224, 22.364504, 100, 27000, 0), -- move rnd around for 25-30 seconds
 (@CGUID+68, 5, 189.48445, 157.87857, 22.44115, 100, 0, 0),
 (@CGUID+68, 6, 180.3669, 158.23933, 22.441147, 100, 0, 0),
-(@CGUID+74, 1, 454.72, 39.4298, 50.8465, 2.84682, 0, 0),
-(@CGUID+74, 2, 445.098, 43.0044, 50.307, 2.87274, 0, 0),
-(@CGUID+74, 3, 436.149, 44.5008, 49.4455, 2.91201, 0, 0),
-(@CGUID+74, 4, 429.378, 43.0711, 48.6463, 3.27958, 0, 0),
-(@CGUID+74, 5, 425.88, 39.2374, 48.1989, 3.94246, 0, 0),
-(@CGUID+74, 6, 427.007, 31.3021, 48.2374, 4.85352, 0, 0),
-(@CGUID+74, 7, 437.728, 17.4817, 48.2131, 5.39544, 0, 0),
-(@CGUID+74, 8, 440.471, 6.12514, 48.2117, 4.94934, 0, 0),
-(@CGUID+74, 9, 440.767, -16.4589, 48.2117, 4.58805, 0, 0),
-(@CGUID+74, 10, 450.292, -15.9272, 48.2264, 0.156837, 0, 0),
-(@CGUID+74, 11, 451.301, -6.25667, 48.2343, 1.46688, 0, 0),
-(@CGUID+74, 12, 451.922, 0.912464, 48.2306, 1.48416, 0, 0),
-(@CGUID+74, 13, 453.763, 2.72407, 48.2348, 0.777301, 0, 0),
-(@CGUID+74, 14, 463.693, 4.9248, 48.2929, 0.218098, 0, 0),
-(@CGUID+74, 15, 468.068, 10.7025, 49.1064, 0.950874, 0, 0),
-(@CGUID+74, 16, 467.922, 18.8861, 49.8541, 1.58862, 0, 0),
-(@CGUID+74, 17, 466.032, 23.5883, 50.3245, 1.95304, 0, 0),
-(@CGUID+74, 18, 462.582, 28.267, 50.8465, 2.23657, 0, 0),
-(@CGUID+74, 19, 461.345, 34.9268, 50.8465, 1.70643, 0, 0),
-(@CGUID+74, 20, 457.107, 38.777, 50.8465, 2.40465, 0, 0),
 (@CGUID+78, 1, 456.1953, -162.02287, 43.097973, 100, 0, 0),
 (@CGUID+78, 2, 444.38632, -151.77869, 43.037457, 100, 0, 0),
 (@CGUID+78, 3, 437.77167, -136.3138, 43.100117, 100, 0, 0),
@@ -201,11 +166,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+78, 5, 445.06357, -105.65653, 43.100105, 100, 0, 0),
 (@CGUID+78, 6, 446.46475, -89.316284, 43.100094, 100, 0, 0),
 (@CGUID+78, 7, 446.41287, -65.38533, 48.39542, 100, 0, 0),
-(@CGUID+78, 8, 446.46475, -89.316284, 43.100094, 100, 0, 0),
-(@CGUID+78, 9, 445.06357, -105.65653, 43.100105, 100, 0, 0),
-(@CGUID+78, 10, 441.69543, -123.04215, 43.10011, 100, 0, 0),
-(@CGUID+78, 11, 437.77167, -136.3138, 43.100117, 100, 0, 0),
-(@CGUID+78, 12, 444.38632, -151.77869, 43.037457, 100, 0, 0),
 (@CGUID+149, 1, 164.571, 164.083, 22.4412, 5.65782, 0, 0),
 (@CGUID+149, 2, 170.578, 160.263, 22.4412, 5.71673, 0, 0),
 (@CGUID+149, 3, 169.973, 154.136, 22.4412, 4.73498, 0, 0),
@@ -316,20 +276,9 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (21702, 0, 0, 1, 0, 0, NULL), -- Ethereum Life-Binder
 (21962, 0, 0, 1, 0, 0, '29266'); -- Udalo
 
-INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+42, @CGUID+43, 1155), -- Arcatraz Sentinel -> Arcatraz Sentinel
-
-(@CGUID+72, @CGUID+73, 1155), -- Ethereum Slayer -> Ethereum Slayer
-(@CGUID+145, @CGUID+73, 1155), -- Ethereum Life-Binder -> Ethereum Slayer
-(@CGUID+76, @CGUID+73, 1155), -- Ethereum Wave-Caster -> Ethereum Slayer
-(@CGUID+75, @CGUID+74, 1679), -- Ethereum Slayer -> Ethereum Slayer
-(@CGUID+77, @CGUID+74, 1679), -- Ethereum Wave-Caster -> Ethereum Slayer
-(@CGUID+146, @CGUID+74, 1679), -- Ethereum Life-Binder -> Ethereum Slayer
-(@CGUID+82, @CGUID+84, 1155), -- Sargeron Archer -> Sargeron Hellcaller
-(@CGUID+83, @CGUID+85, 1155); -- Sargeron Archer -> Sargeron Hellcaller
+-- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
--- (20859, 552, 20857, 1, 0), -- Arcatraz Warder -> Arcatraz Defender
 (21466, 552, 20912, 4112, 0), -- Harbinger Skyriss -> Harbinger Skyriss
 (21467, 552, 20912, 4112, 0); -- Harbinger Skyriss -> Harbinger Skyriss
 
@@ -361,7 +310,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+9, 20864, 552, 3, 186.8511, -17.043463, -10.028533, 1.75680, 10, 10, 0, 2), -- Protean Nightmare
 (@CGUID+10, 20864, 552, 3, 208.993, 6.98038, -7.38507, 0.74831, 7200, 7200, 0, 0), -- Protean Nightmare
 (@CGUID+11, 20864, 552, 3, 202.78, -41.4077, -10.0187, 5.84685, 7200, 7200, 0, 0), -- Protean Nightmare
-(@CGUID+12, 20865, 552, 3, 219.948, 22.4258, 48.3374, 3.14979, 7200, 7200, 0, 2), -- Protean Horror
+(@CGUID+12, 20865, 552, 3, 208.37445, 22.330988, 48.193367, 6.2772, 7200, 7200, 0, 2), -- Protean Horror
 (@CGUID+13, 20865, 552, 3, 284.425, 39.5287, 22.5245, 3.42709, 7200, 7200, 30, 1), -- Protean Horror
 (@CGUID+14, 20865, 552, 3, 284.465, -5.35082, 22.5245, 1.90966, 7200, 7200, 30, 1), -- Protean Horror
 (@CGUID+15, 20865, 552, 3, 274.55026,-161.28899,-10.110444, 2.60, 7200, 7200, 0, 0), -- Protean Horror
@@ -393,8 +342,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+41, 20869, 552, 3, 264.287, -61.3211, 22.4534, 5.28835, 7200, 7200, 0, 0), -- Arcatraz Sentinel
 (@CGUID+42, 20869, 552, 3, 253.942, 131.8811, 22.39496, 0.7679449, 7200, 7200, 0, 0), -- Arcatraz Sentinel
 (@CGUID+43, 20869, 552, 3, 255.4978, 158.9143, 22.36194, 5.410521, 7200, 7200, 0, 0), -- Arcatraz Sentinel
-(@CGUID+44, 20869, 552, 3, 336.5143, 27.42666, 48.42604, 3.839724, 7200, 7200, 0, 0), -- Arcatraz Sentinel
-(@CGUID+45, 20869, 552, 3, 395.413, 18.19484, 48.29602, 2.495821, 7200, 7200, 0, 0), -- Arcatraz Sentinel
+(@CGUID+44, 20869, 552, 3, 336.514, 27.4267, 48.426, 3.83972, 7200, 7200, 0, 0), -- Arcatraz Sentinel
+(@CGUID+45, 20869, 552, 3, 395.413, 18.1948, 48.296, 2.49582, 7200, 7200, 0, 0), -- Arcatraz Sentinel
 -- Entrance RP Protean Horror
 (@CGUID+46, 20865, 552, 3, 176.223, 8.54549, -9.98461, 4.57276, 1, 1, 0, 2), -- Protean Horror
 (@CGUID+47, 20865, 552, 3, 183.572, 16.4955, -10.0309, 0.890118, 1, 1, 0, 2), -- Protean Horror
@@ -424,18 +373,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+71, 20886, 552, 3, 136.2, 168.31, 22.5245, 5.23599, 86400, 86400, 0, 0), -- Wrath-Scryer Soccothrates
 (@CGUID+72, 20896, 552, 3, 433.027, 6.10896, 48.2954, 2.87979, 7200, 7200, 0, 0), -- Ethereum Slayer
 (@CGUID+73, 20896, 552, 3, 429.812, 12.0886, 48.2949, 5.20108, 7200, 7200, 0, 0), -- Ethereum Slayer
-(@CGUID+74, 20896, 552, 3, 457.725, 37.7515, 50.8465, 2.77771, 7200, 7200, 0, 2), -- Ethereum Slayer
-(@CGUID+75, 20896, 552, 3, 458.313, 41.8073, 50.808, 1.93433, 7200, 7200, 0, 0), -- Ethereum Slayer
+(@CGUID+74, 20896, 552, 3, 442.6864, -1.3589563, 48.21277, 4.69740, 7200, 7200, 0, 0), -- Ethereum Slayer
+(@CGUID+75, 20896, 552, 3, 442.58783, -7.935695, 48.212776, 4.6974, 7200, 7200, 0, 0), -- Ethereum Slayer
 (@CGUID+76, 20897, 552, 3, 434.228, 9.77371, 48.2944, 3.57792, 7200, 7200, 0, 0), -- Ethereum Wave-Caster
-(@CGUID+77, 20897, 552, 3, 461.361, 39.6362, 50.7995, 2.68896, 7200, 7200, 0, 0), -- Ethereum Wave-Caster
-(@CGUID+78, 20898, 552, 3, 456.1953, -162.02287, 43.097973, 1.57296, 7200, 7200, 0, 2), -- Gargantuan Abyssal
+(@CGUID+77, 20897, 552, 3, 440.03802, -3.5020337, 48.212772, 4.70056, 7200, 7200, 0, 0), -- Ethereum Wave-Caster
+(@CGUID+78, 20898, 552, 3, 456.1953, -162.02287, 43.097973, 1.708, 7200, 7200, 0, 4), -- Gargantuan Abyssal
 (@CGUID+79, 20898, 552, 3, 452.778, -136.182, 43.1001, 5.45005, 7200, 7200, 5, 1), -- Gargantuan Abyssal
 (@CGUID+80, 20900, 552, 3, 429.11, -156.501, 43.0686, 1.99487, 7200, 7200, 5, 1), -- Unchained Doombringer
 (@CGUID+81, 20900, 552, 3, 432.257, -114.243, 43.1834, 1.13446, 7200, 7200, 0, 0), -- Unchained Doombringer
 (@CGUID+82, 20901, 552, 3, 431.237, -72.8754, 48.4787, 0.174533, 7200, 7200, 0, 0), -- Sargeron Archer
 (@CGUID+83, 20901, 552, 3, 460.864, -74.1793, 48.4787, 2.94961, 7200, 7200, 0, 0), -- Sargeron Archer
 (@CGUID+84, 20902, 552, 3, 436.245, -76.3012, 48.4787, 1.74533, 7200, 7200, 0, 0), -- Sargeron Hellcaller
-(@CGUID+85, 20902, 552, 3, 457.611, -76.815, 48.4787, 1.09956, 7200, 7200, 0, 0), -- Sargeron Hellcaller
+(@CGUID+85, 20902, 552, 3,  457.611, -76.815, 48.4787, 1.09956, 7200, 7200, 0, 0), -- Sargeron Hellcaller
 (@CGUID+86, 20904, 552, 3, 445.803, -169.007, 43.6442, 4.74729, 43200, 43200, 0, 0), -- Warden Mellichar
 (@CGUID+87, 20978, 552, 3, 117.826, 198.081, 22.5245, 5.18363, 300, 300, 0, 0), -- Wrath-Scryer's Felfire
 (@CGUID+88, 20978, 552, 3, 117.861, 198.068, 22.5245, 4.41568, 300, 300, 0, 0), -- Wrath-Scryer's Felfire
@@ -465,8 +414,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+112, 0, 552, 3, 311.119, -5.50369, 22.5245, 1.5708, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+113, 0, 552, 3, 293.885, 70.9368, 22.5262, 1.55334, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+114, 0, 552, 3, 291.632, 70.5809, 22.5269, 2.00713, 86400, 86400, 0, 0), -- spawn_group_entry
-(@CGUID+115, 21303, 552, 3, 397.07, 25.3331, 48.296, 0.523599, 86400, 86400, 0, 0), -- Defender Corpse
-(@CGUID+116, 21303, 552, 3, 392.004, 18.3857, 48.296, 1.48353, 86400, 86400, 0, 0), -- Defender Corpse
+(@CGUID+115, 0, 552, 3, 395.076, 27.5835, 48.296, 4.41568, 86400, 86400, 0, 0), -- spawn_group_entry
+(@CGUID+116, 0, 552, 3, 397.071, 25.3331, 48.296, 0.523599, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+117, 0, 552, 3, 257.344, 155.568, 22.3321, 4.71239, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+118, 0, 552, 3, 210.114, -161.992, -10.0359, 6.12611, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+119, 0, 552, 3, 283.728, 130.245, 22.3065, 0.575959, 86400, 86400, 0, 0), -- spawn_group_entry
@@ -474,9 +423,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+121, 0, 552, 3, 311.196, 125.847, 22.337, 1.64061, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+122, 0, 552, 3, 291.801, 158.914, 22.3234, 5.96903, 86400, 86400, 0, 0), -- spawn_group_entry
 (@CGUID+123, 0, 552, 3, 255.173, 137.844, 22.3725, 5.49779, 86400, 86400, 0, 0), -- spawn_group_entry
--- reuse +124
--- reuse +125
--- reuse 126
+(@CGUID+124, 0, 552, 3, 392.063, 24.8857, 48.296, 6.16101, 86400, 86400, 0, 0), -- spawn_group_entry
+(@CGUID+125, 0, 552, 3, 392.004, 18.3857, 48.296, 1.48353, 86400, 86400, 0, 0), -- spawn_group_entry
+(@CGUID+126, 0, 552, 3, 393.459, 15.9235, 48.296, 0.436332, 86400, 86400, 0, 0), -- spawn_group_entry
 -- reuse +127
 -- reuse +128
 -- reuse +129
@@ -484,8 +433,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- reuse +131, 132
 -- reuse 133, 134
 -- reuse 135, 136
-(@CGUID+137, 21304, 552, 3, 397.07, 25.3331, 48.296, 0.523599, 86400, 86400, 0, 0), -- Warder Corpse
-(@CGUID+138, 21304, 552, 3, 392.004, 18.3857, 48.296, 1.48353, 86400, 86400, 0, 0), -- Warder Corpse
+-- reuse 137
+-- reuse 138
 -- reuse +139
 (@CGUID+140, 21436, 552, 3, 478.326, -148.505, 55.2775, 2.54818, 7200, 7200, 0, 0), -- Tempest Keep Prison Alpha Pod Target
 (@CGUID+141, 21437, 552, 3, 413.292, -148.378, 54.8771, 0.296706, 7200, 7200, 0, 0), -- Tempest Keep Prison Beta Pod Target
@@ -493,7 +442,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+143, 21439, 552, 3, 471.795, -174.58, 55.0008, 2.87979, 7200, 7200, 0, 0), -- Tempest Keep Prison Gamma Pod Target
 (@CGUID+144, 21440, 552, 3, 445.763, -191.639, 57.5766, 3.9619, 7200, 7200, 0, 0), -- Tempest Keep Prison Boss Pod Target
 (@CGUID+145, 21702, 552, 3, 429.409, 7.09051, 48.2896, 1.23918, 7200, 7200, 0, 0), -- Ethereum Life-Binder
-(@CGUID+146, 21702, 552, 3, 460.075, 36.9325, 50.8465, 2.89159, 7200, 7200, 0, 0), -- Ethereum Life-Binder
+(@CGUID+146, 21702, 552, 3, 445.25098, -3.6131277, 48.212765, 4.69741, 7200, 7200, 0, 0), -- Ethereum Life-Binder
 (@CGUID+147, 21962, 552, 3, 468.6516, 12.2102, 49.38526, 1.291544, 7200, 7200, 0, 0), -- Udalo
 (@CGUID+148, 20882, 552, 3, 160.808, 126.532, 22.5245, 0.942478, 7200, 7200, 0, 0), -- Skulking Witch
 (@CGUID+149, 20882, 552, 3, 163.215, 165.66, 22.5245, 5.37561, 7200, 7200, 0, 0), -- Skulking Witch
@@ -575,7 +524,12 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+21, 'The Arcatraz - Group 021 - Warder/Defender Corpse', 0, 2, 0, 0, 0, 0), -- static 2 spawns, rnd entry
 (@SGGUID+22, 'The Arcatraz - Group 022 - Eredar Soul-Eater/Eredar Deathbringer', 0, 1, 0, 0, 0, 0), -- rnd entry
 (@SGGUID+23, 'The Arcatraz - Group 023 - Skulking Witch', 0, 1, 0, 0, 0, 0), -- static 2 spawns 1 active
-(@SGGUID+24, 'The Arcatraz - Group 024 - Unbound Devastator / Spiteful Temptress', 0, 1, 0, 0, 0, 0); -- rnd entry
+(@SGGUID+24, 'The Arcatraz - Group 024 - Unbound Devastator / Spiteful Temptress', 0, 1, 0, 0, 0, 0), -- rnd entry
+(@SGGUID+25, 'The Arcatraz - Group 025 - Warder/Defender Corpse', 0, 2, 0, 0, 0, 0), -- 5 different spawns only 1 active
+(@SGGUID+26, 'The Arcatraz - Group 026 - Ethereum Slayer (2) - Ethereum Wave-Caster (1) - Ethereum Life-Binder (1)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+27, 'The Arcatraz - Group 027 - Ethereum Slayer (2) - Ethereum Wave-Caster (1) - Ethereum Life-Binder (1) | Patrol 05', 0, 0, 0, 0, 1, 0),
+(@SGGUID+28, 'The Arcatraz - Group 028 - Sargeron Archer (1) - Sargeron Hellcaller (1)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+29, 'The Arcatraz - Group 029 - Sargeron Archer (1) - Sargeron Hellcaller (1)', 0, 0, 0, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+9, 21303, 0, 0, 0), (@SGGUID+9, 21304, 0, 0, 0), -- Defener Corpse, Warder Corpse
@@ -592,7 +546,8 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+20, 21303, 0, 0, 0), (@SGGUID+20, 21304, 0, 0, 0), -- Defener Corpse, Warder Corpse
 (@SGGUID+21, 21303, 0, 0, 0), (@SGGUID+21, 21304, 0, 0, 0), -- Defener Corpse, Warder Corpse
 (@SGGUID+22, 20879, 0, 0, 0), (@SGGUID+22, 20880, 0, 0, 0), -- Eredar Soul-Eater, Eredar Deathbringer
-(@SGGUID+24, 20881, 0, 0, 0), (@SGGUID+24, 20883, 0, 0, 0); -- Unbound Devastator, Spiteful Temptress
+(@SGGUID+24, 20881, 0, 0, 0), (@SGGUID+24, 20883, 0, 0, 0), -- Unbound Devastator, Spiteful Temptress
+(@SGGUID+25, 21303, 0, 0, 0), (@SGGUID+25, 21304, 0, 0, 0); -- Defener Corpse, Warder Corpse
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+5, 0, 0), -- Arcatraz Warder - left
@@ -689,19 +644,43 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+23, @CGUID+148, -1, 0), -- Skulking Witch
 (@SGGUID+23, @CGUID+149, -1, 0), -- Skulking Witch
 
-(@SGGUID+24, @CGUID+67, -1, 0); -- spawn_group_entry
+(@SGGUID+24, @CGUID+67, -1, 0), -- spawn_group_entry
+
+(@SGGUID+25, @CGUID+115, -1, 0), -- spawn_group_entry
+(@SGGUID+25, @CGUID+116, -1, 0), -- spawn_group_entry
+(@SGGUID+25, @CGUID+124, -1, 0), -- spawn_group_entry
+(@SGGUID+25, @CGUID+125, -1, 0), -- spawn_group_entry
+(@SGGUID+25, @CGUID+126, -1, 0), -- spawn_group_entry
+
+(@SGGUID+26, @CGUID+72, 0, 0), -- Ethereum Slayer
+(@SGGUID+26, @CGUID+73, 1, 0), -- Ethereum Slayer
+(@SGGUID+26, @CGUID+76, 2, 0), -- Ethereum Wave-Caster
+(@SGGUID+26, @CGUID+145, 3, 0), -- Ethereum Life-Binder
+
+(@SGGUID+27, @CGUID+74, 0, 0), -- Ethereum Slayer
+(@SGGUID+27, @CGUID+75, 1, 0), -- Ethereum Slayer
+(@SGGUID+27, @CGUID+146, 2, 0), -- Ethereum Life-Binder
+(@SGGUID+27, @CGUID+77, 3, 0), -- Ethereum Wave-Caster
+
+(@SGGUID+28, @CGUID+85, 0, 0), -- Sargeron Hellcaller
+(@SGGUID+28, @CGUID+83, 1, 0), -- Sargeron Archer
+
+(@SGGUID+29, @CGUID+84, 0, 0), -- Sargeron Hellcaller
+(@SGGUID+29, @CGUID+82, 1, 0); -- Sargeron Archer
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+6, 3, 3, 0, @SGGUID+6, 2, 'The Arcatraz - Group 006 - Protean Nightmare (1) - Protean Horror (2) | Patrol 01'),
 (@SGGUID+7, 3, 3, 0, @SGGUID+7, 2, 'The Arcatraz - Group 007 - Protean Nightmare (1) - Protean Horror (2) | Patrol 02'),
 (@SGGUID+8, 6, 3, 0, @SGGUID+8, 2, 'The Arcatraz - Group 008 - Protean Horror (6) | Patrol 03'),
-(@SGGUID+11, 6, 3, 0, @SGGUID+11, 2, 'The Arcatraz - Group 011 - Protean Horror (6) | Patrol 04');
+(@SGGUID+11, 6, 3, 0, @SGGUID+11, 2, 'The Arcatraz - Group 011 - Protean Horror (6) | Patrol 04'),
+(@SGGUID+27, 6, 3, 0, @SGGUID+27, 2, 'The Arcatraz - Group 027 - Ethereum Slayer (2) - Ethereum Wave-Caster (1) - Ethereum Life-Binder (1) | Patrol 05');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+6, 'The Arcatraz - Group 006 - Protean Nightmare (1) - Protean Horror (2) | Patrol 01'),
 (@SGGUID+7, 'The Arcatraz - Group 007 - Protean Nightmare (1) - Protean Horror (2) | Patrol 02'),
 (@SGGUID+8, 'The Arcatraz - Group 008 - Protean Horror (6) | Patrol 03'),
-(@SGGUID+11, 'The Arcatraz - Group 008 - Protean Horror (6) | Patrol 04');
+(@SGGUID+11, 'The Arcatraz - Group 008 - Protean Horror (6) | Patrol 04'),
+(@SGGUID+27, 'The Arcatraz - Group 027 - Ethereum Slayer (2) - Ethereum Wave-Caster (1) - Ethereum Life-Binder (1) | Patrol 05');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+6, 1, 208.34787,9.844978, -7.4684005, 2.8623, 20000, 0), -- remove formation, and rnd move around for 20 seconds
@@ -744,8 +723,18 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+11, 13, 261.5679, -119.71741, -10.123237, 100, 0, 0),
 (@SGGUID+11, 14, 245.82552, -122.29325, -10.123243, 100, 0, 0),
 (@SGGUID+11, 15, 220.30566, -121.72503, -10.117749, 100, 0, 0),
-(@SGGUID+11, 16, 202.52419, -114.3171, -10.123289, 100, 0, 0);
-
+(@SGGUID+11, 16, 202.52419, -114.3171, -10.123289, 100, 0, 0),
+(@SGGUID+27, 1, 449.3031, -20.429773, 48.238365, 100, 0, 0),
+(@SGGUID+27, 2, 449.4046, 1.538476, 48.219746, 100, 0, 0),
+(@SGGUID+27, 3, 463.29834, 5.452207, 48.305122, 100, 0, 0),
+(@SGGUID+27, 4, 466.79602, 19.510277, 49.99231, 100, 0, 0),
+(@SGGUID+27, 5, 460.21735, 36.802353, 50.84645, 100, 0, 0),
+(@SGGUID+27, 6, 439.6564, 44.632866, 49.722843, 100, 0, 0),
+(@SGGUID+27, 7, 427.544, 41.33546, 48.411602, 100, 0, 0),
+(@SGGUID+27, 8, 426.6427, 32.553425, 48.206783, 100, 0, 0),
+(@SGGUID+27, 9, 436.76343, 19.38034, 48.21401, 100, 0, 0),
+(@SGGUID+27, 10, 442.88638, 11.988906, 48.23025, 100, 0, 0),
+(@SGGUID+27, 11, 442.4002,- 20.45843, 48.212788, 100, 0, 0);
 
 -- =======
 -- POOLING
