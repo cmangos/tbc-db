@@ -4,7 +4,7 @@ DELETE FROM creature_movement WHERE id IN(99257);
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
 ('99257', '18683', '530', '1', '-2774.637', '8400.566', '-40.375504', '0.09109400212764740000', '43200', '86400', '0', '2');
 
-SET @SGGUID := 25000; -- Terokkar
+SET @SGGUID := 25000; -- Nagrand
 DELETE FROM spawn_group WHERE Id = @SGGUID+1;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+1, 'Nagrand - Voidhunter Yor', 0, 1, 0, 0);
