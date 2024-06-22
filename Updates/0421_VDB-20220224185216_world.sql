@@ -1210,9 +1210,14 @@ UPDATE `quest_template` SET `NextQuestId` = 2759, `NextQuestInChain` = 0 WHERE `
 -- ----------------------------------------------------------------------
 
 -- Add Missing Creature Mor'vek 11701
-DELETE FROM `creature` WHERE `id` = 11701 AND `guid` = 88163; -- wotlk guid used
-INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
-(88163, 11701, 1, -7788.08, -2109.55, -266.63, 0, 180, 180, 5, 1);
+DELETE FROM `creature` WHERE `id` = 11701 AND `guid` = 88163; -- wotlk guid used, only for classic/wotlk.
+-- INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
+-- (88163, 11701, 1, -7788.08, -2109.55, -266.63, 0, 180, 180, 5, 1);
+
+-- https://www.wowhead.com/tbc/npc=11702/arinsor
+DELETE FROM `creature` WHERE `id` = 11702 AND `guid` = 88167; -- free wotlk guid used, only for classic.
+-- INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
+-- (88167, 11702, 1, -6342.67, -660.912, -179.816, 2.32129, 180, 180, 0, 0);
 
 -- ----------------------------------------------------------------------
 
