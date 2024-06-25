@@ -24403,7 +24403,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1739702','17397','4','0','10','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Shadowmoon Adept - Random Say on Aggro'),
 ('1739703','17397','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Shadowmoon Adept - Flee at 15% HP'),
 -- Nascent Fel Orc 17398 - spell_list
-('1739801','17398','4','0','15','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Nascent Fel Orc - Random Say on Aggro'),
 -- Seductress 17399 - spell_list
 ('1739901','17399','11','0','100','0','0','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Seductress - Zone Combat Pulse on Spawn'),
 -- Felguard Annihilator 17400 - spell_list, reset threat only in normal mode
@@ -24413,7 +24412,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shadowmoon Technician 17414 - spell_list
 ('1741401','17414','4','0','15','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Shadowmoon Technician - Random Say on Aggro'),
 -- Fel Orc Neophyte 17429 - spell_list
-('1742901','17429','4','0','15','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Fel Orc Neophyte - Random Say on Aggro'),
 -- Hellfire Imp 17477 - spell_list
 ('1747701','17477','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Hellfire Imp - Enable Range Mode on Spawn'),
 ('1747702','17477','4','0','100','0','0','0','0','0','0','0','28','0','35766','0','0','0','0','0','0','0','0','0','Hellfire Imp - Remove Summon Visual Test on Aggro'),

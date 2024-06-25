@@ -448,10 +448,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+40, 'Blood Furnace - Group 038 - Shadowmoon Warlock | Felguard Annihilator (2)', 0, 0, 0, 0, 1, 0),
 (@SGGUID+41, 'Blood Furnace - Laughing Skull Rogue - random spawns', 0, 4, 0, 0, 0, 0),
 -- Broggok Prison Cell npc groups
-(@SGGUID+42, 'Blood Furnace - Prison Cell Group Front Left', 0, 0, 0, 0, 3, @STRINGID+1),
-(@SGGUID+43, 'Blood Furnace - Prison Cell Group Front Righ', 0, 0, 0, 0, 3, @STRINGID+2),
-(@SGGUID+44, 'Blood Furnace - Prison Cell Group Back Left', 0, 0, 0, 0, 3, @STRINGID+3),
-(@SGGUID+45, 'Blood Furnace - Prison Cell Group Back Right', 0, 0, 0, 0, 3, @STRINGID+4);
+(@SGGUID+42, 'Blood Furnace - Prison Cell Group Front Left', 0, 0, 0, 0, 3, @STRINGID+3),
+(@SGGUID+43, 'Blood Furnace - Prison Cell Group Front Righ', 0, 0, 0, 0, 3, @STRINGID+4),
+(@SGGUID+44, 'Blood Furnace - Prison Cell Group Back Left', 0, 0, 0, 0, 3, @STRINGID+1),
+(@SGGUID+45, 'Blood Furnace - Prison Cell Group Back Right', 0, 0, 0, 0, 3, @STRINGID+2),
+(@SGGUID+46, 'Blood Furnace - Prison Cell Group', 0, 0, 0, 0, 0, @STRINGID+5); -- all other npcs in cages
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+7, 17371, 0, 0, 0), (@SGGUID+7, 17395, 0, 0, 0), -- Shadowmoon Warlock, Shadowmoon Summoner
@@ -635,7 +636,32 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 -- back right 
 (@SGGUID+45, @CGUID+63, 0, 0), -- Nascent Fel Orc
 (@SGGUID+45, @CGUID+64, 1, 0), -- Nascent Fel Orc
-(@SGGUID+45, @CGUID+135, 2, 0); -- Fel Orc Neophyte
+(@SGGUID+45, @CGUID+135, 2, 0), -- Fel Orc Neophyte
+-- rest celled orcs
+(@SGGUID+46, @CGUID+136, -1, 0), 
+(@SGGUID+46, @CGUID+138, -1, 0), 
+(@SGGUID+46, @CGUID+139, -1, 0), 
+(@SGGUID+46, @CGUID+140, -1, 0), 
+(@SGGUID+46, @CGUID+142, -1, 0), 
+(@SGGUID+46, @CGUID+143, -1, 0), 
+(@SGGUID+46, @CGUID+145, -1, 0), 
+(@SGGUID+46, @CGUID+147, -1, 0),
+(@SGGUID+46, @CGUID+148, -1, 0), 
+(@SGGUID+46, @CGUID+149, -1, 0),  
+(@SGGUID+46, @CGUID+150, -1, 0), 
+(@SGGUID+46, @CGUID+151, -1, 0), 
+(@SGGUID+46, @CGUID+152, -1, 0), 
+(@SGGUID+46, @CGUID+153, -1, 0), 
+(@SGGUID+46, @CGUID+154, -1, 0),
+(@SGGUID+46, @CGUID+155, -1, 0), 
+(@SGGUID+46, @CGUID+156, -1, 0), 
+(@SGGUID+46, @CGUID+157, -1, 0), 
+(@SGGUID+46, @CGUID+159, -1, 0),
+(@SGGUID+46, @CGUID+160, -1, 0), 
+(@SGGUID+46, @CGUID+161, -1, 0), 
+(@SGGUID+46, @CGUID+163, -1, 0), 
+(@SGGUID+46, @CGUID+164, -1, 0), 
+(@SGGUID+46, @CGUID+165, -1, 0); 
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+19, 2, 3, 0, @SGGUID+19, 2, 'Blood Furnace - Group 018 - Shadowmoon Technician | Laughing Skull Legionnaire - Patrol 001'),
@@ -763,13 +789,13 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 -- StringIDs
-DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+4;
+DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+5;
 INSERT INTO `string_id` (Id, Name) VALUES 
 (@STRINGID+1, 'BF_PRISON_CELL_GROUP_01'), -- front left
 (@STRINGID+2, 'BF_PRISON_CELL_GROUP_02'), -- front right
 (@STRINGID+3, 'BF_PRISON_CELL_GROUP_03'), -- back left
-(@STRINGID+4, 'BF_PRISON_CELL_GROUP_04'); -- back right
-
+(@STRINGID+4, 'BF_PRISON_CELL_GROUP_04'), -- back right
+(@STRINGID+5, 'BF_PRISON_CELL_GROUP_05'); -- all other caged npcs
 -- =========
 -- DBSCRIPTS
 -- =========
@@ -814,5 +840,3 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
-
-
