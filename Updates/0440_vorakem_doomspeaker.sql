@@ -1,0 +1,20 @@
+DELETE FROM creature WHERE guid IN(99249,99250,99251,99252);
+-- DELETE FROM creature_movement WHERE id IN(99249,99250,99251,99252);
+
+INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
+('99249', '18679', '530', '1', '-368.80700683593750000000', '1845.97998046875000000000', '86.40979766845703000000', '2.91793990135192870000', '43200', '86400', '0', '2'),
+('99250', '18679', '530', '1', '-114.01200103759766000000', '1835.66003417968750000000', '73.84110260009766000000', '0.61279100179672240000', '43200', '86400', '0', '2'),
+('99251', '18679', '530', '1', '494.11199951171875000000', '2187.12011718750000000000', '131.71899414062500000000', '1.88513994216918950000', '43200', '86400', '0', '2'),
+('99252', '18679', '530', '1', '442.58599853515625000000', '3516.64990234375000000000', '60.84439849853515600000', '1.20665001869201660000', '43200', '86400', '0', '2');
+
+SET @SGGUID := 22000; -- Hellfire Peninsula
+DELETE FROM spawn_group WHERE Id = @SGGUID+3;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+3, 'Hellfire Peninsula - Vorakem Doomspeaker', 0, 1, 0, 0);
+
+DELETE FROM spawn_group_spawn WHERE Id = @SGGUID+3;
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGGUID+3, 99249, -1),
+(@SGGUID+3, 99250, -1),
+(@SGGUID+3, 99251, -1),
+(@SGGUID+3, 99252, -1);

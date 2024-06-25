@@ -1,0 +1,20 @@
+DELETE FROM creature WHERE guid IN(99238,99239,99240,99241);
+-- DELETE FROM creature_movement WHERE id IN(99238,99239,99240,99241);
+
+INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
+('99238', '18693', '530', '1', '3423.67993164062500000000', '5234.66015625000000000000', '-1.64515995979309080000', '0.39053800702095030000', '43200', '86400', '0', '2'),
+('99239', '18693', '530', '1', '3513.64990234375000000000', '5814.83984375000000000000', '1.34850001335144040000', '5.11863994598388700000', '43200', '86400', '0', '2'),
+('99240', '18693', '530', '1', '2591.28002929687500000000', '6647.56005859375000000000', '20.51840019226074200000', '4.27041006088256800000', '43200', '86400', '0', '2'),
+('99241', '18693', '530', '1', '1597.83996582031250000000', '6302.81005859375000000000', '2.42133998870849600000', '1.14059996604919430000', '43200', '86400', '0', '2');
+
+SET @SGGUID := 23000; -- Blades Edge
+DELETE FROM spawn_group WHERE Id = @SGGUID+1;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+1, 'Blades Edge Mountains - Speaker Mar''grom', 0, 1, 0, 0);
+
+DELETE FROM spawn_group_spawn WHERE Id = @SGGUID+1;
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGGUID+1, 99238, -1),
+(@SGGUID+1, 99239, -1),
+(@SGGUID+1, 99240, -1),
+(@SGGUID+1, 99241, -1);

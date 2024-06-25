@@ -1,0 +1,20 @@
+DELETE FROM creature WHERE guid IN(99243,99244,99245,99242);
+-- DELETE FROM creature_movement WHERE id IN(99243,99244,99245,99242);
+
+INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
+('99243', '18677', '530', '1', '-221.48199462890625000000', '3098.84008789062500000000', '-60.13610076904297000000', '4.15876007080078100000', '43200', '86400', '0', '2'),
+('99244', '18677', '530', '1', '-974.96002197265620000000', '3384.14990234375000000000', '85.62750244140625000000', '6.22306013107299800000', '43200', '86400', '0', '2'),
+('99245', '18677', '530', '1', '-1141.96997070312500000000', '2217.94995117187500000000', '38.97750091552734400000', '6.13274002075195300000', '43200', '86400', '0', '2'),
+('99242', '18677', '530', '1', '-78.81300354003906000000', '3097.37011718750000000000', '-3.46907997131347660000', '3.92146992683410640000', '43200', '86400', '0', '2');
+
+SET @SGGUID := 22000; -- Hellfire Peninsula
+DELETE FROM spawn_group WHERE Id = @SGGUID+2;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+2, 'Hellfire Peninsula - Mekthorg the Wild', 0, 1, 0, 0);
+
+DELETE FROM spawn_group_spawn WHERE Id = @SGGUID+2;
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGGUID+2, 99243, -1),
+(@SGGUID+2, 99244, -1),
+(@SGGUID+2, 99245, -1),
+(@SGGUID+2, 99242, -1);
