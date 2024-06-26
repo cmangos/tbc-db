@@ -29,3 +29,7 @@ UPDATE `broadcast_text` SET `ChatTypeID`='6', `SoundEntriesID1`='10250' WHERE (`
 UPDATE `broadcast_text` SET `ChatTypeID`='6', `SoundEntriesID1`='10251' WHERE (`Id`='17343');
 
 UPDATE `broadcast_text` SET `ChatTypeID`='6', `SoundEntriesID1`='10252' WHERE (`Id`='17344');
+
+
+
+UPDATE creature_template SET CorpseDecay = 5 WHERE entry = 17256;
