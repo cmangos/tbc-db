@@ -116,7 +116,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+2, 'Magtheridon - Hellfire Warder (3) | Group 2', 0, 0, @SGGUID+1, 3),
 (@SGGUID+3, 'Magtheridon - Hellfire Warder (3) | Group 3', 0, 0, @SGGUID+1, 3),
 (@SGGUID+4, 'Magtheridon - Hellfire Warder (3) | Patrol 1', 0, 0, @SGGUID+1, 3),
-(@SGGUID+5, 'Magtheridon - Magtheridon | Hellfire Channeler (5) | Boss Group', 0, 0, 0, 1);
+(@SGGUID+5, 'Magtheridon - Hellfire Channeler (5) | Group 4', 0, 0, @SGGUID+1, 1);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -138,7 +138,6 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+5, @CGUID+5, 2), -- Hellfire Channeler
 (@SGGUID+5, @CGUID+6, 3), -- Hellfire Channeler
 (@SGGUID+5, @CGUID+7, 4); -- Hellfire Channeler
--- (@SGGUID+5, @CGUID+8, -1); -- Magtheridon
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+4, 2, 3, 0, @SGGUID+4, 2, 'Magtheridon - Hellfire Warder (3) | Patrol 1');
