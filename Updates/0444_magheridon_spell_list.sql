@@ -40,8 +40,8 @@ DELETE FROM `creature_template_spells` WHERE `entry` = 17257;
 
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1725701, 1725702);
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
-(1725601, 'Magtheridon\'s Lair - Magtheridon - Phase 1', 0, 0),
-(1725602, 'Magtheridon\'s Lair - Magtheridon - Phase 2', 0, 0);
+(1725701, 'Magtheridon\'s Lair - Magtheridon - Phase 1', 0, 0),
+(1725702, 'Magtheridon\'s Lair - Magtheridon - Phase 2', 0, 0);
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1725701, 1725702);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
@@ -55,8 +55,8 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1725702, 1, 27680, 0, -1, 2, 0, 100, 0, 0, 0, 1200000, 1200000, 'Magtheridon - Berserk - self'),
 (1725702, 2, 30616, 0, -1, 2, 0, 100, 0, 0, 0, 55000, 55000, 'Magtheridon - Blast Nova - self'),
 (1725702, 3, 30657, 0, -1, 1, 0, 100, 0, 0, 0, 50000, 50000, 'Magtheridon - Quake - current'),
-(1725701, 4, 30629, 0, -1, 0, 0, 100, 0, 10000, 15000, 10000, 15000, 'Magtheridon - Debris - none'),
-(1725702, 4, 30541, 0, -1, 0, 0, 100, 0, 0, 0, 10000, 15000, 'Magtheridon - Blaze - none'),
-(1725702, 5, 30619, 0, -1, 1, 0, 100, 0, 0, 0, 8000, 12000, 'Magtheridon - Cleave - current');
+(1725702, 4, 30629, 0, -1, 0, 0, 100, 0, 10000, 15000, 10000, 20000, 'Magtheridon - Debris - none'),
+(1725702, 5, 30541, 0, -1, 0, 0, 100, 0, 0, 0, 10000, 15000, 'Magtheridon - Blaze - none'),
+(1725702, 6, 30619, 0, -1, 1, 0, 100, 0, 0, 0, 8000, 12000, 'Magtheridon - Cleave - current');
 
 UPDATE `creature_template` SET `SpellList` = 1725701 WHERE `entry` = 17257;
