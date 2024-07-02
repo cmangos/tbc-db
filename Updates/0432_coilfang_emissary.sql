@@ -30,3 +30,6 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, 5306008, -1),
 (@SGGUID+1, 5306009, -1);
 
+-- Remove old pooling
+DELETE FROM pool_creature_template WHERE id = 18681;
+DELETE FROM pool_template WHERE entry = 1193;

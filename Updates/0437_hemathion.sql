@@ -63,3 +63,7 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 (@MOVID + 0, '21', '1970.7067', '7173.6484', '364.2836', '100', '0', '0', NULL),
 (@MOVID + 0, '22', '1943.4314', '7162.6055', '364.56506', '100', '0', '0', NULL),
 (@MOVID + 0, '23', '1918.5143', '7157.143', '364.2846', '100', '0', '0', NULL);
+
+-- Remove old pooling
+DELETE FROM pool_creature_template WHERE id = 18692;
+DELETE FROM pool_template WHERE entry = 1208;
