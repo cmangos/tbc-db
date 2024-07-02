@@ -24396,10 +24396,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Keli'dan the Breaker 17377 - boss_kelidan_the_breaker
 -- Broggok 17380 - boss_broggok
 -- The Maker 17381 - spell_list
-('1738101','17381','4','0','100','0','0','0','0','0','0','0','1','17679','17680','17681','34','0','1','0','0','0','0','0','The Maker - Yell and Set Instance Data InProgress on Aggro'),
-('1738102','17381','6','0','100','0','0','0','0','0','0','0','1','17685','0','0','34','0','3','0','0','0','0','0','The Maker - Yell and Set Instance Data Done on Death'),
+('1738101','17381','4','0','100','6','0','0','0','0','0','0','1','17679','17680','17681','34','0','1','0','0','0','0','0','The Maker - Yell and Set Instance Data InProgress on Aggro'),
+('1738102','17381','6','0','100','6','0','0','0','0','0','0','1','17685','0','0','34','0','3','0','0','0','0','0','The Maker - Yell and Set Instance Data Done on Death'),
 ('1738103','17381','5','0','100','1025','5000','5000','1','0','0','0','1','17683','17684','0','0','0','0','0','0','0','0','0','The Maker - Yell on Player Kill'),
-('1738104','17381','7','0','100','1025','0','0','0','0','0','0','34','0','2','0','0','0','0','0','0','0','0','0','The Maker - Set Instance Data Fail on Evade'),
+('1738104','17381','7','0','100','6','0','0','0','0','0','0','34','0','2','0','0','0','0','0','0','0','0','0','The Maker - Set Instance Data Fail on Evade'),
 -- Shadowmoon Summoner 17395 - spell_list
 ('1739501','17395','4','0','15','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Shadowmoon Summoner - Random Say on Aggro'),
 -- Shadowmoon Adept 17397 - spell_list
