@@ -33,10 +33,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (17376, 0, 0, 1, 0, 0, NULL), -- Hellfire Raid Trigger
 (18829, 0, 0, 1, 0, 0, NULL); -- Hellfire Warder
 
-REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(18829, 544, 17256, 1, 0), -- Hellfire Warder -> Hellfire Channeler
-(17256, 544, 17256, 143, 0), -- Hellfire Channeler -> Hellfire Channeler
-(17257, 544, 17256, 15, 0); -- Magtheridon -> Hellfire Channeler
+-- REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 15384, 544, 1, -2.59192, 83.3255, 22.6908, 4.57276, 7200, 7200, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
@@ -118,8 +115,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+1, 'Magtheridon - Hellfire Warder (3) | Group 1', 0, 0, @SGGUID+1, 3),
 (@SGGUID+2, 'Magtheridon - Hellfire Warder (3) | Group 2', 0, 0, @SGGUID+1, 3),
 (@SGGUID+3, 'Magtheridon - Hellfire Warder (3) | Group 3', 0, 0, @SGGUID+1, 3),
-(@SGGUID+4, 'Magtheridon - Hellfire Warder (3) | Patrol 1', 0, 0, @SGGUID+1, 3);
--- (@SGGUID+5, 'Magtheridon - Magtheridon | Hellfire Channeler (5) | Boss Group', 0, 0, 0, 7);
+(@SGGUID+4, 'Magtheridon - Hellfire Warder (3) | Patrol 1', 0, 0, @SGGUID+1, 3),
+(@SGGUID+5, 'Magtheridon - Hellfire Channeler (5) | Group 4', 0, 0, @SGGUID+1, 1);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -135,13 +132,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+3, @CGUID+30, -1), -- Hellfire Warder
 (@SGGUID+4, @CGUID+34, 0), -- Hellfire Warder
 (@SGGUID+4, @CGUID+35, 1), -- Hellfire Warder
-(@SGGUID+4, @CGUID+36, 2); -- Hellfire Warder
--- (@SGGUID+5, @CGUID+3, -1), -- Hellfire Channeler
--- (@SGGUID+5, @CGUID+4, -1), -- Hellfire Channeler
--- (@SGGUID+5, @CGUID+5, -1), -- Hellfire Channeler
--- (@SGGUID+5, @CGUID+6, -1), -- Hellfire Channeler
--- (@SGGUID+5, @CGUID+7, -1), -- Hellfire Channeler
--- (@SGGUID+5, @CGUID+8, -1); -- Magtheridon
+(@SGGUID+4, @CGUID+36, 2), -- Hellfire Warder
+(@SGGUID+5, @CGUID+3, 0), -- Hellfire Channeler
+(@SGGUID+5, @CGUID+4, 1), -- Hellfire Channeler
+(@SGGUID+5, @CGUID+5, 2), -- Hellfire Channeler
+(@SGGUID+5, @CGUID+6, 3), -- Hellfire Channeler
+(@SGGUID+5, @CGUID+7, 4); -- Hellfire Channeler
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+4, 2, 3, 0, @SGGUID+4, 2, 'Magtheridon - Hellfire Warder (3) | Patrol 1');
@@ -183,8 +179,8 @@ DELETE FROM `conditions` WHERE `condition_entry` = @SGGUID+1;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
 (@SGGUID+1, 42, 4805, 1, 0, 0, 0, 'Magtheridon - Trash Respawn');
 
--- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
--- (@SGGUID+5, @SGGUID+4), (@SGGUID+5, @SGGUID+3), (@SGGUID+5, @SGGUID+2), (@SGGUID+5, @SGGUID+1); -- All Groups should aggro when Magtheridon gets attacked.
+INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
+(@SGGUID+5, @SGGUID+4), (@SGGUID+5, @SGGUID+3), (@SGGUID+5, @SGGUID+2), (@SGGUID+5, @SGGUID+1); -- All Groups should aggro when Magtheridon gets attacked.
 
 -- =========
 -- DBSCRIPTS
