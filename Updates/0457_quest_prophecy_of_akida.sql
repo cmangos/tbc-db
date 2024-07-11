@@ -113,24 +113,21 @@ INSERT INTO dbscripts_on_go_template_use (id, delay, priority, command, datalong
 -- After using the cage, Stillspine Captive run away, when they respawn reset the cage to make them usable again
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN 19970 AND 19984;
 INSERT INTO dbscripts_on_relay (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(19970,1,43,0,0,0,181726,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19971,1,43,0,0,0,181724,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19972,1,43,0,0,0,181727,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19973,1,43,0,0,0,181714,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19974,1,43,0,0,0,181721,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19975,1,43,0,0,0,181722,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19976,1,43,0,0,0,181720,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19977,1,43,0,0,0,181725,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19978,1,43,0,0,0,181723,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19979,1,43,0,0,0,181733,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19980,1,43,0,0,0,181732,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19981,1,43,0,0,0,181731,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19982,1,43,0,0,0,181730,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19983,1,43,0,0,0,181729,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage'),
-(19984,1,43,0,0,0,181728,10,1,0,0,0,0,0,0,0,0,'Stillspine Captive - reset Bristlelimb Cage');
-
--- Also add a respawn Time to gameobject_template for safty
-UPDATE gameobject_template SET data2 = '19660800' WHERE entry = '181720';
+(19970,1,12,42106,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19971,1,12,42104,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19972,1,12,42107,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19973,1,12,42099,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19974,1,12,42101,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19975,1,12,42102,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19976,1,12,42100,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19977,1,12,42105,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19978,1,12,42103,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19979,1,12,42113,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19980,1,12,42112,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19981,1,12,42111,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19982,1,12,42110,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19983,1,12,42109,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage'),
+(19984,1,12,42108,0,0,0,0,0,0,0,0,0,0,0,0,0,'Stillspine Captive - Close Bristlelimb Cage');
 
 DELETE FROM creature_spawn_data_template WHERE entry BETWEEN 19984 AND 19999;
 DELETE FROM creature_spawn_data WHERE guid BETWEEN 90994 AND 91008;
