@@ -1,6 +1,6 @@
-------------------
+-- ----------------
 -- Warlock Quests
-------------------
+-- ----------------
 -- Horde
 -- ORC Gan'rul's Summons - 210 xp
 UPDATE quest_template SET QuestLevel = 10, RewMoneyMaxLevel = 126 WHERE entry = 1506;
@@ -26,9 +26,9 @@ UPDATE quest_template SET QuestLevel = 20, RewMoneyMaxLevel = 690 WHERE entry = 
 -- Rage of Blood - 7750 xp
 UPDATE quest_template SET QuestLevel = 58, RewMoneyMaxLevel = 4650 WHERE entry = 7563;
 
-------------------
+-- ----------------
 -- Warrior Quests
-------------------
+-- ----------------
 -- A Warrior's Training - 85 xp
 UPDATE quest_template SET QuestLevel = 10, RewMoneyMaxLevel = 51 WHERE entry = 1638;
 
