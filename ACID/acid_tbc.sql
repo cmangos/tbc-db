@@ -2981,7 +2981,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1541801','15418','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Magister Jaronis - Enable Range Mode on Aggro'),
 ('1541802','15418','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Magister Jaronis - Flee at 15% HP'),
 ('1541803','15418','9','0','100','1025','0','40','3600','4800','0','0','11','20811','1','256','0','0','0','0','0','0','0','0','Magister Jaronis - Cast Fireball'),
--- Prospector Anvilward (15420) - npc_prospector_anvilward
+-- Prospector Anvilward (15420) 
+('1542001','15420','1','0','100','1','1000','1000','270000','330000','0','0','53','1542001','0','0','0','0','0','0','0','0','0','0','Prospector Anvilward - start Relayscript OOC'),
 -- Innkeeper Delaniel (15433) - npc_innkeeper
 -- Marsilla Dawnstar (15493) - NSR
 -- Yasmine Teli'Larien 15494
