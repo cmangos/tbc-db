@@ -325,13 +325,13 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (2090201, 2161101);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(2090201, 1, 36833, 0, -1, 121, 0, 100, 0, 8000, 16000, 17000, 25000, 'Sargeron Hellcaller - Curse of Elements - current'),
-(2090201, 2, 36829, 0, -1, 103, 0, 100, 0, 11000, 19000, 18000, 25000, 'Sargeron Hellcaller - Hell Rain - aoe'),
-(2090201, 3, 36832, 0, -1, 1, 0, 100, 0, 7000, 15000, 15000, 21000, 'Sargeron Hellcaller - Incinerate - current'),
+(2090201, 1, 36831, 0, -1, 121, 0, 100, 0, 6000, 23000, 17000, 27000, 'Sargeron Hellcaller - Curse of Elements - current'),
+(2090201, 2, 36829, 0, -1, 100, 0, 100, 0, 11000, 20000, 18000, 25000, 'Sargeron Hellcaller - Hell Rain - random'),
+(2090201, 3, 36832, 0, -1, 1, 0, 100, 0, 7000, 21000, 15000, 21000, 'Sargeron Hellcaller - Incinerate - current'),
 
-(2161101, 1, 36833, 0, -1, 121, 0, 100, 0, 8000, 16000, 17000, 25000, 'Sargeron Hellcaller - Curse of Elements - current'),
-(2161101, 2, 38917, 0, -1, 103, 0, 100, 0, 11000, 19000, 18000, 25000, 'Sargeron Hellcaller - Hell Rain - current'),
-(2161101, 3, 38918, 0, -1, 1, 0, 100, 0, 7000, 15000, 15000, 21000, 'Sargeron Hellcaller - Incinerate - current');
+(2161101, 1, 36831, 0, -1, 121, 0, 100, 0, 6000, 23000, 17000, 27000, 'Sargeron Hellcaller - Curse of Elements - current'),
+(2161101, 2, 38917, 0, -1, 100, 0, 100, 0, 11000, 20000, 18000, 25000, 'Sargeron Hellcaller - Hell Rain - random'),
+(2161101, 3, 38918, 0, -1, 1, 0, 100, 0, 7000, 21000, 15000, 21000, 'Sargeron Hellcaller - Incinerate - current');
 
 UPDATE `creature_template` SET `SpellList` = 2090201 WHERE `entry` = 20902;
 UPDATE `creature_template` SET `SpellList` = 2161101 WHERE `entry` = 21611;
