@@ -239,7 +239,9 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+1899, 5, 13.1456, 86.09248, 19.95485, 100, 0, 0),
 (@CGUID+1899, 6, 24.94954, 89.21867, 20.89757, 100, 0, 0),
 (@CGUID+1899, 7, 33.83179, 95.94749, 21.7635, 100, 0, 0),
-(@CGUID+1899, 8, 40.82042, 103.9332, 21.93791, 4.171337, 51000, 0); -- 40-51secs something
+(@CGUID+1899, 8, 40.82042, 103.9332, 21.93791, 4.171337, 51000, 0), -- 40-51secs something
+(@CGUID+1900, 1, -1635.4, -464.938, 52.5766, 2.26893, 40000, 0),
+(@CGUID+1900, 2, -1643.48, -450.105, 50.2463, 2.09382, 51000, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (13145,13146);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
@@ -1794,8 +1796,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1844, 10986, 30, 424.9368, -52.59122, -6.162855, 1.795768, 300, 300, 2, 1), -- Snowblind Harpy
 (@CGUID+1845, 10986, 30, 449.6369, -35.48276, -0.544651, 2.790872, 300, 300, 2, 1), -- Snowblind Harpy
 (@CGUID+1846, 10986, 30, 296.1165, -78.50062, -38.20281, 4.062625, 300, 300, 2, 1), -- Snowblind Harpy
-
+-- (@CGUID+1847 - 1898
 (@CGUID+1899, 13959, 30, 40.82042, 103.9332, 21.93791, 4.171337, 300, 300, 0, 2), -- Alterac Yeti
+(@CGUID+1900, 13959, 30, -1635.4, -464.938, 52.5766, 2.26893, 300, 300, 0, 2), -- Alterac Yeti
 -- Triggers and misc
 (@CGUID+1979, 14026, 30, 216.6146, -377.9462, 62.60545, 5.009095, 300, 300, 0, 0), -- Trigger Guse
 (@CGUID+1980, 14027, 30, 666.4675, -132.4711, 70.048, 0.08726646, 300, 300, 0, 0), -- Trigger Mulverick
