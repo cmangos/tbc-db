@@ -1806,7 +1806,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1786, 11840, 30, -1485.83, -426.824, 70.3539, 5.26827, 300, 300, 2, 1), -- Wildpaw Alpha
 (@CGUID+1787, 11840, 30, -1550.894, -361.3882, 66.58133, 4.401934, 300, 300, 2, 1), -- Wildpaw Alpha
 (@CGUID+1788, 11840, 30, -1538.105, -358.4388, 64.60719, 0.359198, 300, 300, 2, 1), -- Wildpaw Alpha
--- (@CGUID+1789 - 1799
+-- (@CGUID+1789 - 1991
+(@CGUID+1994, 12051, 30, -707.419983 -439.816010 85.974800, 300, 300, 0, 0), -- Frostwolf Legionnaire Patrol (Either one big Path or split in two for 1993,1992)
+(@CGUID+1995, 12051, 30, -708.989990 -437.691010 86.214500, 300, 300, 0, 0), -- Frostwolf Legionnaire Patrol (prolly starts in frostwolf village though)
+(@CGUID+1996, 12051, 30, -1267.32, -587.066, 54.8743, 1.13446, 300, 300, 0, 0), -- Frostwolf Legionnaire
+(@CGUID+1997, 12051, 30, -1254.03, -587.41, 55.3577, 1.88496, 300, 300, 0, 0), -- Frostwolf Legionnaire
+(@CGUID+1998, 12051, 30, -1254.31, -629.738, 52.9046, 0.558505, 300, 300, 0, 0), -- Frostwolf Legionnaire
+(@CGUID+1999, 12051, 30, -1238.08, -641.841, 53.8959, 1.67552, 300, 300, 0, 0), -- Frostwolf Legionnaire
 -- Alliance Side
 -- (@CGUID+1800 - 1810
 (@CGUID+1811, 10986, 30, 267.8507, -313.2709, -18.41218, 3.425254, 300, 300, 2, 1), -- Snowblind Harpy
