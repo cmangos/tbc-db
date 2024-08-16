@@ -10897,9 +10897,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Burning Blade Neophyte - spell_list
 -- Burning Blade Fanatic - spell_list
 -- Burning Blade Apprentice 3198
-('319801','3198','11','0','100','0','0','0','0','0','0','0','57','2','35','0','22','1','0','0','1','80001','0','0','Burning Blade Apprentice - Enable Range Mode on Spawn and set phase 1'),
+('319801','3198','11','0','100','0','0','0','0','0','0','0','57','2','35','0','22','1','0','0','0','0','0','0','Burning Blade Apprentice - Enable Range Mode on Spawn and set phase 1'),
 ('319802','3198','1','1','100','1','0','2000','0','0','0','0','11','12746','0','0','22','0','0','0','0','0','0','0','Burning Blade Apprentice - Cast Summon Voidwalker on OOC (Phase 1) and set Phase 0'),
-('319803','3198','25','0','100','1','8996','0','0','0','0','0','22','1','0','0','1','80000','0','0','0','0','0','0','Burning Blade Apprentice - Set Phase 1 on Summoned Just Died'),
+('319803','3198','25','0','100','1','8996','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Burning Blade Apprentice - Set Phase 1 on Summoned Just Died'),
 -- Burning Blade Cultist
 ('319901','3199','1','0','100','0','1000','1000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Burning Blade Cultist - Despawn Guardians on OOC'),
 ('319902','3199','1','0','100','0','2000','2000','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Burning Blade Cultist - Cast Summon Imp on OOC'),
