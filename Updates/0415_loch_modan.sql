@@ -22,6 +22,13 @@ INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance
 (1210, 929, 10, 0, 1, 1, 0, 'Healing Potion'),
 (1210, 1206, 1, 0, 1, 1, 0, 'Moss Agate');
 
+DELETE FROM `dbscript_random_templates` WHERE `id` = 909;
+INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
+(909, 0, 1928, 0, 'Chok''sul 1210 - Texts'), -- Dat $R look gud to eat!
+(909, 0, 1929, 0, 'Chok''sul 1210 - Texts'), -- Bash it!
+(909, 0, 1930, 0, 'Chok''sul 1210 - Texts'), -- Me smash you!
+(909, 0, 1931, 0, 'Chok''sul 1210 - Texts'); -- Huh? What dat?
+
 -- https://www.wowhead.com/classic/npc=1399/magosh
 UPDATE `creature_template` SET `SpeedWalk` = 1, `RangedBaseAttackTime` = 2000 WHERE `entry` = 1399;
 
@@ -320,7 +327,7 @@ INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance
 (1222, 818, 1, 2, 1, 1, 0, 'Tigerseye');
 
 -- https://www.wowhead.com/classic/npc=1205/grawmug
-UPDATE `creature_template` SET `SpeedWalk` = 1, `RangedBaseAttackTime` = 2000 WHERE `entry` = 1185;
+UPDATE `creature_template` SET `SpeedWalk` = 1, `RangedBaseAttackTime` = 2000 WHERE `entry` = 1205;
 
 -- https://www.wowhead.com/classic/npc=1189/black-bear-patriarch
 UPDATE `creature_template` SET `SpeedWalk` = 1, `RangedBaseAttackTime` = 2000 WHERE `entry` = 1189;
