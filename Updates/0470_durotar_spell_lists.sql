@@ -343,3 +343,29 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (319801, 1, 20791, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Burning Blade Apprentice - Shadow Bolt - current');
 
 UPDATE `creature_template` SET `SpellList` = 319801 WHERE `entry` = 3198;
+
+-- Burning Blade Cultist
+DELETE FROM `creature_template_spells` WHERE `entry` = 3199;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 319901;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(319901, 'Burning Blade Cultist', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 319901;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(319901, 1, 11962, 0, -1, 130, 0, 100, 0, 0, 6000, 6000, 13000, 'Burning Blade Cultist - Immolate - top aggro aura not present');
+
+UPDATE `creature_template` SET `SpellList` = 319901 WHERE `entry` = 3199;
+
+-- Fizzle Darkstorm
+DELETE FROM `creature_template_spells` WHERE `entry` = 3203;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 320301;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(320301, 'Fizzle Darkstorm', 0, 90);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 320301;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(320301, 1, 20791, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Fizzle Darkstorm - Shadow Bolt - current');
+
+UPDATE `creature_template` SET `SpellList` = 320301 WHERE `entry` = 3203;
