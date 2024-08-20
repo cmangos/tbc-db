@@ -366,6 +366,7 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` = 320301;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(320301, 1, 20791, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Fizzle Darkstorm - Shadow Bolt - current');
+(320301, 1, 7290, 0, -1, 1, 0, 100, 0, 2000, 10000, 5000, 15000, 'Fizzle Darkstorm - Soul Siphon - current'),
+(320301, 2, 20791, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Fizzle Darkstorm - Shadow Bolt - current');
 
 UPDATE `creature_template` SET `SpellList` = 320301 WHERE `entry` = 3203;
