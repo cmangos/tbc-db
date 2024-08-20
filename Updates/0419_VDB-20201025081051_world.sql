@@ -2906,3 +2906,28 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `RangedBaseAttackTi
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `RangedBaseAttackTime` = 2000 WHERE `entry` = 23305; -- Crazed Murkblood Foreman
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `RangedBaseAttackTime` = 2000 WHERE `entry` = 24818; -- Anvilrage Taskmaster
 
+-- diff with classicmangos
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='1233'; -- [UNUSED] Shaethis Darkoak (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='2454'; -- Skeletal Fiend (Enraged Form) (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='3057'; -- Cairne Bloodhoof (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2600' WHERE `entry`='3943'; -- Ruuzel (2600AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='4400'; -- Mudrock Snapjaw (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='7074'; -- Judge Thelgram (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='7293'; -- [UNUSED] Drayl (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='8149'; -- Sul'lithuz Warder (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='10370'; -- [UNUSED] Xur'gyl (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='14242'; -- [UNUSED] Sulhasa (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='14466'; -- Horde Battle Standard (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='14688'; -- Master Sandoval (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='14751'; -- Frostwolf Battle Standard (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='15090'; -- Swift Razzashi Raptor (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='15429'; -- Disgusting Oozeling (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='15608'; -- Medivh (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='15698'; -- Father Winter's Helper (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2400' WHERE `entry`='16080'; -- Mor Grayhoof (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2400' WHERE `entry`='16118'; -- Kormok (1100AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='16438'; -- Skeletal Trooper (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='16479'; -- Polymorph Clone (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='16980'; -- The Lich King (2000AT)
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='16995'; -- Mouth of Kel'Thuzad (2000AT)
+
