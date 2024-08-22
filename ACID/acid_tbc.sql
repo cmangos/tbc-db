@@ -23409,10 +23409,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==================================
 -- Coilfang Reservoir: The Slave Pens
 -- ==================================
--- Bogstrok (3.0.3 and 4.3.3 Official Data - Normal Only)
-('1781601','17816','0','0','100','1025','4100','12100','15700','20100','0','0','11','31551','1','0','0','0','0','0','0','0','0','0','Bogstrok - Cast Piercing Jab'),
--- Greater Bogstrok 17817
-('1781701','17817','0','0','100','1025','2400','18100','10800','16900','0','0','11','35760','4','544','0','0','0','0','0','0','0','0','Bogstrok - Cast Decayed Strength'),
+-- Bogstrok - spell_list
+-- Greater Bogstrok 17817 - spell_list
 -- Naturalist Bite 17893 - GossipHello_npc_naturalist_bite
 ('1789301','17893','17','0','100','0','17957','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Champion launch relay script'),
 ('1789302','17893','17','0','100','0','17960','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Soothsayer launch relay script'),
