@@ -134,7 +134,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+115, 0, 547, 3, -89.17553, -91.53407, -2.22339, 6.073746, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+116, 0, 547, 3, -120.7097, -65.83062, -2.223061, 3.159046, 7200, 7200, 0, 0), -- creature_spawn_entry
 -- (@CGUID+117, RE-USE
-(@CGUID+118, 0, 547, 3, -57.08875, -27.93377, -1.772427, 3.176499, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+118, 0, 547, 3, -57.08875, -27.93377, -1.772427, 3.176499, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+119, 17963, 547, 3, -74.5327, -195.691, -3.96449, 0.226366, 7200, 7200, 0, 0), -- Wastewalker Slave
 (@CGUID+120, 0, 547, 3, -113.1554, -8.017564, -8.669127, 1.762783, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+121, 17963, 547, 3, -69.62327, -245.9392, -3.536769, 0.7679449, 7200, 7200, 0, 0), -- Wastewalker Slave
@@ -159,7 +159,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+140, 17964, 547, 3, -73.61772, -182.1575, -5.111982, 5.148721, 7200, 7200, 0, 0), -- Wastewalker Worker
 (@CGUID+141, 0, 547, 3, -60.16751, -176.9379, -4.0791, 4.660029, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+142, 0, 547, 3, -112.2143, -105.2496, -4.700827, 2.75762, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+143, 0, 547, 3, -71.8825, -19.18774, -4.44727, 4.153883, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+143, 0, 547, 3, -71.8825, -19.18774, -4.44727, 4.153883, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+144, 17964, 547, 3, -61.51586, -248.3638, -3.940233, 0.9948376, 7200, 7200, 0, 0), -- Wastewalker Worker
 -- (@CGUID+145, RE-USE
 (@CGUID+146, 17991, 547, 3, 23.9, -447.261, 3.03544, 3.3803, 86400, 86400, 0, 2), -- Rokmar the Crackler
@@ -270,7 +270,6 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+114, 17963), (@CGUID+114, 17964), -- Wastewalker Slave, Wastewalker Worker
 (@CGUID+115, 17963), (@CGUID+115, 17964), -- Wastewalker Slave, Wastewalker Worker
 (@CGUID+116, 17963), (@CGUID+116, 17964), -- Wastewalker Slave, Wastewalker Worker
-(@CGUID+118, 17963), (@CGUID+118, 17964), -- Wastewalker Slave, Wastewalker Worker
 (@CGUID+120, 17963), (@CGUID+120, 17964), -- Wastewalker Slave, Wastewalker Worker
 (@CGUID+123, 17963), (@CGUID+123, 17964), -- Wastewalker Slave, Wastewalker Worker
 (@CGUID+129, 17963), (@CGUID+129, 17964), -- Wastewalker Slave, Wastewalker Worker
@@ -278,7 +277,6 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+135, 17963), (@CGUID+135, 17964), -- Wastewalker Slave, Wastewalker Worker
 (@CGUID+141, 17963), (@CGUID+141, 17964), -- Wastewalker Slave, Wastewalker Worker
 (@CGUID+142, 17963), (@CGUID+142, 17964), -- Wastewalker Slave, Wastewalker Worker
-(@CGUID+143, 17963), (@CGUID+143, 17964), -- Wastewalker Slave, Wastewalker Worker
 (@CGUID+194, 17960), (@CGUID+194, 21126), -- Coilfang Soothsayer, Coilfang Scale-Healer
 (@CGUID+197, 17960), (@CGUID+197, 17961); -- Coilfang Soothsayer, Coilfang Enchantress
 
@@ -695,8 +693,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+1, 'Slave Pens - Group 001 - Greater Bogstrok (2) | Bogstrok - Patrol 001', 0, 3, 0, 1, 0),
 (@SGGUID+2, 'Slave Pens - Group 002 - Greater Bogstrok (2) | Bogstrok - Patrol 002', 0, 3, 0, 1, 0),
 
-(@SGGUID+3, 'Slave Pens - Group 003 - Coilfang Slavehandler | Wastewalker Worker (3)', 0, 0, 0, 0, 0),
-(@SGGUID+4, 'Slave Pens - Group 004 - Coilfang Slavehandler | Wastewalker Worker (3)', 0, 0, 0, 0, 0),
+(@SGGUID+3, 'Slave Pens - Group 003 - Wastewalker Worker (3)', 0, 0, 0, 0, 0),
+(@SGGUID+4, 'Slave Pens - Group 004 - Wastewalker Worker (3)', 0, 0, 0, 0, 0),
 
 -- old
 (@SGGUID+101, 'Slave Pens - Coilfang Champion (2) - Patrol 000', 0, 0, 0, 3, 0),
@@ -751,7 +749,10 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+1010104, 'Slave Pens - Slave Pens - Felweed 181270', 1, 3, 0, 0, 0),
 (@SGGUID+1010105, 'Slave Pens - Slave Pens - Ragveil (181275) / Flame Cap (181276)', 1, 2, 0, 0, 0);
 
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+4, 17963, 0, 2, 0), (@SGGUID+4, 17964, 0, 2, 0), -- Wastewalker Slave, Wastewalker Worker
+
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- creatures new
 (@SGGUID+1, @CGUID+30, 0), -- Greater Bogstrok
@@ -762,15 +763,13 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+2, @CGUID+9, 1), -- Greater Bogstrok
 (@SGGUID+2, @CGUID+14, 2), -- Bogstrok
 
-(@SGGUID+3, @CGUID+84, 0), -- Coilfang Slavehandler
-(@SGGUID+3, @CGUID+132, 1), -- Wastewalker Worker
-(@SGGUID+3, @CGUID+133, 2), -- Wastewalker Worker
-(@SGGUID+3, @CGUID+134, 3), -- Wastewalker Worker
+(@SGGUID+3, @CGUID+132, 0), -- Wastewalker Worker
+(@SGGUID+3, @CGUID+133, 1), -- Wastewalker Worker
+(@SGGUID+3, @CGUID+134, 2), -- Wastewalker Worker
 
-(@SGGUID+4, @CGUID+85, 0), -- Coilfang Slavehandler
-(@SGGUID+4, @CGUID+118, 1), -- Wastewalker Worker
-(@SGGUID+4, @CGUID+136, 2), -- Wastewalker Worker
-(@SGGUID+4, @CGUID+143, 3), -- Wastewalker Worker
+(@SGGUID+4, @CGUID+118, 0), -- spawn_group_entry
+(@SGGUID+4, @CGUID+136, 1), -- spawn_group_entry
+(@SGGUID+4, @CGUID+143, 2), -- spawn_group_entry
 
 -- creatures
 (@SGGUID+101, @CGUID+60, 0), -- Coilfang Champion
