@@ -41,8 +41,10 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry
 -- Sniff:
 -- WalkSpeed: 2.5
 -- RunSpeed: 6.944439888000488281
+-- UNIT_FIELD_FACTIONTEMPLATE: 190/2.66E-43 (190)
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 17963;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 19902;
+
 
 -- -----------
 -- SpellLists
@@ -98,10 +100,10 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1795901, 1988901);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (1795901, 1, 9080, 0, -1, 130, 0, 100, 0, 5000, 15000, 10000, 20000, 'Coilfang Slavehandler - Hamstring - top aggro auro not present'),
-(1795901, 1, 16172, 0, -1, 130, 0, 100, 0, 10000, 22000, 10000, 22000, 'Coilfang Slavehandler - Head Crack - top aggro auro not present'),
+(1795901, 2, 16172, 0, -1, 130, 0, 100, 0, 10000, 22000, 10000, 22000, 'Coilfang Slavehandler - Head Crack - top aggro auro not present'),
 
 (1988901, 1, 9080, 0, -1, 130, 0, 100, 0, 5000, 15000, 10000, 20000, 'Coilfang Slavehandler - Hamstring - top aggro auro not present'),
-(1988901, 1, 16172, 0, -1, 130, 0, 100, 0, 10000, 22000, 10000, 22000, 'Coilfang Slavehandler - Head Crack - top aggro auro not present');
+(1988901, 2, 16172, 0, -1, 130, 0, 100, 0, 10000, 22000, 10000, 22000, 'Coilfang Slavehandler - Head Crack - top aggro auro not present');
 
 UPDATE `creature_template` SET `SpellList` = 1795901 WHERE `entry` = 17959;
 UPDATE `creature_template` SET `SpellList` = 1988901 WHERE `entry` = 19889;
@@ -136,10 +138,10 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1796301, 1990201);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (1796301, 1, 32192, 0, -1, 109, 0, 100, 0, 4000, 21000, 14000, 25000, 'Wastewalker Slave - Frost Nova - random player in melee range'),
-(1796301, 1, 15497, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Wastewalker Slave - Frostbolt - current'),
+(1796301, 2, 15497, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Wastewalker Slave - Frostbolt - current'),
 
 (1990201, 1, 15531, 0, -1, 109, 0, 100, 0, 4000, 21000, 14000, 25000, 'Wastewalker Slave - Frost Nova - random player in melee range'),
-(1990201, 1, 12675, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Wastewalker Slave - Frostbolt - current');
+(1990201, 2, 12675, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Wastewalker Slave - Frostbolt - current');
 
 UPDATE `creature_template` SET `SpellList` = 1796301 WHERE `entry` = 17963;
 UPDATE `creature_template` SET `SpellList` = 1990201 WHERE `entry` = 19902;

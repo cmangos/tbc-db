@@ -693,8 +693,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+1, 'Slave Pens - Group 001 - Greater Bogstrok (2) | Bogstrok - Patrol 001', 0, 3, 0, 1, 0),
 (@SGGUID+2, 'Slave Pens - Group 002 - Greater Bogstrok (2) | Bogstrok - Patrol 002', 0, 3, 0, 1, 0),
 
-(@SGGUID+3, 'Slave Pens - Group 003 - Wastewalker Worker (3)', 0, 0, 0, 0, 0),
-(@SGGUID+4, 'Slave Pens - Group 004 - Wastewalker Worker (3)', 0, 0, 0, 0, 0),
+(@SGGUID+3, 'Slave Pens - Group 003 - Wastewalker Worker (3)', 0, 0, 0, 1, 0),
+(@SGGUID+4, 'Slave Pens - Group 004 - Wastewalker Worker (3)', 0, 0, 0, 1, 0),
 
 -- old
 (@SGGUID+101, 'Slave Pens - Coilfang Champion (2) - Patrol 000', 0, 0, 0, 3, 0),
@@ -751,7 +751,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGGUID+4, 17963, 0, 2, 0), (@SGGUID+4, 17964, 0, 2, 0), -- Wastewalker Slave, Wastewalker Worker
+(@SGGUID+4, 17963, 0, 2, 0), (@SGGUID+4, 17964, 0, 2, 0); -- Wastewalker Slave, Wastewalker Worker
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- creatures new
