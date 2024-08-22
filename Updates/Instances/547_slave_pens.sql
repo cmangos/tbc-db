@@ -698,437 +698,443 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 -- creatures
-(@SGGUID+1, 'Slave Pens - Coilfang Champion (2) - Patrol 000', 0, 0, 0, 3),
-(@SGGUID+2, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) - Patrol 001', 0, 0, 0, 3, 0),
-(@SGGUID+3, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) - Patrol 002', 0, 0, 0, 3, 0),
-(@SGGUID+4, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) - Patrol 003', 0, 0, 0, 3, 0),
-(@SGGUID+5, 'Slave Pens - Coilfang Defender (2) - Patrol 000', 0, 0, 0, 3, 0),
-(@SGGUID+6, 'Slave Pens - Coilfang Defender (2) - Patrol 001', 0, 0, 0, 3, 0),
-(@SGGUID+7, 'Slave Pens - Coilfang Technician (2) - Patrol 000', 0, 0, 0, 3, 0),
-(@SGGUID+8, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) - Patrol 001', 0, 0, 0, 3, 0),
-(@SGGUID+9, 'Slave Pens - Coilfang Technician (2) - Patrol 002', 0, 0, 0, 3, 0),
-(@SGGUID+10, 'Slave Pens - Coilfang Technician (2) - Patrol 003', 0, 0, 0, 3, 0),
-(@SGGUID+11, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) - Patrol 004', 0, 0, 0, 3, 0),
-(@SGGUID+12, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) - Patrol 005', 0, 0, 0, 3, 0),
-(@SGGUID+13, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) - Patrol 006', 0, 0, 0, 3, 0),
-(@SGGUID+14, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) - Patrol 007', 0, 0, 0, 3, 0),
+(@SGGUID+101, 'Slave Pens - Coilfang Champion (2) - Patrol 000', 0, 0, 0, 3),
+(@SGGUID+102, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) - Patrol 001', 0, 0, 0, 3, 0),
+(@SGGUID+103, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) - Patrol 002', 0, 0, 0, 3, 0),
+(@SGGUID+104, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) - Patrol 003', 0, 0, 0, 3, 0),
+(@SGGUID+105, 'Slave Pens - Coilfang Defender (2) - Patrol 000', 0, 0, 0, 3, 0),
+(@SGGUID+106, 'Slave Pens - Coilfang Defender (2) - Patrol 001', 0, 0, 0, 3, 0),
+(@SGGUID+107, 'Slave Pens - Coilfang Technician (2) - Patrol 000', 0, 0, 0, 3, 0),
+(@SGGUID+108, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) - Patrol 001', 0, 0, 0, 3, 0),
+(@SGGUID+109, 'Slave Pens - Coilfang Technician (2) - Patrol 002', 0, 0, 0, 3, 0),
+(@SGGUID+1010, 'Slave Pens - Coilfang Technician (2) - Patrol 003', 0, 0, 0, 3, 0),
+(@SGGUID+1011, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) - Patrol 004', 0, 0, 0, 3, 0),
+(@SGGUID+1012, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) - Patrol 005', 0, 0, 0, 3, 0),
+(@SGGUID+1013, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) - Patrol 006', 0, 0, 0, 3, 0),
+(@SGGUID+1014, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) - Patrol 007', 0, 0, 0, 3, 0),
 
-(@SGGUID+15, 'Slave Pens - Greater Bogstrok | Bogstrok (2) - Patrol 001', 0, 0, 0, 3, 0),
-(@SGGUID+16, 'Slave Pens - Greater Bogstrok | Bogstrok (2) - Patrol 002', 0, 0, 0, 3, 0),
+(@SGGUID+1015, 'Slave Pens - Greater Bogstrok | Bogstrok (2) - Patrol 001', 0, 0, 0, 3, 0),
+(@SGGUID+1016, 'Slave Pens - Greater Bogstrok | Bogstrok (2) - Patrol 002', 0, 0, 0, 3, 0),
 
-(@SGGUID+17, 'Slave Pens - Coilfang Slavehandler | Wastewalker Worker (3) - Link 001', 0, 0, 0, 3, 0),
-(@SGGUID+18, 'Slave Pens - Coilfang Slavehandler | Wastewalker Worker (3) - Link 002', 0, 0, 0, 3, 0),
-(@SGGUID+19, 'Slave Pens - Coilfang Champion | Coilfang Ray | Coilfang Enchantress/Coilfang Scale-Healery - Link 001', 0, 0, 0, 3, 0),
-(@SGGUID+20, 'Slave Pens - Wastewalker Slave/Wastewalker Worker | Wastewalker Slave/Wastewalker Worker - Link 002', 0, 0, 0, 3, 0),
-(@SGGUID+21, 'Slave Pens - Wastewalker Slave/Wastewalker Worker | Wastewalker Slave/Wastewalker Worker - Link 003', 0, 0, 0, 3, 0),
-(@SGGUID+22, 'Slave Pens - Wastewalker Slave/Wastewalker Worker | Wastewalker Slave/Wastewalker Worker - Link 004', 0, 0, 0, 3, 0),
-(@SGGUID+23, 'Slave Pens - Coilfang Slavehandler | Wastewalker Slave | Wastewalker Worker (2) - Link 005', 0, 0, 0, 3, 0),
-(@SGGUID+24, 'Slave Pens - Greater Bogstrok (3) | Bogstrok (3) - Link 001', 0, 0, 0, 3, 0),
-(@SGGUID+25, 'Slave Pens - Greater Bogstrok (3) | Bogstrok (3) - Link 002', 0, 0, 0, 3, 0),
-(@SGGUID+26, 'Slave Pens - Greater Bogstrok | Bogstrok (2) - Link 003', 0, 0, 0, 3, 0),
-(@SGGUID+27, 'Slave Pens - Coilfang Slavehandler | Wastewalker Slave | Wastewalker Worker (3) - Link 006', 0, 0, 0, 3, 0),
-(@SGGUID+28, 'Slave Pens - Coilfang Slavehandler | Wastewalker Slave | Wastewalker Worker (3) - Link 007', 0, 0, 0, 3, 0),
-(@SGGUID+29, 'Slave Pens - Coilfang Slavehandler | Wastewalker Slave | Wastewalker Worker (2) - Link 008', 0, 0, 0, 3, 0),
-(@SGGUID+30, 'Slave Pens - Coilfang Defender | Coilfang Defender - Link 001', 0, 0, 0, 3, 0),
-(@SGGUID+31, 'Slave Pens - Coilfang Technician (2) | Coilfang Collaborator (2) - Link 001', 0, 0, 0, 3, 0),
-(@SGGUID+32, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (2) - Link 002', 0, 0, 0, 3, 0),
-(@SGGUID+33, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (2) - Link 003', 0, 0, 0, 3, 0),
-(@SGGUID+34, 'Slave Pens - Coilfang Technician (2) | Coilfang Collaborator (2) - Link 004', 0, 0, 0, 3, 0),
-(@SGGUID+35, 'Slave Pens - Coilfang Champion | Coilfang Champion - Link 001', 0, 0, 0, 3, 0),
-(@SGGUID+36, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) - Link 004', 0, 0, 0, 3, 0),
-(@SGGUID+37, 'Slave Pens - Coilfang Tempest | Observer | Coilfang Scale-Healer | Coilfang Ray - Link 001', 0, 0, 0, 3, 0),
-(@SGGUID+38, 'Slave Pens - Coilfang Tempest (2) | Observer | Coilfang Scale-Healer | Coilfang Ray - Link 002', 0, 0, 0, 3, 0),
-(@SGGUID+39, 'Slave Pens - Coilfang Champion (2) | Enchantress | Coilfang Scale-Healer - Link 002', 0, 0, 0, 3, 0),
-(@SGGUID+40, 'Slave Pens - Coilfang Tempest | Observer | Coilfang Soothsayer/Coilfang Scale-Healer | Coilfang Tempest | Coilfang Ray - Link 003', 0, 0, 0, 3, 0),
-(@SGGUID+41, 'Slave Pens - Wastewalker Worker (2) - Link 009', 0, 0, 0, 3, 0),
-(@SGGUID+42, 'Slave Pens - Wastewalker Worker (2) - Link 010', 0, 0, 0, 3, 0),
-(@SGGUID+43, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) - Patrol 003', 0, 0, 0, 3, 0),
-(@SGGUID+44, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) - Patrol 004', 0, 0, 0, 3, 0),
-(@SGGUID+45, 'Slave Pens - Coilfang Defender | Coilfang Observer (3) - Link 002', 0, 0, 0, 3, 0),
+(@SGGUID+1017, 'Slave Pens - Coilfang Slavehandler | Wastewalker Worker (3) - Link 001', 0, 0, 0, 3, 0),
+(@SGGUID+1018, 'Slave Pens - Coilfang Slavehandler | Wastewalker Worker (3) - Link 002', 0, 0, 0, 3, 0),
+(@SGGUID+1019, 'Slave Pens - Coilfang Champion | Coilfang Ray | Coilfang Enchantress/Coilfang Scale-Healery - Link 001', 0, 0, 0, 3, 0),
+(@SGGUID+1020, 'Slave Pens - Wastewalker Slave/Wastewalker Worker | Wastewalker Slave/Wastewalker Worker - Link 002', 0, 0, 0, 3, 0),
+(@SGGUID+1021, 'Slave Pens - Wastewalker Slave/Wastewalker Worker | Wastewalker Slave/Wastewalker Worker - Link 003', 0, 0, 0, 3, 0),
+(@SGGUID+1022, 'Slave Pens - Wastewalker Slave/Wastewalker Worker | Wastewalker Slave/Wastewalker Worker - Link 004', 0, 0, 0, 3, 0),
+(@SGGUID+1023, 'Slave Pens - Coilfang Slavehandler | Wastewalker Slave | Wastewalker Worker (2) - Link 005', 0, 0, 0, 3, 0),
+(@SGGUID+1024, 'Slave Pens - Greater Bogstrok (3) | Bogstrok (3) - Link 001', 0, 0, 0, 3, 0),
+(@SGGUID+1025, 'Slave Pens - Greater Bogstrok (3) | Bogstrok (3) - Link 002', 0, 0, 0, 3, 0),
+(@SGGUID+1026, 'Slave Pens - Greater Bogstrok | Bogstrok (2) - Link 003', 0, 0, 0, 3, 0),
+(@SGGUID+1027, 'Slave Pens - Coilfang Slavehandler | Wastewalker Slave | Wastewalker Worker (3) - Link 006', 0, 0, 0, 3, 0),
+(@SGGUID+1028, 'Slave Pens - Coilfang Slavehandler | Wastewalker Slave | Wastewalker Worker (3) - Link 007', 0, 0, 0, 3, 0),
+(@SGGUID+1029, 'Slave Pens - Coilfang Slavehandler | Wastewalker Slave | Wastewalker Worker (2) - Link 008', 0, 0, 0, 3, 0),
+(@SGGUID+1030, 'Slave Pens - Coilfang Defender | Coilfang Defender - Link 001', 0, 0, 0, 3, 0),
+(@SGGUID+1031, 'Slave Pens - Coilfang Technician (2) | Coilfang Collaborator (2) - Link 001', 0, 0, 0, 3, 0),
+(@SGGUID+1032, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (2) - Link 002', 0, 0, 0, 3, 0),
+(@SGGUID+1033, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (2) - Link 003', 0, 0, 0, 3, 0),
+(@SGGUID+1034, 'Slave Pens - Coilfang Technician (2) | Coilfang Collaborator (2) - Link 004', 0, 0, 0, 3, 0),
+(@SGGUID+1035, 'Slave Pens - Coilfang Champion | Coilfang Champion - Link 001', 0, 0, 0, 3, 0),
+(@SGGUID+1036, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) - Link 004', 0, 0, 0, 3, 0),
+(@SGGUID+1037, 'Slave Pens - Coilfang Tempest | Observer | Coilfang Scale-Healer | Coilfang Ray - Link 001', 0, 0, 0, 3, 0),
+(@SGGUID+1038, 'Slave Pens - Coilfang Tempest (2) | Observer | Coilfang Scale-Healer | Coilfang Ray - Link 002', 0, 0, 0, 3, 0),
+(@SGGUID+1039, 'Slave Pens - Coilfang Champion (2) | Enchantress | Coilfang Scale-Healer - Link 002', 0, 0, 0, 3, 0),
+(@SGGUID+1040, 'Slave Pens - Coilfang Tempest | Observer | Coilfang Soothsayer/Coilfang Scale-Healer | Coilfang Tempest | Coilfang Ray - Link 003', 0, 0, 0, 3, 0),
+(@SGGUID+1041, 'Slave Pens - Wastewalker Worker (2) - Link 009', 0, 0, 0, 3, 0),
+(@SGGUID+1042, 'Slave Pens - Wastewalker Worker (2) - Link 010', 0, 0, 0, 3, 0),
+(@SGGUID+1043, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) - Patrol 003', 0, 0, 0, 3, 0),
+(@SGGUID+1044, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) - Patrol 004', 0, 0, 0, 3, 0),
+(@SGGUID+1045, 'Slave Pens - Coilfang Defender | Coilfang Observer (3) - Link 002', 0, 0, 0, 3, 0),
 -- objects
-(@SGGUID+100, 'Slave Pens - Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode', 1, 1, 0, 0, 0),
-(@SGGUID+101, 'Slave Pens - Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode', 1, 1, 0, 0, 0),
-(@SGGUID+102, 'Slave Pens - Adamantite Deposit 181556/Rich Adamantite Deposit 181569', 1, 4, 0, 0, 0),
-(@SGGUID+103, 'Slave Pens - Slave Pens - Anchient Lichen 181278', 1, 4, 0, 0, 0),
-(@SGGUID+104, 'Slave Pens - Slave Pens - Felweed 181270', 1, 3, 0, 0, 0),
-(@SGGUID+105, 'Slave Pens - Slave Pens - Ragveil (181275) / Flame Cap (181276)', 1, 2, 0, 0, 0);
+(@SGGUID+10100, 'Slave Pens - Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode', 1, 1, 0, 0, 0),
+(@SGGUID+10101, 'Slave Pens - Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode', 1, 1, 0, 0, 0),
+(@SGGUID+1010102, 'Slave Pens - Adamantite Deposit 181556/Rich Adamantite Deposit 181569', 1, 4, 0, 0, 0),
+(@SGGUID+1010103, 'Slave Pens - Slave Pens - Anchient Lichen 181278', 1, 4, 0, 0, 0),
+(@SGGUID+1010104, 'Slave Pens - Slave Pens - Felweed 181270', 1, 3, 0, 0, 0),
+(@SGGUID+1010105, 'Slave Pens - Slave Pens - Ragveil (181275) / Flame Cap (181276)', 1, 2, 0, 0, 0);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- creatures
-(@SGGUID+1, @CGUID+60, 0), -- Coilfang Champion
-(@SGGUID+1, @CGUID+69, 1), -- Coilfang Champion
-(@SGGUID+2, @CGUID+59, 0), -- Coilfang Champion
-(@SGGUID+2, @CGUID+88, 1), -- Coilfang Soothsayer, Coilfang Enchantress
-(@SGGUID+2, @CGUID+95, 2), -- Coilfang Soothsayer, Coilfang Enchantress
-(@SGGUID+3, @CGUID+68, 0), -- Coilfang Champion
-(@SGGUID+3, @CGUID+87, 1), -- Coilfang Soothsayer, Coilfang Enchantress
-(@SGGUID+3, @CGUID+91, 2), -- Coilfang Soothsayer, Coilfang Enchantress
-(@SGGUID+4, @CGUID+193, 0), -- Coilfang Champion
-(@SGGUID+4, @CGUID+94, 1), -- Coilfang Champion
-(@SGGUID+4, @CGUID+61, 2), -- Coilfang Soothsayer, Coilfang Scale-Healer
-(@SGGUID+4, @CGUID+197, 3), -- Coilfang Soothsayer, Coilfang Enchantress
-(@SGGUID+5, @CGUID+70, 0), -- Coilfang Defender
-(@SGGUID+5, @CGUID+71, 1), -- Coilfang Defender
-(@SGGUID+6, @CGUID+76, 0), -- Coilfang Defender
-(@SGGUID+6, @CGUID+77, 1), -- Coilfang Defender
-(@SGGUID+7, @CGUID+43, 0), -- Coilfang Technician
-(@SGGUID+7, @CGUID+44, 1), -- Coilfang Technician
-(@SGGUID+8, @CGUID+42, 0), -- Coilfang Technician
-(@SGGUID+8, @CGUID+106, 1), -- Coilfang Collaborator
-(@SGGUID+8, @CGUID+112, 2), -- Coilfang Collaborator
-(@SGGUID+9, @CGUID+72, 0), -- Coilfang Technician
-(@SGGUID+9, @CGUID+73, 1), -- Coilfang Technician
-(@SGGUID+10, @CGUID+74, 0), -- Coilfang Technician
-(@SGGUID+10, @CGUID+75, 1), -- Coilfang Technician
-(@SGGUID+11, @CGUID+56, 0), -- Coilfang Technician
-(@SGGUID+11, @CGUID+105, 1), -- Coilfang Collaborator
-(@SGGUID+11, @CGUID+107, 2), -- Coilfang Collaborator
-(@SGGUID+12, @CGUID+45, 0), -- Coilfang Technician
-(@SGGUID+12, @CGUID+108, 1), -- Coilfang Collaborator
-(@SGGUID+12, @CGUID+109, 2), -- Coilfang Collaborator
-(@SGGUID+13, @CGUID+92, 0), -- Coilfang Technician
-(@SGGUID+13, @CGUID+50, 1), -- Coilfang Technician
-(@SGGUID+13, @CGUID+47, 2), -- Coilfang Enchantress
-(@SGGUID+14, @CGUID+93, 0), -- Coilfang Technician
-(@SGGUID+14, @CGUID+49, 1), -- Coilfang Technician
-(@SGGUID+14, @CGUID+51, 2), -- Coilfang Enchantress
-(@SGGUID+15, @CGUID+30, 0), -- Greater Bogstrok
-(@SGGUID+15, @CGUID+12, 1), -- Bogstrok
-(@SGGUID+15, @CGUID+13, 2), -- Bogstrok
-(@SGGUID+16, @CGUID+29, 0), -- Greater Bogstrok
-(@SGGUID+16, @CGUID+9, 1), -- Bogstrok
-(@SGGUID+16, @CGUID+14, 2), -- Bogstrok
-(@SGGUID+17, @CGUID+84, -1), -- Coilfang Slavehandler
-(@SGGUID+17, @CGUID+132, -1), -- Wastewalker Worker
-(@SGGUID+17, @CGUID+133, -1), -- Wastewalker Worker
-(@SGGUID+17, @CGUID+134, -1), -- Wastewalker Worker
-(@SGGUID+18, @CGUID+85, -1), -- Coilfang Slavehandler
-(@SGGUID+18, @CGUID+118, -1), -- Wastewalker Worker
-(@SGGUID+18, @CGUID+136, -1), -- Wastewalker Worker
-(@SGGUID+18, @CGUID+143, -1), -- Wastewalker Worker
-(@SGGUID+19, @CGUID+64, -1), -- Coilfang Champion
-(@SGGUID+19, @CGUID+40, -1), -- Coilfang Observer
-(@SGGUID+19, @CGUID+96, -1), -- Coilfang Enchantress/Coilfang Scale-Healery
-(@SGGUID+19, @CGUID+207, -1), -- Coilfang Ray
-(@SGGUID+20, @CGUID+129, -1), -- Wastewalker Slave/Wastewalker Worker
-(@SGGUID+20, @CGUID+120, -1), -- Wastewalker Slave/Wastewalker Worker
-(@SGGUID+21, @CGUID+135, -1), -- Wastewalker Slave/Wastewalker Worker
-(@SGGUID+21, @CGUID+116, -1), -- Wastewalker Slave/Wastewalker Worker
-(@SGGUID+22, @CGUID+142, -1), -- Wastewalker Slave/Wastewalker Worker
-(@SGGUID+22, @CGUID+115, -1), -- Wastewalker Slave/Wastewalker Worker
-(@SGGUID+23, @CGUID+83, -1), -- Coilfang Slavehandler
-(@SGGUID+23, @CGUID+119, -1), -- Wastewalker Slave
-(@SGGUID+23, @CGUID+140, -1), -- Wastewalker Worker
-(@SGGUID+23, @CGUID+141, -1), -- Wastewalker Worker
-(@SGGUID+24, @CGUID+22, -1), -- Greater Bogstrok
-(@SGGUID+24, @CGUID+5, -1), -- Bogstrok
-(@SGGUID+24, @CGUID+6, -1), -- Bogstrok
-(@SGGUID+24, @CGUID+7, -1), -- Bogstrok
-(@SGGUID+24, @CGUID+25, -1), -- Greater Bogstrok
-(@SGGUID+24, @CGUID+26, -1), -- Greater Bogstrok
-(@SGGUID+25, @CGUID+31, -1), -- Greater Bogstrok
-(@SGGUID+25, @CGUID+15, -1), -- Bogstrok
-(@SGGUID+25, @CGUID+16, -1), -- Bogstrok
-(@SGGUID+25, @CGUID+17, -1), -- Bogstrok
-(@SGGUID+25, @CGUID+32, -1), -- Greater Bogstrok
-(@SGGUID+25, @CGUID+33, -1), -- Greater Bogstrok
-(@SGGUID+26, @CGUID+1, -1), -- Bogstrok
-(@SGGUID+26, @CGUID+2, -1), -- Bogstrok
-(@SGGUID+26, @CGUID+4, -1), -- Bogstrok
-(@SGGUID+26, @CGUID+24, -1), -- Greater Bogstrok
-(@SGGUID+27, @CGUID+81, -1), -- Coilfang Slavehandler
-(@SGGUID+27, @CGUID+114, -1), -- Wastewalker Slave/Wastewalker Worker
-(@SGGUID+27, @CGUID+121, -1), -- Wastewalker Slave
-(@SGGUID+27, @CGUID+144, -1), -- Wastewalker Worker
-(@SGGUID+28, @CGUID+82, -1), -- Coilfang Slavehandler
-(@SGGUID+28, @CGUID+122, -1), -- Wastewalker Slave
-(@SGGUID+28, @CGUID+130, -1), -- Wastewalker Worker
-(@SGGUID+28, @CGUID+131, -1), -- Wastewalker Slave/Wastewalker Worker
-(@SGGUID+29, @CGUID+80, -1), -- Coilfang Slavehandler
-(@SGGUID+29, @CGUID+113, -1), -- Wastewalker Slave
-(@SGGUID+29, @CGUID+123, -1), -- Wastewalker Slave/Wastewalker Worker
-(@SGGUID+29, @CGUID+124, -1), -- Wastewalker Worker
-(@SGGUID+30, @CGUID+78, -1), -- Coilfang Defender
-(@SGGUID+30, @CGUID+79, -1), -- Coilfang Defender
-(@SGGUID+31, @CGUID+54, -1), -- Coilfang Technician
-(@SGGUID+31, @CGUID+55, -1), -- Coilfang Technician
-(@SGGUID+31, @CGUID+98, -1), -- Coilfang Collaborator
-(@SGGUID+31, @CGUID+104, -1), -- Coilfang Collaborator
-(@SGGUID+32, @CGUID+52, -1), -- Coilfang Technician
-(@SGGUID+32, @CGUID+99, -1), -- Coilfang Collaborator
-(@SGGUID+32, @CGUID+102, -1), -- Coilfang Collaborator
-(@SGGUID+33, @CGUID+48, -1), -- Coilfang Technician
-(@SGGUID+33, @CGUID+100, -1), -- Coilfang Collaborator
-(@SGGUID+33, @CGUID+101, -1), -- Coilfang Collaborator
-(@SGGUID+33, @CGUID+200, -1), -- Coilfang Technician
-(@SGGUID+34, @CGUID+53, -1), -- Coilfang Technician
-(@SGGUID+34, @CGUID+46, -1), -- Coilfang Technician
-(@SGGUID+34, @CGUID+103, -1), -- Coilfang Collaborator
-(@SGGUID+34, @CGUID+110, -1), -- Coilfang Collaborator
-(@SGGUID+35, @CGUID+62, -1), -- Coilfang Champion
-(@SGGUID+35, @CGUID+63, -1), -- Coilfang Champion
-(@SGGUID+36, @CGUID+8, -1), -- Bogstrok
-(@SGGUID+36, @CGUID+3, -1), -- Greater Bogstrok
-(@SGGUID+36, @CGUID+20, -1), -- Bogstrok
-(@SGGUID+36, @CGUID+27, -1), -- Greater Bogstrok
-(@SGGUID+37, @CGUID+198, -1), -- Coilfang Tempest
-(@SGGUID+37, @CGUID+41, -1), -- Coilfang Observer
-(@SGGUID+37, @CGUID+196, -1), -- Coilfang Scale-Healer
-(@SGGUID+37, @CGUID+209, -1), -- Coilfang Ray
-(@SGGUID+38, @CGUID+195, -1), -- Coilfang Scale-Healer
-(@SGGUID+38, @CGUID+38, -1), -- Coilfang Observer
-(@SGGUID+38, @CGUID+199, -1), -- Coilfang Tempest
-(@SGGUID+38, @CGUID+201, -1), -- Coilfang Tempest
-(@SGGUID+38, @CGUID+208, -1), -- Coilfang Ray
-(@SGGUID+39, @CGUID+65, -1), -- Coilfang Champion
-(@SGGUID+39, @CGUID+66, -1), -- Coilfang Champion
-(@SGGUID+39, @CGUID+97, -1), -- Coilfang Enchantress
-(@SGGUID+39, @CGUID+194, -1), -- Coilfang Scale-Healer
-(@SGGUID+40, @CGUID+39, -1), -- Coilfang Observer
-(@SGGUID+40, @CGUID+89, -1), -- Coilfang Soothsayer/Coilfang Scale-Healer
-(@SGGUID+40, @CGUID+202, -1), -- Coilfang Tempest
-(@SGGUID+40, @CGUID+203, -1), -- Coilfang Tempest
-(@SGGUID+40, @CGUID+206, -1), -- Coilfang Ray
-(@SGGUID+41, @CGUID+127, -1), -- Wastewalker Worker
-(@SGGUID+41, @CGUID+128, -1), -- Wastewalker Worker
-(@SGGUID+42, @CGUID+125, -1), -- Wastewalker Worker
-(@SGGUID+42, @CGUID+126, -1), -- Wastewalker Worker
-(@SGGUID+43, @CGUID+34, 0), -- Greater Bogstrok
-(@SGGUID+43, @CGUID+18, 1), -- Bogstrok
-(@SGGUID+43, @CGUID+19, 2), -- Bogstrok
-(@SGGUID+43, @CGUID+35, 3), -- Greater Bogstrok
-(@SGGUID+44, @CGUID+11, 0), -- Bogstrok
-(@SGGUID+44, @CGUID+10, 1), -- Bogstrok
-(@SGGUID+44, @CGUID+21, 2), -- Greater Bogstrok
-(@SGGUID+44, @CGUID+28, 3), -- Greater Bogstrok
-(@SGGUID+45, @CGUID+205, -1), -- Coilfang Observer
-(@SGGUID+45, @CGUID+67, -1), -- Coilfang Observer
-(@SGGUID+45, @CGUID+90, -1), -- Coilfang Defender
-(@SGGUID+45, @CGUID+204, -1), -- Coilfang Observer
+(@SGGUID+101, @CGUID+60, 0), -- Coilfang Champion
+(@SGGUID+101, @CGUID+69, 1), -- Coilfang Champion
+(@SGGUID+102, @CGUID+59, 0), -- Coilfang Champion
+(@SGGUID+102, @CGUID+88, 1), -- Coilfang Soothsayer, Coilfang Enchantress
+(@SGGUID+102, @CGUID+95, 2), -- Coilfang Soothsayer, Coilfang Enchantress
+(@SGGUID+103, @CGUID+68, 0), -- Coilfang Champion
+(@SGGUID+103, @CGUID+87, 1), -- Coilfang Soothsayer, Coilfang Enchantress
+(@SGGUID+103, @CGUID+91, 2), -- Coilfang Soothsayer, Coilfang Enchantress
+(@SGGUID+104, @CGUID+193, 0), -- Coilfang Champion
+(@SGGUID+104, @CGUID+94, 1), -- Coilfang Champion
+(@SGGUID+104, @CGUID+61, 2), -- Coilfang Soothsayer, Coilfang Scale-Healer
+(@SGGUID+104, @CGUID+197, 3), -- Coilfang Soothsayer, Coilfang Enchantress
+(@SGGUID+105, @CGUID+70, 0), -- Coilfang Defender
+(@SGGUID+105, @CGUID+71, 1), -- Coilfang Defender
+(@SGGUID+106, @CGUID+76, 0), -- Coilfang Defender
+(@SGGUID+106, @CGUID+77, 1), -- Coilfang Defender
+(@SGGUID+107, @CGUID+43, 0), -- Coilfang Technician
+(@SGGUID+107, @CGUID+44, 1), -- Coilfang Technician
+(@SGGUID+108, @CGUID+42, 0), -- Coilfang Technician
+(@SGGUID+108, @CGUID+106, 1), -- Coilfang Collaborator
+(@SGGUID+108, @CGUID+112, 2), -- Coilfang Collaborator
+(@SGGUID+109, @CGUID+72, 0), -- Coilfang Technician
+(@SGGUID+109, @CGUID+73, 1), -- Coilfang Technician
+(@SGGUID+1010, @CGUID+74, 0), -- Coilfang Technician
+(@SGGUID+1010, @CGUID+75, 1), -- Coilfang Technician
+(@SGGUID+1011, @CGUID+56, 0), -- Coilfang Technician
+(@SGGUID+1011, @CGUID+105, 1), -- Coilfang Collaborator
+(@SGGUID+1011, @CGUID+107, 2), -- Coilfang Collaborator
+(@SGGUID+1012, @CGUID+45, 0), -- Coilfang Technician
+(@SGGUID+1012, @CGUID+108, 1), -- Coilfang Collaborator
+(@SGGUID+1012, @CGUID+109, 2), -- Coilfang Collaborator
+(@SGGUID+1013, @CGUID+92, 0), -- Coilfang Technician
+(@SGGUID+1013, @CGUID+50, 1), -- Coilfang Technician
+(@SGGUID+1013, @CGUID+47, 2), -- Coilfang Enchantress
+(@SGGUID+1014, @CGUID+93, 0), -- Coilfang Technician
+(@SGGUID+1014, @CGUID+49, 1), -- Coilfang Technician
+(@SGGUID+1014, @CGUID+51, 2), -- Coilfang Enchantress
+
+(@SGGUID+1015, @CGUID+30, 0), -- Greater Bogstrok
+(@SGGUID+1015, @CGUID+12, 1), -- Bogstrok
+(@SGGUID+1015, @CGUID+13, 2), -- Bogstrok
+
+(@SGGUID+1016, @CGUID+29, 0), -- Greater Bogstrok
+(@SGGUID+1016, @CGUID+9, 1), -- Bogstrok
+(@SGGUID+1016, @CGUID+14, 2), -- Bogstrok
+
+(@SGGUID+1017, @CGUID+84, -1), -- Coilfang Slavehandler
+(@SGGUID+1017, @CGUID+132, -1), -- Wastewalker Worker
+(@SGGUID+1017, @CGUID+133, -1), -- Wastewalker Worker
+(@SGGUID+1017, @CGUID+134, -1), -- Wastewalker Worker
+(@SGGUID+1018, @CGUID+85, -1), -- Coilfang Slavehandler
+(@SGGUID+1018, @CGUID+118, -1), -- Wastewalker Worker
+(@SGGUID+1018, @CGUID+136, -1), -- Wastewalker Worker
+(@SGGUID+1018, @CGUID+143, -1), -- Wastewalker Worker
+(@SGGUID+1019, @CGUID+64, -1), -- Coilfang Champion
+(@SGGUID+1019, @CGUID+40, -1), -- Coilfang Observer
+(@SGGUID+1019, @CGUID+96, -1), -- Coilfang Enchantress/Coilfang Scale-Healery
+(@SGGUID+1019, @CGUID+207, -1), -- Coilfang Ray
+(@SGGUID+1020, @CGUID+129, -1), -- Wastewalker Slave/Wastewalker Worker
+(@SGGUID+1020, @CGUID+120, -1), -- Wastewalker Slave/Wastewalker Worker
+(@SGGUID+1021, @CGUID+135, -1), -- Wastewalker Slave/Wastewalker Worker
+(@SGGUID+1021, @CGUID+116, -1), -- Wastewalker Slave/Wastewalker Worker
+(@SGGUID+1022, @CGUID+142, -1), -- Wastewalker Slave/Wastewalker Worker
+(@SGGUID+1022, @CGUID+115, -1), -- Wastewalker Slave/Wastewalker Worker
+(@SGGUID+1023, @CGUID+83, -1), -- Coilfang Slavehandler
+(@SGGUID+1023, @CGUID+119, -1), -- Wastewalker Slave
+(@SGGUID+1023, @CGUID+140, -1), -- Wastewalker Worker
+(@SGGUID+1023, @CGUID+141, -1), -- Wastewalker Worker
+(@SGGUID+1024, @CGUID+22, -1), -- Greater Bogstrok
+(@SGGUID+1024, @CGUID+5, -1), -- Bogstrok
+(@SGGUID+1024, @CGUID+6, -1), -- Bogstrok
+(@SGGUID+1024, @CGUID+7, -1), -- Bogstrok
+(@SGGUID+1024, @CGUID+25, -1), -- Greater Bogstrok
+(@SGGUID+1024, @CGUID+26, -1), -- Greater Bogstrok
+(@SGGUID+1025, @CGUID+31, -1), -- Greater Bogstrok
+(@SGGUID+1025, @CGUID+15, -1), -- Bogstrok
+(@SGGUID+1025, @CGUID+16, -1), -- Bogstrok
+(@SGGUID+1025, @CGUID+17, -1), -- Bogstrok
+(@SGGUID+1025, @CGUID+32, -1), -- Greater Bogstrok
+(@SGGUID+1025, @CGUID+33, -1), -- Greater Bogstrok
+(@SGGUID+1026, @CGUID+1, -1), -- Bogstrok
+(@SGGUID+1026, @CGUID+2, -1), -- Bogstrok
+(@SGGUID+1026, @CGUID+4, -1), -- Bogstrok
+(@SGGUID+1026, @CGUID+24, -1), -- Greater Bogstrok
+(@SGGUID+1027, @CGUID+81, -1), -- Coilfang Slavehandler
+(@SGGUID+1027, @CGUID+114, -1), -- Wastewalker Slave/Wastewalker Worker
+(@SGGUID+1027, @CGUID+121, -1), -- Wastewalker Slave
+(@SGGUID+1027, @CGUID+144, -1), -- Wastewalker Worker
+(@SGGUID+1028, @CGUID+82, -1), -- Coilfang Slavehandler
+(@SGGUID+1028, @CGUID+122, -1), -- Wastewalker Slave
+(@SGGUID+1028, @CGUID+130, -1), -- Wastewalker Worker
+(@SGGUID+1028, @CGUID+131, -1), -- Wastewalker Slave/Wastewalker Worker
+(@SGGUID+1029, @CGUID+80, -1), -- Coilfang Slavehandler
+(@SGGUID+1029, @CGUID+113, -1), -- Wastewalker Slave
+(@SGGUID+1029, @CGUID+123, -1), -- Wastewalker Slave/Wastewalker Worker
+(@SGGUID+1029, @CGUID+124, -1), -- Wastewalker Worker
+(@SGGUID+1030, @CGUID+78, -1), -- Coilfang Defender
+(@SGGUID+1030, @CGUID+79, -1), -- Coilfang Defender
+(@SGGUID+1031, @CGUID+54, -1), -- Coilfang Technician
+(@SGGUID+1031, @CGUID+55, -1), -- Coilfang Technician
+(@SGGUID+1031, @CGUID+98, -1), -- Coilfang Collaborator
+(@SGGUID+1031, @CGUID+104, -1), -- Coilfang Collaborator
+(@SGGUID+1032, @CGUID+52, -1), -- Coilfang Technician
+(@SGGUID+1032, @CGUID+99, -1), -- Coilfang Collaborator
+(@SGGUID+1032, @CGUID+102, -1), -- Coilfang Collaborator
+(@SGGUID+1033, @CGUID+48, -1), -- Coilfang Technician
+(@SGGUID+1033, @CGUID+100, -1), -- Coilfang Collaborator
+(@SGGUID+1033, @CGUID+101, -1), -- Coilfang Collaborator
+(@SGGUID+1033, @CGUID+200, -1), -- Coilfang Technician
+(@SGGUID+1034, @CGUID+53, -1), -- Coilfang Technician
+(@SGGUID+1034, @CGUID+46, -1), -- Coilfang Technician
+(@SGGUID+1034, @CGUID+103, -1), -- Coilfang Collaborator
+(@SGGUID+1034, @CGUID+110, -1), -- Coilfang Collaborator
+(@SGGUID+1035, @CGUID+62, -1), -- Coilfang Champion
+(@SGGUID+1035, @CGUID+63, -1), -- Coilfang Champion
+(@SGGUID+1036, @CGUID+8, -1), -- Bogstrok
+(@SGGUID+1036, @CGUID+3, -1), -- Greater Bogstrok
+(@SGGUID+1036, @CGUID+20, -1), -- Bogstrok
+(@SGGUID+1036, @CGUID+27, -1), -- Greater Bogstrok
+(@SGGUID+1037, @CGUID+198, -1), -- Coilfang Tempest
+(@SGGUID+1037, @CGUID+41, -1), -- Coilfang Observer
+(@SGGUID+1037, @CGUID+196, -1), -- Coilfang Scale-Healer
+(@SGGUID+1037, @CGUID+209, -1), -- Coilfang Ray
+(@SGGUID+1038, @CGUID+195, -1), -- Coilfang Scale-Healer
+(@SGGUID+1038, @CGUID+38, -1), -- Coilfang Observer
+(@SGGUID+1038, @CGUID+199, -1), -- Coilfang Tempest
+(@SGGUID+1038, @CGUID+201, -1), -- Coilfang Tempest
+(@SGGUID+1038, @CGUID+208, -1), -- Coilfang Ray
+(@SGGUID+1039, @CGUID+65, -1), -- Coilfang Champion
+(@SGGUID+1039, @CGUID+66, -1), -- Coilfang Champion
+(@SGGUID+1039, @CGUID+97, -1), -- Coilfang Enchantress
+(@SGGUID+1039, @CGUID+194, -1), -- Coilfang Scale-Healer
+(@SGGUID+1040, @CGUID+39, -1), -- Coilfang Observer
+(@SGGUID+1040, @CGUID+89, -1), -- Coilfang Soothsayer/Coilfang Scale-Healer
+(@SGGUID+1040, @CGUID+202, -1), -- Coilfang Tempest
+(@SGGUID+1040, @CGUID+203, -1), -- Coilfang Tempest
+(@SGGUID+1040, @CGUID+206, -1), -- Coilfang Ray
+(@SGGUID+1041, @CGUID+127, -1), -- Wastewalker Worker
+(@SGGUID+1041, @CGUID+128, -1), -- Wastewalker Worker
+(@SGGUID+1042, @CGUID+125, -1), -- Wastewalker Worker
+(@SGGUID+1042, @CGUID+126, -1), -- Wastewalker Worker
+(@SGGUID+1043, @CGUID+34, 0), -- Greater Bogstrok
+(@SGGUID+1043, @CGUID+18, 1), -- Bogstrok
+(@SGGUID+1043, @CGUID+19, 2), -- Bogstrok
+(@SGGUID+1043, @CGUID+35, 3), -- Greater Bogstrok
+(@SGGUID+1044, @CGUID+11, 0), -- Bogstrok
+(@SGGUID+1044, @CGUID+10, 1), -- Bogstrok
+(@SGGUID+1044, @CGUID+21, 2), -- Greater Bogstrok
+(@SGGUID+1044, @CGUID+28, 3), -- Greater Bogstrok
+(@SGGUID+1045, @CGUID+205, -1), -- Coilfang Observer
+(@SGGUID+1045, @CGUID+67, -1), -- Coilfang Observer
+(@SGGUID+1045, @CGUID+90, -1), -- Coilfang Defender
+(@SGGUID+1045, @CGUID+204, -1), -- Coilfang Observer
 -- objects
-(@SGGUID+100, @OGUID+63, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+100, @OGUID+65, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+100, @OGUID+67, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+100, @OGUID+69, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+100, @OGUID+71, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+100, @OGUID+73, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+100, @OGUID+75, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+100, @OGUID+77, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+100, @OGUID+79, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+101, @OGUID+64, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+101, @OGUID+66, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+101, @OGUID+68, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+101, @OGUID+70, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+101, @OGUID+72, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+101, @OGUID+74, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+101, @OGUID+76, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+101, @OGUID+78, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+101, @OGUID+80, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+102, @OGUID+12, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569/Khorium 181557
-(@SGGUID+102, @OGUID+13, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
-(@SGGUID+102, @OGUID+14, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
-(@SGGUID+102, @OGUID+15, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
-(@SGGUID+102, @OGUID+62, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
-(@SGGUID+103, @OGUID+7, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+8, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+9, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+10, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+11, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+51, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+52, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+53, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+54, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+55, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+56, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+57, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+58, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+59, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+60, -1), -- Anchient Lichen (181278)
-(@SGGUID+103, @OGUID+61, -1), -- Anchient Lichen (181278)
-(@SGGUID+104, @OGUID+1, -1), -- Felweed (181270)
-(@SGGUID+104, @OGUID+2, -1), -- Felweed (181270)
-(@SGGUID+104, @OGUID+40, -1), -- Felweed (181270)
-(@SGGUID+104, @OGUID+41, -1), -- Felweed (181270)
-(@SGGUID+104, @OGUID+42, -1), -- Felweed (181270)
-(@SGGUID+104, @OGUID+43, -1), -- Felweed (181270)
-(@SGGUID+104, @OGUID+44, -1), -- Felweed (181270)
-(@SGGUID+104, @OGUID+45, -1), -- Felweed (181270)
-(@SGGUID+105, @OGUID+3, -1), -- Ragveil/Flame Cap
-(@SGGUID+105, @OGUID+4, -1), -- Ragveil/Flame Cap
-(@SGGUID+105, @OGUID+5, -1), -- Ragveil/Flame Cap
-(@SGGUID+105, @OGUID+6, -1), -- Ragveil/Flame Cap
-(@SGGUID+105, @OGUID+46, -1), -- Ragveil/Flame Cap
-(@SGGUID+105, @OGUID+47, -1), -- Ragveil/Flame Cap
-(@SGGUID+105, @OGUID+48, -1), -- Ragveil/Flame Cap
-(@SGGUID+105, @OGUID+49, -1); -- Ragveil/Flame Cap
+(@SGGUID+10100, @OGUID+63, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+10100, @OGUID+65, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+10100, @OGUID+67, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+10100, @OGUID+69, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+10100, @OGUID+71, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+10100, @OGUID+73, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+10100, @OGUID+75, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+10100, @OGUID+77, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+10100, @OGUID+79, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+10101, @OGUID+64, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+10101, @OGUID+66, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+10101, @OGUID+68, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+10101, @OGUID+70, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+10101, @OGUID+72, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+10101, @OGUID+74, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+10101, @OGUID+76, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+10101, @OGUID+78, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+10101, @OGUID+80, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+1010102, @OGUID+12, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569/Khorium 181557
+(@SGGUID+1010102, @OGUID+13, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
+(@SGGUID+1010102, @OGUID+14, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
+(@SGGUID+1010102, @OGUID+15, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
+(@SGGUID+1010102, @OGUID+62, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
+(@SGGUID+1010103, @OGUID+7, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+8, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+9, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+10, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+11, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+51, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+52, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+53, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+54, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+55, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+56, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+57, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+58, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+59, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+60, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010103, @OGUID+61, -1), -- Anchient Lichen (181278)
+(@SGGUID+1010104, @OGUID+1, -1), -- Felweed (181270)
+(@SGGUID+1010104, @OGUID+2, -1), -- Felweed (181270)
+(@SGGUID+1010104, @OGUID+40, -1), -- Felweed (181270)
+(@SGGUID+1010104, @OGUID+41, -1), -- Felweed (181270)
+(@SGGUID+1010104, @OGUID+42, -1), -- Felweed (181270)
+(@SGGUID+1010104, @OGUID+43, -1), -- Felweed (181270)
+(@SGGUID+1010104, @OGUID+44, -1), -- Felweed (181270)
+(@SGGUID+1010104, @OGUID+45, -1), -- Felweed (181270)
+(@SGGUID+1010105, @OGUID+3, -1), -- Ragveil/Flame Cap
+(@SGGUID+1010105, @OGUID+4, -1), -- Ragveil/Flame Cap
+(@SGGUID+1010105, @OGUID+5, -1), -- Ragveil/Flame Cap
+(@SGGUID+1010105, @OGUID+6, -1), -- Ragveil/Flame Cap
+(@SGGUID+1010105, @OGUID+46, -1), -- Ragveil/Flame Cap
+(@SGGUID+1010105, @OGUID+47, -1), -- Ragveil/Flame Cap
+(@SGGUID+1010105, @OGUID+48, -1), -- Ragveil/Flame Cap
+(@SGGUID+1010105, @OGUID+49, -1); -- Ragveil/Flame Cap
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@SGGUID+1, 2, 4, 0, @SGGUID+1, 4, 'Slave Pens - Coilfang Champion (2) Patrol 000'),
-(@SGGUID+2, 3, 4, 0, @SGGUID+2, 4, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 001'),
-(@SGGUID+3, 3, 4, 0, @SGGUID+3, 4, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 002'),
-(@SGGUID+4, 2, 4, 0, @SGGUID+4, 4, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) Patrol 003'),
-(@SGGUID+5, 2, 4, 0, @SGGUID+5, 4, 'Slave Pens - Coilfang Defender (2) Patrol 000'),
-(@SGGUID+6, 2, 4, 0, @SGGUID+6, 4, 'Slave Pens - Coilfang Defender (2) Patrol 001'),
-(@SGGUID+7, 2, 4, 0, @SGGUID+7, 4, 'Slave Pens - Coilfang Technician (2) Patrol 000'),
-(@SGGUID+8, 3, 4, 0, @SGGUID+8, 4, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 001'),
-(@SGGUID+9, 2, 4, 0, @SGGUID+9, 4, 'Slave Pens - Coilfang Technician (2) Patrol 002'),
-(@SGGUID+10, 2, 4, 0, @SGGUID+10, 4, 'Slave Pens - Coilfang Technician (2) Patrol 003'),
-(@SGGUID+11, 3, 4, 0, @SGGUID+11, 4, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 004'),
-(@SGGUID+12, 3, 4, 0, @SGGUID+12, 4, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 005'),
-(@SGGUID+13, 2, 4, 0, @SGGUID+13, 4, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 006'),
-(@SGGUID+14, 2, 4, 0, @SGGUID+14, 4, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 007'),
-(@SGGUID+15, 3, 4, 0, @SGGUID+15, 2, 'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 001'),
-(@SGGUID+16, 3, 4, 0, @SGGUID+16, 2, 'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 002'),
-(@SGGUID+43, 3, 4, 0, @SGGUID+43, 2, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 003'),
-(@SGGUID+44, 3, 4, 0, @SGGUID+44, 2, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 004');
+(@SGGUID+101, 2, 4, 0, @SGGUID+101, 4, 'Slave Pens - Coilfang Champion (2) Patrol 000'),
+(@SGGUID+102, 3, 4, 0, @SGGUID+102, 4, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 001'),
+(@SGGUID+103, 3, 4, 0, @SGGUID+103, 4, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 002'),
+(@SGGUID+104, 2, 4, 0, @SGGUID+104, 4, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) Patrol 003'),
+(@SGGUID+105, 2, 4, 0, @SGGUID+105, 4, 'Slave Pens - Coilfang Defender (2) Patrol 000'),
+(@SGGUID+106, 2, 4, 0, @SGGUID+106, 4, 'Slave Pens - Coilfang Defender (2) Patrol 001'),
+(@SGGUID+107, 2, 4, 0, @SGGUID+107, 4, 'Slave Pens - Coilfang Technician (2) Patrol 000'),
+(@SGGUID+108, 3, 4, 0, @SGGUID+108, 4, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 001'),
+(@SGGUID+109, 2, 4, 0, @SGGUID+109, 4, 'Slave Pens - Coilfang Technician (2) Patrol 002'),
+(@SGGUID+1010, 2, 4, 0, @SGGUID+1010, 4, 'Slave Pens - Coilfang Technician (2) Patrol 003'),
+(@SGGUID+1011, 3, 4, 0, @SGGUID+1011, 4, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 004'),
+(@SGGUID+1012, 3, 4, 0, @SGGUID+1012, 4, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 005'),
+(@SGGUID+1013, 2, 4, 0, @SGGUID+1013, 4, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 006'),
+(@SGGUID+1014, 2, 4, 0, @SGGUID+1014, 4, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 007'),
+(@SGGUID+1015, 3, 4, 0, @SGGUID+1015, 2, 'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 001'),
+(@SGGUID+1016, 3, 4, 0, @SGGUID+1016, 2, 'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 002'),
+(@SGGUID+1043, 3, 4, 0, @SGGUID+1043, 2, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 003'),
+(@SGGUID+1044, 3, 4, 0, @SGGUID+1044, 2, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 004');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
-(@SGGUID+1, 1, -112.82242, -46.836197, -3.2531695, 100, 0, 0),
-(@SGGUID+1, 2, -117.92906, -26.649307, -6.5814204, 100, 0, 0),
-(@SGGUID+1, 3, -113.02221, -13.998462, -9.294763, 100, 0, 0),
-(@SGGUID+1, 4, -99.75725, -7.121468, -9.277856, 100, 0, 0),
-(@SGGUID+1, 5, -86.92553, -3.28355, -7.37143, 100, 0, 0),
-(@SGGUID+1, 6, -62.609547, -5.966096, -3.558902, 100, 0, 0),
-(@SGGUID+2, 1, -94.66229, -221.32935, -1.2438293, 100, 0, 0),
-(@SGGUID+2, 2, -96.58342, -192.55623, -1.6107723, 100, 0, 0),
-(@SGGUID+2, 3, -101.39325, -162.79597, -2.5401618, 100, 0, 0),
-(@SGGUID+2, 4, -97.396614, -148.95576, -1.9677485, 100, 0, 0),
-(@SGGUID+2, 5, -78.77852, -149.64166, -1.9712012, 100, 0, 0),
-(@SGGUID+2, 6, -49.81517, -168.06767, -1.9161165, 100, 0, 0),
-(@SGGUID+2, 7, -78.558304, -149.64978, -1.9562871, 100, 0, 0),
-(@SGGUID+3, 1, -48.752335, -262.20273, -0.8791759, 100, 0, 0),
-(@SGGUID+3, 2, -72.88378, -260.1831, -1.2228462, 100, 0, 0),
-(@SGGUID+3, 3, -96.20672, -252.59206, -1.1974255, 100, 0, 0),
-(@SGGUID+3, 4, -135.18246, -264.39377, -1.5928656, 100, 0, 0),
-(@SGGUID+4, 1, -112.21934, -751.7954, 37.091347, 100, 0, 0),
-(@SGGUID+4, 2, -83.497406, -735.865, 36.541836, 100, 0, 0),
-(@SGGUID+4, 3, -89.53006, -701.02655, 36.55273, 100, 0, 0),
-(@SGGUID+4, 4, -97.61304, -672.66565, 30.076414, 100, 0, 0),
-(@SGGUID+4, 5, -99.05717, -625.1839, 16.924713, 100, 0, 0),
-(@SGGUID+5, 1, -114.71889, -380.43747, 81.247215, 100, 0, 0),
-(@SGGUID+5, 2, -84.22245, -380.4095, 78.72163, 100, 0, 0),
-(@SGGUID+5, 3, -57.01482, -380.75848, 81.29693, 100, 0, 0),
-(@SGGUID+6, 1, -103.67276, -611.86194, 10.930438, 100, 0, 0),
-(@SGGUID+6, 2, -104.19448, -592.87317, 5.20782, 100, 0, 0),
-(@SGGUID+6, 3, -75.75858, -585.0732, 1.723919, 100, 0, 0),
-(@SGGUID+6, 4, -67.603195, -566.9261, -0.6967133, 100, 0, 0),
-(@SGGUID+6, 5, -54.877804, -556.5964, -1.5929497, 100, 0, 0),
-(@SGGUID+6, 6, -54.048965, -542.6787, -1.5936232, 100, 0, 0),
-(@SGGUID+6, 7, -62.04731, -528.7617, -1.5941613, 100, 0, 0),
-(@SGGUID+6, 8, -74.375824, -526.5931, -1.5943141, 100, 0, 0),
-(@SGGUID+6, 9, -83.93549, -523.77386, -1.5914233, 100, 0, 0),
-(@SGGUID+7, 1, 63.1788, -360.7239, 3.0356328, 100, 0, 0),
-(@SGGUID+7, 2, 88.46067, -354.25873, 3.0356727, 100, 0, 0),
-(@SGGUID+7, 3, 104.56651, -343.7326, 3.0324378, 100, 0, 0),
-(@SGGUID+8, 1, 84.27282, -405.44107, 34.60864, 100, 0, 0),
-(@SGGUID+8, 2, 106.44565, -397.10135, 32.270786, 100, 0, 0),
-(@SGGUID+8, 3, 124.25077, -391.9638, 30.730648, 100, 0, 0),
-(@SGGUID+8, 4, 131.45589, -380.78525, 30.077143, 100, 0, 0),
-(@SGGUID+8, 5, 123.67997, -369.14206, 30.701508, 100, 0, 0),
-(@SGGUID+8, 6, 106.91983, -363.1571, 32.197872, 100, 0, 0),
-(@SGGUID+8, 7, 84.32233, -355.31314, 34.59769, 100, 0, 0),
-(@SGGUID+9, 1, -49.831036, -394.43207, 81.02048, 100, 0, 0),
-(@SGGUID+9, 2, -38.72895, -401.16205, 79.519264, 100, 0, 0),
-(@SGGUID+9, 3, -11.247518, -412.01126, 70.102516, 100, 0, 0),
-(@SGGUID+9, 4, 11.266998, -414.90323, 58.969685, 100, 0, 0),
-(@SGGUID+9, 5, 38.81258, -415.03116, 47.454975, 100, 0, 0),
-(@SGGUID+9, 6, 53.303783, -413.38776, 42.375145, 100, 0, 0),
-(@SGGUID+10, 1, -51.178356, -365.4542, 81.021706, 100, 0, 0),
-(@SGGUID+10, 2, -11.609047, -348.55582, 70.28157, 100, 0, 0),
-(@SGGUID+10, 3, 10.812712, -345.4971, 59.181576, 100, 0, 0),
-(@SGGUID+10, 4, 50.593475, -347.18506, 43.32531, 100, 0, 0),
-(@SGGUID+11, 1, -124.27898, -362.85834, 80.274536, 100, 0, 0),
-(@SGGUID+11, 2, -119.12202, -366.2761, 81.00296, 100, 0, 0),
-(@SGGUID+11, 3, -119.18936, -394.48737, 80.9744, 100, 0, 0),
-(@SGGUID+11, 4, -124.20847, -398.524, 80.28374, 100, 0, 0),
-(@SGGUID+12, 3, -291.18933, -380.3938, 30.125166, 100, 0, 0),
-(@SGGUID+12, 2, -267.8213, -380.56857, 20.334038, 100, 0, 0),
-(@SGGUID+12, 1, -248.38216, -380.5874, 10.425892, 100, 0, 0),
-(@SGGUID+12, 9, -229.06407, -380.6496, 3.0354943, 100, 0, 0),
-(@SGGUID+13, 1, -227.68805, -363.0566, 3.035604, 100, 0, 0),
-(@SGGUID+13, 2, -263.95883, -333.90656, 3.0356667, 100, 0, 0),
-(@SGGUID+14, 1, -224.32506, -396.62097, 3.0355346, 100, 0, 0),
-(@SGGUID+14, 2, -255.33366, -407.8583, 3.0356631, 100, 0, 0),
-(@SGGUID+14, 3, -269.14896, -421.1905, 3.0330684, 100, 0, 0),
-(@SGGUID+15, 1, 24.739, -80.5426, -1.59055, 100, 1000, 5),
-(@SGGUID+15, 2, 39.8198, -95.0929, -1.59055, 100, 0, 0),
-(@SGGUID+15, 3, 66.6139, -108.588, -1.59055, 100, 0, 0),
-(@SGGUID+15, 4, 83.18, -107.935, -1.77718, 100, 0, 0),
-(@SGGUID+15, 5, 93.4559, -104.258, -1.746, 100, 0, 0),
-(@SGGUID+15, 6, 99.5506, -95.274, -1.74464, 100, 0, 0),
-(@SGGUID+15, 7, 100.845, -82.8392, -1.93832, 100, 0, 0),
-(@SGGUID+15, 8, 97.1395, -73.4639, -1.93333, 100, 0, 0),
-(@SGGUID+15, 9, 88.1852, -67.031, -1.51047, 100, 0, 0),
-(@SGGUID+15, 10, 74.9513, -63.1311, -1.58091, 100, 0, 0),
-(@SGGUID+15, 11, 51.3906, -48.4747, -1.53392, 100, 1000, 5),
-(@SGGUID+15, 12, 71.3095, -59.5157, -1.40341, 100, 0, 0),
-(@SGGUID+15, 13, 86.7149, -67.4752, -1.58595, 100, 0, 0),
-(@SGGUID+15, 14, 98.6776, -74.4816, -2.02136, 100, 0, 0),
-(@SGGUID+15, 15, 100.603, -85.6782, -2.00852, 100, 0, 0),
-(@SGGUID+15, 16, 93.6475, -103.484, -1.86193, 100, 0, 0),
-(@SGGUID+15, 17, 82.2214, -108.795, -1.69518, 100, 0, 0),
-(@SGGUID+15, 18, 69.4674, -107.822, -1.89392, 100, 0, 0),
-(@SGGUID+15, 19, 51.0634, -99.0745, -1.59039, 100, 0, 0),
-(@SGGUID+15, 20, 40.5374, -94.0704, -1.59039, 100, 0, 0),
-(@SGGUID+15, 21, 31.7392, -86.6805, -1.59039, 100, 0, 0),
-(@SGGUID+16, 1, 21.3806, -77.1728, -1.59056, 100, 1000, 5),
-(@SGGUID+16, 2, -7.40776, -59.9187, -1.59056, 100, 0, 0),
-(@SGGUID+16, 3, -23.4768, -47.3342, -1.59056, 100, 0, 0),
-(@SGGUID+16, 4, -19.935, -33.1508, -3.6824, 100, 0, 0),
-(@SGGUID+16, 5, -15.6657, -18.9221, -1.8165, 100, 0, 0),
-(@SGGUID+16, 6, 3.89414, -21.3769, -1.69636, 100, 0, 0),
-(@SGGUID+16, 7, 16.5986, -26.557, -1.23579, 100, 0, 0),
-(@SGGUID+16, 8, 26.7712, -30.8165, -0.905259, 100, 0, 0),
-(@SGGUID+16, 9, 42.0684, -42.012, -1.25382, 100, 0, 0),
-(@SGGUID+16, 10, 45.2533, -44.2245, -1.34953, 100, 1000, 5),
-(@SGGUID+16, 11, 31.9388, -34.4066, -0.952698, 100, 0, 0),
-(@SGGUID+16, 12, 5.92747, -25.3469, -1.62205, 100, 0, 0),
-(@SGGUID+16, 13, -9.64911, -20.892, -1.775, 100, 0, 0),
-(@SGGUID+16, 14, -17.5609, -27.4412, -2.81297, 100, 0, 0),
-(@SGGUID+16, 15, -22.0797, -45.9683, -1.59056, 100, 0, 0),
-(@SGGUID+16, 16, -10.971, -55.464, -1.59056, 100, 0, 0),
-(@SGGUID+16, 17, 10.0276, -67.957, -1.59056, 100, 0, 0),
-(@SGGUID+43, 1, -134.06, -740.453, 37.8923, 2.44336, 1, 5),
-(@SGGUID+43, 2, -151.281, -725.953, 37.8923, 2.37739, 0, 0),
-(@SGGUID+43, 3, -172.5, -712.411, 37.8923, 2.51719, 0, 0),
-(@SGGUID+43, 4, -196.669, -701.407, 37.7803, 2.67349, 0, 0),
-(@SGGUID+43, 5, -201.412, -687.799, 37.4671, 1.67289, 0, 0),
-(@SGGUID+43, 6, -196.17, -703.307, 37.8924, 5.05717, 0, 0),
-(@SGGUID+43, 7, -175.41, -712.587, 37.8924, 5.82607, 0, 0),
-(@SGGUID+43, 8, -149.446, -730.941, 37.8924, 5.67057, 0, 0),
-(@SGGUID+43, 9, -132.762, -742.739, 37.8924, 5.81429, 0, 0),
-(@SGGUID+43, 10, -125.391, -755.768, 37.494, 5.26766, 0, 0),
-(@SGGUID+43, 11, -131.26, -744.295, 37.8934, 2.04281, 0, 0),
-(@SGGUID+44, 1, -193.28, -730.644, 36.7285, 4.88752, 1, 5),
-(@SGGUID+44, 2, -176.133, -737.439, 37.6712, 5.84885, 0, 0),
-(@SGGUID+44, 3, -152.775, -755.023, 37.8924, 5.53076, 0, 0),
-(@SGGUID+44, 4, -142.723, -766.83, 37.8924, 5.36033, 0, 0),
-(@SGGUID+44, 5, -152.162, -754.221, 37.8924, 2.2156, 0, 0),
-(@SGGUID+44, 6, -166.051, -742.04, 37.8924, 2.43158, 0, 0),
-(@SGGUID+44, 7, -192.943, -731.203, 36.6513, 2.73317, 0, 0),
-(@SGGUID+44, 8, -197.918, -719.931, 37.6508, 1.95799, 0, 0),
-(@SGGUID+44, 9, -196.525, -699.135, 37.6758, 1.59827, 0, 0);
+(@SGGUID+101, 1, -112.82242, -46.836197, -3.2531695, 100, 0, 0),
+(@SGGUID+101, 2, -117.92906, -26.649307, -6.5814204, 100, 0, 0),
+(@SGGUID+101, 3, -113.02221, -13.998462, -9.294763, 100, 0, 0),
+(@SGGUID+101, 4, -99.75725, -7.121468, -9.277856, 100, 0, 0),
+(@SGGUID+101, 5, -86.92553, -3.28355, -7.37143, 100, 0, 0),
+(@SGGUID+101, 6, -62.609547, -5.966096, -3.558902, 100, 0, 0),
+(@SGGUID+102, 1, -94.66229, -221.32935, -1.2438293, 100, 0, 0),
+(@SGGUID+102, 2, -96.58342, -192.55623, -1.6107723, 100, 0, 0),
+(@SGGUID+102, 3, -101.39325, -162.79597, -2.5401618, 100, 0, 0),
+(@SGGUID+102, 4, -97.396614, -148.95576, -1.9677485, 100, 0, 0),
+(@SGGUID+102, 5, -78.77852, -149.64166, -1.9712012, 100, 0, 0),
+(@SGGUID+102, 6, -49.81517, -168.06767, -1.9161165, 100, 0, 0),
+(@SGGUID+102, 7, -78.558304, -149.64978, -1.9562871, 100, 0, 0),
+(@SGGUID+103, 1, -48.752335, -262.20273, -0.8791759, 100, 0, 0),
+(@SGGUID+103, 2, -72.88378, -260.1831, -1.2228462, 100, 0, 0),
+(@SGGUID+103, 3, -96.20672, -252.59206, -1.1974255, 100, 0, 0),
+(@SGGUID+103, 4, -135.18246, -264.39377, -1.5928656, 100, 0, 0),
+(@SGGUID+104, 1, -112.21934, -751.7954, 37.091347, 100, 0, 0),
+(@SGGUID+104, 2, -83.497406, -735.865, 36.541836, 100, 0, 0),
+(@SGGUID+104, 3, -89.53006, -701.02655, 36.55273, 100, 0, 0),
+(@SGGUID+104, 4, -97.61304, -672.66565, 30.076414, 100, 0, 0),
+(@SGGUID+104, 5, -99.05717, -625.1839, 16.924713, 100, 0, 0),
+(@SGGUID+105, 1, -114.71889, -380.43747, 81.247215, 100, 0, 0),
+(@SGGUID+105, 2, -84.22245, -380.4095, 78.72163, 100, 0, 0),
+(@SGGUID+105, 3, -57.01482, -380.75848, 81.29693, 100, 0, 0),
+(@SGGUID+106, 1, -103.67276, -611.86194, 10.930438, 100, 0, 0),
+(@SGGUID+106, 2, -104.19448, -592.87317, 5.20782, 100, 0, 0),
+(@SGGUID+106, 3, -75.75858, -585.0732, 1.723919, 100, 0, 0),
+(@SGGUID+106, 4, -67.603195, -566.9261, -0.6967133, 100, 0, 0),
+(@SGGUID+106, 5, -54.877804, -556.5964, -1.5929497, 100, 0, 0),
+(@SGGUID+106, 6, -54.048965, -542.6787, -1.5936232, 100, 0, 0),
+(@SGGUID+106, 7, -62.04731, -528.7617, -1.5941613, 100, 0, 0),
+(@SGGUID+106, 8, -74.375824, -526.5931, -1.5943141, 100, 0, 0),
+(@SGGUID+106, 9, -83.93549, -523.77386, -1.5914233, 100, 0, 0),
+(@SGGUID+107, 1, 63.1788, -360.7239, 3.0356328, 100, 0, 0),
+(@SGGUID+107, 2, 88.46067, -354.25873, 3.0356727, 100, 0, 0),
+(@SGGUID+107, 3, 104.56651, -343.7326, 3.0324378, 100, 0, 0),
+(@SGGUID+108, 1, 84.27282, -405.44107, 34.60864, 100, 0, 0),
+(@SGGUID+108, 2, 106.44565, -397.10135, 32.270786, 100, 0, 0),
+(@SGGUID+108, 3, 124.25077, -391.9638, 30.730648, 100, 0, 0),
+(@SGGUID+108, 4, 131.45589, -380.78525, 30.077143, 100, 0, 0),
+(@SGGUID+108, 5, 123.67997, -369.14206, 30.701508, 100, 0, 0),
+(@SGGUID+108, 6, 106.91983, -363.1571, 32.197872, 100, 0, 0),
+(@SGGUID+108, 7, 84.32233, -355.31314, 34.59769, 100, 0, 0),
+(@SGGUID+109, 1, -49.831036, -394.43207, 81.02048, 100, 0, 0),
+(@SGGUID+109, 2, -38.72895, -401.16205, 79.519264, 100, 0, 0),
+(@SGGUID+109, 3, -11.247518, -412.01126, 70.102516, 100, 0, 0),
+(@SGGUID+109, 4, 11.266998, -414.90323, 58.969685, 100, 0, 0),
+(@SGGUID+109, 5, 38.81258, -415.03116, 47.454975, 100, 0, 0),
+(@SGGUID+109, 6, 53.303783, -413.38776, 42.375145, 100, 0, 0),
+(@SGGUID+1010, 1, -51.178356, -365.4542, 81.021706, 100, 0, 0),
+(@SGGUID+1010, 2, -11.609047, -348.55582, 70.28157, 100, 0, 0),
+(@SGGUID+1010, 3, 10.812712, -345.4971, 59.181576, 100, 0, 0),
+(@SGGUID+1010, 4, 50.593475, -347.18506, 43.32531, 100, 0, 0),
+(@SGGUID+1011, 1, -124.27898, -362.85834, 80.274536, 100, 0, 0),
+(@SGGUID+1011, 2, -119.12202, -366.2761, 81.00296, 100, 0, 0),
+(@SGGUID+1011, 3, -119.18936, -394.48737, 80.9744, 100, 0, 0),
+(@SGGUID+1011, 4, -124.20847, -398.524, 80.28374, 100, 0, 0),
+(@SGGUID+1012, 3, -291.18933, -380.3938, 30.125166, 100, 0, 0),
+(@SGGUID+1012, 2, -267.8213, -380.56857, 20.334038, 100, 0, 0),
+(@SGGUID+1012, 1, -248.38216, -380.5874, 10.425892, 100, 0, 0),
+(@SGGUID+1012, 9, -229.06407, -380.6496, 3.0354943, 100, 0, 0),
+(@SGGUID+1013, 1, -227.68805, -363.0566, 3.035604, 100, 0, 0),
+(@SGGUID+1013, 2, -263.95883, -333.90656, 3.0356667, 100, 0, 0),
+(@SGGUID+1014, 1, -224.32506, -396.62097, 3.0355346, 100, 0, 0),
+(@SGGUID+1014, 2, -255.33366, -407.8583, 3.0356631, 100, 0, 0),
+(@SGGUID+1014, 3, -269.14896, -421.1905, 3.0330684, 100, 0, 0),
+
+(@SGGUID+1015, 1, 24.739, -80.5426, -1.59055, 100, 1000, 5),
+(@SGGUID+1015, 2, 39.8198, -95.0929, -1.59055, 100, 0, 0),
+(@SGGUID+1015, 3, 66.6139, -108.588, -1.59055, 100, 0, 0),
+(@SGGUID+1015, 4, 83.18, -107.935, -1.77718, 100, 0, 0),
+(@SGGUID+1015, 5, 93.4559, -104.258, -1.746, 100, 0, 0),
+(@SGGUID+1015, 6, 99.5506, -95.274, -1.74464, 100, 0, 0),
+(@SGGUID+1015, 7, 100.845, -82.8392, -1.93832, 100, 0, 0),
+(@SGGUID+1015, 8, 97.1395, -73.4639, -1.93333, 100, 0, 0),
+(@SGGUID+1015, 9, 88.1852, -67.031, -1.51047, 100, 0, 0),
+(@SGGUID+1015, 10, 74.9513, -63.1311, -1.58091, 100, 0, 0),
+(@SGGUID+1015, 11, 51.3906, -48.4747, -1.53392, 100, 1000, 5),
+(@SGGUID+1015, 12, 71.3095, -59.5157, -1.40341, 100, 0, 0),
+(@SGGUID+1015, 13, 86.7149, -67.4752, -1.58595, 100, 0, 0),
+(@SGGUID+1015, 14, 98.6776, -74.4816, -2.02136, 100, 0, 0),
+(@SGGUID+1015, 15, 100.603, -85.6782, -2.00852, 100, 0, 0),
+(@SGGUID+1015, 16, 93.6475, -103.484, -1.86193, 100, 0, 0),
+(@SGGUID+1015, 17, 82.2214, -108.795, -1.69518, 100, 0, 0),
+(@SGGUID+1015, 18, 69.4674, -107.822, -1.89392, 100, 0, 0),
+(@SGGUID+1015, 19, 51.0634, -99.0745, -1.59039, 100, 0, 0),
+(@SGGUID+1015, 20, 40.5374, -94.0704, -1.59039, 100, 0, 0),
+(@SGGUID+1015, 21, 31.7392, -86.6805, -1.59039, 100, 0, 0),
+
+
+(@SGGUID+1016, 1, 21.3806, -77.1728, -1.59056, 100, 1000, 5),
+(@SGGUID+1016, 2, -7.40776, -59.9187, -1.59056, 100, 0, 0),
+(@SGGUID+1016, 3, -23.4768, -47.3342, -1.59056, 100, 0, 0),
+(@SGGUID+1016, 4, -19.935, -33.1508, -3.6824, 100, 0, 0),
+(@SGGUID+1016, 5, -15.6657, -18.9221, -1.8165, 100, 0, 0),
+(@SGGUID+1016, 6, 3.89414, -21.3769, -1.69636, 100, 0, 0),
+(@SGGUID+1016, 7, 16.5986, -26.557, -1.23579, 100, 0, 0),
+(@SGGUID+1016, 8, 26.7712, -30.8165, -0.905259, 100, 0, 0),
+(@SGGUID+1016, 9, 42.0684, -42.012, -1.25382, 100, 0, 0),
+(@SGGUID+1016, 10, 45.2533, -44.2245, -1.34953, 100, 1000, 5),
+(@SGGUID+1016, 11, 31.9388, -34.4066, -0.952698, 100, 0, 0),
+(@SGGUID+1016, 12, 5.92747, -25.3469, -1.62205, 100, 0, 0),
+(@SGGUID+1016, 13, -9.64911, -20.892, -1.775, 100, 0, 0),
+(@SGGUID+1016, 14, -17.5609, -27.4412, -2.81297, 100, 0, 0),
+(@SGGUID+1016, 15, -22.0797, -45.9683, -1.59056, 100, 0, 0),
+(@SGGUID+1016, 16, -10.971, -55.464, -1.59056, 100, 0, 0),
+(@SGGUID+1016, 17, 10.0276, -67.957, -1.59056, 100, 0, 0),
+(@SGGUID+1043, 1, -134.06, -740.453, 37.8923, 2.44336, 1, 5),
+(@SGGUID+1043, 2, -151.281, -725.953, 37.8923, 2.37739, 0, 0),
+(@SGGUID+1043, 3, -172.5, -712.411, 37.8923, 2.51719, 0, 0),
+(@SGGUID+1043, 4, -196.669, -701.407, 37.7803, 2.67349, 0, 0),
+(@SGGUID+1043, 5, -201.412, -687.799, 37.4671, 1.67289, 0, 0),
+(@SGGUID+1043, 6, -196.17, -703.307, 37.8924, 5.05717, 0, 0),
+(@SGGUID+1043, 7, -175.41, -712.587, 37.8924, 5.82607, 0, 0),
+(@SGGUID+1043, 8, -149.446, -730.941, 37.8924, 5.67057, 0, 0),
+(@SGGUID+1043, 9, -132.762, -742.739, 37.8924, 5.81429, 0, 0),
+(@SGGUID+1043, 10, -125.391, -755.768, 37.494, 5.26766, 0, 0),
+(@SGGUID+1043, 11, -131.26, -744.295, 37.8934, 2.04281, 0, 0),
+(@SGGUID+1044, 1, -193.28, -730.644, 36.7285, 4.88752, 1, 5),
+(@SGGUID+1044, 2, -176.133, -737.439, 37.6712, 5.84885, 0, 0),
+(@SGGUID+1044, 3, -152.775, -755.023, 37.8924, 5.53076, 0, 0),
+(@SGGUID+1044, 4, -142.723, -766.83, 37.8924, 5.36033, 0, 0),
+(@SGGUID+1044, 5, -152.162, -754.221, 37.8924, 2.2156, 0, 0),
+(@SGGUID+1044, 6, -166.051, -742.04, 37.8924, 2.43158, 0, 0),
+(@SGGUID+1044, 7, -192.943, -731.203, 36.6513, 2.73317, 0, 0),
+(@SGGUID+1044, 8, -197.918, -719.931, 37.6508, 1.95799, 0, 0),
+(@SGGUID+1044, 9, -196.525, -699.135, 37.6758, 1.59827, 0, 0);
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
-(@SGGUID+1,'Slave Pens - Coilfang Champion (2) Patrol 000'),
-(@SGGUID+2,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 001'),
-(@SGGUID+3,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 002'),
-(@SGGUID+4,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) Patrol 003'),
-(@SGGUID+5,'Slave Pens - Coilfang Defender (2) Patrol 000'),
-(@SGGUID+6,'Slave Pens - Coilfang Defender (2) Patrol 001'),
-(@SGGUID+7,'Slave Pens - Coilfang Technician (2) Patrol 000'),
-(@SGGUID+8,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 001'),
-(@SGGUID+9,'Slave Pens - Coilfang Technician (2) Patrol 002'),
-(@SGGUID+10,'Slave Pens - Coilfang Technician (2) Patrol 003'),
-(@SGGUID+11,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 004'),
-(@SGGUID+12,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 005'),
-(@SGGUID+13,'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 006'),
-(@SGGUID+14,'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 007'),
-(@SGGUID+15,'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 001'),
-(@SGGUID+16,'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 002'),
-(@SGGUID+43,'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 003'),
-(@SGGUID+44,'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 004');
+(@SGGUID+101,'Slave Pens - Coilfang Champion (2) Patrol 000'),
+(@SGGUID+102,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 001'),
+(@SGGUID+103,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 002'),
+(@SGGUID+104,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) Patrol 003'),
+(@SGGUID+105,'Slave Pens - Coilfang Defender (2) Patrol 000'),
+(@SGGUID+106,'Slave Pens - Coilfang Defender (2) Patrol 001'),
+(@SGGUID+107,'Slave Pens - Coilfang Technician (2) Patrol 000'),
+(@SGGUID+108,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 001'),
+(@SGGUID+109,'Slave Pens - Coilfang Technician (2) Patrol 002'),
+(@SGGUID+1010,'Slave Pens - Coilfang Technician (2) Patrol 003'),
+(@SGGUID+1011,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 004'),
+(@SGGUID+1012,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 005'),
+(@SGGUID+1013,'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 006'),
+(@SGGUID+1014,'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 007'),
+(@SGGUID+1015,'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 001'),
+(@SGGUID+1016,'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 002'),
+(@SGGUID+1043,'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 003'),
+(@SGGUID+1044,'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 004');
 
 -- =========
 -- DBSCRIPTS
