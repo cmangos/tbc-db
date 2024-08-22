@@ -370,3 +370,210 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (320301, 2, 20791, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Fizzle Darkstorm - Shadow Bolt - current');
 
 UPDATE `creature_template` SET `SpellList` = 320301 WHERE `entry` = 3203;
+
+-- Gazz''uz
+DELETE FROM `creature_template_spells` WHERE `entry` = 3204;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 320401;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(320401, 'Gazz''uz', 0, 90);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 320401;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(320401, 1, 172, 0, -1, 130, 0, 100, 0, 2000, 10000, 5000, 15000, 'Gazz''uz - Corruption - top aggro aura not present'),
+(320401, 2, 20791, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Gazz''uz - Shadow Bolt - current');
+
+UPDATE `creature_template` SET `SpellList` = 320401 WHERE `entry` = 3204;
+
+-- Zalazane
+DELETE FROM `creature_template_spells` WHERE `entry` = 3205;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 320501;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(320501, 'Zalazane', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 320501;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(320501, 1, 332, 0, -1, 201, 0, 100, 0, 2000, 8000, 8000, 14000, 'Zalazane - Healing Wave - 50% including self'),
+(320501, 2, 7289, 0, -1, 130, 0, 100, 0, 1000, 7000, 5000, 12000, 'Zalazane - Shrink - top aggro aura not present');
+
+UPDATE `creature_template` SET `SpellList` = 320501 WHERE `entry` = 3205;
+
+
+-- Voodoo Troll
+DELETE FROM `creature_template_spells` WHERE `entry` = 3206;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 320601;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(320601, 'Voodoo Troll', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 320601;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(320601, 1, 332, 0, -1, 201, 0, 100, 0, 2000, 8000, 8000, 14000, 'Voodoo Troll - Healing Wave - 50% including self');
+
+UPDATE `creature_template` SET `SpellList` = 320601 WHERE `entry` = 3206;
+
+
+-- Hexed Troll
+DELETE FROM `creature_template_spells` WHERE `entry` = 3207;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 320701;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(320701, 'Hexed Troll', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 320701;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(320701, 1, 11962, 0, -1, 130, 0, 100, 0, 3000, 8000, 13000, 24000, 'Hexed Troll - Immolate - top aggro aura not present');
+
+UPDATE `creature_template` SET `SpellList` = 320701 WHERE `entry` = 3207;
+
+-- Corrupted Mottled Boar 
+DELETE FROM `creature_template_spells` WHERE `entry` = 3225;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 322501;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(322501, 'Corrupted Mottled Boar ', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 322501;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(322501, 1, 3385, 0, -1, 2, 0, 100, 0, 0, 10000, 10000, 20000, 'Corrupted Mottled Boar - Boar Charge - self');
+
+UPDATE `creature_template` SET `SpellList` = 322501 WHERE `entry` = 3225;
+
+-- Corrupted Scorpid
+DELETE FROM `creature_template_spells` WHERE `entry` = 3226;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 322601;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(322601, 'Corrupted Scorpid', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 322601;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(322601, 1, 5413, 0, -1, 130, 0, 100, 0, 0, 10000, 10000, 25000, 'Corrupted Scorpid - Noxious Catalyst - top aggro aura not present');
+
+UPDATE `creature_template` SET `SpellList` = 322601 WHERE `entry` = 3226;
+
+-- Corrupted Bloodtalon Scythemaw
+DELETE FROM `creature_template_spells` WHERE `entry` = 3227;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 322701;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(322701, 'Corrupted Bloodtalon Scythemaw', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 322701;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(322701, 1, 6268, 0, -1, 2, 0, 100, 0, 0, 5000, 7000, 9000, 'Corrupted Bloodtalon Scythemaw - Rushing Charge - self');
+
+UPDATE `creature_template` SET `SpellList` = 322701 WHERE `entry` = 3227;
+
+-- Corrupted Surf Crawler
+DELETE FROM `creature_template_spells` WHERE `entry` = 3228;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 322801;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(322801, 'Corrupted Surf Crawler', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 322801;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(322801, 1, 6951, 0, -1, 130, 0, 100, 0, 5000, 12000, 7000, 21000, 'Corrupted Surf Crawler - Decayed Strength - top aggro aura not present');
+
+UPDATE `creature_template` SET `SpellList` = 322801 WHERE `entry` = 3228;
+
+-- Corrupted Dreadmaw Crocolisk
+DELETE FROM `creature_template_spells` WHERE `entry` = 3231;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 323101;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(323101, 'Corrupted Dreadmaw Crocolisk', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 323101;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(323101, 1, 7901, 0, -1, 130, 0, 100, 0, 5000, 12000, 7000, 21000, 'Corrupted Dreadmaw Crocolisk - Decayed Agility - top aggro aura not present');
+
+UPDATE `creature_template` SET `SpellList` = 323101 WHERE `entry` = 3231;
+
+-- Sarkoth
+-- ServerToClient: SMSG_AURA_UPDATE (0x2C22) Length: 52 ConnIdx: 17 Time: 09/23/2019 15:58:46.109 Number: 13773
+-- [0] CastID: Full: 0xBC460400200BA3C7000010000008CE97 Cast/7 R4481/S16 Map: 1 Entry: 11919 Low: 577175
+-- [0] SpellID: 11919 (11919)
+UPDATE creature_template_addon SET auras = '11919' WHERE entry = '3281';
+
+
+-- Warlord Kolkanis
+DELETE FROM `creature_template_spells` WHERE `entry` = 5808;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 580801;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(580801, 'Warlord Kolkanis', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 580801;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(580801, 1, 12555, 0, -1, 122, 0, 100, 0, 8000, 12000, 8000, 20000, 'Warlord Kolkanis - Pummel - target casting'),
+(580801, 2, 8078, 0, -1, 1, 0, 100, 0, 5000, 25000, 21000, 44000, 'Warlord Kolkanis - Thunderclap - current');
+
+UPDATE `creature_template` SET `SpellList` = 580801 WHERE `entry` = 5808;
+
+-- Watch Commander Zalaphil
+DELETE FROM `creature_template_spells` WHERE `entry` = 5809;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 580901;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(580901, 'Watch Commander Zalaphil', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 580901;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(580901, 1, 11972, 0, -1, 122, 0, 100, 0, 0, 8000, 8000, 21000, 'Watch Commander Zalaphil - Shield Bash - target casting');
+
+UPDATE `creature_template` SET `SpellList` = 580901 WHERE `entry` = 5809;
+
+-- Felweaver Scornn
+DELETE FROM `creature_template_spells` WHERE `entry` = 5822;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 582201;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(582201, 'Felweaver Scornn', 0, 90);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 582201;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(582201, 1, 9613, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Felweaver Scornn - Shadow Bolt - current');
+
+UPDATE `creature_template` SET `SpellList` = 582201 WHERE `entry` = 5822;
+
+-- Death Flayer
+DELETE FROM `creature_template_spells` WHERE `entry` = 5823;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 582301;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(582301, 'Death Flayer', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 582301;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(582301, 1, 5416, 0, -1, 130, 0, 100, 0, 0, 9000, 9000, 18000, 'Death Flayer - Venom Sting - top aggro aura not present');
+
+UPDATE `creature_template` SET `SpellList` = 582301 WHERE `entry` = 5823;
+
+-- Captain Flat Tusk
+DELETE FROM `creature_template_spells` WHERE `entry` = 5824;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 582401;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(582401, 'Captain Flat Tusk', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 582401;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(582401, 1, 25710, 0, -1, 1, 0, 100, 0, 1000, 7000, 7000, 12000, 'Captain Flat Tusk - Heroic Strike - current');
+
+UPDATE `creature_template` SET `SpellList` = 582401 WHERE `entry` = 5824;
+
+-- Geolord Mottle
+DELETE FROM `creature_template_spells` WHERE `entry` = 5826;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 582601;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(582601, 'Geolord Mottle', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 582601;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(582601, 1, 547, 0, -1, 208, 0, 100, 0, 2000, 8000, 16000, 21000, 'Geolord Mottle - Healing Wave - missing 75% incl self');
+
+UPDATE `creature_template` SET `SpellList` = 582601 WHERE `entry` = 5826;
