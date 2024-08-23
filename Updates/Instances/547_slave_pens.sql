@@ -517,6 +517,17 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (25966, 0, 15, -91.0969, -232.6422, 24.65563,  100, 0, 0),
 (25966, 0, 16, -97.20647, -234.4709, 28.46118,  100, 0, 0);
 
+
+DELETE FROM creature_spawn_data WHERE Id IN (@CGUID+29, @CGUID+30);
+INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
+-- Add GENERIC - SPAWN FLAG RUN to some mobs
+(@CGUID+9, 1), -- Greater Bogstrok
+(@CGUID+12, 1), -- Greater Bogstrok
+(@CGUID+13, 1), -- Bogstrok
+(@CGUID+14, 1), -- Bogstrok
+(@CGUID+29, 1), -- Greater Bogstrok
+(@CGUID+30, 1); -- Greater Bogstrok
+
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+100, 0, 0, 1, 69, 0, '5301'), -- Coilfang Collaborator
 (@CGUID+101, 0, 0, 1, 69, 0, '5301'); -- Coilfang Collaborator
@@ -1245,8 +1256,9 @@ DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Wastewalker Slave/Wastewalker Worker script after Coilfang Slavemaster dies
 (@RELAYID+1,0,0,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - Set Active'), -- just to make sure they run their way to the end and despawn
-(@RELAYID+1,0,1,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - Emote OneShotExclamation'),
-(@RELAYID+1,0,2,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - random yell'),
+(@RELAYID+1,0,1,20,0,0,0,0,0,0,2,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - Stop Movement'),
+(@RELAYID+1,0,2,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - Emote OneShotExclamation'),
+(@RELAYID+1,0,3,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - random yell'),
 (@RELAYID+1,1000,0,20,2,1,0,0,0,0,2,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - Change Movement');
 
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
