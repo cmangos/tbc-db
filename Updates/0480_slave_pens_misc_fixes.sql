@@ -45,6 +45,8 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 17963;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 19902;
 
+-- Correct some broadcast_text
+UPDATE `broadcast_text` SET `ChatTypeID`='1' WHERE (`Id`='15108');
 
 -- -----------
 -- SpellLists

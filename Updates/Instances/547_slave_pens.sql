@@ -317,11 +317,11 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+83, 4, -69.84593, -169.56969, -3.3459024, 100, 0, 0),
 (@CGUID+83, 5, -79.72039, -172.97456, -4.0686054, 100, 0, 0),
 (@CGUID+83, 6, -87.60288, -181.37634, -3.301994, 100, 0, 0),
-(@CGUID+84, 1, -48.399025, 0.686625, -1.8147835, 100, 0, 0),
-(@CGUID+84, 2, -41.80579, -1.938733, -1.4184747, 100, 0, 0),
-(@CGUID+84, 3, -33.154163, -1.31646, -1.2554848, 100, 0, 0),
-(@CGUID+84, 4, -26.136015, -3.06594, -1.2948818, 100, 0, 0),
-(@CGUID+84, 5, -21.41529, 1.867674, -1.0036224, 100, 0, 0),
+(@CGUID+84, 1, -48.399025, 0.686625, -1.8147835, 100, 0, 1795901),
+(@CGUID+84, 2, -41.80579, -1.938733, -1.4184747, 100, 0, 1795901),
+(@CGUID+84, 3, -33.154163, -1.31646, -1.2554848, 100, 0, 1795901),
+(@CGUID+84, 4, -26.136015, -3.06594, -1.2948818, 100, 0, 1795901),
+(@CGUID+84, 5, -21.41529, 1.867674, -1.0036224, 100, 0, 1795901),
 (@CGUID+85, 1, -52.72164, -27.052872, -1.7162553, 100, 0, 0),
 (@CGUID+85, 2, -69.57311, -14.861713, -4.3982778, 100, 0, 0),
 (@CGUID+85, 3, -59.46139, -16.815935, -2.937329, 100, 0, 0),
@@ -729,8 +729,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+1, 'Slave Pens - Group 001 - Greater Bogstrok (2) | Bogstrok - Patrol 001', 0, 3, 0, 1, 0),
 (@SGGUID+2, 'Slave Pens - Group 002 - Greater Bogstrok (2) | Bogstrok - Patrol 002', 0, 3, 0, 1, 0),
 
-(@SGGUID+3, 'Slave Pens - Group 003 - Wastewalker Worker (3)', 0, 0, 0, 1, 0),
-(@SGGUID+4, 'Slave Pens - Group 004 - Wastewalker Worker (3)', 0, 0, 0, 1, 0),
+(@SGGUID+3, 'Slave Pens - Group 003 - Wastewalker Worker (3)', 0, 0, 0, 1, @STRINGID+1),
+(@SGGUID+4, 'Slave Pens - Group 004 - Wastewalker Worker (3)', 0, 0, 0, 1, @STRINGID+2),
 
 -- old
 (@SGGUID+101, 'Slave Pens - Coilfang Champion (2) - Patrol 000', 0, 0, 0, 3, 0),
@@ -1167,6 +1167,13 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+1043,'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 003'),
 (@SGGUID+1044,'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 004');
 
+
+-- StringIDs
+DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+2;
+INSERT INTO `string_id` (Id, Name) VALUES 
+(@STRINGID+1, 'SP_COILFANG_SLAVEHANDLER_01'),
+(@STRINGID+2, 'SP_COILFANG_SLAVEHANDLER_02');
+
 -- =========
 -- DBSCRIPTS
 -- =========
@@ -1259,7 +1266,28 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+1,0,1,20,0,0,0,0,0,0,2,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - Stop Movement'),
 (@RELAYID+1,0,2,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - Emote OneShotExclamation'),
 (@RELAYID+1,0,3,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - random yell'),
-(@RELAYID+1,1000,0,20,2,1,0,0,0,0,2,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - Change Movement');
+(@RELAYID+1,1000,0,20,2,1,0,0,0,0,2,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - Change Movement'),
+-- Coilfang Slavehandler RP's
+(@RELAYID+2,0,0,31,0,2,0,@STRINGID+1,5,0x800,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler - search for string id - terminate if not found'),
+(@RELAYID+2,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler - stop waypoint'),
+(@RELAYID+2,1,2,21,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Coilfang Slavehandler - Set Active'),
+(@RELAYID+2,1,3,37,0,0,2,@STRINGID+1,5,2050,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler - move to StringID'),
+(@RELAYID+2,1000,0,36,0,0,2,@STRINGID+1,5,2049,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler - face stringID'),
+(@RELAYID+2,2000,0,1,0,0,0,@STRINGID+1,5,2048,0,0,0,0,0,0,0,0, 'StringId - remove emote'),
+(@RELAYID+2,2000,1,15,6754,0,2,@STRINGID+1,5,2050,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler - Cast Slap on StringID'),
+(@RELAYID+2,2000,2,36,0,0,0,@STRINGID+1,5,2048,0,0,0,0,0,0,0,0, 'StringId - face Legionnaire'),
+(@RELAYID+2,2000,3,1,15,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler - Emote OneShotRoar'),
+(@RELAYID+2,2000,4,0,0,0,0,0,0,0,14412,0,0,0,0,0,0,0, 'Coilfang Slavehandler - Yell text'),
+(@RELAYID+2,4000,0,28,8,0,0,@STRINGID+1,5,2048,0,0,0,0,0,0,0,0, 'StringId - standstate kneel'),
+(@RELAYID+2,5000,0,1,36,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler - Emote OneShotAttack1H'),
+(@RELAYID+2,8000,0,1,36,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler - Emote OneShotAttack1H'),
+(@RELAYID+2,10000,0,45,@RELAYID+3,0,0,@STRINGID+1,5,2048,0,0,0,0,0,0,0,0, 'StringId - start relay script'),
+(@RELAYID+2,10000,1,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler  - start waypoint'),
+-- 3 seconds after event ends, remove kneel state and yell text, reset orientation, 15 seconds after this getting back work state
+(@RELAYID+3,3000,0,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
+(@RELAYID+3,3000,1,36,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'StringId - reset facing'),
+(@RELAYID+3,3000,2,0,0,0,0,0,0,0,15108,0,0,0,0,0,0,0, 'StringId - Yell'),
+(@RELAYID+3,5000,0,1,173,0,0,0,0,0,0,0,0,0,0,0,0,0, 'StringId - EmoteState WORK');
 
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
@@ -1269,11 +1297,19 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+1, 0, 18712, 0, 'Slave Pens - Wastewalker Slave/Wastewalker Worker random yell'),
 (@RELAYID+1, 0, 18707, 0, 'Slave Pens - Wastewalker Slave/Wastewalker Worker random yell'),
 (@RELAYID+1, 0, 18708, 0, 'Slave Pens - Wastewalker Slave/Wastewalker Worker random yell'),
-(@RELAYID+1, 0, 18710, 0, 'Slave Pens - Wastewalker Slave/Wastewalker Worker random yell');
+(@RELAYID+1, 0, 18710, 0, 'Slave Pens - Wastewalker Slave/Wastewalker Worker random yell'),
+-- Coilfang Slavehandler
+(@RELAYID+2, 1, @RELAYID+2, 90, 'Coilfang Slavehandler - 10% chance for random RP'),
+(@RELAYID+2, 1, 0, 10, 'Coilfang Slavehandler - 10% chance for random RP');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1796301, 1796401);
+
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1795901, 1796301, 1796401);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Coilfang Slavehandler random RP events on moving
+(1795901, 0, 0, 45, 0, @RELAYID+2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Slavehandler - 10% chance for random RP'),
+-- Wastewalker Slave
 (1796301, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Wastewalker Slave - Despawn self'),
+-- Wastewalker Worker
 (1796401, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Wastewalker Worker - Despawn self');
 
 
