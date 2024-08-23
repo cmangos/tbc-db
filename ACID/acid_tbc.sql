@@ -23467,7 +23467,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1796301','17963','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Wastewalker Slave - Enable Range Mode on Spawn'),
 ('1796302','17963','27','0','100','1','34880','1','15000','30000','0','0','11','34880','0','0','0','0','0','0','0','0','0','0','Wastewalker Slave - Cast Elemental Armor on Missing Buff'),
 ('1796303','17963','2','0','100','1024','25','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Wastewalker Slave - Flee at 25% HP'),
-('1796309','17963','30','0','100','1','5','17959','0','0','0','0','2','16','3','0','38','0','0','0','0','0','0','0','Wastewalker Slave - Set Faction to 16 and Zone Combat Pulse on Receive AI Event A'),
+('1796304','17963','30','0','100','1','5','17959','0','0','0','0','2','16','3','0','38','0','0','0','0','0','0','0','Wastewalker Slave - Set Faction to 16 and Zone Combat Pulse on Receive AI Event A'),
 -- Wastewalker Worker 17964 - spell_list
 ('1796401','17964','2','0','100','0','25','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Wastewalker Worker - Flee at 25% HP'),
 ('1796402','17964','30','0','100','1','5','17959','0','0','0','0','2','16','3','0','38','0','0','0','0','0','0','0','Wastewalker Worker - Set Faction to 16 and Zone Combat Pulse on Receive AI Event A'),
@@ -23526,8 +23526,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ahune Ice Spear Bunny 25985 - npc_ice_spear_bunny
 -- [PH] Spank Target Bunny 26190
 ('2619001','26190','8','0','100','1','46735','-1','0','0','0','0','11','46734','6','0','0','0','0','0','0','0','0','0','Spank Target Bunny - Cast Spank - Knock To on Spank - Force Bunny To Knock You To spellhit'),
-
-
+-- Guid based
+('5470132','-5470132','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','0','0','0','0','Wastewalker Worker - Evade and Start relayScript on Receive AI Event C'),
+('5470133','-5470133','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','0','0','0','0','Wastewalker Worker - Evade and Start relayScript on Receive AI Event C'),
+('5470134','-5470134','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','0','0','0','0','Wastewalker Worker - Evade and Start relayScript on Receive AI Event C'),
+('5470118','-5470118','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','0','0','0','0','Wastewalker Worker - Evade and Start relayScript on Receive AI Event C'),
+('5470136','-5470136','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','0','0','0','0','Wastewalker Worker - Evade and Start relayScript on Receive AI Event C'),
+('5470143','-5470143','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','0','0','0','0','Wastewalker Worker - Evade and Start relayScript on Receive AI Event C'),
 
 -- ==================================
 -- Coilfang Reservoir: The Steamvault

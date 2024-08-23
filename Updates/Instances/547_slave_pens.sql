@@ -11,6 +11,9 @@ EndDBScriptData */
 SET @CGUID := 5470000; -- creatures
 SET @OGUID := 5470000; -- gameobjects
 SET @SGGUID := 5470000; -- spawn_groups
+SET @STRINGID := 5470000; -- used for StringID's
+SET @RELAYID := 5470000; -- used for dbscript_relay
+
 
 -- =========
 -- CREATURES
@@ -337,12 +340,34 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+202, 1, -115.351, -584.643, 4.97746, 6.20593, 32000, 0),
 (@CGUID+202, 2, -115.351, -584.643, 4.97746, 6.20593, 20000, 1378);
 
-DELETE FROM `creature_movement_template` WHERE entry IN (17893,17941,17942,17957,17960,17961,25754,25964,25965,25966);
+DELETE FROM `creature_movement_template` WHERE entry IN (17893,17963, 17964,17941,17942,17957,17960,17961,25754,25964,25965,25966);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- 17893
 (17893, 0, 1, -190.926, -796.39, 43.7993, 0, 0, 0),
 (17893, 0, 2, -190.926, -796.39, 43.7993, 0.733148, 3000, 1789301),
 (17893, 0, 3, -183.408, -780.199, 43.7993, 100, 1000, 1789302),
+-- 17963 Wastewalker Slave - Run away when slavehandler dies
+(17963, 1, 1,2.626806,-22.682434,-1.715987, 100, 0, 0),
+(17963, 1, 2,18.589142,-26.894253,-1.1703262, 100, 0, 0),
+(17963, 1, 3,32.433697,-34.26147,-0.9658908, 100, 0, 0),
+(17963, 1, 4,43.34351,-45.079365,-1.2911885, 100, 0, 0),
+(17963, 1, 5,59.32759,-53.571133,-1.4546233, 100, 0, 0),
+(17963, 1, 6,88.90122,-67.848854,-1.5694709, 100, 0, 0),
+(17963, 1, 7,103.28419,-77.41594,-1.5905597, 100, 0, 0),
+(17963, 1, 8,114.23545,-99.39411,-1.5905597, 100, 0, 0),
+(17963, 1, 9,121.80467,-118.15591,-0.047849532, 100, 0, 0),
+(17963, 1, 10,121.09884,-142.41917,-0.7381228, 100, 1000, 1796301),
+-- 17964 Wastewalker Worker - Run away when slavehandler dies
+(17964, 1, 1,2.626806,-22.682434,-1.715987, 100, 0, 0),
+(17964, 1, 2,18.589142,-26.894253,-1.1703262, 100, 0, 0),
+(17964, 1, 3,32.433697,-34.26147,-0.9658908, 100, 0, 0),
+(17964, 1, 4,43.34351,-45.079365,-1.2911885, 100, 0, 0),
+(17964, 1, 5,59.32759,-53.571133,-1.4546233, 100, 0, 0),
+(17964, 1, 6,88.90122,-67.848854,-1.5694709, 100, 0, 0),
+(17964, 1, 7,103.28419,-77.41594,-1.5905597, 100, 0, 0),
+(17964, 1, 8,114.23545,-99.39411,-1.5905597, 100, 0, 0),
+(17964, 1, 9,121.80467,-118.15591,-0.047849532, 100, 0, 0),
+(17964, 1, 10,121.09884,-142.41917,-0.7381228, 100, 1000, 1796401),
 -- 17941
 (17941, 0, 1, 121.63626, -380.37653, 29.957338, 100, 0, 0),
 (17941, 0, 2, 89.427284, -380.23688, 15.121437, 100, 0, 0),
@@ -1213,6 +1238,32 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (1138901, 10000, 15, 46402, 0, 0, 25745, @CGUID+213, 7 | 0x10, 0, 0, 0, 0, 0, 0, 0, 0, '[PH] Ahune Summon Loc Bunny - Cast Ahune Resurfaces'),
 (1138901, 10000, 10, 25740, 0, 0, 0, 0, 0, 0, 0, 0, 0,  -99.1021, -233.753, -1.22297, 1.5282, 'spawn Ahune'),
 (1138901, 12000, 10, 25865, 0, 0, 25740, 255, 7,  0, 0, 0, 0, -98.0151, -230.456, -1.21089, 1.79769, 'spawn Frozen Core');
+
+
+-- new relay scripts, will get merged when all is done
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Wastewalker Slave/Wastewalker Worker script after Coilfang Slavemaster dies
+(@RELAYID+1,0,0,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - Set Active'), -- just to make sure they run their way to the end and despawn
+(@RELAYID+1,0,1,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - Emote OneShotExclamation'),
+(@RELAYID+1,0,2,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - random yell'),
+(@RELAYID+1,1000,0,20,2,1,0,0,0,0,2,0,0,0,0,0,0,0,'Wastewalker Slave/Wastewalker Worker - Change Movement');
+
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
+INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
+-- Shattered Hand Legionnaire 001 script
+(@RELAYID+1, 0, 18713, 0, 'Slave Pens - Wastewalker Slave/Wastewalker Worker random yell'),
+(@RELAYID+1, 0, 18711, 0, 'Slave Pens - Wastewalker Slave/Wastewalker Worker random yell'),
+(@RELAYID+1, 0, 18712, 0, 'Slave Pens - Wastewalker Slave/Wastewalker Worker random yell'),
+(@RELAYID+1, 0, 18707, 0, 'Slave Pens - Wastewalker Slave/Wastewalker Worker random yell'),
+(@RELAYID+1, 0, 18708, 0, 'Slave Pens - Wastewalker Slave/Wastewalker Worker random yell'),
+(@RELAYID+1, 0, 18710, 0, 'Slave Pens - Wastewalker Slave/Wastewalker Worker random yell');
+
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1796301, 1796401);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1796301, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Wastewalker Slave - Despawn self'),
+(1796401, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Wastewalker Worker - Despawn self');
+
 
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
