@@ -23527,12 +23527,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- [PH] Spank Target Bunny 26190
 ('2619001','26190','8','0','100','1','46735','-1','0','0','0','0','11','46734','6','0','0','0','0','0','0','0','0','0','Spank Target Bunny - Cast Spank - Knock To on Spank - Force Bunny To Knock You To spellhit'),
 -- Guid based
-('5470132','-5470132','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','0','0','0','0','Wastewalker Worker - Evade and Start relayScript on Receive AI Event C'),
-('5470133','-5470133','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','0','0','0','0','Wastewalker Worker - Evade and Start relayScript on Receive AI Event C'),
-('5470134','-5470134','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','0','0','0','0','Wastewalker Worker - Evade and Start relayScript on Receive AI Event C'),
-('5470118','-5470118','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','0','0','0','0','Wastewalker Worker - Evade and Start relayScript on Receive AI Event C'),
-('5470136','-5470136','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','0','0','0','0','Wastewalker Worker - Evade and Start relayScript on Receive AI Event C'),
-('5470143','-5470143','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','0','0','0','0','Wastewalker Worker - Evade and Start relayScript on Receive AI Event C'),
+('5470132','-5470132','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
+('5470133','-5470133','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
+('5470134','-5470134','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
+('5470118','-5470118','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
+('5470136','-5470136','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
+('5470143','-5470143','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
 
 -- ==================================
 -- Coilfang Reservoir: The Steamvault
