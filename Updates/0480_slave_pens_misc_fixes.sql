@@ -147,3 +147,25 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1796301 WHERE `entry` = 17963;
 UPDATE `creature_template` SET `SpellList` = 1990201 WHERE `entry` = 19902;
+
+-- Coilfang Champion
+DELETE FROM `creature_template_spells` WHERE `entry` = 17957;
+DELETE FROM `creature_template_spells` WHERE `entry` = 19885;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1795701, 1988501);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1795701, 'Slave Pens - Coilfang Champion - Normal', 0, 0),
+(1988501, 'Slave Pens - Coilfang Champion - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1795701, 1988501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1795701, 1, 19134, 0, -1, 1, 0, 100, 0, 14000, 24000, 22000, 32000, 'Coilfang Champion - Frightening Shout - current'),
+(1795701, 2, 16145, 0, -1, 1, 0, 100, 0, 8000, 11000, 14000, 24000, 'Coilfang Champion - Sunder Armor - current'),
+(1795701, 3, 15284, 0, -1, 1, 0, 100, 0, 6000, 19000, 10000, 22000, 'Coilfang Champion - Cleave - current'),
+
+(1988501, 1, 19134, 0, -1, 1, 0, 100, 0, 14000, 24000, 22000, 32000, 'Coilfang Champion - Frightening Shout - current'),
+(1988501, 2, 16145, 0, -1, 1, 0, 100, 0, 8000, 11000, 14000, 24000, 'Coilfang Champion - Sunder Armor - current'),
+(1988501, 3, 15284, 0, -1, 1, 0, 100, 0, 6000, 19000, 10000, 22000, 'Coilfang Champion - Cleave - current');
+
+UPDATE `creature_template` SET `SpellList` = 1795701 WHERE `entry` = 17957;
+UPDATE `creature_template` SET `SpellList` = 1988501 WHERE `entry` = 19885;
