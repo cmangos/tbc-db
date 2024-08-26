@@ -24,9 +24,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+2, 17816, 547, 3, -113.4347, -203.0733, -1.334175, 4.924964, 7200, 7200, 1, 1), -- Bogstrok
 (@CGUID+3, 17817, 547, 3, -87.9355, -446.624, -1.56181, 4.88088, 7200, 7200, 1, 1), -- Greater Bogstrok
 (@CGUID+4, 17816, 547, 3, -116.3354, -211.4682, -1.404813, 4.520403, 7200, 7200, 1, 1), -- Bogstrok
-(@CGUID+5, 17816, 547, 3, -23.9356, -196.451, -1.80866, 3.82664, 7200, 7200, 3, 1), -- Bogstrok
-(@CGUID+6, 17816, 547, 3, 1.50067, -209.725, -1.56011, 2.21265, 7200, 7200, 3, 1), -- Bogstrok
-(@CGUID+7, 17816, 547, 3, -11.42, -219.051, -1.59055, 1.5969, 7200, 7200, 3, 1), -- Bogstrok
+(@CGUID+5, 17817, 547, 3, -21.8928, -194.156, -1.67129, 0.418879, 7200, 7200, 3, 1), -- Greater Bogstrok
+(@CGUID+6, 17817, 547, 3, 4.07849, -195.421, -1.55645, 5.69669, 7200, 7200, 3, 1), -- Greater Bogstrok
+(@CGUID+7, 17816, 547, 3, -19.7354, -209.031, -1.73865, 1.61351, 7200, 7200, 3, 1), -- Bogstrok
 (@CGUID+8, 17816, 547, 3, -70.1932, -450.102, -1.59213, 3.31829, 7200, 7200, 1, 1), -- Bogstrok
 (@CGUID+9, 17817, 547, 3, -2.43306, -50.898, -1.94816, 2.90802, 7200, 7200, 0, 0), -- Greater Bogstrok
 (@CGUID+10, 17816, 547, 3, -198.296, -697.77, 37.4455, 4.96924, 7200, 7200, 0, 0), -- Bogstrok
@@ -34,25 +34,25 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+12, 17817, 547, 3, 47.1251, -95.2975, -1.61889, 3.68264, 7200, 7200, 0, 0), -- Greater Bogstrok
 (@CGUID+13, 17816, 547, 3, 43.8724, -83.8232, -3.37974, 3.50811, 7200, 7200, 0, 0), -- Bogstrok
 (@CGUID+14, 17816, 547, 3, -1.93023, -63.8702, -1.49829, 2.27939, 7200, 7200, 0, 0), -- Bogstrok
-(@CGUID+15, 17816, 547, 3, -16.2878, -247.732, -1.69494, 3.40782, 7200, 7200, 5, 1), -- Bogstrok
-(@CGUID+16, 17816, 547, 3, 6.63201, -249.964, 0.0614992, 0.113073, 7200, 7200, 5, 1), -- Bogstrok
-(@CGUID+17, 17816, 547, 3, 25.8708, -220.551, -1.52212, 4.24505, 7200, 7200, 5, 1), -- Bogstrok
+(@CGUID+15, 17817, 547, 3, 32.0059, -250.457, 4.7481, 2.02458, 7200, 7200, 5, 1), -- Greater Bogstrok
+(@CGUID+16, 17817, 547, 3, 7.25229, -251.289, 0.339584, 3.36849, 7200, 7200, 5, 1), -- Greater Bogstrok
+(@CGUID+17, 17817, 547, 3, 17.7697, -232.722, -0.489372, 5.70723, 7200, 7200, 5, 1), -- Greater Bogstrok
 (@CGUID+18, 17816, 547, 3, -123.838, -744.364, 37.1563, 2.58787, 7200, 7200, 0, 0), -- Bogstrok
 (@CGUID+19, 17816, 547, 3, -127.141, -750.718, 37.6108, 2.61772, 7200, 7200, 0, 0), -- Bogstrok
 (@CGUID+20, 17816, 547, 3, -80.6269, -461.577, -1.59213, 3.75105, 7200, 7200, 1, 1), -- Bogstrok
 (@CGUID+21, 17817, 547, 3, -200.234, -703.039, 37.556, 4.96924, 7200, 7200, 0, 0), -- Greater Bogstrok
-(@CGUID+22, 17817, 547, 3, -14.3222, -182.544, -1.58811, 2.58571, 7200, 7200, 3, 1), -- Greater Bogstrok
+(@CGUID+22, 17817, 547, 3, -10.0083, -187.066, -1.57996, 5.67879, 7200, 7200, 3, 1), -- Greater Bogstrok
 (@CGUID+23, 26190, 547, 3, -95.33572, -207.4834, 16.28742, 1, 7200, 7200, 0, 0), -- [PH] Spank Target Bunny
 (@CGUID+24, 17817, 547, 3, -112.3111, -208.1104, -1.33469, 5.986479, 7200, 7200, 1, 1), -- Greater Bogstrok
-(@CGUID+25, 17817, 547, 3, -13.309, -200.404, -1.58687, 4.47067, 7200, 7200, 3, 1), -- Greater Bogstrok
-(@CGUID+26, 17817, 547, 3, -20.9667, -184.502, -1.85655, 1.3762, 7200, 7200, 3, 1), -- Greater Bogstrok
+(@CGUID+25, 17816, 547, 3, -6.92616, -202.965, -1.55814, 6.11969, 7200, 7200, 3, 1), -- Bogstrok
+(@CGUID+26, 17816, 547, 3, -27.7103, -181.083, -2.04282, 6.14356, 7200, 7200, 3, 1), -- Bogstrok
 (@CGUID+27, 17817, 547, 3, -91.6633, -466.584, -1.44884, 1.90737, 7200, 7200, 1, 1), -- Greater Bogstrok
 (@CGUID+28, 17817, 547, 3, -194.405, -701.508, 37.8924, 4.96924, 7200, 7200, 0, 0), -- Greater Bogstrok
 (@CGUID+29, 17817, 547, 3, -15.1858, -51.2709, -1.5252, 5.64145, 7200, 7200, 0, 0), -- Greater Bogstrok
 (@CGUID+30, 17817, 547, 3, 58.2672, -102.968, -1.51906, 2.59789, 7200, 7200, 0, 0), -- Greater Bogstrok
-(@CGUID+31, 17817, 547, 3, 13.5281, -247.912, 1.21057, 4.27097, 7200, 7200, 5, 1), -- Greater Bogstrok
-(@CGUID+32, 17817, 547, 3, 29.6698, -242.561, 2.75055, 0.5097, 7200, 7200, 5, 1), -- Greater Bogstrok
-(@CGUID+33, 17817, 547, 3, 32.5076, -231.687, -1.08708, 2.30276, 7200, 7200, 5, 1), -- Greater Bogstrok
+(@CGUID+31, 17816, 547, 3, 17.1413, -246.651, 1.70575, 3.05433, 7200, 7200, 5, 1), -- Bogstrok
+(@CGUID+32, 17816, 547, 3, 27.5834, -241.659, 2.29079, 2.89725, 7200, 7200, 5, 1), -- Bogstrok
+(@CGUID+33, 17816, 547, 3, 37.807, -231.744, -0.80616, 1.13446, 7200, 7200, 5, 1), -- Bogstrok
 (@CGUID+34, 17817, 547, 3, -125.916, -747.339, 37.3758, 2.60908, 7200, 7200, 0, 2), -- Greater Bogstrok
 (@CGUID+35, 17817, 547, 3, -121.776, -749.779, 37.0171, 2.60908, 7200, 7200, 0, 0), -- Greater Bogstrok
 (@CGUID+36, 17890, 547, 3, -294.5036, -380.8706, 30.58193, 1.32645, 86400, 86400, 0, 0), -- Weeder Greenthumb
@@ -301,18 +301,18 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+82, 4, -79.20152, -275.89697, -0.9708502, 100, 0, 0),
 (@CGUID+82, 5, -85.52775, -285.34708, -1.4778596, 100, 0, 0),
 (@CGUID+82, 6, -94.04997, -286.40472, -1.5394256, 100, 0, 0),
-(@CGUID+83, 1, -69.84593, -169.56969, -3.3459024, 100, 0, 0),
-(@CGUID+83, 2, -79.72039, -172.97456, -4.0686054, 100, 0, 0),
-(@CGUID+83, 3, -87.60288, -181.37634, -3.301994, 100, 0, 0),
-(@CGUID+83, 4, -91.04075, -192.95897, -1.6159151, 100, 0, 0),
-(@CGUID+84, 1, -48.399025, 0.686625, -1.8147835, 100, 0, 1795901),
-(@CGUID+84, 2, -41.80579, -1.938733, -1.4184747, 100, 0, 1795901),
-(@CGUID+84, 3, -33.154163, -1.31646, -1.2554848, 100, 0, 1795901),
-(@CGUID+84, 4, -26.136015, -3.06594, -1.2948818, 100, 0, 1795901),
-(@CGUID+84, 5, -21.41529, 1.867674, -1.0036224, 100, 0, 1795901),
-(@CGUID+85, 1, -52.72164, -27.052872, -1.7162553, 100, 0, 1795902),
-(@CGUID+85, 2, -69.57311, -14.861713, -4.3982778, 100, 0, 1795902),
-(@CGUID+85, 3, -59.46139, -16.815935, -2.937329, 100, 0, 1795902),
+(@CGUID+83, 1, -69.84593, -169.56969, -3.3459024, 100, 1, 1795902),
+(@CGUID+83, 2, -79.72039, -172.97456, -4.0686054, 100, 1, 1795902),
+(@CGUID+83, 3, -87.60288, -181.37634, -3.301994, 100, 1, 1795902),
+(@CGUID+83, 4, -91.04075, -192.95897, -1.6159151, 100, 1, 1795902),
+(@CGUID+84, 1, -48.399025, 0.686625, -1.8147835, 100, 1, 1795901),
+(@CGUID+84, 2, -41.80579, -1.938733, -1.4184747, 100, 1, 1795901),
+(@CGUID+84, 3, -33.154163, -1.31646, -1.2554848, 100, 1, 1795901),
+(@CGUID+84, 4, -26.136015, -3.06594, -1.2948818, 100, 1, 1795901),
+(@CGUID+84, 5, -21.41529, 1.867674, -1.0036224, 100, 1, 1795901),
+(@CGUID+85, 1, -52.72164, -27.052872, -1.7162553, 100, 1, 1795902),
+(@CGUID+85, 2, -69.57311, -14.861713, -4.3982778, 100, 1, 1795902),
+(@CGUID+85, 3, -59.46139, -16.815935, -2.937329, 100, 1, 1795902),
 (@CGUID+89, 1, -110.45, -591.891, 5.80183, 5.1569, 0, 0),
 (@CGUID+89, 2, -114.93, -595.137, 7.46083, 3.61517, 0, 0),
 (@CGUID+89, 3, -116.278, -594.244, 7.41621, 2.55645, 20000, 1378),
@@ -721,10 +721,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+5, 'Slave Pens - Group 005 - Coilfang Champion (2) - Patrol 003', 0, 0, 0, 1, 0),
 (@SGGUID+6, 'Slave Pens - Group 006 - Wastewalker Worker | Wastewalker Slave', 0, 0, 0, 0, 0), 
 (@SGGUID+7, 'Slave Pens - Group 007 - Coilfang Champion | Coilfang Ray | Coilfang Observer | Coilfang Scale-Healery', 0, 0, 0, 1, 0),
-
 (@SGGUID+8, 'Slave Pens - Group 008 - Coilfang Champion | Coilfang Enchantress - Patrol 005', 0, 0, 0, 1, 0),
+(@SGGUID+9, 'Slave Pens - Group 009 - Wastewalker Worker | Wastewalker Slave (2)', 0, 0, 0, 1, @STRINGID+3), 
 
-(@SGGUID+9, 'Slave Pens - Group 009 - Wastewalker Worker | Wastewalker Slave', 0, 0, 0, 1, @STRINGID+3), -- 1 static Wastewalker Worker, 2 spawn-group_entry
+(@SGGUID+10, 'Slave Pens - Group 010 - Greater Bogstrok (3) | Bogstrok (3)', 0, 0, 0, 1, 0),
+(@SGGUID+11, 'Slave Pens - Group 011 - Greater Bogstrok (3) | Bogstrok (3)', 0, 0, 0, 1, 0),
 
 -- old
 (@SGGUID+103, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) - Patrol 002', 0, 0, 0, 3, 0),
@@ -745,8 +746,6 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+1019, 'Slave Pens - Coilfang Champion | Coilfang Ray | Coilfang Enchantress/Coilfang Scale-Healery - Link 001', 0, 0, 0, 3, 0),
 (@SGGUID+1020, 'Slave Pens - Wastewalker Slave/Wastewalker Worker | Wastewalker Slave/Wastewalker Worker - Link 002', 0, 0, 0, 3, 0),
 (@SGGUID+1021, 'Slave Pens - Wastewalker Slave/Wastewalker Worker | Wastewalker Slave/Wastewalker Worker - Link 003', 0, 0, 0, 3, 0),
-(@SGGUID+1024, 'Slave Pens - Greater Bogstrok (3) | Bogstrok (3) - Link 001', 0, 0, 0, 3, 0),
-(@SGGUID+1025, 'Slave Pens - Greater Bogstrok (3) | Bogstrok (3) - Link 002', 0, 0, 0, 3, 0),
 (@SGGUID+1026, 'Slave Pens - Greater Bogstrok | Bogstrok (2) - Link 003', 0, 0, 0, 3, 0),
 (@SGGUID+1027, 'Slave Pens - Coilfang Slavehandler | Wastewalker Slave | Wastewalker Worker (3) - Link 006', 0, 0, 0, 3, 0),
 (@SGGUID+1028, 'Slave Pens - Coilfang Slavehandler | Wastewalker Slave | Wastewalker Worker (3) - Link 007', 0, 0, 0, 3, 0),
@@ -821,6 +820,20 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+9, @CGUID+140, -1), -- Wastewalker Worker
 (@SGGUID+9, @CGUID+141, -1), -- Wastewalker Worker
 
+(@SGGUID+10, @CGUID+22, -1), -- Greater Bogstrok
+(@SGGUID+10, @CGUID+5, -1), -- Greater Bogstrok
+(@SGGUID+10, @CGUID+6, -1), -- Greater Bogstrok
+(@SGGUID+10, @CGUID+7, -1), -- Bogstrok
+(@SGGUID+10, @CGUID+25, -1), -- Bogstrok
+(@SGGUID+10, @CGUID+26, -1), -- Bogstrok
+
+(@SGGUID+11, @CGUID+31, -1), -- Bogstrok
+(@SGGUID+11, @CGUID+15, -1), -- Greater Bogstrok
+(@SGGUID+11, @CGUID+16, -1), -- Greater Bogstrok
+(@SGGUID+11, @CGUID+17, -1), -- Greater Bogstrok
+(@SGGUID+11, @CGUID+32, -1), -- Bogstrok
+(@SGGUID+11, @CGUID+33, -1), -- Bogstrok
+
 -- creatures
 (@SGGUID+103, @CGUID+68, 0), -- Coilfang Champion
 (@SGGUID+103, @CGUID+87, 1), -- Coilfang Soothsayer, Coilfang Enchantress
@@ -856,18 +869,6 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1014, @CGUID+51, 2), -- Coilfang Enchantress
 
 
-(@SGGUID+1024, @CGUID+22, -1), -- Greater Bogstrok
-(@SGGUID+1024, @CGUID+5, -1), -- Bogstrok
-(@SGGUID+1024, @CGUID+6, -1), -- Bogstrok
-(@SGGUID+1024, @CGUID+7, -1), -- Bogstrok
-(@SGGUID+1024, @CGUID+25, -1), -- Greater Bogstrok
-(@SGGUID+1024, @CGUID+26, -1), -- Greater Bogstrok
-(@SGGUID+1025, @CGUID+31, -1), -- Greater Bogstrok
-(@SGGUID+1025, @CGUID+15, -1), -- Bogstrok
-(@SGGUID+1025, @CGUID+16, -1), -- Bogstrok
-(@SGGUID+1025, @CGUID+17, -1), -- Bogstrok
-(@SGGUID+1025, @CGUID+32, -1), -- Greater Bogstrok
-(@SGGUID+1025, @CGUID+33, -1), -- Greater Bogstrok
 (@SGGUID+1026, @CGUID+1, -1), -- Bogstrok
 (@SGGUID+1026, @CGUID+2, -1), -- Bogstrok
 (@SGGUID+1026, @CGUID+4, -1), -- Bogstrok
