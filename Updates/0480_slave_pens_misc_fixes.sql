@@ -68,6 +68,23 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 1
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 21128;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 21841;
 
+
+-- Coilfang Soothsayer
+-- Before:  SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 7
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 17958;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 19890;
+
+-- Coilfang Defender
+-- Before:  SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 7
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 17960;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 19886;
+
 -- Correct some broadcast_text
 UPDATE `broadcast_text` SET `ChatTypeID`='1' WHERE (`Id`='15108');
 
@@ -300,3 +317,24 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 UPDATE `creature_template` SET `SpellList` = 1796001 WHERE `entry` = 17960;
 UPDATE `creature_template` SET `SpellList` = 1989001 WHERE `entry` = 19890; 
 
+
+-- Coilfang Defender 
+DELETE FROM `creature_template_spells` WHERE `entry` = 17958;
+DELETE FROM `creature_template_spells` WHERE `entry` = 19886;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1795801, 1988601);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1795801, 'Slave Pens - Coilfang Defender - Normal', 0, 0),
+(1988601, 'Slave Pens - Coilfang Defender - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1795801, 1988601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1795801, 1, 15655, 0, -1, 1, 0, 100, 0, 6000, 16000, 11000, 25000, 'Coilfang Defender - Shield Slam - current'),
+(1795801, 2, 31554, 0, -1, 2, 0, 100, 0, 10000, 24000, 16000, 30000, 'Coilfang Defender - Spell Reflection - self'),
+
+(1988601, 1, 15655, 0, -1, 1, 0, 100, 0, 6000, 16000, 11000, 25000, 'Coilfang Defender - Shield Slam - current'),
+(1988601, 2, 31554, 0, -1, 2, 0, 100, 0, 10000, 24000, 16000, 30000, 'Coilfang Defender - Spell Reflection - self'),
+
+
+UPDATE `creature_template` SET `SpellList` = 1795801 WHERE `entry` = 17958;
+UPDATE `creature_template` SET `SpellList` = 1988601 WHERE `entry` = 19886; 

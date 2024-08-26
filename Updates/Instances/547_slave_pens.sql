@@ -717,9 +717,12 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+12, 'Slave Pens - Group 012 - Greater Bogstrok (2) | Bogstrok (2)', 0, 0, 0, 1, 0),
 (@SGGUID+13, 'Slave Pens - Group 013 - Coilfang Champion | Coilfang Enchantress | Soothsayer - Patrol 006', 0, 0, 0, 1, 0),
 
-(@SGGUID+14, 'Slave Pens - Group 0014 - Wastewalker Worker | Wastewalker Slave', 0, 0, 0, 1, @STRINGID+4),
-(@SGGUID+15, 'Slave Pens - Group 0015 - Wastewalker Worker | Wastewalker Slave', 0, 0, 0, 1, @STRINGID+5),
-(@SGGUID+16, 'Slave Pens - Group 0016 - Wastewalker Worker | Wastewalker Slave', 0, 0, 0, 1, @STRINGID+6),
+(@SGGUID+14, 'Slave Pens - Group 014 - Wastewalker Worker | Wastewalker Slave', 0, 0, 0, 1, @STRINGID+4),
+(@SGGUID+15, 'Slave Pens - Group 015 - Wastewalker Worker | Wastewalker Slave', 0, 0, 0, 1, @STRINGID+5),
+(@SGGUID+16, 'Slave Pens - Group 016 - Wastewalker Worker | Wastewalker Slave', 0, 0, 0, 1, @STRINGID+6),
+
+(@SGGUID+17, 'Slave Pens - Group 017 - Coilfang Defender (2)', 0, 0, 0, 1, 0),
+
 -- old
 (@SGGUID+104, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) - Patrol 003', 0, 0, 0, 3, 0),
 (@SGGUID+105, 'Slave Pens - Coilfang Defender (2) - Patrol 000', 0, 0, 0, 3, 0),
@@ -734,8 +737,6 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+1014, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) - Patrol 007', 0, 0, 0, 3, 0),
 
 (@SGGUID+1016, 'Slave Pens - Greater Bogstrok | Bogstrok (2) - Patrol 002', 0, 0, 0, 3, 0),
-
-(@SGGUID+1030, 'Slave Pens - Coilfang Defender | Coilfang Defender - Link 001', 0, 0, 0, 3, 0),
 (@SGGUID+1031, 'Slave Pens - Coilfang Technician (2) | Coilfang Collaborator (2) - Link 001', 0, 0, 0, 3, 0),
 (@SGGUID+1032, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (2) - Link 002', 0, 0, 0, 3, 0),
 (@SGGUID+1033, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (2) - Link 003', 0, 0, 0, 3, 0),
@@ -842,6 +843,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+16, @CGUID+124, -1), -- Wastewalker Worker
 (@SGGUID+16, @CGUID+123, -1), -- spawn_group_entry
 
+(@SGGUID+17, @CGUID+78, 0), -- Coilfang Defender
+(@SGGUID+17, @CGUID+79, 1), -- Coilfang Defender
+
 -- creatures
 (@SGGUID+104, @CGUID+193, 0), -- Coilfang Champion
 (@SGGUID+104, @CGUID+94, 1), -- Coilfang Champion
@@ -873,10 +877,6 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1014, @CGUID+49, 1), -- Coilfang Technician
 (@SGGUID+1014, @CGUID+51, 2), -- Coilfang Enchantress
 
-
-
-(@SGGUID+1030, @CGUID+78, -1), -- Coilfang Defender
-(@SGGUID+1030, @CGUID+79, -1), -- Coilfang Defender
 (@SGGUID+1031, @CGUID+54, -1), -- Coilfang Technician
 (@SGGUID+1031, @CGUID+55, -1), -- Coilfang Technician
 (@SGGUID+1031, @CGUID+98, -1), -- Coilfang Collaborator
