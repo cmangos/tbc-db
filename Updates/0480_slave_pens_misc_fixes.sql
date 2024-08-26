@@ -395,7 +395,3 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1796201 WHERE `entry` = 17962;
 UPDATE `creature_template` SET `SpellList` = 1990301 WHERE `entry` = 19903; 
-
-
-('1796202','17962','0','0','100','1025','10000','20000','14000','28000','0','0','11','33787','1','0','0','0','0','0','0','0','0','0','Coilfang Collaborator - Cast Cripple'),
-('1796203','17962','0','0','100','1025','3000','12000','5000','15000','0','0','11','19130','1','0','0','0','0','0','0','0','0','0','Coilfang Collaborator - Cast Revenge'),
