@@ -61,7 +61,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+41, 17938, 547, 3, -84.87788, -503.3429, -1.509169, 3.281219, 7200, 7200, 0, 0), -- Coilfang Observer
 (@CGUID+42, 17940, 547, 3, 75.6859, -408.286, 36.5226, 0.270867, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+43, 17940, 547, 3, 104.56651,-343.7326,3.0324378, 3.679, 7200, 7200, 0, 0), -- Coilfang Technician
-(@CGUID+44, 17940, 547, 3, 102.378, -340.384, 3.03288, 0.578873, 3.6409, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+44, 17940, 547, 3, 102.378, -340.384, 3.03288, 0.578873, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+45, 17940, 547, 3, -292.746, -380.393, 30.4533, 6.28178, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+46, 17940, 547, 3, 122.6806,-468.11877,3.035651, 3.717551, 7200, 7200, 0, 2), -- Coilfang Technician
 (@CGUID+47, 17961, 547, 3, -228.887, -367.368, 3.03565, 2.49875, 7200, 7200, 0, 0), -- Coilfang Enchantress
@@ -760,7 +760,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+4, 17963, 0, 2, 0), (@SGGUID+4, 17964, 0, 2, 0), -- Wastewalker Slave, Wastewalker Worker
 (@SGGUID+6, 17963, 0, 0, 0), (@SGGUID+6, 17964, 0, 0, 0), -- Wastewalker Slave, Wastewalker Worker
-(@SGGUID+15, 17963, 0, 0, 0), (@SGGUID+15, 17964, 0, 0, 0); -- Wastewalker Slave, Wastewalker Worker
+(@SGGUID+15, 17963, 0, 0, 0), (@SGGUID+15, 17964, 0, 0, 0), -- Wastewalker Slave, Wastewalker Worker
 (@SGGUID+16, 17963, 0, 0, 0), (@SGGUID+16, 17964, 0, 0, 0); -- Wastewalker Slave, Wastewalker Worker
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES

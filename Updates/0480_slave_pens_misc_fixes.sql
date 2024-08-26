@@ -351,7 +351,7 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1795801, 2, 31554, 0, -1, 2, 0, 100, 0, 10000, 24000, 16000, 30000, 'Coilfang Defender - Spell Reflection - self'),
 
 (1988601, 1, 15655, 0, -1, 1, 0, 100, 0, 6000, 16000, 11000, 25000, 'Coilfang Defender - Shield Slam - current'),
-(1988601, 2, 31554, 0, -1, 2, 0, 100, 0, 10000, 24000, 16000, 30000, 'Coilfang Defender - Spell Reflection - self'),
+(1988601, 2, 31554, 0, -1, 2, 0, 100, 0, 10000, 24000, 16000, 30000, 'Coilfang Defender - Spell Reflection - self');
 
 
 UPDATE `creature_template` SET `SpellList` = 1795801 WHERE `entry` = 17958;
