@@ -60,8 +60,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+40, 17938, 547, 3, -127.141, -144.428, -1.80314, 0.855211, 7200, 7200, 0, 0), -- Coilfang Observer
 (@CGUID+41, 17938, 547, 3, -84.87788, -503.3429, -1.509169, 3.281219, 7200, 7200, 0, 0), -- Coilfang Observer
 (@CGUID+42, 17940, 547, 3, 75.6859, -408.286, 36.5226, 0.270867, 7200, 7200, 0, 0), -- Coilfang Technician
-(@CGUID+43, 17940, 547, 3, 116.661, -344.144, 3.03553, 3.62301, 7200, 7200, 0, 0), -- Coilfang Technician
-(@CGUID+44, 17940, 547, 3, 117.845, -346.725, 3.03553, 3.37169, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+43, 17940, 547, 3, 104.56651,-343.7326,3.0324378, 3.679, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+44, 17940, 547, 3, 102.378, -340.384, 3.03288, 0.578873, 3.6409, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+45, 17940, 547, 3, -292.746, -380.393, 30.4533, 6.28178, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+46, 17940, 547, 3, 127.5707, -467.1384, 3.035656, 3.339454, 7200, 7200, 0, 2), -- Coilfang Technician
 (@CGUID+47, 17961, 547, 3, -228.887, -367.368, 3.03565, 2.49875, 7200, 7200, 0, 0), -- Coilfang Enchantress
@@ -710,24 +710,23 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+7, 'Slave Pens - Group 007 - Coilfang Champion | Coilfang Ray | Coilfang Observer | Coilfang Scale-Healery', 0, 0, 0, 1, 0),
 (@SGGUID+8, 'Slave Pens - Group 008 - Coilfang Champion | Coilfang Enchantress - Patrol 005', 0, 0, 0, 1, 0),
 (@SGGUID+9, 'Slave Pens - Group 009 - Wastewalker Worker | Wastewalker Slave (2)', 0, 0, 0, 1, @STRINGID+3), 
-
 (@SGGUID+10, 'Slave Pens - Group 010 - Greater Bogstrok (3) | Bogstrok (3)', 0, 0, 0, 1, 0),
 (@SGGUID+11, 'Slave Pens - Group 011 - Greater Bogstrok (3) | Bogstrok (3)', 0, 0, 0, 1, 0),
-
 (@SGGUID+12, 'Slave Pens - Group 012 - Greater Bogstrok (2) | Bogstrok (2)', 0, 0, 0, 1, 0),
 (@SGGUID+13, 'Slave Pens - Group 013 - Coilfang Champion | Coilfang Enchantress | Soothsayer - Patrol 006', 0, 0, 0, 1, 0),
-
 (@SGGUID+14, 'Slave Pens - Group 014 - Wastewalker Worker | Wastewalker Slave', 0, 0, 0, 1, @STRINGID+4),
 (@SGGUID+15, 'Slave Pens - Group 015 - Wastewalker Worker | Wastewalker Slave', 0, 0, 0, 1, @STRINGID+5),
 (@SGGUID+16, 'Slave Pens - Group 016 - Wastewalker Worker | Wastewalker Slave', 0, 0, 0, 1, @STRINGID+6),
-
 (@SGGUID+17, 'Slave Pens - Group 017 - Coilfang Defender (2)', 0, 0, 0, 1, 0),
+
+(@SGGUID+18, 'Slave Pens - Group 018 - Coilfang Technician (2) | Coilfang Collaborator (2)', 0, 0, 0, 1, 0),
+
+(@SGGUID+19, 'Slave Pens - Group 019 - Coilfang Technician (2) - Patrol 007', 0, 0, 0, 1, 0),
 
 -- old
 (@SGGUID+104, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) - Patrol 003', 0, 0, 0, 3, 0),
 (@SGGUID+105, 'Slave Pens - Coilfang Defender (2) - Patrol 000', 0, 0, 0, 3, 0),
 (@SGGUID+106, 'Slave Pens - Coilfang Defender (2) - Patrol 001', 0, 0, 0, 3, 0),
-(@SGGUID+107, 'Slave Pens - Coilfang Technician (2) - Patrol 000', 0, 0, 0, 3, 0),
 (@SGGUID+108, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) - Patrol 001', 0, 0, 0, 3, 0),
 (@SGGUID+109, 'Slave Pens - Coilfang Technician (2) - Patrol 002', 0, 0, 0, 3, 0),
 (@SGGUID+1010, 'Slave Pens - Coilfang Technician (2) - Patrol 003', 0, 0, 0, 3, 0),
@@ -846,6 +845,14 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+17, @CGUID+78, 0), -- Coilfang Defender
 (@SGGUID+17, @CGUID+79, 1), -- Coilfang Defender
 
+(@SGGUID+18, @CGUID+54, 0), -- Coilfang Technician
+(@SGGUID+18, @CGUID+55, 1), -- Coilfang Technician
+(@SGGUID+18, @CGUID+98, 2), -- Coilfang Collaborator
+(@SGGUID+18, @CGUID+104, 3), -- Coilfang Collaborator
+
+(@SGGUID+19, @CGUID+43, 0), -- Coilfang Technician
+(@SGGUID+19, @CGUID+44, 1), -- Coilfang Technician
+
 -- creatures
 (@SGGUID+104, @CGUID+193, 0), -- Coilfang Champion
 (@SGGUID+104, @CGUID+94, 1), -- Coilfang Champion
@@ -855,8 +862,6 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+105, @CGUID+71, 1), -- Coilfang Defender
 (@SGGUID+106, @CGUID+76, 0), -- Coilfang Defender
 (@SGGUID+106, @CGUID+77, 1), -- Coilfang Defender
-(@SGGUID+107, @CGUID+43, 0), -- Coilfang Technician
-(@SGGUID+107, @CGUID+44, 1), -- Coilfang Technician
 (@SGGUID+108, @CGUID+42, 0), -- Coilfang Technician
 (@SGGUID+108, @CGUID+106, 1), -- Coilfang Collaborator
 (@SGGUID+108, @CGUID+112, 2), -- Coilfang Collaborator
@@ -877,10 +882,6 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1014, @CGUID+49, 1), -- Coilfang Technician
 (@SGGUID+1014, @CGUID+51, 2), -- Coilfang Enchantress
 
-(@SGGUID+1031, @CGUID+54, -1), -- Coilfang Technician
-(@SGGUID+1031, @CGUID+55, -1), -- Coilfang Technician
-(@SGGUID+1031, @CGUID+98, -1), -- Coilfang Collaborator
-(@SGGUID+1031, @CGUID+104, -1), -- Coilfang Collaborator
 (@SGGUID+1032, @CGUID+52, -1), -- Coilfang Technician
 (@SGGUID+1032, @CGUID+99, -1), -- Coilfang Collaborator
 (@SGGUID+1032, @CGUID+102, -1), -- Coilfang Collaborator
@@ -996,12 +997,14 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+8, 3, 4, 0, @SGGUID+8, 4, 'Slave Pens - Group 008 - Coilfang Champion | Coilfang Enchantress - Patrol 005'),
 (@SGGUID+13, 3, 4, 0, @SGGUID+13, 4, 'Slave Pens - Group 013 - Coilfang Champion | Coilfang Enchantress | Soothsayer - Patrol 006'),
 
+(@SGGUID+19, 3, 4, 0, @SGGUID+19, 4, 'Slave Pens - Group 019 - Coilfang Technician (2) - Patrol 007'),
+
 -- old
 (@SGGUID+103, 3, 4, 0, @SGGUID+103, 4, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 002'),
 (@SGGUID+104, 2, 4, 0, @SGGUID+104, 4, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) Patrol 003'),
 (@SGGUID+105, 2, 4, 0, @SGGUID+105, 4, 'Slave Pens - Coilfang Defender (2) Patrol 000'),
 (@SGGUID+106, 2, 4, 0, @SGGUID+106, 4, 'Slave Pens - Coilfang Defender (2) Patrol 001'),
-(@SGGUID+107, 2, 4, 0, @SGGUID+107, 4, 'Slave Pens - Coilfang Technician (2) Patrol 000'),
+
 (@SGGUID+108, 3, 4, 0, @SGGUID+108, 4, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 001'),
 (@SGGUID+109, 2, 4, 0, @SGGUID+109, 4, 'Slave Pens - Coilfang Technician (2) Patrol 002'),
 (@SGGUID+1010, 2, 4, 0, @SGGUID+1010, 4, 'Slave Pens - Coilfang Technician (2) Patrol 003'),
@@ -1041,11 +1044,13 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+8, 4, -97.396614,-148.95576, -1.9677485, 100, 0, 0),
 (@SGGUID+8, 5, -78.558304,-149.64978, -1.9562871, 100, 0, 0),
 (@SGGUID+8, 6, -49.81517,-168.06767, -1.9161165, 100, 0, 0),
-
 (@SGGUID+13, 1, -135.18245,-264.3937,-1.5928656, 100, 0, 0),
 (@SGGUID+13, 2, -96.45731,-252.5105,-1.2026949, 100, 0, 0),
 (@SGGUID+13, 3, -72.88378,-260.1831,-1.2228462, 100, 0, 0),
 (@SGGUID+13, 4, -48.752335,-262.20273,-0.8791759, 100, 0, 0),
+(@SGGUID+19, 1, 104.56651,-343.7326,3.0324378, 100, 0, 0),
+(@SGGUID+19, 2, 88.46067,-354.25873,3.0356727, 100, 0, 0),
+(@SGGUID+19, 3, 63.1788,-360.7239,3.0356328, 100, 0, 0),
 
 -- old
 (@SGGUID+104, 1, -112.21934, -751.7954, 37.091347, 100, 0, 0),
@@ -1065,9 +1070,6 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+106, 7, -62.04731, -528.7617, -1.5941613, 100, 0, 0),
 (@SGGUID+106, 8, -74.375824, -526.5931, -1.5943141, 100, 0, 0),
 (@SGGUID+106, 9, -83.93549, -523.77386, -1.5914233, 100, 0, 0),
-(@SGGUID+107, 1, 63.1788, -360.7239, 3.0356328, 100, 0, 0),
-(@SGGUID+107, 2, 88.46067, -354.25873, 3.0356727, 100, 0, 0),
-(@SGGUID+107, 3, 104.56651, -343.7326, 3.0324378, 100, 0, 0),
 (@SGGUID+108, 1, 84.27282, -405.44107, 34.60864, 100, 0, 0),
 (@SGGUID+108, 2, 106.44565, -397.10135, 32.270786, 100, 0, 0),
 (@SGGUID+108, 3, 124.25077, -391.9638, 30.730648, 100, 0, 0),

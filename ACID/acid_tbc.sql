@@ -23417,10 +23417,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1789303','17893','17','0','100','0','17961','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Enchantress launch relay script'),
 -- Coilfang Observer - spell_list
 ('1793805','17938','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Observer - Text on Aggro'),
--- Coilfang Technician 17940
+-- Coilfang Technician 17940 - spell_list
 ('1794001','17940','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Technician - Text on Aggro'),
-('1794002','17940','0','0','100','1027','9400','20500','20500','34100','0','0','11','16005','4','512','0','0','0','0','0','0','0','0','Coilfang Technician (Normal) - Cast Rain of Fire'),
-('1794003','17940','0','0','100','1029','9400','20500','20500','34100','0','0','11','39376','4','512','0','0','0','0','0','0','0','0','Coilfang Technician (Heroic) - Cast Rain of Fire'),
 -- Mennu the Betrayer 17941 - spell_list
 ('1794101','17941','4','0','100','0','0','0','0','0','0','0','1','17888','17890','17889','0','0','0','0','0','0','0','0','Mennu the Betrayer - Yell on Aggro'),
 ('1794102','17941','5','0','100','1','5000','5000','1','0','0','0','1','17892','17893','17893','0','0','0','0','0','0','0','0','Mennu the Betrayer - Yell on Player Kill'),
@@ -23428,7 +23426,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Quagmirran 17942 - spell_list
 -- Coilfang Champion - spell_list
 ('1795701','17957','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Champion - Text on Aggro'),
--- Coilfang Defender (3.0.3 and 4.3.3 Official Data - Normal Only)
+-- Coilfang Defender 17958 - spell_list
 ('1795801','17958','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Defender - Text on Aggro'),
 -- Coilfang Slavehandler 17959 - spell_list
 ('1795901','17959','4','0','100','0','0','0','0','0','0','0','45','5','20','0','1','18972','0','0','0','0','0','0','Coilfang Slavehandler - Send AI Event A and Yell on Aggro'),
@@ -23439,11 +23437,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1796101','17961','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Enchantress - Text on Aggro'),
 ('1796102','17961','37','0','100','1027','32173','0','0','0','0','0','11','32193','1','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Normal) - Cast Lightning Cloud on Entangling Roots'),
 ('1796103','17961','37','0','100','1029','32173','0','0','0','0','0','11','37665','1','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Heroic) - Cast Lightning Cloud on Entangling Roots'),
--- Coilfang Collaborator 17962
+-- Coilfang Collaborator 17962 - spell_list
 ('1796201','17962','11','0','100','0','0','0','0','0','0','0','11','5301','0','34','0','0','0','0','0','0','0','0','Coilfang Collaborator - Cast Defensive State (DND) on Spawn'),
-('1796202','17962','0','0','100','1025','10000','20000','14000','28000','0','0','11','33787','1','0','0','0','0','0','0','0','0','0','Coilfang Collaborator - Cast Cripple'),
-('1796203','17962','0','0','100','1025','3000','12000','5000','15000','0','0','11','19130','1','0','0','0','0','0','0','0','0','0','Coilfang Collaborator - Cast Revenge'),
-('1796204','17962','2','0','100','1025','20','0','120000','120000','0','0','11','8269','0','0','1','1191','0','0','0','0','0','0','Coilfang Collaborator - Cast Frenzy at 20% HP'),
+('1796202','17962','2','0','100','1025','20','0','120000','120000','0','0','11','8269','0','0','1','1191','0','0','0','0','0','0','Coilfang Collaborator - Cast Frenzy at 20% HP'),
 -- Wastewalker Slave 17963 - spell_list
 ('1796301','17963','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Wastewalker Slave - Enable Range Mode on Spawn'),
 ('1796302','17963','27','0','100','1','34880','1','15000','30000','0','0','11','34880','0','0','0','0','0','0','0','0','0','0','Wastewalker Slave - Cast Elemental Armor on Missing Buff'),

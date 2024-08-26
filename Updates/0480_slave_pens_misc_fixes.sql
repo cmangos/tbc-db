@@ -85,6 +85,24 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 19890
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 17960;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 19886;
 
+
+-- Coilfang Technician
+-- Before:  SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 17940;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 19891;
+
+-- Coilfang Collaborator
+-- Before:  SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+--  WalkSpeed: 2.5
+-- RunSpeed: 6.944439888000488281
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 17962;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 19903;
+
+
 -- Correct some broadcast_text
 UPDATE `broadcast_text` SET `ChatTypeID`='1' WHERE (`Id`='15108');
 
@@ -338,3 +356,46 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1795801 WHERE `entry` = 17958;
 UPDATE `creature_template` SET `SpellList` = 1988601 WHERE `entry` = 19886; 
+
+-- Coilfang Technician 
+DELETE FROM `creature_template_spells` WHERE `entry` = 17940;
+DELETE FROM `creature_template_spells` WHERE `entry` = 19891;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1794001, 1989101);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1794001, 'Slave Pens - Coilfang Technician - Normal', 0, 0),
+(1989101, 'Slave Pens - Coilfang Technician - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1794001, 1989101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1794001, 1, 16005, 0, -1, 100, 0, 100, 0, 10000, 24000, 21000, 33000, 'Coilfang Technician - Rain of Fire - random'),
+(1989101, 2, 39376, 0, -1, 100, 0, 100, 0, 10000, 24000, 21000, 33000, 'Coilfang Technician - Rain of Fire - random');
+
+
+UPDATE `creature_template` SET `SpellList` = 1794001 WHERE `entry` = 17940;
+UPDATE `creature_template` SET `SpellList` = 1989101 WHERE `entry` = 19891; 
+
+
+-- Coilfang Collaborator 
+DELETE FROM `creature_template_spells` WHERE `entry` = 17962;
+DELETE FROM `creature_template_spells` WHERE `entry` = 19903;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1796201, 1990301);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1796201, 'Slave Pens - Coilfang Collaborator - Normal', 0, 0),
+(1990301, 'Slave Pens - Coilfang Collaborator - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1796201, 1989101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1796201, 1, 19130, 0, -1, 1, 0, 100, 0, 3000, 17000, 3000, 17000, 'Coilfang Collaborator - Revenge - current'),
+(1796201, 2, 33787, 0, -1, 1, 0, 100, 0, 13000, 25000, 14000, 26000, 'Coilfang Collaborator - Cripple - current'),
+
+(1990301, 1, 19130, 0, -1, 1, 0, 100, 0, 3000, 17000, 3000, 17000, 'Coilfang Collaborator - Revenge - current'),
+(1990301, 2, 33787, 0, -1, 1, 0, 100, 0, 13000, 25000, 14000, 26000, 'Coilfang Collaborator - Cripple - current');
+
+UPDATE `creature_template` SET `SpellList` = 1796201 WHERE `entry` = 17962;
+UPDATE `creature_template` SET `SpellList` = 1990301 WHERE `entry` = 19903; 
+
+
+('1796202','17962','0','0','100','1025','10000','20000','14000','28000','0','0','11','33787','1','0','0','0','0','0','0','0','0','0','Coilfang Collaborator - Cast Cripple'),
+('1796203','17962','0','0','100','1025','3000','12000','5000','15000','0','0','11','19130','1','0','0','0','0','0','0','0','0','0','Coilfang Collaborator - Cast Revenge'),
