@@ -23440,13 +23440,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1796002','17960','0','0','100','1025','15000','45000','30000','60000','0','0','11','35280','5','512','0','0','0','0','0','0','0','0','Coilfang Soothsayer - Cast Domination'),
 ('1796003','17960','0','0','100','1025','12200','19300','26500','42300','0','0','11','31555','16','544','0','0','0','0','0','0','0','0','Coilfang Soothsayer - Cast Decayed Intellect on Random Player Mana User'),
 ('1796004','17960','0','0','100','1025','8000','16000','17000','34000','0','0','11','15790','1','0','0','0','0','0','0','0','0','0','Coilfang Soothsayer - Cast Arcane Missiles'),
--- Coilfang Enchantress 17961 (3.0.3 and 4.3.3 Official Data - Normal Only)
+-- Coilfang Enchantress 17961 - spell_list
 ('1796101','17961','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Enchantress - Text on Aggro'),
-('1796102','17961','0','0','100','1025','5600','19300','18100','26500','0','0','11','32173','4','512','0','0','0','0','0','0','0','0','Coilfang Enchantress - Cast Entangling Roots'),
-('1796103','17961','0','0','100','1027','11200','22500','18100','26500','0','0','11','32193','1','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Normal) - Cast Lightning Cloud'),
-('1796104','17961','0','0','100','1029','11200','22500','18100','26500','0','0','11','37665','1','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Heroic) - Cast Lightning Cloud'),
-('1796105','17961','0','0','100','1027','4700','14700','21700','25300','0','0','11','15234','1','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Normal) - Cast Lightning Bolt'),
-('1796106','17961','0','0','100','1029','4700','14700','21700','25300','0','0','11','37664','1','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Heroic) - Cast Lightning Bolt'),
+('1796102','17961','37','0','100','1027','32173','0','0','0','0','0','11','32193','1','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Normal) - Cast Lightning Cloud on Entangling Roots'),
+('1796103','17961','37','0','100','1029','32173','0','0','0','0','0','11','37665','1','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Heroic) - Cast Lightning Cloud on Entangling Roots'),
 -- Coilfang Collaborator 17962
 ('1796201','17962','11','0','100','0','0','0','0','0','0','0','11','5301','0','34','0','0','0','0','0','0','0','0','Coilfang Collaborator - Cast Defensive State (DND) on Spawn'),
 ('1796202','17962','0','0','100','1025','10000','20000','14000','28000','0','0','11','33787','1','0','0','0','0','0','0','0','0','0','Coilfang Collaborator - Cast Cripple'),
@@ -23457,9 +23454,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1796302','17963','27','0','100','1','34880','1','15000','30000','0','0','11','34880','0','0','0','0','0','0','0','0','0','0','Wastewalker Slave - Cast Elemental Armor on Missing Buff'),
 ('1796303','17963','2','0','100','1024','25','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Wastewalker Slave - Flee at 25% HP'),
 ('1796304','17963','30','0','100','1','5','17959','0','0','0','0','2','16','3','0','38','0','0','0','0','0','0','0','Wastewalker Slave - Set Faction to 16 and Zone Combat Pulse on Receive AI Event A'),
+('1796305','17963','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Slave - Evade, Start relayScript and remove threat on Receive AI Event C'),
 -- Wastewalker Worker 17964 - spell_list
 ('1796401','17964','2','0','100','0','25','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Wastewalker Worker - Flee at 25% HP'),
 ('1796402','17964','30','0','100','1','5','17959','0','0','0','0','2','16','3','0','38','0','0','0','0','0','0','0','Wastewalker Worker - Set Faction to 16 and Zone Combat Pulse on Receive AI Event A'),
+('1796403','17964','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
 -- Rokmar the Crackler 17991 - spell_list
 ('1799101','17991','37','0','100','1','34970','0','0','0','0','0','1','2384','0','0','0','0','0','0','0','0','0','0','Rokmar the Crackler - Emote on Enrage'),
 -- Mennu Earthgrab Totem - TotemAI
@@ -23508,13 +23507,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ahune Ice Spear Bunny 25985 - npc_ice_spear_bunny
 -- [PH] Spank Target Bunny 26190
 ('2619001','26190','8','0','100','1','46735','-1','0','0','0','0','11','46734','6','0','0','0','0','0','0','0','0','0','Spank Target Bunny - Cast Spank - Knock To on Spank - Force Bunny To Knock You To spellhit'),
--- Guid based
-('5470132','-5470132','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
-('5470133','-5470133','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
-('5470134','-5470134','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
-('5470118','-5470118','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
-('5470136','-5470136','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
-('5470143','-5470143','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
 
 -- ==================================
 -- Coilfang Reservoir: The Steamvault

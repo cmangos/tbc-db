@@ -40,10 +40,33 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry
 -- Before:  SpeedWalk = 1,125 SpeedRun = 1,14286
 -- Sniff:
 -- WalkSpeed: 2.5
--- RunSpeed: 6.944439888000488281
--- UNIT_FIELD_FACTIONTEMPLATE: 190/2.66E-43 (190)
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 17963;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 19902;
+
+
+-- Coilfang Champion
+-- Before:  SpeedWalk = 1,48 SpeedRun = 1
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 17957;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 19885;
+
+-- Coilfang Enchantress
+-- Before:  SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 17961;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 19887;
+
+-- Coilfang Ray
+-- Before:  SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 21128;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 21841;
 
 -- Correct some broadcast_text
 UPDATE `broadcast_text` SET `ChatTypeID`='1' WHERE (`Id`='15108');
@@ -185,8 +208,8 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1793801, 2, 17883, 0, -1, 130, 0, 100, 0, 10000, 25000, 10000, 25000, 'Coilfang Observer - Immolate - top aggro aura not present'),
 (1793801, 1, 32191, 0, -1, 1, 0, 100, 0, 12000, 28000, 20000, 30000, 'Coilfang Observer - Heavy Dynamite - current'),
 
-(1793801, 2, 37668, 0, -1, 130, 0, 100, 0, 10000, 25000, 10000, 25000, 'Coilfang Observer - Immolate - top aggro aura not present'),
-(1793801, 1, 37666, 0, -1, 1, 0, 100, 0, 12000, 28000, 20000, 30000, 'Coilfang Observer - Heavy Dynamite - current');
+(1988801, 2, 37668, 0, -1, 130, 0, 100, 0, 10000, 25000, 10000, 25000, 'Coilfang Observer - Immolate - top aggro aura not present'),
+(1988801, 1, 37666, 0, -1, 1, 0, 100, 0, 12000, 28000, 20000, 30000, 'Coilfang Observer - Heavy Dynamite - current');
 
 UPDATE `creature_template` SET `SpellList` = 1793801 WHERE `entry` = 17938;
 UPDATE `creature_template` SET `SpellList` = 1988801 WHERE `entry` = 19888;
@@ -234,3 +257,23 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2112801 WHERE `entry` = 21128;
 UPDATE `creature_template` SET `SpellList` = 2184101 WHERE `entry` = 21841; 
+
+-- Coilfang Enchantress 
+DELETE FROM `creature_template_spells` WHERE `entry` = 17961;
+DELETE FROM `creature_template_spells` WHERE `entry` = 19887;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1796101, 1988701);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1796101, 'Slave Pens - Coilfang Enchantress - Normal', 0, 0),
+(1988701, 'Slave Pens - Coilfang Enchantress - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1796101, 1988701);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1796101, 1, 32173, 0, -1, 1, 0, 100, 0, 12000, 23000, 19000, 28000, 'Coilfang Enchantress - Entangling Roots - current'),
+(1796101, 2, 15234, 0, -1, 1, 0, 100, 0, 8000, 18000, 20000, 26000, 'Coilfang Enchantress - Lightning Bolt - current'),
+
+(1988701, 1, 32173, 0, -1, 1, 0, 100, 0, 12000, 23000, 19000, 28000, 'Coilfang Enchantress - Entangling Roots - current'),
+(1988701, 2, 37664, 0, -1, 1, 0, 100, 0, 8000, 18000, 20000, 26000, 'Coilfang Enchantress - Lightning Bolt - current');
+
+UPDATE `creature_template` SET `SpellList` = 1796101 WHERE `entry` = 17961;
+UPDATE `creature_template` SET `SpellList` = 1988701 WHERE `entry` = 19887; 
