@@ -23435,11 +23435,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Coilfang Slavehandler 17959 - spell_list
 ('1795901','17959','4','0','100','0','0','0','0','0','0','0','45','5','20','0','1','18972','0','0','0','0','0','0','Coilfang Slavehandler - Send AI Event A and Yell on Aggro'),
 ('1795902','17959','6','0','100','0','0','0','0','0','0','0','45','6','25','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Send AI Event B on Death'),
--- Coilfang Soothsayer 17960 (3.0.3 and 4.3.3 Official Data - Normal Only)
+-- Coilfang Soothsayer 17960 - spell_list
 ('1796001','17960','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Soothsayer - Text on Aggro'),
-('1796002','17960','0','0','100','1025','15000','45000','30000','60000','0','0','11','35280','5','512','0','0','0','0','0','0','0','0','Coilfang Soothsayer - Cast Domination'),
-('1796003','17960','0','0','100','1025','12200','19300','26500','42300','0','0','11','31555','16','544','0','0','0','0','0','0','0','0','Coilfang Soothsayer - Cast Decayed Intellect on Random Player Mana User'),
-('1796004','17960','0','0','100','1025','8000','16000','17000','34000','0','0','11','15790','1','0','0','0','0','0','0','0','0','0','Coilfang Soothsayer - Cast Arcane Missiles'),
 -- Coilfang Enchantress 17961 - spell_list
 ('1796101','17961','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Enchantress - Text on Aggro'),
 ('1796102','17961','37','0','100','1027','32173','0','0','0','0','0','11','32193','1','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Normal) - Cast Lightning Cloud on Entangling Roots'),
