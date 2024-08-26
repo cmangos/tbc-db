@@ -23415,11 +23415,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1789301','17893','17','0','100','0','17957','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Champion launch relay script'),
 ('1789302','17893','17','0','100','0','17960','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Soothsayer launch relay script'),
 ('1789303','17893','17','0','100','0','17961','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Enchantress launch relay script'),
--- Coilfang Observer (3.0.3 and 4.3.3 Official Data - Normal Only)
-('1793801','17938','0','0','100','1027','9700','20500','27700','39800','0','0','11','17883','1','0','0','0','0','0','0','0','0','0','Coilfang Observer (Normal) - Cast Immolate'),
-('1793802','17938','0','0','100','1029','9700','20500','27700','39800','0','0','11','37668','1','0','0','0','0','0','0','0','0','0','Coilfang Observer (Heroic) - Cast Immolate'),
-('1793803','17938','0','0','100','1027','9600','21700','10900','21700','0','0','11','32191','1','0','0','0','0','0','0','0','0','0','Coilfang Observer (Normal) - Cast Heavy Dynamite'),
-('1793804','17938','0','0','100','1029','9600','21700','10900','21700','0','0','11','37666','1','0','0','0','0','0','0','0','0','0','Coilfang Observer (Heroic) - Cast Heavy Dynamite'),
+-- Coilfang Observer - spell_list
 ('1793805','17938','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Observer - Text on Aggro'),
 -- Coilfang Technician 17940
 ('1794001','17940','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Technician - Text on Aggro'),
@@ -23475,20 +23471,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wastewalker Captive 18206
 ('1820601','18206','10','0','20','1','1','15','0','1','0','0','54','0','0','12003','0','0','0','0','0','0','0','0','Wastewalker Captive - Random Say on OOC LOS'),
 -- Mennu Healing Ward - TotemAI
--- Coilfang Scale-Healer (3.0.3 and 4.3.3 Official Data - Normal Only)
-('2112601','21126','0','0','100','1027','3600','9200','12100','13400','0','0','11','34944','0','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer (Normal) - Cast Holy Nova'),
-('2112602','21126','0','0','100','1029','3600','9200','12100','13400','0','0','11','37669','0','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer (Heroic) - Cast Holy Nova'),
-('2112603','21126','16','0','100','1027','17139','15','7200','13300','0','0','11','17139','12','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer (Normal) - Cast Power Word: Shield on Friendly Missing Buff'),
-('2112604','21126','16','0','100','1029','36052','15','7200','13300','0','0','11','36052','12','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer (Heroic) - Cast Power Word: Shield on Friendly Missing Buff'),
-('2112605','21126','14','0','100','1027','4000','40','12000','16000','0','0','11','34945','12','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer (Normal) - Cast Heal on Friendly Missing HP'),
-('2112606','21126','14','0','100','1029','8000','40','12000','16000','0','0','11','39378','12','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer (Heroic) - Cast Heal on Friendly Missing HP'),
+-- Coilfang Scale-Healer - spell_list
 ('2112607','21126','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Scale-Healer - Text on Aggro'),
 -- Coilfang Tempest (3.0.3 and 4.3.4 Official Data - Normal Only)
 ('2112701','21127','0','0','100','1025','4900','10800','6100','14900','0','0','11','15667','1','0','0','0','0','0','0','0','0','0','Coilfang Tempest - Cast Sinister Strike'),
 ('2112702','21127','0','0','100','1025','10800','22900','26900','44600','0','0','11','36872','4','544','0','0','0','0','0','0','0','0','Coilfang Tempest - Cast Deadly Poison'),
 ('2112703','21127','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Tempest - Text on Aggro'),
--- Coilfang Ray 21128 (3.0.3 and 4.3.3 Official Data - Normal Only)
-('2112801','21128','0','0','100','1025','1300','4900','12100','21300','0','0','11','34984','5','544','0','0','0','0','0','0','0','0','Coilfang Ray - Cast Psychic Horror'),
+-- Coilfang Ray 21128 - spell_list
 -- Skar'this the Heretic 22421 - npc_quest_attunement
 -- Ahune (25740) - boss_ahune
 -- Ahunite Hailstone 25755

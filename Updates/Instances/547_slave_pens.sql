@@ -59,7 +59,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+37, 17893, 547, 3, -192.1564, -799.5793, 43.89159, 1.239184, 86400, 86400, 0, 0), -- Naturalist Bite
 (@CGUID+38, 17938, 547, 3, -67.44096, -551.6196, -1.161117, 4.928274, 7200, 7200, 2, 1), -- Coilfang Observer
 (@CGUID+39, 17938, 547, 3, -119.257, -592.661, 7.43123, 5.27387, 7200, 7200, 0, 2), -- Coilfang Observer
-(@CGUID+40, 17938, 547, 3, -127.1415, -144.4277, -1.803136, 0.8552113, 7200, 7200, 0, 0), -- Coilfang Observer
+(@CGUID+40, 17938, 547, 3, -127.141, -144.428, -1.80314, 0.855211, 7200, 7200, 0, 0), -- Coilfang Observer
 (@CGUID+41, 17938, 547, 3, -84.87788, -503.3429, -1.509169, 3.281219, 7200, 7200, 0, 0), -- Coilfang Observer
 (@CGUID+42, 17940, 547, 3, 75.6859, -408.286, 36.5226, 0.270867, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+43, 17940, 547, 3, 116.661, -344.144, 3.03553, 3.62301, 7200, 7200, 0, 0), -- Coilfang Technician
@@ -83,7 +83,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+61, 0, 547, 3, -86.5601, -724.672, 37.0945, 1.76082, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+62, 17957, 547, 3, -162.7924, -463.4172, 3.205104, 1.919862, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+63, 17957, 547, 3, -158.5233, -447.8588, 3.040779, 3.665191, 7200, 7200, 0, 0), -- Coilfang Champion
-(@CGUID+64, 17957, 547, 3, -118.9584, -152.85, -1.957283, 0.4886922, 7200, 7200, 0, 0), -- Coilfang Champion
+(@CGUID+64, 17957, 547, 3, 108.541, -93.6543, -1.49829, 3.42366, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+65, 17957, 547, 3, -83.79871, -585.3203, 1.376997, 1.37881, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+66, 17957, 547, 3, -77.88522, -592.5287, 2.310318, 5.951573, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+67, 17938, 547, 3, -175.9361, -769.604, 41.94263, 5.431209, 7200, 7200, 3, 1), -- Coilfang Observer
@@ -115,7 +115,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+93, 17940, 547, 3, -226.913, -394.971, 3.03554, 3.71478, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+94, 17957, 547, 3, -84.6656, -724.307, 36.8609, 1.76082, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+95, 0, 547, 3, -86.6703, -223.546, -1.16106, 1.65547, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+96, 0, 547, 3, -121.849, -147.4496, -1.981267, 1.082104, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+96, 21126, 547, 3, -121.849, -147.45, -1.98127, 1.0821, 7200, 7200, 0, 0), -- Coilfang Scale-Healer
 (@CGUID+97, 17961, 547, 3, -76.53473, -588.3738, 1.945644, 0.4363323, 7200, 7200, 0, 0), -- Coilfang Enchantress
 (@CGUID+98, 17962, 547, 3, 127.8732, -308.6316, 3.035726, 0.04372006, 7200, 7200, 3, 1), -- Coilfang Collaborator
 (@CGUID+99, 17962, 547, 3, 47.6951, -371.659, 3.03565, 3.24992, 7200, 7200, 3, 1), -- Coilfang Collaborator
@@ -269,7 +269,6 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+89, 17960), (@CGUID+89, 21126), -- Coilfang Soothsayer, Coilfang Scale-Healer
 (@CGUID+91, 17960), (@CGUID+91, 17961), -- Coilfang Soothsayer, Coilfang Enchantress
 (@CGUID+95, 17960), (@CGUID+95, 17961), -- Coilfang Soothsayer, Coilfang Enchantress
-(@CGUID+96, 17961), (@CGUID+96, 21126), -- Coilfang Enchantress, Coilfang Scale-Healer
 (@CGUID+114, 17963), (@CGUID+114, 17964), -- Wastewalker Slave, Wastewalker Worker
 (@CGUID+123, 17963), (@CGUID+123, 17964), -- Wastewalker Slave, Wastewalker Worker
 (@CGUID+131, 17963), (@CGUID+131, 17964), -- Wastewalker Slave, Wastewalker Worker
@@ -722,13 +721,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- new
 (@SGGUID+1, 'Slave Pens - Group 001 - Greater Bogstrok (2) | Bogstrok - Patrol 001', 0, 3, 0, 1, 0),
 (@SGGUID+2, 'Slave Pens - Group 002 - Greater Bogstrok (2) | Bogstrok - Patrol 002', 0, 3, 0, 1, 0),
-
 (@SGGUID+3, 'Slave Pens - Group 003 - Wastewalker Worker (3)', 0, 0, 0, 1, @STRINGID+1),
 (@SGGUID+4, 'Slave Pens - Group 004 - Wastewalker Worker | Wastewalker Slave', 0, 0, 0, 1, @STRINGID+2), -- 1 static Wastewalker Worker, 2 spawn-group_entry
-
 (@SGGUID+5, 'Slave Pens - Group 005 - Coilfang Champion (2) - Patrol 003', 0, 0, 0, 1, 0),
-
 (@SGGUID+6, 'Slave Pens - Group 006 - Wastewalker Worker | Wastewalker Slave', 0, 0, 0, 0, 0), 
+(@SGGUID+7, 'Slave Pens - Group 007 - Coilfang Champion | Coilfang Ray | Coilfang Observer | Coilfang Scale-Healery', 0, 0, 0, 1, 0),
 
 -- old
 (@SGGUID+102, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) - Patrol 001', 0, 0, 0, 3, 0),
@@ -814,6 +811,11 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+6, @CGUID+115, -1), -- spawn_group_entry
 (@SGGUID+6, @CGUID+142, -1), -- spawn_group_entry
 
+(@SGGUID+7, @CGUID+64, 0), -- Coilfang Champion
+(@SGGUID+7, @CGUID+40, 1), -- Coilfang Observer
+(@SGGUID+7, @CGUID+96, 2), -- Coilfang Scale-Healery
+(@SGGUID+7, @CGUID+207, 3), -- Coilfang Ray
+
 -- creatures
 (@SGGUID+102, @CGUID+59, 0), -- Coilfang Champion
 (@SGGUID+102, @CGUID+88, 1), -- Coilfang Soothsayer, Coilfang Enchantress
@@ -850,10 +852,8 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1014, @CGUID+93, 0), -- Coilfang Technician
 (@SGGUID+1014, @CGUID+49, 1), -- Coilfang Technician
 (@SGGUID+1014, @CGUID+51, 2), -- Coilfang Enchantress
-(@SGGUID+1019, @CGUID+64, -1), -- Coilfang Champion
-(@SGGUID+1019, @CGUID+40, -1), -- Coilfang Observer
-(@SGGUID+1019, @CGUID+96, -1), -- Coilfang Enchantress/Coilfang Scale-Healery
-(@SGGUID+1019, @CGUID+207, -1), -- Coilfang Ray
+
+
 (@SGGUID+1023, @CGUID+83, -1), -- Coilfang Slavehandler
 (@SGGUID+1023, @CGUID+119, -1), -- Wastewalker Slave
 (@SGGUID+1023, @CGUID+140, -1), -- Wastewalker Worker

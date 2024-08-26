@@ -169,3 +169,68 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1795701 WHERE `entry` = 17957;
 UPDATE `creature_template` SET `SpellList` = 1988501 WHERE `entry` = 19885;
+
+
+-- Coilfang Observer
+DELETE FROM `creature_template_spells` WHERE `entry` = 17938;
+DELETE FROM `creature_template_spells` WHERE `entry` = 19888;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1793801, 1988801);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1793801, 'Slave Pens - Coilfang Observer - Normal', 0, 0),
+(1988801, 'Slave Pens - Coilfang Observer - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1793801, 1988801);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1793801, 2, 17883, 0, -1, 130, 0, 100, 0, 10000, 25000, 10000, 25000, 'Coilfang Observer - Immolate - top aggro aura not present'),
+(1793801, 1, 32191, 0, -1, 1, 0, 100, 0, 12000, 28000, 20000, 30000, 'Coilfang Observer - Heavy Dynamite - current'),
+
+(1793801, 2, 37668, 0, -1, 130, 0, 100, 0, 10000, 25000, 10000, 25000, 'Coilfang Observer - Immolate - top aggro aura not present'),
+(1793801, 1, 37666, 0, -1, 1, 0, 100, 0, 12000, 28000, 20000, 30000, 'Coilfang Observer - Heavy Dynamite - current');
+
+UPDATE `creature_template` SET `SpellList` = 1793801 WHERE `entry` = 17938;
+UPDATE `creature_template` SET `SpellList` = 1988801 WHERE `entry` = 19888;
+
+
+
+-- Coilfang Scale-Healer
+DELETE FROM `creature_template_spells` WHERE `entry` = 21126;
+DELETE FROM `creature_template_spells` WHERE `entry` = 21842;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2112601, 2184201);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2112601, 'Slave Pens - Coilfang Scale-Healer - Normal', 0, 0),
+(2184201, 'Slave Pens - Coilfang Scale-Healer - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2112601, 2184201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2112601, 1, 34945, 0, -1, 206, 0, 100, 0, 2000, 8000, 6000, 12000, 'Coilfang Scale-Healer - Heal - friendly missing 25% incl self'),
+(2112601, 2, 17139, 0, -1, 5, 0, 100, 0, 5000, 16000, 6000, 18000, 'Coilfang Scale-Healer - Power Word: Shield - friendly missing bugg incl self'),
+(2112601, 3, 34944, 0, -1, 2, 0, 100, 0, 3000, 12000, 10000, 21000, 'Coilfang Scale-Healer - Holy Nova - self'),
+
+(2184201, 1, 39378, 0, -1, 206, 0, 100, 0, 2000, 8000, 6000, 12000, 'Coilfang Scale-Healer - Heal - friendly missing 25% incl self'),
+(2184201, 2, 36052, 0, -1, 5, 0, 100, 0, 5000, 16000, 6000, 18000, 'Coilfang Scale-Healer - Power Word: Shield - friendly missing bugg incl self'),
+(2184201, 3, 37669, 0, -1, 2, 0, 100, 0, 3000, 12000, 10000, 21000, 'Coilfang Scale-Healer - Holy Nova - self');
+
+
+UPDATE `creature_template` SET `SpellList` = 2112601 WHERE `entry` = 21126;
+UPDATE `creature_template` SET `SpellList` = 2184201 WHERE `entry` = 21842; 
+
+
+-- Coilfang Ray 
+DELETE FROM `creature_template_spells` WHERE `entry` = 21128;
+DELETE FROM `creature_template_spells` WHERE `entry` = 21841;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2112801, 2184101);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2112801, 'Slave Pens - Coilfang Ray - Normal', 0, 0),
+(2184101, 'Slave Pens - Coilfang Ray - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2112801, 2184101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2112801, 1, 34984, 0, -1, 101, 0, 100, 0, 5000, 15000, 6000, 16000, 'Coilfang Ray - Psychic Horror - Attack - random player non tank'),
+(2184101, 1, 34984, 0, -1, 101, 0, 100, 0, 5000, 15000, 6000, 16000, 'Coilfang Ray - Psychic Horror - Attack - random player non tank');
+
+
+UPDATE `creature_template` SET `SpellList` = 2112801 WHERE `entry` = 21128;
+UPDATE `creature_template` SET `SpellList` = 2184101 WHERE `entry` = 21841; 
