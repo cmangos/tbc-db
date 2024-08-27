@@ -104,7 +104,11 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry
 
 
 -- Correct some broadcast_text
-UPDATE `broadcast_text` SET `ChatTypeID`='1' WHERE (`Id`='15108');
+UPDATE broadcast_text SET ChatTypeID = '1' WHERE Id = '15108';
+
+-- Delete some unused randomdb script
+DELETE FROM dbscript_random_templates WHERE id = 12003;
+
 
 -- -----------
 -- SpellLists
@@ -314,6 +318,9 @@ UPDATE `creature_template` SET `SpellList` = 1796101 WHERE `entry` = 17961;
 UPDATE `creature_template` SET `SpellList` = 1988701 WHERE `entry` = 19887; 
 
 -- Coilfang Soothsayer 
+DELETE FROM creature_spell_targeting WHERE Id = 131;
+INSERT INTO `creature_spell_targeting` (`Id`, `Type`, `Param1`, `Param2`, `Param3`, `Comments`) VALUES ('131', '1', '0', '0', '518', 'Attack - random player mana user aura not present');
+
 DELETE FROM `creature_template_spells` WHERE `entry` = 17960;
 DELETE FROM `creature_template_spells` WHERE `entry` = 19890;
 
@@ -325,11 +332,11 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1796001, 1989001);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (1796001, 1, 35280, 0, -1, 101, 0, 100, 0, 15000, 45000, 26500, 60000, 'Coilfang Soothsayer - Domination - random player non tank'),
-(1796001, 2, 31555, 0, -1, 105, 0, 100, 0, 11000, 24000, 21000, 35000, 'Coilfang Soothsayer - Decayed Intellect - random player mana user'),
+(1796001, 2, 31555, 0, -1, 131, 0, 100, 0, 11000, 24000, 21000, 35000, 'Coilfang Soothsayer - Decayed Intellect - random player mana user aura not present'),
 (1796001, 3, 15790, 0, -1, 1, 0, 100, 0, 5000, 22000, 16000, 32000, 'Coilfang Soothsayer - Arcane Missiles - current'),
 
 (1989001, 1, 35280, 0, -1, 101, 0, 100, 0, 15000, 45000, 26500, 60000, 'Coilfang Soothsayer - Domination - random player non tank'),
-(1989001, 2, 31555, 0, -1, 105, 0, 100, 0, 11000, 24000, 21000, 35000, 'Coilfang Soothsayer - Decayed Intellect - random player mana user'),
+(1989001, 2, 31555, 0, -1, 131, 0, 100, 0, 11000, 24000, 21000, 35000, 'Coilfang Soothsayer - Decayed Intellect - random player mana user aura not present'),
 (1989001, 3, 15790, 0, -1, 1, 0, 100, 0, 5000, 22000, 16000, 32000, 'Coilfang Soothsayer - Arcane Missiles - current');
 
 UPDATE `creature_template` SET `SpellList` = 1796001 WHERE `entry` = 17960;

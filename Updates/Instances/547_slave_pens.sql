@@ -3,7 +3,7 @@ DBName: Coilfang Reservoir - The Slave Pens
 DBScriptName: -
 DB%Complete: 90
 DBComment:
-* Wastewalker Captive should randomly sit (either via creature_addon or acid) and stand up when they say their text (acid), update when behavior is found out, also have LOS issue for their text ai, do it doesnt execute
+Wastewalker Captive should only talk OOC if players are in a ~20 yards range, need AI adjustments
 EndDBScriptData */
 
 SET @CGUID := 5470000; -- creatures
@@ -274,10 +274,10 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+46, 2, 138.39915,-456.38684,3.0356631, 100, 10000, 0), -- random waittimer between 8-12 seconds
 (@CGUID+46, 3, 128.1114,-475.59592,3.035659,3.63028, 10000, 0), -- random waittimer between 8-12 seconds
 (@CGUID+46, 4, 143.49129,-463.94656,3.035671,0.99483, 10000, 0), -- random waittimer between 8-12 seconds
-(@CGUID+80, 1, -38.087578,-297.45834,-1.3999375, 100, 0, 0),
-(@CGUID+80, 2, -41.325123,-284.97256,-1.2997084, 100, 0, 0),
-(@CGUID+80, 3, -49.053898,-276.486,-1.0135521, 100, 0, 0),
-(@CGUID+80, 4, -58.623344,-272.43045,-1.2523658, 100, 0, 0),
+(@CGUID+80, 1, -38.087578,-297.45834,-1.3999375, 100, 1, 1795902),
+(@CGUID+80, 2, -41.325123,-284.97256,-1.2997084, 100, 1, 1795902),
+(@CGUID+80, 3, -49.053898,-276.486,-1.0135521, 100, 1, 1795902),
+(@CGUID+80, 4, -58.623344,-272.43045,-1.2523658, 100, 1, 1795902),
 (@CGUID+81, 1, -78.4796,-246.30057,-2.9249973, 100, 0, 0),
 (@CGUID+81, 2, -70.96448,-251.71724,-2.9398856, 100, 0, 0),
 (@CGUID+81, 3, -61.78871,-253.90524,-3.2789962, 100, 0, 0),
@@ -1000,7 +1000,6 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+19, 3, 4, 0, @SGGUID+19, 4, 'Slave Pens - Group 019 - Coilfang Technician (2) - Patrol 007'),
 
 -- old
-(@SGGUID+103, 3, 4, 0, @SGGUID+103, 4, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 002'),
 (@SGGUID+104, 2, 4, 0, @SGGUID+104, 4, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) Patrol 003'),
 (@SGGUID+105, 2, 4, 0, @SGGUID+105, 4, 'Slave Pens - Coilfang Defender (2) Patrol 000'),
 (@SGGUID+106, 2, 4, 0, @SGGUID+106, 4, 'Slave Pens - Coilfang Defender (2) Patrol 001'),
@@ -1144,8 +1143,10 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+2,'Slave Pens - Group 002 - Greater Bogstrok (2) | Bogstrok - Patrol 002'),
 (@SGGUID+5,'Slave Pens - Group 005 - Coilfang Champion (2) - Patrol 003'),
 (@SGGUID+8, 'Slave Pens - Group 008 - Coilfang Champion | Coilfang Enchantress - Patrol 005'),
+(@SGGUID+13, 'SSlave Pens - Group 013 - Coilfang Champion | Coilfang Enchantress | Soothsayer - Patrol 006'),
+(@SGGUID+19, 'Slave Pens - Group 019 - Coilfang Technician (2) - Patrol 007'),
+
 -- old
-(@SGGUID+103,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 002'),
 (@SGGUID+104,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) Patrol 003'),
 (@SGGUID+105,'Slave Pens - Coilfang Defender (2) Patrol 000'),
 (@SGGUID+106,'Slave Pens - Coilfang Defender (2) Patrol 001'),
@@ -1289,7 +1290,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+4,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler - Emote Talk'),
 (@RELAYID+4,0,1,0,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler - Random Yell');
 
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+4;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+5;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Shattered Hand Legionnaire 001 script
 (@RELAYID+1, 0, 18713, 0, 'Slave Pens - Wastewalker Slave/Wastewalker Worker random yell'),
@@ -1301,15 +1302,18 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 -- Coilfang Slavehandler
 (@RELAYID+2, 1, @RELAYID+2, 10, 'Coilfang Slavehandler - 10% chance for random RP'),
 (@RELAYID+2, 1, 0, 90, 'Coilfang Slavehandler - 90% nothing'),
-
 (@RELAYID+3, 1, @RELAYID+4, 10, 'Coilfang Slavehandler - 10% chance for random Yell'),
 (@RELAYID+3, 1, 0, 90, 'Coilfang Slavehandler - 90% nothing'),
-
 (@RELAYID+4, 0, 14404, 0, 'Coilfang Slavehandler - random yell'),
 (@RELAYID+4, 0, 14412, 0, 'Coilfang Slavehandler - random yell'),
 (@RELAYID+4, 0, 14413, 0, 'Coilfang Slavehandler - random yell'),
 (@RELAYID+4, 0, 14414, 0, 'Coilfang Slavehandler - random yell'),
-(@RELAYID+4, 0, 14415, 0, 'Coilfang Slavehandler - random yell');
+(@RELAYID+4, 0, 14415, 0, 'Coilfang Slavehandler - random yell'),
+-- Wastewalker Captive random say on ooc los
+(@RELAYID+5, 0, 15103, 0, 'Coilfang Slavehandler - random say'),
+(@RELAYID+5, 0, 15106, 0, 'Coilfang Slavehandler - random say'),
+(@RELAYID+5, 0, 15107, 0, 'Coilfang Slavehandler - random say');
+
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1795901, 1795902, 1796301, 1796401);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

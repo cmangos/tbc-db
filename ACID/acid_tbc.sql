@@ -23459,7 +23459,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1817902','18179','29','0','100','0','8000','8000','0','0','0','0','11','33132','15','7','41','1400','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Fire Nova and Delayed Despawn on Generic Timer'),
 ('1817903','18179','2','0','100','1024','99','0','0','0','0','0','11','33132','15','6','41','1400','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Fire Nova and Delayed Despawn on Damage'),
 -- Wastewalker Captive 18206
-('1820601','18206','10','0','20','1','1','15','0','1','0','0','54','0','0','12003','0','0','0','0','0','0','0','0','Wastewalker Captive - Random Say on OOC LOS'),
+('1820601','18206','1','0','20','1','1000','60000','30000','110000','1','0','54','0','0','5470005','0','0','0','0','0','0','0','0','Wastewalker Captive - Random Say OOC'),
+('1820602','18206','1','0','100','1','0','60000','40000','80000','0','0','5','16','0','0','0','0','0','0','0','0','0','0','Wastewalker Captive - Emote Kneel OOC'),
 -- Mennu Healing Ward - TotemAI
 -- Coilfang Scale-Healer - spell_list
 ('2112607','21126','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Scale-Healer - Text on Aggro'),
