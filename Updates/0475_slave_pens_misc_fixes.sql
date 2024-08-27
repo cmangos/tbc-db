@@ -430,10 +430,10 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 DELETE FROM `creature_spell_list` WHERE `Id` IN (2112701, 2184301);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (2112701, 1, 36872, 0, -1, 130, 0, 100, 0, 10000, 22000, 10000, 22000, 'Coilfang Tempest - Deadly Poison - top aggro aura not present'),
-(2112701, 2, 15667, 0, -1, 1, 0, 100, 0, 6000, 21000, 6000, 21000 'Coilfang Tempest - Sinister Strike - current'),
+(2112701, 2, 15667, 0, -1, 1, 0, 100, 0, 6000, 21000, 6000, 21000, 'Coilfang Tempest - Sinister Strike - current'),
 
 (2184301, 1, 36872, 0, -1, 130, 0, 100, 0, 10000, 22000, 10000, 22000, 'Coilfang Tempest - Deadly Poison - top aggro aura not present'),
-(2184301, 2, 15667, 0, -1, 1, 0, 100, 0, 6000, 21000, 6000, 21000 'Coilfang Tempest - Sinister Strike - current');
+(2184301, 2, 15667, 0, -1, 1, 0, 100, 0, 6000, 21000, 6000, 21000, 'Coilfang Tempest - Sinister Strike - current');
 
 UPDATE `creature_template` SET `SpellList` = 2112701 WHERE `entry` = 21127;
 UPDATE `creature_template` SET `SpellList` = 2184301 WHERE `entry` = 21843; 
