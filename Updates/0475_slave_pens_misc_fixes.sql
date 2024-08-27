@@ -110,6 +110,15 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 21127;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 21843;
 
+-- Coilfang Scale-Healer
+-- Before:  SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 7
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 21126;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 21842;
+
+
 -- Rokmar the Crackler
 -- Before:  SpeedWalk = 1,48 SpeedRun = 1,14286
 -- Sniff:

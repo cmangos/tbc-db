@@ -23424,7 +23424,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1820602','18206','1','0','100','1','0','60000','40000','80000','0','0','5','16','0','0','0','0','0','0','0','0','0','0','Wastewalker Captive - Emote Kneel OOC'),
 -- Mennu Healing Ward - TotemAI
 -- Coilfang Scale-Healer 21126 - spell_list
-('2112607','21126','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Scale-Healer - Text on Aggro'),
+('2112601','21126','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Scale-Healer - Text on Aggro'),
+('2112602','-5470089','1','0','100','1','1000','10000','50000','600000','0','0','53','5470005','0','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer - Start RelayScript OOC'),
 -- Coilfang Tempest - spell_list
 ('2112701','21127','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Tempest - Text on Aggro'),
 -- Coilfang Ray 21128 - spell_list

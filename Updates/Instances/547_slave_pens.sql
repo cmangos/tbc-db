@@ -56,7 +56,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+36, 17890, 547, 3, -294.5036, -380.8706, 30.58193, 1.32645, 86400, 86400, 0, 0), -- Weeder Greenthumb
 (@CGUID+37, 17893, 547, 3, -192.1564, -799.5793, 43.89159, 1.239184, 86400, 86400, 0, 0), -- Naturalist Bite
 (@CGUID+38, 17938, 547, 3, -67.44096, -551.6196, -1.161117, 4.928274, 7200, 7200, 2, 1), -- Coilfang Observer
-(@CGUID+39, 17938, 547, 3, -119.257, -592.661, 7.43123, 5.27387, 7200, 7200, 0, 2), -- Coilfang Observer
+(@CGUID+39, 17938, 547, 3, -119.428, -595.805, 8.45653, 5.32325, 7200, 7200, 0, 0), -- Coilfang Observer
 (@CGUID+40, 17938, 547, 3, -127.141, -144.428, -1.80314, 0.855211, 7200, 7200, 0, 0), -- Coilfang Observer
 (@CGUID+41, 17938, 547, 3, -84.8779, -503.343, -1.50917, 3.28122, 7200, 7200, 0, 0), -- Coilfang Observer
 (@CGUID+42, 17940, 547, 3, 75.5067, -354.146, 36.646, 6.15157, 7200, 7200, 0, 0), -- Coilfang Technician
@@ -106,7 +106,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- (@CGUID+86, RE-USE
 (@CGUID+87, 17960, 547, 3, -127.598, -266.238, -1.49976, 1.29448, 7200, 7200, 0, 0), -- Coilfang Soothsayer
 (@CGUID+88, 17961, 547, 3, -92.2789, -224.129, -1.22842, 1.73087, 7200, 7200, 0, 0), -- Coilfang Enchantress
-(@CGUID+89, 0, 547, 3, -112.68, -587.462, 5.10565, 0.116737, 7200, 7200, 0, 2), -- creature_spawn_entry
+(@CGUID+89, 21126, 547, 3, -114.61851,-582.90625,4.588486, 5.061, 7200, 7200, 0, 4), -- Coilfang Scale-Healer
 (@CGUID+90, 17958, 547, 3, -187.1975, -762.9105, 41.80106, 6.133739, 7200, 7200, 3, 1), -- Coilfang Defender
 (@CGUID+91, 17961, 547, 3, -123.257, -268.252, -1.49926, 2.47802, 7200, 7200, 0, 0), -- Coilfang Enchantress
 (@CGUID+92, 17940, 547, 3, -227.68805,-363.0566,3.035604, 5.60621, 7200, 7200, 0, 0), -- Coilfang Technician
@@ -211,7 +211,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+191, 18206, 547, 3, -70.5757, -138.288, 1.37165, 2.18166, 86400, 86400, 0, 0), -- Wastewalker Captive
 (@CGUID+192, 18206, 547, 3, -26.602, 8.73353, 1.75265, 5.28835, 86400, 86400, 0, 0), -- Wastewalker Captive
 (@CGUID+193, 17957, 547, 3, -82.4584, -723.883, 36.8106, 1.76082, 7200, 7200, 0, 0), -- Coilfang Champion
-(@CGUID+194, 0, 547, 3, -79.08044, -584.6921, 1.512077, 1.082104, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+194, 17960, 547, 3, -79.08044, -584.6921, 1.512077, 1.082104, 7200, 7200, 0, 0), -- Coilfang Soothsayer
 (@CGUID+195, 21126, 547, 3, -74.41975, -545.6223, -1.292343, 4.798717, 7200, 7200, 2, 1), -- Coilfang Scale-Healer
 (@CGUID+196, 21126, 547, 3,  -88.2256, -497.443, -1.50776, 2.72271, 7200, 7200, 0, 0), -- Coilfang Scale-Healer
 (@CGUID+197, 0, 547, 3, -79.9384, -723.398, 37.2368, 1.7726, 7200, 7200, 0, 0), -- creature_spawn_entry
@@ -219,8 +219,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+199, 21127, 547, 3, -71.23341, -538.0834, -1.594261, 1.741748, 7200, 7200, 2, 1), -- Coilfang Tempest
 (@CGUID+200, 17940, 547, 3, 37.12223, -383.4159, 3.035556, 3.438051, 7200, 7200, 3, 1), -- Coilfang Technician
 (@CGUID+201, 21127, 547, 3, -64.66994, -542.1275, -1.593479, 1.676171, 7200, 7200, 2, 1), -- Coilfang Tempest
-(@CGUID+202, 21127, 547, 3, -116.9161, -585.9364, 5.483181, 0.3839724, 7200, 7200, 0, 2), -- Coilfang Tempest
-(@CGUID+203, 21127, 547, 3, -114.4843, -592.073, 6.581903, 6.161012, 7200, 7200, 0, 0), -- Coilfang Tempest
+(@CGUID+202, 21127, 547, 3, -116.916, -585.936, 5.48318, 0.383972, 7200, 7200, 0, 0), -- Coilfang Tempest
+(@CGUID+203, 21127, 547, 3, -114.484, -592.073, 6.5819, 6.16101, 7200, 7200, 0, 0), -- Coilfang Tempest
 (@CGUID+204, 17938, 547, 3, -198.4237, -762.3498, 42.32572, 6.20495, 7200, 7200, 3, 1), -- Coilfang Observer
 (@CGUID+205, 17958, 547, 3, -169.5978, -777.3687, 42.23951, 2.213297, 7200, 7200, 3, 1), -- Coilfang Defender
 (@CGUID+206, 21128, 547, 3, -117.9165, -599.5141, 9.190624, 3.905454, 7200, 7200, 2, 1), -- Coilfang Ray
@@ -262,14 +262,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+61, 17960), (@CGUID+61, 21126), -- Coilfang Soothsayer, Coilfang Scale-Healer
-(@CGUID+89, 17960), (@CGUID+89, 21126), -- Coilfang Soothsayer, Coilfang Scale-Healer
-(@CGUID+194, 17960), (@CGUID+194, 21126), -- Coilfang Soothsayer, Coilfang Scale-Healer
 (@CGUID+197, 17960), (@CGUID+197, 17961); -- Coilfang Soothsayer, Coilfang Enchantress
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(@CGUID+39, 1, -119.257, -592.661, 7.43123, 5.27387, 6000, 0),
-(@CGUID+39, 2, -119.257, -592.661, 7.43123, 5.27387, 20000, 1378),
-(@CGUID+39, 3, -119.257, -592.661, 7.43123, 5.27387, 26000, 0),
 (@CGUID+46, 1, 122.6806,-468.11877,3.035651, 3.717551, 10000, 0), -- random waittimer between 8-12 seconds
 (@CGUID+46, 2, 138.39915,-456.38684,3.0356631, 100, 10000, 0), -- random waittimer between 8-12 seconds
 (@CGUID+46, 3, 128.1114,-475.59592,3.035659,3.63028, 10000, 0), -- random waittimer between 8-12 seconds
@@ -300,14 +295,10 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+85, 1, -52.72164, -27.052872, -1.7162553, 100, 1, 1795902),
 (@CGUID+85, 2, -69.57311, -14.861713, -4.3982778, 100, 1, 1795902),
 (@CGUID+85, 3, -59.46139, -16.815935, -2.937329, 100, 1, 1795902),
-(@CGUID+89, 1, -110.45, -591.891, 5.80183, 5.1569, 0, 0),
-(@CGUID+89, 2, -114.93, -595.137, 7.46083, 3.61517, 0, 0),
-(@CGUID+89, 3, -116.278, -594.244, 7.41621, 2.55645, 20000, 1378),
-(@CGUID+89, 4, -113.198, -595.249, 7.21007, 0.011757, 0, 0),
-(@CGUID+89, 5, -111.658, -587.233, 4.9339, 1.40663, 0, 0),
-(@CGUID+89, 6, -112.692, -586.419, 4.93238, 2.47477, 20000, 1378),
-(@CGUID+202, 1, -115.351, -584.643, 4.97746, 6.20593, 32000, 0),
-(@CGUID+202, 2, -115.351, -584.643, 4.97746, 6.20593, 20000, 1378);
+(@CGUID+89, 1, -114.61851,-582.90625,4.588486, 100, 1000, 0),
+(@CGUID+89, 2, -111.61708,-587.5662,4.9847913, 100, 0, 0),
+(@CGUID+89, 3, -110.53345,-594.992,6.510709, 100, 0, 0),
+(@CGUID+89, 4, -114.35795,-604.0504,9.25625, 100, 1000, 0);
 
 DELETE FROM `creature_movement_template` WHERE entry IN (17893,17963, 17964,17941,17942,17957,17960,17961, 17991,25754,25964,25965,25966);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
@@ -735,6 +726,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+33, 'Slave Pens - Group 032 - Coilfang Tempest | Observer | Coilfang Scale-Healer | Coilfang Ray', 0, 0, 0, 1, 0),
 
 (@SGGUID+34, 'Slave Pens - Group 034 - Coilfang Defender (2) - Patrol 016', 0, 0, 0, 1, 0),
+(@SGGUID+35, 'Slave Pens - Group 035 - Coilfang Tempest (2) | Coilfang Observer | Coilfang Scale-Healer | Coilfang Ray', 0, 0, 0, 1, 0),
+(@SGGUID+36, 'Slave Pens - Group 036 - Coilfang Champion (2) | Enchantress | Coilfang Soothsayer', 0, 0, 0, 1, 0),
+(@SGGUID+37, 'Slave Pens - Group 037 - Coilfang Tempest | Observer | Coilfang Scale-Healer | Coilfang Tempest | Coilfang Ray', 0, 0, 0, 1, @STRINGID+7),
 
 -- old
 (@SGGUID+104, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) - Patrol 003', 0, 0, 0, 3, 0),
@@ -744,10 +738,6 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 
 (@SGGUID+1016, 'Slave Pens - Greater Bogstrok | Bogstrok (2) - Patrol 002', 0, 0, 0, 3, 0),
 (@SGGUID+1031, 'Slave Pens - Coilfang Technician (2) | Coilfang Collaborator (2) - Link 001', 0, 0, 0, 3, 0),
-
-(@SGGUID+1038, 'Slave Pens - Coilfang Tempest (2) | Observer | Coilfang Scale-Healer | Coilfang Ray - Link 002', 0, 0, 0, 3, 0),
-(@SGGUID+1039, 'Slave Pens - Coilfang Champion (2) | Enchantress | Coilfang Scale-Healer - Link 002', 0, 0, 0, 3, 0),
-(@SGGUID+1040, 'Slave Pens - Coilfang Tempest | Observer | Coilfang Soothsayer/Coilfang Scale-Healer | Coilfang Tempest | Coilfang Ray - Link 003', 0, 0, 0, 3, 0),
 (@SGGUID+1041, 'Slave Pens - Wastewalker Worker (2) - Link 009', 0, 0, 0, 3, 0),
 (@SGGUID+1042, 'Slave Pens - Wastewalker Worker (2) - Link 010', 0, 0, 0, 3, 0),
 (@SGGUID+1043, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) - Patrol 003', 0, 0, 0, 3, 0),
@@ -914,25 +904,27 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+34, @CGUID+76, 0), -- Coilfang Defender
 (@SGGUID+34, @CGUID+77, 1), -- Coilfang Defender
 
+(@SGGUID+35, @CGUID+195, -1), -- Coilfang Scale-Healer
+(@SGGUID+35, @CGUID+38, -1), -- Coilfang Observer
+(@SGGUID+35, @CGUID+199, -1), -- Coilfang Tempest
+(@SGGUID+35, @CGUID+201, -1), -- Coilfang Tempest
+(@SGGUID+35, @CGUID+208, -1), -- Coilfang Ray
+
+(@SGGUID+36, @CGUID+65, -1), -- Coilfang Champion
+(@SGGUID+36, @CGUID+66, -1), -- Coilfang Champion
+(@SGGUID+36, @CGUID+97, -1), -- Coilfang Enchantress
+(@SGGUID+36, @CGUID+194, -1), -- Coilfang Soothsayer
+
+(@SGGUID+37, @CGUID+39, -1), -- Coilfang Observer
+(@SGGUID+37, @CGUID+89, -1), -- Coilfang Scale-Healer
+(@SGGUID+37, @CGUID+202, -1), -- Coilfang Tempest
+(@SGGUID+37, @CGUID+203, -1), -- Coilfang Tempest
+(@SGGUID+37, @CGUID+206, -1), -- Coilfang Ray
 -- creatures
 (@SGGUID+104, @CGUID+193, 0), -- Coilfang Champion
 (@SGGUID+104, @CGUID+94, 1), -- Coilfang Champion
 (@SGGUID+104, @CGUID+61, 2), -- Coilfang Soothsayer, Coilfang Scale-Healer
 (@SGGUID+104, @CGUID+197, 3), -- Coilfang Soothsayer, Coilfang Enchantress
-(@SGGUID+1038, @CGUID+195, -1), -- Coilfang Scale-Healer
-(@SGGUID+1038, @CGUID+38, -1), -- Coilfang Observer
-(@SGGUID+1038, @CGUID+199, -1), -- Coilfang Tempest
-(@SGGUID+1038, @CGUID+201, -1), -- Coilfang Tempest
-(@SGGUID+1038, @CGUID+208, -1), -- Coilfang Ray
-(@SGGUID+1039, @CGUID+65, -1), -- Coilfang Champion
-(@SGGUID+1039, @CGUID+66, -1), -- Coilfang Champion
-(@SGGUID+1039, @CGUID+97, -1), -- Coilfang Enchantress
-(@SGGUID+1039, @CGUID+194, -1), -- Coilfang Scale-Healer
-(@SGGUID+1040, @CGUID+39, -1), -- Coilfang Observer
-(@SGGUID+1040, @CGUID+89, -1), -- Coilfang Soothsayer/Coilfang Scale-Healer
-(@SGGUID+1040, @CGUID+202, -1), -- Coilfang Tempest
-(@SGGUID+1040, @CGUID+203, -1), -- Coilfang Tempest
-(@SGGUID+1040, @CGUID+206, -1), -- Coilfang Ray
 (@SGGUID+1041, @CGUID+127, -1), -- Wastewalker Worker
 (@SGGUID+1041, @CGUID+128, -1), -- Wastewalker Worker
 (@SGGUID+1042, @CGUID+125, -1), -- Wastewalker Worker
@@ -1182,6 +1174,7 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+28,'Slave Pens - Group 028 - Coilfang Technician | Coilfang Collaborator (2) - Patrol 013'),
 (@SGGUID+29, 'Slave Pens - Group 029 - Coilfang Technician (2) | Coilfang Enchantress - Patrol 014'),
 (@SGGUID+30, 'Slave Pens - Group 030 - Coilfang Technician (2) | Coilfang Enchantress - Patrol 015'),
+(@SGGUID+34, 'Slave Pens - Group 034 - Coilfang Defender (2) - Patrol 016'),
 -- old
 (@SGGUID+104,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) Patrol 003'),
 (@SGGUID+106,'Slave Pens - Coilfang Defender (2) Patrol 001'),
@@ -1190,14 +1183,15 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+1044,'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 004');
 
 -- StringIDs
-DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+6;
+DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+7;
 INSERT INTO `string_id` (Id, Name) VALUES 
 (@STRINGID+1, 'SP_COILFANG_SLAVEHANDLER_01'),
 (@STRINGID+2, 'SP_COILFANG_SLAVEHANDLER_02'),
 (@STRINGID+3, 'SP_COILFANG_SLAVEHANDLER_03'),
 (@STRINGID+4, 'SP_COILFANG_SLAVEHANDLER_04'),
 (@STRINGID+5, 'SP_COILFANG_SLAVEHANDLER_05'),
-(@STRINGID+6, 'SP_COILFANG_SLAVEHANDLER_06');
+(@STRINGID+6, 'SP_COILFANG_SLAVEHANDLER_06'),
+(@STRINGID+7, 'SP_COILFANG_SCALE_HEALER_RP_01');
 
 -- =========
 -- DBSCRIPTS
@@ -1313,11 +1307,19 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+3,3000,1,36,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'StringId - reset facing'),
 (@RELAYID+3,3000,2,0,0,0,0,0,0,0,15108,0,0,0,0,0,0,0, 'StringId - Yell'),
 (@RELAYID+3,5000,0,1,173,0,0,0,0,0,0,0,0,0,0,0,0,0, 'StringId - EmoteState WORK'),
--- Left side Slavehandler Random Yell
+-- Slavehandler Random Yell
 (@RELAYID+4,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler - Emote Talk'),
-(@RELAYID+4,0,1,0,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler - Random Yell');
+(@RELAYID+4,0,1,0,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Slavehandler - Random Yell'),
+-- Coilfang Scale-Healer - RP used via creature_ai_scripts
+(@RELAYID+5,0,0,21,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Coilfang Scale-Healer - Set Active'),
+(@RELAYID+5,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Scale-Healer - stop waypoint'),
+(@RELAYID+5,5000,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,2.9496, 'Coilfang Scale-Healer - change orientation'),
+(@RELAYID+5,6000,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Scale-Healer - Emote OneShotTalk'),
+(@RELAYID+5,6000,1,0,@RELAYID+6,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Scale-Healer - Random Say'),
+(@RELAYID+5,8000,0,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Coilfang Scale-Healer - Remove Active'),
+(@RELAYID+5,8000,1,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Coilfang Scale-Healer - start waypoint');
 
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+5;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Shattered Hand Legionnaire 001 script
 (@RELAYID+1, 0, 18713, 0, 'Slave Pens - Wastewalker Slave/Wastewalker Worker random yell'),
@@ -1339,8 +1341,10 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 -- Wastewalker Captive random say on ooc los
 (@RELAYID+5, 0, 15103, 0, 'Coilfang Slavehandler - random say'),
 (@RELAYID+5, 0, 15106, 0, 'Coilfang Slavehandler - random say'),
-(@RELAYID+5, 0, 15107, 0, 'Coilfang Slavehandler - random say');
-
+(@RELAYID+5, 0, 15107, 0, 'Coilfang Slavehandler - random say'),
+-- Coilfang Scale-Healer random rp text
+(@RELAYID+6, 0, 19081, 0, 'Coilfang Scale-Healer - random say'),
+(@RELAYID+6, 0, 19083, 0, 'Coilfang Scale-Healer - random say');
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1795901, 1795902, 1796301, 1796401);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
