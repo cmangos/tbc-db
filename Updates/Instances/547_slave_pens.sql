@@ -93,8 +93,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+73, 17940, 547, 3, -37.6926, -399.452, 79.3836, 5.74807, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+74, 17940, 547, 3, 55.6926, -346.615, 42.4913, 1.13446, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+75, 17940, 547, 3, 54.0835, -351.62, 43.101, 4.59022, 7200, 7200, 0, 0), -- Coilfang Technician
-(@CGUID+76, 17958, 547, 3, -66.2864, -567.066, -0.823783, 0.96025, 7200, 7200, 0, 0), -- Coilfang Defender
-(@CGUID+77, 17958, 547, 3, -63.2146, -569.216, -1.06684, 0.96025, 7200, 7200, 0, 0), -- Coilfang Defender
+(@CGUID+76, 17958, 547, 3, -83.93549,-523.77386,-1.5914233, 6.139, 7200, 7200, 0, 0), -- Coilfang Defender
+(@CGUID+77, 17958, 547, 3, -85.067,-527.6105,-1.5910537, 6.0019, 7200, 7200, 0, 0), -- Coilfang Defender
 (@CGUID+78, 17958, 547, 3, -6.498472, -296.8441, 3.15944, 2.932153, 7200, 7200, 0, 0), -- Coilfang Defender
 (@CGUID+79, 17958, 547, 3, -11.27964, -312.923, 2.95958, 2.86234, 7200, 7200, 0, 0), -- Coilfang Defender
 (@CGUID+80, 17959, 547, 3, -38.087578,-297.45834,-1.3999375, 5.451, 7200, 7200, 0, 4), -- Coilfang Slavehandler
@@ -734,9 +734,10 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+32, 'Slave Pens - Group 032 - Greater Bogstrok (2) | Bogstrok (2)', 0, 0, 0, 1, 0),
 (@SGGUID+33, 'Slave Pens - Group 032 - Coilfang Tempest | Observer | Coilfang Scale-Healer | Coilfang Ray', 0, 0, 0, 1, 0),
 
+(@SGGUID+34, 'Slave Pens - Group 034 - Coilfang Defender (2) - Patrol 016', 0, 0, 0, 1, 0),
+
 -- old
 (@SGGUID+104, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) - Patrol 003', 0, 0, 0, 3, 0),
-(@SGGUID+106, 'Slave Pens - Coilfang Defender (2) - Patrol 001', 0, 0, 0, 3, 0),
 (@SGGUID+109, 'Slave Pens - Coilfang Technician (2) - Patrol 002', 0, 0, 0, 3, 0),
 (@SGGUID+1011, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) - Patrol 004', 0, 0, 0, 3, 0),
 (@SGGUID+1014, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) - Patrol 007', 0, 0, 0, 3, 0),
@@ -910,13 +911,14 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+33, @CGUID+196, -1), -- Coilfang Scale-Healer
 (@SGGUID+33, @CGUID+209, -1), -- Coilfang Ray
 
+(@SGGUID+34, @CGUID+76, 0), -- Coilfang Defender
+(@SGGUID+34, @CGUID+77, 1), -- Coilfang Defender
+
 -- creatures
 (@SGGUID+104, @CGUID+193, 0), -- Coilfang Champion
 (@SGGUID+104, @CGUID+94, 1), -- Coilfang Champion
 (@SGGUID+104, @CGUID+61, 2), -- Coilfang Soothsayer, Coilfang Scale-Healer
 (@SGGUID+104, @CGUID+197, 3), -- Coilfang Soothsayer, Coilfang Enchantress
-(@SGGUID+106, @CGUID+76, 0), -- Coilfang Defender
-(@SGGUID+106, @CGUID+77, 1), -- Coilfang Defender
 (@SGGUID+1038, @CGUID+195, -1), -- Coilfang Scale-Healer
 (@SGGUID+1038, @CGUID+38, -1), -- Coilfang Observer
 (@SGGUID+1038, @CGUID+199, -1), -- Coilfang Tempest
@@ -1024,9 +1026,10 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+29, 2, 4, 0, @SGGUID+29, 4, 'Slave Pens - Group 029 - Coilfang Technician (2) | Coilfang Enchantress - Patrol 014'),
 (@SGGUID+30, 2, 4, 0, @SGGUID+30, 4, 'Slave Pens - Group 030 - Coilfang Technician (2) | Coilfang Enchantress - Patrol 015'),
 
+(@SGGUID+34, 2, 3, 0, @SGGUID+34, 4, 'Slave Pens - Group 034 - Coilfang Defender (2) - Patrol 016'),
+
 -- old
 (@SGGUID+104, 2, 4, 0, @SGGUID+104, 4, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) Patrol 003'),
-(@SGGUID+106, 2, 4, 0, @SGGUID+106, 4, 'Slave Pens - Coilfang Defender (2) Patrol 001'),
 
 
 (@SGGUID+1016, 3, 4, 0, @SGGUID+1016, 2, 'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 002'),
@@ -1110,21 +1113,22 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+30, 1, -224.32506,-396.62097,3.0355346, 100, 0, 0),
 (@SGGUID+30, 2, -255.33366,-407.8583,3.0356631, 100, 0, 0),
 (@SGGUID+30, 3, -269.14896,-421.1905,3.0330684, 100, 0, 0),
+
+(@SGGUID+34, 1, -83.93549,-523.77386,-1.5914233, 100, 0, 0),
+(@SGGUID+34, 2, -74.375824,-526.5931,-1.5943141, 100, 0, 0),
+(@SGGUID+34, 3, -62.04731,-528.7617,-1.5941613, 100, 0, 0),
+(@SGGUID+34, 4, -54.048965,-542.6787,-1.5936232, 100, 0, 0),
+(@SGGUID+34, 5, -54.877804,-556.5964,-1.5929497, 100, 0, 0),
+(@SGGUID+34, 6, -67.603195,-566.9261,-0.6967133, 100, 0, 0),
+(@SGGUID+34, 7, -75.75858,-585.0732,1.723919, 100, 0, 0),
+(@SGGUID+34, 8, -104.19448,-592.87317,5.20782, 100, 0, 0),
+(@SGGUID+34, 9, -103.67276,-611.86194,10.930438, 100, 0, 0),
 -- old
 (@SGGUID+104, 1, -112.21934, -751.7954, 37.091347, 100, 0, 0),
 (@SGGUID+104, 2, -83.497406, -735.865, 36.541836, 100, 0, 0),
 (@SGGUID+104, 3, -89.53006, -701.02655, 36.55273, 100, 0, 0),
 (@SGGUID+104, 4, -97.61304, -672.66565, 30.076414, 100, 0, 0),
 (@SGGUID+104, 5, -99.05717, -625.1839, 16.924713, 100, 0, 0),
-(@SGGUID+106, 1, -103.67276, -611.86194, 10.930438, 100, 0, 0),
-(@SGGUID+106, 2, -104.19448, -592.87317, 5.20782, 100, 0, 0),
-(@SGGUID+106, 3, -75.75858, -585.0732, 1.723919, 100, 0, 0),
-(@SGGUID+106, 4, -67.603195, -566.9261, -0.6967133, 100, 0, 0),
-(@SGGUID+106, 5, -54.877804, -556.5964, -1.5929497, 100, 0, 0),
-(@SGGUID+106, 6, -54.048965, -542.6787, -1.5936232, 100, 0, 0),
-(@SGGUID+106, 7, -62.04731, -528.7617, -1.5941613, 100, 0, 0),
-(@SGGUID+106, 8, -74.375824, -526.5931, -1.5943141, 100, 0, 0),
-(@SGGUID+106, 9, -83.93549, -523.77386, -1.5914233, 100, 0, 0),
 (@SGGUID+1016, 1, 21.3806, -77.1728, -1.59056, 100, 1000, 5),
 (@SGGUID+1016, 2, -7.40776, -59.9187, -1.59056, 100, 0, 0),
 (@SGGUID+1016, 3, -23.4768, -47.3342, -1.59056, 100, 0, 0),
