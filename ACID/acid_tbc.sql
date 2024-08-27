@@ -23409,13 +23409,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==================================
 -- Coilfang Reservoir: The Slave Pens
 -- ==================================
--- Bogstrok - spell_list
+-- Bogstrok 17816 - spell_list
 -- Greater Bogstrok 17817 - spell_list
 -- Naturalist Bite 17893 - GossipHello_npc_naturalist_bite
 ('1789301','17893','17','0','100','0','17957','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Champion launch relay script'),
 ('1789302','17893','17','0','100','0','17960','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Soothsayer launch relay script'),
 ('1789303','17893','17','0','100','0','17961','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Enchantress launch relay script'),
--- Coilfang Observer - spell_list
+-- Coilfang Observer 17938 - spell_list
 ('1793805','17938','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Observer - Text on Aggro'),
 -- Coilfang Technician 17940 - spell_list
 ('1794001','17940','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Technician - Text on Aggro'),
@@ -23424,7 +23424,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1794102','17941','5','0','100','1','5000','5000','1','0','0','0','1','17892','17893','17893','0','0','0','0','0','0','0','0','Mennu the Betrayer - Yell on Player Kill'),
 ('1794103','17941','6','0','100','0','0','0','0','0','0','0','1','17894','0','0','0','0','0','0','0','0','0','0','Mennu the Betrayer - Yell on Death'),
 -- Quagmirran 17942 - spell_list
--- Coilfang Champion - spell_list
+-- Coilfang Champion 17957 - spell_list
 ('1795701','17957','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Champion - Text on Aggro'),
 -- Coilfang Defender 17958 - spell_list
 ('1795801','17958','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Defender - Text on Aggro'),
@@ -23462,7 +23462,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1820601','18206','1','0','20','1','1000','60000','30000','110000','1','0','54','0','0','5470005','0','0','0','0','0','0','0','0','Wastewalker Captive - Random Say OOC'),
 ('1820602','18206','1','0','100','1','0','60000','40000','80000','0','0','5','16','0','0','0','0','0','0','0','0','0','0','Wastewalker Captive - Emote Kneel OOC'),
 -- Mennu Healing Ward - TotemAI
--- Coilfang Scale-Healer - spell_list
+-- Coilfang Scale-Healer 21126 - spell_list
 ('2112607','21126','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Scale-Healer - Text on Aggro'),
 -- Coilfang Tempest (3.0.3 and 4.3.4 Official Data - Normal Only)
 ('2112701','21127','0','0','100','1025','4900','10800','6100','14900','0','0','11','15667','1','0','0','0','0','0','0','0','0','0','Coilfang Tempest - Cast Sinister Strike'),
