@@ -23425,10 +23425,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mennu Healing Ward - TotemAI
 -- Coilfang Scale-Healer 21126 - spell_list
 ('2112607','21126','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Scale-Healer - Text on Aggro'),
--- Coilfang Tempest (3.0.3 and 4.3.4 Official Data - Normal Only)
-('2112701','21127','0','0','100','1025','4900','10800','6100','14900','0','0','11','15667','1','0','0','0','0','0','0','0','0','0','Coilfang Tempest - Cast Sinister Strike'),
-('2112702','21127','0','0','100','1025','10800','22900','26900','44600','0','0','11','36872','4','544','0','0','0','0','0','0','0','0','Coilfang Tempest - Cast Deadly Poison'),
-('2112703','21127','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Tempest - Text on Aggro'),
+-- Coilfang Tempest - spell_list
+('2112701','21127','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Tempest - Text on Aggro'),
 -- Coilfang Ray 21128 - spell_list
 -- Skar'this the Heretic 22421 - npc_quest_attunement
 -- Ahune (25740) - boss_ahune

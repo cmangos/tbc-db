@@ -20,12 +20,12 @@ SET @RELAYID := 5470000; -- used for dbscript_relay
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 17817, 547, 3, -115.434, -198.1566, -1.348403, 1.913391, 7200, 7200, 2, 1), -- Greater Bogstrok
 (@CGUID+2, 17816, 547, 3, -113.4347, -203.0733, -1.334175, 4.924964, 7200, 7200, 1, 1), -- Bogstrok
-(@CGUID+3, 17817, 547, 3, -87.9355, -446.624, -1.56181, 4.88088, 7200, 7200, 1, 1), -- Greater Bogstrok
+(@CGUID+3, 17817, 547, 3, -86.2394, -450.119, -1.5877, 3.92841, 7200, 7200, 2, 1), -- Greater Bogstrok
 (@CGUID+4, 17816, 547, 3, -116.3354, -211.4682, -1.404813, 4.520403, 7200, 7200, 1, 1), -- Bogstrok
 (@CGUID+5, 17817, 547, 3, -21.8928, -194.156, -1.67129, 0.418879, 7200, 7200, 3, 1), -- Greater Bogstrok
 (@CGUID+6, 17817, 547, 3, 4.07849, -195.421, -1.55645, 5.69669, 7200, 7200, 3, 1), -- Greater Bogstrok
 (@CGUID+7, 17816, 547, 3, -19.7354, -209.031, -1.73865, 1.61351, 7200, 7200, 3, 1), -- Bogstrok
-(@CGUID+8, 17816, 547, 3, -70.1932, -450.102, -1.59213, 3.31829, 7200, 7200, 1, 1), -- Bogstrok
+(@CGUID+8, 17816, 547, 3, -66.6831, -451.957, -1.59192, 2.80682, 7200, 7200, 2, 1), -- Bogstrok
 (@CGUID+9, 17817, 547, 3, -2.43306, -50.898, -1.94816, 2.90802, 7200, 7200, 0, 0), -- Greater Bogstrok
 (@CGUID+10, 17816, 547, 3, -198.296, -697.77, 37.4455, 4.96924, 7200, 7200, 0, 0), -- Bogstrok
 (@CGUID+11, 17816, 547, 3, -196.818, -702.791, 37.8387, 4.99673, 7200, 7200, 0, 2), -- Bogstrok
@@ -37,14 +37,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+17, 17817, 547, 3, 17.7697, -232.722, -0.489372, 5.70723, 7200, 7200, 5, 1), -- Greater Bogstrok
 (@CGUID+18, 17816, 547, 3, -123.838, -744.364, 37.1563, 2.58787, 7200, 7200, 0, 0), -- Bogstrok
 (@CGUID+19, 17816, 547, 3, -127.141, -750.718, 37.6108, 2.61772, 7200, 7200, 0, 0), -- Bogstrok
-(@CGUID+20, 17816, 547, 3, -80.6269, -461.577, -1.59213, 3.75105, 7200, 7200, 1, 1), -- Bogstrok
+(@CGUID+20, 17816, 547, 3, -80.0277, -462.771, -1.62277, 2.25533, 7200, 7200, 2, 1), -- Bogstrok
 (@CGUID+21, 17817, 547, 3, -200.234, -703.039, 37.556, 4.96924, 7200, 7200, 0, 0), -- Greater Bogstrok
 (@CGUID+22, 17817, 547, 3, -10.0083, -187.066, -1.57996, 5.67879, 7200, 7200, 3, 1), -- Greater Bogstrok
 (@CGUID+23, 26190, 547, 3, -95.33572, -207.4834, 16.28742, 1, 7200, 7200, 0, 0), -- [PH] Spank Target Bunny
 (@CGUID+24, 17817, 547, 3, -112.311, -208.11, -1.33469, 0.98862, 7200, 7200, 1, 1), -- Greater Bogstrok
 (@CGUID+25, 17816, 547, 3, -6.92616, -202.965, -1.55814, 6.11969, 7200, 7200, 3, 1), -- Bogstrok
 (@CGUID+26, 17816, 547, 3, -27.7103, -181.083, -2.04282, 6.14356, 7200, 7200, 3, 1), -- Bogstrok
-(@CGUID+27, 17817, 547, 3, -91.6633, -466.584, -1.44884, 1.90737, 7200, 7200, 1, 1), -- Greater Bogstrok
+(@CGUID+27, 17817, 547, 3, -93.7209, -467.465, -1.32695, 5.73606, 7200, 7200, 2, 1), -- Greater Bogstrok
 (@CGUID+28, 17817, 547, 3, -194.405, -701.508, 37.8924, 4.96924, 7200, 7200, 0, 0), -- Greater Bogstrok
 (@CGUID+29, 17817, 547, 3, -15.1858, -51.2709, -1.5252, 5.64145, 7200, 7200, 0, 0), -- Greater Bogstrok
 (@CGUID+30, 17817, 547, 3, 58.2672, -102.968, -1.51906, 2.59789, 7200, 7200, 0, 0), -- Greater Bogstrok
@@ -58,41 +58,41 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+38, 17938, 547, 3, -67.44096, -551.6196, -1.161117, 4.928274, 7200, 7200, 2, 1), -- Coilfang Observer
 (@CGUID+39, 17938, 547, 3, -119.257, -592.661, 7.43123, 5.27387, 7200, 7200, 0, 2), -- Coilfang Observer
 (@CGUID+40, 17938, 547, 3, -127.141, -144.428, -1.80314, 0.855211, 7200, 7200, 0, 0), -- Coilfang Observer
-(@CGUID+41, 17938, 547, 3, -84.87788, -503.3429, -1.509169, 3.281219, 7200, 7200, 0, 0), -- Coilfang Observer
-(@CGUID+42, 17940, 547, 3, 75.6859, -408.286, 36.5226, 0.270867, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+41, 17938, 547, 3, -84.8779, -503.343, -1.50917, 3.28122, 7200, 7200, 0, 0), -- Coilfang Observer
+(@CGUID+42, 17940, 547, 3, 75.5067, -354.146, 36.646, 6.15157, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+43, 17940, 547, 3, 104.56651,-343.7326,3.0324378, 3.679, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+44, 17940, 547, 3, 102.378, -340.384, 3.03288, 0.578873, 7200, 7200, 0, 0), -- Coilfang Technician
-(@CGUID+45, 17940, 547, 3, -292.746, -380.393, 30.4533, 6.28178, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+45, 17940, 547, 3, -248.382, -380.587, 10.4259, 6.28222, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+46, 17940, 547, 3, 122.6806,-468.11877,3.035651, 3.717551, 7200, 7200, 0, 2), -- Coilfang Technician
-(@CGUID+47, 17961, 547, 3, -228.887, -367.368, 3.03565, 2.49875, 7200, 7200, 0, 0), -- Coilfang Enchantress
+(@CGUID+47, 17961, 547, 3, -230.194, -366.174, 3.0356, 5.60621, 7200, 7200, 0, 0), -- Coilfang Enchantress
 (@CGUID+48, 17940, 547, 3, 39.51993, -390.1638, 3.035537, 5.277101, 7200, 7200, 3, 1), -- Coilfang Technician
-(@CGUID+49, 17940, 547, 3, -228.306, -393.069, 3.03554, 3.75013, 7200, 7200, 0, 0), -- Coilfang Technician
-(@CGUID+50, 17940, 547, 3, -226.247, -363.843, 3.03565, 2.49875, 7200, 7200, 0, 0), -- Coilfang Technician
-(@CGUID+51, 17961, 547, 3, -225.927, -397.512, 3.03554, 3.62446, 7200, 7200, 0, 0), -- Coilfang Enchantress
+(@CGUID+49, 17940, 547, 3, -225.688, -392.86, 3.03553, 3.03554, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+50, 17940, 547, 3, -225.182, -359.939, 3.03559, 5.60621, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+51, 17961, 547, 3, -223.913, -400.726, 3.03554, 3.48927, 7200, 7200, 0, 0), -- Coilfang Enchantress
 (@CGUID+52, 17940, 547, 3, 49.2851, -365.295, 3.11896, 3.52993, 7200, 7200, 4, 1), -- Coilfang Technician
 (@CGUID+53, 17940, 547, 3, 127.9172, -459.1344, 3.035864, 4.330433, 7200, 7200, 4, 1), -- Coilfang Technician
 (@CGUID+54, 17940, 547, 3, 122.6974, -297.8582, 3.119044, 3.700098, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+55, 17940, 547, 3, 131.6813, -301.2838, 3.035718, 0.6774926, 7200, 7200, 3, 1), -- Coilfang Technician
-(@CGUID+56, 17940, 547, 3, -152.382, -350.138, 71.9751, 5.99374, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+56, 17940, 547, 3, -124.279, -362.858, 80.2745, 1.92303, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+57, 17941, 547, 3, 49.4763,-380.21915,3.0355754, 3.2570, 86400, 86400, 0, 4), -- Mennu the Betrayer
 (@CGUID+58, 17942, 547, 3, -281.0958, -667.1385, 9.402116, 5.846853, 86400, 86400, 0, 0), -- Quagmirran
 (@CGUID+59, 17957, 547, 3, -94.66229,-221.32935,-1.2438293, 1.4757, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+60, 17957, 547, 3, -112.82242,-46.836197,-3.2531695,  1.93732, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+61, 0, 547, 3, -86.5601, -724.672, 37.0945, 1.76082, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+62, 17957, 547, 3, -162.7924, -463.4172, 3.205104, 1.919862, 7200, 7200, 0, 0), -- Coilfang Champion
-(@CGUID+63, 17957, 547, 3, -158.5233, -447.8588, 3.040779, 3.665191, 7200, 7200, 0, 0), -- Coilfang Champion
+(@CGUID+62, 17957, 547, 3, -162.792, -463.417, 3.2051, 1.91986, 7200, 7200, 0, 0), -- Coilfang Champion
+(@CGUID+63, 17957, 547, 3, -158.523, -447.859, 3.04078, 3.66519, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+64, 17957, 547, 3, -118.958, -152.85, -1.95728, 0.488692, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+65, 17957, 547, 3, -83.79871, -585.3203, 1.376997, 1.37881, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+66, 17957, 547, 3, -77.88522, -592.5287, 2.310318, 5.951573, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+67, 17938, 547, 3, -175.9361, -769.604, 41.94263, 5.431209, 7200, 7200, 3, 1), -- Coilfang Observer
 (@CGUID+68, 17957, 547, 3, -124.06, -263.206, -1.50291, 3.24826, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+69, 17957, 547, 3, -108.859, -42.0496, -3.46715, 1.88496, 7200, 7200, 0, 0), -- Coilfang Champion
-(@CGUID+70, 17958, 547, 3, -109.578, -382.308, 80.8363, 6.18894, 7200, 7200, 0, 0), -- Coilfang Defender
-(@CGUID+71, 17958, 547, 3, -109.61, -377.985, 80.8444, 6.16616, 7200, 7200, 0, 0), -- Coilfang Defender
-(@CGUID+72, 17940, 547, 3, -33.5623, -398.116, 77.9469, 5.74689, 7200, 7200, 0, 0), -- Coilfang Technician
-(@CGUID+73, 17940, 547, 3, -36.058, -405.157, 78.8151, 5.89218, 7200, 7200, 0, 0), -- Coilfang Technician
-(@CGUID+74, 17940, 547, 3, -33.5819, -362.544, 77.9538, 0.328465, 7200, 7200, 0, 0), -- Coilfang Technician
-(@CGUID+75, 17940, 547, 3, -36.071182, -356.417297, 78.819695, 0.352705, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+70, 17958, 547, 3, -113.716, -380.437, 81.2446, 0.0009198, 7200, 7200, 0, 0), -- Coilfang Defender
+(@CGUID+71, 17958, 547, 3, -114.721, -378.437, 81.2629, 0.0009198, 7200, 7200, 0, 0), -- Coilfang Defender
+(@CGUID+72, 17940, 547, 3, -38.729, -401.162, 79.5193, 5.73823, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+73, 17940, 547, 3, -37.6926, -399.452, 79.3836, 5.74807, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+74, 17940, 547, 3, 55.6926, -346.615, 42.4913, 1.13446, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+75, 17940, 547, 3, 54.0835, -351.62, 43.101, 4.59022, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+76, 17958, 547, 3, -66.2864, -567.066, -0.823783, 0.96025, 7200, 7200, 0, 0), -- Coilfang Defender
 (@CGUID+77, 17958, 547, 3, -63.2146, -569.216, -1.06684, 0.96025, 7200, 7200, 0, 0), -- Coilfang Defender
 (@CGUID+78, 17958, 547, 3, -6.498472, -296.8441, 3.15944, 2.932153, 7200, 7200, 0, 0), -- Coilfang Defender
@@ -109,8 +109,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+89, 0, 547, 3, -112.68, -587.462, 5.10565, 0.116737, 7200, 7200, 0, 2), -- creature_spawn_entry
 (@CGUID+90, 17958, 547, 3, -187.1975, -762.9105, 41.80106, 6.133739, 7200, 7200, 3, 1), -- Coilfang Defender
 (@CGUID+91, 17961, 547, 3, -123.257, -268.252, -1.49926, 2.47802, 7200, 7200, 0, 0), -- Coilfang Enchantress
-(@CGUID+92, 17940, 547, 3, -227.724, -365.283, 3.03565, 2.49482, 7200, 7200, 0, 0), -- Coilfang Technician
-(@CGUID+93, 17940, 547, 3, -226.913, -394.971, 3.03554, 3.71478, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+92, 17940, 547, 3, -227.68805,-363.0566,3.035604, 5.60621, 7200, 7200, 0, 0), -- Coilfang Technician
+(@CGUID+93, 17940, 547, 3, -224.32506,-396.62097,3.0355346, 3.03554, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+94, 17957, 547, 3, -84.6656, -724.307, 36.8609, 1.76082, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+95, 17961, 547, 3, -86.6703, -223.546, -1.16106, 1.65547, 7200, 7200, 0, 0), -- Coilfang Enchantress
 (@CGUID+96, 21126, 547, 3, -121.849, -147.45, -1.98127, 1.0821, 7200, 7200, 0, 0), -- Coilfang Scale-Healer
@@ -122,14 +122,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+102, 17962, 547, 3, 46.6612, -362.162, 3.11896, 3.5629, 7200, 7200, 3, 1), -- Coilfang Collaborator
 (@CGUID+103, 17962, 547, 3, 128.5895, -450.1704, 3.035084, 3.344318, 7200, 7200, 4, 1), -- Coilfang Collaborator
 (@CGUID+104, 17962, 547, 3, 121.3138, -306.0719, 3.035721, 2.764012, 7200, 7200, 3, 1), -- Coilfang Collaborator
-(@CGUID+105, 17962, 547, 3, -153.038, -348.088, 71.747, 6.09862, 7200, 7200, 0, 0), -- Coilfang Collaborator
-(@CGUID+106, 17962, 547, 3, 77.2599, -405.603, 36.172, 0.062043, 7200, 7200, 0, 0), -- Coilfang Collaborator
-(@CGUID+107, 17962, 547, 3, -153.094, -351.868, 71.7276, 6.12296, 7200, 7200, 0, 0), -- Coilfang Collaborator
-(@CGUID+108, 17962, 547, 3, -292.936, -378.154, 30.4904, 6.27707, 7200, 7200, 0, 0), -- Coilfang Collaborator
-(@CGUID+109, 17962, 547, 3, -292.963, -382.576, 30.4961, 6.27707, 7200, 7200, 0, 0), -- Coilfang Collaborator
+(@CGUID+105, 17962, 547, 3, -125.118, -364.674, 80.1646, 1.92303, 7200, 7200, 0, 0), -- Coilfang Collaborator
+(@CGUID+106, 17962, 547, 3, 70.4202, -349.78, 37.8924, 0.488692, 7200, 7200, 0, 0), -- Coilfang Collaborator
+(@CGUID+107, 17962, 547, 3, -122.464, -363.698, 80.5122, 1.92304, 7200, 7200, 0, 0), -- Coilfang Collaborator
+(@CGUID+108, 17962, 547, 3, -251.208, -377.756, 11.7882, 6.28222, 7200, 7200, 0, 0), -- Coilfang Collaborator
+(@CGUID+109, 17962, 547, 3, -249.25, -383.417, 10.8428, 6.28126, 7200, 7200, 0, 0), -- Coilfang Collaborator
 (@CGUID+110, 17962, 547, 3, 119.7691, -457.3299, 3.033783, 6.122182, 7200, 7200, 4, 1), -- Coilfang Collaborator
 -- (@CGUID+111
-(@CGUID+112, 17962, 547, 3, 77.3329, -409.67, 36.1552, 0.171215, 7200, 7200, 0, 0), -- Coilfang Collaborator
+(@CGUID+112, 17962, 547, 3, 70.3082, -356.168, 38.5397, 5.27089, 7200, 7200, 0, 0), -- Coilfang Collaborator
 (@CGUID+113, 17963, 547, 3, -54.63998, -280.2335, -1.283369, 3.996804, 7200, 7200, 0, 0), -- Wastewalker Slave
 (@CGUID+114, 17964, 547, 3, -54.29192, -248.0854, -3.691535, 1.972222, 7200, 7200, 0, 0), -- Wastewalker Worker
 (@CGUID+115, 0, 547, 3, -89.17553, -91.53407, -2.22339, 6.073746, 7200, 7200, 0, 0), -- spawn_group_entry
@@ -163,7 +163,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+143, 0, 547, 3, -71.8825, -19.18774, -4.44727, 4.153883, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+144, 17964, 547, 3, -61.51586, -248.3638, -3.940233, 0.9948376, 7200, 7200, 0, 0), -- Wastewalker Worker
 -- (@CGUID+145, RE-USE
-(@CGUID+146, 17991, 547, 3, 23.9, -447.261, 3.03544, 3.3803, 86400, 86400, 0, 2), -- Rokmar the Crackler
+(@CGUID+146, 17991, 547, 3, 18.321169,-448.44757,3.055895,  3.277, 86400, 86400, 0, 4), -- Rokmar the Crackler
 (@CGUID+147, 18206, 547, 3, -14.3681, -548.778, 1.16364, 4.4855, 86400, 86400, 0, 0), -- Wastewalker Captive
 (@CGUID+148, 18206, 547, 3, -18.7948, -577.867, 18.7641, 2.72271, 86400, 86400, 0, 0), -- Wastewalker Captive
 (@CGUID+149, 18206, 547, 3, -68.6011, -590.748, 37.5631, 3.63029, 86400, 86400, 0, 0), -- Wastewalker Captive
@@ -213,9 +213,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+193, 17957, 547, 3, -82.4584, -723.883, 36.8106, 1.76082, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+194, 0, 547, 3, -79.08044, -584.6921, 1.512077, 1.082104, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+195, 21126, 547, 3, -74.41975, -545.6223, -1.292343, 4.798717, 7200, 7200, 2, 1), -- Coilfang Scale-Healer
-(@CGUID+196, 21126, 547, 3, -88.22562, -497.4428, -1.507759, 2.722714, 7200, 7200, 0, 0), -- Coilfang Scale-Healer
+(@CGUID+196, 21126, 547, 3,  -88.2256, -497.443, -1.50776, 2.72271, 7200, 7200, 0, 0), -- Coilfang Scale-Healer
 (@CGUID+197, 0, 547, 3, -79.9384, -723.398, 37.2368, 1.7726, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+198, 21127, 547, 3, -82.17294, -494.0059, -1.509497, 2.391101, 7200, 7200, 0, 0), -- Coilfang Tempest
+(@CGUID+198, 21127, 547, 3, -82.1729, -494.006, -1.5095, 2.3911, 7200, 7200, 0, 0), -- Coilfang Tempest
 (@CGUID+199, 21127, 547, 3, -71.23341, -538.0834, -1.594261, 1.741748, 7200, 7200, 2, 1), -- Coilfang Tempest
 (@CGUID+200, 17940, 547, 3, 37.12223, -383.4159, 3.035556, 3.438051, 7200, 7200, 3, 1), -- Coilfang Technician
 (@CGUID+201, 21127, 547, 3, -64.66994, -542.1275, -1.593479, 1.676171, 7200, 7200, 2, 1), -- Coilfang Tempest
@@ -226,7 +226,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+206, 21128, 547, 3, -117.9165, -599.5141, 9.190624, 3.905454, 7200, 7200, 2, 1), -- Coilfang Ray
 (@CGUID+207, 21128, 547, 3, -130.661, -136.5868, -1.98337, 2.411791, 7200, 7200, 2, 1), -- Coilfang Ray
 (@CGUID+208, 21128, 547, 3, -71.68305, -553.9335, -0.7895827, 2.841635, 7200, 7200, 2, 1), -- Coilfang Ray
-(@CGUID+209, 21128, 547, 3, -89.3931, -509.1571, -1.50806, 4.328416, 7200, 7200, 2, 1), -- Coilfang Ray
+(@CGUID+209, 21128, 547, 3, -88.8648, -510.005, -1.59161, 1.91986, 7200, 7200, 2, 1), -- Coilfang Ray
 (@CGUID+210, 22421, 547, 2, -296.4931, -459.0429, 6.146773, 0.7679449, 86400, 86400, 0, 0), -- Skar'this the Heretic
 (@CGUID+211, 25697, 547, 3, -92.45719, -110.6642, -2.866759, 2.408554, 86400, 86400, 0, 0), -- Luma Skymother
 (@CGUID+212, 25710, 547, 3, 132.721, -116.256, -1.59053, 3.85833, 86400, 86400, 0, 0), -- Numa Cloudsister
@@ -306,16 +306,10 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+89, 4, -113.198, -595.249, 7.21007, 0.011757, 0, 0),
 (@CGUID+89, 5, -111.658, -587.233, 4.9339, 1.40663, 0, 0),
 (@CGUID+89, 6, -112.692, -586.419, 4.93238, 2.47477, 20000, 1378),
-(@CGUID+146, 1, -12.4519, -456.097, 2.62193, 3.44302, 0, 0),
-(@CGUID+146, 2, -37.5212, -458.704, -1.74883, 3.19561, 0, 0),
-(@CGUID+146, 3, -66.0926, -460.086, -1.59345, 3.19561, 0, 0),
-(@CGUID+146, 4, -33.2397, -459.293, -1.90565, 0.057937, 0, 0),
-(@CGUID+146, 5, -13.4791, -456.63, 2.51521, 0.136477, 0, 0),
-(@CGUID+146, 6, 23.994, -446.841, 3.03625, 3.27807, 0, 0),
 (@CGUID+202, 1, -115.351, -584.643, 4.97746, 6.20593, 32000, 0),
 (@CGUID+202, 2, -115.351, -584.643, 4.97746, 6.20593, 20000, 1378);
 
-DELETE FROM `creature_movement_template` WHERE entry IN (17893,17963, 17964,17941,17942,17957,17960,17961,25754,25964,25965,25966);
+DELETE FROM `creature_movement_template` WHERE entry IN (17893,17963, 17964,17941,17942,17957,17960,17961, 17991,25754,25964,25965,25966);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- 17893
 (17893, 0, 1, -190.926, -796.39, 43.7993, 0, 0, 0),
@@ -405,6 +399,11 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17961, 1, 14, -173.984, -772.021, 42.0383, 0, 0, 0),
 (17961, 1, 15, -174.836, -772.934, 42.3143, 0, 0, 0),
 (17961, 1, 16, -180.41, -777.715, 43.8077, 0, 0, 0),
+-- 17991 Rokmar the Crackler
+(17991, 0, 1, 18.321169,-448.44757,3.055895, 100, 0, 0),
+(17991, 0, 2, -13.558029,-454.80655,2.49773, 100, 0, 0),
+(17991, 0, 3, -34.37422,-458.81696,-1.952406, 100, 0, 0),
+(17991, 0, 4, -62.09498,-454.97253,-1.5922983, 100, 0, 0),
 -- 25754
 (25754, 0, 1, -110.195, -116.621, -3.25569, 0.10472, 3000, 2575401), 
 (25754, 0, 2, -111.9345, -129.7239, -2.038486, 100, 0, 0), 
@@ -722,24 +721,29 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+20, 'Slave Pens - Group 020 - Coilfang Technician (1) | Coilfang Collaborator (2)', 0, 0, 0, 1, 0),
 (@SGGUID+21, 'Slave Pens - Group 021 - Coilfang Technician (2) | Coilfang Collaborator (2)', 0, 0, 0, 1, 0),
 (@SGGUID+22, 'Slave Pens - Group 022 - Coilfang Technician (2) | Coilfang Collaborator (2)', 0, 0, 0, 1, 0),
+(@SGGUID+23, 'Slave Pens - Group 023 - Coilfang Technician (1) | Coilfang Collaborator (2) - Patrol 008', 0, 0, 0, 1, 0),
+(@SGGUID+24, 'Slave Pens - Group 024 - Coilfang Technician (2) - Patrol 009', 0, 0, 0, 1, 0),
+(@SGGUID+25, 'Slave Pens - Group 025 - Coilfang Technician (2) - Patrol 010', 0, 0, 0, 1, 0),
+(@SGGUID+26, 'Slave Pens - Group 026 - Coilfang Defender (2) - Patrol 011', 0, 0, 0, 1, 0),
+(@SGGUID+27, 'Slave Pens - Group 027 - Coilfang Technician | Coilfang Collaborator (2) - Patrol 012', 0, 0, 0, 1, 0),
+(@SGGUID+28, 'Slave Pens - Group 028 - Coilfang Technician | Coilfang Collaborator (2) - Patrol 013', 0, 0, 0, 1, 0),
+(@SGGUID+29, 'Slave Pens - Group 029 - Coilfang Technician (2) | Coilfang Enchantress  - Patrol 014', 0, 0, 0, 1, 0),
+(@SGGUID+30, 'Slave Pens - Group 030 - Coilfang Technician (2) | Coilfang Enchantress  - Patrol 015', 0, 0, 0, 1, 0),
+
+(@SGGUID+31, 'Slave Pens - Group 031 - Coilfang Champion (2)', 0, 0, 0, 1, 0),
+(@SGGUID+32, 'Slave Pens - Group 032 - Greater Bogstrok (2) | Bogstrok (2)', 0, 0, 0, 1, 0),
+(@SGGUID+33, 'Slave Pens - Group 032 - Coilfang Tempest | Observer | Coilfang Scale-Healer | Coilfang Ray', 0, 0, 0, 1, 0),
 
 -- old
 (@SGGUID+104, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) - Patrol 003', 0, 0, 0, 3, 0),
-(@SGGUID+105, 'Slave Pens - Coilfang Defender (2) - Patrol 000', 0, 0, 0, 3, 0),
 (@SGGUID+106, 'Slave Pens - Coilfang Defender (2) - Patrol 001', 0, 0, 0, 3, 0),
-(@SGGUID+108, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) - Patrol 001', 0, 0, 0, 3, 0),
 (@SGGUID+109, 'Slave Pens - Coilfang Technician (2) - Patrol 002', 0, 0, 0, 3, 0),
-(@SGGUID+1010, 'Slave Pens - Coilfang Technician (2) - Patrol 003', 0, 0, 0, 3, 0),
 (@SGGUID+1011, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) - Patrol 004', 0, 0, 0, 3, 0),
-(@SGGUID+1012, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) - Patrol 005', 0, 0, 0, 3, 0),
-(@SGGUID+1013, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) - Patrol 006', 0, 0, 0, 3, 0),
 (@SGGUID+1014, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) - Patrol 007', 0, 0, 0, 3, 0),
 
 (@SGGUID+1016, 'Slave Pens - Greater Bogstrok | Bogstrok (2) - Patrol 002', 0, 0, 0, 3, 0),
 (@SGGUID+1031, 'Slave Pens - Coilfang Technician (2) | Coilfang Collaborator (2) - Link 001', 0, 0, 0, 3, 0),
-(@SGGUID+1035, 'Slave Pens - Coilfang Champion | Coilfang Champion - Link 001', 0, 0, 0, 3, 0),
-(@SGGUID+1036, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) - Link 004', 0, 0, 0, 3, 0),
-(@SGGUID+1037, 'Slave Pens - Coilfang Tempest | Observer | Coilfang Scale-Healer | Coilfang Ray - Link 001', 0, 0, 0, 3, 0),
+
 (@SGGUID+1038, 'Slave Pens - Coilfang Tempest (2) | Observer | Coilfang Scale-Healer | Coilfang Ray - Link 002', 0, 0, 0, 3, 0),
 (@SGGUID+1039, 'Slave Pens - Coilfang Champion (2) | Enchantress | Coilfang Scale-Healer - Link 002', 0, 0, 0, 3, 0),
 (@SGGUID+1040, 'Slave Pens - Coilfang Tempest | Observer | Coilfang Soothsayer/Coilfang Scale-Healer | Coilfang Tempest | Coilfang Ray - Link 003', 0, 0, 0, 3, 0),
@@ -864,45 +868,55 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+22, @CGUID+103, 2), -- Coilfang Collaborator
 (@SGGUID+22, @CGUID+110, 3), -- Coilfang Collaborator
 
+(@SGGUID+23, @CGUID+42, 0), -- Coilfang Technician
+(@SGGUID+23, @CGUID+106, 1), -- Coilfang Collaborator
+(@SGGUID+23, @CGUID+112, 2), -- Coilfang Collaborator
+
+(@SGGUID+24, @CGUID+74, 0), -- Coilfang Technician
+(@SGGUID+24, @CGUID+75, 1), -- Coilfang Technician
+
+(@SGGUID+25, @CGUID+72, 0), -- Coilfang Technician
+(@SGGUID+25, @CGUID+73, 1), -- Coilfang Technician
+
+(@SGGUID+26, @CGUID+70, 0), -- Coilfang Defender
+(@SGGUID+26, @CGUID+71, 1), -- Coilfang Defender
+
+(@SGGUID+27, @CGUID+56, 0), -- Coilfang Technician
+(@SGGUID+27, @CGUID+105, 1), -- Coilfang Collaborator
+(@SGGUID+27, @CGUID+107, 2), -- Coilfang Collaborator
+
+(@SGGUID+28, @CGUID+45, 0), -- Coilfang Technician
+(@SGGUID+28, @CGUID+108, 1), -- Coilfang Collaborator
+(@SGGUID+28, @CGUID+109, 2), -- Coilfang Collaborator
+
+(@SGGUID+29, @CGUID+92, 0), -- Coilfang Technician
+(@SGGUID+29, @CGUID+50, 1), -- Coilfang Technician
+(@SGGUID+29, @CGUID+47, 2), -- Coilfang Enchantress
+
+(@SGGUID+30, @CGUID+93, 0), -- Coilfang Technician
+(@SGGUID+30, @CGUID+49, 1), -- Coilfang Technician
+(@SGGUID+30, @CGUID+51, 2), -- Coilfang Enchantress
+
+(@SGGUID+31, @CGUID+62, 0), -- Coilfang Champion
+(@SGGUID+31, @CGUID+63, 1), -- Coilfang Champion
+
+(@SGGUID+32, @CGUID+8, -1), -- Bogstrok
+(@SGGUID+32, @CGUID+3, -1), -- Greater Bogstrok
+(@SGGUID+32, @CGUID+20, -1), -- Bogstrok
+(@SGGUID+32, @CGUID+27, -1), -- Greater Bogstrok
+
+(@SGGUID+33, @CGUID+198, -1), -- Coilfang Tempest
+(@SGGUID+33, @CGUID+41, -1), -- Coilfang Observer
+(@SGGUID+33, @CGUID+196, -1), -- Coilfang Scale-Healer
+(@SGGUID+33, @CGUID+209, -1), -- Coilfang Ray
+
 -- creatures
 (@SGGUID+104, @CGUID+193, 0), -- Coilfang Champion
 (@SGGUID+104, @CGUID+94, 1), -- Coilfang Champion
 (@SGGUID+104, @CGUID+61, 2), -- Coilfang Soothsayer, Coilfang Scale-Healer
 (@SGGUID+104, @CGUID+197, 3), -- Coilfang Soothsayer, Coilfang Enchantress
-(@SGGUID+105, @CGUID+70, 0), -- Coilfang Defender
-(@SGGUID+105, @CGUID+71, 1), -- Coilfang Defender
 (@SGGUID+106, @CGUID+76, 0), -- Coilfang Defender
 (@SGGUID+106, @CGUID+77, 1), -- Coilfang Defender
-(@SGGUID+108, @CGUID+42, 0), -- Coilfang Technician
-(@SGGUID+108, @CGUID+106, 1), -- Coilfang Collaborator
-(@SGGUID+108, @CGUID+112, 2), -- Coilfang Collaborator
-(@SGGUID+109, @CGUID+72, 0), -- Coilfang Technician
-(@SGGUID+109, @CGUID+73, 1), -- Coilfang Technician
-(@SGGUID+1010, @CGUID+74, 0), -- Coilfang Technician
-(@SGGUID+1010, @CGUID+75, 1), -- Coilfang Technician
-(@SGGUID+1011, @CGUID+56, 0), -- Coilfang Technician
-(@SGGUID+1011, @CGUID+105, 1), -- Coilfang Collaborator
-(@SGGUID+1011, @CGUID+107, 2), -- Coilfang Collaborator
-(@SGGUID+1012, @CGUID+45, 0), -- Coilfang Technician
-(@SGGUID+1012, @CGUID+108, 1), -- Coilfang Collaborator
-(@SGGUID+1012, @CGUID+109, 2), -- Coilfang Collaborator
-(@SGGUID+1013, @CGUID+92, 0), -- Coilfang Technician
-(@SGGUID+1013, @CGUID+50, 1), -- Coilfang Technician
-(@SGGUID+1013, @CGUID+47, 2), -- Coilfang Enchantress
-(@SGGUID+1014, @CGUID+93, 0), -- Coilfang Technician
-(@SGGUID+1014, @CGUID+49, 1), -- Coilfang Technician
-(@SGGUID+1014, @CGUID+51, 2), -- Coilfang Enchantress
-
-(@SGGUID+1035, @CGUID+62, -1), -- Coilfang Champion
-(@SGGUID+1035, @CGUID+63, -1), -- Coilfang Champion
-(@SGGUID+1036, @CGUID+8, -1), -- Bogstrok
-(@SGGUID+1036, @CGUID+3, -1), -- Greater Bogstrok
-(@SGGUID+1036, @CGUID+20, -1), -- Bogstrok
-(@SGGUID+1036, @CGUID+27, -1), -- Greater Bogstrok
-(@SGGUID+1037, @CGUID+198, -1), -- Coilfang Tempest
-(@SGGUID+1037, @CGUID+41, -1), -- Coilfang Observer
-(@SGGUID+1037, @CGUID+196, -1), -- Coilfang Scale-Healer
-(@SGGUID+1037, @CGUID+209, -1), -- Coilfang Ray
 (@SGGUID+1038, @CGUID+195, -1), -- Coilfang Scale-Healer
 (@SGGUID+1038, @CGUID+38, -1), -- Coilfang Observer
 (@SGGUID+1038, @CGUID+199, -1), -- Coilfang Tempest
@@ -997,20 +1011,24 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+8, 3, 4, 0, @SGGUID+8, 4, 'Slave Pens - Group 008 - Coilfang Champion | Coilfang Enchantress - Patrol 005'),
 (@SGGUID+13, 3, 4, 0, @SGGUID+13, 4, 'Slave Pens - Group 013 - Coilfang Champion | Coilfang Enchantress | Soothsayer - Patrol 006'),
 
-(@SGGUID+19, 3, 4, 0, @SGGUID+19, 4, 'Slave Pens - Group 019 - Coilfang Technician (2) - Patrol 007'),
+(@SGGUID+19, 2, 4, 0, @SGGUID+19, 4, 'Slave Pens - Group 019 - Coilfang Technician (2) - Patrol 007'),
+
+(@SGGUID+23, 3, 4, 0, @SGGUID+23, 4, 'Slave Pens - Group 023 - Coilfang Technician (1) | Coilfang Collaborator (2) - Patrol 008'),
+(@SGGUID+24, 2, 4, 0, @SGGUID+24, 4, 'Slave Pens - Group 024 - Coilfang Technician (2) - Patrol 009'),
+
+(@SGGUID+25, 2, 4, 0, @SGGUID+25, 4, 'Slave Pens - Group 025 - Coilfang Technician (2) - Patrol 010'),
+(@SGGUID+26, 2, 3, 0, @SGGUID+26, 4, 'Slave Pens - Group 026 - Coilfang Defender (2) - Patrol 011'),
+
+(@SGGUID+27, 3, 4, 0, @SGGUID+27, 4, 'Slave Pens - Group 027 - Coilfang Technician | Coilfang Collaborator (2) - Patrol 012'),
+(@SGGUID+28, 3, 4, 0, @SGGUID+28, 4, 'Slave Pens - Group 028 - Coilfang Technician | Coilfang Collaborator (2) - Patrol 013'),
+(@SGGUID+29, 2, 4, 0, @SGGUID+29, 4, 'Slave Pens - Group 029 - Coilfang Technician (2) | Coilfang Enchantress - Patrol 014'),
+(@SGGUID+30, 2, 4, 0, @SGGUID+30, 4, 'Slave Pens - Group 030 - Coilfang Technician (2) | Coilfang Enchantress - Patrol 015'),
 
 -- old
 (@SGGUID+104, 2, 4, 0, @SGGUID+104, 4, 'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) Patrol 003'),
-(@SGGUID+105, 2, 4, 0, @SGGUID+105, 4, 'Slave Pens - Coilfang Defender (2) Patrol 000'),
 (@SGGUID+106, 2, 4, 0, @SGGUID+106, 4, 'Slave Pens - Coilfang Defender (2) Patrol 001'),
 
-(@SGGUID+108, 3, 4, 0, @SGGUID+108, 4, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 001'),
-(@SGGUID+109, 2, 4, 0, @SGGUID+109, 4, 'Slave Pens - Coilfang Technician (2) Patrol 002'),
-(@SGGUID+1010, 2, 4, 0, @SGGUID+1010, 4, 'Slave Pens - Coilfang Technician (2) Patrol 003'),
-(@SGGUID+1011, 3, 4, 0, @SGGUID+1011, 4, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 004'),
-(@SGGUID+1012, 3, 4, 0, @SGGUID+1012, 4, 'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 005'),
-(@SGGUID+1013, 2, 4, 0, @SGGUID+1013, 4, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 006'),
-(@SGGUID+1014, 2, 4, 0, @SGGUID+1014, 4, 'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 007'),
+
 (@SGGUID+1016, 3, 4, 0, @SGGUID+1016, 2, 'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 002'),
 (@SGGUID+1043, 3, 4, 0, @SGGUID+1043, 2, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 003'),
 (@SGGUID+1044, 3, 4, 0, @SGGUID+1044, 2, 'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 004');
@@ -1051,15 +1069,53 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+19, 2, 88.46067,-354.25873,3.0356727, 100, 0, 0),
 (@SGGUID+19, 3, 63.1788,-360.7239,3.0356328, 100, 0, 0),
 
+(@SGGUID+23, 1, 84.32233,-355.31314,34.59769, 100, 0, 0),
+(@SGGUID+23, 2, 106.91983,-363.1571,32.197872, 100, 0, 0),
+(@SGGUID+23, 3, 123.67997,-369.14206,30.701508, 100, 0, 0),
+(@SGGUID+23, 4, 131.45589,-380.78525,30.077143, 100, 0, 0),
+(@SGGUID+23, 5, 124.25077,-391.9638,30.730648, 100, 0, 0),
+(@SGGUID+23, 6, 106.44565,-397.10135,32.270786, 100, 0, 0),
+(@SGGUID+23, 7, 84.27282,-405.44107,34.60864, 100, 0, 0),
+
+(@SGGUID+24, 1, 50.593475,-347.18506,43.32531, 100, 0, 0),
+(@SGGUID+24, 2, 10.812712,-345.4971,59.181576, 100, 0, 0),
+(@SGGUID+24, 3, -11.609047,-348.55582,70.28157, 100, 0, 0),
+(@SGGUID+24, 4, -51.178356,-365.4542,81.021706, 100, 0, 0),
+
+(@SGGUID+25, 1, -49.831036,-394.43207,81.02048, 100, 0, 0),
+(@SGGUID+25, 2, -38.72895,-401.16205,79.519264, 100, 0, 0),
+(@SGGUID+25, 3, -11.247518,-412.01126,70.102516, 100, 0, 0),
+(@SGGUID+25, 4, 11.266998,-414.90323,58.969685, 100, 0, 0),
+(@SGGUID+25, 5, 38.81258,-415.03116,47.454975, 100, 0, 0),
+(@SGGUID+25, 6, 53.303783,-413.38776,42.375145, 100, 0, 0),
+
+(@SGGUID+26, 1, -57.01482,-380.75848,81.29693, 100, 0, 0),
+(@SGGUID+26, 2, -84.22245,-380.4095,78.72163, 100, 0, 0),
+(@SGGUID+26, 3, -114.71889,-380.43747,81.247215, 100, 0, 0),
+
+(@SGGUID+27, 1, -124.27898,-362.85834,80.274536, 100, 0, 0),
+(@SGGUID+27, 2, -119.12202,-366.2761,81.00296, 100, 0, 0),
+(@SGGUID+27, 3, -119.18936,-394.48737,80.9744, 100, 0, 0),
+(@SGGUID+27, 4, -124.20847,-398.524,80.28374, 100, 0, 0),
+
+(@SGGUID+28, 1, -229.06407,-380.6496,3.0354943, 100, 0, 0),
+(@SGGUID+28, 2, -248.38216,-380.5874,10.425892, 100, 0, 0),
+(@SGGUID+28, 3, -267.8213,-380.56857,20.334038, 100, 0, 0),
+(@SGGUID+28, 4, -291.18933,-380.3938,30.125166, 100, 0, 0),
+
+(@SGGUID+29, 1, -227.68805,-363.0566,3.035604, 100, 0, 0),
+(@SGGUID+29, 2, -263.95883,-333.90656,3.0356667, 100, 0, 0),
+(@SGGUID+29, 3, -254.09215,-355.1459,3.035639, 100, 0, 0),
+
+(@SGGUID+30, 1, -224.32506,-396.62097,3.0355346, 100, 0, 0),
+(@SGGUID+30, 2, -255.33366,-407.8583,3.0356631, 100, 0, 0),
+(@SGGUID+30, 3, -269.14896,-421.1905,3.0330684, 100, 0, 0),
 -- old
 (@SGGUID+104, 1, -112.21934, -751.7954, 37.091347, 100, 0, 0),
 (@SGGUID+104, 2, -83.497406, -735.865, 36.541836, 100, 0, 0),
 (@SGGUID+104, 3, -89.53006, -701.02655, 36.55273, 100, 0, 0),
 (@SGGUID+104, 4, -97.61304, -672.66565, 30.076414, 100, 0, 0),
 (@SGGUID+104, 5, -99.05717, -625.1839, 16.924713, 100, 0, 0),
-(@SGGUID+105, 1, -114.71889, -380.43747, 81.247215, 100, 0, 0),
-(@SGGUID+105, 2, -84.22245, -380.4095, 78.72163, 100, 0, 0),
-(@SGGUID+105, 3, -57.01482, -380.75848, 81.29693, 100, 0, 0),
 (@SGGUID+106, 1, -103.67276, -611.86194, 10.930438, 100, 0, 0),
 (@SGGUID+106, 2, -104.19448, -592.87317, 5.20782, 100, 0, 0),
 (@SGGUID+106, 3, -75.75858, -585.0732, 1.723919, 100, 0, 0),
@@ -1069,37 +1125,6 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+106, 7, -62.04731, -528.7617, -1.5941613, 100, 0, 0),
 (@SGGUID+106, 8, -74.375824, -526.5931, -1.5943141, 100, 0, 0),
 (@SGGUID+106, 9, -83.93549, -523.77386, -1.5914233, 100, 0, 0),
-(@SGGUID+108, 1, 84.27282, -405.44107, 34.60864, 100, 0, 0),
-(@SGGUID+108, 2, 106.44565, -397.10135, 32.270786, 100, 0, 0),
-(@SGGUID+108, 3, 124.25077, -391.9638, 30.730648, 100, 0, 0),
-(@SGGUID+108, 4, 131.45589, -380.78525, 30.077143, 100, 0, 0),
-(@SGGUID+108, 5, 123.67997, -369.14206, 30.701508, 100, 0, 0),
-(@SGGUID+108, 6, 106.91983, -363.1571, 32.197872, 100, 0, 0),
-(@SGGUID+108, 7, 84.32233, -355.31314, 34.59769, 100, 0, 0),
-(@SGGUID+109, 1, -49.831036, -394.43207, 81.02048, 100, 0, 0),
-(@SGGUID+109, 2, -38.72895, -401.16205, 79.519264, 100, 0, 0),
-(@SGGUID+109, 3, -11.247518, -412.01126, 70.102516, 100, 0, 0),
-(@SGGUID+109, 4, 11.266998, -414.90323, 58.969685, 100, 0, 0),
-(@SGGUID+109, 5, 38.81258, -415.03116, 47.454975, 100, 0, 0),
-(@SGGUID+109, 6, 53.303783, -413.38776, 42.375145, 100, 0, 0),
-(@SGGUID+1010, 1, -51.178356, -365.4542, 81.021706, 100, 0, 0),
-(@SGGUID+1010, 2, -11.609047, -348.55582, 70.28157, 100, 0, 0),
-(@SGGUID+1010, 3, 10.812712, -345.4971, 59.181576, 100, 0, 0),
-(@SGGUID+1010, 4, 50.593475, -347.18506, 43.32531, 100, 0, 0),
-(@SGGUID+1011, 1, -124.27898, -362.85834, 80.274536, 100, 0, 0),
-(@SGGUID+1011, 2, -119.12202, -366.2761, 81.00296, 100, 0, 0),
-(@SGGUID+1011, 3, -119.18936, -394.48737, 80.9744, 100, 0, 0),
-(@SGGUID+1011, 4, -124.20847, -398.524, 80.28374, 100, 0, 0),
-(@SGGUID+1012, 3, -291.18933, -380.3938, 30.125166, 100, 0, 0),
-(@SGGUID+1012, 2, -267.8213, -380.56857, 20.334038, 100, 0, 0),
-(@SGGUID+1012, 1, -248.38216, -380.5874, 10.425892, 100, 0, 0),
-(@SGGUID+1012, 9, -229.06407, -380.6496, 3.0354943, 100, 0, 0),
-(@SGGUID+1013, 1, -227.68805, -363.0566, 3.035604, 100, 0, 0),
-(@SGGUID+1013, 2, -263.95883, -333.90656, 3.0356667, 100, 0, 0),
-(@SGGUID+1014, 1, -224.32506, -396.62097, 3.0355346, 100, 0, 0),
-(@SGGUID+1014, 2, -255.33366, -407.8583, 3.0356631, 100, 0, 0),
-(@SGGUID+1014, 3, -269.14896, -421.1905, 3.0330684, 100, 0, 0),
-
 (@SGGUID+1016, 1, 21.3806, -77.1728, -1.59056, 100, 1000, 5),
 (@SGGUID+1016, 2, -7.40776, -59.9187, -1.59056, 100, 0, 0),
 (@SGGUID+1016, 3, -23.4768, -47.3342, -1.59056, 100, 0, 0),
@@ -1145,19 +1170,17 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+8, 'Slave Pens - Group 008 - Coilfang Champion | Coilfang Enchantress - Patrol 005'),
 (@SGGUID+13, 'SSlave Pens - Group 013 - Coilfang Champion | Coilfang Enchantress | Soothsayer - Patrol 006'),
 (@SGGUID+19, 'Slave Pens - Group 019 - Coilfang Technician (2) - Patrol 007'),
-
+(@SGGUID+23, 'Slave Pens - Group 023 - Coilfang Technician (1) | Coilfang Collaborator (2) - Patrol 008'),
+(@SGGUID+24, 'Slave Pens - Group 024 - Coilfang Technician (2) - Patrol 009'),
+(@SGGUID+25,'Slave Pens - Group 025 - Coilfang Technician (2) - Patrol 010'),
+(@SGGUID+26,'Slave Pens - Group 026 - Coilfang Defender (2) - Patrol 011'),
+(@SGGUID+27,'Slave Pens - Group 027 - Coilfang Technician | Coilfang Collaborator (2) - Patrol 012'),
+(@SGGUID+28,'Slave Pens - Group 028 - Coilfang Technician | Coilfang Collaborator (2) - Patrol 013'),
+(@SGGUID+29, 'Slave Pens - Group 029 - Coilfang Technician (2) | Coilfang Enchantress - Patrol 014'),
+(@SGGUID+30, 'Slave Pens - Group 030 - Coilfang Technician (2) | Coilfang Enchantress - Patrol 015'),
 -- old
 (@SGGUID+104,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) Patrol 003'),
-(@SGGUID+105,'Slave Pens - Coilfang Defender (2) Patrol 000'),
 (@SGGUID+106,'Slave Pens - Coilfang Defender (2) Patrol 001'),
-(@SGGUID+107,'Slave Pens - Coilfang Technician (2) Patrol 000'),
-(@SGGUID+108,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 001'),
-(@SGGUID+109,'Slave Pens - Coilfang Technician (2) Patrol 002'),
-(@SGGUID+1010,'Slave Pens - Coilfang Technician (2) Patrol 003'),
-(@SGGUID+1011,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 004'),
-(@SGGUID+1012,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 005'),
-(@SGGUID+1013,'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 006'),
-(@SGGUID+1014,'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 007'),
 (@SGGUID+1016,'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 002'),
 (@SGGUID+1043,'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 003'),
 (@SGGUID+1044,'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 004');

@@ -102,6 +102,21 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 1
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 17962;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 19903;
 
+-- Coilfang Tempest
+-- Before:  SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 21127;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 21843;
+
+-- Rokmar the Crackler
+-- Before:  SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 4
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1.6', SpeedRun = '1.142' WHERE entry = 17991;
+UPDATE creature_template SET SpeedWalk = '1.6', SpeedRun = '1.142' WHERE entry = 19895;
 
 -- Correct some broadcast_text
 UPDATE broadcast_text SET ChatTypeID = '1' WHERE Id = '15108';
@@ -402,3 +417,23 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1796201 WHERE `entry` = 17962;
 UPDATE `creature_template` SET `SpellList` = 1990301 WHERE `entry` = 19903; 
+
+-- Coilfang Tempest 
+DELETE FROM `creature_template_spells` WHERE `entry` = 21127;
+DELETE FROM `creature_template_spells` WHERE `entry` = 21843;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2112701, 2184301);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2112701, 'Slave Pens - Coilfang Tempest - Normal', 0, 0),
+(2184301, 'Slave Pens - Coilfang Tempest - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2112701, 2184301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2112701, 1, 36872, 0, -1, 130, 0, 100, 0, 10000, 22000, 10000, 22000, 'Coilfang Tempest - Deadly Poison - top aggro aura not present'),
+(2112701, 2, 15667, 0, -1, 1, 0, 100, 0, 6000, 21000, 6000, 21000, 'Coilfang Tempest - Sinister Strike - current'),
+
+(2184301, 1, 36872, 0, -1, 130, 0, 100, 0, 10000, 22000, 10000, 22000, 'Coilfang Tempest - Deadly Poison - top aggro aura not present'),
+(2184301, 2, 15667, 0, -1, 1, 0, 100, 0, 6000, 21000, 6000, 21000, 'Coilfang Tempest - Sinister Strike - current');
+
+UPDATE `creature_template` SET `SpellList` = 2112701 WHERE `entry` = 21127;
+UPDATE `creature_template` SET `SpellList` = 2184301 WHERE `entry` = 21843; 
