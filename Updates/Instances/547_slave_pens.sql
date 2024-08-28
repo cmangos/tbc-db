@@ -13,7 +13,6 @@ SET @SGGUID := 5470000; -- spawn_groups
 SET @STRINGID := 5470000; -- used for StringID's
 SET @RELAYID := 5470000; -- used for dbscript_relay
 
-
 -- =========
 -- CREATURES
 -- =========
@@ -55,7 +54,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+34, 17816, 547, 3, -121.42814,-752.9407,37.346226,2.521, 7200, 7200, 0, 0), -- Bogstrok
 (@CGUID+35, 17817, 547, 3, -121.776, -749.779, 37.0171, 2.60908, 7200, 7200, 0, 0), -- Greater Bogstrok
 (@CGUID+36, 17890, 547, 3, -294.5036, -380.8706, 30.58193, 1.32645, 86400, 86400, 0, 0), -- Weeder Greenthumb
-(@CGUID+37, 17893, 547, 3, -192.1564, -799.5793, 43.89159, 1.239184, 86400, 86400, 0, 0), -- Naturalist Bite
+(@CGUID+37, 17893, 547, 3, -192.15643, -799.57935, 43.891594, 1.2391, 86400, 86400, 0, 0), -- Naturalist Bite
 (@CGUID+38, 17938, 547, 3, -67.44096, -551.6196, -1.161117, 4.928274, 7200, 7200, 2, 1), -- Coilfang Observer
 (@CGUID+39, 17938, 547, 3, -119.428, -595.805, 8.45653, 5.32325, 7200, 7200, 0, 0), -- Coilfang Observer
 (@CGUID+40, 17938, 547, 3, -127.141, -144.428, -1.80314, 0.855211, 7200, 7200, 0, 0), -- Coilfang Observer
@@ -129,13 +128,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+108, 17962, 547, 3, -251.208, -377.756, 11.7882, 6.28222, 7200, 7200, 0, 0), -- Coilfang Collaborator
 (@CGUID+109, 17962, 547, 3, -249.25, -383.417, 10.8428, 6.28126, 7200, 7200, 0, 0), -- Coilfang Collaborator
 (@CGUID+110, 17962, 547, 3, 119.7691, -457.3299, 3.033783, 6.122182, 7200, 7200, 4, 1), -- Coilfang Collaborator
--- (@CGUID+111
+(@CGUID+111, 17960, 547, 3, -98.6582, -742.3795,  35.319103, 3.7175, 7200, 7200, 0, 0), -- Coilfang Soothsayer
 (@CGUID+112, 17962, 547, 3, 70.3082, -356.168, 38.5397, 5.27089, 7200, 7200, 0, 0), -- Coilfang Collaborator
 (@CGUID+113, 17963, 547, 3, -54.63998, -280.2335, -1.283369, 3.996804, 7200, 7200, 0, 0), -- Wastewalker Slave
 (@CGUID+114, 17964, 547, 3, -54.29192, -248.0854, -3.691535, 1.972222, 7200, 7200, 0, 0), -- Wastewalker Worker
 (@CGUID+115, 0, 547, 3, -89.17553, -91.53407, -2.22339, 6.073746, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+116, 0, 547, 3, -120.7097, -65.83062, -2.223061, 3.159046, 7200, 7200, 0, 0), -- spawn_group_entry
--- (@CGUID+117, RE-USE
+(@CGUID+117, 17957, 547, 3, -99.39096, -744.7455, 35.16389, 3.6128, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+118, 0, 547, 3, -57.08875, -27.93377, -1.772427, 3.176499, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+119, 17963, 547, 3, -78.0172, -191.155, -3.42385, 5.93412, 7200, 7200, 0, 0), -- Wastewalker Slave
 (@CGUID+120, 0, 547, 3, -113.1554, -8.017564, -8.669127, 1.762783, 7200, 7200, 0, 0), -- spawn_group_entry
@@ -157,7 +156,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+136, 17964, 547, 3, -61.51235, -20.17615, -2.663957, 4.18879, 7200, 7200, 0, 0), -- Wastewalker Worker
 (@CGUID+137, 25961, 547, 3, -109.224, -120.0521, -2.982424, 5.113815, 7200, 7200, 0, 0), -- Earthen Ring Totem
 (@CGUID+138, 25961, 547, 3, -92.68961, -119.6279, -2.270359, 4.223697, 7200, 7200, 0, 0), -- Earthen Ring Totem
--- (@CGUID+139, RE-USE
+(@CGUID+139, 17961, 547, 3, -97.35107, -745.45483, 35.69915, 3.54301, 7200, 7200, 0, 0), -- Coilfang Enchantress
 (@CGUID+140, 17964, 547, 3, -73.61772, -182.1575, -5.111982, 5.148721, 7200, 7200, 0, 0), -- Wastewalker Worker
 (@CGUID+141, 17963, 547, 3, -60.16751, -176.9379, -4.0791, 4.660029, 7200, 7200, 0, 0), -- Wastewalker Slave
 (@CGUID+142, 0, 547, 3, -112.2143, -105.2496, -4.700827, 2.75762, 7200, 7200, 0, 0), -- spawn_group_entry
@@ -299,12 +298,11 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+89, 3, -110.53345,-594.992,6.510709, 100, 0, 0),
 (@CGUID+89, 4, -114.35795,-604.0504,9.25625, 100, 1000, 0);
 
-DELETE FROM `creature_movement_template` WHERE entry IN (17893,17963, 17964,17941,17942,17957,17960,17961, 17991,25754,25964,25965,25966);
+DELETE FROM `creature_movement_template` WHERE entry IN (17893,17963, 17964,17941,17942,17991,25754,25964,25965,25966);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
--- 17893
-(17893, 0, 1, -190.926, -796.39, 43.7993, 0, 0, 0),
-(17893, 0, 2, -190.926, -796.39, 43.7993, 0.733148, 3000, 1789301),
-(17893, 0, 3, -183.408, -780.199, 43.7993, 100, 1000, 1789302),
+-- 17893 Naturalist Bite
+(17893, 0, 1, -190.92549,-796.38947,43.799316, 100, 1, 1789301),
+(17893, 0, 2, -183.40784,-780.19904,43.799313, 100, 1, 1789302),
 -- 17963 Wastewalker Slave - Run away when slavehandler dies
 (17963, 1, 1,2.626806,-22.682434,-1.715987, 100, 0, 0),
 (17963, 1, 2,18.589142,-26.894253,-1.1703262, 100, 0, 0),
@@ -340,55 +338,6 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17942, 0, 6, -217.95325,-695.7503,26.769361, 100, 0, 0),
 (17942, 0, 7, -204.01328,-702.2695,37.230885, 100, 0, 0),
 (17942, 0, 8, -199.49352,-705.59766,37.802734, 100, 1000, 7),
--- 17957
-(17957, 1, 1, -97.2996, -744.019, 34.8381, 0, 0, 1795701),
-(17957, 1, 2, -99.391, -744.745, 35.1639, 0, 0, 0),
-(17957, 1, 3, -101.482, -745.472, 35.4897, 0, 0, 0),
-(17957, 1, 4, -104.67, -746.58, 35.4867, 0, 0, 0),
-(17957, 1, 5, -106.867, -747.344, 35.4775, 0, 0, 0),
-(17957, 1, 6, -109.055, -748.104, 35.4256, 0, 0, 0),
-(17957, 1, 7, -112.099, -749.161, 35.386, 0, 0, 0),
-(17957, 1, 8, -114.067, -749.845, 36.8722, 0, 0, 0),
-(17957, 1, 9, -121.663, -752.485, 37.3026, 0, 0, 0),
-(17957, 1, 10, -124.044, -753.312, 37.2635, 0, 0, 0),
-(17957, 1, 11, -128.587, -754.891, 37.8923, 0, 0, 0),
-(17957, 1, 12, -141.857, -759.502, 37.8923, 0, 0, 0),
-(17957, 1, 13, -147.138, -761.337, 37.8923, 0, 0, 0),
-(17957, 1, 14, -175.107, -768.043, 41.4645, 0, 0, 0),
-(17957, 1, 15, -179.833, -773.106, 43.0967, 0, 0, 0),
-(17957, 1, 16, -181.61, -776.623, 43.8054, 0, 0, 0),
--- 17960
-(17960, 1, 1, -90.2328, -740.959, 36.8262, 0, 0, 0),
-(17960, 1, 2, -97.2765, -745.569, 36.8262, 0, 0, 0),
-(17960, 1, 3, -104.32, -750.179, 36.8262, 0, 0, 0),
-(17960, 1, 4, -105.792, -750.713, 36.8262, 0, 0, 0),
-(17960, 1, 5, -115.675, -749.41, 36.8262, 0, 0, 0),
-(17960, 1, 6, -123.117, -749.247, 37.0522, 0, 0, 0),
-(17960, 1, 7, -131.139, -752.035, 37.8923, 0, 0, 0),
-(17960, 1, 8, -139.155, -754.82, 37.8923, 0, 0, 0),
-(17960, 1, 9, -146.842, -757.631, 37.8923, 0, 0, 0),
-(17960, 1, 10, -154.447, -759.454, 36.4563, 0, 0, 0),
-(17960, 1, 11, -162.529, -761.391, 35.8416, 0, 0, 0),
-(17960, 1, 12, -170.165, -763.222, 38.0174, 0, 0, 0),
-(17960, 1, 13, -179.153, -767.196, 42.0397, 0, 0, 0),
-(17960, 1, 14, -180.005, -768.109, 42.3157, 0, 0, 0),
--- 17961
-(17961, 1, 1, -93.8956, -741.546, 35.7611, 0, 0, 0),
-(17961, 1, 2, -98.6582, -742.38, 35.6239, 0, 0, 0),
-(17961, 1, 3, -103.421, -743.213, 35.4867, 0, 0, 0),
-(17961, 1, 4, -106.612, -743.771, 35.5094, 0, 0, 0),
-(17961, 1, 5, -108.113, -744.033, 36.3856, 0, 0, 0),
-(17961, 1, 6, -115.49, -754.083, 37.3762, 0, 0, 0),
-(17961, 1, 7, -120.796, -755.927, 37.6455, 0, 0, 0),
-(17961, 1, 8, -128.818, -758.714, 37.8923, 0, 0, 0),
-(17961, 1, 9, -136.834, -761.5, 37.8923, 0, 0, 0),
-(17961, 1, 10, -145.193, -764.507, 37.8923, 0, 0, 0),
-(17961, 1, 11, -152.798, -766.33, 35.7474, 0, 0, 0),
-(17961, 1, 12, -160.945, -768.283, 37.0185, 0, 0, 0),
-(17961, 1, 13, -168.516, -770.098, 39.7835, 0, 0, 0),
-(17961, 1, 14, -173.984, -772.021, 42.0383, 0, 0, 0),
-(17961, 1, 15, -174.836, -772.934, 42.3143, 0, 0, 0),
-(17961, 1, 16, -180.41, -777.715, 43.8077, 0, 0, 0),
 -- 17991 Rokmar the Crackler
 (17991, 0, 1, 18.321169,-448.44757,3.055895, 100, 0, 0),
 (17991, 0, 2, -13.558029,-454.80655,2.49773, 100, 0, 0),
@@ -496,7 +445,12 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 
 (@CGUID+11, 1), -- Bogstrok
 (@CGUID+10, 1), -- Bogstrok
-(@CGUID+21, 1); -- Greater Bogstrok
+(@CGUID+21, 1), -- Greater Bogstrok
+
+(@CGUID+117, 1), -- Coilfang Champion
+(@CGUID+111, 1), -- Coilfang Enchantress
+(@CGUID+139, 1); -- Coilfang Soothsayer
+
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+100, 0, 0, 1, 69, 0, '5301'), -- Coilfang Collaborator
@@ -743,6 +697,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 
 (@SGGUID+42, 'Slave Pens - Group 042 - Wastewalker Worker (2)', 0, 0, 0, 1, 0),
 (@SGGUID+43, 'Slave Pens - Group 043 - Wastewalker Worker (2)', 0, 0, 0, 1, 0),
+-- Group spawned when Naturalist Bite gossip got activated
+(@SGGUID+44, 'Slave Pens - Group 044 - Coilfang Champion | Coilfang Enchantress | Coilfang Soothsayer - Patrol 020', 0, 0, @SGGUID+44, 1, 0),
 
 -- objects
 (@SGGUID+10100, 'Slave Pens - Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode', 1, 1, 0, 0, 0),
@@ -949,6 +905,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+43, @CGUID+125, -1), -- Wastewalker Worker
 (@SGGUID+43, @CGUID+126, -1), -- Wastewalker Worker
 
+(@SGGUID+44, @CGUID+117, 0), -- Coilfang Champion
+(@SGGUID+44, @CGUID+139, 1), -- Coilfang Soothsayer
+(@SGGUID+44, @CGUID+111, 2), -- Coilfang Enchantress
+
 -- objects
 (@SGGUID+10100, @OGUID+63, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
 (@SGGUID+10100, @OGUID+65, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
@@ -1024,7 +984,8 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+34, 2, 3, 0, @SGGUID+34, 4, 'Slave Pens - Group 034 - Coilfang Defender (2) - Patrol 016'),
 (@SGGUID+38, 2, 4, 0, @SGGUID+38, 4, 'Slave Pens - Group 038 - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer - Patrol 017'),
 (@SGGUID+39, 1, 4, 0, @SGGUID+39, 4, 'Slave Pens - Group 039 - Greater Bogstrok (2) | Bogstrok (2) - Patrol 018'),
-(@SGGUID+40, 1, 4, 0, @SGGUID+40, 4, 'Slave Pens - Group 040 - Greater Bogstrok (2) | Bogstrok (2) - Patrol 019');
+(@SGGUID+40, 1, 4, 0, @SGGUID+40, 4, 'Slave Pens - Group 040 - Greater Bogstrok (2) | Bogstrok (2) - Patrol 019'),
+(@SGGUID+44, 3, 4, 0, @SGGUID+44, 4, 'Slave Pens - Group 044 - Coilfang Champion | Coilfang Enchantress | Coilfang Soothsayer - Patrol 020');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 -- new
@@ -1131,7 +1092,13 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+40, 3, -203.70541,-734.4595,35.6812, 100, 0, 0),
 (@SGGUID+40, 4, -180.52708,-743.2256,35.604977, 100, 0, 0),
 (@SGGUID+40, 5, -147.30037,-752.92,37.892323, 100, 0, 0),
-(@SGGUID+40, 6, -135.51462,-772.65594,38.24504, 100, 0, 0);
+(@SGGUID+40, 6, -135.51462,-772.65594,38.24504, 100, 0, 0),
+
+(@SGGUID+44, 1, -99.39096, -744.7455, 35.16389, 100, 1, 1795701),
+(@SGGUID+44, 2, -175.10693,-768.0427,41.464447, 100, 0, 0),
+(@SGGUID+44, 3, -179.83311,-773.10614,43.096695, 100, 0, 0),
+(@SGGUID+44, 4, -180.56966,-777.79266,43.799313, 100, 1, 1795702);
+
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+1,'Slave Pens - Group 001 - Greater Bogstrok (2) | Bogstrok - Patrol 001'),
@@ -1151,8 +1118,17 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+34, 'Slave Pens - Group 034 - Coilfang Defender (2) - Patrol 016'),
 (@SGGUID+38,'Slave Pens - Group 038 - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer - Patrol 017'),
 (@SGGUID+39,'Slave Pens - Group 039 - Greater Bogstrok (2) | Bogstrok (2) - Patrol 018'),
-(@SGGUID+40,'Slave Pens - Group 040 - Greater Bogstrok (2) | Bogstrok (2) - Patrol 019');
+(@SGGUID+40,'Slave Pens - Group 040 - Greater Bogstrok (2) | Bogstrok (2) - Patrol 019'),
+(@SGGUID+44,'Slave Pens - Group 044 - Coilfang Champion | Coilfang Enchantress | Coilfang Soothsayer - Patrol 020');
 
+
+DELETE FROM worldstate_name WHERE Id = @SGGUID+44;
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
+(@SGGUID+44, 'Slave Pens - Naturalist Bite - Spawn Group 044');
+
+DELETE FROM `conditions` WHERE `condition_entry` = @SGGUID+44;
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@SGGUID+44, 42, @SGGUID+44, 1, 1, 0, 0, 'Slave Pens - Naturalist Bite - Spawn Group 044');
 
 -- StringIDs
 DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+6;
@@ -1168,12 +1144,8 @@ INSERT INTO `string_id` (Id, Name) VALUES
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1789301,1789302,1795701,2575401,2575402,2575403,2575404,2575405);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (2575401,2575402,2575403,2575404,2575405);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1789301, 0, 0, 0, 0, 0, 0, 0, 0, 14575, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Say on orientation change'),
-(1789302, 0, 29, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Add NPC Flag gossip'),
-(1789302, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Pause Waypoints'),
-(1795701, 0, 0, 0, 0, 0, 0, 0, 0, 15896, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Champion - Say On Spawn'),
 (2575401, 0, 28, 0, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'UNIT_STAND_STATE_STAND'),
 (2575401, 5, 25, 1, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN ON'),
 (2575401, 10, 29, 1, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'Remove NPCFLAGS'),
@@ -1202,9 +1174,8 @@ INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`,
 (25740,20,20,2,3,0,25745,@CGUID+217,7 | 0x10,1,0,0,0,0,0,0,0,'Earthen Ring Flamecaller#2 - Waypoints'),
 (25740,30,20,2,5,0,25745,@CGUID+215,7 | 0x10,1,0,0,0,0,0,0,0,'Earthen Ring Flamecaller#2 - Waypoints');
 
-DELETE FROM `dbscripts_on_relay` WHERE `id` IN (10024,20598,20599,20600,20601);
+DELETE FROM `dbscripts_on_relay` WHERE `id` IN (20598,20599,20600,20601);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(10024, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang mob - Move Waypoint'),
 (20598, 1500, 31, 25971, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 25971'),
 (20598, 2000, 15, 45964, 1, 0, 25971, 255, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'cast 45964 b->m'),
 (20598, 3000, 31, 25754, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 25754'),
@@ -1217,21 +1188,8 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalon
 (20601, 100, 0, 0, 0, 0, 25754, @CGUID+216, 7 | 0x10, 24931, 0, 0, 0, 0, 0, 0, 0, 'buddy SAY - Ahune Retreats.  His defenses diminish.'),
 (20601, 37000, 0, 0, 0, 0, 25754, @CGUID+216, 7 | 0x10, 24932, 0, 0, 0, 0, 0, 0, 0, 'buddy SAY - Ahune will soon resurface.');
 
-DELETE FROM `dbscripts_on_gossip` WHERE `id` IN (752001,754001,1138901);
+DELETE FROM `dbscripts_on_gossip` WHERE `id` = 1138901;
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- 752001
-(752001, 0, 8, 17893, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Give Kill Credit to Group'),
-(752001, 0, 13, 0, 0, 0, 182094, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Open cage'),
-(752001, 0, 48, 256, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Remove UNIT_FLAG_IMMUNE_TO_PLAYER'),
-(752001, 0, 48, 512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Remove UNIT_FLAG_IMMUNE_TO_NPC'),
-(752001, 0, 22, 113, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Change faction'),
-(752001, 0, 29, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Remove NPC Gossip flag'),
-(752001, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Move Waypoint'),
-(752001, 0, 10, 17957, 300000, 1, 0, 0, 8, 1, 0, 0, 0, -97.29962, -744.0187, 34.83808, 3.476041, 'Naturalist Bite - Spawn Coilfang Champion'),
-(752001, 0, 10, 17960, 300000, 1, 0, 0, 8, 1, 0, 0, 0, -93.89555, -741.5464, 35.76108, 3.737259, 'Naturalist Bite - Spawn Coilfang Soothsayer'),
-(752001, 0, 10, 17961, 300000, 1, 0, 0, 8, 1, 0, 0, 0, -90.23283, -740.959, 35.3191, 35.94978, 'Naturalist Bite - Spawn Coilfang Enchantress'),
--- 754001
-(754001, 0, 15, 34906, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Cast Mark of Bite'),
 -- 1138901
 (1138901, 0, 15, 45937, 0, 0, 25745, @CGUID+213, 7 | 0x10, 0, 0, 0, 0, 0, 0, 0, 0, '[PH] Ahune Summon Loc Bunny - Cast Ahune - Summoning Visual 1'),
 (1138901, 100, 20, 2, 0, 0, 25745, @CGUID+216, 7 | 0x10, 1, 0, 0, 0, 0, 0, 0, 0, 'Earthen Ring Flamecaller#1 - Waypoints'),
@@ -1317,15 +1275,38 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+6, 0, 19081, 0, 'Coilfang Scale-Healer - random say'),
 (@RELAYID+6, 0, 19083, 0, 'Coilfang Scale-Healer - random say');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1795901, 1795902, 1796301, 1796401);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1789301, 1789302, 1795901, 1795902, 1796301, 1796401, 1795701, 1795702);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Naturalist Bite 
+(1789301, 0, 1, 0, 0, 0, 0, 0, 0, 0, 14575, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Say Text'),
+(1789302, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Pause Waypoints'),
+(1789302, 0, 1, 29, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Add NPC Flag gossip'),
 -- Coilfang Slavehandler random RP events on moving
 (1795901, 0, 0, 45, 0, @RELAYID+2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Slavehandler - 10% chance for random RP'),
 (1795902, 0, 0, 45, 0, @RELAYID+3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Slavehandler - 10% chance for random RP'),
 -- Wastewalker Slave
 (1796301, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Wastewalker Slave - Despawn self'),
 -- Wastewalker Worker
-(1796401, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Wastewalker Worker - Despawn self');
+(1796401, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Wastewalker Worker - Despawn self'),
+-- Coilfang Champion
+(1795701, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15896, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Champion - Say Text'),
+(1795702, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Champion - stop waypoint'),
+(1795702, 0, 1, 26, 0, 0, 0, 17893, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Champion - Attack Naturalist Bite');
+
+
+
+DELETE FROM dbscripts_on_gossip WHERE id IN (752001, 754001);
+INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Naturalist Bite - Caged Gossip
+(752001, 0, 0, 8, 17893, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Give Lost in Action Quest Kill Credit to Group'), -- Quest ID 9738
+(752001, 0, 1, 13, 0, 0, 0, 182094, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - open cage'), 
+(752001, 0, 2, 768, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Remove Flags'), 
+(752001, 0, 3, 22, 113, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Change faction'), 
+(752001, 0, 4, 29, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Remove NPC Gossip flag'), 
+(752001, 0, 5, 53, 0, 0, 0, 0, 0, 0, @SGGUID+44, 1, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Spawn Group 44'),
+(752001, 0, 6, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Move Waypoint'),
+-- 754001
+(754001, 0, 0, 15, 34906, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Cast Mark of Bite');
 
 
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

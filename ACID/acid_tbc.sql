@@ -23373,9 +23373,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bogstrok 17816 - spell_list
 -- Greater Bogstrok 17817 - spell_list
 -- Naturalist Bite 17893 - GossipHello_npc_naturalist_bite
-('1789301','17893','17','0','100','0','17957','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Champion launch relay script'),
-('1789302','17893','17','0','100','0','17960','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Soothsayer launch relay script'),
-('1789303','17893','17','0','100','0','17961','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Enchantress launch relay script'),
 -- Coilfang Observer 17938 - spell_list
 ('1793805','17938','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Observer - Text on Aggro'),
 -- Coilfang Technician 17940 - spell_list
