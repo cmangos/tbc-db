@@ -4,6 +4,7 @@ DBScriptName: -
 DB%Complete: 90
 DBComment:
 Wastewalker Captive should only talk OOC if players are in a ~20 yards range, need AI adjustments
+@SGGUID+26, @CGUID+86 on bridge, on retail there can be a Collaborator walking with both defenders (infront) have to find out this got added later or was already present on tbc
 EndDBScriptData */
 
 SET @CGUID := 5470000; -- creatures
@@ -75,7 +76,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+55, 17940, 547, 3, 131.6813, -301.2838, 3.035718, 0.6774926, 7200, 7200, 3, 1), -- Coilfang Technician
 (@CGUID+56, 17940, 547, 3, -124.279, -362.858, 80.2745, 1.92303, 7200, 7200, 0, 0), -- Coilfang Technician
 (@CGUID+57, 17941, 547, 3, 49.4763,-380.21915,3.0355754, 3.2570, 86400, 86400, 0, 4), -- Mennu the Betrayer
-(@CGUID+58, 17942, 547, 3, -281.0958, -667.1385, 9.402116, 5.846853, 86400, 86400, 0, 0), -- Quagmirran
+(@CGUID+58, 17942, 547, 3, -281.09576, -667.1385, 9.402116, 5.84685, 86400, 86400, 0, 0), -- Quagmirran
 (@CGUID+59, 17957, 547, 3, -94.66229,-221.32935,-1.2438293, 1.4757, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+60, 17957, 547, 3, -112.82242,-46.836197,-3.2531695,  1.93732, 7200, 7200, 0, 0), -- Coilfang Champion
 (@CGUID+61, 17960, 547, 3, -105.714775,-751.8263,36.927948, 0.400, 7200, 7200, 0, 0), -- Coilfang Soothsayer
@@ -103,7 +104,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+83, 17959, 547, 3, -69.84593,-169.56969,-3.3459024, 3.403, 7200, 7200, 0, 4), -- Coilfang Slavehandler
 (@CGUID+84, 17959, 547, 3, -33.9024, -6.95358, -1.43446, 2.65655, 7200, 7200, 0, 4), -- Coilfang Slavehandler
 (@CGUID+85, 17959, 547, 3, -58.809, -15.6826, -2.96641, 4.19005, 7200, 7200, 0, 4), -- Coilfang Slavehandler
--- (@CGUID+86, RE-USE
+-- (@CGUID+86, 17962, 547, 3, -115.197, -380.438, 81.2485, 0.000918066, 7200, 7200, 0, 0), -- Coilfang Collaborator
 (@CGUID+87, 17960, 547, 3, -127.598, -266.238, -1.49976, 1.29448, 7200, 7200, 0, 0), -- Coilfang Soothsayer
 (@CGUID+88, 17961, 547, 3, -92.2789, -224.129, -1.22842, 1.73087, 7200, 7200, 0, 0), -- Coilfang Enchantress
 (@CGUID+89, 21126, 547, 3, -114.61851,-582.90625,4.588486, 5.061, 7200, 7200, 0, 4), -- Coilfang Scale-Healer
@@ -326,19 +327,19 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17964, 1, 8,114.23545,-99.39411,-1.5905597, 100, 0, 0),
 (17964, 1, 9,121.80467,-118.15591,-0.047849532, 100, 0, 0),
 (17964, 1, 10,121.09884,-142.41917,-0.7381228, 100, 1000, 1796401),
--- 17941
+-- 17941 Mennu the Betrayer
 (17941, 0, 1, 49.4763,-380.21915,3.0355754, 100, 0, 0),
 (17941, 0, 2, 89.26869,-380.23682,15.089901, 100, 0, 0),
 (17941, 0, 3, 121.63626,-380.37653,29.957338, 100, 0, 0),
--- 17942
-(17942, 0, 1, -261.614, -675.771, 10.5416, 0, 0, 0),
-(17942, 0, 2, -246.732, -683.163, 15.529, 0, 0, 0),
-(17942, 0, 3, -238.079, -686.423, 18.4731, 0, 0, 0),
-(17942, 0, 4, -227.735, -690.909, 22.0258, 0, 0, 0),
-(17942, 0, 5, -217.953, -695.75, 26.7694, 0, 0, 0),
-(17942, 0, 6, -208.055, -701.381, 34.9482, 0, 0, 0),
-(17942, 0, 7, -204.026, -702.29, 37.2308, 0, 0, 0),
-(17942, 0, 8, -199.493, -705.598, 37.8027, 100, 1000, 7),
+-- 17942 Quagmirran
+(17942, 0, 1, -272.12997,-671.50586,8.970236, 100, 0, 0),
+(17942, 0, 2, -261.6143,-675.77155,10.541557, 100, 0, 0),
+(17942, 0, 3, -246.73248,-683.1629,15.529007, 100, 0, 0),
+(17942, 0, 4, -238.07864,-686.42316,18.473059, 100, 0, 0),
+(17942, 0, 5, -227.73457,-690.909,22.025816, 100, 0, 0),
+(17942, 0, 6, -217.95325,-695.7503,26.769361, 100, 0, 0),
+(17942, 0, 7, -204.01328,-702.2695,37.230885, 100, 0, 0),
+(17942, 0, 8, -199.49352,-705.59766,37.802734, 100, 1000, 7),
 -- 17957
 (17957, 1, 1, -97.2996, -744.019, 34.8381, 0, 0, 1795701),
 (17957, 1, 2, -99.391, -744.745, 35.1639, 0, 0, 0),
@@ -739,6 +740,10 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+39, 'Slave Pens - Group 039 - Greater Bogstrok (2) | Bogstrok (2) - Patrol 018', 0, 0, 0, 1, 0),
 (@SGGUID+40, 'Slave Pens - Group 040 - Greater Bogstrok (2) | Bogstrok (2) - Patrol 019', 0, 0, 0, 1, 0),
 (@SGGUID+41, 'Slave Pens - Group 041 - Coilfang Defender (2) | Coilfang Observer (2)', 0, 0, 0, 1, 0),
+
+(@SGGUID+42, 'Slave Pens - Group 042 - Wastewalker Worker (2)', 0, 0, 0, 1, 0),
+(@SGGUID+43, 'Slave Pens - Group 043 - Wastewalker Worker (2)', 0, 0, 0, 1, 0),
+
 -- objects
 (@SGGUID+10100, 'Slave Pens - Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode', 1, 1, 0, 0, 0),
 (@SGGUID+10101, 'Slave Pens - Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode', 1, 1, 0, 0, 0),
@@ -867,6 +872,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 (@SGGUID+26, @CGUID+70, 0), -- Coilfang Defender
 (@SGGUID+26, @CGUID+71, 1), -- Coilfang Defender
+-- (@SGGUID+26, @CGUID+86, 2), -- Coilfang Collaborator
 
 (@SGGUID+27, @CGUID+56, 0), -- Coilfang Technician
 (@SGGUID+27, @CGUID+105, 1), -- Coilfang Collaborator
@@ -936,6 +942,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+41, @CGUID+67, -1), -- Coilfang Observer
 (@SGGUID+41, @CGUID+90, -1), -- Coilfang Defender
 (@SGGUID+41, @CGUID+204, -1), -- Coilfang Observer
+
+(@SGGUID+42, @CGUID+127, -1), -- Wastewalker Worker
+(@SGGUID+42, @CGUID+128, -1), -- Wastewalker Worker
+
+(@SGGUID+43, @CGUID+125, -1), -- Wastewalker Worker
+(@SGGUID+43, @CGUID+126, -1), -- Wastewalker Worker
 
 -- objects
 (@SGGUID+10100, @OGUID+63, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode

@@ -127,6 +127,15 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 21842
 UPDATE creature_template SET SpeedWalk = '1.6', SpeedRun = '1.142' WHERE entry = 17991;
 UPDATE creature_template SET SpeedWalk = '1.6', SpeedRun = '1.142' WHERE entry = 19895;
 
+-- Mennu the Betrayer
+-- Before:  SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 6.944439888000488281
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 17941;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 19893;
+
+
 -- Correct some broadcast_text
 UPDATE broadcast_text SET ChatTypeID = '1' WHERE Id = '15108';
 
