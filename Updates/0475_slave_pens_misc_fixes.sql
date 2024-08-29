@@ -135,6 +135,13 @@ UPDATE creature_template SET SpeedWalk = '1.6', SpeedRun = '1.142' WHERE entry =
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 17941;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.9920628' WHERE entry = 19893;
 
+-- Naturalist Bite
+-- Before:  SpeedWalk = 1,125 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 17893;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.142' WHERE entry = 22938;
 
 -- Correct some broadcast_text
 UPDATE broadcast_text SET ChatTypeID = '1' WHERE Id = '15108';
@@ -142,6 +149,16 @@ UPDATE broadcast_text SET ChatTypeID = '1' WHERE Id = '15108';
 -- Delete some unused randomdb script
 DELETE FROM dbscript_random_templates WHERE id = 12003;
 
+
+-- Correct Cage object
+-- UpdateType: CreateObject1
+-- Object Guid: Full: 0x2C45AC4460B1D380000CF500004EE620 GameObject/0 R4459/S3317 Map: 547 Entry: 182094 Low: 5170720
+-- SpawnTrackingStateAnimID: 1778
+-- Flags: 2
+-- FactionTemplate: 114
+-- Level: 0
+-- State: 1
+UPDATE gameobject_template SET faction = '114', flags = '2' WHERE entry = '182094';
 
 -- -----------
 -- SpellLists

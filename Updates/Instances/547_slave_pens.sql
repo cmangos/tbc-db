@@ -492,7 +492,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+13, 0, 547, 3, -136.8079, -128.9627, -1.692187, 1.919862, 0, 0, 0.8191519, 0.5735767, 86400, 86400), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
 (@OGUID+14, 0, 547, 3, -70.0015, -481.9862, -1.594852, 2.356195, 0, 0, 0.9238796, 0.3826832, 86400, 86400), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
 (@OGUID+15, 0, 547, 3, -71.34264, -282.6859, -1.401498, 0.7330382, 0, 0, 0.3583679, 0.9335805, 86400, 86400), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
-(@OGUID+16, 182094, 547, 3, -192.2968, -799.3084, 43.80826, 5.98648, 0, 0, -0.147809, 0.9890159, 25, 25), -- Cage
+(@OGUID+16, 182094, 547, 3, -192.29675, -799.3084, 43.80826, 5.98648, 0, 0, -0.14780903, 0.98901594, 25, 25), -- Cage
 (@OGUID+17, 184197, 547, 2, 119.7887, -137.3579, -0.7518879, 1.430738, 0, 0, 0.6558962, 0.7548511, 0, 0), -- Instance_Portal_Difficulty_1
 (@OGUID+18, 184198, 547, 1, 119.7887, -137.3579, -0.7518879, 1.430738, 0, 0, 0.6558962, 0.7548511, 0, 0), -- Instance_Portal_Difficulty_0
 (@OGUID+19, 185292, 547, 2, -297.0662, -459.9854, 3.035661, 0.1047193, 0, 0, 0.05233574, 0.9986296, 180, 180), -- Skar'this's Prison
@@ -698,7 +698,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+42, 'Slave Pens - Group 042 - Wastewalker Worker (2)', 0, 0, 0, 1, 0),
 (@SGGUID+43, 'Slave Pens - Group 043 - Wastewalker Worker (2)', 0, 0, 0, 1, 0),
 -- Group spawned when Naturalist Bite gossip got activated
-(@SGGUID+44, 'Slave Pens - Group 044 - Coilfang Champion | Coilfang Enchantress | Coilfang Soothsayer - Patrol 020', 0, 0, @SGGUID+44, 1, 0),
+(@SGGUID+44, 'Slave Pens - Group 044 - Coilfang Champion | Coilfang Enchantress | Coilfang Soothsayer - Patrol 020', 0, 0, @SGGUID+44, 1, @STRINGID+7),
 
 -- Objects
 (@SGGUID+50, 'Slave Pens - Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode', 1, 1, 0, 0, 0),
@@ -1131,14 +1131,15 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+44, 42, @SGGUID+44, 1, 1, 0, 0, 'Slave Pens - Naturalist Bite - Spawn Group 044');
 
 -- StringIDs
-DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+6;
+DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+7;
 INSERT INTO `string_id` (Id, Name) VALUES 
 (@STRINGID+1, 'SP_COILFANG_SLAVEHANDLER_01'),
 (@STRINGID+2, 'SP_COILFANG_SLAVEHANDLER_02'),
 (@STRINGID+3, 'SP_COILFANG_SLAVEHANDLER_03'),
 (@STRINGID+4, 'SP_COILFANG_SLAVEHANDLER_04'),
 (@STRINGID+5, 'SP_COILFANG_SLAVEHANDLER_05'),
-(@STRINGID+6, 'SP_COILFANG_SLAVEHANDLER_06');
+(@STRINGID+6, 'SP_COILFANG_SLAVEHANDLER_06'),
+(@STRINGID+7, 'SP_COILFANG_NATURALIST_BITE_GROUP');
 
 -- =========
 -- DBSCRIPTS
@@ -1291,7 +1292,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Coilfang Champion
 (1795701, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15896, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Champion - Say Text'),
 (1795702, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Champion - stop waypoint'),
-(1795702, 0, 1, 26, 0, 0, 0, 17893, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Champion - Attack Naturalist Bite');
+(1795702, 0, 1, 51, 151, @SGGUID+44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Champion - remove formation'),
+(1795702, 0, 2, 20, 1, 10, 0, @STRINGID+7, 5, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringId - change to rnd movement');
 
 
 
@@ -1300,7 +1302,7 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `priority`, `command`, `datalo
 -- Naturalist Bite - Caged Gossip
 (752001, 0, 0, 8, 17893, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Give Lost in Action Quest Kill Credit to Group'), -- Quest ID 9738
 (752001, 0, 1, 13, 0, 0, 0, 182094, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - open cage'), 
-(752001, 0, 2, 768, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Remove Flags'), 
+(752001, 0, 2, 48, 768, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Remove Flags'), 
 (752001, 0, 3, 22, 113, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Change faction'), 
 (752001, 0, 4, 29, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Remove NPC Gossip flag'), 
 (752001, 0, 5, 53, 0, 0, 0, 0, 0, 0, @SGGUID+44, 1, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Spawn Group 44'),
