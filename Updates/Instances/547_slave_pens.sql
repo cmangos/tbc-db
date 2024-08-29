@@ -700,13 +700,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Group spawned when Naturalist Bite gossip got activated
 (@SGGUID+44, 'Slave Pens - Group 044 - Coilfang Champion | Coilfang Enchantress | Coilfang Soothsayer - Patrol 020', 0, 0, @SGGUID+44, 1, 0),
 
--- objects
-(@SGGUID+10100, 'Slave Pens - Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode', 1, 1, 0, 0, 0),
-(@SGGUID+10101, 'Slave Pens - Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode', 1, 1, 0, 0, 0),
-(@SGGUID+1010102, 'Slave Pens - Adamantite Deposit 181556/Rich Adamantite Deposit 181569', 1, 4, 0, 0, 0),
-(@SGGUID+1010103, 'Slave Pens - Slave Pens - Anchient Lichen 181278', 1, 4, 0, 0, 0),
-(@SGGUID+1010104, 'Slave Pens - Slave Pens - Felweed 181270', 1, 3, 0, 0, 0),
-(@SGGUID+1010105, 'Slave Pens - Slave Pens - Ragveil (181275) / Flame Cap (181276)', 1, 2, 0, 0, 0);
+-- Objects
+(@SGGUID+50, 'Slave Pens - Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode', 1, 1, 0, 0, 0),
+(@SGGUID+51, 'Slave Pens - Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode', 1, 1, 0, 0, 0),
+(@SGGUID+52, 'Slave Pens - Adamantite Deposit 181556/Rich Adamantite Deposit 181569', 1, 4, 0, 0, 0),
+(@SGGUID+53, 'Slave Pens - Slave Pens - Anchient Lichen 181278', 1, 4, 0, 0, 0),
+(@SGGUID+54, 'Slave Pens - Slave Pens - Felweed 181270', 1, 3, 0, 0, 0),
+(@SGGUID+55, 'Slave Pens - Slave Pens - Ragveil (181275) / Flame Cap (181276)', 1, 2, 0, 0, 0);
 
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
@@ -910,61 +910,61 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+44, @CGUID+111, 2), -- Coilfang Enchantress
 
 -- objects
-(@SGGUID+10100, @OGUID+63, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+10100, @OGUID+65, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+10100, @OGUID+67, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+10100, @OGUID+69, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+10100, @OGUID+71, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+10100, @OGUID+73, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+10100, @OGUID+75, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+10100, @OGUID+77, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+10100, @OGUID+79, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
-(@SGGUID+10101, @OGUID+64, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+10101, @OGUID+66, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+10101, @OGUID+68, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+10101, @OGUID+70, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+10101, @OGUID+72, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+10101, @OGUID+74, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+10101, @OGUID+76, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+10101, @OGUID+78, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+10101, @OGUID+80, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
-(@SGGUID+1010102, @OGUID+12, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569/Khorium 181557
-(@SGGUID+1010102, @OGUID+13, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
-(@SGGUID+1010102, @OGUID+14, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
-(@SGGUID+1010102, @OGUID+15, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
-(@SGGUID+1010102, @OGUID+62, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
-(@SGGUID+1010103, @OGUID+7, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+8, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+9, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+10, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+11, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+51, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+52, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+53, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+54, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+55, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+56, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+57, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+58, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+59, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+60, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010103, @OGUID+61, -1), -- Anchient Lichen (181278)
-(@SGGUID+1010104, @OGUID+1, -1), -- Felweed (181270)
-(@SGGUID+1010104, @OGUID+2, -1), -- Felweed (181270)
-(@SGGUID+1010104, @OGUID+40, -1), -- Felweed (181270)
-(@SGGUID+1010104, @OGUID+41, -1), -- Felweed (181270)
-(@SGGUID+1010104, @OGUID+42, -1), -- Felweed (181270)
-(@SGGUID+1010104, @OGUID+43, -1), -- Felweed (181270)
-(@SGGUID+1010104, @OGUID+44, -1), -- Felweed (181270)
-(@SGGUID+1010104, @OGUID+45, -1), -- Felweed (181270)
-(@SGGUID+1010105, @OGUID+3, -1), -- Ragveil/Flame Cap
-(@SGGUID+1010105, @OGUID+4, -1), -- Ragveil/Flame Cap
-(@SGGUID+1010105, @OGUID+5, -1), -- Ragveil/Flame Cap
-(@SGGUID+1010105, @OGUID+6, -1), -- Ragveil/Flame Cap
-(@SGGUID+1010105, @OGUID+46, -1), -- Ragveil/Flame Cap
-(@SGGUID+1010105, @OGUID+47, -1), -- Ragveil/Flame Cap
-(@SGGUID+1010105, @OGUID+48, -1), -- Ragveil/Flame Cap
-(@SGGUID+1010105, @OGUID+49, -1); -- Ragveil/Flame Cap
+(@SGGUID+50, @OGUID+63, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+50, @OGUID+65, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+50, @OGUID+67, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+50, @OGUID+69, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+50, @OGUID+71, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+50, @OGUID+73, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+50, @OGUID+75, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+50, @OGUID+77, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+50, @OGUID+79, -1), -- Bound Fel Iron Chest/Solid Fel Iron Chest - Normal mode
+(@SGGUID+51, @OGUID+64, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+51, @OGUID+66, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+51, @OGUID+68, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+51, @OGUID+70, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+51, @OGUID+72, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+51, @OGUID+74, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+51, @OGUID+76, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+51, @OGUID+78, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+51, @OGUID+80, -1), -- Bound Adamantite Chest/Solid Adamantite Chest - Heroic mode
+(@SGGUID+52, @OGUID+12, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569/Khorium 181557
+(@SGGUID+52, @OGUID+13, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
+(@SGGUID+52, @OGUID+14, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
+(@SGGUID+52, @OGUID+15, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
+(@SGGUID+52, @OGUID+62, -1), -- Adamantite Deposit 181556/Rich Adamantite Deposit 181569
+(@SGGUID+53, @OGUID+7, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+8, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+9, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+10, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+11, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+51, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+52, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+53, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+54, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+55, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+56, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+57, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+58, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+59, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+60, -1), -- Anchient Lichen (181278)
+(@SGGUID+53, @OGUID+61, -1), -- Anchient Lichen (181278)
+(@SGGUID+54, @OGUID+1, -1), -- Felweed (181270)
+(@SGGUID+54, @OGUID+2, -1), -- Felweed (181270)
+(@SGGUID+54, @OGUID+40, -1), -- Felweed (181270)
+(@SGGUID+54, @OGUID+41, -1), -- Felweed (181270)
+(@SGGUID+54, @OGUID+42, -1), -- Felweed (181270)
+(@SGGUID+54, @OGUID+43, -1), -- Felweed (181270)
+(@SGGUID+54, @OGUID+44, -1), -- Felweed (181270)
+(@SGGUID+54, @OGUID+45, -1), -- Felweed (181270)
+(@SGGUID+55, @OGUID+3, -1), -- Ragveil/Flame Cap
+(@SGGUID+55, @OGUID+4, -1), -- Ragveil/Flame Cap
+(@SGGUID+55, @OGUID+5, -1), -- Ragveil/Flame Cap
+(@SGGUID+55, @OGUID+6, -1), -- Ragveil/Flame Cap
+(@SGGUID+55, @OGUID+46, -1), -- Ragveil/Flame Cap
+(@SGGUID+55, @OGUID+47, -1), -- Ragveil/Flame Cap
+(@SGGUID+55, @OGUID+48, -1), -- Ragveil/Flame Cap
+(@SGGUID+55, @OGUID+49, -1); -- Ragveil/Flame Cap
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+1, 1, 4, 0, @SGGUID+1, 4, 'Slave Pens - Group 001 - Greater Bogstrok (2) | Bogstrok - Patrol 001'),
