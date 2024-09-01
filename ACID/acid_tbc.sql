@@ -23393,8 +23393,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1796001','17960','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Soothsayer - Text on Aggro'),
 -- Coilfang Enchantress 17961 - spell_list
 ('1796101','17961','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Enchantress - Text on Aggro'),
-('1796102','17961','37','0','100','1027','32173','0','0','0','0','0','11','32193','1','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Normal) - Cast Lightning Cloud on Entangling Roots'),
-('1796103','17961','37','0','100','1029','32173','0','0','0','0','0','11','37665','1','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Heroic) - Cast Lightning Cloud on Entangling Roots'),
 -- Coilfang Collaborator 17962 - spell_list
 ('1796201','17962','11','0','100','0','0','0','0','0','0','0','11','5301','0','34','0','0','0','0','0','0','0','0','Coilfang Collaborator - Cast Defensive State (DND) on Spawn'),
 ('1796202','17962','2','0','100','1025','20','0','120000','120000','0','0','11','8269','0','0','1','1191','0','0','0','0','0','0','Coilfang Collaborator - Cast Frenzy at 20% HP'),
