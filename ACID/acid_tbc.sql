@@ -23373,9 +23373,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bogstrok 17816 - spell_list
 -- Greater Bogstrok 17817 - spell_list
 -- Naturalist Bite 17893 - GossipHello_npc_naturalist_bite
-('1789301','17893','17','0','100','0','17957','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Champion launch relay script'),
-('1789302','17893','17','0','100','0','17960','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Soothsayer launch relay script'),
-('1789303','17893','17','0','100','0','17961','0','0','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - on summon Coilfang Enchantress launch relay script'),
 -- Coilfang Observer 17938 - spell_list
 ('1793805','17938','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Observer - Text on Aggro'),
 -- Coilfang Technician 17940 - spell_list
@@ -23396,8 +23393,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1796001','17960','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Soothsayer - Text on Aggro'),
 -- Coilfang Enchantress 17961 - spell_list
 ('1796101','17961','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Enchantress - Text on Aggro'),
-('1796102','17961','37','0','100','1027','32173','0','0','0','0','0','11','32193','1','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Normal) - Cast Lightning Cloud on Entangling Roots'),
-('1796103','17961','37','0','100','1029','32173','0','0','0','0','0','11','37665','1','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Heroic) - Cast Lightning Cloud on Entangling Roots'),
 -- Coilfang Collaborator 17962 - spell_list
 ('1796201','17962','11','0','100','0','0','0','0','0','0','0','11','5301','0','34','0','0','0','0','0','0','0','0','Coilfang Collaborator - Cast Defensive State (DND) on Spawn'),
 ('1796202','17962','2','0','100','1025','20','0','120000','120000','0','0','11','8269','0','0','1','1191','0','0','0','0','0','0','Coilfang Collaborator - Cast Frenzy at 20% HP'),
@@ -23424,7 +23419,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1820602','18206','1','0','100','1','0','60000','40000','80000','0','0','5','16','0','0','0','0','0','0','0','0','0','0','Wastewalker Captive - Emote Kneel OOC'),
 -- Mennu Healing Ward - TotemAI
 -- Coilfang Scale-Healer 21126 - spell_list
-('2112607','21126','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Scale-Healer - Text on Aggro'),
+('2112601','21126','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Scale-Healer - Text on Aggro'),
+('2112602','-5470089','1','0','100','1','1000','10000','50000','600000','0','0','53','5470005','0','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer - Start RelayScript OOC'),
 -- Coilfang Tempest - spell_list
 ('2112701','21127','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Tempest - Text on Aggro'),
 -- Coilfang Ray 21128 - spell_list
