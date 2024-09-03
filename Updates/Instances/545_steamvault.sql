@@ -35,8 +35,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+34, 09, -65.85062, -344.1786, -7.767337, 100, 0, 0),
 (@CGUID+34, 10, -70.46632, -361.6269, -7.767341, 100, 0, 0),
 (@CGUID+34, 11, -81.76927, -369.3231, -7.767337, 100, 0, 0),
-(@CGUID+75, 1, 13.542, -115.249, -22.0705, 100, 0, 0),
-(@CGUID+75, 2, -32.8072, -95.2656, -21.5533, 100, 0, 0),
 (@CGUID+93, 1, -26.5788, -191.547, -20.4898, 0, 0, 0),
 (@CGUID+93, 2, -14.5423, -189.544, -22.9543, 0, 0, 0),
 (@CGUID+93, 3, -11.0754, -181.289, -23.6932, 0, 0, 0),
@@ -206,7 +204,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (21694, 0, 0, 0, 0, 0, '18950'); -- Bog Overlord
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+92, @CGUID+75, 1679), -- Coilfang Warrior -> Coilfang Siren
 (@CGUID+26, @CGUID+100, 1155), -- Coilfang Engineer -> Coilfang Warrior
 (@CGUID+27, @CGUID+100, 1155), -- Coilfang Engineer -> Coilfang Warrior
 (@CGUID+25, @CGUID+103, 1155), -- Coilfang Engineer -> Coilfang Engineer
@@ -365,7 +362,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+72, 17800, 545, 3, -82.7854, -499.9687, 8.346689, 2.076942, 7200, 7200, 0, 0), -- Coilfang Myrmidon
 (@CGUID+73, 17800, 545, 3, -106.7869, -497.9282, 8.279131, 1.099557, 7200, 7200, 0, 0), -- Coilfang Myrmidon
 (@CGUID+74, 17800, 545, 3, -57.51149, -376.5876, -7.281164, 2.460914, 7200, 7200, 0, 0), -- Coilfang Myrmidon
-(@CGUID+75, 17801, 545, 3, -4.40099, -96.1165, -21.9227, 6.16785, 7200, 7200, 0, 2), -- Coilfang Siren
+(@CGUID+75, 17801, 545, 3, -21.2416, -102.358, -22.5956, 5.25232, 7200, 7200, 0, 0), -- Coilfang Siren
 (@CGUID+76, 17801, 545, 3, 1.512869, -250.4445, -21.54112, 6.143559, 7200, 7200, 0, 0), -- Coilfang Siren
 (@CGUID+77, 17801, 545, 3, 56.8631, -310.419, -7.83755, 3.36815, 7200, 7200, 0, 0), -- Coilfang Siren
 (@CGUID+78, 17801, 545, 3, 58.9988, -310.076, -7.84055, 1.5261, 7200, 7200, 0, 0), -- Coilfang Siren
@@ -382,7 +379,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+89, 17801, 545, 3, 35.87553, -157.3143, -22.5641, 3.508112, 7200, 7200, 0, 0), -- Coilfang Siren
 (@CGUID+90, 17802, 545, 3, -6.48203, -63.7094, -19.8397, 1.29154, 7200, 7200, 0, 0), -- Coilfang Warrior
 (@CGUID+91, 17802, 545, 3, 2.06713, -64.1362, -19.8397, 2.05949, 7200, 7200, 0, 0), -- Coilfang Warrior
-(@CGUID+92, 17802, 545, 3, -6.110524, -98.653229, -22.213076, 2.548590, 7200, 7200, 0, 0), -- Coilfang Warrior
+(@CGUID+92, 17802, 545, 3, -21.6564, -101.928, -22.5224, 1.43752, 7200, 7200, 0, 0), -- Coilfang Warrior
 (@CGUID+93, 17802, 545, 3, -26.5788, -191.547, -20.4898, 0.164899, 7200, 7200, 0, 2), -- Coilfang Warrior
 (@CGUID+94, 17802, 545, 3, 4.9713, -246.324, -22.8522, 1.80373, 7200, 7200, 0, 2), -- Coilfang Warrior
 (@CGUID+95, 17802, 545, 3, -91.9829, -255.49, -12.5306, 1.40694, 7200, 7200, 0, 0), -- Coilfang Warrior
@@ -560,6 +557,7 @@ INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+1, 'Steam Vault - Group 001 - Coilfang Warrior (2)', 0, 0, 0, 1, 0),
+(@SGGUID+2, 'Steam Vault - Group 002 - Coilfang Warrior| Coilfang Siren - Patrol 001', 0, 0, 0, 1, 0),
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -567,17 +565,25 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+90, 0), -- Coilfang Warrior
 (@SGGUID+1, @CGUID+91, 1), -- Coilfang Warrior
 
+(@SGGUID+2, @CGUID+75, 0), -- Coilfang Siren
+(@SGGUID+2, @CGUID+92, 1), -- Coilfang Warrior
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-
+(@SGGUID+2, 2, 2, 0, @SGGUID+2, 2, 'Steam Vault - Group 002 - Coilfang Warrior| Coilfang Siren - Patrol 001'),
 
 -- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
-
+(@SGGUID+2,'Steam Vault - Group 002 - Coilfang Warrior| Coilfang Siren - Patrol 001'),
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
-
+(@SGGUID+2, 1, -21.152357,-102.50681,-22.623154, 100, 0, 0),
+(@SGGUID+2, 2, -11.117714,-95.33835,-21.338488, 100, 0, 0),
+(@SGGUID+2, 3, 5.809313,-97.299416,-22.554895, 100, 0, 0),
+(@SGGUID+2, 4, 13.625943,-107.37473,-22.068163, 100, 0, 0),
+(@SGGUID+2, 5, 10.61573,-119.68263,-21.674156, 100, 0, 0),
+(@SGGUID+2, 6, -4.742761,-116.86002,-20.737574, 100, 0, 0),
+(@SGGUID+2, 7, -18.111202,-111.55076,-22.492619, 100, 0, 0),
 
 -- =======
 -- POOLING
