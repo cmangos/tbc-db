@@ -8,8 +8,8 @@
 -- Sniff:
 -- WalkSpeed: 2.5
 -- RunSpeed: 8
-UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 17802;
-UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 20626;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 17802;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 20626;
 
 
 -- Coilfang Siren
@@ -25,16 +25,16 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 20623
 -- Sniff:
 -- WalkSpeed: 2.5
 -- RunSpeed: 8
-UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 17721;
-UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 20620;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 17721;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 20620;
 
 -- Bog Overlord
 -- Before: SpeedWalk = 1,71 SpeedRun = 1,14286
 -- Sniff:
 -- WalkSpeed: 2.5
 -- RunSpeed: 8
-UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 21694;
-UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 21914;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 21694;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 21914;
 
 -- Coilfang Oracle
 -- Before: SpeedWalk = 1,48 SpeedRun = 1,14286
@@ -43,6 +43,23 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 2
 -- RunSpeed: 7
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 17803;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 20622;
+
+
+-- Tidal Surger
+-- Before: SpeedWalk = 1 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 10
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 21695;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 21917;
+
+-- Tidal Surger
+-- Before: SpeedWalk = 1 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 10
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 21696;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 21916;
 
 -- -----------
 -- SpellLists
@@ -134,7 +151,6 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2169401 WHERE `entry` = 21694;
 UPDATE `creature_template` SET `SpellList` = 2191401 WHERE `entry` = 21914;
-
 
 
 -- Coilfang Oracle
