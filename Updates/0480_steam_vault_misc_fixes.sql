@@ -20,6 +20,22 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 2
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 17801;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 20623;
 
+-- Coilfang Engineer
+-- Before: SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 17721;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 20620;
+
+-- Bog Overlord
+-- Before: SpeedWalk = 1,71 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 21694;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 21914;
+
 -- -----------
 -- SpellLists
 -- -----------
@@ -65,3 +81,48 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1780101 WHERE `entry` = 17801;
 UPDATE `creature_template` SET `SpellList` = 2062601 WHERE `entry` = 20623;
+
+
+-- Coilfang Engineer
+DELETE FROM `creature_template_spells` WHERE `entry` = 17721;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20620;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1772101, 2062001);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1772101, 'Steam Vault - Coilfang Engineer - Normal', 0, 0),
+(2062001, 'Steam Vault - Coilfang Engineer - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1772101, 2062001);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1772101, 1, 6533, 0, -1, 1, 0, 100, 0, 11000, 24000, 11000, 24000, 'Coilfang Engineer - Throw Net - current'),
+(1772101, 2, 40331, 0, -1, 1, 0, 100, 0, 8000, 16000, 8000, 16000, 'Coilfang Engineer - Bomb - current'),
+
+(2062001, 1, 6533, 0, -1, 1, 0, 100, 0, 11000, 24000, 11000, 24000, 'Coilfang Engineer - Throw Net - current'),
+(2062001, 2, 40332, 0, -1, 1, 0, 100, 0, 8000, 16000, 8000, 16000, 'Coilfang Engineer - Bomb - current');
+
+UPDATE `creature_template` SET `SpellList` = 1772101 WHERE `entry` = 17721;
+UPDATE `creature_template` SET `SpellList` = 2062001 WHERE `entry` = 20620;
+
+-- Bog Overlord
+DELETE FROM `creature_template_spells` WHERE `entry` = 21694;
+DELETE FROM `creature_template_spells` WHERE `entry` = 21914;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2169401, 2191401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2169401, 'Steam Vault - Bog Overlord - Normal', 0, 0),
+(2191401, 'Steam Vault - Bog Overlord - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2169401, 2191401);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2169401, 1, 40340, 0, -1, 2, 0, 100, 0, 7000, 20000, 15000, 28000, 'Bog Overlord - Trample - self'),
+(2169401, 1, 32065, 0, -1, 1, 0, 100, 0, 6000, 22000, 12000, 19000, 'Bog Overlord - Fungal Decay - current'),
+(2169401, 1, 37272, 0, -1, 1, 0, 100, 0, 5000, 18000, 5000, 18000, 'Bog Overlord - Poison Bolt- current'),
+
+(2191401, 1, 40340, 0, -1, 2, 0, 100, 0, 7000, 20000, 15000, 28000, 'Bog Overlord - Trample - self'),
+(2191401, 1, 32065, 0, -1, 1, 0, 100, 0, 6000, 22000, 12000, 19000, 'Bog Overlord - Fungal Decay - current'),
+(2191401, 1, 37862, 0, -1, 1, 0, 100, 0, 5000, 18000, 5000, 18000, 'Bog Overlord - Poison Bolt- current');
+
+UPDATE `creature_template` SET `SpellList` = 2169401 WHERE `entry` = 21694;
+UPDATE `creature_template` SET `SpellList` = 2191401 WHERE `entry` = 21914;
