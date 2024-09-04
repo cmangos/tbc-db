@@ -18,17 +18,6 @@ SET @RELAYID := 5450000; -- used for dbscript_relay
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(@CGUID+34, 01, -91.39205, -357.8756, -7.767337, 100, 0, 0),
-(@CGUID+34, 02, -94.1074, -345.1623, -7.767337, 100, 0, 0),
-(@CGUID+34, 03, -93.58572, -326.2485, -7.767337, 100, 0, 0),
-(@CGUID+34, 04, -93.20531, -311.0513, -7.767337, 100, 0, 0),
-(@CGUID+34, 05, -93.59978, -296.3232, -7.767337, 100, 0, 0),
-(@CGUID+34, 06, -83.39314, -293.8334, -7.767337, 100, 0, 0),
-(@CGUID+34, 07, -73.73996, -310.9025, -7.767337, 100, 0, 0),
-(@CGUID+34, 08, -70.75201, -327.9694, -7.767337, 100, 0, 0),
-(@CGUID+34, 09, -65.85062, -344.1786, -7.767337, 100, 0, 0),
-(@CGUID+34, 10, -70.46632, -361.6269, -7.767341, 100, 0, 0),
-(@CGUID+34, 11, -81.76927, -369.3231, -7.767337, 100, 0, 0),
 (@CGUID+93, 1, -11.075411,-181.28865,-23.693241,  100, 0, 0),
 (@CGUID+93, 2, -14.542336,-189.54443,-22.95425,  100, 0, 0),
 (@CGUID+93, 3, -26.578821,-191.54744,-20.489792,  100, 0, 0),
@@ -184,8 +173,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (21694, 0, 0, 0, 0, 0, '18950'); -- Bog Overlord
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+66, @CGUID+34, 1679), -- Coilfang Myrmidon-> Coilfang Sorceress
-(@CGUID+67, @CGUID+34, 1679), -- Coilfang Myrmidon-> Coilfang Sorceress
 (@CGUID+136, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
 (@CGUID+137, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
 (@CGUID+138, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
@@ -256,7 +243,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+31, 17721, 545, 3, -24.6203, -186.644, -20.855, 1.6057, 7200, 7200, 0, 0), -- Coilfang Engineer
 (@CGUID+32, 17722, 545, 3, -49.2924, -211.491, -18.8675, 4.69494, 7200, 7200, 0, 0), -- Coilfang Sorceress
 (@CGUID+33, 17722, 545, 3, -110.899, -330.512, -7.6599, 6.16101, 7200, 7200, 0, 0), -- Coilfang Sorceress
-(@CGUID+34, 17722, 545, 3, -91.611298, -372.019012, -7.767300, 1.623500, 7200, 7200, 0, 2), -- Coilfang Sorceress
+(@CGUID+34, 17722, 545, 3, -81.7693, -369.323, -7.76734, 4.66749, 7200, 7200, 0, 0), -- Coilfang Sorceress
 (@CGUID+35, 17722, 545, 3, -60.7232, -318.851, -7.67224, 2.80998, 7200, 7200, 0, 0), -- Coilfang Sorceress
 (@CGUID+36, 17378, 545, 3, -215.6533, -120.2191, -7.705765, 1.153002, 86400, 86400, 0, 2), -- Swamp Gas
 (@CGUID+37, 17722, 545, 3, -106.7865, -505.7699, 8.311022, 1.343904, 7200, 7200, 0, 0), -- Coilfang Sorceress
@@ -288,8 +275,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+63, 17800, 545, 3, -159.6232, -283.3708, -8.044917, 4.433136, 7200, 7200, 0, 0), -- Coilfang Myrmidon
 (@CGUID+64, 17800, 545, 3, -104.194, -325.127, -7.63158, 6.17847, 7200, 7200, 0, 0), -- Coilfang Myrmidon
 (@CGUID+65, 17800, 545, 3, -102.674, -342.241, -7.29451, 0.0174533, 7200, 7200, 0, 0), -- Coilfang Myrmidon
-(@CGUID+66, 17800, 545, 3, -97.552284, -371.982819, -7.767300, 1.588200, 7200, 7200, 0, 0), -- Coilfang Myrmidon
-(@CGUID+67, 17800, 545, 3, -85.647491, -370.234100, -7.767300, 1.588200, 7200, 7200, 0, 0), -- Coilfang Myrmidon
+(@CGUID+66, 17800, 545, 3, -77.7733, -369.503, -7.76734, 4.66748, 7200, 7200, 0, 0), -- Coilfang Myrmidon
+(@CGUID+67, 17800, 545, 3, -85.7652, -369.143, -7.76734, 4.66748, 7200, 7200, 0, 0), -- Coilfang Myrmidon
 (@CGUID+68, 17800, 545, 3, -52.6073, -324.759, -7.67224, 5.72468, 7200, 7200, 0, 0), -- Coilfang Myrmidon
 (@CGUID+69, 1420, 545, 3, -226.9383, -257.5326, -7.672225, 3.420845, 900, 900, 2, 1), -- Toad
 (@CGUID+70, 17800, 545, 3, -92.72769, -465.5595, 7.946531, 1.53589, 7200, 7200, 0, 0), -- Coilfang Myrmidon
@@ -521,6 +508,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 
 (@SGGUID+22, 'Steam Vault - Group 022 - Coilfang Myrmidon | Coilfang Sorceress | Coilfang Engineer (2)', 0, 0, 0, 1, 0),
 
+(@SGGUID+23, 'Steam Vault - Group 023 -  Coilfang Sorceress | Coilfang Myrmidon (2) - Patrol 007', 0, 0, 0, 1, 0),
+
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+10, 17801, 0, 1, 0), (@SGGUID+10, 17803, 0, 1, 0), -- Coilfang Siren, Coilfang Oracle
 (@SGGUID+11, 17801, 0, 1, 0), (@SGGUID+11, 17803, 0, 1, 0); -- Coilfang Siren, Coilfang Oracle
@@ -622,11 +611,14 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+21, @CGUID+33, 2, 0), -- Coilfang Sorceress
 (@SGGUID+21, @CGUID+79, 3, 0), -- Coilfang Siren
 
-(@SGGUID+21, @CGUID+74, 0, 0), -- Coilfang Myrmidon
-(@SGGUID+21, @CGUID+21, 1, 0), -- Coilfang Engineer
-(@SGGUID+21, @CGUID+22, 2, 0), -- Coilfang Engineer
-(@SGGUID+21, @CGUID+39, 3, 0), -- Coilfang Sorceress
+(@SGGUID+22, @CGUID+74, 0, 0), -- Coilfang Myrmidon
+(@SGGUID+22, @CGUID+21, 1, 0), -- Coilfang Engineer
+(@SGGUID+22, @CGUID+22, 2, 0), -- Coilfang Engineer
+(@SGGUID+22, @CGUID+39, 3, 0), -- Coilfang Sorceress
 
+(@SGGUID+23, @CGUID+34, 0, 0), -- Coilfang Sorceress
+(@SGGUID+23, @CGUID+66, 1, 0), -- Coilfang Engineer
+(@SGGUID+23, @CGUID+67, 2, 0), -- Coilfang Engineer
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+2, 2, 2, 0, @SGGUID+2, 2, 'Steam Vault - Group 002 - Coilfang Warrior| Coilfang Siren - Patrol 001'),
@@ -635,6 +627,7 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+12, 6, 3, 0, @SGGUID+12, 4, 'Steam Vault - Group 012 - Tidal Surger | Steam Surger (4) - Patrol 004'),
 (@SGGUID+15, 3, 3, 0, @SGGUID+15, 2, 'Steam Vault - Group 015 - Coilfang Warrior | Coilfang Siren (2) - Patrol 005'),
 (@SGGUID+18, 3, 3, 0, @SGGUID+18, 2, 'Steam Vault - Group 018 - Coilfang Siren | Coilfang Warrior (2) - Patrol 006'),
+(@SGGUID+23, 3, 3, 0, @SGGUID+23, 2, 'Steam Vault - Group 023 -  Coilfang Sorceress | Coilfang Myrmidon (2) - Patrol 007');
 
 -- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 
@@ -645,6 +638,7 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+12,'Steam Vault - Group 012 - Tidal Surger | Steam Surger (4) - Patrol 004'),
 (@SGGUID+15,'Steam Vault - Group 015 - Coilfang Warrior | Coilfang Siren (2) - Patrol 005'),
 (@SGGUID+18,'Steam Vault - Group 018 - Coilfang Siren | Coilfang Warrior (2) - Patrol 006'),
+(@SGGUID+23,'Steam Vault - Group 023 -  Coilfang Sorceress | Coilfang Myrmidon (2) - Patrol 007');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+2, 1, -21.152357,-102.50681,-22.623154, 100, 0, 0),
@@ -697,6 +691,18 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+18, 6, -62.476406,-221.98744,-18.458496, 100, 0, 0),
 (@SGGUID+18, 7, -40.760025,-213.22351,-18.498798, 100, 0, 0),
 (@SGGUID+18, 8, -41.347233,-213.46048,-18.549793, 100, 0, 0),
+
+(@SGGUID+23, 1, -91.39205,-357.87564,-7.7673373, 100, 0, 0),
+(@SGGUID+23, 2, -94.1074,-345.16232,-7.7673373, 100, 0, 0),
+(@SGGUID+23, 3, -93.58572,-326.24854,-7.7673373, 100, 0, 0),
+(@SGGUID+23, 4, -93.20531,-311.05127,-7.7673373, 100, 0, 0),
+(@SGGUID+23, 5, -93.599785,-296.32315,-7.7673373, 100, 0, 0),
+(@SGGUID+23, 6, -83.39314,-293.8334,-7.7673373, 100, 0, 0),
+(@SGGUID+23, 7, -73.73996,-310.9025,-7.7673373, 100, 0, 0),
+(@SGGUID+23, 8, -70.752014,-327.96936,-7.7673373, 100, 0, 0),
+(@SGGUID+23, 9, -65.850624,-344.17862,-7.7673373, 100, 0, 0),
+(@SGGUID+23, 10, -70.46632,-361.62686,-7.7673407, 100, 0, 0),
+(@SGGUID+23, 11, -81.76927,-369.32306,-7.7673373, 100, 0, 0);
 
 DELETE FROM `conditions` WHERE `condition_entry` = @SGGUID+16;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
