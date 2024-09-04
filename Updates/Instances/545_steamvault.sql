@@ -202,7 +202,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+121, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
 (@CGUID+122, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
 (@CGUID+123, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
-(@CGUID+63, @CGUID+62, 1155); -- Coilfang Myrmidon -> Coilfang Myrmidon
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (17954, 545, 17798, 1188, 0); -- Naga Distiller -> Warlord Kalithresh
@@ -271,8 +270,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+59, 17799, 545, 3, -233.4834, -264.9135, -7.735449, 2.827433, 7200, 7200, 0, 0), -- Dreghood Slave
 (@CGUID+60, 17800, 545, 3, -40.8796, -207.862, -18.2856, 0.15708, 7200, 7200, 0, 0), -- Coilfang Myrmidon
 (@CGUID+61, 17800, 545, 3, -36.6156, -216.919, -18.2239, 0.907571, 7200, 7200, 0, 0), -- Coilfang Myrmidon
-(@CGUID+62, 17800, 545, 3, -169.915, -285.3678, -8.077412, 5.166174, 7200, 7200, 0, 0), -- Coilfang Myrmidon
-(@CGUID+63, 17800, 545, 3, -159.6232, -283.3708, -8.044917, 4.433136, 7200, 7200, 0, 0), -- Coilfang Myrmidon
+(@CGUID+62, 17800, 545, 3, -169.915, -285.368, -8.07741, 5.16617, 7200, 7200, 0, 0), -- Coilfang Myrmidon
+(@CGUID+63, 17800, 545, 3, -159.623, -283.371, -8.04492, 4.43314, 7200, 7200, 0, 0), -- Coilfang Myrmidon
 (@CGUID+64, 17800, 545, 3, -104.194, -325.127, -7.63158, 6.17847, 7200, 7200, 0, 0), -- Coilfang Myrmidon
 (@CGUID+65, 17800, 545, 3, -102.674, -342.241, -7.29451, 0.0174533, 7200, 7200, 0, 0), -- Coilfang Myrmidon
 (@CGUID+66, 17800, 545, 3, -77.7733, -369.503, -7.76734, 4.66748, 7200, 7200, 0, 0), -- Coilfang Myrmidon
@@ -502,13 +501,12 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+17, 'Steam Vault - Group 017 - Coilfang Myrmidon (2)', 0, 0, 0, 1, 0),
 (@SGGUID+18, 'Steam Vault - Group 018 - Coilfang Siren | Coilfang Warrior (2) - Patrol 006', 0, 0, 0, 1, 0),
 (@SGGUID+19, 'Steam Vault - Group 019 - Coilfang Warrior | Coilfang Siren (2)', 0, 0, 0, 1, 0),
-
 (@SGGUID+20, 'Steam Vault - Group 020 - Coilfang Myrmidon | Coilfang Sorceress | Coilfang Siren (2)', 0, 0, 0, 1, 0),
 (@SGGUID+21, 'Steam Vault - Group 021 - Coilfang Myrmidon (2) | Coilfang Sorceress | Coilfang Siren', 0, 0, 0, 1, 0),
-
 (@SGGUID+22, 'Steam Vault - Group 022 - Coilfang Myrmidon | Coilfang Sorceress | Coilfang Engineer (2)', 0, 0, 0, 1, 0),
-
 (@SGGUID+23, 'Steam Vault - Group 023 -  Coilfang Sorceress | Coilfang Myrmidon (2) - Patrol 007', 0, 0, 0, 1, 0),
+(@SGGUID+24, 'Steam Vault - Group 024 -  Coilfang Myrmidon (2) - Patrol 007', 0, 0, 0, 1, 0),
+
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+10, 17801, 0, 1, 0), (@SGGUID+10, 17803, 0, 1, 0), -- Coilfang Siren, Coilfang Oracle
@@ -619,6 +617,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+23, @CGUID+34, 0, 0), -- Coilfang Sorceress
 (@SGGUID+23, @CGUID+66, 1, 0), -- Coilfang Engineer
 (@SGGUID+23, @CGUID+67, 2, 0), -- Coilfang Engineer
+
+(@SGGUID+24, @CGUID+62, 0, 0), -- Coilfang Myrmidon
+(@SGGUID+24, @CGUID+63, 1, 0), -- Coilfang Myrmidon
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+2, 2, 2, 0, @SGGUID+2, 2, 'Steam Vault - Group 002 - Coilfang Warrior| Coilfang Siren - Patrol 001'),
