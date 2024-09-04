@@ -61,6 +61,14 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 2
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 21696;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 21916;
 
+-- Coilfang Myrmidon
+-- Before: SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 17800;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 20621;
+
 -- -----------
 -- SpellLists
 -- -----------
@@ -215,3 +223,27 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2169601 WHERE `entry` = 21696;
 UPDATE `creature_template` SET `SpellList` = 2191601 WHERE `entry` = 21916;
+
+-- Coilfang Myrmidon
+DELETE FROM `creature_template_spells` WHERE `entry` = 17800;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20621;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1780001, 2062101);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1780001, 'Steam Vault - Coilfang Myrmidon - Normal', 0, 0),
+(2062101, 'Steam Vault - Coilfang Myrmidon - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1780001, 2062101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1780001, 1, 7160, 0, -1, 1, 0, 100, 0, 5000, 15000, 30000, 40000, 'Coilfang Myrmidon - Execute - current'),
+(1780001, 2, 18765, 0, -1, 2, 0, 100, 0, 6000, 15000, 10000, 26000, 'Coilfang Myrmidon - Sweeping Strikes - self'),
+(1780001, 3, 15496, 0, -1, 1, 0, 100, 0, 6000, 16000, 8000, 18000, 'Coilfang Myrmidon - Cleave - current'),
+
+(2062101, 1, 7160, 0, -1, 1, 0, 100, 0, 5000, 15000, 30000, 40000, 'Coilfang Myrmidon - Execute - current'),
+(2062101, 2, 18765, 0, -1, 2, 0, 100, 0, 6000, 15000, 10000, 26000, 'Coilfang Myrmidon - Sweeping Strikes - self'),
+(2062101, 3, 15496, 0, -1, 1, 0, 100, 0, 6000, 16000, 8000, 18000, 'Coilfang Myrmidon - Cleave - current');
+
+UPDATE `creature_template` SET `SpellList` = 1780001 WHERE `entry` = 17800;
+UPDATE `creature_template` SET `SpellList` = 2062101 WHERE `entry` = 20621;
+
