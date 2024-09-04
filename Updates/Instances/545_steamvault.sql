@@ -127,7 +127,19 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+36, 62, -249.2888, -179.4691, -6.574732, 100, 0, 0),
 (@CGUID+36, 63, -259.7915, -172.4078, -7.140102, 100, 0, 0);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+DELETE FROM `creature_movement_template` WHERE entry = 17799;
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+-- 17799 Dreghood Slave
+(17799, 1, 1,-193.56079,-259.87134,-7.7895975, 100, 0, 0),
+(17799, 1, 2,-184.5388,-261.0958,-7.75556, 100, 0, 0),
+(17799, 1, 3,-171.8678,-266.1311,-7.7555656, 100, 0, 0),
+(17799, 1, 4,-164.47981,-285.26175,-8.204482, 100, 0, 0),
+(17799, 1, 5,-158.7778,-305.79614,-7.4857154, 100, 0, 0),
+(17799, 1, 6,-142.62102,-316.04434,-7.413147, 100, 0, 0),
+(17799, 1, 7,-116.59666,-327.73846,-7.406979, 100, 0, 0),
+(17799, 1, 8,-98.12532,-330.5687,-7.8259435, 100, 0, 0),
+(17799, 1, 9,-90.69756,-316.37994,-7.7673373, 100, 0, 0),
+(17799, 1, 10,-90.356445,-283.37686,-7.7673373, 100, 0, 0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+20, 0, 0, 1, 173, 0, NULL), -- Coilfang Engineer
@@ -196,7 +208,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+108, @CGUID+118, 1155), -- Coilfang Oracle -> Coilfang Siren
 (@CGUID+121, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
 (@CGUID+122, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
-(@CGUID+123, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
+(@CGUID+123, @CGUID+42, 1159); -- Steamrigger Mechanic -> Mekgineer Steamrigger
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (17954, 545, 17798, 1188, 0); -- Naga Distiller -> Warlord Kalithresh
@@ -500,7 +512,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+21, 'Steam Vault - Group 021 - Coilfang Myrmidon (2) | Coilfang Sorceress | Coilfang Siren', 0, 0, 0, 1, 0),
 (@SGGUID+22, 'Steam Vault - Group 022 - Coilfang Myrmidon | Coilfang Sorceress | Coilfang Engineer (2)', 0, 0, 0, 1, 0),
 (@SGGUID+23, 'Steam Vault - Group 023 -  Coilfang Sorceress | Coilfang Myrmidon (2) - Patrol 007', 0, 0, 0, 1, 0),
-(@SGGUID+24, 'Steam Vault - Group 024 -  Coilfang Myrmidon (2) - Patrol 007', 0, 0, 0, 1, 0),
+(@SGGUID+24, 'Steam Vault - Group 024 -  Coilfang Myrmidon (2) - Patrol 007', 0, 0, 0, 1, 0);
 
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
@@ -614,7 +626,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+23, @CGUID+67, 2, 0), -- Coilfang Engineer
 
 (@SGGUID+24, @CGUID+62, 0, 0), -- Coilfang Myrmidon
-(@SGGUID+24, @CGUID+63, 1, 0), -- Coilfang Myrmidon
+(@SGGUID+24, @CGUID+63, 1, 0); -- Coilfang Myrmidon
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+2, 2, 2, 0, @SGGUID+2, 2, 'Steam Vault - Group 002 - Coilfang Warrior| Coilfang Siren - Patrol 001'),
