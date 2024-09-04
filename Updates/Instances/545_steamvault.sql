@@ -532,7 +532,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+14, 'Steam Vault - Group 014 - Coilfang Warrior | Coilfang Oracle | Coilfang Siren (2)', 0, 0, 0, 1, 0),
 (@SGGUID+15, 'Steam Vault - Group 015 - Coilfang Warrior | Coilfang Siren (2) - Patrol 005', 0, 0, 0, 1, 0),
 -- Boss
-(@SGGUID+16, 'Steam Vault - Group 016 - Hydromancer Thespia | Coilfang Water Elemental (2)', 0, 0, @SGGUID+16, 3, 0);
+(@SGGUID+16, 'Steam Vault - Group 016 - Hydromancer Thespia | Coilfang Water Elemental (2)', 0, 0, @SGGUID+16, 11, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+10, 17801, 0, 1, 0), (@SGGUID+10, 17803, 0, 1, 0), -- Coilfang Siren, Coilfang Oracle
