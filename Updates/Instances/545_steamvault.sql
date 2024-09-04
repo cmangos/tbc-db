@@ -674,9 +674,9 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+15, 12, 23.565224,-274.07584,-22.648148, 100, 0, 0),
 (@SGGUID+15, 13, 21.919817,-282.32028,-19.062641, 100, 0, 0);
 
-DELETE FROM `conditions` WHERE `condition_entry` = @SGGUID+1;
+DELETE FROM `conditions` WHERE `condition_entry` = @SGGUID+16;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(@SGGUID+6, 42, 4663, 1, 0, 0, 0, 'Steam Vault - Hydromancer Thespia');
+(@SGGUID+16, 42, 4663, 1, 0, 0, 0, 'Steam Vault - Hydromancer Thespia');
 
 -- =======
 -- POOLING
