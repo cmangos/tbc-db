@@ -179,36 +179,8 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (17797, 0, 0, 1, 0, 0, '18950'), -- Hydromancer Thespia
 (21694, 0, 0, 0, 0, 0, '18950'); -- Bog Overlord
 
-INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+136, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+137, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+138, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+139, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+141, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+142, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+143, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+144, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+145, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+146, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+147, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+149, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+150, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+151, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+174, @CGUID+177, 1155), -- Coilfang Engineer -> Coilfang Myrmidon
-(@CGUID+175, @CGUID+177, 1155), -- Coilfang Engineer -> Coilfang Myrmidon
-(@CGUID+176, @CGUID+177, 1155), -- Coilfang Sorceress -> Coilfang Myrmidon
-(@CGUID+38, @CGUID+72, 1155), -- Coilfang Sorceress -> Coilfang Myrmidon
-(@CGUID+82, @CGUID+72, 1155), -- Coilfang Siren -> Coilfang Myrmidon
-(@CGUID+109, @CGUID+72, 1155), -- Coilfang Oracle -> Coilfang Myrmidon
-(@CGUID+37, @CGUID+73, 1155), -- Coilfang Sorceress -> Coilfang Myrmidon
-(@CGUID+83, @CGUID+73, 1155), -- Coilfang Siren -> Coilfang Myrmidon
-(@CGUID+110, @CGUID+73, 1155), -- Coilfang Oracle -> Coilfang Myrmidon
-(@CGUID+70, @CGUID+118, 1155), -- Coilfang Myrmidon -> Coilfang Siren
-(@CGUID+71, @CGUID+118, 1155), -- Coilfang Myrmidon -> Coilfang Siren
-(@CGUID+108, @CGUID+118, 1155), -- Coilfang Oracle -> Coilfang Siren
-(@CGUID+121, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
-(@CGUID+122, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
-(@CGUID+123, @CGUID+42, 1159); -- Steamrigger Mechanic -> Mekgineer Steamrigger
+-- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (17954, 545, 17798, 1188, 0); -- Naga Distiller -> Warlord Kalithresh
@@ -350,22 +322,22 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+133, 17954, 545, 3, -80.7551, -550.9464, 8.270267, 3.804818, 7200, 7200, 0, 0), -- Naga Distiller
 (@CGUID+134, 17954, 545, 3, -96.24093, -571.3755, 8.270268, 2.391101, 7200, 7200, 0, 0), -- Naga Distiller
 (@CGUID+135, 20926, 545, 3, -95.62832, -434.8632, 17.88862, 0.9599311, 7200, 7200, 0, 0), -- Invisible Stalker Coilfang Doors
-(@CGUID+136, 21338, 545, 3, -286.844, -157.181, -7.36798, 3.23769, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+137, 21338, 545, 3, -293.385, -155.586, -7.75556, 0.85847, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+138, 21338, 545, 3, -290.275, -145.399, -7.86179, 0.0669908, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+139, 21338, 545, 3, -288.253, -149.218, -7.78847, 2.81878, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+140, 21338, 545, 3, -297.178, -152.096, -8.02476, 4.35982, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+141, 21338, 545, 3, -304.555, -154.87, -8.0049, 4.27636, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+142, 21338, 545, 3, -297.841, -158.345, -7.75556, 1.70389, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+143, 21338, 545, 3, -299.613, -144.559, -8.09161, 5.90719, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+144, 21338, 545, 3, -299.119, -128.542, -8.05811, 5.42465, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+145, 21338, 545, 3, -295.569, -122.412, -7.83299, 1.34031, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+146, 21338, 545, 3, -308.078, -120.606, -8.07807, 0.847794, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+147, 21338, 545, 3, -305.368, -124.744, -8.19377, 1.29576, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+148, 21338, 545, 3, -298.253, -116.181, -7.89239, 4.48321, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+149, 21338, 545, 3, -306.886, -105.965, -7.75556, 5.52654, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+150, 21338, 545, 3, -303.585, -117.138, -7.94818, 4.48116, 7200, 7200, 5, 1), -- Coilfang Leper
-(@CGUID+151, 21338, 545, 3, -290.203, -117.944, -7.75556, 5.05645, 7200, 7200, 5, 1), -- Coilfang Leper
+(@CGUID+136, 21338, 545, 3, -285.939, -156.836, -7.24518, 5.70887, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+137, 21338, 545, 3, -292.579, -155.587, -7.75556, 4.64252, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+138, 21338, 545, 3, -294.103, -146.401, -7.98276, 3.58796, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+139, 21338, 545, 3, -287.138, -148.434, -7.71239, 1.12941, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+140, 21338, 545, 3, -295.579, -148.328, -8.02408, 1.12218, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+141, 21338, 545, 3, -304.216, -153.256, -8.11977, 3.54178, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+142, 21338, 545, 3, -296.543, -155.596, -7.75556, 0.499746, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+143, 21338, 545, 3, -299.613, -144.559, -8.09161, 5.90719, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+144, 21338, 545, 3, -299.11, -127.125, -8.05061, 0.77424, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+145, 21338, 545, 3, -295.639, -121.97, -7.83465, 1.62253, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+146, 21338, 545, 3, -307.719, -119.895, -8.05418, 0.753856, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+147, 21338, 545, 3, -305.368, -124.744, -8.19377, 1.29576, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+148, 21338, 545, 3, -297.611, -113.88, -7.81761, 2.07886, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+149, 21338, 545, 3, -306.886, -105.965, -7.75556, 5.52654, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+150, 21338, 545, 3, -303.048, -114.707, -7.86982, 1.41238, 7200, 7200, 3, 1), -- Coilfang Leper
+(@CGUID+151, 21338, 545, 3, -290.5678, -115.5150, -7.7555, 3.0854, 7200, 7200, 3, 1), -- Coilfang Leper
 (@CGUID+152, 21694, 545, 3, -44.6525, -109.419, -22.0305, 0.541052, 7200, 7200, 2, 1), -- Bog Overlord
 (@CGUID+153, 21694, 545, 3, -61.7824, -147.368, -19.8397, 6.10865, 7200, 7200, 2, 1), -- Bog Overlord
 (@CGUID+154, 21694, 545, 3, 56.272, -99.1133, -22.6202, 5.2426, 7200, 7200, 2, 1), -- Bog Overlord
@@ -512,8 +484,22 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+21, 'Steam Vault - Group 021 - Coilfang Myrmidon (2) | Coilfang Sorceress | Coilfang Siren', 0, 0, 0, 1, 0),
 (@SGGUID+22, 'Steam Vault - Group 022 - Coilfang Myrmidon | Coilfang Sorceress | Coilfang Engineer (2)', 0, 0, 0, 1, 0),
 (@SGGUID+23, 'Steam Vault - Group 023 -  Coilfang Sorceress | Coilfang Myrmidon (2) - Patrol 007', 0, 0, 0, 1, 0),
-(@SGGUID+24, 'Steam Vault - Group 024 -  Coilfang Myrmidon (2) - Patrol 007', 0, 0, 0, 1, 0);
+(@SGGUID+24, 'Steam Vault - Group 024 -  Coilfang Myrmidon (2) - Patrol 007', 0, 0, 0, 1, 0),
+(@SGGUID+25, 'Steam Vault - Group 025 -  Dreghood Slave (2)', 0, 0, 0, 0, 0),
+(@SGGUID+26, 'Steam Vault - Group 026 -  Dreghood Slave (4)', 0, 0, 0, 0, 0),
+(@SGGUID+27, 'Steam Vault - Group 027 -  Dreghood Slave (4)', 0, 0, 0, 0, 0),
+(@SGGUID+28, 'Steam Vault - Group 028 -  Dreghood Slave (4)', 0, 0, 0, 0, 0),
+(@SGGUID+29, 'Steam Vault - Group 029 -  Coilfang Slavemaster (2) | Dreghood Slave', 0, 0, 0, 1, 0),
+(@SGGUID+30, 'Steam Vault - Group 030 -  Coilfang Leaper (8)', 0, 0, 0, 1, 0),
+(@SGGUID+31, 'Steam Vault - Group 031 -  Coilfang Leaper (8)', 0, 0, 0, 1, 0),
+-- 2nd Boss
+(@SGGUID+32, 'Steam Vault - Group 032 -  Mekgineer Steamrigger | Steamrigger Mechanic (3)', 0, 0, 0, 1, 0),
+-- 3rd boss room
+(@SGGUID+33, 'Steam Vault - Group 033 -  Coilfang Myrmidon | Coilfang Engineer (2) | Coilfang Sorceress', 0, 0, 0, 1, 0), -- has waypoints after door gets opened
 
+(@SGGUID+34, 'Steam Vault - Group 034 -  Coilfang Myrmidon (2) | Coilfang Siren | Coilfang Oracle', 0, 0, 0, 1, 0),
+(@SGGUID+35, 'Steam Vault - Group 035 -  Coilfang Myrmidon | Coilfang Siren | Coilfang Oracle | Coilfang Sorceress', 0, 0, 0, 1, 0),
+(@SGGUID+36, 'Steam Vault - Group 036 -  Coilfang Myrmidon | Coilfang Siren | Coilfang Oracle | Coilfang Sorceress', 0, 0, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+10, 17801, 0, 1, 0), (@SGGUID+10, 17803, 0, 1, 0), -- Coilfang Siren, Coilfang Oracle
@@ -628,14 +614,80 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+24, @CGUID+62, 0, 0), -- Coilfang Myrmidon
 (@SGGUID+24, @CGUID+63, 1, 0); -- Coilfang Myrmidon
 
+(@SGGUID+25, @CGUID+49, -1, 0), -- Dreghood Slave
+(@SGGUID+25, @CGUID+50, -1, 0), -- Dreghood Slave
+
+(@SGGUID+26, @CGUID+55, -1, 0), -- Dreghood Slave
+(@SGGUID+26, @CGUID+56, -1, 0), -- Dreghood Slave
+(@SGGUID+26, @CGUID+57, -1, 0), -- Dreghood Slave
+(@SGGUID+26, @CGUID+59, -1, 0), -- Dreghood Slave
+
+(@SGGUID+27, @CGUID+45, -1, 0), -- Dreghood Slave
+(@SGGUID+27, @CGUID+46, -1, 0), -- Dreghood Slave
+(@SGGUID+27, @CGUID+47, -1, 0), -- Dreghood Slave
+(@SGGUID+27, @CGUID+58, -1, 0), -- Dreghood Slave
+
+(@SGGUID+28, @CGUID+51, -1, 0), -- Dreghood Slave
+(@SGGUID+28, @CGUID+52, -1, 0), -- Dreghood Slave
+(@SGGUID+28, @CGUID+53, -1, 0), -- Dreghood Slave
+(@SGGUID+28, @CGUID+54, -1, 0), -- Dreghood Slave
+
+(@SGGUID+29, @CGUID+115, -1, 0), -- Coilfang Slavemaster
+(@SGGUID+29, @CGUID+116, -1, 0), -- Coilfang Slavemaster
+(@SGGUID+29, @CGUID+48, -1, 0), -- Dreghood Slave
+
+(@SGGUID+30, @CGUID+136, -1, 0), -- Coilfang Leper
+(@SGGUID+30, @CGUID+137, -1, 0), -- Coilfang Leper
+(@SGGUID+30, @CGUID+138, -1, 0), -- Coilfang Leper
+(@SGGUID+30, @CGUID+139, -1, 0), -- Coilfang Leper
+(@SGGUID+30, @CGUID+140, -1, 0), -- Coilfang Leper
+(@SGGUID+30, @CGUID+141, -1, 0), -- Coilfang Leper
+(@SGGUID+30, @CGUID+142, -1, 0), -- Coilfang Leper
+(@SGGUID+30, @CGUID+143, -1, 0), -- Coilfang Leper
+
+
+(@SGGUID+31, @CGUID+144, -1, 0), -- Coilfang Leper
+(@SGGUID+31, @CGUID+145, -1, 0), -- Coilfang Leper
+(@SGGUID+31, @CGUID+146, -1, 0), -- Coilfang Leper
+(@SGGUID+31, @CGUID+147, -1, 0), -- Coilfang Leper
+(@SGGUID+31, @CGUID+148, -1, 0), -- Coilfang Leper
+(@SGGUID+31, @CGUID+149, -1, 0), -- Coilfang Leper
+(@SGGUID+31, @CGUID+150, -1, 0), -- Coilfang Leper
+(@SGGUID+31, @CGUID+151, -1, 0), -- Coilfang Leper
+
+(@SGGUID+32, @CGUID+42, 0, 0), -- Mekgineer Steamrigger
+(@SGGUID+32, @CGUID+121, 1, 0), -- Steamrigger Mechanic
+(@SGGUID+32, @CGUID+122, 2, 0), -- Steamrigger Mechanic
+(@SGGUID+32, @CGUID+123, 3, 0), -- Steamrigger Mechanic
+
+(@SGGUID+33, @CGUID+177, 0, 0), -- Coilfang Myrmidon
+(@SGGUID+33, @CGUID+174, 1, 0), -- Coilfang Enginee
+(@SGGUID+33, @CGUID+175, 2, 0), -- Coilfang Enginee
+(@SGGUID+33, @CGUID+176, 3, 0), -- Coilfang Sorceress
+
+(@SGGUID+34, @CGUID+70, 0, 0), -- Coilfang Myrmidon
+(@SGGUID+34, @CGUID+71, 1, 0), -- Coilfang Myrmidon
+(@SGGUID+34, @CGUID+118, 2, 0), -- Coilfang Siren
+(@SGGUID+34, @CGUID+108, 3, 0), -- Coilfang Oracle
+
+(@SGGUID+35, @CGUID+72, 0, 0), -- Coilfang Myrmidon
+(@SGGUID+35, @CGUID+38, 1, 0), -- Coilfang Sorceress
+(@SGGUID+35, @CGUID+82, 2, 0), -- Coilfang Siren
+(@SGGUID+35, @CGUID+109, 3, 0), -- Coilfang Oracle
+
+(@SGGUID+36, @CGUID+73, 0, 0), -- Coilfang Myrmidon
+(@SGGUID+36, @CGUID+37, 1, 0), -- Coilfang Sorceress
+(@SGGUID+36, @CGUID+83, 2, 0), -- Coilfang Siren
+(@SGGUID+36, @CGUID+110, 3, 0); -- Coilfang Oracle
+
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+2, 2, 2, 0, @SGGUID+2, 2, 'Steam Vault - Group 002 - Coilfang Warrior| Coilfang Siren - Patrol 001'),
 (@SGGUID+5, 6, 3, 0, @SGGUID+5, 4, 'Steam Vault - Group 005 - Tidal Surger | Steam Surger (4) - Patrol 002'),
 (@SGGUID+8, 6, 3, 0, @SGGUID+8, 4, 'Steam Vault - Group 008 - Tidal Surger | Steam Surger (4) - Patrol 003'),
 (@SGGUID+12, 6, 3, 0, @SGGUID+12, 4, 'Steam Vault - Group 012 - Tidal Surger | Steam Surger (4) - Patrol 004'),
 (@SGGUID+15, 3, 3, 0, @SGGUID+15, 2, 'Steam Vault - Group 015 - Coilfang Warrior | Coilfang Siren (2) - Patrol 005'),
-(@SGGUID+18, 3, 3, 0, @SGGUID+18, 2, 'Steam Vault - Group 018 - Coilfang Siren | Coilfang Warrior (2) - Patrol 006'),
-(@SGGUID+23, 3, 3, 0, @SGGUID+23, 2, 'Steam Vault - Group 023 -  Coilfang Sorceress | Coilfang Myrmidon (2) - Patrol 007');
+(@SGGUID+18, 2, 4, 0, @SGGUID+18, 2, 'Steam Vault - Group 018 - Coilfang Siren | Coilfang Warrior (2) - Patrol 006'),
+(@SGGUID+23, 2, 4, 0, @SGGUID+23, 2, 'Steam Vault - Group 023 -  Coilfang Sorceress | Coilfang Myrmidon (2) - Patrol 007');
 
 -- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 
