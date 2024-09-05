@@ -23466,14 +23466,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mekgineer Steamrigger 17796 - boss_mekgineer_steamrigger
 -- Hydromancer Thespia 17797 - boss_hydromancer_thespia
 -- Warlord Kalithresh 17798 - boss_warlord_kalithresh
--- Dreghood Slave 17799 - Freed RP Movement
-('1779901','17799','1','0','100','1','10000','10000','10000','10000','0','0','2','190','0','0','22','0','0','0','0','0','0','0','Dreghood Slave - Set Faction and Set Phase 0 OOC'),
-('1779902','17799','30','0','100','1','5','17805','0','0','0','0','2','16','3','0','22','1','0','0','0','0','0','0','Dreghood Slave - Set Faction and Set Phase 1 on Receive AI Event 5'),
-('1779903','17799','30','0','15','1','5','17805','0','0','0','0','1','18712','18711','0','0','0','0','0','0','0','0','0','Dreghood Slave - Yell on Receive AI Event 5'),
-('1779904','17799','30','5','100','0','0','17805','0','0','0','0','2','190','0','0','24','0','0','0','41','8000','0','0','Dreghood Slave - Set Faction and Evade and Delayed Despawn on Receive AI Event 0 (Phase 1)'),
-('1779905','17799','30','5','15','0','0','17805','0','0','0','0','5','5','0','0','54','0','0','12004','0','0','0','0','Dreghood Slave - Play Emote and Yell on Receive AI Event 0 (Phase 1)'),
-('1779906','17799','2','0','100','1024','30','0','0','0','0','0','11','8269','0','0','1','1191','0','0','0','0','0','0','Dreghood Slave - Cast Enrage at 30% HP'),
-('1779907','17799','0','0','100','1025','10000','15000','10000','15000','0','0','14','-99','0','0','0','0','0','0','0','0','0','0','Dreghood Slave - Reset Threat'),
+-- Dreghood Slave 17799 
+('1779901','17799','2','0','100','1024','30','0','0','0','0','0','11','8269','0','0','1','1191','0','0','0','0','0','0','Dreghood Slave - Cast Enrage at 30% HP'),
+('1779902','17799','0','0','100','1025','10000','15000','10000','15000','0','0','14','-99','0','0','0','0','0','0','0','0','0','0','Dreghood Slave - Reset Threat'),
 -- Coilfang Myrmidon 17800 - spell_list
 ('1780001','17800','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Myrmidon - Text on Aggro'),
 -- Coilfang Siren 17801 - spell_list
@@ -23484,13 +23479,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1780202','17802','0','0','100','1025','0','10000','0','10000','0','0','11','31403','0','32','0','0','0','0','0','0','0','0','Coilfang Warrior - Cast Battle Shout'),
 -- Coilfang Oracle 17803 - spell_list
 ('1780301','17803','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Oracle - Text on Aggro'),
--- Coilfang Slavemaster 17805
-('1780501','17805','6','0','100','0','0','0','0','0','0','0','45','0','25','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Send AI Event 0 on Death'),
-('1780503','17805','4','0','100','0','0','0','0','0','0','0','45','5','25','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Send AI Event 5 on Aggro'),
+-- Coilfang Slavemaster 17805 - spell_list
 ('1780504','17805','4','0','25','32','0','0','0','0','0','0','54','18972','0','0','54','0','0','12000','0','0','0','0','Coilfang Slavemaster - Yell or Say on Aggro'),
 ('1780505','17805','2','0','100','1024','20','0','0','0','0','0','11','8269','0','0','1','2384','0','0','0','0','0','0','Coilfang Slavemaster - Cast Enrage at 20% HP'),
-('1780506','17805','0','0','100','1025','4000','7000','11000','15000','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Cast Disarm'),
-('1780507','17805','0','0','100','1025','8000','12000','12000','15000','0','0','11','10987','0','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Cast Geyser'),
 -- Coilfang Water Elemental 17917 - spell_list
 -- Steamrigger Mechanic 17951 - mob_steamrigger_mechanic
 -- Naga Distiller 17954 - mob_naga_distiller
