@@ -78,6 +78,24 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 17722;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 20625;
 
+
+-- Coilfang Slavemaster
+-- Before: SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 17805;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 20624;
+
+-- Dreghood Slave
+-- Before: SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 6.944439888000488281
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.992' WHERE entry = 17799;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.992' WHERE entry = 20628;
+
+
 -- -----------
 -- SpellLists
 -- -----------

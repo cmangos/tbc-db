@@ -369,7 +369,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+180, 0, 545, 3, 37.8443, -236.049, -22.6524, 1.70101, 7200, 7200, 2, 1), -- spawn_group_entry
 (@CGUID+181, 17803, 545, 3, -17.0931, -186.131, -22.1681, 5.23599, 7200, 7200, 2, 1); -- Coilfang Oracle
 
-REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`, `Name`) VALUES (1772101, 1772101, 'Coilfang Engineer (17721) - RelayScript (1772101)');
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`, `Name`) VALUES (1772101, @RELAYID+1, 'Coilfang Engineer (17721) - RelayScript (5450001)');
 REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 1772101 FROM `creature` WHERE `guid` IN (@CGUID+21,@CGUID+22);
 
 -- ===========
@@ -863,15 +863,31 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (184126, 12000, 20, 2, 0, 0, 17800, @CGUID+177, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000020038'),
 (184126, 12000, 20, 2, 0, 0, 17800, @CGUID+176, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000020038');
 
-DELETE FROM `dbscripts_on_relay` WHERE `id` IN (1772101);
-INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1772101, 0, 42, 0, 0, 0, 0, 0, 0, 2023, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Engineer - EquipSet 2');
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(@RELAYID+1,0,0,42,0,0,0,0,0,0,0,2023,0,0,0,0,0,0,'Coilfang Engineer - EquipSet 2'),
+-- Dreghood Slave
+(@RELAYID+2,0,0,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Dreghood Slave - Set Active'), -- just to make sure they run their way to the end and despawn
+(@RELAYID+2,0,1,20,0,0,0,0,0,0,2,0,0,0,0,0,0,0,'Dreghood Slave - Stop Movement'),
+(@RELAYID+2,0,2,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Dreghood Slave - Emote OneShotExclamation'),
+(@RELAYID+2,0,3,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Dreghood Slave - random yell'),
+(@RELAYID+2,1000,0,20,2,1,0,0,0,0,2,0,0,0,0,0,0,0,'Dreghood Slave - Change Movement');
+
+DELETE FROM dbscript_random_templates WHERE id = @RELAYID+1;
+INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
+-- Shattered Hand Legionnaire 001 script
+(@RELAYID+1, 0, 18707, 0, 'Steam Vault - Dreghood Slave - random yell'),
+(@RELAYID+1, 0, 18708, 0, 'Steam Vault - Dreghood Slave - random yell'),
+(@RELAYID+1, 0, 18710, 0, 'Steam Vault - Dreghood Slave - random yell'),
+(@RELAYID+1, 0, 18712, 0, 'Steam Vault - Dreghood Slave - random yell'),
+(@RELAYID+1, 0, 18713, 0, 'Steam Vault - Dreghood Slave - random yell'),
+(@RELAYID+1, 0, 18711, 0, 'Steam Vault - Dreghood Slave - random yell');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
+
 
 
