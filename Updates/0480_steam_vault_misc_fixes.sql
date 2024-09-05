@@ -69,6 +69,15 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.428' WHERE entry = 2
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 17800;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 20621;
 
+
+-- Coilfang Sorceress
+-- Before: SpeedWalk = 1,48 SpeedRun = 1,14286
+-- Sniff:
+-- WalkSpeed: 2.5
+-- RunSpeed: 7
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 17722;
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1' WHERE entry = 20625;
+
 -- -----------
 -- SpellLists
 -- -----------
@@ -106,11 +115,11 @@ DELETE FROM `creature_spell_list` WHERE `Id` IN (1780101, 2062301);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (1780101, 1, 38660, 0, -1, 100, 0, 100, 0, 8000, 24000, 18000, 34000, 'Coilfang Siren - Fear - random'),
 (1780101, 2, 35106, 0, -1, 1, 0, 100, 0, 6000, 23000, 6000, 23000, 'Coilfang Siren - Arcane Flare - current'),
-(1780101, 3, 15234, 0, -1, 1, 0, 100, 0, 3000, 10000, 3000, 10000, 'Coilfang Siren - Lightning Bolt - current'),
+(1780101, 3, 15234, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Coilfang Siren - Lightning Bolt - current'),
 
 (2062301, 1, 38660, 0, -1, 100, 0, 100, 0, 8000, 24000, 18000, 34000, 'Coilfang Siren - Fear - random'),
 (2062301, 2, 37856, 0, -1, 1, 0, 100, 0, 6000, 23000, 6000, 23000, 'Coilfang Siren - Arcane Flare - current'),
-(2062301, 3, 37664, 0, -1, 1, 0, 100, 0, 3000, 10000, 3000, 10000, 'Coilfang Siren - Lightning Bolt - current');
+(2062301, 3, 37664, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Coilfang Siren - Lightning Bolt - current');
 
 UPDATE `creature_template` SET `SpellList` = 1780101 WHERE `entry` = 17801;
 UPDATE `creature_template` SET `SpellList` = 2062301 WHERE `entry` = 20623;
@@ -247,3 +256,45 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 UPDATE `creature_template` SET `SpellList` = 1780001 WHERE `entry` = 17800;
 UPDATE `creature_template` SET `SpellList` = 2062101 WHERE `entry` = 20621;
 
+
+-- Coilfang Sorceress
+DELETE FROM `creature_template_spells` WHERE `entry` = 17722;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20625;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1772201, 2062501);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1772201, 'Steam Vault - Coilfang Sorceress - Normal', 0, 80),
+(2062501, 'Steam Vault - Coilfang Sorceress - Heroic', 0, 80);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1772201, 2062501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1772201, 1, 15063, 0, -1, 109, 0, 100, 0, 6000, 18000, 18000, 30000, 'Coilfang Sorceress - Frost Nova - random player in melee'),
+(1772201, 2, 31581, 0, -1, 100, 0, 100, 0, 12000, 24000, 12000, 24000, 'Coilfang Sorceress - Blizzard - random'),
+(1772201, 3, 12675, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Coilfang Sorceress - Frostbolt - current'),
+
+(2062501, 1, 15531, 0, -1, 109, 0, 100, 0, 6000, 18000, 18000, 30000, 'Coilfang Sorceress - Frost Nova - random player in melee'),
+(2062501, 2, 39416, 0, -1, 100, 0, 100, 0, 12000, 24000, 12000, 24000, 'Coilfang Sorceress - Blizzard - random'),
+(2062501, 3, 37930, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Coilfang Sorceress - Frostbolt - current');
+
+UPDATE `creature_template` SET `SpellList` = 1772201 WHERE `entry` = 17722;
+UPDATE `creature_template` SET `SpellList` = 2062501 WHERE `entry` = 20625;
+
+
+-- Coilfang Water Elemental
+DELETE FROM `creature_template_spells` WHERE `entry` = 17917;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20627;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1791701, 2062701);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1791701, 'Steam Vault - Coilfang Water Elemental - Normal', 0, 0),
+(2062701, 'Steam Vault - Coilfang Water Elemental - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1791701, 2062701);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1791701, 1, 34449, 0, -1, 2, 0, 100, 0, 7000, 16000, 9000, 18000, 'Coilfang Water Elemental - Water Bolt Volley - self'),
+(2062701, 1, 37924, 0, -1, 2, 0, 100, 0, 7000, 16000, 9000, 18000, 'Coilfang Water Elemental - Water Bolt Volley - self');
+
+UPDATE `creature_template` SET `SpellList` = 1791701 WHERE `entry` = 17917;
+UPDATE `creature_template` SET `SpellList` = 2062701 WHERE `entry` = 20627;

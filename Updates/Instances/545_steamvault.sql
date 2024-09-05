@@ -612,7 +612,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+23, @CGUID+67, 2, 0), -- Coilfang Engineer
 
 (@SGGUID+24, @CGUID+62, 0, 0), -- Coilfang Myrmidon
-(@SGGUID+24, @CGUID+63, 1, 0); -- Coilfang Myrmidon
+(@SGGUID+24, @CGUID+63, 1, 0), -- Coilfang Myrmidon
 
 (@SGGUID+25, @CGUID+49, -1, 0), -- Dreghood Slave
 (@SGGUID+25, @CGUID+50, -1, 0), -- Dreghood Slave

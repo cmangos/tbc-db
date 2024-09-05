@@ -23460,15 +23460,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==================================
 -- Coilfang Engineer 17721 - spell_list
 ('1772105','17721','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Engineer - Text on Aggro'),
--- Coilfang Sorceress 17722
+-- Coilfang Sorceress 17722 - spell_list
 ('1772201','17722','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Sorceress - Text on Aggro'),
-('1772202','17722','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Coilfang Sorceress - Enable Range Mode on Aggro'),
-('1772203','17722','0','0','80','1027','18000','20000','25000','27000','0','0','11','31581','4','512','0','0','0','0','0','0','0','0','Coilfang Sorceress (Normal) - Cast Blizzard'),
-('1772204','17722','0','0','100','1029','18000','20000','25000','27000','0','0','11','39416','4','512','0','0','0','0','0','0','0','0','Coilfang Sorceress (Heroic) - Cast Blizzard'),
-('1772205','17722','9','0','100','1027','0','8','13000','18000','0','0','11','15063','17','1024','0','0','0','0','0','0','0','0','Coilfang Sorceress (Normal) - Cast Frost Nova'),
-('1772206','17722','9','0','100','1029','0','8','13000','18000','0','0','11','15531','17','1024','0','0','0','0','0','0','0','0','Coilfang Sorceress (Heroic) - Cast Frost Nova'),
-('1772207','17722','9','0','100','1027','0','40','2400','3800','0','0','11','12675','1','256','0','0','0','0','0','0','0','0','Coilfang Sorceress (Normal) - Cast Frostbolt'),
-('1772208','17722','9','0','100','1029','0','40','2400','3800','0','0','11','37930','1','256','0','0','0','0','0','0','0','0','Coilfang Sorceress (Heroic) - Cast Frostbolt'),
+('1772202','17722','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Coilfang Sorceress - Enable Range Mode on Spawn'),
 -- Mekgineer Steamrigger 17796 - boss_mekgineer_steamrigger
 -- Hydromancer Thespia 17797 - boss_hydromancer_thespia
 -- Warlord Kalithresh 17798 - boss_warlord_kalithresh
@@ -23484,6 +23478,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1780001','17800','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Myrmidon - Text on Aggro'),
 -- Coilfang Siren 17801 - spell_list
 ('1780101','17801','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Siren - Text on Aggro'),
+('1780102','17801','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Coilfang Siren - Range Mode on Spawn'),
 -- Coilfang Warrior 17802 - spell_list
 ('1780201','17802','0','0','100','1025','0','6000','2000','12000','0','0','11','7164','0','32','0','0','0','0','0','0','0','0','Coilfang Warrior - Cast Defensive Stance on missing Buff'),
 ('1780202','17802','0','0','100','1025','0','10000','0','10000','0','0','11','31403','0','32','0','0','0','0','0','0','0','0','Coilfang Warrior - Cast Battle Shout'),
@@ -23496,9 +23491,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1780505','17805','2','0','100','1024','20','0','0','0','0','0','11','8269','0','0','1','2384','0','0','0','0','0','0','Coilfang Slavemaster - Cast Enrage at 20% HP'),
 ('1780506','17805','0','0','100','1025','4000','7000','11000','15000','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Cast Disarm'),
 ('1780507','17805','0','0','100','1025','8000','12000','12000','15000','0','0','11','10987','0','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Cast Geyser'),
--- Coilfang Water Elemental (SD2 Backport)
-('1791701','17917','0','0','100','1027','3000','6000','7000','12000','0','0','11','34449','0','0','0','0','0','0','0','0','0','0','Coilfang Water Elemental (Normal) - Cast Water Bolt Volley'),
-('1791702','17917','0','0','100','1029','3000','6000','7000','12000','0','0','11','37924','0','0','0','0','0','0','0','0','0','0','Coilfang Water Elemental (Heroic) - Cast Water Bolt Volley'),
+-- Coilfang Water Elemental 17917 - spell_list
 -- Steamrigger Mechanic 17951 - mob_steamrigger_mechanic
 -- Naga Distiller 17954 - mob_naga_distiller
 -- Coilfang Leper 21338
