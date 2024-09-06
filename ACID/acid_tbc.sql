@@ -23468,8 +23468,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dreghood Slave 17799 
 ('1779901','17799','2','0','100','1024','30','0','0','0','0','0','11','8269','0','0','1','1191','0','0','0','0','0','0','Dreghood Slave - Cast Enrage at 30% HP'),
 ('1779902','17799','0','0','100','1025','10000','15000','10000','15000','0','0','14','-99','0','0','0','0','0','0','0','0','0','0','Dreghood Slave - Reset Threat'),
-('1779903','17799','30','0','100','1','5','17805','0','0','0','0','2','16','3','0','38','0','0','0','0','0','0','0','Dreghood Slave - Set Faction to 16 and Zone Combat Pulse on Receive AI Event A'),
-('1779904','17799','30','0','100','1','6','17805','0','0','0','0','24','0','0','0','53','5450002','0','0','14','-100','0','0','Dreghood Slave - Evade, Start relayScript and remove threat on Receive AI Event C'),
+('1779903','17799','30','0','100','1','5','17805','0','0','0','0','53','5450003','0','0','0','0','0','0','0','0','0','0','Dreghood Slave - Start RelayScript on Receive AI Event A'),
+('1779905','17799','30','0','100','1','7','17805','0','0','0','0','24','0','0','0','53','5450002','0','0','14','-100','0','0','Dreghood Slave - Evade, Start relayScript and remove threat on Receive AI Event B'),
 -- Coilfang Myrmidon 17800 - spell_list
 ('1780001','17800','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Myrmidon - Text on Aggro'),
 -- Coilfang Siren 17801 - spell_list
@@ -23482,9 +23482,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1780301','17803','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Oracle - Text on Aggro'),
 -- Coilfang Slavemaster 17805 - spell_list
 ('1780501','17805','4','0','15','32','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Say on Aggro'),
-('1780502','17805','4','0','100','0','0','0','0','0','0','0','45','5','15','0','1','18972','0','0','54','0','0','12000','Coilfang Slavehandler - Send AI Event A and Yell on Aggro'),
-('1780503','17805','6','0','100','0','0','0','0','0','0','0','45','6','15','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Send AI Event B on Death'),
-('1780505','17805','2','0','100','1024','20','0','0','0','0','0','11','8269','0','0','1','2384','0','0','0','0','0','0','Coilfang Slavemaster - Cast Enrage at 20% HP'),
+('1780502','17805','2','0','100','1024','20','0','0','0','0','0','11','8269','0','0','1','2384','0','0','0','0','0','0','Coilfang Slavemaster - Cast Enrage at 20% HP'),
+-- GUID Based, only the 2 patroling slavemaster can call assist from Dreghood Slave
+('1780503','-5450117','4','0','100','0','0','0','0','0','0','0','45','5','15','0','1','18972','0','0','54','0','0','12000','Coilfang Slavehandler - Send AI Event A and Yell on Aggro'),
+('1780504','-5450117','6','0','100','0','0','0','0','0','0','0','53','5450004','0','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Start RelayScript on Death'),
+('1780505','-5450114','4','0','100','0','0','0','0','0','0','0','45','5','15','0','1','18972','0','0','54','0','0','12000','Coilfang Slavehandler - Send AI Event A and Yell on Aggro'),
+('1780506','-5450114','6','0','100','0','0','0','0','0','0','0','53','5450004','0','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Start RelayScript on Death'),
+-- 2 Slavemaster staying static with 1 Dreghood Slave, will random talk and use emote
+('1780507','-5450115','1','0','100','1','5000','30000','5000','30000','0','0','5','36','0','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Emote OneShotAttack1h OOC'),
+('1780508','-5450115','1','0','40','1','1000','300000','1000','300000','0','0','54','0','0','5450002','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Random Talk OOC'),
+('1780509','-5450116','1','0','100','1','5000','30000','5000','30000','0','0','5','36','0','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Emote OneShotAttack1h OOC'),
+('1780510','-5450116','1','0','40','1','1000','300000','1000','300000','0','0','54','0','0','5450002','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Random Talk OOC'),
 -- Coilfang Water Elemental 17917 - spell_list
 -- Steamrigger Mechanic 17951 - mob_steamrigger_mechanic
 -- Naga Distiller 17954 - mob_naga_distiller

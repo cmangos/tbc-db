@@ -768,6 +768,11 @@ DELETE FROM `conditions` WHERE `condition_entry` = @SGGUID+16;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+16, 42, 4663, 1, 0, 0, 0, 'Steam Vault - Hydromancer Thespia');
 
+-- StringIDs
+DELETE FROM string_id WHERE Id = @STRINGID+1;
+INSERT INTO `string_id` (Id, Name) VALUES 
+(@STRINGID+1, 'SV_COILFANG_SLAVEHANDLER_01');
+
 -- =======
 -- POOLING
 -- =======
@@ -863,7 +868,7 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (184126, 12000, 20, 2, 0, 0, 17800, @CGUID+177, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000020038'),
 (184126, 12000, 20, 2, 0, 0, 17800, @CGUID+176, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000020038');
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+4;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (@RELAYID+1,0,0,42,0,0,0,0,0,0,0,2023,0,0,0,0,0,0,'Coilfang Engineer - EquipSet 2'),
 -- Dreghood Slave
@@ -871,17 +876,28 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+2,0,1,20,0,0,0,0,0,0,2,0,0,0,0,0,0,0,'Dreghood Slave - Stop Movement'),
 (@RELAYID+2,0,2,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Dreghood Slave - Emote OneShotExclamation'),
 (@RELAYID+2,0,3,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Dreghood Slave - random yell'),
-(@RELAYID+2,1000,0,20,2,1,0,0,0,0,2,0,0,0,0,0,0,0,'Dreghood Slave - Change Movement');
+(@RELAYID+2,1000,0,20,2,1,0,0,0,0,2,0,0,0,0,0,0,0,'Dreghood Slave - Change Movement'),
+-- Dreghood Slave on recive Event A - if slavemaster starts combat he sends AI Event A to Drehood Slave
+(@RELAYID+3,0,1,22,16,3,0,0,0,0,0,0,0,0,0,0,0,0,'Dreghood Slave - Set Faction to 16'),
+(@RELAYID+3,0,2,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Dreghood Slave - Zone Comba pulse'),
+(@RELAYID+3,0,3,55,@STRINGID+1,1,0,0,0,0,0,0,0,0,0,0,0,0,'Dreghood Slave - set StringID'),
+-- Coilfang Slavemaster on Death script
+(@RELAYID+4,0,0,31,0,5,0,@STRINGID+1,15,0x800,0,0,0,0,0,0,0,0, 'Coilfang Slavemaster - search for string id - terminate if not found'),
+(@RELAYID+4,1,0,35,7,0,0,@STRINGID+1,15,2561,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event B too StringID');
 
-DELETE FROM dbscript_random_templates WHERE id = @RELAYID+1;
+
+DELETE FROM dbscript_random_templates WHERE id IN (@RELAYID+1, @RELAYID+2);
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
--- Shattered Hand Legionnaire 001 script
+-- Dreghood Slave random yells
 (@RELAYID+1, 0, 18707, 0, 'Steam Vault - Dreghood Slave - random yell'),
 (@RELAYID+1, 0, 18708, 0, 'Steam Vault - Dreghood Slave - random yell'),
 (@RELAYID+1, 0, 18710, 0, 'Steam Vault - Dreghood Slave - random yell'),
 (@RELAYID+1, 0, 18712, 0, 'Steam Vault - Dreghood Slave - random yell'),
 (@RELAYID+1, 0, 18713, 0, 'Steam Vault - Dreghood Slave - random yell'),
-(@RELAYID+1, 0, 18711, 0, 'Steam Vault - Dreghood Slave - random yell');
+(@RELAYID+1, 0, 18711, 0, 'Steam Vault - Dreghood Slave - random yell'),
+-- Coilfang Slavemaster random text
+(@RELAYID+2, 0, 14404, 0, 'Steam Vault - Coilfang Slavemaster - random yell'),
+(@RELAYID+2, 0, 14405, 0, 'Steam Vault - Coilfang Slavemaster - random yell');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
