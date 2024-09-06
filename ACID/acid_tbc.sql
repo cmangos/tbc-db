@@ -23468,8 +23468,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dreghood Slave 17799 
 ('1779901','17799','2','0','100','1024','30','0','0','0','0','0','11','8269','0','0','1','1191','0','0','0','0','0','0','Dreghood Slave - Cast Enrage at 30% HP'),
 ('1779902','17799','0','0','100','1025','10000','15000','10000','15000','0','0','14','-99','0','0','0','0','0','0','0','0','0','0','Dreghood Slave - Reset Threat'),
-('1779903','17799','30','0','100','1','5','17805','0','0','0','0','53','5450003','0','0','0','0','0','0','0','0','0','0','Dreghood Slave - Start RelayScript on Receive AI Event A'),
-('1779905','17799','30','0','100','1','7','17805','0','0','0','0','24','0','0','0','53','5450002','0','0','14','-100','0','0','Dreghood Slave - Evade, Start relayScript and remove threat on Receive AI Event B'),
+('1779903','17799','30','0','100','1','5','17805','0','0','0','0','53','5450003','0','0','22','1','0','0','0','0','0','0','Dreghood Slave - Start RelayScript and Set Phase 1 on Receive AI Event A'),
+('1779905','17799','30','1','100','1','7','17805','0','0','0','0','24','0','0','0','53','5450002','0','0','14','-100','0','0','Dreghood Slave - Evade, Start relayScript and remove threat on Receive AI Event B'),
+('1779906','17799','30','1','100','1','7','17805','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Dreghood Slave - Set Phase 0 on Receive AI Event B'),
 -- Coilfang Myrmidon 17800 - spell_list
 ('1780001','17800','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Myrmidon - Text on Aggro'),
 -- Coilfang Siren 17801 - spell_list
