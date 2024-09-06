@@ -94,7 +94,9 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry = 
 -- RunSpeed: 6.944439888000488281
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.992' WHERE entry = 17799;
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '0.992' WHERE entry = 20628;
-
+-- Also add CREATURE_EXTRA_FLAG_NO_CALL_ASSIST to slave
+UPDATE creature_template SET ExtraFlags = 2048 WHERE entry = 17799;
+UPDATE creature_template SET ExtraFlags = 2048 WHERE entry = 20628;
 
 -- -----------
 -- SpellLists
@@ -125,8 +127,8 @@ DELETE FROM `creature_template_spells` WHERE `entry` = 20623;
 
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1780101, 2062301);
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
-(1780101, 'Steam Vault - Coilfang Siren - Normal', 0, 0),
-(2062301, 'Steam Vault - Coilfang Siren - Heroic', 0, 0);
+(1780101, 'Steam Vault - Coilfang Siren - Normal', 0, 80),
+(2062301, 'Steam Vault - Coilfang Siren - Heroic', 0, 80);
 
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1780101, 2062301);
@@ -201,11 +203,11 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1780301, 2062201);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (1780301, 1, 22883, 0, -1, 201, 0, 100, 0, 2000, 10000, 10000, 20000, 'Coilfang Oracle - Heal - Missing 50% including self'),
-(1780301, 2, 8281, 0, -1, 201, 0, 100, 0, 11000, 19000, 15000, 23000, 'Coilfang Oracle -  Sonic Burst - self'),
+(1780301, 2, 8281, 0, -1, 2, 0, 100, 0, 11000, 19000, 15000, 23000, 'Coilfang Oracle -  Sonic Burst - self'),
 (1780301, 3, 22582, 0, -1, 1, 0, 100, 0, 6000, 15000, 6000, 15000, 'Coilfang Oracle - Frost Shock - current'),
 
 (2062201, 1, 31730, 0, -1, 201, 0, 100, 0, 2000, 10000, 10000, 20000, 'Coilfang Oracle - Heal - Missing 50% including self'),
-(2062201, 2, 8281, 0, -1, 201, 0, 100, 0, 11000, 19000, 15000, 23000, 'Coilfang Oracle -  Sonic Burst - self'),
+(2062201, 2, 8281, 0, -1, 2, 0, 100, 0, 11000, 19000, 15000, 23000, 'Coilfang Oracle -  Sonic Burst - self'),
 (2062201, 3, 37865, 0, -1, 1, 0, 100, 0, 6000, 15000, 6000, 15000, 'Coilfang Oracle - Frost Shock - current');
 
 UPDATE `creature_template` SET `SpellList` = 1780301 WHERE `entry` = 17803;
@@ -281,19 +283,19 @@ DELETE FROM `creature_template_spells` WHERE `entry` = 20625;
 
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1772201, 2062501);
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
-(1772201, 'Steam Vault - Coilfang Sorceress - Normal', 0, 80),
-(2062501, 'Steam Vault - Coilfang Sorceress - Heroic', 0, 80);
+(1772201, 'Steam Vault - Coilfang Sorceress - Normal', 0, 0),
+(2062501, 'Steam Vault - Coilfang Sorceress - Heroic', 0, 0);
 
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1772201, 2062501);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1772201, 1, 15063, 0, -1, 109, 0, 100, 0, 6000, 18000, 18000, 30000, 'Coilfang Sorceress - Frost Nova - random player in melee'),
-(1772201, 2, 31581, 0, -1, 100, 0, 100, 0, 12000, 24000, 12000, 24000, 'Coilfang Sorceress - Blizzard - random'),
-(1772201, 3, 12675, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Coilfang Sorceress - Frostbolt - current'),
+(1772201, 1, 15063, 0, -1, 2, 0, 100, 0, 6000, 18000, 18000, 30000, 'Coilfang Sorceress - Frost Nova - self'),
+(1772201, 2, 31581, 0, -1, 100, 0, 100, 0, 12000, 24000, 20000, 32000, 'Coilfang Sorceress - Blizzard - random'),
+(1772201, 3, 12675, 0, -1, 1, 0, 100, 0, 0, 8000, 7000, 210000, 'Coilfang Sorceress - Frostbolt - current'),
 
-(2062501, 1, 15531, 0, -1, 109, 0, 100, 0, 6000, 18000, 18000, 30000, 'Coilfang Sorceress - Frost Nova - random player in melee'),
-(2062501, 2, 39416, 0, -1, 100, 0, 100, 0, 12000, 24000, 12000, 24000, 'Coilfang Sorceress - Blizzard - random'),
-(2062501, 3, 37930, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Coilfang Sorceress - Frostbolt - current');
+(2062501, 1, 15531, 0, -1, 2, 0, 100, 0, 6000, 18000, 18000, 30000, 'Coilfang Sorceress - Frost Nova - self'),
+(2062501, 2, 39416, 0, -1, 100, 0, 100, 0, 12000, 24000, 20000, 32000, 'Coilfang Sorceress - Blizzard - random'),
+(2062501, 3, 37930, 0, -1, 1, 0, 100, 0, 0, 8000, 7000, 210000, 'Coilfang Sorceress - Frostbolt - current');
 
 UPDATE `creature_template` SET `SpellList` = 1772201 WHERE `entry` = 17722;
 UPDATE `creature_template` SET `SpellList` = 2062501 WHERE `entry` = 20625;

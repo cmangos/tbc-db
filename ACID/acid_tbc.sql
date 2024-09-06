@@ -23462,7 +23462,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1772105','17721','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Engineer - Text on Aggro'),
 -- Coilfang Sorceress 17722 - spell_list
 ('1772201','17722','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Sorceress - Text on Aggro'),
-('1772202','17722','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Coilfang Sorceress - Enable Range Mode on Spawn'),
 -- Mekgineer Steamrigger 17796 - boss_mekgineer_steamrigger
 -- Hydromancer Thespia 17797 - boss_hydromancer_thespia
 -- Warlord Kalithresh 17798 - boss_warlord_kalithresh
@@ -23483,8 +23482,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1780301','17803','4','0','15','0','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Oracle - Text on Aggro'),
 -- Coilfang Slavemaster 17805 - spell_list
 ('1780501','17805','4','0','15','32','0','0','0','0','0','0','54','0','0','12000','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Say on Aggro'),
-('1780502','17805','4','0','100','0','0','0','0','0','0','0','45','5','18','0','1','18972','0','0','54','0','0','12000','Coilfang Slavehandler - Send AI Event A and Yell on Aggro'),
-('1780503','17805','6','0','100','0','0','0','0','0','0','0','45','6','25','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Send AI Event B on Death'),
+('1780502','17805','4','0','100','0','0','0','0','0','0','0','45','5','15','0','1','18972','0','0','54','0','0','12000','Coilfang Slavehandler - Send AI Event A and Yell on Aggro'),
+('1780503','17805','6','0','100','0','0','0','0','0','0','0','45','6','15','0','0','0','0','0','0','0','0','0','Coilfang Slavemaster - Send AI Event B on Death'),
 ('1780505','17805','2','0','100','1024','20','0','0','0','0','0','11','8269','0','0','1','2384','0','0','0','0','0','0','Coilfang Slavemaster - Cast Enrage at 20% HP'),
 -- Coilfang Water Elemental 17917 - spell_list
 -- Steamrigger Mechanic 17951 - mob_steamrigger_mechanic
