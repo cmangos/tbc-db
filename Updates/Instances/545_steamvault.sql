@@ -139,7 +139,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17799, 1, 7,-116.59666,-327.73846,-7.406979, 100, 0, 0),
 (17799, 1, 8,-98.12532,-330.5687,-7.8259435, 100, 0, 0),
 (17799, 1, 9,-90.69756,-316.37994,-7.7673373, 100, 0, 0),
-(17799, 1, 10,-90.356445,-283.37686,-7.7673373, 100, 0, 0);
+(17799, 1, 10,-90.356445,-283.37686,-7.7673373, 100, 1000, 1);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+20, 0, 0, 1, 173, 0, NULL), -- Coilfang Engineer
