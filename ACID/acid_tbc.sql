@@ -23400,12 +23400,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1796301','17963','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Wastewalker Slave - Enable Range Mode on Spawn'),
 ('1796302','17963','27','0','100','1','34880','1','15000','30000','0','0','11','34880','0','0','0','0','0','0','0','0','0','0','Wastewalker Slave - Cast Elemental Armor on Missing Buff'),
 ('1796303','17963','2','0','100','1024','25','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Wastewalker Slave - Flee at 25% HP'),
-('1796304','17963','30','0','100','1','5','17959','0','0','0','0','2','16','3','0','38','0','0','0','0','0','0','0','Wastewalker Slave - Set Faction to 16 and Zone Combat Pulse on Receive AI Event A'),
-('1796305','17963','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Slave - Evade, Start relayScript and remove threat on Receive AI Event C'),
+('1796304','17963','30','0','100','1','5','17959','0','0','0','0','2','16','3','0','38','0','0','0','22','1','0','0','Wastewalker Slave - Set Faction to 16 and Zone Combat Pulse and set Phase 1 on Receive AI Event A'),
+('1796305','17963','30','1','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Slave - Evade, Start relayScript and remove threat on Receive AI Event B (Phase 1)'),
+('1796306','17963','30','1','100','1','7','17805','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Wastewalker Slave - Set Phase 0 on Receive AI Event B'),
 -- Wastewalker Worker 17964 - spell_list
 ('1796401','17964','2','0','100','0','25','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Wastewalker Worker - Flee at 25% HP'),
-('1796402','17964','30','0','100','1','5','17959','0','0','0','0','2','16','3','0','38','0','0','0','0','0','0','0','Wastewalker Worker - Set Faction to 16 and Zone Combat Pulse on Receive AI Event A'),
-('1796403','17964','30','0','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event C'),
+('1796402','17964','30','0','100','1','5','17959','0','0','0','0','2','16','3','0','38','0','0','0','22','1','0','0','Wastewalker Worker - Set Faction to 16 and Zone Combat Pulse and set Phase 1 on Receive AI Event A'),
+('1796403','17964','30','1','100','1','6','17959','0','0','0','0','24','0','0','0','53','5470001','0','0','14','-100','0','0','Wastewalker Worker - Evade, Start relayScript and remove threat on Receive AI Event B (Phase 1)'),
+('1796404','17964','30','1','100','1','7','17805','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Wastewalker Slave - Set Phase 0 on Receive AI Event B'),
 -- Rokmar the Crackler 17991 - spell_list
 ('1799101','17991','37','0','100','1','34970','0','0','0','0','0','1','2384','0','0','0','0','0','0','0','0','0','0','Rokmar the Crackler - Emote on Enrage'),
 -- Mennu Earthgrab Totem - TotemAI
