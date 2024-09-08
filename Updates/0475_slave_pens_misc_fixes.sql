@@ -251,10 +251,10 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1796301, 1990201);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1796301, 1, 32192, 0, -1, 109, 0, 100, 0, 4000, 21000, 14000, 25000, 'Wastewalker Slave - Frost Nova - random player in melee range'),
+(1796301, 1, 32192, 0, 1071, 2, 0, 100, 0, 4000, 21000, 14000, 25000, 'Wastewalker Slave - Frost Nova - self combat condition'),
 (1796301, 2, 15497, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Wastewalker Slave - Frostbolt - current'),
 
-(1990201, 1, 15531, 0, -1, 109, 0, 100, 0, 4000, 21000, 14000, 25000, 'Wastewalker Slave - Frost Nova - random player in melee range'),
+(1990201, 1, 15531, 0, 1071, 2, 0, 100, 0, 4000, 21000, 14000, 25000, 'Wastewalker Slave - Frost Nova - self combat condition'),
 (1990201, 2, 12675, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Wastewalker Slave - Frostbolt - current');
 
 UPDATE `creature_template` SET `SpellList` = 1796301 WHERE `entry` = 17963;
