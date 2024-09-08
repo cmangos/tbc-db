@@ -892,7 +892,6 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+40, @CGUID+11, 0), -- Greater Bogstrok
 (@SGGUID+40, @CGUID+10, 1), -- Bogstrok
 (@SGGUID+40, @CGUID+21, 2), -- Greater Bogstrok
-(@SGGUID+40, @CGUID+28, 3), -- Bogstrok
 
 (@SGGUID+41, @CGUID+205, -1), -- Coilfang Observer
 (@SGGUID+41, @CGUID+67, -1), -- Coilfang Observer
