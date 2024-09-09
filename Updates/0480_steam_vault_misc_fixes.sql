@@ -226,10 +226,10 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (2169501, 2191701);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(2169501, 1, 15531, 0, -1, 2, 0, 100, 0, 8000, 15000, 12000, 22000, 'Tidal Surger - Frost Nova - self'),
+(2169501, 1, 15531, 0, 1071, 2, 0, 100, 0, 8000, 15000, 12000, 22000, 'Tidal Surger - Frost Nova - self'),
 (2169501, 2, 37250, 0, -1, 100, 0, 100, 0, 4000, 12000, 6000, 14000, 'Tidal Surger - Water Spout - random'),
 
-(2191701, 1, 15531, 0, -1, 2, 0, 100, 0, 8000, 15000, 12000, 22000, 'Tidal Surger - Frost Nova - self'),
+(2191701, 1, 15531, 0, 1071, 2, 0, 100, 0, 8000, 15000, 12000, 22000, 'Tidal Surger - Frost Nova - self'),
 (2191701, 2, 37250, 0, -1, 100, 0, 100, 0, 4000, 12000, 6000, 14000, 'Tidal Surger - Water Spout - random');
 
 UPDATE `creature_template` SET `SpellList` = 2169501 WHERE `entry` = 21695;
