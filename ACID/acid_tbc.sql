@@ -14183,7 +14183,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Treasure Hunting Buccaneer 7902
 ('790201','7902','4','0','100','0','0','0','0','0','0','0','1','3932','3931','0','0','0','0','0','0','0','0','0','Treasure Hunting Buccaneer - Random Say on Aggro'),
 ('790202','7902','0','0','100','1025','5000','20000','8200','18100','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Treasure Hunting Buccaneer - Cast Strike'),
--- Stone Watcher of Norgannon (7918) - GossipHello_npc_stone_watcher_of_norgannon
+-- Stone Watcher of Norgannon (7918)
 ('791801','7918','11','0','100','0','0','0','0','0','0','0','11','11011','0','34','0','0','0','0','0','0','0','0','Stone Watcher of Norgannon - Cast Stone Watcher of Norgannon Passive on Spawn'),
 -- Qizzik (8124) - NSR
 -- Dirge Quikcleave (8125) - NSR
