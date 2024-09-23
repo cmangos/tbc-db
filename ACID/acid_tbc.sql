@@ -21650,10 +21650,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =================================================================
 -- Auchindoun: Sethekk Halls - (4.3.4 Official Data - Normal/Heroic) - 100% Scripted From Official Data
 -- =================================================================
--- Sethekk Initiate 18318 (4.3.4 Official Data - Normal/Heroic) - 396 (OneShotTalkNoSheathe)
+-- Sethekk Initiate 18318 - spell_list
 ('1831801','18318','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Initiate - Random Say on Aggro'),
-('1831802','18318','0','0','100','1025','7400','15700','27300','47100','0','0','11','33961','0','0','0','0','0','0','0','0','0','0','Sethekk Initiate - Cast Spell Reflection'),
-('1831803','18318','28','0','100','1025','16145','5','10800','18100','0','0','11','16145','1','0','0','0','0','0','0','0','0','0','Sethekk Initiate - Cast Sunder Armor on Target Missing Aura Stack'),
 -- Time-Lost Scryer 18319 (4.3.4 Official Data - Normal/Heroic) - 396 (OneShotTalkNoSheathe)
 ('1831901','18319','11','0','100','0','0','0','0','0','0','0','11','37509','0','34','0','0','0','0','0','0','0','0','Time-Lost Scryer - Cast Ghostly Facade on Spawn'),
 ('1831902','18319','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Time-Lost Scryer - Random Say on Aggro'),
@@ -21734,11 +21732,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1942803','19428','0','0','100','1027','5600','22100','8400','25400','0','0','11','38193','1','0','0','0','0','0','0','0','0','0','Cobalt Serpent (Normal) - Cast Lightning Breath'),
 ('1942804','19428','0','0','100','1029','3600','22100','7200','14400','0','0','11','38133','1','0','0','0','0','0','0','0','0','0','Cobalt Serpent (Heroic) - Cast Lightning Breath'),
 ('1942805','19428','0','0','100','1025','6200','21700','12100','22800','0','0','11','38110','1','0','0','0','0','0','0','0','0','0','Cobalt Serpent - Cast Wing Buffet'),
--- Avian Darkhawk 19429 (4.3.4 Official Data - Normal/Heroic)
-('1942901','19429','9','0','100','1026','8','25','0','0','0','0','11','38059','1','0','0','0','0','0','0','0','0','0','Avian Darkhawk (Normal) - Cast Sonic Charge'),
-('1942902','19429','9','0','100','1028','8','25','0','0','0','0','11','39197','1','0','0','0','0','0','0','0','0','0','Avian Darkhawk (Heroic) - Cast Sonic Charge'),
-('1942903','19429','0','0','100','1027','4800','13600','10900','24100','0','0','11','32901','1','0','0','0','0','0','0','0','0','0','Avian Darkhawk (Normal) - Cast Carnivorous Bite'),
-('1942904','19429','0','0','100','1029','4800','13600','10900','24100','0','0','11','39198','1','0','0','0','0','0','0','0','0','0','Avian Darkhawk (Heroic) - Cast Carnivorous Bite'),
+-- Avian Darkhawk 19429 - spell_list
 -- Avian Ripper 21891 (4.3.4 Official Data - Normal/Heroic)
 ('2189101','21891','0','0','100','1025','4300','12100','15600','19300','0','0','11','38056','1','32','0','0','0','0','0','0','0','0','Avian Ripper - Cast Flesh Rip'),
 -- Avian Warhawk 21904 (4.3.4 Official Data - Normal/Heroic)

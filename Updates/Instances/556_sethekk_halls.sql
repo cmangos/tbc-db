@@ -22,12 +22,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+8, 2, -241.777, 168.288, 0.040596, 0, 0, 0),
 (@CGUID+8, 3, -235.875, 163.151, -0.258676, 0, 0, 0),
 (@CGUID+8, 4, -237.176, 159.286, -0.193438, 0, 0, 0),
-(@CGUID+9, 1, 46.203, 39.4853, 0.006334, 0, 0, 0),
-(@CGUID+9, 2, 46.048, 23.3382, 0.006334, 0, 0, 0),
-(@CGUID+9, 3, 44.3729, 6.70198, 0.006334, 0, 0, 0),
-(@CGUID+9, 4, 39.361, 0.788004, 0.006334, 0, 0, 0),
-(@CGUID+9, 5, 41.0862, 24.0322, 0.007492, 0, 0, 0),
-(@CGUID+9, 6, 40.6359, 42.0957, 0.007492, 0, 0, 0),
 (@CGUID+12, 1, -255.693, 189.136, 0.041422, 0, 0, 0),
 (@CGUID+12, 2, -260.459, 181.767, 0.034236, 0, 0, 0),
 (@CGUID+12, 3, -267.75, 181.15, 0.034236, 0, 0, 0),
@@ -417,8 +411,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (23132, 0, 0, 1, 0, 0, '9205'); -- Brood of Anzu
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+93, @CGUID+9, 1679), -- Avian Darkhawk -> Sethekk Initiate
-(@CGUID+44, @CGUID+43, 1155), -- Sethekk Guard -> Sethekk Guard
 (@CGUID+70, @CGUID+99, 1155), -- Time-Lost Controller -> Avian Darkhawk
 (@CGUID+5, @CGUID+99, 1155), -- Sethekk Initiate -> Avian Darkhawk
 (@CGUID+2, @CGUID+1, 1155), -- Sethekk Initiate -> Sethekk Initiate
@@ -546,7 +538,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+6, 18318, 556, 3, 50.9244, 98.99221, 0.2341383, 3.106686, 7200, 7200, 0, 0), -- Sethekk Initiate
 (@CGUID+7, 0, 556, 3, -65.7626, 167.7794, 0.09317733, 3.403392, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+8, 18318, 556, 3, -237.177, 160.469, -0.193011, 0.918937, 7200, 7200, 0, 2), -- Sethekk Initiate
-(@CGUID+9, 18318, 556, 3, 43.2081, 44.5756, 0.00649, 4.74067, 7200, 7200, 0, 2), -- Sethekk Initiate
+(@CGUID+9, 18318, 556, 3, 42.6617, 38.4536, 0.0475968, 5.8117, 7200, 7200, 0, 0), -- Sethekk Initiate
 (@CGUID+10, 0, 556, 3, -58.01656, 107.975, 0.09053233, 1.553343, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+11, 0, 556, 3, -69.13248, 83.74274, 0.09053633, 2.827433, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+12, 18318, 556, 3, -255.693, 189.136, 0.0414217, 4.77051, 7200, 7200, 0, 2), -- Sethekk Initiate
@@ -580,8 +572,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+40, 18323, 556, 3, -102.480941772460937, 170.0605926513671875, 0.093237332999706268, 0.48869219422340393, 7200, 7200, 0, 0), -- Sethekk Guard
 (@CGUID+41, 18323, 556, 3, -102.428512573242187, 177.5862579345703125, 0.093218334019184112, 6.161012172698974609, 7200, 7200, 0, 0), -- Sethekk Guard
 (@CGUID+42, 18323, 556, 3, 40.1819, 18.5666, 0.00793885, 4.62332, 7200, 7200, 0, 2), -- Sethekk Guard
-(@CGUID+43, 18323, 556, 3, 40.10555648803710937, 52.94751739501953125, 0.090827338397502899, 4.939281940460205078, 7200, 7200, 0, 0), -- Sethekk Guard
-(@CGUID+44, 18323, 556, 3, 46.98314666748046875, 52.35247802734375, 0.090819336473941802, 4.345870018005371093, 7200, 7200, 0, 0), -- Sethekk Guard
+(@CGUID+43, 18323, 556, 3, 40.1056, 52.9475, 0.0908273, 4.93928, 7200, 7200, 0, 0), -- Sethekk Guard
+(@CGUID+44, 18323, 556, 3, 46.9831, 52.3525, 0.0908193, 4.34587, 7200, 7200, 0, 0), -- Sethekk Guard
 (@CGUID+45, 18323, 556, 3, 41.98704910278320312, 130.1469573974609375, 0.186184346675872802, 5.113814830780029296, 7200, 7200, 0, 0), -- Sethekk Guard
 (@CGUID+46, 18323, 556, 3, 47.76796722412109375, 130.4856414794921875, 0.173826336860656738, 4.834561824798583984, 7200, 7200, 0, 0), -- Sethekk Guard
 (@CGUID+47, 18323, 556, 3, 90.719329833984375, 104.3211822509765625, 0.186003327369689941, 3.560471534729003906, 7200, 7200, 0, 0), -- Sethekk Guard
@@ -630,7 +622,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+90, 19428, 556, 3, -237.134, 172.762, 0.0181006, 2.28234, 7200, 7200, 0, 2), -- Cobalt Serpent
 (@CGUID+91, 19428, 556, 3, -179.81, 285.767, 26.3917, 1.92497, 7200, 7200, 0, 2), -- Cobalt Serpent
 (@CGUID+92, 19428, 556, 3, -93.5769, 287.374, 26.4832, 1.24244, 7200, 7200, 0, 2), -- Cobalt Serpent
-(@CGUID+93, 19429, 556, 3, 45.7959, 44.1694, 0.006313, 4.61815, 7200, 7200, 0, 0), -- Avian Darkhawk
+(@CGUID+93, 19429, 556, 3, 45.3656, 40.2488, 0.0908233, 5.43169, 7200, 7200, 0, 0), -- Avian Darkhawk
 (@CGUID+94, 19429, 556, 3, -77.0939, 173.086, 0.00963326, 3.08271, 7200, 7200, 0, 2), -- Avian Darkhawk
 (@CGUID+95, 19429, 556, 3, 23.6554, 105.746, 0.314959, 3.57747, 7200, 7200, 0, 2), -- Avian Darkhawk
 (@CGUID+96, 19429, 556, 3, 71.5671, 119.089, -0.0970558, 5.17183, 7200, 7200, 0, 2), -- Avian Darkhawk
@@ -845,16 +837,36 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 (@SGGUID+1, 'Sethekk Halls - Group 001 - Sethekk Guard (2)', 0, 0, 0, 1, 0),
+(@SGGUID+2, 'Sethekk Halls - Group 002 - Sethekk Initiate | Avian Darkhawk - Patrol 01', 0, 0, 0, 1, 0),
+(@SGGUID+3, 'Sethekk Halls - Group 003 - Sethekk Guard (2)', 0, 0, 0, 1, 0),
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+39, 0, 0), -- Sethekk Guard
-(@SGGUID+1, @CGUID+42, 0, 0), -- Sethekk Guard
+(@SGGUID+1, @CGUID+42, 1, 0), -- Sethekk Guard
 
--- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
--- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
--- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+(@SGGUID+2, @CGUID+9, 0, 0), -- Sethekk Initiate
+(@SGGUID+2, @CGUID+93, 1, 0), -- Avian Darkhawk
+
+(@SGGUID+3, @CGUID+43, 0, 0), -- Sethekk Guard
+(@SGGUID+3, @CGUID+44, 1, 0), -- Sethekk Guard
+
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@SGGUID+2, 2, 3, 0, @SGGUID+2, 2, 'Sethekk Halls - Group 002 - Sethekk Initiate | Avian Darkhawk - Patrol 01'),
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+2,'Sethekk Halls - Group 002 - Sethekk Initiate | Avian Darkhawk - Patrol 01'),
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@SGGUID+2, 1, 45.314354,37.101177,0.0074783196, 100, 0, 0),
+(@SGGUID+2, 2, 47.015766,25.06157,0.0074763903, 100, 0, 0),
+(@SGGUID+2, 3, 47.217983,9.030255,0.0050247586, 100, 0, 0),
+(@SGGUID+2, 4, 39.303646,0.663297,0.007095872, 100, 0, 0),
+(@SGGUID+2, 5, 36.73842,10.677114,0.008318759, 100, 0, 0),
+(@SGGUID+2, 6, 40.667316,20.894041,0.008027105, 100, 0, 0),
+(@SGGUID+2, 7, 38.962692,30.885172,0.0074734767, 100, 0, 0),
+(@SGGUID+2, 8, 39.64863,40.192886,0.0074779084, 100, 0, 0),
 
 -- =======
 -- POOLING
