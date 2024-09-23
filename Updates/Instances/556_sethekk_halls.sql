@@ -9,6 +9,9 @@ EndDBScriptData */
 SET @CGUID := 5560000; -- creatures
 SET @OGUID := 5560000; -- gameobjects
 SET @PGUID := 49300; -- pools
+SET @SGGUID := 5560000; -- spawn_groups
+SET @STRINGID := 5560000; -- used for StringID's
+SET @RELAYID := 5560000; -- used for dbscript_relay
 
 -- =========
 -- CREATURES
@@ -46,10 +49,10 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+32, 2, -61.6514, 289.355, 26.8504, 0, 0, 0),
 (@CGUID+32, 3, -64.575, 282.009, 26.8059, 0, 0, 0),
 (@CGUID+32, 4, -61.288, 289.461, 26.8628, 0, 0, 0),
-(@CGUID+39, 1, 38.6102, 5.71044, 0.008262, 0, 0, 0),
-(@CGUID+39, 2, 30.0571, 5.55771, 0.006819, 3.02064, 10000, 3),
-(@CGUID+42, 1, 37.1708, -5.36963, 0.006045, 0, 0, 0),
-(@CGUID+42, 2, 31.5586, -5.30272, 0.005889, 3.02064, 10000, 3),
+(@CGUID+39, 1, 37.3747, 19.4704, 0.0177172, 0, 0, 0),
+(@CGUID+39, 2, 29.686293,5.346887,3.298871, 1000, 1832301),
+(@CGUID+42, 1, 40.1819, 18.5666, 0.00793885, 0, 0, 0),
+(@CGUID+42, 2, 30.366282, -5.023761, 0.00549, 3.143932, 1000, 1832301),
 (@CGUID+89, 1, -272.265, 170.857, 0.056658, 0, 0, 0),
 (@CGUID+89, 2, -271.679, 150.533, 13.5648, 0, 0, 0),
 (@CGUID+89, 3, -265.851, 143.108, 13.5737, 0, 0, 0),
@@ -414,7 +417,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (23132, 0, 0, 1, 0, 0, '9205'); -- Brood of Anzu
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+39, @CGUID+42, 1155), -- Sethekk Guard -> Sethekk Guard
 (@CGUID+93, @CGUID+9, 1679), -- Avian Darkhawk -> Sethekk Initiate
 (@CGUID+44, @CGUID+43, 1155), -- Sethekk Guard -> Sethekk Guard
 (@CGUID+70, @CGUID+99, 1155), -- Time-Lost Controller -> Avian Darkhawk
@@ -574,10 +576,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+36, 18322, 556, 3, -141.136932373046875, 291.284423828125, 26.81414413452148437, 3.787364482879638671, 7200, 7200, 0, 0), -- Sethekk Ravenguard
 (@CGUID+37, 18322, 556, 3, -141.666046142578125, 283.04644775390625, 26.81415367126464843, 2.775073528289794921, 7200, 7200, 0, 0), -- Sethekk Ravenguard
 (@CGUID+38, 18322, 556, 3, -246.162277221679687, 212.1849517822265625, 26.82247543334960937, 4.764749050140380859, 7200, 7200, 0, 0), -- Sethekk Ravenguard
-(@CGUID+39, 18323, 556, 3, 39.6575, 23.2914, 0.00649, 4.75402, 7200, 7200, 0, 2), -- Sethekk Guard
+(@CGUID+39, 18323, 556, 3, 37.3747, 19.4704, 0.0177172, 4.98476, 7200, 7200, 0, 2), -- Sethekk Guard
 (@CGUID+40, 18323, 556, 3, -102.480941772460937, 170.0605926513671875, 0.093237332999706268, 0.48869219422340393, 7200, 7200, 0, 0), -- Sethekk Guard
 (@CGUID+41, 18323, 556, 3, -102.428512573242187, 177.5862579345703125, 0.093218334019184112, 6.161012172698974609, 7200, 7200, 0, 0), -- Sethekk Guard
-(@CGUID+42, 18323, 556, 3, 43.6146, 22.894, 0.00647427, 4.70925, 7200, 7200, 0, 2), -- Sethekk Guard
+(@CGUID+42, 18323, 556, 3, 40.1819, 18.5666, 0.00793885, 4.62332, 7200, 7200, 0, 2), -- Sethekk Guard
 (@CGUID+43, 18323, 556, 3, 40.10555648803710937, 52.94751739501953125, 0.090827338397502899, 4.939281940460205078, 7200, 7200, 0, 0), -- Sethekk Guard
 (@CGUID+44, 18323, 556, 3, 46.98314666748046875, 52.35247802734375, 0.090819336473941802, 4.345870018005371093, 7200, 7200, 0, 0), -- Sethekk Guard
 (@CGUID+45, 18323, 556, 3, 41.98704910278320312, 130.1469573974609375, 0.186184346675872802, 5.113814830780029296, 7200, 7200, 0, 0), -- Sethekk Guard
@@ -841,9 +843,15 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
+(@SGGUID+1, 'Sethekk Halls - Group 001 - Sethekk Guard (2)', 0, 0, 0, 1, 0),
+
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+(@SGGUID+1, @CGUID+39, 0, 0), -- Sethekk Guard
+(@SGGUID+1, @CGUID+42, 0, 0), -- Sethekk Guard
+
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 -- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
@@ -1038,6 +1046,12 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2193101, 1000, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Avian Flyer - Run On'),
 (2193102, 1000, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Avian Flyer - despawn'),
 (2193102, 2000, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Avian Flyer - respawn');
+
+-- new movement scripts
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1832301);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1832301, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Guard - change movement'),
+(1832301, 1000, 0, 2, 169, 375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Guard - add emotestate');
 
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (18472, 1000, 0, 0, 0, 0, 18956, @CGUID+88, 16, 16056, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Darkweaver Syth Death');
