@@ -21696,8 +21696,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Time-Lost Controller 18327 (4.3.4 Official Data - Normal/Heroic) - 396 (OneShotTalkNoSheathe)
 ('1832701','18327','11','0','100','0','0','0','0','0','0','0','11','37509','0','34','0','0','0','0','0','0','0','0','Time-Lost Controller - Cast Ghostly Facade on Spawn'),
 ('1832702','18327','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Time-Lost Controller - Random Say on Aggro'),
-('1832703','18327','0','0','100','1025','9100','24100','27800','48300','0','0','11','32764','0','0','0','0','0','0','0','0','0','0','Time-Lost Controller - Cast Summon Charming Totem'),
-('1832704','18327','0','0','100','1025','8400','23200','9700','32600','0','0','11','35013','1','32','0','0','0','0','0','0','0','0','Time-Lost Controller - Cast Shrink'),
 -- Sethekk Oracle 18328 (4.3.4 Official Data - Normal/Heroic) - 396 (OneShotTalkNoSheathe)
 ('1832801','18328','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Oracle - Random Say on Aggro'),
 ('1832802','18328','0','0','100','1027','6100','12100','18500','27700','0','0','11','32690','1','0','0','0','0','0','0','0','0','0','Sethekk Oracle (Normal) - Cast Arcane Lightning'),
