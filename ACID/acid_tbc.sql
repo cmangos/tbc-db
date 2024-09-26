@@ -21698,9 +21698,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1832702','18327','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Time-Lost Controller - Random Say on Aggro'),
 -- Sethekk Oracle 18328 (4.3.4 Official Data - Normal/Heroic) - 396 (OneShotTalkNoSheathe)
 ('1832801','18328','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Oracle - Random Say on Aggro'),
-('1832802','18328','0','0','100','1027','6100','12100','18500','27700','0','0','11','32690','1','0','0','0','0','0','0','0','0','0','Sethekk Oracle (Normal) - Cast Arcane Lightning'),
-('1832803','18328','0','0','100','1029','1200','12100','7200','13300','0','0','11','38146','1','0','0','0','0','0','0','0','0','0','Sethekk Oracle (Heroic) - Cast Arcane Lightning'),
-('1832804','18328','0','0','100','1025','2400','8700','8400','19300','0','0','11','32129','1','32','0','0','0','0','0','0','0','0','Sethekk Oracle - Cast Faerie Fire'),
 -- Darkweaver Syth (18472) - boss_darkweaver_syth
 -- Talon King Ikiss (18473) - boss_talon_king_ikiss
 -- Dark Vortex 18701 (4.3.4 Official Data - Normal/Heroic)

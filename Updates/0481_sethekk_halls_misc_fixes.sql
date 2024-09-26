@@ -85,3 +85,24 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1832701 WHERE `entry` = 18327;
 UPDATE `creature_template` SET `SpellList` = 2069101 WHERE `entry` = 20691;
+
+-- Sethekk Oracle
+DELETE FROM `creature_template_spells` WHERE `entry` = 18328;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20694;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1832801, 2069401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1832801, 'Sethekk Halls - Sethekk Oracle - Normal', 0, 0),
+(2069401, 'Sethekk Halls - Sethekk Oracle - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1832801, 2069401);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1832801, 1, 32129, 0, -1, 1, 0, 100, 0, 5000, 24000, 8000, 27000, 'Sethekk Oracle - Faerie Fire - current'),
+(1832801, 2, 32690, 0, -1, 1, 0, 100, 0, 7000, 17000, 17000, 27000, 'Sethekk Oracle - Arcane Lightning - current'),
+
+(2069401, 1, 32129, 0, -1, 1, 0, 100, 0, 5000, 24000, 8000, 27000, 'Sethekk Oracle - Faerie Fire - current'),
+(2069401, 2, 38146, 0, -1, 1, 0, 100, 0, 7000, 17000, 17000, 27000, 'Sethekk Oracle - Arcane Lightning - current');
+
+UPDATE `creature_template` SET `SpellList` = 1832801 WHERE `entry` = 18328;
+UPDATE `creature_template` SET `SpellList` = 2069401 WHERE `entry` = 20694;
