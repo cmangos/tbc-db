@@ -163,11 +163,34 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1832201, 2069601);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1832201, 1, 32651, 0, -1, 2, 0, 100, 0, 6000, 25000, 17000, 28000, 'Sethekk Ravenguard  - Howling Screech - self'),
-(1832201, 2, 33964, 0, -1, 1, 0, 100, 0, 5000, 17000, 11000, 25000, 'Sethekk Ravenguard  - Bloodthirst - current'),
+(1832201, 1, 32651, 0, -1, 2, 0, 100, 0, 6000, 25000, 17000, 28000, 'Sethekk Ravenguard - Howling Screech - self'),
+(1832201, 2, 33964, 0, -1, 1, 0, 100, 0, 5000, 17000, 11000, 25000, 'Sethekk Ravenguard - Bloodthirst - current'),
 
-(2069601, 1, 32651, 0, -1, 2, 0, 100, 0, 6000, 25000, 17000, 28000, 'Sethekk Ravenguard  - Howling Screech - self'),
-(2069601, 2, 40423, 0, -1, 1, 0, 100, 0, 5000, 17000, 11000, 25000, 'Sethekk Ravenguard  - Bloodthirst - current');
+(2069601, 1, 32651, 0, -1, 2, 0, 100, 0, 6000, 25000, 17000, 28000, 'Sethekk Ravenguard - Howling Screech - self'),
+(2069601, 2, 40423, 0, -1, 1, 0, 100, 0, 5000, 17000, 11000, 25000, 'Sethekk Ravenguard - Bloodthirst - current');
 
 UPDATE `creature_template` SET `SpellList` = 1832201 WHERE `entry` = 18322;
 UPDATE `creature_template` SET `SpellList` = 2069601 WHERE `entry` = 20696;
+
+-- Time-Lost Scryer 
+DELETE FROM `creature_template_spells` WHERE `entry` = 18319;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20696;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1831901, 2069701);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1831901, 'Sethekk Halls - Time-Lost Scryer  - Normal', 0, 0),
+(2069701, 'Sethekk Halls - Time-Lost Scryer  - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1831901, 2069701);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1831901, 1, 12160, 0, -1, 201, 0, 100, 0, 2000, 12000, 10000, 22000, 'Time-Lost Scryer - Rejuvenation - Missing 50% including self'),
+(1831901, 2, 17843, 0, -1, 206, 0, 100, 0, 4000, 14000, 8000, 18000, 'Time-Lost Scryer - Flash Heal - Missing 25% including self'),
+(1831901, 3, 22272, 0, -1, 1, 0, 100, 0, 5000, 22000, 8000, 25000, 'Time-Lost Scryer - Arcane Missiles - current'),
+
+(2069701, 1, 15981, 0, -1, 201, 0, 100, 0, 2000, 12000, 10000, 22000, 'Time-Lost Scryer - Rejuvenation - Missing 50% including self'),
+(2069701, 2, 17138, 0, -1, 206, 0, 100, 0, 4000, 14000, 8000, 18000, 'Time-Lost Scryer - Flash Heal - Missing 25% including self'),
+(2069701, 3, 33988, 0, -1, 1, 0, 100, 0, 5000, 22000, 8000, 25000, 'Time-Lost Scryer - Arcane Missiles - current');
+
+UPDATE `creature_template` SET `SpellList` = 1831901 WHERE `entry` = 18319;
+UPDATE `creature_template` SET `SpellList` = 2069701 WHERE `entry` = 20697;
