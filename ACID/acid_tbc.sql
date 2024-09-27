@@ -21656,8 +21656,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1831901','18319','11','0','100','0','0','0','0','0','0','0','11','37509','0','34','0','0','0','0','0','0','0','0','Time-Lost Scryer - Cast Ghostly Facade on Spawn'),
 ('1831902','18319','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Time-Lost Scryer - Random Say on Aggro'),
 ('1831903','18319','27','0','100','1025','32689','1','5000','5000','0','0','11','32689','0','0','0','0','0','0','0','0','0','0','Time-Lost Scryer - Cast Arcane Destruction on Missing Buff'),
-('1831904','18319','16','0','100','1025','32689','30','2000','10000','1','0','11','32689','12','0','0','0','0','0','0','0','0','0','Time-Lost Scryer - Cast Arcane Destruction on Friendly Missing Buff'),
-
 -- Time-Lost Shadowmage 18320 (4.3.4 Official Data - Normal) - Shadow Missiles on Random Melee Target, but mostly Topaggro - 396 (OneShotTalkNoSheathe)
 ('1832001','18320','11','0','100','0','0','0','0','0','0','0','11','37509','0','34','0','0','0','0','0','0','0','0','Time-Lost Shadowmage - Cast Ghostly Facade on Spawn'),
 ('1832002','18320','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Time-Lost Shadowmage - Random Say on Aggro'),

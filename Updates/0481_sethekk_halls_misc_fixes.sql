@@ -184,13 +184,15 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1831901, 2069701);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1831901, 1, 12160, 0, -1, 201, 0, 100, 0, 2000, 12000, 10000, 22000, 'Time-Lost Scryer - Rejuvenation - Missing 50% including self'),
-(1831901, 2, 17843, 0, -1, 206, 0, 100, 0, 4000, 14000, 8000, 18000, 'Time-Lost Scryer - Flash Heal - Missing 25% including self'),
-(1831901, 3, 22272, 0, -1, 1, 0, 100, 0, 5000, 22000, 8000, 25000, 'Time-Lost Scryer - Arcane Missiles - current'),
+(1831901, 1, 32689, 0, -1, 5, 0, 100, 0, 0, 5000, 5000, 10000, 'Time-Lost Scryer - Arcane Destruction - eligible friendly missing buff'),
+(1831901, 2, 12160, 0, -1, 201, 0, 100, 0, 2000, 12000, 10000, 22000, 'Time-Lost Scryer - Rejuvenation - Missing 50% including self'),
+(1831901, 3, 17843, 0, -1, 206, 0, 100, 0, 4000, 14000, 8000, 18000, 'Time-Lost Scryer - Flash Heal - Missing 25% including self'),
+(1831901, 4, 22272, 0, -1, 1, 0, 100, 0, 5000, 22000, 8000, 25000, 'Time-Lost Scryer - Arcane Missiles - current'),
 
-(2069701, 1, 15981, 0, -1, 201, 0, 100, 0, 2000, 12000, 10000, 22000, 'Time-Lost Scryer - Rejuvenation - Missing 50% including self'),
-(2069701, 2, 17138, 0, -1, 206, 0, 100, 0, 4000, 14000, 8000, 18000, 'Time-Lost Scryer - Flash Heal - Missing 25% including self'),
-(2069701, 3, 33988, 0, -1, 1, 0, 100, 0, 5000, 22000, 8000, 25000, 'Time-Lost Scryer - Arcane Missiles - current');
+(2069701, 1, 32689, 0, -1, 5, 0, 100, 0, 0, 5000, 5000, 10000, 'Time-Lost Scryer - Arcane Destruction - eligible friendly missing buff'),
+(2069701, 2, 15981, 0, -1, 201, 0, 100, 0, 2000, 12000, 10000, 22000, 'Time-Lost Scryer - Rejuvenation - Missing 50% including self'),
+(2069701, 3, 17138, 0, -1, 206, 0, 100, 0, 4000, 14000, 8000, 18000, 'Time-Lost Scryer - Flash Heal - Missing 25% including self'),
+(2069701, 4, 33988, 0, -1, 1, 0, 100, 0, 5000, 22000, 8000, 25000, 'Time-Lost Scryer - Arcane Missiles - current');
 
 UPDATE `creature_template` SET `SpellList` = 1831901 WHERE `entry` = 18319;
 UPDATE `creature_template` SET `SpellList` = 2069701 WHERE `entry` = 20697;
