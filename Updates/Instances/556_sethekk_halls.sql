@@ -24,10 +24,9 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+12, 1, -264.9457,179.76292,0.033908542, 0, 0, 0),
 (@CGUID+12, 2, -258.26074,182.91333,0.03933986, 0, 0, 0),
 (@CGUID+12, 3, -255.95424,188.71451,0.042812075, 0, 0, 0),
-(@CGUID+28, 1, -244.343, 329.097, 27.018, 0, 0, 0),
-(@CGUID+28, 2, -234.267, 324.206, 26.9965, 0, 0, 0),
-(@CGUID+28, 3, -225.315, 324.967, 27.1854, 0, 0, 0),
-(@CGUID+28, 4, -233.727, 323.955, 26.9942, 0, 0, 0),
+(@CGUID+28, 1, -243.1212,329.36237,27.06958, 0, 0, 0),
+(@CGUID+28, 2, -235.42253,324.18118,26.987646, 0, 0, 0),
+(@CGUID+28, 3, -226.3113,324.1906,27.157164, 0, 0, 0),
 (@CGUID+30, 1, -100.451, 296.802, 26.4832, 0, 0, 0),
 (@CGUID+30, 2, -107.547, 296.552, 26.5721, 0, 0, 0),
 (@CGUID+30, 3, -99.7536, 296.632, 26.4833, 0, 0, 0),
@@ -396,9 +395,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (23132, 0, 0, 1, 0, 0, '9205'); -- Brood of Anzu
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+28, @CGUID+15, 1155), -- creature_spawn_entry -> Time-Lost Scryer
-(@CGUID+54, @CGUID+15, 1155), -- creature_spawn_entry -> Time-Lost Scryer
-(@CGUID+56, @CGUID+15, 1155), -- Sethekk Prophet -> Time-Lost Scryer
 (@CGUID+55, @CGUID+19, 1155), -- creature_spawn_entry -> Time-Lost Scryer
 (@CGUID+57, @CGUID+19, 1155), -- Sethekk Prophet -> Time-Lost Scryer
 (@CGUID+125, @CGUID+19, 1155), -- creature_spawn_entry -> Time-Lost Scryer
@@ -443,11 +439,9 @@ INSERT INTO creature_spawn_entry (guid, entry) VALUES
 (@CGUID+18, 18319), (@CGUID+18, 18325), (@CGUID+18, 18326), -- Time-Lost Scryer, Sethekk Prophet, Sethekk Shaman
 (@CGUID+22, 18319), (@CGUID+22, 18325), (@CGUID+22, 18326), -- Time-Lost Scryer, Sethekk Prophet, Sethekk Shaman
 (@CGUID+25, 18319), (@CGUID+25, 18325), (@CGUID+25, 18326), -- Time-Lost Scryer, Sethekk Prophet, Sethekk Shaman
-(@CGUID+28, 18321), (@CGUID+28, 21904), -- Sethekk Talon Lord, Avian Warhawk
 (@CGUID+30, 18321), (@CGUID+30, 21904), -- Sethekk Talon Lord, Avian Warhawk
 (@CGUID+31, 18321), (@CGUID+31, 21904), -- Sethekk Talon Lord, Avian Warhawk
 (@CGUID+32, 18321), (@CGUID+32, 21904), -- Sethekk Talon Lord, Avian Warhawk
-(@CGUID+54, 18325), (@CGUID+54, 18326), -- Sethekk Prophet, Sethekk Shaman
 (@CGUID+55, 18325), (@CGUID+55, 18326), -- Sethekk Prophet, Sethekk Shaman
 (@CGUID+62, 18319), (@CGUID+62, 18325), (@CGUID+62, 18326), -- Time-Lost Scryer, Sethekk Prophet, Sethekk Shaman
 (@CGUID+66, 18325), (@CGUID+66, 18326), -- Sethekk Prophet, Sethekk Shaman
@@ -471,7 +465,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+12, 18318, 556, 3, -264.9457, 179.76292, 0.0339, 0.440397, 7200, 7200, 0, 4), -- Sethekk Initiate
 (@CGUID+13, 18318, 556, 3, 36.5259, 99.3303, 0.234139, 6.26573, 7200, 7200, 0, 0), -- Sethekk Initiate
 (@CGUID+14, 18319, 556, 3, -241.915, 155.992, 0.145592, 1.78024, 7200, 7200, 0, 0), -- Time-Lost Scryer
-(@CGUID+15, 18319, 556, 3, -240.9649, 336.1638, 27.24117, 5.218534, 7200, 7200, 0, 0), -- Time-Lost Scryer
+(@CGUID+15, 18319, 556, 3, -240.965, 336.164, 27.2412, 5.21853, 7200, 7200, 0, 0), -- Time-Lost Scryer
 (@CGUID+16, 0, 556, 3, -118.5634, 266.1424, 27.17125, 2.356194, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+17, 0, 556, 3, -82.05799, 273.0578, 26.89127, 3.822271, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+18, 0, 556, 3, -49.52324, 280.1748, 26.94647, 2.635447, 7200, 7200, 0, 0), -- creature_spawn_entry
@@ -484,7 +478,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+25, 0, 556, 3, -101.3299, 309.8822, 26.60858, 5.811946, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+26, 18320, 556, 3, -66.5132, 314.6233, 27.11601, 4.572762, 7200, 7200, 0, 0), -- Time-Lost Shadowmage
 (@CGUID+27, 18320, 556, 3, -58.93591, 280.0539, 26.99939, 1.727876, 7200, 7200, 0, 0), -- Time-Lost Shadowmage
-(@CGUID+28, 0, 556, 3, -233.519, 324.039, 27.0016, 2.93582, 7200, 7200, 0, 2), -- creature_spawn_entry
+(@CGUID+28, 0, 556, 3, -243.121, 329.362, 27.0696, 5.69081, 7200, 7200, 0, 4), -- spawn_group_entry
 (@CGUID+29, 18321, 556, 3, -10.13046, 292.4032, 26.81396, 3.385939, 7200, 7200, 0, 0), -- Sethekk Talon Lord
 (@CGUID+30, 0, 556, 3, -94.815, 310.075, 25.8588, 3.9757, 7200, 7200, 0, 2), -- creature_spawn_entry
 (@CGUID+31, 0, 556, 3, -91.2837, 268.721, 26.9007, 1.15062, 7200, 7200, 0, 2), -- creature_spawn_entry
@@ -510,9 +504,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+51, 18323, 556, 3, -75.2177, 130.819, 0.0905363, 4.92183, 7200, 7200, 0, 0), -- Sethekk Guard
 (@CGUID+52, 18323, 556, 3, 90.7534, 96.9339, 0.0905183, 2.94961, 7200, 7200, 0, 0), -- Sethekk Guard
 (@CGUID+53, 18325, 556, 3, -101.4639, 301.9133, 26.56783, 2.094395, 7200, 7200, 0, 0), -- Sethekk Prophet
-(@CGUID+54, 0, 556, 3, -234.5957, 335.9174, 27.37806, 4.18879, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+54, 0, 556, 3, -234.596, 335.917, 27.3781, 4.18879, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+55, 0, 556, 3, -202.4095, 343.7246, 26.71947, 3.717551, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+56, 18325, 556, 3, -230.6168, 330.5182, 27.43822, 3.176499, 7200, 7200, 0, 0), -- Sethekk Prophet
+(@CGUID+56, 18325, 556, 3, -230.617, 330.518, 27.4382, 3.1765, 7200, 7200, 0, 0), -- Sethekk Prophet
 (@CGUID+57, 18325, 556, 3, -203.8424, 336.0542, 26.71949, 2.373648, 7200, 7200, 0, 0), -- Sethekk Prophet
 (@CGUID+58, 18325, 556, 3, -123.7711, 270.0428, 27.3312, 1.029744, 7200, 7200, 0, 0), -- Sethekk Prophet
 (@CGUID+59, 18325, 556, 3, -1.164886, 289.9058, 26.77532, 3.211406, 7200, 7200, 0, 0), -- Sethekk Prophet
@@ -820,9 +814,15 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+27, 'Sethekk Halls - Group 021 - Time-Lost Scryer (2) | Sethekk Oracle', 0, 0, @SGGUID+12, 1, 0),
 
 (@SGGUID+28, 'Sethekk Halls - Group 022 - Sethekk Ravenguard (2)', 0, 0, 0, 1, 0),
-(@SGGUID+28, 'Sethekk Halls - Group 022 - Avian Ripper (10)', 0, 0, 0, 1, 0);
+(@SGGUID+29, 'Sethekk Halls - Group 023 - Avian Ripper (10)', 0, 0, 0, 1, 0),
 
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+30, 'Sethekk Halls - Group 024 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
+(@SGGUID+31, 'Sethekk Halls - Group 025 - Time-Lost Scryer | Sethekk Prophet | Sethekk Shaman/Sethekk Prophet', 0, 0, 0, 1, 0),
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+30, 18321, 0, 0, 0), (@SGGUID+30, 21904, 0, 0, 0), -- Sethekk Talon Lord, Avian Warhawk
+(@SGGUID+31, 18325, 0, 0, 0), (@SGGUID+31, 18326, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman
+
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+39, 0, 0), -- Sethekk Guard
@@ -938,7 +938,14 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+29, @CGUID+119, -1, 0), -- Avian Ripper
 (@SGGUID+29, @CGUID+120, -1, 0), -- Avian Ripper
 (@SGGUID+29, @CGUID+121, -1, 0), -- Avian Ripper
-(@SGGUID+29, @CGUID+122, -1, 0); -- Avian Ripper
+(@SGGUID+29, @CGUID+122, -1, 0), -- Avian Ripper
+
+(@SGGUID+30, @CGUID+28, 0, 0), -- spawn_group_entry
+
+(@SGGUID+31, @CGUID+15, 0, 0), -- Time-Lost Scryer
+(@SGGUID+31, @CGUID+54, 1, 0), -- spawn_group_entry
+(@SGGUID+31, @CGUID+56, 2, 0), -- Sethekk Prophet
+
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+2, 2, 3, 0, @SGGUID+2, 2, 'Sethekk Halls - Group 002 - Sethekk Initiate | Avian Darkhawk - Patrol 01');
