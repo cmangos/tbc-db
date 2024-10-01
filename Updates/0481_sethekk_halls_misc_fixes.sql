@@ -238,3 +238,28 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1832501 WHERE `entry` = 18325;
 UPDATE `creature_template` SET `SpellList` = 2069501 WHERE `entry` = 20695;
+
+-- Sethekk Talon Lord
+DELETE FROM `creature_template_spells` WHERE `entry` = 18321;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20701;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1832101, 2070101);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1832101, 'Sethekk Halls - Sethekk Talon Lord - Normal', 0, 0),
+(2070101, 'Sethekk Halls - Sethekk Talon Lord - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1832101, 2070101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1832101, 1, 32674, 0, -1, 132, 0, 100, 0, 0, 5000, 11000, 21000, 'Sethekk Talon Lord - Avengers Shield - top aggro not in melee range'),
+(1832101, 2, 32654, 0, -1, 1, 0, 100, 0, 6000, 21000, 11000, 26000, 'Sethekk Talon Lord - Talon of Justice - current'),
+
+(2070101, 1, 32674, 0, -1, 132, 0, 100, 0, 0, 5000, 11000, 21000, 'Sethekk Talon Lord - Avengers Shield - top aggro not in melee range'),
+(2070101, 2, 32654, 0, -1, 1, 0, 100, 0, 6000, 21000, 11000, 26000, 'Sethekk Talon Lord - Talon of Justice - current');
+
+UPDATE `creature_template` SET `SpellList` = 1832101 WHERE `entry` = 18321;
+UPDATE `creature_template` SET `SpellList` = 2070101 WHERE `entry` = 20701;
+
+
+DELETE FROM creature_spell_targeting WHERE Id = 132;
+INSERT INTO `creature_spell_targeting` (`Id`, `Type`, `Param1`, `Param2`, `Param3`, `Comments`) VALUES ('132', '1', '1', '0', '128', 'Attack - top aggro not in melee range');
