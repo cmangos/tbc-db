@@ -62,18 +62,14 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+90, 4, -253.77058,180.43588,0.038319122, 100, 0, 0),
 (@CGUID+90, 5, -250.03156,189.5389,0.043777715, 100, 0, 0),
 (@CGUID+90, 6, -244.20546,198.88652,0.06436034, 100, 0, 0),
-(@CGUID+91, 1, -185.632, 299.557, 26.7009, 0, 0, 0),
-(@CGUID+91, 2, -196.197, 319.274, 26.626, 0, 0, 0),
-(@CGUID+91, 3, -206.85, 330.404, 26.6615, 0, 0, 0),
-(@CGUID+91, 4, -219.4, 329.957, 26.9936, 0, 0, 0),
-(@CGUID+91, 5, -231.037, 317.393, 26.7381, 0, 0, 0),
-(@CGUID+91, 6, -244.697, 300.62, 26.7305, 0, 0, 0),
-(@CGUID+91, 7, -230.639, 317.369, 26.7438, 0, 0, 0),
-(@CGUID+91, 8, -218.877, 330.067, 26.9665, 0, 0, 0),
-(@CGUID+91, 9, -205.946, 329.989, 26.6652, 0, 0, 0),
-(@CGUID+91, 10, -195.921, 318.962, 26.6381, 0, 0, 0),
-(@CGUID+91, 11, -185.163, 299.494, 26.6998, 0, 0, 0),
-(@CGUID+91, 12, -171.59, 299.439, 26.7089, 0, 0, 0),
+(@CGUID+91, 1, -141.12387,286.8888,26.732378, 100, 0, 0),
+(@CGUID+91, 2, -162.5813,290.58685,26.731392, 100, 0, 0),
+(@CGUID+91, 3, -177.13202,295.49243,26.607801, 100, 0, 0),
+(@CGUID+91, 4, -190.3777,310.3732,26.730482, 100, 0, 0),
+(@CGUID+91, 5, -207.03102,331.1477,26.649206, 100, 0, 0),
+(@CGUID+91, 6, -217.97969,333.11343,26.964346, 100, 0, 0),
+(@CGUID+91, 7, -232.11073,317.8273,26.773405, 100, 0, 0),
+(@CGUID+91, 8, -242.57414,300.84528,26.730623, 100, 0, 0),
 (@CGUID+92, 1, -93.192, 292.411, 26.484, 0, 0, 0),
 (@CGUID+92, 2, -87.7111, 295.207, 26.484, 0, 0, 0),
 (@CGUID+92, 3, -82.8339, 293.872, 26.484, 0, 0, 0),
@@ -400,15 +396,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (23132, 0, 0, 1, 0, 0, '9205'); -- Brood of Anzu
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+100, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
-(@CGUID+101, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
-(@CGUID+102, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
-(@CGUID+116, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
-(@CGUID+117, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
-(@CGUID+119, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
-(@CGUID+120, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
-(@CGUID+121, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
-(@CGUID+122, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
 (@CGUID+28, @CGUID+15, 1155), -- creature_spawn_entry -> Time-Lost Scryer
 (@CGUID+54, @CGUID+15, 1155), -- creature_spawn_entry -> Time-Lost Scryer
 (@CGUID+56, @CGUID+15, 1155), -- Sethekk Prophet -> Time-Lost Scryer
@@ -560,7 +547,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+88, 18956, 556, 3, -160.813369750976562, 157.0431976318359375, 0.094095334410667419, 1.082104086875915527, 86400, 86400, 0, 0), -- Lakka
 (@CGUID+89, 19428, 556, 3, -277.5177,205.64934,26.722033, 6.230, 7200, 7200, 0, 4), -- Cobalt Serpent
 (@CGUID+90, 19428, 556, 3, -228.45494,151.97469,0.0482017, 1.45651, 7200, 7200, 0, 4), -- Cobalt Serpent
-(@CGUID+91, 19428, 556, 3, -179.81, 285.767, 26.3917, 1.92497, 7200, 7200, 0, 2), -- Cobalt Serpent
+(@CGUID+91, 19428, 556, 3, -141.12387,286.8888,26.732378, 3.16672, 7200, 7200, 0, 4), -- Cobalt Serpent
 (@CGUID+92, 19428, 556, 3, -93.5769, 287.374, 26.4832, 1.24244, 7200, 7200, 0, 2), -- Cobalt Serpent
 (@CGUID+93, 19429, 556, 3, 45.3656, 40.2488, 0.0908233, 5.43169, 7200, 7200, 0, 0), -- Avian Darkhawk
 (@CGUID+94, 19429, 556, 3, -124.33573, 173.15886, 0.01076, 0.2984, 7200, 7200, 0, 2), -- Avian Darkhawk
@@ -569,9 +556,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+97, 19429, 556, 3,  -59.58082,96.96696,0.021822706, 1.77022, 7200, 7200, 0, 2), -- Avian Darkhawk
 (@CGUID+98, 19429, 556, 3, -84.34352,100.63735,0.007198175, 5.8669, 7200, 7200, 0, 2), -- Avian Darkhawk
 (@CGUID+99, 19429, 556, 3, 54.1018, 84.6239, 0.150804, 0.576074, 7200, 7200, 0, 2), -- Avian Darkhawk
-(@CGUID+100, 21891, 556, 3, -252.979, 282.54, 27.125, 2.11346, 7200, 7200, 4, 1), -- Avian Ripper
-(@CGUID+101, 21891, 556, 3, -236.114, 280.839, 26.8363, 5.32181, 7200, 7200, 4, 1), -- Avian Ripper
-(@CGUID+102, 21891, 556, 3, -241.434, 279.821, 27.1337, 3.50362, 7200, 7200, 4, 1), -- Avian Ripper
+(@CGUID+100, 21891, 556, 3, -256.198, 288.019, 26.8578, 1.22256, 7200, 7200, 3, 1), -- Avian Ripper
+(@CGUID+101, 21891, 556, 3, -252.53, 277.773, 27.1624, 5.61861, 7200, 7200, 4, 1), -- Avian Ripper
+(@CGUID+102, 21891, 556, 3,-241.172, 282.265, 27.2497, 0.881992, 7200, 7200, 3, 1), -- Avian Ripper
 (@CGUID+103, 21891, 556, 3, -205.216, 317.266, 28.8754, 6.24079, 7200, 7200, 4, 1), -- Avian Ripper
 (@CGUID+104, 21891, 556, 3, -214.073, 316.014, 31.9912, 4.22226, 7200, 7200, 4, 1), -- Avian Ripper
 (@CGUID+105, 21891, 556, 3, -200.571, 304.582, 31.8934, 5.05955, 7200, 7200, 4, 1), -- Avian Ripper
@@ -585,13 +572,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+113, 21891, 556, 3, -230.091, 190.488, 4.00755, 5.8388, 7200, 7200, 4, 1), -- Avian Ripper
 (@CGUID+114, 21891, 556, 3, -234.742, 185.201, 1.38924, 0.0832864, 7200, 7200, 4, 1), -- Avian Ripper
 (@CGUID+115, 21891, 556, 3, -228.055, 184.66, 3.1568, 3.83345, 7200, 7200, 4, 1), -- Avian Ripper
-(@CGUID+116, 21891, 556, 3, -237.831, 272.618, 26.8359, 1.31629, 7200, 7200, 4, 1), -- Avian Ripper
-(@CGUID+117, 21891, 556, 3, -248.162, 275.141, 27.0023, 2.90672, 7200, 7200, 4, 1), -- Avian Ripper
-(@CGUID+118, 21891, 556, 3, -251.984, 292.204, 27.2069, 1.96424, 7200, 7200, 4, 1), -- Avian Ripper
-(@CGUID+119, 21891, 556, 3, -245.98, 286.151, 27.6126, 5.4946, 7200, 7200, 4, 1), -- Avian Ripper
-(@CGUID+120, 21891, 556, 3, -246.924, 293.31, 27.1549, 1.41446, 7200, 7200, 4, 1), -- Avian Ripper
-(@CGUID+121, 21891, 556, 3, -238.362, 292.167, 27.1108, 0.299195, 7200, 7200, 4, 1), -- Avian Ripper
-(@CGUID+122, 21891, 556, 3, -239.695, 287.379, 27.2153, 4.52071, 7200, 7200, 4, 1), -- Avian Ripper
+(@CGUID+116, 21891, 556, 3, -237.848, 276.779, 26.7297, 0.939303, 7200, 7200, 3, 1), -- Avian Ripper
+(@CGUID+117, 21891, 556, 3, -245.344, 276.63, 27.112, 4.09596, 7200, 7200, 3, 1), -- Avian Ripper
+(@CGUID+118, 21891, 556, 3, -250.334, 295.819, 27.0086, 5.59452, 1.96424, 7200, 7200, 3, 1), -- Avian Ripper
+(@CGUID+119, 21891, 556, 3, -249.15, 282.264, 27.4423, 1.22576, 7200, 7200, 3, 1), -- Avian Ripper
+(@CGUID+120, 21891, 556, 3, -244.226, 289.248, 27.4046, 4.1476, 7200, 7200, 3, 1), -- Avian Ripper
+(@CGUID+121, 21891, 556, 3, -238.782, 294.1, 27.0665, 3.99345, 7200, 7200, 3, 1), -- Avian Ripper
+(@CGUID+122, 21891, 556, 3, -235.409, 287.931, 26.9661, 4.27606, 7200, 7200, 3, 1), -- Avian Ripper
 (@CGUID+123, 21891, 556, 3, -191.23, 333.657, 24.7364, 0.735093, 7200, 7200, 4, 1), -- Avian Ripper
 (@CGUID+124, 21891, 556, 3, -190.052, 340.944, 26.2925, 1.62265, 7200, 7200, 4, 1), -- Avian Ripper
 (@CGUID+125, 0, 556, 3, -215.155, 342.262, 26.7593, 4.89854, 7200, 7200, 0, 2), -- creature_spawn_entry
@@ -833,6 +820,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+27, 'Sethekk Halls - Group 021 - Time-Lost Scryer (2) | Sethekk Oracle', 0, 0, @SGGUID+12, 1, 0),
 
 (@SGGUID+28, 'Sethekk Halls - Group 022 - Sethekk Ravenguard (2)', 0, 0, 0, 1, 0),
+(@SGGUID+28, 'Sethekk Halls - Group 022 - Avian Ripper (10)', 0, 0, 0, 1, 0);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -938,8 +926,19 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+27, @CGUID+203, 1, 0), -- Sethekk Oracle
 (@SGGUID+27, @CGUID+204, 2, 0), -- Time-Lost Scryer
 
-(@SGGUID+22, @CGUID+35, 0, 0), -- Sethekk Ravenguard
-(@SGGUID+22, @CGUID+38, 1, 0), -- Sethekk Ravenguard
+(@SGGUID+28, @CGUID+35, 0, 0), -- Sethekk Ravenguard
+(@SGGUID+28, @CGUID+38, 1, 0), -- Sethekk Ravenguard
+
+(@SGGUID+29, @CGUID+100, -1, 0), -- Avian Ripper
+(@SGGUID+29, @CGUID+101, -1, 0), -- Avian Ripper
+(@SGGUID+29, @CGUID+102, -1, 0), -- Avian Ripper
+(@SGGUID+29, @CGUID+116, -1, 0), -- Avian Ripper
+(@SGGUID+29, @CGUID+117, -1, 0), -- Avian Ripper
+(@SGGUID+29, @CGUID+118, -1, 0), -- Avian Ripper
+(@SGGUID+29, @CGUID+119, -1, 0), -- Avian Ripper
+(@SGGUID+29, @CGUID+120, -1, 0), -- Avian Ripper
+(@SGGUID+29, @CGUID+121, -1, 0), -- Avian Ripper
+(@SGGUID+29, @CGUID+122, -1, 0); -- Avian Ripper
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+2, 2, 3, 0, @SGGUID+2, 2, 'Sethekk Halls - Group 002 - Sethekk Initiate | Avian Darkhawk - Patrol 01');
