@@ -21673,10 +21673,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1832203','18322','30','0','100','1025','0','18322','0','0','0','0','11','34970','0','34','0','0','0','0','0','0','0','0','Sethekk Ravenguard - Cast Frenzy on Receive AI Event 0'),
 -- Sethekk Guard 18323 - spell_list
 ('1832301','18323','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Guard - Random Say on Aggro'),
--- Sethekk Prophet 18325 (4.3.4 Official Data - Normal/Heroic) - 396 (OneShotTalkNoSheathe)
+-- Sethekk Prophet 18325 - spell_list
 ('1832501','18325','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Prophet - Random Say on Aggro'),
 ('1832502','18325','6','0','100','0','0','0','0','0','0','0','11','32692','0','7','0','0','0','0','0','0','0','0','Sethekk Prophet - Cast Summon Arakkoa Spirit on Death'),
-('1832503','18325','0','0','100','1025','8700','17700','13200','24100','0','0','11','27641','4','544','0','0','0','0','0','0','0','0','Sethekk Prophet - Cast Fear'),
 -- Sethekk Shaman 18326 (4.3.4 Official Data - Normal/Heroic) - 396 (OneShotTalkNoSheathe)
 ('1832601','18326','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Shaman - Random Say on Aggro'),
 ('1832602','18326','0','0','100','1025','7900','14500','90000','90000','0','0','11','32663','15','0','0','0','0','0','0','0','0','0','Sethekk Shaman - Cast Summon Dark Vortex'),
@@ -21714,12 +21713,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cobalt Serpent 19428 - spell_list
 -- Avian Darkhawk 19429 - spell_list
 -- Avian Ripper 21891 - spell_list
--- Avian Warhawk 21904 (4.3.4 Official Data - Normal/Heroic)
-('2190401','21904','9','0','100','1026','8','25','0','0','0','0','11','38059','1','0','0','0','0','0','0','0','0','0','Avian Warhawk (Normal) - Cast Sonic Charge'),
-('2190402','21904','9','0','100','1028','8','25','0','0','0','0','11','39197','1','0','0','0','0','0','0','0','0','0','Avian Warhawk (Heroic) - Cast Sonic Charge'),
-('2190403','21904','0','0','100','1027','3800','11100','10900','21700','0','0','11','32901','1','0','0','0','0','0','0','0','0','0','Avian Warhawk (Normal) - Cast Carnivorous Bite'),
-('2190404','21904','0','0','100','1029','3800','11100','10900','21700','0','0','11','39198','1','0','0','0','0','0','0','0','0','0','Avian Warhawk (Heroic) - Cast Carnivorous Bite'),
-('2190405','21904','0','0','100','1025','6200','25500','12100','24100','0','0','11','18144','1','0','0','0','0','0','0','0','0','0','Avian Warhawk - Cast Swoop'),
+-- Avian Warhawk 21904 - spell_list
 -- Avian Flyer 21931 - NSR
 -- Anzu (23035) - boss_anzu
 -- Brood of Anzu 23132

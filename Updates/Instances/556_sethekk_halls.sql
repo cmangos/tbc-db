@@ -547,7 +547,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+115, 21891, 556, 3, -228.055, 184.66, 3.1568, 3.83345, 7200, 7200, 4, 1), -- Avian Ripper
 (@CGUID+116, 21891, 556, 3, -237.848, 276.779, 26.7297, 0.939303, 7200, 7200, 3, 1), -- Avian Ripper
 (@CGUID+117, 21891, 556, 3, -245.344, 276.63, 27.112, 4.09596, 7200, 7200, 3, 1), -- Avian Ripper
-(@CGUID+118, 21891, 556, 3, -250.334, 295.819, 27.0086, 5.59452, 1.96424, 7200, 7200, 3, 1), -- Avian Ripper
+(@CGUID+118, 21891, 556, 3, -250.334, 295.819, 27.0086, 5.59452, 7200, 7200, 3, 1), -- Avian Ripper
 (@CGUID+119, 21891, 556, 3, -249.15, 282.264, 27.4423, 1.22576, 7200, 7200, 3, 1), -- Avian Ripper
 (@CGUID+120, 21891, 556, 3, -244.226, 289.248, 27.4046, 4.1476, 7200, 7200, 3, 1), -- Avian Ripper
 (@CGUID+121, 21891, 556, 3, -238.782, 294.1, 27.0665, 3.99345, 7200, 7200, 3, 1), -- Avian Ripper
@@ -816,7 +816,7 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+33, 18325, 0, 0, 0), (@SGGUID+33, 18326, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman
 
 (@SGGUID+36, 18321, 0, 0, 0), (@SGGUID+36, 21904, 0, 0, 0), -- Sethekk Talon Lord, Avian Warhawk
-(@SGGUID+37, 18325, 0, 0, 0), (@SGGUID+37, 18326, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman
+(@SGGUID+37, 18325, 0, 0, 0), (@SGGUID+37, 18326, 0, 0, 0); -- Sethekk Prophet, Sethekk Shaman
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+39, 0, 0), -- Sethekk Guard
@@ -990,7 +990,7 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@SGGUID+3, 'Sethekk Halls - Group 014'),
 (@SGGUID+4, 'Sethekk Halls - Group 016'),
 (@SGGUID+5, 'Sethekk Halls - Group 020'),
-(@SGGUID+6, 'Sethekk Halls - Group 021'),
+(@SGGUID+6, 'Sethekk Halls - Group 021');
 
 DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @SGGUID+1 AND @SGGUID+8;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
@@ -1005,7 +1005,7 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+9, 42, @SGGUID+5, 1, 0, 0, 0, 'Sethekk Halls - Group 020 -  Type 1'),
 (@SGGUID+10, 42, @SGGUID+5, 1, 1, 0, 0, 'Sethekk Halls - Group 020 -  Type 2'),
 (@SGGUID+11, 42, @SGGUID+6, 1, 0, 0, 0, 'Sethekk Halls - Group 021 -  Type 1'),
-(@SGGUID+12, 42, @SGGUID+6, 1, 1, 0, 0, 'Sethekk Halls - Group 021 -  Type 2'),
+(@SGGUID+12, 42, @SGGUID+6, 1, 1, 0, 0, 'Sethekk Halls - Group 021 -  Type 2');
 -- =======
 -- POOLING
 -- =======

@@ -145,7 +145,7 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 DELETE FROM `creature_spell_list` WHERE `Id` IN (2189101, 2198901);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (2189101, 1, 38056, 0, -1, 1, 0, 100, 0, 5000, 18000, 8000, 21000, 'Avian Ripper - Flesh Rip - current'),
-(2198901, 1, 38056, 0, -1, 1, 0, 100, 0, 5000, 18000, 8000, 21000, 'Avian Ripper - LFlesh Rip - current');
+(2198901, 1, 38056, 0, -1, 1, 0, 100, 0, 5000, 18000, 8000, 21000, 'Avian Ripper - Flesh Rip - current');
 
 
 UPDATE `creature_template` SET `SpellList` = 2189101 WHERE `entry` = 21891;
@@ -196,3 +196,45 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1831901 WHERE `entry` = 18319;
 UPDATE `creature_template` SET `SpellList` = 2069701 WHERE `entry` = 20697;
+
+
+-- Avian Warhawk
+DELETE FROM `creature_template_spells` WHERE `entry` = 21904;
+DELETE FROM `creature_template_spells` WHERE `entry` = 21990;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2190401, 2199001);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2190401, 'Sethekk Halls - Avian Warhawk - Normal', 0, 0),
+(2199001, 'Sethekk Halls - Avian Warhawk - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2190401, 2199001);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2190401, 1, 38059, 0, -1, 100, 0, 100, 0, 5000, 23000, 12000, 30000, 'Avian Warhawk - Sonic Charge - random'),
+(2190401, 2, 32901, 0, -1, 1, 0, 100, 0, 6000, 24000, 11000, 26000, 'Avian Warhawk - Carnivorous Bite - current'),
+(2190401, 3, 18144, 0, -1, 1, 0, 100, 0, 7000, 26000, 12000, 32000, 'Avian Warhawk - Swoop - current'),
+
+(2199001, 1, 39197, 0, -1, 100, 0, 100, 0, 5000, 23000, 12000, 30000, 'Avian Warhawk - Sonic Charge - random'),
+(2199001, 2, 39198, 0, -1, 1, 0, 100, 0, 6000, 24000, 11000, 26000, 'Avian Warhawk - Carnivorous Bite - current'),
+(2199001, 3, 18144, 0, -1, 1, 0, 100, 0, 7000, 26000, 12000, 32000, 'Avian Warhawk - Swoop - current');
+
+UPDATE `creature_template` SET `SpellList` = 2190401 WHERE `entry` = 21904;
+UPDATE `creature_template` SET `SpellList` = 2199001 WHERE `entry` = 21990;
+
+-- Sethekk Prophet
+DELETE FROM `creature_template_spells` WHERE `entry` = 18325;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20695;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1832501, 2069501);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1832501, 'Sethekk Halls - Sethekk Prophet - Normal', 0, 0),
+(2069501, 'Sethekk Halls - Sethekk Prophet - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1832501, 2069501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1832501, 1, 27641, 0, -1, 100, 0, 100, 0, 10000, 30000, 10000, 30000, 'Sethekk Prophet - Fear - random'),
+(2069501, 1, 27641, 0, -1, 100, 0, 100, 0, 10000, 30000, 10000, 30000, 'Sethekk Prophet - Fear - random');
+
+UPDATE `creature_template` SET `SpellList` = 1832501 WHERE `entry` = 18325;
+UPDATE `creature_template` SET `SpellList` = 2069501 WHERE `entry` = 20695;
