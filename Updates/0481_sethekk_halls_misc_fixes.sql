@@ -326,3 +326,78 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1832001 WHERE `entry` = 18320;
 UPDATE `creature_template` SET `SpellList` = 2069801 WHERE `entry` = 20698;
+
+
+-- Syth Fire Elemental
+DELETE FROM `creature_template_spells` WHERE `entry` = 19203;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20703;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1920301, 2070301);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1920301, 'Sethekk Halls - Syth Fire Elemental - Normal', 0, 0),
+(2070301, 'Sethekk Halls - Syth Fire Elemental - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1920301, 2070301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1920301, 1, 33526, 0, -1, 1, 0, 100, 0, 2000, 11000, 2000, 11000, 'Syth Fire Elemental - Flame Buffet - current'),
+(2070301, 1, 38141, 0, -1, 1, 0, 100, 0, 2000, 11000, 2000, 11000, 'Syth Fire Elemental - Flame Buffet - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1920301 WHERE `entry` = 19203;
+UPDATE `creature_template` SET `SpellList` = 2070301 WHERE `entry` = 20703;
+
+-- Syth Frost Elemental
+DELETE FROM `creature_template_spells` WHERE `entry` = 19204;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20704;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1920401, 2070401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1920401, 'Sethekk Halls - Syth Frost Elemental - Normal', 0, 0),
+(2070401, 'Sethekk Halls - Syth Frost Elemental - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1920401, 2070401);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1920401, 1, 33528, 0, -1, 1, 0, 100, 0, 5000, 18000, 6000, 20000, 'Syth Frost Elemental - Frost Buffet - current'),
+(2070401, 1, 38142, 0, -1, 1, 0, 100, 0, 5000, 18000, 6000, 20000, 'Syth Frost Elemental - Frost Buffet - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1920401 WHERE `entry` = 19204;
+UPDATE `creature_template` SET `SpellList` = 2070401 WHERE `entry` = 20704;
+
+-- Syth Arcane Elemental
+DELETE FROM `creature_template_spells` WHERE `entry` = 19205;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20702;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1920501, 2070201);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1920501, 'Sethekk Halls - Syth Arcane Elemental - Normal', 0, 0),
+(2070201, 'Sethekk Halls - Syth Arcane Elemental - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1920501, 2070201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1920501, 1, 33527, 0, -1, 1, 0, 100, 0, 5000, 14000, 8000, 17000, 'Syth Arcane Elemental - Arcane Buffet - current'),
+(2070201, 1, 38138, 0, -1, 1, 0, 100, 0, 5000, 14000, 8000, 17000, 'Syth Arcane Elemental - Arcane Buffet - current');
+
+UPDATE `creature_template` SET `SpellList` = 1920501 WHERE `entry` = 19205;
+UPDATE `creature_template` SET `SpellList` = 2070201 WHERE `entry` = 20702;
+
+-- Syth Shadow Elemental
+DELETE FROM `creature_template_spells` WHERE `entry` = 19206;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20705;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1920601, 2070501);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1920601, 'Sethekk Halls - Syth Shadow Elemental - Normal', 0, 0),
+(2070501, 'Sethekk Halls - Syth Shadow Elemental - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1920601, 2070501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1920601, 1, 33529, 0, -1, 1, 0, 100, 0, 5000, 15000, 6000, 16000, 'Syth Shadow Elemental - Shadow Buffet - current'),
+(2070501, 1, 38143, 0, -1, 1, 0, 100, 0, 5000, 15000, 6000, 16000, 'Syth Shadow Elemental - Shadow Buffet - current');
+
+UPDATE `creature_template` SET `SpellList` = 1920601 WHERE `entry` = 19206;
+UPDATE `creature_template` SET `SpellList` = 2070501 WHERE `entry` = 20705;

@@ -21684,22 +21684,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sethekk Spirit 18703 (4.3.4 Official Data - Normal/Heroic)
 ('1870301','18703','11','0','100','0','0','0','0','0','0','0','11','24051','0','0','38','0','0','0','0','0','0','0','Sethekk Spirit - Cast Spirit Burst and Zone Combat Pulse on Spawn'),
 -- Lakka (18956) - GOSSIP and DB SCRIPT
--- Syth Fire Elemental 19203 (4.3.4 Official Data - Normal/Heroic)
-('1920301','19203','0','0','100','1027','2400','9700','8400','18100','0','0','11','33526','1','0','0','0','0','0','0','0','0','0','Syth Fire Elemental (Normal) - Cast Flame Buffet'),
-('1920302','19203','0','0','100','1029','1200','3600','6000','7200','0','0','11','38141','1','0','0','0','0','0','0','0','0','0','Syth Fire Elemental (Heroic) - Cast Flame Buffet'),
-('1920303','19203','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Syth Fire Elemental - Despawn on Evade'),
--- Syth Frost Elemental 19204 (4.3.4 Official Data - Normal/Heroic)
-('1920401','19204','0','0','100','1027','1600','7600','8400','18100','0','0','11','33528','1','0','0','0','0','0','0','0','0','0','Syth Frost Elemental (Normal) - Cast Frost Buffet'),
-('1920402','19204','0','0','100','1029','1200','3600','6000','7200','0','0','11','38142','1','0','0','0','0','0','0','0','0','0','Syth Frost Elemental (Heroic) - Cast Frost Buffet'),
-('1920403','19204','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Syth Frost Elemental - Despawn on Evade'),
--- Syth Arcane Elemental 19205 (4.3.4 Official Data - Normal/Heroic)
-('1920501','19205','0','0','100','1027','1600','7600','8400','18100','0','0','11','33527','1','0','0','0','0','0','0','0','0','0','Syth Arcane Elemental (Normal) - Cast Arcane Buffet'),
-('1920502','19205','0','0','100','1029','1200','3600','6000','7200','0','0','11','38138','1','0','0','0','0','0','0','0','0','0','Syth Arcane Elemental (Heroic) - Cast Arcane Buffet'),
-('1920503','19205','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Syth Arcane Elemental - Despawn on Evade'),
--- Syth Shadow Elemental 19206 (4.3.4 Official Data - Normal/Heroic)
-('1920601','19206','0','0','100','1027','1600','7600','8400','18100','0','0','11','33529','1','0','0','0','0','0','0','0','0','0','Syth Shadow Elemental (Normal) - Cast Shadow Buffet'),
-('1920602','19206','0','0','100','1029','1200','3600','6000','7200','0','0','11','38143','1','0','0','0','0','0','0','0','0','0','Syth Shadow Elemental (Heroic) - Cast Shadow Buffet'),
-('1920603','19206','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Syth Shadow Elemental - Despawn on Evade'),
+-- Syth Fire Elemental 19203 - spell_list
+('1920301','19203','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Syth Fire Elemental - Despawn on Evade'),
+-- Syth Frost Elemental 19204 - spell_list
+('1920401','19204','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Syth Frost Elemental - Despawn on Evade'),
+-- Syth Arcane Elemental 19205 - spell_list
+('1920501','19205','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Syth Arcane Elemental - Despawn on Evade'),
+-- Syth Shadow Elemental 19206 - spell_list
+('1920601','19206','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Syth Shadow Elemental - Despawn on Evade'),
 -- Cobalt Serpent 19428 - spell_list
 -- Avian Darkhawk 19429 - spell_list
 -- Avian Ripper 21891 - spell_list
