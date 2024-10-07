@@ -263,3 +263,46 @@ UPDATE `creature_template` SET `SpellList` = 2070101 WHERE `entry` = 20701;
 
 DELETE FROM creature_spell_targeting WHERE Id = 132;
 INSERT INTO `creature_spell_targeting` (`Id`, `Type`, `Param1`, `Param2`, `Param3`, `Comments`) VALUES ('132', '1', '1', '0', '128', 'Attack - top aggro not in melee range');
+
+
+
+-- Sethekk Shaman
+DELETE FROM `creature_template_spells` WHERE `entry` = 18326;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20699;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1832601, 2069901);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1832601, 'Sethekk Halls - Sethekk Shaman - Normal', 0, 0),
+(2069901, 'Sethekk Halls - Sethekk Shaman - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1832601, 2069901);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1832601, 1, 32663, 0, -1, 0, 0, 100, 0, 11000, 16000, 90000, 90000, 'Sethekk Shaman - Summon Dark Vortex - none'),
+(1832601, 2, 15501, 0, -1, 1, 0, 100, 0, 6000, 16000, 6000, 16000, 'Sethekk Shaman - Earth Shock - current'),
+
+(1832601, 1, 32663, 0, -1, 0, 0, 100, 0, 11000, 16000, 90000, 90000, 'Sethekk Shaman - Summon Dark Vortex - none'),
+(1832601, 2, 22885, 0, -1, 1, 0, 100, 0, 6000, 16000, 6000, 16000, 'Sethekk Shaman - Earth Shock - current');
+
+UPDATE `creature_template` SET `SpellList` = 1832601 WHERE `entry` = 18326;
+UPDATE `creature_template` SET `SpellList` = 2069901 WHERE `entry` = 20699;
+
+
+-- Dark Vortex
+DELETE FROM `creature_template_spells` WHERE `entry` = 18701;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20689;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1870101, 2068901);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1870101, 'Sethekk Halls - Dark Vortex - Normal', 0, 0),
+(2068901, 'Sethekk Halls - Dark Vortex - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1870101, 2068901);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1870101, 1, 12471, 0, -1, 1, 0, 100, 0, 8000, 18000, 8000, 18000, 'Dark Vortex - Shadow Bolt - current'),
+(2068901, 1, 12471, 0, -1, 1, 0, 100, 0, 8000, 18000, 8000, 18000, 'Dark Vortex - Shadow Bolt - current');
+
+UPDATE `creature_template` SET `SpellList` = 1870101 WHERE `entry` = 18701;
+UPDATE `creature_template` SET `SpellList` = 2068901 WHERE `entry` = 20689;
+

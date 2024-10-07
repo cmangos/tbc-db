@@ -21674,12 +21674,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sethekk Prophet 18325 - spell_list
 ('1832501','18325','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Prophet - Random Say on Aggro'),
 ('1832502','18325','6','0','100','0','0','0','0','0','0','0','11','32692','0','7','0','0','0','0','0','0','0','0','Sethekk Prophet - Cast Summon Arakkoa Spirit on Death'),
--- Sethekk Shaman 18326 (4.3.4 Official Data - Normal/Heroic) - 396 (OneShotTalkNoSheathe)
+-- Sethekk Shaman 18326 - spell_list
 ('1832601','18326','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Shaman - Random Say on Aggro'),
-('1832602','18326','0','0','100','1025','7900','14500','90000','90000','0','0','11','32663','15','0','0','0','0','0','0','0','0','0','Sethekk Shaman - Cast Summon Dark Vortex'),
-('1832603','18326','0','0','100','1027','4300','9100','7200','14500','0','0','11','15501','1','0','0','0','0','0','0','0','0','0','Sethekk Shaman (Normal) - Cast Earth Shock'),
-('1832604','18326','0','0','100','1029','4300','9100','7200','14500','0','0','11','22885','1','0','0','0','0','0','0','0','0','0','Sethekk Shaman (Heroic) - Cast Earth Shock'),
-('1832605','18326','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Sethekk Shaman - Despawn Guardians on Evade'),
+('1832602','18326','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Sethekk Shaman - Despawn Guardians on Evade'),
 -- Time-Lost Controller 18327 - spell_list
 ('1832701','18327','11','0','100','0','0','0','0','0','0','0','11','37509','0','34','0','0','0','0','0','0','0','0','Time-Lost Controller - Cast Ghostly Facade on Spawn'),
 ('1832702','18327','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Time-Lost Controller - Random Say on Aggro'),
@@ -21687,8 +21684,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1832801','18328','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Oracle - Random Say on Aggro'),
 -- Darkweaver Syth (18472) - boss_darkweaver_syth
 -- Talon King Ikiss (18473) - boss_talon_king_ikiss
--- Dark Vortex 18701 (4.3.4 Official Data - Normal/Heroic)
-('1870101','18701','0','0','100','1025','3600','7200','8400','19300','0','0','11','12471','1','0','0','0','0','0','0','0','0','0','Dark Vortex - Cast Shadow Bolt'),
+-- Dark Vortex 18701 - spell_list
 -- Sethekk Spirit 18703 (4.3.4 Official Data - Normal/Heroic)
 ('1870301','18703','11','0','100','0','0','0','0','0','0','0','11','24051','0','0','38','0','0','0','0','0','0','0','Sethekk Spirit - Cast Spirit Burst and Zone Combat Pulse on Spawn'),
 -- Lakka (18956) - GOSSIP and DB SCRIPT
