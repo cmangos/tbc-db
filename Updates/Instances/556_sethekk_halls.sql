@@ -3,7 +3,6 @@ DBName: Auchindoun - Sethekk Halls
 DBScriptName: instance_sethekk_halls
 DB%Complete: 90
 DBComment:
-* Check if quest=10097 is required for gossip option to free Lakka (gossip_menu_option 7868, should be condition "(???, 31, 252, 0, 'Dungeon Encounter (Darkweaver Syth) ID 252 Completed')"?
 EndDBScriptData */
 
 SET @CGUID := 5560000; -- creatures
@@ -1024,7 +1023,7 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+11, 42, @SGGUID+6, 1, 0, 0, 0, 'Sethekk Halls - Group 021 -  Type 1'),
 (@SGGUID+12, 42, @SGGUID+6, 1, 1, 0, 0, 'Sethekk Halls - Group 021 -  Type 2'),
 -- SpawnGroup 008 should despawn when endboss dies
-(@SGGUID+13, 42, 2818, 1, 1, 0, 0, 'Sethekk Halls - Talon King Ikiss');
+(@SGGUID+13, 42, 2818, 1, 0, 0, 0, 'Sethekk Halls - Talon King Ikiss Alive');
 
 -- =======
 -- POOLING
@@ -1223,8 +1222,10 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1832301, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Guard - change movement'),
 (1832301, 1000, 0, 2, 169, 375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Guard - add emotestate');
 
-INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(18472, 1000, 0, 0, 0, 0, 18956, @CGUID+88, 16, 16056, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Darkweaver Syth Death');
+INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(18472, 0, 0, 52, 7868, 0, 0, 18956, @CGUID+88, 17, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka Change Gossip- Darkweaver Syth Death'),
+(18472, 0, 1, 0, 0, 0, 0, 18956, @CGUID+88, 16, 16056, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka Say Text - Darkweaver Syth Death');
+
 
 DELETE FROM dbscripts_on_gossip WHERE id=7868;
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

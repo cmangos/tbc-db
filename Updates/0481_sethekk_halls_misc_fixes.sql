@@ -401,3 +401,25 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1920601 WHERE `entry` = 19206;
 UPDATE `creature_template` SET `SpellList` = 2070501 WHERE `entry` = 20705;
+
+
+
+-- Fix Gossip from Lakka
+DELETE FROM npc_text_broadcast_text WHERE Id IN (16052, 16053);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(16052, 1, 16052), -- Please, $r, get me out of here! Unlocking the cage will surely attract my brother's attention. Kill Darkweaver Syth!
+(16053, 1, 16053); -- Now's our chance! Let me out of this cage!
+
+-- Sniffed Values
+-- GossipID: 6953
+-- GossipID: 6952
+DELETE FROM gossip_menu WHERE entry IN (7867, 7868);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(7867, 16052, 0, 0), -- Gossip when Darkweaver Syth is alive
+(7868, 16053, 0, 0); -- Gossip when Darkweaver Syth is Dead changed via db script
+
+UPDATE creature_template SET GossipMenuId = 7867 WHERE entry = 18956;
+
+-- Confirmed from ptr: player dont need to have Quest to free Lakka
+UPDATE gossip_menu_option SET condition_id = '0' WHERE menu_id = '7868' AND id = '0';
+DELETE FROM condition WHERE condition_entry = 1013;
