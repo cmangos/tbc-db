@@ -287,7 +287,6 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 UPDATE `creature_template` SET `SpellList` = 1832601 WHERE `entry` = 18326;
 UPDATE `creature_template` SET `SpellList` = 2069901 WHERE `entry` = 20699;
 
-
 -- Dark Vortex
 DELETE FROM `creature_template_spells` WHERE `entry` = 18701;
 DELETE FROM `creature_template_spells` WHERE `entry` = 20689;
@@ -306,3 +305,24 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 UPDATE `creature_template` SET `SpellList` = 1870101 WHERE `entry` = 18701;
 UPDATE `creature_template` SET `SpellList` = 2068901 WHERE `entry` = 20689;
 
+
+-- Time-Lost Shadowmage
+DELETE FROM `creature_template_spells` WHERE `entry` = 18320;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20698;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1832001, 2069801);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1832001, 'Sethekk Halls - Time-Lost Shadowmage - Normal', 0, 0),
+(2069801, 'Sethekk Halls - Time-Lost Shadowmage - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1832001, 2069801);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1832001, 1, 32682, 0, -1, 130, 0, 100, 0, 10000, 30000, 10000, 30000, 'Time-Lost Shadowmage - Curse of the Dark Talon -  top aggro aura not present'),
+(1832001, 2, 32675, 0, -1, 100, 0, 100, 0, 6000, 24000, 10000, 28000, 'Time-Lost Shadowmage - Shadow Missiles - random'),
+
+(2069801, 1, 38149, 0, -1, 130, 0, 100, 0, 10000, 30000, 10000, 30000, 'Time-Lost Shadowmage - Curse of the Dark Talon -  top aggro aura not present'),
+(2069801, 2, 32675, 0, -1, 100, 0, 100, 0, 6000, 24000, 10000, 28000, 'Time-Lost Shadowmage - Shadow Missiles - random');
+
+UPDATE `creature_template` SET `SpellList` = 1832001 WHERE `entry` = 18320;
+UPDATE `creature_template` SET `SpellList` = 2069801 WHERE `entry` = 20698;

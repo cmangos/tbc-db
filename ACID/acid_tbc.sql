@@ -21656,13 +21656,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1831901','18319','11','0','100','0','0','0','0','0','0','0','11','37509','0','34','0','0','0','0','0','0','0','0','Time-Lost Scryer - Cast Ghostly Facade on Spawn'),
 ('1831902','18319','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Time-Lost Scryer - Random Say on Aggro'),
 ('1831903','18319','27','0','100','1025','32689','1','5000','5000','0','0','11','32689','0','0','0','0','0','0','0','0','0','0','Time-Lost Scryer - Cast Arcane Destruction on Missing Buff'),
--- Time-Lost Shadowmage 18320 (4.3.4 Official Data - Normal) - Shadow Missiles on Random Melee Target, but mostly Topaggro - 396 (OneShotTalkNoSheathe)
+-- Time-Lost Shadowmage 18320 - spell_list
 ('1832001','18320','11','0','100','0','0','0','0','0','0','0','11','37509','0','34','0','0','0','0','0','0','0','0','Time-Lost Shadowmage - Cast Ghostly Facade on Spawn'),
 ('1832002','18320','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Time-Lost Shadowmage - Random Say on Aggro'),
-('1832003','18320','28','0','100','1027','32682','5','21700','33800','0','0','11','32682','1','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Normal) - Cast Curse of the Dark Talon on Target Missing Aura Stack'),
-('1832004','18320','28','0','100','1029','38149','5','21700','33800','0','0','11','38149','1','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Heroic) - Cast Curse of the Dark Talon on Target Missing Aura Stack'),
-('1832005','18320','0','0','70','1025','6600','18600','9300','21800','0','0','11','32675','1','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage - Cast Shadow Missiles'),
-('1832006','18320','0','0','30','1025','6600','18600','9300','21800','0','0','11','32675','4','512','0','0','0','0','0','0','0','0','Time-Lost Shadowmage - Cast Shadow Missiles'),
 -- Sethekk Talon Lord 18321 (4.3.4 Official Data - Normal/Heroic)
 ('1832101','18321','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Talon Lord - Random Say on Aggro'),
 -- Sethekk Ravenguard 18322 - spell_list
