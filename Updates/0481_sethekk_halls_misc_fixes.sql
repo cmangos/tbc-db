@@ -281,8 +281,8 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1832601, 1, 32663, 0, -1, 0, 0, 100, 0, 11000, 16000, 90000, 90000, 'Sethekk Shaman - Summon Dark Vortex - none'),
 (1832601, 2, 15501, 0, -1, 1, 0, 100, 0, 6000, 16000, 6000, 16000, 'Sethekk Shaman - Earth Shock - current'),
 
-(1832601, 1, 32663, 0, -1, 0, 0, 100, 0, 11000, 16000, 90000, 90000, 'Sethekk Shaman - Summon Dark Vortex - none'),
-(1832601, 2, 22885, 0, -1, 1, 0, 100, 0, 6000, 16000, 6000, 16000, 'Sethekk Shaman - Earth Shock - current');
+(2069901, 1, 32663, 0, -1, 0, 0, 100, 0, 11000, 16000, 90000, 90000, 'Sethekk Shaman - Summon Dark Vortex - none'),
+(2069901, 2, 22885, 0, -1, 1, 0, 100, 0, 6000, 16000, 6000, 16000, 'Sethekk Shaman - Earth Shock - current');
 
 UPDATE `creature_template` SET `SpellList` = 1832601 WHERE `entry` = 18326;
 UPDATE `creature_template` SET `SpellList` = 2069901 WHERE `entry` = 20699;
