@@ -3,6 +3,8 @@ DBName: Auchindoun - Sethekk Halls
 DBScriptName: instance_sethekk_halls
 DB%Complete: 90
 DBComment:
+Missing rework of herb/ore grouping
+Most of the non moving npcs should have a random OOC Emote
 EndDBScriptData */
 
 SET @CGUID := 5560000; -- creatures
