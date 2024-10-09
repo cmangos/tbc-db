@@ -51,3 +51,52 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1831101 WHERE `entry` = 18311;
 UPDATE `creature_template` SET `SpellList` = 2025501 WHERE `entry` = 20255;
+
+
+-- Ethereal Sorcerer
+-- Research Info:
+-- Ethereal Sorcerer can have more then 2 arcane friends up
+-- Main spell is 32348 that triggers 32349 and 32353 via dbscript
+DELETE FROM `creature_template_spells` WHERE `entry` = 18313;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20259;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1831301, 2025901);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1831301, 'Mana Tombs - Ethereal Sorcerer - Normal', 0, 0),
+(2025901, 'Mana Tombs - Ethereal Sorcerer - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1831301, 2025901);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1831301, 1, 32348, 0, -1, 0, 0, 100, 0, 20000, 25000, 20000, 25000, 'Ethereal Sorcerer - Summon Arcane Fiends - none'),
+(1831301, 2, 25603, 0, -1, 130, 0, 100, 0, 3000, 8000, 12000, 21000, 'Ethereal Sorcerer - Slow - top aggro aura not present'),
+(1831301, 3, 15790, 0, -1, 1, 0, 100, 0, 5000, 17000, 17000, 26000, 'Ethereal Sorcerer - Arcane Missiles - current'),
+
+(2025901, 1, 32348, 0, -1, 0, 0, 100, 0, 20000, 25000, 20000, 25000, 'Ethereal Sorcerer - Summon Arcane Fiends - none'),
+(2025901, 2, 25603, 0, -1, 130, 0, 100, 0, 3000, 8000, 12000, 21000, 'Ethereal Sorcerer - Slow - top aggro aura not present'),
+(2025901, 3, 15790, 0, -1, 1, 0, 100, 0, 5000, 17000, 17000, 26000, 'Ethereal Sorcerer - Arcane Missiles - current');
+
+UPDATE `creature_template` SET `SpellList` = 1831301 WHERE `entry` = 18313;
+UPDATE `creature_template` SET `SpellList` = 2025901 WHERE `entry` = 20259;
+
+
+-- Arcane Fiend
+DELETE FROM `creature_template_spells` WHERE `entry` = 18429;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20252;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1842901, 2025201);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1842901, 'Mana Tombs - Arcane Fiend - Normal', 0, 0),
+(2025201, 'Mana Tombs - Arcane Fiend - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1842901, 2025201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1842901, 1, 15122, 0, -1, 122, 0, 100, 0, 10000, 15000, 10000, 15000, 'Arcane Fiend - Counter Spell - random player casting'),
+(1842901, 2, 33860, 0, -1, 2, 0, 100, 0, 5000, 10000, 9000, 14000, 'Arcane Fiend - Arcane Explosion - self'),
+
+(2025201, 1, 15122, 0, -1, 122, 0, 100, 0, 10000, 15000, 10000, 15000, 'Arcane Fiend - Counter Spell - random player casting'),
+(2025201, 2, 15253, 0, -1, 2, 0, 100, 0, 5000, 10000, 9000, 14000, 'Arcane Fiend - Arcane Explosion - self');
+
+UPDATE `creature_template` SET `SpellList` = 1842901 WHERE `entry` = 18429;
+UPDATE `creature_template` SET `SpellList` = 2025201 WHERE `entry` = 20252;

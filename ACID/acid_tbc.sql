@@ -21555,9 +21555,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==============================================================
 -- Auchindoun: Mana-Tombs - (4.3.4 Official Data - Normal/Heroic) - 100% Scripted From Official Data
 -- ==============================================================
--- Ethereal Scavenger 18309 (4.3.4 Official Data - Normal/Heroic)
+-- Ethereal Scavenger 18309 - spell_list
 ('1830901','18309','4','0','15','0','0','0','0','0','0','0','54','0','0','12002','0','0','0','0','0','0','0','0','Ethereal Scavenger - Random Say on Aggro'),
--- Ethereal Crypt Raider (4.3.4 Official Data - Normal/Heroic)
+-- Ethereal Crypt Raider - spell_list
 ('1831101','18311','4','0','15','0','0','0','0','0','0','0','54','0','0','12002','0','0','0','0','0','0','0','0','Ethereal Crypt Raider - Random Say on Aggro'),
 ('1831102','18311','2','0','100','1024','25','0','0','0','0','0','11','8599','0','0','1','2384','0','0','0','0','0','0','Ethereal Crypt Raider - Cast Enrage at 25% HP'),
 -- Ethereal Spellbinder (4.3.4 Official Data - Normal/Heroic)
@@ -21567,12 +21567,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1831204','18312','0','0','100','1025','7200','14500','6100','16900','0','0','11','37470','1','0','0','0','0','0','0','0','0','0','Ethereal Spellbinder - Cast Counterspell'),
 ('1831205','18312','0','0','100','1024','15700','20900','0','0','0','0','11','32316','0','0','0','0','0','0','0','0','0','0','Ethereal Spellbinder - Cast Summon Wraith'),
 ('1831206','18312','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereal Spellbinder - Despawn Guardians on Evade'),
--- Ethereal Sorcerer 18313 (4.3.4 Official Data - Normal/Heroic)
+-- Ethereal Sorcerer 18313 - spell_list
 ('1831301','18313','4','0','15','0','0','0','0','0','0','0','54','0','0','12002','0','0','0','0','0','0','0','0','Ethereal Sorcerer - Random Say on Aggro'),
-('1831302','18313','0','0','100','1027','5200','15700','15200','21200','0','0','11','15790','1','0','0','0','0','0','0','0','0','0','Ethereal Sorcerer (Normal) - Cast Arcane Missiles'),
-('1831303','18313','0','0','100','1029','5200','15700','15200','21200','0','0','11','22272','1','0','0','0','0','0','0','0','0','0','Ethereal Sorcerer (Heroic) - Cast Arcane Missiles'),
-('1831304','18313','0','0','100','1025','5100','11600','10800','21700','0','0','11','25603','1','32','0','0','0','0','0','0','0','0','Ethereal Sorcerer - Cast Slow'),
-('1831305','18313','0','0','100','1025','14000','25600','70700','71100','0','0','11','32349','0','0','11','32353','0','0','0','0','0','0','Ethereal Sorcerer - Cast Summon 2 Arcane Fiends'),
 ('1831306','18313','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereal Sorcerer - Despawn Guardians on Evade'),
 -- Nexus Stalker 18314
 ('1831401','18314','4','0','15','0','0','0','0','0','0','0','54','0','0','12002','0','0','0','0','0','0','0','0','Nexus Stalker - Random Say on Aggro'),
@@ -21606,10 +21602,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nexus-Prince Shaffar (18344) - boss_nexusprince_shaffar
 -- Ethereal Wraith 18394 (4.3.4 Official Data - Normal/Heroic)
 ('1839401','18394','0','0','100','1025','0','1000','7800','13300','0','0','11','34934','1','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Cast Shadowbolt Volley'),
--- Arcane Fiend 18429 (4.3.4 Official Data - Normal/Heroic)
-('1842901','18429','0','0','100','1027','0','1000','8400','10200','0','0','11','33860','17','0','0','0','0','0','0','0','0','0','Arcane Fiend (Normal) - Cast Arcane Explosion'),
-('1842902','18429','0','0','100','1029','0','1000','6600','10200','0','0','11','15253','17','0','0','0','0','0','0','0','0','0','Arcane Fiend (Heroic) - Cast Arcane Explosion'),
-('1842903','18429','0','0','100','1025','8400','13700','10800','13300','0','0','11','15122','1','0','0','0','0','0','0','0','0','0','Arcane Fiend - Cast Counter Spell'),
+-- Arcane Fiend 18429 - spell_list
 -- Ethereal Apprentice 18430 (4.3.4 Official Data - Normal)
 ('1843001','18430','11','0','100','0','0','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Cast Simple Teleport on Spawn'),
 ('1843002','18430','1','0','100','0','1000','1000','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Zone Combat Pulse OOC'),
