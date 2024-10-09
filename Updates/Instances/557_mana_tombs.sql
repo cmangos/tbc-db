@@ -8,19 +8,14 @@ EndDBScriptData */
 SET @CGUID := 5570000; -- creatures
 SET @OGUID := 5570000; -- gameobjects
 SET @PGUID := 49400; -- pools
+SET @SGGUID := 5570000; -- spawn_groups
+
 
 -- =========
 -- CREATURES
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(@CGUID+47, 1, -68.4671, -16.5295, -0.946325, 1.00453, 0, 0),
-(@CGUID+47, 2, -50.0854, 1.97216, -0.948157, 0.717857, 0, 0),
-(@CGUID+47, 3, -38.5007, 3.36018, -0.954319, 6.24392, 0, 0),
-(@CGUID+47, 4, -48.6085, -1.04486, -0.950053, 3.52408, 0, 0),
-(@CGUID+47, 5, -67.1109, -20.188, -0.953261, 3.84138, 0, 0),
-(@CGUID+47, 6, -66.9051, -30.807, -0.953261, 4.68569, 0, 0),
-(@CGUID+47, 7, -69.5803, -18.5848, -0.953261, 1.29512, 0, 0),
 (@CGUID+70, 1, -308.329, 4.39094, 16.6836, 6.11042, 0, 0),
 (@CGUID+70, 2, -291.197, 3.89066, 16.7884, 0.000807, 0, 0),
 (@CGUID+70, 3, -262.375, 5.20316, 16.7856, 0.172808, 0, 0),
@@ -147,8 +142,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (19307, 0, 0, 1, 0, 0, NULL); -- Nexus Terror
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+41, @CGUID+48, 1155), -- Ethereal Scavenger -> Ethereal Crypt Raider
-(@CGUID+40, @CGUID+47, 1679), -- Ethereal Scavenger -> Ethereal Crypt Raider
 (@CGUID+49, @CGUID+50, 1155), -- Ethereal Crypt Raider -> Ethereal Crypt Raider
 (@CGUID+51, @CGUID+74, 1155), -- Ethereal Crypt Raider -> Ethereal Sorcerer
 (@CGUID+52, @CGUID+74, 1155), -- Ethereal Crypt Raider -> Ethereal Sorcerer
@@ -318,14 +311,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+37, 14881, 557, 3, -380.746, -118.221, -0.958706, 2.85805, 7200, 7200, 5, 1), -- Spider
 (@CGUID+38, 14881, 557, 3, -199.944, -230.552, -0.955697, 2.56202, 7200, 7200, 5, 1), -- Spider
 (@CGUID+39, 14881, 557, 3, -94.1764, -13.9732, 16.7906, 2.03256, 7200, 7200, 5, 1), -- Spider
-(@CGUID+40, 18309, 557, 3, -66.9724, -20.2131, -0.95298, 1.33097, 7200, 7200, 0, 0), -- Ethereal Scavenger
+(@CGUID+40, 18309, 557, 3, -72.4353, -17.8413, -0.870996, 5.02245, 7200, 7200, 0, 0), -- Ethereal Scavenger
 (@CGUID+41, 18309, 557, 3, -48.3093, -5.9904, -0.862044, 0.366519, 7200, 7200, 0, 0), -- Ethereal Scavenger
 (@CGUID+42, 0, 557, 3, -108.347, -92.963, -0.525856, 2.61019, 7200, 7200, 3, 1), -- creature_spawn_entry
 (@CGUID+43, 18309, 557, 3, -97.8913, -59.8778, -0.80451, 3.32374, 7200, 7200, 3, 1), -- Ethereal Scavenger
 (@CGUID+44, 18309, 557, 3, -188.778, -226.132, -0.872381, 6.16101, 7200, 7200, 0, 0), -- Ethereal Scavenger
 (@CGUID+45, 0, 557, 3, -104.22, -232.65, 1.24996, 1.16937, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+46, 18309, 557, 3, -61.5001, -188.772, -1.46905, 1.76278, 7200, 7200, 0, 0), -- Ethereal Scavenger
-(@CGUID+47, 18311, 557, 3, -70.0874, -19.6834, -0.947276, 1.26261, 7200, 7200, 0, 2), -- Ethereal Crypt Raider
+(@CGUID+47, 18311, 557, 3, -67.2769, -18.9735, -0.871002, 4.4575, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+48, 18311, 557, 3, -54.2197, 3.48241, -0.863073, 0.10472, 7200, 7200, 0, 0), -- Ethereal Crypt Raider
 (@CGUID+49, 18311, 557, 3, -71.1583, -41.0175, -0.870978, 1.309, 7200, 7200, 0, 0), -- Ethereal Crypt Raider
 (@CGUID+50, 18311, 557, 3, -63.4184, -41.5546, -0.871005, 1.8326, 7200, 7200, 0, 0), -- Ethereal Crypt Raider
@@ -556,12 +549,35 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
--- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
--- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
--- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
+(@SGGUID+1, 'Mana Tombs - Group 001 - Ethereal Scavenger | Ethereal Crypt Raider', 0, 0, 0, 1, 0),
+(@SGGUID+2, 'Mana Tombs - Group 002 - Ethereal Scavenger | Ethereal Crypt Raider - Patrol 001', 0, 0, 0, 1, 0),
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+2, 18309, 0, 0, 0), (@SGGUID+2, 18311, 0, 0, 0), -- Ethereal Scavenger, Ethereal Crypt Raider
+
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+(@SGGUID+1, @CGUID+41, 0, 0), -- Ethereal Scavenger
+(@SGGUID+1, @CGUID+48, 1, 0), -- Ethereal Crypt Raider
+
+(@SGGUID+2, @CGUID+40, 0, 0), -- Ethereal Scavenger
+(@SGGUID+2, @CGUID+47, 1, 0), -- spawn_group_entry
+
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@SGGUID+2, 2, 3, 0, @SGGUID+2, 4, 'Mana Tombs - Group 002 - Ethereal Scavenger | Ethereal Crypt Raider - Patrol 001'),
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+2,'Mana Tombs - Group 002 - Ethereal Scavenger | Ethereal Crypt Raider - Patrol 001'),
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@SGGUID+2, 1, -67.99796, -31.6907, -0.95160854, 100, 0, 0),
+(@SGGUID+2, 2, -67.722946, -23.282206, -0.9526021, 100, 0, 0),
+(@SGGUID+2, 3, -65.677895, -14.919224, -0.9472823, 100, 0, 0),
+(@SGGUID+2, 4, -60.18082, -8.535985, -0.9498009, 100, 0, 0),
+(@SGGUID+2, 5, -53.91151, -2.550814, -0.9489452, 100, 0, 0),
+(@SGGUID+2, 6, -46.68223, 0.860986, -0.954333, 100, 0, 0),
+(@SGGUID+2, 7, -36.528965, 1.502573, -0.9543326, 100, 0, 0),
 
 -- =======
 -- POOLING
