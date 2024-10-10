@@ -4,9 +4,10 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 ('5305500', '15644', '530', '1', '9467.66000000000000000000', '-6502.24000000000000000000', '29.04940000000000000000', '0.85837700000000000000', '25', '25', '5', '1'),
 ('5305501', '15644', '530', '1', '9432.53000000000000000000', '-6533.63000000000000000000', '28.95340000000000000000', '3.54051000000000000000', '25', '25', '5', '1');
 
-UPDATE creature_movement SET position_x=9083.901,position_y=-6563.9185,position_z=14.696365,orientation=4.391523361206054687 WHERE guid = 1007423;
+UPDATE creature SET position_x=9083.901,position_y=-6563.9185,position_z=14.696365,orientation=4.391523361206054687 WHERE guid = 1007423;
 SET @MOVID=1007423;
 -- GUID: Full: 0x20457C42400F44C000002B00001B3CB5 Creature/0 R4447/S43 Map: 530 Entry: 15635 Low: 1785013 PathType: None
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
 INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
 (@MOVID + 0, '1', '9085.153', '-6567.7188', '15.433278', '100', '0', '0', NULL),
 (@MOVID + 0, '2', '9089.927', '-6588.913', '19.729053', '100', '0', '0', NULL),
