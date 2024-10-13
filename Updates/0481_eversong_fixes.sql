@@ -403,7 +403,7 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 SET @MOVID=55486;
 UPDATE creature SET position_x=9031.349,position_y=-8000.36,position_z=143.46803,orientation=4.391523361206054687 WHERE guid = @MOVID + 0;
 DELETE FROM creature_movement WHERE Id = @MOVID + 0;
-INSERT INTO waypoint_path (PathId, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
 (@MOVID + 0, '1', '9031.349', '-8000.36', '143.46803', '100', '0', '0', NULL),
 (@MOVID + 0, '2', '9065.044', '-7976.8735', '136.36667', '100', '0', '0', NULL),
 (@MOVID + 0, '3', '9073.284', '-7941.0254', '128.48793', '100', '0', '0', NULL),
@@ -434,7 +434,7 @@ INSERT INTO waypoint_path (PathId, Point, PositionX, PositionY, PositionZ, Orien
 SET @MOVID=55487;
 UPDATE creature SET position_x=9031.349,position_y=-8000.36,position_z=143.46803,orientation=4.391523361206054687 WHERE guid = @MOVID + 0;
 DELETE FROM creature_movement WHERE Id = @MOVID + 0;
-INSERT INTO waypoint_path (PathId, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
 (@MOVID + 0, '1', '9038.842', '-7644.415', '136.55695', '100', '0', '0', NULL),
 (@MOVID + 0, '2', '8903.534', '-7680.6787', '143.2647', '100', '0', '0', NULL),
 (@MOVID + 0, '3', '8898.707', '-7655.624', '134.49765', '100', '0', '0', NULL),
@@ -497,3 +497,186 @@ INSERT INTO waypoint_path (PathId, Point, PositionX, PositionY, PositionZ, Orien
 (@MOVID + 0, '60', '8906.105', '-7659.2173', '135.95963', '100', '0', '0', NULL),
 (@MOVID + 0, '61', '8903.805', '-7684.5615', '144.55626', '100', '0', '0', NULL),
 (@MOVID + 0, '62', '9038.848', '-7644.0825', '136.47638', '100', '0', '0', NULL);
+
+SET @MOVID=56338;
+UPDATE creature SET position_x=9126.295,position_y=-5975.98,position_z=33.876884,orientation=3.667757 WHERE guid = @MOVID + 0 AND Id = 15920;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '9126.295', '-5975.98', '33.876884', '100', '180000', '0', NULL),
+(@MOVID + 0, '2', '9124.532', '-5974.506', '33.870476', '100', '20000', '0', NULL),
+(@MOVID + 0, '3', '9126.295', '-5975.98', '33.876884', '100', '20000', '0', NULL),
+(@MOVID + 0, '4', '9125', '-5975', '33.876884', '100', '20000', '0', NULL),
+(@MOVID + 0, '5', '9126.295', '-5975.98', '33.876884', '100', '20000', '0', NULL),
+(@MOVID + 0, '6', '9123.814', '-5976.664', '33.876884', '100', '20000', '0', NULL),
+(@MOVID + 0, '7', '9126.205', '-5977.123', '33.876884', '100', '20000', '0', NULL),
+(@MOVID + 0, '8', '9125.577', '-5978.8374', '33.876884', '100', '20000', '0', NULL),
+(@MOVID + 0, '9', '9126.309', '-5976.381', '33.876884', '100', '20000', '0', NULL),
+(@MOVID + 0, '10', '9124.154', '-5975.0347', '33.876884', '100', '20000', '0', NULL),
+(@MOVID + 0, '11', '9125.952', '-5976.0054', '33.876884', '100', '20000', '0', NULL),
+(@MOVID + 0, '12', '9127.852', '-5972.9316', '33.876884', '100', '20000', '0', NULL),
+(@MOVID + 0, '13', '9119.911', '-5959.3633', '32.56716', '100', '2000', '0', NULL),
+(@MOVID + 0, '14', '9119.911', '-5959.3633', '32.56716', '3.2248628', '180000', '0', NULL),
+(@MOVID + 0, '15', '9120.262', '-5959.4043', '32.577415', '100', '20000', '0', NULL),
+(@MOVID + 0, '16', '9122.6875', '-5957.959', '32.247826', '100', '20000', '0', NULL),
+(@MOVID + 0, '17', '9124.675', '-5966.167', '33.697533', '100', '0', '0', NULL),
+(@MOVID + 0, '18', '9126.707', '-5975.668', '33.876884', '100', '0', '0', NULL);
+
+SET @MOVID=41792;
+UPDATE creature SET position_x=8883.812,position_y=-5747.1104,position_z=0.17871928,orientation=3.667757,MovementType=4 WHERE guid = @MOVID + 0 AND Id = 15937;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '8883.812', '-5747.1104', '0.17871928', '100', '0', '0', NULL),
+(@MOVID + 0, '2', '8867.356', '-5726.4126', '0.4445238', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '8848.254', '-5721.6885', '0.45521116', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '8827.771', '-5737.5835', '1.2543879', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '8814.725', '-5764.4326', '0.8268976', '100', '0', '0', NULL),
+(@MOVID + 0, '6', '8787.995', '-5771.9478', '0.759396', '100', '0', '0', NULL),
+(@MOVID + 0, '7', '8791.615', '-5770.9473', '0.81310695', '100', '0', '0', NULL),
+(@MOVID + 0, '8', '8787.995', '-5771.9478', '0.759396', '100', '0', '0', NULL),
+(@MOVID + 0, '9', '8787.995', '-5771.9473', '0.93810695', '100', '0', '0', NULL),
+(@MOVID + 0, '10', '8779.538', '-5766.615', '0.75774', '100', '0', '0', NULL),
+(@MOVID + 0, '11', '8776.064', '-5764.418', '0.75774', '100', '0', '0', NULL),
+(@MOVID + 0, '12', '8773.118', '-5746.561', '0.63274', '100', '0', '0', NULL),
+(@MOVID + 0, '13', '8786.552', '-5724.9536', '0.7537744', '100', '0', '0', NULL),
+(@MOVID + 0, '14', '8795.872', '-5699.397', '0.4163921', '100', '0', '0', NULL),
+(@MOVID + 0, '15', '8781.479', '-5680.3843', '-0.25047803', '100', '0', '0', NULL),
+(@MOVID + 0, '16', '8767.351', '-5680.68', '0.14618945', '100', '0', '0', NULL),
+(@MOVID + 0, '17', '8744.045', '-5689.8735', '-0.11890793', '100', '0', '0', NULL),
+(@MOVID + 0, '18', '8739.509', '-5695.4326', '-0.3176384', '100', '0', '0', NULL),
+(@MOVID + 0, '19', '8726.128', '-5724.388', '0.25664043', '100', '0', '0', NULL),
+(@MOVID + 0, '20', '8714.528', '-5728.1465', '0.4713621', '100', '0', '0', NULL),
+(@MOVID + 0, '21', '8696.716', '-5720.9287', '0.6992543', '100', '0', '0', NULL),
+(@MOVID + 0, '22', '8668.3545', '-5697.2036', '0.9340935', '100', '0', '0', NULL),
+(@MOVID + 0, '23', '8664.459', '-5679.8994', '0.7701076', '100', '0', '0', NULL),
+(@MOVID + 0, '24', '8652.437', '-5673.5864', '0.8355373', '100', '0', '0', NULL),
+(@MOVID + 0, '25', '8638.227', '-5666.572', '0.09242058', '100', '0', '0', NULL),
+(@MOVID + 0, '26', '8628.131', '-5665.4907', '-0.15546131', '100', '0', '0', NULL),
+(@MOVID + 0, '27', '8621.211', '-5667.7383', '-0.046545446', '100', '0', '0', NULL);
+
+INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
+(@CGUID + 10, '15651', '530', '1', 10062.8251953125, -6864.92236328125, 27.98510551452636718, 3.041826725006103515, '300', '300', '10', '1'),
+(@CGUID + 11, '15651', '530', '1', 10142.0947265625, -7073.240234375, 4.602419853210449218, 5.46875, '300', '300', '10', '1'),
+(@CGUID + 12, '15651', '530', '1', 10105.916015625, -7125.6328125, 17.09757232666015625, 0.665585100650787353, '300', '300', '10', '1'),
+(@CGUID + 13, '15651', '530', '1', 10220.7626953125, -7165.9638671875, 5.788416385650634765, 3.296468973159790039, '300', '300', '10', '1'),
+(@CGUID + 14, '15651', '530', '1', 10308.2529296875, -7303.099609375, 19.95418167114257812, 0.77918708324432373, '300', '300', '10', '1'),
+(@CGUID + 15, '15651', '530', '1', 10195.66015625, -7295.39306640625, 46.25046920776367187, 2.302286624908447265, '300', '300', '10', '1'),
+(@CGUID + 16, '15651', '530', '1', 10236.0087890625, -7368.298828125, 42.01817703247070312, 3.5602569580078125, '300', '300', '10', '1'),
+(@CGUID + 17, '15651', '530', '1', 10156.4697265625, -7319.16162109375, 47.97282791137695312, 2.019584894180297851, '300', '300', '10', '1'),
+(@CGUID + 18, '15651', '530', '1', 10119.4287109375, -7377.09326171875, 40.61902618408203125, 2.651290416717529296, '300', '300', '10', '1');
+
+INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
+(@CGUID + 19, '15650', '530', '1', 10299.2724609375, -7300.42236328125, 18.57566261291503906, 3.951847791671752929, '300', '300', '10', '1'),
+(@CGUID + 20, '15650', '530', '1', 10205.0966796875, -7318.98779296875, 45.00542449951171875, 1.728565096855163574, '300', '300', '10', '1'),
+(@CGUID + 21, '15650', '530', '1', 10181.5400390625, -7416.44580078125, 50.11219406127929687, 2.187358856201171875, '300', '300', '10', '1'),
+(@CGUID + 22, '15650', '530', '1', 10106.65625, -7369.21142578125, 35.181610107421875, 5.242430686950683593, '300', '300', '10', '1'),
+(@CGUID + 23, '15650', '530', '1', 10088.517578125, -7403.1171875, 34.01862335205078125, 4.439455986022949218, '300', '300', '10', '1'),
+(@CGUID + 24, '15650', '530', '1', 10226.9521484375, -7470.990234375, 70.2877349853515625, 4.800396442413330078, '300', '300', '10', '1');
+
+-- murlocs - too many
+DELETE FROM creature WHERE Id IN(15670,15950) AND Guid IN(56237,56397,56377,56248,56243,56375,56239,56238,56305,56301,56379,56257,56292,56380,56286,56383,56285);
+DELETE FROM creature WHERE Id IN(15670,15950,15668,15669) AND Guid IN(56283,56287,56263,56388,56264,56262,56387,56170,56195,56177,56192,56196,56232,56206,56183,56222);
+DELETE FROM creature WHERE Id IN(15670,15950,15668,15669) AND Guid IN(56199,56208,56225,56231);
+
+-- both exist - paths offset by waittime
+INSERT INTO creature_spawn_entry SELECT guid, 15668 FROM creature WHERE guid IN(56171,1007441);
+INSERT INTO creature_spawn_entry SELECT guid, 15669 FROM creature WHERE guid IN(56171,1007441);
+UPDATE creature SET id=0 WHERE guid IN(56171,1007441);
+
+DELETE FROM creature WHERE guid IN(1007430);
+DELETE FROM creature_movement WHERE id= 1007430;
+INSERT INTO creature_spawn_entry SELECT guid, 15670 FROM creature WHERE guid IN(56391);
+INSERT INTO creature_spawn_entry SELECT guid, 15950 FROM creature WHERE guid IN(56391);
+UPDATE creature SET id=0 WHERE guid IN(56391);
+
+-- duplicate of 1007429 which has better points
+DELETE FROM creature WHERE guid IN(56242);
+DELETE FROM creature_movement WHERE id= 56242;
+INSERT INTO creature_spawn_entry SELECT guid, 15670 FROM creature WHERE guid IN(1007429);
+INSERT INTO creature_spawn_entry SELECT guid, 15950 FROM creature WHERE guid IN(1007429);
+UPDATE creature SET id=0 WHERE guid IN(1007429);
+
+INSERT INTO creature_spawn_entry SELECT guid, 15668 FROM creature WHERE guid IN(56221);
+INSERT INTO creature_spawn_entry SELECT guid, 15669 FROM creature WHERE guid IN(56221);
+UPDATE creature SET id=0 WHERE guid IN(56221);
+
+SET @MOVID=56391; -- forager - improved path
+UPDATE creature SET position_x=9191.06,position_y=-5854.939,position_z=0.15698504 WHERE guid = @MOVID + 0;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '9191.06', '-5854.939', '0.15698504', '100', '0', '0', NULL),
+(@MOVID + 0, '2', '9167.66', '-5833.4478', '0.42315936', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '9149.482', '-5822.507', '0.52231616', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '9135.286', '-5822.0186', '0.52231616', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '9123.006', '-5807.819', '0.5816451', '100', '0', '0', NULL),
+(@MOVID + 0, '6', '9106.636', '-5805.039', '0.5816451', '100', '0', '0', NULL),
+(@MOVID + 0, '7', '9088.238', '-5809.8477', '0.49034095', '100', '0', '0', NULL),
+(@MOVID + 0, '8', '9080.156', '-5816.108', '0.42161536', '100', '0', '0', NULL),
+(@MOVID + 0, '9', '9065.47', '-5805.525', '-1.7088304', '100', '0', '0', NULL),
+(@MOVID + 0, '10', '9049.09', '-5786.1846', '0.9047611', '100', '0', '0', NULL),
+(@MOVID + 0, '11', '9037.592', '-5766.5273', '0.5168767', '100', '0', '0', NULL),
+(@MOVID + 0, '12', '9037.982', '-5767.1934', '0.40476108', '100', '0', '0', NULL),
+(@MOVID + 0, '13', '9037.592', '-5766.5273', '0.5168767', '100', '0', '0', NULL),
+(@MOVID + 0, '14', '9037.592', '-5766.5273', '0.34597826', '100', '0', '0', NULL),
+(@MOVID + 0, '15', '9026.805', '-5757.6133', '0.55627495', '100', '0', '0', NULL),
+(@MOVID + 0, '16', '9018.276', '-5750.556', '0.6768804', '100', '0', '0', NULL);
+
+
+SET @MOVID=1007429; -- seer
+UPDATE creature SET position_x=9072.704,position_y=-5878.203,position_z=0.4068992 WHERE guid = @MOVID + 0;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '9072.704', '-5878.203', '0.4068992', '100', '0', '0', NULL),
+(@MOVID + 0, '2', '9046.445', '-5858.444', '-3.1931028', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '9023.207', '-5852.862', '1.0455312', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '9026.938', '-5820.592', '1.1541393', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '9037.923', '-5798.591', '0.7914798', '100', '0', '0', NULL),
+(@MOVID + 0, '6', '9031.017', '-5767.773', '0.585496', '100', '0', '0', NULL),
+(@MOVID + 0, '7', '9008.038', '-5754.8125', '0.55627495', '100', '0', '0', NULL),
+(@MOVID + 0, '8', '8986.157', '-5745.911', '0.54432297', '100', '0', '0', NULL),
+(@MOVID + 0, '9', '8962.18', '-5740.873', '1.0480971', '100', '0', '0', NULL),
+(@MOVID + 0, '10', '8943.565', '-5758.4688', '0.92309713', '100', '0', '0', NULL),
+(@MOVID + 0, '11', '8927.365', '-5767.49', '-0.34660864', '100', '0', '0', NULL);
+
+SET @MOVID=56171; -- oracle
+UPDATE creature SET position_x=8877.301,position_y=-5770.9644,position_z=0.26502514 WHERE guid = @MOVID + 0;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '8877.301', '-5770.9644', '0.26502514', '100', '0', '0', NULL),
+(@MOVID + 0, '2', '8878.721', '-5749.0767', '0.42365336', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '8872.23', '-5724.7383', '0.4642992', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '8858.551', '-5719.178', '0.5582385', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '8834.239', '-5723.729', '1.0582385', '100', '0', '0', NULL),
+(@MOVID + 0, '6', '8812.163', '-5716.2886', '-3.05413', '100', '0', '0', NULL),
+(@MOVID + 0, '7', '8789.763', '-5709.5845', '0.8414209', '100', '0', '0', NULL),
+(@MOVID + 0, '8', '8771.16', '-5697.6675', '0.7580669', '100', '0', '0', NULL),
+(@MOVID + 0, '9', '8754.548', '-5692.8604', '0.8107796', '100', '0', '0', NULL),
+(@MOVID + 0, '10', '8743.554', '-5705.948', '0.5454352', '100', '0', '0', NULL);
+
+SET @MOVID=1007441; -- oracle
+UPDATE creature SET position_x=8877.301,position_y=-5770.9644,position_z=0.26502514 WHERE guid = @MOVID + 0;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '8877.301', '-5770.9644', '0.26502514', '100', '3000', '0', NULL),
+(@MOVID + 0, '2', '8878.721', '-5749.0767', '0.42365336', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '8872.23', '-5724.7383', '0.4642992', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '8858.551', '-5719.178', '0.5582385', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '8834.239', '-5723.729', '1.0582385', '100', '0', '0', NULL),
+(@MOVID + 0, '6', '8812.163', '-5716.2886', '-3.05413', '100', '0', '0', NULL),
+(@MOVID + 0, '7', '8789.763', '-5709.5845', '0.8414209', '100', '0', '0', NULL),
+(@MOVID + 0, '8', '8771.16', '-5697.6675', '0.7580669', '100', '0', '0', NULL),
+(@MOVID + 0, '9', '8754.548', '-5692.8604', '0.8107796', '100', '0', '0', NULL),
+(@MOVID + 0, '10', '8743.554', '-5705.948', '0.5454352', '100', '0', '0', NULL);
+
+SET @MOVID=56221; -- oracle
+UPDATE creature SET position_x=8641.773,position_y=-5678.348,position_z=1.1074489 WHERE guid = @MOVID + 0;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '8641.773', '-5678.348', '1.1074489', '100', '0', '0', NULL),
+(@MOVID + 0, '2', '8668.149', '-5673.8145', '-0.5344124', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '8687.856', '-5701.797', '-0.36068225', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '8694.169', '-5720.462', '0.8059437', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '8711.352', '-5730.1367', '0.7699461', '100', '0', '0', NULL),
+(@MOVID + 0, '6', '8723.714', '-5744.651', '0.7131118', '100', '0', '0', NULL),
+(@MOVID + 0, '7', '8744.874', '-5759.063', '1.2113051', '100', '0', '0', NULL),
+(@MOVID + 0, '8', '8776.913', '-5755.5244', '0.63274', '100', '0', '0', NULL),
+(@MOVID + 0, '9', '8798.979', '-5763.8174', '0.47844315', '100', '0', '0', NULL);
