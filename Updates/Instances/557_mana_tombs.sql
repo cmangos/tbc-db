@@ -28,12 +28,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+105, 4, -373.284, -199.4, -0.957918, 1.57708, 0, 0),
 (@CGUID+105, 5, -373.354, -188.369, -0.960164, 1.57708, 0, 0),
 (@CGUID+105, 6, -373.279, -198.468, -0.960164, 4.76266, 0, 0),
-(@CGUID+117, 1, -107.135, -214.479, -1.00393, 6.02559, 0, 0),
-(@CGUID+117, 2, -124.756, -213.821, -0.111925, 2.94683, 0, 0),
-(@CGUID+117, 3, -132.259, -210.266, -0.475064, 2.73556, 0, 0),
-(@CGUID+117, 4, -143.641, -225.131, -0.669352, 4.04324, 0, 0),
-(@CGUID+117, 5, -134.662, -214.177, -0.48754, 0.850602, 0, 0),
-(@CGUID+117, 6, -128.114, -210.812, -0.29519, 0.446908, 0, 0),
 (@CGUID+129, 1, -207.482, -208.05, 1.21497, 4.82001, 0, 0),
 (@CGUID+129, 2, -208.388, -222.004, -0.755589, 4.79409, 0, 0),
 (@CGUID+129, 3, -213.647, -246.964, -0.955485, 4.42103, 0, 0),
@@ -124,13 +118,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (19307, 0, 0, 1, 0, 0, NULL); -- Nexus Terror
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+88, @CGUID+45, 1155), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+116, @CGUID+45, 1155), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+118, @CGUID+117, 1679), -- creature_spawn_entry -> Ethereal Priest
-(@CGUID+83, @CGUID+110, 1155), -- creature_spawn_entry -> Ethereal Priest
-(@CGUID+111, @CGUID+110, 1155), -- Ethereal Priest -> Ethereal Priest
-(@CGUID+87, @CGUID+86, 1155), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+115, @CGUID+86, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+44, @CGUID+106, 1155), -- Ethereal Scavenger -> Ethereal Priest
 (@CGUID+80, @CGUID+106, 1155), -- Ethereal Sorcerer -> Ethereal Priest
 (@CGUID+127, @CGUID+106, 1155), -- Ethereal Darkcaster -> Ethereal Priest
@@ -199,9 +186,6 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+72, 18312), (@CGUID+72, 18315), -- Ethereal Spellbinder, Ethereal Theurgist
 (@CGUID+78, 18314), (@CGUID+78, 18331), -- Ethereal Sorcerer, Ethereal Darkcaster
 (@CGUID+81, 18313), (@CGUID+81, 18317), -- Ethereal Sorcerer, Ethereal Priest
-(@CGUID+83, 18311), (@CGUID+83, 18313), -- Ethereal Crypt Raider, Ethereal Sorcerer
-(@CGUID+86, 18313), (@CGUID+86, 18317), -- Ethereal Sorcerer, Ethereal Priest
-(@CGUID+87, 18313), (@CGUID+87, 18317), -- Ethereal Sorcerer, Ethereal Priest
 (@CGUID+88, 18313), (@CGUID+88, 18317), -- Ethereal Sorcerer, Ethereal Priest
 (@CGUID+96, 18314), (@CGUID+96, 18331), -- Nexus Stalker, Ethereal Darkcaster
 (@CGUID+97, 18314), (@CGUID+97, 18331), -- Nexus Stalker, Ethereal Darkcaster
@@ -215,9 +199,7 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+108, 18317), (@CGUID+108, 18331), -- Ethereal Priest, Ethereal Darkcaster
 (@CGUID+113, 18312), (@CGUID+113, 18317), -- Ethereal Spellbinder, Ethereal Priest
 (@CGUID+114, 18317), (@CGUID+114, 18331), -- Ethereal Priest, Ethereal Darkcaster
-(@CGUID+115, 18313), (@CGUID+115, 18317), -- Ethereal Sorcerer, Ethereal Priest
 (@CGUID+116, 18313), (@CGUID+116, 18317), -- Ethereal Sorcerer, Ethereal Priest
-(@CGUID+118, 18313), (@CGUID+118, 18317), -- Ethereal Sorcerer, Ethereal Priest
 (@CGUID+123, 18314), (@CGUID+123, 18331), -- Nexus Stalker, Ethereal Darkcaster
 (@CGUID+128, 18311), (@CGUID+128, 18313), (@CGUID+128, 18331), -- Ethereal Crypt Raider, Ethereal Sorcerer, Ethereal Darkcaster
 (@CGUID+134, 18313), (@CGUID+134, 18331); -- Ethereal Sorcerer, Ethereal Darkcaster
@@ -305,11 +287,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+80, 18313, 557, 3, -189.265, -218.946, -0.872109, 0.05236, 7200, 7200, 0, 0), -- Ethereal Sorcerer
 (@CGUID+81, 0, 557, 3, -255.713, -184.388, -0.868398, 6.10865, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+82, 18313, 557, 3, -215.436, -223.383, -0.872229, 0.069813, 7200, 7200, 0, 0), -- Ethereal Sorcerer
-(@CGUID+83, 0, 557, 3, -115.255, -199.527, -1.26219, 4.92183, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+83, 0, 557, 3, -115.255, -199.527, -1.26219, 4.92183, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+84, 18313, 557, 3, -35.0136, -229.5, -0.199558, 3.53609, 7200, 7200, 3, 1), -- Ethereal Sorcerer
 (@CGUID+85, 18317, 557, 3, -26.4751, -225.891, 0.180984, 3.77344, 7200, 7200, 3, 1), -- Ethereal Priest
-(@CGUID+86, 0, 557, 3, -149.215, -228.594, -0.737461, 6.24828, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+87, 0, 557, 3, -149.423, -216.702, -0.696873, 6.0912, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+86, 18313, 557, 3, -149.215, -228.594, -0.737461, 6.24828, 7200, 7200, 0, 0), -- Ethereal Sorcerer
+(@CGUID+87, 18313, 557, 3, -149.423, -216.702, -0.696873, 6.0912, 7200, 7200, 0, 0), -- Ethereal Sorcerer
 (@CGUID+88, 0, 557, 3, -95.4604, -239.609, 0.136311, 1.25664, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+89, 18313, 557, 3, -71.2226, -188.406, -1.73088, 1.53589, 7200, 7200, 0, 0), -- Ethereal Sorcerer
 (@CGUID+90, 0, 557, 3, -72.2145, -171.142, -0.872516, 1.27409, 7200, 7200, 0, 0), -- spawn_group_entry
@@ -337,10 +319,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+112, 18313, 557, 3, -30.6909, -218.11, -0.269148, 6.11504, 7200, 7200, 3, 1), -- Ethereal Sorcerer
 (@CGUID+113, 18317, 557, 3, -370.425, -37.1676, -0.875545, 4.45059, 7200, 7200, 0, 0), -- Ethereal Priest
 (@CGUID+114, 0, 557, 3, -220.07, -177.662, -0.980976, 0.867449, 7200, 7200, 4, 1), -- creature_spawn_entry
-(@CGUID+115, 0, 557, 3, -156.482, -222.924, -0.871843, 0, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+115, 18317, 557, 3, -156.482, -222.924, -0.871843, 0, 7200, 7200, 0, 0), -- Ethereal Priest
 (@CGUID+116, 0, 557, 3, -103.364, -240.135, 0.547421, 1.0821, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+117, 18317, 557, 3, -123.452, -211.153, -0.155386, 0.221979, 7200, 7200, 0, 2), -- Ethereal Priest
-(@CGUID+118, 0, 557, 3, -124.242, -214.734, -0.073988, 5.89521, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+117, 18317, 557, 3, -127.761, -212.834, -0.151458, 3.19395, 7200, 7200, 0, 0), -- Ethereal Priest
+(@CGUID+118, 0, 557, 3, -128.55, -208.637, -0.276038, 1.37881, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+119, 18317, 557, 3, -64.7507, -193.183, -1.75948, 1.69297, 7200, 7200, 0, 0), -- Ethereal Priest
 (@CGUID+120, 18317, 557, 3, -60.5291, -217.751, 0.150034, 2.32129, 7200, 7200, 0, 0), -- Ethereal Priest
 (@CGUID+121, 0, 557, 3, -40.632, -198.525, -0.521554, 2.24654, 7200, 7200, 3, 1), -- spawn_group_entry
@@ -398,7 +380,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+173, 19307, 557, 3, -372.748, -147.504, -0.979576, 1.17386, 7200, 7200, 5, 1), -- Nexus Terror
 -- RE-USE 174 - 175
 (@CGUID+176, 22927, 557, 2, 7.911558, -223.0178, -0.6344747, 4.223697, 7200, 7200, 0, 0), -- Ethereum Prisoner (Dungeon Energy Ball)
-(@CGUID+177, 22927, 557, 2, -235.7885, -13.0054, 17.13969, 5.323254, 7200, 7200, 0, 0); -- Ethereum Prisoner (Dungeon Energy Ball)
+(@CGUID+177, 22927, 557, 2, -235.7885, -13.0054, 17.13969, 5.323254, 7200, 7200, 0, 0), -- Ethereum Prisoner (Dungeon Energy Ball)
+-- More randomness for groups
+(@CGUID+178, 18317, 557, 3, -149.215, -228.594, -0.737461, 6.24828, 7200, 7200, 0, 0), -- Ethereal Priest
+(@CGUID+179, 18317, 557, 3, -149.423, -216.702, -0.696873, 6.0912, 7200, 7200, 0, 0), -- Ethereal Priest
+(@CGUID+180, 18313, 557, 3, -156.482, -222.924, -0.871843, 0, 7200, 7200, 0, 0), -- Ethereal Sorcerer
 
 -- ===========
 -- GAMEOBJECTS
@@ -516,19 +502,29 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+11, 'Mana Tombs - Group 011 - Ethereal Scavenger | Ethereal Priest | Ethereal Crypt Raider | Ethereal Sorcerer', 0, 0, 0, 1, 0),
 (@SGGUID+12, 'Mana Tombs - Group 012 - Ethereal Priest | Ethereal Sorcerer', 0, 0, 0, 1, 0),
 (@SGGUID+13, 'Mana Tombs - Group 013 - Ethereal Priest | Ethereal Sorcerer (2)', 0, 0, 0, 1, 0),
-
 (@SGGUID+14, 'Mana Tombs - Group 014 - Mana Leech (5)', 0, 0, 0, 1, 0),
 (@SGGUID+15, 'Mana Tombs - Group 015 - Mana Leech (3)', 0, 0, 0, 1, 0),
-
 (@SGGUID+16, 'Mana Tombs - Group 016 - Ethereal Priest | Ethereal Priest/Ethereal Sorcerer - Patrol 003', 0, 0, 0, 1, 0),
+(@SGGUID+17, 'Mana Tombs - Group 017 - Ethereal Sorcerer/Ethereal Crypt Raider | Ethereal Priest (2)', 0, 0, 0, 1, 0),
+-- skip this group for now
+-- needs more research
+-- (@SGGUID+18, 'Mana Tombs - Group 018 - Ethereal Sorcerer/Ethereal Crypt Scavenger/Ethereal Priest', 0, 0, 0, 1, 0),
+-- (@SGGUID+19, 'Mana Tombs - Group 018 - Ethereal Sorcerer/Ethereal Crypt Scavenger/Ethereal Priest', 0, 0, 0, 1, 0),
+
+(@SGGUID+20, 'Mana Tombs - Group 019 - Ethereal Priest | Ethereal Priest/Ethereal Sorcerer - Patrol 004', 0, 0, 0, 1, 0),
+-- Group 20 has 2 possible variations
+(@SGGUID+21, 'Mana Tombs - Group 020 - Ethereal Sorcerer | Ethereal Priest | Ethereal Sorcerer', 0, 0, @SGGUID+1, 1, 0),
+(@SGGUID+22, 'Mana Tombs - Group 020 - Ethereal Priest | Ethereal Sorcerer | Ethereal Priest', 0, 0, @SGGUID+2, 1, 0),
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+2, 18309, 0, 0, 0), (@SGGUID+2, 18311, 0, 0, 0), -- Ethereal Scavenger, Ethereal Crypt Raider
 (@SGGUID+5, 18309, 0, 0, 0), (@SGGUID+5, 18311, 0, 0, 0), -- Ethereal Scavenger, Ethereal Crypt Raider
 (@SGGUID+6, 18309, 0, 0, 0), (@SGGUID+6, 18311, 0, 0, 0), -- Ethereal Scavenger, Ethereal Crypt Raider
 (@SGGUID+7, 18309, 0, 0, 0), (@SGGUID+7, 18311, 0, 0, 0), -- Ethereal Scavenger, Ethereal Crypt Raider
-(@SGGUID+10, 18311, 0, 0, 0), (@SGGUID+10, 18311, 0, 0, 0), -- Ethereal Sorcerer, Ethereal Crypt Raider
-(@SGGUID+12, 18311, 1, 2, 0), (@SGGUID+12, 18317, 1, 2, 0), -- Ethereal Sorcerer, Ethereal Priest
+(@SGGUID+10, 18313, 0, 0, 0), (@SGGUID+10, 18311, 0, 0, 0), -- Ethereal Sorcerer, Ethereal Crypt Raider
+(@SGGUID+12, 18313, 1, 2, 0), (@SGGUID+12, 18317, 1, 2, 0), -- Ethereal Sorcerer, Ethereal Priest
+
+(@SGGUID+17, 18313, 0, 0, 0), (@SGGUID+17, 18311, 0, 0, 0), -- Ethereal Sorcerer, Ethereal Crypt Raider
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+41, 0, 0), -- Ethereal Scavenger
@@ -583,24 +579,42 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+14, @CGUID+157, -1, 0), -- Mana Leech
 (@SGGUID+14, @CGUID+158, -1, 0), -- Mana Leech
 
-(@SGGUID+14, @CGUID+159, -1, 0), -- Mana Leech
-(@SGGUID+14, @CGUID+160, -1, 0), -- Mana Leech
-(@SGGUID+14, @CGUID+161, -1, 0), -- Mana Leech
+(@SGGUID+15, @CGUID+159, -1, 0), -- Mana Leech
+(@SGGUID+15, @CGUID+160, -1, 0), -- Mana Leech
+(@SGGUID+15, @CGUID+161, -1, 0), -- Mana Leech
 
-(@SGGUID+15, @CGUID+120, 0, 0), -- Ethereal Priest
-(@SGGUID+15, @CGUID+91, 1, 0), -- spawn_group_entry
+(@SGGUID+16, @CGUID+120, 0, 0), -- Ethereal Priest
+(@SGGUID+16, @CGUID+91, 1, 0), -- spawn_group_entry
+
+(@SGGUID+17, @CGUID+83, 0, 0), -- spawn_group_entry
+(@SGGUID+17, @CGUID+110, 1, 0), -- Ethereal Priest
+(@SGGUID+17, @CGUID+111, 2, 0), -- Ethereal Priest
+
+--  @CGUID+88, @CGUID+45, 1155), -- creature_spawn_entry -> creature_spawn_entry
+-- (@CGUID+116, @CGUID+45, 1155), -- creature_spawn_entry -> creature_spawn_entry
+
+(@SGGUID+20, @CGUID+117, 0, 0), -- Ethereal Priest
+(@SGGUID+20, @CGUID+118, 1, 0), -- spawn_group_entry
+
+(@SGGUID+21, @CGUID+86, 0, 0), -- Ethereal Sorcerer
+(@SGGUID+21, @CGUID+87, 1, 0), -- Ethereal Sorcerer
+(@SGGUID+21, @CGUID+115, 2, 0), -- Ethereal Priest
+
+(@SGGUID+22, @CGUID+178, 0, 0), -- Ethereal Priest
+(@SGGUID+22, @CGUID+179, 1, 0), -- Ethereal Priest
+(@SGGUID+22, @CGUID+180, 2, 0), -- Ethereal Sorcerer
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+2, 2, 3, 0, @SGGUID+2, 4, 'Mana Tombs - Group 002 - Ethereal Scavenger | Ethereal Crypt Raider - Patrol 001'),
 (@SGGUID+8, 2, 3, 0, @SGGUID+8, 2, 'Mana Tombs - Group 008 - Ethereal Scavenger | Ethereal Crypt Raider - Patrol 002'),
-
-(@SGGUID+15, 2, 3, 0, @SGGUID+15, 4, 'Mana Tombs - Group 016 - Ethereal Priest | Ethereal Priest/Ethereal Sorcerer - Patrol 003'),
+(@SGGUID+16, 2, 3, 0, @SGGUID+16, 4, 'Mana Tombs - Group 016 - Ethereal Priest | Ethereal Priest/Ethereal Sorcerer - Patrol 003'),
+(@SGGUID+20, 2, 3, 0, @SGGUID+20, 4, 'Mana Tombs - Group 019 - Ethereal Priest | Ethereal Priest/Ethereal Sorcerer - Patrol 004'),
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+2,'Mana Tombs - Group 002 - Ethereal Scavenger | Ethereal Crypt Raider - Patrol 001'),
 (@SGGUID+8,'Mana Tombs - Group 008 - Ethereal Scavenger | Ethereal Crypt Raider - Patrol 002'),
-
-(@SGGUID+15,'Mana Tombs - Group 016 - Ethereal Priest | Ethereal Priest/Ethereal Sorcerer - Patrol 003'),
+(@SGGUID+16,'Mana Tombs - Group 016 - Ethereal Priest | Ethereal Priest/Ethereal Sorcerer - Patrol 003'),
+(@SGGUID+20,'Mana Tombs - Group 019 - Ethereal Priest | Ethereal Priest/Ethereal Sorcerer - Patrol 004'),
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+2, 1, -67.99796, -31.6907, -0.95160854, 100, 0, 0),
@@ -622,9 +636,14 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+8, 9, -57.606106,-82.09547,-2.1152492, 100, 0, 0),
 (@SGGUID+8, 10, -68.259636,-79.06529,-2.1130235, 100, 0, 0),
 
-(@SGGUID+15, 1, -73.87033,-218.72505,-0.17712496, 100, 0, 0),
-(@SGGUID+15, 2, -49.952377,-221.03786,-0.064427994, 100, 0, 0),
-(@SGGUID+15, 3, -32.762417,-223.56038,-0.17517364, 100, 0, 0),
+(@SGGUID+16, 1, -73.87033,-218.72505,-0.17712496, 100, 0, 0),
+(@SGGUID+16, 2, -49.952377,-221.03786,-0.064427994, 100, 0, 0),
+(@SGGUID+16, 3, -32.762417,-223.56038,-0.17517364, 100, 0, 0),
+
+(@SGGUID+20, 1, -143.3705,-220.97308,-0.5329385, 100, 0, 0),
+(@SGGUID+20, 2, -136.36037,-214.06665,-0.44854826, 100, 0, 0),
+(@SGGUID+20, 3, -118.24131,-209.97723,-0.6744533, 100, 0, 0),
+(@SGGUID+20, 4, -111.1761,-219.2728,-0.15511577, 100, 0, 0),
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+9, @SGGUID+4),
@@ -632,6 +651,17 @@ INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+9, @SGGUID+6),
 (@SGGUID+9, @SGGUID+7),
 (@SGGUID+9, @SGGUID+8);
+
+
+DELETE FROM worldstate_name WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+2;
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
+(@SGGUID+1, 'Mana Tombs - Group 020');
+
+
+DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @SGGUID+1 AND @SGGUID+2;
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@SGGUID+1, 42, @SGGUID+1, 1, 0, 0, 0, 'Mana Tombs - Group 020 -  Type 1'),
+(@SGGUID+2, 42, @SGGUID+1, 1, 1, 0, 0, 'Mana Tombs - Group 020 -  Type 2');
 
 -- =======
 -- POOLING
