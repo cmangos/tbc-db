@@ -100,3 +100,26 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1842901 WHERE `entry` = 18429;
 UPDATE `creature_template` SET `SpellList` = 2025201 WHERE `entry` = 20252;
+
+
+-- Ethereal Priest
+DELETE FROM `creature_template_spells` WHERE `entry` = 18317;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20257;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1831701, 2025701);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1831701, 'Mana Tombs - Ethereal Priest - Normal', 0, 0),
+(2025701, 'Mana Tombs - Ethereal Priest - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1831701, 2025701);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1831701, 1, 34945, 0, -1, 206, 0, 100, 0, 2000, 12000, 6000, 18000, 'Ethereal Priest - Heal - Missing 25% including self'),
+(1831701, 2, 17139, 0, -1, 5, 0, 100, 0, 6000, 22000, 6000, 22000, 'Ethereal Priest - Power Word: Shield - friendly missing buff'),
+(1831701, 3, 34944, 0, -1, 2, 0, 100, 0, 4000, 17000, 11000, 25000, 'Ethereal Priest - Holy Nova - self'),
+
+(2025701, 1, 22883, 0, -1, 206, 0, 100, 0, 2000, 12000, 6000, 18000, 'Ethereal Priest - Heal - Missing 25% including self'),
+(2025701, 2, 35944, 0, -1, 5, 0, 100, 0, 6000, 22000, 6000, 22000, 'Ethereal Priest - Power Word: Shield - friendly missing buff'),
+(2025701, 3, 37669, 0, -1, 2, 0, 100, 0, 4000, 17000, 11000, 25000, 'Ethereal Priest - Holy Nova - self');
+
+UPDATE `creature_template` SET `SpellList` = 1831701 WHERE `entry` = 18317;
+UPDATE `creature_template` SET `SpellList` = 2025701 WHERE `entry` = 20257;
