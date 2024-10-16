@@ -144,3 +144,50 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1833101 WHERE `entry` = 18331;
 UPDATE `creature_template` SET `SpellList` = 2025601 WHERE `entry` = 20256;
+
+
+-- Mana Leech
+DELETE FROM `creature_template_spells` WHERE `entry` = 19306;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20263;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1930601, 2026301);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1930601, 'Mana Tombs - Mana Leech - Normal', 0, 0),
+(2026301, 'Mana Tombs - Mana Leech - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1930601, 2026301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1930601, 1, 25602, 0, -1, 130, 0, 100, 0, 12000, 26000, 12000, 26000, 'Mana Leech - Faerie Fire - top aggro aura not present'),
+(1930601, 2, 15785, 0, -1, 105, 0, 100, 0, 12000, 25000, 12000, 25000, 'Mana Leech - Mana Burn - random mana user'),
+
+(2026301, 1, 25602, 0, -1, 130, 0, 100, 0, 12000, 26000, 12000, 26000, 'Mana Leech - Faerie Fire - top aggro aura not present'),
+(2026301, 2, 15785, 0, -1, 105, 0, 100, 0, 12000, 25000, 12000, 25000, 'Mana Leech - Mana Burn - random mana user');
+
+UPDATE `creature_template` SET `SpellList` = 1930601 WHERE `entry` = 19306;
+UPDATE `creature_template` SET `SpellList` = 2026301 WHERE `entry` = 20263;
+
+
+-- Nexus Terror
+DELETE FROM `creature_template_spells` WHERE `entry` = 19307;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20265;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1930701, 2026501);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1930701, 'Mana Tombs - Nexus Terror - Normal', 0, 0),
+(2026501, 'Mana Tombs - Nexus Terror - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1930701, 2026501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1930701, 1, 34925, 0, -1, 131, 0, 100, 0, 11000, 29000, 11000, 29000, 'Nexus Terror - Curse of Impotence Random Player Mana User aura not present'),
+(1930701, 2, 34322, 0, -1, 2, 0, 100, 0, 12000, 21000, 14000, 25000, 'Nexus Terror - Psychic Scream - self'),
+(1930701, 3, 38065, 0, -1, 1, 0, 100, 0, 8000, 17000, 15000, 25000, 'Nexus Terror - Death Coil - current'),
+(1930701, 4, 34922, 0, -1, 100, 0, 100, 0, 3000, 22000, 11000, 30000, 'Nexus Terror - Shadows Embrace - random'),
+
+(2026501, 1, 34925, 0, -1, 131, 0, 100, 0, 11000, 29000, 11000, 29000, 'Nexus Terror - Curse of Impotence Random Player Mana User aura not present'),
+(2026501, 2, 34322, 0, -1, 2, 0, 100, 0, 12000, 21000, 14000, 25000, 'Nexus Terror - Psychic Scream - self'),
+(2026501, 3, 38065, 0, -1, 1, 0, 100, 0, 8000, 17000, 15000, 25000, 'Nexus Terror - Death Coil - current'),
+(2026501, 4, 34922, 0, -1, 100, 0, 100, 0, 3000, 22000, 11000, 30000, 'Nexus Terror - Shadows Embrace - random');
+
+UPDATE `creature_template` SET `SpellList` = 1930701 WHERE `entry` = 19307;
+UPDATE `creature_template` SET `SpellList` = 2026501 WHERE `entry` = 20265;
+
