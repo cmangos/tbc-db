@@ -123,3 +123,24 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1831701 WHERE `entry` = 18317;
 UPDATE `creature_template` SET `SpellList` = 2025701 WHERE `entry` = 20257;
+
+
+-- Ethereal Darkcaster
+DELETE FROM `creature_template_spells` WHERE `entry` = 18331;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20256;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1833101, 2025601);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1833101, 'Mana Tombs - Ethereal Darkcaster - Normal', 0, 0),
+(2025601, 'Mana Tombs - Ethereal Darkcaster - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1833101, 2025701);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1833101, 1, 34930, 0, -1, 105, 0, 100, 0, 9000, 22000, 12000, 23000, 'Ethereal Darkcaster - Mana Burn - random mana user'),
+(1833101, 2, 34942, 0, -1, 130, 0, 100, 0, 6000, 18000, 6000, 18000, 'Ethereal Darkcaster - Shadow Word Pain - top aggro aura not present'),
+
+(2025601, 1, 34931, 0, -1, 105, 0, 100, 0, 9000, 22000, 12000, 23000, 'Ethereal Darkcaster - Mana Burn - random mana user'),
+(2025601, 2, 34942, 0, -1, 130, 0, 100, 0, 6000, 18000, 6000, 18000, 'Ethereal Darkcaster - Shadow Word Pain - top aggro aura not present');
+
+UPDATE `creature_template` SET `SpellList` = 1833101 WHERE `entry` = 18331;
+UPDATE `creature_template` SET `SpellList` = 2025601 WHERE `entry` = 20256;

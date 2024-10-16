@@ -21584,13 +21584,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1831506','18315','0','0','100','1029','3000','9000','7700','14400','0','0','11','34920','1','0','0','0','0','0','0','0','0','0','Ethereal Theurgist (Heroic) - Cast Strike'),
 -- Ethereal Priest 18317 - spell_list
 ('1831701','18317','4','0','15','0','0','0','0','0','0','0','54','0','0','12002','0','0','0','0','0','0','0','0','Ethereal Priest - Random Say on Aggro'),
--- Ethereal Darkcaster 18331 (4.3.4 Official Data - Normal/Heroic)
+-- Ethereal Darkcaster 18331 - spell_list
 ('1833101','18331','1','0','100','0','1000','1000','0','0','0','0','11','16592','0','32','0','0','0','0','0','0','0','0','Ethereal Darkcaster - Cast Shadowform OOC'),
 ('1833102','18331','4','0','15','0','0','0','0','0','0','0','54','0','0','12002','0','0','0','0','0','0','0','0','Ethereal Darkcaster - Random Say on Aggro'),
-('1833103','18331','4','0','100','0','0','0','0','0','0','0','11','38061','0','1','0','0','0','0','0','0','0','0','Ethereal Darkcaster - Cast Vampiric Aura on Aggro'),
-('1833104','18331','0','0','100','1025','4300','8400','8400','18100','0','0','11','34942','1','0','0','0','0','0','0','0','0','0','Ethereal Darkcaster - Cast Shadow Word Pain'),
-('1833105','18331','0','0','100','1027','5600','10800','15600','25300','0','0','11','34930','16','512','0','0','0','0','0','0','0','0','Ethereal Darkcaster (Normal) - Cast Mana Burn on Random Player Mana User'),
-('1833106','18331','0','0','100','1029','5600','10800','15600','25300','0','0','11','34931','16','512','0','0','0','0','0','0','0','0','Ethereal Darkcaster (Heroic) - Cast Mana Burn on Random Player Mana User'),
+('1833103','18331','11','0','100','0','0','0','0','0','0','0','11','38061','0','1','0','0','0','0','0','0','0','0','Ethereal Darkcaster - Cast Vampiric Aura on Spawn'),
 -- Pandemonius (18341) - boss_pandemonius
 -- Tavarok 18343 - spell_list
 -- Nexus-Prince Shaffar (18344) - boss_nexusprince_shaffar
