@@ -65,9 +65,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
-REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(18430, 557, 18344, 4097, 0), -- Ethereal Apprentice -> Nexus-Prince Shaffar
-(18431, 557, 18344, 1159, 0); -- Ethereal Beacon -> Nexus-Prince Shaffar
+-- REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
 -- INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 
@@ -212,16 +210,16 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+138, 18431, 557, 3, -179.433, 9.06982, 16.7108, 5.13499, 7200, 7200, 3, 1), -- Ethereal Beacon
 (@CGUID+139, 18431, 557, 3, -187.271, 15.3965, 16.7227, 1.21272, 7200, 7200, 3, 1), -- Ethereal Beacon
 (@CGUID+140, 18431, 557, 3, -188.619, 5.124, 16.771, 3.24971, 7200, 7200, 3, 1), -- Ethereal Beacon
-(@CGUID+141, 19306, 557, 3, -227.501, -10.1562, 16.8554, 0.823531, 7200, 7200, 3, 1), -- Mana Leech
-(@CGUID+142, 19306, 557, 3, -223.966, -6.50154, 16.8064, 0, 7200, 7200, 3, 1), -- Mana Leech
-(@CGUID+143, 19306, 557, 3, -220.332, -9.70753, 16.7726, 3.01942, 7200, 7200, 3, 1), -- Mana Leech
-(@CGUID+144, 19306, 557, 3, -218.495, -4.29796, 16.7518, 5.52079, 7200, 7200, 3, 1), -- Mana Leech
-(@CGUID+145, 19306, 557, 3, -221.758, -16.3575, 17.2734, 5.2234, 7200, 7200, 3, 1), -- Mana Leech
-(@CGUID+146, 19306, 557, 3, -227.838, 26.3206, 17.1758, 1.49423, 7200, 7200, 3, 1), -- Mana Leech
-(@CGUID+147, 19306, 557, 3, -223.764, 30.85, 16.8465, 0, 7200, 7200, 3, 1), -- Mana Leech
-(@CGUID+148, 19306, 557, 3, -221.333, 26.8689, 16.7979, 1.18045, 7200, 7200, 3, 1), -- Mana Leech
-(@CGUID+149, 19306, 557, 3, -219.381, 32.7849, 16.8656, 6.00393, 7200, 7200, 3, 1), -- Mana Leech
-(@CGUID+150, 19306, 557, 3, -222.51, 19.1776, 17.0725, 4.83187, 7200, 7200, 3, 1), -- Mana Leech
+(@CGUID+141, 19306, 557, 3, -227.501, -10.1562, 16.8554, 0.823531, 7200, 7200, 2, 1), -- Mana Leech
+(@CGUID+142, 19306, 557, 3, -223.966, -6.50154, 16.8064, 0, 7200, 7200, 2, 1), -- Mana Leech
+(@CGUID+143, 19306, 557, 3, -220.332, -9.70753, 16.7726, 3.01942, 7200, 7200, 2, 1), -- Mana Leech
+(@CGUID+144, 19306, 557, 3, -218.495, -4.29796, 16.7518, 5.52079, 7200, 7200, 2, 1), -- Mana Leech
+(@CGUID+145, 19306, 557, 3, -221.758, -16.3575, 17.2734, 5.2234, 7200, 7200, 2, 1), -- Mana Leech
+(@CGUID+146, 19306, 557, 3, -227.838, 26.3206, 17.1758, 1.49423, 7200, 7200, 2, 1), -- Mana Leech
+(@CGUID+147, 19306, 557, 3, -223.764, 30.85, 16.8465, 0, 7200, 7200, 2, 1), -- Mana Leech
+(@CGUID+148, 19306, 557, 3, -221.333, 26.8689, 16.7979, 1.18045, 7200, 7200, 2, 1), -- Mana Leech
+(@CGUID+149, 19306, 557, 3, -219.381, 32.7849, 16.8656, 6.00393, 7200, 7200, 2, 1), -- Mana Leech
+(@CGUID+150, 19306, 557, 3, -222.51, 19.1776, 17.0725, 4.83187, 7200, 7200, 2, 1), -- Mana Leech
 (@CGUID+151, 19306, 557, 3, -236.24, -179.08, -0.870416, 3.03944, 7200, 7200, 3, 1), -- Mana Leech
 (@CGUID+152, 19306, 557, 3, -239.488, -174.428, -0.870416, 6.08461, 7200, 7200, 3, 1), -- Mana Leech
 (@CGUID+153, 19306, 557, 3, -232.467, -172.05, -0.870417, 5.10086, 7200, 7200, 3, 1), -- Mana Leech
@@ -427,7 +425,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+46, 'Mana Tombs - Group 040 - Ethereal Spellbinder/Ethereal Theurgist', 0, 0, 0, 1, 0),
 (@SGGUID+47, 'Mana Tombs - Group 041 - Ethereal Spellbinder (2) | Ethereal Theurgist (2)', 0, 0, 0, 1, 0),
 (@SGGUID+48, 'Mana Tombs - Group 042 - Mana Leech (5)', 0, 0, 0, 1, 0),
-(@SGGUID+49, 'Mana Tombs - Group 043 - Mana Leech (5)', 0, 0, 0, 1, 0);
+(@SGGUID+49, 'Mana Tombs - Group 043 - Mana Leech (5)', 0, 0, 0, 1, 0),
+-- Patrols in Endboss Room - when boss gets pulled, all npc in room get pulled too
+(@SGGUID+50, 'Mana Tombs - Group 044 - Nexus Terror', 0, 0, 0, 1, 0),
+(@SGGUID+51, 'Mana Tombs - Group 045 - Nexus Terror', 0, 0, 0, 1, 0),
+(@SGGUID+52, 'Mana Tombs - Group 046 - Nexus-Prince Shaffar', 0, 0, @SGGUID+13, 3, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+2, 18309, 0, 0, 0), (@SGGUID+2, 18311, 0, 0, 0), -- Ethereal Scavenger, Ethereal Crypt Raider
@@ -638,8 +640,15 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+49, @CGUID+147, -1, 0), -- Mana Leech
 (@SGGUID+49, @CGUID+148, -1, 0), -- Mana Leech
 (@SGGUID+49, @CGUID+149, -1, 0), -- Mana Leech
-(@SGGUID+49, @CGUID+150, -1, 0); -- Mana Leech
+(@SGGUID+49, @CGUID+150, -1, 0), -- Mana Leech
 
+(@SGGUID+50, @CGUID+169, -1, 0), -- Nexus Terror
+(@SGGUID+51, @CGUID+170, -1, 0), -- Nexus Terror
+
+(@SGGUID+52, @CGUID+137, 0, 0), -- Nexus-Prince Shaffar
+@SGGUID+52, @CGUID+138, 1, 0), -- Ethereal Beacon
+@SGGUID+52, @CGUID+139, 2, 0), -- Ethereal Beacon
+@SGGUID+52, @CGUID+140, 3, 0); -- Ethereal Beacon
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+2, 2, 3, 0, @SGGUID+2, 4, 'Mana Tombs - Group 002 - Ethereal Scavenger | Ethereal Crypt Raider - Patrol 001'),
@@ -649,7 +658,7 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+25, 2, 3, 0, @SGGUID+25, 4, 'Mana Tombs - Group 023 - Ethereal Darkcaster | Ethereal Crypt Raider/Ethereal Sorcerer/Ethereal Darkcaster - Patrol 005'),
 (@SGGUID+32, 3, 4, 0, @SGGUID+32, 4, 'Mana Tombs - Group 029 - Ethereal Darkcaster/Ethereal Priest/Ethereal Sorcerer | Ethereal Stalker - Patrol 006'),
 (@SGGUID+34, 2, 3, 0, @SGGUID+34, 2, 'Mana Tombs - Group 031 - Nexus Stalker | Nexus Stalker/Ethereal Darkcaster - Patrol 007'),
-(@SGGUID+45, 2, 3, 0, @SGGUID+45, 2, 'Mana Tombs - Group 039 - Ethereal Spellbinder | Ethereal Theurgist/Ethereal Spellbinder - Patrol 008');
+(@SGGUID+45, 2, 3, 0, @SGGUID+45, 4, 'Mana Tombs - Group 039 - Ethereal Spellbinder | Ethereal Theurgist/Ethereal Spellbinder - Patrol 008');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+2,'Mana Tombs - Group 002 - Ethereal Scavenger | Ethereal Crypt Raider - Patrol 001'),
@@ -669,7 +678,6 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+2, 5, -53.91151, -2.550814, -0.9489452, 100, 0, 0),
 (@SGGUID+2, 6, -46.68223, 0.860986, -0.954333, 100, 0, 0),
 (@SGGUID+2, 7, -36.528965, 1.502573, -0.9543326, 100, 0, 0),
-
 (@SGGUID+8, 1, -80.90334,-84.25581,-1.9863478, 100, 0, 0),
 (@SGGUID+8, 2, -87.42079,-91.58448,-1.9592229, 100, 0, 0),
 (@SGGUID+8, 3, -92.177826,-103.64098,-0.74659944, 100, 0, 0),
@@ -680,26 +688,21 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+8, 8, -47.81088,-89.45784,-2.09733, 100, 0, 0),
 (@SGGUID+8, 9, -57.606106,-82.09547,-2.1152492, 100, 0, 0),
 (@SGGUID+8, 10, -68.259636,-79.06529,-2.1130235, 100, 0, 0),
-
 (@SGGUID+16, 1, -73.87033,-218.72505,-0.17712496, 100, 0, 0),
 (@SGGUID+16, 2, -49.952377,-221.03786,-0.064427994, 100, 0, 0),
 (@SGGUID+16, 3, -32.762417,-223.56038,-0.17517364, 100, 0, 0),
-
 (@SGGUID+20, 1, -143.3705,-220.97308,-0.5329385, 100, 0, 0),
 (@SGGUID+20, 2, -136.36037,-214.06665,-0.44854826, 100, 0, 0),
 (@SGGUID+20, 3, -118.24131,-209.97723,-0.6744533, 100, 0, 0),
 (@SGGUID+20, 4, -111.1761,-219.2728,-0.15511577, 100, 0, 0),
-
 (@SGGUID+25, 1, -233.01859,-196.29713,-0.9522191, 100, 0, 0),
 (@SGGUID+25, 2, -216.36972,-203.34883,0.37871146, 100, 0, 0),
 (@SGGUID+25, 3, -208.29887,-210.52136,0.94156444, 100, 0, 0),
 (@SGGUID+25, 4, -205.8458,-226.60881,-0.95540786, 100, 0, 0),
 (@SGGUID+25, 5, -209.60197,-245.24097,-0.9562541, 100, 0, 0),
-
 (@SGGUID+32, 1, -373.33087,-235.899,-0.9565815, 100, 0, 0),
 (@SGGUID+32, 2, -373.39856,-215.54378,-0.95794463, 100, 0, 0),
 (@SGGUID+32, 3, -373.551,-189.40958,-1.0002968, 100, 0, 0),
-
 (@SGGUID+34, 1,-378.27777,-155.3499,-0.9587637, 100, 0, 0),
 (@SGGUID+34, 2,-384.86395,-163.05305,-0.9499411, 100, 0, 0),
 (@SGGUID+34, 3,-383.9432,-171.95404,-0.9587667, 100, 0, 0),
@@ -707,17 +710,28 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+34, 5,-365.67285,-175.00563,-0.958769, 100, 0, 0),
 (@SGGUID+34, 6,-360.13977,-165.7273,-0.99950916, 100, 0, 0),
 (@SGGUID+34, 7,-363.37717,-158.51936,-0.95876485, 100, 0, 0),
-(@SGGUID+34, 8,-370.46817,-152.6236,-0.9587616, 100, 0, 0);
+(@SGGUID+34, 8,-370.46817,-152.6236,-0.9587616, 100, 0, 0),
+(@SGGUID+45, 1, -320.11002,7.972475,16.793024, 100, 0, 0),
+(@SGGUID+45, 2, -299.9862,5.538398,16.78952, 100, 0, 0),
+(@SGGUID+45, 3, -276.80426,5.122873,16.787043, 100, 0, 0),
+(@SGGUID+45, 4, -260.95892,7.860175,16.785763, 100, 0, 0);
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+9, @SGGUID+4),
 (@SGGUID+9, @SGGUID+5),
 (@SGGUID+9, @SGGUID+6),
 (@SGGUID+9, @SGGUID+7),
-(@SGGUID+9, @SGGUID+8);
+(@SGGUID+9, @SGGUID+8),
+-- Endboss
+(@SGGUID+52, @SGGUID+45),
+(@SGGUID+52, @SGGUID+46),
+(@SGGUID+52, @SGGUID+47),
+(@SGGUID+52, @SGGUID+48),
+(@SGGUID+52, @SGGUID+49),
+(@SGGUID+52, @SGGUID+50),
+(@SGGUID+52, @SGGUID+51);
 
-
-DELETE FROM worldstate_name WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+5;
+DELETE FROM worldstate_name WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+6;
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 (@SGGUID+1, 'Mana Tombs - Group 018'),
 (@SGGUID+2, 'Mana Tombs - Group 020'),
@@ -726,7 +740,7 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@SGGUID+5, 'Mana Tombs - Group 034'),
 (@SGGUID+6, 'Mana Tombs - Group 035');
 
-DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @SGGUID+1 AND @SGGUID+12;
+DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @SGGUID+1 AND @SGGUID+13;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, @SGGUID+1, 1, 0, 0, 0, 'Mana Tombs - Group 018 -  Type 1'),
 (@SGGUID+2, 42, @SGGUID+1, 1, 1, 0, 0, 'Mana Tombs - Group 018 -  Type 2'),
@@ -739,7 +753,8 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+9, 42, @SGGUID+5, 1, 0, 0, 0, 'Mana Tombs - Group 034 -  Type 1'),
 (@SGGUID+10, 42, @SGGUID+5, 1, 1, 0, 0, 'Mana Tombs - Group 034 -  Type 2'),
 (@SGGUID+11, 42, @SGGUID+6, 1, 0, 0, 0, 'Mana Tombs - Group 035 -  Type 1'),
-(@SGGUID+12, 42, @SGGUID+6, 1, 1, 0, 0, 'Mana Tombs - Group 035 -  Type 2');
+(@SGGUID+12, 42, @SGGUID+6, 1, 1, 0, 0, 'Mana Tombs - Group 035 -  Type 2'),
+(@SGGUID+13, 42, 4606, 1, 0, 0, 0, 'Sethekk Halls - Nexus-Prince Shaffar Dead');
 
 -- =======
 -- POOLING
