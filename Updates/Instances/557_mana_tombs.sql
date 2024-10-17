@@ -1,7 +1,7 @@
 /* DBScriptData
 DBName: Auchindoun - Mana-Tombs
 DBScriptName: -
-DB%Complete: 85
+DB%Complete: 100
 DBComment:
 EndDBScriptData */
 
@@ -646,9 +646,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+51, @CGUID+170, -1, 0), -- Nexus Terror
 
 (@SGGUID+52, @CGUID+137, 0, 0), -- Nexus-Prince Shaffar
-@SGGUID+52, @CGUID+138, 1, 0), -- Ethereal Beacon
-@SGGUID+52, @CGUID+139, 2, 0), -- Ethereal Beacon
-@SGGUID+52, @CGUID+140, 3, 0); -- Ethereal Beacon
+(@SGGUID+52, @CGUID+138, 1, 0), -- Ethereal Beacon
+(@SGGUID+52, @CGUID+139, 2, 0), -- Ethereal Beacon
+(@SGGUID+52, @CGUID+140, 3, 0); -- Ethereal Beacon
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+2, 2, 3, 0, @SGGUID+2, 4, 'Mana Tombs - Group 002 - Ethereal Scavenger | Ethereal Crypt Raider - Patrol 001'),
