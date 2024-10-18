@@ -245,8 +245,8 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1831401, 1, 34940, 0, -1, 1, 0, 100, 0, 6000, 17000, 12000, 23000, 'Nexus Stalker - Gouge - current'),
 (1831401, 2, 33925, 0, -1, 100, 0, 100, 0, 5000, 16000, 11000, 22000, 'Nexus Stalker - Phantom Strike - random player'),
 
-(1831401, 1, 34940, 0, -1, 1, 0, 100, 0, 6000, 17000, 12000, 23000, 'Nexus Stalker - Gouge - current'),
-(1831401, 2, 39332, 0, -1, 100, 0, 100, 0, 5000, 16000, 11000, 22000, 'Nexus Stalker - Phantom Strike - random player');
+(2026401, 1, 34940, 0, -1, 1, 0, 100, 0, 6000, 17000, 12000, 23000, 'Nexus Stalker - Gouge - current'),
+(2026401, 2, 39332, 0, -1, 100, 0, 100, 0, 5000, 16000, 11000, 22000, 'Nexus Stalker - Phantom Strike - random player');
 
 UPDATE `creature_template` SET `SpellList` = 1831401 WHERE `entry` = 18314;
 UPDATE `creature_template` SET `SpellList` = 2026401 WHERE `entry` = 20264;
@@ -266,9 +266,9 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1831501, 2, 17145, 0, -1, 2, 0, 100, 0, 6000, 20000, 12000, 28000, 'Ethereal Theurgist - Blast Wave - self'),
 (1831501, 3, 15580, 0, -1, 1, 0, 100, 0, 5000, 12000, 8000, 13000, 'Ethereal Theurgist - Strike - current'),
 
-(1831501, 1, 13323, 0, -1, 101, 0, 100, 0, 12000, 22000, 15000, 30000, 'Ethereal Theurgist - Polymorph - random player non tank'),
-(1831501, 2, 38064, 0, -1, 2, 0, 100, 0, 6000, 20000, 12000, 28000, 'Ethereal Theurgist - Blast Wave - self'),
-(1831501, 3, 34920, 0, -1, 1, 0, 100, 0, 5000, 12000, 8000, 13000, 'Ethereal Theurgist - Strike - current');
+(2026101, 1, 13323, 0, -1, 101, 0, 100, 0, 12000, 22000, 15000, 30000, 'Ethereal Theurgist - Polymorph - random player non tank'),
+(2026101, 2, 38064, 0, -1, 2, 0, 100, 0, 6000, 20000, 12000, 28000, 'Ethereal Theurgist - Blast Wave - self'),
+(2026101, 3, 34920, 0, -1, 1, 0, 100, 0, 5000, 12000, 8000, 13000, 'Ethereal Theurgist - Strike - current');
 
 UPDATE `creature_template` SET `SpellList` = 1831501 WHERE `entry` = 18315;
 UPDATE `creature_template` SET `SpellList` = 2026101 WHERE `entry` = 20261;
