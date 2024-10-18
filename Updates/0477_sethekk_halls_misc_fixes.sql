@@ -422,4 +422,4 @@ UPDATE creature_template SET GossipMenuId = 7867 WHERE entry = 18956;
 
 -- Confirmed from ptr: player dont need to have Quest to free Lakka
 UPDATE gossip_menu_option SET condition_id = '0' WHERE menu_id = '7868' AND id = '0';
-DELETE FROM condition WHERE condition_entry = 1013;
+DELETE FROM conditions WHERE condition_entry = 1013;
