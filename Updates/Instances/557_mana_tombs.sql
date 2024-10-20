@@ -1,8 +1,8 @@
 /* DBScriptData
 DBName: Auchindoun - Mana-Tombs
 DBScriptName: -
-DB%Complete: 100
-DBComment:
+DB%Complete: 90
+DBComment: ToDO: rework Escort Quest at somepoint and rework mine/herb grouping
 EndDBScriptData */
 
 SET @CGUID := 5570000; -- creatures
