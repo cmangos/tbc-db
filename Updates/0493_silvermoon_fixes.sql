@@ -33,7 +33,7 @@ INSERT INTO creature_spawn_data(Guid, Id) VALUES
 (140790,5300003);
 
 SET @MOVID=64058; -- arcane guardian
-UPDATE creature SET position_x=9940.521,position_y=-7116.023,position_z=47.712418 WHERE guid = @MOVID + 0;
+UPDATE creature SET position_x=9940.521,position_y=-7116.023,position_z=47.712418,MovementType=4 WHERE guid = @MOVID + 0;
 DELETE FROM creature_movement WHERE Id = @MOVID + 0;
 INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
 (@MOVID + 0, '1', '9940.521', '-7116.023', '47.712418', '100', '0', '0', NULL),
