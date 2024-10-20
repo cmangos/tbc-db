@@ -1,0 +1,35 @@
+UPDATE creature_template SET ScriptName='npc_event_generator_001' WHERE entry IN (2334);
+DELETE FROM string_id WHERE Id IN(5300001) AND Name ='SILVERMOON_GUARDIANS_TURN_1';
+DELETE FROM string_id WHERE Id IN(5300002) AND Name ='SILVERMOON_GUARDIANS_TURN_2';
+INSERT INTO string_id(Id, Name) VALUES
+(5300001,'SILVERMOON_GUARDIANS_TURN_1'),
+(5300002,'SILVERMOON_GUARDIANS_TURN_2');
+DELETE FROM string_id WHERE Id IN(5300003) AND Name ='SILVERMOON_GUARDIANS_TURN_EVENT';
+INSERT INTO string_id(Id, Name) VALUES
+(5300003,'SILVERMOON_GUARDIANS_TURN_EVENT');
+DELETE FROM creature_spawn_data_template WHERE Entry=5300001 AND StringId = 5300001;
+DELETE FROM creature_spawn_data_template WHERE Entry=5300002 AND StringId = 5300002;
+DELETE FROM creature_spawn_data_template WHERE Entry=5300003 AND StringId = 5300003;
+INSERT INTO creature_spawn_data_template(Entry,StringId,Name) VALUES
+(5300001,5300001,'Silvermoon City Guardian - Turn targeting 1'),
+(5300002,5300002,'Silvermoon City Guardian - Turn targeting 2');
+INSERT INTO creature_spawn_data_template(Entry,StringId,Name) VALUES
+(5300003,5300003,'Event Generator 001 - Turn targeting');
+DELETE FROM creature_spawn_data WHERE Guid IN(56924,56923,56925,56917,56918,56919,56920,56921,56922,56926,56927,56928,140790);
+INSERT INTO creature_spawn_data(Guid, Id) VALUES
+(56924,5300001),
+(56923,5300002),
+(56925,5300002),
+(56917,5300002),
+(56918,5300002),
+(56919,5300002),
+(56920,5300002),
+(56921,5300001),
+(56922,5300001),
+(56926,5300001),
+(56927,5300001),
+(56928,5300001);
+INSERT INTO creature_spawn_data(Guid, Id) VALUES
+(140790,5300003);
+
+
