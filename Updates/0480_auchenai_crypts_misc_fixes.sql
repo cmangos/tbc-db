@@ -91,27 +91,27 @@ UPDATE `creature_template` SET `SpellList` = 2032101 WHERE `entry` = 20321;
 
 
 -- Unliving Sorcerer
-DELETE FROM `creature_template_spells` WHERE `entry` = 18498;
-DELETE FROM `creature_template_spells` WHERE `entry` = 20321;
+DELETE FROM `creature_template_spells` WHERE `entry` = 18499;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20322;
 
-DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1849801, 2032101);
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1849901, 2032201);
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
-(1849801, 'Auchenai Crypts - Unliving Sorcerer - Normal', 0, 90),
-(2032101, 'Auchenai Crypts - Unliving Sorcerer - Heroic', 0, 90);
+(1849901, 'Auchenai Crypts - Unliving Sorcerer - Normal', 0, 90),
+(2032201, 'Auchenai Crypts - Unliving Sorcerer - Heroic', 0, 90);
 
 
-DELETE FROM `creature_spell_list` WHERE `Id` IN (1849801, 2032101);
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1849901, 2032201);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1849801, 1, 15744, 0, -1, 109, 0, 100, 0, 5000, 14000, 5000, 14000, 'Unliving Sorcerer - Blast Wave - random player in melee range'),
-(1849801, 2, 15043, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Unliving Sorcerer - Frostbolt - current'),
-(1849801, 3, 12466, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Unliving Sorcerer - Fireball - current'),
+(1849901, 1, 15744, 0, -1, 109, 0, 100, 0, 5000, 14000, 5000, 14000, 'Unliving Sorcerer - Blast Wave - random player in melee range'),
+(1849901, 2, 15043, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Unliving Sorcerer - Frostbolt - current'),
+(1849901, 3, 12466, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Unliving Sorcerer - Fireball - current'),
 
-(1849801, 1, 22424, 0, -1, 109, 0, 100, 0, 5000, 14000, 5000, 14000, 'Unliving Sorcerer - Blast Wave - random player in melee range'),
-(1849801, 2, 15530, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Unliving Sorcerer - Frostbolt - current'),
-(1849801, 3, 17290, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Unliving Sorcerer - Fireball - current');
+(2032201, 1, 22424, 0, -1, 109, 0, 100, 0, 5000, 14000, 5000, 14000, 'Unliving Sorcerer - Blast Wave - random player in melee range'),
+(2032201, 2, 15530, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Unliving Sorcerer - Frostbolt - current'),
+(2032201, 3, 17290, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Unliving Sorcerer - Fireball - current');
 
-UPDATE `creature_template` SET `SpellList` = 1849801 WHERE `entry` = 18498;
-UPDATE `creature_template` SET `SpellList` = 2032101 WHERE `entry` = 20321;
+UPDATE `creature_template` SET `SpellList` = 1849901 WHERE `entry` = 18499;
+UPDATE `creature_template` SET `SpellList` = 2032201 WHERE `entry` = 20322;
 
 -- Unliving Cleric
 DELETE FROM `creature_template_spells` WHERE `entry` = 18500;

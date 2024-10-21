@@ -21460,7 +21460,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1849705','18497','0','59','100','1024','2000','5000','0','0','0','0','11','32854','0','0','22','0','0','0','0','0','0','0','Auchenai Monk - Cast Summon Unliving Sorcerer and Set Phase 0 (Phase 2)'),
 ('1849706','18497','0','55','100','1024','2000','5000','0','0','0','0','11','32855','0','0','22','0','0','0','0','0','0','0','Auchenai Monk - Cast Summon Unliving Cleric and Set Phase 0 (Phase 3)'),
 ('1849707','18497','0','47','100','1024','2000','5000','0','0','0','0','11','32856','0','0','22','0','0','0','0','0','0','0','Auchenai Monk - Cast Summon Unliving Stalker and Set Phase 0 (Phase 4)'),
-('1849708','18497','0','31','100','1024','2000','1000','0','0','0','0','11','32857','0','0','22','0','0','0','0','0','0','0','Auchenai Monk - Cast Summon Phantasmal Possessor and Set Phase 0 (Phase 5)'),
+('1849708','18497','0','31','100','1024','2000','5000','0','0','0','0','11','32857','0','0','22','0','0','0','0','0','0','0','Auchenai Monk - Cast Summon Phantasmal Possessor and Set Phase 0 (Phase 5)'),
 -- Unliving Soldier 18498 - spell_list
 ('1849801','18498','11','0','100','0','0','0','0','0','0','0','11','33422','0','0','0','0','0','0','0','0','0','0','Unliving Soldier - Cast Phase In on Spawn'),
 ('1849802','18498','1','0','100','0','3000','3000','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Unliving Soldier - Zone Combat Pulse'),
@@ -21538,8 +21538,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1877801','18778','29','0','100','1','0','0','1000','1000','0','0','11','32459','0','0','0','0','0','0','0','0','0','0','Cosmetic Raging Soul - Cast Raging Soul Visual on OOC Timer'),
 -- D'ore (4.3.4 Official Data - Normal/Heroic)
 ('1941201','19412','11','0','100','0','0','0','0','0','0','0','1','16804','0','0','11','7765','0','0','0','0','0','0','D''ore - Text Emote and Cast Projection on Spawn'),
-
-
+-- GUID Based
 
 -- ==============================================================
 -- Auchindoun: Mana-Tombs - (4.3.4 Official Data - Normal/Heroic) - 100% Scripted From Official Data
