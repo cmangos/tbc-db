@@ -686,7 +686,7 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 -- eversong tender proper speeds
 UPDATE creature_template SET SpeedWalk=2.5/2.5,SpeedRun=6/7 WHERE Entry IN(15635);
 
-SET @MOVID=5302260; -- oracle
+SET @MOVID=5302260; -- Amani Axe Thrower
 UPDATE creature SET position_x=8548.444,position_y=-7940.863,position_z=155.0197,MovementType=4 WHERE guid = @MOVID + 0;
 DELETE FROM creature_movement WHERE Id = @MOVID + 0;
 INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
@@ -704,3 +704,33 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 (@MOVID + 0, '12', '8789.31', '-7736.788', '149.19795', '100', '0', '0', NULL),
 (@MOVID + 0, '13', '8809.122', '-7716.1113', '144.55635', '100', '0', '0', NULL),
 (@MOVID + 0, '14', '8843.126', '-7694.8853', '138.43735', '100', '0', '0', NULL);
+
+SET @MOVID=5302262; -- Amani Axe Thrower
+-- GUID: Full: 0x20457C42400F464000002B00001C4262 Creature/0 R4447/S43 Map: 530 Entry: 15641 Low: 1852002 PathType: None
+UPDATE creature SET position_x=8472.63,position_y=-7927.512,position_z=157.74759,MovementType=2 WHERE guid = @MOVID + 0;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '8472.63', '-7927.512', '157.74759', '100', '0', '0', NULL),
+(@MOVID + 0, '2', '8495.492', '-7900.4307', '159.10757', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '8527.954', '-7873.999', '155.25346', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '8560.911', '-7870.5254', '156.87952', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '8601.13', '-7858.8257', '153.79074', '100', '0', '0', NULL),
+(@MOVID + 0, '6', '8640.791', '-7848.829', '159.07916', '100', '0', '0', NULL),
+(@MOVID + 0, '7', '8672.43', '-7845.776', '161.14107', '100', '0', '0', NULL),
+(@MOVID + 0, '8', '8709.801', '-7845.4707', '166.19759', '100', '0', '0', NULL),
+(@MOVID + 0, '9', '8724.644', '-7872.702', '167.08522', '100', '0', '0', NULL),
+(@MOVID + 0, '10', '8723.255', '-7908.3794', '161.57124', '100', '0', '0', NULL),
+(@MOVID + 0, '11', '8727.765', '-7951.0615', '159.6319', '100', '0', '0', NULL),
+(@MOVID + 0, '12', '8738.771', '-7982.3394', '163.09883', '100', '0', '0', NULL),
+(@MOVID + 0, '13', '8703.044', '-7994.618', '158.20128', '100', '0', '0', NULL),
+(@MOVID + 0, '14', '8675.095', '-7998.7944', '157.95302', '100', '0', '0', NULL),
+(@MOVID + 0, '15', '8643.135', '-8012.1606', '162.16273', '100', '0', '0', NULL),
+(@MOVID + 0, '16', '8607.536', '-7990.764', '157.21556', '100', '0', '0', NULL),
+(@MOVID + 0, '17', '8573.356', '-7984.354', '154.89798', '100', '0', '0', NULL),
+(@MOVID + 0, '18', '8549.965', '-7995.48', '154.51143', '100', '0', '0', NULL),
+(@MOVID + 0, '19', '8518.45', '-8018.9062', '161.55717', '100', '0', '0', NULL),
+(@MOVID + 0, '20', '8485.67', '-8016.2866', '158.18188', '100', '0', '0', NULL),
+(@MOVID + 0, '21', '8453.929', '-8012.3647', '163.04556', '100', '0', '0', NULL),
+(@MOVID + 0, '22', '8429.571', '-7986.02', '170.85425', '100', '0', '0', NULL),
+(@MOVID + 0, '23', '8421.035', '-7963.1753', '173.67195', '100', '0', '0', NULL),
+(@MOVID + 0, '24', '8435.849', '-7943.7676', '167.21408', '100', '0', '0', NULL);
