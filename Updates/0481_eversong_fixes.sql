@@ -685,3 +685,22 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 
 -- eversong tender proper speeds
 UPDATE creature_template SET SpeedWalk=2.5/2.5,SpeedRun=6/7 WHERE Entry IN(15635);
+
+SET @MOVID=5302260; -- oracle
+UPDATE creature SET position_x=8548.444,position_y=-7940.863,position_z=155.0197,MovementType=4 WHERE guid = @MOVID + 0;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '8548.444', '-7940.863', '155.0197', '100', '0', '0', NULL),
+(@MOVID + 0, '2', '8586.579', '-7918.808', '155.02364', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '8607.051', '-7899.4395', '154.97765', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '8642.383', '-7876.4062', '155.54434', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '8676.01', '-7868.4785', '156.82329', '100', '0', '0', NULL),
+(@MOVID + 0, '6', '8691.55', '-7852.5938', '159.37434', '100', '0', '0', NULL),
+(@MOVID + 0, '7', '8685.256', '-7822.624', '162.0572', '100', '0', '0', NULL),
+(@MOVID + 0, '8', '8688.3', '-7794.455', '164.29652', '100', '0', '0', NULL),
+(@MOVID + 0, '9', '8708.333', '-7781.7915', '165.10071', '100', '0', '0', NULL),
+(@MOVID + 0, '10', '8739.701', '-7777.983', '163.34781', '100', '0', '0', NULL),
+(@MOVID + 0, '11', '8764.841', '-7763.819', '158.24432', '100', '0', '0', NULL),
+(@MOVID + 0, '12', '8789.31', '-7736.788', '149.19795', '100', '0', '0', NULL),
+(@MOVID + 0, '13', '8809.122', '-7716.1113', '144.55635', '100', '0', '0', NULL),
+(@MOVID + 0, '14', '8843.126', '-7694.8853', '138.43735', '100', '0', '0', NULL);
