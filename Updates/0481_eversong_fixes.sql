@@ -264,8 +264,10 @@ UPDATE creature SET id=0 WHERE id IN(15648,15647);
 -- session 2
 
 DELETE FROM creature WHERE Guid=55481;
+DELETE FROM creature_movement WHERE Id = 55481;
 SET @MOVID=1007463;
 -- GUID: Full: 0x20457C42400F44C000002B0000188750 Creature/0 R4447/S43 Map: 530 Entry: 15635 Low: 1607504 PathType: ExactPath
+UPDATE creature SET position_x=8977.798,position_y=-7216.1836,position_z=79.525444 WHERE guid = @MOVID + 0;
 DELETE FROM creature_movement WHERE Id = @MOVID + 0;
 INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
 (@MOVID + 0, '1', '8977.798', '-7216.1836', '79.525444', '100', '0', '0', NULL),
@@ -680,3 +682,6 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 (@MOVID + 0, '7', '8744.874', '-5759.063', '1.2113051', '100', '0', '0', NULL),
 (@MOVID + 0, '8', '8776.913', '-5755.5244', '0.63274', '100', '0', '0', NULL),
 (@MOVID + 0, '9', '8798.979', '-5763.8174', '0.47844315', '100', '0', '0', NULL);
+
+-- eversong tender proper speeds
+UPDATE creature_template SET SpeedWalk=2.5/2.5,SpeedRun=6/7 WHERE Entry IN(15635);
