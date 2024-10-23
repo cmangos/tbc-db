@@ -734,3 +734,34 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 (@MOVID + 0, '22', '8429.571', '-7986.02', '170.85425', '100', '0', '0', NULL),
 (@MOVID + 0, '23', '8421.035', '-7963.1753', '173.67195', '100', '0', '0', NULL),
 (@MOVID + 0, '24', '8435.849', '-7943.7676', '167.21408', '100', '0', '0', NULL);
+
+SET @MOVID=5302249; -- Amani Axe Thrower
+-- GUID: Full: 0x20457C42400F464000002B00001C4262 Creature/0 R4447/S43 Map: 530 Entry: 15641 Low: 1852002 PathType: None
+UPDATE creature SET position_x=8345.095,position_y=-7940.132,position_z=1182.76709,MovementType=4 WHERE guid = @MOVID + 0;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '8345.095', '-7940.132', '182.76709', '100', '0', '0', NULL),
+(@MOVID + 0, '2', '8334.115', '-7932.368', '182.37807', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '8333.938', '-7894.125', '172.73544', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '8402.604', '-7881.9585', '164.44695', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '8435.256', '-7905.078', '160.32655', '100', '0', '0', NULL),
+(@MOVID + 0, '6', '8472.4795', '-7926.1475', '157.72672', '100', '0', '0', NULL),
+(@MOVID + 0, '7', '8521.028', '-7925.961', '155.03665', '100', '0', '0', NULL),
+(@MOVID + 0, '8', '8557.657', '-7923.7812', '155.03665', '100', '0', '0', NULL),
+(@MOVID + 0, '9', '8577.352', '-7916.4316', '155.02364', '100', '0', '0', NULL),
+(@MOVID + 0, '10', '8614.099', '-7897.3066', '154.97765', '100', '0', '0', NULL),
+(@MOVID + 0, '11', '8656.44', '-7921.769', '153.57149', '100', '0', '0', NULL),
+(@MOVID + 0, '12', '8666.668', '-7952.2275', '151.84846', '100', '0', '0', NULL);
+
+INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
+(@CGUID + 25, '15650', '530', '1', '8232.81000000000000000000', '-7948.86000000000000000000', '206.71100000000000000000', '4.75289000000000000000', '300', '300', '10', '1'),
+(@CGUID + 26, '15650', '530', '1', '8214.84000000000000000000', '-7978.89000000000000000000', '221.14300000000000000000', '4.72854000000000000000', '300', '300', '10', '1'),
+(@CGUID + 27, '15652', '530', '1', '8253.28000000000000000000', '-8003.95000000000000000000', '224.27300000000000000000', '5.23118000000000000000', '300', '300', '10', '1'),
+(@CGUID + 28, '15650', '530', '1', '8305.22000000000000000000', '-8002.94000000000000000000', '210.99300000000000000000', '5.50609000000000000000', '300', '300', '10', '1');
+
+-- amani mobs share entries between each other
+DELETE FROM creature_spawn_entry WHERE guid IN(SELECT guid FROM creature WHERE id IN(15641,15642,15643));
+INSERT INTO creature_spawn_entry SELECT guid, 15641 FROM creature WHERE id IN(15641,15642,15643);
+INSERT INTO creature_spawn_entry SELECT guid, 15642 FROM creature WHERE id IN(15641,15642,15643);
+INSERT INTO creature_spawn_entry SELECT guid, 15643 FROM creature WHERE id IN(15641,15642,15643);
+UPDATE creature SET id=0 WHERE id IN(15641,15642,15643);
