@@ -31,12 +31,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+9, 10, 101.79505,-9.136434,0.12334183, 100, 0, 0),
 (@CGUID+9, 11, 101.28473,-5.818955,0.06241158, 100, 0, 0),
 (@CGUID+9, 12, 98.46999,-4.272734,-0.06604094, 100, 0, 0),
-(@CGUID+11, 1, 239.482, -69.9902, 26.5912, 0, 0, 0),
-(@CGUID+11, 2, 239.466, -100.007, 26.5912, 0, 0, 0),
-(@CGUID+11, 3, 239.365, -125.633, 26.5912, 0, 0, 0),
-(@CGUID+11, 4, 239.716, -100.183, 26.5912, 0, 0, 0),
-(@CGUID+11, 5, 239.764, -70.1469, 26.5912, 0, 0, 0),
-(@CGUID+11, 6, 239.557, -45.5533, 26.5912, 0, 0, 0),
 (@CGUID+13, 1, -146.241, -362.348, 26.5907, 0, 0, 0),
 (@CGUID+13, 2, -146.111, -341.64, 26.5907, 0, 0, 0),
 (@CGUID+13, 3, -143.813, -348.902, 26.5907, 0, 0, 0),
@@ -49,28 +43,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+13, 10, -121.804, -387.763, 26.5891, 0, 0, 0),
 (@CGUID+13, 11, -137.504, -387.664, 26.5891, 0, 0, 0),
 (@CGUID+13, 12, -145.998, -380.364, 26.5896, 0, 0, 0),
-(@CGUID+17, 1, 211.25, -32.5531, 26.5913, 0, 0, 0),
-(@CGUID+17, 2, 206.558, -29.6245, 26.5913, 0, 0, 0),
-(@CGUID+17, 3, 206.846, 2.9624, 26.6089, 0, 0, 0),
-(@CGUID+17, 4, 208.449, 29.0183, 26.6237, 0, 0, 0),
-(@CGUID+17, 5, 214.47, 31.2264, 26.6401, 0, 0, 0),
-(@CGUID+17, 6, 237.969, 31.8593, 26.6358, 0, 0, 0),
-(@CGUID+17, 7, 267.278, 32.2465, 13.432, 0, 0, 0),
-(@CGUID+17, 8, 269.743, 29.0039, 13.4276, 0, 0, 0),
-(@CGUID+17, 9, 269.483, 20.9772, 13.3957, 0, 0, 0),
-(@CGUID+17, 10, 269.795, -1.88818, -0.066842, 0, 0, 0),
-(@CGUID+17, 11, 269.028, 12.9737, 7.30811, 0, 0, 0),
-(@CGUID+17, 12, 269.102, 22.2329, 13.419, 0, 0, 0),
-(@CGUID+17, 13, 268.701, 29.0391, 13.432, 0, 0, 0),
-(@CGUID+17, 14, 265.437, 32.5422, 13.4303, 0, 0, 0),
-(@CGUID+17, 15, 246.648, 32.3708, 20.9473, 0, 0, 0),
-(@CGUID+17, 16, 235.326, 32.1635, 26.6343, 0, 0, 0),
-(@CGUID+17, 17, 214.469, 32.5403, 26.6329, 0, 0, 0),
-(@CGUID+17, 18, 207.544, 25.8809, 26.6183, 0, 0, 0),
-(@CGUID+17, 19, 207.02, 2.82084, 26.6086, 0, 0, 0),
-(@CGUID+17, 20, 208.547, -29.5215, 26.591, 0, 0, 0),
-(@CGUID+17, 21, 213.394, -33.2204, 26.591, 0, 0, 0),
-(@CGUID+17, 22, 239.78, -32.5393, 26.594, 0, 0, 0),
 (@CGUID+18, 1, 101.2426,7.289032,0.19369556, 100, 0, 0),
 (@CGUID+18, 2, 99.97599,4.770607,0.059734028, 100, 0, 0),
 (@CGUID+18, 3, 97.24955,4.174426,-0.09839714, 100, 0, 0),
@@ -100,16 +72,8 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+32, 15, 130.77061,10.76564,0.09537189, 100, 0, 0),
 (@CGUID+32, 16, 130.48642,2.902071,-0.12865439, 100, 0, 0),
 (@CGUID+32, 17, 129.59958,-2.468409,0.06528245, 100, 0, 0),
-(@CGUID+34, 1, 222.88, 13.8903, -0.075499, 3.05599, 10000, 0),
-(@CGUID+34, 2, 238.567, 14.1287, -0.066652, 5.68, 10000, 0),
-(@CGUID+39, 1, 102.866, -162.857, 14.9086, 0, 0, 0),
-(@CGUID+39, 2, 74.6199, -162.925, 15.5006, 0, 0, 0),
-(@CGUID+39, 3, 44.3247, -162.931, 15.0019, 0, 0, 0),
-(@CGUID+39, 4, 74.9605, -163.193, 15.494, 0, 0, 0),
-(@CGUID+39, 5, 103.282, -163.015, 14.8936, 0, 0, 0),
-(@CGUID+39, 6, 142.787, -163.311, 12.5674, 0, 0, 0),
-(@CGUID+39, 7, 167.955, -163.422, 26.3869, 0, 0, 0),
-(@CGUID+39, 8, 143.145, -163.496, 12.564, 0, 0, 0),
+(@CGUID+34, 1, 238.14801,13.610128,-0.06791845, 100, 10000, 0), -- waittime between 5 and 15 seconds
+(@CGUID+34, 2, 222.74164,13.925282,-0.070625804, 100, 10000, 0), -- waittime between 5 and 15 seconds
 (@CGUID+56, 1, 126.177, 27.9481, -0.0451297, 5.28835, 4000, 1855601),
 (@CGUID+56, 2, 130.413, 14.816, -0.128968, 4.73591, 0, 0),
 (@CGUID+56, 3, 133.132, 0.717417, -0.128914, 5.1286, 0, 0),
@@ -346,24 +310,24 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+6, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
 (@CGUID+7, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
 (@CGUID+8, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
-(@CGUID+12, 0, 8, 0, 68, 0, NULL), -- Auchenai Soulpriest
+(@CGUID+12, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
 (@CGUID+15, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
 (@CGUID+19, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
 (@CGUID+20, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
 (@CGUID+21, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
 (@CGUID+22, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
-(@CGUID+25, 0, 8, 0, 68, 0, NULL), -- Auchenai Vindicator
-(@CGUID+26, 0, 8, 0, 68, 0, NULL), -- Auchenai Vindicator
+(@CGUID+25, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
+(@CGUID+26, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
 (@CGUID+28, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
 (@CGUID+29, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
 (@CGUID+30, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
 (@CGUID+31, 0, 8, 0, 68, 0, NULL), -- Auchenai Monk
 (@CGUID+33, 0, 0, 1, 375, 0, NULL), -- Auchenai Monk
-(@CGUID+36, 0, 8, 0, 68, 0, NULL), -- Auchenai Monk
+(@CGUID+36, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
 (@CGUID+37, 0, 0, 1, 375, 0, NULL), -- Auchenai Monk
 (@CGUID+38, 0, 0, 1, 375, 0, NULL), -- Auchenai Monk
 (@CGUID+40, 0, 0, 1, 375, 0, NULL), -- Auchenai Monk
-(@CGUID+41, 0, 8, 0, 68, 0, NULL); -- spawn_group_entry
+(@CGUID+41, 0, 8, 0, 68, 0, NULL); -- creature_spawn_entry
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (18506, 0, 0, 1, 0, 0, '35841 35850'), -- Raging Soul
@@ -373,14 +337,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (18700, 0, 0, 0, 0, 0, '19818'); -- Reanimated Bones
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+25, @CGUID+34, 1155), -- Auchenai Vindicator -> Auchenai Monk
-(@CGUID+41, @CGUID+30, 1155), -- Auchenai Monk -> Auchenai Vindicator
-(@CGUID+16, @CGUID+17, 1679), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+35, @CGUID+11, 1679), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+12, @CGUID+36, 1155), -- Auchenai Soulpriest -> Auchenai Monk
-(@CGUID+26, @CGUID+36, 1155), -- Auchenai Vindicator -> Auchenai Monk
-(@CGUID+10, @CGUID+39, 1679), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+27, @CGUID+39, 1679), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+40, @CGUID+38, 1155), -- Auchenai Monk -> Auchenai Monk
 (@CGUID+33, @CGUID+37, 1155), -- Auchenai Monk -> Auchenai Monk
 (@CGUID+46, @CGUID+51, 1155), -- Raging Skeleton -> Angered Skeleton
@@ -452,21 +408,11 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
-(@CGUID+10, 18493), (@CGUID+10, 18495), (@CGUID+10, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
 (@CGUID+11, 18493), (@CGUID+11, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
-(@CGUID+12, 18493), (@CGUID+12, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
 (@CGUID+13, 18493), (@CGUID+13, 18495), (@CGUID+13, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
 (@CGUID+14, 18493), (@CGUID+14, 18495), (@CGUID+14, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
-(@CGUID+16, 18493), (@CGUID+16, 18495), (@CGUID+16, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
-(@CGUID+17, 18493), (@CGUID+17, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
-(@CGUID+25, 18493), (@CGUID+25, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
-(@CGUID+26, 18493), (@CGUID+26, 18495), (@CGUID+26, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
-(@CGUID+27, 18493), (@CGUID+27, 18495), (@CGUID+27, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
-(@CGUID+30, 18493), (@CGUID+30, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
-(@CGUID+35, 18495), (@CGUID+35, 18497), -- Auchenai Vindicator, Auchenai Monk
-(@CGUID+36, 18493), (@CGUID+36, 18495), (@CGUID+36, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
-(@CGUID+39, 18493), (@CGUID+39, 18495), -- (@CGUID+39, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk								// commented due to x3 Monk combo needs spawn group!
-(@CGUID+41, 18493), (@CGUID+41, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+16, 18493), (@CGUID+16, 18495), -- Auchenai Soulpriest, Auchenai Vindicator							
+(@CGUID+41, 18495), (@CGUID+41, 18497), -- Auchenai Monk, Auchenai Vindicator  
 (@CGUID+56, 18556), (@CGUID+56, 18557), (@CGUID+56, 18558), (@CGUID+56, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+57, 18556), (@CGUID+57, 18557), -- Phasing Soldier, Phasing Cleric
 (@CGUID+58, 18556), (@CGUID+58, 18557), (@CGUID+58, 18558), (@CGUID+58, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
@@ -505,14 +451,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+7, 0, 558, 3, 122.388, 3.71186, -0.0462477, 4.10152, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+8, 0, 558, 3, 87.4967, -38.8735, 4.34452, 4.53786, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+9, 0, 558, 3, 98.5841, -4.02529, 0.0167823, 2.96706, 7200, 7200, 0, 2), -- spawn_group_entry
-(@CGUID+10, 0, 558, 3, 130.674, -160.664, 12.7517, 3.29239, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+11, 0, 558, 3, 239.385, -49.6785, 26.5912, 4.59379, 7200, 7200, 0, 2), -- creature_spawn_entry
-(@CGUID+12, 0, 558, 3, 225.4602, -163.3877, 26.67463, 6.056293, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+10, 0, 558, 3, 168.081, -163.052, 26.4764, 6.10865, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+11, 0, 558, 3, 241.048, -50.975, 26.6746, 3.54302, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+12, 0, 558, 3, 225.46, -163.388, 26.6746, 6.05629, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+13, 0, 558, 3, -145.786, -376.33, 26.5915, 1.57631, 7200, 7200, 0, 2), -- creature_spawn_entry
 (@CGUID+14, 0, 558, 3, -143.096, -376.454, 26.5918, 1.53389, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+15, 0, 558, 3, 189.555, -3.3563, 0.0817743, 1.58825, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+16, 0, 558, 3, 238.24, -31.651, 26.7127, 3.1251, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+17, 0, 558, 3, 235.574, -31.607, 27.0868, 3.1251, 7200, 7200, 0, 2), -- creature_spawn_entry
+(@CGUID+16, 0, 558, 3, 269.593, -5.89707, 0.0219023, 1.43117, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+17, 18497, 558, 3, 266.86, -5.81479, 0.0270883, 1.37881, 7200, 7200, 0, 0), -- Auchenai Monk
 (@CGUID+18, 0, 558, 3, 100.456, 29.1276, -0.0449347, 4.50295, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+19, 0, 558, 3, 78.3841, 39.2966, 4.34502, 1.39626, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+20, 0, 558, 3, 92.4968, -39.0355, 4.3445, 4.5204, 7200, 7200, 0, 0), -- spawn_group_entry
@@ -520,23 +466,23 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+22, 0, 558, 3, 85.7186, 39.3367, 4.3449, 1.48353, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+23, 0, 558, 3, 132.257, -19.2386, 6.38628, 0.0174533, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+24, 0, 558, 3, 136.688, -26.0343, 9.3865, 0.645772, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+25, 0, 558, 3, 230.3863, 19.43298, 0.01958133, 1.413717, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+26, 0, 558, 3, 227.6582, -170.5806, 26.67463, 0.5235988, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+27, 0, 558, 3, 130.644, -164.902, 12.7534, 3.1251, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+25, 0, 558, 3, 230.386, 19.433, 0.0195813, 1.41372, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+26, 0, 558, 3, 227.658, -170.581, 26.6746, 0.523599, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+27, 0, 558, 3, 166.36, -160.117, 26.3629, 6.02139, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+28, 0, 558, 3, 139.131, 39.385, 4.34416, 1.46608, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+29, 0, 558, 3, 148.659, 39.4251, 4.3441, 1.309, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+30, 0, 558, 3, 242.325, -15.56781, 0.02191534, 0.8203048, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+30, 0, 558, 3, 242.325, -15.5678, 0.0219153, 0.820305, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+31, 18497, 558, 3, 187.004, 4.80022, -0.0385287, 4.95674, 7200, 7200, 0, 0), -- Auchenai Monk
 (@CGUID+32, 18497, 558, 3, 160.192, 30.6168, -0.106432, 2.94838, 7200, 7200, 0, 2), -- Auchenai Monk
 (@CGUID+33, 18497, 558, 3, -122.5634, -166.7359, 26.67193, 0.06981317, 7200, 7200, 0, 0), -- Auchenai Monk
-(@CGUID+34, 18497, 558, 3, 238.134, 14.236, -0.064787, 5.69414, 7200, 7200, 0, 2), -- Auchenai Monk
-(@CGUID+35, 0, 558, 3, 239.401, -46.9768, 26.5912, 4.87575, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+36, 0, 558, 3, 227.6597, -155.1209, 26.67463, 5.358161, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+34, 18497, 558, 3, 221.772, 13.1893, 0.00608733, 6.05629, 7200, 7200, 0, 2), -- Auchenai Monk
+(@CGUID+35, 0, 558, 3, 237.231, -50.9399, 26.6746, 3.49066, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+36, 0, 558, 3, 227.66, -155.121, 26.6746, 5.35816, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+37, 18497, 558, 3, -127.4433, -159.4812, 26.6723, 6.056293, 7200, 7200, 0, 0), -- Auchenai Monk
 (@CGUID+38, 18497, 558, 3, 21.78426, -160.7699, 13.6514, 3.071779, 7200, 7200, 0, 0), -- Auchenai Monk
-(@CGUID+39, 0, 558, 3, 129.002, -162.865, 12.8844, 3.22092, 7200, 7200, 0, 2), -- creature_spawn_entry
+(@CGUID+39, 0, 558, 3, 166.514, -166.041, 26.4216, 6.16101, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+40, 18497, 558, 3, 25.24369, -166.9502, 13.94017, 2.792527, 7200, 7200, 0, 0), -- Auchenai Monk
-(@CGUID+41, 0, 558, 3, 247.7906, -9.666943, 0.02644934, 3.926991, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+41, 0, 558, 3, 247.791, -9.66694, 0.0264493, 3.92699, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+42, 18521, 558, 3, -130.67, -304.513, 26.3778, 4.64171, 7200, 7200, 3, 1), -- Raging Skeleton
 (@CGUID+43, 18521, 558, 3, -139.069, -300, 26.423, 2.3884, 7200, 7200, 3, 1), -- Raging Skeleton
 (@CGUID+44, 18521, 558, 3, -170.374, -276.212, 31.4869, 0.13509, 7200, 7200, 3, 1), -- Raging Skeleton
@@ -760,8 +706,18 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+7, 'Auchenai Crypts - Group 007 - Auchenai Soulpriest / Auchenai Vindicator', 0, 0, 0, 1, 0),
 (@SGGUID+8, 'Auchenai Crypts - Group 008 - Auchenai Soulpriest / Auchenai Vindicator', 0, 0, 0, 1, 0),
 (@SGGUID+9, 'Auchenai Crypts - Group 009 - Auchenai Soulpriest / Auchenai Vindicator', 0, 0, 0, 1, 0),
-(@SGGUID+10, 'Auchenai Crypts - Group 010 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator', 0, 0, 0, 1, 0);
-
+(@SGGUID+10, 'Auchenai Crypts - Group 010 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator', 0, 0, 0, 1, 0),
+(@SGGUID+11, 'Auchenai Crypts - Group 011 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator', 0, 0, 0, 1, 0),
+(@SGGUID+12, 'Auchenai Crypts - Group 012 - Auchenai Monk/Auchenai Vindicator | Auchenai Soulpriest/Auchenai Vindicator', 0, 0, 0, 1, 0),
+-- Patrol Leader is always a Auchenai Soulpriest/Auchenai Vindicator followor can be Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk
+-- its possible to get a double Auchenai Vindicato or double Auchenai Soulpriest group
+(@SGGUID+13, 'Auchenai Crypts - Group 013 - Auchenai Soulpriest/Auchenai Vindicator | Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 01', 0, 0, 0, 1, 0),
+(@SGGUID+14, 'Auchenai Crypts - Group 014 - Auchenai Soulpriest/Auchenai Vindicator | Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 02', 0, 0, 0, 1, 0),
+-- This group of 3 is completly random with following conditions
+-- Group can hav max 2 Auchenai Soulpriest/Auchenai Vindicator spawned
+-- can have max 1 Auchenai Monk spawned
+(@SGGUID+15, 'Auchenai Crypts - Group 015 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk', 0, 0, 0, 1, 0),
+(@SGGUID+16, 'Auchenai Crypts - Group 016 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 03', 0, 0, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+1, 18493, 0, 2, 0), (@SGGUID+1, 18495, 0, 2, 0), -- Auchenai Soulpriest, Auchenai Vindicator
@@ -773,7 +729,13 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+7, 18493, 0, 1, 0), (@SGGUID+7, 18495, 0, 1, 0), -- Auchenai Soulpriest, Auchenai Vindicator
 (@SGGUID+8, 18493, 0, 1, 0), (@SGGUID+8, 18495, 0, 1, 0), -- Auchenai Soulpriest, Auchenai Vindicator
 (@SGGUID+9, 18493, 0, 1, 0), (@SGGUID+9, 18495, 0, 1, 0), -- Auchenai Soulpriest, Auchenai Vindicator
-(@SGGUID+10, 18493, 0, 1, 0), (@SGGUID+10, 18495, 0, 1, 0); -- Auchenai Soulpriest, Auchenai Vindicator
+(@SGGUID+10, 18493, 0, 1, 0), (@SGGUID+10, 18495, 0, 1, 0), -- Auchenai Soulpriest, Auchenai Vindicator
+(@SGGUID+11, 18493, 0, 1, 0), (@SGGUID+11, 18495, 0, 1, 0), -- Auchenai Soulpriest, Auchenai Vindicator
+(@SGGUID+12, 18493, 0, 1, 0), (@SGGUID+12, 18495, 0, 1, 0), -- Auchenai Soulpriest, Auchenai Vindicator
+(@SGGUID+13, 18493, 0, 1, 0), (@SGGUID+13, 18495, 0, 1, 0), (@SGGUID+13, 18497, 0, 1, 0), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@SGGUID+14, 18493, 0, 1, 0), (@SGGUID+14, 18495, 0, 1, 0), (@SGGUID+14, 18497, 0, 1, 0), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@SGGUID+15, 18493, 0, 2, 0), (@SGGUID+15, 18495, 0, 2, 0), (@SGGUID+15, 18497, 0, 1, 0), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@SGGUID+16, 18493, 0, 2, 0), (@SGGUID+16, 18495, 0, 2, 0), (@SGGUID+16, 18497, 0, 1, 0); -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+19, 0, 0), -- spawn_group_entry
@@ -802,11 +764,68 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+9, @CGUID+29, 1, 0), -- spawn_group_entry
 
 (@SGGUID+10, @CGUID+15, 0, 0), -- spawn_group_entry
-(@SGGUID+10, @CGUID+31, 1, 0); -- Auchenai Monk
+(@SGGUID+10, @CGUID+31, 1, 0), -- Auchenai Monk
 
--- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
--- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
--- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+(@SGGUID+11, @CGUID+25, 0, 0), -- spawn_group_entry
+(@SGGUID+11, @CGUID+34, 1, 0), -- Auchenai Monk
+
+(@SGGUID+12, @CGUID+30, 0, 0), -- spawn_group_entry
+(@SGGUID+12, @CGUID+41, 1, 0), -- creature_spawn_entry
+
+(@SGGUID+13, @CGUID+16, 0, 0), -- creature_spawn_entry
+(@SGGUID+13, @CGUID+17, 1, 0), -- spawn_group_entry
+
+(@SGGUID+14, @CGUID+11, 0, 0), -- creature_spawn_entry
+(@SGGUID+14, @CGUID+35, 1, 0), -- spawn_group_entry
+
+(@SGGUID+15, @CGUID+12, 0, 0), -- spawn_group_entry
+(@SGGUID+15, @CGUID+26, 1, 0), -- spawn_group_entry
+(@SGGUID+15, @CGUID+36, 2, 0), -- spawn_group_entry
+
+(@SGGUID+16, @CGUID+10, 0, 0), -- spawn_group_entry
+(@SGGUID+16, @CGUID+27, 1, 0), -- spawn_group_entry
+(@SGGUID+16, @CGUID+39, 2, 0); -- spawn_group_entry
+
+
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@SGGUID+13, 1, 3, 0, @SGGUID+13, 4, 'Auchenai Crypts - Group 013 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator - Patrol 01'),
+(@SGGUID+14, 1, 3, 0, @SGGUID+14, 4, 'Auchenai Crypts - Group 013 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator - Patrol 02'),
+(@SGGUID+16, 3, 3, 0, @SGGUID+16, 4, 'Auchenai Crypts - Group 016 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 03');
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+13,'Auchenai Crypts - Group 013 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator - Patrol 01'),
+(@SGGUID+14,'Auchenai Crypts - Group 013 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator - Patrol 02'),
+(@SGGUID+16,'Auchenai Crypts - Group 016 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 03');
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@SGGUID+13, 1, 268.32703,-3.305813,-0.0678567, 100, 0, 0),
+(@SGGUID+13, 2, 269.36295,21.878204,13.413179, 100, 0, 0),
+(@SGGUID+13, 3, 268.90814,29.680952,13.439169, 100, 0, 0),
+(@SGGUID+13, 4, 266.3649,32.88496,13.436618, 100, 0, 0),
+(@SGGUID+13, 5, 257.8986,33.67169,13.394914, 100, 0, 0),
+(@SGGUID+13, 6, 237.949,32.514015,26.632038, 100, 0, 0),
+(@SGGUID+13, 7, 217.88676,33.820267,26.621796, 100, 0, 0),
+(@SGGUID+13, 8, 211.06705,32.123497,26.631569, 100, 0, 0),
+(@SGGUID+13, 9, 209.0718,26.146828,26.627604, 100, 0, 0),
+(@SGGUID+13, 10, 215.35312,3.553464,28.625824, 100, 0, 0),
+(@SGGUID+13, 11, 211.31487,-9.173203,27.079954, 100, 0, 0),
+(@SGGUID+13, 12, 210.42763,-25.172428,26.591162, 100, 0, 0),
+(@SGGUID+13, 13, 212.88191,-30.137917,26.591192, 100, 0, 0),
+(@SGGUID+13, 14, 216.55647,-32.453876,26.591314, 100, 0, 0),
+(@SGGUID+13, 15, 226.7893,-32.321796,27.100355, 100, 0, 0),
+(@SGGUID+13, 16, 239.0565,-32.50906,26.59868, 100, 0, 0),
+
+(@SGGUID+14, 1, 239.11743,-51.329662,26.591269, 100, 0, 0),
+(@SGGUID+14, 2, 238.85509,-84.930984,26.591291, 100, 0, 0),
+(@SGGUID+14, 3, 239.11603,-118.809,26.59132, 100, 0, 0),
+
+(@SGGUID+16, 1, 166.70355,-163.66641,26.316566, 100, 0, 0),
+(@SGGUID+16, 2, 143.57632,-163.27176,12.563573, 100, 0, 0),
+(@SGGUID+16, 3, 122.65221,-163.04219,13.356737, 100, 0, 0),
+(@SGGUID+16, 4, 104.99422,-162.99231,14.774395, 100, 0, 0),
+(@SGGUID+16, 5, 81.24179,-163.2077,15.368842, 100, 0, 0),
+(@SGGUID+16, 6, 64.53549,-162.75394,15.386806, 100, 0, 0),
+(@SGGUID+16, 7, 48.272915,-162.58008,15.13582, 100, 0, 0);
 
 -- =======
 -- POOLING
