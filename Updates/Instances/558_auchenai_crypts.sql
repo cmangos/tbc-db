@@ -62,13 +62,16 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+32, 17, 129.59958,-2.468409,0.06528245, 100, 0, 0),
 (@CGUID+34, 1, 238.14801,13.610128,-0.06791845, 100, 10000, 0), -- waittime between 5 and 15 seconds
 (@CGUID+34, 2, 222.74164,13.925282,-0.070625804, 100, 10000, 0), -- waittime between 5 and 15 seconds
-(@CGUID+56, 1, 126.177, 27.9481, -0.0451297, 5.28835, 4000, 1855601),
-(@CGUID+56, 2, 130.413, 14.816, -0.128968, 4.73591, 0, 0),
-(@CGUID+56, 3, 133.132, 0.717417, -0.128914, 5.1286, 0, 0),
-(@CGUID+56, 4, 143.315, -5.41157, 1.58459, 5.92184, 0, 0),
-(@CGUID+56, 5, 158.808, -6.77153, 1.31353, 5.84487, 0, 0),
-(@CGUID+56, 6, 163.114, -11.3245, 1.29405, 5.18357, 0, 0),
-(@CGUID+56, 7, 166.81, -15.4839, 2.5976, 5.37599, 2000, 1),
+(@CGUID+56, 1, 126.1766,27.948132,-0.105519295, 5.28835, 3000, @RELAYID+1),
+(@CGUID+56, 2, 130.59267,16.555323,-0.12910895, 100, 0, 0),
+(@CGUID+56, 3, 130.62326,8.567173,-0.1291158, 100, 0, 0),
+(@CGUID+56, 4, 132.76746,2.109716,-0.12837085, 100, 0, 0),
+(@CGUID+56, 5, 135.87859,-4.567481,1.1544765, 100, 0, 0),
+(@CGUID+56, 6, 141.38376,-6.336381,1.8670539, 100, 0, 0),
+(@CGUID+56, 7, 150.151,-6.409088,1.8575414, 100, 0, 0),
+(@CGUID+56, 8, 158.26154,-6.41169,1.2996879, 100, 0, 0),
+(@CGUID+56, 9, 162.83406,-10.075247,1.2974932, 100, 0, 0),
+(@CGUID+56, 10, 166.6864,-15.174739,2.4810312, 100, 135000, @RELAYID+2), -- waittime between 2min and 2min 30
 (@CGUID+57, 1, 170.213, -18.6788, 1.89394, 6.12611, 4000, 1855601),
 (@CGUID+57, 2, 184.873, -19.2238, -0.123683, 0.673793, 0, 0),
 (@CGUID+57, 3, 192.66, -5.28754, -0.120491, 1.47881, 0, 0),
@@ -111,14 +114,16 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+62, 8, 249.729, -31.8743, 26.6054, 0, 0, 0),
 (@CGUID+62, 9, 267.403, -32.7667, 26.5914, 0, 0, 0),
 (@CGUID+62, 10, 277.982, -32.4806, 26.5914, 0.019631, 240000, 1855612),
-(@CGUID+63, 1, 103.51, -31.6612, 2.18704, 1.36136, 4000, 1855701),
-(@CGUID+63, 2, 104.433, -26.1661, -0.0697232, 1.6325, 0, 0),
-(@CGUID+63, 3, 102.222, -12.2622, 0.17732, 1.4675, 0, 0),
-(@CGUID+63, 4, 105.19, -1.24617, -0.0426896, 1.56018, 0, 0),
-(@CGUID+63, 5, 104.13, 9.48964, 0.251931, 1.71947, 0, 0),
-(@CGUID+63, 6, 103.15, 15.0193, -0.0717281, 1.56396, 0, 0),
-(@CGUID+63, 7, 106.842, 21.3685, 0.224192, 0.659183, 0, 0),
-(@CGUID+63, 8, 112.74, 22.792, -0.0508767, 0.164383, 2000, 1),
+(@CGUID+63, 1, 103.51044,-31.661163,2.2046442, 1.36136, 3000, @RELAYID+1),
+(@CGUID+63, 2, 104.59338,-23.583656,-0.07155674, 100, 0, 0),
+(@CGUID+63, 3, 102.89938,-19.097414,-0.043581124, 100, 0, 0),
+(@CGUID+63, 4, 102.20383,-13.462062,0.18044646, 100, 0, 0),
+(@CGUID+63, 5, 104.55045,-7.681597,0.21229711, 100, 0, 0),
+(@CGUID+63, 6, 105.15511,5.540357,0.5351643, 100, 0, 0),
+(@CGUID+63, 7, 103.2398,12.823616,-0.098418705, 100, 0, 0),
+(@CGUID+63, 8, 104.68291,17.770578,0.1706654, 100, 0, 0),
+(@CGUID+63, 9, 108.10148,21.937067,0.16965415, 100, 0, 0),
+(@CGUID+63, 10, 111.47976,22.290707,0.009937675, 100, 135000, @RELAYID+2), -- waittime between 2min and 2min 30sec
 (@CGUID+64, 1, -138.909, -205.619, 26.6743, 2.75762, 4000, 1855701),
 (@CGUID+64, 2, -140.285, -181.608, 26.5911, 1.47598, 0, 0),
 (@CGUID+64, 3, -138.759, -174.98, 26.5916, 1.22465, 0, 0),
@@ -135,13 +140,14 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+66, 6, 231.523, -180.122, 26.5913, 3.28951, 0, 0),
 (@CGUID+66, 7, 227.297, -181.833, 26.5913, 3.6987, 0, 0),
 (@CGUID+66, 8, 222.569, -185.367, 26.5913, 3.92565, 2000, 1),
-(@CGUID+67, 1, 178.208, -8.37331, -0.748543, 0, 0, 0),
-(@CGUID+67, 2, 192.227, 2.29999, -0.120996, 0, 0, 0),
-(@CGUID+67, 3, 191.193, 14.8093, 1.52797, 1.54724, 30000, 1855604),
-(@CGUID+67, 4, 248.941, 8.89292, -0.049169, 0, 0, 0),
-(@CGUID+67, 5, 245.233, 0.881873, -0.053473, 0, 0, 0),
-(@CGUID+67, 6, 237.602, -9.95962, -0.089788, 0, 0, 0),
-(@CGUID+67, 7, 227.509, -14.377, 3.02301, 3.31596, 30000, 1855605),
+(@CGUID+67, 1, 170.21268,-18.678844,1.8106413, 6.12611, 3000, @RELAYID+1),
+(@CGUID+67, 2, 176.21935,-20.366,-0.12755382, 100, 0, 0),
+(@CGUID+67, 3, 183.50932,-20.030233,-0.124699146, 100, 0, 0),
+(@CGUID+67, 4, 187.84009,-15.592921,0.09424267, 100, 0, 0),
+(@CGUID+67, 5, 191.94017,-6.714968,-0.12076864, 100, 0, 0),
+(@CGUID+67, 6, 192.66939,2.518242,-0.116914734, 100, 0, 0),
+(@CGUID+67, 7, 191.38432,9.125355,-0.11827608, 100, 0, 0),
+(@CGUID+67, 8, 190.95491,15.178104,1.7854161, 100, 135000, @RELAYID+2), -- waittime between 2min and 2min 30
 (@CGUID+68, 1, 51.3806, -156.691, 15.2135, 0, 0, 0),
 (@CGUID+68, 2, 31.5568, -158.001, 14.3307, 0, 0, 0),
 (@CGUID+68, 3, 25.3965, -156.892, 13.8555, 3.13688, 180000, 1855608),
@@ -166,12 +172,15 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+70, 6, 274.621, 31.0997, 13.4011, 4.88842, 0, 0),
 (@CGUID+70, 7, 274.341, 20.9334, 13.395, 4.73348, 0, 0),
 (@CGUID+70, 8, 274.476, 2.9775, -0.0701511, 4.74526, 2000, 1),
-(@CGUID+71, 1, 127.675, -9.82014, 0.992616, 4.74729, 4000, 1855801),
-(@CGUID+71, 2, 129.718, -18.8049, 5.70304, 4.75462, 0, 0),
-(@CGUID+71, 3, 130.379, -25.2794, 8.45543, 5.11433, 0, 0),
-(@CGUID+71, 4, 133.553, -30.3262, 11.2518, 5.57378, 0, 0),
-(@CGUID+71, 5, 139.812, -33.5707, 13.4815, 5.96333, 0, 0),
-(@CGUID+71, 6, 162.159, -39.9172, 12.2277, 5.94841, 2000, 1),
+(@CGUID+71, 1, 127.67527,-9.820141,0.9092922, 4.7473, 3000, @RELAYID+1),
+(@CGUID+71, 2, 129.5654,-17.583628,5.0594177, 100, 0, 0),
+(@CGUID+71, 3, 129.5531,-21.944284,6.884782, 100, 0, 0),
+(@CGUID+71, 4, 133.11812,-29.490608,10.753902, 100, 0, 0),
+(@CGUID+71, 5, 136.52745,-31.686588,12.264767, 100, 0, 0),
+(@CGUID+71, 6, 143.1685,-34.106094,13.614726, 100, 0, 0),
+(@CGUID+71, 7, 150.10359,-36.330883,13.5456295, 100, 0, 0),
+(@CGUID+71, 8, 154.84016,-37.25858,13.179008, 100, 0, 0),
+(@CGUID+71, 9, 161.82185,-39.311287,12.2130375, 100, 135000, @RELAYID+2), -- waittime between 2min and 2min 30
 (@CGUID+72, 1, -150.584, -157.274, 26.6739, 2.11185, 4000, 1855801),
 (@CGUID+72, 2, -149.429, -185.735, 26.5896, 4.56091, 0, 0),
 (@CGUID+72, 3, -150.932, -204.497, 26.5896, 4.51771, 2000, 1),
@@ -183,12 +192,13 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+73, 6, 54.7178, -154.831, 15.2635, 3.49953, 0, 0),
 (@CGUID+73, 7, 37.6081, -157.491, 14.737, 3.13589, 0, 0),
 (@CGUID+73, 8, 33.8367, -155.836, 14.4978, 2.64423, 2000, 1),
-(@CGUID+74, 1, 163.42, -22.1445, 3.9893, 3.50811, 4000, 1855801),
-(@CGUID+74, 2, 161.65, -24.0089, 3.37202, 3.68489, 0, 0),
-(@CGUID+74, 3, 155.926, -27.0396, 7.4329, 3.21914, 0, 0),
-(@CGUID+74, 4, 148.549, -26.228, 9.19468, 3.24506, 0, 0),
-(@CGUID+74, 5, 132.089, -33.6267, 12.8042, 3.71394, 0, 0),
-(@CGUID+74, 6, 126.817, -37.1354, 12.2635, 3.73358, 2000, 1),
+(@CGUID+74, 1, 163.42021,-22.144464,3.9059505, 3.50811, 3000, @RELAYID+1),
+(@CGUID+74, 2, 156.25214,-26.96173,7.3015285, 100, 0, 0),
+(@CGUID+74, 3, 148.84656,-26.111628,9.093671, 100, 0, 0),
+(@CGUID+74, 4, 143.56517,-26.607273,10.320737, 100, 0, 0),
+(@CGUID+74, 5, 137.3586,-29.342598,11.133306, 100, 0, 0),
+(@CGUID+74, 6, 132.71771,-32.661335,12.362364, 100, 0, 0),
+(@CGUID+74, 7, 127.05344,-36.36787,11.95393, 100, 135000, @RELAYID+2), -- waittime between 2min and 2min 30
 (@CGUID+75, 1, 219.379, 0.330607, 28.4107, 3.90954, 4000, 1855801),
 (@CGUID+75, 2, 214.701, -6.09303, 27.1319, 4.23051, 0, 0),
 (@CGUID+75, 3, 212.107, -14.6145, 27.3325, 4.67976, 0, 0),
@@ -202,8 +212,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+76, 3, 173.12, -151.982, 26.3432, 3.34908, 0, 0),
 (@CGUID+76, 4, 161.632, -153.271, 25.9648, 3.1221, 0, 0),
 (@CGUID+76, 5, 145.97, -152.706, 13.7712, 3.13306, 2000, 1),
-(@CGUID+77, 1, 60.7609, 14.7143, 3.0138, 4.57276, 4000, 1855901),
-(@CGUID+77, 2, 60.937, -19.7396, 2.79726, 4.91534, 2000, 1),
 (@CGUID+78, 1, 108.474, -168.082, 14.7663, 4.03171, 4000, 1855901),
 (@CGUID+78, 2, 93.5499, -166.973, 15.2408, 0, 0, 0),
 (@CGUID+78, 3, 87.3811, -167.817, 15.2925, 0, 0, 0),
@@ -228,15 +236,9 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+81, 2, -149.727, -393.6, 26.5896, 0, 0, 0),
 (@CGUID+81, 3, -151.597, -388.018, 26.5896, 0, 0, 0),
 (@CGUID+81, 4, -151.722, -368.615, 26.5891, 0, 2000, 1),
-(@CGUID+82, 1, 61.6461, 14.3518, 2.72275, 3.56513, 0, 0),
-(@CGUID+82, 2, 60.8672, -0.027434, -0.156324, 0, 0, 0),
-(@CGUID+82, 3, 61.8067, -18.512, 2.50957, 4.81135, 30000, 1855602),
-(@CGUID+82, 4, 103.139, -25.0153, -0.053496, 0, 0, 0),
-(@CGUID+82, 5, 101.822, -13.794, 0.162897, 0, 0, 0),
-(@CGUID+82, 6, 103.285, 12.8828, -0.099057, 0, 0, 0),
-(@CGUID+82, 7, 103.49, 18.5206, 0.124781, 0, 0, 0),
-(@CGUID+82, 8, 109.09, 22.2497, 0.136722, 0, 0, 0),
-(@CGUID+82, 9, 115.251, 22.515, -0.129131, 0.030629, 30000, 1855603),
+(@CGUID+82, 1, 60.7609,14.71426,2.9304667, 4.57276, 3000, @RELAYID+1),
+(@CGUID+82, 2, 62.473858,-0.185765,-0.1819104, 100, 0, 0),
+(@CGUID+82, 3, 60.937054,-19.739634,2.7972555, 100, 135000, @RELAYID+2), -- waittime between 2min and 2:30 
 (@CGUID+139, 1, -48.328968,-381.7298,26.584183, 100, 0, 0),
 (@CGUID+139, 2, -53.09907,-376.52548,26.585176, 100, 0, 0),
 (@CGUID+139, 3, -54.04397,-369.78027,26.585318, 100, 0, 0),
@@ -248,8 +250,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+142, 2, 72.2387, -139.227, 41.0532, 0.0098567, 2000, 0),
 (@CGUID+143, 1, 25.589, -434.98, 46.7206, 4.67513, 2000, 0),
 (@CGUID+143, 2, 25.6421, -339.964, 45.4259, 1.45108, 2000, 0),
-(@CGUID+144, 1, 146.815, -46.1878, 25.3337, 2.0794, 2000, 0),
-(@CGUID+144, 2, 147.271, 46.17, 24.4082, 1.29006, 2000, 0),
 (@CGUID+145, 1, 93.4215, -196.428, 32.1182, 0.0294966, 0, 0),
 (@CGUID+145, 2, 91.0446, -196.97, 29.245, 0.0294966, 0, 0),
 (@CGUID+145, 3, 148.97, -195.776, 26.3242, 0.0294966, 0, 0),
@@ -269,6 +269,9 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+146, 14, 231.145, -151.021, 42.196, 0, 0, 0),
 (@CGUID+147, 1, -22.8491, -341.315, 52.3623, 4.63425, 2000, 0),
 (@CGUID+147, 2, -22.9796, -434.141, 52.2505, 1.60654, 2000, 0),
+-- Cosmetic Raging Soul (18778)
+(@CGUID+148, 1, 145.90799,-46.15511,25.91606, 100, 0, 0),
+(@CGUID+148, 2, 146.69821,37.811546,25.500387, 100, 0, 0),
 -- Raging Souls on bridge
 (@CGUID+149, 1, 84.68556,-151.36273,15.344386, 100, 0, 0),
 (@CGUID+149, 2, 81.84197,-157.61043,15.356619, 100, 0, 0),
@@ -307,8 +310,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+160, 11, 122.8815,-157.53589,13.341255, 100, 0, 0),
 (@CGUID+160, 12, 138.1545,-154.87634,12.613382, 100, 0, 0),
 -- Cosmetic Raging Soul (18778)
-(@CGUID+148, 1, 145.692, -44.3438, 24.1929, 1.6776, 0, 0),
-(@CGUID+148, 2, 146.112, 44.5067, 24.9555, 1.44198, 0, 0),
 (@CGUID+153, 1, 163.575, -195.819, 44.6346, 3.10702, 2000, 0),
 (@CGUID+153, 2, 85.3807, -193.596, 32.9652, 3.09916, 2000, 0),
 (@CGUID+154, 1, 72.3599, -139.243, 43.314, 3.06775, 5000, 0),
@@ -365,33 +366,26 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+13, 18493), (@CGUID+13, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
 (@CGUID+16, 18493), (@CGUID+16, 18495), -- Auchenai Soulpriest, Auchenai Vindicator							
 (@CGUID+41, 18495), (@CGUID+41, 18497), -- Auchenai Monk, Auchenai Vindicator  
-(@CGUID+56, 18556), (@CGUID+56, 18557), (@CGUID+56, 18558), (@CGUID+56, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+57, 18556), (@CGUID+57, 18557), -- Phasing Soldier, Phasing Cleric
 (@CGUID+58, 18556), (@CGUID+58, 18557), (@CGUID+58, 18558), (@CGUID+58, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+59, 18556), (@CGUID+59, 18557), (@CGUID+59, 18558), (@CGUID+59, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+60, 18556), (@CGUID+60, 18557), (@CGUID+60, 18558), (@CGUID+60, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+61, 18556), (@CGUID+61, 18557), (@CGUID+61, 18558), (@CGUID+61, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+62, 18556), (@CGUID+62, 18557), (@CGUID+62, 18558), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer
-(@CGUID+63, 18556), (@CGUID+63, 18557), (@CGUID+63, 18558), (@CGUID+63, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+64, 18556), (@CGUID+64, 18557), (@CGUID+64, 18558), (@CGUID+64, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+65, 18556), (@CGUID+65, 18557), (@CGUID+65, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Stalker
 (@CGUID+66, 18556), (@CGUID+66, 18557), (@CGUID+66, 18558), (@CGUID+66, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
-(@CGUID+67, 18556), (@CGUID+67, 18557), (@CGUID+67, 18558), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer
 (@CGUID+68, 18556), (@CGUID+68, 18557), (@CGUID+68, 18558), (@CGUID+68, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+69, 18556), (@CGUID+69, 18557), (@CGUID+69, 18558), (@CGUID+69, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+70, 18556), (@CGUID+70, 18557), (@CGUID+70, 18558), (@CGUID+70, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
-(@CGUID+71, 18556), (@CGUID+71, 18557), (@CGUID+71, 18558), (@CGUID+71, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+72, 18556), (@CGUID+72, 18557), (@CGUID+72, 18558), (@CGUID+72, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+73, 18556), (@CGUID+73, 18557), (@CGUID+73, 18558), (@CGUID+73, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
-(@CGUID+74, 18556), (@CGUID+74, 18557), (@CGUID+74, 18558), (@CGUID+74, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+75, 18556), (@CGUID+75, 18557), (@CGUID+75, 18558), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer
 (@CGUID+76, 18556), (@CGUID+76, 18557), (@CGUID+76, 18558), (@CGUID+76, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
-(@CGUID+77, 18556), (@CGUID+77, 18557), (@CGUID+77, 18558), (@CGUID+77, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+78, 18556), (@CGUID+78, 18557), (@CGUID+78, 18558), (@CGUID+78, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+79, 18556), (@CGUID+79, 18557), (@CGUID+79, 18558), (@CGUID+79, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+80, 18556), (@CGUID+80, 18557), (@CGUID+80, 18558), (@CGUID+80, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
-(@CGUID+81, 18556), (@CGUID+81, 18559), -- Phasing Soldier, Phasing Stalker
-(@CGUID+82, 18556), (@CGUID+82, 18557), (@CGUID+82, 18558), (@CGUID+82, 18559); -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+81, 18556), (@CGUID+81, 18559); -- Phasing Soldier, Phasing Stalker
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 18371, 558, 3, -26.245405,-162.78462, 26.094448, 0, 86400, 86400, 0, 2), -- Shirrak the Dead Watcher
@@ -449,33 +443,33 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+53, 0, 558, 3, -132.501, -312.642, 27.953, 2.352, 7200, 7200, 3, 1), -- spawn_group_entry
 (@CGUID+54, 0, 558, 3, -124.601, -292.208, 27.3789, 0.0583808, 7200, 7200, 3, 1), -- spawn_group_entry
 (@CGUID+55, 0, 558, 3, -141.878, -311.274, 26.591, 1.496, 7200, 7200, 3, 1), -- spawn_group_entry
-(@CGUID+56, 0, 558, 3, 126.177, 27.9481, -0.0451297, 5.28835, 60, 60, 0, 2), -- creature_spawn_entry
+(@CGUID+56, 0, 558, 3, 126.177, 27.9481, -0.0451297, 5.28835, 60, 60, 0, 2), -- spawn_group_entry
 (@CGUID+57, 0, 558, 3, 170.213, -18.6788, 1.89394, 6.12611, 60, 60, 0, 2), -- creature_spawn_entry
 (@CGUID+58, 0, 558, 3, 234.88, -118.767, 26.6746, 0.628318, 60, 60, 0, 2), -- creature_spawn_entry
 (@CGUID+59, 0, 558, 3, 254.086, 16.2811, 1.2111, 3.9968, 60, 60, 0, 2), -- creature_spawn_entry
 (@CGUID+60, 0, 558, 3, 126.307, 33.2078, -0.113875, 4.8467, 60, 60, 0, 2), -- creature_spawn_entry
 (@CGUID+61, 0, 558, 3, 119.912, -167.935, 13.5053, 3.2492, 60, 60, 0, 2), -- creature_spawn_entry
 (@CGUID+62, 0, 558, 3, 218.466, 3.71303, 29.0994, 4.74537, 60, 60, 0, 2), -- creature_spawn_entry
-(@CGUID+63, 0, 558, 3, 103.51, -31.6612, 2.18704, 1.36136, 90, 90, 0, 2), -- creature_spawn_entry
+(@CGUID+63, 0, 558, 3, 103.51, -31.6612, 2.18704, 1.36136, 90, 90, 0, 2), -- spawn_group_entry
 (@CGUID+64, 0, 558, 3, -138.909, -205.619, 26.6743, 2.75762, 90, 90, 0, 2), -- creature_spawn_entry
 (@CGUID+65, 0, 558, 3, 186.351, -184.605, 26.6173, 1.58635, 90, 90, 0, 2), -- creature_spawn_entry
 (@CGUID+66, 0, 558, 3, 265.723, -167.4, 26.6746, 3.64774, 90, 90, 0, 2), -- creature_spawn_entry
-(@CGUID+67, 0, 558, 3, 169.078, -17.6317, 2.71439, 0.86237, 90, 90, 0, 2), -- creature_spawn_entry
+(@CGUID+67, 0, 558, 3, 170.213, -18.6788, 1.89394, 6.12611, 90, 90, 0, 2), -- spawn_group_entry
 (@CGUID+68, 0, 558, 3, 68.5056, -155.576, 15.346, 3.13688, 90, 90, 0, 2), -- creature_spawn_entry
 (@CGUID+69, 0, 558, 3, 249.466, -144.105, 29.6535, 2.93661, 90, 90, 0, 2), -- creature_spawn_entry
 (@CGUID+70, 0, 558, 3, 235.888, 37.0713, 26.69, 6.23082, 180, 180, 0, 2), -- creature_spawn_entry
-(@CGUID+71, 0, 558, 3, 127.675, -9.82014, 0.992616, 4.74729, 180, 180, 0, 2), -- creature_spawn_entry
+(@CGUID+71, 0, 558, 3, 127.675, -9.82014, 0.992616, 4.7473, 180, 180, 0, 2), -- spawn_group_entry
 (@CGUID+72, 0, 558, 3, -150.584, -157.274, 26.6739, 2.11185, 180, 180, 0, 2), -- creature_spawn_entry
 (@CGUID+73, 0, 558, 3, 63.4074, -175.264, 15.4378, 6.14356, 180, 180, 0, 2), -- creature_spawn_entry
-(@CGUID+74, 0, 558, 3, 163.42, -22.1445, 3.9893, 3.50811, 180, 180, 0, 2), -- creature_spawn_entry
+(@CGUID+74, 0, 558, 3, 163.42, -22.1445, 3.9893, 3.50811, 180, 180, 0, 2), -- spawn_group_entry
 (@CGUID+75, 0, 558, 3, 219.379, 0.330607, 28.4107, 3.90954, 180, 180, 0, 2), -- creature_spawn_entry
 (@CGUID+76, 0, 558, 3, 182.658, -140.555, 26.481, 2.25148, 180, 180, 0, 2), -- creature_spawn_entry
-(@CGUID+77, 0, 558, 3, 60.7609, 14.7143, 3.0138, 4.57276, 120, 120, 0, 2), -- creature_spawn_entry
+-- RE USE +77
 (@CGUID+78, 0, 558, 3, 108.474, -168.082, 14.7663, 4.03171, 120, 120, 0, 2), -- creature_spawn_entry
 (@CGUID+79, 0, 558, 3, 252.857, -143.331, 31.5224, 3.94444, 120, 120, 0, 2), -- creature_spawn_entry
 (@CGUID+80, 0, 558, 3, 244.796, -108.798, 26.6746, 5.41052, 120, 120, 0, 2), -- creature_spawn_entry
 (@CGUID+81, 0, 558, 3, -133.752, -394.29, 26.5895, 5.35807, 120, 120, 0, 2), -- creature_spawn_entry
-(@CGUID+82, 0, 558, 3, 61.6461, 14.3518, 2.72275, 3.56513, 120, 120, 0, 2), -- creature_spawn_entry
+(@CGUID+82, 0, 558, 3, 60.7609, 14.7143, 3.0138, 4.57276, 120, 120, 0, 2), -- spawn_group_entry
 (@CGUID+83, 18700, 558, 3, -60.676, -375.22, 26.5868, 2.13837, 7200, 7200, 2, 1), -- Reanimated Bones
 (@CGUID+84, 18700, 558, 3, -45.8042, -364.73, 26.5887, 1.10048, 7200, 7200, 2, 1), -- Reanimated Bones
 (@CGUID+85, 18700, 558, 3, -57.1931, -381.004, 26.5861, 4.4779, 7200, 7200, 2, 1), -- Reanimated Bones
@@ -537,11 +531,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+141, 18702, 558, 3, 27.672134,-401.97705,26.582186, 4.857, 7200, 7200, 0, 4), -- Auchenai Necromancer
 (@CGUID+142, 18726, 558, 3, 72.2387, -139.227, 41.1505, 0.79309, 7200, 7200, 0, 2), -- Flying Raging Soul
 (@CGUID+143, 18726, 558, 3, 25.6421, -339.964, 45.4259, 4.85502, 7200, 7200, 0, 2), -- Flying Raging Soul
-(@CGUID+144, 18726, 558, 3, 147.271, 46.17, 24.4082, 3.30403, 7200, 7200, 0, 2), -- Flying Raging Soul
+-- REUSE +144
 (@CGUID+145, 18726, 558, 3, 148.97, -195.776, 26.3242, 3.02073, 7200, 7200, 0, 2), -- Flying Raging Soul
 (@CGUID+146, 18726, 558, 3, 228.234, -154.235, 39.6051, 4.20328, 7200, 7200, 0, 2), -- Flying Raging Soul
 (@CGUID+147, 18726, 558, 3, -23.6042, -384.012, 52.4464, 1.56208, 7200, 7200, 0, 2), -- Flying Raging Soul
-(@CGUID+148, 18778, 558, 3, 146.9538, -43.67898, 25.32883, 4.657265, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
+(@CGUID+148, 18778, 558, 3, 147.281, 46.1768, 24.3901, 2.7044, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
+
 (@CGUID+149, 18506, 558, 3, 84.68556,-151.36273,15.344386, 3.4432, 600, 600, 0, 4), -- Raging Soul
 (@CGUID+150, 18506, 558, 3, 7.276525,-171.03366,12.634819, 0.13273, 600, 600, 0, 4), -- Raging Soul
 (@CGUID+153, 18778, 558, 3, 145.692, -44.3438, 24.1929, 1.6776, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
@@ -681,7 +676,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+25, 'Auchenai Crypts - Group 025 - Auchenai Necromancer | Reanimated Bones (7)', 0, 0, 0, 1, 0),
 (@SGGUID+26, 'Auchenai Crypts - Group 026 - Auchenai Necromancer | Reanimated Bones (10)', 0, 0, 0, 1, 0),
 (@SGGUID+27, 'Auchenai Crypts - Group 027 - Auchenai Necromancer | Reanimated Bones (9)', 0, 0, 0, 1, 0),
-(@SGGUID+28, 'Auchenai Crypts - Group 028 - Reanimated Bones (10)', 0, 0, 0, 1, 0);
+(@SGGUID+28, 'Auchenai Crypts - Group 028 - Reanimated Bones (10)', 0, 0, 0, 1, 0),
+-- Neutral NPCs
+-- Those npcs just walk around in the whole dungeon and have a rnd entry
+(@SGGUID+29, 'Auchenai Crypts - Group 029 - Phasing Soldier/Phasing Cleric/Phasing Sorcerer/Phasing Stalker', 0, 0, 0, 0, 0);
+
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+1, 18493, 0, 2, 0), (@SGGUID+1, 18495, 0, 2, 0), -- Auchenai Soulpriest, Auchenai Vindicator
@@ -703,8 +702,9 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+19, 18521, 1, 3, 0), (@SGGUID+19, 18524, 1, 3, 0), -- Raging Skeleton, Angered Skeleton
 (@SGGUID+20, 18521, 2, 3, 0), (@SGGUID+20, 18524, 2, 3, 0), -- Raging Skeleton, Angered Skeleton
 (@SGGUID+21, 18521, 2, 3, 0), (@SGGUID+21, 18524, 2, 3, 0), -- Raging Skeleton, Angered Skeleton
-(@SGGUID+22, 18493, 0, 0, 0), (@SGGUID+22, 18495, 0, 0, 0), (@SGGUID+22, 18497, 0, 0, 0); -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk/Auchenai
+(@SGGUID+22, 18493, 0, 0, 0), (@SGGUID+22, 18495, 0, 0, 0), (@SGGUID+22, 18497, 0, 0, 0), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk/Auchenai
 
+(@SGGUID+29, 18556, 0, 0, 0), (@SGGUID+29, 18557, 0, 0, 0), (@SGGUID+29, 18558, 0, 0, 0), (@SGGUID+29, 18559, 0, 0, 0); -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+19, 0, 0), -- spawn_group_entry
@@ -843,7 +843,15 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+28, @CGUID+134, 6, 0), -- Reanimated Bones
 (@SGGUID+28, @CGUID+135, 7, 0), -- Reanimated Bones
 (@SGGUID+28, @CGUID+136, 8, 0), -- Reanimated Bones
-(@SGGUID+28, @CGUID+137, 9, 0); -- Reanimated Bones
+(@SGGUID+28, @CGUID+137, 9, 0), -- Reanimated Bones
+
+-- Neutral Mobs
+(@SGGUID+29, @CGUID+56, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+63, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+67, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+71, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+74, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+82, -1, 0); -- spawn_group_entry
 
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
@@ -1077,8 +1085,18 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1877801, 0, 15, 32459, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cosmetic Raging Soul - Cast Raging Soul Visual');
 
 -- new dbscripts will be only one inser when done with rework
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1849701);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (@RELAYID+1, @RELAYID+2, 1849701);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Neutral NPCs spawn script
+(@RELAYID+1, 0, 0, 14, 32754, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - Remove Invisibility Aura'),
+(@RELAYID+1, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - Set Run Mode off'),
+(@RELAYID+1, 0, 2, 48, 33554432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - remove UNIT_FLAG_UNINTERACTIBLE'),
+(@RELAYID+1, 0, 3, 15, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - Cast Phase In'),
+-- Neutral NPC waypoint end script before running back to first waypoints
+(@RELAYID+2, 3000, 1, 15, 32754, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - Cast Invisibility Aura'),
+(@RELAYID+2, 3000, 2, 48, 33554432, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - add UNIT_FLAG_UNINTERACTIBLE'),
+(@RELAYID+2, 3000, 3, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - Set Run Mode off'),
+-- Auchenai Monk
 (1849701, 0, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Auchenai Monk - Set Stand State Kneel'),
 (1849701, 27000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Auchenai Monk - Set Stand State Stand');
 
