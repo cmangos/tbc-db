@@ -31,18 +31,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+9, 10, 101.79505,-9.136434,0.12334183, 100, 0, 0),
 (@CGUID+9, 11, 101.28473,-5.818955,0.06241158, 100, 0, 0),
 (@CGUID+9, 12, 98.46999,-4.272734,-0.06604094, 100, 0, 0),
-(@CGUID+13, 1, -146.241, -362.348, 26.5907, 0, 0, 0),
-(@CGUID+13, 2, -146.111, -341.64, 26.5907, 0, 0, 0),
-(@CGUID+13, 3, -143.813, -348.902, 26.5907, 0, 0, 0),
-(@CGUID+13, 4, -143.79, -363.792, 26.5907, 0, 0, 0),
-(@CGUID+13, 5, -143.978, -380.805, 26.5907, 0, 0, 0),
-(@CGUID+13, 6, -138.339, -385.452, 26.5907, 0, 0, 0),
-(@CGUID+13, 7, -120.94, -385.288, 26.5891, 0, 0, 0),
-(@CGUID+13, 8, -104.938, -385.534, 26.5891, 0, 0, 0),
-(@CGUID+13, 9, -110.419, -387.719, 26.5891, 0, 0, 0),
-(@CGUID+13, 10, -121.804, -387.763, 26.5891, 0, 0, 0),
-(@CGUID+13, 11, -137.504, -387.664, 26.5891, 0, 0, 0),
-(@CGUID+13, 12, -145.998, -380.364, 26.5896, 0, 0, 0),
 (@CGUID+18, 1, 101.2426,7.289032,0.19369556, 100, 0, 0),
 (@CGUID+18, 2, 99.97599,4.770607,0.059734028, 100, 0, 0),
 (@CGUID+18, 3, 97.24955,4.174426,-0.09839714, 100, 0, 0),
@@ -249,18 +237,13 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+82, 7, 103.49, 18.5206, 0.124781, 0, 0, 0),
 (@CGUID+82, 8, 109.09, 22.2497, 0.136722, 0, 0, 0),
 (@CGUID+82, 9, 115.251, 22.515, -0.129131, 0.030629, 30000, 1855603),
-(@CGUID+139, 1, -49.5313, -384.348, 26.5866, 0, 0, 0),
-(@CGUID+139, 2, -43.3234, -388.675, 26.5852, 0, 0, 0),
-(@CGUID+139, 3, -49.4948, -384.557, 26.5857, 0, 0, 0),
-(@CGUID+139, 4, -51.8242, -371.816, 26.5857, 0, 0, 0),
-(@CGUID+139, 5, -50.149, -362.456, 26.598, 0, 0, 0),
-(@CGUID+139, 6, -51.5602, -371.933, 26.586, 0, 0, 0),
-(@CGUID+141, 1, 17.7547, -409.4, 26.5852, 0, 0, 0),
-(@CGUID+141, 2, 28.659, -408.99, 26.5871, 0, 0, 0),
-(@CGUID+141, 3, 28.7313, -400.716, 26.5842, 0, 0, 0),
-(@CGUID+141, 4, 28.9641, -409.005, 26.5868, 0, 0, 0),
-(@CGUID+141, 5, 17.7235, -409.554, 26.5868, 0, 0, 0),
-(@CGUID+141, 6, 7.51309, -409.564, 26.5839, 0, 0, 0),
+(@CGUID+139, 1, -48.328968,-381.7298,26.584183, 100, 0, 0),
+(@CGUID+139, 2, -53.09907,-376.52548,26.585176, 100, 0, 0),
+(@CGUID+139, 3, -54.04397,-369.78027,26.585318, 100, 0, 0),
+(@CGUID+139, 4, -51.832047,-361.96216,26.611528, 100, 0, 0),
+(@CGUID+141, 1, 27.672134,-401.97705,26.582186, 100, 0, 0),
+(@CGUID+141, 2, 27.47761,-409.23453,26.590729, 100, 0, 0),
+(@CGUID+141, 3, 4.82641,-409.19406,26.582476, 100, 0, 0),
 (@CGUID+142, 1, -20.0318, -137.465, 43.2731, 6.1988, 0, 0),
 (@CGUID+142, 2, 72.2387, -139.227, 41.0532, 0.0098567, 2000, 0),
 (@CGUID+143, 1, 25.589, -434.98, 46.7206, 4.67513, 2000, 0),
@@ -337,8 +320,8 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+158, 1, 141.6882, -17.80097, 9.308136, 2.129302, 1000, 1877801);
 
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(18371, 0, 1, -24.40752, -163.4984, 26.1806, 0, 10000, 0),
-(18371, 0, 2, -63.11897, -162.7913, 26.52851, 0, 10000, 0);
+(18371, 0, 1, -26.245405,-162.78462, 26.094448, 100, 10000, 0),
+(18371, 0, 2, -63.118973,-162.7913,26.528513, 100, 10000, 0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+3, 0, 8, 0, 68, 0, NULL), -- spawn_group_entry
@@ -373,81 +356,13 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (18559, 0, 0, 0, 0, 0, '31748'), -- Phasing Stalker
 (18700, 0, 0, 0, 0, 0, '19818'); -- Reanimated Bones
 
-INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+40, @CGUID+38, 1155), -- Auchenai Monk -> Auchenai Monk
-(@CGUID+33, @CGUID+37, 1155), -- Auchenai Monk -> Auchenai Monk
-(@CGUID+46, @CGUID+51, 1155), -- Raging Skeleton -> Angered Skeleton
-(@CGUID+47, @CGUID+51, 1155), -- Raging Skeleton -> Angered Skeleton
-(@CGUID+50, @CGUID+51, 1155), -- Angered Skeleton -> Angered Skeleton
-(@CGUID+45, @CGUID+44, 1155), -- Raging Skeleton -> Raging Skeleton
-(@CGUID+48, @CGUID+44, 1155), -- Angered Skeleton -> Raging Skeleton
-(@CGUID+49, @CGUID+44, 1155), -- Angered Skeleton -> Raging Skeleton
-(@CGUID+52, @CGUID+44, 1155), -- Angered Skeleton -> Raging Skeleton
-(@CGUID+42, @CGUID+43, 1155), -- Raging Skeleton -> Raging Skeleton
-(@CGUID+53, @CGUID+43, 1155), -- Angered Skeleton -> Raging Skeleton
-(@CGUID+54, @CGUID+43, 1155), -- Angered Skeleton -> Raging Skeleton
-(@CGUID+55, @CGUID+43, 1155), -- Angered Skeleton -> Raging Skeleton
-(@CGUID+14, @CGUID+13, 1679), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+83, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+84, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+85, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+86, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+88, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+89, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+90, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+91, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+92, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+93, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+96, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+98, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+99, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+100, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+101, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+102, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+103, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+87, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+95, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+97, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+105, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+125, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+126, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+127, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+104, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+106, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+107, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+108, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+109, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+110, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+111, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+112, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+113, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+114, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+115, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+116, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+117, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+118, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+119, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+120, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+121, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+122, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+123, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+124, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+129, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+130, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+131, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+132, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+133, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+134, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+135, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+136, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+137, @CGUID+128, 1155); -- Reanimated Bones -> Reanimated Bones
+-- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 -- REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+11, 18493), (@CGUID+11, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
-(@CGUID+13, 18493), (@CGUID+13, 18495), (@CGUID+13, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
-(@CGUID+14, 18493), (@CGUID+14, 18495), (@CGUID+14, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@CGUID+13, 18493), (@CGUID+13, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
 (@CGUID+16, 18493), (@CGUID+16, 18495), -- Auchenai Soulpriest, Auchenai Vindicator							
 (@CGUID+41, 18495), (@CGUID+41, 18497), -- Auchenai Monk, Auchenai Vindicator  
 (@CGUID+56, 18556), (@CGUID+56, 18557), (@CGUID+56, 18558), (@CGUID+56, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
@@ -479,7 +394,7 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+82, 18556), (@CGUID+82, 18557), (@CGUID+82, 18558), (@CGUID+82, 18559); -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
-(@CGUID+1, 18371, 558, 3, -50.9133, -163.133, 26.3687, 0.0185413, 86400, 86400, 0, 2), -- Shirrak the Dead Watcher
+(@CGUID+1, 18371, 558, 3, -26.245405,-162.78462, 26.094448, 0, 86400, 86400, 0, 2), -- Shirrak the Dead Watcher
 (@CGUID+2, 18373, 558, 3, 66.76575, -388.3454, 26.6733, 2.932153, 86400, 86400, 0, 0), -- Exarch Maladaar
 (@CGUID+3, 0, 558, 3, 81.6418, -8.10273, 0.0192883, 4.5204, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+4, 0, 558, 3, 77.844, -8.14455, 0.0200513, 4.46804, 7200, 7200, 0, 0), -- spawn_group_entry
@@ -491,8 +406,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+10, 0, 558, 3, 168.081, -163.052, 26.4764, 6.10865, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+11, 0, 558, 3, 241.048, -50.975, 26.6746, 3.54302, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+12, 0, 558, 3, 225.46, -163.388, 26.6746, 6.05629, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+13, 0, 558, 3, -145.786, -376.33, 26.5915, 1.57631, 7200, 7200, 0, 2), -- creature_spawn_entry
-(@CGUID+14, 0, 558, 3, -143.096, -376.454, 26.5918, 1.53389, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+13, 0, 558, 3, -121.203, -388.13, 26.5886, 6.259, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+14, 0, 558, 3, -121.207, -385.13, 26.5888, 6.2513, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+15, 0, 558, 3, 189.555, -3.3563, 0.0817743, 1.58825, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+16, 0, 558, 3, 269.593, -5.89707, 0.0219023, 1.43117, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+17, 18497, 558, 3, 266.86, -5.81479, 0.0270883, 1.37881, 7200, 7200, 0, 0), -- Auchenai Monk
@@ -511,29 +426,29 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+30, 0, 558, 3, 242.325, -15.5678, 0.0219153, 0.820305, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+31, 18497, 558, 3, 187.004, 4.80022, -0.0385287, 4.95674, 7200, 7200, 0, 0), -- Auchenai Monk
 (@CGUID+32, 18497, 558, 3, 160.192, 30.6168, -0.106432, 2.94838, 7200, 7200, 0, 2), -- Auchenai Monk
-(@CGUID+33, 18497, 558, 3, -122.5634, -166.7359, 26.67193, 0.06981317, 7200, 7200, 0, 0), -- Auchenai Monk
+(@CGUID+33, 18497, 558, 3, -122.563, -166.736, 26.6719, 0.0698132, 7200, 7200, 0, 0), -- Auchenai Monk
 (@CGUID+34, 18497, 558, 3, 221.772, 13.1893, 0.00608733, 6.05629, 7200, 7200, 0, 2), -- Auchenai Monk
 (@CGUID+35, 0, 558, 3, 237.231, -50.9399, 26.6746, 3.49066, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+36, 0, 558, 3, 227.66, -155.121, 26.6746, 5.35816, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+37, 18497, 558, 3, -127.4433, -159.4812, 26.6723, 6.056293, 7200, 7200, 0, 0), -- Auchenai Monk
-(@CGUID+38, 18497, 558, 3, 21.78426, -160.7699, 13.6514, 3.071779, 7200, 7200, 0, 0), -- Auchenai Monk
-(@CGUID+39, 0, 558, 3, 166.514, -166.041, 26.4216, 6.16101, 7200, 7200, 0, 2), -- spawn_group_entry
-(@CGUID+40, 18497, 558, 3, 25.24369, -166.9502, 13.94017, 2.792527, 7200, 7200, 0, 0), -- Auchenai Monk
+(@CGUID+37, 18497, 558, 3, -127.443, -159.481, 26.6723, 6.05629, 7200, 7200, 0, 0), -- Auchenai Monk
+(@CGUID+38, 18497, 558, 3, 21.7843, -160.77, 13.6514, 3.07178, 7200, 7200, 0, 0), -- Auchenai Monk
+(@CGUID+39, 0, 558, 3, 166.514, -166.041, 26.4216, 6.16101, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+40, 18497, 558, 3, 25.2437, -166.95, 13.9402, 2.79253, 7200, 7200, 0, 0), -- Auchenai Monk
 (@CGUID+41, 0, 558, 3, 247.791, -9.66694, 0.0264493, 3.92699, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+42, 18521, 558, 3, -130.67, -304.513, 26.3778, 4.64171, 7200, 7200, 3, 1), -- Raging Skeleton
-(@CGUID+43, 18521, 558, 3, -139.069, -300, 26.423, 2.3884, 7200, 7200, 3, 1), -- Raging Skeleton
-(@CGUID+44, 18521, 558, 3, -170.374, -276.212, 31.4869, 0.13509, 7200, 7200, 3, 1), -- Raging Skeleton
-(@CGUID+45, 18521, 558, 3, -151.848, -285.093, 25.5828, 5.93604, 7200, 7200, 3, 1), -- Raging Skeleton
-(@CGUID+46, 18521, 558, 3, -127.825, -250.383, 26.3497, 2.68292, 7200, 7200, 3, 1), -- Raging Skeleton
-(@CGUID+47, 18521, 558, 3, -142.841, -251.909, 26.7593, 1.6784, 7200, 7200, 3, 1), -- Raging Skeleton
-(@CGUID+48, 18524, 558, 3, -159.087, -278.098, 26.6175, 0.132734, 7200, 7200, 3, 1), -- Angered Skeleton
-(@CGUID+49, 18524, 558, 3, -160.005, -269.389, 26.6046, 0.969183, 7200, 7200, 3, 1), -- Angered Skeleton
-(@CGUID+50, 18524, 558, 3, -138.643, -256.87, 26.7506, 0.600831, 7200, 7200, 3, 1), -- Angered Skeleton
-(@CGUID+51, 18524, 558, 3, -134.852, -247.899, 26.4308, 2.02083, 7200, 7200, 3, 1), -- Angered Skeleton
-(@CGUID+52, 18524, 558, 3, -161.238, -285.689, 26.5989, 4.20424, 7200, 7200, 3, 1), -- Angered Skeleton
-(@CGUID+53, 18524, 558, 3, -131.805, -313.267, 28.2328, 5.39962, 7200, 7200, 3, 1), -- Angered Skeleton
-(@CGUID+54, 18524, 558, 3, -127.905, -294.348, 27.0713, 3.02771, 7200, 7200, 3, 1), -- Angered Skeleton
-(@CGUID+55, 18524, 558, 3, -140.272, -310.587, 26.591, 6.26355, 7200, 7200, 3, 1), -- Angered Skeleton
+(@CGUID+42, 0, 558, 3, -129.214, -304.108, 26.4749, 1.70151, 7200, 7200, 3, 1), -- spawn_group_entry
+(@CGUID+43, 0, 558, 3, -138.844, -297.153, 26.881, 4.94713, 7200, 7200, 3, 1), -- spawn_group_entry
+(@CGUID+44, 0, 558, 3, -170.374, -276.212, 31.4869, 0.13509, 7200, 7200, 3, 1), -- spawn_group_entry
+(@CGUID+45, 0, 558, 3, -150.883, -283.294, 25.9648, 4.27718, 7200, 7200, 3, 1), -- spawn_group_entry
+(@CGUID+46, 0, 558, 3, -125.453, -253.004, 26.6172, 3.01942, 7200, 7200, 3, 1), -- spawn_group_entry
+(@CGUID+47, 0, 558, 3, -141.684, -252.533, 26.7375, 1.15231, 7200, 7200, 3, 1), -- spawn_group_entry
+(@CGUID+48, 0, 558, 3, -160.650, -276.8642, 26.795, 0.549, 7200, 7200, 3, 1), -- spawn_group_entry
+(@CGUID+49, 0, 558, 3, -155.2179, -266.100, 25.868, 1.209, 7200, 7200, 3, 1), -- spawn_group_entry
+(@CGUID+50, 0, 558, 3, -133.311, -260.582, 26.8887, 2.65719, 7200, 7200, 3, 1), -- spawn_group_entry
+(@CGUID+51, 0, 558, 3, -135.286, -245.875, 26.4129, 2.57663, 7200, 7200, 3, 1), -- spawn_group_entry
+(@CGUID+52, 0, 558, 3, -158.969, -289.935, 25.6906, 3.25183, 7200, 7200, 3, 1), -- spawn_group_entry
+(@CGUID+53, 0, 558, 3, -132.501, -312.642, 27.953, 2.352, 7200, 7200, 3, 1), -- spawn_group_entry
+(@CGUID+54, 0, 558, 3, -124.601, -292.208, 27.3789, 0.0583808, 7200, 7200, 3, 1), -- spawn_group_entry
+(@CGUID+55, 0, 558, 3, -141.878, -311.274, 26.591, 1.496, 7200, 7200, 3, 1), -- spawn_group_entry
 (@CGUID+56, 0, 558, 3, 126.177, 27.9481, -0.0451297, 5.28835, 60, 60, 0, 2), -- creature_spawn_entry
 (@CGUID+57, 0, 558, 3, 170.213, -18.6788, 1.89394, 6.12611, 60, 60, 0, 2), -- creature_spawn_entry
 (@CGUID+58, 0, 558, 3, 234.88, -118.767, 26.6746, 0.628318, 60, 60, 0, 2), -- creature_spawn_entry
@@ -561,65 +476,65 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+80, 0, 558, 3, 244.796, -108.798, 26.6746, 5.41052, 120, 120, 0, 2), -- creature_spawn_entry
 (@CGUID+81, 0, 558, 3, -133.752, -394.29, 26.5895, 5.35807, 120, 120, 0, 2), -- creature_spawn_entry
 (@CGUID+82, 0, 558, 3, 61.6461, 14.3518, 2.72275, 3.56513, 120, 120, 0, 2), -- creature_spawn_entry
-(@CGUID+83, 18700, 558, 3, -57.0486, -374.216, 26.5868, 1.60693, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+84, 18700, 558, 3, -44.5335, -365.745, 26.5908, 5.09724, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+85, 18700, 558, 3, -56.3714, -381.359, 26.5864, 3.30182, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+86, 18700, 558, 3, -65.8798, -377.71, 26.5866, 4.88361, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+87, 18700, 558, 3, -27.7304, -408.642, 26.5899, 3.1306, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+88, 18700, 558, 3, -44.8718, -377.895, 26.5849, 4.98336, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+89, 18700, 558, 3, -54.8159, -365.368, 26.5916, 1.39252, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+90, 18700, 558, 3, -66.7684, -370.037, 26.5861, 6.22586, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+91, 18700, 558, 3, -76.0561, -370.413, 26.589, 4.74303, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+92, 18700, 558, 3, -52.0016, -394.904, 27.852, 4.64956, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+93, 18700, 558, 3, -43.8139, -398.606, 26.8131, 2.95703, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+94, 18700, 558, 3, -45.2643, -405.537, 28.3561, 2.7434, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+95, 18700, 558, 3, -35.0918, -419.816, 26.6244, 3.91914, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+96, 18700, 558, 3, -49.2886, -410.637, 27.7131, 1.68233, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+97, 18700, 558, 3, -33.8195, -400.51, 24.5188, 1.48362, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+98, 18700, 558, 3, -55.6147, -402.252, 30.4692, 1.82999, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+99, 18700, 558, 3, -61.0021, -402.608, 29.1614, 6.15988, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+100, 18700, 558, 3, -58.1212, -408.04, 29.1461, 5.94626, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+101, 18700, 558, 3, -50.7328, -404.122, 30.2531, 6.11747, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+102, 18700, 558, 3, -47.5823, -395.32, 27.5912, 3.84139, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+103, 18700, 558, 3, -57.9303, -397.836, 27.9686, 3.90501, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+104, 18700, 558, 3, -30.2942, -352.082, 28.9472, 1.97372, 7200, 7200, 0, 0), -- Reanimated Bones
-(@CGUID+105, 18700, 558, 3, -29.1455, -393.659, 20.9314, 2.7379, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+106, 18700, 558, 3, -19.5043, -358.348, 26.595, 5.59204, 7200, 7200, 0, 0), -- Reanimated Bones
-(@CGUID+107, 18700, 558, 3, -18.7407, -379.276, 19.4103, 1.38937, 7200, 7200, 0, 0), -- Reanimated Bones
-(@CGUID+108, 18700, 558, 3, -21.9765, -372.255, 23.4079, 1.95878, 7200, 7200, 0, 0), -- Reanimated Bones
-(@CGUID+109, 18700, 558, 3, -15.0821, -371.851, 23.7102, 0.629103, 7200, 7200, 0, 0), -- Reanimated Bones
-(@CGUID+110, 18700, 558, 3, -26.0298, -359.786, 26.5971, 1.05479, 7200, 7200, 0, 0), -- Reanimated Bones
-(@CGUID+111, 18700, 558, 3, -37.3924, -352.116, 28.9245, 2.12529, 7200, 7200, 0, 0), -- Reanimated Bones
-(@CGUID+112, 18700, 558, 3, -27.7575, -366.652, 26.5848, 2.78031, 7200, 7200, 0, 0), -- Reanimated Bones
-(@CGUID+113, 18700, 558, 3, -18.7104, -373.63, 22.3553, 1.45613, 7200, 7200, 0, 0), -- Reanimated Bones
-(@CGUID+114, 18700, 558, 3, -12.9123, -361.958, 26.5824, 1.89046, 7200, 7200, 0, 0), -- Reanimated Bones
-(@CGUID+115, 18700, 558, 3, 11.6286, -416.595, 26.5875, 4.78858, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+116, 18700, 558, 3, 3.63836, -413.637, 26.5823, 4.74695, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+117, 18700, 558, 3, 7.24032, -398.062, 19.641, 1.85354, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+118, 18700, 558, 3, 7.06263, -402.78, 23.2532, 6.03657, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+119, 18700, 558, 3, 29.4933, -413.012, 26.5905, 4.2278, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+120, 18700, 558, 3, 32.388, -403.328, 26.584, 5.84022, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+121, 18700, 558, 3, 12.8757, -404.708, 24.7579, 5.47109, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+122, 18700, 558, 3, 21.4153, -402.563, 23.2173, 0.610259, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+123, 18700, 558, 3, 22.944, -397.048, 24.381, 2.03419, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+124, 18700, 558, 3, 23.342, -416.118, 26.5983, 0.175933, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+125, 18700, 558, 3, -18.1263, -405.396, 25.3244, 5.70121, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+126, 18700, 558, 3, -10.0026, -402.247, 22.8378, 0.231695, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+127, 18700, 558, 3, -8.65687, -396.45, 19.4094, 1.97999, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+128, 18700, 558, 3, 17.9402, -381.513, 20.5501, 4.52233, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+129, 18700, 558, 3, 22.4457, -377.248, 23.9979, 1.7648, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+130, 18700, 558, 3, 21.13, -370.713, 24.6083, 1.57552, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+131, 18700, 558, 3, 13.1984, -369.914, 25.2534, 1.30849, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+132, 18700, 558, 3, 6.13705, -374.024, 22.0521, 3.85867, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+133, 18700, 558, 3, 2.98452, -366.832, 26.5822, 1.24408, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+134, 18700, 558, 3, 14.3194, -360.835, 26.6053, 0.44062, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+135, 18700, 558, 3, 22.9908, -361.364, 26.6062, 0.315742, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+136, 18700, 558, 3, 31.5531, -364.96, 27.9252, 0.190078, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+137, 18700, 558, 3, 35.8048, -367.576, 30.2166, 5.2339, 7200, 7200, 3, 1), -- Reanimated Bones
-(@CGUID+138, 18702, 558, 3, -23.3478, -410.1846, 26.6766, 2.984513, 7200, 7200, 0, 0), -- Auchenai Necromancer
-(@CGUID+139, 18702, 558, 3, -52.2851, -371.333, 26.586, 4.76973, 7200, 7200, 0, 2), -- Auchenai Necromancer
-(@CGUID+140, 18702, 558, 3, -20.65882, -365.6899, 26.66656, 2.96706, 7200, 7200, 0, 0), -- Auchenai Necromancer
-(@CGUID+141, 18702, 558, 3, 8.02662, -409.494, 26.5837, 0.0345117, 7200, 7200, 0, 2), -- Auchenai Necromancer
+(@CGUID+83, 18700, 558, 3, -60.676, -375.22, 26.5868, 2.13837, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+84, 18700, 558, 3, -45.8042, -364.73, 26.5887, 1.10048, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+85, 18700, 558, 3, -57.1931, -381.004, 26.5861, 4.4779, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+86, 18700, 558, 3, -67.7604, -379.107, 26.5884, 2.59168, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+87, 18700, 558, 3, -29.4935, -407.865, 26.5932, 5.65481, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+88, 18700, 558, 3, -46.9262, -374.249, 26.5838, 2.91945, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+89, 18700, 558, 3, -56.29, -363.414, 26.597, 2.709, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+90, 18700, 558, 3, -65.314, -371.0779, 26.586, 3.008, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+91, 18700, 558, 3, -73.311, -368.368, 26.5895, 2.14209, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+92, 18700, 558, 3, -54.0309, -394.78, 27.4814, 2.8851, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+93, 18700, 558, 3, -46.4919, -399.833, 28.8047, 6.21854, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+94, 18700, 558, 3, -68.8471, -407.168, 26.586, 1.37364, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+95, 18700, 558, 3, -32.0481, -418.431, 26.6279, 2.90201, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+96, 18700, 558, 3, -53.9515, -413.587, 27.008, 3.40369, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+97, 18700, 558, 3,-33.2488, -399.187, 24.1911, 1.31737, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+98, 18700, 558, 3, -55.6147, -402.252, 30.4692, 1.82999, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+99, 18700, 558, 3, -64.0282, -402.274, 27.4775, 2.43728, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+100, 18700, 558, 3, -59.8627, -408.207, 28.1859, 0.437643, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+101, 18700, 558, 3, -48.261, -406.289, 29.252, 0.1193, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+102, 18700, 558, 3, -45.2503, -394.0971, 26.584, 2.680, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+103, 18700, 558, 3, -60.8396, -398.005, 27.2022, 5.93307, 7200, 7200, 3, 1), -- Reanimated Bones
+(@CGUID+104, 18700, 558, 3, -31.1888, -352.565, 28.5631, 5.37734, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+105, 18700, 558, 3, -30.5119, -393.128, 22.0562, 1.26522, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+106, 18700, 558, 3, -18.0697, -357.005, 26.6667, 3.4383, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+107, 18700, 558, 3, -14.7685, -375.457, 20.9601, 0.804673, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+108, 18700, 558, 3, -21.1691, -371.617, 23.9882, 5.10139, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+109, 18700, 558, 3, -9.31443, -371.344, 24.1771, 3.04118, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+110, 18700, 558, 3, -24.1531, -359.536, 26.6022, 5.02538, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+111, 18700, 558, 3, -37.1442, -357.175, 26.5961, 4.73336, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+112, 18700, 558, 3, -30.273, -366.937, 26.587, 2.268, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+113, 18700, 558, 3, -21.1691, -371.617, 23.9882, 5.10139, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+114, 18700, 558, 3, -15.9737, -362.208, 26.582, 1.377, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+115, 18700, 558, 3, 12.404, -416.03, 26.5903, 0.922405, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+116, 18700, 558, 3, 7.08994, -412.596, 26.5851, 1.66538, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+117, 18700, 558, 3, 7.24032, -398.062, 19.641, 1.85354, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+118, 18700, 558, 3, 5.20328, -403.278, 23.6321, 5.76185, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+119, 18700, 558, 3, 32.2836, -412.498, 26.5909, 1.461, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+120, 18700, 558, 3, 32.3281, -402.475, 26.5827, 1.32517, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+121, 18700, 558, 3, 12.4691, -405.436, 25.3647, 0.00792734, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+122, 18700, 558, 3, 19.7459, -401.711, 22.4503, 6.07264, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+123, 18700, 558, 3, 22.354, -394.141, 23.924, 3.385, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+124, 18700, 558, 3, 24.5621, -414.051, 26.5975, 0.438482, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+125, 18700, 558, 3, -17.3594, -404.786, 24.9202, 6.04675, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+126, 18700, 558, 3, -10.1332, -403.118, 23.6041, 0.302273, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+127, 18700, 558, 3, -14.5469, -397.869, 19.573, 4.13643, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+128, 18700, 558, 3, 17.4833, -383.363, 20.2131, 5.45304, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+129, 18700, 558, 3, 21.6876, -379.075, 23.4873, 1.81068, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+130, 18700, 558, 3, 22.0713, -373.135, 23.7932, 4.01356, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+131, 18700, 558, 3, 15.6629, -370.201, 25.061, 2.43685, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+132, 18700, 558, 3, 9.27196, -372.598, 23.1934, 3.62891, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+133, 18700, 558, 3, 5.97879, -361.831, 26.592, 3.95102, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+134, 18700, 558, 3, 9.9985, -356.758, 26.6098, 0.823736, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+135, 18700, 558, 3, 22.4484, -359.937, 26.6166, 5.20707, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+136, 18700, 558, 3, 31.4731, -363.05, 27.3198, 4.51642, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+137, 18700, 558, 3, 31.2688, -371.338, 27.6363, 0.417179, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+138, 18702, 558, 3, -23.3478, -410.185, 26.6766, 2.98451, 7200, 7200, 0, 0), -- Auchenai Necromancer
+(@CGUID+139, 18702, 558, 3, -48.329, -381.73, 26.5842, 5.45428, 7200, 7200, 0, 4), -- Auchenai Necromancer
+(@CGUID+140, 18702, 558, 3, -20.6588, -365.69, 26.6666, 2.96706, 7200, 7200, 0, 0), -- Auchenai Necromancer
+(@CGUID+141, 18702, 558, 3, 27.672134,-401.97705,26.582186, 4.857, 7200, 7200, 0, 4), -- Auchenai Necromancer
 (@CGUID+142, 18726, 558, 3, 72.2387, -139.227, 41.1505, 0.79309, 7200, 7200, 0, 2), -- Flying Raging Soul
 (@CGUID+143, 18726, 558, 3, 25.6421, -339.964, 45.4259, 4.85502, 7200, 7200, 0, 2), -- Flying Raging Soul
 (@CGUID+144, 18726, 558, 3, 147.271, 46.17, 24.4082, 3.30403, 7200, 7200, 0, 2), -- Flying Raging Soul
@@ -629,7 +544,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+148, 18778, 558, 3, 146.9538, -43.67898, 25.32883, 4.657265, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
 (@CGUID+149, 18506, 558, 3, 84.68556,-151.36273,15.344386, 3.4432, 600, 600, 0, 4), -- Raging Soul
 (@CGUID+150, 18506, 558, 3, 7.276525,-171.03366,12.634819, 0.13273, 600, 600, 0, 4), -- Raging Soul
-(@CGUID+151, 18506, 558, 3, 44.54099, -162.2908, 15.00108, 0.1835147, 600, 600, 0, 0), -- Raging Soul
 (@CGUID+153, 18778, 558, 3, 145.692, -44.3438, 24.1929, 1.6776, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
 (@CGUID+154, 18778, 558, 3, 163.575, -195.819, 44.6346, 3.10702, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
 (@CGUID+155, 18778, 558, 3, 72.3599, -139.243, 43.314, 3.06775, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
@@ -746,7 +660,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+10, 'Auchenai Crypts - Group 010 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator', 0, 0, 0, 1, 0),
 (@SGGUID+11, 'Auchenai Crypts - Group 011 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator', 0, 0, 0, 1, 0),
 (@SGGUID+12, 'Auchenai Crypts - Group 012 - Auchenai Monk/Auchenai Vindicator | Auchenai Soulpriest/Auchenai Vindicator', 0, 0, 0, 1, 0),
--- Patrol Leader is always a Auchenai Soulpriest/Auchenai Vindicator followor can be Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk
+-- Leader can be a Soulpriest or a Vindicator (creature_spawn_entry) follower can be Soulpriest/Vindicator/Monk (spawn_group)
 -- its possible to get a double Auchenai Vindicato or double Auchenai Soulpriest group
 (@SGGUID+13, 'Auchenai Crypts - Group 013 - Auchenai Soulpriest/Auchenai Vindicator | Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 01', 0, 0, 0, 1, 0),
 (@SGGUID+14, 'Auchenai Crypts - Group 014 - Auchenai Soulpriest/Auchenai Vindicator | Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 02', 0, 0, 0, 1, 0),
@@ -754,7 +668,20 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Group can hav max 2 Auchenai Soulpriest/Auchenai Vindicator spawned
 -- can have max 1 Auchenai Monk spawned
 (@SGGUID+15, 'Auchenai Crypts - Group 015 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk', 0, 0, 0, 1, 0),
-(@SGGUID+16, 'Auchenai Crypts - Group 016 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 03', 0, 0, 0, 1, 0);
+(@SGGUID+16, 'Auchenai Crypts - Group 016 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 03', 0, 0, 0, 1, 0),
+(@SGGUID+17, 'Auchenai Crypts - Group 017 - Auchenai Monk (2)', 0, 0, 0, 1, 0),
+(@SGGUID+18, 'Auchenai Crypts - Group 018 - Auchenai Monk (2)', 0, 0, 0, 1, 0),
+(@SGGUID+19, 'Auchenai Crypts - Group 019 - Raging Skeleton/Angered Skeleton', 0, 0, 0, 1, 0),
+(@SGGUID+20, 'Auchenai Crypts - Group 020 - Raging Skeleton/Angered Skeleton', 0, 0, 0, 1, 0),
+(@SGGUID+21, 'Auchenai Crypts - Group 021 - Raging Skeleton/Angered Skeleton', 0, 0, 0, 1, 0),
+-- Leader can be a Soulpriest or a Vindicator (creature_spawn_entry) follower can be Soulpriest/Vindicator/Monk (spawn_group)
+(@SGGUID+22, 'Auchenai Crypts - Group 022 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 04', 0, 0, 0, 1, 0),
+(@SGGUID+23, 'Auchenai Crypts - Group 023 - Auchenai Necromancer | Reanimated Bones (8)', 0, 0, 0, 1, 0),
+(@SGGUID+24, 'Auchenai Crypts - Group 024 - Reanimated Bones (10)', 0, 0, 0, 1, 0),
+(@SGGUID+25, 'Auchenai Crypts - Group 025 - Auchenai Necromancer | Reanimated Bones (7)', 0, 0, 0, 1, 0),
+(@SGGUID+26, 'Auchenai Crypts - Group 026 - Auchenai Necromancer | Reanimated Bones (10)', 0, 0, 0, 1, 0),
+(@SGGUID+27, 'Auchenai Crypts - Group 027 - Auchenai Necromancer | Reanimated Bones (9)', 0, 0, 0, 1, 0),
+(@SGGUID+28, 'Auchenai Crypts - Group 028 - Reanimated Bones (10)', 0, 0, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+1, 18493, 0, 2, 0), (@SGGUID+1, 18495, 0, 2, 0), -- Auchenai Soulpriest, Auchenai Vindicator
@@ -772,7 +699,12 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+13, 18493, 0, 1, 0), (@SGGUID+13, 18495, 0, 1, 0), (@SGGUID+13, 18497, 0, 1, 0), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
 (@SGGUID+14, 18493, 0, 1, 0), (@SGGUID+14, 18495, 0, 1, 0), (@SGGUID+14, 18497, 0, 1, 0), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
 (@SGGUID+15, 18493, 0, 2, 0), (@SGGUID+15, 18495, 0, 2, 0), (@SGGUID+15, 18497, 0, 1, 0), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
-(@SGGUID+16, 18493, 0, 2, 0), (@SGGUID+16, 18495, 0, 2, 0), (@SGGUID+16, 18497, 0, 1, 0); -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@SGGUID+16, 18493, 0, 2, 0), (@SGGUID+16, 18495, 0, 2, 0), (@SGGUID+16, 18497, 0, 1, 0), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@SGGUID+19, 18521, 1, 3, 0), (@SGGUID+19, 18524, 1, 3, 0), -- Raging Skeleton, Angered Skeleton
+(@SGGUID+20, 18521, 2, 3, 0), (@SGGUID+20, 18524, 2, 3, 0), -- Raging Skeleton, Angered Skeleton
+(@SGGUID+21, 18521, 2, 3, 0), (@SGGUID+21, 18524, 2, 3, 0), -- Raging Skeleton, Angered Skeleton
+(@SGGUID+22, 18493, 0, 0, 0), (@SGGUID+22, 18495, 0, 0, 0), (@SGGUID+22, 18497, 0, 0, 0); -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk/Auchenai
+
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+19, 0, 0), -- spawn_group_entry
@@ -821,18 +753,111 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+16, @CGUID+10, 0, 0), -- spawn_group_entry
 (@SGGUID+16, @CGUID+27, 1, 0), -- spawn_group_entry
-(@SGGUID+16, @CGUID+39, 2, 0); -- spawn_group_entry
+(@SGGUID+16, @CGUID+39, 2, 0), -- spawn_group_entry
+
+(@SGGUID+17, @CGUID+38, 0, 0), -- Auchenai Monk
+(@SGGUID+17, @CGUID+40, 1, 0), -- Auchenai Monk
+
+(@SGGUID+18, @CGUID+33, 0, 0), -- Auchenai Monk
+(@SGGUID+18, @CGUID+37, 1, 0), -- Auchenai Monk
+
+(@SGGUID+19, @CGUID+46, -1, 0), -- spawn_group_entry
+(@SGGUID+19, @CGUID+47, -1, 0), -- spawn_group_entry
+(@SGGUID+19, @CGUID+50, -1, 0), -- spawn_group_entry
+(@SGGUID+19, @CGUID+51, -1, 0), -- spawn_group_entry
+
+(@SGGUID+20, @CGUID+44, -1, 0), -- spawn_group_entry
+(@SGGUID+20, @CGUID+45, -1, 0), -- spawn_group_entry
+(@SGGUID+20, @CGUID+48, -1, 0), -- spawn_group_entry
+(@SGGUID+20, @CGUID+49, -1, 0), -- spawn_group_entry
+(@SGGUID+20, @CGUID+52, -1, 0), -- spawn_group_entry
+
+(@SGGUID+21, @CGUID+42, -1, 0), -- spawn_group_entry
+(@SGGUID+21, @CGUID+43, -1, 0), -- spawn_group_entry
+(@SGGUID+21, @CGUID+53, -1, 0), -- spawn_group_entry
+(@SGGUID+21, @CGUID+54, -1, 0), -- spawn_group_entry
+(@SGGUID+21, @CGUID+55, -1, 0), -- spawn_group_entry
+
+(@SGGUID+22, @CGUID+13, 0, 0), -- creature_spawn_entry
+(@SGGUID+22, @CGUID+14, 1, 0), -- spawn_group_entry
+
+(@SGGUID+23, @CGUID+139, 0, 0), -- Auchenai Necromancer
+(@SGGUID+23, @CGUID+83, 1, 0), -- Reanimated Bones
+(@SGGUID+23, @CGUID+84, 2, 0), -- Reanimated Bones
+(@SGGUID+23, @CGUID+85, 3, 0), -- Reanimated Bones
+(@SGGUID+23, @CGUID+86, 4, 0), -- Reanimated Bones
+(@SGGUID+23, @CGUID+88, 5, 0), -- Reanimated Bones
+(@SGGUID+23, @CGUID+89, 6, 0), -- Reanimated Bones
+(@SGGUID+23, @CGUID+90, 7, 0), -- Reanimated Bones
+(@SGGUID+23, @CGUID+91, 8, 0), -- Reanimated Bones
+
+(@SGGUID+24, @CGUID+92, 0, 0), -- Reanimated Bones
+(@SGGUID+24, @CGUID+93, 1, 0), -- Reanimated Bones
+(@SGGUID+24, @CGUID+94, 2, 0), -- Reanimated Bones
+(@SGGUID+24, @CGUID+96, 3, 0), -- Reanimated Bones
+(@SGGUID+24, @CGUID+98, 4, 0), -- Reanimated Bones
+(@SGGUID+24, @CGUID+99, 5, 0), -- Reanimated Bones
+(@SGGUID+24, @CGUID+100, 6, 0), -- Reanimated Bones
+(@SGGUID+24, @CGUID+101, 7, 0), -- Reanimated Bones
+(@SGGUID+24, @CGUID+102, 8, 0), -- Reanimated Bones
+(@SGGUID+24, @CGUID+103, 9, 0), -- Reanimated Bones
+
+(@SGGUID+25, @CGUID+138, 0, 0), -- Auchenai Necromancer
+(@SGGUID+25, @CGUID+87, 1, 0), -- Reanimated Bones
+(@SGGUID+25, @CGUID+95, 2, 0), -- Reanimated Bones
+(@SGGUID+25, @CGUID+97, 3, 0), -- Reanimated Bones
+(@SGGUID+25, @CGUID+105, 4, 0), -- Reanimated Bones
+(@SGGUID+25, @CGUID+125, 5, 0), -- Reanimated Bones
+(@SGGUID+25, @CGUID+126, 6, 0), -- Reanimated Bones
+(@SGGUID+25, @CGUID+127, 7, 0), -- Reanimated Bones
+
+(@SGGUID+26, @CGUID+140, 0, 0), -- Auchenai Necromancer
+(@SGGUID+26, @CGUID+104, 1, 0), -- Reanimated Bones
+(@SGGUID+26, @CGUID+106, 2, 0), -- Reanimated Bones
+(@SGGUID+26, @CGUID+107, 3, 0), -- Reanimated Bones
+(@SGGUID+26, @CGUID+108, 4, 0), -- Reanimated Bones
+(@SGGUID+26, @CGUID+109, 5, 0), -- Reanimated Bones
+(@SGGUID+26, @CGUID+110, 6, 0), -- Reanimated Bones
+(@SGGUID+26, @CGUID+111, 7, 0), -- Reanimated Bones
+(@SGGUID+26, @CGUID+112, 8, 0), -- Reanimated Bones
+(@SGGUID+26, @CGUID+113, 9, 0), -- Reanimated Bones
+(@SGGUID+26, @CGUID+114, 10, 0), -- Reanimated Bones
+
+(@SGGUID+27, @CGUID+141, 0, 0), -- Auchenai Necromancer
+(@SGGUID+27, @CGUID+115, 1, 0), -- Reanimated Bones
+(@SGGUID+27, @CGUID+116, 2, 0), -- Reanimated Bones
+(@SGGUID+27, @CGUID+118, 3, 0), -- Reanimated Bones
+(@SGGUID+27, @CGUID+119, 4, 0), -- Reanimated Bones
+(@SGGUID+27, @CGUID+120, 5, 0), -- Reanimated Bones
+(@SGGUID+27, @CGUID+121, 6, 0), -- Reanimated Bones
+(@SGGUID+27, @CGUID+122, 7, 0), -- Reanimated Bones
+(@SGGUID+27, @CGUID+123, 8, 0), -- Reanimated Bones
+(@SGGUID+27, @CGUID+124, 9, 0), -- Reanimated Bones
+
+(@SGGUID+28, @CGUID+128, 0, 0), -- Reanimated Bones
+(@SGGUID+28, @CGUID+129, 1, 0), -- Reanimated Bones
+(@SGGUID+28, @CGUID+130, 2, 0), -- Reanimated Bones
+(@SGGUID+28, @CGUID+131, 3, 0), -- Reanimated Bones
+(@SGGUID+28, @CGUID+132, 4, 0), -- Reanimated Bones
+(@SGGUID+28, @CGUID+133, 5, 0), -- Reanimated Bones
+(@SGGUID+28, @CGUID+134, 6, 0), -- Reanimated Bones
+(@SGGUID+28, @CGUID+135, 7, 0), -- Reanimated Bones
+(@SGGUID+28, @CGUID+136, 8, 0), -- Reanimated Bones
+(@SGGUID+28, @CGUID+137, 9, 0); -- Reanimated Bones
 
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@SGGUID+13, 1, 3, 0, @SGGUID+13, 4, 'Auchenai Crypts - Group 013 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator - Patrol 01'),
-(@SGGUID+14, 1, 3, 0, @SGGUID+14, 4, 'Auchenai Crypts - Group 013 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator - Patrol 02'),
-(@SGGUID+16, 3, 3, 0, @SGGUID+16, 4, 'Auchenai Crypts - Group 016 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 03');
+(@SGGUID+13, 1, 4, 0, @SGGUID+13, 4, 'Auchenai Crypts - Group 013 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator - Patrol 01'),
+(@SGGUID+14, 1, 4, 0, @SGGUID+14, 4, 'Auchenai Crypts - Group 013 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator - Patrol 02'),
+(@SGGUID+16, 3, 4, 0, @SGGUID+16, 4, 'Auchenai Crypts - Group 016 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 03'),
+(@SGGUID+22, 2, 3, 0, @SGGUID+22, 4, 'Auchenai Crypts - Group 022 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 04');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+13,'Auchenai Crypts - Group 013 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator - Patrol 01'),
 (@SGGUID+14,'Auchenai Crypts - Group 013 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator - Patrol 02'),
-(@SGGUID+16,'Auchenai Crypts - Group 016 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 03');
+(@SGGUID+16,'Auchenai Crypts - Group 016 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 03'),
+(@SGGUID+22,'Auchenai Crypts - Group 022 - Auchenai Soulpriest/Auchenai Vindicator/Auchenai Monk - Patrol 04');
+
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+13, 1, 268.32703,-3.305813,-0.0678567, 100, 0, 0),
@@ -862,7 +887,14 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+16, 4, 104.99422,-162.99231,14.774395, 100, 0, 0),
 (@SGGUID+16, 5, 81.24179,-163.2077,15.368842, 100, 0, 0),
 (@SGGUID+16, 6, 64.53549,-162.75394,15.386806, 100, 0, 0),
-(@SGGUID+16, 7, 48.272915,-162.58008,15.13582, 100, 0, 0);
+(@SGGUID+16, 7, 48.272915,-162.58008,15.13582, 100, 0, 0),
+
+(@SGGUID+22, 1, -105.24392,-388.10626,26.589207, 100, 0, 0),
+(@SGGUID+22, 2, -121.20291,-388.12982,26.58856, 100, 0, 0),
+(@SGGUID+22, 3, -139.48105,-387.83615,26.589808, 100, 0, 0),
+(@SGGUID+22, 4, -143.4483,-384.72183,26.590303, 100, 0, 0),
+(@SGGUID+22, 5, -144.98119,-375.0744,26.59283, 100, 0, 0),
+(@SGGUID+22, 6, -144.88542,-342.67935,26.591034, 100, 0, 0);
 
 -- =======
 -- POOLING
@@ -960,10 +992,8 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- =========
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (8336004,8336007,8336701,8336903,8336907,8337007,8337013,8337403,8338003,8338309,8338313,10131510);
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1877801,1855601,1855701,1855801,1855901,1855602,1855603,1849301,1855604,1855605,1855606,1855607,1855608,1855609,1855610,1855611,1855612);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1877801,1855601,1855701,1855801,1855901,1855602,1855603,1855604,1855605,1855606,1855607,1855608,1855609,1855610,1855611,1855612);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1849301, 3000, 15, 32930, 0, 0, 18778, @CGUID+158, 17, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Blue Beam'),
-(1849301, 5000, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Pause Waypoints'),
 --
 --
 (1855601, 1000, 15, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Phasing Soldier - Cast Phase In'),
