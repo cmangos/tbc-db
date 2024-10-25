@@ -3,9 +3,10 @@ DBName: Auchindoun - Auchenai Crypts
 DBScriptName: -
 DB%Complete: 85
 DBComment:
-* add ss.32460 for 18726, not for 18778 which casts 32459 by script in 1sec interval
+Flying Raging Soul - Aura SpellID: 32460 on spawn - Cast SpellID: 32459 in 1 second interval
+* CGUID+158 is the only Cosmetic Raging Soul in the dungeon, used for:
 * @CGUID+23 and @CGUID+24 channeling should stack on @CGUID+158
-* Recheck Flying Raging Soul / Cosmetic Raging Soul - Spawns and Pathing 
+* Ancient Draenei Spirit need to get confirmed that they exist in tbc spawns
 EndDBScriptData */
 
 SET @CGUID := 5580000; -- creatures
@@ -257,7 +258,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+146, 14, 231.145, -151.021, 42.196, 0, 0, 0),
 (@CGUID+147, 1, -22.8491, -341.315, 52.3623, 4.63425, 2000, 0),
 (@CGUID+147, 2, -22.9796, -434.141, 52.2505, 1.60654, 2000, 0),
--- Cosmetic Raging Soul (18778)
 (@CGUID+148, 1, 145.90799,-46.15511,25.91606, 100, 0, 0),
 (@CGUID+148, 2, 146.69821,37.811546,25.500387, 100, 0, 0),
 -- Raging Souls on bridge
@@ -305,8 +305,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+155, 1, -22.606, -431.96, 51.8957, 1.68544, 2000, 0),
 (@CGUID+155, 2, -23.1827, -343.781, 52.2056, 1.54015, 2000, 0),
 (@CGUID+156, 1, 25.3586, -432.834, 46.1591, 1.35559, 2000, 0),
-(@CGUID+156, 2, 25.9022, -344.431, 46.2485, 1.60691, 2000, 0),
-(@CGUID+158, 1, 141.6882, -17.80097, 9.308136, 2.129302, 1000, 1877801);
+(@CGUID+156, 2, 25.9022, -344.431, 46.2485, 1.60691, 2000, 0);
 
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (18371, 0, 1, -26.245405,-162.78462, 26.094448, 0, 10000, 0),
@@ -503,16 +502,16 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+145, 18726, 558, 3, 148.97, -195.776, 26.3242, 3.02073, 7200, 7200, 0, 2), -- Flying Raging Soul
 (@CGUID+146, 18726, 558, 3, 228.234, -154.235, 39.6051, 4.20328, 7200, 7200, 0, 2), -- Flying Raging Soul
 (@CGUID+147, 18726, 558, 3, -23.6042, -384.012, 52.4464, 1.56208, 7200, 7200, 0, 2), -- Flying Raging Soul
-(@CGUID+148, 18778, 558, 3, 147.281, 46.1768, 24.3901, 2.7044, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
+(@CGUID+148, 18726, 558, 3, 147.281, 46.1768, 24.3901, 2.7044, 7200, 7200, 0, 2), -- Flying Raging Soul
 
 (@CGUID+149, 18506, 558, 3, 84.68556,-151.36273,15.344386, 3.4432, 600, 600, 0, 4), -- Raging Soul
 (@CGUID+150, 18506, 558, 3, 7.276525,-171.03366,12.634819, 0.13273, 600, 600, 0, 4), -- Raging Soul
-(@CGUID+153, 18778, 558, 3, 145.692, -44.3438, 24.1929, 1.6776, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
-(@CGUID+154, 18778, 558, 3, 163.575, -195.819, 44.6346, 3.10702, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
-(@CGUID+155, 18778, 558, 3, 72.3599, -139.243, 43.314, 3.06775, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
-(@CGUID+156, 18778, 558, 3, -22.606, -431.96, 51.8957, 1.68544, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
+(@CGUID+153, 18726, 558, 3, 145.692, -44.3438, 24.1929, 1.6776, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
+(@CGUID+154, 18726, 558, 3, 163.575, -195.819, 44.6346, 3.10702, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
+(@CGUID+155, 18726, 558, 3, 72.3599, -139.243, 43.314, 3.06775, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
+(@CGUID+156, 18726, 558, 3, -22.606, -431.96, 51.8957, 1.68544, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
 -- RE-USE 157
-(@CGUID+158, 18778, 558, 3, 141.6882, -17.80097, 9.308136, 2.129302, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
+(@CGUID+158, 18778, 558, 3, 141.688, -17.801, 9.30814, 2.1293, 7200, 7200, 0, 0), -- Cosmetic Raging Soul
 (@CGUID+159, 18506, 558, 3, 165.15187,-170.92766,26.309748, 3.0544, 600, 600, 0, 4), -- Raging Soul
 (@CGUID+160, 18506, 558, 3, 28.647678,-156.4261,14.11979, 6.18033, 600, 600, 0, 4), -- Raging Soul
 (@CGUID+161, 18766, 558, 3, 113.5894, -132.9443, -139.5885, 2.722714, 7200, 7200, 0, 0), -- Pool of Souls
