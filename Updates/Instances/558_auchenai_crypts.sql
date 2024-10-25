@@ -199,7 +199,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+78, 2, 94.0889,-166.98608,15.221693, 100, 0, 0),
 (@CGUID+78, 3, 87.63592,-167.62035,15.353543, 100, 0, 0),
 (@CGUID+78, 4, 83.18925,-169.28035,15.387257, 100, 0, 0),
-(@CGUID+78, 5, 80.92766,-172.92093,15.428644, 100, 135000, @RELAYID+2), -- waittime between 2min and 2min 30
+(@CGUID+78, 5	, 80.92766,-172.92093,15.428644, 100, 135000, @RELAYID+2), -- waittime between 2min and 2min 30
 (@CGUID+79, 1, 252.85664,-143.33148,31.354084,3.94444, 3000, @RELAYID+1),
 (@CGUID+79, 2, 247.20137,-141.40672,28.45697, 100, 0, 0),
 (@CGUID+79, 3, 239.47426,-140.56499,26.604721, 100, 0, 0),
@@ -345,6 +345,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (18559, 0, 0, 0, 0, 0, '31748'), -- Phasing Stalker
 (18700, 0, 0, 0, 0, 0, '19818'); -- Reanimated Bones
 
+
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 -- REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
@@ -415,13 +416,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+57, 0, 558, 3, -144.012, -216.429, 26.6743, 4.04916, 60, 60, 0, 2), -- spawn_group_entry
 (@CGUID+58, 0, 558, 3, 234.88, -118.766, 26.6746, 0.628319, 60, 60, 0, 2), -- spawn_group_entry
 (@CGUID+59, 0, 558, 3, 254.086, 16.2811, 1.2111, 3.9968, 60, 60, 0, 2), -- spawn_group_entry
--- reuse+60 - 61
+-- (@CGUID+60, 19416, 558, 3, 230.425, 27.504, 4.36937, 6.12611, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
+-- (@CGUID+61, 19416, 558, 3, 233.828, -156.722, 26.6746, 0.471239, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
 (@CGUID+63, 0, 558, 3, 103.51, -31.6612, 2.18704, 1.36136, 90, 90, 0, 2), -- spawn_group_entry
 (@CGUID+64, 0, 558, 3, -138.909, -205.619, 26.6743, 2.75762, 90, 90, 0, 2), -- spawn_group_entry
 (@CGUID+65, 0, 558, 3, 186.398, -187.634, 26.6152, 5.28835, 90, 90, 0, 2), -- spawn_group_entry
 (@CGUID+66, 0, 558, 3, 265.723, -167.4, 26.6746, 3.64774, 90, 90, 0, 2), -- spawn_group_entry
 (@CGUID+67, 0, 558, 3, 170.213, -18.6788, 1.89394, 6.12611, 90, 90, 0, 2), -- spawn_group_entry
--- RE USE +68  +69
+-- (@CGUID+68, 19416, 558, 3, -112.746, -276.347, 31.772, 4.62512, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
+-- (@CGUID+69, 19416, 558, 3, -34.3666, -427.057, 31.0559, 6.17847, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
 (@CGUID+70, 0, 558, 3, 235.888, 37.0713, 26.69, 6.23083, 180, 180, 0, 2), -- spawn_group_entry
 (@CGUID+71, 0, 558, 3, 127.675, -9.82014, 0.992616, 4.7473, 180, 180, 0, 2), -- spawn_group_entry
 (@CGUID+72, 0, 558, 3, -150.584, -157.274, 26.6739, 2.11185, 180, 180, 0, 2), -- spawn_group_entry
@@ -460,7 +463,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+105, 18700, 558, 3, -30.5119, -393.128, 22.0562, 1.26522, 7200, 7200, 2, 1), -- Reanimated Bones
 (@CGUID+106, 18700, 558, 3, -18.0697, -357.005, 26.6667, 3.4383, 7200, 7200, 2, 1), -- Reanimated Bones
 (@CGUID+107, 18700, 558, 3, -14.7685, -375.457, 20.9601, 0.804673, 7200, 7200, 2, 1), -- Reanimated Bones
-(@CGUID+108, 18700, 558, 3, -21.1691, -371.617, 23.9882, 5.10139, 7200, 7200, 2, 1), -- Reanimated Bones
+(@CGUID+108, 18700, 558, 3, -30.7189, -377.371, 22.1754, 4.24306, 7200, 7200, 2, 1), -- Reanimated Bones
 (@CGUID+109, 18700, 558, 3, -9.31443, -371.344, 24.1771, 3.04118, 7200, 7200, 2, 1), -- Reanimated Bones
 (@CGUID+110, 18700, 558, 3, -24.1531, -359.536, 26.6022, 5.02538, 7200, 7200, 2, 1), -- Reanimated Bones
 (@CGUID+111, 18700, 558, 3, -37.1442, -357.175, 26.5961, 4.73336, 7200, 7200, 2, 1), -- Reanimated Bones
