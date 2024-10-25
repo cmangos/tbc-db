@@ -21530,12 +21530,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1870204','18702','0','0','100','1029','12100','17500','4800','9600','0','0','11','38252','1','32','0','0','0','0','0','0','0','0','Auchenai Necromancer (Heroic) - Cast Seed of Corruption'),
 ('1870205','18702','14','0','100','1027','1000','15','15700','26500','0','0','11','33325','15','0','0','0','0','0','0','0','0','0','Auchenai Necromancer (Normal) - Cast Shadow Mend on Friendly Missing HP'),
 ('1870206','18702','14','0','100','1029','2500','15','6100','8400','0','0','11','37367','15','0','0','0','0','0','0','0','0','0','Auchenai Necromancer (Heroic) - Cast Shadow Mend on Friendly Missing HP'),
--- Flying Raging Soul 18726 - ss.32460
-('1872601','18726','29','0','100','1','0','0','1000','1000','0','0','11','32459','0','0','0','0','0','0','0','0','0','0','Flying Raging Soul - Cast Raging Soul Visual on OOC Timer'),
+-- Flying Raging Soul 18726 
+('1872601','18726','29','11','100','1','0','0','0','0','0','0','11','32460','0','0','0','0','0','0','0','0','0','0','Flying Raging Soul - Cast 32460 on Spawn'),
+('1872602','18726','29','0','100','1','0','0','1000','1000','0','0','11','32459','0','0','0','0','0','0','0','0','0','0','Flying Raging Soul - Cast Raging Soul Visual on OOC Timer'),
 -- Pool of Souls 18766
 ('1876601','18766','10','0','100','1','0','100','10000','10000','0','0','11','32889','6','0','0','0','0','0','0','0','0','0','Pool of Souls - Cast Grasp of Death on Hostile LOS'),
--- Cosmetic Raging Soul 18778 - doesnt use 32460
-('1877801','18778','29','0','100','1','0','0','1000','1000','0','0','11','32459','0','0','0','0','0','0','0','0','0','0','Cosmetic Raging Soul - Cast Raging Soul Visual on OOC Timer'),
+-- Cosmetic Raging Soul 18778 
+('1877801','18778','23','0','100','1','32930','1','1000','1000','0','0','11','32459','0','0','22','1','0','0','0','0','0','0','Cosmetic Raging Soul -  Cast Raging Soul Visual on Blue Beam hit'),
 -- D'ore (4.3.4 Official Data - Normal/Heroic)
 ('1941201','19412','11','0','100','0','0','0','0','0','0','0','1','16804','0','0','11','7765','0','0','0','0','0','0','D''ore - Text Emote and Cast Projection on Spawn'),
 -- GUID Based
