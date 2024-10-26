@@ -17,6 +17,7 @@ SET @PGUID := 49500; -- pools
 SET @SGGUID := 5580000; -- spawn_groups
 SET @STRINGID := 5580000; -- used for StringID's
 SET @RELAYID := 5580000; -- used for dbscript_relay
+
 -- =========
 -- CREATURES
 -- =========

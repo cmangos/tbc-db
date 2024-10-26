@@ -28,6 +28,9 @@ UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN 
 -- Phasing Stalker
 UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (18559, 20313);
 
+-- Raging Soul
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7, Detection = 5 WHERE entry IN (18506, 20316);
+
 -- -----------
 -- SpellLists
 -- -----------
