@@ -205,3 +205,48 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1850301 WHERE `entry` = 18503;
 UPDATE `creature_template` SET `SpellList` = 2030901 WHERE `entry` = 20309;
+
+-- Reanimated Bones
+DELETE FROM `creature_template_spells` WHERE `entry` = 18700;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20317;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1870001, 2031701);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1870001, 'Auchenai Crypts - Reanimated Bones - Normal', 0, 0),
+(2031701, 'Auchenai Crypts - Reanimated Bones - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1870001, 2031701);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1870001, 1, 13444, 0, -1, 1, 0, 100, 0, 4000, 18000, 10000, 24000, 'Reanimated Bones - Sunder Armor - current'),
+(1870001, 2, 13584, 0, -1, 1, 0, 100, 0, 1000, 12000, 6000, 14000, 'Reanimated Bones - Strike - current'),
+
+(2031701, 1, 13444, 0, -1, 1, 0, 100, 0, 4000, 18000, 10000, 24000, 'Reanimated Bones - Sunder Armor - current'),
+(2031701, 2, 13584, 0, -1, 1, 0, 100, 0, 1000, 12000, 6000, 14000, 'Reanimated Bones - Strike - current');
+
+UPDATE `creature_template` SET `SpellList` = 1870001 WHERE `entry` = 18700;
+UPDATE `creature_template` SET `SpellList` = 2031701 WHERE `entry` = 20317;
+
+
+-- Auchenai Necromancer
+DELETE FROM `creature_template_spells` WHERE `entry` = 18702;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20300;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1870201, 2030001);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1870201, 'Auchenai Crypts - Auchenai Necromancer - Normal', 0, 0),
+(2030001, 'Auchenai Crypts - Auchenai Necromancer - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1870201, 2030001);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1870201, 1, 33325, 0, -1, 204, 0, 100, 0, 10000, 22000, 12000, 24000, 'Auchenai Necromancer - Shadow Mend - friendly missing 50% excluding self'),
+(1870201, 2, 32863, 0, -1, 1, 0, 100, 0, 12000, 22000, 17000, 27000, 'Auchenai Necromancer - Seed of Corruption - current'),
+(1870201, 3, 35839, 0, -1, 1, 0, 100, 0, 0, 9000, 3000, 13000, 'Auchenai Necromancer - Drain Soul - current'),
+
+(2030001, 1, 37367, 0, -1, 204, 0, 100, 0, 10000, 22000, 12000, 24000, 'Auchenai Necromancer - Shadow Mend - friendly missing 50% excluding self'),
+(2030001, 2, 38252, 0, -1, 1, 0, 100, 0, 12000, 22000, 17000, 27000, 'Auchenai Necromancer - Seed of Corruption - current'),
+(2030001, 3, 35839, 0, -1, 1, 0, 100, 0, 0, 9000, 3000, 13000, 'Auchenai Necromancer - Drain Soul - current');
+
+UPDATE `creature_template` SET `SpellList` = 1870201 WHERE `entry` = 18702;
+UPDATE `creature_template` SET `SpellList` = 2030001 WHERE `entry` = 20300;
