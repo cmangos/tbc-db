@@ -21489,7 +21489,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1850604','18506','0','0','100','1028','0','4000','0','0','0','0','11','38380','1','0','41','2000','0','0','0','0','0','0','Raging Soul (Heroic) - Cast Rage and Delayed Despawn'),
 -- Raging Skeleton 18521
 ('1852101','18521','11','0','100','0','0','0','0','0','0','0','11','10095','0','34','0','0','0','0','0','0','0','0','Raging Skeleton - Cast Hate to Zero on Spawn'),
--- Angered Skeleton (18524) - NSR
+-- Angered Skeleton (18524)
+('1852101','18521','11','0','100','0','0','0','0','0','0','0','11','32885','0','34','0','0','0','0','0','0','0','0','Angered Skeleton - Cast Infuriate on Spawn'),
 -- Phasing Soldier 18556
 ('1855601','18556','11','0','100','0','0','0','0','0','0','0','11','33422','0','34','0','0','0','0','0','0','0','0','Phasing Soldier - Cast Phase In on Spawn'),
 ('1855602','18556','0','0','100','0','0','0','0','0','0','0','11','32828','0','0','0','0','0','0','0','0','0','0','Phasing Soldier - Cast Protection Aura'),
@@ -21545,7 +21546,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('558002401','-5580024','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Set Phase 1 OnSpawn'),
 ('558002402','-5580024','21','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Set Phase 1 JustReachedHome'),
 ('558002403','-5580024','1','1','100','0','1000','1000','0','0','0','0','53','5580001','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start Relay script OOC'),
-
 
 -- ==============================================================
 -- Auchindoun: Mana-Tombs - (4.3.4 Official Data - Normal/Heroic) - 100% Scripted From Official Data
