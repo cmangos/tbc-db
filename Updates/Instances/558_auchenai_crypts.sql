@@ -3,8 +3,7 @@ DBName: Auchindoun - Auchenai Crypts
 DBScriptName: -
 DB%Complete: 85
 DBComment:
-Flying Raging Soul - Aura SpellID: 32460 on spawn - Cast SpellID: 32459 in 1 second interval
-* CGUID+158 is the only Cosmetic Raging Soul in the dungeon, used for:
+* ToDO:
 * @CGUID+23 and @CGUID+24 channeling should stack on @CGUID+158
 * Ancient Draenei Spirit need to get confirmed that they exist in tbc spawns
 EndDBScriptData */
@@ -235,31 +234,31 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+141, 1, 27.672134,-401.97705,26.582186, 100, 0, 0),
 (@CGUID+141, 2, 27.47761,-409.23453,26.590729, 100, 0, 0),
 (@CGUID+141, 3, 4.82641,-409.19406,26.582476, 100, 0, 0),
-(@CGUID+142, 1, -20.0318, -137.465, 43.2731, 6.1988, 0, 0),
-(@CGUID+142, 2, 72.2387, -139.227, 41.0532, 0.0098567, 2000, 0),
-(@CGUID+143, 1, 25.589, -434.98, 46.7206, 4.67513, 2000, 0),
-(@CGUID+143, 2, 25.6421, -339.964, 45.4259, 1.45108, 2000, 0),
-(@CGUID+145, 1, 93.4215, -196.428, 32.1182, 0.0294966, 0, 0),
-(@CGUID+145, 2, 91.0446, -196.97, 29.245, 0.0294966, 0, 0),
-(@CGUID+145, 3, 148.97, -195.776, 26.3242, 0.0294966, 0, 0),
-(@CGUID+146, 1, 228.025, -154.651, 42.4524, 0, 0, 0),
-(@CGUID+146, 2, 225.331, -160.48, 42.9246, 0, 0, 0),
-(@CGUID+146, 3, 226.264, -167.052, 43.6191, 0, 0, 0),
-(@CGUID+146, 4, 228.999, -171.227, 44.0913, 0, 0, 0),
-(@CGUID+146, 5, 234.165, -174.739, 44.6191, 0, 0, 0),
-(@CGUID+146, 6, 240.23, -175.168, 44.758, 0, 0, 0),
-(@CGUID+146, 7, 245.8, -173.596, 44.8362, 0, 0, 0),
-(@CGUID+146, 8, 250.734, -170.353, 44.8918, 0, 0, 0),
-(@CGUID+146, 9, 253.153, -164.773, 44.4473, 0, 0, 0),
-(@CGUID+146, 10, 251.409, -158.43, 43.8496, 0, 0, 0),
-(@CGUID+146, 11, 247.624, -153.522, 43.1682, 0, 0, 0),
-(@CGUID+146, 12, 241.587, -149.266, 42.4738, 0, 0, 0),
-(@CGUID+146, 13, 236.165, -148.947, 42.2238, 0, 0, 0),
-(@CGUID+146, 14, 231.145, -151.021, 42.196, 0, 0, 0),
-(@CGUID+147, 1, -22.8491, -341.315, 52.3623, 4.63425, 2000, 0),
-(@CGUID+147, 2, -22.9796, -434.141, 52.2505, 1.60654, 2000, 0),
+-- test
+(@CGUID+143, 1, 225.33128, -160.47964, 42.924637, 100, 0, 0),
+(@CGUID+143, 2, 226.26433, -167.05211, 43.61908, 100, 0, 0),
+(@CGUID+143, 3, 228.99861, -171.22679, 44.09132, 100, 0, 0),
+(@CGUID+143, 4, 234.16539, -174.73897, 44.61909, 100, 0, 0),
+(@CGUID+143, 5, 240.23022, -175.16766, 44.757957, 100, 0, 0),
+(@CGUID+143, 6, 245.79956, -173.5961, 44.836193, 100, 0, 0),
+(@CGUID+143, 7, 250.73444, -170.3529, 44.89179, 100, 0, 0),
+(@CGUID+143, 8, 253.15332, -164.77332, 44.44733, 100, 0, 0),
+(@CGUID+143, 9, 251.40865,  -158.42947, 43.8496, 100, 0, 0),
+(@CGUID+143, 10, 247.62373, -153.52211, 43.168236, 100, 0, 0),
+(@CGUID+143, 11, 241.58646, -149.26561, 42.473785, 100, 0, 0),
+(@CGUID+143, 12, 236.16528, -148.9468, 42.22376, 100, 0, 0),
+(@CGUID+143, 13, 231.14494, -151.02124, 42.195972, 100, 0, 0),
+(@CGUID+143, 14, 228.57088, -154.5548, 42.41823, 100, 0, 0),
+(@CGUID+144, 1, 25.970398, -434.88214, 46.664665, 100, 0, 0),
+(@CGUID+144, 2, 26.003061, -340.35342, 46.470245, 100, 0, 0),
+(@CGUID+145, 1, -22.65043,-433.66025,52.33453, 100, 0, 0),
+(@CGUID+145, 2, -22.849066, -341.31458, 52.362286, 100, 0, 0),
+(@CGUID+146, 1, 134.81668,-194.58784,32.757103, 100, 0, 0),
+(@CGUID+146, 2, 91.04459,-196.96999,29.244957, 100, 0, 0),
+(@CGUID+147, 1, 71.92045,-139.5788,43.93974, 100, 0, 0),
+(@CGUID+147, 2, -20.375921,-137.91414,42.55454, 100, 0, 0),
 (@CGUID+148, 1, 145.90799,-46.15511,25.91606, 100, 0, 0),
-(@CGUID+148, 2, 146.69821,37.811546,25.500387, 100, 0, 0),
+(@CGUID+148, 2, 146.30122, 46.281876, 25.472498, 100, 0, 0),
 -- Raging Souls on bridge
 (@CGUID+149, 1, 84.68556,-151.36273,15.344386, 100, 0, 0),
 (@CGUID+149, 2, 81.84197,-157.61043,15.356619, 100, 0, 0),
@@ -296,16 +295,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+160, 9, 98.44696,-156.50946,14.997771, 100, 0, 0),
 (@CGUID+160, 10, 108.76256,-159.6261,14.678636, 100, 0, 0),
 (@CGUID+160, 11, 122.8815,-157.53589,13.341255, 100, 0, 0),
-(@CGUID+160, 12, 138.1545,-154.87634,12.613382, 100, 0, 0),
--- Cosmetic Raging Soul (18778)
-(@CGUID+153, 1, 163.575, -195.819, 44.6346, 3.10702, 2000, 0),
-(@CGUID+153, 2, 85.3807, -193.596, 32.9652, 3.09916, 2000, 0),
-(@CGUID+154, 1, 72.3599, -139.243, 43.314, 3.06775, 5000, 0),
-(@CGUID+154, 2, -15.3524, -131.667, 41.8842, 3.12273, 2000, 0),
-(@CGUID+155, 1, -22.606, -431.96, 51.8957, 1.68544, 2000, 0),
-(@CGUID+155, 2, -23.1827, -343.781, 52.2056, 1.54015, 2000, 0),
-(@CGUID+156, 1, 25.3586, -432.834, 46.1591, 1.35559, 2000, 0),
-(@CGUID+156, 2, 25.9022, -344.431, 46.2485, 1.60691, 2000, 0);
+(@CGUID+160, 12, 138.1545,-154.87634,12.613382, 100, 0, 0);
 
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (18371, 0, 1, -26.245405,-162.78462, 26.094448, 0, 10000, 0),
@@ -496,20 +486,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+139, 18702, 558, 3, -48.329, -381.73, 26.5842, 5.45428, 7200, 7200, 0, 4), -- Auchenai Necromancer
 (@CGUID+140, 18702, 558, 3, -20.6588, -365.69, 26.6666, 2.96706, 7200, 7200, 0, 0), -- Auchenai Necromancer
 (@CGUID+141, 18702, 558, 3, 27.672134,-401.97705,26.582186, 4.857, 7200, 7200, 0, 4), -- Auchenai Necromancer
-(@CGUID+142, 18726, 558, 3, 72.2387, -139.227, 41.1505, 0.79309, 7200, 7200, 0, 2), -- Flying Raging Soul
-(@CGUID+143, 18726, 558, 3, 25.6421, -339.964, 45.4259, 4.85502, 7200, 7200, 0, 2), -- Flying Raging Soul
--- REUSE +144
-(@CGUID+145, 18726, 558, 3, 148.97, -195.776, 26.3242, 3.02073, 7200, 7200, 0, 2), -- Flying Raging Soul
-(@CGUID+146, 18726, 558, 3, 228.234, -154.235, 39.6051, 4.20328, 7200, 7200, 0, 2), -- Flying Raging Soul
-(@CGUID+147, 18726, 558, 3, -23.6042, -384.012, 52.4464, 1.56208, 7200, 7200, 0, 2), -- Flying Raging Soul
+(@CGUID+143, 18726, 558, 3, 225.33128,-160.47964,42.924637, 1.5497, 7200, 7200, 0, 2), -- Flying Raging Soul
+(@CGUID+144, 18726, 558, 3, 25.611702,-418.80383,46.970222, 1.5497, 7200, 7200, 0, 2), -- Flying Raging Soul
+(@CGUID+145, 18726, 558, 3, -23.284008,-353.65082,52.444916, 1.55950, 7200, 7200, 0, 2), -- Flying Raging Soul
+(@CGUID+146, 18726, 558, 3, 134.81668,-194.58784,32.757103, 3.04688, 7200, 7200, 0, 2), -- Flying Raging Soul
+(@CGUID+147, 18726, 558, 3, 71.92045,-139.5788,43.93974, 6.10635, 7200, 7200, 0, 2), -- Flying Raging Soul
 (@CGUID+148, 18726, 558, 3, 147.281, 46.1768, 24.3901, 2.7044, 7200, 7200, 0, 2), -- Flying Raging Soul
-
 (@CGUID+149, 18506, 558, 3, 84.68556,-151.36273,15.344386, 3.4432, 600, 600, 0, 4), -- Raging Soul
 (@CGUID+150, 18506, 558, 3, 7.276525,-171.03366,12.634819, 0.13273, 600, 600, 0, 4), -- Raging Soul
-(@CGUID+153, 18726, 558, 3, 145.692, -44.3438, 24.1929, 1.6776, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
-(@CGUID+154, 18726, 558, 3, 163.575, -195.819, 44.6346, 3.10702, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
-(@CGUID+155, 18726, 558, 3, 72.3599, -139.243, 43.314, 3.06775, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
-(@CGUID+156, 18726, 558, 3, -22.606, -431.96, 51.8957, 1.68544, 7200, 7200, 0, 2), -- Cosmetic Raging Soul
 -- RE-USE 157
 (@CGUID+158, 18778, 558, 3, 141.688, -17.801, 9.30814, 2.1293, 7200, 7200, 0, 0), -- Cosmetic Raging Soul
 (@CGUID+159, 18506, 558, 3, 165.15187,-170.92766,26.309748, 3.0544, 600, 600, 0, 4), -- Raging Soul
@@ -999,10 +983,15 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1849701, 0, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Auchenai Monk - Set Stand State Kneel'),
 (1849701, 27000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Auchenai Monk - Set Stand State Stand');
 
+DELETE FROM dbscripts_on_relay WHERE id = @RELAYID+1;
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- SpawnGroup +8 both npc use blue beam on CGUID+158
+(@RELAYID+1,0,0,15,32930,0,0,18778,@CGUID+158,17,0,0,0,0,0,0,0,0,'spawn_group_entry - Cast Blue Beam on Cosmetic Raging Soul');
+
+
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
