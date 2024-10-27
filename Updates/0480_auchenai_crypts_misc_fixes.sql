@@ -356,9 +356,35 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 ('1847801', '0', '16856', '0', '-1', '1', '0', '100', '1','8500','16800','10900','24100', 'Avatar of the Martyred - Mortal Strike on Current'),
 ('1847801', '1', '16145', '0', '-1', '1', '0', '100', '1','6500','11500','6200','15700', 'Avatar of the Martyred - Sunder Armor on Current'),
 
-('2030301', '0', '16856', '0', '-1', '1', '0', '100', '1','8500','16800','10900','24100', 'Avatar of the Martyred - Mortal Strike on Current'),
+('2030301', '0', '15708', '0', '-1', '1', '0', '100', '1','8500','16800','10900','24100', 'Avatar of the Martyred - Mortal Strike on Current'),
 ('2030301', '1', '16145', '0', '-1', '1', '0', '100', '1','6500','11500','6200','15700', 'Avatar of the Martyred - Sunder Armor on Current');
 
 UPDATE `creature_template` SET `SpellList` = 1847801 WHERE `entry` = 18478;
 UPDATE `creature_template` SET `SpellList` = 2030301 WHERE `entry` = 20303;
+
+
+-- Exarch Maladaar
+DELETE FROM `creature_template_spells` WHERE `entry` = 18373;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20306;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1837301, 2030601);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1837301, 'Auchenai Crypts - Exarch Maladaar - Normal', 0, 0),
+(2030601, 'Auchenai Crypts - Exarch Maladaar - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1837301, 2030601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId2030601 `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+('1837301', '0', '32346', '0', '-1', '101', '0', '100', '5','19000','31000','35000','67000', 'Exarch Maladaar - Stolen Soul on random player non tank'),
+('1837301', '1', '32422', '0', '-1', '1', '0', '100', '1','4000','8000','4000','18000', 'Exarch Maladaar - Ribbon of Souls on current'),
+('1837301', '2', '32421', '0', '-1', '0', '0', '100', '2','11000','29000','13000','30000', 'Exarch Maladaar - Soul Scream'),
+
+('2030601', '0', '32346', '0', '-1', '101', '0', '100', '5','19000','31000','35000','67000', 'Exarch Maladaar - Stolen Soul on random player non tank'),
+('2030601', '1', '32422', '0', '-1', '1', '0', '100', '1','4000','8000','4000','18000', 'Exarch Maladaar - Ribbon of Souls on current'),
+('2030601', '2', '32421', '0', '-1', '0', '0', '100', '2','11000','29000','13000','30000', 'Exarch Maladaar - Soul Scream');
+
+UPDATE `creature_template` SET `SpellList` = 1837301 WHERE `entry` = 18373;
+UPDATE `creature_template` SET `SpellList` = 2030601 WHERE `entry` = 20306;
+
+
 
