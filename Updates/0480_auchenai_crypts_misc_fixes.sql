@@ -378,7 +378,7 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1837301, 2030601);
-INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId2030601 `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 ('1837301', '0', '32346', '0', '-1', '101', '0', '100', '5','19000','31000','35000','67000', 'Exarch Maladaar - Stolen Soul on random player non tank'),
 ('1837301', '1', '32422', '0', '-1', '1', '0', '100', '1','4000','8000','4000','18000', 'Exarch Maladaar - Ribbon of Souls on current'),
 ('1837301', '2', '32421', '0', '-1', '0', '0', '100', '2','11000','29000','13000','30000', 'Exarch Maladaar - Soul Scream'),
