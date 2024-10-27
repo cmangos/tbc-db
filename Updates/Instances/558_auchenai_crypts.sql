@@ -405,32 +405,32 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+53, 0, 558, 3, -132.501, -312.642, 27.953, 2.352, 7200, 7200, 3, 1), -- spawn_group_entry
 (@CGUID+54, 0, 558, 3, -124.601, -292.208, 27.3789, 0.0583808, 7200, 7200, 3, 1), -- spawn_group_entry
 (@CGUID+55, 0, 558, 3, -141.878, -311.274, 26.591, 1.496, 7200, 7200, 3, 1), -- spawn_group_entry
-(@CGUID+56, 0, 558, 3, 126.177, 27.9481, -0.0451297, 5.28835, 60, 60, 0, 2), -- spawn_group_entry
-(@CGUID+57, 0, 558, 3, -144.012, -216.429, 26.6743, 4.04916, 60, 60, 0, 2), -- spawn_group_entry
-(@CGUID+58, 0, 558, 3, 234.88, -118.766, 26.6746, 0.628319, 60, 60, 0, 2), -- spawn_group_entry
-(@CGUID+59, 0, 558, 3, 254.086, 16.2811, 1.2111, 3.9968, 60, 60, 0, 2), -- spawn_group_entry
+(@CGUID+56, 0, 558, 3, 126.177, 27.9481, -0.0451297, 5.28835, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+57, 0, 558, 3, -144.012, -216.429, 26.6743, 4.04916, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+58, 0, 558, 3, 234.88, -118.766, 26.6746, 0.628319, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+59, 0, 558, 3, 254.086, 16.2811, 1.2111, 3.9968, 7200, 7200, 0, 2), -- spawn_group_entry
 -- (@CGUID+60, 19416, 558, 3, 230.425, 27.504, 4.36937, 6.12611, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
 -- (@CGUID+61, 19416, 558, 3, 233.828, -156.722, 26.6746, 0.471239, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
-(@CGUID+63, 0, 558, 3, 103.51, -31.6612, 2.18704, 1.36136, 90, 90, 0, 2), -- spawn_group_entry
-(@CGUID+64, 0, 558, 3, -138.909, -205.619, 26.6743, 2.75762, 90, 90, 0, 2), -- spawn_group_entry
-(@CGUID+65, 0, 558, 3, 186.398, -187.634, 26.6152, 5.28835, 90, 90, 0, 2), -- spawn_group_entry
-(@CGUID+66, 0, 558, 3, 265.723, -167.4, 26.6746, 3.64774, 90, 90, 0, 2), -- spawn_group_entry
-(@CGUID+67, 0, 558, 3, 170.213, -18.6788, 1.89394, 6.12611, 90, 90, 0, 2), -- spawn_group_entry
+(@CGUID+63, 0, 558, 3, 103.51, -31.6612, 2.18704, 1.36136, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+64, 0, 558, 3, -138.909, -205.619, 26.6743, 2.75762, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+65, 0, 558, 3, 186.398, -187.634, 26.6152, 5.28835, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+66, 0, 558, 3, 265.723, -167.4, 26.6746, 3.64774, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+67, 0, 558, 3, 170.213, -18.6788, 1.89394, 6.12611, 7200, 7200, 0, 2), -- spawn_group_entry
 -- (@CGUID+68, 19416, 558, 3, -112.746, -276.347, 31.772, 4.62512, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
 -- (@CGUID+69, 19416, 558, 3, -34.3666, -427.057, 31.0559, 6.17847, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
-(@CGUID+70, 0, 558, 3, 235.888, 37.0713, 26.69, 6.23083, 180, 180, 0, 2), -- spawn_group_entry
-(@CGUID+71, 0, 558, 3, 127.675, -9.82014, 0.992616, 4.7473, 180, 180, 0, 2), -- spawn_group_entry
-(@CGUID+72, 0, 558, 3, -150.584, -157.274, 26.6739, 2.11185, 180, 180, 0, 2), -- spawn_group_entry
-(@CGUID+73, 0, 558, 3, 63.4074, -175.264, 15.4378, 6.14356, 180, 180, 0, 2), -- spawn_group_entry
-(@CGUID+74, 0, 558, 3, 163.42, -22.1445, 3.9893, 3.50811, 180, 180, 0, 2), -- spawn_group_entry
-(@CGUID+75, 0, 558, 3, 219.379, 0.330607, 28.4107, 3.90954, 180, 180, 0, 2), -- spawn_group_entry
-(@CGUID+76, 0, 558, 3, 182.658, -140.555, 26.481, 2.25147, 180, 180, 0, 2), -- spawn_group_entry
+(@CGUID+70, 0, 558, 3, 235.888, 37.0713, 26.69, 6.23083, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+71, 0, 558, 3, 127.675, -9.82014, 0.992616, 4.7473, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+72, 0, 558, 3, -150.584, -157.274, 26.6739, 2.11185, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+73, 0, 558, 3, 63.4074, -175.264, 15.4378, 6.14356, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+74, 0, 558, 3, 163.42, -22.1445, 3.9893, 3.50811, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+75, 0, 558, 3, 219.379, 0.330607, 28.4107, 3.90954, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+76, 0, 558, 3, 182.658, -140.555, 26.481, 2.25147, 7200, 7200, 0, 2), -- spawn_group_entry
 -- RE USE +77
-(@CGUID+78, 0, 558, 3, 108.474, -168.082, 14.7663, 4.03171, 120, 120, 0, 2), -- spawn_group_entry
-(@CGUID+79, 0, 558, 3, 252.857, -143.331, 31.5224, 3.94444, 120, 120, 0, 2), -- spawn_group_entry
-(@CGUID+80, 0, 558, 3, 244.796, -108.798, 26.6746, 5.41052, 120, 120, 0, 2), -- spawn_group_entry
-(@CGUID+81, 0, 558, 3, -133.752, -394.29, 26.5895, 2.37365, 120, 120, 0, 2), -- creature_spawn_entry
-(@CGUID+82, 0, 558, 3, 60.7609, 14.7143, 3.0138, 4.57276, 120, 120, 0, 2), -- spawn_group_entry
+(@CGUID+78, 0, 558, 3, 108.474, -168.082, 14.7663, 4.03171, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+79, 0, 558, 3, 252.857, -143.331, 31.5224, 3.94444, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+80, 0, 558, 3, 244.796, -108.798, 26.6746, 5.41052, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+81, 0, 558, 3, -133.752, -394.29, 26.5895, 2.37365, 7200, 7200, 0, 2), -- creature_spawn_entry
+(@CGUID+82, 0, 558, 3, 60.7609, 14.7143, 3.0138, 4.57276, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+83, 18700, 558, 3, -60.676, -375.22, 26.5868, 2.13837, 7200, 7200, 2, 1), -- Reanimated Bones
 (@CGUID+84, 18700, 558, 3, -45.8042, -364.73, 26.5887, 1.10048, 7200, 7200, 2, 1), -- Reanimated Bones
 (@CGUID+85, 18700, 558, 3, -57.1931, -381.004, 26.5861, 4.4779, 7200, 7200, 2, 1), -- Reanimated Bones
@@ -802,29 +802,26 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 -- Neutral Mobs
 (@SGGUID+29, @CGUID+56, -1, 0), -- spawn_group_entry
-(@SGGUID+29, @CGUID+63, -1, 0), -- spawn_group_entry
-(@SGGUID+29, @CGUID+67, -1, 0), -- spawn_group_entry
-(@SGGUID+29, @CGUID+71, -1, 0), -- spawn_group_entry
-(@SGGUID+29, @CGUID+74, -1, 0), -- spawn_group_entry
-(@SGGUID+29, @CGUID+82, -1, 0), -- spawn_group_entry
-
+(@SGGUID+29, @CGUID+57, -1, 0), -- spawn_group_entry
 (@SGGUID+29, @CGUID+58, -1, 0), -- spawn_group_entry
 (@SGGUID+29, @CGUID+59, -1, 0), -- spawn_group_entry
-(@SGGUID+29, @CGUID+66, -1, 0), -- spawn_group_entry
-(@SGGUID+29, @CGUID+70, -1, 0), -- spawn_group_entry
-(@SGGUID+29, @CGUID+75, -1, 0), -- spawn_group_entry
-(@SGGUID+29, @CGUID+79, -1, 0), -- spawn_group_entry
-(@SGGUID+29, @CGUID+80, -1, 0), -- spawn_group_entry
-
-
-(@SGGUID+29, @CGUID+57, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+63, -1, 0), -- spawn_group_entry
 (@SGGUID+29, @CGUID+64, -1, 0), -- spawn_group_entry
 (@SGGUID+29, @CGUID+65, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+66, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+67, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+70, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+71, -1, 0), -- spawn_group_entry
 (@SGGUID+29, @CGUID+72, -1, 0), -- spawn_group_entry
 (@SGGUID+29, @CGUID+73, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+74, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+75, -1, 0), -- spawn_group_entry
 (@SGGUID+29, @CGUID+76, -1, 0), -- spawn_group_entry
 (@SGGUID+29, @CGUID+78, -1, 0), -- spawn_group_entry
-(@SGGUID+29, @CGUID+81, -1, 0); -- spawn_group_entry
+(@SGGUID+29, @CGUID+79, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+80, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+81, -1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+82, -1, 0); -- spawn_group_entry
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+13, 1, 4, 0, @SGGUID+13, 4, 'Auchenai Crypts - Group 013 - Auchenai Monk | Auchenai Soulpriest/Auchenai Vindicator - Patrol 01'),
