@@ -176,13 +176,13 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1850101, 2032301);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1850101, 1, 32829, 0, -1, 2, 0, 100, 0, 2000, 8000, 4000, 11000, 'Unliving Cleric - Spirit Vengeance -  self'),
-(1850101, 2, 31975, 0, -1, 1, 0, 100, 0, 6000, 12000, 8000, 16000, 'Unliving Cleric - Serpent Sting - current'),
+(1850101, 1, 32829, 0, -1, 2, 0, 100, 0, 2000, 8000, 4000, 11000, 'Unliving Stalker - Spirit Vengeance -  self'),
+(1850101, 2, 31975, 0, -1, 1, 0, 100, 0, 6000, 12000, 8000, 16000, 'Unliving Stalker - Serpent Sting - current'),
 (1850101, 3, 15547, 2, -1, 1, 0, 100, 0, 0, 2500, 2000, 5000, 'Unliving Stalker - Shoot - current'),
 
-(2032301, 1, 32829, 0, -1, 2, 0, 100, 0, 2000, 8000, 4000, 11000, 'Unliving Cleric - Spirit Vengeance -  self'),
-(2032301, 2, 37551, 0, -1, 105, 0, 100, 0, 5000, 11000, 12000, 22000, 'Unliving Cleric - Viper Sting - random mana user'),
-(2032301, 3, 35511, 0, -1, 1, 0, 100, 0, 6000, 12000, 8000, 16000, 'Unliving Cleric - Serpent Sting - current'),
+(2032301, 1, 32829, 0, -1, 2, 0, 100, 0, 2000, 8000, 4000, 11000, 'Unliving Stalker - Spirit Vengeance -  self'),
+(2032301, 2, 37551, 0, -1, 105, 0, 100, 0, 5000, 11000, 12000, 22000, 'Unliving Stalker - Viper Sting - random mana user'),
+(2032301, 3, 35511, 0, -1, 1, 0, 100, 0, 6000, 12000, 8000, 16000, 'Unliving Stalker - Serpent Sting - current'),
 (2032301, 4, 16100, 2, -1, 1, 0, 100, 0, 0, 2500, 2000, 5000, 'Unliving Stalker - Shoot - current');
 
 UPDATE `creature_template` SET `SpellList` = 1850101 WHERE `entry` = 18501;
@@ -329,14 +329,36 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1855901, 2031301);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1855901, 1, 32829, 0, -1, 2, 0, 100, 0, 2000, 8000, 4000, 11000, 'Phasing Cleric - Spirit Vengeance -  self'),
-(1855901, 2, 31975, 0, -1, 1, 0, 100, 0, 6000, 12000, 8000, 16000, 'Phasing Cleric - Serpent Sting - current'),
+(1855901, 1, 32829, 0, -1, 2, 0, 100, 0, 2000, 8000, 4000, 11000, 'Phasing Stalker - Spirit Vengeance -  self'),
+(1855901, 2, 31975, 0, -1, 1, 0, 100, 0, 6000, 12000, 8000, 16000, 'Phasing Stalker - Serpent Sting - current'),
 (1855901, 3, 15547, 2, -1, 1, 0, 100, 0, 0, 2500, 2000, 5000, 'Phasing Stalker - Shoot - current'),
 
-(2031301, 1, 32829, 0, -1, 2, 0, 100, 0, 2000, 8000, 4000, 11000, 'Phasing Cleric - Spirit Vengeance -  self'),
-(2031301, 2, 37551, 0, -1, 105, 0, 100, 0, 5000, 11000, 12000, 22000, 'Phasing Cleric - Viper Sting - random mana user'),
-(2031301, 3, 35511, 0, -1, 1, 0, 100, 0, 6000, 12000, 8000, 16000, 'Phasing Cleric - Serpent Sting - current'),
+(2031301, 1, 32829, 0, -1, 2, 0, 100, 0, 2000, 8000, 4000, 11000, 'Phasing Stalker - Spirit Vengeance -  self'),
+(2031301, 2, 37551, 0, -1, 105, 0, 100, 0, 5000, 11000, 12000, 22000, 'Phasing Stalker - Viper Sting - random mana user'),
+(2031301, 3, 35511, 0, -1, 1, 0, 100, 0, 6000, 12000, 8000, 16000, 'Phasing Stalker - Serpent Sting - current'),
 (2031301, 4, 16100, 2, -1, 1, 0, 100, 0, 0, 2500, 2000, 5000, 'Phasing Stalker - Shoot - current');
 
 UPDATE `creature_template` SET `SpellList` = 1855901 WHERE `entry` = 18559;
 UPDATE `creature_template` SET `SpellList` = 2031301 WHERE `entry` = 20313;
+
+-- Avatar of the Martyred
+DELETE FROM `creature_template_spells` WHERE `entry` = 18478;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20303;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1847801, 2030301);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1847801, 'Auchenai Crypts - Avatar of the Martyred - Normal', 0, 0),
+(2030301, 'Auchenai Crypts - Avatar of the Martyred - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1847801, 2030301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+('1847801', '0', '16856', '0', '-1', '1', '0', '100', '1','8500','16800','10900','24100', 'Avatar of the Martyred - Mortal Strike on Current'),
+('1847801', '1', '16145', '0', '-1', '1', '0', '100', '1','6500','11500','6200','15700', 'Avatar of the Martyred - Sunder Armor on Current'),
+
+('2030301', '0', '16856', '0', '-1', '1', '0', '100', '1','8500','16800','10900','24100', 'Avatar of the Martyred - Mortal Strike on Current'),
+('2030301', '1', '16145', '0', '-1', '1', '0', '100', '1','6500','11500','6200','15700', 'Avatar of the Martyred - Sunder Armor on Current');
+
+UPDATE `creature_template` SET `SpellList` = 1847801 WHERE `entry` = 18478;
+UPDATE `creature_template` SET `SpellList` = 2030301 WHERE `entry` = 20303;
+
