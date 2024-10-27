@@ -1251,3 +1251,6 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 (@MOVID + 0, '4', '9133.755', '-6999.9746', '10.037353', '100', '0', '0', NULL),
 (@MOVID + 0, '5', '9167.22', '-7001.7275', '6.4952784', '100', '0', '0', NULL),
 (@MOVID + 0, '6', '9202.106', '-7001.3286', '3.3352275', '100', '1000', '1', NULL);
+
+UPDATE creature SET MovementType=0,SpawnDist=0 WHERE Id IN(21055,21063,21064); -- use custom 1200ms delay movement instead of generic random
+
