@@ -200,8 +200,8 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1850301, 2030901);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1850301, 1, 33401, 0, -1, 121, 0, 100, 0, 5000, 10000, 15000, 25000, 'Phantasmal Possessor - Possess - random player aura not present'),
-(2030901, 1, 33401, 0, -1, 121, 0, 100, 0, 5000, 10000, 15000, 25000, 'Phantasmal Possessor - Possess - random player aura not present');
+(1850301, 1, 33401, 0, -1, 7, 0, 100, 0, 5000, 10000, 15000, 25000, 'Phantasmal Possessor - Possess - current not alone'),
+(2030901, 1, 33401, 0, -1, 7, 0, 100, 0, 5000, 10000, 15000, 25000, 'Phantasmal Possessor - Possess - current not alone');
 
 UPDATE `creature_template` SET `SpellList` = 1850301 WHERE `entry` = 18503;
 UPDATE `creature_template` SET `SpellList` = 2030901 WHERE `entry` = 20309;
