@@ -21498,7 +21498,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Phasing Sorcerer 18558 - spell_list
 ('1855801','18558','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Phasing Sorcerer - Enable Range Mode on Spawn'),
 -- Phasing Stalker 18559 - spell_list
-('1855901','18559','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Phasing Stalker - Enable Range Mode on Spawn'),,
+('1855901','18559','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Phasing Stalker - Enable Range Mode on Spawn'),
 -- Reanimated Bones 18700 - spell_list
 ('1870001','18700','11','0','100','0','0','0','0','0','0','0','11','19818','0','34','0','0','0','0','0','0','0','0','Reanimated Bones - Cast Double Attack on Spawn'),
 -- Auchenai Necromancer 18702
