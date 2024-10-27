@@ -71,6 +71,6 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 (@MOVID + 0, '33', '9505.881', '-7418.752', '14.304741', '100', '0', '0', NULL);
 
 UPDATE creature_movement_template SET WaitTime=25000 WHERE Entry=16655 AND Point=3;
-UPDATE creature_movement_template SET WaitTime=185000 WHERE Entry=16655 AND Point=3;
+UPDATE creature_movement_template SET WaitTime=185000 WHERE Entry=16655 AND Point=7;
 UPDATE creature_movement_template SET WaitTime=120000 WHERE Entry=16655 AND Point=11;
 UPDATE creature_movement_template SET WaitTime=210000 WHERE Entry=16655 AND Point=14;
