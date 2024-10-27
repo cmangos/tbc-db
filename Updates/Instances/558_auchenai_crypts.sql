@@ -1,11 +1,12 @@
 /* DBScriptData
 DBName: Auchindoun - Auchenai Crypts
 DBScriptName: -
-DB%Complete: 90
+DB%Complete: 95
 DBComment:
 * ToDO:
 * @CGUID+23 and @CGUID+24 channeling should stack on @CGUID+158
 * Ancient Draenei Spirit need to get confirmed that they exist in tbc spawns
+* Spawngroup 17+18 should switch between attacking stance and stand stance
 * Research Info:
 * Only 1 Cosmetic Raging Soul spawned, for RP with @CGUID+23 and @CGUID+24
 * Flying Raging Soul's have passive aura 32460 that triggers spell 32459 with 1 second interval
