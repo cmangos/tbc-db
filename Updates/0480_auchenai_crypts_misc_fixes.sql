@@ -132,11 +132,11 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1849901, 2032201);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (1849901, 1, 15744, 0, -1, 109, 0, 100, 0, 5000, 14000, 5000, 14000, 'Unliving Sorcerer - Blast Wave - random player in melee range'),
-(1849901, 2, 15043, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Unliving Sorcerer - Frostbolt - current'),
+(1849901, 2, 15043, 2, -1, 1, 0, 100, 0, 0, 2000, 0, 4000, 'Unliving Sorcerer - Frostbolt - current'),
 (1849901, 3, 12466, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Unliving Sorcerer - Fireball - current'),
 
 (2032201, 1, 22424, 0, -1, 109, 0, 100, 0, 5000, 14000, 5000, 14000, 'Unliving Sorcerer - Blast Wave - random player in melee range'),
-(2032201, 2, 15530, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Unliving Sorcerer - Frostbolt - current'),
+(2032201, 2, 15530, 2, -1, 1, 0, 100, 0, 0, 2000, 0, 4000, 'Unliving Sorcerer - Frostbolt - current'),
 (2032201, 3, 17290, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Unliving Sorcerer - Fireball - current');
 
 UPDATE `creature_template` SET `SpellList` = 1849901 WHERE `entry` = 18499;
@@ -250,3 +250,93 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1870201 WHERE `entry` = 18702;
 UPDATE `creature_template` SET `SpellList` = 2030001 WHERE `entry` = 20300;
+
+
+-- Phasing Soldier
+DELETE FROM `creature_template_spells` WHERE `entry` = 18556;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20311;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1855601, 2031101);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1855601, 'Auchenai Crypts - Phasing Soldier - Normal', 0, 0),
+(2031101, 'Auchenai Crypts - Phasing Soldier - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1855601, 2031101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1855601, 1, 11972, 0, -1, 122, 0, 100, 0, 6000, 18000, 10000, 22000, 'Phasing Soldier - Shield Bash - random player casting'),
+(2031101, 1, 11972, 0, -1, 122, 0, 100, 0, 6000, 18000, 10000, 22000, 'Phasing Soldier - Shield Bash - random player casting');
+
+UPDATE `creature_template` SET `SpellList` = 1855601 WHERE `entry` = 18556;
+UPDATE `creature_template` SET `SpellList` = 2031101 WHERE `entry` = 20311;
+
+
+-- Phasing Cleric
+DELETE FROM `creature_template_spells` WHERE `entry` = 18557;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20310;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1855701, 2031001);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1855701, 'Auchenai Crypts - Phasing Cleric - Normal', 0, 0),
+(2031001, 'Auchenai Crypts - Phasing Cleric - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1855701, 2031001);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1855701, 1, 25058, 0, -1, 201, 0, 100, 0, 1000, 10000, 9000, 18000, 'Phasing Cleric - Renew - friendly missing 50% including self'),
+(1855701, 2, 33324, 0, -1, 201, 0, 100, 0, 2000, 12000, 8000, 16000, 'Phasing Cleric - Major Heal - friendly missing 50% including self'),
+
+(2031001, 1, 38210, 0, -1, 201, 0, 100, 0, 1000, 10000, 9000, 18000, 'Phasing Cleric - Renew - friendly missing 50% including self'),
+(2031001, 2, 22883, 0, -1, 201, 0, 100, 0, 2000, 12000, 8000, 16000, 'Phasing Cleric - Heal - friendly missing 50% including self');
+
+UPDATE `creature_template` SET `SpellList` = 1850001 WHERE `entry` = 18557;
+UPDATE `creature_template` SET `SpellList` = 2031001 WHERE `entry` = 20310;
+
+
+-- Phasing Sorcerer
+DELETE FROM `creature_template_spells` WHERE `entry` = 18558;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20312;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1855801, 2031201);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1855801, 'Auchenai Crypts - Phasing Sorcerer - Normal', 0, 90),
+(2031201, 'Auchenai Crypts - Phasing Sorcerer - Heroic', 0, 90);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1855801, 2031201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1855801, 1, 15744, 0, -1, 109, 0, 100, 0, 5000, 14000, 5000, 14000, 'Phasing Sorcerer - Blast Wave - random player in melee range'),
+(1855801, 2, 15043, 2, -1, 1, 0, 100, 0, 0, 2000, 0, 4000, 'Phasing Sorcerer - Frostbolt - current'),
+(1855801, 3, 12466, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Phasing Sorcerer - Fireball - current'),
+
+(2031201, 1, 22424, 0, -1, 109, 0, 100, 0, 5000, 14000, 5000, 14000, 'Phasing Sorcerer - Blast Wave - random player in melee range'),
+(2031201, 2, 15530, 2, -1, 1, 0, 100, 0, 0, 2000, 0, 4000, 'Phasing Sorcerer - Frostbolt - current'),
+(2031201, 3, 17290, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Phasing Sorcerer - Fireball - current');
+
+UPDATE `creature_template` SET `SpellList` = 1855801 WHERE `entry` = 18558;
+UPDATE `creature_template` SET `SpellList` = 2031201 WHERE `entry` = 20312;
+
+
+-- Phasing Stalker
+DELETE FROM `creature_template_spells` WHERE `entry` = 18559;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20313;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1855901, 2031301);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1855901, 'Auchenai Crypts - Phasing Stalker - Normal', 0, 90),
+(2031301, 'Auchenai Crypts - Phasing Stalker - Heroic', 0, 90);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1855901, 2031301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1855901, 1, 32829, 0, -1, 2, 0, 100, 0, 2000, 8000, 4000, 11000, 'Phasing Cleric - Spirit Vengeance -  self'),
+(1855901, 2, 31975, 0, -1, 1, 0, 100, 0, 6000, 12000, 8000, 16000, 'Phasing Cleric - Serpent Sting - current'),
+(1855901, 3, 15547, 2, -1, 1, 0, 100, 0, 0, 2500, 2000, 5000, 'Phasing Stalker - Shoot - current'),
+
+(2031301, 1, 32829, 0, -1, 2, 0, 100, 0, 2000, 8000, 4000, 11000, 'Phasing Cleric - Spirit Vengeance -  self'),
+(2031301, 2, 37551, 0, -1, 105, 0, 100, 0, 5000, 11000, 12000, 22000, 'Phasing Cleric - Viper Sting - random mana user'),
+(2031301, 3, 35511, 0, -1, 1, 0, 100, 0, 6000, 12000, 8000, 16000, 'Phasing Cleric - Serpent Sting - current'),
+(2031301, 4, 16100, 2, -1, 1, 0, 100, 0, 0, 2500, 2000, 5000, 'Phasing Stalker - Shoot - current');
+
+UPDATE `creature_template` SET `SpellList` = 1855901 WHERE `entry` = 18559;
+UPDATE `creature_template` SET `SpellList` = 2031301 WHERE `entry` = 20313;
