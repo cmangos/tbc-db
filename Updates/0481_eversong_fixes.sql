@@ -434,7 +434,7 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 (@MOVID + 0, '26', '9030.252', '-7998.639', '143.12996', '100', '0', '0', NULL);
 
 SET @MOVID=55487;
-UPDATE creature SET position_x=9031.349,position_y=-8000.36,position_z=143.46803,orientation=4.391523361206054687 WHERE guid = @MOVID + 0;
+UPDATE creature SET position_x=9038.842,position_y=-7644.415,position_z=136.55695,orientation=0 WHERE guid = @MOVID + 0;
 DELETE FROM creature_movement WHERE Id = @MOVID + 0;
 INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
 (@MOVID + 0, '1', '9038.842', '-7644.415', '136.55695', '100', '0', '0', NULL),
@@ -737,7 +737,7 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 
 SET @MOVID=5302249; -- Amani Axe Thrower
 -- GUID: Full: 0x20457C42400F464000002B00001C4262 Creature/0 R4447/S43 Map: 530 Entry: 15641 Low: 1852002 PathType: None
-UPDATE creature SET position_x=8345.095,position_y=-7940.132,position_z=1182.76709,MovementType=4 WHERE guid = @MOVID + 0;
+UPDATE creature SET position_x=8345.095,position_y=-7940.132,position_z=182.76709,MovementType=4 WHERE guid = @MOVID + 0;
 DELETE FROM creature_movement WHERE Id = @MOVID + 0;
 INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
 (@MOVID + 0, '1', '8345.095', '-7940.132', '182.76709', '100', '0', '0', NULL),
