@@ -1034,7 +1034,14 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@CGUID + 36, '15650', '530', '1', 8536.41000000000000000000,-7265.96000000000000000000,169.08600000000000000000,1.83957000000000000000, '300', '300', '5', '1');
 
 -- delete existing pats in dead scar
-DELETE FROM creature WHERE guid IN(56043,56065,1007504,1007505,1007506,1007507,1007508,56163,1007502,1007503);
+DELETE FROM creature WHERE guid IN(56043,/*56065,*/1007504,1007505,1007506,1007507,1007508,56163,1007502,1007503);
+DELETE FROM creature_movement WHERE id IN(56043,/*56065,*/1007504,1007505,1007506,1007507,1007508,56163,1007502,1007503);
+-- `creature_linking` has a non existing master (guid: 56067,56068,56082 master_guid: 56065), skipped
+-- 56065 used in rp event for npc 15416, which is not reworked by this file
+
+-- Table `dbscripts_on_creature_movement` contain unused script, id 1565401. - despawn
+-- Table `dbscripts_on_creature_movement` contain unused script, id 1565501. - RUN ON
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1565401,1565501);
 
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
 (@CGUID + 37, '0', '530', '1', 8146.6187,-6758.287,71.86238,5.957955837249755859, '300', '300', '0', '2'),
