@@ -366,6 +366,9 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 (@CGUID+34, 1); -- Generic RunMode on Spawn
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+73, 0, 8, 0, 0, 0, NULL), -- Murkblood Healer
+(@CGUID+63, 0, 0, 1, 173, 0, NULL), -- Murkblood Tribesman
+(@CGUID+64, 0, 0, 1, 173, 0, NULL), -- Murkblood Tribesman
 (@CGUID+130, 0, 0, 1, 0, 0, '31261'), -- Fen Ray
 (@CGUID+131, 0, 0, 1, 0, 0, '31261'), -- Fen Ray
 (@CGUID+132, 0, 0, 1, 0, 0, '31261'), -- Fen Ray
