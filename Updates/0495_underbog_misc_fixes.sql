@@ -180,7 +180,7 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (2018001, 1, 39413, 0, -1, 105, 0, 100, 0, 1000, 15000, 8000, 22000, 'Murkblood Spearman - Viper Strong - random mana user'),
 (2018001, 2, 40317, 2, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Murkblood Spearman - Throw - current');
 
-UPDATE `creature_template` SET `SpellList` = 1772801 WHERE `entry` = 17729;
+UPDATE `creature_template` SET `SpellList` = 1772901 WHERE `entry` = 17729;
 UPDATE `creature_template` SET `SpellList` = 2018001 WHERE `entry` = 20180;
 
 
@@ -245,18 +245,23 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1777101, 1777102, 1777103, 2017901, 2017902, 2017903);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+-- Normal Frost
 (1777101, 1, 32192, 0, -1, 109, 0, 100, 0, 4000, 15000, 10000, 25000, 'Murkblood Oracle - Frost Nova - random mana user'),
 (1777101, 2, 15497, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Frost Bolt - current'),
+-- Normal Shadow
 (1777102, 1, 31405, 0, -1, 130, 0, 100, 0, 5000, 14000, 10000, 20000, 'Murkblood Oracle - Corruption - top aggro aura not present'),
-(1777102, 2, 15497, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Shadowbolt - current'),
+(1777102, 2, 12471, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Shadowbolt - current'),
+-- Normal Fire
 (1777103, 1, 15241, 0, -1, 1, 0, 100, 0, 9000, 15000, 9000, 15000, 'Murkblood Oracle - Scorch - current'),
 (1777103, 2, 12248, 0, -1, 100, 0, 100, 0, 10000, 17000, 12000, 20000, 'Murkblood Oracle - Amplify Damage - random'),
 (1777103, 3, 14034, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Fireball - current'),
-
+-- Heroic Frost
 (2017901, 1, 15531, 0, -1, 109, 0, 100, 0, 4000, 15000, 10000, 25000, 'Murkblood Oracle - Frost Nova - random mana user'),
 (2017901, 2, 12675, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Frost Bolt - current'),
+-- Heroic Shadow
 (2017902, 1, 31405, 0, -1, 130, 0, 100, 0, 5000, 14000, 10000, 20000, 'Murkblood Oracle - Corruption - top aggro aura not present'),
-(2017902, 2, 15497, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Shadowbolt - current'),
+(2017902, 2, 15232, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Shadowbolt - current'),
+-- Heroic Fire
 (2017903, 1, 36807, 0, -1, 1, 0, 100, 0, 9000, 15000, 9000, 15000, 'Murkblood Oracle - Scorch - current'),
 (2017903, 2, 12248, 0, -1, 100, 0, 100, 0, 10000, 17000, 12000, 20000, 'Murkblood Oracle - Amplify Damage - random'),
 (2017903, 3, 15228, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Fireball - current');
