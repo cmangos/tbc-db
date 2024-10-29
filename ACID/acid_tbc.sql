@@ -23406,9 +23406,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ================================
 -- Bog Giant 17723 - spell_list
 ('1772301','17723','2','0','100','1027','30','0','120000','120000','0','0','11','8599','0','0','1','2384','0','0','0','0','0','0','Bog Giant (Normal) - Cast Enrage at 30% HP'),
--- Underbat 17724 (3.0.3 Official Data - Normal Logs Only)
-('1772401','17724','33','0','100','1027','0','0','4400','12900','0','0','11','34171','1','0','0','0','0','0','0','0','0','0','Underbat (Normal) - Cast Tentacle Lash on Facing Target Back'),
-('1772402','17724','33','0','100','1029','0','0','4000','8000','0','0','11','37956','1','0','0','0','0','0','0','0','0','0','Underbat (Heroic) - Cast Tentacle Lash on Facing Target Back'),
+-- Underbat 17724 - spell_list
 -- Underbog Lurker 17725 (3.0.3 Official Data - Normal Logs Only)
 ('1772501','17725','4','0','100','0','0','0','0','0','0','0','11','34161','0','0','1','17785','0','0','0','0','0','0','Underbog Lurker - Cast Wild Growth and Emote on Aggro'),
 ('1772502','17725','2','0','100','1024','75','0','0','0','0','0','28','0','34161','0','1','17786','0','0','0','0','0','0','Underbog Lurker - Remove Wild Growth and Emote at 75% HP'),

@@ -63,3 +63,21 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 UPDATE `creature_template` SET `SpellList` = 1787101 WHERE `entry` = 17871;
 UPDATE `creature_template` SET `SpellList` = 2019001 WHERE `entry` = 20190;
 
+
+-- Underbat
+DELETE FROM `creature_template_spells` WHERE `entry` = 17724;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20185;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1772401, 2018501);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1772401, 'The Underbog - Underbat - Normal', 0, 0),
+(2018501, 'The Underbog - Underbat - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1772401, 2018501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1772401, 1, 34171, 0, -1, 1, 0, 100, 0, 2000, 16000, 4000, 20000, 'Underbat - Tentacle Lash - current'),
+(2018501, 1, 37956, 0, -1, 1, 0, 100, 0, 2000, 16000, 4000, 20000, 'Underbat - Tentacle Lash - current');
+
+UPDATE `creature_template` SET `SpellList` = 1772401 WHERE `entry` = 17724;
+UPDATE `creature_template` SET `SpellList` = 2018501 WHERE `entry` = 20185;
