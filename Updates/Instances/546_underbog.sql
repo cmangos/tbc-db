@@ -18,18 +18,13 @@ SET @RELAYID := 5460000; -- used for dbscript_relay
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(@CGUID+2, 1, 93.06754, -360.3329, 33.21555, 100, 0, 0),
-(@CGUID+2, 2, 101.4254, -344.6663, 32.97791, 100, 0, 0),
-(@CGUID+2, 3, 96.96455, -311.3638, 32.52911, 100, 0, 0),
-(@CGUID+2, 4, 88.84355, -286.0164, 32.12873, 100, 0, 0),
-(@CGUID+2, 5, 68.26116, -284.1465, 32.08228, 100, 0, 0),
-(@CGUID+2, 6, 42.47691, -293.7711, 32.69076, 100, 0, 0),
-(@CGUID+2, 7, 19.44412, -308.6361, 31.89284, 100, 0, 0),
-(@CGUID+2, 8, 42.47691, -293.7711, 32.69076, 100, 0, 0),
-(@CGUID+2, 9, 68.26116, -284.1465, 32.08228, 100, 0, 0),
-(@CGUID+2, 10, 88.84355, -286.0164, 32.12873, 100, 0, 0),
-(@CGUID+2, 11, 96.96455, -311.3638, 32.52911, 100, 0, 0),
-(@CGUID+2, 12, 101.4254, -344.6663, 32.97791, 100, 0, 0),
+(@CGUID+2, 1, 93.06754, -360.33292,33.215553, 100, 0, 0),
+(@CGUID+2, 2, 101.42537,-344.6663,32.977905, 100, 0, 0),
+(@CGUID+2, 3, 96.96455,-311.36377,32.529114, 100, 0, 0),
+(@CGUID+2, 4, 88.84355,-286.01645,32.128727, 100, 0, 0),
+(@CGUID+2, 5, 68.26116,-284.1465,32.08228, 100, 0, 0),
+(@CGUID+2, 6, 42.476913,-293.77115,32.69076, 100, 0, 0),
+(@CGUID+2, 7, 19.44412,-308.63614,31.892838, 100, 0, 0),
 (@CGUID+4, 1, 153.0262, -93.89476, 26.35261, 100, 0, 0),
 (@CGUID+4, 2, 161.1251, -70.36053, 27.06263, 100, 0, 0),
 (@CGUID+4, 3, 176.592, -61.29988, 26.51584, 100, 0, 0),
@@ -42,63 +37,15 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+6, 1, -92.30222,-302.19803,-4.5357122, 100, 0, 0),
 (@CGUID+6, 2, -59.19425,-289.67743,-4.5349183, 100, 0, 0),
 (@CGUID+6, 3, -42.62119,-269.50012,-4.535499, 100, 0, 0),
-(@CGUID+10, 1, -21.11057, -342.8836, 30.82127, 100, 0, 0),
-(@CGUID+10, 2, 1.211546, -323.1523, 30.92621, 100, 0, 0),
-(@CGUID+10, 3, 27.59817, -304.3645, 32.14, 100, 0, 0),
-(@CGUID+10, 4, 1.211546, -323.1523, 30.92621, 100, 0, 0),
+(@CGUID+10, 1, -21.110575,-342.88358,30.821274, 100, 0, 0),
+(@CGUID+10, 2, 1.211546,-323.15225,30.926214, 100, 0, 0),
+(@CGUID+10, 3, 27.59817,-304.36447,32.139996, 100, 0, 0),
 (@CGUID+11, 1, 51.442417,-44.740856,-2.7446182, 100, 1000, 0),
 (@CGUID+11, 2, 64.93866,-57.066772,-2.7489753, 100, 1000, 0),
 (@CGUID+12, 1, 53.99983,-103.86216,-2.7446675, 100, 1000, 0),
 (@CGUID+12, 2, 66.39136,-88.559586,-2.7552373, 100, 0, 0),
 (@CGUID+12, 3, 70.82785,-65.18546,-2.7509038, 100, 0, 0),
 (@CGUID+12, 4, 60.469746,-48.50313,-2.752787, 100, 1000, 0),
-(@CGUID+23, 1, -34.3835, -351.27, 31.7325, 0, 1, 5),
-(@CGUID+23, 2, -28.0925, -370.58, 31.499, 0, 0, 0),
-(@CGUID+23, 3, -22.0439, -387.499, 30.5558, 0, 0, 0),
-(@CGUID+23, 4, -9.32195, -385.082, 27.7763, 0, 0, 0),
-(@CGUID+23, 5, -4.36865, -376.687, 27.6695, 0, 0, 0),
-(@CGUID+23, 6, 0.053027, -362.803, 27.7873, 0, 0, 0),
-(@CGUID+23, 7, 10.6737, -352.422, 27.5412, 0, 0, 0),
-(@CGUID+23, 8, 20.4162, -353.255, 27.0755, 0, 0, 0),
-(@CGUID+23, 9, 26.7718, -361.177, 27.0479, 0, 0, 0),
-(@CGUID+23, 10, 23.7875, -371.98, 27.385, 0, 0, 0),
-(@CGUID+23, 11, 14.2827, -386.102, 27.1874, 0, 0, 0),
-(@CGUID+23, 12, 4.69595, -394.849, 27.1913, 0, 0, 0),
-(@CGUID+23, 13, -5.21946, -393.285, 27.3248, 0, 0, 0),
-(@CGUID+23, 14, -10.9309, -381.411, 28.2749, 0, 0, 0),
-(@CGUID+23, 15, -8.53251, -372.185, 28.0782, 0, 0, 0),
-(@CGUID+23, 16, -1.14454, -360.161, 27.905, 0, 0, 0),
-(@CGUID+23, 17, 5.57316, -345.07, 29.3345, 0, 0, 0),
-(@CGUID+23, 18, -2.07866, -330.937, 30.3928, 0, 0, 0),
-(@CGUID+23, 19, 4.06103, -322.758, 30.787, 0, 0, 0),
-(@CGUID+23, 20, -9.35236, -319.774, 30.6651, 0, 0, 0),
-(@CGUID+23, 21, -26.4411, -327.326, 30.8124, 0, 0, 0),
-(@CGUID+23, 22, -34.1909, -335.923, 31.3118, 0, 0, 0),
-(@CGUID+51, 1, 134.715, -415.249, 48.5812, 0, 0, 0),
-(@CGUID+51, 2, 128.385, -411.527, 47.6209, 0, 0, 0),
-(@CGUID+51, 3, 117.755, -406.696, 43.4651, 0, 0, 0),
-(@CGUID+51, 4, 108.485, -402.029, 39.96, 0, 0, 0),
-(@CGUID+51, 5, 97.7692, -396.655, 36.0888, 0, 0, 0),
-(@CGUID+51, 6, 89.2544, -391.865, 34.2028, 0, 0, 0),
-(@CGUID+51, 7, 92.769, -393.057, 34.5497, 0, 0, 0),
-(@CGUID+51, 8, 99.5091, -395.502, 36.4238, 0, 0, 0),
-(@CGUID+51, 9, 109.779, -400.578, 40.1346, 0, 0, 0),
-(@CGUID+51, 10, 119.615, -405.436, 43.866, 0, 0, 0),
-(@CGUID+51, 11, 129.881, -410.394, 47.749, 0, 0, 0),
-(@CGUID+51, 12, 141.263, -415.746, 48.6074, 0, 0, 0),
-(@CGUID+52, 1, 161.181, -435.977, 48.1331, 0, 0, 0),
-(@CGUID+52, 2, 163.49, -423.861, 48.1147, 0, 0, 0),
-(@CGUID+52, 3, 166.792, -417.063, 48.1161, 0, 0, 0),
-(@CGUID+52, 4, 177.137, -401.096, 48.1104, 0, 0, 0),
-(@CGUID+52, 5, 181.923, -393.897, 48.1104, 0, 0, 0),
-(@CGUID+52, 6, 190.559, -388.147, 48.1131, 0, 0, 0),
-(@CGUID+52, 7, 205.421, -379.071, 48.1234, 0, 0, 0),
-(@CGUID+52, 8, 196.116, -384.822, 48.1197, 0, 0, 0),
-(@CGUID+52, 9, 186.674, -390.992, 48.116, 0, 0, 0),
-(@CGUID+52, 10, 179.924, -397.765, 48.1154, 0, 0, 0),
-(@CGUID+52, 11, 173.863, -406.896, 48.1165, 0, 0, 0),
-(@CGUID+52, 12, 166.878, -417.934, 48.1204, 0, 0, 0),
-(@CGUID+52, 13, 163.492, -424.701, 48.1181, 0, 0, 0),
 (@CGUID+54, 1, 164.977, -444.46, 72.4748, 0, 0, 0),
 (@CGUID+54, 2, 168.243, -432.663, 72.4698, 0, 0, 0),
 (@CGUID+54, 3, 171.106, -423.684, 72.4601, 0, 0, 0),
@@ -422,6 +369,10 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 (@CGUID+15, 1), -- Generic RunMode on Spawn
 (@CGUID+16, 1), -- Generic RunMode on Spawn
 (@CGUID+18, 1), -- Generic RunMode on Spawn
+(@CGUID+20, 1), -- Generic RunMode on Spawn
+(@CGUID+21, 1), -- Generic RunMode on Spawn
+(@CGUID+22, 1), -- Generic RunMode on Spawn
+(@CGUID+23, 1), -- Generic RunMode on Spawn
 (@CGUID+26, 1), -- Generic RunMode on Spawn
 (@CGUID+27, 1), -- Generic RunMode on Spawn
 (@CGUID+30, 1), -- Generic RunMode on Spawn
@@ -450,15 +401,6 @@ INSERT INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_
 (20465, 0, 0, 1, 0, 0, '18943 18950'); -- Underbog Frenzy
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+20, @CGUID+23, 1679), -- Underbat -> Underbat
-(@CGUID+21, @CGUID+23, 1679), -- Underbat -> Underbat
-(@CGUID+22, @CGUID+23, 1679), -- Underbat -> Underbat
-(@CGUID+50, @CGUID+51, 1679), -- Wrathfin Myrmidon -> Wrathfin Myrmidon
-(@CGUID+57, @CGUID+56, 1155), -- Wrathfin Sentry -> Wrathfin Sentry
-(@CGUID+96, @CGUID+58, 1155), -- Wrathfin Warrior -> creature_spawn_entry
-(@CGUID+102, @CGUID+58, 1155), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+103, @CGUID+58, 1155), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+53, @CGUID+52, 1679), -- Wrathfin Myrmidon -> Wrathfin Myrmidon
 (@CGUID+59, @CGUID+104, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+60, @CGUID+104, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+67, @CGUID+75, 1155), -- creature_spawn_entry -> creature_spawn_entry
@@ -494,7 +436,6 @@ INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`,
 (22299, 546, 17882, 16, 0); -- Spore Strider -> The Black Stalker
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
-(@CGUID+58, 17728), (@CGUID+58, 17729), -- Murkblood Tribesman, Murkblood Spearman
 (@CGUID+59, 17728), (@CGUID+59, 17771), -- Murkblood Tribesman, Murkblood Oracle
 (@CGUID+60, 17728), (@CGUID+60, 17730), -- Murkblood Tribesman, Murkblood Healer
 (@CGUID+61, 17728), (@CGUID+61, 17729), (@CGUID+61, 17730), -- Murkblood Tribesman, Murkblood Spearman, Murkblood Healer
@@ -510,7 +451,6 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+74, 17729), (@CGUID+74, 17730), -- Murkblood Spearman, Murkblood Healer
 (@CGUID+75, 17728), (@CGUID+75, 17730), -- Murkblood Tribesman, Murkblood Healer
 (@CGUID+84, 17731), (@CGUID+84, 19632), -- Fen Ray, Lykul Stinger
-(@CGUID+102, 17729), (@CGUID+102, 17730), (@CGUID+102, 17771), -- Murkblood Spearman, Murkblood Healer, Murkblood Oracle
 (@CGUID+103, 17728), (@CGUID+103, 17729), (@CGUID+103, 17771), -- Murkblood Tribesman, Murkblood Spearman, Murkblood Oracle
 (@CGUID+104, 17728), (@CGUID+104, 17729), (@CGUID+104, 17771), -- Murkblood Tribesman, Murkblood Spearman, Murkblood Oracle
 (@CGUID+105, 17728), (@CGUID+105, 17730), (@CGUID+105, 17771), -- Murkblood Tribesman, Murkblood Healer, Murkblood Oracle
@@ -519,15 +459,15 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 17723, 546, 3, 10.6361, -206.855, -4.44989, 1.20428, 7200, 7200, 3, 1), -- Bog Giant
-(@CGUID+2, 17723, 546, 3, 93.06754, -360.3329, 33.21555, 0.456166, 7200, 7200, 0, 2), -- Bog Giant
-(@CGUID+3, 17723, 546, 3, 73.758, -384.513, 33.2459, 0.965887, 7200, 7200, 5, 1), -- Bog Giant
+(@CGUID+2, 17723, 546, 3, 993.0675, -360.332, 33.2155, 4.472, 7200, 7200, 0, 4), -- Bog Giant
+(@CGUID+3, 17723, 546, 3, 73.758, -384.513, 33.2459, 0.965887, 7200, 7200, 3, 1), -- Bog Giant
 (@CGUID+4, 17734, 546, 3, 153.0262, -93.89476, 26.35261, 3.707449, 7200, 7200, 0, 2), -- Underbog Lord
 (@CGUID+5, 17723, 546, 3, -112.504, -222.081, -4.18476, 6.12606, 7200, 7200, 0, 4), -- Bog Giant
 (@CGUID+6, 17723, 546, 3, -91.5273, -302.142, -4.51598, 3.21432, 7200, 7200, 0, 4), -- Bog Giant
 (@CGUID+7, 17723, 546, 3, -129.921, -342.114, 33.3463, 0.994838, 7200, 7200, 0, 0), -- Bog Giant
 (@CGUID+8, 17723, 546, 3, -97.8888, -348.776, 32.951, 1.65806, 7200, 7200, 0, 0), -- Bog Giant
-(@CGUID+9, 17723, 546, 3, 4.89774, -377.926, 27.2163, 2.80529, 7200, 7200, 4, 1), -- Bog Giant
-(@CGUID+10, 17723, 546, 3, -21.11057, -342.8836, 30.82127, 0.764037, 7200, 7200, 0, 2), -- Bog Giant
+(@CGUID+9, 17723, 546, 3, 4.55831, -383.342, 27.1066, 1.25488, 7200, 7200, 3, 1), -- Bog Giant
+(@CGUID+10, 17723, 546, 3, -21.1105, -342.88358, 30.82127, 0.723869, 7200, 7200, 0, 4), -- Bog Giant
 (@CGUID+11, 17724, 546, 3, 47.8996, -41.8113, -2.66785, 5.59226, 7200, 7200, 0, 2), -- Underbat
 (@CGUID+12, 17724, 546, 3, 53.9998, -103.862, -2.74466, 4.12722, 7200, 7200, 0, 4), -- Underbat
 (@CGUID+13, 17724, 546, 3, 31.1684, -216.174, -4.44989, 5.40659, 7200, 7200, 0, 0), -- Underbat
@@ -537,10 +477,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+17, 17724, 546, 3, 58.4879, -154.916, -2.737, 1.38876, 7200, 7200, 2, 1), -- Underbat
 (@CGUID+18, 17724, 546, 3, -11.0907, -154.129, -4.534, 1.39078, 7200, 7200, 0, 0), -- Underbat
 -- reuse +19
-(@CGUID+20, 17724, 546, 3, -34.5451, -334.682, 31.2776, 6.27978, 7200, 7200, 0, 0), -- Underbat
-(@CGUID+21, 17724, 546, 3, -32.4596, -331.725, 31.0982, 5.123, 7200, 7200, 0, 0), -- Underbat
-(@CGUID+22, 17724, 546, 3, -29.2547, -331.03, 30.9921, 3.2293, 7200, 7200, 0, 0), -- Underbat
-(@CGUID+23, 17724, 546, 3, -29.8847, -334.97, 31.1387, 2.44233, 7200, 7200, 0, 2), -- Underbat
+(@CGUID+20, 17724, 546, 3, -4.82015, -317.975, 30.696, 1.28316, 7200, 7200, 0, 0), -- Underbat
+(@CGUID+21, 17724, 546, 3, -17.6513, -326.682, 30.6749, 1.71464, 7200, 7200, 0, 0), -- Underbat
+(@CGUID+22, 17724, 546, 3, -21.1851, -330.152, 30.8297, 1.42447, 7200, 7200, 0, 0), -- Underbat
+(@CGUID+23, 17724, 546, 3, -19.236, -337.122, 31.029, 1.87318, 7200, 7200, 0, 0), -- Underbat
 (@CGUID+24, 0, 546, 3, -3.63168, -172.007, -4.45038, 4.61024, 7200, 7200, 3, 1), -- spawn_group_entry
 (@CGUID+25, 0, 546, 3, 73.6437, -245.246, -4.4013, 0.507308, 7200, 7200, 3, 1), -- spawn_group_entry
 (@CGUID+26, 17724, 546, 3, -17.5913, -229.733, -4.53506, 2.92587, 7200, 7200, 0, 0), -- Underbat
@@ -566,15 +506,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+47, 17725, 546, 3, -51.8767, -246.594, -4.45338, 0.471239, 7200, 7200, 0, 0), -- Underbog Lurker
 (@CGUID+48, 17725, 546, 3, -55.9498, -257.519, -4.45344, 5.91667, 7200, 7200, 0, 0), -- Underbog Lurker
 (@CGUID+49, 0, 546, 3, -139.659, -240.512, -4.10634, 1.24407, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+50, 17726, 546, 3, 140.943, -415.869, 48.6087, 2.52333, 7200, 7200, 0, 0), -- Wrathfin Myrmidon
-(@CGUID+51, 17726, 546, 3, 140.437, -417.474, 48.6102, 2.68512, 7200, 7200, 0, 2), -- Wrathfin Myrmidon
-(@CGUID+52, 17726, 546, 3, 163.49, -422.427, 48.1125, 4.47283, 7200, 7200, 0, 2), -- Wrathfin Myrmidon
-(@CGUID+53, 17726, 546, 3, 165.36, -423.54, 48.1376, 4.42335, 7200, 7200, 0, 0), -- Wrathfin Myrmidon
+(@CGUID+50, 17726, 546, 3, 115.961, -404.269, 42.5224, 5.85158, 7200, 7200, 0, 0), -- Wrathfin Myrmidon
+(@CGUID+51, 17726, 546, 3, 117.006, -401.999, 42.5095, 5.85158, 7200, 7200, 0, 0), -- Wrathfin Myrmidon
+(@CGUID+52, 17726, 546, 3, 161.062, -432.518, 48.0883, 4.41558, 7200, 7200, 0, 0), -- Wrathfin Myrmidon
+(@CGUID+53, 17726, 546, 3,  163.931, -433.395, 48.1292, 4.41558, 7200, 7200, 0, 0), -- Wrathfin Myrmidon
 (@CGUID+54, 17726, 546, 3, 163.163, -454.468, 72.5156, 1.37287, 7200, 7200, 0, 2), -- Wrathfin Myrmidon
 (@CGUID+55, 17726, 546, 3, 165.133, -454.598, 72.5649, 1.28176, 7200, 7200, 0, 0), -- Wrathfin Myrmidon
-(@CGUID+56, 17727, 546, 3, 150.9607, -417.711, 48.614, 2.932153, 7200, 7200, 0, 0), -- Wrathfin Sentry
-(@CGUID+57, 17727, 546, 3, 148.124, -424.8145, 48.62396, 2.792527, 7200, 7200, 0, 0), -- Wrathfin Sentry
-(@CGUID+58, 0, 546, 3, 161.4782, -439.5381, 48.20968, 2.042035, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+56, 17727, 546, 3, 150.961, -417.711, 48.614, 2.93215, 7200, 7200, 0, 0), -- Wrathfin Sentry
+(@CGUID+57, 17727, 546, 3, 148.124, -424.815, 48.624, 2.79253, 7200, 7200, 0, 0), -- Wrathfin Sentry
+(@CGUID+58, 0, 546, 3, 161.478, -439.538, 48.2097, 2.04204, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+59, 0, 546, 3, 175.8059, -416.5865, 48.26939, 2.9147, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+60, 0, 546, 3, 181.5612, -410.9746, 48.28504, 2.897247, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+61, 0, 546, 3, 202.445, -378.083, 48.1024, 6.09468, 7200, 7200, 0, 0), -- creature_spawn_entry
@@ -618,8 +558,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+99, 17735, 546, 3, 177.4339, -404.1742, 72.42442, 6.161012, 7200, 7200, 0, 0), -- Wrathfin Warrior
 (@CGUID+100, 17735, 546, 3, 163.8997, -429.2021, 72.44372, 0.06981317, 7200, 7200, 0, 0), -- Wrathfin Warrior
 (@CGUID+101, 17770, 546, 3, -121.3438, -388.6259, 36.86593, 1.396263, 86400, 86400, 0, 0), -- Hungarfen
-(@CGUID+102, 0, 546, 3, 158.1902, -444.1273, 48.18988, 1.64061, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+103, 0, 546, 3, 166.5553, -438.5267, 48.28257, 2.042035, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+102, 0, 546, 3, 158.19, -444.127, 48.1899, 1.64061, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+103, 0, 546, 3, 166.555, -438.527, 48.2826, 2.04204, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+104, 0, 546, 3, 177.1148, -412.503, 48.25968, 2.670354, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+105, 0, 546, 3, 201.3456, -384.036, 72.42652, 5.969026, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+106, 0, 546, 3, 171.2823, -402.4821, 72.31525, 5.916666, 7200, 7200, 0, 0), -- creature_spawn_entry
@@ -922,9 +862,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+14, 'The Underbog - Group 011 - Underbat/Underbog Lurker/Underbog Shambler - Patrol 05', 0, 0, 0, 1, 0),
 -- Pat on "stairs/ramp"
 (@SGGUID+15, 'The Underbog - Group 012 - Underbat (3) - Patrol 06', 0, 0, 0, 1, 0),
-
 (@SGGUID+16, 'The Underbog - Group 013 - Bog Giant (2)', 0, 0, 0, 1, 0),
-
+(@SGGUID+17, 'The Underbog - Group 014 - Underbat (4) - Patrol 07', 0, 0, 0, 1, 0),
+(@SGGUID+18, 'The Underbog - Group 015 - Wrathfin Myrmidon (2) - Patrol 08', 0, 0, 0, 1, 0),
+(@SGGUID+19, 'The Underbog - Group 016 - Wrathfin Sentry (2)', 0, 0, 0, 1, 0),
+(@SGGUID+20, 'The Underbog - Group 017 - Wrathfin Myrmidon (2) - Patrol 09', 0, 0, 0, 1, 0),
 (@SGGUID+100, 'The Underbog - Naga Broken formation - Ghazan trash', 0, 0, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
@@ -990,6 +932,20 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+16, @CGUID+7, 0, 0), -- Bog Giant
 (@SGGUID+16, @CGUID+8, 1, 0), -- Bog Giant
 
+(@SGGUID+17, @CGUID+20, 0, 0), -- Underbat
+(@SGGUID+17, @CGUID+21, 1, 0), -- Underbat
+(@SGGUID+17, @CGUID+22, 2, 0), -- Underbat
+(@SGGUID+17, @CGUID+23, 3, 0), -- Underbat
+
+(@SGGUID+18, @CGUID+50, 0, 0), -- Wrathfin Myrmidon
+(@SGGUID+18, @CGUID+51, 1, 0), -- Wrathfin Myrmidon
+
+(@SGGUID+19, @CGUID+56, 0, 0), -- Wrathfin Sentry
+(@SGGUID+19, @CGUID+57, 1, 0), -- Wrathfin Sentry
+
+(@SGGUID+20, @CGUID+52, 0, 0), -- Wrathfin Myrmidon
+(@SGGUID+20, @CGUID+53, 1, 0), -- Wrathfin Myrmidon
+
 (@SGGUID+100,@CGUID+97,0,0),
 (@SGGUID+100,@CGUID+61,1,0),
 (@SGGUID+100,@CGUID+62,2,0),
@@ -1000,8 +956,11 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+8, 1, 8, 0, @SGGUID+8, 4, 'The Underbog - Group 007 - Underbat (2) - Patrol 02'),
 (@SGGUID+9, 1, 8, 0, @SGGUID+9, 2, 'The Underbog - Group 008 - Underbat (2) - Patrol 03'),
 (@SGGUID+11, 1, 8, 0, @SGGUID+11, 2, 'The Underbog - Group 009 - Underbat (2) - Patrol 04'),
-(@SGGUID+14, 3, 7, 0, @SGGUID+14, 4, 'The Underbog - Underbat/Underbog Lurker/Underbog Shambler - Patrol 05'),
-(@SGGUID+15, 3, 8, 0, @SGGUID+15, 4, 'The Underbog - Underbat (3) - Patrol 06'),
+(@SGGUID+14, 3, 7, 0, @SGGUID+14, 4, 'The Underbog - Group 011 - Underbat/Underbog Lurker/Underbog Shambler - Patrol 05'),
+(@SGGUID+15, 3, 8, 0, @SGGUID+15, 4, 'The Underbog - Group 012 - Underbat (3) - Patrol 06'),
+(@SGGUID+17, 0, 8, 0, @SGGUID+17, 2, 'The Underbog - Group 014 - Underbat (4) - Patrol 07'),
+(@SGGUID+18, 1, 2.5, 0, @SGGUID+18, 4, 'The Underbog - Group 015 - Wrathfin Myrmidon (2) - Patrol 08'),
+(@SGGUID+20, 1, 2.5, 0, @SGGUID+20, 4, 'The Underbog - Group 017 - Wrathfin Myrmidon (2) - Patrol 09'),
 (@SGGUID+100,0,3,0,@SGGUID+100,2,'The Underbog - Naga Broken formation - Ghazan trash');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
@@ -1009,8 +968,11 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+8,'The Underbog - Group 007 - Underbat (2) - Patrol 02'),
 (@SGGUID+9,'The Underbog - Group 008 - Underbat (2) - Patrol 03'),
 (@SGGUID+11,'The Underbog - Group 009 - Underbat (2) - Patrol 04'),
-(@SGGUID+14,'The Underbog - Underbat/Underbog Lurker/Underbog Shambler - Patrol 05'),
-(@SGGUID+15,'The Underbog - Underbat (3) - Patrol 06'),
+(@SGGUID+14,'The Underbog - Group 011 - Underbat/Underbog Lurker/Underbog Shambler - Patrol 05'),
+(@SGGUID+15,'The Underbog - Group 012 - Underbat (3) - Patrol 06'),
+(@SGGUID+17,'The Underbog - Group 014 - Underbat (4) - Patrol 07'),
+(@SGGUID+18,'The Underbog - Group 015 - Wrathfin Myrmidon (2) - Patrol 08'),
+(@SGGUID+20,'The Underbog - Group 018 - Wrathfin Myrmidon (2) - Patrol 09'),
 (@SGGUID+100,'The Underbog - Naga Broken formation - Ghazan trash');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -1051,6 +1013,34 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+15, 3, -102.27272,-287.3214,1.9546214, 100, 0, 0),
 (@SGGUID+15, 4, -89.69933,-286.32974,0.33470756, 100, 0, 0),
 (@SGGUID+15, 5, -68.25427,-270.9585,-3.5277247, 100, 1000, 0),
+
+(@SGGUID+17, 1, -4.692727,-317.54462,30.681536, 100, 0, 0),
+(@SGGUID+17, 2, -20.202679,-316.25156,30.487944, 100, 0, 0),
+(@SGGUID+17, 3, -31.772617,-320.19315,30.774057, 100, 0, 0),
+(@SGGUID+17, 4, -39.692852,-330.91632,31.325401, 100, 0, 0),
+(@SGGUID+17, 5, -40.69899,-345.8572,31.799494, 100, 0, 0),
+(@SGGUID+17, 6, -35.312122,-360.4018,31.430618, 100, 0, 0),
+(@SGGUID+17, 7, -27.32051,-380.549,32.004524, 100, 0, 0),
+(@SGGUID+17, 8, -9.648621,-377.5021,28.132086, 100, 0, 0),
+(@SGGUID+17, 9, -5.809507,-359.78894,28.126282, 100, 0, 0),
+(@SGGUID+17, 10, 12.883931,-352.98172,27.426939, 100, 0, 0),
+(@SGGUID+17, 11, 26.5498,-365.97595,27.250103, 100, 0, 0),
+(@SGGUID+17, 12, 25.296139,-387.69263,27.568605, 100, 0, 0),
+(@SGGUID+17, 13, 13.072289,-403.4628,27.36914, 100, 0, 0),
+(@SGGUID+17, 14, -11.016423,-392.69186,27.875362, 100, 0, 0),
+(@SGGUID+17, 15, -19.358988,-359.81122,29.860739, 100, 0, 0),
+(@SGGUID+17, 16, 6.839859,-341.62842,29.919239, 100, 0, 0),
+(@SGGUID+17, 17, 5.573694,-326.43835,30.714275, 100, 0, 0),
+
+(@SGGUID+18, 1, 141.5793,-416.62878,48.6011, 100, 0, 0),
+(@SGGUID+18, 2, 115.96061,-404.26944,42.522438, 100, 0, 0),
+(@SGGUID+18, 3, 99.41526,-396.64914,36.55695, 100, 0, 0),
+(@SGGUID+18, 4, 90.52101,-391.76727,34.237995, 100, 0, 0),
+
+(@SGGUID+20, 1, 161.0618,-432.5178,48.088337, 100, 0, 0),
+(@SGGUID+20, 2, 165.59125,-417.70804,48.107246, 100, 0, 0),
+(@SGGUID+20, 3, 188.94055,-391.5165,48.133305, 100, 0, 0),
+(@SGGUID+20, 4, 202.6417,-380.7892,48.123344, 100, 0, 0),
 
 (@SGGUID+100, 1, 211.702, -380.781, 48.1706, 0, 0, 0),
 (@SGGUID+100, 2, 219.298, -378.574, 48.1772, 0, 0, 0),
