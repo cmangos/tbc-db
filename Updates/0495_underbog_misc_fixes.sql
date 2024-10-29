@@ -249,20 +249,20 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1777101, 1, 32192, 0, -1, 109, 0, 100, 0, 4000, 15000, 10000, 25000, 'Murkblood Oracle - Frost Nova - random mana user'),
 (1777101, 2, 15497, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Frost Bolt - current'),
 -- Normal Shadow
-(1777102, 1, 31405, 0, -1, 130, 0, 100, 0, 5000, 14000, 10000, 20000, 'Murkblood Oracle - Corruption - top aggro aura not present'),
+(1777102, 1, 31405, 0, -1, 121, 0, 100, 0, 5000, 14000, 10000, 20000, 'Murkblood Oracle - Corruption - random player aura not present'),
 (1777102, 2, 12471, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Shadowbolt - current'),
 -- Normal Fire
 (1777103, 1, 15241, 0, -1, 1, 0, 100, 0, 9000, 15000, 9000, 15000, 'Murkblood Oracle - Scorch - current'),
-(1777103, 2, 12248, 0, -1, 100, 0, 100, 0, 10000, 17000, 12000, 20000, 'Murkblood Oracle - Amplify Damage - random'),
+(1777103, 2, 12248, 0, -1, 121, 0, 100, 0, 10000, 17000, 12000, 20000, 'Murkblood Oracle - Amplify Damage - random player aura aura not present'),
 (1777103, 3, 14034, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Fireball - current'),
 -- Heroic Frost
 (2017901, 1, 15531, 0, -1, 109, 0, 100, 0, 4000, 15000, 10000, 25000, 'Murkblood Oracle - Frost Nova - random mana user'),
 (2017901, 2, 12675, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Frost Bolt - current'),
 -- Heroic Shadow
-(2017902, 1, 31405, 0, -1, 130, 0, 100, 0, 5000, 14000, 10000, 20000, 'Murkblood Oracle - Corruption - top aggro aura not present'),
+(2017902, 1, 31405, 0, -1, 121, 0, 100, 0, 5000, 14000, 10000, 20000, 'Murkblood Oracle - Corruption - random player aura aura not present'),
 (2017902, 2, 15232, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Shadowbolt - current'),
 -- Heroic Fire
 (2017903, 1, 36807, 0, -1, 1, 0, 100, 0, 9000, 15000, 9000, 15000, 'Murkblood Oracle - Scorch - current'),
-(2017903, 2, 12248, 0, -1, 100, 0, 100, 0, 10000, 17000, 12000, 20000, 'Murkblood Oracle - Amplify Damage - random'),
+(2017903, 2, 12248, 0, -1, 121, 0, 100, 0, 10000, 17000, 12000, 20000, 'Murkblood Oracle - Amplify Damage - random player aura aura not present'),
 (2017903, 3, 15228, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Fireball - current');
 
