@@ -46,37 +46,10 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+12, 2, 66.39136,-88.559586,-2.7552373, 100, 0, 0),
 (@CGUID+12, 3, 70.82785,-65.18546,-2.7509038, 100, 0, 0),
 (@CGUID+12, 4, 60.469746,-48.50313,-2.752787, 100, 1000, 0),
-(@CGUID+76, 1, 340.508, -353.582, 30.7496, 0, 0, 0),
-(@CGUID+76, 2, 333.886, -344.019, 27.1394, 0, 0, 0),
-(@CGUID+76, 3, 318.282, -328.61, 20.742, 0, 0, 0),
-(@CGUID+76, 4, 306.596, -322.238, 20.2849, 0, 0, 0),
-(@CGUID+76, 5, 308.252, -313.344, 18.7655, 0, 0, 0),
-(@CGUID+76, 6, 313.952, -314.499, 18.45, 0, 0, 0),
-(@CGUID+76, 7, 324.563, -326.888, 19.6578, 0, 0, 0),
-(@CGUID+76, 8, 333.852, -339.01, 25.0277, 0, 0, 0),
-(@CGUID+76, 9, 337.774, -347.763, 28.4854, 0, 0, 0),
-(@CGUID+76, 10, 341.537, -356.186, 31.9701, 0, 0, 0),
-(@CGUID+76, 11, 337.844, -368.326, 36.889, 0, 0, 0),
-(@CGUID+76, 12, 331.726, -373.947, 40.9642, 0, 0, 0),
-(@CGUID+76, 13, 338.234, -368.014, 36.6846, 0, 0, 0),
 (@CGUID+98, 1, 250.05904,-367.16782,72.172905, 100, 0, 0),
 (@CGUID+98, 2, 256.61053,-374.54532,72.26968, 100, 0, 0),
 (@CGUID+98, 3, 264.9766,-377.12155,72.15923, 100, 0, 0),
 (@CGUID+98, 4, 272.08115,-381.04507,72.14804, 100, 0, 0),
-(@CGUID+118, 1, 286.064, -301.103, 18.7929, 0, 0, 0),
-(@CGUID+118, 2, 277.106, -292.759, 20.812, 0, 0, 0),
-(@CGUID+118, 3, 271.415, -281.385, 24.2738, 0, 0, 0),
-(@CGUID+118, 4, 269.567, -264.837, 26.2567, 0, 0, 0),
-(@CGUID+118, 5, 270.919, -244.975, 27.4844, 0, 0, 0),
-(@CGUID+118, 6, 268.808, -267.803, 25.1139, 0, 0, 0),
-(@CGUID+118, 7, 271.425, -283.426, 24.1718, 0, 0, 0),
-(@CGUID+118, 8, 277.032, -293.642, 20.6578, 0, 0, 0),
-(@CGUID+118, 9, 286.469, -301.608, 18.8307, 0, 0, 0),
-(@CGUID+118, 10, 300.506, -307.683, 18.7514, 0, 0, 0),
-(@CGUID+119, 1, 266.995, -202.99, 28.7592, 100, 0, 0),
-(@CGUID+119, 2, 268.777, -256.844, 26.6499, 100, 0, 0),
-(@CGUID+119, 3, 268.675, -203.632, 28.8667, 100, 0, 0),
-(@CGUID+119, 4, 249.744, -147.077, 28.5912, 100, 0, 0),
 (@CGUID+120, 1, 158.53, -167.4191, 32.28274, 100, 0, 0),
 (@CGUID+120, 2, 169.5463, -135.7898, 28.33598, 100, 0, 0),
 (@CGUID+120, 3, 193.615, -133.5648, 28.52531, 100, 0, 0),
@@ -363,7 +336,12 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 (@CGUID+31, 1), -- Generic RunMode on Spawn
 (@CGUID+32, 1), -- Generic RunMode on Spawn
 (@CGUID+33, 1), -- Generic RunMode on Spawn
-(@CGUID+34, 1); -- Generic RunMode on Spawn
+(@CGUID+34, 1), -- Generic RunMode on Spawn
+-- Fen Ray
+(@CGUID+76, 1), -- Generic RunMode on Spawn
+(@CGUID+77, 1), -- Generic RunMode on Spawn
+(@CGUID+78, 1); -- Generic RunMode on Spawn
+
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+73, 0, 8, 0, 0, 0, NULL), -- Murkblood Healer
@@ -387,27 +365,13 @@ INSERT INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_
 (18105, 0, 0, 1, 0, 0, ''), -- Ghaz'an
 (20465, 0, 0, 1, 0, 0, '18943 18950'); -- Underbog Frenzy
 
-INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+77, @CGUID+76, 1679), -- Fen Ray -> Fen Ray
-(@CGUID+78, @CGUID+76, 1679), -- Fen Ray -> Fen Ray
-(@CGUID+85, @CGUID+79, 1155), -- Fen Ray -> Fen Ray
-(@CGUID+86, @CGUID+79, 1155), -- Fen Ray -> Fen Ray
-(@CGUID+91, @CGUID+118, 1679), -- Lykul Wasp -> Lykul Stinger
-(@CGUID+92, @CGUID+118, 1679), -- Lykul Wasp -> Lykul Stinger
-(@CGUID+88, @CGUID+87, 1155), -- Fen Ray -> Fen Ray
-(@CGUID+89, @CGUID+87, 1155), -- Fen Ray -> Fen Ray
-(@CGUID+83, @CGUID+84, 1155), -- Fen Ray -> creature_spawn_entry
-(@CGUID+80, @CGUID+90, 1155), -- Fen Ray -> Lykul Wasp
-(@CGUID+81, @CGUID+90, 1155), -- Fen Ray -> Lykul Wasp
-(@CGUID+94, @CGUID+119, 1679), -- Lykul Wasp -> Lykul Stinger
-(@CGUID+95, @CGUID+119, 1679); -- Lykul Wasp -> Lykul Stinger
+-- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (17827, 546, 17826, 3, 0), -- Claw -> Swamplord Musel'ek
 (22299, 546, 17882, 16, 0); -- Spore Strider -> The Black Stalker
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
-(@CGUID+84, 17731), (@CGUID+84, 19632), -- Fen Ray, Lykul Stinger
 -- Stil needed after rework 
 (@CGUID+58, 17728), (@CGUID+58, 17729), -- Murkblood Tribesman, Murkblood Spearman
 (@CGUID+59, 17728), (@CGUID+59, 17771), -- Murkblood Tribesman, Murkblood Oracle
@@ -453,7 +417,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+32, 17724, 546, 3, -110.375, -258.027, 20.5684, 6.10865, 7200, 7200, 0, 0), -- Underbat
 (@CGUID+33, 17724, 546, 3, -26.857, -209.898, -4.53534, 0.64428, 7200, 7200, 0, 0), -- Underbat
 (@CGUID+34, 17724, 546, 3, -26.7333, -202.225, -4.49631, 1.10639, 7200, 7200, 0, 0), -- Underbat
--- RE USE +35-+36
+(@CGUID+35, 17731, 546, 3, 270.658, -211.781, 29.077, 2.20042, 7200, 7200, 4, 1), -- Fen Ray
+(@CGUID+36, 17731, 546, 3, 273.349, -222.741, 29.4303, 0.698128, 7200, 7200, 4, 1), -- Fen Ray
 (@CGUID+37, 17725, 546, 3, 44.16768, -106.8701, -3.188545, 5.520926, 7200, 7200, 2, 1), -- Underbog Lurker
 (@CGUID+38, 0, 546, 3, 49.3822, -164.012, -2.76484, 0.609048, 7200, 7200, 2, 1), -- spawn_group_entry
 (@CGUID+39, 0, 546, 3,  61.72, -168.142, -3.0393, 2.51327, 7200, 7200, 2, 1), -- spawn_group_entry
@@ -493,26 +458,26 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+73, 17730, 546, 3, 259.425, -367.675, 72.3819, 1.22173, 7200, 7200, 0, 0), -- Murkblood Healer
 (@CGUID+74, 0, 546, 3, 197.162, -389.322, 72.4649, 5.09636, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+75, 0, 546, 3, 179.034, -391.338, 48.1567, 5.18363, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+76, 17731, 546, 3, 339.158, -360.541, 33.6621, 1.93678, 7200, 7200, 0, 2), -- Fen Ray
-(@CGUID+77, 17731, 546, 3, 340.864, -359.901, 33.414, 2.04281, 7200, 7200, 0, 0), -- Fen Ray
-(@CGUID+78, 17731, 546, 3, 337.152, -363.167, 35.1389, 1.30611, 7200, 7200, 0, 0), -- Fen Ray
-(@CGUID+79, 17731, 546, 3, 301.202, -318.574, 20.2316, 2.45201, 7200, 7200, 4, 1), -- Fen Ray
-(@CGUID+80, 17731, 546, 3, 246.2063, -181.263, 27.07271, 1.361861, 7200, 7200, 2, 1), -- Fen Ray
-(@CGUID+81, 17731, 546, 3, 248.2151, -172.8062, 27.77512, 3.206805, 7200, 7200, 2, 1), -- Fen Ray
+(@CGUID+76, 17731, 546, 3, 299.89, -318.453, 20.355, 1.43698, 7200, 7200, 0, 0), -- Fen Ray
+(@CGUID+77, 17731, 546, 3, 293.334, -312.951, 20.0746, 2.436, 7200, 7200, 0, 0), -- Fen Ray
+(@CGUID+78, 17731, 546, 3, 290.929, -308.255, 19.466, 2.42007, 7200, 7200, 0, 0), -- Fen Ray
+(@CGUID+79, 17731, 546, 3, 300.351, -315.182, 19.943, 3.94367, 7200, 7200, 3, 1), -- Fen Ray
+(@CGUID+80, 17731, 546, 3, 245.467, -183.918, 26.8946, 1.10138, 7200, 7200, 3, 1), -- Fen Ray
+(@CGUID+81, 17731, 546, 3, 249.212, -172.854, 28.0184, 2.76041, 7200, 7200, 3, 1), -- Fen Ray
 -- (@CGUID+82
-(@CGUID+83, 17731, 546, 3, 272.9767, -184.7347, 28.97069, 3.647738, 7200, 7200, 0, 0), -- Fen Ray
-(@CGUID+84, 0, 546, 3, 276.6519, -188.8499, 28.75227, 3.996804, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+85, 17731, 546, 3, 313.462, -307.5, 19.8456, 2.48028, 7200, 7200, 4, 1), -- Fen Ray
-(@CGUID+86, 17731, 546, 3, 315.946, -321.598, 19.6, 2.05616, 7200, 7200, 4, 1), -- Fen Ray
-(@CGUID+87, 17731, 546, 3, 264.366, -279.868, 24.048, 2.0569, 7200, 7200, 5, 1), -- Fen Ray
-(@CGUID+88, 17731, 546, 3, 260.22, -270.346, 24.3892, 3.9469, 7200, 7200, 5, 1), -- Fen Ray
-(@CGUID+89, 17731, 546, 3, 268.257, -273.855, 24.5008, 6.1609, 7200, 7200, 5, 1), -- Fen Ray
-(@CGUID+90, 17732, 546, 3, 251.769, -173.637, 28.3162, 0.766799, 7200, 7200, 5, 1), -- Lykul Wasp
-(@CGUID+91, 17732, 546, 3, 302.81, -308.275, 18.6442, 2.65857, 7200, 7200, 0, 0), -- Lykul Wasp
-(@CGUID+92, 17732, 546, 3, 301.267, -310.22, 19.0793, 2.48813, 7200, 7200, 0, 0), -- Lykul Wasp
-(@CGUID+93, 17732, 546, 3, 270.278, -201.677, 28.9693, 4.7108, 7200, 7200, 5, 1), -- Lykul Wasp
-(@CGUID+94, 17732, 546, 3, 245.034, -143.571, 27.7904, 5.9569, 7200, 7200, 0, 0), -- Lykul Wasp
-(@CGUID+95, 17732, 546, 3, 250.092, -140.755, 28.6391, 5.9569, 7200, 7200, 0, 0), -- Lykul Wasp
+(@CGUID+83, 17731, 546, 3, 272.977, -184.735, 28.9707, 3.64774, 7200, 7200, 0, 0), -- Fen Ray
+(@CGUID+84, 0, 546, 3, 276.652, -188.85, 28.7523, 3.9968, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+85, 17731, 546, 3, 302.712, -303.171, 19.2789, 2.19495, 7200, 7200, 3, 1), -- Fen Ray
+(@CGUID+86, 17731, 546, 3, 308.099, -314.134, 18.8809, 3.38696, 7200, 7200, 3, 1), -- Fen Ray
+(@CGUID+87, 17731, 546, 3, 268.011, -260.025, 26.3789, 4.46257, 7200, 7200, 3, 1), -- Fen Ray
+(@CGUID+88, 17731, 546, 3, 262.12, -270.947, 24.4939, 1.8069, 7200, 7200, 3, 1), -- Fen Ray
+(@CGUID+89, 17731, 546, 3, 269.434, -271.495, 25.8276, 6.16, 7200, 7200, 3, 1), -- Fen Ray
+(@CGUID+90, 17732, 546, 3, 253.957, -183.706, 28.186, 0.717744, 7200, 7200, 3, 1), -- Lykul Wasp
+(@CGUID+91, 17732, 546, 3, 266.329, -220.278, 28.7776, 1.58756, 7200, 7200, 0, 0), -- Lykul Wasp
+(@CGUID+92, 17732, 546, 3, 269.329, -220.228, 29.069, 1.58756, 7200, 7200, 0, 0), -- Lykul Wasp
+(@CGUID+93, 17732, 546, 3, 268.859, -219.26, 29.0504, 5.8466, 7200, 7200, 4, 1), -- Lykul Wasp
+(@CGUID+94, 17732, 546, 3, 262.481, -187.086, 28.5443, 5.04345, 7200, 7200, 0, 0), -- Lykul Wasp
+(@CGUID+95, 17732, 546, 3, 253.957, -183.706, 28.186, 1.28959, 7200, 7200, 0, 0), -- Lykul Wasp
 (@CGUID+96, 17735, 546, 3, 162.697, -444.884, 48.2681, 2.35619, 7200, 7200, 0, 0), -- Wrathfin Warrior
 (@CGUID+97, 17735, 546, 3, 204.415, -378.89, 48.1181, 3.02724, 7200, 7200, 0, 0), -- Wrathfin Warrior
 (@CGUID+98, 17735, 546, 3, 250.059, -367.167, 72.1729, 2.29696, 7200, 7200, 0, 4), -- Wrathfin Warrior
@@ -535,8 +500,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+115, 17882, 546, 3, 143.232, 23.185, 26.7923, 2.57053, 86400, 86400, 0, 2), -- The Black Stalker
 (@CGUID+116, 17885, 546, 3, 296.697, -362.373, 50.1506, 5.5676, 360, 360, 0, 0), -- Earthbinder Rayge
 (@CGUID+117, 18105, 546, 3, 231.066, -472.396, 48.0885, 4.84644, 86400, 86400, 0, 2), -- Ghaz'an
-(@CGUID+118, 19632, 546, 3, 298.968, -306.99, 18.7388, 2.64678, 7200, 7200, 0, 2), -- Lykul Stinger
-(@CGUID+119, 19632, 546, 3, 248.699, -144.806, 28.3781, 5.9569, 7200, 7200, 0, 2), -- Lykul Stinger
+(@CGUID+118, 19632, 546, 3, 263.33, -220.329, 28.454, 1.58756, 7200, 7200, 0, 0), -- Lykul Stinger
+(@CGUID+119, 19632, 546, 3, 264.833, -184.067, 28.937, 4.43274, 7200, 7200, 0, 0), -- Lykul Stinger
 (@CGUID+120, 17734, 546, 3, 158.53, -167.4191, 32.28274, 0.6520659, 7200, 7200, 0, 2), -- Underbog Lord
 (@CGUID+121, 18409, 546, 3, -76.80704, -115.076, 68.56723, 0, 7200, 7200, 0, 2), -- Large AOI Underbat
 (@CGUID+122, 18409, 546, 3, -82.51579, -343.9641, 6.295911, 0, 7200, 7200, 0, 2), -- Large AOI Underbat
@@ -846,11 +811,19 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+25, 'The Underbog - Group 017 - Wrathfin Warrior | Murkblood Tribesman/Murkblood Spearman/Murkblood Healer/Murkblood Oracle - Patrol 10', 0, 0, 0, 1, 0),
 (@SGGUID+26, 'The Underbog - Group 018 - Wrathfin Warrior | Murkblood Tribesman (2) | Murkblood Healer ', 0, 0, 0, 1, 0),
 -- Group of 3
-(@SGGUID+27, 'The Underbog - Group 019 - Murkblood Tribesman/Murkblood Spearman/Murkblood Healer/Murkblood Oracle ', 0, 0, 0, 1, 0),
+(@SGGUID+27, 'The Underbog - Group 019 - Murkblood Tribesman/Murkblood Spearman/Murkblood Healer/Murkblood Oracle', 0, 0, 0, 1, 0),
 (@SGGUID+28, 'The Underbog - Group 020 - Wrathfin Myrmidon (2) - Patrol 11', 0, 0, 0, 1, 0),
-
-(@SGGUID+29, 'The Underbog - Group 021 - Wrathfin Warrior | Murkblood Tribesman/Murkblood Spearman/Murkblood Healer/Murkblood Oracle ', 0, 0, 0, 1, 0),
-(@SGGUID+30, 'The Underbog - Group 022 - Wrathfin Warrior | Murkblood Tribesman/Murkblood Spearman/Murkblood Healer/Murkblood Oracle ', 0, 0, 0, 1, 0);
+(@SGGUID+29, 'The Underbog - Group 021 - Wrathfin Warrior | Murkblood Tribesman/Murkblood Spearman/Murkblood Healer/Murkblood Oracle', 0, 0, 0, 1, 0),
+(@SGGUID+30, 'The Underbog - Group 022 - Wrathfin Warrior | Murkblood Tribesman/Murkblood Spearman/Murkblood Healer/Murkblood Oracle', 0, 0, 0, 1, 0),
+-- After 2nd Boss
+(@SGGUID+31, 'The Underbog - Group 023 - Fen Ray (3)', 0, 0, 0, 1, 0),
+(@SGGUID+32, 'The Underbog - Group 024 - Fen Ray (3) - Patrol 12', 0, 0, 0, 1, 0),
+(@SGGUID+33, 'The Underbog - Group 025 - Lykul Wasp (2) | Lykul Stinger - Patrol 13', 0, 0, 0, 1, 0),
+(@SGGUID+34, 'The Underbog - Group 026 - Fen Ray (3)', 0, 0, 0, 1, 0),
+(@SGGUID+35, 'The Underbog - Group 027 - Lykul Wasp | Fen Ray (2)', 0, 0, 0, 1, 0),
+(@SGGUID+36, 'The Underbog - Group 028 - Lykul Wasp (2) | Lykul Stinger - Patrol 14', 0, 0, 0, 1, 0),
+(@SGGUID+37, 'The Underbog - Group 029 - Lykul Wasp | Fen Ray', 0, 0, 0, 1, 0),
+(@SGGUID+38, 'The Underbog - Group 031 - Lykul Wasp | Fen Ray (2)', 0, 0, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 17725, 0, 2, 0), (@SGGUID+3, 17871, 0, 2, 0), -- Underbog Lurker, Underbog Shambler
@@ -866,7 +839,8 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+27, 17728, 0, 1, 0), (@SGGUID+27, 17729, 0, 2, 0), (@SGGUID+27, 17730, 0, 1, 0), (@SGGUID+27, 17771, 0, 1, 0), -- Murkblood Tribesman, Murkblood Spearman, Murkblood Healer, Murkblood Oracle 
 (@SGGUID+29, 17728, 0, 2, 0), (@SGGUID+29, 17729, 0, 2, 0), (@SGGUID+29, 17730, 0, 1, 0), (@SGGUID+29, 17771, 0, 1, 0), -- Murkblood Tribesman, Murkblood Spearman, Murkblood Healer, Murkblood Oracle
  
-(@SGGUID+30, 17728, 0, 2, 0), (@SGGUID+30, 17729, 0, 2, 0), (@SGGUID+30, 17730, 0, 1, 0), (@SGGUID+30, 17771, 0, 1, 0); -- Murkblood Tribesman, Murkblood Spearman, Murkblood Healer, Murkblood Oracle
+(@SGGUID+30, 17728, 0, 2, 0), (@SGGUID+30, 17729, 0, 2, 0), (@SGGUID+30, 17730, 0, 1, 0), (@SGGUID+30, 17771, 0, 1, 0), -- Murkblood Tribesman, Murkblood Spearman, Murkblood Healer, Murkblood Oracle
+(@SGGUID+37, 17731, 0, 0, 0), (@SGGUID+37, 19632, 0, 0, 0); -- Fen Ray, Lykul Stinger
  
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+110, 0, 0), -- Underbog Shambler
@@ -982,7 +956,39 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+30, @CGUID+100, 0, 0), -- Wrathfin Warrior
 (@SGGUID+30, @CGUID+68, 1, 0), -- spawn_group_entry
 (@SGGUID+30, @CGUID+69, 2, 0), -- spawn_group_entry
-(@SGGUID+30, @CGUID+72, 3, 0); -- spawn_group_entry
+(@SGGUID+30, @CGUID+72, 3, 0), -- spawn_group_entry
+
+(@SGGUID+31, @CGUID+79, 0, 0), -- Fen Ray
+(@SGGUID+31, @CGUID+85, 1, 0), -- Fen Ray
+(@SGGUID+31, @CGUID+86, 2, 0), -- Fen Ray
+
+(@SGGUID+32, @CGUID+76, 0, 0), -- Fen Ray
+(@SGGUID+32, @CGUID+77, 1, 0), -- Fen Ray
+(@SGGUID+32, @CGUID+78, 2, 0), -- Fen Ray
+
+(@SGGUID+33, @CGUID+91, 0, 0), -- Lykul Wasp
+(@SGGUID+33, @CGUID+92, 1, 0), -- Lykul Wasp
+(@SGGUID+33, @CGUID+118, 2, 0), -- Lykul Stinger
+
+(@SGGUID+34, @CGUID+87, 0, 0), -- Fen Ray
+(@SGGUID+34, @CGUID+88, 1, 0), -- Fen Ray
+(@SGGUID+34, @CGUID+89, 2, 0), -- Fen Ray
+
+(@SGGUID+35, @CGUID+93, 0, 0), -- Lykul Wasp
+(@SGGUID+35, @CGUID+35, 1, 0), -- Fen Ray
+(@SGGUID+35, @CGUID+36, 2, 0), -- Fen Ray
+
+(@SGGUID+36, @CGUID+94, 0, 0), -- Lykul Wasp
+(@SGGUID+36, @CGUID+119, 1, 0), -- Lykul Stinger
+(@SGGUID+36, @CGUID+95, 2, 0), -- Lykul Wasp
+
+(@SGGUID+37, @CGUID+83, 0, 0), -- spawn_group_entry
+(@SGGUID+37, @CGUID+84, 1, 0), -- Fen Ray
+
+(@SGGUID+38, @CGUID+90, 0, 0), -- Lykul Wasp
+(@SGGUID+38, @CGUID+80, 1, 0), -- Fen Ray
+(@SGGUID+38, @CGUID+81, 2, 0); -- Fen Ray
+
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+5, 3, 8, 0, @SGGUID+5, 4, 'The Underbog - Group 004 - Underbat (3) - Patrol 01'),
@@ -995,7 +1001,10 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+18, 2, 3, 0, @SGGUID+18, 4, 'The Underbog - Group 015 - Wrathfin Myrmidon (2) - Patrol 08'),
 (@SGGUID+20, 2, 3, 0, @SGGUID+20, 4, 'The Underbog - Group 017 - Wrathfin Myrmidon (2) - Patrol 09'),
 (@SGGUID+25, 0, 2, 0, @SGGUID+25, 4, 'The Underbog - Group 017 - Wrathfin Warrior | Murkblood Tribesman/Murkblood Spearman/Murkblood Healer/Murkblood Oracle - Patrol 10'),
-(@SGGUID+28, 2, 3, 0, @SGGUID+28, 4, 'The Underbog - Group 017 - Wrathfin Myrmidon (2) - Patrol 11');
+(@SGGUID+28, 2, 3, 0, @SGGUID+28, 4, 'The Underbog - Group 017 - Wrathfin Myrmidon (2) - Patrol 11'),
+(@SGGUID+32, 3, 4, 0, @SGGUID+32, 2, 'The Underbog - Group 024 - Fen Ray (3) - Patrol 12'),
+(@SGGUID+33, 3, 4, 0, @SGGUID+33, 4, 'The Underbog - Group 025 - Lykul Wasp (2) | Lykul Stinger - Patrol 13'),
+(@SGGUID+36, 3, 4, 0, @SGGUID+36, 4, 'The Underbog - Group 028 - Lykul Wasp (2) | Lykul Stinger - Patrol 14');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+5,'The Underbog - Group 004 - Underbat (3) - Patrol 01'),
@@ -1008,7 +1017,10 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+18,'The Underbog - Group 015 - Wrathfin Myrmidon (2) - Patrol 08'),
 (@SGGUID+20,'The Underbog - Group 018 - Wrathfin Myrmidon (2) - Patrol 09'),
 (@SGGUID+25,'The Underbog - Group 017 - Wrathfin Warrior | Murkblood Tribesman/Murkblood Spearman/Murkblood Healer/Murkblood Oracle - Patrol 10'),
-(@SGGUID+28,'The Underbog - Group 017 - Wrathfin Myrmidon (2) - Patrol 11');
+(@SGGUID+28,'The Underbog - Group 017 - Wrathfin Myrmidon (2) - Patrol 11'),
+(@SGGUID+32,'The Underbog - Group 024 - Fen Ray (3) - Patrol 12'),
+(@SGGUID+33,'The Underbog - Group 025 - Lykul Wasp (2) | Lykul Stinger - Patrol 13'),
+(@SGGUID+36,'The Underbog - Group 028 - Lykul Wasp (2) | Lykul Stinger - Patrol 14');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+5, 1, -17.999254,-117.81227,-4.533901, 100, 0, 0),
@@ -1084,7 +1096,27 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 
 (@SGGUID+28, 1, 164.67918,-452.26797,72.48773, 100, 0, 0),
 (@SGGUID+28, 2, 171.54146,-424.23203,72.47367, 100, 0, 0),
-(@SGGUID+28, 3, 188.47975,-404.16498,72.504776, 100, 0, 0);
+(@SGGUID+28, 3, 188.47975,-404.16498,72.504776, 100, 0, 0),
+
+(@SGGUID+32, 1, 326.8262,-332.52115,22.322342, 100, 0, 0),
+(@SGGUID+32, 2, 340.7248,-345.90942,28.651798, 100, 0, 0),
+(@SGGUID+32, 3, 342.62613,-356.82632,32.390038, 100, 0, 0),
+(@SGGUID+32, 4, 337.6255,-357.82043,33.04044, 100, 0, 0),
+(@SGGUID+32, 5, 334.96402,-350.80576,29.880644, 100, 0, 0),
+(@SGGUID+32, 6, 326.7678,-341.27536,26.27718, 100, 0, 0),
+(@SGGUID+32, 7, 303.30872,-323.57098,20.690649, 100, 0, 0),
+(@SGGUID+32, 8, 299.75455,-319.4571,20.507263, 100, 0, 0),
+(@SGGUID+32, 9, 310.34607,-320.66324,19.90794, 100, 0, 0),
+
+(@SGGUID+33, 1, 266.3294,-220.27826,28.777576, 100, 0, 0),
+(@SGGUID+33, 2, 269.6321,-240.93237,27.48778, 100, 0, 0),
+(@SGGUID+33, 3, 265.96866,-271.0043,24.540274, 100, 0, 0),
+(@SGGUID+33, 4, 276.8408,-289.8254,21.845425, 100, 0, 0),
+(@SGGUID+33, 5, 303.27896,-310.3096,18.873123, 100, 0, 0),
+
+(@SGGUID+36,1, 268.6617,-230.68227,28.236944, 100, 0, 0),
+(@SGGUID+36,2, 265.41608,-195.6269,28.487965, 100, 0, 0),
+(@SGGUID+36,3, 251.65063,-161.90324,28.616928, 100, 0, 0);
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+9, @SGGUID+10),
