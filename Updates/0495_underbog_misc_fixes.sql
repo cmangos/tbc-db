@@ -46,6 +46,9 @@ UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN 
 -- Lykul Stinger
 UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (19632, 20174);
 
+-- Gha'zan
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (18105, 20168);
+
 -- -----------
 -- SpellLists
 -- -----------
@@ -355,3 +358,27 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1963201 WHERE `entry` = 19632;
 UPDATE `creature_template` SET `SpellList` = 2017401 WHERE `entry` = 20174;
+
+
+-- Ghaz'an
+DELETE FROM `creature_template_spells` WHERE `entry` = 18105;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20168;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1810501, 2016801);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1810501, 'The Underbog - Ghaz''an - Normal', 0, 0),
+(2016801, 'The Underbog - Ghaz''an - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1810501, 2016801);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1810501, 1, 34267, 0, -1, 0, 0, 100, 0, 5000, 7000, 10000, 12000, 'Ghaz''an - Tail Sweep - none'),
+(1810501, 2, 34290, 0, -1, 0, 0, 100, 0, 8000, 10000, 8000, 10000, 'Ghaz''an - Acid Spit - self'),
+(1810501, 3, 34268, 0, -1, 0, 0, 100, 0, 2000, 4000, 4000, 8000, 'Ghaz''an - Acid Breath - self'),
+
+(2016801, 1, 38737, 0, -1, 0, 0, 100, 0, 5000, 7000, 10000, 12000, 'Ghaz''an - Tail Sweep - none'),
+(2016801, 2, 34290, 0, -1, 0, 0, 100, 0, 8000, 10000, 8000, 10000, 'Ghaz''an - Acid Spit - self'),
+(2016801, 3, 34268, 0, -1, 0, 0, 100, 0, 2000, 4000, 4000, 8000, 'Ghaz''an - Acid Breath - self');
+
+UPDATE `creature_template` SET `SpellList` = 1810501 WHERE `entry` = 18105;
+UPDATE `creature_template` SET `SpellList` = 2016801 WHERE `entry` = 20168;
