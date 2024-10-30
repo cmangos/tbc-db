@@ -49,6 +49,9 @@ UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN 
 -- Gha'zan
 UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (18105, 20168);
 
+-- Swamplord Musel'ek
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 6.944439888000488281/7 WHERE entry IN (17826, 20183);
+
 -- -----------
 -- SpellLists
 -- -----------
@@ -382,3 +385,27 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1810501 WHERE `entry` = 18105;
 UPDATE `creature_template` SET `SpellList` = 2016801 WHERE `entry` = 20168;
+
+-- Claw
+DELETE FROM `creature_template_spells` WHERE `entry` = 17827;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20165;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1782701, 2016501);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1782701, 'The Underbog - Claw - Normal', 0, 0),
+(2016501, 'The Underbog - Claw - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1782701, 2016501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1782701, 1, 39435, 0, -1, 100, 0, 100, 0, 10000, 14000, 20000, 30000, 'Claw - Feral Charge - random player'),
+(1782701, 2, 31429, 0, -1, 2, 0, 100, 0, 6000, 10000, 20000, 35000, 'Claw - Echoing Roar - self'),
+(1782701, 3, 34298, 0, -1, 1, 0, 100, 0, 4000, 8000, 12000, 30000, 'Claw - Maul - current'),
+
+(2016501, 1, 39435, 0, -1, 100, 0, 100, 0, 10000, 14000, 10000, 12000, 'Claw - Feral Charge - random player'),
+(2016501, 2, 31429, 0, -1, 2, 0, 100, 0, 6000, 10000, 20000, 35000, 'Claw - Echoing Roar - self'),
+(2016501, 3, 34298, 0, -1, 1, 0, 100, 0, 4000, 8000, 12000, 30000, 'Claw - Maul - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1782701 WHERE `entry` = 17827;
+UPDATE `creature_template` SET `SpellList` = 2016501 WHERE `entry` = 20165;
