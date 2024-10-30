@@ -409,3 +409,19 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1782701 WHERE `entry` = 17827;
 UPDATE `creature_template` SET `SpellList` = 2016501 WHERE `entry` = 20165;
+
+
+
+-- Spore Strider (Heroic Only)
+DELETE FROM `creature_template_spells` WHERE `entry` = 22299;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2229901);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2229901, 'The Underbog - Spore Strider - Heroic', 0, 100);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2229901);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2229901, 2, 20824, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Spore Strider - Lightning Bolt - current');
+
+UPDATE `creature_template` SET `SpellList` = 2229901 WHERE `entry` = 22299;
+

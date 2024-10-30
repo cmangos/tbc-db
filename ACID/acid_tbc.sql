@@ -23458,10 +23458,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Underbog Frenzy 20465
 ('2046501','20465','11','0','100','0','0','0','0','0','0','0','11','18943','0','34','11','18950','0','34','0','0','0','0','Underbog Frenzy - Cast Double Attack, Invisibility and Stealth Detection on Spawn'),
 ('2046502','20465','9','0','100','1025','0','5','10000','20000','0','0','11','12097','1','0','0','0','0','0','0','0','0','0','Underbog Frenzy - Cast Pierce Armor'),
--- Spore Strider 22299
+-- Spore Strider 22299 - spell_list
 ('2229901','22299','11','0','100','4','0','0','0','0','0','0','57','2','35','0','38','0','0','0','0','0','0','0','Spore Strider (Heroic) - Enable Range Mode and Zone Combat Pulse on Spawn'),
 ('2229902','22299','7','0','100','4','0','0','0','0','0','0','41','30000','0','0','0','0','0','0','0','0','0','0','Spore Strider (Heroic) - Delayed Despawn on Evade'),
-('2229903','22299','0','0','100','1029','1000','1000','3200','3600','0','0','11','20824','1','256','0','0','0','0','0','0','0','0','Spore Strider (Heroic) - Cast Lightning Bolt'),
 
 
 

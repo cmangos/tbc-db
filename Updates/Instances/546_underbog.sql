@@ -1,9 +1,8 @@
 /* DBScriptData
 DBName: Coilfang Reservoir - The Underbog
 DBScriptName: -
-DB%Complete: 90
+DB%Complete: 95
 DBComment:
-* Spore Strider should have Delayed Despawn on The Black Stalker Death
 * ToDO:
 * SpawnGroup +29 and +30 possible to have a rnd emote/rp
 EndDBScriptData */
