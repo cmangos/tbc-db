@@ -34,6 +34,17 @@ UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN 
 -- Murkblood Oracle
 UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 6.944439888000488281/7 WHERE entry IN (17771, 20179);
 
+-- Fen Ray
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (17731, 20173);
+
+-- Lykul Wasp
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (17732, 20175);
+
+-- Underbog Lord
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (17734, 20187);
+
+-- Lykul Stinger
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (19632, 20174);
 
 -- -----------
 -- SpellLists
@@ -266,3 +277,81 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (2017903, 2, 12248, 0, -1, 121, 0, 100, 0, 10000, 17000, 12000, 20000, 'Murkblood Oracle - Amplify Damage - random player aura aura not present'),
 (2017903, 3, 15228, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Murkblood Oracle - Fireball - current');
 
+
+-- Fen Ray
+DELETE FROM `creature_template_spells` WHERE `entry` = 17731;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20173;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1773101, 2017301);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1773101, 'The Underbog - Fen Ray - Normal', 0, 0),
+(2017301, 'The Underbog - Fen Ray - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1773101, 2017301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1773101, 1, 34984, 0, -1, 101, 0, 100, 0, 5000, 18000, 11000, 23000, 'Fen Ray - Psychic Horror - random player non tank'),
+(2017301, 1, 34984, 0, -1, 101, 0, 100, 0, 5000, 18000, 11000, 23000, 'Fen Ray - Psychic Horror - random player non tank');
+
+UPDATE `creature_template` SET `SpellList` = 1773101 WHERE `entry` = 17731;
+UPDATE `creature_template` SET `SpellList` = 2017301 WHERE `entry` = 20173;
+
+
+-- Lykul Wasp
+DELETE FROM `creature_template_spells` WHERE `entry` = 17732;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20175;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1773201, 2017501);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1773201, 'The Underbog - Lykul Wasp - Normal', 0, 80),
+(2017501, 'The Underbog - Lykul Wasp - Heroic', 0, 80);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1773201, 2017501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1773201, 2, 32330, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Lykul Wasp - Poison Spit - current'),
+(2017501, 2, 32330, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Lykul Wasp - Poison Spit - current');
+
+UPDATE `creature_template` SET `SpellList` = 1773201 WHERE `entry` = 17732;
+UPDATE `creature_template` SET `SpellList` = 2017501 WHERE `entry` = 20175;
+
+
+-- Underbog Lord
+DELETE FROM `creature_template_spells` WHERE `entry` = 17734;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20187;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1773401, 2018701);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1773401, 'The Underbog - Underbog Lord - Normal', 0, 0),
+(2018701, 'The Underbog - Underbog Lord - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1773401, 2018701);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1773401, 1, 25778, 0, -1, 1, 0, 100, 0, 5000, 22000, 25000, 40000, 'Underbog Lord - Knock Away - current'),
+(1773401, 2, 32065, 0, -1, 1, 0, 100, 0, 5000, 16000, 12000, 25000, 'Underbog Lord - Fungal Decay - current'),
+
+(2018701, 1, 40318, 0, -1, 2, 0, 100, 0, 10000, 10000, 10000, 10000, 'Underbog Lord - Growth - self'),
+(2018701, 2, 25778, 0, -1, 1, 0, 100, 0, 5000, 22000, 25000, 40000, 'Underbog Lord - Knock Away - current'),
+(2018701, 3, 32065, 0, -1, 1, 0, 100, 0, 5000, 16000, 12000, 25000, 'Underbog Lord - Fungal Decay - current');
+
+UPDATE `creature_template` SET `SpellList` = 1773401 WHERE `entry` = 17734;
+UPDATE `creature_template` SET `SpellList` = 2018701 WHERE `entry` = 20187;
+
+-- Lykul Stinger
+DELETE FROM `creature_template_spells` WHERE `entry` = 19632;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20173;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1963201, 2017401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1963201, 'The Underbog - Lykul Stinger - Normal', 0, 0),
+(2017401, 'The Underbog - Lykul Stinger - Heroic', 0, 0);
+
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1963201, 2017401);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1963201, 1, 34392, 0, -1, 2, 0, 100, 0, 11000, 21000, 14000, 23000, 'Lykul Stinger - Stinger Frenzy - self'),
+(2017401, 1, 34392, 0, -1, 2, 0, 100, 0, 11000, 21000, 14000, 23000, 'Lykul Stinger - Stinger Frenzy - self');
+
+UPDATE `creature_template` SET `SpellList` = 1963201 WHERE `entry` = 19632;
+UPDATE `creature_template` SET `SpellList` = 2017401 WHERE `entry` = 20174;
