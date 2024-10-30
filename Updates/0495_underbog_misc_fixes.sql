@@ -52,6 +52,12 @@ UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN 
 -- Swamplord Musel'ek
 UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 6.944439888000488281/7 WHERE entry IN (17826, 20183);
 
+-- Claw
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 6.944439888000488281/7, StaticFlags1 = 76 WHERE entry IN (17827, 20165);
+
+-- The Black Stalker
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (17882, 20184);
+
 -- -----------
 -- SpellLists
 -- -----------
