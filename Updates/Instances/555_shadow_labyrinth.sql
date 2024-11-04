@@ -1507,7 +1507,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+1, 1, @RELAYID+4, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 3'),
 (@RELAYID+1, 1, @RELAYID+5, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 4');
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+11;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Shadow Labyrinth - Group 001 - Cabal Acolyte/Cabal Deathsworn 4 differnt paths after static Intro
 (@RELAYID+1,0,0,45,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - choose random path'),
@@ -1515,7 +1515,15 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+2,0,0,20,2,@SGGUID+1,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - PathID 1'),
 (@RELAYID+3,0,0,20,2,@SGGUID+2,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - PathID 2'),
 (@RELAYID+4,0,0,20,2,@SGGUID+3,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - PathID 3'),
-(@RELAYID+5,0,0,20,2,@SGGUID+4,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - PathID 4');
+(@RELAYID+5,0,0,20,2,@SGGUID+4,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - PathID 4'),
+-- Random Talk Events - using dbscript to get correct delays
+-- Multiple Groups (with 3 npcs) use to have a small RP Event 
+-- Leader use emote talk - one answers with emote laugh one with emote no
+-- leader use emote Exclamation - both answer with emote yes
+(@RELAYID+6,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Emote Talk'),
+(@RELAYID+6,1000,0,35,5,5,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Send AI Event A'),
+(@RELAYID+6,5000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Emote Exclamation'),
+(@RELAYID+6,6000,0,35,6,5,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Send AI Event B');
 
 DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN @RELAYID+1 AND  @RELAYID+6;
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
