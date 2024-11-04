@@ -74,8 +74,8 @@ DELETE FROM `creature_template_spells` WHERE `entry` IN (18641, 20643);
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1864101, 2064301);
 
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
-(1864101, 'Shadow Labyrinth - Cabal Familiar - Normal', 0, 0),
-(2064301, 'Shadow Labyrinth - Cabal Familiar - Heroic', 0, 0);
+(1864101, 'Shadow Labyrinth - Cabal Familiar - Normal', 0, 90),
+(2064301, 'Shadow Labyrinth - Cabal Familiar - Heroic', 0, 90);
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1864101, 2064301);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
