@@ -5,11 +5,17 @@
 -- Cabal Acolyte
 -- WalkSpeed: 2.5
 -- RunSpeed: 8
-UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry IN (18633, 20638);
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (18633, 20638);
 -- Cabal Deathsworn
 -- WalkSpeed: 2.5
 -- RunSpeed: 8
-UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.1428' WHERE entry IN (18635, 20641);
+UPDATE creature_template SET SpeedWalk = 2.5/2.5 SpeedRun = 8/7 WHERE entry IN (18635, 20641);
+
+-- Cabal Familiar
+UPDATE creature_template SET SpeedWalk = 2.5/2.5 SpeedRun = 8/7 WHERE entry IN (18641, 20643);
+
+-- Fel Guardhound
+UPDATE creature_template SET SpeedWalk = 2.5/2.5 SpeedRun = 8/7 WHERE entry IN (18642, 20651);
 
 -- -----------
 -- SpellLists
@@ -56,8 +62,8 @@ DELETE FROM `creature_template_spells` WHERE `entry` IN (18640, 20649);
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1864001, 2064901);
 
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
-(1864001, 'Shadow Labyrinth - Cabal Warlock - Normal', 0, 0),
-(2064901, 'Shadow Labyrinth - Cabal Warlock - Heroic', 0, 0);
+(1864001, 'Shadow Labyrinth - Cabal Warlock - Normal', 0, 80),
+(2064901, 'Shadow Labyrinth - Cabal Warlock - Heroic', 0, 80);
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1864001, 2064901);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
