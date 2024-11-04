@@ -138,22 +138,15 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+82, 4, -155.47, -402.097, 17.0795, 4.61994, 10000, 0),
 -- ----------------------------------------------
 
-(@CGUID+85, 1, -62.1643, -18.331, -1.12955, 0.231035, 0, 0),
-(@CGUID+85, 2, -58.8384, -12.529, -1.12955, 1.52616, 0, 0),
-(@CGUID+85, 3, -58.4549, 6.17609, -1.12955, 1.26383, 0, 0),
-(@CGUID+85, 4, -55.2975, 10.4386, -1.12955, 0.618236, 0, 0),
-(@CGUID+85, 5, -38.1628, 9.84286, -1.1295, 5.70997, 0, 0),
-(@CGUID+85, 6, -37.3887, 5.34975, -1.13016, 4.76986, 0, 0),
-(@CGUID+85, 7, -39.8703, -3.38196, -1.13844, 3.90954, 10000, 1863501),
-(@CGUID+85, 8, -38.0451, 10.1566, -1.12945, 1.55365, 0, 0),
-(@CGUID+85, 9, -39.8703, -3.38196, -1.13844, 3.90954, 10000, 1863501),
-(@CGUID+85, 10, -38.0451, 10.1566, -1.12945, 1.55365, 0, 0),
-(@CGUID+85, 11, -39.8703, -3.38196, -1.13844, 3.90954, 10000, 1863501),
-(@CGUID+85, 12, -38.0451, 10.1566, -1.12945, 1.55365, 0, 0),
-(@CGUID+85, 13, -56.0397, 16.2384, -1.12952, 1.81262, 10000, 1863501),
-(@CGUID+85, 14, -59.0589, -14.4868, -1.12952, 4.34003, 0, 0),
-(@CGUID+85, 15, -63.3941, -18.394, -1.12952, 3.14309, 0, 0),
-(@CGUID+85, 16, -91.7216, -19.2639, -1.12952, 0.0386012, 0, 0),
+-- ----------------------------
+-- Reworked Waypoints
+-- Cabal Acolyte/Cabal Deathsworn
+-- Startings waypoints, after point 4 he gets 4 different paths
+(@CGUID+85, 1, -91.7096, -19.436, -1.04486, 100, 1, 0),
+(@CGUID+85, 2, -60.68144, -18.41702, -1.1281054, 100, 0, 0),
+(@CGUID+85, 3, -59.339016, 8.937592, -1.1331869, 100, 0, 0),
+(@CGUID+85, 4, -38.099854, 7.8367243, -1.139434, 100, 1, @RELAYID+1);
+-- 
 (@CGUID+86, 1, -44.641, -34.6061, -1.04484, 1.44862, 17000, 1863502),
 (@CGUID+87, 1, -35.078, -81.0337, -1.04491, 5.18363, 10000, 1863502),
 (@CGUID+90, 1, -91.919, -88.183, -1.04498, 6.00393, 13000, 1863502),
@@ -735,7 +728,6 @@ INSERT INTO creature_spawn_entry (guid, entry) VALUES
 (@CGUID+75, 18633), (@CGUID+75, 18635), -- Cabal Acolyte, Cabal Deathsworn
 (@CGUID+79, 18634), (@CGUID+79, 18639), -- Cabal Summoner, Cabal Spellbinder
 (@CGUID+82, 18634), (@CGUID+82, 18639), -- Cabal Summoner, Cabal Spellbinder
-(@CGUID+85, 18633), (@CGUID+85, 18635), -- Cabal Acolyte, Cabal Deathsworn
 (@CGUID+86, 18633), (@CGUID+86, 18635), -- Cabal Acolyte, Cabal Deathsworn
 (@CGUID+87, 18633), (@CGUID+87, 18635), -- Cabal Acolyte, Cabal Deathsworn
 (@CGUID+88, 18633), (@CGUID+88, 18635), -- Cabal Acolyte, Cabal Deathsworn
@@ -849,7 +841,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- REUSE @CGUID+83
 -- REUSE @CGUID+84
 
-(@CGUID+85, 0, 555, 3, -91.7096, -19.436, -1.12819, 0.0386012, 7200, 7200, 0, 2), -- creature_spawn_entry
+(@CGUID+85, 0, 555, 3, -91.7096, -19.436, -1.04486, 6.08963, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+86, 0, 555, 3, -44.641, -34.6061, -1.04484, 1.44862, 7200, 7200, 0, 2), -- creature_spawn_entry
 (@CGUID+87, 0, 555, 3, -35.078, -81.0337, -1.04491, 5.18363, 7200, 7200, 0, 2), -- creature_spawn_entry
 (@CGUID+88, 0, 555, 3, -60.8069, -24.741, -1.04481, 5.44543, 7200, 7200, 0, 0), -- creature_spawn_entry
@@ -1205,6 +1197,8 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+3, @CGUID+65, 0, 0), -- spawn_group_entry
 (@SGGUID+3, @CGUID+65, 1, 0), -- spawn_group_entry
 
+(@SGGUID+4, @CGUID+85, 0, 0), -- spawn_group_entry
+
 DELETE FROM worldstate_name WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+7;
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 (@SGGUID+1, 'Shadow Labyrinth - Group 001'),
@@ -1215,8 +1209,28 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+2, 42, @SGGUID+1, 1, 1, 0, 0, 'Shadow Labyrinth - Group 001 -  Type 2'),
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
--- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
--- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+1, 'Shadow Labyrinth - Group 001 Path 1'),
+(@SGGUID+2, 'Shadow Labyrinth - Group 001 Path 2'),
+(@SGGUID+3, 'Shadow Labyrinth - Group 001 Path 3'),
+(@SGGUID+4, 'Shadow Labyrinth - Group 001 Path 4');
+ 
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+-- Cabal Acolyte 4 different paths after Intro path
+(@SGGUID+1, 1, -39.472927, -2.8820992, -1.1310382, 3.9095, 18000, @RELAYID+2),
+(@SGGUID+1, 2, -38.099854, 7.8367243, -1.139434, 100, 1, @RELAYID+1),
+(@SGGUID+2, 1, -45.58315, 18.34784, -1.1280077, 2.4085, 18000, @RELAYID+2),
+(@SGGUID+2, 2, -38.099854, 7.8367243, -1.139434, 100, 1, @RELAYID+1),
+(@SGGUID+3, 1, -56.151814, 15.847561,-1.1280965, 1.5009, 18000, @RELAYID+2),
+(@SGGUID+3, 2, -38.099854, 7.8367243, -1.139434, 100, 1, @RELAYID+1),
+(@SGGUID+4, 1, -59.339016, 8.937592, -1.1331869, 100, 0, 0),
+(@SGGUID+4, 2, -60.68144, -18.41702, -1.1281054, 100, 0, 0),
+(@SGGUID+4, 3, -91.59668, -19.750717, -1.1281965, 100, 2000, 0),
+(@SGGUID+4, 4, -60.68144, -18.41702, -1.1281054, 100, 0, 0),
+(@SGGUID+4, 5, -59.339016, 8.937592, -1.1331869, 100, 0, 0),
+(@SGGUID+4, 6, -38.099854, 7.8367243, -1.139434, 100, 1, @RELAYID+1);
+
 
 -- =======
 -- POOLING
@@ -1478,6 +1492,33 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (183295, 3000, 20, 2, 0, 0, 18632, @CGUID+52, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
 -- (183295, 3000, 20, 2, 0, 0, 18634, @CGUID+82, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
 (183295, 3000, 20, 2, 0, 0, 18632, @CGUID+51, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement');
+
+-- Reworked scripts
+-- Reworked DBScripts, will be merged into single Inserts when done with full rework
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+3;
+INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
+-- Shadow Labyrinth - Group 001 - Cabal Acolyte/Cabal Deathsworn 4 differnt paths after static Intro
+(@RELAYID+1, 1, @RELAYID+2, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 1'),
+(@RELAYID+1, 1, @RELAYID+3, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 2'),
+(@RELAYID+1, 1, @RELAYID+4, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 3'),
+(@RELAYID+1, 1, @RELAYID+5, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 4');
+
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+11;
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Shadow Labyrinth - Group 001 - Cabal Acolyte/Cabal Deathsworn 4 differnt paths after static Intro
+(@RELAYID+1,0,0,45,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - choose random path'),
+-- Choose Path
+(@RELAYID+2,0,0,20,2,@SGGUID+1,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - PathID 1'),
+(@RELAYID+3,0,0,20,2,@SGGUID+2,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - PathID 2'),
+(@RELAYID+4,0,0,20,2,@SGGUID+3,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - PathID 3'),
+(@RELAYID+5,0,0,20,2,@SGGUID+4,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - PathID 4');
+
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (@RELAYID+1, @RELAYID+2);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(@RELAYID+1, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - choose random path'), 
+(@RELAYID+2, 3000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - set StandState Kneel'),
+(@RELAYID+2, 10000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Emote Question'),
+(@RELAYID+2, 13000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - set StandState stand');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
