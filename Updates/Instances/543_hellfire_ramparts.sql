@@ -74,7 +74,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+46, 0, 0, 0, 0, 0, NULL), -- Bleeding Hollow Archer
 (@CGUID+47, 0, 0, 0, 0, 0, NULL), -- Bleeding Hollow Archer
 (@CGUID+91, 0, 0, 1, 0, 0, '8734'), -- Bleeding Hollow Scryer
-(@CGUID+92, 0, 0, 1, 0, 0, '8734'), -- Bleeding Hollow Scryer
+-- (@CGUID+92, 0, 0, 1, 0, 0, '8734'), -- Bleeding Hollow Scryer
 (@CGUID+93, 0, 0, 1, 0, 0, '8734'), -- Bleeding Hollow Scryer
 (@CGUID+94, 0, 0, 1, 0, 0, '8734'), -- Bleeding Hollow Scryer
 (@CGUID+95, 0, 0, 1, 0, 0, '8734'), -- Bleeding Hollow Scryer
@@ -99,7 +99,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(17280, 543, 17455, 4352, 50), -- Shattered Hand Warhound -> Bonechewer Beastmaster
 (17517, 543, 17536, 133, 0), -- Hellfire Sentry -> Nazan
 (17540, 543, 17308, 12304, 0); -- Fiendish Hound -> Omor the Unscarred
 
@@ -109,11 +108,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+3, 17259, 543, 3, -1263.24, 1641.83, 92.1805, 3.58973, 7200, 7200, 0, 0), -- Bonechewer Hungerer
 (@CGUID+4, 17259, 543, 3, -1324.93, 1661.38, 93.0835, 5.34654, 7200, 7200, 0, 2), -- Bonechewer Hungerer
 (@CGUID+5, 17259, 543, 3, -1328.64, 1658.68, 93.0325, 5.43294, 7200, 7200, 0, 0), -- Bonechewer Hungerer
-(@CGUID+6, 17259, 543, 3, -1329.57, 1667.08, 68.7185, 3.63029, 7200, 7200, 0, 0), -- Bonechewer Hungerer
+(@CGUID+6, 17259, 543, 3, -1329.57, 1667.08, 68.7185, 3.63028, 7200, 7200, 0, 0), -- Bonechewer Hungerer
 (@CGUID+7, 17259, 543, 3, -1326.74, 1659.26, 69.0985, 3.49066, 7200, 7200, 0, 0), -- Bonechewer Hungerer
 (@CGUID+8, 17259, 543, 3, -1285.47, 1678.21, 68.6203, 6.14356, 7200, 7200, 0, 0), -- Bonechewer Hungerer
-(@CGUID+9, 17259, 543, 3, -1253.03, 1592.4, 68.5577, 5.81228, 7200, 7200, 5, 1), -- Bonechewer Hungerer
-(@CGUID+10, 17259, 543, 3, -1260.65, 1580.48, 68.6319, 6.11701, 7200, 7200, 5, 1), -- Bonechewer Hungerer
+(@CGUID+9, 17259, 543, 3, -1252.19, 1596.7, 68.6478, 5.75314, 7200, 7200, 3, 1), -- Bonechewer Hungerer
+(@CGUID+10, 17259, 543, 3, -1257.59, 1579.4, 68.6652, 5.88977, 7200, 7200, 3, 1), -- Bonechewer Hungerer
 (@CGUID+11, 17259, 543, 3, -1229.04, 1474.72, 68.5588, 3.75217, 7200, 7200, 5, 1), -- Bonechewer Hungerer
 (@CGUID+12, 17259, 543, 3, -1218.31, 1465.47, 68.565, 4.08753, 7200, 7200, 5, 1), -- Bonechewer Hungerer
 (@CGUID+13, 17259, 543, 3, -1206.34, 1440.36, 68.5478, 2.25364, 7200, 7200, 0, 0), -- Bonechewer Hungerer
@@ -126,10 +125,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+20, 17264, 543, 3, -1257.71, 1651, 67.9137, 1.8753, 7200, 7200, 0, 2), -- Bonechewer Ravener
 (@CGUID+21, 17264, 543, 3, -1323.23, 1663.07, 68.4011, 3.48722, 7200, 7200, 0, 2), -- Bonechewer Ravener
 (@CGUID+22, 17264, 543, 3, -1171.39, 1442.44, 68.4135, 2.39422, 7200, 7200, 0, 0), -- Bonechewer Ravener
-(@CGUID+23, 17455, 543, 3, -1286.36, 1548.92, 68.593, 5.79388, 7200, 7200, 0, 2), -- Bonechewer Beastmaster
+(@CGUID+23, 17455, 543, 3, -1282.9, 1546.56, 68.6685, 0.991133, 7200, 7200, 0, 2), -- Bonechewer Beastmaster
 (@CGUID+24, 17264, 543, 3, -1240.97, 1446.21, 68.5984, 5.1549, 7200, 7200, 0, 2), -- Bonechewer Ravener
 (@CGUID+25, 17264, 543, 3, -1157.34, 1475.44, 68.4187, 0.224954, 7200, 7200, 0, 2), -- Bonechewer Ravener
-(@CGUID+26, 0, 543, 3, -1241, 1622.44, 68.4931, 2.30468, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster, Bleeding Hollow Archer
+(@CGUID+26, 0, 543, 3, -1241.07, 1623.38, 68.575, 2.40855, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster, Bleeding Hollow Archer
 (@CGUID+27, 0, 543, 3, -1273.19, 1654.71, 69.2056, 1.0472, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster, Bleeding Hollow Archer
 (@CGUID+28, 17269, 543, 3, -1298.65, 1638.98, 91.8292, 3.9968, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster
 (@CGUID+29, 17269, 543, 3, -1288.11, 1637.25, 91.816, 4.95674, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster
@@ -141,22 +140,22 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+35, 17269, 543, 3, -1288.3, 1487.43, 68.5968, 0.583221, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster
 (@CGUID+36, 17269, 543, 3, -1180.56, 1480.53, 68.4566, 2.0133, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster
 (@CGUID+37, 17269, 543, 3, -1181.91, 1486.2, 68.462, 4.02078, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster
-(@CGUID+38, 0, 543, 3, -1244.37, 1648.46, 67.5068, 2.29683, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster, Bleeding Hollow Archer
-(@CGUID+39, 0, 543, 3, -1246.53, 1642.22, 68.0499, 3.52755, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster, Bleeding Hollow Archer
+(@CGUID+38, 0, 543, 3, -1242.22, 1649.36, 67.5017, 2.02458, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster, Bleeding Hollow Archer
+(@CGUID+39, 0, 543, 3, -1245.98, 1643.12, 68.0523, 3.52557, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster, Bleeding Hollow Archer
 (@CGUID+40, 0, 543, 3, -1268.79, 1650.25, 69.0301, 0.488692, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster, Bleeding Hollow Archer
 (@CGUID+41, 17270, 543, 3, -1314.25, 1622.67, 91.8317, 6.23082, 7200, 7200, 0, 0), -- Bleeding Hollow Archer
 (@CGUID+42, 17270, 543, 3, -1270.92, 1627.81, 91.7535, 3.1765, 7200, 7200, 0, 0), -- Bleeding Hollow Archer
 (@CGUID+43, 17270, 543, 3, -1270.05, 1622.27, 91.7561, 3.29867, 7200, 7200, 0, 0), -- Bleeding Hollow Archer
-(@CGUID+44, 0, 543, 3, -1239.48, 1614.78, 68.4823, 4.2564, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster, Bleeding Hollow Archer
+(@CGUID+44, 0, 543, 3, -1238.36, 1612.97, 68.5569, 4.10152, 7200, 7200, 0, 0), -- Bleeding Hollow Darkcaster, Bleeding Hollow Archer
 (@CGUID+45, 17270, 543, 3, -1320.28, 1612.95, 91.7477, 5.46592, 7200, 7200, 0, 0), -- Bleeding Hollow Archer
 (@CGUID+46, 17270, 543, 3, -1148.55, 1497.48, 68.4854, 3.08923, 7200, 7200, 0, 0), -- Bleeding Hollow Archer
 (@CGUID+47, 17270, 543, 3, -1148.28, 1511.81, 68.4805, 0.0349066, 7200, 7200, 0, 0), -- Bleeding Hollow Archer
-(@CGUID+48, 17271, 543, 3, -1246.51, 1645.73, 67.7504, 2.82305, 7200, 7200, 0, 0), -- Bonechewer Destroyer
-(@CGUID+49, 17271, 543, 3, -1242.17, 1617.33, 68.5032, 3.57232, 7200, 7200, 0, 0), -- Bonechewer Destroyer
+(@CGUID+48, 17271, 543, 3, -1244.97, 1646.42, 67.7663, 2.51327, 7200, 7200, 0, 0), -- Bonechewer Destroyer
+(@CGUID+49, 17271, 543, 3, -1242.73, 1616.46, 68.5907, 3.35103, 7200, 7200, 0, 0), -- Bonechewer Destroyer
 (@CGUID+50, 17271, 543, 3, -1297.74, 1588.57, 91.8306, 4.74729, 7200, 7200, 0, 0), -- Bonechewer Destroyer
 (@CGUID+51, 17271, 543, 3, -1269.61, 1653.95, 69.0822, 0.785398, 7200, 7200, 0, 0), -- Bonechewer Destroyer
-(@CGUID+52, 17271, 543, 3, -1277.48, 1537.32, 68.5684, 1.78475, 7200, 7200, 0, 0), -- Bonechewer Destroyer
-(@CGUID+53, 17271, 543, 3, -1271.42, 1539.57, 68.5593, 1.24911, 7200, 7200, 0, 0), -- Bonechewer Destroyer
+(@CGUID+52, 17271, 543, 3, -1276.78, 1537.09, 68.6495, 1.67552, 7200, 7200, 0, 0), -- Bonechewer Destroyer
+(@CGUID+53, 17271, 543, 3, -1270.76, 1538.25, 68.64, 0.802851, 7200, 7200, 0, 0), -- Bonechewer Destroyer
 (@CGUID+54, 17271, 543, 3, -1281.22, 1479.85, 68.5982, 0.0929992, 7200, 7200, 0, 0), -- Bonechewer Destroyer
 (@CGUID+55, 17271, 543, 3, -1199.86, 1441.04, 68.5164, 1.17371, 7200, 7200, 0, 0), -- Bonechewer Destroyer
 (@CGUID+56, 17271, 543, 3, -1185.22, 1483.93, 68.4648, 5.58294, 7200, 7200, 0, 0), -- Bonechewer Destroyer
@@ -171,8 +170,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+65, 17280, 543, 3, -1261.15, 1649.92, 68.245, 1.80854, 7200, 7200, 0, 0), -- Shattered Hand Warhound
 (@CGUID+66, 17280, 543, 3, -1296.52, 1636.16, 91.8307, 0.506145, 7200, 7200, 0, 0), -- Shattered Hand Warhound
 (@CGUID+67, 17280, 543, 3, -1307.94, 1618.83, 91.7515, 4.36804, 7200, 7200, 0, 0), -- Shattered Hand Warhound
-(@CGUID+68, 17280, 543, 3, -1255.54, 1588.99, 68.5629, 6.26231, 7200, 7200, 0, 0), -- Shattered Hand Warhound
-(@CGUID+69, 17280, 543, 3, -1257.71, 1584.01, 68.5609, 5.76829, 7200, 7200, 0, 0), -- Shattered Hand Warhound
+(@CGUID+68, 17280, 543, 3, -1254.85, 1590.79, 68.6466, 0.244346, 7200, 7200, 0, 0), -- Shattered Hand Warhound
+(@CGUID+69, 17280, 543, 3, -1256.33, 1585.519, 68.6399, 5.75958, 7200, 7200, 0, 0), -- Shattered Hand Warhound
 (@CGUID+70, 17280, 543, 3, -1227.07, 1471.13, 68.562, 3.83778, 7200, 7200, 0, 0), -- Shattered Hand Warhound
 (@CGUID+71, 17280, 543, 3, -1222.93, 1468.08, 68.5654, 4.0891, 7200, 7200, 0, 0), -- Shattered Hand Warhound
 (@CGUID+72, 17280, 543, 3, -1201.71, 1434.41, 68.5346, 1.3143, 7200, 7200, 0, 0), -- Shattered Hand Warhound
@@ -185,7 +184,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+79, 17280, 543, 3, -1172.91, 1448.22, 68.4196, 2.30547, 7200, 7200, 0, 0), -- Shattered Hand Warhound
 (@CGUID+80, 17280, 543, 3, -1290.56, 1536.05, 68.5896, 1.85287, 7200, 7200, 0, 0), -- Shattered Hand Warhound
 (@CGUID+81, 17280, 543, 3, -1297.28, 1534.1, 68.6081, 1.85287, 7200, 7200, 0, 0), -- Shattered Hand Warhound
-(@CGUID+82, 17281, 543, 3, -1267.93, 1556.92, 68.5736, 1.77075, 7200, 7200, 0, 0), -- Bonechewer Ripper
+(@CGUID+82, 17281, 543, 3, -1265.78, 1562.26, 68.6645, 0.628319, 7200, 7200, 0, 0), -- Bonechewer Ripper
 (@CGUID+83, 17281, 543, 3, -1238.83, 1559.07, 91.0681, 2.32836, 7200, 7200, 0, 0), -- Bonechewer Ripper
 (@CGUID+84, 17306, 543, 3, -1165.06262, 1515.9311, 68.5005, 3.07122, 86400, 86400, 0, 0), -- Watchkeeper Gargolmar
 (@CGUID+85, 17307, 543, 3, -1363.894, 1728.0319, 105.86549, 0, 86400, 86400, 0, 3), -- Vazruden the Herald
@@ -194,10 +193,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+88, 17309, 543, 3, -1169.3240, 1518.8388, 68.520, 0.9921, 7200, 7200, 0, 0), -- Hellfire Watcher
 (@CGUID+89, 17264, 543, 3, -1294.11, 1535.6, 68.5949, 1.86208, 7200, 7200, 0, 2), -- Bonechewer Ravener
 (@CGUID+90, 22515, 543, 3, -1453.2988, 1733.9381, 87.31018, 0.76794, 300, 300, 0, 0), -- World Trigger
-(@CGUID+91, 17478, 543, 3, -1265.38, 1554.34, 68.566, 2.2323, 7200, 7200, 0, 0), -- Bleeding Hollow Scryer
-(@CGUID+92, 17478, 543, 3, -1271.47, 1555.48, 68.5755, 0.812823, 7200, 7200, 0, 0), -- Bleeding Hollow Scryer
-(@CGUID+93, 17478, 543, 3, -1270.34, 1559.27, 68.5807, 5.53254, 7200, 7200, 0, 0), -- Bleeding Hollow Scryer
-(@CGUID+94, 17478, 543, 3, -1264.59, 1557.86, 68.5696, 3.46171, 7200, 7200, 0, 0), -- Bleeding Hollow Scryer
+(@CGUID+91, 17478, 543, 3, -1263.35, 1559.4, 68.6672, 2.40855, 7200, 7200, 0, 0), -- Bleeding Hollow Scryer
+-- (@CGUID+92, 17478, 543, 3, -1271.47, 1555.48, 68.5755, 0.812823, 7200, 7200, 0, 0), -- Bleeding Hollow Scryer
+(@CGUID+93, 17478, 543, 3, -1268.01, 1565.41, 68.6676, 5.34071, 7200, 7200, 0, 0), -- Bleeding Hollow Scryer
+(@CGUID+94, 17478, 543, 3, -1262.52, 1564.9, 68.7313, 3.735, 7200, 7200, 0, 0), -- Bleeding Hollow Scryer
 (@CGUID+95, 17478, 543, 3, -1237.93, 1556.28, 90.9586, 1.83423, 7200, 7200, 0, 0), -- Bleeding Hollow Scryer
 (@CGUID+96, 17478, 543, 3, -1235.93, 1560.57, 91.0161, 3.5574, 7200, 7200, 0, 0), -- Bleeding Hollow Scryer
 (@CGUID+97, 17478, 543, 3, -1239.73, 1562.47, 91.0423, 4.93039, 7200, 7200, 0, 0), -- Bleeding Hollow Scryer
@@ -330,9 +329,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+7, @CGUID+69, 3), -- Shattered Hand Warhound
 (@SGGUID+8, @CGUID+82, 0), -- Bonechewer Ripper
 (@SGGUID+8, @CGUID+91, 1), -- Bleeding Hollow Scryer
-(@SGGUID+8, @CGUID+92, 2), -- Bleeding Hollow Scryer
-(@SGGUID+8, @CGUID+93, 3), -- Bleeding Hollow Scryer
-(@SGGUID+8, @CGUID+94, 4), -- Bleeding Hollow Scryer
+-- (@SGGUID+8, @CGUID+92, 2), -- Bleeding Hollow Scryer
+(@SGGUID+8, @CGUID+93, 2), -- Bleeding Hollow Scryer
+(@SGGUID+8, @CGUID+94, 3), -- Bleeding Hollow Scryer
 (@SGGUID+9, @CGUID+23, 0), -- Bonechewer Beastmaster
 (@SGGUID+9, @CGUID+52, 1), -- Bonechewer Destroyer
 (@SGGUID+9, @CGUID+53, 2), -- Bonechewer Destroyer
