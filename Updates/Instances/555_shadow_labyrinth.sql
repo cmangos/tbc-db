@@ -425,6 +425,11 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (18731, 0, 11, -142.922, -18.95, 8.073, 0, 0, 0),
 (18731, 0, 12, -157.366, 2.177, 8.073, 0, 0, 0);
 
+INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
+-- Generic RunMode on Spawn Cabal Familiar
+(@CGUID+133, 1), -- Cabal Familiar
+(@CGUID+134, 1); -- Fel Guardhound
+
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+37, 0, 1, 1, 0, 0, ''), -- creature_spawn_entry
 (@CGUID+38, 0, 0, 1, 69, 0, ''), -- creature_spawn_entry
@@ -1154,8 +1159,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Right sight cabal warlock solo spawn group to link it to Fel Guard/Familiar chasing
 (@SGGUID+12, 'Shadow Labyrinth - Group 009 - Cabal Warlock', 0, 0, 0, 1, 0),
 (@SGGUID+13, 'Shadow Labyrinth - Group 009 - Cabal Familiar | Fel Guardhound', 0, 0, 0, 1, 0),
-
-(@SGGUID+14, 'Shadow Labyrinth - Group 010 - Cabal Warlock | Cabal Familiar', 0, 0, 0, 1, 0);
+-- Left side Cabal Warlock + 5 Cabal Familiar with RP
+(@SGGUID+14, 'Shadow Labyrinth - Group 010 - Cabal Warlock', 0, 0, 0, 1, @STRINGID+1),
+(@SGGUID+15, 'Shadow Labyrinth - Group 010 - Cabal Familiar (5)', 0, 0, 0, 1, @STRINGID+2);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 18633, 0, 2, 0), (@SGGUID+3, 18635, 0, 2, 0), -- Cabal Acolyte, Cabal Deathsworn
@@ -1207,15 +1213,19 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+13, @CGUID+135, 1, 0), -- Fel Guardhound
 
 (@SGGUID+14, @CGUID+124, 0, 0), -- Cabal Warlock
-(@SGGUID+14, @CGUID+128, 1, 0), -- Cabal Familiar
-(@SGGUID+14, @CGUID+129, 2, 0), -- Cabal Familiar
-(@SGGUID+14, @CGUID+130, 3, 0), -- Cabal Familiar
-(@SGGUID+14, @CGUID+131, 4, 0), -- Cabal Familiar
-(@SGGUID+14, @CGUID+132, 5, 0); -- Cabal Familiar
+
+(@SGGUID+15, @CGUID+128, 0, 0), -- Cabal Familiar
+(@SGGUID+15, @CGUID+129, 1, 0), -- Cabal Familiar
+(@SGGUID+15, @CGUID+130, 2, 0), -- Cabal Familiar
+(@SGGUID+15, @CGUID+131, 3, 0), -- Cabal Familiar
+(@SGGUID+15, @CGUID+132, 4, 0); -- Cabal Familiar
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+12, @SGGUID+13),
-(@SGGUID+13, @SGGUID+12);
+(@SGGUID+13, @SGGUID+12),
+
+(@SGGUID+14, @SGGUID+15),
+(@SGGUID+15, @SGGUID+14);
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+13, 1, 10, 0, @SGGUID+13, 2, 'Shadow Labyrinth - Group 009 - Cabal Familiar | Fel Guardhound');
@@ -1225,7 +1235,11 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+2, 'Shadow Labyrinth - Group 003 Path 2'),
 (@SGGUID+3, 'Shadow Labyrinth - Group 003 Path 3'),
 (@SGGUID+4, 'Shadow Labyrinth - Group 003 Path 4'),
-(@SGGUID+13, 'Shadow Labyrinth - Group 009 - Cabal Familiar | Fel Guardhound');
+(@SGGUID+13, 'Shadow Labyrinth - Group 009 - Cabal Familiar | Fel Guardhound'),
+ -- Group 010 RP Waypoints
+(@SGGUID+14, 'Shadow Labyrinth - Group 010 - Cabal Familiar (5) Waypoint 1'),
+(@SGGUID+15, 'Shadow Labyrinth - Group 010 - Cabal Familiar (5) Waypoint 2'),
+(@SGGUID+16, 'Shadow Labyrinth - Group 010 - Cabal Familiar (5) Waypoint 3');
  
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Cabal Acolyte 4 different paths after Intro path
@@ -1248,8 +1262,11 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+13, 5, -74.184364, -65.63547, -0.87829995, 100, 0, 0),
 (@SGGUID+13, 6, -68.184364, -70.13547, -0.87829995, 100, 0, 0),
 (@SGGUID+13, 7, -68.184364, -73.88547, -0.87829995, 100, 0, 0),
-(@SGGUID+13, 8, -71.434364, -74.38547, -0.87829995, 100, 0, 0);
-
+(@SGGUID+13, 8, -71.434364, -74.38547, -0.87829995, 100, 0, 0),
+-- Group 010 RP Waypoints
+(@SGGUID+14, 1, -54.60242,-78.51944,-1.1282262, 100, 1000, @RELAYID+7),
+(@SGGUID+15, 1, -54.600212,-77.50109,-1.127364, 100, 1000, @RELAYID+8),
+(@SGGUID+16, 1, -54.675922,-77.17647,-1.1273506, 100, 1000, @RELAYID+9); -- Generic Movement Idle
 
 DELETE FROM worldstate_name WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+7;
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
@@ -1260,9 +1277,14 @@ DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @SGGUID+1 AND @SGGUID+1
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, @SGGUID+1, 1, 0, 0, 0, 'Shadow Labyrinth - Group 001 -  Type 1'),
 (@SGGUID+2, 42, @SGGUID+1, 1, 1, 0, 0, 'Shadow Labyrinth - Group 001 -  Type 2'),
-
 (@SGGUID+3, 42, @SGGUID+2, 1, 0, 0, 0, 'Shadow Labyrinth - Group 005 -  Type 1'),
 (@SGGUID+4, 42, @SGGUID+2, 1, 1, 0, 0, 'Shadow Labyrinth - Group 005 -  Type 2');
+
+-- StringIDs
+DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+17;
+INSERT INTO `string_id` (Id, Name) VALUES
+(@STRINGID+1, 'SL_CABAL_WARLOCK_01'), 
+(@STRINGID+2, 'SL_CABAL_FAMILIAR_01');
 
 -- =======
 -- POOLING
@@ -1507,7 +1529,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+1, 1, @RELAYID+4, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 3'),
 (@RELAYID+1, 1, @RELAYID+5, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 4');
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+7;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Shadow Labyrinth - Group 001 - Cabal Acolyte/Cabal Deathsworn 4 differnt paths after static Intro
 (@RELAYID+1,0,0,45,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - choose random path'),
@@ -1523,9 +1545,29 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+6,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Emote Talk'),
 (@RELAYID+6,1000,0,35,5,5,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Send AI Event A'),
 (@RELAYID+6,5000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Emote Exclamation'),
-(@RELAYID+6,6000,0,35,6,5,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Send AI Event B');
+(@RELAYID+6,6000,0,35,6,5,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Send AI Event B'),
+-- Group 010 Cabal Warlock + Familiar Imp
+-- Create Formation with SingleFile Shape
+(@RELAYID+7, 0, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Warlock - Emote OneShotPoint'),
+(@RELAYID+7, 0, 2, 51, 150, @SGGUID+15, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 'Shadow Labyrinth - Group 008 - Create Formation'),
+(@RELAYID+7, 1, 1, 20, 2, @SGGUID+14, 2, @STRINGID+2, 10, 2055, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Group 012 - PathID 1'),
+-- 
+(@RELAYID+7, 5000, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Warlock - Emote OneShotPoint'),
+(@RELAYID+7, 5000, 1, 20, 2, @SGGUID+15, 2, @STRINGID+2, 10, 2055, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Group 010 - PathID 2'),
+-- Change Formation Shape to Circle around the Leader
+(@RELAYID+7, 10000, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Warlock - Emote OneShotPoint'),
+(@RELAYID+7, 10000, 1, 20, 2, @SGGUID+16, 2, @STRINGID+2, 10, 2055, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Group 010 - PathID 3'),
+-- All Cabal Familiar should play dead
+(@RELAYID+7, 15000, 0, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Warlock - Emote OneShotRoar'),
+-- This will throw an db error but we currently have no other chance to just target the formation "leader"
+(@RELAYID+7, 15000, 1, 28, 7, 0, 0, @STRINGID+2, 15, 2567, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 010 - StandState Death'),
+-- Delete Formation and let all npcs reset
+(@RELAYID+7, 20000, 0, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Warlock - Emote OneShotLaugh'),
+(@RELAYID+7, 20000, 1, 28, 0, 0, 0, @STRINGID+2, 15, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 010 - StandState Stand'),
+(@RELAYID+7, 20000, 2, 51, 151, @SGGUID+15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 010 - Delete Formation'),
+(@RELAYID+7, 20000, 3, 3, 0, 0, 0, @STRINGID+2, 15, 2560, 2, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 010 - StandState Stand');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN @RELAYID+1 AND  @RELAYID+6;
+DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN @RELAYID+1 AND  @RELAYID+7;
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (@RELAYID+1, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - choose random path'), 
 (@RELAYID+2, 3000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - set StandState Kneel'),
@@ -1542,7 +1584,18 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Waittime is between 10 and 30 seconds, and in this time the npc should kneel
 -- using static 20 seconds waittime for now
 (@RELAYID+6, 0, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 009 - set StandState Kneel'),
-(@RELAYID+6, 19000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 009 - set StandState stand');
+(@RELAYID+6, 19000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 009 - set StandState stand'),
+-- Group 010 RP waypoint scripts
+(@RELAYID+7, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 010 - Change Movement to Idle'),
+(@RELAYID+7, 0, 0, 36, 0, 0, 0, @STRINGID+1, 10, 2049, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 010 - Face Cabal Warlock'),
+-- Change Formation Shape to Side by side
+(@RELAYID+8, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 010 - Change Movement to Idle'),
+(@RELAYID+8, 0, 1, 51, 100, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 010 - Change FormationShape'),
+(@RELAYID+8, 0, 2, 36, 0, 0, 0, @STRINGID+1, 10, 2049, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 010 - Face Cabal Warlock'),
+-- Change FormationShape to Circle around the Leader
+(@RELAYID+9, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 010 - Change Movement to Idle'),
+(@RELAYID+9, 0, 1, 36, 0, 0, 0, @STRINGID+1, 10, 2049, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 010 - Face Cabal Warlock'),
+(@RELAYID+9, 0, 2, 51, 100, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 010 - Change FormationShape');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
