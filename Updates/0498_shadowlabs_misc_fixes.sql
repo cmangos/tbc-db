@@ -9,13 +9,13 @@ UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN 
 -- Cabal Deathsworn
 -- WalkSpeed: 2.5
 -- RunSpeed: 8
-UPDATE creature_template SET SpeedWalk = 2.5/2.5 SpeedRun = 8/7 WHERE entry IN (18635, 20641);
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (18635, 20641);
 
 -- Cabal Familiar
-UPDATE creature_template SET SpeedWalk = 2.5/2.5 SpeedRun = 8/7 WHERE entry IN (18641, 20643);
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (18641, 20643);
 
 -- Fel Guardhound
-UPDATE creature_template SET SpeedWalk = 2.5/2.5 SpeedRun = 8/7 WHERE entry IN (18642, 20651);
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (18642, 20651);
 
 -- -----------
 -- SpellLists
