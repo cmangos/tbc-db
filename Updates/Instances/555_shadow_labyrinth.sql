@@ -514,24 +514,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (21159, 0, 0, 1, 0, 0, NULL); -- Containment Beam
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+154, @CGUID+155, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+156, @CGUID+155, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+166, @CGUID+155, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+159, @CGUID+158, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+160, @CGUID+158, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+165, @CGUID+158, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+150, @CGUID+151, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+152, @CGUID+151, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+167, @CGUID+151, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+148, @CGUID+147, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+149, @CGUID+147, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+168, @CGUID+147, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+163, @CGUID+157, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+164, @CGUID+157, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+169, @CGUID+157, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+161, @CGUID+153, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+162, @CGUID+153, 1155), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+170, @CGUID+153, 1155), -- Cabal Ritualist -> Cabal Ritualist
 (@CGUID+31, @CGUID+69, 1155), -- Cabal Cultist -> Cabal Acolyte
 (@CGUID+30, @CGUID+69, 1155), -- Cabal Cultist -> Cabal Acolyte
 (@CGUID+92, @CGUID+69, 1155), -- Cabal Deathsworn -> Cabal Acolyte
@@ -843,7 +825,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+136, 0, 555, 3, -281.167, -74.066, 8.15624, 3.12414, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+137, 18667, 555, 3, -343.463, -16.4996, 12.6888, 5.09566, 86400, 86400, 0, 2), -- Blackheart the Inciter
 (@CGUID+138, 18708, 555, 3, -157.8953, -497.3225, 15.86508, 1.570796, 86400, 86400, 0, 0), -- Murmur
-(@CGUID+139, 18731, 555, 3, -156.6754, 4.982729, 8.156394, 4.677482, 86400, 86400, 0, 0), -- Ambassador Hellmaw
+(@CGUID+139, 18731, 555, 3, -156.675, 4.98273, 8.15639, 4.67748, 86400, 86400, 0, 0), -- Ambassador Hellmaw
 (@CGUID+140, 18732, 555, 3, -253.5477, -263.6456, 17.16967, 3.054326, 86400, 86400, 0, 2), -- Grandmaster Vorpil
 (@CGUID+141, 18793, 555, 3, -157.117, -58.3139, 23.1893, 4.72984, 7200, 7200, 0, 0), -- Invisible Target
 (@CGUID+142, 18793, 555, 3, -138.636, -77.7277, 23.3095, 4.95674, 7200, 7200, 0, 0), -- Invisible Target
@@ -869,12 +851,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+162, 18794, 555, 3, -168.385, 0.363827, 8.1564, 3.4383, 7200, 7200, 0, 0), -- Cabal Ritualist
 (@CGUID+163, 18794, 555, 3, -144.893, 0.221401, 8.15631, 5.95157, 7200, 7200, 0, 0), -- Cabal Ritualist
 (@CGUID+164, 18794, 555, 3, -132.241, 0.306026, 8.15631, 3.45575, 7200, 7200, 0, 0), -- Cabal Ritualist
-(@CGUID+165, 18794, 555, 2, -138.855, -71.7374, 8.15643, 4.38077, 7200, 7200, 0, 0), -- Cabal Ritualist
-(@CGUID+166, 18794, 555, 2, -174.658, -71.6582, 8.15643, 4.46804, 7200, 7200, 0, 0), -- Cabal Ritualist
-(@CGUID+167, 18794, 555, 2, -157.189, -52.0085, 8.15643, 4.83456, 7200, 7200, 0, 0), -- Cabal Ritualist
-(@CGUID+168, 18794, 555, 2, -157.366, -13.1208, 8.15643, 4.72984, 7200, 7200, 0, 0), -- Cabal Ritualist
-(@CGUID+169, 18794, 555, 2, -138.492, 6.14561, 8.15643, 4.76475, 7200, 7200, 0, 0), -- Cabal Ritualist
-(@CGUID+170, 18794, 555, 2, -174.66, 6.66753, 8.15643, 4.60767, 7200, 7200, 0, 0), -- Cabal Ritualist
+(@CGUID+165, 18794, 555, 2, -138.421, -71.2033, 8.14966, 4.67748, 7200, 7200, 0, 0), -- Cabal Ritualist
+(@CGUID+166, 18794, 555, 2, -174.357, -71.2687, 8.14927, 4.50295, 7200, 7200, 0, 0), -- Cabal Ritualist
+(@CGUID+167, 18794, 555, 2, -157.279, -51.8638, 8.15644, 4.66003, 7200, 7200, 0, 0), -- Cabal Ritualist
+(@CGUID+168, 18794, 555, 2, -157.182, -12.9532, 8.15644, 4.69494, 7200, 7200, 0, 0), -- Cabal Ritualist
+(@CGUID+169, 18794, 555, 2, -138.471, 6.40831, 8.15631, 4.67748, 7200, 7200, 0, 0), -- Cabal Ritualist
+(@CGUID+170, 18794, 555, 2, -174.381, 6.71845, 8.15637, 4.66003, 7200, 7200, 0, 0), -- Cabal Ritualist
 (@CGUID+171, 18796, 555, 3, -429.269, -164.208, 12.8429, 1.46941, 7200, 7200, 0, 2), -- Fel Overseer
 (@CGUID+172, 18796, 555, 3, -192.957, -38.9073, 8.07312, 0.188621, 7200, 7200, 0, 2), -- Fel Overseer
 (@CGUID+173, 18796, 555, 3, -162.997, -70.9096, 8.0728, 5.45063, 7200, 7200, 0, 2), -- Fel Overseer
@@ -1169,7 +1151,17 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Right Tent Group has 3 different versions that can spawn
 (@SGGUID+19, 'Shadow Labyrinth - Group 013 - Cabal Warlock | Cabal Familiar/Fel Guardhound | Cabal Deathsworn/Cabal Acolyte', 0, 0, @SGGUID+8, 1, 0),
 (@SGGUID+20, 'Shadow Labyrinth - Group 013 - Cabal Deathsworn | Cabal Acolyte (2)', 0, 0, @SGGUID+9, 1, 0),
-(@SGGUID+21, 'Shadow Labyrinth - Group 013 - Cabal Acolyte | Cabal Deathsworn (2)', 0, 0, @SGGUID+10, 1, 0);
+(@SGGUID+21, 'Shadow Labyrinth - Group 013 - Cabal Acolyte | Cabal Deathsworn (2)', 0, 0, @SGGUID+10, 1, 0),
+-- The Arcanium
+-- Cabal Ritualist groups have 3 spawned on normal and 4 on Heroic (spawnmask)
+(@SGGUID+22, 'Shadow Labyrinth - Group 014 - Cabal Ritualist (3)', 0, 0, 0, 1, 0),
+(@SGGUID+23, 'Shadow Labyrinth - Group 015 - Cabal Ritualist (3)', 0, 0, 0, 1, 0),
+(@SGGUID+24, 'Shadow Labyrinth - Group 016 - Cabal Ritualist (3)', 0, 0, 0, 1, 0),
+(@SGGUID+25, 'Shadow Labyrinth - Group 017 - Cabal Ritualist (3)', 0, 0, 0, 1, 0),
+(@SGGUID+26, 'Shadow Labyrinth - Group 018 - Cabal Ritualist (3)', 0, 0, 0, 1, 0),
+(@SGGUID+27, 'Shadow Labyrinth - Group 019 - Cabal Ritualist (3)', 0, 0, 0, 1, 0),
+
+
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 18633, 0, 2, 0), (@SGGUID+3, 18635, 0, 2, 0), -- Cabal Acolyte, Cabal Deathsworn
@@ -1254,7 +1246,37 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+21, @CGUID+295, 0, 0), -- Cabal Acolyte (Middle)
 (@SGGUID+21, @CGUID+296, 1, 0), -- Cabal Deathsworn (right side)
-(@SGGUID+21, @CGUID+297, 2, 0); -- Cabal Deathsworn (left side)
+(@SGGUID+21, @CGUID+297, 2, 0), -- Cabal Deathsworn (left side)
+
+(@SGGUID+22, @CGUID+154, 0, 0), -- Cabal Ritualist
+(@SGGUID+22, @CGUID+155, 1, 0), -- Cabal Ritualist
+(@SGGUID+22, @CGUID+156, 2, 0), -- Cabal Ritualist
+(@SGGUID+22, @CGUID+166, 3, 0), -- Cabal Ritualist (Heroic Only)
+
+(@SGGUID+23, @CGUID+158, 0, 0), -- Cabal Ritualist
+(@SGGUID+23, @CGUID+159, 1, 0), -- Cabal Ritualist
+(@SGGUID+23, @CGUID+160, 2, 0), -- Cabal Ritualist
+(@SGGUID+23, @CGUID+165, 3, 0), -- Cabal Ritualist (Heroic Only)
+
+(@SGGUID+24, @CGUID+150, 0, 0), -- Cabal Ritualist
+(@SGGUID+24, @CGUID+151, 1, 0), -- Cabal Ritualist
+(@SGGUID+24, @CGUID+152, 2, 0), -- Cabal Ritualist
+(@SGGUID+24, @CGUID+167, 3, 0), -- Cabal Ritualist (Heroic Only)
+
+(@SGGUID+25, @CGUID+147, 0, 0), -- Cabal Ritualist
+(@SGGUID+25, @CGUID+148, 1, 0), -- Cabal Ritualist
+(@SGGUID+25, @CGUID+149, 2, 0), -- Cabal Ritualist
+(@SGGUID+25, @CGUID+168, 3, 0), -- Cabal Ritualist (Heroic Only)
+
+(@SGGUID+26, @CGUID+153, 0, 0), -- Cabal Ritualist
+(@SGGUID+26, @CGUID+161 1, 0), -- Cabal Ritualist
+(@SGGUID+26, @CGUID+162, 2, 0), -- Cabal Ritualist
+(@SGGUID+26, @CGUID+170, 3, 0), -- Cabal Ritualist (Heroic Only)
+
+(@SGGUID+27, @CGUID+157, 0, 0), -- Cabal Ritualist
+(@SGGUID+27, @CGUID+163 1, 0), -- Cabal Ritualist
+(@SGGUID+27, @CGUID+164, 2, 0), -- Cabal Ritualist
+(@SGGUID+27, @CGUID+169, 3, 0), -- Cabal Ritualist (Heroic Only)
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+12, @SGGUID+13),
