@@ -26694,11 +26694,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('702204','7022','28','3','100','1','8257','1','5000','5000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Venomlash Scorpid - Set Phase 1 on Target Missing Venom Sting Aura Stack (Phase 2)'),
 ('702205','7022','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Venomlash Scorpid - Set Phase 0 on Evade'),
 -- Obsidian Sentinel 7023
-('702301','7023','1','0','100','0','5000','5000','0','0','0','0','11','9941','0','34','56','0','0','0','0','0','0','0','Obsidian Sentinel - Cast Spell Reflection and Despawn Guardians OOC'),
-('702302','7023','2','0','100','1024','20','0','0','0','0','0','11','10061','0','0','11','10072','0','2','1','3263','0','0','Obsidian Sentinel - Cast Summon Obsidian Shard and Splintered Obsidian at 20% HP'),
-('702303','7023','2','0','100','1024','40','0','0','0','0','0','11','10061','0','0','11','10072','0','2','1','3263','0','0','Obsidian Sentinel - Cast Summon Obsidian Shard and Splintered Obsidian at 40% HP'),
-('702304','7023','2','0','100','1024','60','0','0','0','0','0','11','10061','0','0','11','10072','0','2','1','3263','0','0','Obsidian Sentinel - Cast Summon Obsidian Shard and Splintered Obsidian at 60% HP'),
-('702305','7023','2','0','100','1024','80','0','0','0','0','0','11','10061','0','0','11','10072','0','2','1','3263','0','0','Obsidian Sentinel - Cast Summon Obsidian Shard and Splintered Obsidian at 80% HP'),
+('702301','7023','1','0','100','0','1000','1000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Obsidian Sentinel - Despawn Guardians on OOC'),
+('702302','7023','2','0','100','1024','80','0','0','0','0','0','11','10061','0','0','11','10072','0','0','1','3263','0','0','Obsidian Sentinel - Summon Obsidian Shard and Cast Splintered Obsidian at 80% HP'),
+('702303','7023','2','0','100','1024','60','0','0','0','0','0','11','10061','0','0','11','10072','0','0','1','3263','0','0','Obsidian Sentinel - Summon Obsidian Shard and Cast Splintered Obsidian at 60% HP'),
+('702304','7023','2','0','100','1024','40','0','0','0','0','0','11','10061','0','0','11','10072','0','0','1','3263','0','0','Obsidian Sentinel - Summon Obsidian Shard and Cast Splintered Obsidian at 40% HP'),
+('702305','7023','2','0','100','1024','20','0','0','0','0','0','11','10061','0','0','11','10072','0','0','1','3263','0','0','Obsidian Sentinel - Summon Obsidian Shard and Cast Splintered Obsidian at 20% HP'),
+('702306','7023','11','0','100','0','0','0','0','0','0','0','11','9941','0','34','0','0','0','0','0','0','0','0','Obsidian Sentinel - Cast Spell Reflection on Spawn'),
 -- Shadowforge Geologist (4.0.1 Official Data)
 ('703001','7030','0','0','100','1025','8900','13900','22500','34900','0','0','11','3356','1','0','0','0','0','0','0','0','0','0','Shadowforge Geologist - Cast Flame Lash'),
 ('703002','7030','0','0','100','1025','11100','22200','33700','54200','0','0','11','8814','1','0','0','0','0','0','0','0','0','0','Shadowforge Geologist - Cast Flame Spike'),
