@@ -155,7 +155,7 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (2064503, 3, 14145, 0, -1, 1, 0, 100, 0, 9000, 23000, 10000, 24000, 'Cabal Ritualist - Fire Blast - current'),
 -- Normal Melee
 (1879404, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
-(1879404, 2, 12540, 0, -1, 101, 0, 100, 0, 6000, 16000, 10000, 18000, 'Cabal Ritualist - Gouge - random player non tank'),
+(1879404, 2, 12540, 0, -1, 100, 0, 100, 0, 6000, 16000, 10000, 18000, 'Cabal Ritualist - Gouge - random player'),
 -- Heroic Melee
 (2064504, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
-(2064504, 2, 12540, 0, -1, 101, 0, 100, 0, 6000, 16000, 10000, 18000, 'Cabal Ritualist - Gouge - random player non tank');
+(2064504, 2, 12540, 0, -1, 100, 0, 100, 0, 6000, 16000, 10000, 18000, 'Cabal Ritualist - Gouge - random player');
