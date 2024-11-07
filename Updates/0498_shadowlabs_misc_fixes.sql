@@ -109,3 +109,53 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1864201 WHERE `entry` = 18642;
 UPDATE `creature_template` SET `SpellList` = 2065101 WHERE `entry` = 20651;
+
+
+-- Cabal Ritualist
+DELETE FROM `creature_template_spells` WHERE `entry` = 18794;
+DELETE FROM `creature_template_spells` WHERE `entry` = 20645;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1879401, 1879402, 1879403, 1879404, 2064501, 2064502, 2064503, 2064504);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1879401, 'Shadow Labyrinth - Cabal Ritualist (Frost) - Normal', 0, 70),
+(1879402, 'Shadow Labyrinth - Cabal Ritualist (Arcane) - Normal', 0, 70),
+(1879403, 'Shadow Labyrinth - Cabal Ritualist (Fire) - Normal', 0, 0),
+(1879404, 'Shadow Labyrinth - Cabal Ritualist (Melee) - Normal', 0, 0),
+-- Heroic
+(2064501, 'Shadow Labyrinth - Cabal Ritualist (Frost) - Heroic', 0, 70),
+(2064502, 'Shadow Labyrinth - Cabal Ritualist (Arcane) - Heroic', 0, 70),
+(2064503, 'Shadow Labyrinth - Cabal Ritualist (Fire) - Heroic', 0, 0),
+(2064504, 'Shadow Labyrinth - Cabal Ritualist (Melee) - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1879401, 1879402, 1879403, 1879404, 2064501, 2064502, 2064503, 2064504);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+-- Normal Frost
+(1879401, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
+(1879401, 2, 15532, 0, -1, 109, 0, 100, 0, 11000, 18000, 11000, 18000, 'Cabal Ritualist - Frost Nova - random player in melee'),
+(1879401, 3, 15497, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Cabal Ritualist - Frost Bolt - current'),
+-- Heroic Frost
+(2064501, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
+(2064501, 2, 15063, 0, -1, 109, 0, 100, 0, 11000, 18000, 11000, 18000, 'Cabal Ritualist - Frost Nova - random player in melee'),
+(2064501, 3, 12675, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Cabal Ritualist - Frost Bolt - current'),
+-- Normal Arcane
+(1879402, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
+(1879402, 2, 33487, 0, -1, 100, 0, 100, 0, 4000, 16000, 6000, 18000, 'Cabal Ritualist - Addle Humanoid - random player'),
+(1879402, 3, 33832, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Cabal Ritualist - Arcane Missiles - current'),
+-- Heroic Arcane
+(2064502, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
+(2064502, 2, 33487, 0, -1, 100, 0, 100, 0, 4000, 16000, 6000, 18000, 'Cabal Ritualist - Addle Humanoid - random player'),
+(2064502, 3, 38263, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Cabal Ritualist - Arcane Missiles - current'),
+-- Normal Fire
+(1879403, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
+(1879403, 2, 9574, 0, -1, 1, 0, 100, 0, 2000, 18000, 3000, 21000, 'Cabal Ritualist - Flame Buffet - current'),
+(1879403, 3, 20795, 0, -1, 1, 0, 100, 0, 9000, 23000, 10000, 24000, 'Cabal Ritualist - Fire Blast - current'),
+-- Heroic Fire
+(2064503, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
+(2064503, 2, 9574, 0, -1, 1, 0, 100, 0, 2000, 18000, 3000, 21000, 'Cabal Ritualist - Flame Buffet - current'),
+(2064503, 3, 14145, 0, -1, 1, 0, 100, 0, 9000, 23000, 10000, 24000, 'Cabal Ritualist - Fire Blast - current'),
+-- Normal Melee
+(1879404, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
+(1879404, 2, 12540, 0, -1, 101, 0, 100, 0, 6000, 16000, 10000, 18000, 'Cabal Ritualist - Gouge - random player non tank'),
+-- Heroic Melee
+(2064504, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
+(2064504, 2, 12540, 0, -1, 101, 0, 100, 0, 6000, 16000, 10000, 18000, 'Cabal Ritualist - Gouge - random player non tank');
