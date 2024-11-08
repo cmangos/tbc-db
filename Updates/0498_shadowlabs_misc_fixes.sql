@@ -20,6 +20,9 @@ UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN 
 -- Fel Overseer
 UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (18796, 20652);
 
+-- Malicious Instructor
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (18848, 20656);
+
 -- -----------
 -- SpellLists
 -- -----------
