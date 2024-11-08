@@ -159,3 +159,25 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 -- Heroic Melee
 (2064504, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
 (2064504, 2, 12540, 0, -1, 100, 0, 100, 0, 6000, 16000, 10000, 18000, 'Cabal Ritualist - Gouge - random player');
+
+
+-- Fel Overseer
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18796, 20652);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1879601, 2065201);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1879601, 'Shadow Labyrinth - Fel Overseer - Normal', 0, 0),
+(2065201, 'Shadow Labyrinth - Fel Overseer - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1879601, 2065201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1879601, 1, 27577, 0, -1, 132, 0, 100, 0, 3000, 9000, 12000, 25000, 'Fel Overseer - Intercept - top aggro not in melee range'),
+(1879601, 2, 29544, 0, -1, 1, 0, 100, 0, 6000, 16000, 21000, 28000, 'Fel Overseer - Frightening Shout - current'),
+(1879601, 3, 30471, 0, -1, 1, 0, 100, 0, 10000, 26000, 16000, 28000, 'Fel Overseer - Uppercut - current'),
+
+(2065201, 1, 16856, 0, -1, 1, 0, 100, 0, 10000, 16000, 16000, 21000, 'Fel Overseer - Mortal Strike - current'),
+(2065201, 2, 29544, 0, -1, 1, 0, 100, 0, 6000, 16000, 21000, 28000, 'Fel Overseer - Frightening Shout - current'),
+(2065201, 3, 30471, 0, -1, 1, 0, 100, 0, 10000, 26000, 16000, 28000, 'Fel Overseer - Uppercut - current');
+
+UPDATE `creature_template` SET `SpellList` = 1879601 WHERE `entry` = 18796;
+UPDATE `creature_template` SET `SpellList` = 2065201 WHERE `entry` = 20652;

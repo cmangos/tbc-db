@@ -21708,9 +21708,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Murmur (18708) - boss_murmur
 -- Ambassador Hellmaw (18731) - boss_ambassador_hellmaw
 -- Grandmaster Vorpil (18732) - boss_grandmaster_vorpil
--- Cabal Ritualist 18794
+-- Cabal Ritualist 18794 - spell_list
 ('1879401','18794','11','0','100','0','0','0','0','0','0','0','31','1','4','0','0','0','0','0','0','0','0','0','Cabal Ritualist - Random Phase on Spawn'),
-
 ('1879402','18794','29','29','100','2','200','200','0','0','0','0','60','1879401','0','0','57','2','35','0','53','1879401','0','0','Cabal Ritualist (Normal) - Set SpellList 01 and Set RangeMode (Phase 1)'),
 ('1879403','18794','29','26','100','2','200','200','0','0','0','0','60','1879402','0','0','57','2','35','0','53','1879402','0','0','Cabal Ritualist (Normal) - Set SpellList 02 and Set RangeMode (Phase 2)'),
 ('1879404','18794','29','23','100','2','200','200','0','0','0','0','60','1879403','0','0','53','1879403','0','0','0','0','0','0','Cabal Ritualist (Normal) - Start Relay Script Set SpellList 03(Phase 3)'),
@@ -21723,12 +21722,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1879411','18794','1','0','100','6','1000','1000','0','0','0','0','11','32958','0','0','35','1','0','0','0','0','0','0','Cabal Ritualist - Cast Crystal Channel and Set Instance Data64 (SD2) OOC'),
 ('1879412','18794','4','0','100','0','0','0','0','0','0','0','28','0','32958','0','52','3','0','0','0','0','0','0','Cabal Ritualist - Remove Crystal Channel Aura and Interrupt Channelling on Aggro'),
 ('1879413','18794','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Cabal Ritualist - Flee at 15% HP'),
--- Fel Overseer 18796 (4.3.4 Official Data - Normal/Heroic)
+-- Fel Overseer 18796 - spell_list
 ('1879601','18796','4','0','10','0','0','0','0','0','0','0','1','16807','16813','0','0','0','0','0','1','0','0','0','Fel Overseer - Say on Aggro'),
-('1879602','18796','0','0','100','1027','3000','9000','12000','25000','0','0','11','27577','1','0','0','0','0','0','0','0','0','0','Fel Overseer (Normal) - Cast Intercept'),
-('1879603','18796','0','0','100','1029','4800','9300','15700','20300','0','0','11','16856','1','0','0','0','0','0','0','0','0','0','Fel Overseer (Heroic) - Cast Mortal Strike'),
-('1879604','18796','0','0','100','1025','30000','30000','30000','30000','0','0','11','19134','1','0','0','0','0','0','0','0','0','0','Fel Overseer - Cast Frightening Shout'),
-('1879605','18796','0','0','100','1025','13300','18900','15700','26500','0','0','11','30471','1','0','0','0','0','0','0','0','0','0','Fel Overseer - Cast Uppercut'),
 -- Tortured Skeleton 18797
 ('1879701','18797','4','0','100','0','0','0','0','0','0','0','47','0','0','0','19','33554432','0','0','0','0','0','0','Tortured Skeleton - Stand and Remove UnitFlag on Aggro'),
 ('1879702','18797','21','0','100','0','0','0','0','0','0','0','18','33587200','0','0','0','0','0','0','0','0','0','0','Tortured Skeleton - Set UnitFlags on Reached Home'),
