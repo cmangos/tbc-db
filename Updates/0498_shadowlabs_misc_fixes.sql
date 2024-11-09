@@ -196,7 +196,7 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1863101, 2064001);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (1863101, 1, 15614, 0, -1, 122, 0, 100, 0, 2000, 10000, 10000, 18000, 'Cabal Cultist - Kick - target casting'),
-(1879601, 1, 15614, 0, -1, 122, 0, 100, 0, 2000, 10000, 10000, 18000, 'Cabal Cultist - Kick - target casting');
+(2064001, 1, 15614, 0, -1, 122, 0, 100, 0, 2000, 10000, 10000, 18000, 'Cabal Cultist - Kick - target casting');
 
 UPDATE `creature_template` SET `SpellList` = 1863101 WHERE `entry` = 18631;
 UPDATE `creature_template` SET `SpellList` = 2064001 WHERE `entry` = 20640;
