@@ -150,12 +150,12 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (2064502, 3, 38263, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Cabal Ritualist - Arcane Missiles - current'),
 -- Normal Fire
 (1879403, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
-(1879403, 2, 9574, 0, -1, 1, 0, 100, 0, 2000, 18000, 3000, 21000, 'Cabal Ritualist - Flame Buffet - current'),
-(1879403, 3, 20795, 0, -1, 1, 0, 100, 0, 9000, 23000, 10000, 24000, 'Cabal Ritualist - Fire Blast - current'),
+(1879403, 2, 20795, 0, -1, 1, 0, 100, 0, 9000, 23000, 10000, 24000, 'Cabal Ritualist - Fire Blast - current'),
+(1879403, 3, 9574, 0, -1, 1, 0, 100, 0, 2000, 18000, 3000, 21000, 'Cabal Ritualist - Flame Buffet - current'),
 -- Heroic Fire
 (2064503, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
-(2064503, 2, 9574, 0, -1, 1, 0, 100, 0, 2000, 18000, 3000, 21000, 'Cabal Ritualist - Flame Buffet - current'),
-(2064503, 3, 14145, 0, -1, 1, 0, 100, 0, 9000, 23000, 10000, 24000, 'Cabal Ritualist - Fire Blast - current'),
+(2064503, 2, 14145, 0, -1, 1, 0, 100, 0, 9000, 23000, 10000, 24000, 'Cabal Ritualist - Fire Blast - current'),
+(2064503, 3, 9574, 0, -1, 2, 0, 100, 0, 0, 0, 0, 0, 'Cabal Ritualist - Flame Buffet - current'),
 -- Normal Melee
 (1879404, 1, 17201, 0, -1, 6, 0, 100, 0, 2000, 12000, 8000, 18000, 'Cabal Ritualist - Dispel Magic - eligible friendly dispel not self'),
 (1879404, 2, 12540, 0, -1, 100, 0, 100, 0, 6000, 16000, 10000, 18000, 'Cabal Ritualist - Gouge - random player'),
@@ -184,3 +184,80 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1879601 WHERE `entry` = 18796;
 UPDATE `creature_template` SET `SpellList` = 2065201 WHERE `entry` = 20652;
+
+-- Cabal Cultist
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18631, 20640);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1863101, 2064001);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1863101, 'Shadow Labyrinth - Cabal Cultist - Normal', 0, 0),
+(2064001, 'Shadow Labyrinth - Cabal Cultist - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1863101, 2064001);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1863101, 1, 15614, 0, -1, 122, 0, 100, 0, 2000, 10000, 10000, 18000, 'Cabal Cultist - Kick - target casting'),
+(1879601, 1, 15614, 0, -1, 122, 0, 100, 0, 2000, 10000, 10000, 18000, 'Cabal Cultist - Kick - target casting');
+
+UPDATE `creature_template` SET `SpellList` = 1863101 WHERE `entry` = 18631;
+UPDATE `creature_template` SET `SpellList` = 2064001 WHERE `entry` = 20640;
+
+
+-- Cabal Shadow Priest
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18637, 20646);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1863701, 2064601);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1863701, 'Shadow Labyrinth - Cabal Shadow Priest - Normal', 0, 0),
+(2064601, 'Shadow Labyrinth - Cabal Shadow Priest - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1863701, 2064601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1863701, 1, 14032, 0, -1, 130, 0, 100, 0, 2000, 18000, 2000, 18000, 'Cabal Shadow Priest - Shadow Word: Pain - top aggro aura not present'),
+(1863701, 2, 17165, 0, -1, 122, 0, 100, 0, 3000, 20000, 3000, 20000, 'Cabal Shadow Priest - Mind Flay - current'),
+
+(2064601, 1, 17146, 0, -1, 130, 0, 100, 0, 2000, 18000, 2000, 18000, 'Cabal Shadow Priest - Shadow Word: Pain - top aggro aura not present'),
+(2064601, 2, 38243, 0, -1, 122, 0, 100, 0, 3000, 20000, 3000, 20000, 'Cabal Shadow Priest - Mind Flay - current');
+
+UPDATE `creature_template` SET `SpellList` = 1863101 WHERE `entry` = 18637;
+UPDATE `creature_template` SET `SpellList` = 2064601 WHERE `entry` = 20646;
+
+-- Maiden of Discipline
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18663, 20655);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1866301, 2065501);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1866301, 'Shadow Labyrinth - Maiden of Discipline - Normal', 0, 0),
+(2065501, 'Shadow Labyrinth - Maiden of Discipline - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1866301, 2065501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1866301, 1, 31865, 0, -1, 101, 0, 100, 0, 6000, 16000, 11000, 22000, 'Maiden of Discipline - Seduction - random player non tank'),
+(1866301, 2, 32202, 0, -1, 1, 0, 100, 0, 3000, 15000, 9000, 21000, 'Maiden of Discipline - Lash of Pain - current'),
+
+(2065501, 1, 31865, 0, -1, 101, 0, 100, 0, 6000, 16000, 11000, 22000, 'Maiden of Discipline - Shadow Word: Pain - top aggro aura not present'),
+(2065501, 2, 32202, 0, -1, 1, 0, 100, 0, 3000, 15000, 9000, 21000, 'Maiden of Discipline - Mind Flay - current');
+
+UPDATE `creature_template` SET `SpellList` = 1866301 WHERE `entry` = 18663;
+UPDATE `creature_template` SET `SpellList` = 2065501 WHERE `entry` = 20655;
+
+
+-- Malicious Instructor
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18848, 20656);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1884801, 2065601);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1884801, 'Shadow Labyrinth - Malicious Instructor - Normal', 0, 0),
+(2065601, 'Shadow Labyrinth - Malicious Instructor - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1884801, 2065601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1884801, 1, 33493, 0, -1, 1, 0, 100, 0, 6000, 21000, 17000, 28000, 'Malicious Instructor - Mark of Malice - current'),
+(1884801, 2, 33501, 0, -1, 2, 0, 100, 0, 7000, 22000, 8000, 23000, 'Malicious Instructor - Shadow Nova - self'),
+
+(2065601, 1, 6713, 0, -1, 101, 0, 100, 0, 11000, 27000, 11000, 27000, 'Malicious Instructor - Disarm - top aggro aura not present'),
+(2065601, 2, 33493, 0, -1, 1, 0, 100, 0, 6000, 21000, 17000, 28000, 'Malicious Instructor - Mark of Malice - current'),
+(2065601, 3, 33501, 0, -1, 2, 0, 100, 0, 7000, 22000, 8000, 23000, 'Malicious Instructor - Shadow Nova - self');
+
+UPDATE `creature_template` SET `SpellList` = 1884801 WHERE `entry` = 18848;
+UPDATE `creature_template` SET `SpellList` = 2065601 WHERE `entry` = 20656;
+
