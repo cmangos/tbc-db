@@ -9389,6 +9389,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1446404','14464','0','0','100','1025','8000','12000','10000','15000','0','0','11','6524','17','0','0','0','0','0','0','0','0','0','Avalanchion - Cast Ground Tremor'),
 ('1446405','14464','0','0','100','1025','8000','12000','8000','12000','0','0','11','5568','17','0','0','0','0','0','0','0','0','0','Avalanchion - Cast Trample'),
 ('1446406','14464','0','0','100','1025','0','1000','15000','20000','0','0','11','23392','1','0','0','0','0','0','0','0','0','0','Avalanchion - Cast Boulder'),
+-- Spirit of Azuregos 15481
+('1548101','15481','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','0','0','0','0','0','0','0','0','Spirit of Azuregos - Cast Shroud of Death on Spawn'),
 -- Maws 15571 - boss_maws
 -- Rizzle Sprysprocket (23002) - npc_rizzle_sprysprocket
 -- Rizzle's Depth Charge (23025) - npc_depth_charge
