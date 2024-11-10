@@ -618,7 +618,7 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 (@MOVID + 0, '5', '6453.3857', '-6365.392', '33.7221', '100', '0', '0', NULL),
 (@MOVID + 0, '6', '6447.2607', '-6384.748', '41.233025', '100', '0', '0', NULL);
 
-SET @MOVID=5303560;
+SET @MOVID=5303984;
 UPDATE creature SET position_x=7203.2974,position_y=-6622.957,position_z=63.82484,orientation=0.688924431800842285,MovementType=4 WHERE guid = @MOVID;
 -- GUID: Full: 0x20458042400FDD8000002D00000D9B8D Creature/0 R4448/S45 Map: 530 (Outland) Entry: 16246 (Knucklerot) Low: 891789 PathType: None
 DELETE FROM creature_movement WHERE Id = @MOVID + 0;
