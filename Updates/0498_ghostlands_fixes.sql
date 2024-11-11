@@ -1394,8 +1394,6 @@ INSERT INTO npc_text_broadcast_text(Id,Prob0,BroadcastTextId0) VALUES
 (8617,1,12526);
 UPDATE creature_template SET GossipMenuId=7287 WHERE entry IN(16528);
 
-UPDATE gossip_menu SET text_id=8445 WHERE entry IN(7171);
-
 INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
 (7171,8445,0,302); -- belf only
 
