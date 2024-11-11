@@ -1346,3 +1346,122 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 (@MOVID + 0, '22', '7073.38', '-6265.707', '16.474987', '100', '0', '0', NULL),
 (@MOVID + 0, '23', '7075.0337', '-6255.051', '17.360308', '100', '0', '0', NULL),
 (@MOVID + 0, '24', '7070.5376', '-6242.628', '20.18088', '100', '0', '0', NULL);
+
+SET @MOVID=5303978;
+UPDATE creature SET position_x=7494.6353,position_y=-6887.5347,position_z=93.35553,MovementType=4 WHERE guid = @MOVID;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '7494.6353', '-6887.5347', '93.35553', '100', '0', '0', NULL),
+(@MOVID + 0, '2', '7478.612', '-6901.51', '97.71625', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '7450.903', '-6915.155', '103.3219', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '7433.0747', '-6937.273', '107.39262', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '7425.6025', '-6974.1714', '112.7279', '100', '0', '0', NULL),
+(@MOVID + 0, '6', '7408.7446', '-6988.838', '111.841705', '100', '0', '0', NULL),
+(@MOVID + 0, '7', '7397.4453', '-7007.23', '104.785', '100', '0', '0', NULL),
+(@MOVID + 0, '8', '7377.7446', '-7025.279', '97.1279', '100', '0', '0', NULL),
+(@MOVID + 0, '9', '7368.272', '-7049.3535', '91.10604', '100', '0', '0', NULL),
+(@MOVID + 0, '10', '7361.637', '-7077.5127', '80.973175', '100', '0', '0', NULL),
+(@MOVID + 0, '11', '7333.4126', '-7099.643', '65.060486', '100', '0', '0', NULL),
+(@MOVID + 0, '12', '7294.1772', '-7106.22', '54.229347', '100', '0', '0', NULL);
+
+DELETE FROM gossip_menu WHERE entry IN(7172);
+INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
+(7172,8447,0,0),
+(7172,8492,0,479); -- completed ladys necklace
+
+DELETE FROM npc_text_broadcast_text WHERE Id IN(8447,8492);
+INSERT INTO npc_text_broadcast_text(Id,Prob0,BroadcastTextId0) VALUES
+(8447,1,12131),
+(8492,1,12215);
+
+UPDATE creature_template SET GossipMenuId=7172 WHERE entry IN(16252);
+
+DELETE FROM gossip_menu WHERE entry IN(7436);
+INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
+(7436,9005,0,0);
+
+DELETE FROM npc_text_broadcast_text WHERE Id IN(9005);
+INSERT INTO npc_text_broadcast_text(Id,Prob0,BroadcastTextId0) VALUES
+(9005,1,14189);
+UPDATE creature_template SET GossipMenuId=7436 WHERE entry IN(16268);
+
+DELETE FROM gossip_menu WHERE entry IN(7287);
+INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
+(7287,8617,0,0);
+
+DELETE FROM npc_text_broadcast_text WHERE Id IN(8617);
+INSERT INTO npc_text_broadcast_text(Id,Prob0,BroadcastTextId0) VALUES
+(8617,1,12526);
+UPDATE creature_template SET GossipMenuId=7287 WHERE entry IN(16528);
+
+UPDATE gossip_menu SET text_id=8445 WHERE entry IN(7171);
+
+INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
+(7171,8445,0,302); -- belf only
+
+SET @MOVID=5303977;
+UPDATE creature SET position_x=7477.5596,position_y=-6774.3965,position_z=77.34592,MovementType=4 WHERE guid = @MOVID;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '7477.5596', '-6774.3965', '77.34592', '100', '0', '0', NULL),
+(@MOVID + 0, '2', '7479.7725', '-6796.2666', '75.934814', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '7480.8003', '-6835.1426', '76.41139', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '7480.546', '-6864.1426', '87.19648', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '7491.06', '-6888.1562', '93.66682', '100', '0', '0', NULL),
+(@MOVID + 0, '6', '7481.444', '-6900.9824', '97.11247', '100', '0', '0', NULL),
+(@MOVID + 0, '7', '7491.037', '-6888.17', '93.617424', '100', '0', '0', NULL),
+(@MOVID + 0, '8', '7480.54', '-6864.199', '87.23852', '100', '0', '0', NULL),
+(@MOVID + 0, '9', '7480.795', '-6835.199', '76.29799', '100', '0', '0', NULL),
+(@MOVID + 0, '10', '7479.7725', '-6796.2666', '75.934814', '100', '0', '0', NULL),
+(@MOVID + 0, '11', '7477.5596', '-6774.3965', '77.34592', '100', '0', '0', NULL);
+
+SET @MOVID=5303972;
+UPDATE creature SET position_x=7556.846,position_y=-6782.3306,position_z=89.606384,MovementType=4 WHERE guid = @MOVID;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '7556.846', '-6782.3306', '89.606384', '100', '0', '0', NULL),
+(@MOVID + 0, '2', '7560.9365', '-6803.6875', '86.9468', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '7546.1216', '-6817.42', '86.03111', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '7561.691', '-6831.232', '87.7619', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '7579.619', '-6834.5166', '88.35174', '100', '0', '0', NULL),
+(@MOVID + 0, '6', '7588.4473', '-6861.69', '92.97363', '100', '0', '0', NULL),
+(@MOVID + 0, '7', '7593.364', '-6876.552', '94.984085', '100', '0', '0', NULL),
+(@MOVID + 0, '8', '7586.791', '-6894.108', '96.9769', '100', '0', '0', NULL),
+(@MOVID + 0, '9', '7575.963', '-6912.1763', '104.3963', '100', '0', '0', NULL),
+(@MOVID + 0, '10', '7564.3022', '-6915.3027', '108.6726', '100', '0', '0', NULL),
+(@MOVID + 0, '11', '7549.7524', '-6908.6675', '111.90488', '100', '0', '0', NULL),
+(@MOVID + 0, '12', '7557.376', '-6889.9224', '111.91331', '100', '0', '0', NULL),
+(@MOVID + 0, '13', '7565.5054', '-6879.0166', '111.90338', '100', '0', '0', NULL),
+(@MOVID + 0, '14', '7547.6704', '-6907.465', '111.90507', '100', '0', '0', NULL),
+(@MOVID + 0, '15', '7567.5645', '-6915.807', '107.48593', '100', '0', '0', NULL),
+(@MOVID + 0, '16', '7581.9204', '-6904.625', '101.77855', '100', '0', '0', NULL),
+(@MOVID + 0, '17', '7592.443', '-6886.0366', '95.04913', '100', '0', '0', NULL),
+(@MOVID + 0, '18', '7595.7803', '-6869.369', '93.93614', '100', '0', '0', NULL),
+(@MOVID + 0, '19', '7577.394', '-6855.2456', '92.958084', '100', '0', '0', NULL),
+(@MOVID + 0, '20', '7578.8447', '-6821.889', '86.51419', '100', '0', '0', NULL),
+(@MOVID + 0, '21', '7561.0347', '-6803.1284', '86.95205', '100', '0', '0', NULL),
+(@MOVID + 0, '22', '7556.547', '-6782.2344', '89.61924', '100', '0', '0', NULL);
+
+SET @MOVID=5303973;
+UPDATE creature SET position_x=7612.672,position_y=-6772.802,position_z=81.449936,MovementType=4 WHERE guid = @MOVID;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '7612.672', '-6772.802', '81.449936', '100', '0', '0', NULL),
+(@MOVID + 0, '2', '7633.3613', '-6795.188', '77.43556', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '7638.7456', '-6820.1147', '79.57537', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '7650.742', '-6837.035', '83.65152', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '7656.307', '-6859.683', '88.03985', '100', '0', '0', NULL);
+
+SET @MOVID=5303976;
+UPDATE creature SET position_x=7604.9443,position_y=-6768.971,position_z=85.26285,MovementType=4 WHERE guid = @MOVID;
+DELETE FROM creature_movement WHERE Id = @MOVID + 0;
+INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@MOVID + 0, '1', '7604.9443', '-6768.971', '85.26285', '100', '0', '0', NULL),
+(@MOVID + 0, '2', '7592.066', '-6752.3994', '89.11422', '100', '0', '0', NULL),
+(@MOVID + 0, '3', '7574.309', '-6733.807', '84.10169', '100', '0', '0', NULL),
+(@MOVID + 0, '4', '7541.1616', '-6725.6587', '80.03969', '100', '0', '0', NULL),
+(@MOVID + 0, '5', '7526.5166', '-6733.019', '80.27658', '100', '0', '0', NULL),
+(@MOVID + 0, '6', '7504.318', '-6733.561', '71.87629', '100', '0', '0', NULL),
+(@MOVID + 0, '7', '7491.943', '-6754.413', '73.76473', '100', '0', '0', NULL),
+(@MOVID + 0, '8', '7479.527', '-6762.069', '74.47793', '100', '0', '0', NULL);
+
