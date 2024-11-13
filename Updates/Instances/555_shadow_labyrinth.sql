@@ -258,10 +258,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+123, 1, -130.551, -443.696, 17.164, 3.14527, 1000, 5),
 (@CGUID+123, 2, -149.68, -443.899, 17.0779, 4.60428, 10000, 0),
 -- ----------------------------------------------
-(@CGUID+137, 1, -343.154, -16.6486, 12.6888, 0, 2000, 0),
-(@CGUID+137, 2, -323.331, -36.0149, 12.6888, 0, 8000, 0),
-(@CGUID+137, 3, -333.81, -60.0253, 12.6888, 0, 2000, 0),
-
 (@CGUID+140, 1, -253.06, -264.024, 17.0864, 3.15559, 13000, 1873201),
 (@CGUID+171, 1, -429.292, -151.568, 12.7285, 1.08457, 0, 0),
 (@CGUID+171, 2, -421.039, -139.61, 13.5211, 1.40737, 0, 0),
@@ -457,8 +453,13 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+307, 4, -184.32588,-38.586216,8.073062, 100, 0, 0);
 
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (18731);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (18667, 18731);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+-- Blackheart the Inciter
+(18667, 0, 1, -328.209,-39.05045,12.688841,0.017453, 9000, 1866701), -- Middle Point that decides which point he will go next
+(18667, 1, 1, -320.4264,-50.31613,12.688854,5.65486, 6000, 1866702), -- left side
+(18667, 2, 1, -318.2236,-38.931072,12.688864,0.052359, 6000, 1866703), -- middle side
+(18667, 3, 1, -319.79132,-26.325647,12.688865,0.83775, 6000, 1866704), -- right side
 -- Ambassador Hellmaw
 (18731, 0, 1, -156.67537, 4.982729, 8.156394,4.6775, 2000, 1873101),
 (18731, 0, 2, -163.44856, -7.553354, 8.073133, 100, 0, 0),
@@ -1212,19 +1213,19 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Group of 2 with random entrys
 (@SGGUID+30, 'Shadow Labyrinth - Group 022 - Cabal Cultist/Cabal/Acolyte/Cabal Deathsworn', 0, 0, 0, 1, 0),
 -- Group of 6 all static, only warlock pet is random between 3 entrys
-(@SGGUID+31, 'Shadow Labyrinth - Group 023 - Cabal Shadow Priest | Cabal Deathsworn | Cabal Acolyte | Cabal Cultist | Cabal Warlock | Fel Guardhound/Maiden of Discipline/Cabal Familiar', 0, 0, 0, 1, 0),
+(@SGGUID+31, 'Shadow Labyrinth - Group 023 - Cabal Shadow Priest | Cabal Deathsworn | Cabal Acolyte | Cabal Cultist | Cabal Warlock | Fel Guardhound/Maiden of Discipline/Cabal Familiar', 0, 0, 0, 1, @STRINGID+3),
 -- Solo Patrol linked to boss
 (@SGGUID+32, 'Shadow Labyrinth - Group 024 - Malicious Instructor', 0, 0, 0, 0, 0),
 -- Middle Patrol
 (@SGGUID+33, 'Shadow Labyrinth - Group 025 - Malicious Instructor', 0, 0, 0, 0, 0),
 -- Middle Group left back - 4 npcs - all random entry
-(@SGGUID+34, 'Shadow Labyrinth - Group 023 - Cabal Shadow Priest/Cabal Deathsworn/Cabal Acolyte/Cabal Cultist', 0, 0, 0, 1, 0),
+(@SGGUID+34, 'Shadow Labyrinth - Group 023 - Cabal Shadow Priest/Cabal Deathsworn/Cabal Acolyte/Cabal Cultist', 0, 0, 0, 1, @STRINGID+4),
 -- Middle Group left front - 5 npcs - Deathsworn always static
-(@SGGUID+35, 'Shadow Labyrinth - Group 024 - Cabal Deathsworn | Cabal Shadow Priest/Cabal Acolyte/Cabal Cultist', 0, 0, 0, 1, 0),
+(@SGGUID+35, 'Shadow Labyrinth - Group 024 - Cabal Deathsworn | Cabal Shadow Priest/Cabal Acolyte/Cabal Cultist', 0, 0, 0, 1, @STRINGID+4),
 -- Middle Group right - 5 npcs - Deathsworn always static
-(@SGGUID+36, 'Shadow Labyrinth - Group 025 - Cabal Deathsworn | Cabal Shadow Priest/Cabal Acolyte/Cabal Cultist', 0, 0, 0, 1, 0),
+(@SGGUID+36, 'Shadow Labyrinth - Group 025 - Cabal Deathsworn | Cabal Shadow Priest/Cabal Acolyte/Cabal Cultist', 0, 0, 0, 1, @STRINGID+4),
 -- Group of 6 all static, only warlock pet is random between 3 entrys
-(@SGGUID+37, 'Shadow Labyrinth - Group 026 - Cabal Shadow Priest | Cabal Deathsworn | Cabal Acolyte | Cabal Cultist | Cabal Warlock | Fel Guardhound/Maiden of Discipline/Cabal Familiar', 0, 0, 0, 1, 0),
+(@SGGUID+37, 'Shadow Labyrinth - Group 026 - Cabal Shadow Priest | Cabal Deathsworn | Cabal Acolyte | Cabal Cultist | Cabal Warlock | Fel Guardhound/Maiden of Discipline/Cabal Familiar', 0, 0, 0, 1, @STRINGID+5),
 -- Group of 2 with random entrys
 (@SGGUID+38, 'Shadow Labyrinth - Group 027 - Cabal Cultist/Cabal/Acolyte/Cabal Deathsworn', 0, 0, 0, 1, 0),
 -- Solo Patrol right side
@@ -1495,7 +1496,11 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+17;
 INSERT INTO `string_id` (Id, Name) VALUES
 (@STRINGID+1, 'SL_CABAL_WARLOCK_01'), 
-(@STRINGID+2, 'SL_CABAL_FAMILIAR_01');
+(@STRINGID+2, 'SL_CABAL_FAMILIAR_01'),
+-- Blackheart Inciter room Groups used for ooc rp
+(@STRINGID+3, 'SL_BLACKHEART_INCITER_ROOM_LEFT'),
+(@STRINGID+4, 'SL_BLACKHEART_INCITER_ROOM_MIDDLE'),
+(@STRINGID+5, 'SL_BLACKHEART_INCITER_ROOM_RIGHT');
 
 -- =======
 -- POOLING
@@ -1725,15 +1730,25 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 
 -- Reworked scripts
 -- Reworked DBScripts, will be merged into single Inserts when done with full rework
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+3;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+4;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Shadow Labyrinth - Group 001 - Cabal Acolyte/Cabal Deathsworn 4 differnt paths after static Intro
 (@RELAYID+1, 1, @RELAYID+2, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 1'),
 (@RELAYID+1, 1, @RELAYID+3, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 2'),
 (@RELAYID+1, 1, @RELAYID+4, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 3'),
-(@RELAYID+1, 1, @RELAYID+5, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 4');
+(@RELAYID+1, 1, @RELAYID+5, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 4'),
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+7;
+(@RELAYID+2, 1, @RELAYID+8, 0, 'Shadow Labyrinth - Blackheart Inciter - Waypoint Path 1'),
+(@RELAYID+2, 1, @RELAYID+9, 0, 'Shadow Labyrinth - Blackheart Inciter - Waypoint Path 2'),
+(@RELAYID+2, 1, @RELAYID+10, 0, 'Shadow Labyrinth - Blackheart Inciter - Waypoint Path 3'),
+-- Left side
+(@RELAYID+3, 1, @RELAYID+11, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Beg'),
+(@RELAYID+3, 1, @RELAYID+12, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Bow'),
+(@RELAYID+3, 1, @RELAYID+13, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Salute'),
+(@RELAYID+3, 1, @RELAYID+14, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Cheer');
+
+
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+14;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Shadow Labyrinth - Group 001 - Cabal Acolyte/Cabal Deathsworn 4 differnt paths after static Intro
 (@RELAYID+1,0,0,45,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - choose random path'),
@@ -1770,11 +1785,45 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+7, 20000, 0, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Warlock - Emote OneShotLaugh'),
 (@RELAYID+7, 20000, 1, 28, 0, 0, 0, @STRINGID+2, 15, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 011 - StandState Stand'),
 (@RELAYID+7, 20000, 2, 51, 151, @SGGUID+15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 011 - Delete Formation'),
-(@RELAYID+7, 20000, 3, 3, 0, 0, 0, @STRINGID+2, 15, 2560, 2, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 011 - StandState Stand');
+(@RELAYID+7, 20000, 3, 3, 0, 0, 0, @STRINGID+2, 15, 2560, 2, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 011 - StandState Stand'),
+-- Blackheart Inciter random path
+(@RELAYID+8,0,0,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Blackheart Inciter - PathID 1'),
+(@RELAYID+9,0,0,20,2,2,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Blackheart Inciter - PathID 2'),
+(@RELAYID+10,0,0,20,2,3,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Blackheart Inciter - PathID 3'),
+-- Left front RP Beg
+(@RELAYID+11, 1000, 0, 35, 8, 0, 0 , @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent D to StringID'),
+(@RELAYID+11, 6000, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Blackheart Inciter - Change Path'),
+-- Left front RP Bow
+(@RELAYID+12, 1000, 0, 35, 9, 0, 0 , @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent E to StringID'),
+(@RELAYID+12, 6000, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Blackheart Inciter - Change Path'),
+-- Left front RP Salute
+(@RELAYID+13, 1000, 0, 35, 10, 0, 0 , @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent F to StringID'),
+(@RELAYID+13, 6000, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Blackheart Inciter - Change Path'),
+-- Left Fron RP Cheer
+(@RELAYID+14, 1000, 0, 35, 11, 0, 0 , @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent F to StringID'),
+(@RELAYID+14, 6000, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Blackheart Inciter - Change Path');
+
 
 DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN @RELAYID+1 AND  @RELAYID+7;
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1873101, 1873102);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1866701, 1866702, 1866703, 1866704, 1873101, 1873102);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Blackheart Inciter RP scripts
+-- Base script at middle point that decides what side he walks next
+(1866701, 4000, 0, 1, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Emote OneShotLaugh'), 
+(1866701, 6000, 0, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Emote OneShotRoar'),
+(1866701, 6000, 1, 35, 8, 0, 0 , @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent C to StringID'),
+(1866701, 6000, 2, 35, 8, 0, 0 , @STRINGID+4, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent C to StringID'),
+(1866701, 6000, 3, 35, 8, 0, 0 , @STRINGID+5, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent C to StringID'),
+(1866701, 9000, 0, 45, 0, @RELAYID+2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Start RandomRelayScript'), 
+-- left front 
+(1866702, 0, 0, 1, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Emote OneShotLaugh'),
+(1866702, 0, 1, 45, 0, @RELAYID+3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Start RandomRelayScript'), 
+-- Midle front
+(1866703, 0, 0, 11, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Emote OneShotLaugh'),
+(1866703, 0, 1, 45, 0, @RELAYID+4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Start RandomRelayScript'), 
+-- right front
+(1866704, 0, 0, 1, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Emote OneShotLaugh'),
+(1866704, 0, 1, 45, 0, @RELAYID+5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Start RandomRelayScript'), 
 -- Ambassador Hellmaw waypoint scripts
 (1873101, 0, 0, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ambassador Hellmaw - OneShotRoar'), 
 (1873101, 0, 1, 16, 9349, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ambassador Hellmaw - SMSG_PLAY_SOUND'), 

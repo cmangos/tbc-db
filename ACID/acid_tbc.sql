@@ -21641,6 +21641,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1863101','18631','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Cabal Cultist - Flee at 15% HP'),
 ('1883102','18631','30','0','100','1','5','0','0','0','0','0','47','8','0','0','0','0','0','0','0','0','0','0','Cabal Cultist - STATE_KNEEL on AI Event Received'),
 ('1883103','18631','30','0','100','1','6','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Cabal Cultist - STATE_STAND on AI Event Received'),
+-- AI Event C-F send by Blackheart Inciter
+('1883104','18631','30','0','100','1','8','0','0','0','0','0','5','20','0','0','0','0','0','0','0','0','0','0','Cabal Cultist - Emote OneShot Beg on AI Event C Received'),
+('1883105','18631','30','0','100','1','9','0','0','0','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Cabal Cultist - Emote OneShot Bow on AI Event D Received'),
+('1883106','18631','30','0','100','1','10','0','0','0','0','0','5','66','0','0','0','0','0','0','0','0','0','0','Cabal Cultist - Emote OneShot Salute on AI Event E Received'),
+('1883107','18631','30','0','100','1','11','0','0','0','0','0','5','4','0','0','0','0','0','0','0','0','0','0','Cabal Cultist - Emote OneShot Cheer on AI Event F Received'),
 -- Cabal Executioner (4.3.4 Official Data - Normal/Heroic)
 ('1863201','18632','4','0','10','0','0','0','0','0','0','0','54','0','0','10034','0','0','0','0','0','0','0','0','Cabal Executioner - Random Say on Aggro'),
 ('1863202','18632','0','0','100','1027','7200','15900','15700','32500','0','0','11','33500','0','0','0','0','0','0','0','0','0','0','Cabal Executioner (Normal) - Cast Whirlwind'),
@@ -21650,6 +21655,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cabal Acolyte 18633 - spell_list
 ('1863301','18633','4','0','10','0','0','0','0','0','0','0','54','0','0','10034','0','0','0','0','0','0','0','0','Cabal Acolyte - Random Say on Aggro'),
 ('1863302','18633','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Cabal Acolyte - Flee at 15% HP'),
+-- AI Event C-F send by Blackheart Inciter
+('1863303','18633','30','0','100','1','8','0','0','0','0','0','5','20','0','0','0','0','0','0','0','0','0','0','Cabal Acolyte - Emote OneShot Beg on AI Event C Received'),
+('1863304','18633','30','0','100','1','9','0','0','0','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Cabal Acolyte - Emote OneShot Bow on AI Event D Received'),
+('1863305','18633','30','0','100','1','10','0','0','0','0','0','5','66','0','0','0','0','0','0','0','0','0','0','Cabal Acolyte - Emote OneShot Salute on AI Event E Received'),
+('1863306','18633','30','0','100','1','11','0','0','0','0','0','5','4','0','0','0','0','0','0','0','0','0','0','Cabal Acolyte - Emote OneShot Cheer on AI Event F Received'),
 -- Cabal Summoner 18634 (4.3.4 Official Data - Normal/Heroic)
 ('1863401','18634','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Cabal Summoner - Set Phase 1 on Spawn'),
 ('1863402','18634','30','5','100','1','5','18708','0','0','0','0','11','33335','10','0','0','0','0','0','0','0','0','0','Cabal Summoner - Cast Shadow Bolt on Receive AI Event (Phase 1)'),
@@ -21663,6 +21673,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cabal Deathsworn 18635 - spell_list
 ('1863501','18635','4','0','10','0','0','0','0','0','0','0','54','0','0','10034','0','0','0','0','0','0','0','0','Cabal Deathsworn - Random Say on Aggro'),
 ('1863502','18635','2','0','100','1024','25','0','0','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Cabal Deathsworn - Cast Enrage at 25% HP'),
+-- AI Event C-F send by Blackheart Inciter
+('1863503','18635','30','0','100','1','8','0','0','0','0','0','5','20','0','0','0','0','0','0','0','0','0','0','Cabal Deathsworn - Emote OneShot Beg on AI Event C Received'),
+('1863504','18635','30','0','100','1','9','0','0','0','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Cabal Deathsworn - Emote OneShot Bow on AI Event D Received'),
+('1863505','18635','30','0','100','1','10','0','0','0','0','0','5','66','0','0','0','0','0','0','0','0','0','0','Cabal Deathsworn - Emote OneShot Salute on AI Event E Received'),
+('1863506','18635','30','0','100','1','11','0','0','0','0','0','5','4','0','0','0','0','0','0','0','0','0','0','Cabal Deathsworn - Emote OneShot Cheer on AI Event F Received'),
 -- Cabal Assassin
 ('1863601','18636','4','0','10','0','0','0','0','0','0','0','54','0','0','10034','0','0','0','0','0','0','0','0','Cabal Assassin - Random Say on Aggro'),
 ('1863602','18636','1','0','100','0','1000','1000','0','0','0','0','11','30991','0','32','0','0','0','0','0','0','0','0','Cabal Assassin - Cast Stealth OOC'),
@@ -21671,6 +21686,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1863605','18636','0','0','100','1024','0','1000','0','0','0','0','11','30998','1','0','0','0','0','0','0','0','0','0','Cabal Assassin - Cast Cheap Shot'),
 -- Cabal Shadow Priest - spell_list
 ('1863701','18637','4','0','10','0','0','0','0','0','0','0','54','0','0','10034','0','0','0','0','0','0','0','0','Cabal Shadow Priest - Random Say on Aggro'),
+-- AI Event C-F send by Blackheart Inciter
+('1863702','18637','30','0','100','1','8','0','0','0','0','0','5','20','0','0','0','0','0','0','0','0','0','0','Cabal Shadow Priest - Emote OneShot Beg on AI Event C Received'),
+('1863703','18637','30','0','100','1','9','0','0','0','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Cabal Shadow Priest - Emote OneShot Bow on AI Event D Received'),
+('1863704','18637','30','0','100','1','10','0','0','0','0','0','5','66','0','0','0','0','0','0','0','0','0','0','Cabal Shadow Priest - Emote OneShot Salute on AI Event E Received'),
+('1863705','18637','30','0','100','1','11','0','0','0','0','0','5','4','0','0','0','0','0','0','0','0','0','0','Cabal Shadow Priest - Emote OneShot Cheer on AI Event F Received'),
 -- Cabal Zealot 18638 (4.3.4 Official Data - Normal/Heroic)
 ('1863801','18638','4','0','10','0','0','0','0','0','0','0','54','0','0','10034','0','0','0','0','0','0','0','0','Cabal Zealot - Random Say on Aggro'),
 ('1863802','18638','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Cabal Zealot - Enable Range Mode on Aggro'),
@@ -21691,6 +21711,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1864001','18640','4','0','10','0','0','0','0','0','0','0','54','0','0','10034','0','0','0','0','0','0','0','0','Cabal Warlock - Random Say on Aggro'),
 ('1864002','18640','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Cabal Warlock - Enable Range Mode on Spawn'),
 ('1864003','18640','27','0','100','1','13787','1','15000','30000','0','0','11','13787','0','0','0','0','0','0','0','0','0','0','Cabal Warlock - Cast Demon Armor on Missing Buff'),
+-- AI Event C-F send by Blackheart Inciter
+('1864005','18640','30','0','100','1','8','0','0','0','0','0','5','20','0','0','0','0','0','0','0','0','0','0','Cabal Warlock - Emote OneShot Beg on AI Event C Received'),
+('1864006','18640','30','0','100','1','9','0','0','0','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Cabal Warlock - Emote OneShot Bow on AI Event D Received'),
+('1864007','18640','30','0','100','1','10','0','0','0','0','0','5','66','0','0','0','0','0','0','0','0','0','0','Cabal Warlock - Emote OneShot Salute on AI Event E Received'),
+('1864008','18640','30','0','100','1','11','0','0','0','0','0','5','4','0','0','0','0','0','0','0','0','0','0','Cabal Warlock - Emote OneShot Cheer on AI Event F Received'),
 -- Cabal Familiar 18641 - spell_list
 ('1864101','18641','1','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Cabal Familiar - Enable Range Mode on Spawn'),
 -- Fel Guardhound - spell_list
