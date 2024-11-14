@@ -23,6 +23,13 @@ UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN 
 -- Malicious Instructor
 UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (18848, 20656);
 
+-- Cabal Zealot
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (18638, 20650);
+
+-- Cabal Fanatic
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry IN (18830, 20644);
+
+
 -- -----------
 -- SpellLists
 -- -----------
@@ -261,3 +268,34 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 UPDATE `creature_template` SET `SpellList` = 1884801 WHERE `entry` = 18848;
 UPDATE `creature_template` SET `SpellList` = 2065601 WHERE `entry` = 20656;
 
+-- Cabal Zealot
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18638, 20650);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1863801, 2065001);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1863801, 'Shadow Labyrinth - Cabal Zealot - Normal', 0, 90),
+(2065001, 'Shadow Labyrinth - Cabal Zealot - Heroic', 0, 90);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1863801, 2065001);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1863801, 1, 12471, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Cabal Zealot - Shadow Bolt - current'),
+(2065001, 1, 15472, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Cabal Zealot - Shadow Bolt - current');
+
+UPDATE `creature_template` SET `SpellList` = 1863801 WHERE `entry` = 18638;
+UPDATE `creature_template` SET `SpellList` = 2065001 WHERE `entry` = 20650;
+
+-- Cabal Fanatic
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18830, 20644);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1883001, 2064401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1883001, 'Shadow Labyrinth - Cabal Fanatic - Normal', 0, 0),
+(2064401, 'Shadow Labyrinth - Cabal Fanatic - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1883001, 2064401);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1883001, 1, 12021, 0, -1, 100, 0, 100, 0, 8000, 16000, 12000, 25000, 'Cabal Fanatic - Fixate - random player'),
+(2064401, 1, 12021, 0, -1, 100, 0, 100, 0, 8000, 16000, 12000, 25000, 'Cabal Fanatic - Fixate - random player');
+
+UPDATE `creature_template` SET `SpellList` = 1883001 WHERE `entry` = 18830;
+UPDATE `creature_template` SET `SpellList` = 2064401 WHERE `entry` = 20644;
