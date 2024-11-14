@@ -579,39 +579,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+43, @CGUID+238, 1679), -- Cabal Cultist -> Cabal Fanatic
 (@CGUID+44, @CGUID+238, 1679), -- Cabal Cultist -> Cabal Fanatic
 (@CGUID+233, @CGUID+238, 1679), -- Cabal Fanatic -> Cabal Fanatic
-
--- Sanctum of Shadows
--- group 2
-(@CGUID+186, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+188, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+189, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+190, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+191, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+192, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+193, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+205, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+206, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
--- group 3
-(@CGUID+219, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+220, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+221, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+222, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+223, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+224, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+225, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+226, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+227, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
--- group 4
-(@CGUID+208, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+209, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+210, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+211, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+212, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+213, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+214, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+215, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
-(@CGUID+217, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
-
 -- Murmur Hallway
 -- group 1
 (@CGUID+45, @CGUID+47, 3), -- Cabal Executioner -> Cabal Executioner
@@ -881,16 +848,16 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+205, 18797, 555, 3, -331.946, -253.008, 14.1899, 5.044, 7200, 7200, 0, 0), -- Tortured Skeleton
 (@CGUID+206, 18797, 555, 3, -335.743, -255.684, 14.206, 0.418879, 7200, 7200, 0, 0), -- Tortured Skeleton
 (@CGUID+207, 18797, 555, 3, -293.067, -306.897, 26.5101, 2.07694, 7200, 7200, 0, 0), -- Tortured Skeleton
-(@CGUID+208, 18797, 555, 3, -294.457, -277.033, 15.3002, 4.39378, 7200, 7200, 2, 1), -- Tortured Skeleton
-(@CGUID+209, 18797, 555, 3, -297.823, -279.468, 16.0068, 2.01522, 7200, 7200, 2, 1), -- Tortured Skeleton
-(@CGUID+210, 18797, 555, 3, -287.382, -279.468, 15.496, 5.77641, 7200, 7200, 2, 1), -- Tortured Skeleton
-(@CGUID+211, 18797, 555, 3, -283.911, -283.157, 16.5927, 3.78736, 7200, 7200, 2, 1), -- Tortured Skeleton
-(@CGUID+212, 18797, 555, 3, -288.59, -284.263, 17.783, 1.73615, 7200, 7200, 2, 1), -- Tortured Skeleton
-(@CGUID+213, 18797, 555, 3, -292.635, -281.438, 17.5337, 1.07256, 7200, 7200, 2, 1), -- Tortured Skeleton
-(@CGUID+214, 18797, 555, 3, -299.156, -285.271, 17.8104, 2.90233, 7200, 7200, 2, 1), -- Tortured Skeleton
-(@CGUID+215, 18797, 555, 3, -295.999, -291.288, 21.2898, 3.18042, 7200, 7200, 2, 1), -- Tortured Skeleton
-(@CGUID+216, 18797, 555, 3, -290.663, -287.45, 21.3006, 5.044, 7200, 7200, 2, 1), -- Tortured Skeleton
-(@CGUID+217, 18797, 555, 3, -285.458, -289.044, 18.8886, 1.76928, 7200, 7200, 2, 1), -- Tortured Skeleton
+(@CGUID+208, 18797, 555, 3, -294.088, -275.913, 14.8593, 2.93215, 7200, 7200, 2, 1), -- Tortured Skeleton
+(@CGUID+209, 18797, 555, 3, -297.599, -279.939, 16.368, 0.400189, 7200, 7200, 2, 1), -- Tortured Skeleton
+(@CGUID+210, 18797, 555, 3, -289.473, -278.307, 15.6276, 2.30383, 7200, 7200, 2, 1), -- Tortured Skeleton
+(@CGUID+211, 18797, 555, 3, -283.911, -283.157, 16.5927, 3.77208, 7200, 7200, 2, 1), -- Tortured Skeleton
+(@CGUID+212, 18797, 555, 3, -288.274, -283.914, 17.5425, 1.21484, 7200, 7200, 2, 1), -- Tortured Skeleton
+(@CGUID+213, 18797, 555, 3, -293.196, -282.469, 18.4845, 5.29222, 7200, 7200, 2, 1), -- Tortured Skeleton
+(@CGUID+214, 18797, 555, 3, -298.245, -285.501, 18.4951, 4.18963, 7200, 7200, 2, 1), -- Tortured Skeleton
+(@CGUID+215, 18797, 555, 3, -294.083, -292.082, 22.1799, 5.15429, 7200, 7200, 2, 1), -- Tortured Skeleton
+(@CGUID+216, 18797, 555, 3, -289.952, -286.991, 19.9738, 0.572466, 7200, 7200, 2, 1), -- Tortured Skeleton
+(@CGUID+217, 18797, 555, 3, -284.946, -291.591, 19.861, 0.418879, 7200, 7200, 2, 1), -- Tortured Skeleton
 (@CGUID+218, 18797, 555, 3, -292.796, -248.356, 15.6591, 5.75959, 7200, 7200, 0, 0), -- Tortured Skeleton
 (@CGUID+219, 18797, 555, 3, -290.878, -248.308, 15.654, 0.628319, 7200, 7200, 0, 0), -- Tortured Skeleton
 (@CGUID+220, 18797, 555, 3, -294.633, -248.559, 15.4587, 3.78736, 7200, 7200, 0, 0), -- Tortured Skeleton
@@ -1247,8 +1214,14 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Zealot Fanatic Cultist Fanatic (@SGGUID+53)
 (@SGGUID+52, 'Shadow Labyrinth - Group 035 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 01', 0, 0, @SGGUID+22, 1, @STRINGID+6),
 (@SGGUID+53, 'Shadow Labyrinth - Group 035 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 01', 0, 0, @SGGUID+23, 1, @STRINGID+6),
--- Right side hill skeletons
+-- Right side front hill skeletons
 (@SGGUID+54, 'Shadow Labyrinth - Group 036 - Tortured Skeleton (10)', 0, 0, 0, 1, 0),
+-- left side front hill skeletons
+(@SGGUID+55, 'Shadow Labyrinth - Group 037 - Tortured Skeleton (10)', 0, 0, 0, 1, 0),
+-- right side back hill skeletons
+(@SGGUID+56, 'Shadow Labyrinth - Group 038 - Tortured Skeleton (10)', 0, 0, 0, 1, 0),
+-- left side back hill skeletons
+(@SGGUID+57, 'Shadow Labyrinth - Group 039 - Tortured Skeleton (10)', 0, 0, 0, 1, 0),
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 18633, 0, 2, 0), (@SGGUID+3, 18635, 0, 2, 0), -- Cabal Acolyte, Cabal Deathsworn
@@ -1500,6 +1473,41 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+54, @CGUID+201, -1, 0), -- Tortured Skeleton
 (@SGGUID+54, @CGUID+202, -1, 0), -- Tortured Skeleton
 (@SGGUID+54, @CGUID+203, -1, 0), -- Tortured Skeleton
+
+(@SGGUID+55, @CGUID+186, -1, 0), -- Tortured Skeleton
+(@SGGUID+55, @CGUID+187, -1, 0), -- Tortured Skeleton
+(@SGGUID+55, @CGUID+188, -1, 0), -- Tortured Skeleton
+(@SGGUID+55, @CGUID+189, -1, 0), -- Tortured Skeleton
+(@SGGUID+55, @CGUID+190, -1, 0), -- Tortured Skeleton
+(@SGGUID+55, @CGUID+191, -1, 0), -- Tortured Skeleton
+(@SGGUID+55, @CGUID+192, -1, 0), -- Tortured Skeleton
+(@SGGUID+55, @CGUID+193, -1, 0), -- Tortured Skeleton
+(@SGGUID+55, @CGUID+205, -1, 0), -- Tortured Skeleton
+(@SGGUID+55, @CGUID+206, -1, 0), -- Tortured Skeleton
+
+(@SGGUID+56, @CGUID+208, -1, 0), -- Tortured Skeleton
+(@SGGUID+56, @CGUID+209, -1, 0), -- Tortured Skeleton
+(@SGGUID+56, @CGUID+210, -1, 0), -- Tortured Skeleton
+(@SGGUID+56, @CGUID+211, -1, 0), -- Tortured Skeleton
+(@SGGUID+56, @CGUID+212, -1, 0), -- Tortured Skeleton
+(@SGGUID+56, @CGUID+213, -1, 0), -- Tortured Skeleton
+(@SGGUID+56, @CGUID+214, -1, 0), -- Tortured Skeleton
+(@SGGUID+56, @CGUID+215, -1, 0), -- Tortured Skeleton
+(@SGGUID+56, @CGUID+216, -1, 0), -- Tortured Skeleton
+(@SGGUID+56, @CGUID+217, -1, 0), -- Tortured Skeleton
+
+
+(@SGGUID+57, @CGUID+218, -1, 0), -- Tortured Skeleton
+(@SGGUID+57, @CGUID+219, -1, 0), -- Tortured Skeleton
+(@SGGUID+57, @CGUID+220, -1, 0), -- Tortured Skeleton
+(@SGGUID+57, @CGUID+221, -1, 0), -- Tortured Skeleton
+(@SGGUID+57, @CGUID+222, -1, 0), -- Tortured Skeleton
+(@SGGUID+57, @CGUID+223, -1, 0), -- Tortured Skeleton
+(@SGGUID+57, @CGUID+224, -1, 0), -- Tortured Skeleton
+(@SGGUID+57, @CGUID+225, -1, 0), -- Tortured Skeleton
+(@SGGUID+57, @CGUID+226, -1, 0), -- Tortured Skeleton
+(@SGGUID+57, @CGUID+227, -1, 0); -- Tortured Skeleton
+
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+12, @SGGUID+13),
