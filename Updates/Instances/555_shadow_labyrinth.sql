@@ -219,11 +219,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+101, 49, -263.404, 29.2107, 8.07304, 0, 0, 0),
 (@CGUID+101, 50, -278.661, 41.8279, 8.07863, 0, 0, 0),
 (@CGUID+101, 51, -281.339, 55.2473, 8.07299, 0, 0, 0),
-(@CGUID+108, 1, -288.554718, -263.699402, 12.682985, 100, 18000, 1863801),
-(@CGUID+108, 2, -313.295, -263.085, 12.6835, 0.0211422, 0, 0),
-(@CGUID+108, 3, -323.666718, -263.655304, 12.685335, 100, 0, 0),
-(@CGUID+108, 4, -322.766266, -263.664520, 12.685326, 100, 18000, 1863801),
-
 -- Cabal Spellbinder Murmur Hallway Movement
 -- stationary pack 1
 (@CGUID+112, 1, -139.912, -353.917, 17.1665, 5.75959, 2000, 5),
@@ -570,9 +565,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (21159, 0, 0, 1, 0, 0, NULL); -- Containment Beam
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+42, @CGUID+108, 1679), -- Cabal Cultist -> Cabal Zealot
-(@CGUID+111, @CGUID+108, 1679), -- Cabal Zealot -> Cabal Zealot
-(@CGUID+235, @CGUID+108, 1679), -- Cabal Fanatic -> Cabal Zealot
 (@CGUID+109, @CGUID+236, 1155), -- Cabal Zealot -> Cabal Fanatic
 (@CGUID+110, @CGUID+236, 1155), -- Cabal Zealot -> Cabal Fanatic
 (@CGUID+237, @CGUID+236, 1155), -- Cabal Fanatic -> Cabal Fanatic
@@ -616,20 +608,16 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (19226, 555, 18732, 4112, 0); -- Void Traveler -> Grandmaster Vorpil
 
 INSERT INTO creature_spawn_entry (guid, entry) VALUES
-(@CGUID+42, 18631), (@CGUID+42, 18638), -- Cabal Cultist, Cabal Zealot
 (@CGUID+43, 18631), (@CGUID+43, 18638), -- Cabal Cultist, Cabal Zealot
 (@CGUID+44, 18631), (@CGUID+44, 18638), -- Cabal Cultist, Cabal Zealot
 (@CGUID+79, 18634), (@CGUID+79, 18639), -- Cabal Summoner, Cabal Spellbinder
 (@CGUID+82, 18634), (@CGUID+82, 18639), -- Cabal Summoner, Cabal Spellbinder
-(@CGUID+108, 18830), (@CGUID+108, 18638), -- Cabal Fanatic, Cabal Zealot
 (@CGUID+109, 18830), (@CGUID+109, 18638), -- Cabal Fanatic, Cabal Zealot
 (@CGUID+110, 18631), (@CGUID+110, 18638), -- Cabal Cultist, Cabal Zealot
-(@CGUID+111, 18830), (@CGUID+111, 18638), -- Cabal Fanatic, Cabal Zealot
 (@CGUID+116, 18634), (@CGUID+116, 18639), -- Cabal Summoner, Cabal Spellbinder
 (@CGUID+122, 18634), (@CGUID+122, 18639), -- Cabal Summoner, Cabal Spellbinder
 (@CGUID+123, 18634), (@CGUID+123, 18639), -- Cabal Summoner, Cabal Spellbinder
 (@CGUID+233, 18830), (@CGUID+233, 18631), -- Cabal Fanatic, Cabal Cultist
-(@CGUID+235, 18830), (@CGUID+235, 18631), -- Cabal Fanatic, Cabal Cultist
 (@CGUID+236, 18830), (@CGUID+236, 18631), -- Cabal Fanatic, Cabal Cultist
 (@CGUID+248, 18641), (@CGUID+248, 18642), (@CGUID+248, 18663), -- Cabal Familiar, Fel Guardhound, Maiden of Discipline
 (@CGUID+250, 18641), (@CGUID+250, 18642), (@CGUID+250, 18663), -- Cabal Familiar, Fel Guardhound, Maiden of Discipline
@@ -637,7 +625,8 @@ INSERT INTO creature_spawn_entry (guid, entry) VALUES
 (@CGUID+308, 18631), (@CGUID+308, 18635), -- Cabal Cultist, Cabal Deathsworn
 (@CGUID+315, 18633), (@CGUID+315, 18637), -- Cabal Acolyte, Cabal Priest
 (@CGUID+320, 18631), (@CGUID+320, 18633), -- Cabal Cultist, Cabal Acolyte
-(@CGUID+325, 18631), (@CGUID+325, 18638); -- Cabal Cultist, Cabal Zealot
+(@CGUID+325, 18631), (@CGUID+325, 18638), -- Cabal Cultist, Cabal Zealot
+(@CGUID+329, 18631), (@CGUID+329, 18638); -- Cabal Cultist, Cabal Zealot
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 14881, 555, 3, -20.8387, -7.04335, -1.12801, 6.15025, 900, 900, 5, 1), -- Spider
@@ -681,7 +670,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+39, 0, 555, 3, -286.707, -99.5, 8.15633, 1.32645, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+40, 18633, 555, 3, -443.04, -193.835, 12.7725, 3.4383, 7200, 7200, 0, 0), -- Cabal Acolyte
 (@CGUID+41, 18633, 555, 3, -446.493, -192.12, 12.7725, 4.72984, 7200, 7200, 0, 0), -- Cabal Acolyte
-(@CGUID+42, 0, 555, 3, -313.634, -259.705, 12.6837, 3.13859, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+42, 18830, 555, 3, -323.557, -262.785, 12.6846, 6.27565, 7200, 7200, 0, 0), -- Cabal Fanatic
 (@CGUID+43, 0, 555, 3, -276.84, -268.582, 12.6808, 0.0211422, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+44, 0, 555, 3, -277.14, -263.29, 12.6806, 0.0211422, 7200, 7200, 0, 0), -- creature_spawn_entry
 
@@ -749,10 +738,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+105, 18637, 555, 3, -275.427, -0.559913, 8.15628, 3.56047, 7200, 7200, 0, 0), -- Cabal Shadow Priest
 (@CGUID+106, 18638, 555, 3, -367.799, -269.302, 12.689, 0.0494639, 7200, 7200, 0, 0), -- Cabal Zealot
 (@CGUID+107, 18638, 555, 3, -367.629, -263.964, 12.689, 0.0027925, 7200, 7200, 0, 0), -- Cabal Zealot
-(@CGUID+108, 0, 555, 3, -313.295, -263.085, 12.6835, 3.02507, 7200, 7200, 0, 2), -- creature_spawn_entry
+(@CGUID+108, 18830, 555, 3, -323.525, -264.785, 12.6846, 0.0162754, 7200, 7200, 0, 0), -- Cabal Fanatic
 (@CGUID+109, 0, 555, 3, -270.873, -268.766, 12.7638, 0.287388, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+110, 0, 555, 3, -270.18, -258.579, 12.7637, 5.98751, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+111, 0, 555, 3, -313.244, -268.244, 12.6837, 3.25697, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+111, 18638, 555, 3, -323.492, -266.784, 12.6846, 0.16265, 7200, 7200, 0, 0), -- Cabal Zealot
 (@CGUID+112, 18639, 555, 3, -139.912, -353.917, 17.1665, 5.75959, 7200, 7200, 0, 0), -- Cabal Spellbinder
 (@CGUID+113, 18639, 555, 3, -140.42, -369.956, 17.0815, 3.03687, 7200, 7200, 0, 0), -- Cabal Spellbinder
 (@CGUID+114, 18633, 555, 3, -454.315, -183.092, 12.7725, 5.06145, 7200, 7200, 0, 0), -- Cabal Acolyte
@@ -875,7 +864,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+232, 18797, 555, 3, -322.287, -241.187, 12.7673, 3.05433, 7200, 7200, 0, 0), -- Tortured Skeleton
 (@CGUID+233, 0, 555, 3, -276.893, -266.896, 12.6807, 0.0211422, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+234, 18830, 555, 3, -367.7, -265.894, 12.689, 0.0196957, 7200, 7200, 0, 0), -- Cabal Fanatic
-(@CGUID+235, 0, 555, 3, -313.216, -265.828, 12.6837, 3.3179, 7200, 7200, 5, 1), -- creature_spawn_entry
+(@CGUID+235, 18638, 555, 3, -323.59, -260.785, 12.6847, 0.103578, 7200, 7200, 0, 0), -- Cabal Zealot
 (@CGUID+236, 0, 555, 3, -271.362, -265.765, 12.7637, 0.11843, 7200, 7200, 0, 2), -- creature_spawn_entry
 (@CGUID+237, 18830, 555, 3, -271.337, -261.466, 12.7637, 6.16129, 7200, 7200, 0, 0), -- Cabal Fanatic
 (@CGUID+238, 18830, 555, 3, -277.385, -264.977, 12.6801, 0.0211422, 7200, 7200, 0, 2), -- Cabal Fanatic
@@ -977,7 +966,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+322, 18631, 555, 3, -367.596, -267.656, 12.689, 0.0351511, 7200, 7200, 0, 0), -- Cabal Cultist
 (@CGUID+323, 18830, 555, 3, -367.7, -265.894, 12.689, 0.0196957, 7200, 7200, 0, 0), -- Cabal Fanatic
 (@CGUID+324, 0, 555, 3, -367.799, -269.302, 12.689, 0.0494639, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+325, 0, 555, 3, -367.629, -263.964, 12.689, 0.0027925, 7200, 7200, 0, 0); -- creature_spawn_entry
+(@CGUID+325, 0, 555, 3, -367.629, -263.964, 12.689, 0.0027925, 7200, 7200, 0, 0), -- creature_spawn_entry
+
+(@CGUID+326, 18631, 555, 3, -323.525, -264.785, 12.6846, 0.0162754, 7200, 7200, 0, 0), -- Cabal Cultist
+(@CGUID+327, 18830, 555, 3, -323.557, -262.785, 12.6846, 6.27565, 7200, 7200, 0, 0), -- Cabal Fanatic
+(@CGUID+328, 0, 555, 3, -323.492, -266.784, 12.6846, 0.16265, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+329, 0, 555, 3, -323.59, -260.785, 12.6847, 0.103578, 7200, 7200, 0, 0); -- creature_spawn_entry
 
 -- ===========
 -- GAMEOBJECTS
@@ -1222,6 +1216,14 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+56, 'Shadow Labyrinth - Group 038 - Tortured Skeleton (10)', 0, 0, 0, 1, 0),
 -- left side back hill skeletons
 (@SGGUID+57, 'Shadow Labyrinth - Group 039 - Tortured Skeleton (10)', 0, 0, 0, 1, 0),
+-- 3rd Boss room
+-- Patrol 2 combinations
+-- Zealot Fanatic Fanatic Zealot (@SGGUID+59)
+-- Zealot Fanatic Cultist Fanatic (@SGGUID+59)
+-- Cultist Fanatic Cultist Zealot (@SGGUID+59)
+(@SGGUID+58, 'Shadow Labyrinth - Group 040 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 02', 0, 0, @SGGUID+24, 1, @STRINGID+7),
+(@SGGUID+59, 'Shadow Labyrinth - Group 040 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 02', 0, 0, @SGGUID+25, 1, @STRINGID+7);
+
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 18633, 0, 2, 0), (@SGGUID+3, 18635, 0, 2, 0), -- Cabal Acolyte, Cabal Deathsworn
@@ -1242,7 +1244,8 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+41, 18633, 0, 1, 0), (@SGGUID+41, 18631, 0, 2, 0), (@SGGUID+41, 18635, 0, 2, 0),  -- Cabal Acolyte, Cabal Cultist, Cabal Deathsworn
 (@SGGUID+44, 18796, 0, 1, 0), (@SGGUID+44, 18848, 0, 1, 0), -- Fel Overseer, Malicious Instructor
 (@SGGUID+48, 18633, 0, 0, 0), (@SGGUID+48, 18631, 0, 0, 0), (@SGGUID+48, 18635, 0, 0, 0),  -- Cabal Acolyte, Cabal Cultist, Cabal Deathsworn
-(@SGGUID+53, 18638, 1, 1, 0),  (@SGGUID+53, 18830, 0, 2, 0); -- Cabal Zealot, Cabal Fanatic
+(@SGGUID+53, 18638, 1, 1, 0),  (@SGGUID+53, 18830, 0, 2, 0), -- Cabal Zealot, Cabal Fanatic
+(@SGGUID+59, 18638, 1, 1, 0),  (@SGGUID+59, 18830, 0, 2, 0); -- Cabal Zealot, Cabal Fanatic
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+89, 0, 0), -- Cabal Acolyte
@@ -1506,8 +1509,17 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+57, @CGUID+224, -1, 0), -- Tortured Skeleton
 (@SGGUID+57, @CGUID+225, -1, 0), -- Tortured Skeleton
 (@SGGUID+57, @CGUID+226, -1, 0), -- Tortured Skeleton
-(@SGGUID+57, @CGUID+227, -1, 0); -- Tortured Skeleton
+(@SGGUID+57, @CGUID+227, -1, 0), -- Tortured Skeleton
 
+(@SGGUID+58, @CGUID+108, 0, 0), -- Cabal Fanatic
+(@SGGUID+58, @CGUID+42, 1, 0), -- Cabal Fanatic
+(@SGGUID+58, @CGUID+111, 2, 0), -- Cabal Zealot
+(@SGGUID+58, @CGUID+235, 3, 0), -- Cabal Zealot
+
+(@SGGUID+59, @CGUID+326, 0, 0), -- Cabal Cultist
+(@SGGUID+59, @CGUID+327, 1, 0), -- Cabal Fanatic
+(@SGGUID+59, @CGUID+328, 2, 0), -- spawn_group_entry
+(@SGGUID+59, @CGUID+329, 3, 0); -- creature_spawn_entry
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+12, @SGGUID+13),
@@ -1530,7 +1542,10 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+13, 1, 10, 0, @SGGUID+13, 2, 'Shadow Labyrinth - Group 010 - Cabal Familiar | Fel Guardhound'),
 
 (@SGGUID+52, 2, 2, 0, @SGGUID+52, 2, 'Shadow Labyrinth - Group 035 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 01'),
-(@SGGUID+53, 2, 2, 0, @SGGUID+52, 2, 'Shadow Labyrinth - Group 035 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 01');
+(@SGGUID+53, 2, 2, 0, @SGGUID+52, 2, 'Shadow Labyrinth - Group 035 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 01'),
+
+(@SGGUID+58, 2, 2, 0, @SGGUID+58, 2, 'Shadow Labyrinth - Group 040 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 02'),
+(@SGGUID+59, 2, 2, 0, @SGGUID+58, 2, 'Shadow Labyrinth - Group 040 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 02');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+1, 'Shadow Labyrinth - Group 003 Path 1'),
@@ -1543,7 +1558,9 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+15, 'Shadow Labyrinth - Group 011 - Cabal Familiar (5) Waypoint 2'),
 (@SGGUID+16, 'Shadow Labyrinth - Group 011 - Cabal Familiar (5) Waypoint 3'),
 -- Patrol 01
-(@SGGUID+52, 'Shadow Labyrinth - Group 035 - Patrol 01');
+(@SGGUID+52, 'Shadow Labyrinth - Group 035 - Patrol 01'),
+-- Patrol 02
+(@SGGUID+58, 'Shadow Labyrinth - Group 040 - Patrol 02');
  
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Cabal Acolyte 4 different paths after Intro path
@@ -1573,9 +1590,12 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+16, 1, -54.675922,-77.17647,-1.1273506, 100, 1000, @RELAYID+9), -- Generic Movement Idle
 -- Patrol 01
 (@SGGUID+52, 1, -367.58914, -267.65616, 12.689051, 0.0349, 15000, @RELAYID+10),
-(@SGGUID+52, 2, -354.83398, -267.55493, 12.68742, 100, 15000, @RELAYID+10);
+(@SGGUID+52, 2, -354.83398, -267.55493, 12.68742, 100, 15000, @RELAYID+10),
+-- Patrol 02
+(@SGGUID+58, 1, -323.5248, -264.78464, 12.684626, 0.01745, 15000, @RELAYID+11),
+(@SGGUID+58, 2, -290.12753, -263.76453, 12.682338, 100, 15000, @RELAYID+11);
 
-DELETE FROM worldstate_name WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+10;
+DELETE FROM worldstate_name WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+11;
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 (@SGGUID+1, 'Shadow Labyrinth - Group 001'),
 (@SGGUID+2, 'Shadow Labyrinth - Group 005'),
@@ -1586,7 +1606,8 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@SGGUID+7, 'Shadow Labyrinth - Group 025'),
 (@SGGUID+8, 'Shadow Labyrinth - Group 033'),
 (@SGGUID+9, 'Shadow Labyrinth - Group 034'),
-(@SGGUID+10, 'Shadow Labyrinth - Group 034');
+(@SGGUID+10, 'Shadow Labyrinth - Group 034'),
+(@SGGUID+11, 'Shadow Labyrinth - Group 040');
 
 DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @SGGUID+1 AND @SGGUID+23;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
@@ -1621,7 +1642,10 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+21, 42, @SGGUID+9, 1, 2, 0, 0, 'Shadow Labyrinth - Group 034 -  Type 3'),
 
 (@SGGUID+22, 42, @SGGUID+10, 1, 0, 0, 0, 'Shadow Labyrinth - Group 035 -  Type 1'),
-(@SGGUID+23, 42, @SGGUID+10, 1, 1, 0, 0, 'Shadow Labyrinth - Group 035 -  Type 2');
+(@SGGUID+23, 42, @SGGUID+10, 1, 1, 0, 0, 'Shadow Labyrinth - Group 035 -  Type 2'),
+
+(@SGGUID+24, 42, @SGGUID+11, 1, 0, 0, 0, 'Shadow Labyrinth - Group 040 -  Type 1'),
+(@SGGUID+25, 42, @SGGUID+11, 1, 1, 0, 0, 'Shadow Labyrinth - Group 040 -  Type 2');
 
 -- StringIDs
 DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+17;
@@ -1633,7 +1657,8 @@ INSERT INTO `string_id` (Id, Name) VALUES
 (@STRINGID+4, 'SL_BLACKHEART_INCITER_ROOM_MIDDLE'),
 (@STRINGID+5, 'SL_BLACKHEART_INCITER_ROOM_RIGHT'),
 -- Patrols in 3rd Boss ROOM
-(@STRINGID+6, 'SL_VORPIL_ROOM_PATROL_01');
+(@STRINGID+6, 'SL_VORPIL_ROOM_PATROL_01'),
+(@STRINGID+7, 'SL_VORPIL_ROOM_PATROL_02');
 
 -- =======
 -- POOLING
@@ -1991,7 +2016,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- 3rd Boss room patrols RP
 (@RELAYID+10, 0, 0, 3, 0, 0, 0, @STRINGID+6, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0.0349, 'Shadow Labyrinth - Group 035 - Change Orientation'),
 (@RELAYID+10, 5000, 0, 28, 8, 0, 0, @STRINGID+6, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 035 - State Kneel'),
-(@RELAYID+10, 12000, 0, 28, 0, 0, 0, @STRINGID+6, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 035 - State stand');
+(@RELAYID+10, 12000, 0, 28, 0, 0, 0, @STRINGID+6, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 035 - State stand'),
+-- Patrol 02
+(@RELAYID+11, 0, 0, 3, 0, 0, 0, @STRINGID+7, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0.0349, 'Shadow Labyrinth - Group 050 - Change Orientation'),
+(@RELAYID+11, 5000, 0, 28, 8, 0, 0, @STRINGID+7, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 050 - State Kneel'),
+(@RELAYID+11, 12000, 0, 28, 0, 0, 0, @STRINGID+7, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 050 - State stand');
 
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
