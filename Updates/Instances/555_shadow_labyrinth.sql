@@ -1926,7 +1926,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+7, 0, 2, 51, 150, @SGGUID+15, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 'Shadow Labyrinth - Group 011 - Create Formation'),
 -- This will throw an db error but we currently have no other chance to just target the formation "leader"
 -- Formation Leader should move to first waypoint
-(@RELAYID+7, 1, 1, 20, 2, @SGGUID+14, 2, @STRINGID+2, 10, 2055, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Group 011 - PathID 1'),
+-- (@RELAYID+7, 1, 1, 20, 2, @SGGUID+14, 2, @STRINGID+2, 10, 2055, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Group 011 - PathID 1'),
 -- 
 (@RELAYID+7, 5000, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Warlock - Emote OneShotPoint'),
 (@RELAYID+7, 5000, 1, 20, 2, @SGGUID+15, 2, @STRINGID+2, 10, 2055, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Group 011 - PathID 2'),
