@@ -278,8 +278,8 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1863801, 2065001);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1863801, 1, 12471, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Cabal Zealot - Shadow Bolt - current'),
-(2065001, 1, 15472, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Cabal Zealot - Shadow Bolt - current');
+(1863801, 1, 12471, 2, 1034, 1, 0, 100, 0, 0, 0, 0, 0, 'Cabal Zealot - Shadow Bolt - current'),
+(2065001, 1, 15472, 2, 1034, 1, 0, 100, 0, 0, 0, 0, 0, 'Cabal Zealot - Shadow Bolt - current');
 
 UPDATE `creature_template` SET `SpellList` = 1863801 WHERE `entry` = 18638;
 UPDATE `creature_template` SET `SpellList` = 2065001 WHERE `entry` = 20650;

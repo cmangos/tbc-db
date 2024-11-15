@@ -21692,9 +21692,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cabal Zealot 18638 - spell_list
 ('1863801','18638','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Cabal Zealot - Enable Range Mode on Spawn'),
 ('1863802','18638','4','0','10','0','0','0','0','0','0','0','54','0','0','10034','0','0','0','0','0','0','0','0','Cabal Zealot - Random Say on Aggro'),
-('1863803','18638','2','0','100','1024','50','0','0','0','0','0','11','33499','0','2','57','0','0','0','60','0','0','0','Cabal Zealot - Cast Shape of the Beast Enable Melee Mode and remove SpellList at 50% HP'),
-('1863804','18638','21','0','100','3','0','0','0','0','0','0','57','2','35','0','60','1863801','0','0','0','0','0','0','Cabal Zealot - Enable Range Mode and Set SpellList at on ReachedHome'),
-('1863805','18638','21','0','100','5','0','0','0','0','0','0','57','2','35','0','60','2065001','0','0','0','0','0','0','Cabal Zealot - Enable Range Mode and Set SpellList at on ReachedHome'),
+('1863803','18638','2','0','100','1024','50','0','0','0','0','0','11','33499','0','2','57','0','0','0','0','0','0','0','Cabal Zealot - Cast Shape of the Beast Enable Melee Mode'),
+('1863804','18638','21','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Cabal Zealot - Enable Range Mode and Set SpellList at on ReachedHome'),
 -- Cabal Spellbinder 18639 (4.3.4 Official Data - Normal/Heroic) - s.8734
 ('1863901','18639','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Cabal Spellbinder - Set Phase 1 on Spawn'),
 ('1863902','18639','30','5','100','1','5','18708','0','0','0','0','11','33335','10','0','0','0','0','0','0','0','0','0','Cabal Spellbinder - Cast Shadow Bolt on Receive AI Event (Phase 1)'),
