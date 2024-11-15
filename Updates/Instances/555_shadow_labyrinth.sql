@@ -1606,20 +1606,20 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+58, 1, -323.5248, -264.78464, 12.684626, 0.01745, 15000, @RELAYID+11),
 (@SGGUID+58, 2, -290.12753, -263.76453, 12.682338, 100, 15000, @RELAYID+11),
 -- Patrol 03 - around the boss
-(@SGGUID+62, 1, -279.3916,-269.65582,12.681446, 100, 0, 0),
-(@SGGUID+62, 2, -271.79556,-275.23175,12.6813135, 100, 0, 0),
-(@SGGUID+62, 3, -264.27405,-279.25732,12.680406, 100, 0, 0),
-(@SGGUID+62, 4, -257.4364,-281.72037,12.679068, 100, 0, 0),
-(@SGGUID+62, 5, -246.49648,-282.56845,17.086329, 100, 0, 0),
-(@SGGUID+62, 6, -238.89442,-277.1962,17.086287, 100, 0, 0),
-(@SGGUID+62, 7, -232.98311,-270.28983,17.086288, 100, 0, 0),
-(@SGGUID+62, 8, -231.82408,-256.32004,17.086378, 100, 0, 0),
-(@SGGUID+62, 9, -240.6651,-248.60138,17.086283, 100, 0, 0),
-(@SGGUID+62, 10, -247.90907,-247.09088,17.086376, 100, 0, 0),
-(@SGGUID+62, 11, -258.20337,-246.84099,12.67995, 100, 0, 0),
-(@SGGUID+62, 12, -268.21298,-248.91357,12.064231, 100, 0, 0),
-(@SGGUID+62, 13, -275.60107,-252.21254,12.681708, 100, 0, 0),
-(@SGGUID+62, 14, -279.302,-258.68976,12.681697, 100, 0, 0);
+(@SGGUID+62, 1, -279.3916,-269.65582,12.681446, 100, 100, @RELAYID+12),
+(@SGGUID+62, 2, -271.79556,-275.23175,12.6813135, 100, 100, @RELAYID+12),
+(@SGGUID+62, 3, -264.27405,-279.25732,12.680406, 100, 100, @RELAYID+12),
+(@SGGUID+62, 4, -257.4364,-281.72037,12.679068, 100, 100, @RELAYID+12),
+(@SGGUID+62, 5, -246.49648,-282.56845,17.086329, 100, 100, @RELAYID+12),
+(@SGGUID+62, 6, -238.89442,-277.1962,17.086287, 100, 100, @RELAYID+12),
+(@SGGUID+62, 7, -232.98311,-270.28983,17.086288, 100, 100, @RELAYID+12),
+(@SGGUID+62, 8, -231.82408,-256.32004,17.086378, 100, 100, @RELAYID+12),
+(@SGGUID+62, 9, -240.6651,-248.60138,17.086283, 100, 100, @RELAYID+12),
+(@SGGUID+62, 10, -247.90907,-247.09088,17.086376, 100, 100, @RELAYID+12),
+(@SGGUID+62, 11, -258.20337,-246.84099,12.67995, 100, 100, @RELAYID+12),
+(@SGGUID+62, 12, -268.21298,-248.91357,12.064231, 100, 100, @RELAYID+12),
+(@SGGUID+62, 13, -275.60107,-252.21254,12.681708, 100, 100, @RELAYID+12),
+(@SGGUID+62, 14, -279.302,-258.68976,12.681697, 100, 100, @RELAYID+12);
 
 
 DELETE FROM worldstate_name WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+13;
@@ -1922,7 +1922,7 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 
 -- Reworked scripts
 -- Reworked DBScripts, will be merged into single Inserts when done with full rework
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+5;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Shadow Labyrinth - Group 001 - Cabal Acolyte/Cabal Deathsworn 4 differnt paths after static Intro
 (@RELAYID+1, 1, @RELAYID+2, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 1'),
@@ -1947,9 +1947,12 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+5, 1, @RELAYID+19, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Beg'),
 (@RELAYID+5, 1, @RELAYID+20, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Bow'),
 (@RELAYID+5, 1, @RELAYID+21, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Salute'),
-(@RELAYID+5, 1, @RELAYID+22, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Cheer');
+(@RELAYID+5, 1, @RELAYID+22, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Cheer'),
+-- Sanctum of Shadow Group 042
+(@RELAYID+6, 1, @RELAYID+24, 15, 'Shadow Labyrinth - Group 42 - Start RelayScript'),
+(@RELAYID+6, 1, 0, 85, 'Shadow Labyrinth - Group 42 - Nothing');
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+14;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+24;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Shadow Labyrinth - Group 003 - Cabal Acolyte/Cabal Deathsworn 4 differnt paths after static Intro
 (@RELAYID+1,0,0,45,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - choose random path'),
@@ -2018,9 +2021,15 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- Sanctum of Shadows
 -- Static group of 4 random kneeling
 (@RELAYID+23, 0, 0, 28, 8, 0, 0, @STRINGID+8, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 041 - State Kneel'),
-(@RELAYID+23, 7000, 0, 28, 0, 0, 0, @STRINGID+8, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 041 - State stand');
+(@RELAYID+23, 7000, 0, 28, 0, 0, 0, @STRINGID+8, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 041 - State stand'),
+-- Group 042 random kneeling
+(@RELAYID+24, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - Pause Waypoints'),
+(@RELAYID+24, 0, 0, 36, 0, 0, 0, 18732, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - Face Grandmaster Vorpil'),
+(@RELAYID+24, 4000, 0, 28, 8, 0, 0, @STRINGID+9, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - State Kneel'),
+(@RELAYID+24, 12000, 0, 28, 0, 0, 0, @STRINGID+9, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - State Stand'),
+(@RELAYID+24, 13000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - Unpause Waypoints');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN @RELAYID+1 AND  @RELAYID+10;
+DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN @RELAYID+1 AND  @RELAYID+12;
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1866701, 1866702, 1866703, 1866704, 1866705, 1866706, 1873101, 1873102);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Blackheart Inciter RP scripts
@@ -2079,6 +2088,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (@RELAYID+9, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 011 - Change Movement to Idle'),
 (@RELAYID+9, 0, 1, 36, 0, 0, 0, @STRINGID+1, 10, 2049, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 011 - Face Cabal Warlock'),
 (@RELAYID+9, 0, 2, 51, 100, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 011 - Change FormationShape'),
+-- Sanctum of Shadow
 -- 3rd Boss room patrols RP
 (@RELAYID+10, 0, 0, 3, 0, 0, 0, @STRINGID+6, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0.0349, 'Shadow Labyrinth - Group 035 - Change Orientation'),
 (@RELAYID+10, 5000, 0, 28, 8, 0, 0, @STRINGID+6, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 035 - State Kneel'),
@@ -2086,8 +2096,9 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Patrol 02
 (@RELAYID+11, 0, 0, 3, 0, 0, 0, @STRINGID+7, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0.0349, 'Shadow Labyrinth - Group 040 - Change Orientation'),
 (@RELAYID+11, 5000, 0, 28, 8, 0, 0, @STRINGID+7, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 040 - State Kneel'),
-(@RELAYID+11, 12000, 0, 28, 0, 0, 0, @STRINGID+7, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 040 - State stand');
-
+(@RELAYID+11, 12000, 0, 28, 0, 0, 0, @STRINGID+7, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 040 - State stand'),
+-- Patrol 03
+(@RELAYID+12, 0, 0, 45, 0, @RELAYID+6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - Random Script'); 
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
