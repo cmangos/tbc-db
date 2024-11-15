@@ -1951,7 +1951,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+14;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- Shadow Labyrinth - Group 001 - Cabal Acolyte/Cabal Deathsworn 4 differnt paths after static Intro
+-- Shadow Labyrinth - Group 003 - Cabal Acolyte/Cabal Deathsworn 4 differnt paths after static Intro
 (@RELAYID+1,0,0,45,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - choose random path'),
 -- Choose Path
 (@RELAYID+2,0,0,20,2,@SGGUID+1,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - PathID 1'),
@@ -2014,8 +2014,11 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- Right front RP Salute
 (@RELAYID+21, 1000, 0, 35, 10, 0, 0, @STRINGID+5, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent F to StringID'),
 -- Right front RP Cheer
-(@RELAYID+22, 1000, 0, 35, 11, 0, 0, @STRINGID+5, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent F to StringID');
-
+(@RELAYID+22, 1000, 0, 35, 11, 0, 0, @STRINGID+5, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent F to StringID'),
+-- Sanctum of Shadows
+-- Static group of 4 random kneeling
+(@RELAYID+23, 0, 0, 28, 8, 0, 0, @STRINGID+8, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 041 - State Kneel'),
+(@RELAYID+23, 7000, 0, 28, 0, 0, 0, @STRINGID+8, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 041 - State stand');
 
 DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN @RELAYID+1 AND  @RELAYID+10;
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1866701, 1866702, 1866703, 1866704, 1866705, 1866706, 1873101, 1873102);
@@ -2081,9 +2084,9 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (@RELAYID+10, 5000, 0, 28, 8, 0, 0, @STRINGID+6, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 035 - State Kneel'),
 (@RELAYID+10, 12000, 0, 28, 0, 0, 0, @STRINGID+6, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 035 - State stand'),
 -- Patrol 02
-(@RELAYID+11, 0, 0, 3, 0, 0, 0, @STRINGID+7, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0.0349, 'Shadow Labyrinth - Group 050 - Change Orientation'),
-(@RELAYID+11, 5000, 0, 28, 8, 0, 0, @STRINGID+7, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 050 - State Kneel'),
-(@RELAYID+11, 12000, 0, 28, 0, 0, 0, @STRINGID+7, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 050 - State stand');
+(@RELAYID+11, 0, 0, 3, 0, 0, 0, @STRINGID+7, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0.0349, 'Shadow Labyrinth - Group 040 - Change Orientation'),
+(@RELAYID+11, 5000, 0, 28, 8, 0, 0, @STRINGID+7, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 040 - State Kneel'),
+(@RELAYID+11, 12000, 0, 28, 0, 0, 0, @STRINGID+7, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 040 - State stand');
 
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
