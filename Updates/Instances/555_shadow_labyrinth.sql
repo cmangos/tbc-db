@@ -414,8 +414,11 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 -- Blackheart the Inciter
 (18667, 0, 1, -328.209,-39.05045,12.688841,0.017453, 9000, 1866701), -- Middle Point that decides which point he will go next
 (18667, 1, 1, -320.4264,-50.31613,12.688854,5.65486, 6000, 1866702), -- left side
+(18667, 1, 2, -328.209,-39.05045,12.688841,0.017453, 100, 1866705), -- changes path back to 0
 (18667, 2, 1, -318.2236,-38.931072,12.688864,0.052359, 6000, 1866703), -- middle side
+(18667, 2, 2, -328.209,-39.05045,12.688841,0.017453, 100, 1866706), -- changes path back to 0
 (18667, 3, 1, -319.79132,-26.325647,12.688865,0.83775, 6000, 1866704), -- right side
+(18667, 3, 2, -328.209,-39.05045,12.688841,0.017453, 100, 1866705), -- changes path back to 0
 -- Ambassador Hellmaw
 (18731, 0, 1, -156.67537, 4.982729, 8.156394,4.6775, 2000, 1873101),
 (18731, 0, 2, -163.44856, -7.553354, 8.073133, 100, 0, 0),
@@ -736,7 +739,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+134, 0, 555, 3, -257.898, 2.7362, 8.15626, 3.85718, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+135, 18642, 555, 3, -66.63983, -80.196495, -1.1241438, 2.46894, 7200, 7200, 0, 0), -- Fel Guardhound
 (@CGUID+136, 0, 555, 3, -281.167, -74.066, 8.15624, 3.12414, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+137, 18667, 555, 3, -343.463, -16.4996, 12.6888, 5.09566, 86400, 86400, 0, 2), -- Blackheart the Inciter
+(@CGUID+137, 18667, 555, 3, -328.209, -39.05045, 12.688841, 0.017453, 86400, 86400, 0, 2), -- Blackheart the Inciter
 (@CGUID+138, 18708, 555, 3, -157.8953, -497.3225, 15.86508, 1.570796, 86400, 86400, 0, 0), -- Murmur
 (@CGUID+139, 18731, 555, 3, -156.675, 4.98273, 8.15639, 4.67748, 86400, 86400, 0, 0), -- Ambassador Hellmaw
 (@CGUID+140, 18732, 555, 3, -253.5477, -263.6456, 17.16967, 3.054326, 86400, 86400, 0, 2), -- Grandmaster Vorpil
@@ -1927,7 +1930,7 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 
 -- Reworked scripts
 -- Reworked DBScripts, will be merged into single Inserts when done with full rework
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+4;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+5;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Shadow Labyrinth - Group 001 - Cabal Acolyte/Cabal Deathsworn 4 differnt paths after static Intro
 (@RELAYID+1, 1, @RELAYID+2, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - Waypoint Path 1'),
@@ -1938,12 +1941,21 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+2, 1, @RELAYID+8, 0, 'Shadow Labyrinth - Blackheart Inciter - Waypoint Path 1'),
 (@RELAYID+2, 1, @RELAYID+9, 0, 'Shadow Labyrinth - Blackheart Inciter - Waypoint Path 2'),
 (@RELAYID+2, 1, @RELAYID+10, 0, 'Shadow Labyrinth - Blackheart Inciter - Waypoint Path 3'),
--- Left side
-(@RELAYID+3, 1, @RELAYID+11, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Beg'),
-(@RELAYID+3, 1, @RELAYID+12, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Bow'),
-(@RELAYID+3, 1, @RELAYID+13, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Salute'),
-(@RELAYID+3, 1, @RELAYID+14, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Cheer');
-
+-- Blackheart Inciter Left side RP
+(@RELAYID+3, 1, @RELAYID+11, 0, 'Shadow Labyrinth - Blackheart Inciter - Left Side RP Beg'),
+(@RELAYID+3, 1, @RELAYID+12, 0, 'Shadow Labyrinth - Blackheart Inciter - Left Side RP Bow'),
+(@RELAYID+3, 1, @RELAYID+13, 0, 'Shadow Labyrinth - Blackheart Inciter - Left Side RP Salute'),
+(@RELAYID+3, 1, @RELAYID+14, 0, 'Shadow Labyrinth - Blackheart Inciter - Left Side RP Cheer'),
+-- Blackheart Inciter Middle RP
+(@RELAYID+4, 1, @RELAYID+15, 0, 'Shadow Labyrinth - Blackheart Inciter - Middle RP Beg'),
+(@RELAYID+4, 1, @RELAYID+16, 0, 'Shadow Labyrinth - Blackheart Inciter - Middle RP Bow'),
+(@RELAYID+4, 1, @RELAYID+17, 0, 'Shadow Labyrinth - Blackheart Inciter - Middle RP Salute'),
+(@RELAYID+4, 1, @RELAYID+18, 0, 'Shadow Labyrinth - Blackheart Inciter - Middle RP Cheer'),
+-- Blackheart Inciter Right Side RP
+(@RELAYID+5, 1, @RELAYID+19, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Beg'),
+(@RELAYID+5, 1, @RELAYID+20, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Bow'),
+(@RELAYID+5, 1, @RELAYID+21, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Salute'),
+(@RELAYID+5, 1, @RELAYID+22, 0, 'Shadow Labyrinth - Blackheart Inciter - Right Side RP Cheer');
 
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+14;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -1988,39 +2000,57 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+9,0,0,20,2,2,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Blackheart Inciter - PathID 2'),
 (@RELAYID+10,0,0,20,2,3,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Blackheart Inciter - PathID 3'),
 -- Left front RP Beg
-(@RELAYID+11, 1000, 0, 35, 8, 0, 0 , @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent D to StringID'),
-(@RELAYID+11, 6000, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Blackheart Inciter - Change Path'),
+(@RELAYID+11, 1000, 0, 35, 8, 0, 0, @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent D to StringID'),
 -- Left front RP Bow
-(@RELAYID+12, 1000, 0, 35, 9, 0, 0 , @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent E to StringID'),
-(@RELAYID+12, 6000, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Blackheart Inciter - Change Path'),
+(@RELAYID+12, 1000, 0, 35, 9, 0, 0, @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent E to StringID'),
 -- Left front RP Salute
-(@RELAYID+13, 1000, 0, 35, 10, 0, 0 , @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent F to StringID'),
-(@RELAYID+13, 6000, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Blackheart Inciter - Change Path'),
--- Left Fron RP Cheer
-(@RELAYID+14, 1000, 0, 35, 11, 0, 0 , @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent F to StringID'),
-(@RELAYID+14, 6000, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Shadow Labyrinth - Blackheart Inciter - Change Path');
+(@RELAYID+13, 1000, 0, 35, 10, 0, 0, @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent F to StringID'),
+-- Left front RP Cheer
+(@RELAYID+14, 1000, 0, 35, 11, 0, 0, @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent F to StringID'),
+-- Middle front RP Beg
+(@RELAYID+15, 1000, 0, 35, 8, 0, 0, @STRINGID+4, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent D to StringID'),
+-- Middle front RP Bow
+(@RELAYID+16, 1000, 0, 35, 9, 0, 0, @STRINGID+4, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent E to StringID'),
+-- Middle front RP Salute
+(@RELAYID+17, 1000, 0, 35, 10, 0, 0, @STRINGID+4, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent F to StringID'),
+-- Middle front RP Cheer
+(@RELAYID+18, 1000, 0, 35, 11, 0, 0, @STRINGID+4, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent F to StringID'),
+-- Right front RP Beg
+(@RELAYID+19, 1000, 0, 35, 8, 0, 0, @STRINGID+5, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent D to StringID'),
+-- Right front RP Bow
+(@RELAYID+20, 1000, 0, 35, 9, 0, 0, @STRINGID+5, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent E to StringID'),
+-- Right front RP Salute
+(@RELAYID+21, 1000, 0, 35, 10, 0, 0, @STRINGID+5, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent F to StringID'),
+-- Right front RP Cheer
+(@RELAYID+22, 1000, 0, 35, 11, 0, 0, @STRINGID+5, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent F to StringID');
 
 
 DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN @RELAYID+1 AND  @RELAYID+10;
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1866701, 1866702, 1866703, 1866704, 1873101, 1873102);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1866701, 1866702, 1866703, 1866704, 1866705, 1866706, 1873101, 1873102);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Blackheart Inciter RP scripts
 -- Base script at middle point that decides what side he walks next
 (1866701, 4000, 0, 1, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Emote OneShotLaugh'), 
+(1866701, 4000, 1, 28, 0, 0, 0, @STRINGID+4, 90, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - StringID - StandState Stand'),
 (1866701, 6000, 0, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Emote OneShotRoar'),
-(1866701, 6000, 1, 35, 8, 0, 0 , @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent C to StringID'),
-(1866701, 6000, 2, 35, 8, 0, 0 , @STRINGID+4, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent C to StringID'),
-(1866701, 6000, 3, 35, 8, 0, 0 , @STRINGID+5, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent C to StringID'),
+(1866701, 6000, 1, 35, 8, 0, 0, @STRINGID+3, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent C to StringID'),
+(1866701, 6000, 2, 35, 8, 0, 0, @STRINGID+4, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent C to StringID'),
+(1866701, 6000, 3, 35, 8, 0, 0, @STRINGID+5, 90, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - SendAIEvent C to StringID'),
 (1866701, 9000, 0, 45, 0, @RELAYID+2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Start RandomRelayScript'), 
--- left front 
+-- Blackheart Incite left front 
 (1866702, 0, 0, 1, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Emote OneShotLaugh'),
 (1866702, 0, 1, 45, 0, @RELAYID+3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Start RandomRelayScript'), 
--- Midle front
-(1866703, 0, 0, 11, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Emote OneShotLaugh'),
+-- Blackheart Incite Midle front
+(1866703, 0, 0, 1, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Emote OneShotLaugh'),
 (1866703, 0, 1, 45, 0, @RELAYID+4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Start RandomRelayScript'), 
--- right front
+-- Blackheart Incite Right front
 (1866704, 0, 0, 1, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Emote OneShotLaugh'),
 (1866704, 0, 1, 45, 0, @RELAYID+5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Start RandomRelayScript'), 
+-- Blackheart Incite Change Path back to 0
+(1866705, 0, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Change Path to 0'),
+-- Blackheart Incite Middle Group also changes stand state to Kneel
+(1866706, 0, 0, 28, 8, 0, 0, @STRINGID+4, 90, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - StringID - StandState Kneel'),
+(1866706, 0, 1, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackheart Inciter - Change Path to 0'),
 -- Ambassador Hellmaw waypoint scripts
 (1873101, 0, 0, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ambassador Hellmaw - OneShotRoar'), 
 (1873101, 0, 1, 16, 9349, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ambassador Hellmaw - SMSG_PLAY_SOUND'), 
