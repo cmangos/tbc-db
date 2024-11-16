@@ -22,14 +22,16 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+45, 1, -172.1729, -325.7539, 17.1697, 100, 2000, 5),
 (@CGUID+45, 2, -160.339, -328.603, 17.0869, 100, 5000, 1863201),
 
-(@CGUID+46, 1, -168.532, -352.302, 17.1662, 4.83456, 2000, 5),
-(@CGUID+46, 2, -162.415, -350.568, 17.0835, 4.74318, 5000, 1863201),
+(@CGUID+46, 1, -168.532, -352.3019, 17.1662, 100, 2000, 5),
+(@CGUID+46, 2, -162.415, -350.5678, 17.08354, 100, 5000, 1863201),
 
 (@CGUID+47, 1, -135.77, -329.128, 17.1687, 100, 2000, 5),
 (@CGUID+47, 2, -152.496, -325.836, 17.086, 100, 5000, 1863201),
 
-(@CGUID+48, 1, -174.082, -354.553, 17.1667, 5.35816, 2000, 5),
-(@CGUID+48, 2, -149.628, -355.988, 17.0834, 4.65396, 5000, 1863201),
+(@CGUID+48, 1, -174.0815, -354.5528, 17.1667, 100, 2000, 5),
+(@CGUID+48, 2, -149.6283, -355.9884, 17.0834, 100, 5000, 1863201),
+
+
 (@CGUID+49, 1, -171.642, -370.791, 17.0818, 0.523599, 2000, 5),
 (@CGUID+49, 2, -150.133, -378.117, 17.0814, 4.64736, 5000, 1863201),
 (@CGUID+50, 1, -173.133, -366.97, 17.0828, 5.91667, 2000, 5),
@@ -38,8 +40,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+51, 2, -148.384, -417.065, 17.0784, 4.59443, 5000, 1863201),
 (@CGUID+52, 1, -140.54, -410.52, 17.079, 1.44862, 2000, 5),
 (@CGUID+52, 2, -162.943, -421.588, 17.0776, 4.77894, 5000, 1863201),
--- ----------------------------------------------
--- Reworked Cabal Deathsworn/Acolyte
 -- Will get sleep state at last waypoint and stop moving
 (@CGUID+53, 1, -91.0184, -63.4225, -1.05104, 100, 0, 0),
 (@CGUID+53, 2, -73.312515, -47.810535, -1.1282725, 100, 0, 0),
@@ -83,12 +83,12 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+76, 2, -156.498, -328.007, 17.1696, 1.6034, 0, 0),
 (@CGUID+76, 3, -156.496, -325.849, 17.0865, 4.73628, 5000, 1863402), -- die permanently
 -- flavor when door opens
-(@CGUID+77, 1, -156.498, -328.007, 17.1696, 3.14159, 2000, 5),
-(@CGUID+77, 2, -156.466, -314.34, 17.0849, 1.6034, 5000, 1863402), -- die permanently
+(@CGUID+77, 1, -156.498, -328.007, 17.1696, 100, 2000, 5),
+(@CGUID+77, 2, -156.9866, -313.37146, 17.08601, 100, 5000, 1863402), -- die permanently
 
 -- stationary pack 1
-(@CGUID+78, 1, -135.201, -360.271, 17.0819, 3.49066, 2000, 5),
-(@CGUID+78, 2, -157.038, -354.905, 17.0836, 4.70637, 5000, 1863401), -- idle
+(@CGUID+78, 1, -135.2006, -360.271, 17.165, 100, 2000, 5),
+(@CGUID+78, 2, -157.0379, -354.905, 17.084, 4.7064, 5000, 1863401), -- idle
 
 -- runner #1 (fast respawn)
 (@CGUID+79, 1, -136.037, -343.41, 17.1648, 3.1765, 1000, 5),
@@ -224,8 +224,8 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+101, 51, -281.339, 55.2473, 8.07299, 0, 0, 0),
 -- Cabal Spellbinder Murmur Hallway Movement
 -- stationary pack 1
-(@CGUID+112, 1, -139.912, -353.917, 17.1665, 5.75959, 2000, 5),
-(@CGUID+112, 2, -153.403, -352.024, 17.0838, 4.70338, 5000, 1863401),
+(@CGUID+112, 1, -139.912, -353.917, 17.167, 100, 2000, 5),
+(@CGUID+112, 2, -153.403, -352.024, 17.084, 4.6815, 5000, 1863401),
 
 -- stationary pack 2
 (@CGUID+113, 1, -140.42, -369.956, 17.0815, 3.03687, 2000, 5),
@@ -552,13 +552,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Murmur Hallway
--- group 2
-(@CGUID+48, @CGUID+46, 3), -- Cabal Executioner -> Cabal Executioner
-(@CGUID+78, @CGUID+46, 3), -- Cabal Summoner -> Cabal Executioner
-(@CGUID+112, @CGUID+46, 3), -- Cabal Spellbinder -> Cabal Executioner
--- runner 1
-(@CGUID+79, @CGUID+46, 1024), -- Cabal Summoner/Spellbinder -> Cabal Executioner
-
 -- group 3
 (@CGUID+50, @CGUID+49, 3), -- Cabal Executioner -> Cabal Executioner
 (@CGUID+80, @CGUID+49, 3), -- Cabal Summoner -> Cabal Executioner
@@ -585,7 +578,6 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (19226, 555, 18732, 4112, 0); -- Void Traveler -> Grandmaster Vorpil
 
 INSERT INTO creature_spawn_entry (guid, entry) VALUES
-(@CGUID+79, 18634), (@CGUID+79, 18639), -- Cabal Summoner, Cabal Spellbinder
 (@CGUID+82, 18634), (@CGUID+82, 18639), -- Cabal Summoner, Cabal Spellbinder
 (@CGUID+116, 18634), (@CGUID+116, 18639), -- Cabal Summoner, Cabal Spellbinder
 (@CGUID+122, 18634), (@CGUID+122, 18639), -- Cabal Summoner, Cabal Spellbinder
@@ -678,8 +670,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+75, 0, 555, 3, -454.315, -183.092, 12.7725, 5.06145, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+76, 18634, 555, 3, -175.894, -349.783, 17.166, 5.61996, 7200, 7200, 0, 0), -- Cabal Summoner
 (@CGUID+77, 18634, 555, 3, -156.498, -328.007, 17.1696, 3.14159, 7200, 7200, 0, 0), -- Cabal Summoner
-(@CGUID+78, 18634, 555, 3, -135.201, -360.271, 17.0819, 3.49066, 7200, 7200, 0, 0), -- Cabal Summoner
-(@CGUID+79, 0, 555, 3, -136.037, -343.41, 17.1648, 3.1765, 5, 10, 0, 2), -- creature_spawn_entry
+(@CGUID+78, 18634, 555, 3, -135.201, -360.271, 17.1652, 3.49066, 7200, 7200, 0, 0), -- Cabal Summoner
+(@CGUID+79, 0, 555, 3, -136.037, -343.41, 17.1648, 2.96626, 5, 10, 0, 2), -- spawn_group_entry
 (@CGUID+80, 18634, 555, 3, -141.612, -363.212, 17.0827, 4.2586, 7200, 7200, 0, 0), -- Cabal Summoner
 (@CGUID+81, 18634, 555, 3, -171.826, -401.41, 17.0799, 0.890118, 7200, 7200, 0, 0), -- Cabal Summoner
 (@CGUID+82, 0, 555, 3, -134.274, -388.795, 17.1657, 3.14159, 5, 10, 0, 2), -- creature_spawn_entry
@@ -712,7 +704,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+109, 18638, 555, 3, -270.18, -258.579, 12.7637, 5.98751, 7200, 7200, 0, 0), -- Cabal Zealot
 (@CGUID+110, 18830, 555, 3, -271.337, -261.466, 12.7637, 6.16129, 7200, 7200, 0, 0), -- Cabal Fanatic
 (@CGUID+111, 18638, 555, 3, -323.492, -266.784, 12.6846, 0.16265, 7200, 7200, 0, 0), -- Cabal Zealot
-(@CGUID+112, 18639, 555, 3, -139.912, -353.917, 17.1665, 5.75959, 7200, 7200, 0, 0), -- Cabal Spellbinder
+(@CGUID+112, 18639, 555, 3,-139.912, -353.917, 17.1665, 5.75959, 7200, 7200, 0, 0), -- Cabal Spellbinder
 (@CGUID+113, 18639, 555, 3, -140.42, -369.956, 17.0815, 3.03687, 7200, 7200, 0, 0), -- Cabal Spellbinder
 (@CGUID+114, 18633, 555, 3, -454.315, -183.092, 12.7725, 5.06145, 7200, 7200, 0, 0), -- Cabal Acolyte
 (@CGUID+115, 18639, 555, 3, -143.33, -397.343, 17.0801, 2.37365, 7200, 7200, 0, 0), -- Cabal Spellbinder
@@ -1215,6 +1207,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+63, 'Shadow Labyrinth - Group 042 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 03', 0, 0, @SGGUID+29, 1, @STRINGID+9),
 -- The Screaming Hall
 (@SGGUID+64, 'Shadow Labyrinth - Group 043 - Cabal Executioner (2)', 0, 0, 0, 1, @STRINGID+10),
+(@SGGUID+65, 'Shadow Labyrinth - Group 043 - Cabal Executioner (2) | Cabal Spellbinder | Cabal Summoner', 0, 0, 0, 1, @STRINGID+10),
+(@SGGUID+66, 'Shadow Labyrinth - Group 043 - Cabal Executioner (2) | Cabal Spellbinder | Cabal Summoner', 0, 0, 0, 1, @STRINGID+10),
+(@SGGUID+67, 'Shadow Labyrinth - Group 043 - Cabal Executioner (2) | Cabal Spellbinder | Cabal Summoner', 0, 0, 0, 1, @STRINGID+10),
+(@SGGUID+68, 'Shadow Labyrinth - Group 043 - Cabal Spellbinder (3)', 0, 0, 0, 1, 0),
+
+-- Solo NPCs that have a fast respawn time, they stop respawn if the assigned group dies
+-- (@SGGUID+69, 'Shadow Labyrinth - Group 044 - Cabal Summoner/Cabal Spellbinder', 0, 0, 0, 1, @STRINGID+10),
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 18633, 0, 2, 0), (@SGGUID+3, 18635, 0, 2, 0), -- Cabal Acolyte, Cabal Deathsworn
@@ -1238,7 +1237,9 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+49, 18633, 0, 1, 0), (@SGGUID+49, 18635, 0, 1, 0), -- Cabal Acolyte, Cabal Deathsworn
 (@SGGUID+53, 18638, 1, 1, 0),  (@SGGUID+53, 18830, 0, 2, 0), -- Cabal Zealot, Cabal Fanatic
 (@SGGUID+59, 18638, 1, 1, 0),  (@SGGUID+59, 18830, 0, 2, 0), -- Cabal Zealot, Cabal Fanatic
-(@SGGUID+63, 18638, 1, 1, 0),  (@SGGUID+63, 18830, 0, 2, 0); -- Cabal Zealot, Cabal Fanatic
+(@SGGUID+63, 18638, 1, 1, 0),  (@SGGUID+63, 18830, 0, 2, 0), -- Cabal Zealot, Cabal Fanatic
+-- Screaming Hall
+(@SGGUID+65, 18634, 0, 1, 0),  (@SGGUID+65, 18639, 0, 1, 0), -- Cabal Summoner, Cabal Spellbinder
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+89, 0, 0), -- Cabal Acolyte
@@ -1531,6 +1532,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+64, @CGUID+45, 0, 0), -- Cabal Executioner
 (@SGGUID+64, @CGUID+47, 1, 0), -- Cabal Executioner
+
+(@SGGUID+65, @CGUID+46, 0, 0), -- Cabal Executioner
+(@SGGUID+65, @CGUID+112, 1, 0), -- Cabal Spellbinder
+(@SGGUID+65, @CGUID+78, 2, 0), -- Cabal Summoner
+(@SGGUID+65, @CGUID+48, 3, 0), -- Cabal Executioner
+
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+12, @SGGUID+13),
@@ -1844,7 +1851,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- Murmur room event
 (1863401, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - movement changed to 0:idle'),
 (1863401, 1000, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - emote'),
-(1863402, 0, 15, 33331, 1, 0, 18708, @CGUID+138, 19, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - force Murmur to cast 33329'),
+
 (1873201, 1000, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1873201, 5000, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1873201, 9000, 1, 274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
@@ -1969,7 +1976,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+24, 13000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - Unpause Waypoints');
 
 DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN @RELAYID+1 AND  @RELAYID+12;
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1866701, 1866702, 1866703, 1866704, 1866705, 1866706, 1873101, 1873102, 1863201);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1866701, 1866702, 1866703, 1866704, 1866705, 1866706, 1873101, 1873102, 1863201, 1863402);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Blackheart Inciter RP scripts
 -- Base script at middle point that decides what side he walks next
@@ -2003,6 +2010,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1863201, 0, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change movement to idle'), 
 (1863201, 0, 1, 36, 0, 0, 0, 18708, 180, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Face Murmur'),
 (1863201, 1000, 0, 1, 376, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Emote State ReadyBow'),
+-- 2 Cabal Summoner get killed from Murmur after the door opens
+(1863402, 0, 15, 33331, 1, 0, 18708, @CGUID+138, 19, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - force Murmur to cast 33329'),
 -- All those scripts are used by either spawn_group_entry or are multiple group waypoints
 (@RELAYID+1, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - choose random path'), 
 (@RELAYID+2, 3000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - set StandState Kneel'),
