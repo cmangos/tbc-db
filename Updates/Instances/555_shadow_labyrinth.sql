@@ -19,12 +19,15 @@ SET @RELAYID := 5550000; -- used for dbscript_relay
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Cabal Executioner Murmur Hallway Movements
-(@CGUID+45, 1, -172.173, -325.754, 17.1697, 5.53269, 2000, 5),
-(@CGUID+45, 2, -160.339, -328.603, 17.0869, 4.72687, 5000, 1863201),
+(@CGUID+45, 1, -172.1729, -325.7539, 17.1697, 100, 2000, 5),
+(@CGUID+45, 2, -160.339, -328.603, 17.0869, 100, 5000, 1863201),
+
 (@CGUID+46, 1, -168.532, -352.302, 17.1662, 4.83456, 2000, 5),
 (@CGUID+46, 2, -162.415, -350.568, 17.0835, 4.74318, 5000, 1863201),
-(@CGUID+47, 1, -135.771, -329.128, 17.1687, 3.50811, 2000, 5),
-(@CGUID+47, 2, -152.625, -325.811, 17.0865, 4.68167, 5000, 1863201),
+
+(@CGUID+47, 1, -135.77, -329.128, 17.1687, 100, 2000, 5),
+(@CGUID+47, 2, -152.496, -325.836, 17.086, 100, 5000, 1863201),
+
 (@CGUID+48, 1, -174.082, -354.553, 17.1667, 5.35816, 2000, 5),
 (@CGUID+48, 2, -149.628, -355.988, 17.0834, 4.65396, 5000, 1863201),
 (@CGUID+49, 1, -171.642, -370.791, 17.0818, 0.523599, 2000, 5),
@@ -549,9 +552,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Murmur Hallway
--- group 1
-(@CGUID+45, @CGUID+47, 3), -- Cabal Executioner -> Cabal Executioner
-
 -- group 2
 (@CGUID+48, @CGUID+46, 3), -- Cabal Executioner -> Cabal Executioner
 (@CGUID+78, @CGUID+46, 3), -- Cabal Summoner -> Cabal Executioner
@@ -1212,7 +1212,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Zealot Fanatic Cultist Fanatic (@SGGUID+62)
 -- Cultist Fanatic Cultist Zealot (@SGGUID+62)
 (@SGGUID+62, 'Shadow Labyrinth - Group 042 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 03', 0, 0, @SGGUID+28, 1, @STRINGID+9),
-(@SGGUID+63, 'Shadow Labyrinth - Group 042 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 03', 0, 0, @SGGUID+29, 1, @STRINGID+9);
+(@SGGUID+63, 'Shadow Labyrinth - Group 042 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 03', 0, 0, @SGGUID+29, 1, @STRINGID+9),
+-- The Screaming Hall
+(@SGGUID+64, 'Shadow Labyrinth - Group 043 - Cabal Executioner (2)', 0, 0, 0, 1, @STRINGID+10),
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 18633, 0, 2, 0), (@SGGUID+3, 18635, 0, 2, 0), -- Cabal Acolyte, Cabal Deathsworn
@@ -1525,7 +1527,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+63, @CGUID+334, 0, 0), -- Cabal Cultist
 (@SGGUID+63, @CGUID+335, 1, 0), -- Cabal Fanatic
 (@SGGUID+63, @CGUID+336, 2, 0), -- spawn_group_entry
-(@SGGUID+63, @CGUID+337, 3, 0); -- creature_spawn_entry
+(@SGGUID+63, @CGUID+337, 3, 0), -- creature_spawn_entry
+
+(@SGGUID+64, @CGUID+45, 0, 0), -- Cabal Executioner
+(@SGGUID+64, @CGUID+47, 1, 0), -- Cabal Executioner
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+12, @SGGUID+13),
@@ -1694,8 +1699,10 @@ INSERT INTO `string_id` (Id, Name) VALUES
 (@STRINGID+6, 'SL_VORPIL_ROOM_PATROL_01'),
 (@STRINGID+7, 'SL_VORPIL_ROOM_PATROL_02'),
 (@STRINGID+8, 'SL_VORPIL_ROOM_STATIC_GROUP'),
-(@STRINGID+9, 'SL_VORPIL_ROOM_PATROL_03');
-
+(@STRINGID+9, 'SL_VORPIL_ROOM_PATROL_03'),
+-- The Screaming Hall
+-- String assigned to all npcs that have a waypoint after door opens 
+(@STRINGID+10, 'SL_MURMUR_ROOM_01');
 -- =======
 -- POOLING
 -- =======
@@ -1832,11 +1839,8 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1863201,1863401,1863402,1873201);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1863401,1863402,1873201);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- Murmur room event
-(1863201, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - movement changed to 0:idle'),
-(1863201, 1000, 1, 376, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Exeuctioner - emote'),
 -- Murmur room event
 (1863401, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - movement changed to 0:idle'),
 (1863401, 1000, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - emote'),
@@ -1845,33 +1849,17 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1873201, 5000, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1873201, 9000, 1, 274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
 
-DELETE FROM dbscripts_on_go_template_use WHERE id IN (182942,183295);
+DELETE FROM dbscripts_on_go_template_use WHERE id IN (182942);
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(182942, 1000, 3, 0, 0, 0, 18891, @CGUID+243, 23, 0, 0, 0, 0, -63.5416, 42.9283, 0.206252, 2.42972, ''),
--- Murmur room event
-(183295, 1000, 20, 2, 0, 0, 18634, @CGUID+76, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
-(183295, 1000, 20, 2, 0, 0, 18634, @CGUID+78, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
-(183295, 1000, 20, 2, 0, 0, 18632, @CGUID+45, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
-(183295, 1000, 20, 2, 0, 0, 18639, @CGUID+113, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Spellbinder - Change MovementType to Waypoint Movement'),
-(183295, 1000, 20, 2, 0, 0, 18632, @CGUID+47, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
-(183295, 1000, 20, 2, 0, 0, 18634, @CGUID+77, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
-(183295, 1000, 20, 2, 0, 0, 18639, @CGUID+112, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
-(183295, 1000, 20, 2, 0, 0, 18632, @CGUID+46, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
-(183295, 1000, 20, 2, 0, 0, 18639, @CGUID+115, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
-(183295, 2000, 20, 2, 0, 0, 18632, @CGUID+48, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
-(183295, 2000, 20, 2, 0, 0, 18632, @CGUID+50, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
--- (183295, 2000, 20, 2, 0, 0, 18639, @CGUID+123, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
-(183295, 2000, 20, 2, 0, 0, 18634, @CGUID+80, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
--- (183295, 2000, 20, 2, 0, 0, 18639, @CGUID+116, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Spellbinder - Change MovementType to Waypoint Movement'),
-(183295, 2000, 20, 2, 0, 0, 18632, @CGUID+49, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
--- (183295, 2000, 20, 2, 0, 0, 18639, @CGUID+122, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Spellbinder - Change MovementType to Waypoint Movement'),
--- (183295, 2000, 20, 2, 0, 0, 18634, @CGUID+79, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
-(183295, 2000, 20, 2, 0, 0, 18634, @CGUID+81, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
-(183295, 3000, 20, 2, 0, 0, 18632, @CGUID+52, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
--- (183295, 3000, 20, 2, 0, 0, 18634, @CGUID+82, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
-(183295, 3000, 20, 2, 0, 0, 18632, @CGUID+51, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement');
+(182942, 1000, 3, 0, 0, 0, 18891, @CGUID+243, 23, 0, 0, 0, 0, -63.5416, 42.9283, 0.206252, 2.42972, '');
 
 -- Reworked scripts
+-- Murmur Intro (after door opens npcs use their waypoints)
+DELETE FROM dbscripts_on_go_template_use WHERE id IN (183295);
+INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Screaming Hall Door
+(183295, 0, 0, 20, 2, 0, 0, @STRINGID+10, 200, 2560, 0, 0, 0, 0, 0, 0, 0, 0,'StringID - Change MovementType to Waypoint Movement');
+
 -- Reworked DBScripts, will be merged into single Inserts when done with full rework
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
@@ -1981,7 +1969,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+24, 13000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - Unpause Waypoints');
 
 DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN @RELAYID+1 AND  @RELAYID+12;
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1866701, 1866702, 1866703, 1866704, 1866705, 1866706, 1873101, 1873102);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1866701, 1866702, 1866703, 1866704, 1866705, 1866706, 1873101, 1873102, 1863201);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Blackheart Inciter RP scripts
 -- Base script at middle point that decides what side he walks next
@@ -2011,6 +1999,10 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1873101, 0, 1, 16, 9349, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ambassador Hellmaw - SMSG_PLAY_SOUND'), 
 -- After initial waypoints he gets another set of waypoints
 (1873102, 0, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ambassador Hellmaw - Change Waypoint path'), 
+-- Murmur room event
+(1863201, 0, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change movement to idle'), 
+(1863201, 0, 1, 36, 0, 0, 0, 18708, 180, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Face Murmur'),
+(1863201, 1000, 0, 1, 376, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Emote State ReadyBow'),
 -- All those scripts are used by either spawn_group_entry or are multiple group waypoints
 (@RELAYID+1, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - choose random path'), 
 (@RELAYID+2, 3000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - set StandState Kneel'),
