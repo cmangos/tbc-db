@@ -74,13 +74,12 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+67, 14, -48.516537, -89.56273, -1.1283104, 100, 0, 0),
 -- Cabal Summoner Murmur Hallway Movements
 -- flavor when door opens
-(@CGUID+76, 1, -175.894, -349.783, 17.166, 5.61996, 4000, 5),
-(@CGUID+76, 2, -156.498, -328.007, 17.1696, 1.6034, 0, 0),
-(@CGUID+76, 3, -156.496, -325.849, 17.0865, 4.73628, 5000, 1863402), -- die permanently
+(@CGUID+76, 1, -175.894, -349.783, 17.166, 100, 100, 5),
+(@CGUID+76, 2, -159.525, -339.691, 17.085, 100, 1000, 0), 
+(@CGUID+76, 3, -156.471, -325.668, 17.086, 100, 0, 0),
 -- flavor when door opens
-(@CGUID+77, 1, -156.498, -328.007, 17.1696, 100, 2000, 5),
-(@CGUID+77, 2, -156.9866, -313.37146, 17.08601, 100, 5000, 1863402), -- die permanently
-
+(@CGUID+77, 1, -156.498, -328.007, 17.1696, 100, 100, 5),
+(@CGUID+77, 2, -156.987, -313.371, 17.0860, 100, 5000, 0), -- die permanently
 -- stationary pack 1
 (@CGUID+78, 1, -135.2006, -360.271, 17.165, 100, 2000, 5),
 (@CGUID+78, 2, -157.0379, -354.905, 17.084, 4.7064, 5000, 1863401), -- idle
@@ -642,8 +641,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+73, 18633, 555, 3, -265.829, 0.056211, 8.15626, 3.68264, 7200, 7200, 0, 0), -- Cabal Acolyte
 (@CGUID+74, 18633, 555, 3, -272.845, -76.4279, 8.15625, 2.6529, 7200, 7200, 0, 0), -- Cabal Acolyte
 (@CGUID+75, 0, 555, 3, -454.315, -183.092, 12.7725, 5.06145, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+76, 18634, 555, 3, -175.894, -349.783, 17.166, 5.61996, 7200, 7200, 0, 0), -- Cabal Summoner
-(@CGUID+77, 18634, 555, 3, -156.498, -328.007, 17.1696, 3.14159, 7200, 7200, 0, 0), -- Cabal Summoner
+(@CGUID+76, 18634, 555, 3, -175.894, -349.783, 17.166, 5.68544, 7200, 7200, 0, 2), -- Cabal Summoner
+(@CGUID+77, 18634, 555, 3, -156.498, -328.007, 17.1696, 3.14159, 7200, 7200, 0, 2), -- Cabal Summoner
 (@CGUID+78, 18634, 555, 3, -135.201, -360.271, 17.1652, 3.49066, 7200, 7200, 0, 0), -- Cabal Summoner
 (@CGUID+79, 0, 555, 3, -136.037, -343.41, 17.1648, 2.96626, 5, 10, 0, 2), -- spawn_group_entry
 (@CGUID+80, 18634, 555, 3, -141.612, -363.212, 17.166, 4.2586, 7200, 7200, 0, 0), -- Cabal Summoner
@@ -1151,8 +1150,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Zealot Fanatic Fanatic Zealot (@SGGUID+52)
 -- Cultist Fanatic Cultist Zealot (@SGGUID+53)
 -- Zealot Fanatic Cultist Fanatic (@SGGUID+53)
-(@SGGUID+52, 'Shadow Labyrinth - Group 035 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 01', 0, 0, @SGGUID+22, 1, @STRINGID+6),
-(@SGGUID+53, 'Shadow Labyrinth - Group 035 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 01', 0, 0, @SGGUID+23, 1, @STRINGID+6),
+(@SGGUID+52, 'Shadow Labyrinth - Group 035 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 01', 0, 0, @SGGUID+21, 1, @STRINGID+6),
+(@SGGUID+53, 'Shadow Labyrinth - Group 035 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 01', 0, 0, @SGGUID+22, 1, @STRINGID+6),
 -- Right side front hill skeletons
 (@SGGUID+54, 'Shadow Labyrinth - Group 036 - Tortured Skeleton (10)', 0, 0, 0, 1, 0),
 -- left side front hill skeletons
@@ -1166,28 +1165,28 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Zealot Fanatic Fanatic Zealot (@SGGUID+59)
 -- Zealot Fanatic Cultist Fanatic (@SGGUID+59)
 -- Cultist Fanatic Cultist Zealot (@SGGUID+59)
-(@SGGUID+58, 'Shadow Labyrinth - Group 040 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 02', 0, 0, @SGGUID+24, 1, @STRINGID+7),
-(@SGGUID+59, 'Shadow Labyrinth - Group 040 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 02', 0, 0, @SGGUID+25, 1, @STRINGID+7),
+(@SGGUID+58, 'Shadow Labyrinth - Group 040 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 02', 0, 0, @SGGUID+23, 1, @STRINGID+7),
+(@SGGUID+59, 'Shadow Labyrinth - Group 040 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 02', 0, 0, @SGGUID+24, 1, @STRINGID+7),
 -- Static Group before boss 2 combinations
 -- Zealot, Fanatic Fanatic Zealot
 -- Cultist Fanatic Cultist Zealot
-(@SGGUID+60, 'Shadow Labyrinth - Group 041 - Cabal Fanatic (2) | Cabal Zealot (2)', 0, 0, @SGGUID+26, 1, @STRINGID+8),
-(@SGGUID+61, 'Shadow Labyrinth - Group 041 - Cabal Cultist (2) | Cabal Zealot | Cabal Fanatic', 0, 0, @SGGUID+27, 1, @STRINGID+8),
+(@SGGUID+60, 'Shadow Labyrinth - Group 041 - Cabal Fanatic (2) | Cabal Zealot (2)', 0, 0, @SGGUID+25, 1, @STRINGID+8),
+(@SGGUID+61, 'Shadow Labyrinth - Group 041 - Cabal Cultist (2) | Cabal Zealot | Cabal Fanatic', 0, 0, @SGGUID+26, 1, @STRINGID+8),
 -- Group that runs in circle around the boss
 -- Zealot Fanatic Fanatic Zealot (@SGGUID+62)
 -- Zealot Fanatic Cultist Fanatic (@SGGUID+62)
 -- Cultist Fanatic Cultist Zealot (@SGGUID+62)
-(@SGGUID+62, 'Shadow Labyrinth - Group 042 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 03', 0, 0, @SGGUID+28, 1, @STRINGID+9),
-(@SGGUID+63, 'Shadow Labyrinth - Group 042 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 03', 0, 0, @SGGUID+29, 1, @STRINGID+9),
+(@SGGUID+62, 'Shadow Labyrinth - Group 042 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 03', 0, 0, @SGGUID+27, 1, @STRINGID+9),
+(@SGGUID+63, 'Shadow Labyrinth - Group 042 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 03', 0, 0, @SGGUID+28, 1, @STRINGID+9),
 -- The Screaming Hall
 (@SGGUID+64, 'Shadow Labyrinth - Group 043 - Cabal Executioner (2)', 0, 0, 0, 1, @STRINGID+10),
-(@SGGUID+65, 'Shadow Labyrinth - Group 043 - Cabal Executioner (2) | Cabal Spellbinder | Cabal Summoner', 0, 0, 0, 1, @STRINGID+10),
-(@SGGUID+66, 'Shadow Labyrinth - Group 043 - Cabal Executioner (2) | Cabal Spellbinder | Cabal Summoner', 0, 0, 0, 1, @STRINGID+10),
-(@SGGUID+67, 'Shadow Labyrinth - Group 043 - Cabal Executioner (2) | Cabal Spellbinder | Cabal Summoner', 0, 0, 0, 1, @STRINGID+10),
-(@SGGUID+68, 'Shadow Labyrinth - Group 043 - Cabal Spellbinder (3)', 0, 0, 0, 1, 0);
-
--- Solo NPCs that have a fast respawn time, they stop respawn if the assigned group dies
--- (@SGGUID+69, 'Shadow Labyrinth - Group 044 - Cabal Summoner/Cabal Spellbinder', 0, 0, 0, 1, @STRINGID+10),
+(@SGGUID+65, 'Shadow Labyrinth - Group 044 - Cabal Executioner (2) | Cabal Spellbinder | Cabal Summoner', 0, 0, 0, 1, @STRINGID+10),
+(@SGGUID+66, 'Shadow Labyrinth - Group 045 - Cabal Executioner (2) | Cabal Spellbinder | Cabal Summoner', 0, 0, 0, 1, @STRINGID+10),
+(@SGGUID+67, 'Shadow Labyrinth - Group 046 - Cabal Executioner (2) | Cabal Spellbinder | Cabal Summoner', 0, 0, 0, 1, @STRINGID+10),
+(@SGGUID+68, 'Shadow Labyrinth - Group 047 - Cabal Spellbinder (3)', 0, 0, 0, 1, 0),
+-- Runner groups
+-- 2 Cabal Summoner that get active when door opens, run their waypoints and then die
+(@SGGUID+69, 'Shadow Labyrinth - Group 048 - Cabal Summoner (2)', 0, 0, @SGGUID+29, 0, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 18633, 0, 2, 0), (@SGGUID+3, 18635, 0, 2, 0), -- Cabal Acolyte, Cabal Deathsworn
@@ -1211,9 +1210,7 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+49, 18633, 0, 1, 0), (@SGGUID+49, 18635, 0, 1, 0), -- Cabal Acolyte, Cabal Deathsworn
 (@SGGUID+53, 18638, 1, 1, 0),  (@SGGUID+53, 18830, 0, 2, 0), -- Cabal Zealot, Cabal Fanatic
 (@SGGUID+59, 18638, 1, 1, 0),  (@SGGUID+59, 18830, 0, 2, 0), -- Cabal Zealot, Cabal Fanatic
-(@SGGUID+63, 18638, 1, 1, 0),  (@SGGUID+63, 18830, 0, 2, 0), -- Cabal Zealot, Cabal Fanatic
--- Screaming Hall
-(@SGGUID+65, 18634, 0, 1, 0),  (@SGGUID+65, 18639, 0, 1, 0); -- Cabal Summoner, Cabal Spellbinder
+(@SGGUID+63, 18638, 1, 1, 0),  (@SGGUID+63, 18830, 0, 2, 0); -- Cabal Zealot, Cabal Fanatic
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+89, 0, 0), -- Cabal Acolyte
@@ -1524,8 +1521,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+68, @CGUID+119, 0, 0), -- Cabal Spellbinder
 (@SGGUID+68, @CGUID+120, 1, 0), -- Cabal Spellbinder
-(@SGGUID+68, @CGUID+121, 2, 0); -- Cabal Spellbinder
+(@SGGUID+68, @CGUID+121, 2, 0), -- Cabal Spellbinder
 
+(@SGGUID+69, @CGUID+76, 0, 0), -- Cabal Spellbinder
+(@SGGUID+69, @CGUID+77, 1, 0); -- Cabal Spellbinder
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+12, @SGGUID+13),
@@ -1636,7 +1635,10 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@SGGUID+10, 'Shadow Labyrinth - Group 034'),
 (@SGGUID+11, 'Shadow Labyrinth - Group 040'),
 (@SGGUID+12, 'Shadow Labyrinth - Group 041'),
-(@SGGUID+13, 'Shadow Labyrinth - Group 042');
+(@SGGUID+13, 'Shadow Labyrinth - Group 042'),
+-- The Screaming Hall - Murmur Worldstates
+-- Gets active when door opens
+(@SGGUID+14, 'Shadow Labyrinth - Group 048');
 
 DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @SGGUID+1 AND @SGGUID+29;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
@@ -1669,17 +1671,20 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+19, 42, @SGGUID+9, 1, 0, 0, 0, 'Shadow Labyrinth - Group 034 -  Type 1'),
 (@SGGUID+20, 42, @SGGUID+9, 1, 1, 0, 0, 'Shadow Labyrinth - Group 034 -  Type 2'),
 
-(@SGGUID+22, 42, @SGGUID+10, 1, 0, 0, 0, 'Shadow Labyrinth - Group 035 -  Type 1'),
-(@SGGUID+23, 42, @SGGUID+10, 1, 1, 0, 0, 'Shadow Labyrinth - Group 035 -  Type 2'),
+(@SGGUID+21, 42, @SGGUID+10, 1, 0, 0, 0, 'Shadow Labyrinth - Group 035 -  Type 1'),
+(@SGGUID+22, 42, @SGGUID+10, 1, 1, 0, 0, 'Shadow Labyrinth - Group 035 -  Type 2'),
 
-(@SGGUID+24, 42, @SGGUID+11, 1, 0, 0, 0, 'Shadow Labyrinth - Group 040 -  Type 1'),
-(@SGGUID+25, 42, @SGGUID+11, 1, 1, 0, 0, 'Shadow Labyrinth - Group 040 -  Type 2'),
+(@SGGUID+23, 42, @SGGUID+11, 1, 0, 0, 0, 'Shadow Labyrinth - Group 040 -  Type 1'),
+(@SGGUID+24, 42, @SGGUID+11, 1, 1, 0, 0, 'Shadow Labyrinth - Group 040 -  Type 2'),
 
-(@SGGUID+26, 42, @SGGUID+12, 1, 0, 0, 0, 'Shadow Labyrinth - Group 041 -  Type 1'),
-(@SGGUID+27, 42, @SGGUID+12, 1, 1, 0, 0, 'Shadow Labyrinth - Group 041 -  Type 2'),
+(@SGGUID+25, 42, @SGGUID+12, 1, 0, 0, 0, 'Shadow Labyrinth - Group 041 -  Type 1'),
+(@SGGUID+26, 42, @SGGUID+12, 1, 1, 0, 0, 'Shadow Labyrinth - Group 041 -  Type 2'),
 
-(@SGGUID+28, 42, @SGGUID+13, 1, 0, 0, 0, 'Shadow Labyrinth - Group 042 -  Type 1'),
-(@SGGUID+29, 42, @SGGUID+13, 1, 1, 0, 0, 'Shadow Labyrinth - Group 042 -  Type 2');
+(@SGGUID+27, 42, @SGGUID+13, 1, 0, 0, 0, 'Shadow Labyrinth - Group 042 -  Type 1'),
+(@SGGUID+28, 42, @SGGUID+13, 1, 1, 0, 0, 'Shadow Labyrinth - Group 042 -  Type 2'),
+-- the Screaming Hall
+-- Despawned on default, spawns group 48 adter door opens
+(@SGGUID+29, 42, @SGGUID+14, 1, 1, 0, 0, 'Shadow Labyrinth - Group 048');
 
 -- StringIDs
 DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+9;
@@ -1834,7 +1839,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1863402,1873201);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1873201);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1873201, 1000, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1873201, 5000, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
@@ -1849,7 +1854,8 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 DELETE FROM dbscripts_on_go_template_use WHERE id IN (183295);
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Screaming Hall Door
-(183295, 0, 0, 20, 2, 0, 0, @STRINGID+10, 200, 2560, 0, 0, 0, 0, 0, 0, 0, 0,'StringID - Change MovementType to Waypoint Movement');
+(183295, 0, 0, 20, 2, 0, 0, @STRINGID+10, 200, 2560, 0, 0, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - StringID - Change MovementType to Waypoint Movement'),
+(183295, 0, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+14, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate');
 
 -- Reworked DBScripts, will be merged into single Inserts when done with full rework
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
