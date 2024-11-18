@@ -31,11 +31,10 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+49, 2, -149.8171, -378.224, 17.0814, 100, 5000, 1863201),
 (@CGUID+50, 1, -173.133, -366.970, 17.1661, 100, 2000, 5),
 (@CGUID+50, 2, -163.108, -374.718, 17.0811, 100, 5000, 1863201),
-
-(@CGUID+51, 1, -142.203, -390.029, 17.0806, 4.4855, 2000, 5),
-(@CGUID+51, 2, -148.384, -417.065, 17.0784, 4.59443, 5000, 1863201),
-(@CGUID+52, 1, -140.54, -410.52, 17.079, 1.44862, 2000, 5),
-(@CGUID+52, 2, -162.943, -421.588, 17.0776, 4.77894, 5000, 1863201),
+(@CGUID+51, 1, -142.203, -390.029, 17.1639, 100, 2000, 5),
+(@CGUID+51, 2, -148.384, -417.065, 17.0784, 100, 5000, 1863201),
+(@CGUID+52, 1, -140.541, -410.520, 17.162, 100, 2000, 5),
+(@CGUID+52, 2, -163.242, -421.735, 17.078, 100, 5000, 1863201),
 -- Will get sleep state at last waypoint and stop moving
 (@CGUID+53, 1, -91.0184, -63.4225, -1.05104, 100, 0, 0),
 (@CGUID+53, 2, -73.312515, -47.810535, -1.1282725, 100, 0, 0),
@@ -98,8 +97,8 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+80, 2, -157.923, -374.597, 17.0818, 4.7126, 5000, 1863401), -- idle
 
 -- stationary pack 3
-(@CGUID+81, 1, -171.826, -401.41, 17.0799, 0.890118, 2000, 5),
-(@CGUID+81, 2, -158.9, -420.073, 17.0777, 4.7254, 5000, 1863401), -- idle
+(@CGUID+81, 1, -171.826, -401.410, 17.163, 100, 2000, 5),
+(@CGUID+81, 2, -158.900, -420.073, 17.078, 4.725, 5000, 1863401), -- idle
 
 -- runner #2 (fast respawn)
 (@CGUID+82, 1, -134.274, -388.795, 17.1657, 3.14159, 1000, 5),
@@ -228,8 +227,8 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+113, 2, -153.032, -375.780, 17.0816, 4.6724, 5000, 1863401),
 
 -- stationary pack 3
-(@CGUID+115, 1, -143.33, -397.343, 17.0801, 2.37365, 2000, 5),
-(@CGUID+115, 2, -153.364, -417.684, 17.078, 4.65555, 5000, 1863401),
+(@CGUID+115, 1, -143.33, -397.343, 17.163, 100, 2000, 5),
+(@CGUID+115, 2, -153.364, -417.684, 17.078, 4.6555, 5000, 1863401),
 
 -- runner #3 (fast respawn)
 (@CGUID+116, 1, -179.281, -350.271, 17.1665, 5.98648, 1000, 5),
@@ -546,21 +545,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (18891, 0, 0, 1, 0, 0, NULL), -- Spy To'gun
 (21159, 0, 0, 1, 0, 0, NULL); -- Containment Beam
 
-INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
--- Murmur Hallway
--- group 4
-(@CGUID+52, @CGUID+51, 3), -- Cabal Executioner -> Cabal Executioner
-(@CGUID+81, @CGUID+51, 3), -- Cabal Summoner -> Cabal Executioner
-(@CGUID+115, @CGUID+51, 3), -- Cabal Spellbinder -> Cabal Executioner
--- runner 3
-(@CGUID+82, @CGUID+51, 1024), -- Cabal Summoner/Spellbinder -> Cabal Executioner
-
--- group 5
-(@CGUID+120, @CGUID+119, 3), -- Cabal Spellbinder -> Cabal Spellbinder
-(@CGUID+121, @CGUID+119, 3), -- Cabal Spellbinder -> Cabal Spellbinder
--- runners 4 & 5
-(@CGUID+123, @CGUID+119, 1024), -- Cabal Summoner/Spellbinder -> Cabal Spellbinder
-(@CGUID+122, @CGUID+119, 1024); -- Cabal Summoner/Spellbinder -> Cabal Spellbinder
+-- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (19224, 555, 18732, 4112, 0), -- Void Portal -> Grandmaster Vorpil
@@ -632,8 +617,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+48, 18632, 555, 3, -174.082, -354.553, 17.1667, 5.35816, 7200, 7200, 0, 0), -- Cabal Executioner
 (@CGUID+49, 18632, 555, 3, -171.642, -370.791, 17.1651, 0.523599, 7200, 7200, 0, 0), -- Cabal Executioner
 (@CGUID+50, 18632, 555, 3, -173.133, -366.97, 17.166, 5.91667, 7200, 7200, 0, 0), -- Cabal Executioner
-(@CGUID+51, 18632, 555, 3, -142.203, -390.029, 17.0806, 4.4855, 7200, 7200, 0, 0), -- Cabal Executioner
-(@CGUID+52, 18632, 555, 3, -140.54, -410.52, 17.079, 1.44862, 7200, 7200, 0, 0), -- Cabal Executioner
+(@CGUID+51, 18632, 555, 3, -142.203, -390.029, 17.1639, 4.4855, 7200, 7200, 0, 0), -- Cabal Executioner
+(@CGUID+52, 18632, 555, 3, -140.54, -410.52, 17.1623, 1.44862, 7200, 7200, 0, 0), -- Cabal Executioner
 (@CGUID+53, 0, 555, 3, -91.0184, -63.4225, -1.05104, 0.31254, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+54, 18635, 555, 3, -47.365, -33.8044, -1.04484, 0.331613, 7200, 7200, 0, 0), -- Cabal Deathsworn
 (@CGUID+55, 18635, 555, 3, -41.8571, -33.4506, -1.04484, 2.87979, 7200, 7200, 0, 0), -- Cabal Deathsworn
@@ -662,7 +647,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+78, 18634, 555, 3, -135.201, -360.271, 17.1652, 3.49066, 7200, 7200, 0, 0), -- Cabal Summoner
 (@CGUID+79, 0, 555, 3, -136.037, -343.41, 17.1648, 2.96626, 5, 10, 0, 2), -- spawn_group_entry
 (@CGUID+80, 18634, 555, 3, -141.612, -363.212, 17.166, 4.2586, 7200, 7200, 0, 0), -- Cabal Summoner
-(@CGUID+81, 18634, 555, 3, -171.826, -401.41, 17.0799, 0.890118, 7200, 7200, 0, 0), -- Cabal Summoner
+(@CGUID+81, 18634, 555, 3, -171.826, -401.41, 17.1632, 0.890118, 7200, 7200, 0, 0), -- Cabal Summoner
 (@CGUID+82, 0, 555, 3, -134.274, -388.795, 17.1657, 3.14159, 5, 10, 0, 2), -- creature_spawn_entry
 (@CGUID+83, 18631, 555, 3, -443.04, -193.835, 12.7725, 3.4383, 7200, 7200, 0, 0), -- Cabal Cultist
 (@CGUID+84, 0, 555, 3, -446.493, -192.12, 12.7725, 4.72984, 7200, 7200, 0, 0), -- spawn_group_entry
@@ -696,7 +681,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+112, 18639, 555, 3, -139.912, -353.917, 17.1665, 5.75959, 7200, 7200, 0, 0), -- Cabal Spellbinder
 (@CGUID+113, 18639, 555, 3, -140.42, -369.956, 17.1648, 3.03687, 7200, 7200, 0, 0), -- Cabal Spellbinder
 (@CGUID+114, 18633, 555, 3, -454.315, -183.092, 12.7725, 5.06145, 7200, 7200, 0, 0), -- Cabal Acolyte
-(@CGUID+115, 18639, 555, 3, -143.33, -397.343, 17.0801, 2.37365, 7200, 7200, 0, 0), -- Cabal Spellbinder
+(@CGUID+115, 18639, 555, 3, -143.33, -397.343, 17.1634, 2.37365, 7200, 7200, 0, 0), -- Cabal Spellbinder
 (@CGUID+116, 0, 555, 3, -179.281, -350.271, 17.1665, 5.98648, 5, 10, 0, 2), -- creature_spawn_entry
 (@CGUID+117, 18635, 555, 3, -453.685, -186.804, 12.7725, 1.53589, 7200, 7200, 0, 0), -- Cabal Deathsworn
 (@CGUID+118, 18635, 555, 3, -454.978, -185.25, 12.7725, 0.05236, 7200, 7200, 0, 0), -- Cabal Deathsworn
@@ -1199,7 +1184,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+65, 'Shadow Labyrinth - Group 043 - Cabal Executioner (2) | Cabal Spellbinder | Cabal Summoner', 0, 0, 0, 1, @STRINGID+10),
 (@SGGUID+66, 'Shadow Labyrinth - Group 043 - Cabal Executioner (2) | Cabal Spellbinder | Cabal Summoner', 0, 0, 0, 1, @STRINGID+10),
 (@SGGUID+67, 'Shadow Labyrinth - Group 043 - Cabal Executioner (2) | Cabal Spellbinder | Cabal Summoner', 0, 0, 0, 1, @STRINGID+10),
-(@SGGUID+68, 'Shadow Labyrinth - Group 043 - Cabal Spellbinder (3)', 0, 0, 0, 1, 0),
+(@SGGUID+68, 'Shadow Labyrinth - Group 043 - Cabal Spellbinder (3)', 0, 0, 0, 1, 0);
 
 -- Solo NPCs that have a fast respawn time, they stop respawn if the assigned group dies
 -- (@SGGUID+69, 'Shadow Labyrinth - Group 044 - Cabal Summoner/Cabal Spellbinder', 0, 0, 0, 1, @STRINGID+10),
@@ -1528,9 +1513,19 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+65, @CGUID+48, 3, 0), -- Cabal Executioner
 
 (@SGGUID+66, @CGUID+49, 0, 0), -- Cabal Executioner
-(@SGGUID+66, @CGUID+50, 1, 0), -- Cabal Spellbinder
+(@SGGUID+66, @CGUID+113, 1, 0), -- Cabal Spellbinder
 (@SGGUID+66, @CGUID+80, 2, 0), -- Cabal Summoner
-(@SGGUID+66, @CGUID+113, 3, 0), -- Cabal Executioner
+(@SGGUID+66, @CGUID+50, 3, 0), -- Cabal Executioner
+
+(@SGGUID+67, @CGUID+51, 0, 0), -- Cabal Executioner
+(@SGGUID+67, @CGUID+115, 1, 0), -- Cabal Spellbinder
+(@SGGUID+67, @CGUID+81, 2, 0), -- Cabal Summoner
+(@SGGUID+67, @CGUID+52, 3, 0), -- Cabal Executioner
+
+(@SGGUID+68, @CGUID+119, 0, 0), -- Cabal Spellbinder
+(@SGGUID+68, @CGUID+120, 1, 0), -- Cabal Spellbinder
+(@SGGUID+68, @CGUID+121, 2, 0); -- Cabal Spellbinder
+
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+12, @SGGUID+13),
