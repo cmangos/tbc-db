@@ -1161,13 +1161,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+68, 'Shadow Labyrinth - Group 047 - Cabal Spellbinder (3)', 0, 0, 0, 1, 0),
 -- Runner groups
 -- 2 Cabal Summoner that get active when door opens, run their waypoints and then die
-(@SGGUID+69, 'Shadow Labyrinth - Group 048 - Cabal Summoner (2)', 0, 0, @SGGUID+29, 0, 0),
+(@SGGUID+69, 'Shadow Labyrinth - Group 048 - Cabal Summoner (2)', 0, 0, @SGGUID+29, 0, @STRINGID+11),
 -- Running npc between first and 2nd group
 -- Spawns on door opening and stops respawning when Group 043 is dead
-(@SGGUID+70, 'Shadow Labyrinth - Group 049 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+30, 0, @STRINGID+11),
-(@SGGUID+71, 'Shadow Labyrinth - Group 050 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+31, 0, @STRINGID+11),
-(@SGGUID+72, 'Shadow Labyrinth - Group 051 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+32, 0, @STRINGID+11),
-(@SGGUID+73, 'Shadow Labyrinth - Group 052 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+32, 0, @STRINGID+11);
+(@SGGUID+70, 'Shadow Labyrinth - Group 049 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+30, 0, @STRINGID+12),
+(@SGGUID+71, 'Shadow Labyrinth - Group 050 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+31, 0, @STRINGID+12),
+(@SGGUID+72, 'Shadow Labyrinth - Group 051 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+32, 0, @STRINGID+12),
+(@SGGUID+73, 'Shadow Labyrinth - Group 052 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+32, 0, @STRINGID+12);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 18633, 0, 2, 0), (@SGGUID+3, 18635, 0, 2, 0), -- Cabal Acolyte, Cabal Deathsworn
@@ -1685,7 +1685,7 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+32, 42, @SGGUID+17, 1, 1, 0, 0, 'Shadow Labyrinth - Group 051');
 
 -- StringIDs
-DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+9;
+DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+12;
 INSERT INTO `string_id` (Id, Name) VALUES
 (@STRINGID+1, 'SL_CABAL_WARLOCK_01'), 
 (@STRINGID+2, 'SL_CABAL_FAMILIAR_01'),
@@ -1701,8 +1701,9 @@ INSERT INTO `string_id` (Id, Name) VALUES
 -- The Screaming Hall
 -- String assigned to all npcs that have a waypoint after door opens 
 (@STRINGID+10, 'SL_MURMUR_ROOM_01'),
+(@STRINGID+11, 'SL_MURMUR_WRATH_TARGET_01'),
 -- String assigned to all npcs that have a small respawn time, running between groups and can get killed by murmur
-(@STRINGID+11, 'SL_MURMUR_WRATH_TARGETS');
+(@STRINGID+12, 'SL_MURMUR_WRATH_TARGET_02');
 
 
 -- =======
