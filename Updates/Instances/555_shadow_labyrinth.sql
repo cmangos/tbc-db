@@ -98,12 +98,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 -- stationary pack 3
 (@CGUID+81, 1, -171.826, -401.410, 17.163, 100, 2000, 5),
 (@CGUID+81, 2, -158.900, -420.073, 17.078, 4.725, 5000, 1863401), -- idle
-
--- runner #2 (fast respawn)
-(@CGUID+82, 1, -134.274, -388.795, 17.1657, 3.14159, 1000, 5),
-(@CGUID+82, 2, -145.634, -396.327, 17.0802, 4.61994, 10000, 0),
-(@CGUID+82, 3, -164.682, -401.259, 17.0797, 4.61994, 10000, 0),
-(@CGUID+82, 4, -155.47, -402.097, 17.0795, 4.61994, 10000, 0),
 -- ----------------------------------------------
 -- Reworked Waypoints
 -- Cabal Acolyte/Cabal Deathsworn
@@ -228,21 +222,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 -- stationary pack 3
 (@CGUID+115, 1, -143.33, -397.343, 17.163, 100, 2000, 5),
 (@CGUID+115, 2, -153.364, -417.684, 17.078, 4.6555, 5000, 1863401),
-
--- runner #3 (fast respawn)
-(@CGUID+116, 1, -179.281, -350.271, 17.1665, 5.98648, 1000, 5),
-(@CGUID+116, 2, -164.621, -364.47, 17.0824, 4.77388, 10000, 0),
-(@CGUID+116, 3, -149.681, -366.439, 17.0824, 4.61994, 10000, 0),
-
--- runner #4 (fast respawn)
-(@CGUID+122, 1, -176.776, -434.265, 17.1622, 0.279253, 1000, 5),
-(@CGUID+122, 2, -165.452, -432.216, 17.0783, 4.61994, 10000, 0),
-(@CGUID+122, 3, -157.677, -431.365, 17.0778, 4.61994, 10000, 0),
-(@CGUID+122, 4, -151.013, -429.674, 17.0777, 4.61994, 10000, 0),
-
--- runner #5 (fast respawn)
-(@CGUID+123, 1, -130.551, -443.696, 17.164, 3.14527, 1000, 5),
-(@CGUID+123, 2, -149.68, -443.899, 17.0779, 4.60428, 10000, 0),
 -- ----------------------------------------------
 (@CGUID+140, 1, -253.06, -264.024, 17.0864, 3.15559, 13000, 1873201),
 (@CGUID+171, 1, -418.73178,-129.20265,12.75629, 100, 0, 0),
@@ -551,10 +530,6 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (19226, 555, 18732, 4112, 0); -- Void Traveler -> Grandmaster Vorpil
 
 INSERT INTO creature_spawn_entry (guid, entry) VALUES
-(@CGUID+82, 18634), (@CGUID+82, 18639), -- Cabal Summoner, Cabal Spellbinder
-(@CGUID+116, 18634), (@CGUID+116, 18639), -- Cabal Summoner, Cabal Spellbinder
-(@CGUID+122, 18634), (@CGUID+122, 18639), -- Cabal Summoner, Cabal Spellbinder
-(@CGUID+123, 18634), (@CGUID+123, 18639), -- Cabal Summoner, Cabal Spellbinder
 -- Needed after rework
 (@CGUID+248, 18641), (@CGUID+248, 18642), (@CGUID+248, 18663), -- Cabal Familiar, Fel Guardhound, Maiden of Discipline
 (@CGUID+250, 18641), (@CGUID+250, 18642), (@CGUID+250, 18663), -- Cabal Familiar, Fel Guardhound, Maiden of Discipline
@@ -647,7 +622,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+79, 0, 555, 3, -136.037, -343.41, 17.1648, 2.96626, 5, 10, 0, 2), -- spawn_group_entry
 (@CGUID+80, 18634, 555, 3, -141.612, -363.212, 17.166, 4.2586, 7200, 7200, 0, 0), -- Cabal Summoner
 (@CGUID+81, 18634, 555, 3, -171.826, -401.41, 17.1632, 0.890118, 7200, 7200, 0, 0), -- Cabal Summoner
-(@CGUID+82, 0, 555, 3, -134.274, -388.795, 17.1657, 3.14159, 5, 10, 0, 2), -- creature_spawn_entry
+(@CGUID+82, 0, 555, 3, -179.281, -350.271, 17.1665, 5.98648, 5, 10, 0, 0), -- spawn_group_entry
 (@CGUID+83, 18631, 555, 3, -443.04, -193.835, 12.7725, 3.4383, 7200, 7200, 0, 0), -- Cabal Cultist
 (@CGUID+84, 0, 555, 3, -446.493, -192.12, 12.7725, 4.72984, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+85, 0, 555, 3, -91.7096, -19.436, -1.04486, 6.08963, 7200, 7200, 0, 2), -- spawn_group_entry
@@ -681,14 +656,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+113, 18639, 555, 3, -140.42, -369.956, 17.1648, 3.03687, 7200, 7200, 0, 0), -- Cabal Spellbinder
 (@CGUID+114, 18633, 555, 3, -454.315, -183.092, 12.7725, 5.06145, 7200, 7200, 0, 0), -- Cabal Acolyte
 (@CGUID+115, 18639, 555, 3, -143.33, -397.343, 17.1634, 2.37365, 7200, 7200, 0, 0), -- Cabal Spellbinder
-(@CGUID+116, 0, 555, 3, -179.281, -350.271, 17.1665, 5.98648, 5, 10, 0, 2), -- creature_spawn_entry
+(@CGUID+116, 0, 555, 3, -136.037, -343.41, 17.1648, 2.96626, 5, 10, 0, 0), -- spawn_group_entry
 (@CGUID+117, 18635, 555, 3, -453.685, -186.804, 12.7725, 1.53589, 7200, 7200, 0, 0), -- Cabal Deathsworn
 (@CGUID+118, 18635, 555, 3, -454.978, -185.25, 12.7725, 0.05236, 7200, 7200, 0, 0), -- Cabal Deathsworn
 (@CGUID+119, 18639, 555, 3, -151.682, -461.163, 17.1606, 4.57276, 7200, 7200, 0, 0), -- Cabal Spellbinder
 (@CGUID+120, 18639, 555, 3, -156.284, -461.871, 17.1606, 4.69494, 7200, 7200, 0, 0), -- Cabal Spellbinder
 (@CGUID+121, 18639, 555, 3, -160.956, -461.858, 17.1606, 4.90438, 7200, 7200, 0, 0), -- Cabal Spellbinder
-(@CGUID+122, 0, 555, 3, -176.776, -434.265, 17.1622, 0.279253, 5, 10, 0, 2), -- creature_spawn_entry
-(@CGUID+123, 0, 555, 3, -130.551, -443.696, 17.164, 3.14527, 5, 10, 0, 2), -- creature_spawn_entry
+(@CGUID+122, 0, 555, 3, -176.776, -434.265, 17.1622, 0.144797, 5, 10, 0, 0), -- spawn_group_entry
+(@CGUID+123, 0, 555, 3, -130.551, -443.696, 17.164, 3.15221, 5, 10, 0, 0), -- spawn_group_entry
 (@CGUID+124, 18640, 555, 3, -51.2688, -78.5158, -1.0449, 2.49582, 7200, 7200, 0, 0), -- Cabal Warlock
 (@CGUID+125, 18640, 555, 3, -74.4987, -77.2237, -1.04497, 1.55334, 7200, 7200, 0, 0), -- Cabal Warlock
 (@CGUID+126, 18640, 555, 3, -259.324, 5.18744, 8.15627, 3.64774, 7200, 7200, 0, 0), -- Cabal Warlock
@@ -1186,7 +1161,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+68, 'Shadow Labyrinth - Group 047 - Cabal Spellbinder (3)', 0, 0, 0, 1, 0),
 -- Runner groups
 -- 2 Cabal Summoner that get active when door opens, run their waypoints and then die
-(@SGGUID+69, 'Shadow Labyrinth - Group 048 - Cabal Summoner (2)', 0, 0, @SGGUID+29, 0, 0);
+(@SGGUID+69, 'Shadow Labyrinth - Group 048 - Cabal Summoner (2)', 0, 0, @SGGUID+29, 0, 0),
+-- Running npc between first and 2nd group
+-- Spawns on door opening and stops respawning when Group 043 is dead
+(@SGGUID+70, 'Shadow Labyrinth - Group 049 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+30, 0, @STRINGID+11),
+(@SGGUID+71, 'Shadow Labyrinth - Group 050 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+31, 0, @STRINGID+11),
+(@SGGUID+72, 'Shadow Labyrinth - Group 051 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+32, 0, @STRINGID+11),
+(@SGGUID+73, 'Shadow Labyrinth - Group 052 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+32, 0, @STRINGID+11);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 18633, 0, 2, 0), (@SGGUID+3, 18635, 0, 2, 0), -- Cabal Acolyte, Cabal Deathsworn
@@ -1210,7 +1191,12 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+49, 18633, 0, 1, 0), (@SGGUID+49, 18635, 0, 1, 0), -- Cabal Acolyte, Cabal Deathsworn
 (@SGGUID+53, 18638, 1, 1, 0),  (@SGGUID+53, 18830, 0, 2, 0), -- Cabal Zealot, Cabal Fanatic
 (@SGGUID+59, 18638, 1, 1, 0),  (@SGGUID+59, 18830, 0, 2, 0), -- Cabal Zealot, Cabal Fanatic
-(@SGGUID+63, 18638, 1, 1, 0),  (@SGGUID+63, 18830, 0, 2, 0); -- Cabal Zealot, Cabal Fanatic
+(@SGGUID+63, 18638, 1, 1, 0),  (@SGGUID+63, 18830, 0, 2, 0), -- Cabal Zealot, Cabal Fanatic
+
+(@SGGUID+70, 18634, 0, 1, 0),  (@SGGUID+70, 18639, 0, 1, 0), -- Cabal Summoner, Cabal Spellbinder
+(@SGGUID+71, 18634, 0, 1, 0),  (@SGGUID+71, 18639, 0, 1, 0), -- Cabal Summoner, Cabal Spellbinder
+(@SGGUID+72, 18634, 0, 1, 0),  (@SGGUID+72, 18639, 0, 1, 0), -- Cabal Summoner, Cabal Spellbinder
+(@SGGUID+73, 18634, 0, 1, 0),  (@SGGUID+73, 18639, 0, 1, 0); -- Cabal Summoner, Cabal Spellbinder
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+89, 0, 0), -- Cabal Acolyte
@@ -1524,7 +1510,13 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+68, @CGUID+121, 2, 0), -- Cabal Spellbinder
 
 (@SGGUID+69, @CGUID+76, 0, 0), -- Cabal Spellbinder
-(@SGGUID+69, @CGUID+77, 1, 0); -- Cabal Spellbinder
+(@SGGUID+69, @CGUID+77, 1, 0), -- Cabal Spellbinder
+
+(@SGGUID+70, @CGUID+116, 0, 0), -- spawn_group_entry
+(@SGGUID+71, @CGUID+82, 0, 0), -- spawn_group_entry
+(@SGGUID+72, @CGUID+122, 0, 0), -- spawn_group_entry
+(@SGGUID+73, @CGUID+123, 0, 0); -- spawn_group_entry
+
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+12, @SGGUID+13),
@@ -1621,7 +1613,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+62, 14, -279.302,-258.68976,12.681697, 100, 100, @RELAYID+12);
 
 
-DELETE FROM worldstate_name WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+13;
+DELETE FROM worldstate_name WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+18;
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 (@SGGUID+1, 'Shadow Labyrinth - Group 001'),
 (@SGGUID+2, 'Shadow Labyrinth - Group 005'),
@@ -1638,9 +1630,12 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@SGGUID+13, 'Shadow Labyrinth - Group 042'),
 -- The Screaming Hall - Murmur Worldstates
 -- Gets active when door opens
-(@SGGUID+14, 'Shadow Labyrinth - Group 048');
+(@SGGUID+14, 'Shadow Labyrinth - Group 048'),
+(@SGGUID+15, 'Shadow Labyrinth - Group 049'),
+(@SGGUID+16, 'Shadow Labyrinth - Group 050'),
+(@SGGUID+17, 'Shadow Labyrinth - Group 051');
 
-DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @SGGUID+1 AND @SGGUID+29;
+DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @SGGUID+1 AND @SGGUID+33;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, @SGGUID+1, 1, 0, 0, 0, 'Shadow Labyrinth - Group 001 -  Type 1'),
 (@SGGUID+2, 42, @SGGUID+1, 1, 1, 0, 0, 'Shadow Labyrinth - Group 001 -  Type 2'),
@@ -1684,7 +1679,10 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+28, 42, @SGGUID+13, 1, 1, 0, 0, 'Shadow Labyrinth - Group 042 -  Type 2'),
 -- the Screaming Hall
 -- Despawned on default, spawns group 48 adter door opens
-(@SGGUID+29, 42, @SGGUID+14, 1, 1, 0, 0, 'Shadow Labyrinth - Group 048');
+(@SGGUID+29, 42, @SGGUID+14, 1, 1, 0, 0, 'Shadow Labyrinth - Group 048'),
+(@SGGUID+30, 42, @SGGUID+15, 1, 1, 0, 0, 'Shadow Labyrinth - Group 049'),
+(@SGGUID+31, 42, @SGGUID+16, 1, 1, 0, 0, 'Shadow Labyrinth - Group 050'),
+(@SGGUID+32, 42, @SGGUID+17, 1, 1, 0, 0, 'Shadow Labyrinth - Group 051');
 
 -- StringIDs
 DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+9;
@@ -1702,7 +1700,11 @@ INSERT INTO `string_id` (Id, Name) VALUES
 (@STRINGID+9, 'SL_VORPIL_ROOM_PATROL_03'),
 -- The Screaming Hall
 -- String assigned to all npcs that have a waypoint after door opens 
-(@STRINGID+10, 'SL_MURMUR_ROOM_01');
+(@STRINGID+10, 'SL_MURMUR_ROOM_01'),
+-- String assigned to all npcs that have a small respawn time, running between groups and can get killed by murmur
+(@STRINGID+11, 'SL_MURMUR_WRATH_TARGETS');
+
+
 -- =======
 -- POOLING
 -- =======
@@ -1854,8 +1856,12 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 DELETE FROM dbscripts_on_go_template_use WHERE id IN (183295);
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Screaming Hall Door
-(183295, 0, 0, 20, 2, 0, 0, @STRINGID+10, 200, 2560, 0, 0, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - StringID - Change MovementType to Waypoint Movement'),
-(183295, 0, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+14, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate');
+(183295, 0, 0, 20, 2, 0, 0, @STRINGID+10, 200, 2560, 0, 0, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - StringID - Change MovementType to Waypoint Movement');
+-- (183295, 0, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+14, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
+-- (183295, 0, 2, 53, 0, 0, 0, 0, 0, 0, @SGGUID+15, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
+-- (183295, 0, 3, 53, 0, 0, 0, 0, 0, 0, @SGGUID+16, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
+-- (183295, 0, 4, 53, 0, 0, 0, 0, 0, 0, @SGGUID+17, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
+-- (183295, 0, 5, 53, 0, 0, 0, 0, 0, 0, @SGGUID+18, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate');
 
 -- Reworked DBScripts, will be merged into single Inserts when done with full rework
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
