@@ -19,21 +19,21 @@ SET @RELAYID := 5550000; -- used for dbscript_relay
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Cabal Executioner Murmur Hallway Movements
-(@CGUID+45, 1, -172.1729, -325.7539, 17.1697, 100, 2000, 5),
+(@CGUID+45, 1, -172.1729, -325.7539, 17.1697, 100, 100, 5),
 (@CGUID+45, 2, -160.339, -328.603, 17.0869, 100, 5000, 1863201),
-(@CGUID+46, 1, -168.532, -352.3019, 17.1662, 100, 2000, 5),
+(@CGUID+46, 1, -168.532, -352.3019, 17.1662, 100, 100, 5),
 (@CGUID+46, 2, -162.415, -350.5678, 17.08354, 100, 5000, 1863201),
-(@CGUID+47, 1, -135.77, -329.128, 17.1687, 100, 2000, 5),
+(@CGUID+47, 1, -135.77, -329.128, 17.1687, 100, 100, 5),
 (@CGUID+47, 2, -152.496, -325.836, 17.086, 100, 5000, 1863201),
-(@CGUID+48, 1, -174.0815, -354.5528, 17.1667, 100, 2000, 5),
+(@CGUID+48, 1, -174.0815, -354.5528, 17.1667, 100, 100, 5),
 (@CGUID+48, 2, -149.6283, -355.9884, 17.0834, 100, 5000, 1863201),
-(@CGUID+49, 1, -171.6416, -370.791, 17.1651, 100, 2000, 5),
+(@CGUID+49, 1, -171.6416, -370.791, 17.1651, 100, 100, 5),
 (@CGUID+49, 2, -149.8171, -378.224, 17.0814, 100, 5000, 1863201),
-(@CGUID+50, 1, -173.133, -366.970, 17.1661, 100, 2000, 5),
+(@CGUID+50, 1, -173.133, -366.970, 17.1661, 100, 100, 5),
 (@CGUID+50, 2, -163.108, -374.718, 17.0811, 100, 5000, 1863201),
-(@CGUID+51, 1, -142.203, -390.029, 17.1639, 100, 2000, 5),
+(@CGUID+51, 1, -142.203, -390.029, 17.1639, 100, 100, 5),
 (@CGUID+51, 2, -148.384, -417.065, 17.0784, 100, 5000, 1863201),
-(@CGUID+52, 1, -140.541, -410.520, 17.162, 100, 2000, 5),
+(@CGUID+52, 1, -140.541, -410.520, 17.162, 100, 100, 5),
 (@CGUID+52, 2, -163.242, -421.735, 17.078, 100, 5000, 1863201),
 -- Will get sleep state at last waypoint and stop moving
 (@CGUID+53, 1, -91.0184, -63.4225, -1.05104, 100, 0, 0),
@@ -81,7 +81,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+77, 1, -156.498, -328.007, 17.1696, 100, 100, 5),
 (@CGUID+77, 2, -156.987, -313.371, 17.0860, 100, 5000, 0), -- die permanently
 -- stationary pack 1
-(@CGUID+78, 1, -135.2006, -360.271, 17.165, 100, 2000, 5),
+(@CGUID+78, 1, -135.2006, -360.271, 17.165, 100, 100, 5),
 (@CGUID+78, 2, -157.0379, -354.905, 17.084, 4.7064, 5000, 1863401), -- idle
 
 -- runner #1 (fast respawn)
@@ -92,11 +92,11 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+79, 5, -162.127, -345.104, 17.084, 4.74018, 10000, 0),
 
 -- stationary pack 2
-(@CGUID+80, 1, -141.612, -363.212, 17.166, 100, 2000, 5),
+(@CGUID+80, 1, -141.612, -363.212, 17.166, 100, 100, 5),
 (@CGUID+80, 2, -157.923, -374.597, 17.0818, 4.7126, 5000, 1863401), -- idle
 
 -- stationary pack 3
-(@CGUID+81, 1, -171.826, -401.410, 17.163, 100, 2000, 5),
+(@CGUID+81, 1, -171.826, -401.410, 17.163, 100, 100, 5),
 (@CGUID+81, 2, -158.900, -420.073, 17.078, 4.725, 5000, 1863401), -- idle
 -- ----------------------------------------------
 -- Reworked Waypoints
@@ -212,15 +212,15 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+101, 51, -281.339, 55.2473, 8.07299, 0, 0, 0),
 -- Cabal Spellbinder Murmur Hallway Movement
 -- stationary pack 1
-(@CGUID+112, 1, -139.912, -353.917, 17.167, 100, 2000, 5),
+(@CGUID+112, 1, -139.912, -353.917, 17.167, 100, 100, 5),
 (@CGUID+112, 2, -153.403, -352.024, 17.084, 4.6815, 5000, 1863401),
 
 -- stationary pack 2
-(@CGUID+113, 1, -140.420, -369.956, 17.1648, 100, 2000, 5),
+(@CGUID+113, 1, -140.420, -369.956, 17.1648, 100, 100, 5),
 (@CGUID+113, 2, -153.032, -375.780, 17.0816, 4.6724, 5000, 1863401),
 
 -- stationary pack 3
-(@CGUID+115, 1, -143.33, -397.343, 17.163, 100, 2000, 5),
+(@CGUID+115, 1, -143.33, -397.343, 17.163, 100, 100, 5),
 (@CGUID+115, 2, -153.364, -417.684, 17.078, 4.6555, 5000, 1863401),
 -- ----------------------------------------------
 (@CGUID+140, 1, -253.06, -264.024, 17.0864, 3.15559, 13000, 1873201),
@@ -2003,11 +2003,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- After initial waypoints he gets another set of waypoints
 (1873102, 0, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ambassador Hellmaw - Change Waypoint path'), 
 -- Murmur room event
-(1863201, 0, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change movement to idle'), 
+(1863201, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change movement to idle'), 
 (1863201, 0, 1, 36, 0, 0, 0, 18708, 180, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Face Murmur'),
 (1863201, 1000, 0, 1, 376, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Emote State ReadyBow'),
 -- Murmur room event
-(1863401, 0, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - Change movement to idle'), 
+(1863401, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - Change movement to idle'), 
 (1863401, 1000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - Emote State ReadyBow'),
 -- All those scripts are used by either spawn_group_entry or are multiple group waypoints
 (@RELAYID+1, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - choose random path'), 
