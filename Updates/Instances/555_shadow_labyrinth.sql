@@ -1966,10 +1966,15 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+23, 7000, 0, 28, 0, 0, 0, @STRINGID+8, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 041 - State stand'),
 -- Group 042 random kneeling
 (@RELAYID+24, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - Pause Waypoints'),
-(@RELAYID+24, 0, 0, 36, 0, 0, 0, 18732, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - Face Grandmaster Vorpil'),
+(@RELAYID+24, 0, 0, 36, 0, 0, 0, 18732, 40, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - Face Grandmaster Vorpil'),
 (@RELAYID+24, 4000, 0, 28, 8, 0, 0, @STRINGID+9, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - State Kneel'),
 (@RELAYID+24, 12000, 0, 28, 0, 0, 0, @STRINGID+9, 5, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - State Stand'),
-(@RELAYID+24, 13000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - Unpause Waypoints');
+(@RELAYID+24, 13000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 042 - Unpause Waypoints'),
+-- Cabal Summoner/Spellbinder script
+-- Only cast spell if murmur is alive to prevent dberror spam, on retail they even cast it if murmur is dead
+(@RELAYID+25, 0, 0, 31, 18708, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - Terminate script'),
+(@RELAYID+25, 100, 1, 15, 33335, 0, 0, 18708, 200, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - Cast Shadow Bolt on Murmur');
+
 
 DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN @RELAYID+1 AND  @RELAYID+12;
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1866701, 1866702, 1866703, 1866704, 1866705, 1866706, 1873101, 1873102, 1863201, 1863401);
@@ -2008,7 +2013,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1863201, 1000, 0, 1, 376, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Emote State ReadyBow'),
 -- Murmur room event
 (1863401, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - Change movement to idle'), 
-(1863401, 1000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - Emote State ReadyBow'),
+(1863401, 1000, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - Send EventAI A to self'), 
+(1863401, 1000, 1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - Emote State Exclamation'),
 -- All those scripts are used by either spawn_group_entry or are multiple group waypoints
 (@RELAYID+1, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - choose random path'), 
 (@RELAYID+2, 3000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - set StandState Kneel'),
