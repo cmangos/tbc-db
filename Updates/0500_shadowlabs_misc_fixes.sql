@@ -356,7 +356,7 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1863901, 2, 33502, 0, -1, 101, 0, 100, 0, 12000, 22000, 16000, 26000, 'Cabal Spellbinder - Brain Washe - random non tank'),
 
 (2064701, 1, 32691, 0, -1, 105, 0, 100, 0, 8000, 24000, 12000, 28000, 'Cabal Spellbinder - Spell Shock - random mana user'),
-(2064701, 2, 33502, 0, -1, 101, 0, 100, 0, 12000, 22000, 16000, 26000, 'Cabal Spellbinder - Brain Wash - random non tank'):
+(2064701, 2, 33502, 0, -1, 101, 0, 100, 0, 12000, 22000, 16000, 26000, 'Cabal Spellbinder - Brain Wash - random non tank');
 
 UPDATE `creature_template` SET `SpellList` = 1863901 WHERE `entry` = 18639;
 UPDATE `creature_template` SET `SpellList` = 2064701 WHERE `entry` = 20647;
