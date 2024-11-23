@@ -563,8 +563,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Caretaker Nevlin (2780) - NSR
 -- Caretaker Weston (2781) - NSR
 -- Caretaker Alaric (2782) - NSR
--- Marez Cowl (3.0.9 Official Data)
-('278301','2783','1','0','100','0','1000','1000','0','0','0','0','11','12380','0','0','0','0','0','0','0','0','0','0','Marez Cowl - Cast Shadow Channelling on Spawn'),
+-- Marez Cowl 2783 - s.43897 tbc+ only
+('278301','2783','1','0','100','0','1000','1000','0','0','0','0','11','43897','0','0','0','0','0','0','0','0','0','0','Marez Cowl - Cast Shadow Channeling OOC'),
 ('278302','2783','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Marez Cowl - Flee at 15% HP'),
 -- Zaruk (2787) - NSR
 -- Apprentice Kryten (2788) - NSR
