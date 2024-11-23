@@ -2,7 +2,7 @@
 -- https://github.com/vmangos/core/commit/0dfc8aeac8112881e949c275c2538657fd118471
 
 -- discord
-UPDATE `creature_template` SET `MaxLevel`= 80 WHERE `entry` = 8836;
+UPDATE `creature_template` SET `MaxLevel`= 70 WHERE `entry` = 8836; -- Creature (Entry: 8836) `MaxLevel` exceeds maximum allowed value of '75'
 
 -- Faction, MeleeBaseAttackTime, RangedBaseAttackTime, SpeedWalk, SpeedRun
 UPDATE `creature_template` SET `SpeedWalk`='1' WHERE `entry`='19'; -- Benny Questgiver 1.2
