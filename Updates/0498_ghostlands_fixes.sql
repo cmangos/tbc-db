@@ -62,7 +62,7 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 (@MOVID + 0, '7', '8075.725', '-7780.474', '165.52367', '100', '0', '0', NULL),
 (@MOVID + 0, '8', '8056.597', '-7753.424', '157.41678', '100', '0', '0', NULL),
 (@MOVID + 0, '9', '8021.6196', '-7727.0376', '151.41107', '100', '0', '0', NULL),
-(@MOVID + 0, '0', '7997.29', '-7724.7847', '149.24797', '100', '0', '0', NULL),
+(@MOVID + 0, '10', '7997.29', '-7724.7847', '149.24797', '100', '0', '0', NULL), -- `creature_movement` has invalid point 0 for id 5303043. Skipping.
 (@MOVID + 0, '11', '7967.397', '-7730.7065', '148.9544', '100', '0', '0', NULL);
 
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES

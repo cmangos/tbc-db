@@ -1042,6 +1042,7 @@ DELETE FROM creature_movement WHERE id IN(56043,/*56065,*/1007504,1007505,100750
 -- Table `dbscripts_on_creature_movement` contain unused script, id 1565401. - despawn
 -- Table `dbscripts_on_creature_movement` contain unused script, id 1565501. - RUN ON
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1565401,1565501);
+UPDATE `creature_movement` SET `ScriptId` = 5 WHERE `id` = 56065 AND `point` = 1; -- creature_movement for entry 56065, point 1 have script_id 1565501 that does not exist in `dbscripts_on_creature_movement`, ignoring
 
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
 (@CGUID + 37, '0', '530', '1', 8146.6187,-6758.287,71.86238,5.957955837249755859, '300', '300', '0', '2'),
