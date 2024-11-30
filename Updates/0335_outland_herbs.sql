@@ -1,6 +1,6 @@
 SET @SGGUID := 21300;
 SET @GGUID := 5307600;
--- Golden Sansam - 176583 - https://www.wowhead.com/object=176583/golden-sansam
+-- Golden Sansam - 176583 - https://www.wowhead.com/tbc/object=176583/golden-sansam
 -- hellfire peninsula - 
 -- zangarmarsh        - 
 -- terokkar           - 
@@ -10,9 +10,13 @@ SET @GGUID := 5307600;
 -- shadowmoon         - 
 -- total         
 
--- Mountain Silversage - 176586 - https://www.wowhead.com/object=176586/mountain-silversage     
+-- Mountain Silversage - 176586 - https://www.wowhead.com/tbc/object=176586/mountain-silversage
 
--- Hellfire Spineleaf - 181372 - https://www.wowhead.com/object=181372/hellfire-spineleaf
+-- Blindweed - 183046 - https://www.wowhead.com/tbc/object=183046/blindweed
+
+-- Liferoot - 2041 - https://www.wowhead.com/tbc/object=2041/liferoot
+
+-- Hellfire Spineleaf - 181372 - https://www.wowhead.com/tbc/object=181372/hellfire-spineleaf
 
 -- Felweed - rough map counts - 181270 - https://www.wowhead.com/object=181270/felweed
 -- hellfire peninsula - 
@@ -44,8 +48,8 @@ SET @GGUID := 5307600;
 -- shadowmoon         - 
 -- total        
 
--- Flamecap - 181276 - https://www.wowhead.com/object=181276/flame-cap
--- zangarmarsh        - 
+-- Flamecap - 181276 - https://www.wowhead.com/tbc/object=181276/flame-cap
+-- zangarmarsh        - 95
 -- total        
 
 -- select count(*) from gameobject where map=530 and id = 181277;
@@ -222,11 +226,11 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- total                121
 
 -- select count(*) from gameobject where map=530 and id = 181280;
--- Nightmare Vine - rough map counts - 181280 - https://www.wowhead.com/object=181280/nightmare-vine
--- hellfire peninsula - 12
--- blades edge        - 23
+-- Nightmare Vine - rough map counts - 181280 - https://www.wowhead.com/tbc/object=181280/nightmare-vine
+-- hellfire peninsula - 3
+-- blades edge        - 6
 -- shadowmoon         - 103
--- total                138
+-- total                112
 
 -- select count(*) from gameobject where map=530 and id = 185881;
 -- Netherdust Bush - 185881 - https://www.wowhead.com/object=185881/netherdust-bush
