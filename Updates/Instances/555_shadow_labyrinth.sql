@@ -73,16 +73,15 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+67, 13, -53.190514, -85.86522, -1.1293151, 100, 0, 0),
 (@CGUID+67, 14, -48.516537, -89.56273, -1.1283104, 100, 0, 0),
 -- Cabal Summoner Murmur Hallway Movements
--- flavor when door opens
-(@CGUID+76, 1, -175.894, -349.783, 17.166, 100, 100, 5),
-(@CGUID+76, 2, -159.525, -339.691, 17.085, 100, 1000, 0), 
-(@CGUID+76, 3, -156.471, -325.668, 17.086, 100, 0, 0),
--- flavor when door opens
-(@CGUID+77, 1, -156.498, -328.007, 17.1696, 100, 100, 5),
-(@CGUID+77, 2, -156.987, -313.371, 17.0860, 100, 5000, 0), -- die permanently
+-- Spawns when door opens, and gets killed (murmur timer between 0 and 2 seconds)
+(@CGUID+76, 1, -175.894, -349.783, 17.166, 100, 100, 5), -- spawnpoint 
+(@CGUID+76, 2, -156.4706, -325.66806, 17.086473, 100, 100, 3), -- gets idle at this point
+-- Spawns when door opens, and gets killed (murmur timer between 0 and 2 seconds)
+(@CGUID+77, 1, -156.498, -328.007, 17.1696, 100, 100, 5), -- spawnpoint
+(@CGUID+77, 2, -156.9866, -313.37146, 17.08601, 100, 100, 3), -- gets idle at this point
 -- stationary pack 1
 (@CGUID+78, 1, -135.2006, -360.271, 17.165, 100, 100, 5),
-(@CGUID+78, 2, -157.0379, -354.905, 17.084, 4.7064, 5000, 1863401), -- idle
+(@CGUID+78, 2, -157.0379, -354.905, 17.084, 4.7064, 5000, 1863401), 
 
 -- runner #1 (fast respawn)
 (@CGUID+79, 1, -136.037, -343.41, 17.1648, 3.1765, 1000, 5),
@@ -429,7 +428,15 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
 -- Generic RunMode on Spawn Cabal Familiar
 (@CGUID+133, 1), -- Cabal Familiar
-(@CGUID+135, 1); -- Fel Guardhound
+(@CGUID+135, 1), -- Fel Guardhound
+-- String IDs
+(@CGUID+76, 1863401),
+(@CGUID+77, 1863402);
+
+INSERT INTO `creature_spawn_data_template` (`Entry`, `StringId`, `Name`) VALUES 
+(1863401, @STRINGID+11, 'Shadow Labyrinth - WrathTarget 01'),
+(1863402, @STRINGID+12, 'Shadow Labyrinth - WrathTarget 02');
+
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+37, 0, 1, 1, 0, 0, ''), -- spawn_group_entry
@@ -1161,13 +1168,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+68, 'Shadow Labyrinth - Group 047 - Cabal Spellbinder (3)', 0, 0, 0, 1, 0),
 -- Runner groups
 -- 2 Cabal Summoner that get active when door opens, run their waypoints and then die
-(@SGGUID+69, 'Shadow Labyrinth - Group 048 - Cabal Summoner (2)', 0, 0, @SGGUID+29, 0, @STRINGID+11),
+(@SGGUID+69, 'Shadow Labyrinth - Group 048 - Cabal Summoner (2)', 0, 0, @SGGUID+29, 0, 0),
 -- Running npc between first and 2nd group
 -- Spawns on door opening and stops respawning when Group 043 is dead
-(@SGGUID+70, 'Shadow Labyrinth - Group 049 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+30, 0, @STRINGID+12),
-(@SGGUID+71, 'Shadow Labyrinth - Group 050 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+31, 0, @STRINGID+12),
-(@SGGUID+72, 'Shadow Labyrinth - Group 051 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+32, 0, @STRINGID+12),
-(@SGGUID+73, 'Shadow Labyrinth - Group 052 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+32, 0, @STRINGID+12);
+(@SGGUID+70, 'Shadow Labyrinth - Group 049 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+30, 0, @STRINGID+13),
+(@SGGUID+71, 'Shadow Labyrinth - Group 050 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+31, 0, @STRINGID+13),
+(@SGGUID+72, 'Shadow Labyrinth - Group 051 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+32, 0, @STRINGID+13),
+(@SGGUID+73, 'Shadow Labyrinth - Group 052 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+32, 0, @STRINGID+13);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 18633, 0, 2, 0), (@SGGUID+3, 18635, 0, 2, 0), -- Cabal Acolyte, Cabal Deathsworn
@@ -1702,8 +1709,9 @@ INSERT INTO `string_id` (Id, Name) VALUES
 -- String assigned to all npcs that have a waypoint after door opens 
 (@STRINGID+10, 'SL_MURMUR_ROOM_01'),
 (@STRINGID+11, 'SL_MURMUR_WRATH_TARGET_01'),
+(@STRINGID+12, 'SL_MURMUR_WRATH_TARGET_02'),
 -- String assigned to all npcs that have a small respawn time, running between groups and can get killed by murmur
-(@STRINGID+12, 'SL_MURMUR_WRATH_TARGET_02');
+(@STRINGID+13, 'SL_MURMUR_WRATH_TARGET_03');
 
 
 -- =======
@@ -1857,8 +1865,8 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 DELETE FROM dbscripts_on_go_template_use WHERE id IN (183295);
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Screaming Hall Door
-(183295, 0, 0, 20, 2, 0, 0, @STRINGID+10, 200, 2560, 0, 0, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - StringID - Change MovementType to Waypoint Movement');
--- (183295, 0, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+14, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
+(183295, 0, 0, 20, 2, 0, 0, @STRINGID+10, 200, 2560, 0, 0, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - StringID - Change MovementType to Waypoint Movement'),
+(183295, 0, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+14, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate');
 -- (183295, 0, 2, 53, 0, 0, 0, 0, 0, 0, @SGGUID+15, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
 -- (183295, 0, 3, 53, 0, 0, 0, 0, 0, 0, @SGGUID+16, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
 -- (183295, 0, 4, 53, 0, 0, 0, 0, 0, 0, @SGGUID+17, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
