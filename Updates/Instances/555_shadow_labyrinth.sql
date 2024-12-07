@@ -13,6 +13,10 @@ SET @PGUID := 49200; -- pools
 SET @SGGUID := 5550000; -- spawn_groups
 SET @STRINGID := 5550000; -- used for StringID's
 SET @RELAYID := 5550000; -- used for dbscript_relay
+SET @CONDITIONID := 5550000; -- used for conditions
+SET @WORLDSTATEID := 5550000; -- used for worldstates
+
+
 -- =========
 -- CREATURES
 -- =========
@@ -1029,8 +1033,8 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- ============
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
-(@SGGUID+1, 'Shadow Labyrinth - Group 001 - Cabal Acolyte | Cabal Deathsworn (2)', 0, 0, @SGGUID+1, 1, 0),
-(@SGGUID+2, 'Shadow Labyrinth - Group 001 - Cabal Deathsworn | Cabal Acolyte (2)', 0, 0, @SGGUID+2, 1, 0),
+(@SGGUID+1, 'Shadow Labyrinth - Group 001 - Cabal Acolyte | Cabal Deathsworn (2)', 0, 0, @CONDITIONID+1, 1, 0),
+(@SGGUID+2, 'Shadow Labyrinth - Group 001 - Cabal Deathsworn | Cabal Acolyte (2)', 0, 0, @CONDITIONID+2, 1, 0),
 -- Right tent group of 2
 (@SGGUID+3, 'Shadow Labyrinth - Group 002 - Cabal Deathsworn/Cabal Acolyte (2)', 0, 0, 0, 1, 0),
 -- Solo Patrol using spawn_group_entry
@@ -1038,8 +1042,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Group of 2 with random entry
 (@SGGUID+5, 'Shadow Labyrinth - Group 004 - Cabal Deathsworn/Cabal Acolyte', 0, 0, 0, 1, 0),
 -- Group of 3 with 2 versions
-(@SGGUID+6, 'Shadow Labyrinth - Group 005 - Cabal Acolyte | Cabal Deathsworn (2)', 0, 0, @SGGUID+3, 1, 0),
-(@SGGUID+7, 'Shadow Labyrinth - Group 005 - Cabal Deathsworn | Cabal Acolyte (2)', 0, 0, @SGGUID+4, 1, 0),
+(@SGGUID+6, 'Shadow Labyrinth - Group 005 - Cabal Acolyte | Cabal Deathsworn (2)', 0, 0, @CONDITIONID+3, 1, 0),
+(@SGGUID+7, 'Shadow Labyrinth - Group 005 - Cabal Deathsworn | Cabal Acolyte (2)', 0, 0, @CONDITIONID+4, 1, 0),
 -- 2 group of 2 with random entry
 (@SGGUID+8, 'Shadow Labyrinth - Group 006 - Cabal Deathsworn/Cabal Acolyte', 0, 0, 0, 1, 0),
 (@SGGUID+9, 'Shadow Labyrinth - Group 007 - Cabal Deathsworn/Cabal Acolyte', 0, 0, 0, 1, 0),
@@ -1054,13 +1058,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+14, 'Shadow Labyrinth - Group 011 - Cabal Warlock', 0, 0, 0, 1, @STRINGID+1),
 (@SGGUID+15, 'Shadow Labyrinth - Group 011 - Cabal Familiar (5)', 0, 0, 0, 1, @STRINGID+2),
 -- Left Tent Group has 3 different versions that can spawn
-(@SGGUID+16, 'Shadow Labyrinth - Group 012 - Cabal Warlock | Cabal Familiar/Fel Guardhound | Cabal Deathsworn/Cabal Acolyte', 0, 0, @SGGUID+5, 1, 0),
-(@SGGUID+17, 'Shadow Labyrinth - Group 012 - Cabal Deathsworn | Cabal Acolyte (2)', 0, 0, @SGGUID+6, 1, 0),
-(@SGGUID+18, 'Shadow Labyrinth - Group 012 - Cabal Acolyte | Cabal Deathsworn (2)', 0, 0, @SGGUID+7, 1, 0),
+(@SGGUID+16, 'Shadow Labyrinth - Group 012 - Cabal Warlock | Cabal Familiar/Fel Guardhound | Cabal Deathsworn/Cabal Acolyte', 0, 0, @CONDITIONID+5, 1, 0),
+(@SGGUID+17, 'Shadow Labyrinth - Group 012 - Cabal Deathsworn | Cabal Acolyte (2)', 0, 0, @CONDITIONID+6, 1, 0),
+(@SGGUID+18, 'Shadow Labyrinth - Group 012 - Cabal Acolyte | Cabal Deathsworn (2)', 0, 0, @CONDITIONID+7, 1, 0),
 -- Right Tent Group has 3 different versions that can spawn
-(@SGGUID+19, 'Shadow Labyrinth - Group 013 - Cabal Warlock | Cabal Familiar/Fel Guardhound | Cabal Deathsworn/Cabal Acolyte', 0, 0, @SGGUID+8, 1, 0),
-(@SGGUID+20, 'Shadow Labyrinth - Group 013 - Cabal Deathsworn | Cabal Acolyte (2)', 0, 0, @SGGUID+9, 1, 0),
-(@SGGUID+21, 'Shadow Labyrinth - Group 013 - Cabal Acolyte | Cabal Deathsworn (2)', 0, 0, @SGGUID+10, 1, 0),
+(@SGGUID+19, 'Shadow Labyrinth - Group 013 - Cabal Warlock | Cabal Familiar/Fel Guardhound | Cabal Deathsworn/Cabal Acolyte', 0, 0, @CONDITIONID+8, 1, 0),
+(@SGGUID+20, 'Shadow Labyrinth - Group 013 - Cabal Deathsworn | Cabal Acolyte (2)', 0, 0, @CONDITIONID+9, 1, 0),
+(@SGGUID+21, 'Shadow Labyrinth - Group 013 - Cabal Acolyte | Cabal Deathsworn (2)', 0, 0, @CONDITIONID+10, 1, 0),
 -- The Arcanium
 -- Cabal Ritualist groups have 3 spawned on normal and 4 on Heroic (spawnmask)
 (@SGGUID+22, 'Shadow Labyrinth - Group 014 - Cabal Ritualist (3)', 0, 0, 0, 1, 0),
@@ -1086,21 +1090,21 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Deathsworn Cultist (front) - Acolyte/Cultist (back) (SGGUID+34)
 -- Deathsworn Cultist (front) - Priest/Acolyte (back) (SGGUID+35)
 -- Cultist Priest (front) - Priest/acolyte (back) (SGGUID+35)
-(@SGGUID+34, 'Shadow Labyrinth - Group 023 - Cabal Deathsworn | Cabal Cultist (2) | Cabal Acolyte', 0, 0, @SGGUID+11, 1, @STRINGID+4),
-(@SGGUID+35, 'Shadow Labyrinth - Group 023 - Cabal Deathsworn | Cabal Cultist | Cabal Priest/Cabal Acolyte', 0, 0, @SGGUID+12, 1, @STRINGID+4),
+(@SGGUID+34, 'Shadow Labyrinth - Group 023 - Cabal Deathsworn | Cabal Cultist (2) | Cabal Acolyte', 0, 0, @CONDITIONID+11, 1, @STRINGID+4),
+(@SGGUID+35, 'Shadow Labyrinth - Group 023 - Cabal Deathsworn | Cabal Cultist | Cabal Priest/Cabal Acolyte', 0, 0, @CONDITIONID+12, 1, @STRINGID+4),
 -- Middle Group left front - 5 npcs - 3 possible combinations
 -- Deathsworn, Acolyte, Cultist (front), Acolyte Priest (back) - @SGGUID+36
 -- Deathsworn, Cultist, Priest (Front), Priest, Acolyte (back) - @SGGUID+37
 -- Deathsworn Cultist, Priest (front), Acolyte Cultist (back) - @SGGUID+37
-(@SGGUID+36, 'Shadow Labyrinth - Group 024 - Cabal Deathsworn | Cabal Acolyte (2) | Cabal Cultist | Cabal Shadow Priest', 0, 0, @SGGUID+13, 1, @STRINGID+4),
-(@SGGUID+37, 'Shadow Labyrinth - Group 024 - Cabal Deathsworn | Cabal Shadow Priest/Cabal Acolyte/Cabal Cultist', 0, 0, @SGGUID+14, 1, @STRINGID+4),
+(@SGGUID+36, 'Shadow Labyrinth - Group 024 - Cabal Deathsworn | Cabal Acolyte (2) | Cabal Cultist | Cabal Shadow Priest', 0, 0, @CONDITIONID+13, 1, @STRINGID+4),
+(@SGGUID+37, 'Shadow Labyrinth - Group 024 - Cabal Deathsworn | Cabal Shadow Priest/Cabal Acolyte/Cabal Cultist', 0, 0, @CONDITIONID+14, 1, @STRINGID+4),
 -- Middle Group right - 5 npcs - 4 possible combinations
 -- Deathsworn, Acolyte Cultist (front), Shadow Priest Acolyte (back) (@SGGUID+38)
 -- Deathsworn Cultist Shadow Priest (front), Acolyte Cultist (back) (@SGGUID+39)
 -- Deathsworn Cultist Shadow Priest (front), Cultist Acolyte (back) (@SGGUID+39)
 -- Deathsworn Cultist Shadow Priest (front), Acolyte Priest (back) (@SGGUID+39)
-(@SGGUID+38, 'Shadow Labyrinth - Group 025 - Cabal Deathsworn | Cabal Acolte (2) | Cabal Cultist | Cabal Shadow Priest', 0, 0, @SGGUID+15, 1, @STRINGID+4),
-(@SGGUID+39, 'Shadow Labyrinth - Group 025 - Cabal Deathsworn | Cabal Cultist | Cabal Shadow Priest | Cabal Acolyte/Cabal Cultist/Cabal Shadowpriest', 0, 0, @SGGUID+16, 1, @STRINGID+4),
+(@SGGUID+38, 'Shadow Labyrinth - Group 025 - Cabal Deathsworn | Cabal Acolte (2) | Cabal Cultist | Cabal Shadow Priest', 0, 0, @CONDITIONID+15, 1, @STRINGID+4),
+(@SGGUID+39, 'Shadow Labyrinth - Group 025 - Cabal Deathsworn | Cabal Cultist | Cabal Shadow Priest | Cabal Acolyte/Cabal Cultist/Cabal Shadowpriest', 0, 0, @CONDITIONID+16, 1, @STRINGID+4),
 -- Group of 6 all static, only warlock pet is random between 3 entrys
 (@SGGUID+40, 'Shadow Labyrinth - Group 026 - Cabal Shadow Priest | Cabal Deathsworn | Cabal Acolyte | Cabal Cultist | Cabal Warlock | Fel Guardhound/Maiden of Discipline/Cabal Familiar', 0, 0, 0, 1, @STRINGID+5),
 -- Group of 2 with random entrys
@@ -1119,21 +1123,21 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Cultist, Acolyte (@SGGUID+48)
 -- Cultist, Deathsworn (@SGGUID+48)
 -- Cultist, Cultist (@SGGUID+48)
-(@SGGUID+47, 'Shadow Labyrinth - Group 033 - Cabal Acolyte (2)', 0, 0, @SGGUID+17, 1, 0),
-(@SGGUID+48, 'Shadow Labyrinth - Group 033 - Cabal Cultist | Cabal Acolyte/Cabal Deathsworn/Cabal Cultist', 0, 0, @SGGUID+18, 1, 0),
+(@SGGUID+47, 'Shadow Labyrinth - Group 033 - Cabal Acolyte (2)', 0, 0, @CONDITIONID+17, 1, 0),
+(@SGGUID+48, 'Shadow Labyrinth - Group 033 - Cabal Cultist | Cabal Acolyte/Cabal Deathsworn/Cabal Cultist', 0, 0, @CONDITIONID+18, 1, 0),
 -- Group of 3, possible combinations
 -- Cultist Cultist Acolyte (@SGGUID+49)
 -- Cultist Cultist Deathsworn (@SGGUID+49)
 -- Deathsworn Deathsworn Acolyte (@SGGUID+50)
-(@SGGUID+49, 'Shadow Labyrinth - Group 034 - Cabal Cultist (2) | Cabal Acolyte', 0, 0, @SGGUID+19, 1, 0),
-(@SGGUID+50, 'Shadow Labyrinth - Group 034 - Cabal Deathsworn (2) | Cabal Acolyte', 0, 0, @SGGUID+20, 1, 0),
+(@SGGUID+49, 'Shadow Labyrinth - Group 034 - Cabal Cultist (2) | Cabal Acolyte', 0, 0, @CONDITIONID+19, 1, 0),
+(@SGGUID+50, 'Shadow Labyrinth - Group 034 - Cabal Deathsworn (2) | Cabal Acolyte', 0, 0, @CONDITIONID+20, 1, 0),
 -- 3rd Boss room
 -- Patrol 1 - 3 combinations
 -- Zealot Fanatic Fanatic Zealot (@SGGUID+52)
 -- Cultist Fanatic Cultist Zealot (@SGGUID+53)
 -- Zealot Fanatic Cultist Fanatic (@SGGUID+53)
-(@SGGUID+52, 'Shadow Labyrinth - Group 035 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 01', 0, 0, @SGGUID+21, 1, @STRINGID+6),
-(@SGGUID+53, 'Shadow Labyrinth - Group 035 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 01', 0, 0, @SGGUID+22, 1, @STRINGID+6),
+(@SGGUID+52, 'Shadow Labyrinth - Group 035 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 01', 0, 0, @CONDITIONID+21, 1, @STRINGID+6),
+(@SGGUID+53, 'Shadow Labyrinth - Group 035 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 01', 0, 0, @CONDITIONID+22, 1, @STRINGID+6),
 -- Right side front hill skeletons
 (@SGGUID+54, 'Shadow Labyrinth - Group 036 - Tortured Skeleton (10)', 0, 0, 0, 1, 0),
 -- left side front hill skeletons
@@ -1147,19 +1151,19 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Zealot Fanatic Fanatic Zealot (@SGGUID+59)
 -- Zealot Fanatic Cultist Fanatic (@SGGUID+59)
 -- Cultist Fanatic Cultist Zealot (@SGGUID+59)
-(@SGGUID+58, 'Shadow Labyrinth - Group 040 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 02', 0, 0, @SGGUID+23, 1, @STRINGID+7),
-(@SGGUID+59, 'Shadow Labyrinth - Group 040 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 02', 0, 0, @SGGUID+24, 1, @STRINGID+7),
+(@SGGUID+58, 'Shadow Labyrinth - Group 040 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 02', 0, 0, @CONDITIONID+23, 1, @STRINGID+7),
+(@SGGUID+59, 'Shadow Labyrinth - Group 040 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 02', 0, 0, @CONDITIONID+24, 1, @STRINGID+7),
 -- Static Group before boss 2 combinations
 -- Zealot, Fanatic Fanatic Zealot
 -- Cultist Fanatic Cultist Zealot
-(@SGGUID+60, 'Shadow Labyrinth - Group 041 - Cabal Fanatic (2) | Cabal Zealot (2)', 0, 0, @SGGUID+25, 1, @STRINGID+8),
-(@SGGUID+61, 'Shadow Labyrinth - Group 041 - Cabal Cultist (2) | Cabal Zealot | Cabal Fanatic', 0, 0, @SGGUID+26, 1, @STRINGID+8),
+(@SGGUID+60, 'Shadow Labyrinth - Group 041 - Cabal Fanatic (2) | Cabal Zealot (2)', 0, 0, @CONDITIONID+25, 1, @STRINGID+8),
+(@SGGUID+61, 'Shadow Labyrinth - Group 041 - Cabal Cultist (2) | Cabal Zealot | Cabal Fanatic', 0, 0, @CONDITIONID+26, 1, @STRINGID+8),
 -- Group that runs in circle around the boss
 -- Zealot Fanatic Fanatic Zealot (@SGGUID+62)
 -- Zealot Fanatic Cultist Fanatic (@SGGUID+62)
 -- Cultist Fanatic Cultist Zealot (@SGGUID+62)
-(@SGGUID+62, 'Shadow Labyrinth - Group 042 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 03', 0, 0, @SGGUID+27, 1, @STRINGID+9),
-(@SGGUID+63, 'Shadow Labyrinth - Group 042 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 03', 0, 0, @SGGUID+28, 1, @STRINGID+9),
+(@SGGUID+62, 'Shadow Labyrinth - Group 042 - Cabal Fanatic (2) | Cabal Zealot (2) - Patrol 03', 0, 0, @CONDITIONID+27, 1, @STRINGID+9),
+(@SGGUID+63, 'Shadow Labyrinth - Group 042 - Cabal Fanatic | Cabal Zealot/Cabal Cultist - Patrol 03', 0, 0, @CONDITIONID+28, 1, @STRINGID+9),
 -- The Screaming Hall
 (@SGGUID+64, 'Shadow Labyrinth - Group 043 - Cabal Executioner (2)', 0, 0, 0, 1, @STRINGID+10),
 (@SGGUID+65, 'Shadow Labyrinth - Group 044 - Cabal Executioner (2) | Cabal Spellbinder | Cabal Summoner', 0, 0, 0, 1, @STRINGID+10),
@@ -1171,10 +1175,10 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+69, 'Shadow Labyrinth - Group 048 - Cabal Summoner (2)', 0, 0, @SGGUID+29, 0, 0),
 -- Running npc between first and 2nd group
 -- Spawns on door opening and stops respawning when Group 043 is dead
-(@SGGUID+70, 'Shadow Labyrinth - Group 049 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+30, 0, @STRINGID+13),
-(@SGGUID+71, 'Shadow Labyrinth - Group 050 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+31, 0, @STRINGID+13),
-(@SGGUID+72, 'Shadow Labyrinth - Group 051 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+32, 0, @STRINGID+13),
-(@SGGUID+73, 'Shadow Labyrinth - Group 052 - Cabal Summoner/Cabal Spellbinder', 0, 0, @SGGUID+32, 0, @STRINGID+13);
+(@SGGUID+70, 'Shadow Labyrinth - Group 049 - Cabal Summoner/Cabal Spellbinder', 0, 0, @CONDITIONID+30, 0, @STRINGID+13),
+(@SGGUID+71, 'Shadow Labyrinth - Group 050 - Cabal Summoner/Cabal Spellbinder', 0, 0, @CONDITIONID+31, 0, @STRINGID+13),
+(@SGGUID+72, 'Shadow Labyrinth - Group 051 - Cabal Summoner/Cabal Spellbinder', 0, 0, @CONDITIONID+32, 0, @STRINGID+13),
+(@SGGUID+73, 'Shadow Labyrinth - Group 052 - Cabal Summoner/Cabal Spellbinder', 0, 0, @CONDITIONID+32, 0, @STRINGID+13);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 18633, 0, 2, 0), (@SGGUID+3, 18635, 0, 2, 0), -- Cabal Acolyte, Cabal Deathsworn
@@ -1620,76 +1624,76 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+62, 14, -279.302,-258.68976,12.681697, 100, 100, @RELAYID+12);
 
 
-DELETE FROM worldstate_name WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+18;
+DELETE FROM worldstate_name WHERE Id BETWEEN @WORLDSTATEID+1 AND @WORLDSTATEID+18;
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
-(@SGGUID+1, 'Shadow Labyrinth - Group 001'),
-(@SGGUID+2, 'Shadow Labyrinth - Group 005'),
-(@SGGUID+3, 'Shadow Labyrinth - Group 012'),
-(@SGGUID+4, 'Shadow Labyrinth - Group 013'),
-(@SGGUID+5, 'Shadow Labyrinth - Group 023'),
-(@SGGUID+6, 'Shadow Labyrinth - Group 024'),
-(@SGGUID+7, 'Shadow Labyrinth - Group 025'),
-(@SGGUID+8, 'Shadow Labyrinth - Group 033'),
-(@SGGUID+9, 'Shadow Labyrinth - Group 034'),
-(@SGGUID+10, 'Shadow Labyrinth - Group 034'),
-(@SGGUID+11, 'Shadow Labyrinth - Group 040'),
-(@SGGUID+12, 'Shadow Labyrinth - Group 041'),
-(@SGGUID+13, 'Shadow Labyrinth - Group 042'),
+(@WORLDSTATEID+1, 'Shadow Labyrinth - Group 001'),
+(@WORLDSTATEID+2, 'Shadow Labyrinth - Group 005'),
+(@WORLDSTATEID+3, 'Shadow Labyrinth - Group 012'),
+(@WORLDSTATEID+4, 'Shadow Labyrinth - Group 013'),
+(@WORLDSTATEID+5, 'Shadow Labyrinth - Group 023'),
+(@WORLDSTATEID+6, 'Shadow Labyrinth - Group 024'),
+(@WORLDSTATEID+7, 'Shadow Labyrinth - Group 025'),
+(@WORLDSTATEID+8, 'Shadow Labyrinth - Group 033'),
+(@WORLDSTATEID+9, 'Shadow Labyrinth - Group 034'),
+(@WORLDSTATEID+10, 'Shadow Labyrinth - Group 034'),
+(@WORLDSTATEID+11, 'Shadow Labyrinth - Group 040'),
+(@WORLDSTATEID+12, 'Shadow Labyrinth - Group 041'),
+(@WORLDSTATEID+13, 'Shadow Labyrinth - Group 042'),
 -- The Screaming Hall - Murmur Worldstates
 -- Gets active when door opens
-(@SGGUID+14, 'Shadow Labyrinth - Group 048'),
-(@SGGUID+15, 'Shadow Labyrinth - Group 049'),
-(@SGGUID+16, 'Shadow Labyrinth - Group 050'),
-(@SGGUID+17, 'Shadow Labyrinth - Group 051');
+(@WORLDSTATEID+14, 'Shadow Labyrinth - Group 048'),
+(@WORLDSTATEID+15, 'Shadow Labyrinth - Group 049'),
+(@WORLDSTATEID+16, 'Shadow Labyrinth - Group 050'),
+(@WORLDSTATEID+17, 'Shadow Labyrinth - Group 051');
 
-DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @SGGUID+1 AND @SGGUID+33;
+DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @CONDITIONID+1 AND @CONDITIONID+33;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(@SGGUID+1, 42, @SGGUID+1, 1, 0, 0, 0, 'Shadow Labyrinth - Group 001 -  Type 1'),
-(@SGGUID+2, 42, @SGGUID+1, 1, 1, 0, 0, 'Shadow Labyrinth - Group 001 -  Type 2'),
+(@CONDITIONID+1, 42, @WORLDSTATEID+1, 1, 0, 0, 0, 'Shadow Labyrinth - Group 001 -  Type 1'),
+(@CONDITIONID+2, 42, @WORLDSTATEID+1, 1, 1, 0, 0, 'Shadow Labyrinth - Group 001 -  Type 2'),
 
-(@SGGUID+3, 42, @SGGUID+2, 1, 0, 0, 0, 'Shadow Labyrinth - Group 005 -  Type 1'),
-(@SGGUID+4, 42, @SGGUID+2, 1, 1, 0, 0, 'Shadow Labyrinth - Group 005 -  Type 2'),
+(@CONDITIONID+3, 42, @WORLDSTATEID+2, 1, 0, 0, 0, 'Shadow Labyrinth - Group 005 -  Type 1'),
+(@CONDITIONID+4, 42, @WORLDSTATEID+2, 1, 1, 0, 0, 'Shadow Labyrinth - Group 005 -  Type 2'),
 
-(@SGGUID+5, 42, @SGGUID+3, 1, 0, 0, 0, 'Shadow Labyrinth - Group 012 -  Type 1'),
-(@SGGUID+6, 42, @SGGUID+3, 1, 1, 0, 0, 'Shadow Labyrinth - Group 012 -  Type 2'),
-(@SGGUID+7, 42, @SGGUID+3, 1, 2, 0, 0, 'Shadow Labyrinth - Group 012 -  Type 3'),
+(@CONDITIONID+5, 42, @WORLDSTATEID+3, 1, 0, 0, 0, 'Shadow Labyrinth - Group 012 -  Type 1'),
+(@CONDITIONID+6, 42, @WORLDSTATEID+3, 1, 1, 0, 0, 'Shadow Labyrinth - Group 012 -  Type 2'),
+(@CONDITIONID+7, 42, @WORLDSTATEID+3, 1, 2, 0, 0, 'Shadow Labyrinth - Group 012 -  Type 3'),
 
-(@SGGUID+8, 42, @SGGUID+4, 1, 0, 0, 0, 'Shadow Labyrinth - Group 013 -  Type 1'),
-(@SGGUID+9, 42, @SGGUID+4, 1, 1, 0, 0, 'Shadow Labyrinth - Group 013 -  Type 2'),
-(@SGGUID+10, 42, @SGGUID+4, 1, 2, 0, 0, 'Shadow Labyrinth - Group 013 -  Type 3'),
+(@CONDITIONID+8, 42, @WORLDSTATEID+4, 1, 0, 0, 0, 'Shadow Labyrinth - Group 013 -  Type 1'),
+(@CONDITIONID+9, 42, @WORLDSTATEID+4, 1, 1, 0, 0, 'Shadow Labyrinth - Group 013 -  Type 2'),
+(@CONDITIONID+10, 42, @WORLDSTATEID+4, 1, 2, 0, 0, 'Shadow Labyrinth - Group 013 -  Type 3'),
 
-(@SGGUID+11, 42, @SGGUID+5, 1, 0, 0, 0, 'Shadow Labyrinth - Group 023 -  Type 1'),
-(@SGGUID+12, 42, @SGGUID+5, 1, 1, 0, 0, 'Shadow Labyrinth - Group 023 -  Type 2'),
+(@CONDITIONID+11, 42, @WORLDSTATEID+5, 1, 0, 0, 0, 'Shadow Labyrinth - Group 023 -  Type 1'),
+(@CONDITIONID+12, 42, @WORLDSTATEID+5, 1, 1, 0, 0, 'Shadow Labyrinth - Group 023 -  Type 2'),
 
-(@SGGUID+13, 42, @SGGUID+6, 1, 0, 0, 0, 'Shadow Labyrinth - Group 024 -  Type 1'),
-(@SGGUID+14, 42, @SGGUID+6, 1, 1, 0, 0, 'Shadow Labyrinth - Group 024 -  Type 2'),
+(@CONDITIONID+13, 42, @WORLDSTATEID+6, 1, 0, 0, 0, 'Shadow Labyrinth - Group 024 -  Type 1'),
+(@CONDITIONID+14, 42, @WORLDSTATEID+6, 1, 1, 0, 0, 'Shadow Labyrinth - Group 024 -  Type 2'),
 
-(@SGGUID+15, 42, @SGGUID+7, 1, 0, 0, 0, 'Shadow Labyrinth - Group 025 -  Type 1'),
-(@SGGUID+16, 42, @SGGUID+7, 1, 1, 0, 0, 'Shadow Labyrinth - Group 025 -  Type 2'),
+(@CONDITIONID+15, 42, @WORLDSTATEID+7, 1, 0, 0, 0, 'Shadow Labyrinth - Group 025 -  Type 1'),
+(@CONDITIONID+16, 42, @WORLDSTATEID+7, 1, 1, 0, 0, 'Shadow Labyrinth - Group 025 -  Type 2'),
 
-(@SGGUID+17, 42, @SGGUID+8, 1, 0, 0, 0, 'Shadow Labyrinth - Group 033 -  Type 1'),
-(@SGGUID+18, 42, @SGGUID+8, 1, 1, 0, 0, 'Shadow Labyrinth - Group 033 -  Type 2'),
+(@CONDITIONID+17, 42, @WORLDSTATEID+8, 1, 0, 0, 0, 'Shadow Labyrinth - Group 033 -  Type 1'),
+(@CONDITIONID+18, 42, @WORLDSTATEID+8, 1, 1, 0, 0, 'Shadow Labyrinth - Group 033 -  Type 2'),
 
-(@SGGUID+19, 42, @SGGUID+9, 1, 0, 0, 0, 'Shadow Labyrinth - Group 034 -  Type 1'),
-(@SGGUID+20, 42, @SGGUID+9, 1, 1, 0, 0, 'Shadow Labyrinth - Group 034 -  Type 2'),
+(@CONDITIONID+19, 42, @WORLDSTATEID+9, 1, 0, 0, 0, 'Shadow Labyrinth - Group 034 -  Type 1'),
+(@CONDITIONID+20, 42, @WORLDSTATEID+9, 1, 1, 0, 0, 'Shadow Labyrinth - Group 034 -  Type 2'),
 
-(@SGGUID+21, 42, @SGGUID+10, 1, 0, 0, 0, 'Shadow Labyrinth - Group 035 -  Type 1'),
-(@SGGUID+22, 42, @SGGUID+10, 1, 1, 0, 0, 'Shadow Labyrinth - Group 035 -  Type 2'),
+(@CONDITIONID+21, 42, @WORLDSTATEID+10, 1, 0, 0, 0, 'Shadow Labyrinth - Group 035 -  Type 1'),
+(@CONDITIONID+22, 42, @WORLDSTATEID+10, 1, 1, 0, 0, 'Shadow Labyrinth - Group 035 -  Type 2'),
 
-(@SGGUID+23, 42, @SGGUID+11, 1, 0, 0, 0, 'Shadow Labyrinth - Group 040 -  Type 1'),
-(@SGGUID+24, 42, @SGGUID+11, 1, 1, 0, 0, 'Shadow Labyrinth - Group 040 -  Type 2'),
+(@CONDITIONID+23, 42, @WORLDSTATEID+11, 1, 0, 0, 0, 'Shadow Labyrinth - Group 040 -  Type 1'),
+(@CONDITIONID+24, 42, @WORLDSTATEID+11, 1, 1, 0, 0, 'Shadow Labyrinth - Group 040 -  Type 2'),
 
-(@SGGUID+25, 42, @SGGUID+12, 1, 0, 0, 0, 'Shadow Labyrinth - Group 041 -  Type 1'),
-(@SGGUID+26, 42, @SGGUID+12, 1, 1, 0, 0, 'Shadow Labyrinth - Group 041 -  Type 2'),
+(@CONDITIONID+25, 42, @WORLDSTATEID+12, 1, 0, 0, 0, 'Shadow Labyrinth - Group 041 -  Type 1'),
+(@CONDITIONID+26, 42, @WORLDSTATEID+12, 1, 1, 0, 0, 'Shadow Labyrinth - Group 041 -  Type 2'),
 
-(@SGGUID+27, 42, @SGGUID+13, 1, 0, 0, 0, 'Shadow Labyrinth - Group 042 -  Type 1'),
-(@SGGUID+28, 42, @SGGUID+13, 1, 1, 0, 0, 'Shadow Labyrinth - Group 042 -  Type 2'),
+(@CONDITIONID+27, 42, @WORLDSTATEID+13, 1, 0, 0, 0, 'Shadow Labyrinth - Group 042 -  Type 1'),
+(@CONDITIONID+28, 42, @WORLDSTATEID+13, 1, 1, 0, 0, 'Shadow Labyrinth - Group 042 -  Type 2'),
 -- the Screaming Hall
 -- Despawned on default, spawns group 48 adter door opens
-(@SGGUID+29, 42, @SGGUID+14, 1, 1, 0, 0, 'Shadow Labyrinth - Group 048'),
-(@SGGUID+30, 42, @SGGUID+15, 1, 1, 0, 0, 'Shadow Labyrinth - Group 049'),
-(@SGGUID+31, 42, @SGGUID+16, 1, 1, 0, 0, 'Shadow Labyrinth - Group 050'),
-(@SGGUID+32, 42, @SGGUID+17, 1, 1, 0, 0, 'Shadow Labyrinth - Group 051');
+(@CONDITIONID+29, 42, @WORLDSTATEID+14, 1, 1, 0, 0, 'Shadow Labyrinth - Group 048'),
+(@CONDITIONID+30, 42, @WORLDSTATEID+15, 1, 1, 0, 0, 'Shadow Labyrinth - Group 049'),
+(@CONDITIONID+31, 42, @WORLDSTATEID+16, 1, 1, 0, 0, 'Shadow Labyrinth - Group 050'),
+(@CONDITIONID+32, 42, @WORLDSTATEID+17, 1, 1, 0, 0, 'Shadow Labyrinth - Group 051');
 
 -- StringIDs
 DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+12;
@@ -1712,7 +1716,6 @@ INSERT INTO `string_id` (Id, Name) VALUES
 (@STRINGID+12, 'SL_MURMUR_WRATH_TARGET_02'),
 -- String assigned to all npcs that have a small respawn time, running between groups and can get killed by murmur
 (@STRINGID+13, 'SL_MURMUR_WRATH_TARGET_03');
-
 
 -- =======
 -- POOLING
@@ -1866,7 +1869,7 @@ DELETE FROM dbscripts_on_go_template_use WHERE id IN (183295);
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Screaming Hall Door
 (183295, 0, 0, 20, 2, 0, 0, @STRINGID+10, 200, 2560, 0, 0, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - StringID - Change MovementType to Waypoint Movement'),
-(183295, 0, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+14, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate');
+(183295, 0, 1, 53, 0, 0, 0, 0, 0, 0, @WORLDSTATEID+14, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate');
 -- (183295, 0, 2, 53, 0, 0, 0, 0, 0, 0, @SGGUID+15, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
 -- (183295, 0, 3, 53, 0, 0, 0, 0, 0, 0, @SGGUID+16, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
 -- (183295, 0, 4, 53, 0, 0, 0, 0, 0, 0, @SGGUID+17, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
