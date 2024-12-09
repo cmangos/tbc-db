@@ -1,10 +1,9 @@
 /* DBScriptData
 DBName: Auchindoun - Shadow Labyrinth
 DBScriptName: instance_shadow_labyrinth
-DB%Complete: 81
+DB%Complete: 95
 DBComment:
-* Murmur Suppression Blast 33332 - Only RP Event, not used on targets which fight players - UPDATE `spell_template` SET `AttributesEx` = `AttributesEx`|256 WHERE `Id` = 33332; doesnt work
-* 184940 and 184941 are probably pooled in sections of the dungeon
+* ToDO: pooling of Skeletions and find out how Rogues work
 EndDBScriptData */
 
 SET @CGUID := 5550000; -- creatures
