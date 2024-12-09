@@ -86,14 +86,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 -- stationary pack 1
 (@CGUID+78, 1, -135.2006, -360.271, 17.165, 100, 100, 5),
 (@CGUID+78, 2, -157.0379, -354.905, 17.084, 4.7064, 5000, 1863401), 
-
--- runner #1 (fast respawn)
-(@CGUID+79, 1, -136.037, -343.41, 17.1648, 3.1765, 1000, 5),
-(@CGUID+79, 2, -162.127, -345.104, 17.084, 4.74018, 10000, 0),
-(@CGUID+79, 3, -149.744, -341.401, 17.0847, 4.66016, 10000, 0),
-(@CGUID+79, 4, -154.979, -338.741, 17.0853, 4.66635, 10000, 0),
-(@CGUID+79, 5, -162.127, -345.104, 17.084, 4.74018, 10000, 0),
-
 -- stationary pack 2
 (@CGUID+80, 1, -141.612, -363.212, 17.166, 100, 100, 5),
 (@CGUID+80, 2, -157.923, -374.597, 17.0818, 4.7126, 5000, 1863401), -- idle
@@ -430,12 +422,15 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (18731, 1, 13, -156.86404, 25.838596, 8.125509, 100,  20000, 0);
 
 INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
--- Generic RunMode on Spawn Cabal Familiar
+-- Generic RunMode
 (@CGUID+133, 1), -- Cabal Familiar
 (@CGUID+135, 1), -- Fel Guardhound
+-- Runners Generic RunMode
+(@CGUID+79, 1), -- spawn_group_entry
 (@CGUID+82, 1), -- spawn_group_entry
-(@CGUID+122, 1), -- spawn_group_entry
 (@CGUID+116, 1), -- spawn_group_entry
+(@CGUID+122, 1), -- spawn_group_entry
+(@CGUID+123, 1), -- spawn_group_entry
 -- String IDs
 (@CGUID+76, 1863401),
 (@CGUID+77, 1863402);
@@ -633,7 +628,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+76, 18634, 555, 3, -175.894, -349.783, 17.166, 5.68544, 7200, 7200, 0, 2), -- Cabal Summoner
 (@CGUID+77, 18634, 555, 3, -156.498, -328.007, 17.1696, 3.14159, 7200, 7200, 0, 2), -- Cabal Summoner
 (@CGUID+78, 18634, 555, 3, -135.201, -360.271, 17.1652, 3.49066, 7200, 7200, 0, 0), -- Cabal Summoner
-(@CGUID+79, 0, 555, 3, -136.037, -343.41, 17.1648, 2.96626, 5, 10, 0, 2), -- spawn_group_entry
+(@CGUID+79, 0, 555, 3, -136.037, -343.41, 17.1648, 2.96626, 5, 10, 0, 0), -- spawn_group_entry
 (@CGUID+80, 18634, 555, 3, -141.612, -363.212, 17.166, 4.2586, 7200, 7200, 0, 0), -- Cabal Summoner
 (@CGUID+81, 18634, 555, 3, -171.826, -401.41, 17.1632, 0.890118, 7200, 7200, 0, 0), -- Cabal Summoner
 (@CGUID+82, 0, 555, 3, -179.281, -350.271, 17.1665, 5.98648, 5, 10, 0, 0), -- spawn_group_entry
@@ -670,7 +665,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+113, 18639, 555, 3, -140.42, -369.956, 17.1648, 3.03687, 7200, 7200, 0, 0), -- Cabal Spellbinder
 (@CGUID+114, 18633, 555, 3, -454.315, -183.092, 12.7725, 5.06145, 7200, 7200, 0, 0), -- Cabal Acolyte
 (@CGUID+115, 18639, 555, 3, -143.33, -397.343, 17.1634, 2.37365, 7200, 7200, 0, 0), -- Cabal Spellbinder
-(@CGUID+116, 0, 555, 3, -136.037, -343.41, 17.1648, 2.96626, 5, 10, 0, 0), -- spawn_group_entry
+(@CGUID+116, 0, 555, 3, -134.274, -388.795, 17.1657, 3.86548, 5, 10, 0, 0), -- spawn_group_entry
 (@CGUID+117, 18635, 555, 3, -453.685, -186.804, 12.7725, 1.53589, 7200, 7200, 0, 0), -- Cabal Deathsworn
 (@CGUID+118, 18635, 555, 3, -454.978, -185.25, 12.7725, 0.05236, 7200, 7200, 0, 0), -- Cabal Deathsworn
 (@CGUID+119, 18639, 555, 3, -151.682, -461.163, 17.1606, 4.57276, 7200, 7200, 0, 0), -- Cabal Spellbinder
@@ -1178,10 +1173,10 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+69, 'Shadow Labyrinth - Group 048 - Cabal Summoner (2)', 0, 0, @SGGUID+29, 0, 0),
 -- Running npc between first and 2nd group
 -- Spawns on door opening and stops respawning when Group 043 is dead
-(@SGGUID+70, 'Shadow Labyrinth - Group 049 - Cabal Summoner/Cabal Spellbinder', 0, 0, @CONDITIONID+30, 0, @STRINGID+13),
-(@SGGUID+71, 'Shadow Labyrinth - Group 050 - Cabal Summoner/Cabal Spellbinder', 0, 0, @CONDITIONID+31, 0, @STRINGID+13),
-(@SGGUID+72, 'Shadow Labyrinth - Group 051 - Cabal Summoner/Cabal Spellbinder', 0, 0, @CONDITIONID+32, 0, @STRINGID+13),
-(@SGGUID+73, 'Shadow Labyrinth - Group 052 - Cabal Summoner/Cabal Spellbinder', 0, 0, @CONDITIONID+33, 0, @STRINGID+13);
+(@SGGUID+70, 'Shadow Labyrinth - Group 049 - Cabal Summoner/Cabal Spellbinder', 0, 0, @CONDITIONID+30, 0, @STRINGID+13), -- Runner 1
+(@SGGUID+71, 'Shadow Labyrinth - Group 050 - Cabal Summoner/Cabal Spellbinder', 0, 0, @CONDITIONID+31, 0, @STRINGID+13), -- Runner 2
+(@SGGUID+72, 'Shadow Labyrinth - Group 051 - Cabal Summoner/Cabal Spellbinder', 0, 0, @CONDITIONID+32, 0, @STRINGID+13), -- Runner 3
+(@SGGUID+73, 'Shadow Labyrinth - Group 052 - Cabal Summoner/Cabal Spellbinder', 0, 0, @CONDITIONID+33, 0, @STRINGID+13); -- Runner 4+5
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 18633, 0, 2, 0), (@SGGUID+3, 18635, 0, 2, 0), -- Cabal Acolyte, Cabal Deathsworn
@@ -1526,9 +1521,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+69, @CGUID+76, 0, 0), -- Cabal Spellbinder
 (@SGGUID+69, @CGUID+77, 1, 0), -- Cabal Spellbinder
 
-(@SGGUID+70, @CGUID+116, 0, 0), -- spawn_group_entry
+(@SGGUID+70, @CGUID+79, 0, 0), -- spawn_group_entry
 (@SGGUID+71, @CGUID+82, 0, 0), -- spawn_group_entry
-(@SGGUID+72, @CGUID+122, 0, 0), -- spawn_group_entry
+(@SGGUID+72, @CGUID+116, 0, 0), -- spawn_group_entry
+(@SGGUID+73, @CGUID+122, 0, 0), -- spawn_group_entry
 (@SGGUID+73, @CGUID+123, 0, 0); -- spawn_group_entry
 
 
