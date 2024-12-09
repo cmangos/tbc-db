@@ -433,6 +433,7 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 -- Generic RunMode on Spawn Cabal Familiar
 (@CGUID+133, 1), -- Cabal Familiar
 (@CGUID+135, 1), -- Fel Guardhound
+(@CGUID+82, 1), -- spawn_group_entry
 (@CGUID+116, 1), -- spawn_group_entry
 -- String IDs
 (@CGUID+76, 1863401),
@@ -1580,7 +1581,13 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+70, 'Shadow Labyrinth - Group 049 - Path 1'),
 (@SGGUID+71, 'Shadow Labyrinth - Group 049 - Path 2'),
 (@SGGUID+72, 'Shadow Labyrinth - Group 049 - Path 3'),
-(@SGGUID+73, 'Shadow Labyrinth - Group 049 - Path 4');
+(@SGGUID+73, 'Shadow Labyrinth - Group 049 - Path 4'),
+-- Runner 2 random waypoints
+(@SGGUID+74, 'Shadow Labyrinth - Group 050 - Path 1'),
+(@SGGUID+75, 'Shadow Labyrinth - Group 050 - Path 2'),
+(@SGGUID+76, 'Shadow Labyrinth - Group 050 - Path 3'),
+(@SGGUID+77, 'Shadow Labyrinth - Group 050 - Path 4');
+ 
  
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Cabal Acolyte 4 different paths after Intro path
@@ -1634,8 +1641,12 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+70, 1, -149.76266, -341.32974, 17.084673, 4.6603012, 100, @RELAYID+13),
 (@SGGUID+71, 1, -156.56253, -339.00937, 17.085264, 4.7039709, 100, @RELAYID+13),
 (@SGGUID+72, 1, -156.86292, -338.40677, 17.08532, 4.705892, 100, @RELAYID+13),
-(@SGGUID+73, 1, -162.85062, -344.2074, 17.083673, 4.7447409, 100, @RELAYID+13);
-
+(@SGGUID+73, 1, -162.85062, -344.2074, 17.083673, 4.7447409, 100, @RELAYID+13),
+-- Runner 2
+(@SGGUID+74, 1, -149.78711, -366.49707, 17.082535, 4.65049, 100, @RELAYID+14),
+(@SGGUID+75, 1, -155.3374, -366.17404, 17.082674, 4.692888, 100, @RELAYID+14),
+(@SGGUID+76, 1, -157.32748, -365.99078, 17.082611, 4.7080655, 100, @RELAYID+14),
+(@SGGUID+77, 1, -162.91078, -365.29044, 17.082392, 4.750358, 100, @RELAYID+14);
 
 DELETE FROM worldstate_name WHERE Id BETWEEN @WORLDSTATEID+1 AND @WORLDSTATEID+18;
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
@@ -1883,8 +1894,8 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `priority`, `command`
 -- Screaming Hall Door
 (183295, 0, 0, 20, 2, 0, 0, @STRINGID+10, 200, 2560, 0, 0, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - StringID - Change MovementType to Waypoint Movement'),
 (183295, 0, 1, 53, 0, 0, 0, 0, 0, 0, @WORLDSTATEID+14, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
-(183295, 0, 2, 53, 0, 0, 0, 0, 0, 0, @WORLDSTATEID+15, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'); -- runner 1
--- (183295, 0, 3, 53, 0, 0, 0, 0, 0, 0, @SGGUID+16, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
+(183295, 0, 2, 53, 0, 0, 0, 0, 0, 0, @WORLDSTATEID+15, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'), -- runner 1
+(183295, 0, 3, 53, 0, 0, 0, 0, 0, 0, @WORLDSTATEID+16, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'); -- runner 2
 -- (183295, 0, 4, 53, 0, 0, 0, 0, 0, 0, @SGGUID+17, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate'),
 -- (183295, 0, 5, 53, 0, 0, 0, 0, 0, 0, @SGGUID+18, 1, 0, 0, 0, 0, 0, 0,'Screaming Hall Door - Activate Worldstate');
 
@@ -1922,10 +1933,14 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+7, 1, @RELAYID+26, 0, 'Shadow Labyrinth - Group 049 - Path 1'),
 (@RELAYID+7, 1, @RELAYID+27, 0, 'Shadow Labyrinth - Group 049 - Path 2'),
 (@RELAYID+7, 1, @RELAYID+28, 0, 'Shadow Labyrinth - Group 049 - Path 3'),
-(@RELAYID+7, 1, @RELAYID+29, 0, 'Shadow Labyrinth - Group 049 - Path 4');
+(@RELAYID+7, 1, @RELAYID+29, 0, 'Shadow Labyrinth - Group 049 - Path 4'),
+-- Murmur room runner random waypoint scripts
+(@RELAYID+8, 1, @RELAYID+30, 0, 'Shadow Labyrinth - Group 050 - Path 1'),
+(@RELAYID+8, 1, @RELAYID+31, 0, 'Shadow Labyrinth - Group 050 - Path 2'),
+(@RELAYID+8, 1, @RELAYID+32, 0, 'Shadow Labyrinth - Group 050 - Path 3'),
+(@RELAYID+8, 1, @RELAYID+33, 0, 'Shadow Labyrinth - Group 050 - Path 4');
 
-
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+31;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+33;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Shadow Labyrinth - Group 003 - Cabal Acolyte/Cabal Deathsworn 4 differnt paths after static Intro
 (@RELAYID+1,0,0,45,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 003 - Cabal Deathsworn/Cabal Acolyte - choose random path'),
@@ -2006,15 +2021,18 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+25, 0, 0, 31, 18708, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - Terminate script'),
 (@RELAYID+25, 100, 1, 15, 33335, 0, 0, 18708, 200, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - Cast Shadow Bolt on Murmur'),
 -- Murmur room runners
--- First runner has 6 different points where he can run to, using waypoint_path so we can use on creature_movement when npc reaches the point
+-- First runner has 4 different points where he can run to, using waypoint_path so we can use on creature_movement when npc reaches the point
 (@RELAYID+26,0,0,20,2,@SGGUID+70,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 049 - PathID 1'),
 (@RELAYID+27,0,0,20,2,@SGGUID+71,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 049 - PathID 2'),
 (@RELAYID+28,0,0,20,2,@SGGUID+72,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 049 - PathID 3'),
 (@RELAYID+29,0,0,20,2,@SGGUID+73,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 049 - PathID 4'),
-(@RELAYID+30,0,0,20,2,@SGGUID+74,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 049 - PathID 5'),
-(@RELAYID+31,0,0,20,2,@SGGUID+75,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 049 - PathID 6');
+-- 2nd runner has 4 different points where he can run to, using waypoint_path so we can use on creature_movement when npc reaches the point
+(@RELAYID+30,0,0,20,2,@SGGUID+74,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 050 - PathID 1'),
+(@RELAYID+31,0,0,20,2,@SGGUID+75,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 050 - PathID 2'),
+(@RELAYID+32,0,0,20,2,@SGGUID+76,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 050 - PathID 3'),
+(@RELAYID+33,0,0,20,2,@SGGUID+77,2,0,0,0,0,0,0,0,0,0,0,0,'Shadow Labyrinth - Group 050 - PathID 4');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN @RELAYID+1 AND  @RELAYID+13;
+DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN @RELAYID+1 AND  @RELAYID+14;
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1866701, 1866702, 1866703, 1866704, 1866705, 1866706, 1873101, 1873102, 1863201, 1863401);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Blackheart Inciter RP scripts
@@ -2095,9 +2113,12 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Murmur Room
 -- Runner 1 waypoint script
 (@RELAYID+13, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 049 - Change Movement to Idle'), 
--- they cast it even if murmur is dead
-(@RELAYID+13, 0, 1, 15, 33335, 0, 0, 18708, 200, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 049 - Cast Shadow Bolt on Murmur'), 
-(@RELAYID+13, 5000, 0, 45, 0, @RELAYID+7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 049 - choose random path');
+(@RELAYID+13, 0, 1, 15, 33335, 0, 0, 18708, 200, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 049 - Cast Shadow Bolt on Murmur'), -- castable even if murmur is dead
+(@RELAYID+13, 5000, 0, 45, 0, @RELAYID+7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 049 - choose random path'),
+-- Runner 2 waypoint script
+(@RELAYID+14, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 050 - Change Movement to Idle'), 
+(@RELAYID+14, 0, 1, 15, 33335, 0, 0, 18708, 200, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 050 - Cast Shadow Bolt on Murmur'), -- castable even if murmur is dead
+(@RELAYID+14, 5000, 0, 45, 0, @RELAYID+8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadow Labyrinth - Group 050 - choose random path');
 
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
