@@ -2,8 +2,7 @@
 DBName: Auchindoun - Shadow Labyrinth
 DBScriptName: instance_shadow_labyrinth
 DB%Complete: 95
-DBComment:
-* ToDO: pooling of Skeletions 
+DBComment: 
 * Cabal Assasin researches:
 * 2 spawns 1 between first room and first boss room, 1 behind left pillar in 2nd boss room
 * despawned on default and both despawn when players engage with Blackheart the Inciter (2nd boss)
@@ -826,16 +825,16 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+267, 14881, 555, 3, -17.9049, 6.849266, -1.127929, 0.4424707, 900, 900, 2, 1), -- Spider
 (@CGUID+268, 14881, 555, 3, -53.39586, -58.26997, -1.128188, 2.701876, 900, 900, 2, 1), -- Spider
 (@CGUID+269, 14881, 555, 3, -85.20452, 3.749737, -1.129394, 4.064005, 900, 900, 2, 1), -- Spider
-(@CGUID+270, 18797, 555, 3, -427.0406, -88.95329, 12.77218, 0.9424778, 7200, 7200, 0, 0), -- Tortured Skeleton
-(@CGUID+271, 18797, 555, 3, -409.1664, -132.7278, 12.71839, 2.932153, 7200, 7200, 0, 0), -- Tortured Skeleton
-(@CGUID+272, 18797, 555, 3, -282.7459, -239.845, 12.76614, 4.852015, 7200, 7200, 0, 0), -- Tortured Skeleton
-(@CGUID+273, 18797, 555, 3, -363.1927, -286.6789, 12.7696, 3.717551, 7200, 7200, 0, 0), -- Tortured Skeleton
-(@CGUID+274, 18797, 555, 3, -398.1564, -258.1489, 12.76978, 5.044002, 7200, 7200, 0, 0), -- Tortured Skeleton
-(@CGUID+275, 18797, 555, 3, -152.6891, -259.3232, 17.16872, 3.682645, 7200, 7200, 0, 0), -- Tortured Skeleton
-(@CGUID+276, 18797, 555, 3, -437.7934, -80.17796, 12.7722, 2.932153, 7200, 7200, 0, 0), -- Tortured Skeleton
+(@CGUID+270, 18797, 555, 3, -427.041, -88.9533, 12.7722, 0.942478, 7200, 7200, 0, 0), -- Tortured Skeleton
+(@CGUID+271, 18797, 555, 3, -409.166, -132.728, 12.7184, 2.93215, 7200, 7200, 0, 0), -- Tortured Skeleton
+(@CGUID+272, 18797, 555, 3, -282.746, -239.845, 12.7661, 4.85202, 7200, 7200, 0, 0), -- Tortured Skeleton
+(@CGUID+273, 18797, 555, 3, -363.193, -286.679, 12.7696, 3.71755, 7200, 7200, 0, 0), -- Tortured Skeleton
+(@CGUID+274, 18797, 555, 3, -398.156, -258.149, 12.7698, 5.044, 7200, 7200, 0, 0), -- Tortured Skeleton
+(@CGUID+275, 18797, 555, 3, -152.689, -259.323, 17.1687, 3.68264, 7200, 7200, 0, 0), -- Tortured Skeleton
+(@CGUID+276, 18797, 555, 3, -437.793, -80.178, 12.7722, 2.93215, 7200, 7200, 0, 0), -- Tortured Skeleton
 (@CGUID+277, 18797, 555, 3, -406.8246, -104.6223, 12.77247, 1.361357, 7200, 7200, 0, 0), -- Tortured Skeleton
-(@CGUID+278, 18797, 555, 3, -349.0045, -250.1664, 12.76843, 0.5934119, 7200, 7200, 0, 0), -- Tortured Skeleton
-(@CGUID+279, 18797, 555, 3, -262.4395, -281.3174, 12.76459, 0.5934119, 7200, 7200, 0, 0), -- Tortured Skeleton
+(@CGUID+278, 18797, 555, 3, -349.005, -250.166, 12.7684, 0.593412, 7200, 7200, 0, 0), -- Tortured Skeleton
+(@CGUID+279, 18797, 555, 3, -262.44, -281.317, 12.7646, 0.593412, 7200, 7200, 0, 0), -- Tortured Skeleton
 
 (@CGUID+280, 18635, 555, 3, -74.3842, -0.151916, -1.04487, 0.0349066, 7200, 7200, 0, 0), -- Cabal Deathsworn
 (@CGUID+281, 18633, 555, 3, -73.5278, -1.96912, -1.04486, 1.22173, 7200, 7200, 0, 0), -- Cabal Acolyte
@@ -1188,7 +1187,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+74, 'Shadow Labyrinth - Group 053 - Cabal Summoner/Cabal Spellbinder', 0, 0, @CONDITIONID+33, 0, @STRINGID+13), -- Runner 5
 -- Cabal Assasins
 (@SGGUID+75, 'Shadow Labyrinth - Group 055 - Cabal Assasin', 0, 0, @CONDITIONID+34, 8, 0), -- Blackheart the Inciter room 
-(@SGGUID+76, 'Shadow Labyrinth - Group 056 - Cabal Assasin', 0, 0, @CONDITIONID+35, 8, 0);
+(@SGGUID+76, 'Shadow Labyrinth - Group 056 - Cabal Assasin', 0, 0, @CONDITIONID+35, 8, 0),
+-- Single pulled Tortured Skeleton after 2nd boss 
+(@SGGUID+77, 'Shadow Labyrinth - Group 057 - Tortured Skeleton - Group 01', 0, 1, 0, 0, 0),
+(@SGGUID+78, 'Shadow Labyrinth - Group 058 - Tortured Skeleton - Group 02', 0, 1, 0, 0, 0),
+(@SGGUID+79, 'Shadow Labyrinth - Group 059 - Tortured Skeleton - Group 03', 0, 1, 0, 0, 0),
+(@SGGUID+80, 'Shadow Labyrinth - Group 060 - Tortured Skeleton - Group 04', 0, 1, 0, 0, 0),
+(@SGGUID+81, 'Shadow Labyrinth - Group 061 - Tortured Skeleton - Group 05', 0, 1, 0, 0, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+3, 18633, 0, 2, 0), (@SGGUID+3, 18635, 0, 2, 0), -- Cabal Acolyte, Cabal Deathsworn
@@ -1541,7 +1546,31 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+74, @CGUID+123, 0, 0), -- spawn_group_entry
 -- Cabal Assasins
 (@SGGUID+75, @CGUID+100, 0, 0), -- Cabal Assasin
-(@SGGUID+76, @CGUID+101, 0, 0); -- Cabal Assasin
+(@SGGUID+76, @CGUID+101, 0, 0), -- Cabal Assasin
+
+-- Skeleton Group 1
+(@SGGUID+77, @CGUID+229, -1, 0), -- Tortured Skeletion
+(@SGGUID+77, @CGUID+175, -1, 0), -- Tortured Skeletion
+(@SGGUID+77, @CGUID+276 -1, 0), -- Tortured Skeletion
+(@SGGUID+77, @CGUID+270 -1, 0), -- Tortured Skeletion
+-- Skeleton Group 2
+(@SGGUID+78, @CGUID+277 -1, 0), -- Tortured Skeletion
+(@SGGUID+78, @CGUID+271 -1, 0), -- Tortured Skeletion 
+(@SGGUID+78, @CGUID+230 -1, 0), -- Tortured Skeletion 
+(@SGGUID+78, @CGUID+180 -1, 0), -- Tortured Skeletion 
+-- Skeleton Group 2
+(@SGGUID+79, @CGUID+231 -1, 0), -- Tortured Skeletion  
+(@SGGUID+79, @CGUID+274 -1, 0), -- Tortured Skeletion 
+
+-- Skeleton Group 3
+(@SGGUID+80, @CGUID+185 -1, 0), -- Tortured Skeletion
+(@SGGUID+80, @CGUID+278 -1, 0), -- Tortured Skeletion 
+(@SGGUID+80, @CGUID+273 -1, 0), -- Tortured Skeletion 
+(@SGGUID+80, @CGUID+232 -1, 0), -- Tortured Skeletion 
+
+(@SGGUID+81, @CGUID+279 -1, 0), -- Tortured Skeletion 
+(@SGGUID+81, @CGUID+272 -1, 0), -- Tortured Skeletion 
+(@SGGUID+81, @CGUID+275 -1, 0); -- Tortured Skeletion
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+12, @SGGUID+13),
@@ -1824,7 +1853,6 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+37, @PGUID+21, 0, 'Shadow Labyrinth - Bound / Solid Adamantite Chest - Pool 7');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+10, 8, 'Shadow Labyrinth - Tortured Skeleton (Single Pulls)'),
 (@PGUID+21, 2, 'Shadow Labyrinth - Master Chest Pool'), -- gameobject
 (@PGUID+22, 4, 'Shadow Labyrinth - Master Ancient Lichen (181278) Pool'),
 (@PGUID+23, 3, 'Shadow Labyrinth - Master Mineral Pool'),
@@ -1844,26 +1872,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+37, 1, 'Shadow Labyrinth - Bound / Solid Adamantite Chest - Pool 7'),
 (@PGUID+38, 1, 'Shadow Labyrinth - Adamantite Deposit / Rich Adamantite Deposit - Pool 8');
 
-INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+175, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #1'),
-(@CGUID+180, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #2'),
-(@CGUID+185, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #3'),
-(@CGUID+204, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #4'),
-(@CGUID+207, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #5'),
-(@CGUID+229, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #6'),
-(@CGUID+230, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #7'),
-(@CGUID+231, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #8'),
-(@CGUID+232, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #9'),
-(@CGUID+270, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #10'),
-(@CGUID+271, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #11'),
-(@CGUID+272, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #12'),
-(@CGUID+273, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #13'),
-(@CGUID+274, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #14'),
-(@CGUID+275, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #15'),
-(@CGUID+276, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #16'),
-(@CGUID+277, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #17'),
-(@CGUID+278, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #18'),
-(@CGUID+279, @PGUID+10, 0, 'Shadow Labyrinth - Tortured Skeleton - #19');
+-- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
