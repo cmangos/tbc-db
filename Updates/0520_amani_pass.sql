@@ -5,12 +5,14 @@
 
 
 -- Spawns 
-DELETE FROM creature WHERE guid IN (68944, 68945, 96983, 191024, 191041, 191042, 191032, 191033, 191034, 191035, 191039, 191040, 191043, 191036, 191037, 191038, 191031, 191044, 191048, 191019, 191017, 191021, 5307000);
+DELETE FROM creature WHERE guid IN (68943, 68944, 68945, 96983, 191024, 191041, 191042, 191032, 191033, 191034, 191035, 191039, 191040, 191043, 191036, 191037, 191038, 191031, 191044, 191048, 191019, 191017, 191021, 5307000);
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (96983, 24851, 530, 1, 6789.3, -7750.54, 126.815, 1.02974, 25, 25, 0, 0), -- Kiz Coilspanner
 (191024, 23745, 530, 1, 6774.364, -7632.2266, 127.38222, 4.01425743, 300, 300, 0, 2), -- Garg
 (68944, 23724, 530, 1, 6765.5796, -7632.0947, 127.259575, 4.991641521, 25, 25, 0, 2), -- Samir
 (68945, 23560, 530, 1, 6737, -7611.17, 125.946, 0.174533, 25, 25, 0, 2), -- Provisioner Ameenah
+
+(68943, 23761, 530, 1, 6769.81, -7616.67, 128.49, 0.697258, 25, 25, 0, 2), -- Prigmon
 -- Budd's Bodyguards
 (191041, 25145, 530, 1, 6871.87, -7751.06, 126.638, 2.07694, 300, 300, 0, 0), -- Budd's Bodyguard
 (191042, 25145, 530, 1, 6833.79, -7744.13, 124.765, 0.436332, 300, 300, 0, 0), -- Budd's Bodyguard
@@ -50,7 +52,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (191048,8, 6770.124, -7687.202,127.80886, 100, 0, 0);
 
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (23745, 23724);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (23745, 23724, 23761);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Garg
 (23745, 0, 1, 6774.364, -7632.2266, 127.38222, 4.0142574, 32000, 2374501), -- 30-35 seconds after Equiping Spear start move
@@ -67,10 +69,14 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (23724, 0, 3, 6767.635,-7622.185,127.99035, 100, 0, 0),
 (23724, 0, 4, 6787.145,-7619.097,128.1925, 100, 30000, 0),
 (23724, 0, 5, 6765.5684,-7632.1235,127.25732, 100, 0, 0),
-(23724, 0, 6, 6782.38,-7627.6665,128.41327, 100, 1000, 0);
+(23724, 0, 6, 6782.38,-7627.6665,128.41327, 100, 1000, 0),
+-- Prigmon
+(23761, 0, 1, 6769.81,-7616.6704,128.4896, 100, 35000, 2376101),
+(23761, 0, 2, 6765.559,-7622.009,127.863716, 100, 0, 0),
+(23761, 0, 3, 6747.774,-7635.6206,126.93343, 100, 35000, 2376101);
 
 -- Scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (2374501, 2374502, 2374503, 2374504);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2374501, 2374502, 2374503, 2374504, 2376101);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Garg
 (2374501, 8000, 0, 42, 0, 0, 0, 0, 0, 0, 2023, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Garg - Set EquipmentSlot'),
@@ -78,7 +84,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (2374502, 7000, 0, 1, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Garg - Emote OneshotCheer'),
 (2374503, 5000, 0, 1, 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Garg - Emote OneShotAttack'),
 (2374503, 8000, 0, 42, 0, 0, 0, 0, 0, 0, 6228, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Garg - Set EquipmentSlot'),
-
 (2374504, 1000, 0, 1, 92, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Garg - Emote OneShotEat'),
 (2374504, 8000, 0, 1, 92, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Garg - Emote OneShotEat'),
-(2374504, 14000, 0, 1, 92, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Garg - Emote OneShotEat');
+(2374504, 14000, 0, 1, 92, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Garg - Emote OneShotEat'),
+-- Prigmon
+(2376101, 2000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Prigmon - Emote StateUseTanding'),
+(2376101, 25000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Prigmon - Remove EmoteState'),
+(2376101, 28000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Prigmon - StandState kneel'),
+(2376101, 35000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Prigmon - StandState Stand');
