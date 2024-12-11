@@ -1547,30 +1547,28 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 -- Cabal Assasins
 (@SGGUID+75, @CGUID+100, 0, 0), -- Cabal Assasin
 (@SGGUID+76, @CGUID+101, 0, 0), -- Cabal Assasin
-
 -- Skeleton Group 1
 (@SGGUID+77, @CGUID+229, -1, 0), -- Tortured Skeletion
 (@SGGUID+77, @CGUID+175, -1, 0), -- Tortured Skeletion
-(@SGGUID+77, @CGUID+276 -1, 0), -- Tortured Skeletion
-(@SGGUID+77, @CGUID+270 -1, 0), -- Tortured Skeletion
+(@SGGUID+77, @CGUID+276, -1, 0), -- Tortured Skeletion
+(@SGGUID+77, @CGUID+270, -1, 0), -- Tortured Skeletion
 -- Skeleton Group 2
-(@SGGUID+78, @CGUID+277 -1, 0), -- Tortured Skeletion
-(@SGGUID+78, @CGUID+271 -1, 0), -- Tortured Skeletion 
-(@SGGUID+78, @CGUID+230 -1, 0), -- Tortured Skeletion 
-(@SGGUID+78, @CGUID+180 -1, 0), -- Tortured Skeletion 
+(@SGGUID+78, @CGUID+277, -1, 0), -- Tortured Skeletion
+(@SGGUID+78, @CGUID+271, -1, 0), -- Tortured Skeletion 
+(@SGGUID+78, @CGUID+230,-1, 0), -- Tortured Skeletion 
+(@SGGUID+78, @CGUID+180, -1, 0), -- Tortured Skeletion 
 -- Skeleton Group 2
-(@SGGUID+79, @CGUID+231 -1, 0), -- Tortured Skeletion  
-(@SGGUID+79, @CGUID+274 -1, 0), -- Tortured Skeletion 
-
+(@SGGUID+79, @CGUID+231, -1, 0), -- Tortured Skeletion  
+(@SGGUID+79, @CGUID+274, -1, 0), -- Tortured Skeletion 
 -- Skeleton Group 3
-(@SGGUID+80, @CGUID+185 -1, 0), -- Tortured Skeletion
-(@SGGUID+80, @CGUID+278 -1, 0), -- Tortured Skeletion 
-(@SGGUID+80, @CGUID+273 -1, 0), -- Tortured Skeletion 
-(@SGGUID+80, @CGUID+232 -1, 0), -- Tortured Skeletion 
-
-(@SGGUID+81, @CGUID+279 -1, 0), -- Tortured Skeletion 
-(@SGGUID+81, @CGUID+272 -1, 0), -- Tortured Skeletion 
-(@SGGUID+81, @CGUID+275 -1, 0); -- Tortured Skeletion
+(@SGGUID+80, @CGUID+185, -1, 0), -- Tortured Skeletion
+(@SGGUID+80, @CGUID+278, -1, 0), -- Tortured Skeletion 
+(@SGGUID+80, @CGUID+273, -1, 0), -- Tortured Skeletion 
+(@SGGUID+80, @CGUID+232, -1, 0), -- Tortured Skeletion 
+-- Skeleton Group 4
+(@SGGUID+81, @CGUID+279, -1, 0), -- Tortured Skeletion 
+(@SGGUID+81, @CGUID+272, -1, 0), -- Tortured Skeletion 
+(@SGGUID+81, @CGUID+275, -1, 0); -- Tortured Skeletion
 
 INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+12, @SGGUID+13),
