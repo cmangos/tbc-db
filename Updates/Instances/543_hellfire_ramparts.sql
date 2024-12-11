@@ -484,11 +484,8 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1726401, 1728001);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1728001);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1726401, 0, 0, 0, 0, 0, 0, 17269, @CGUID+29, 17, 13695, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Ravener (Hellfire Ramparts) - Yell At Bleeding Hollow Darkcaster'),
-(1726401, 0, 0, 36, 0, 0, 0, 17269, @CGUID+29, 17, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Ravener (Hellfire Ramparts) - Face Bleeding Hollow Darkcaster'),
-(1726401, 4000, 0, 0, 0, 0, 0, 17269, @CGUID+29, 19, 13989, 0, 0, 0, 0, 0, 0, 0, 'Bleeding Hollow Darkcaster (Hellfire Ramparts) - Yell At Bonechewer Ravener'),
 (1728001, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Warhound - Change Movement'),
 (1728001, 0, 1, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Warhound - Combat Zone Pulse');
 
