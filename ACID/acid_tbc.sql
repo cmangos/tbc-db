@@ -3528,8 +3528,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kurzel (23748) - NSR
 -- Prigmon (23761) - NSR
 -- Brend (23762) - NSR
--- Marge (23764) - NSR
+-- Marge (23764) 
+('2376401','23764','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Marge - Set Phase 1 OnSpawn'),
+('2376402','23764','1','29','100','1','1000','1000','1000','1000','0','0','53','-10301','0','0','22','0','0','0','0','0','0','0','Marge - Start RandomScript and set phase 0'),
 -- Morgom (23766) - NSR
+('2376601','23766','8','0','100','0','42333','-1','0','0','0','0','47','7','0','0','0','0','0','0','0','0','0','0','Morgom - Set Standstate on SpellHit'),
 -- Donna Brascoe (23858) - NSR
 -- Kiz Coilspanner (24851) - NSR
 -- Budd\'s Bodyguard 25145
