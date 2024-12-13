@@ -155,24 +155,28 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (23762, 0, 16, 6750.376,-7561.012,126.14468, 100, 0, 0),
 (23762, 0, 17,6736.026,-7558.7544,126.89935, 100, 0, 0),
 -- Marge
-(23764, 0, 1, 6707.7837,-7581.739,126.92148, 100, 0, 0),
-(23764, 0, 2, 6706.914,-7601.817,125.75387, 100, 0, 0),
-(23764, 0, 3, 6717.3823,-7607.291,126.25313, 100, 0, 0),
-(23764, 0, 4, 6730.556,-7603.7344,126.13978, 100, 0, 0),
-(23764, 0, 5, 6755.4663,-7590.4307,127.778206, 100, 0, 0),
-(23764, 0, 6, 6767.432,-7593.558,127.700195, 100, 0, 0),
-(23764, 0, 7, 6771.6353,-7607.7554,128.52863, 100, 0, 0),
-(23764, 0, 8, 6766.284,-7613.7754,128.30774, 100, 0, 0),
-(23764, 0, 9, 6754.3076,-7614.549,127.613434, 100, 0, 0),
-(23764, 0, 10, 6745.358,-7601.0747,126.58633, 100, 0, 0),
-(23764, 0, 11, 6752.4004,-7585.6665,127.67639, 100, 0, 0),
-(23764, 0, 12, 6766.2617,-7565.039,127.083145, 100, 0, 0),
-(23764, 0, 13, 6785.4507,-7567.6406,126.813774, 100, 0, 0),
-(23764, 0, 14, 6786.0024,-7585.2285,127.08642, 100, 0, 0),
-(23764, 0, 15, 6769.0938,-7591.8647,127.65797, 100, 0, 0),
-(23764, 0, 16, 6756.7524,-7583.4106,126.999275, 100, 0, 0),
-(23764, 0, 17, 6744.7173,-7570.9653,126.96568, 100, 3000, 2376401), --
-(23764, 0, 18, 6740.0703,-7559.514,126.459785,1.972222089767456054, 100, 3),
+-- RP 1 - picking up new bottle
+(23764, 0, 1, 6737.375,-7556.5435,126.62047, 100, 8000, 2376401),
+(23764, 0, 3, 6740.0806,-7559.5254,126.45913,1.97222, 100, 2376402),
+-- RP 2 - chased by morgom
+(23764, 1, 1, 6707.7837,-7581.739,126.92148, 100, 0, 0),
+(23764, 1, 2, 6706.914,-7601.817,125.75387, 100, 0, 0),
+(23764, 1, 3, 6717.3823,-7607.291,126.25313, 100, 0, 0),
+(23764, 1, 4, 6730.556,-7603.7344,126.13978, 100, 0, 0),
+(23764, 1, 5, 6755.4663,-7590.4307,127.778206, 100, 0, 0),
+(23764, 1, 6, 6767.432,-7593.558,127.700195, 100, 0, 0),
+(23764, 1, 7, 6771.6353,-7607.7554,128.52863, 100, 0, 0),
+(23764, 1, 8, 6766.284,-7613.7754,128.30774, 100, 0, 0),
+(23764, 1, 9, 6754.3076,-7614.549,127.613434, 100, 0, 0),
+(23764, 1, 10, 6745.358,-7601.0747,126.58633, 100, 0, 0),
+(23764, 1, 11, 6752.4004,-7585.6665,127.67639, 100, 0, 0),
+(23764, 1, 12, 6766.2617,-7565.039,127.083145, 100, 0, 0),
+(23764, 1, 13, 6785.4507,-7567.6406,126.813774, 100, 0, 0),
+(23764, 1, 14, 6786.0024,-7585.2285,127.08642, 100, 0, 0),
+(23764, 1, 15, 6769.0938,-7591.8647,127.65797, 100, 0, 0),
+(23764, 1, 16, 6756.7524,-7583.4106,126.999275, 100, 0, 0),
+(23764, 1, 17, 6744.7173,-7570.9653,126.96568, 100, 3000, 2376403), --
+(23764, 1, 18, 6740.0703,-7559.514,126.459785,1.972222089767456054, 100, 2376404),
 -- Morgom WP 23766
 (23766, 0, 1, 6722.6997,-7571.005,127.25376, 100, 0, 0),
 (23766, 0, 2, 6714.8286,-7576.5967,126.74341, 100, 0, 0),
@@ -195,12 +199,12 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (23766, 0, 19, 6778.247,-7582.341,127.89052, 100, 100, 6),
 (23766, 0, 20, 6776.9946,-7584.0903,127.60736, 100, 1000, 5),
 (23766, 0, 21, 6758.645,-7581.349,126.7218, 100, 0, 0),
-(23766, 0, 22, 6751.7583,-7574.75,127.36096, 100, 10000, 0), -- get hit by marge 'throw torch'
+(23766, 0, 22, 6751.7583,-7574.75,127.36096, 100, 10000, 0), 
 (23766, 0, 23, 6751.7583,-7574.75,127.36096, 100, 1000, 2376601), -- get hit by marge 'throw torch'
 (23766, 0, 24, 6749.7036,-7573.253,127.23871, 100, 0, 0),
 (23766, 0, 25, 6743.41,-7557.8584,126.18736, 100, 0, 0),
 (23766, 0, 26, 6742.547,-7556.6997,126.21196, 100, 0, 0),
-(23766, 0, 27, 6742.2456,-7556.369,126.23258,2.164208173751831054, 1000, 3), -- change to idle
+(23766, 0, 27, 6742.2456,-7556.369,126.23258,2.164208173751831054, 1000, 2376602), -- change to idle 
 -- Donna Brascoe
 (23858, 0, 1, 6771.347,-7607.2363,128.5081,2.8972466, 40000, 2385801), -- waittime between 35-40 seconds
 (23858, 0, 2, 6762.7954,-7614.173,128.21152, 100, 0, 0),
@@ -209,7 +213,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (23858, 0, 5, 6764.4897,-7610.385,128.54819,5.410520553588867187, 60000, 0); -- waittime between 60-65 seconds
 
 -- Scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (2374501, 2374502, 2374503, 2374504, 2374801, 2376101, 2376401, 2376601, 2385801);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2374501, 2374502, 2374503, 2374504, 2374801, 2374802, 2374803, 2376101, 2376401, 2376402, 2376403, 2376404, 2376601, 2376602, 2385801);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Garg
 (2374501, 8000, 0, 42, 0, 0, 0, 0, 0, 0, 2023, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Garg - Set EquipmentSlot'),
@@ -233,15 +237,29 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (2376101, 25000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Prigmon - Remove EmoteState'),
 (2376101, 28000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Prigmon - StandState kneel'),
 (2376101, 35000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Prigmon - StandState Stand'),
--- Marge 
-(2376401, 0, 0, 36, 0, 0, 0, 23766, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Face Morgom'),
-(2376401, 100, 1, 15, 42333, 0, 0, 23766, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Cast Throw Torch'),
-(2376401, 2000, 0, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Remove EquipmentSlot'),
-(2376401, 2000, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Set Walkmode'),
-(2376401, 3000, 0, 0, 0, 0, 0, 0, 0, 0, 22267, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Say Text'),
+-- Marge RP 1 - pickup new bottle
+(2376401, 0, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - StandState kneel'),
+(2376401, 8000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - StandState stand'),
+(2376401, 8000, 1, 42, 0, 0, 0, 0, 0, 0, 2717, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Set EquipmentSlot'),
+-- Inform self that we have a bottle again (set phase 1)
+(2376402, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Send EventAI A to self'),
+(2376402, 0, 0, 20, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Change to Movement to Idle'),
+-- Endscript for morgem chase rp
+(2376403, 100, 0, 36, 0, 0, 0, 23766, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Face Morgom'),
+(2376403, 100, 1, 15, 42333, 0, 0, 23766, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Cast Throw Torch'),
+(2376403, 2000, 0, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Remove EquipmentSlot'),
+(2376403, 2000, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Set Walkmode'),
+(2376403, 3000, 0, 0, 0, 0, 0, 0, 0, 0, 22267, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Say Text'),
+--  Inform that we dont have a bottle now
+(2376404, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Send EventAI B to self'),
+(2376404, 0, 0, 20, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Change to Movement to Idle'),
 -- Morgom
 (2376601, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - StandState Stand'),
 (2376601, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - Set Walkmode'),
+-- Equip back bottle and set phase 1
+(2376602, 0, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - Send EventAI A to self'),
+(2376602, 0, 0, 42, 0, 0, 0, 0, 0, 0, 2717, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - Set EquipmentSlot'),
+(2376602, 0, 2, 20, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - Change to Movement to Idle'),
 -- Donna Brascoe
 (2385801, 0, 0, 1, 173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Donna Brascoe - Emote StateWork'),
 (2385801, 40000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Donna Brascoe - Remove EmoteState');
@@ -251,22 +269,71 @@ UPDATE creature_template SET EquipmentTemplateId = '0' WHERE Entry = '23748';
 
 SET @RELAYID := 10300;
 -- Random RP script for Marge
-DELETE FROM dbscript_random_templates WHERE id = @RELAYID+1;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+12;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
-(@RELAYID+1, 1, @RELAYID+1, 100, 'Ghostlands - Marge - Morgom chasing marge');
+-- Possible scripts when Marge has a bottle equiped (Phase 1)
+(@RELAYID+1, 1, @RELAYID+1, 19, 'Ghostlands - Marge - Emote Eat'), 
+(@RELAYID+1, 1, @RELAYID+2, 19, 'Ghostlands - Marge - Emote Laugh'), 
+(@RELAYID+1, 1, @RELAYID+3, 19, 'Ghostlands - Marge - Emote Cheer with Sound'),
+(@RELAYID+1, 1, @RELAYID+4, 19, 'Ghostlands - Marge - Emote Applaud'),
+(@RELAYID+1, 1, @RELAYID+5, 8, 'Ghostlands - Marge - Emote Throw Torch'),
+(@RELAYID+1, 1, @RELAYID+6, 8, 'Ghostlands - Marge - Morgom chasing marge'),
+-- (@RELAYID+1, 1, @RELAYID+7, 8, 'Ghostlands - Marge - Marge chasing Brend'),
+-- Possible scripts when Marge doesnt have a bottle equiped (Phase 2)
+(@RELAYID+2, 1, @RELAYID+2, 30, 'Ghostlands - Marge - Emote Laugh'), 
+(@RELAYID+2, 1, @RELAYID+3, 30, 'Ghostlands - Marge - Emote Cheer with Sound'),
+(@RELAYID+2, 1, @RELAYID+4, 30, 'Ghostlands - Marge - Emote Applaud'),
+(@RELAYID+2, 1, @RELAYID+8, 10, 'Ghostlands - Marge - Marge pickup Bottle'),
+-- Morgom Phase 1 Bottle Equiped - 4 different emotes , small chance to cast Throw Torch on invis target
+(@RELAYID+10, 1, @RELAYID+9, 23, 'Ghostlands - Morgom - Cheer Emote with Sound'),
+(@RELAYID+10, 1, @RELAYID+2, 23, 'Ghostlands - Morgom - Emote Laugh'),
+(@RELAYID+10, 1, @RELAYID+4, 23, 'Ghostlands - Morgom - Emote Applaud'),
+(@RELAYID+10, 1, @RELAYID+1, 23, 'Ghostlands - Morgom - Emote OneShotEat'),
+(@RELAYID+10, 1, @RELAYID+5, 8, 'Ghostlands - Morgom - Cast Throw Torch'),
+-- Morgom Phase 2 no Bottle equiped - small chance to Equip torch
+(@RELAYID+11, 1, @RELAYID+9, 23, 'Ghostlands - Morgom - Cheer Emote with Sound'),
+(@RELAYID+11, 1, @RELAYID+2, 23, 'Ghostlands - Morgom - Emote Laugh'),
+(@RELAYID+11, 1, @RELAYID+4, 23, 'Ghostlands - Morgom - Emote Applaud'),
+(@RELAYID+11, 1, @RELAYID+10, 8, 'Ghostlands - Morgom - Equip Torch');
 
-
-DELETE FROM dbscripts_on_relay WHERE id = @RELAYID+1;
+SET @RELAYID := 10300;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+15;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Marge/Morom RPs
+(@RELAYID+1, 0, 0, 1, 92, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Emote OneShotEat'),
+(@RELAYID+2, 0, 0, 1, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Emote OneShotLaugh'),
+(@RELAYID+3, 0, 0, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Emote OneShotCheer'),
+(@RELAYID+3, 0, 1, 16, 2689, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - PlaySound'),
+(@RELAYID+4, 0, 0, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Emote OneShotApplaud'),
+-- Marge/Morgom cast Throw Torch onto Zul'Aman Exterior InvisMan
+(@RELAYID+5, 0, 0, 31, 23746, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge/Morgom - Terminate script if InvisMan not found'),
+(@RELAYID+5, 1, 1, 15, 42333, 0, 0, 23746, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge/Morgom - Cast ThrowTorch'),
+(@RELAYID+5, 1, 2, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge/Morgom - Remove EquipmentSlot'),
+(@RELAYID+5, 1, 3, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge/Morgom - Send EventAI B to self'), -- inform self to change phase to 2
 -- Marge getting chased from Morgom
-(@RELAYID+1, 0, 0, 31, 23766, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Terminate script if Morgom not found'),
-(@RELAYID+1, 1, 1, 31, 23762, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Terminate script if Brend not found'),
-(@RELAYID+1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 22265, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Say Text'),
-(@RELAYID+1, 6000, 0, 0, 0, 0, 0, 23762, 10, 0, 22268, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Brend - Say Text'),
-(@RELAYID+1, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 22266, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Say Text'),
-(@RELAYID+1, 19000, 0, 0, 0, 0, 0, 23762, 10, 0, 22269, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Brend - Say Text'),
-(@RELAYID+1, 23000, 0, 0, 0, 0, 0, 23766, 10, 0, 22270, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - Say Text'),
-(@RELAYID+1, 24000, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Set RunMode'),
-(@RELAYID+1, 25000, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Start WaypointPath 0'),
-(@RELAYID+1, 26000, 0, 25, 1, 0, 0, 23766, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Set RunMode'),
-(@RELAYID+1, 27000, 0, 20, 2, 0, 0, 23766, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - Start WaypointPath 0');
+(@RELAYID+6, 0, 0, 31, 23766, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Terminate script if Morgom not found'),
+(@RELAYID+6, 1, 1, 31, 23762, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Terminate script if Brend not found'),
+(@RELAYID+6, 2, 1, 35, 8, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Send EventAI C to self'), -- set Phase to 0 so we dont use any emote anymore
+(@RELAYID+6, 2, 2, 0, 0, 0, 0, 0, 0, 0, 22265, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Say Text'),
+(@RELAYID+6, 6000, 0, 0, 0, 0, 0, 23762, 10, 0, 22268, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Brend - Say Text'),
+(@RELAYID+6, 6000, 1, 1, 1, 0, 0, 23762, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Brend - Emote OneShotTalk'),
+(@RELAYID+6, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 22266, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Say Text'),
+(@RELAYID+6, 19000, 0, 0, 0, 0, 0, 23762, 10, 0, 22269, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Brend - Say Text'),
+(@RELAYID+6, 19000, 1, 1, 1, 0, 0, 23762, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Brend - Emote OneShotTalk'),
+(@RELAYID+6, 23000, 0, 0, 0, 0, 0, 23766, 10, 0, 22270, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - Say Text'),
+(@RELAYID+6, 23000, 1, 1, 153, 0, 0, 23766, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - Emote OneShotLaughNoSheathe'),
+(@RELAYID+6, 24000, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Set RunMode'),
+(@RELAYID+6, 25000, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Start WaypointPath 1'),
+(@RELAYID+6, 26000, 0, 25, 1, 0, 0, 23766, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Set RunMode'),
+(@RELAYID+6, 26000, 1, 35, 8, 0, 0, 23766, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Send EventAI C to Morgom'),
+(@RELAYID+6, 27000, 0, 20, 2, 0, 0, 23766, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - Start WaypointPath 0'),
+-- Marge picking up new Bottle
+(@RELAYID+8, 0, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Start WaypointPath 0'),
+(@RELAYID+8, 1, 1, 35, 8, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Send EventAI C to self'), -- set Phase to 0 so we dont use any emote anymore
+-- Morgom ooc random emotes
+(@RELAYID+9, 0, 0, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - Emote OneShotCheer'),
+(@RELAYID+9, 0, 1, 16, 2701, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - Play Sound'),
+-- Inform self that we have bottle equiped 
+(@RELAYID+10, 0, 0, 42, 0, 0, 0, 0, 0, 0, 2717, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - Set EquipmentSlot'),
+(@RELAYID+10, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Morgom - Send EventAI A to self');
+
