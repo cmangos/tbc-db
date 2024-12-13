@@ -1240,13 +1240,13 @@ UPDATE `npc_vendor` SET `slot` = 6 WHERE `entry` = 18267 AND `item` = 27830; -- 
 UPDATE `npc_vendor` SET `slot` = 7 WHERE `entry` = 18267 AND `item` = 24522; -- [7]
 
 -- https://www.wowhead.com/tbc/npc=18266/warrant-officer-tracy-proudwell
-UPDATE `npc_vendor` SET `slot` = 1 WHERE `entry` = 18267 AND `item` = 28361; -- Mighty Blood Garnet
-UPDATE `npc_vendor` SET `slot` = 2 WHERE `entry` = 18267 AND `item` = 27812; -- Stark Blood Garnet
-UPDATE `npc_vendor` SET `slot` = 3 WHERE `entry` = 18267 AND `item` = 27809; -- Barbed Deep Peridot
-UPDATE `npc_vendor` SET `slot` = 4 WHERE `entry` = 18267 AND `item` = 27820; -- Notched Deep Peridot
-UPDATE `npc_vendor` SET `slot` = 5 WHERE `entry` = 18267 AND `item` = 27833; -- Band of the Victor
-UPDATE `npc_vendor` SET `slot` = 6 WHERE `entry` = 18267 AND `item` = 27834; -- Circlet of the Victor
-UPDATE `npc_vendor` SET `slot` = 7 WHERE `entry` = 18267 AND `item` = 24520; -- Honor Hold Favor
+UPDATE `npc_vendor` SET `slot` = 1 WHERE `entry` = 18266 AND `item` = 28361; -- Mighty Blood Garnet
+UPDATE `npc_vendor` SET `slot` = 2 WHERE `entry` = 18266 AND `item` = 27812; -- Stark Blood Garnet
+UPDATE `npc_vendor` SET `slot` = 3 WHERE `entry` = 18266 AND `item` = 27809; -- Barbed Deep Peridot
+UPDATE `npc_vendor` SET `slot` = 4 WHERE `entry` = 18266 AND `item` = 27820; -- Notched Deep Peridot
+UPDATE `npc_vendor` SET `slot` = 5 WHERE `entry` = 18266 AND `item` = 27833; -- Band of the Victor
+UPDATE `npc_vendor` SET `slot` = 6 WHERE `entry` = 18266 AND `item` = 27834; -- Circlet of the Victor
+UPDATE `npc_vendor` SET `slot` = 7 WHERE `entry` = 18266 AND `item` = 24520; -- Honor Hold Favor
 
 -- ["Dama Wildmane"] = {
 UPDATE `npc_vendor` SET `slot` = 1 WHERE `entry` = 20494 AND `item` = 25474; -- [1]
