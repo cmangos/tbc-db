@@ -192,14 +192,14 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (23764, 2, 11, 6784.466,-7571.244,127.49613, 100, 0, 0),
 (23764, 2, 12, 6775.898,-7563.27,127.1076, 100, 0, 0),
 (23764, 2, 13, 6764.446,-7562.7544,126.84477, 100, 0, 0),
-(23764, 2, 14, 6756.56,-7569.8716,127.01961, 100, 500, 0),
+(23764, 2, 14, 6756.56,-7569.8716,127.01961, 100, 200, 0),
 (23764, 2, 15, 6748.1987,-7579.516,127.54935, 100, 0, 0),
 (23764, 2, 16, 6749.5356,-7591.884,126.725624, 100, 0, 0),
 (23764, 2, 17, 6750.821,-7604.8623,127.35158, 100, 0, 0),
 (23764, 2, 18, 6757.115,-7612.6616,128.11246, 100, 0, 0),
 (23764, 2, 19, 6768.0137,-7621.94,128.0282, 100, 0, 0),
 (23764, 2, 20, 6778.0273,-7614.5605,128.62184, 100, 0, 0),
-(23764, 2, 21, 6782.0293,-7605.661,128.37212, 100, 500, 0), -- waittime so slow her down a bit
+(23764, 2, 21, 6782.0293,-7605.661,128.37212, 100, 200, 0), -- waittime so slow her down a bit
 (23764, 2, 22, 6785.953,-7592.2363,127.48261, 100, 0, 0),
 (23764, 2, 23, 6788.865,-7579.6934,127.20135, 100, 0, 0),
 (23764, 2, 24, 6782.757,-7568.5273,127.11948, 100, 0, 0),
@@ -382,10 +382,10 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+7, 16000, 0, 1, 11, 0, 0, 23762, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Brend - Emote OneShotLaugh'),
 (@RELAYID+7, 17000, 0, 0, 0, 0, 0, 0, 0, 0, 22258, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Say Text'), 
 (@RELAYID+7, 17000, 1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Emote OneShotExclamation'), 
-(@RELAYID+7, 17000, 2, 25, 1, 0, 0, 23762, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Brend - Set Run Mode'),
-(@RELAYID+7, 17000, 2, 20, 2, 0, 0, 23762, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Brend - Start WaypointPath0'),
-(@RELAYID+7, 18000, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Set Run Mode'),
-(@RELAYID+7, 18000, 1, 20, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Start WaypointPath 2'),
+(@RELAYID+7, 18000, 2, 25, 1, 0, 0, 23762, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Brend - Set Run Mode'),
+(@RELAYID+7, 18000, 2, 20, 2, 0, 0, 23762, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Brend - Start WaypointPath0'),
+(@RELAYID+7, 19000, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Set Run Mode'),
+(@RELAYID+7, 19000, 1, 20, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Start WaypointPath 2'),
 -- Marge picking up new Bottle
 (@RELAYID+8, 0, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Start WaypointPath 0'),
 (@RELAYID+8, 1, 1, 35, 8, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Ghostlands - Marge - Send EventAI C to self'), -- set Phase to 0 so we dont use any emote anymore
