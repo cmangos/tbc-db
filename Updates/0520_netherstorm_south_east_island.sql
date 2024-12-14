@@ -80,14 +80,28 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (19569, 0, 21, 3384.844,4272.874,122.67322, 100, 0, 0),
 (19569, 0, 22, 3389.8567,4267.7715,122.70082,100, 0, 0);
 
+-- SpawnData
+DELETE FROM creature_spawn_data WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
+DELETE FROM creature_spawn_data WHERE guid BETWEEN @CGUID+1 AND @CGUID+12;
+INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
+(@CGUID+1, 2020302), -- Monster - Tool, Wrench Small
+(@CGUID+2, 2020301), -- Monster - Mace, Basic Metal Hammer
+(@CGUID+4, 2020302), -- Monster - Tool, Wrench Small
+(@CGUID+5, 2020303), -- Monster - Item, Tankard Wooden
+(@CGUID+6, 2020302), -- Monster - Tool, Wrench Small
+(@CGUID+7, 2020303), -- Monster - Item, Tankard Wooden
+(@CGUID+8, 2020301), -- Monster - Mace, Basic Metal Hammer
+(@CGUID+9, 2020302), -- Monster - Tool, Wrench Small
+(@CGUID+10, 2020302), -- Monster - Tool, Wrench Small
+(@CGUID+11, 2020301), -- Monster - Mace, Basic Metal Hammer
+(@CGUID+12, 2020301); -- Monster - Mace, Basic Metal Hammer
+
 -- Scripts
 SET @RELAYID := 18000;
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+15;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Nether Technician script via ACID - CGUID+4
-(@RELAYID+1, 0, 0, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Remove EquipmentSlot'),
-(@RELAYID+1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - EmoteState None'),
-(@RELAYID+2, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1911, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
-(@RELAYID+2, 0, 1, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_USESTANDING_NOSHEATHE'),
-(@RELAYID+3, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1903, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
-(@RELAYID+3, 0, 1, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_WORK_MINING');
+(@RELAYID+1, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1911, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
+(@RELAYID+1, 0, 1, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_USESTANDING_NOSHEATHE'),
+(@RELAYID+2, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1903, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
+(@RELAYID+2, 0, 1, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_WORK_MINING');
