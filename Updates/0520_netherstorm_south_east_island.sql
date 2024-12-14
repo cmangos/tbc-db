@@ -56,22 +56,22 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
--- -- Netherologist Coppernickels patroling around the bridge
-(19569, 0, 1, 3392.6218, 4267.4937, 122.6924, 0.122173, 29000, 0), 
+-- Netherologist Coppernickels patroling around the bridge
+(19569, 0, 1, 3392.6218, 4267.4937, 122.6924, 0.122173, 35000, 1956901), 
 (19569, 0, 2, 3387.336,4271.7876,122.673416, 100, 0, 0),
 (19569, 0, 3, 3382.5715,4283.9297,120.99102, 100, 0, 0),
 (19569, 0, 4, 3385.6653,4291.7524,121.046265, 100, 0, 0),
-(19569, 0, 5, 3389.064,4296.103,120.85735,0.680678427219390869,33000, 0),
+(19569, 0, 5, 3389.064,4296.103,120.85735,0.680678427219390869, 35000, 1956901),
 (19569, 0, 6, 3381.8755,4299.739,120.177086, 100, 0, 0),
 (19569, 0, 7, 3379.8218,4311.4155,120.737305, 100, 0, 0),
 (19569, 0, 8, 3378.7095,4329.5312,122.634514, 100, 0, 0),
 (19569, 0, 9, 3381.7964,4334.7876,122.63777, 100, 0, 0),
-(19569, 0, 10, 3385.8474,4336.2344,122.63841,0.087266460061073303,28000, 0),
+(19569, 0, 10, 3385.8474,4336.2344,122.63841,0.087266460061073303, 35000, 1956901),
 (19569, 0, 11, 3367.6418,4341.9956,122.694984, 100, 0, 0),
 (19569, 0, 12, 3363.7769,4341.0405,122.68952,3.857177734375, 0, 0),
 (19569, 0, 13, 3370.378,4350.1274,122.97476, 100, 0, 0),
 (19569, 0, 14, 3376.6335,4356.977,123.6317, 100, 0, 0),
-(19569, 0, 15, 3379.6829,4358.2637,123.625404,0.104719758033752441, 34000, 0),
+(19569, 0, 15, 3379.6829,4358.2637,123.625404,0.104719758033752441, 35000, 1956901),
 (19569, 0, 16, 3375.633,4351.1187,123.01252, 100, 0, 0),
 (19569, 0, 17, 3376.491,4336.853,122.639595, 100, 0, 0),
 (19569, 0, 18, 3378.2063,4322.0347,122.62954, 100, 0, 0),
@@ -98,6 +98,16 @@ INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 
 -- Scripts
 SET @RELAYID := 18000;
+DELETE FROM dbscript_random_templates WHERE id = @RELAYID+1;
+INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
+-- Netherologist Coppernickels different text's
+(@RELAYID+1, 0, 16949, 0, 'Netherstorm - Nether Technician - Say 1'), 
+(@RELAYID+1, 0, 16950, 0, 'Netherstorm - Nether Technician - Say 2'),
+(@RELAYID+1, 0, 16951, 0, 'Netherstorm - Nether Technician - Say 3'), 
+(@RELAYID+1, 0, 16952, 0, 'Netherstorm - Nether Technician - Say 4'), 
+(@RELAYID+1, 0, 16953, 0, 'Netherstorm - Nether Technician - Say 5');
+
+
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Nether Technician script via ACID - CGUID+4
@@ -105,3 +115,14 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+1, 0, 1, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_USESTANDING_NOSHEATHE'),
 (@RELAYID+2, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1903, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
 (@RELAYID+2, 0, 1, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_WORK_MINING');
+
+-- Old Netherologist Coppernickels waypoint scripts
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1956901, 1956902, 1956903, 1956904);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Netherologist Coppernickels
+-- Timer for how long he stays depens on how long he uses emote "STATE_USESTANDING_NOSHEATHE" this can vary between 15 and 30 seconds
+-- using hardcoded 25 seconds for now.
+(1956901, 5000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Netherologist Coppernickels - Emote UseStanding'), 
+(1956901, 30000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Netherologist Coppernickels - Emote None'), 
+(1956901, 32000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Netherologist Coppernickels - Emote OneShotExclamation'), 
+(1956901, 32000, 1, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Netherologist Coppernickels - random text');
