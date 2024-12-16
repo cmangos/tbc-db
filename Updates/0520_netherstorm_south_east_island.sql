@@ -162,17 +162,27 @@ DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+2;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 (@SGGUID, 'Netherstorm - Group 001 - Phase Hunter (2)', 2, 0, 0, 0, 0),
 (@SGGUID+1, 'Netherstorm - Group 002 - Nether Ray - Solo Patrol', 1, 0, 0, 0, 0),
-(@SGGUID+2, 'Netherstorm - Group 003 - Mana Snapper - Solo Patrol', 1, 0, 0, 0, 0);
+(@SGGUID+2, 'Netherstorm - Group 003 - Mana Snapper - Solo Patrol', 1, 0, 0, 0, 0),
+
+(@SGGUID+3, 'Netherstorm - Group 005 - Phase Hunter (4)', 0, 0, 0, 0, 0),
+(@SGGUID+4, 'Netherstorm - Group 006 - Shaleskin Flayer', 1, 0, 0, 0, 0),
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
 DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+2;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
-(@SGGUID, @CGUID+15, 0, 0), -- Phase Hunter
-(@SGGUID, @CGUID+16, 1, 0), -- Phase Hunter
+(@SGGUID, @CGUID+15, -1, 0), -- Phase Hunter
+(@SGGUID, @CGUID+16, -1, 0), -- Phase Hunter
 
 (@SGGUID+1, @CGUID+17, 0, 0), -- Nether Ry
-(@SGGUID+2, @CGUID+18, 0, 0); -- Mana Snapper
+(@SGGUID+2, @CGUID+18, 0, 0), -- Mana Snapper
+
+(@SGGUID+3, @CGUID+19, -1, 0), -- Phase Hunter
+(@SGGUID+3, @CGUID+20, -1, 0), -- Phase Hunter
+(@SGGUID+3, @CGUID+21, -1, 0), -- Phase Hunter
+(@SGGUID+3, @CGUID+22, -1, 0), -- Phase Hunter
+
+(@SGGUID+4, @CGUID+23, 0, 0); -- Shaleskin Flayer
 
 -- Scripts
 SET @RELAYID := 18000;
