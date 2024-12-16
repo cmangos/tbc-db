@@ -10,8 +10,8 @@
 SET @CGUID := 5306100; -- creatures
  
 
-DELETE FROM creature WHERE guid IN (67615, 67616, 67617, 67732, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 1002671);
-DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+14;
+DELETE FROM creature WHERE guid IN (67615, 67616, 67617, 67621, 67732, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 1002671);
+DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+22;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
 (@CGUID+1, 20203, 530, 1, 3380.88, 4359.49, 123.702, 4.67748, 300, 300, 0, 0),
@@ -29,22 +29,25 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+13, 20203, 530, 1, 3370.1, 4302.87, 120.501, 4.81114, 300, 300, 0, 2), -- moving
 -- Netherologist Coppernickels
 (@CGUID+14, 19569, 530, 1, 3392.6218, 4267.4937, 122.6924, 0.122173, 300, 300, 0, 2),
-
 -- Open world enemy npcs left side of path#
 -- Phase Hunter - seem to have a low respawn time respawned 2min 14 after killed
 (@CGUID+15, 18879, 530, 1, 3529.37, 4165.15, 141.412, 3.71755, 120, 180, 0, 2), -- Phase Hunter - completly missing before
 (@CGUID+16, 18879, 530, 1, 3581.34, 4084.98, 130.074, 3.19108, 120, 180, 0, 2), -- Phase Hunter - completly missing before
 -- Nether Ray - respawned ~6min- 7min after death
 (@CGUID+17, 18880, 530, 1, 3487.384, 4125.5537, 121.080055, 1.88166, 300, 360, 0, 4), -- Nether Ray guid before 1002671
-
 -- Nether snapper - respawned ~ 6-7 min after kill
-(@CGUID+17´8, 18883, 530, 1, 3644.69, 3899.27, 116.956, 2.1839, 300, 360, 0, 2); -- Nether Snapper guid before 67732 
+(@CGUID+18, 18883, 530, 1, 3644.69, 3899.27, 116.956, 2.1839, 300, 360, 0, 2), -- Nether Snapper guid before 67732 
+-- Group of 4 Phase Hunter
+(@CGUID+19, 18879, 530, 1, 3587.87, 4031.33, 136.231, 4.14899, 120, 180, 0, 2), -- Phase Hunter guid before 67617 
+(@CGUID+20, 18879, 530, 1, 3607.71, 3995.12, 130.408, 3.47911, 120, 180, 0, 2), -- Phase Hunter guid before 67615
+(@CGUID+21, 18879, 530, 1, 3631.33, 3935.32, 127.352, 2.88447, 120, 180, 0, 2), -- Phase Hunter guid before 67616
+(@CGUID+22, 18879, 530, 1, 3618.72, 3899.89, 132.288, 2.86844, 120, 180, 0, 2); -- Phase Hunter guid before 67621
 
 DELETE FROM creature_addon WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 
 -- Waypoints
 DELETE FROM creature_movement WHERE id IN (1002671);
-DELETE FROM creature_movement WHERE Id IN (@CGUID+3, @CGUID+18);
+DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+22;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
 (@CGUID+3, 1, 3383.929,4348.6997,133.66545,0.20943951, 12000, 0), -- waittime between 12 and 15 seconds
@@ -67,7 +70,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+13, 15, 3370.1672,4302.1895,120.468414, 100, 0, 0),
 -- Phase Hunter waypoints before random movement
 (@CGUID+15, 1, 3529.37, 4165.15, 141.412, 100, 0, 0),
-(@CGUID+15, 2, 3474.6665,4120.1294,124.20983, 100, 1000, 1887901),
+(@CGUID+15, 2, 3491.5762,4133.8774,118.41899, 100, 1000, 1887901),
 (@CGUID+16, 1, 3581.34, 4084.98, 130.074, 100, 0, 0),
 (@CGUID+16, 2, 3518.2432,4082.706,118.56583, 100, 1000, 1887901),
 -- Nether Ray Waypoints
@@ -83,8 +86,18 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+17, 10, 3509.0469,3823.2761,128.74696, 100, 0, 0),
 (@CGUID+17, 11, 3488.0254,3783.1077,145.1278, 100, 1000, 0),
 -- Nether Snapper 
-(@CGUID+18, 10, 3644.69, 3899.27, 116.956, 100, 0, 0),
-(@CGUID+18, 11, 3519.6345,4087.2786,117.839806, 100, 1000, 1888301);
+(@CGUID+18, 1, 3644.69, 3899.27, 116.956, 100, 0, 0),
+(@CGUID+18, 2, 3519.6345,4087.2786,117.839806, 100, 1000, 1888301),
+-- Phase Hunter
+(@CGUID+19, 1, 3587.87, 4031.33, 136.231, 100, 0, 0),
+(@CGUID+19, 2, 3569.9146,4002.834,104.12896, 100, 1000, 1887902),
+(@CGUID+20, 1, 3607.71, 3995.12, 130.408, 100, 0, 0),
+(@CGUID+20, 2, 3559.6833,3976.872,119.42622, 100, 1000, 1887903),
+(@CGUID+21, 1, 3631.33, 3935.32, 127.352, 100, 0, 0),
+(@CGUID+21, 2, 3577.4712,3934.9949,112.2348, 100, 1000, 1887903),
+(@CGUID+22, 1, 3618.72, 3899.89, 132.288, 100, 0, 0),
+(@CGUID+22, 2, 3532.0256,3934.9521,134.21286, 100, 1000, 1887903);
+
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -114,7 +127,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 
 -- SpawnData
 DELETE FROM creature_spawn_data WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
-DELETE FROM creature_spawn_data WHERE guid BETWEEN @CGUID+1 AND @CGUID+12;
+DELETE FROM creature_spawn_data WHERE guid BETWEEN @CGUID+1 AND @CGUID+22;
 INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+1, 2020302), -- Monster - Tool, Wrench Small
 (@CGUID+2, 2020301), -- Monster - Mace, Basic Metal Hammer
@@ -129,12 +142,16 @@ INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+12, 2020301), -- Monster - Mace, Basic Metal Hammer
 -- Phase Hunter prob all have a waypoint on spawn before changing to random movement 
 -- only give unit stats to reworked ones and remove it when all have correct spanws+waypoints
-(@CGUID+15, 1887901);
+(@CGUID+15, 1887901),
+(@CGUID+16, 1887901),
+(@CGUID+19, 1887901),
+(@CGUID+20, 1887901),
+(@CGUID+21, 1887901),
+(@CGUID+22, 1887901);
 
 DELETE FROM creature_spawn_data_template WHERE Entry IN (1887901);
 INSERT INTO creature_spawn_data_template (`Entry`, `UnitFlags`, `Name`) VALUES 
 (1887901, 33587968, 'Phase Hunter (18879) - UnitFlags');
-
 
 
 -- SpawnGroup
@@ -153,7 +170,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID, @CGUID+16, 1, 0), -- Phase Hunter
 
 (@SGGUID+1, @CGUID+17, 0, 0), -- Nether Ry
-(@SGGUID+2, @CGUID+18, 0, 0), -- Mana Snapper
+(@SGGUID+2, @CGUID+18, 0, 0); -- Mana Snapper
 
 -- Scripts
 SET @RELAYID := 18000;
@@ -176,7 +193,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+2, 0, 1, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_WORK_MINING');
 
 -- Old Netherologist Coppernickels waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1888301, 1956901, 1956902, 1956903, 1956904);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1956901, 1956902, 1956903, 1956904);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Phase Hunter
 -- Flags: 33587968
@@ -184,6 +201,12 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- and change it to 32768 UNIT_FLAG_SWIMMING when reaching the ground
 (1887901, 0, 0, 48, 33555200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Phase Hunter - Remove UnitFlags'), 
 (1887901, 0, 1, 20, 1, 20, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Phase Hunter - Set RandomMovement around Point'), 
+-- Smaller random movement
+(1887902, 0, 0, 48, 33555200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Phase Hunter - Remove UnitFlags'), 
+(1887902, 0, 1, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Phase Hunter - Set RandomMovement around Point'), 
+-- 
+(1887903, 0, 0, 48, 33555200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Phase Hunter - Remove UnitFlags'), 
+(1887903, 0, 1, 20, 1, 10, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Phase Hunter - Set RandomMovement around Point'), 
 -- Mana Snapper
 (1888301, 0, 1, 20, 1, 20, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Mana Snapper - Set RandomMovement around Point'), 
 -- Netherologist Coppernickels
