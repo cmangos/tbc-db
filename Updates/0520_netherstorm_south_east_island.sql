@@ -33,7 +33,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- Open world enemy npcs left side of path#
 -- Phase Hunter - seem to have a low respawn time respawned 2min 14 after killed
 (@CGUID+15, 18879, 530, 1, 3529.37, 4165.15, 141.412, 3.71755, 120, 180, 0, 2), -- Phase Hunter - completly missing before
-(@CGUID+16, 18879, 530, 1, 3581.34, 4084.98, 130.074, 3.19108, 120, 180, 0, 2); -- Phase Hunter - completly missing before
+(@CGUID+16, 18879, 530, 1, 3581.34, 4084.98, 130.074, 3.19108, 120, 180, 0, 2), -- Phase Hunter - completly missing before
+-- Nether Ray - respawned ~6min 12 after death
+(@CGUID+16, 18880, 530, 1, 3487.384, 4125.5537, 121.080055, 1.88166, 300, 360, 0, 4); -- Nether Ray guid before 1002671
 
 DELETE FROM creature_addon WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 
@@ -64,7 +66,20 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+15, 1, 3529.37, 4165.15, 141.412, 100, 0, 0),
 (@CGUID+15, 2, 3474.6665,4120.1294,124.20983, 100, 0, 1887901),
 (@CGUID+16, 1, 3581.34, 4084.98, 130.074, 100, 0, 0),
-(@CGUID+16, 2, 3518.2432,4082.706,118.56583, 100, 0, 1887901);
+(@CGUID+16, 2, 3518.2432,4082.706,118.56583, 100, 0, 1887901),
+-- Nether Ray Waypoints
+(@CGUID+17, 1, 3485.1523,4132.5054,120.17229, 100, 0, 0),
+(@CGUID+17, 2, 3504.4766,4105.242,116.0426, 100, 0, 0),
+(@CGUID+17, 3, 3528.8682,4068.1975,116.90172, 100, 0, 0),
+(@CGUID+17, 4, 3543.3215,4036.7717,109.05035, 100, 0, 0),
+(@CGUID+17, 5, 3550,3999.5872,111.995636, 100, 0, 0),
+(@CGUID+17, 6, 3557.836,3972.274,118.87111, 100, 0, 0),
+(@CGUID+17, 7, 3558.2031,3940.3784,123.80483, 100, 0, 0),
+(@CGUID+17, 8, 3549.8433,3903.5474,118.64901, 100, 0, 0),
+(@CGUID+17, 9, 3522.6362,3871.1633,125.48549, 100, 0, 0),
+(@CGUID+17, 10, 3509.0469,3823.2761,128.74696, 100, 0, 0),
+(@CGUID+17, 11, 3488.0254,3783.1077,145.1278, 100, 0, 1000);
+
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -120,15 +135,17 @@ INSERT INTO creature_spawn_data_template (`Entry`, `UnitFlags`, `Name`) VALUES
 SET @SGGUID := 5436000;
 DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+1;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
-(@SGGUID, 'Netherstorm - Group 001 - Phase Hunter (2)', 2, 0, 0, 0, 0);
+(@SGGUID, 'Netherstorm - Group 001 - Phase Hunter (2)', 2, 0, 0, 0, 0),
+(@SGGUID+1, 'Netherstorm - Group 002 - Nether Ray - Solo Patrol', 1, 0, 0, 0, 0);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
 DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+1;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
-(@SGGUID+1, @CGUID+15, 0, 0), -- Phase Hunter
-(@SGGUID+1, @CGUID+16, 1, 0); -- Phase Hunter
+(@SGGUID, @CGUID+15, 0, 0), -- Phase Hunter
+(@SGGUID, @CGUID+16, 1, 0), -- Phase Hunter
 
+(@SGGUID+1, @CGUID+17, 0, 0); -- Nether Ry
 
 -- Scripts
 SET @RELAYID := 18000;
