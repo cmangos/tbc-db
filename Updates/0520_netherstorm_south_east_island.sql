@@ -8,8 +8,9 @@
 -- Spawns
 -- Also reguid them into tbc range
 SET @CGUID := 5306100; -- creatures
+ 
 
-DELETE FROM creature WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
+DELETE FROM creature WHERE guid IN (67615, 67616, 67617, 67732, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 1002671);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+14;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
@@ -27,11 +28,17 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+12, 20203, 530, 1, 3394.32, 4265.35, 122.722, 0.785398, 300, 300, 0, 0),
 (@CGUID+13, 20203, 530, 1, 3370.1, 4302.87, 120.501, 4.81114, 300, 300, 0, 2), -- moving
 -- Netherologist Coppernickels
-(@CGUID+14, 19569, 530, 1, 3392.6218, 4267.4937, 122.6924, 0.122173, 300, 300, 0, 2);
+(@CGUID+14, 19569, 530, 1, 3392.6218, 4267.4937, 122.6924, 0.122173, 300, 300, 0, 2),
+
+-- Open world enemy npcs left side of path#
+-- Phase Hunter - seem to have a low respawn time respawned 2min 14 after killed
+(@CGUID+15, 18879, 530, 1, 3529.37, 4165.15, 141.412, 3.71755, 120, 180, 0, 2), -- Phase Hunter - completly missing before
+(@CGUID+16, 18879, 530, 1, 3581.34, 4084.98, 130.074, 3.19108, 120, 180, 0, 2); -- Phase Hunter - completly missing before
 
 DELETE FROM creature_addon WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 
 -- Waypoints
+DELETE FROM creature_movement WHERE id IN (1002671);
 DELETE FROM creature_movement WHERE Id IN (@CGUID+3, @CGUID+13);
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
@@ -52,7 +59,12 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+13, 12, 3360.5435,4328.6865,122.635445, 100, 0, 0),
 (@CGUID+13, 13, 3364.6023,4328.815,122.63519, 100, 0, 0),
 (@CGUID+13, 14, 3367.982,4324.245,122.63186, 100, 0, 0),
-(@CGUID+13, 15, 3370.1672,4302.1895,120.468414, 100, 0, 0);
+(@CGUID+13, 15, 3370.1672,4302.1895,120.468414, 100, 0, 0),
+-- Phase Hunter waypoints before random movement
+(@CGUID+15, 1, 3529.37, 4165.15, 141.412, 100, 0, 0),
+(@CGUID+15, 2, 3474.6665,4120.1294,124.20983, 100, 0, 1887901),
+(@CGUID+16, 1, 3581.34, 4084.98, 130.074, 100, 0, 0),
+(@CGUID+16, 2, 3518.2432,4082.706,118.56583, 100, 0, 1887901);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -94,7 +106,29 @@ INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+9, 2020302), -- Monster - Tool, Wrench Small
 (@CGUID+10, 2020302), -- Monster - Tool, Wrench Small
 (@CGUID+11, 2020301), -- Monster - Mace, Basic Metal Hammer
-(@CGUID+12, 2020301); -- Monster - Mace, Basic Metal Hammer
+(@CGUID+12, 2020301), -- Monster - Mace, Basic Metal Hammer
+-- Phase Hunter prob all have a waypoint on spawn before changing to random movement 
+-- only give unit stats to reworked ones and remove it when all have correct spanws+waypoints
+(@CGUID+15, 1887901);
+
+DELETE FROM creature_spawn_data_template WHERE Entry IN (1887901);
+INSERT INTO creature_spawn_data_template (`Entry`, `UnitFlags`, `Name`) VALUES 
+(1887901, 33587968, 'Phase Hunter (18879) - UnitFlags');
+
+
+-- SpawnGroup
+SET @SGGUID := 5436000;
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+1;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
+(@SGGUID, 'Netherstorm - Group 001 - Phase Hunter (2)', 2, 0, 0, 0, 0);
+
+-- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+1;
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+(@SGGUID+1, @CGUID+15, 0, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+16, 1, 0); -- Phase Hunter
+
 
 -- Scripts
 SET @RELAYID := 18000;
@@ -117,8 +151,14 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+2, 0, 1, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_WORK_MINING');
 
 -- Old Netherologist Coppernickels waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1956901, 1956902, 1956903, 1956904);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1956901, 1956902, 1956903, 1956904);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Phase Hunter
+-- Flags: 33587968
+-- They spawn with flags UNIT_FLAG_UNINTERACTIBLE UNIT_FLAG_IMMUNE_TO_NPC UNIT_FLAG_IMMUNE_TO_PLAYER UNIT_FLAG_SWIMMING (33587968)
+-- and change it to 32768 UNIT_FLAG_SWIMMING when reaching the ground
+(1887901, 0, 0, 48, 33555200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Phase Hunter - Remove UnitFlags'), 
+(1887901, 0, 1, 20, 1, 20, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Phase Hunter - Set RandomMovement around Point'), 
 -- Netherologist Coppernickels
 -- Timer for how long he stays depens on how long he uses emote "STATE_USESTANDING_NOSHEATHE" this can vary between 15 and 30 seconds
 -- using hardcoded 25 seconds for now.
@@ -126,3 +166,25 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1956901, 30000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Netherologist Coppernickels - Emote None'), 
 (1956901, 32000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Netherologist Coppernickels - Emote OneShotExclamation'), 
 (1956901, 32000, 1, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Netherologist Coppernickels - random text');
+
+DELETE FROM dbscripts_on_spell WHERE id IN (34814);
+INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Spell get used on a 7-10 minute OOC Timer by Phase Hunter and should despawn creature.
+(34814, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'De-Materializ - Despawn Caster'); 
+
+-- SpellLists
+-- Phase Hunter
+DELETE FROM `creature_template_spells` WHERE `entry` = 18879;
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1887901;
+
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1887901, 'Netherstorm - Phase Hunter', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1887901);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+-- Unit Condition HAS_HARMFUL_AURA_MECHANIC (Snared, Frozen, Rooted)
+(1887901, 1, 36574, 0, 1200, 2, 0, 100, 0, 1000, 8000, 10000, 16000, 'Phase Hunter - Phase Slip - self - unitCondition'),
+(1887901, 2, 13321, 0, -1, 105, 0, 100, 0, 8000, 16000, 20000, 31000, 'Phase Hunter - Mana Burn - Random Player Mana User');
+
+UPDATE `creature_template` SET `SpellList` = 1887901 WHERE `entry` = 18879;
+
