@@ -10,7 +10,7 @@
 SET @CGUID := 5306100; -- creatures
  
 
-DELETE FROM creature WHERE guid IN (67615, 67616, 67617, 67621, 67732, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 1002671);
+DELETE FROM creature WHERE guid IN (67615, 67616, 67617, 67618, 67619, 67620, 67621, 67732, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 1002671);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+22;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
@@ -42,8 +42,16 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+20, 18879, 530, 1, 3607.71, 3995.12, 130.408, 3.47911, 120, 180, 0, 2), -- Phase Hunter guid before 67615
 (@CGUID+21, 18879, 530, 1, 3631.33, 3935.32, 127.352, 2.88447, 120, 180, 0, 2), -- Phase Hunter guid before 67616
 (@CGUID+22, 18879, 530, 1, 3618.72, 3899.89, 132.288, 2.86844, 120, 180, 0, 2), -- Phase Hunter guid before 67621
-
 (@CGUID+23, 20210, 530, 1, 3505.5713, 3949.069, 143.30916, 3.9720, 300, 360, 4, 1), -- Shaleskin Flayer guid before 71839
+
+(@CGUID+24, 18879, 530, 1, 3595.61, 3869.35, 144.047, 2.91399, 120, 180, 0, 2), -- Phase Hunter guid before 67618 
+(@CGUID+25, 18879, 530, 1, 3613.19, 3865.74, 114.725, 3.40495, 120, 180, 0, 2), -- Phase Hunter guid before 67619
+(@CGUID+26, 18879, 530, 1, 3593.16, 3818.53, 143.281, 3.15956, 120, 180, 0, 2), -- Phase Hunter guid before 67620
+(@CGUID+27, 18879, 530, 1, 3599.61, 3783.02, 138.517, 3.13026, 120, 180, 0, 2), -- Phase Hunter missing before
+
+
+(@CGUID+28, 20210, 530, 1, 3442.37, 3823.31, 144.337, 0.528262, 300, 360, 4, 1), -- Shaleskin Flayer guid before 71840
+(@CGUID+28, 20210, 530, 1, 3413.2, 3839.94, 144.353, 0.462774, 300, 360, 4, 1); -- Shaleskin Flayer guid before 71846
 
 DELETE FROM creature_addon WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 
@@ -98,7 +106,15 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+21, 1, 3631.33, 3935.32, 127.352, 100, 0, 0),
 (@CGUID+21, 2, 3577.4712,3934.9949,112.2348, 100, 1000, 1887903),
 (@CGUID+22, 1, 3618.72, 3899.89, 132.288, 100, 0, 0),
-(@CGUID+22, 2, 3532.0256,3934.9521,134.21286, 100, 1000, 1887903);
+(@CGUID+22, 2, 3532.0256,3934.9521,134.21286, 100, 1000, 1887903),
+(@CGUID+24, 1, 3595.61, 3869.35, 144.047, 100, 0, 0),
+(@CGUID+24, 2, 3516.4365,3882.628,132.1037, 100, 1000, 1887903),
+(@CGUID+24, 1, 3613.19, 3865.74, 114.725, 100, 0, 0),
+(@CGUID+24, 2, 551.9695,3845.3052,102.633385, 100, 1000, 1887902),
+(@CGUID+26, 1, 3593.16, 3818.53, 143.281, 100, 0, 0),
+(@CGUID+26, 2, 3534.2126,3799.4238,129.92645, 100, 1000, 1887903),
+(@CGUID+27, 1, 3599.61, 3783.02, 138.517, 3.13026, 100, 0, 0),
+(@CGUID+27, 2, 3546.8633,3784.7363,126.8745, 100, 1000, 1887903);
 
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569);
@@ -167,6 +183,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+3, 'Netherstorm - Group 005 - Phase Hunter (4)', 0, 0, 0, 0, 0),
 (@SGGUID+4, 'Netherstorm - Group 006 - Shaleskin Flayer', 1, 0, 0, 0, 0),
 
+(@SGGUID+5, 'Netherstorm - Group 007 - Phase Hunter (4)', 0, 0, 0, 0, 0),
+
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
 DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+2;
@@ -183,6 +201,11 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+3, @CGUID+22, -1, 0), -- Phase Hunter
 
 (@SGGUID+4, @CGUID+23, 0, 0); -- Shaleskin Flayer
+
+(@SGGUID+3, @CGUID+24, -1, 0), -- Phase Hunter
+(@SGGUID+3, @CGUID+25, -1, 0), -- Phase Hunter
+(@SGGUID+3, @CGUID+26, -1, 0), -- Phase Hunter
+(@SGGUID+3, @CGUID+27, -1, 0), -- Phase Hunter
 
 -- Scripts
 SET @RELAYID := 18000;
