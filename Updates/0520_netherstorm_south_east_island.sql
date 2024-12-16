@@ -34,14 +34,17 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- Phase Hunter - seem to have a low respawn time respawned 2min 14 after killed
 (@CGUID+15, 18879, 530, 1, 3529.37, 4165.15, 141.412, 3.71755, 120, 180, 0, 2), -- Phase Hunter - completly missing before
 (@CGUID+16, 18879, 530, 1, 3581.34, 4084.98, 130.074, 3.19108, 120, 180, 0, 2), -- Phase Hunter - completly missing before
--- Nether Ray - respawned ~6min 12 after death
-(@CGUID+16, 18880, 530, 1, 3487.384, 4125.5537, 121.080055, 1.88166, 300, 360, 0, 4); -- Nether Ray guid before 1002671
+-- Nether Ray - respawned ~6min- 7min after death
+(@CGUID+17, 18880, 530, 1, 3487.384, 4125.5537, 121.080055, 1.88166, 300, 360, 0, 4), -- Nether Ray guid before 1002671
+
+-- Nether snapper - respawned ~ 6-7 min after kill
+(@CGUID+17´8, 18883, 530, 1, 3644.69, 3899.27, 116.956, 2.1839, 300, 360, 0, 2); -- Nether Snapper guid before 67732 
 
 DELETE FROM creature_addon WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 
 -- Waypoints
 DELETE FROM creature_movement WHERE id IN (1002671);
-DELETE FROM creature_movement WHERE Id IN (@CGUID+3, @CGUID+13);
+DELETE FROM creature_movement WHERE Id IN (@CGUID+3, @CGUID+18);
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
 (@CGUID+3, 1, 3383.929,4348.6997,133.66545,0.20943951, 12000, 0), -- waittime between 12 and 15 seconds
@@ -64,9 +67,9 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+13, 15, 3370.1672,4302.1895,120.468414, 100, 0, 0),
 -- Phase Hunter waypoints before random movement
 (@CGUID+15, 1, 3529.37, 4165.15, 141.412, 100, 0, 0),
-(@CGUID+15, 2, 3474.6665,4120.1294,124.20983, 100, 0, 1887901),
+(@CGUID+15, 2, 3474.6665,4120.1294,124.20983, 100, 1000, 1887901),
 (@CGUID+16, 1, 3581.34, 4084.98, 130.074, 100, 0, 0),
-(@CGUID+16, 2, 3518.2432,4082.706,118.56583, 100, 0, 1887901),
+(@CGUID+16, 2, 3518.2432,4082.706,118.56583, 100, 1000, 1887901),
 -- Nether Ray Waypoints
 (@CGUID+17, 1, 3485.1523,4132.5054,120.17229, 100, 0, 0),
 (@CGUID+17, 2, 3504.4766,4105.242,116.0426, 100, 0, 0),
@@ -78,8 +81,10 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+17, 8, 3549.8433,3903.5474,118.64901, 100, 0, 0),
 (@CGUID+17, 9, 3522.6362,3871.1633,125.48549, 100, 0, 0),
 (@CGUID+17, 10, 3509.0469,3823.2761,128.74696, 100, 0, 0),
-(@CGUID+17, 11, 3488.0254,3783.1077,145.1278, 100, 0, 1000);
-
+(@CGUID+17, 11, 3488.0254,3783.1077,145.1278, 100, 1000, 0),
+-- Nether Snapper 
+(@CGUID+18, 10, 3644.69, 3899.27, 116.956, 100, 0, 0),
+(@CGUID+18, 11, 3519.6345,4087.2786,117.839806, 100, 1000, 1888301);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -131,21 +136,24 @@ INSERT INTO creature_spawn_data_template (`Entry`, `UnitFlags`, `Name`) VALUES
 (1887901, 33587968, 'Phase Hunter (18879) - UnitFlags');
 
 
+
 -- SpawnGroup
 SET @SGGUID := 5436000;
-DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+1;
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+2;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 (@SGGUID, 'Netherstorm - Group 001 - Phase Hunter (2)', 2, 0, 0, 0, 0),
-(@SGGUID+1, 'Netherstorm - Group 002 - Nether Ray - Solo Patrol', 1, 0, 0, 0, 0);
+(@SGGUID+1, 'Netherstorm - Group 002 - Nether Ray - Solo Patrol', 1, 0, 0, 0, 0),
+(@SGGUID+2, 'Netherstorm - Group 003 - Mana Snapper - Solo Patrol', 1, 0, 0, 0, 0);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
-DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+1;
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+2;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID, @CGUID+15, 0, 0), -- Phase Hunter
 (@SGGUID, @CGUID+16, 1, 0), -- Phase Hunter
 
-(@SGGUID+1, @CGUID+17, 0, 0); -- Nether Ry
+(@SGGUID+1, @CGUID+17, 0, 0), -- Nether Ry
+(@SGGUID+2, @CGUID+18, 0, 0), -- Mana Snapper
 
 -- Scripts
 SET @RELAYID := 18000;
@@ -168,7 +176,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+2, 0, 1, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_WORK_MINING');
 
 -- Old Netherologist Coppernickels waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1956901, 1956902, 1956903, 1956904);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1888301, 1956901, 1956902, 1956903, 1956904);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Phase Hunter
 -- Flags: 33587968
@@ -176,6 +184,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- and change it to 32768 UNIT_FLAG_SWIMMING when reaching the ground
 (1887901, 0, 0, 48, 33555200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Phase Hunter - Remove UnitFlags'), 
 (1887901, 0, 1, 20, 1, 20, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Phase Hunter - Set RandomMovement around Point'), 
+-- Mana Snapper
+(1888301, 0, 1, 20, 1, 20, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Mana Snapper - Set RandomMovement around Point'), 
 -- Netherologist Coppernickels
 -- Timer for how long he stays depens on how long he uses emote "STATE_USESTANDING_NOSHEATHE" this can vary between 15 and 30 seconds
 -- using hardcoded 25 seconds for now.
@@ -204,4 +214,19 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1887901, 2, 13321, 0, -1, 105, 0, 100, 0, 8000, 16000, 20000, 31000, 'Phase Hunter - Mana Burn - Random Player Mana User');
 
 UPDATE `creature_template` SET `SpellList` = 1887901 WHERE `entry` = 18879;
+
+-- Mana Snapper
+DELETE FROM `creature_template_spells` WHERE `entry` = 18883;
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1888301;
+
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1888301, 'Netherstorm - Mana Snapper', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1888301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+-- Unit Condition HAS_HARMFUL_AURA_MECHANIC (Snared, Frozen, Rooted)
+(1888301, 1, 36574, 0, 1200, 2, 0, 100, 0, 1000, 8000, 10000, 16000, 'Mana Snapper - Phase Slip - self - unitCondition'),
+(1888301, 2, 37176, 0, -1, 105, 0, 100, 0, 8000, 16000, 20000, 31000, 'Mana Snapper - Mana Burn - Random Player Mana User');
+
+UPDATE `creature_template` SET `SpellList` = 1888301 WHERE `entry` = 18883;
 
