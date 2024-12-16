@@ -232,7 +232,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 DELETE FROM dbscripts_on_spell WHERE id IN (34814);
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Spell get used on a 7-10 minute OOC Timer by Phase Hunter and should despawn creature.
-(34814, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'De-Materializ - Despawn Caster'); 
+(34814, 1000, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'De-Materializ - Despawn Caster'); 
 
 -- SpellLists
 -- Phase Hunter
