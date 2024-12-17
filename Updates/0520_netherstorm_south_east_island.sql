@@ -8,9 +8,8 @@
 -- Spawns
 -- Also reguid them into tbc range
 SET @CGUID := 5306100; -- creatures
+SET @SGGUID := 5406000; -- spawn_groups
  
-
-
 DELETE FROM creature WHERE guid IN (67516, 67518, 67519, 67520, 67524, 67525, 67538, 67539, 67540, 67543, 67544, 67546, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 1002671);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+48;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -81,10 +80,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+47, 18873, 530, 1, 3527.85, 3549.21, 137.595, 5.68976, 360, 420, 8, 1), -- Disembodied Protector old guid 67543
 (@CGUID+48, 18873, 530, 1, 3516.86, 3525.74, 131.554, 4.6102, 360, 420, 8, 1); -- Disembodied Protector old guid 67546
 
-DELETE FROM creature_addon WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
+DELETE FROM creature_addon WHERE guid IN (67540, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 
 -- Waypoints
-DELETE FROM creature_movement WHERE id IN (1002671, 67675);
+DELETE FROM creature_movement WHERE id IN (71811, 71814, 1002671, 67675);
 DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+35;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
@@ -237,7 +236,6 @@ INSERT INTO creature_spawn_data_template (`Entry`, `UnitFlags`, `Name`) VALUES
 
 -- SpawnGroup
 -- Currently spawngroup is only used to get npcs into dynguid
-SET @SGGUID := 5436000;
 DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+13;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 (@SGGUID, 'Netherstorm - Group 001 - Phase Hunter (2)', 2, 0, 0, 0, 0),
@@ -332,8 +330,8 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+2, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1903, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
 (@RELAYID+2, 0, 1, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_WORK_MINING');
 
--- Old Netherologist Coppernickels waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1956901, 1956902, 1956903, 1956904);
+-- Delete some old unused waypoint scripts
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1956901, 1956902, 1956903, 1956904, 2020301);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Phase Hunter
 -- Flags: 33587968
