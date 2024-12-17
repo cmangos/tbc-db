@@ -11,7 +11,7 @@ SET @CGUID := 5306100; -- creatures
  
 
 
-DELETE FROM creature WHERE guid IN (67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 1002671);
+DELETE FROM creature WHERE guid IN (67538, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 1002671);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+35;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
@@ -35,25 +35,25 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+15, 18879, 530, 1, 3529.37, 4165.15, 141.412, 3.71755, 120, 180, 0, 2), -- Phase Hunter - completly missing before
 (@CGUID+16, 18879, 530, 1, 3581.34, 4084.98, 130.074, 3.19108, 120, 180, 0, 2), -- Phase Hunter - completly missing before
 -- Nether Ray - respawned ~6min- 7min after death
-(@CGUID+17, 18880, 530, 1, 3487.384, 4125.5537, 121.080055, 1.88166, 300, 360, 0, 4), -- Nether Ray guid before 1002671
+(@CGUID+17, 18880, 530, 1, 3487.384, 4125.5537, 121.080055, 1.88166, 360, 420, 0, 4), -- Nether Ray guid before 1002671
 -- Nether snapper - respawned ~ 6-7 min after kill
-(@CGUID+18, 18883, 530, 1, 3644.69, 3899.27, 116.956, 2.1839, 300, 360, 0, 2), -- Nether Snapper guid before 67732 
+(@CGUID+18, 18883, 530, 1, 3644.69, 3899.27, 116.956, 2.1839, 360, 420, 0, 2), -- Nether Snapper guid before 67732 
 -- Group of 4 Phase Hunter
 (@CGUID+19, 18879, 530, 1, 3587.87, 4031.33, 136.231, 4.14899, 120, 180, 0, 2), -- Phase Hunter guid before 67617 
 (@CGUID+20, 18879, 530, 1, 3607.71, 3995.12, 130.408, 3.47911, 120, 180, 0, 2), -- Phase Hunter guid before 67615
 (@CGUID+21, 18879, 530, 1, 3631.33, 3935.32, 127.352, 2.88447, 120, 180, 0, 2), -- Phase Hunter guid before 67616
 (@CGUID+22, 18879, 530, 1, 3618.72, 3899.89, 132.288, 2.86844, 120, 180, 0, 2), -- Phase Hunter guid before 67621
-(@CGUID+23, 20210, 530, 1, 3505.5713, 3949.069, 143.30916, 3.9720, 300, 360, 4, 1), -- Shaleskin Flayer guid before 71839
+(@CGUID+23, 20210, 530, 1, 3505.5713, 3949.069, 143.30916, 3.9720, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71839
 
 (@CGUID+24, 18879, 530, 1, 3595.61, 3869.35, 144.047, 2.91399, 120, 180, 0, 2), -- Phase Hunter guid before 67618 
 (@CGUID+25, 18879, 530, 1, 3613.19, 3865.74, 114.725, 3.40495, 120, 180, 0, 2), -- Phase Hunter guid before 67619
 (@CGUID+26, 18879, 530, 1, 3593.16, 3818.53, 143.281, 3.15956, 120, 180, 0, 2), -- Phase Hunter guid before 67620
 (@CGUID+27, 18879, 530, 1, 3599.61, 3783.02, 138.517, 3.13026, 120, 180, 0, 2), -- Phase Hunter missing before
 
-(@CGUID+28, 20210, 530, 1, 3442.37, 3823.31, 144.337, 0.528262, 300, 360, 4, 1), -- Shaleskin Flayer guid before 71840
-(@CGUID+29, 20210, 530, 1, 3413.2, 3839.94, 144.353, 0.462774, 300, 360, 4, 1), -- Shaleskin Flayer guid before 71846
+(@CGUID+28, 20210, 530, 1, 3442.37, 3823.31, 144.337, 0.528262, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71840
+(@CGUID+29, 20210, 530, 1, 3413.2, 3839.94, 144.353, 0.462774, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71846
 
-(@CGUID+30, 18880, 530, 1, 3406.61, 3850.77, 143.933, 3.35194, 300, 360, 0, 4), -- Nether Ray guid before 67675
+(@CGUID+30, 18880, 530, 1, 3406.61, 3850.77, 143.933, 3.35194, 360, 420, 0, 4), -- Nether Ray guid before 67675
 
 (@CGUID+31, 18879, 530, 1, 3631.96, 3734.44, 125.934, 3.4896, 120, 180, 0, 2), -- Phase Hunter guid before 67622
 (@CGUID+32, 18879, 530, 1, 3648.49, 3649.79, 133.037, 3.9255, 120, 180, 0, 2), -- Phase Hunter
@@ -62,7 +62,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+35, 18879, 530, 1, 3673.79, 3491.65, 113.862, 2.36891, 120, 180, 0, 2), -- Phase Hunter old guid 67623
 -- Outside spawns Ruins of Enkaat
 -- killed 10:37:48.343 - respawned 10:44:06.620 - 6 min 18 
-(@CGUID+36, 18873, 530, 1, 3384.72, 3747.28, 144.302, 5.26916, 300, 360, 8, 1), -- Disembodied Protector old guid 67557
+(@CGUID+36, 18873, 530, 1, 3384.72, 3747.28, 144.302, 5.26916, 360, 420, 8, 1), -- Disembodied Protector old guid 67557
+-- Vindicator killed at 10:38:13.562 respawned at 10:43:29.808 respawn timer between 5 min and 6 min
+(@CGUID+37, 18872, 530, 1, 3417.31, 3753.94, 141.003, 0.458323, 300, 360, 8, 1),  -- Disembodied Vindicator old guid 67538
 
 
 DELETE FROM creature_addon WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
@@ -235,7 +237,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+7, 'Netherstorm - Group 009 - Nether Ray - Solo Patrol', 1, 0, 0, 0, 0),
 (@SGGUID+8, 'Netherstorm - Group 010 - Phase Hunter (5)', 1, 0, 0, 0, 0),
 -- Outside Ruins of Enkaat groups
-(@SGGUID+9, 'Netherstorm - Group 011 - Disembodied Protector (1)', 0, 0, 0, 0, 0),
+-- Group of 4
+(@SGGUID+9, 'Netherstorm - Group 011 - Disembodied Protector (2) | Disembodied Vindicator', 4, 0, 0, 0, 0),
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -271,6 +274,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+8, @CGUID+35, -1, 0), -- Phase Hunter
 -- Outside Ruins of Enkaat
 (@SGGUID+9, @CGUID+36, -1, 0), -- Disembodied Protector
+(@SGGUID+9, @CGUID+37, -1, 0), -- Disembodied Vindicator
 
 -- Scripts
 SET @RELAYID := 18000;
@@ -367,3 +371,16 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1887301, 2, 9734, 0, -1, 1, 0, 100, 0, 3000, 10000, 8000, 14000, 'Disembodied Protector - Holy Smite - current');
 
 UPDATE `creature_template` SET `SpellList` = 1887301 WHERE `entry` = 18873;
+
+-- Disembodied Vindicator
+DELETE FROM `creature_template_spells` WHERE `entry` = 18872;
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1887201;
+
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1887201, 'Netherstorm - Disembodied Vindicator', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1887201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1887201, 1, 36002, 0, -1, 1, 0, 100, 0, 6000, 18000, 18000, 28000, 'Disembodied Vindicator - Vindication - current');
+
+UPDATE `creature_template` SET `SpellList` = 1887201 WHERE `entry` = 18872;
