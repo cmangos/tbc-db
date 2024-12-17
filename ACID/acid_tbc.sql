@@ -18601,9 +18601,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Disembodied Vindicator 18872
 ('1887201','18872','6','0','100','0','0','0','0','0','0','0','11','36003','15','7','0','0','0','0','0','0','0','0','Disembodied Vindicator - Cast Revenge of the Fallen on Death'),
 ('1887202','18872','0','0','100','1025','10000','19000','21000','29000','0','0','11','36002','1','0','0','0','0','0','0','0','0','0','Disembodied Vindicator - Cast Vindication'),
--- Disembodied Protector 18873
-('1887301','18873','0','0','100','1025','13000','18000','15000','18000','0','0','11','36647','1','0','0','0','0','0','0','0','0','0','Disembodied Protector - Cast Crusader Strike'),
-('1887302','18873','0','0','100','1025','3000','10000','8000','14000','0','0','11','9734','1','0','0','0','0','0','0','0','0','0','Disembodied Protector - Cast Holy Smite'),
+-- Disembodied Protector 18873 - spell_list
 -- Zaxxis Raider 18875
 ('1887501','18875','0','0','100','1025','12000','18000','17000','20000','0','0','11','35922','0','0','0','0','0','0','0','0','0','0','Zaxxis Raider - Cast Energy Flare'),
 -- Nether Drake

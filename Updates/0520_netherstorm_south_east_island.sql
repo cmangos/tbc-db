@@ -10,7 +10,8 @@
 SET @CGUID := 5306100; -- creatures
  
 
-DELETE FROM creature WHERE guid IN (67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 1002671);
+
+DELETE FROM creature WHERE guid IN (67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 1002671);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+35;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
@@ -58,7 +59,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+32, 18879, 530, 1, 3648.49, 3649.79, 133.037, 3.9255, 120, 180, 0, 2), -- Phase Hunter
 (@CGUID+33, 18879, 530, 1, 3677.29, 3607.51, 121.56, 3.83834, 120, 180, 0, 2), -- Phase Hunter
 (@CGUID+34, 18879, 530, 1, 3679.76, 3536.49, 129.898, 2.94111, 120, 180, 0, 2), -- Phase Hunter old guid 67624
-(@CGUID+35, 18879, 530, 1, 3673.79, 3491.65, 113.862, 2.36891, 120, 180, 0, 2); -- Phase Hunter old guid 67623
+(@CGUID+35, 18879, 530, 1, 3673.79, 3491.65, 113.862, 2.36891, 120, 180, 0, 2), -- Phase Hunter old guid 67623
+-- Outside spawns Ruins of Enkaat
+-- killed 10:37:48.343 - respawned 10:44:06.620 - 6 min 18 
+(@CGUID+36, 18873, 530, 1, 3384.72, 3747.28, 144.302, 5.26916, 300, 360, 8, 1), -- Disembodied Protector old guid 67557
+
 
 DELETE FROM creature_addon WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 
@@ -228,7 +233,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+5, 'Netherstorm - Group 007 - Phase Hunter (4)', 4, 0, 0, 0, 0),
 (@SGGUID+6, 'Netherstorm - Group 008 - Shaleskin Flayer', 2, 0, 0, 0, 0),
 (@SGGUID+7, 'Netherstorm - Group 009 - Nether Ray - Solo Patrol', 1, 0, 0, 0, 0),
-(@SGGUID+8, 'Netherstorm - Group 010 - Phase Hunter (5)', 1, 0, 0, 0, 0);
+(@SGGUID+8, 'Netherstorm - Group 010 - Phase Hunter (5)', 1, 0, 0, 0, 0),
+-- Outside Ruins of Enkaat groups
+(@SGGUID+9, 'Netherstorm - Group 011 - Disembodied Protector (1)', 0, 0, 0, 0, 0),
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -261,7 +268,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+8, @CGUID+32, -1, 0), -- Phase Hunter
 (@SGGUID+8, @CGUID+33, -1, 0), -- Phase Hunter
 (@SGGUID+8, @CGUID+34, -1, 0), -- Phase Hunter
-(@SGGUID+8, @CGUID+35, -1, 0); -- Phase Hunter
+(@SGGUID+8, @CGUID+35, -1, 0), -- Phase Hunter
+-- Outside Ruins of Enkaat
+(@SGGUID+9, @CGUID+36, -1, 0), -- Disembodied Protector
 
 -- Scripts
 SET @RELAYID := 18000;
@@ -344,3 +353,17 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1888301 WHERE `entry` = 18883;
 
+
+-- Disembodied Protector
+DELETE FROM `creature_template_spells` WHERE `entry` = 18873;
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1887301;
+
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1887301, 'Netherstorm - Disembodied Protector', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1887301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1887301, 1, 36647, 0, -1, 1, 0, 100, 0, 5000, 12000, 15000, 18000, 'Disembodied Protector - Crusader Strike - current'),
+(1887301, 2, 9734, 0, -1, 1, 0, 100, 0, 3000, 10000, 8000, 14000, 'Disembodied Protector - Holy Smite - current');
+
+UPDATE `creature_template` SET `SpellList` = 1887301 WHERE `entry` = 18873;
