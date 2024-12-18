@@ -10,7 +10,8 @@
 SET @CGUID := 5306100; -- creatures
 SET @SGGUID := 5406000; -- spawn_groups
  
-DELETE FROM creature WHERE guid IN (67516, 67518, 67519, 67520, 67524, 67525, 67538, 67539, 67540, 67543, 67544, 67546, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 1002671);
+DELETE FROM creature WHERE guid IN (67516, 67518, 67519, 67520, 67524, 67525, 67538, 67539, 67540, 67543, 67544, 67546, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 70008, 
+71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 73962, 1002671);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+48;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
@@ -78,12 +79,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+45, 18872, 530, 1, 3575.31, 3548.73, 127.209, 5.58143, 300, 360, 8, 1),  -- Disembodied Vindicator old guid 67525
 (@CGUID+46, 18873, 530, 1, 3551.81, 3525.41, 124.929, 0.497076, 360, 420, 8, 1), -- Disembodied Protector old guid 67544
 (@CGUID+47, 18873, 530, 1, 3527.85, 3549.21, 137.595, 5.68976, 360, 420, 8, 1), -- Disembodied Protector old guid 67543
-(@CGUID+48, 18873, 530, 1, 3516.86, 3525.74, 131.554, 4.6102, 360, 420, 8, 1); -- Disembodied Protector old guid 67546
+(@CGUID+48, 18873, 530, 1, 3516.86, 3525.74, 131.554, 4.6102, 360, 420, 8, 1), -- Disembodied Protector old guid 67546
+-- Ruins of Enkaat entrance 
+(@CGUID+49, 21058, 530, 1, 3374.26, 3712.78, 142.87, 5.6495, 300, 360, 0, 4), -- Disembodied Exarch old guid 73962
 
 DELETE FROM creature_addon WHERE guid IN (67540, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 
 -- Waypoints
-DELETE FROM creature_movement WHERE id IN (71811, 71814, 1002671, 67675);
+DELETE FROM creature_movement WHERE id IN (67675, 71811, 71814, 73962, 1002671);
 DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+35;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
@@ -158,18 +161,27 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 -- Phase Hunter
 (@CGUID+31, 1, 3631.96, 3734.44, 125.934, 100, 0, 0),
 (@CGUID+31, 2, 3586.0146,3708.2422,116.58495, 100, 1000, 1887903),
-
 (@CGUID+32, 1, 3648.49, 3649.79, 133.037, 100, 0, 0),
 (@CGUID+32, 2, 3615.79,3617.19,123.3196, 100, 1000, 1887902),
-
 (@CGUID+33, 1, 3677.29, 3607.51, 121.56, 100, 0, 0),
 (@CGUID+33, 2, 3647.81,3582.84,107.6362, 100, 1000, 1887902),
-
 (@CGUID+34, 1, 3679.76, 3536.49, 129.898, 100, 0, 0),
 (@CGUID+34, 2, 3614.87,3549.68,117.42401, 100, 1000, 1887903),
-
 (@CGUID+35, 1, 3673.79, 3491.65, 113.862, 100, 0, 0),
-(@CGUID+35, 2, 3638.458,3522.8564,105.14537, 100, 1000, 1887902);
+(@CGUID+35, 2, 3638.458,3522.8564,105.14537, 100, 1000, 1887902),
+-- Disembodied Exarch
+(@CGUID+49, 1, 3375.8706,3711.5972,143.06467, 100, 0, 0),
+(@CGUID+49, 2, 3393.8508,3699.708,144.82408, 100, 0, 0),
+(@CGUID+49, 3, 3419.7908,3691.4236,146.60385, 100, 0, 0),
+(@CGUID+49, 4, 3444.3796,3716.2292,145.02869, 100, 0, 0),
+(@CGUID+49, 4, 3422.1394,3690.8667,146.77238, 100, 0, 0),
+(@CGUID+49, 5, 3426.9023,3687.7004,147.44237, 100, 0, 0),
+(@CGUID+49, 6, 3426.924,3668.7673,152.69373, 100, 0, 0),
+(@CGUID+49, 7, 3427.7356,3688.8196,147.39194, 100, 0, 0),
+(@CGUID+49, 8, 3450.3057,3679.048,149.7282, 100, 0, 0),
+(@CGUID+49, 10, 3469.7615,3651.3213,152.81497, 100, 0, 0),
+(@CGUID+49, 11, 3481.7473,3622.8403,157.51076, 100, 0, 0),
+
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -256,8 +268,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Solo
 (@SGGUID+12, 'Netherstorm - Group 014 - Disembodied Vindicator(1)', 1, 0, 0, 0, 0),
 -- Group of 4
-(@SGGUID+13, 'Netherstorm - Group 015 - Disembodied Protector (3) | Disembodied Vindicator(1)', 4, 0, 0, 0, 0);
-
+(@SGGUID+13, 'Netherstorm - Group 015 - Disembodied Protector (3) | Disembodied Vindicator(1)', 4, 0, 0, 0, 0),
+-- Ruins of Enkaat entrance 
+(@SGGUID+14, 'Netherstorm - Group 016 - Disembodied Exarch (1) - Solo Patrol', 1, 0, 0, 0, 0),
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -309,6 +322,8 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+13, @CGUID+46, -1, 0), -- Disembodied Protector
 (@SGGUID+13, @CGUID+47, -1, 0), -- Disembodied Protector
 (@SGGUID+13, @CGUID+48, -1, 0); -- Disembodied Protector
+
+(@SGGUID+14, @CGUID+49, -1, 0), -- Disembodied Exarch
 
 -- Scripts
 SET @RELAYID := 18000;
@@ -418,3 +433,25 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1887201, 1, 36002, 0, -1, 1, 0, 100, 0, 6000, 18000, 18000, 28000, 'Disembodied Vindicator - Vindication - current');
 
 UPDATE `creature_template` SET `SpellList` = 1887201 WHERE `entry` = 18872;
+
+-- Disembodied Exarch
+DELETE FROM `creature_template_spells` WHERE `entry` = 21058;
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 2105801;
+
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2105801, 'Netherstorm - Disembodied Exarch', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2105801);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2105801, 1, 33910, 0, -1, 204, 0, 100, 0, 2000, 10000, 2000, 10000, 'Disembodied Exarch - Heal Other - friendly missing 50% excluding self');
+
+UPDATE `creature_template` SET `SpellList` = 2105801 WHERE `entry` = 21058;
+
+
+-- Movement Corrections
+
+-- Disembodied Exarch
+-- WalkSpeed: 2.5 
+-- RunSpeed: 8
+-- Before SpeedWalk 1,125 SpeedRun 1,14286
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 21058;

@@ -19278,10 +19278,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dealer Sadaqat 20989
 -- Azurebeak (3.0.3 Official Data - Logs Only)
 ('2100501','21005','0','0','100','1025','7100','11100','11000','14000','0','0','11','31273','1','0','0','0','0','0','0','0','0','0','Azurebeak - Cast Screech'),
--- Disembodied Exarch
-('2105801','21058','1','0','100','1','1000','1000','300000','300000','0','0','11','36004','15','32','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Power Word: Fortitude OOC'),
-('2105802','21058','4','0','100','0','0','0','0','0','0','0','11','8258','0','0','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Devotion Aura on Aggro'),
-('2105803','21058','14','0','100','1025','2000','40','22000','22000','0','0','11','33910','12','0','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Heal Other on Friendly Missing HP'),
+-- Disembodied Exarch 21058 - spell_list
+('2105801','21058','1','0','100','1','1000','8000','10000','300000','0','0','11','36004','15','32','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Power Word: Fortitude OOC'),
+('2105802','21058','0','0','100','1','0','8000','1000','8000','0','0','11','8258','0','32','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Devotion Aura'),
 -- Tormented Citizen 21065
 ('2106501','21065','4','0','100','0','0','0','0','0','0','0','31','1','2','0','21','0','0','0','5','15','0','0','Tormented Soul - Set Random Phase 11866, Stop Combat Movement and OneShotRoar on Aggro'),
 ('2106502','21065','0','5','100','1024','1000','1000','0','0','0','0','57','0','0','0','36','20480','1','0','21','1','0','0','Tormented Citizen - Enable Melee Mode, Update Template to Kirin''Var Ghost and Start Combat Movement (Phase 1)'),
