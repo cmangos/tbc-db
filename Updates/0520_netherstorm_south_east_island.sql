@@ -10,7 +10,7 @@
 SET @CGUID := 5306100; -- creatures
 SET @SGGUID := 5406000; -- spawn_groups
  
-DELETE FROM creature WHERE guid IN (67516, 67517, 67518, 67519, 67520, 67524, 67525, 67536, 67537, 67538, 67539, 67540, 67541, 67543, 67544, 67546, 67554, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
+DELETE FROM creature WHERE guid IN (67516, 67517, 67518, 67519, 67520, 67521, 67524, 67525, 67536, 67537, 67538, 67539, 67540, 67541, 67543, 67544, 67546, 67554, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 73962, 1002671);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+48;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -88,9 +88,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- ToDO: this npc should rnd switch between standstate 0 (stand) 1 (sit) and 3 (sleep) also should use STATE_USESTANDING_NOSHEATHE at some point will add later
 (@CGUID+53, 0, 530, 1, 3449.43, 3702.6, 147.646, 3.78736, 300, 360, 0, 0), -- spawn_group_entry old guid 67541
 -- prob same as above - todo..
-(@CGUID+54, 0, 530, 1, 3424.25, 3661.14, 153.203, 4.46804, 300, 360, 0, 0), -- spawn_group_entry old guid 67537
---  
+(@CGUID+54, 0, 530, 1, 3424.25, 3661.14, 153.203, 4.46804, 300, 360, 0, 0), -- spawn_group_entry old guid 67537--  
 (@CGUID+55, 18873, 530, 1, 3369.44, 3661.99, 143.635, 4.01426, 300, 360, 0, 0), -- Disembodied Protector old guid 67554
+-- Npc before bridge
+(@CGUID+51, 18872, 530, 1, 3455.16, 3675.74, 150.064, 0.39114, 300, 360, 14, 1), -- Disembodied Vindicator old guid 67521
 
 DELETE FROM creature_addon WHERE guid IN (67540, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 
