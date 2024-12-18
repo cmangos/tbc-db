@@ -10,7 +10,7 @@
 SET @CGUID := 5306100; -- creatures
 SET @SGGUID := 5406000; -- spawn_groups
  
-DELETE FROM creature WHERE guid IN (67516, 67517, 67518, 67519, 67520, 67521, 67524, 67525, 67536, 67537, 67538, 67539, 67540, 67541, 67543, 67544, 67546, 67554, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
+DELETE FROM creature WHERE guid IN (67516, 67517, 67518, 67519, 67520, 67521, 67522, 67524, 67525, 67536, 67537, 67538, 67539, 67540, 67541, 67543, 67544, 67546, 67554, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 73962, 73964, 1002671);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+48;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -92,13 +92,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+55, 18873, 530, 1, 3369.44, 3661.99, 143.635, 4.01426, 300, 360, 0, 0), -- Disembodied Protector old guid 67554
 -- Npc before bridge
 (@CGUID+56, 18872, 530, 1, 3455.16, 3675.74, 150.064, 0.39114, 300, 360, 14, 1), -- Disembodied Vindicator old guid 67521
--- Exarch patroling under the bridge
+-- Exarch patroling from left under the bridge
 (@CGUID+57, 21058, 530, 1, 3493.2, 3717.37, 139.938, 5.39578, 300, 360, 0, 4), -- Disembodied Exarch old guid 73964
+-- NPC patroling on the bridge
+(@CGUID+58, 18872, 530, 1, 3468.76, 3646.23, 154.458, 5.42845, 300, 360, 0, 2), -- Disembodied Vindicator old guid 67522
 
 DELETE FROM creature_addon WHERE guid IN (67540, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 
 -- Waypoints
-DELETE FROM creature_movement WHERE id IN (67675, 71811, 71814, 73962, 73964, 1002671);
+DELETE FROM creature_movement WHERE id IN (67522, 67675, 71811, 71814, 73962, 73964, 1002671);
 DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+35;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
@@ -210,6 +212,11 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+57, 7, 3435.0735,3556.5322,144.45111, 100, 0, 0),
 (@CGUID+57, 8, 3433.6025,3514.8782,144.60332, 100, 0, 0),
 (@CGUID+57, 9, 3437.3684,3489.0266,145.83838, 100, 0, 0),
+-- Disembodied Vindicator on bridge
+(@CGUID+58, 1, 3469.388,3645.5144,154.4403, 100, 0, 0),
+(@CGUID+58, 2, 3473.2312,3646.1418,153.62642, 100, 0, 0),
+(@CGUID+58, 3, 3480.86,3627.4504,156.86302, 100, 0, 0),
+(@CGUID+58, 4, 3477.1685,3625.7092,158.05197, 100, 0, 0),
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
