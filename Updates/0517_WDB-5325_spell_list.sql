@@ -226,7 +226,7 @@ UPDATE `creature_template` SET `CharmedSpellList`='1770105' WHERE `entry`='17701
 UPDATE `creature_template` SET `CharmedSpellList`='1771305' WHERE `entry`='17713'; -- Bloodcursed Naga
 UPDATE `creature_template` SET `CharmedSpellList`='1803705' WHERE `entry`='18037'; -- Warmaul Warlock
 UPDATE `creature_template` SET `CharmedSpellList`='1804905' WHERE `entry`='18049'; -- Bleeding Hollow Darkcaster (1)
-UPDATE `creature_template` SET `CharmedSpellList`='1805805' WHERE `entry`='18058'; -- Hellfire Watcher (1)
+UPDATE `creature_template` SET `CharmedSpellList`='1730905' WHERE `entry`='17309'; -- Hellfire Watcher (Immune on Heroic)
 UPDATE `creature_template` SET `CharmedSpellList`='1806405' WHERE `entry`='18064'; -- Warmaul Shaman
 UPDATE `creature_template` SET `CharmedSpellList`='1806505' WHERE `entry`='18065'; -- Warmaul Brute
 UPDATE `creature_template` SET `CharmedSpellList`='1812005' WHERE `entry`='18120'; -- Ango'rosh Mauler
@@ -247,7 +247,7 @@ UPDATE `creature_template` SET `CharmedSpellList`='1977905' WHERE `entry`='19779
 UPDATE `creature_template` SET `CharmedSpellList`='1999405' WHERE `entry`='19994'; -- Bloodmaul Warlock
 UPDATE `creature_template` SET `CharmedSpellList`='2013905' WHERE `entry`='20139'; -- Sunfury Conjurer
 UPDATE `creature_template` SET `CharmedSpellList`='2020705' WHERE `entry`='20207'; -- Sunfury Bowman
-UPDATE `creature_template` SET `CharmedSpellList`='2025905' WHERE `entry`='20259'; -- Ethereal Sorcerer (1)
+UPDATE `creature_template` SET `CharmedSpellList`='1831305' WHERE `entry`='18313'; -- Ethereal Sorcerer (Immune on Heroic)
 UPDATE `creature_template` SET `CharmedSpellList`='2045805' WHERE `entry`='20458'; -- Ethereum Archon
 UPDATE `creature_template` SET `CharmedSpellList`='2069405' WHERE `entry`='20694'; -- Sethekk Oracle (1)
 UPDATE `creature_template` SET `CharmedSpellList`='2154705' WHERE `entry`='21547'; -- Bloodwarder Mender (1)
@@ -260,8 +260,8 @@ DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (605,8005,9405,9505,10305,
 470505,471205,480506,480706,547505,561705,586005,586105,586205,600605,600805,609305,617005,702605,702705,702905,703405,703505,703705,703805,705205,711205,736905,737105,737205,737905,743905,744105,799605,828205,841905,850305,863605,917605,
 1220405,1220505,1448705,1528105,1540705,1564105,1564205,1564305,1564505,1566905,1567005,1592405,1593805,1595005,1616205,1619705,1621705,1622205,1629405,1631505,1631705,1631805,1633105,1633205,1633305,1633405,1633505,1633705,1634005,1634105,
 1634305,1634405,1634505,1634605,1646905,1687305,1692505,1692705,1692905,1696605,1696705,1705605,1713805,1718305,1718405,1718505,1718605,1718705,1718805,1718905,1719005,1719105,1719205,1719305,1719405,1719505,1732005,1732105,1732205,1732305,
-1732405,1732505,1732605,1732705,1732805,1732905,1733005,1733105,1733305,1733405,1733605,1744805,1747505,1760405,1760605,1760705,1760805,1760905,1761005,1770105,1771305,1803705,1804905,1805805,1806405,1806505,1812005,1812105,1816005,1820705,
-1866805,1885505,1895205,1913605,1941305,1941505,1964305,1966805,1970105,1973205,1977905,1999405,2013905,2020705,2025905,2045805,2069405,2154705,2217505,2225405);
+1732405,1732505,1732605,1732705,1732805,1732905,1733005,1733105,1733305,1733405,1733605,1744805,1747505,1760405,1760605,1760705,1760805,1760905,1761005,1770105,1771305,1803705,1804905,1730905,1806405,1806505,1812005,1812105,1816005,1820705,
+1866805,1885505,1895205,1913605,1941305,1941505,1964305,1966805,1970105,1973205,1977905,1999405,2013905,2020705,1831305,2045805,2069405,2154705,2217505,2225405);
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
 (605, 'Vanilla - Kobold Vermin', 0, 0),
 (8005, 'Vanilla - Kobold Laborer', 0, 0),
@@ -485,7 +485,7 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 (1771305, 'Tbc - Bloodcursed Naga', 0, 0),
 (1803705, 'Tbc - Warmaul Warlock', 0, 0),
 (1804905, 'Tbc - Bleeding Hollow Darkcaster (1)', 0, 0),
-(1805805, 'Tbc - Hellfire Watcher (1)', 0, 0),
+(1730905, 'Tbc - Hellfire Watcher', 0, 0),
 (1806405, 'Tbc - Warmaul Shaman', 0, 0),
 (1806505, 'Tbc - Warmaul Brute', 0, 0),
 (1812005, 'Tbc - Ango\'rosh Mauler', 0, 0),
@@ -506,7 +506,7 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 (1999405, 'Tbc - Bloodmaul Warlock', 0, 0),
 (2013905, 'Tbc - Sunfury Conjurer', 0, 0),
 (2020705, 'Tbc - Sunfury Bowman', 0, 0),
-(2025905, 'Tbc - Ethereal Sorcerer (1)', 0, 0),
+(1831305, 'Tbc - Ethereal Sorcerer', 0, 0),
 (2045805, 'Tbc - Ethereum Archon', 0, 0),
 (2069405, 'Tbc - Sethekk Oracle (1)', 0, 0),
 (2154705, 'Tbc - Bloodwarder Mender (1)', 0, 0),
@@ -519,8 +519,8 @@ DELETE FROM `creature_spell_list` WHERE `Id` IN (605,8005,9405,9505,10305,11605,
 470505,471205,480506,480706,547505,561705,586005,586105,586205,600605,600805,609305,617005,702605,702705,702905,703405,703505,703705,703805,705205,711205,736905,737105,737205,737905,743905,744105,799605,828205,841905,850305,863605,917605,
 1220405,1220505,1448705,1528105,1540705,1564105,1564205,1564305,1564505,1566905,1567005,1592405,1593805,1595005,1616205,1619705,1621705,1622205,1629405,1631505,1631705,1631805,1633105,1633205,1633305,1633405,1633505,1633705,1634005,1634105,
 1634305,1634405,1634505,1634605,1646905,1687305,1692505,1692705,1692905,1696605,1696705,1705605,1713805,1718305,1718405,1718505,1718605,1718705,1718805,1718905,1719005,1719105,1719205,1719305,1719405,1719505,1732005,1732105,1732205,1732305,
-1732405,1732505,1732605,1732705,1732805,1732905,1733005,1733105,1733305,1733405,1733605,1744805,1747505,1760405,1760605,1760705,1760805,1760905,1761005,1770105,1771305,1803705,1804905,1805805,1806405,1806505,1812005,1812105,1816005,1820705,
-1866805,1885505,1895205,1913605,1941305,1941505,1964305,1966805,1970105,1973205,1977905,1999405,2013905,2020705,2025905,2045805,2069405,2154705,2217505,2225405);
+1732405,1732505,1732605,1732705,1732805,1732905,1733005,1733105,1733305,1733405,1733605,1744805,1747505,1760405,1760605,1760705,1760805,1760905,1761005,1770105,1771305,1803705,1804905,1730905,1806405,1806505,1812005,1812105,1816005,1820705,
+1866805,1885505,1895205,1913605,1941305,1941505,1964305,1966805,1970105,1973205,1977905,1999405,2013905,2020705,1831305,2045805,2069405,2154705,2217505,2225405);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (605, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Kobold Vermin - Attack'),
 (8005, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Kobold Laborer - Attack'),
@@ -1053,10 +1053,10 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1804905, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Bleeding Hollow Darkcaster (Heroic) -  Attack'),
 (1804905, 3, 15241, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Bleeding Hollow Darkcaster (Heroic) -  Scorch'),
 (1804905, 4, 20754, 0, -1, 0, 0, 100, 1, 0, 0, 23986, 23986, 'Bleeding Hollow Darkcaster (Heroic) -  Rain of Fire'),
-(1805805, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Hellfire Watcher (Heroic) -  Attack'),
-(1805805, 3, 8362, 0, -1, 0, 0, 100, 1, 0, 0, 21330, 21330, 'Hellfire Watcher (Heroic) -  Renew'),
-(1805805, 4, 14032, 0, -1, 0, 0, 100, 1, 0, 0, 22726, 22726, 'Hellfire Watcher (Heroic) -  Shadow Word: Pain'),
-(1805805, 5, 12039, 0, -1, 0, 0, 100, 1, 0, 0, 15000, 15000, 'Hellfire Watcher (Heroic) -  Heal'),
+(1730905, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Hellfire Watcher - Attack'),
+(1730905, 3, 8362, 0, -1, 0, 0, 100, 1, 0, 0, 21330, 21330, 'Hellfire Watcher - Renew'),
+(1730905, 4, 14032, 0, -1, 0, 0, 100, 1, 0, 0, 22726, 22726, 'Hellfire Watcher - Shadow Word: Pain'),
+(1730905, 5, 12039, 0, -1, 0, 0, 100, 1, 0, 0, 15000, 15000, 'Hellfire Watcher - Heal'),
 (1806405, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Warmaul Shaman - Attack'),
 (1806405, 4, 12548, 0, -1, 0, 0, 100, 1, 0, 0, 8000, 8000, 'Warmaul Shaman - Frost Shock'),
 (1806405, 5, 11986, 0, -1, 0, 0, 100, 1, 0, 0, 15000, 15000, 'Warmaul Shaman - Healing Wave'),
@@ -1110,9 +1110,9 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (2020705, 3, 37847, 0, -1, 0, 0, 100, 1, 0, 0, 36786, 36786, 'Sunfury Bowman - Immolation Arrow'),
 (2020705, 4, 6660, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Sunfury Bowman - Shoot'),
 (2020705, 5, 12024, 0, -1, 0, 0, 100, 1, 0, 0, 15000, 15000, 'Sunfury Bowman - Net'),
-(2025905, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Ethereal Sorcerer (Heroic) -  Attack'),
-(2025905, 3, 15790, 0, -1, 0, 0, 100, 1, 0, 0, 16878, 16878, 'Ethereal Sorcerer (Heroic) -  Arcane Missiles'),
-(2025905, 4, 25603, 0, -1, 0, 0, 100, 1, 0, 0, 14996, 14996, 'Ethereal Sorcerer (Heroic) -  Slow'),
+(1831305, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Ethereal Sorcerer - Attack'),
+(1831305, 3, 15790, 0, -1, 0, 0, 100, 1, 0, 0, 16878, 16878, 'Ethereal Sorcerer - Arcane Missiles'),
+(1831305, 4, 25603, 0, -1, 0, 0, 100, 1, 0, 0, 14996, 14996, 'Ethereal Sorcerer - Slow'),
 (2045805, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Ethereum Archon - Attack'),
 (2045805, 5, 36513, 0, -1, 0, 0, 100, 1, 0, 0, 17963, 17963, 'Ethereum Archon - Intangible Presence'),
 (2069405, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Sethekk Oracle (Heroic) -  Attack'),
