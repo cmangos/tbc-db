@@ -19402,8 +19402,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Netherstorm Flame Keeper 25918
 -- Meeda 28343
 -- Blazzle 28344
-
-
+-- GUID Based
+('5306150','-5306150','1','0','100','1','5000','8000','5000','8000','0','0','53','-18002','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - ranom emote OOC'),
+('5306151','-5306151','1','0','100','1','5000','8000','5000','8000','0','0','53','-18003','0','0','0','0','0','0','0','0','0','0','Disembodied Vindicator - ranom emote OOC'),
 
 -- =================
 -- Shadowmoon Valley

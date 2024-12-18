@@ -10,7 +10,7 @@
 SET @CGUID := 5306100; -- creatures
 SET @SGGUID := 5406000; -- spawn_groups
  
-DELETE FROM creature WHERE guid IN (67516, 67518, 67519, 67520, 67524, 67525, 67538, 67539, 67540, 67543, 67544, 67546, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 70008, 
+DELETE FROM creature WHERE guid IN (67516, 67518, 67519, 67520, 67524, 67525, 67536, 67538, 67539, 67540, 67543, 67544, 67546, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 70008, 
 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 73962, 1002671);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+48;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -82,6 +82,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+48, 18873, 530, 1, 3516.86, 3525.74, 131.554, 4.6102, 360, 420, 8, 1), -- Disembodied Protector old guid 67546
 -- Ruins of Enkaat entrance 
 (@CGUID+49, 21058, 530, 1, 3374.26, 3712.78, 142.87, 5.6495, 300, 360, 0, 4), -- Disembodied Exarch old guid 73962
+
+(@CGUID+50, 0, 530, 1, 3410.26, 3684.18, 147.597, 4.67748, 360, 420, 0, 0), -- spawn_group_entry old guid 67556
+(@CGUID+51, 18872, 530, 1, 3409.75, 3673.84, 148.697, 1.46608, 300, 360, 0, 0),  -- Disembodied Vindicator old guid 67536
 
 DELETE FROM creature_addon WHERE guid IN (67540, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 
@@ -271,8 +274,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+13, 'Netherstorm - Group 015 - Disembodied Protector (3) | Disembodied Vindicator(1)', 4, 0, 0, 0, 0),
 -- Ruins of Enkaat entrance 
 (@SGGUID+14, 'Netherstorm - Group 016 - Disembodied Exarch (1) - Solo Patrol', 1, 0, 0, 0, 0),
+-- Group of 2 standing around object ("table") - 1 confirmed to be rnd entry between vindicator/protector
+(@SGGUID+15, 'Netherstorm - Group 017 - Disembodied Vindicator (1) - Disembodied Protector', 2, 0, 0, 0, 0),
 
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+15, 18872, 0, 2, 0), (@SGGUID+15, 18873, 0, 1, 0), -- Disembodied Vindicator/Disembodied Protector
 
 DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+8;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
@@ -325,25 +331,37 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+14, @CGUID+49, -1, 0), -- Disembodied Exarch
 
+(@SGGUID+15, @CGUID+50, 0, 0), -- spawn_group_entry
+(@SGGUID+15, @CGUID+51, 1, 0), -- Disembodied Vindicator
+
 -- Scripts
 SET @RELAYID := 18000;
-DELETE FROM dbscript_random_templates WHERE id = @RELAYID+1;
+DELETE FROM dbscript_random_templates WHERE id = @RELAYID+2;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Netherologist Coppernickels different text's
 (@RELAYID+1, 0, 16949, 0, 'Netherstorm - Nether Technician - Say 1'), 
 (@RELAYID+1, 0, 16950, 0, 'Netherstorm - Nether Technician - Say 2'),
 (@RELAYID+1, 0, 16951, 0, 'Netherstorm - Nether Technician - Say 3'), 
 (@RELAYID+1, 0, 16952, 0, 'Netherstorm - Nether Technician - Say 4'), 
-(@RELAYID+1, 0, 16953, 0, 'Netherstorm - Nether Technician - Say 5');
+(@RELAYID+1, 0, 16953, 0, 'Netherstorm - Nether Technician - Say 5'),
+-- Disembodied Vindicator/Disembodied Protector random emote 1
+(@RELAYID+2, 1, @RELAYID+3, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShotQuestion (6)'), 
+(@RELAYID+2, 1, @RELAYID+4, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteYes (273)'),
+(@RELAYID+2, 1, @RELAYID+5, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteNo (274)'), 
+(@RELAYID+2, 1, @RELAYID+6, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteTalk (396)'); 
 
-
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Nether Technician script via ACID - CGUID+4
 (@RELAYID+1, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1911, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
 (@RELAYID+1, 0, 1, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_USESTANDING_NOSHEATHE'),
 (@RELAYID+2, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1903, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
-(@RELAYID+2, 0, 1, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_WORK_MINING');
+(@RELAYID+2, 0, 1, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_WORK_MINING'),
+-- Disembodied Vindicator/Disembodied Protector using random emote OOC
+(@RELAYID+3, 0, 1, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShotQuestion (6)'),
+(@RELAYID+4, 0, 1, 1, 273, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteYes (273)'),
+(@RELAYID+5, 0, 1, 1, 274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteNo (274)'),
+(@RELAYID+6, 0, 1, 1, 396, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteTalk (396)'),
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1956901, 1956902, 1956903, 1956904, 2020301);
