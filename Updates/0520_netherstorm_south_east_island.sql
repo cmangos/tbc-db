@@ -10,7 +10,7 @@
 SET @CGUID := 5306100; -- creatures
 SET @SGGUID := 5406000; -- spawn_groups
  
-DELETE FROM creature WHERE guid IN (67516, 67517, 67518, 67519, 67520, 67521, 67522, 67524, 67525, 67536, 67537, 67538, 67539, 67540, 67541, 67543, 67544, 67546, 67554, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
+DELETE FROM creature WHERE guid IN (67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 67525, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67543, 67544, 67546, 67549, 67552, 67553, 67554, 67555, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 73962, 73964, 1002671);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+48;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -96,6 +96,17 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+57, 21058, 530, 1, 3493.2, 3717.37, 139.938, 5.39578, 300, 360, 0, 4), -- Disembodied Exarch old guid 73964
 -- NPC patroling on the bridge
 (@CGUID+58, 18872, 530, 1, 3468.76, 3646.23, 154.458, 5.42845, 300, 360, 0, 2), -- Disembodied Vindicator old guid 67522
+-- Random movement under bridge
+(@CGUID+59, 18872, 530, 1, 3458.56, 3627.43, 140.747, 1.7571, 300, 360, 15, 1), -- Disembodied Vindicator old guid 67523
+-- Crater from the bridge right
+(@CGUID+60, 0, 530, 1, 3432.5, 3591.81, 144.274, 2.11479, 300, 360, 10, 1), -- spawn_group_entry old guid 67549
+-- npc with rnd emote/standstate
+(@CGUID+61, 18872, 530, 1, 3412.48, 3609.1, 140.999, 0.785398, 300, 360, 0, 0), -- Disembodied Vindicator old guid 67535
+-- 4 npcs outside right from entrace
+(@CGUID+62, 18873, 530, 1, 3343.02, 3682.69, 135.465, 4.66549, 300, 360, 8, 1), -- Disembodied Protector old guid 67555
+(@CGUID+63, 18872, 530, 1, 3349.59, 3647.52, 142.912, 3.58056, 300, 360, 10, 1), -- Disembodied Vindicator old guid 67534
+(@CGUID+64, 18873, 530, 1, 3382.97, 3646.03, 144.754, 4.86133, 300, 360, 0, 0), -- Disembodied Protector old guid 67552
+(@CGUID+65, 0, 530, 1, 3383.35, 3626.05, 144.221, 0.645405, 300, 360, 0, 0); -- spawn_group_entry old guid 67553
 
 DELETE FROM creature_addon WHERE guid IN (67540, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 
