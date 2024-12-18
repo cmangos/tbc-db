@@ -199,11 +199,11 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+49, 2, 3393.8508,3699.708,144.82408, 100, 0, 0),
 (@CGUID+49, 3, 3419.7908,3691.4236,146.60385, 100, 0, 0),
 (@CGUID+49, 4, 3444.3796,3716.2292,145.02869, 100, 0, 0),
-(@CGUID+49, 4, 3422.1394,3690.8667,146.77238, 100, 0, 0),
-(@CGUID+49, 5, 3426.9023,3687.7004,147.44237, 100, 0, 0),
-(@CGUID+49, 6, 3426.924,3668.7673,152.69373, 100, 0, 0),
-(@CGUID+49, 7, 3427.7356,3688.8196,147.39194, 100, 0, 0),
-(@CGUID+49, 8, 3450.3057,3679.048,149.7282, 100, 0, 0),
+(@CGUID+49, 5, 3422.1394,3690.8667,146.77238, 100, 0, 0),
+(@CGUID+49, 6, 3426.9023,3687.7004,147.44237, 100, 0, 0),
+(@CGUID+49, 7, 3426.924,3668.7673,152.69373, 100, 0, 0),
+(@CGUID+49, 8, 3427.7356,3688.8196,147.39194, 100, 0, 0),
+(@CGUID+49, 9, 3450.3057,3679.048,149.7282, 100, 0, 0),
 (@CGUID+49, 10, 3469.7615,3651.3213,152.81497, 100, 0, 0),
 (@CGUID+49, 11, 3481.7473,3622.8403,157.51076, 100, 0, 0),
 -- Disembodied Vindicator
@@ -227,7 +227,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+58, 1, 3469.388,3645.5144,154.4403, 100, 0, 0),
 (@CGUID+58, 2, 3473.2312,3646.1418,153.62642, 100, 0, 0),
 (@CGUID+58, 3, 3480.86,3627.4504,156.86302, 100, 0, 0),
-(@CGUID+58, 4, 3477.1685,3625.7092,158.05197, 100, 0, 0),
+(@CGUID+58, 4, 3477.1685,3625.7092,158.05197, 100, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -320,11 +320,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Group of 2 standing around object ("table") - 1 confirmed to be rnd entry between vindicator/protector
 (@SGGUID+15, 'Netherstorm - Group 017 - Disembodied Vindicator (1) - Disembodied Protector', 2, 0, 0, 0, 0),
 -- Patroling Vindicator
-(@SGGUID+16, 'Netherstorm - Group 018 - Disembodied Vindicator (1) - Solo Patrol', 1, 0, 0, 0, 0),
+(@SGGUID+16, 'Netherstorm - Group 018 - Disembodied Vindicator (1) - Solo Patrol', 1, 0, 0, 0, 0);
 
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGGUID+15, 18872, 0, 2, 0), (@SGGUID+15, 18873, 0, 1, 0), -- Disembodied Vindicator/Disembodied Protector
+(@SGGUID+15, 18872, 0, 2, 0), (@SGGUID+15, 18873, 0, 1, 0); -- Disembodied Vindicator/Disembodied Protector
 
 DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+8;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
@@ -373,14 +373,14 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+13, @CGUID+45, -1, 0), -- Disembodied Vindicator
 (@SGGUID+13, @CGUID+46, -1, 0), -- Disembodied Protector
 (@SGGUID+13, @CGUID+47, -1, 0), -- Disembodied Protector
-(@SGGUID+13, @CGUID+48, -1, 0); -- Disembodied Protector
+(@SGGUID+13, @CGUID+48, -1, 0), -- Disembodied Protector
 
 (@SGGUID+14, @CGUID+49, -1, 0), -- Disembodied Exarch
 
 (@SGGUID+15, @CGUID+50, 0, 0), -- spawn_group_entry
 (@SGGUID+15, @CGUID+51, 1, 0), -- Disembodied Vindicator
 
-(@SGGUID+16, @CGUID+52, -1, 0), -- Disembodied Vindicator
+(@SGGUID+16, @CGUID+52, -1, 0); -- Disembodied Vindicator
 
 
 -- Scripts
@@ -410,7 +410,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+3, 0, 1, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShotQuestion (6)'),
 (@RELAYID+4, 0, 1, 1, 273, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteYes (273)'),
 (@RELAYID+5, 0, 1, 1, 274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteNo (274)'),
-(@RELAYID+6, 0, 1, 1, 396, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteTalk (396)'),
+(@RELAYID+6, 0, 1, 1, 396, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteTalk (396)');
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1956901, 1956902, 1956903, 1956904, 2020301);
