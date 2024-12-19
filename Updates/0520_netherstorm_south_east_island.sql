@@ -8,11 +8,11 @@
 -- Spawns
 -- Also reguid them into tbc range
 SET @CGUID := 5306100; -- creatures
-SET @SGGUID := 5406000; -- spawn_groups
+SET @SGGUID := 5306000; -- spawn_groups
  
 DELETE FROM creature WHERE guid IN (67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 67525, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67543, 67544, 67546, 67549, 67552, 67553, 67554, 67555, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 73962, 73964, 1002671);
-DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+48;
+DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+65;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
 (@CGUID+1, 20203, 530, 1, 3380.88, 4359.49, 123.702, 4.67748, 300, 300, 0, 0),
@@ -61,34 +61,35 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+34, 18879, 530, 1, 3679.76, 3536.49, 129.898, 2.94111, 120, 180, 0, 2), -- Phase Hunter old guid 67624
 (@CGUID+35, 18879, 530, 1, 3673.79, 3491.65, 113.862, 2.36891, 120, 180, 0, 2), -- Phase Hunter old guid 67623
 -- Outside spawns Ruins of Enkaat
--- killed 10:37:48.343 - respawned 10:44:06.620 - 6 min 18 
 (@CGUID+36, 18873, 530, 1, 3384.72, 3747.28, 144.302, 5.26916, 360, 420, 8, 1), -- Disembodied Protector old guid 67557
--- Vindicator killed at 10:38:13.562 respawned at 10:43:29.808 respawn timer between 5 min and 6 min
-(@CGUID+37, 18872, 530, 1, 3417.31, 3753.94, 141.003, 0.458323, 300, 360, 8, 1),  -- Disembodied Vindicator old guid 67538
+(@CGUID+37, 0, 530, 1, 3417.31, 3753.94, 141.003, 0.458323, 300, 360, 8, 1),  -- spawn_group_entry old guid 67538
 (@CGUID+38, 18872, 530, 1, 3449.51, 3752.43, 145.462, 2.19665, 300, 360, 8, 1),  -- Disembodied Vindicator old guid 67516
 (@CGUID+39, 18873, 530, 1, 3481.87, 3746.61, 144.578, 4.36756, 360, 420, 8, 1), -- Disembodied Protector old guid 67539
 
 (@CGUID+40, 18873, 530, 1, 3500.7, 3717.46, 139.185, 1.67722, 360, 420, 8, 1), -- Disembodied Protector old guid 67540
-(@CGUID+41, 18873, 530, 1, 3482.38, 3683.87, 144.08, 1.43149, 360, 420, 8, 1), -- Disembodied Protector old guid 67519
+(@CGUID+41, 0, 530, 1, 3482.38, 3683.87, 144.08, 1.43149, 360, 420, 8, 1), -- spawn_group_entry old guid 67519
 
 (@CGUID+42, 18872, 530, 1, 3532.45, 3666.03, 140.064, 4.8436, 300, 360, 8, 1),  -- Disembodied Vindicator old guid 67520
-(@CGUID+43, 18872, 530, 1, 3573.5, 3647.71, 131.662, 0.799555, 300, 360, 8, 1),  -- Disembodied Vindicator old guid 67518
+(@CGUID+43, 0, 530, 1, 3573.5, 3647.71, 131.662, 0.799555, 300, 360, 8, 1),  -- spawn_group_entry old guid 67518
 
 (@CGUID+44, 18872, 530, 1, 3584.14, 3595.16, 130.009, 5.36131, 300, 360, 8, 1),  -- Disembodied Vindicator old guid 67524
 
 (@CGUID+45, 18872, 530, 1, 3575.31, 3548.73, 127.209, 5.58143, 300, 360, 8, 1),  -- Disembodied Vindicator old guid 67525
 (@CGUID+46, 18873, 530, 1, 3551.81, 3525.41, 124.929, 0.497076, 360, 420, 8, 1), -- Disembodied Protector old guid 67544
 (@CGUID+47, 18873, 530, 1, 3527.85, 3549.21, 137.595, 5.68976, 360, 420, 8, 1), -- Disembodied Protector old guid 67543
-(@CGUID+48, 18873, 530, 1, 3516.86, 3525.74, 131.554, 4.6102, 360, 420, 8, 1), -- Disembodied Protector old guid 67546
+(@CGUID+48, 0, 530, 1, 3516.86, 3525.74, 131.554, 4.6102, 360, 420, 8, 1), -- spawn_group_entry old guid 67546
+
 -- Ruins of Enkaat entrance 
 (@CGUID+49, 21058, 530, 1, 3374.26, 3712.78, 142.87, 5.6495, 300, 360, 0, 4), -- Disembodied Exarch old guid 73962
+
 (@CGUID+50, 0, 530, 1, 3410.26, 3684.18, 147.597, 4.67748, 360, 420, 0, 0), -- spawn_group_entry old guid 67556
 (@CGUID+51, 18872, 530, 1, 3409.75, 3673.84, 148.697, 1.46608, 300, 360, 0, 0), -- Disembodied Vindicator old guid 67536
+
 (@CGUID+52, 18872, 530, 1, 3463.16, 3715.29, 145.986, 0.804, 300, 360, 0, 4), -- Disembodied Vindicator old guid 67517
 -- ToDO: this npc should rnd switch between standstate 0 (stand) 1 (sit) and 3 (sleep) also should use STATE_USESTANDING_NOSHEATHE at some point will add later
 (@CGUID+53, 0, 530, 1, 3449.43, 3702.6, 147.646, 3.78736, 300, 360, 0, 0), -- spawn_group_entry old guid 67541
 -- prob same as above - todo..
-(@CGUID+54, 0, 530, 1, 3424.25, 3661.14, 153.203, 4.46804, 300, 360, 0, 0), -- spawn_group_entry old guid 67537--  
+(@CGUID+54, 18872, 530, 1, 3424.25, 3661.14, 153.203, 4.46804, 300, 360, 0, 0), -- Disembodied Vindicator old guid 67537--  
 (@CGUID+55, 18873, 530, 1, 3369.44, 3661.99, 143.635, 4.01426, 300, 360, 0, 0), -- Disembodied Protector old guid 67554
 -- Npc before bridge
 (@CGUID+56, 18872, 530, 1, 3455.16, 3675.74, 150.064, 0.39114, 300, 360, 14, 1), -- Disembodied Vindicator old guid 67521
@@ -108,11 +109,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+64, 18873, 530, 1, 3382.97, 3646.03, 144.754, 4.86133, 300, 360, 0, 0), -- Disembodied Protector old guid 67552
 (@CGUID+65, 0, 530, 1, 3383.35, 3626.05, 144.221, 0.645405, 300, 360, 0, 0); -- spawn_group_entry old guid 67553
 
-DELETE FROM creature_addon WHERE guid IN (67540, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
+DELETE FROM creature_addon WHERE guid IN (67537, 67540, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 
 -- Waypoints
 DELETE FROM creature_movement WHERE id IN (67522, 67675, 71811, 71814, 73962, 73964, 1002671);
-DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+35;
+DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+58;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
 (@CGUID+3, 1, 3383.929,4348.6997,133.66545,0.20943951, 12000, 0), -- waittime between 12 and 15 seconds
@@ -294,39 +295,56 @@ INSERT INTO creature_spawn_data_template (`Entry`, `UnitFlags`, `Name`) VALUES
 
 -- SpawnGroup
 -- Currently spawngroup is only used to get npcs into dynguid
-DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+13;
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+16;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
-(@SGGUID, 'Netherstorm - Group 001 - Phase Hunter (2)', 2, 0, 0, 0, 0),
-(@SGGUID+1, 'Netherstorm - Group 002 - Nether Ray - Solo Patrol', 1, 0, 0, 0, 0),
-(@SGGUID+2, 'Netherstorm - Group 003 - Mana Snapper - Solo Patrol', 1, 0, 0, 0, 0),
-(@SGGUID+3, 'Netherstorm - Group 005 - Phase Hunter (4)', 4, 0, 0, 0, 0),
-(@SGGUID+4, 'Netherstorm - Group 006 - Shaleskin Flayer', 1, 0, 0, 0, 0),
-(@SGGUID+5, 'Netherstorm - Group 007 - Phase Hunter (4)', 4, 0, 0, 0, 0),
-(@SGGUID+6, 'Netherstorm - Group 008 - Shaleskin Flayer', 2, 0, 0, 0, 0),
-(@SGGUID+7, 'Netherstorm - Group 009 - Nether Ray - Solo Patrol', 1, 0, 0, 0, 0),
-(@SGGUID+8, 'Netherstorm - Group 010 - Phase Hunter (5)', 1, 0, 0, 0, 0),
+(@SGGUID, 'Netherstorm - Group 001 - Phase Hunter (2)', 0, 2, 0, 0, 0),
+(@SGGUID+1, 'Netherstorm - Group 002 - Nether Ray - Solo Patrol', 0, 1, 0, 0, 0),
+(@SGGUID+2, 'Netherstorm - Group 003 - Mana Snapper - Solo Patrol', 0, 1, 0, 0, 0),
+(@SGGUID+3, 'Netherstorm - Group 005 - Phase Hunter (4)', 0, 4, 0, 0, 0),
+(@SGGUID+4, 'Netherstorm - Group 006 - Shaleskin Flayer', 0, 1, 0, 0, 0),
+(@SGGUID+5, 'Netherstorm - Group 007 - Phase Hunter (4)', 0, 4, 0, 0, 0),
+(@SGGUID+6, 'Netherstorm - Group 008 - Shaleskin Flayer', 0, 2, 0, 0, 0),
+(@SGGUID+7, 'Netherstorm - Group 009 - Nether Ray - Solo Patrol', 0, 1, 0, 0, 0),
+(@SGGUID+8, 'Netherstorm - Group 010 - Phase Hunter (5)', 0, 1, 0, 0, 0),
 -- Outside Ruins of Enkaat groups
 -- Group of 4
-(@SGGUID+9, 'Netherstorm - Group 011 - Disembodied Protector (2) | Disembodied Vindicator(2)', 4, 0, 0, 0, 0),
+(@SGGUID+9, 'Netherstorm - Group 011 - Disembodied Protector (2) | Disembodied Vindicator(2)', 0, 4, 0, 0, 0),
 -- Group of 2
-(@SGGUID+10, 'Netherstorm - Group 012 - Disembodied Protector (2)', 2, 0, 0, 0, 0),
-(@SGGUID+11, 'Netherstorm - Group 013 - Disembodied Vindicator(2)', 2, 0, 0, 0, 0),
+(@SGGUID+10, 'Netherstorm - Group 012 - Disembodied Protector (2)', 0, 2, 0, 0, 0),
+(@SGGUID+11, 'Netherstorm - Group 013 - Disembodied Vindicator(2)', 0, 2, 0, 0, 0),
 -- Solo
-(@SGGUID+12, 'Netherstorm - Group 014 - Disembodied Vindicator(1)', 1, 0, 0, 0, 0),
+(@SGGUID+12, 'Netherstorm - Group 014 - Disembodied Vindicator(1)', 0, 2, 0, 0, 0),
 -- Group of 4
-(@SGGUID+13, 'Netherstorm - Group 015 - Disembodied Protector (3) | Disembodied Vindicator(1)', 4, 0, 0, 0, 0),
+(@SGGUID+13, 'Netherstorm - Group 015 - Disembodied Protector (3) | Disembodied Vindicator(1)', 0, 4, 0, 0, 0),
 -- Ruins of Enkaat entrance 
-(@SGGUID+14, 'Netherstorm - Group 016 - Disembodied Exarch (1) - Solo Patrol', 1, 0, 0, 0, 0),
+(@SGGUID+14, 'Netherstorm - Group 016 - Disembodied Exarch (1) - Solo Patrol', 0, 1, 0, 0, 0),
 -- Group of 2 standing around object ("table") - 1 confirmed to be rnd entry between vindicator/protector
-(@SGGUID+15, 'Netherstorm - Group 017 - Disembodied Vindicator (1) - Disembodied Protector', 2, 0, 0, 0, 0),
+(@SGGUID+15, 'Netherstorm - Group 017 - Disembodied Vindicator (1) - Disembodied Protector', 0, 2, 0, 0, 0),
 -- Patroling Vindicator
-(@SGGUID+16, 'Netherstorm - Group 018 - Disembodied Vindicator (1) - Solo Patrol', 1, 0, 0, 0, 0);
+(@SGGUID+16, 'Netherstorm - Group 018 - Disembodied Vindicator (1) - Solo Patrol', 0, 1, 0, 0, 0),
+(@SGGUID+17, 'Netherstorm - Group 019 - Disembodied Vindicator/Disembodied Protector (1)', 0, 1, 0, 0, 0),
+(@SGGUID+18, 'Netherstorm - Group 020 - Disembodied Vindicator (1)', 0, 1, 0, 0, 0),
+(@SGGUID+19, 'Netherstorm - Group 021 - Disembodied Protector (1)', 0, 1, 0, 0, 0),
+(@SGGUID+20, 'Netherstorm - Group 022 - Disembodied Vindicator (1)', 0, 1, 0, 0, 0),
+(@SGGUID+21, 'Netherstorm - Group 023 - Disembodied Exarch (1) - Solo Patrol', 0, 1, 0, 0, 0),
+(@SGGUID+22, 'Netherstorm - Group 024 - Disembodied Vindicator (1)', 0, 1, 0, 0, 0),
+(@SGGUID+23, 'Netherstorm - Group 025 - Disembodied Vindicator (1)', 0, 1, 0, 0, 0),
+(@SGGUID+24, 'Netherstorm - Group 026 - Disembodied Vindicator (1) | spawn_group_entry (1)', 0, 2, 0, 0, 0),
+(@SGGUID+25, 'Netherstorm - Group 027 - Disembodied Vindicator (1) | Disembodied Protector (2) | spawn_group_entry (1)', 0, 4, 0, 0, 0);
 
 
+DELETE FROM spawn_group_entry WHERE Id BETWEEN @SGGUID AND @SGGUID+16;
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGGUID+15, 18872, 0, 2, 0), (@SGGUID+15, 18873, 0, 1, 0); -- Disembodied Vindicator/Disembodied Protector
+(@SGGUID+9, 18872, 0, 0, 0), (@SGGUID+9, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
+(@SGGUID+10, 18872, 0, 0, 0), (@SGGUID+10, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
+(@SGGUID+11, 18872, 0, 0, 0), (@SGGUID+11, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
+(@SGGUID+13, 18872, 0, 0, 0), (@SGGUID+13, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
+(@SGGUID+15, 18872, 0, 0, 0), (@SGGUID+15, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
 
-DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+8;
+(@SGGUID+24, 18872, 0, 0, 0), (@SGGUID+24, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
+(@SGGUID+25, 18872, 0, 0, 0), (@SGGUID+25, 18873, 0, 0, 0); -- Disembodied Vindicator/Disembodied Protector
+
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+16;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID, @CGUID+15, -1, 0), -- Phase Hunter
 (@SGGUID, @CGUID+16, -1, 0), -- Phase Hunter
@@ -380,12 +398,29 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+15, @CGUID+50, 0, 0), -- spawn_group_entry
 (@SGGUID+15, @CGUID+51, 1, 0), -- Disembodied Vindicator
 
-(@SGGUID+16, @CGUID+52, -1, 0); -- Disembodied Vindicator
+(@SGGUID+16, @CGUID+52, -1, 0), -- Disembodied Vindicator
 
+(@SGGUID+17, @CGUID+53, 0, 0), -- spawn_group_entry
+
+(@SGGUID+18, @CGUID+54, -1, 0), -- Disembodied Vindicator
+(@SGGUID+19, @CGUID+55, -1, 0), -- Disembodied Protector
+(@SGGUID+20, @CGUID+56, -1, 0), -- Disembodied Vindicator
+(@SGGUID+21, @CGUID+57, -1, 0), -- Disembodied 
+
+(@SGGUID+22, @CGUID+58, -1, 0), -- Disembodied Vindicator
+(@SGGUID+23, @CGUID+59, -1, 0), -- Disembodied Vindicator
+
+(@SGGUID+24, @CGUID+60, -1, 0), -- spawn_group_entry
+(@SGGUID+24, @CGUID+61, -1, 0), -- Disembodied Vindicator
+
+(@SGGUID+25, @CGUID+62, -1, 0), -- Disembodied Protector
+(@SGGUID+25, @CGUID+63, -1, 0), -- Disembodied Vindicator
+(@SGGUID+25, @CGUID+64, -1, 0), -- Disembodied Protector
+(@SGGUID+25, @CGUID+65, -1, 0); -- spawn_group_entry
 
 -- Scripts
 SET @RELAYID := 18000;
-DELETE FROM dbscript_random_templates WHERE id = @RELAYID+2;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Netherologist Coppernickels different text's
 (@RELAYID+1, 0, 16949, 0, 'Netherstorm - Nether Technician - Say 1'), 
