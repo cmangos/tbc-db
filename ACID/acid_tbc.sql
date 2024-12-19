@@ -11307,8 +11307,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bubbling Swamp Ooze - s.42486 tbc+ only
 ('439401','4394','6','0','100','0','0','0','0','0','0','0','11','43135','0','7','0','0','0','0','0','0','0','0','Bubbling Swamp Ooze - Cast Bubbling Ooze on Death'),
 ('439402','4394','8','0','100','0','42485','-1','0','0','0','0','11','42486','6','0','11','3617','0','0','0','0','0','0','Bubbling Swamp Ooze - Cast Ooze Channel Credit and Quiet Suicide on End of Ooze Channel Spellhit'),
+-- Mudrock Tortoise 4396 - NSR
 -- Mudrock Spikeshell 4397
 ('439701','4397','11','0','100','0','0','0','0','0','0','0','11','9464','0','34','0','0','0','0','0','0','0','0','Mudrock Spikeshell - Cast Barbs on Spawn'),
+-- Mudrock Burrower 4398 - NSR
+-- Mudrock Borer 4399 - NSR
+-- Mudrock Snapjaw 4400
+('440001','4400','12','0','100','1025','20','0','10000','15000','0','0','11','7938','1','0','0','0','0','0','0','0','0','0','Mudrock Snapjaw - Cast Fatal Bite at Target 20% HP'),
 -- Muckshell Clacker
 ('440101','4401','9','0','100','1025','0','5','20000','25000','0','0','11','3604','1','0','0','0','0','0','0','0','0','0','Muckshell Clacker - Cast Tendon Rip'),
 -- Muckshell Snapclaw 4402
