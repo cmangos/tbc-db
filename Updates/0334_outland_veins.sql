@@ -6,7 +6,7 @@
 -- blades edge        - 72
 -- netherstorm        - 48
 -- shadowmoon         - 79
--- total              1205
+-- total               666
 
 -- adamantite - rough map counts
 -- hellfire peninsula - 0
