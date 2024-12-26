@@ -299,3 +299,64 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1883001 WHERE `entry` = 18830;
 UPDATE `creature_template` SET `SpellList` = 2064401 WHERE `entry` = 20644;
+
+
+-- Cabal Executioner
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18632, 20642);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1863201, 2064201);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1863201, 'Shadow Labyrinth - Cabal Executioner - Normal', 0, 0),
+(2064201, 'Shadow Labyrinth - Cabal Executioner - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1863201, 2064201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1863201, 1, 7160, 0, -1, 1, 0, 100, 0, 5000, 15000, 30000, 40000, 'Cabal Executioner - Execute - current'),
+(1863201, 2, 33500, 0, -1, 2, 0, 100, 0, 11000, 25000, 16000, 30000, 'Cabal Executioner - Whirlwind - self'),
+
+(2064201, 1, 7160, 0, -1, 1, 0, 100, 0, 5000, 15000, 30000, 40000, 'Cabal Executioner - Execute - current'),
+(2064201, 2, 15578, 0, -1, 2, 0, 100, 0, 11000, 25000, 16000, 30000, 'Cabal Executioner - Whirlwind - self');
+
+UPDATE `creature_template` SET `SpellList` = 1863201 WHERE `entry` = 18632;
+UPDATE `creature_template` SET `SpellList` = 2064201 WHERE `entry` = 20642;
+
+
+-- Cabal Summoner
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18634, 20648);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1863401, 2064801);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1863401, 'Shadow Labyrinth - Cabal Summoner - Normal', 0, 0),
+(2064801, 'Shadow Labyrinth - Cabal Summoner - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1863401, 2064801);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1863401, 1, 33506, 0, -1, 2, 0, 100, 0, 3000, 17000, 12000, 26000, 'Cabal Summoner - Summon Cabal Deathsworn - self'),
+(1863401, 2, 33507, 0, -1, 2, 0, 100, 0, 4000, 18000, 13000, 27000, 'Cabal Summoner - Summon Cabal Acolyte - self'),
+(1863401, 3, 14034, 0, -1, 1, 0, 100, 0, 0, 6000, 2000, 8000, 'Cabal Summoner - Fireball - current'),
+
+(2064801, 1, 33506, 0, -1, 2, 0, 100, 0, 3000, 17000, 12000, 26000, 'Cabal Summoner - Execute - self'),
+(2064801, 2, 33507, 0, -1, 2, 0, 100, 0, 4000, 18000, 13000, 27000, 'Cabal Summoner - Summon Cabal Acolyte - self'),
+(2064801, 3, 15228, 0, -1, 1, 0, 100, 0, 0, 6000, 2000, 8000, 'Cabal Summoner - Fireball - current');
+
+UPDATE `creature_template` SET `SpellList` = 1863401 WHERE `entry` = 18634;
+UPDATE `creature_template` SET `SpellList` = 2064801 WHERE `entry` = 20648;
+
+-- Cabal Spellbinder
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18639, 20647);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1863901, 2064701);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1863901, 'Shadow Labyrinth - Cabal Spellbinder - Normal', 0, 0),
+(2064701, 'Shadow Labyrinth - Cabal Spellbinder - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1863901, 2064701);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1863901, 1, 32691, 0, -1, 105, 0, 100, 0, 8000, 24000, 12000, 28000, 'Cabal Spellbinder - Spell Shock - random mana user'),
+(1863901, 2, 33502, 0, -1, 101, 0, 100, 0, 12000, 22000, 16000, 26000, 'Cabal Spellbinder - Brain Washe - random non tank'),
+
+(2064701, 1, 32691, 0, -1, 105, 0, 100, 0, 8000, 24000, 12000, 28000, 'Cabal Spellbinder - Spell Shock - random mana user'),
+(2064701, 2, 33502, 0, -1, 101, 0, 100, 0, 12000, 22000, 16000, 26000, 'Cabal Spellbinder - Brain Wash - random non tank');
+
+UPDATE `creature_template` SET `SpellList` = 1863901 WHERE `entry` = 18639;
+UPDATE `creature_template` SET `SpellList` = 2064701 WHERE `entry` = 20647;
