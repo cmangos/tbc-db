@@ -11,7 +11,7 @@ SET @CGUID := 5306100; -- creatures
 SET @SGGUID := 5306000; -- spawn_groups
  
 DELETE FROM creature WHERE guid IN (67440, 67442, 67444, 67445, 67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 67525, 67526, 67527, 67528, 67529, 67530, 67531, 67532, 67533, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67542, 67543, 67544, 67545, 67546, 67547, 67548, 67549, 67550, 67551, 67552, 67553, 67554, 67555, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
-70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71844, 71846, 71849, 73962, 73963, 73964, 73965, 1002671);
+70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71844, 71846, 71849, 72537, 73962, 73963, 73964, 73965, 1002671, 1002675);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+65;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
@@ -137,6 +137,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+90, 20210, 530, 1, 3226.75, 3666.44, 129.027, 4.28765, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71849
 (@CGUID+91, 20210, 530, 1, 3230.48, 3588.29, 126.652, 2.15864, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71844
 
+(@CGUID+92, 20498, 530, 1, 3272.25, 3654.49, 124.501, 3.23666, 360, 420, 0, 4); -- Sundered Rumbler
+
 DELETE FROM creature_addon WHERE guid IN (67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 --  
 DELETE FROM creature_addon WHERE guid IN (@CGUID+75, @CGUID+76, @CGUID+77);
@@ -146,8 +148,8 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+77, 0, 8, 0, 0, 0, NULL); -- Disembodied Protector
 
 -- Waypoints
-DELETE FROM creature_movement WHERE id IN (67522, 67675, 71811, 71814, 73962, 73963, 73964, 73965, 1002671);
-DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+67;
+DELETE FROM creature_movement WHERE id IN (67522, 67675, 71811, 71814, 72537, 73962, 73963, 73964, 73965, 1002671, 1002675);
+DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+92;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
 (@CGUID+3, 1, 3383.929,4348.6997,133.66545,0.20943951, 12000, 0), -- waittime between 12 and 15 seconds
@@ -291,7 +293,14 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+81, 13, 3451.4087,3501.1284,144.69342, 100, 0, 0),
 (@CGUID+81, 14, 3440.5193,3517.2292,144.61507, 100, 0, 0),
 (@CGUID+81, 15, 3446.6438,3536.021,144.67932, 100, 0, 0),
-(@CGUID+81, 16, 3438.059,3555.1382,144.4512, 100, 0, 0);
+(@CGUID+81, 16, 3438.059,3555.1382,144.4512, 100, 0, 0),
+-- Sundered Rumbler
+(@CGUID+92, 1, 3271.1594,3654.384,124.491554, 100, 0, 0),
+(@CGUID+92, 2, 3285.1685,3666.9348,122.31402, 100, 0, 0),
+(@CGUID+92, 3, 3285.2664,3699.6223,122.56398, 100, 0, 0),
+(@CGUID+92, 4, 3276.7998,3732.5596,120.21663, 100, 0, 0),
+(@CGUID+92, 5, 3238.595,3748.5776,121.779724, 100, 0, 0),
+(@CGUID+92, 6, 3237.8372,3780.7805,124.0307, 100, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -413,7 +422,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+8, 'Netherstorm - Group 008 - Disembodied Exarch (4)', 0, 0, 0, 0, 0),
 -- Mana Wraith
 (@SGGUID+9, 'Netherstorm - Group 009 - Mana Wraith ()', 0, 0, 0, 0, 0),
-
+-- Sundered Rumbler
+(@SGGUID+10, 'Netherstorm - Group 010 - Sundered Rumbler', 0, 0, 0, 0, 0),
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
 (@SGGUID+100, 'Netherstorm - Etherlithium Matrix Crystal', 1, 21, 0, 0, 0);
 
@@ -507,7 +517,8 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+9, @CGUID+85, -1, 0), -- Mana Wraith
 (@SGGUID+9, @CGUID+86, -1, 0), -- Mana Wraith
 (@SGGUID+9, @CGUID+87, -1, 0), -- Mana Wraith
-
+-- Sundered Rumbler
+(@SGGUID+10, @CGUID+92, -1, 0), -- Sundered Rumbler
 -- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
