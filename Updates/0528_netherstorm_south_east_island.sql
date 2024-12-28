@@ -10,7 +10,7 @@
 SET @CGUID := 5306100; -- creatures
 SET @SGGUID := 5306000; -- spawn_groups
  
-DELETE FROM creature WHERE guid IN (67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 67525, 67526, 67527, 67528, 67529, 67530, 67531, 67532, 67533, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67542, 67543, 67544, 67545, 67546, 67547, 67548, 67549, 67550, 67551, 67552, 67553, 67554, 67555, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
+DELETE FROM creature WHERE guid IN (67440, 67442, 67444, 67445, 67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 67525, 67526, 67527, 67528, 67529, 67530, 67531, 67532, 67533, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67542, 67543, 67544, 67545, 67546, 67547, 67548, 67549, 67550, 67551, 67552, 67553, 67554, 67555, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 73962, 73963, 73964, 73965, 1002671);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+65;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -123,7 +123,16 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+78, 18873, 530, 1, 3354.6, 3490.36, 132.846, 0.0174533, 300, 360, 10, 1), -- Disembodied Protector old guid 67551
 (@CGUID+79, 18873, 530, 1, 3381.25, 3483.58, 140.005, 1.53769, 300, 360, 10, 1), -- spawn_group_entry old guid 67531
 (@CGUID+80, 18872, 530, 1, 3386.88, 3515.86, 147.421, 5.10096, 300, 360, 6, 1), -- Disembodied Vindicator old guid 67532
-(@CGUID+81, 21058, 530, 1, 3364.54, 3471.53, 140.913, 4.92918, 300, 360, 0, 4); -- Disembodied Exarch old guid 73965
+(@CGUID+81, 21058, 530, 1, 3364.54, 3471.53, 140.913, 4.92918, 300, 360, 0, 4), -- Disembodied Exarch old guid 73965
+-- Area between area 52 and ruins of enkaat
+(@CGUID+82, 18864, 530, 1, 3322.75, 3755.08, 138.872, 1.06576, 300, 360, 8, 1), -- Mana Wraith old guid 67445
+(@CGUID+83, 18864, 530, 1, 3303.67, 3726.11, 134.625, 0.142876, 300, 360, 8, 1), -- Mana Wraith was missing before
+(@CGUID+84, 18864, 530, 1, 3267.05, 3710.46, 131.285, 2.29114, 300, 360, 8, 1), -- Mana Wraith was missing before
+(@CGUID+85, 18864, 530, 1, 3231.12, 3719.54, 126.922, 5.39083, 300, 360, 8, 1), -- Mana Wraith was missing before
+(@CGUID+86, 18864, 530, 1, 3260.9, 3668.11, 129.142, 1.52983, 300, 360, 8, 1), -- Mana Wraith was missing before
+(@CGUID+87, 18864, 530, 1, 3302.19, 3675.14, 129.599, 6.17297, 300, 360, 8, 1), -- Mana Wraith old guid 67444
+(@CGUID+88, 18864, 530, 1, 3276.35, 3619.61, 127.51, 1.76854, 300, 360, 8, 1), -- Mana Wraith old guid 67442
+(@CGUID+89, 18864, 530, 1, 3274.64, 3583.8, 124.161, 5.79517, 300, 360, 8, 1), -- Mana Wraith old guid 67440
 
 DELETE FROM creature_addon WHERE guid IN (67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 --  
@@ -391,7 +400,6 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+2, 'Netherstorm - Group 002 - Nether Ray (2)', 0, 0, 0, 0, 0),
 (@SGGUID+3, 'Netherstorm - Group 003 - Mana Snapper (1)', 0, 0, 0, 0, 0),
 (@SGGUID+4, 'Netherstorm - Group 004 - Shaleskin Flayer', 0, 0, 0, 0, 0),
-
 -- Static Disembodied Protector spawns
 (@SGGUID+5, 'Netherstorm - Group 005 - Disembodied Protector (15)', 0, 0, 0, 0, 0),
 -- Static Disembodied Vindicator spawns
@@ -400,6 +408,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+7, 'Netherstorm - Group 007 - Disembodied Protector | Disembodied Vindicator (8)', 0, 0, 0, 0, 0),
 -- Disembodied Exarch spawns
 (@SGGUID+8, 'Netherstorm - Group 008 - Disembodied Exarch (4)', 0, 0, 0, 0, 0),
+-- Mana Wraith
+(@SGGUID+9, 'Netherstorm - Group 009 - Mana Wraith ()', 0, 0, 0, 0, 0),
+
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
 (@SGGUID+100, 'Netherstorm - Etherlithium Matrix Crystal', 1, 21, 0, 0, 0);
 
@@ -484,6 +495,14 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+8, @CGUID+57, -1, 0), -- Disembodied Exarch
 (@SGGUID+8, @CGUID+67, -1, 0), -- Disembodied Exarch
 (@SGGUID+8, @CGUID+81, -1, 0), -- Disembodied Exarch
+-- Mana Wraith spawns
+(@SGGUID+9, @CGUID+82, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+83, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+84, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+85, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+86, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+87, -1, 0), -- Mana Wraith
+
 -- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
