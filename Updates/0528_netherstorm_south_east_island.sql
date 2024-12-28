@@ -126,7 +126,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+81, 21058, 530, 1, 3364.54, 3471.53, 140.913, 4.92918, 300, 360, 0, 4); -- Disembodied Exarch old guid 73965
 
 DELETE FROM creature_addon WHERE guid IN (67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
- 
+--  
+DELETE FROM creature_addon WHERE guid IN (@CGUID+75, @CGUID+76, @CGUID+77);
+INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+75, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
+(@CGUID+76, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
+(@CGUID+77, 0, 8, 0, 0, 0, NULL); -- Disembodied Protector
+
 -- Waypoints
 DELETE FROM creature_movement WHERE id IN (67522, 67675, 71811, 71814, 73962, 73963, 73964, 73965, 1002671);
 DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+67;
@@ -511,7 +517,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 -- Scripts
 SET @RELAYID := 18000;
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+3;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Netherologist Coppernickels different text's
 (@RELAYID+1, 0, 16949, 0, 'Netherstorm - Nether Technician - Say 1'), 
@@ -519,13 +525,19 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+1, 0, 16951, 0, 'Netherstorm - Nether Technician - Say 3'), 
 (@RELAYID+1, 0, 16952, 0, 'Netherstorm - Nether Technician - Say 4'), 
 (@RELAYID+1, 0, 16953, 0, 'Netherstorm - Nether Technician - Say 5'),
--- Disembodied Vindicator/Disembodied Protector random emote 1
+-- Disembodied Vindicator/Disembodied Protector random emote
 (@RELAYID+2, 1, @RELAYID+3, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShotQuestion (6)'), 
 (@RELAYID+2, 1, @RELAYID+4, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteYes (273)'),
 (@RELAYID+2, 1, @RELAYID+5, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteNo (274)'), 
-(@RELAYID+2, 1, @RELAYID+6, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteTalk (396)'); 
+(@RELAYID+2, 1, @RELAYID+6, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteTalk (396)'),
+ -- Disembodied Vindicator/Disembodied Protector random StandState
+(@RELAYID+3, 1, @RELAYID+7, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Stand (0)'), 
+(@RELAYID+3, 1, @RELAYID+8, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Sit (1)'),
+(@RELAYID+3, 1, @RELAYID+9, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Sleep (3)'), 
+(@RELAYID+3, 1, @RELAYID+10, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Kneel (8)');
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
+
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+11;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Nether Technician script via ACID - CGUID+4
 (@RELAYID+1, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1911, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
@@ -533,10 +545,19 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+2, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1903, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
 (@RELAYID+2, 0, 1, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Emote STATE_WORK_MINING'),
 -- Disembodied Vindicator/Disembodied Protector using random emote OOC
-(@RELAYID+3, 0, 1, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShotQuestion (6)'),
-(@RELAYID+4, 0, 1, 1, 273, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteYes (273)'),
-(@RELAYID+5, 0, 1, 1, 274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteNo (274)'),
-(@RELAYID+6, 0, 1, 1, 396, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteTalk (396)');
+(@RELAYID+3, 0, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShotQuestion (6)'),
+(@RELAYID+4, 0, 0, 1, 273, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteYes (273)'),
+(@RELAYID+5, 0, 0, 1, 274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteNo (274)'),
+(@RELAYID+6, 0, 0, 1, 396, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - Emote OneShoteTalk (396)'),-- Disembodied Vindicator/Disembodied Protector using random StandState OOC
+-- Disembodied Vindicator/Disembodied Protector randomly changing StandState
+(@RELAYID+7, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Stand (0)'),
+(@RELAYID+8, 0, 0, 28, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Sit (1)'),
+(@RELAYID+9, 0, 0, 28, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Sleep (3)'),
+(@RELAYID+10, 0, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Kneel (8)'),
+-- Disembodied Exarch randomly stops waypoint, kneels for 4 seconds and resume path
+(@RELAYID+11, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Exarch - Stop Waypoints'),
+(@RELAYID+11, 0, 1, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Exarch - Emote Kneel'),
+(@RELAYID+11, 3000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Exarch - Unpause Waypoints');
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1956901, 1956902, 1956903, 1956904, 2020301);
