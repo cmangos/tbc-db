@@ -381,173 +381,104 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 -- Currently spawngroup is only used to get npcs into dynguid
 DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+27;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
-(@SGGUID, 'Netherstorm - Group 001 - Phase Hunter (2)', 0, 2, 0, 0, 0),
-(@SGGUID+1, 'Netherstorm - Group 002 - Nether Ray - Solo Patrol', 0, 1, 0, 0, 0),
-(@SGGUID+2, 'Netherstorm - Group 003 - Mana Snapper - Solo Patrol', 0, 1, 0, 0, 0),
-(@SGGUID+3, 'Netherstorm - Group 005 - Phase Hunter (4)', 0, 4, 0, 0, 0),
-(@SGGUID+4, 'Netherstorm - Group 006 - Shaleskin Flayer', 0, 1, 0, 0, 0),
-(@SGGUID+5, 'Netherstorm - Group 007 - Phase Hunter (4)', 0, 4, 0, 0, 0),
-(@SGGUID+6, 'Netherstorm - Group 008 - Shaleskin Flayer', 0, 2, 0, 0, 0),
-(@SGGUID+7, 'Netherstorm - Group 009 - Nether Ray - Solo Patrol', 0, 1, 0, 0, 0),
-(@SGGUID+8, 'Netherstorm - Group 010 - Phase Hunter (5)', 0, 1, 0, 0, 0),
--- Outside Ruins of Enkaat groups
--- Group of 4
-(@SGGUID+9, 'Netherstorm - Group 011 - Disembodied Protector (2) | Disembodied Vindicator(2)', 0, 4, 0, 0, 0),
--- Group of 2
-(@SGGUID+10, 'Netherstorm - Group 012 - Disembodied Protector (2)', 0, 2, 0, 0, 0),
-(@SGGUID+11, 'Netherstorm - Group 013 - Disembodied Vindicator(2)', 0, 2, 0, 0, 0),
--- Solo
-(@SGGUID+12, 'Netherstorm - Group 014 - Disembodied Vindicator(1)', 0, 2, 0, 0, 0),
--- Group of 4
-(@SGGUID+13, 'Netherstorm - Group 015 - Disembodied Protector (3) | Disembodied Vindicator(1)', 0, 4, 0, 0, 0),
--- Ruins of Enkaat entrance 
-(@SGGUID+14, 'Netherstorm - Group 016 - Disembodied Exarch (1) - Solo Patrol', 0, 1, 0, 0, 0),
--- Group of 2 standing around object ("table") - 1 confirmed to be rnd entry between vindicator/protector
-(@SGGUID+15, 'Netherstorm - Group 017 - Disembodied Vindicator (1) - Disembodied Protector', 0, 2, 0, 0, 0),
--- Patroling Vindicator
-(@SGGUID+16, 'Netherstorm - Group 018 - Disembodied Vindicator (1) - Solo Patrol', 0, 1, 0, 0, 0),
-(@SGGUID+17, 'Netherstorm - Group 019 - Disembodied Vindicator/Disembodied Protector (1)', 0, 1, 0, 0, 0),
-(@SGGUID+18, 'Netherstorm - Group 020 - Disembodied Vindicator (1)', 0, 1, 0, 0, 0),
-(@SGGUID+19, 'Netherstorm - Group 021 - Disembodied Protector (1)', 0, 1, 0, 0, 0),
-(@SGGUID+20, 'Netherstorm - Group 022 - Disembodied Vindicator (1)', 0, 1, 0, 0, 0),
-(@SGGUID+21, 'Netherstorm - Group 023 - Disembodied Exarch (1) - Solo Patrol', 0, 1, 0, 0, 0),
-(@SGGUID+22, 'Netherstorm - Group 024 - Disembodied Vindicator (1)', 0, 1, 0, 0, 0),
-(@SGGUID+23, 'Netherstorm - Group 025 - Disembodied Vindicator (1)', 0, 1, 0, 0, 0),
-(@SGGUID+24, 'Netherstorm - Group 026 - Disembodied Vindicator (1) | spawn_group_entry (1)', 0, 2, 0, 0, 0),
-(@SGGUID+25, 'Netherstorm - Group 027 - Disembodied Vindicator (1) | Disembodied Protector (2) | spawn_group_entry (1)', 0, 4, 0, 0, 0),
-(@SGGUID+26, 'Netherstorm - Group 028 - Disembodied Vindicator/Disembodied Protector (1)', 0, 1, 0, 0, 0),
-(@SGGUID+27, 'Netherstorm - Group 029 - Disembodied Exarch (1) - Solo Patrol', 0, 1, 0, 0, 0),
-(@SGGUID+28, 'Netherstorm - Group 030 - Disembodied Vindicator (1) | Disembodied Protector (1)', 0, 2, 0, 0, 0),
-(@SGGUID+29, 'Netherstorm - Group 031 - Disembodied Vindicator/Disembodied Protector (1)', 0, 1, 0, 0, 0),
-(@SGGUID+30, 'Netherstorm - Group 032 - Disembodied Protector (1)', 0, 1, 0, 0, 0),
-(@SGGUID+31, 'Netherstorm - Group 033 - Disembodied Protector (1) | Disembodied Vindicator/Disembodied Protector (1)', 0, 2, 0, 0, 0),
-(@SGGUID+32, 'Netherstorm - Group 034 - Disembodied Vindicator (1)', 0, 1, 0, 0, 0),
-(@SGGUID+33, 'Netherstorm - Group 035 - Disembodied Vindicator (1)', 0, 1, 0, 0, 0),
-(@SGGUID+34, 'Netherstorm - Group 036 - Disembodied Protector (1) | Disembodied Vindicator (1)', 0, 2, 0, 0, 0),
-(@SGGUID+35, 'Netherstorm - Group 037 - Disembodied Protector (1)', 0, 2, 0, 0, 0),
-(@SGGUID+36, 'Netherstorm - Group 038 - Disembodied Protector/Disembodied Vindicator (1)', 0, 2, 0, 0, 0),
-(@SGGUID+37, 'Netherstorm - Group 039 - Disembodied Vindicator (1)', 0, 2, 0, 0, 0),
-(@SGGUID+38, 'Netherstorm - Group 040 - Disembodied Exarch (1)', 0, 2, 0, 0, 0),
+(@SGGUID+1, 'Netherstorm - Group 001 - Phase Hunter (15)', 0, 0, 0, 0, 0),
+(@SGGUID+2, 'Netherstorm - Group 002 - Nether Ray (2)', 0, 0, 0, 0, 0),
+(@SGGUID+3, 'Netherstorm - Group 003 - Mana Snapper (1)', 0, 0, 0, 0, 0),
+(@SGGUID+4, 'Netherstorm - Group 004 - Shaleskin Flayer', 0, 0, 0, 0, 0),
 
+-- Static Disembodied Protector spawns
+(@SGGUID+5, 'Netherstorm - Group 005 - Disembodied Protector (15)', 0, 0, 0, 0, 0),
+-- Static Disembodied Vindicator spawns
+(@SGGUID+6, 'Netherstorm - Group 006 - Disembodied Vindicator (19)', 0, 0, 0, 0, 0),
+-- Disembodied Protector/Disembodied Vindicator rnd spawns
+(@SGGUID+7, 'Netherstorm - Group 007 - Disembodied Protector | Disembodied Vindicator (8)', 0, 0, 0, 0, 0),
+-- Disembodied Exarch spawns
+(@SGGUID+8, 'Netherstorm - Group 008 - Disembodied Exarch (4)', 0, 0, 0, 0, 0),
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
 (@SGGUID+100, 'Netherstorm - Etherlithium Matrix Crystal', 1, 21, 0, 0, 0);
 
 DELETE FROM spawn_group_entry WHERE Id BETWEEN @SGGUID AND @SGGUID+36;
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGGUID+9, 18872, 0, 0, 0), (@SGGUID+9, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
-(@SGGUID+10, 18872, 0, 0, 0), (@SGGUID+10, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
-(@SGGUID+11, 18872, 0, 0, 0), (@SGGUID+11, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
-(@SGGUID+13, 18872, 0, 0, 0), (@SGGUID+13, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
-(@SGGUID+15, 18872, 0, 0, 0), (@SGGUID+15, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
-(@SGGUID+24, 18872, 0, 0, 0), (@SGGUID+24, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
-(@SGGUID+25, 18872, 0, 0, 0), (@SGGUID+25, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
-(@SGGUID+27, 18872, 0, 0, 0), (@SGGUID+27, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
-(@SGGUID+29, 18872, 0, 0, 0), (@SGGUID+29, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
-(@SGGUID+31, 18872, 0, 0, 0), (@SGGUID+31, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
-(@SGGUID+36, 18872, 0, 0, 0), (@SGGUID+36, 18873, 0, 0, 0); -- Disembodied Vindicator/Disembodied Protector
+(@SGGUID+7, 18872, 0, 0, 0), (@SGGUID+7, 18873, 0, 0, 0); -- Disembodied Vindicator/Disembodied Protector
+
 
 DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+38;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
-(@SGGUID, @CGUID+15, -1, 0), -- Phase Hunter
-(@SGGUID, @CGUID+16, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+15, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+16, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+19, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+20, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+21, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+22, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+24, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+25, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+26, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+27, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+31, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+32, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+33, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+34, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+35, -1, 0), -- Phase Hunter
 
-(@SGGUID+1, @CGUID+17, 0, 0), -- Nether Ry
-(@SGGUID+2, @CGUID+18, 0, 0), -- Mana Snapper
+(@SGGUID+2, @CGUID+17, -1, 0), -- Nether Ray
+(@SGGUID+2, @CGUID+30, -1, 0), -- Nether Ray
 
-(@SGGUID+3, @CGUID+19, -1, 0), -- Phase Hunter
-(@SGGUID+3, @CGUID+20, -1, 0), -- Phase Hunter
-(@SGGUID+3, @CGUID+21, -1, 0), -- Phase Hunter
-(@SGGUID+3, @CGUID+22, -1, 0), -- Phase Hunter
+(@SGGUID+3, @CGUID+18, -1, 0), -- Mana Snapper
 
-(@SGGUID+4, @CGUID+23, 0, 0), -- Shaleskin Flayer
-
-(@SGGUID+5, @CGUID+24, -1, 0), -- Phase Hunter
-(@SGGUID+5, @CGUID+25, -1, 0), -- Phase Hunter
-(@SGGUID+5, @CGUID+26, -1, 0), -- Phase Hunter
-(@SGGUID+5, @CGUID+27, -1, 0), -- Phase Hunter
-
-(@SGGUID+6, @CGUID+28, 0, 0), -- Shaleskin Flayer
-(@SGGUID+6, @CGUID+29, 0, 0), -- Shaleskin Flayer
-
-(@SGGUID+7, @CGUID+30, 0, 0), -- Nether Ray
-
-(@SGGUID+8, @CGUID+31, -1, 0), -- Phase Hunter
-(@SGGUID+8, @CGUID+32, -1, 0), -- Phase Hunter
-(@SGGUID+8, @CGUID+33, -1, 0), -- Phase Hunter
-(@SGGUID+8, @CGUID+34, -1, 0), -- Phase Hunter
-(@SGGUID+8, @CGUID+35, -1, 0), -- Phase Hunter
--- Outside Ruins of Enkaat
-(@SGGUID+9, @CGUID+36, -1, 0), -- Disembodied Protector
-(@SGGUID+9, @CGUID+37, -1, 0), -- Disembodied Vindicator
-(@SGGUID+9, @CGUID+38, -1, 0), -- Disembodied Vindicator
-(@SGGUID+9, @CGUID+39, -1, 0), -- Disembodied Protector
-
-(@SGGUID+10, @CGUID+40, -1, 0), -- Disembodied Protector
-(@SGGUID+10, @CGUID+41, -1, 0), -- Disembodied Protector
-
-(@SGGUID+11, @CGUID+42, -1, 0), -- Disembodied Vindicator
-(@SGGUID+11, @CGUID+43, -1, 0), -- Disembodied Vindicator
-
-(@SGGUID+12, @CGUID+44, -1, 0), -- Disembodied Vindicator
-
-(@SGGUID+13, @CGUID+45, -1, 0), -- Disembodied Vindicator
-(@SGGUID+13, @CGUID+46, -1, 0), -- Disembodied Protector
-(@SGGUID+13, @CGUID+47, -1, 0), -- Disembodied Protector
-(@SGGUID+13, @CGUID+48, -1, 0), -- Disembodied Protector
-
-(@SGGUID+14, @CGUID+49, -1, 0), -- Disembodied Exarch
-
-(@SGGUID+15, @CGUID+50, 0, 0), -- spawn_group_entry
-(@SGGUID+15, @CGUID+51, 1, 0), -- Disembodied Vindicator
-
-(@SGGUID+16, @CGUID+52, -1, 0), -- Disembodied Vindicator
-
-(@SGGUID+17, @CGUID+53, 0, 0), -- spawn_group_entry
-
-(@SGGUID+18, @CGUID+54, -1, 0), -- Disembodied Vindicator
-(@SGGUID+19, @CGUID+55, -1, 0), -- Disembodied Protector
-(@SGGUID+20, @CGUID+56, -1, 0), -- Disembodied Vindicator
-(@SGGUID+21, @CGUID+57, -1, 0), -- Disembodied 
-
-(@SGGUID+22, @CGUID+58, -1, 0), -- Disembodied Vindicator
-(@SGGUID+23, @CGUID+59, -1, 0), -- Disembodied Vindicator
-
-(@SGGUID+24, @CGUID+60, -1, 0), -- spawn_group_entry
-(@SGGUID+24, @CGUID+61, -1, 0), -- Disembodied Vindicator
-
-(@SGGUID+25, @CGUID+62, -1, 0), -- Disembodied Protector
-(@SGGUID+25, @CGUID+63, -1, 0), -- Disembodied Vindicator
-(@SGGUID+25, @CGUID+64, -1, 0), -- Disembodied Protector
-(@SGGUID+25, @CGUID+65, -1, 0), -- spawn_group_entry
-
-(@SGGUID+26, @CGUID+66, -1, 0), -- spawn_group_entry
-(@SGGUID+27, @CGUID+67, -1, 0), -- Disembodied Exarch
-
-(@SGGUID+28, @CGUID+68, -1, 0), -- Disembodied Protector
-(@SGGUID+28, @CGUID+69, -1, 0), -- Disembodied Vindicator
-
-(@SGGUID+29, @CGUID+70, -1, 0), -- spawn_group_entry
-
-(@SGGUID+30, @CGUID+71, -1, 0), -- Disembodied Protector
-
-(@SGGUID+31, @CGUID+72, -1, 0), -- spawn_group_entry
-(@SGGUID+31, @CGUID+73, -1, 0), -- Disembodied Protector
-
-(@SGGUID+32, @CGUID+74, -1, 0), -- Disembodied Vindicator
-
-(@SGGUID+33, @CGUID+75, -1, 0), -- Disembodied Vindicator
-
-(@SGGUID+34, @CGUID+76, -1, 0), -- Disembodied Vindicator
-(@SGGUID+34, @CGUID+77, -1, 0), -- Disembodied Protector
-
-(@SGGUID+35, @CGUID+78, -1, 0), -- Disembodied Protector
-
-(@SGGUID+36, @CGUID+79, -1, 0), -- spawn_group_entry
-
-(@SGGUID+37, @CGUID+80, -1, 0), -- Disembodied Vindicator
-
-(@SGGUID+38, @CGUID+81, -1, 0), -- Disembodied Exarch
-
+(@SGGUID+4, @CGUID+23, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+28, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+29, -1, 0), -- Shaleskin Flayer
+-- Static Disembodied Protector spawns
+(@SGGUID+5, @CGUID+36, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+39, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+40, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+41, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+46, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+47, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+48, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+55, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+62, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+64, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+68, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+71, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+73, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+77, -1, 0), -- Disembodied Protector
+(@SGGUID+5, @CGUID+78, -1, 0), -- Disembodied Protector
+-- Static Disembodied Vindiciator spawns
+(@SGGUID+6, @CGUID+37, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+38, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+42, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+43, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+44, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+45, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+51, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+52, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+54, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+56, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+58, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+59, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+61, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+63, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+69, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+74, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+75, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+76, -1, 0), -- Disembodied Vindicator
+(@SGGUID+6, @CGUID+80, -1, 0), -- Disembodied Vindicator
+-- Disembodied Protector/Disembodied Vindicator rnd spawns
+(@SGGUID+7, @CGUID+53, 0, 0), -- spawn_group_entry
+(@SGGUID+7, @CGUID+50, 0, 0), -- spawn_group_entry
+(@SGGUID+7, @CGUID+60, -1, 0), -- spawn_group_entry
+(@SGGUID+7, @CGUID+65, -1, 0), -- spawn_group_entry
+(@SGGUID+7, @CGUID+66, -1, 0), -- spawn_group_entry
+(@SGGUID+7, @CGUID+70, -1, 0), -- spawn_group_entry
+(@SGGUID+7, @CGUID+72, -1, 0), -- spawn_group_entry
+(@SGGUID+7, @CGUID+79, -1, 0), -- spawn_group_entry
+-- Disembodied Exarch spawns
+(@SGGUID+8, @CGUID+49, -1, 0), -- Disembodied Exarch
+(@SGGUID+8, @CGUID+57, -1, 0), -- Disembodied Exarch
+(@SGGUID+8, @CGUID+67, -1, 0), -- Disembodied Exarch
+(@SGGUID+8, @CGUID+81, -1, 0), -- Disembodied Exarch
+-- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+3, -1, 0), -- Etherlithium Matrix Crystal
@@ -636,3 +567,13 @@ DELETE FROM dbscripts_on_spell WHERE id IN (34814);
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Spell get used on a 7-10 minute OOC Timer by Phase Hunter and should despawn creature.
 (34814, 1000, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'De-Materializ - Despawn Caster'); 
+
+
+
+-- Movement Corrections
+
+-- Disembodied Exarch
+-- WalkSpeed: 2.5 
+-- RunSpeed: 8
+-- Before SpeedWalk 1,125 SpeedRun 1,14286
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 21058;
