@@ -11,7 +11,7 @@ SET @CGUID := 5306100; -- creatures
 SET @SGGUID := 5306000; -- spawn_groups
  
 DELETE FROM creature WHERE guid IN (67440, 67442, 67444, 67445, 67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 67525, 67526, 67527, 67528, 67529, 67530, 67531, 67532, 67533, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67542, 67543, 67544, 67545, 67546, 67547, 67548, 67549, 67550, 67551, 67552, 67553, 67554, 67555, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
-70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 73962, 73963, 73964, 73965, 1002671);
+70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71844, 71846, 71849, 73962, 73963, 73964, 73965, 1002671);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+65;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
@@ -133,6 +133,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+87, 18864, 530, 1, 3302.19, 3675.14, 129.599, 6.17297, 300, 360, 8, 1), -- Mana Wraith old guid 67444
 (@CGUID+88, 18864, 530, 1, 3276.35, 3619.61, 127.51, 1.76854, 300, 360, 8, 1), -- Mana Wraith old guid 67442
 (@CGUID+89, 18864, 530, 1, 3274.64, 3583.8, 124.161, 5.79517, 300, 360, 8, 1), -- Mana Wraith old guid 67440
+
+(@CGUID+90, 20210, 530, 1, 3226.75, 3666.44, 129.027, 4.28765, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71849
+(@CGUID+91, 20210, 530, 1, 3230.48, 3588.29, 126.652, 2.15864, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71844
 
 DELETE FROM creature_addon WHERE guid IN (67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 --  
@@ -445,6 +448,8 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+4, @CGUID+23, -1, 0), -- Shaleskin Flayer
 (@SGGUID+4, @CGUID+28, -1, 0), -- Shaleskin Flayer
 (@SGGUID+4, @CGUID+29, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+90, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+91, -1, 0), -- Shaleskin Flayer
 -- Static Disembodied Protector spawns
 (@SGGUID+5, @CGUID+36, -1, 0), -- Disembodied Protector
 (@SGGUID+5, @CGUID+39, -1, 0), -- Disembodied Protector
