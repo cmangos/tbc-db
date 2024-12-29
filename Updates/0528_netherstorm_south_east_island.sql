@@ -572,7 +572,7 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+7, 18872, 0, 0, 0), (@SGGUID+7, 18873, 0, 0, 0); -- Disembodied Vindicator/Disembodied Protector
 
 
-DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+38;
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+100;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+15, -1, 0), -- Phase Hunter
 (@SGGUID+1, @CGUID+16, -1, 0), -- Phase Hunter
@@ -589,10 +589,15 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+33, -1, 0), -- Phase Hunter
 (@SGGUID+1, @CGUID+34, -1, 0), -- Phase Hunter
 (@SGGUID+1, @CGUID+35, -1, 0), -- Phase Hunter
-
+(@SGGUID+1, @CGUID+121, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+122, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+123, -1, 0), -- Phase Hunter
+-- Nether Ray
 (@SGGUID+2, @CGUID+17, -1, 0), -- Nether Ray
 (@SGGUID+2, @CGUID+30, -1, 0), -- Nether Ray
-
+(@SGGUID+2, @CGUID+128, -1, 0), -- Nether Ray
+(@SGGUID+2, @CGUID+129, -1, 0), -- Nether Ray
+-- Mana Snapper
 (@SGGUID+3, @CGUID+18, -1, 0), -- Mana Snapper
 -- Sgakeskin Flayer
 (@SGGUID+4, @CGUID+23, -1, 0), -- Shaleskin Flayer
@@ -604,6 +609,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+4, @CGUID+93, -1, 0), -- Shaleskin Flayer
 (@SGGUID+4, @CGUID+94, -1, 0), -- Shaleskin Flayer
 (@SGGUID+4, @CGUID+95, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+117, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+118, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+119, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+120, -1, 0), -- Shaleskin Flayer
 -- Static Disembodied Protector spawns
 (@SGGUID+5, @CGUID+36, -1, 0), -- Disembodied Protector
 (@SGGUID+5, @CGUID+39, -1, 0), -- Disembodied Protector
@@ -668,8 +677,25 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+9, @CGUID+101, -1, 0), -- Mana Wraith
 (@SGGUID+9, @CGUID+102, -1, 0), -- Mana Wraith
 (@SGGUID+9, @CGUID+103, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+104, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+105, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+106, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+107, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+108, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+109, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+110, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+111, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+112, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+113, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+114, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+115, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+116, -1, 0), -- Mana Wraith
 -- Sundered Rumbler
 (@SGGUID+10, @CGUID+96, -1, 0), -- Sundered Rumbler
+(@SGGUID+10, @CGUID+124, -1, 0), -- Sundered Rumbler
+(@SGGUID+10, @CGUID+125, -1, 0), -- Sundered Rumbler
+(@SGGUID+10, @CGUID+126, -1, 0), -- Sundered Rumbler
+(@SGGUID+10, @CGUID+127, -1, 0), -- Sundered Rumbler
 -- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
