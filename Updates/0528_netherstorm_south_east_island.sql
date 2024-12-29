@@ -10,7 +10,7 @@
 SET @CGUID := 5306100; -- creatures
 SET @SGGUID := 5306000; -- spawn_groups
  
-DELETE FROM creature WHERE guid IN (67440, 67442, 67444, 67445, 67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 67525, 67526, 67527, 67528, 67529, 67530, 67531, 67532, 67533, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67542, 67543, 67544, 67545, 67546, 67547, 67548, 67549, 67550, 67551, 67552, 67553, 67554, 67555, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
+DELETE FROM creature WHERE guid IN (67425, 67426, 67427, 67428, 67434, 67440, 67441, 67442, 67443, 67444, 67445, 67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 67525, 67526, 67527, 67528, 67529, 67530, 67531, 67532, 67533, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67542, 67543, 67544, 67545, 67546, 67547, 67548, 67549, 67550, 67551, 67552, 67553, 67554, 67555, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71844, 71845, 71846, 71849, 71850, 72537, 73962, 73963, 73964, 73965, 1002671, 1002675, 1002679);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+65;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -137,12 +137,20 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+90, 20210, 530, 1, 3226.75, 3666.44, 129.027, 4.28765, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71849
 (@CGUID+91, 20210, 530, 1, 3230.48, 3588.29, 126.652, 2.15864, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71844
 
-(@CGUID+92, 20210, 530, 1, 3205.75, 3620.4, 129.272, 3.49648, 360, 420, 4, 1); -- Shaleskin Flayer guid before 71845
-(@CGUID+93, 20210, 530, 1, 3164.51, 3599.93, 136.499, 4.2228, 360, 420, 4, 1); -- Shaleskin Flayer guid before 71850
-(@CGUID+94, 20210, 530, 1, 3199.6, 3566.91, 129.094, 5.72752, 360, 420, 4, 1); -- Shaleskin Flayer missing before
-(@CGUID+95, 20210, 530, 1, 3272.25, 3654.49, 124.501, 3.23666, 360, 420, 0, 4); -- Shaleskin Flayer guid before 1002679
+(@CGUID+92, 20210, 530, 1, 3205.75, 3620.4, 129.272, 3.49648, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71845
+(@CGUID+93, 20210, 530, 1, 3164.51, 3599.93, 136.499, 4.2228, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71850
+(@CGUID+94, 20210, 530, 1, 3199.6, 3566.91, 129.094, 5.72752, 360, 420, 4, 1), -- Shaleskin Flayer missing before
+(@CGUID+95, 20210, 530, 1, 3187.85, 3660.27, 130.398, 5.44326, 360, 420, 0, 4), -- Shaleskin Flayer guid before 1002679
 
-(@CGUID+96, 20498, 530, 1, 3272.25, 3654.49, 124.501, 3.23666, 360, 420, 0, 4); -- Sundered Rumbler
+(@CGUID+96, 20498, 530, 1, 3272.25, 3654.49, 124.501, 3.23666, 360, 420, 0, 4), -- Sundered Rumbler
+
+(@CGUID+97, 18864, 530, 1, 3322.77, 3631.72, 134.414, 3.4427, 300, 360, 8, 1), -- Mana Wraith old guid 67443
+(@CGUID+98, 18864, 530, 1, 3317.41, 3581.29, 128.356, 5.38212, 300, 360, 8, 1), -- Mana Wraith old guid 67441
+(@CGUID+99, 18864, 530, 1, 3298.91, 3553.04, 125.914, 3.22219, 300, 360, 8, 1), -- Mana Wraith old guid 67426
+(@CGUID+100, 18864, 530, 1, 3315.25, 3517.83, 127.386, 2.82702, 300, 360, 8, 1), -- Mana Wraith old guid 67425
+(@CGUID+101, 18864, 530, 1, 3282.33, 3506.47, 118.291, 1.96594, 300, 360, 8, 1), -- Mana Wraith old guid 67427
+(@CGUID+102, 18864, 530, 1, 3311.5, 3468.26, 111.279, 4.86737, 300, 360, 8, 1), -- Mana Wraith old guid 67428
+(@CGUID+103, 18864, 530, 1, 3272.35, 3462.17, 105.557, 2.79875, 300, 360, 8, 1); -- Mana Wraith old guid 67434
 
 DELETE FROM creature_addon WHERE guid IN (67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 --  
@@ -482,7 +490,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+2, @CGUID+30, -1, 0), -- Nether Ray
 
 (@SGGUID+3, @CGUID+18, -1, 0), -- Mana Snapper
-
+-- Sgakeskin Flayer
 (@SGGUID+4, @CGUID+23, -1, 0), -- Shaleskin Flayer
 (@SGGUID+4, @CGUID+28, -1, 0), -- Shaleskin Flayer
 (@SGGUID+4, @CGUID+29, -1, 0), -- Shaleskin Flayer
@@ -549,6 +557,13 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+9, @CGUID+85, -1, 0), -- Mana Wraith
 (@SGGUID+9, @CGUID+86, -1, 0), -- Mana Wraith
 (@SGGUID+9, @CGUID+87, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+97, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+98, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+99, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+100, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+101, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+102, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+103, -1, 0), -- Mana Wraith
 -- Sundered Rumbler
 (@SGGUID+10, @CGUID+96, -1, 0), -- Sundered Rumbler
 -- Etherlithium Matrix Crystal 
