@@ -10,8 +10,9 @@
 SET @CGUID := 5306100; -- creatures
 SET @SGGUID := 5306000; -- spawn_groups
  
-DELETE FROM creature WHERE guid IN (67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 67525, 67526, 67527, 67528, 67529, 67530, 67531, 67532, 67533, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67542, 67543, 67544, 67545, 67546, 67547, 67548, 67549, 67550, 67551, 67552, 67553, 67554, 67555, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67675, 67732, 
-70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71846, 73962, 73963, 73964, 73965, 1002671);
+ 
+DELETE FROM creature WHERE guid IN (67423, 67424, 67425, 67426, 67427, 67428, 67429, 67430, 67431, 67432, 67434, 67435, 67436, 67437, 67438,  67439, 67440, 67441, 67442, 67443, 67444, 67445, 67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 67525, 67526, 67527, 67528, 67529, 67530, 67531, 67532, 67533, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67542, 67543, 67544, 67545, 67546, 67547, 67548, 67549, 67550, 67551, 67552, 67553, 67554, 67555, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67625, 67626, 67675, 67676, 67677, 67694, 67695, 67696, 67697, 67732, 
+70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71841, 71842, 71844, 71845, 71846, 71849, 71850, 72537, 73962, 73963, 73964, 73965, 1002671, 1002675, 1002679);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+65;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
@@ -123,7 +124,65 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+78, 18873, 530, 1, 3354.6, 3490.36, 132.846, 0.0174533, 300, 360, 10, 1), -- Disembodied Protector old guid 67551
 (@CGUID+79, 18873, 530, 1, 3381.25, 3483.58, 140.005, 1.53769, 300, 360, 10, 1), -- spawn_group_entry old guid 67531
 (@CGUID+80, 18872, 530, 1, 3386.88, 3515.86, 147.421, 5.10096, 300, 360, 6, 1), -- Disembodied Vindicator old guid 67532
-(@CGUID+81, 21058, 530, 1, 3364.54, 3471.53, 140.913, 4.92918, 300, 360, 0, 4); -- Disembodied Exarch old guid 73965
+(@CGUID+81, 21058, 530, 1, 3364.54, 3471.53, 140.913, 4.92918, 300, 360, 0, 4), -- Disembodied Exarch old guid 73965
+-- Area between area 52 and ruins of enkaat
+(@CGUID+82, 18864, 530, 1, 3322.75, 3755.08, 138.872, 1.06576, 300, 360, 8, 1), -- Mana Wraith old guid 67445
+(@CGUID+83, 18864, 530, 1, 3303.67, 3726.11, 134.625, 0.142876, 300, 360, 8, 1), -- Mana Wraith was missing before
+(@CGUID+84, 18864, 530, 1, 3267.05, 3710.46, 131.285, 2.29114, 300, 360, 8, 1), -- Mana Wraith was missing before
+(@CGUID+85, 18864, 530, 1, 3231.12, 3719.54, 126.922, 5.39083, 300, 360, 8, 1), -- Mana Wraith was missing before
+(@CGUID+86, 18864, 530, 1, 3260.9, 3668.11, 129.142, 1.52983, 300, 360, 8, 1), -- Mana Wraith was missing before
+(@CGUID+87, 18864, 530, 1, 3302.19, 3675.14, 129.599, 6.17297, 300, 360, 8, 1), -- Mana Wraith old guid 67444
+(@CGUID+88, 18864, 530, 1, 3276.35, 3619.61, 127.51, 1.76854, 300, 360, 8, 1), -- Mana Wraith old guid 67442
+(@CGUID+89, 18864, 530, 1, 3274.64, 3583.8, 124.161, 5.79517, 300, 360, 8, 1), -- Mana Wraith old guid 67440
+
+(@CGUID+90, 20210, 530, 1, 3226.75, 3666.44, 129.027, 4.28765, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71849
+(@CGUID+91, 20210, 530, 1, 3230.48, 3588.29, 126.652, 2.15864, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71844
+
+(@CGUID+92, 20210, 530, 1, 3205.75, 3620.4, 129.272, 3.49648, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71845
+(@CGUID+93, 20210, 530, 1, 3164.51, 3599.93, 136.499, 4.2228, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71850
+(@CGUID+94, 20210, 530, 1, 3199.6, 3566.91, 129.094, 5.72752, 360, 420, 4, 1), -- Shaleskin Flayer missing before
+(@CGUID+95, 20210, 530, 1, 3187.85, 3660.27, 130.398, 5.44326, 360, 420, 0, 4), -- Shaleskin Flayer guid before 1002679
+
+(@CGUID+96, 18881, 530, 1, 3272.25, 3654.49, 124.501, 3.23666, 360, 420, 0, 4), -- Sundered Rumbler old guid 1002675
+
+(@CGUID+97, 18864, 530, 1, 3322.77, 3631.72, 134.414, 3.4427, 300, 360, 8, 1), -- Mana Wraith old guid 67443
+(@CGUID+98, 18864, 530, 1, 3317.41, 3581.29, 128.356, 5.38212, 300, 360, 8, 1), -- Mana Wraith old guid 67441
+(@CGUID+99, 18864, 530, 1, 3298.91, 3553.04, 125.914, 3.22219, 300, 360, 8, 1), -- Mana Wraith old guid 67426
+(@CGUID+100, 18864, 530, 1, 3315.25, 3517.83, 127.386, 2.82702, 300, 360, 8, 1), -- Mana Wraith old guid 67425
+(@CGUID+101, 18864, 530, 1, 3282.33, 3506.47, 118.291, 1.96594, 300, 360, 8, 1), -- Mana Wraith old guid 67427
+(@CGUID+102, 18864, 530, 1, 3311.5, 3468.26, 111.279, 4.86737, 300, 360, 8, 1), -- Mana Wraith old guid 67428
+(@CGUID+103, 18864, 530, 1, 3272.35, 3462.17, 105.557, 2.79875, 300, 360, 8, 1), -- Mana Wraith old guid 67434
+
+(@CGUID+104, 18864, 530, 1, 3295.72, 3432.22, 113.106, 1.16937, 300, 360, 8, 1), -- Mana Wraith old guid 67423
+(@CGUID+105, 18864, 530, 1, 3322.87, 3413.19, 122.092, 2.68319, 300, 360, 8, 1), -- Mana Wraith old guid 67424
+(@CGUID+106, 18864, 530, 1, 3298.68, 3387.1, 110.713, 2.83196, 300, 360, 8, 1), -- Mana Wraith old guid 67430
+(@CGUID+107, 18864, 530, 1, 3244.78, 3400.87, 111.161, 5.37253, 300, 360, 8, 1), -- Mana Wraith old guid 67431
+(@CGUID+108, 18864, 530, 1, 3250.12, 3360.03, 107.441, 0.577386, 300, 360, 8, 1), -- Mana Wraith was missing before
+(@CGUID+109, 18864, 530, 1, 3225.62, 3450.04, 105.194, 2.50593, 300, 360, 8, 1), -- Mana Wraith guid before 67432
+(@CGUID+110, 18864, 530, 1, 3241.51, 3486.2, 113.31, 1.36751, 300, 360, 8, 1), -- Mana Wraith missing before
+(@CGUID+111, 18864, 530, 1, 3202.55, 3501.94, 115.849, 4.5468, 300, 360, 8, 1), -- Mana Wraith guid before 67439
+(@CGUID+112, 18864, 530, 1, 3185.27, 3483.81, 102.327, 6.04828, 300, 360, 8, 1), -- Mana Wraith guid before 67438
+(@CGUID+113, 18864, 530, 1, 3148.27, 3434.73, 105.913, 0.883123, 300, 360, 8, 1), -- Mana Wraith guid before 67437
+(@CGUID+114, 18864, 530, 1, 3217.05, 3420.99, 107.369, 0.699482, 300, 360, 8, 1), -- Mana Wraith guid before 67429
+(@CGUID+115, 18864, 530, 1, 3182.29, 3382.11, 103.4, 5.27984, 300, 360, 8, 1), -- Mana Wraith guid before 67435
+(@CGUID+116, 18864, 530, 1, 3217.41, 3348.21, 105.933, 4.85202, 300, 360, 8, 1), -- Mana Wraith guid before 67436
+
+(@CGUID+117, 20210, 530, 1, 3110.8, 3298.94, 111.062, 1.61305, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71842
+(@CGUID+118, 20210, 530, 1, 3156.72, 3337.23, 108.569, 2.82583, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71841
+(@CGUID+119, 20210, 530, 1, 3115.49, 3539.53, 143.816, 1.46608, 360, 420, 4, 1), -- Shaleskin Flayer missing before
+(@CGUID+120, 20210, 530, 1, 3073.82, 3535.77, 143.236, 4.02199, 360, 420, 4, 1), -- Shaleskin Flayer missing before
+-- This missing Phase Hunter has a rly bad spawn position but its confirmed from sniffs that it spawns all the way down and moves up to the island
+(@CGUID+121, 18879, 530, 1, 3445.5469, 3377.9636, -186.69614, 2.6809666, 120, 180, 0, 2), -- Phase Hunter missing before
+(@CGUID+122, 18879, 530, 1, 3240.69, 3255.38, 124.595, 2.68195, 120, 180, 0, 2), -- Phase Hunter guid before 67625 
+(@CGUID+123, 18879, 530, 1, 3197.14, 3215.58, 113.461, 2.50369, 120, 180, 0, 2), -- Phase Hunter guid before 67626 
+ 
+(@CGUID+124, 18881, 530, 1, 3302.44, 3478.42, 108.005, 3.00104, 360, 420, 0, 4), -- Sundered Rumbler old guid 67694
+(@CGUID+125, 18881, 530, 1, 3321.98, 3382.2, 95.5065, 0.3876, 360, 420, 0, 4), -- Sundered Rumbler old guid 67697
+(@CGUID+126, 18881, 530, 1, 3235.5491, 3350.212, 93.408, 4.890, 360, 420, 0, 4), -- Sundered Rumbler old guid 67696
+(@CGUID+127, 18881, 530, 1, 3164.351, 3385.3452, 100.7853, 1.1868, 360, 420, 0, 4), -- Sundered Rumbler old guid 67695
+
+(@CGUID+128, 18880, 530, 1, 3112.22, 3550.12, 140.615, 0.281358, 360, 420, 0, 4), -- Nether Ray guid before 67677
+(@CGUID+129, 18880, 530, 1, 3188.54, 3356.01, 103.683, 4.15397, 360, 420, 0, 2); -- Nether Ray guid before 67676
 
 DELETE FROM creature_addon WHERE guid IN (67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 --  
@@ -134,8 +193,8 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+77, 0, 8, 0, 0, 0, NULL); -- Disembodied Protector
 
 -- Waypoints
-DELETE FROM creature_movement WHERE id IN (67522, 67675, 71811, 71814, 73962, 73963, 73964, 73965, 1002671);
-DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+67;
+DELETE FROM creature_movement WHERE id IN (67522, 67675, 67676, 67677, 67694, 67695, 67696, 67697, 71811, 71814, 72537, 73962, 73963, 73964, 73965, 1002671, 1002675, 1002679);
+DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+129;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
 (@CGUID+3, 1, 3383.929,4348.6997,133.66545,0.20943951, 12000, 0), -- waittime between 12 and 15 seconds
@@ -279,7 +338,107 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+81, 13, 3451.4087,3501.1284,144.69342, 100, 0, 0),
 (@CGUID+81, 14, 3440.5193,3517.2292,144.61507, 100, 0, 0),
 (@CGUID+81, 15, 3446.6438,3536.021,144.67932, 100, 0, 0),
-(@CGUID+81, 16, 3438.059,3555.1382,144.4512, 100, 0, 0);
+(@CGUID+81, 16, 3438.059,3555.1382,144.4512, 100, 0, 0),
+-- Shaleskin Flayer
+(@CGUID+95, 1, 3188.374, 3659.6875, 130.29568, 100, 0, 0),
+(@CGUID+95, 2, 3213.531,3632.52,126.01806, 100, 0, 0),
+(@CGUID+95, 3, 3225.9272,3599.5134,127.172226, 100, 0, 0),
+(@CGUID+95, 4, 3187.7322,3607.3452,132.15582, 100, 0, 0),
+(@CGUID+95, 5, 3158.182,3574.298,137.13586, 100, 0, 0),
+(@CGUID+95, 6, 3127.683,3566.6233,141.18019, 100, 0, 0),
+(@CGUID+95, 7, 3100.1775,3562.4036,141.40752, 100, 0, 0),
+(@CGUID+95, 8, 3066.7998,3565.6572,140.49834, 100, 0, 0),
+(@CGUID+95, 9, 3078.0825,3533.6243,143.38405, 100, 0, 0),
+(@CGUID+95, 10, 3067.1672,3514.7957,147.18686, 100, 0, 0),
+(@CGUID+95, 11, 3079.9373,3504.22,154.11162, 100, 0, 0),
+(@CGUID+95, 12, 3096.259,3512.2366,152.48154, 100, 0, 0),
+(@CGUID+95, 13, 3110.9783,3500.069,156.52367, 100, 0, 0),
+(@CGUID+95, 14, 3119.9497,3505.6868,156.65771, 100, 0, 0),
+(@CGUID+95, 15, 3130.2236,3529.3425,145.29799, 100, 0, 0),
+(@CGUID+95, 16, 3150.659,3554.8845,139.93411, 100, 0, 0),
+(@CGUID+95, 17, 3164.6555,3541.3066,140.5421, 100, 0, 0),
+(@CGUID+95, 18, 3194.9302,3558.4214,129.52531, 100, 0, 0),
+(@CGUID+95, 19, 3216.4192,3531.4685,123.5365, 100, 0, 0),
+(@CGUID+95, 20, 3226.379,3558.6243,125.02173, 100, 0, 0),
+-- Sundered Rumbler
+(@CGUID+96, 1, 3271.1594,3654.384,124.491554, 100, 0, 0),
+(@CGUID+96, 2, 3285.1685,3666.9348,122.31402, 100, 0, 0),
+(@CGUID+96, 3, 3285.2664,3699.6223,122.56398, 100, 0, 0),
+(@CGUID+96, 4, 3276.7998,3732.5596,120.21663, 100, 0, 0),
+(@CGUID+96, 5, 3238.595,3748.5776,121.779724, 100, 0, 0),
+(@CGUID+96, 6, 3237.8372,3780.7805,124.0307, 100, 0, 0),
+-- Phase Hunter
+(@CGUID+121, 1, 3445.5469, 3377.9636, -186.69614, 100, 0, 0),
+(@CGUID+121, 2, 3414.6042, 3416.7668, 88.08593, 100, 1000, 1887902),
+(@CGUID+122, 1, 3240.69, 3255.38, 124.595, 100, 0, 0),
+(@CGUID+122, 2, 3191.7534, 3265.9128, 92.39592, 100, 1000, 1887903),
+(@CGUID+123, 1, 3197.14, 3215.58, 113.461, 100, 0, 0),
+(@CGUID+123, 2, 3151.5234,3251.7734,102.315445, 100, 1000, 1887903),
+-- Sundered Rumbler
+(@CGUID+124, 1, 3301.8057,3478.514,107.92141, 100, 0, 0),
+(@CGUID+124, 2, 3300.63,3524.8142,119.34818, 100, 0, 0),
+(@CGUID+124, 3, 3314.2056,3535.8074,122.163635, 100, 0, 0),
+(@CGUID+124, 4, 3314.6672,3565.3228,121.83387, 100, 0, 0),
+(@CGUID+124, 5, 3295.182,3584.966,121.75817, 100, 0, 0),
+(@CGUID+124, 6, 3296.0686,3616.9387,124.74009, 100, 0, 0),
+(@CGUID+124, 7, 3317.6453,3642.4731,123.518684, 100, 0, 0),
+(@CGUID+124, 8, 3281.766,3673.7588,122.465675, 100, 0, 0),
+-- Sundered Rumbler
+(@CGUID+125, 1, 3324.7766,3383.345,95.92897, 100, 0, 0),
+(@CGUID+125, 2, 3305.17,3406.754,93.34117, 100, 0, 0),
+(@CGUID+125, 3, 3281.2415,3419.1807,93.30725, 100, 0, 0),
+(@CGUID+125, 4, 3234.8591,3432.4285,93.35765, 100, 0, 0),
+(@CGUID+125, 5, 3193.7512,3437.1816,93.65101, 100, 0, 0),
+(@CGUID+125, 6, 3175.196,3422.1602,94.11429, 100, 0, 0),
+(@CGUID+125, 7, 3147.3193,3422.5964,100.76846, 100, 0, 0),
+-- Sundered Rumbler
+(@CGUID+126, 1, 3236.8716,3342.8503,93.190125, 100, 0, 0),
+(@CGUID+126, 2, 3228.08,3366.1892,93.515335, 100, 0, 0),
+(@CGUID+126, 3, 3233.2378,3377.5786,93.56496, 100, 0, 0),
+(@CGUID+126, 4, 3226.5872,3388.9055,94.55947, 100, 0, 0),
+(@CGUID+126, 5, 3226.9902,3399.9854,94.536736, 100, 0, 0),
+(@CGUID+126, 6, 3242.6619,3428.5103,93.3094, 100, 0, 0),
+(@CGUID+126, 7, 3254.799,3462.6143,99.541275, 100, 0, 0),
+(@CGUID+126, 8, 3260.2695,3469.9111,99.628494, 100, 0, 0),
+(@CGUID+126, 9, 3260.7092,3483.8174,100.68884, 100, 0, 0),
+-- Sundered Rumbler
+(@CGUID+127, 1, 3165.3816,3385.6506,99.935135, 100, 0, 0),
+(@CGUID+127, 2, 3175.1338,3400.337,95.636444, 100, 0, 0),
+(@CGUID+127, 3, 3175.3635,3421.0696,94.11429, 100, 0, 0),
+(@CGUID+127, 4, 3193.5847,3438.2817,93.65382, 100, 0, 0),
+(@CGUID+127, 5, 3191.958,3480.1646,99.2711, 100, 0, 0),
+(@CGUID+127, 6, 3209.4875,3493.788,105.44676, 100, 0, 0),
+(@CGUID+127, 7, 3257.8816,3501.5203,109.8304, 100, 0, 0),
+(@CGUID+127, 8, 3283.0522,3531.8293,117.078, 100, 0, 0),
+(@CGUID+127, 9, 3281.3787,3566.4753,118.67311, 100, 0, 0),
+(@CGUID+127, 10, 3291.4287,3581.389,121.767944, 100, 0, 0),
+-- Nether Ray
+(@CGUID+128, 1, 3115.4097,3551.0442,140.67986, 100, 0, 0),
+(@CGUID+128, 2, 3138.7083,3561.236,141.55426, 100, 0, 0),
+(@CGUID+128, 3, 3172.9683,3580.5981,135.06161, 100, 0, 0),
+(@CGUID+128, 4, 3205.6467,3602.592,129.2431, 100, 0, 0),
+(@CGUID+128, 5, 3223.2488,3624.7148,126.893974, 100, 0, 0),
+(@CGUID+128, 6, 3235.0657,3659.3547,127.730934, 100, 0, 0),
+(@CGUID+128, 7, 3216.7004,3678.948,130.46481, 100, 0, 0),
+(@CGUID+128, 8, 3189.7402,3684.1267,130.98631, 100, 0, 0),
+(@CGUID+128, 9, 3170.8252,3663.5764,132.49463, 100, 0, 0),
+(@CGUID+128, 10, 3178.6458,3639.5737,130.32205, 100, 0, 0),
+(@CGUID+128, 11, 3190.81,3613.542,130.4043, 100, 0, 0),
+(@CGUID+128, 12, 3192.8608,3576.9521,131.11758, 100, 0, 0),
+(@CGUID+128, 13, 3174.97,3545.8223,139.41519, 100, 0, 0),
+(@CGUID+128, 14, 3168.137,3528.296,144.18552, 100, 0, 0),
+-- Nether Ray
+(@CGUID+129, 1, 3187.8442,3354.885,103.64935, 100, 0, 0),
+(@CGUID+129, 2, 3193.2952,3334.8625,105.42078, 100, 0, 0),
+(@CGUID+129, 3, 3176.5715,3326.64,106.59683, 100, 0, 0),
+(@CGUID+129, 4, 3151.2117,3291.3782,101.90715, 100, 0, 0),
+(@CGUID+129, 5, 3118.588,3271.1497,109.09988, 100, 0, 0),
+(@CGUID+129, 6, 3109.4246,3297.0637,110.86792, 100, 0, 0),
+(@CGUID+129, 7, 3112.8772,3326.4487,108.587585, 100, 0, 0),
+(@CGUID+129, 8, 3116.6143,3352.0747,106.848785, 100, 0, 0),
+(@CGUID+129, 9, 3141.5247,3368.5256,104.70891, 100, 0, 0),
+(@CGUID+129, 10, 3162.961,3373.5598,103.82034, 100, 0, 0),
+(@CGUID+129, 11, 3186.1711,3369.1282,103.10805, 100, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -309,7 +468,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 
 -- SpawnData
 DELETE FROM creature_spawn_data WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
-DELETE FROM creature_spawn_data WHERE guid BETWEEN @CGUID+1 AND @CGUID+35;
+DELETE FROM creature_spawn_data WHERE guid BETWEEN @CGUID+1 AND @CGUID+95;
 INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+1, 2020302), -- Monster - Tool, Wrench Small
 (@CGUID+2, 2020301), -- Monster - Mace, Basic Metal Hammer
@@ -338,7 +497,9 @@ INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+32, 1887901),
 (@CGUID+33, 1887901),
 (@CGUID+34, 1887901),
-(@CGUID+35, 1887901);
+(@CGUID+35, 1887901),
+-- Generic RunOn
+(@CGUID+95, 1);
 
 DELETE FROM creature_spawn_data_template WHERE Entry IN (1887901);
 INSERT INTO creature_spawn_data_template (`Entry`, `UnitFlags`, `Name`) VALUES 
@@ -391,7 +552,6 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+2, 'Netherstorm - Group 002 - Nether Ray (2)', 0, 0, 0, 0, 0),
 (@SGGUID+3, 'Netherstorm - Group 003 - Mana Snapper (1)', 0, 0, 0, 0, 0),
 (@SGGUID+4, 'Netherstorm - Group 004 - Shaleskin Flayer', 0, 0, 0, 0, 0),
-
 -- Static Disembodied Protector spawns
 (@SGGUID+5, 'Netherstorm - Group 005 - Disembodied Protector (15)', 0, 0, 0, 0, 0),
 -- Static Disembodied Vindicator spawns
@@ -400,6 +560,10 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+7, 'Netherstorm - Group 007 - Disembodied Protector | Disembodied Vindicator (8)', 0, 0, 0, 0, 0),
 -- Disembodied Exarch spawns
 (@SGGUID+8, 'Netherstorm - Group 008 - Disembodied Exarch (4)', 0, 0, 0, 0, 0),
+-- Mana Wraith
+(@SGGUID+9, 'Netherstorm - Group 009 - Mana Wraith ()', 0, 0, 0, 0, 0),
+-- Sundered Rumbler
+(@SGGUID+10, 'Netherstorm - Group 010 - Sundered Rumbler', 0, 0, 0, 0, 0),
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
 (@SGGUID+100, 'Netherstorm - Etherlithium Matrix Crystal', 1, 21, 0, 0, 0);
 
@@ -408,7 +572,7 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+7, 18872, 0, 0, 0), (@SGGUID+7, 18873, 0, 0, 0); -- Disembodied Vindicator/Disembodied Protector
 
 
-DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+38;
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+100;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+15, -1, 0), -- Phase Hunter
 (@SGGUID+1, @CGUID+16, -1, 0), -- Phase Hunter
@@ -425,15 +589,30 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+33, -1, 0), -- Phase Hunter
 (@SGGUID+1, @CGUID+34, -1, 0), -- Phase Hunter
 (@SGGUID+1, @CGUID+35, -1, 0), -- Phase Hunter
-
+(@SGGUID+1, @CGUID+121, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+122, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+123, -1, 0), -- Phase Hunter
+-- Nether Ray
 (@SGGUID+2, @CGUID+17, -1, 0), -- Nether Ray
 (@SGGUID+2, @CGUID+30, -1, 0), -- Nether Ray
-
+(@SGGUID+2, @CGUID+128, -1, 0), -- Nether Ray
+(@SGGUID+2, @CGUID+129, -1, 0), -- Nether Ray
+-- Mana Snapper
 (@SGGUID+3, @CGUID+18, -1, 0), -- Mana Snapper
-
+-- Sgakeskin Flayer
 (@SGGUID+4, @CGUID+23, -1, 0), -- Shaleskin Flayer
 (@SGGUID+4, @CGUID+28, -1, 0), -- Shaleskin Flayer
 (@SGGUID+4, @CGUID+29, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+90, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+91, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+92, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+93, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+94, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+95, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+117, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+118, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+119, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+120, -1, 0), -- Shaleskin Flayer
 -- Static Disembodied Protector spawns
 (@SGGUID+5, @CGUID+36, -1, 0), -- Disembodied Protector
 (@SGGUID+5, @CGUID+39, -1, 0), -- Disembodied Protector
@@ -484,6 +663,39 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+8, @CGUID+57, -1, 0), -- Disembodied Exarch
 (@SGGUID+8, @CGUID+67, -1, 0), -- Disembodied Exarch
 (@SGGUID+8, @CGUID+81, -1, 0), -- Disembodied Exarch
+-- Mana Wraith spawns
+(@SGGUID+9, @CGUID+82, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+83, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+84, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+85, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+86, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+87, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+97, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+98, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+99, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+100, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+101, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+102, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+103, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+104, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+105, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+106, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+107, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+108, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+109, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+110, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+111, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+112, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+113, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+114, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+115, -1, 0), -- Mana Wraith
+(@SGGUID+9, @CGUID+116, -1, 0), -- Mana Wraith
+-- Sundered Rumbler
+(@SGGUID+10, @CGUID+96, -1, 0), -- Sundered Rumbler
+(@SGGUID+10, @CGUID+124, -1, 0), -- Sundered Rumbler
+(@SGGUID+10, @CGUID+125, -1, 0), -- Sundered Rumbler
+(@SGGUID+10, @CGUID+126, -1, 0), -- Sundered Rumbler
+(@SGGUID+10, @CGUID+127, -1, 0), -- Sundered Rumbler
 -- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
