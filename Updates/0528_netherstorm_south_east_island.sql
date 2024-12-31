@@ -12,7 +12,7 @@ SET @SGGUID := 5306000; -- spawn_groups
  
  
 DELETE FROM creature WHERE guid IN (67423, 67424, 67425, 67426, 67427, 67428, 67429, 67430, 67431, 67432, 67434, 67435, 67436, 67437, 67438,  67439, 67440, 67441, 67442, 67443, 67444, 67445, 67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 67525, 67526, 67527, 67528, 67529, 67530, 67531, 67532, 67533, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67542, 67543, 67544, 67545, 67546, 67547, 67548, 67549, 67550, 67551, 67552, 67553, 67554, 67555, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67625, 67626, 67675, 67676, 67677, 67694, 67695, 67696, 67697, 67732, 
-70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71841, 71842, 71844, 71845, 71846, 71849, 71850, 72537, 73962, 73963, 73964, 73965, 1002671, 1002675, 1002679);
+70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71841, 71842, 71843, 71844, 71845, 71846, 71849, 71850, 71890, 72537, 73962, 73963, 73964, 73965, 1002671, 1002675, 1002679);
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+65;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
@@ -182,7 +182,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+127, 18881, 530, 1, 3164.351, 3385.3452, 100.7853, 1.1868, 360, 420, 0, 4), -- Sundered Rumbler old guid 67695
 
 (@CGUID+128, 18880, 530, 1, 3112.22, 3550.12, 140.615, 0.281358, 360, 420, 0, 4), -- Nether Ray guid before 67677
-(@CGUID+129, 18880, 530, 1, 3188.54, 3356.01, 103.683, 4.15397, 360, 420, 0, 2); -- Nether Ray guid before 67676
+(@CGUID+129, 18880, 530, 1, 3188.54, 3356.01, 103.683, 4.15397, 360, 420, 0, 2), -- Nether Ray guid before 67676
+
+(@CGUID+130, 20210, 530, 1, 3004.71, 3369.09, 104.646, 5.28046, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71890
+(@CGUID+131, 20210, 530, 1, 2990.35, 3426.19, 106.054, 2.67338, 360, 420, 4, 1), -- Shaleskin Flayer missing before
+(@CGUID+132, 20210, 530, 1, 2924.86, 3396.3, 105.731, 1.75946, 360, 420, 4, 1), -- Shaleskin Flayer missing before
+(@CGUID+133, 20210, 530, 1, 3055.42, 3240.19, 118.1, 4.38068, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71843
 
 DELETE FROM creature_addon WHERE guid IN (67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 --  
@@ -613,6 +618,11 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+4, @CGUID+118, -1, 0), -- Shaleskin Flayer
 (@SGGUID+4, @CGUID+119, -1, 0), -- Shaleskin Flayer
 (@SGGUID+4, @CGUID+120, -1, 0), -- Shaleskin Flayer
+
+(@SGGUID+4, @CGUID+130, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+131, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+132, -1, 0), -- Shaleskin Flayer
+(@SGGUID+4, @CGUID+133, -1, 0), -- Shaleskin Flayer
 -- Static Disembodied Protector spawns
 (@SGGUID+5, @CGUID+36, -1, 0), -- Disembodied Protector
 (@SGGUID+5, @CGUID+39, -1, 0), -- Disembodied Protector
