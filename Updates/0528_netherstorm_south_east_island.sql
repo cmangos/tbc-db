@@ -16,7 +16,9 @@ DELETE FROM creature WHERE guid IN (67423, 67424, 67425, 67426, 67427, 67428, 67
 -- Delete all Farahlon Giant, Farahlon Crumbler (only spawn on Giant death) spanws
 -- Old guids: 67834, 67833, 67835, 67836, 75856, 75559, 67832
 DELETE FROM creature WHERE id IN (18885, 21077); -- Farahlon Giants, Farahlon Crumbler
-DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+65;
+-- Delete all Artifact Seeker (12 spawns)
+DELETE FROM creature WHERE id = 19852;
+DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+160;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
 (@CGUID+1, 20203, 530, 1, 3380.88, 4359.49, 123.702, 4.67748, 300, 300, 0, 0),
@@ -199,6 +201,22 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+137, 18885, 530, 1, 2956.06, 3217.67, 146.699, 5.26936, 120, 300, 6, 1), -- Farahlon Giant
 (@CGUID+138, 18885, 530, 1, 2882.91, 3204.03, 173.905, 1.23877, 120, 300, 6, 1), -- Farahlon Giant
 (@CGUID+139, 18885, 530, 1, 2964.57, 3130.3, 126.159, 5.24058, 120, 300, 6, 1), -- Farahlon Giant
+-- Artifact Seeker
+(@CGUID+140, 19852, 530, 1, 2804.11, 3347.12, 146.058, 4.0177, 300, 420, 5, 1), -- Artifact Seeker old guid 70977
+(@CGUID+141, 19852, 530, 1, 2807.05, 3292.72, 148.29, 0.10472, 300, 420, 5, 1), -- Artifact Seeker missing before
+(@CGUID+142, 19852, 530, 1, 2753.63, 3284.51, 134.762, 0.471291, 300, 420, 5, 1), -- Artifact Seeker old guid 70978
+(@CGUID+143, 19852, 530, 1, 2808.95, 3220.54, 146.282, 5.94395, 300, 420, 5, 1), -- Artifact Seeker old guid 70988
+(@CGUID+144, 19852, 530, 1, 2747.15, 3248.75, 148.674, 2.7317, 300, 420, 5, 1), -- Artifact Seeker old guid 70985
+(@CGUID+145, 19852, 530, 1, 2697.51, 3225.41, 147.612, 0.492836, 300, 420, 5, 1), -- Artifact Seeker old guid 70979
+(@CGUID+146, 19852, 530, 1, 2699.68, 3183.12, 148.722, 1.18508, 300, 420, 5, 1), -- Artifact Seeker old guid 70980
+(@CGUID+147, 19852, 530, 1, 2783.62, 3152.21, 149.823, 6.00323, 300, 420, 5, 1), -- Artifact Seeker old guid 70984
+(@CGUID+148, 19852, 530, 1, 2785.1, 3129, 154.393, 6.27341, 300, 420, 5, 1), -- Artifact Seeker old guid 70987
+(@CGUID+149, 19852, 530, 1, 2749.16, 3151.68, 148.895, 2.4461, 300, 420, 5, 1), -- Artifact Seeker old guid 70982
+(@CGUID+150, 19852, 530, 1, 2735.35, 3132.77, 151.443, 4.24385, 300, 420, 5, 1), -- Artifact Seeker old guid 70983
+(@CGUID+151, 19852, 530, 1, 2683.56, 3116.09, 131.576, 2.16225, 300, 420, 5, 1), -- Artifact Seeker old guid 70981
+(@CGUID+152, 19852, 530, 1, 2738.3, 3194.74, 148.599, 2.0668, 300, 420, 5, 1), -- Artifact Seeker old guid 70986
+(@CGUID+153, 19852, 530, 1, 2784.88, 3195.01, 147.697, 0.513361, 300, 420, 5, 1), -- Artifact Seeker missing before
+
 
 DELETE FROM creature_addon WHERE guid IN (67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 --  
@@ -580,8 +598,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+9, 'Netherstorm - Group 009 - Mana Wraith ()', 0, 0, 0, 0, 0),
 -- Sundered Rumbler
 (@SGGUID+10, 'Netherstorm - Group 010 - Sundered Rumbler', 0, 0, 0, 0, 0),
--- Farahlon Giant - max spawned 6
+-- Farahlon Giant 
 (@SGGUID+11, 'Netherstorm - Group 011 - Farahlon Giant (6)', 0, 0, 0, 0, 0),
+-- Artifact Seeker
+(@SGGUID+11, 'Netherstorm - Group 012 - Artifact Seeker (13)', 0, 0, 0, 0, 0),
+
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
 (@SGGUID+100, 'Netherstorm - Etherlithium Matrix Crystal', 1, 21, 0, 0, 0);
 
@@ -726,6 +747,21 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+11, @CGUID+137, -1, 0), -- Farahlon Giant
 (@SGGUID+11, @CGUID+138, -1, 0), -- Farahlon Giant
 (@SGGUID+11, @CGUID+139, -1, 0), -- Farahlon Giant
+-- Artifact Seeker
+(@SGGUID+12, @CGUID+140, -1, 0), -- Artifact Seeker
+(@SGGUID+12, @CGUID+141, -1, 0), -- Artifact Seeker
+(@SGGUID+12, @CGUID+142, -1, 0), -- Artifact Seeker
+(@SGGUID+12, @CGUID+143, -1, 0), -- Artifact Seeker
+(@SGGUID+12, @CGUID+144, -1, 0), -- Artifact Seeker
+(@SGGUID+12, @CGUID+145, -1, 0), -- Artifact Seeker
+(@SGGUID+12, @CGUID+146, -1, 0), -- Artifact Seeker
+(@SGGUID+12, @CGUID+147, -1, 0), -- Artifact Seeker
+(@SGGUID+12, @CGUID+148, -1, 0), -- Artifact Seeker
+(@SGGUID+12, @CGUID+149, -1, 0), -- Artifact Seeker
+(@SGGUID+12, @CGUID+150, -1, 0), -- Artifact Seeker
+(@SGGUID+12, @CGUID+151, -1, 0), -- Artifact Seeker
+(@SGGUID+12, @CGUID+152, -1, 0), -- Artifact Seeker
+(@SGGUID+12, @CGUID+153, -1, 0), -- Artifact Seeker
 -- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
