@@ -13,6 +13,9 @@ SET @SGGUID := 5306000; -- spawn_groups
  
 DELETE FROM creature WHERE guid IN (67423, 67424, 67425, 67426, 67427, 67428, 67429, 67430, 67431, 67432, 67434, 67435, 67436, 67437, 67438,  67439, 67440, 67441, 67442, 67443, 67444, 67445, 67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 67525, 67526, 67527, 67528, 67529, 67530, 67531, 67532, 67533, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67542, 67543, 67544, 67545, 67546, 67547, 67548, 67549, 67550, 67551, 67552, 67553, 67554, 67555, 67556, 67557, 67615, 67616, 67617, 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67625, 67626, 67675, 67676, 67677, 67694, 67695, 67696, 67697, 67732, 
 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71841, 71842, 71843, 71844, 71845, 71846, 71849, 71850, 71890, 72537, 73962, 73963, 73964, 73965, 1002671, 1002675, 1002679);
+-- Delete all Farahlon Giant, Farahlon Crumbler (only spawn on Giant death) spanws
+-- Old guids: 67834, 67833, 67835, 67836, 75856, 75559, 67832
+DELETE FROM creature WHERE id IN (18885, 21077); -- Farahlon Giants, Farahlon Crumbler
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+65;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
@@ -188,6 +191,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+131, 20210, 530, 1, 2990.35, 3426.19, 106.054, 2.67338, 360, 420, 4, 1), -- Shaleskin Flayer missing before
 (@CGUID+132, 20210, 530, 1, 2924.86, 3396.3, 105.731, 1.75946, 360, 420, 4, 1), -- Shaleskin Flayer missing before
 (@CGUID+133, 20210, 530, 1, 3055.42, 3240.19, 118.1, 4.38068, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71843
+
+-- Farahlon Giants having a fast respawn timer
+(@CGUID+134, 18885, 530, 1, 3020.59, 3193.82, 120.721, 4.94689, 120, 300, 6, 1), -- Farahlon Giant
+(@CGUID+135, 18885, 530, 1, 2988.63, 3311.06, 143.871, 6.10842, 120, 300, 6, 1), -- Farahlon Giant
+(@CGUID+136, 18885, 530, 1, 2951.19, 3303.02, 154.342, 1.59422, 120, 300, 6, 1), -- Farahlon Giant
+(@CGUID+137, 18885, 530, 1, 2956.06, 3217.67, 146.699, 5.26936, 120, 300, 6, 1), -- Farahlon Giant
+(@CGUID+138, 18885, 530, 1, 2882.91, 3204.03, 173.905, 1.23877, 120, 300, 6, 1), -- Farahlon Giant
+(@CGUID+139, 18885, 530, 1, 2964.57, 3130.3, 126.159, 5.24058, 120, 300, 6, 1), -- Farahlon Giant
 
 DELETE FROM creature_addon WHERE guid IN (67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 --  
@@ -569,6 +580,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+9, 'Netherstorm - Group 009 - Mana Wraith ()', 0, 0, 0, 0, 0),
 -- Sundered Rumbler
 (@SGGUID+10, 'Netherstorm - Group 010 - Sundered Rumbler', 0, 0, 0, 0, 0),
+-- Farahlon Giant - max spawned 6
+(@SGGUID+11, 'Netherstorm - Group 011 - Farahlon Giant (6)', 0, 0, 0, 0, 0),
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
 (@SGGUID+100, 'Netherstorm - Etherlithium Matrix Crystal', 1, 21, 0, 0, 0);
 
@@ -706,6 +719,13 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+10, @CGUID+125, -1, 0), -- Sundered Rumbler
 (@SGGUID+10, @CGUID+126, -1, 0), -- Sundered Rumbler
 (@SGGUID+10, @CGUID+127, -1, 0), -- Sundered Rumbler
+-- Farahlon Giant
+(@SGGUID+11, @CGUID+134, -1, 0), -- Farahlon Giant
+(@SGGUID+11, @CGUID+135, -1, 0), -- Farahlon Giant
+(@SGGUID+11, @CGUID+136, -1, 0), -- Farahlon Giant
+(@SGGUID+11, @CGUID+137, -1, 0), -- Farahlon Giant
+(@SGGUID+11, @CGUID+138, -1, 0), -- Farahlon Giant
+(@SGGUID+11, @CGUID+139, -1, 0), -- Farahlon Giant
 -- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
