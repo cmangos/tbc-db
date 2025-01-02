@@ -18,6 +18,8 @@ DELETE FROM creature WHERE guid IN (67423, 67424, 67425, 67426, 67427, 67428, 67
 DELETE FROM creature WHERE id IN (18885, 21077); -- Farahlon Giants, Farahlon Crumbler
 -- Delete all Artifact Seeker (12 spawns)
 DELETE FROM creature WHERE id = 19852;
+-- Delete all Fellade Doomguard spawns
+DELETE FROM creature WHERE id = 19853;
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+160;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
@@ -216,10 +218,17 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+151, 19852, 530, 1, 2683.56, 3116.09, 131.576, 2.16225, 300, 420, 5, 1), -- Artifact Seeker old guid 70981
 (@CGUID+152, 19852, 530, 1, 2738.3, 3194.74, 148.599, 2.0668, 300, 420, 5, 1), -- Artifact Seeker old guid 70986
 (@CGUID+153, 19852, 530, 1, 2784.88, 3195.01, 147.697, 0.513361, 300, 420, 5, 1), -- Artifact Seeker missing before
+-- Fellade Doomguard
+(@CGUID+154, 19853, 530, 1, 2844.86, 3279.39, 136.701, 0.383972, 360, 420, 0, 4), -- Fellade Doomguard old guid 70989
+(@CGUID+155, 19853, 530, 1, 2805.83, 3374.91, 142.815, 1.56005, 360, 420, 0, 4), -- Fellade Doomguard old guid 70993
+(@CGUID+156, 19853, 530, 1, 2774.34, 3293.61, 134.902, 0.925873, 360, 420, 0, 4), -- Fellade Doomguard old guid 70990
+(@CGUID+157, 19853, 530, 1, 2767.29, 3120.06, 153.685, 2.06185, 360, 420, 0, 4), -- Fellade Doomguard old guid 70992
+(@CGUID+158, 19853, 530, 1, 2670.44, 3107.22, 129.567, 0.471239, 360, 420, 0, 4), -- Fellade Doomguard old guid 1002708
+(@CGUID+159, 19853, 530, 1, 2667.65, 3128.15, 136.007, 4.13643, 360, 420, 0, 4), -- Fellade Doomguard old guid 70991
+(@CGUID+160, 19853, 530, 1, 2788.5, 3058.51, 127.074, 0.672188, 360, 420, 0, 4); -- Fellade Doomguard old guid 70994
 
-
-DELETE FROM creature_addon WHERE guid IN (67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
---  
+DELETE FROM creature_addon WHERE guid IN (67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
+ 
 DELETE FROM creature_addon WHERE guid IN (@CGUID+75, @CGUID+76, @CGUID+77);
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+75, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
@@ -227,7 +236,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+77, 0, 8, 0, 0, 0, NULL); -- Disembodied Protector
 
 -- Waypoints
-DELETE FROM creature_movement WHERE id IN (67522, 67675, 67676, 67677, 67694, 67695, 67696, 67697, 71811, 71814, 72537, 73962, 73963, 73964, 73965, 1002671, 1002675, 1002679);
+DELETE FROM creature_movement WHERE id IN (67522, 67675, 67676, 67677, 67694, 67695, 67696, 67697, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 72537, 73962, 73963, 73964, 73965, 1002671, 1002675, 1002679, 1002708);
 DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+129;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
@@ -486,6 +495,57 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+145, 10, 2687.0552,3200.1245,147.5209, 100, 0, 0),
 (@CGUID+145, 11, 2695.0852,3219.716,147.27919, 100, 0, 0),
 (@CGUID+145, 12, 2708.8052,3231.4753,147.51425, 100, 0, 0),
+-- Felblade Doomguard
+(@CGUID+154, 1, 2844.5195,3274.3853,136.31494, 100, 0, 0),
+(@CGUID+154, 2, 2847.4883,3293.0107,136.28421, 100, 0, 0),
+(@CGUID+154, 3, 2846.5283,3329.9229,136.35144, 100, 0, 0),
+(@CGUID+154, 4, 2844.6692,3361.5015,138.32826, 100, 0, 0),
+(@CGUID+154, 5, 2834.5315,3372.9739,140.7338, 100, 0, 0),
+(@CGUID+154, 6, 2790.9768,3386.5505,143.25522, 100, 0, 0),
+(@CGUID+154, 7, 2763.7817,3391.451,147.0207, 100, 0, 0),
+-- Felblade Doomguard
+(@CGUID+155, 1, 2805.8696,3378.8674,142.26472, 100, 0, 0),
+(@CGUID+155, 2, 2805.9705,3363.8762,144.40855, 100, 0, 0),
+(@CGUID+155, 3, 2803.093,3341.802,146.30472, 100, 0, 0),
+(@CGUID+155, 4, 2797.7375,3316.09,147.74304, 100, 0, 0),
+(@CGUID+155, 5, 2791.8276,3285.3303,147.58328, 100, 0, 0),
+(@CGUID+155, 6, 2798.7834,3266.615,147.5972, 100, 0, 0),
+(@CGUID+155, 7, 2799.445,3234.606,147.5972, 100, 0, 0),
+(@CGUID+155, 8, 2786.3882,3199.4001,147.24849, 100, 0, 0),
+(@CGUID+155, 9, 2773.5442,3167.466,148.01701, 100, 0, 0),
+-- Felblade Doomguard
+(@CGUID+156, 1, 2776.6716,3296.7078,134.88904, 100, 0, 0),
+(@CGUID+156, 2, 2741.708,3283.103,134.79964, 100, 0, 0),
+(@CGUID+156, 3, 2723.7053,3264.6707,135.10432, 100, 0, 0),
+(@CGUID+156, 4, 2701.3796,3251.3655,133.81161, 100, 0, 0),
+(@CGUID+156, 5, 2671.7886,3241.817,136.13454, 100, 0, 0),
+-- Felblade Doomguard
+(@CGUID+157, 1, 2767.3296,3119.978,153.61285, 100, 0, 0),
+(@CGUID+157, 2, 2760.3508,3133.0457,151.73926, 100, 0, 0),
+(@CGUID+157, 3, 2751.2417,3166.751,147.8679, 100, 0, 0),
+(@CGUID+157, 4, 2737.5063,3197.8433,148.38454, 100, 0, 0),
+(@CGUID+157, 5, 2729.6033,3240.7727,147.5972, 100, 0, 0),
+-- Felblade Doomguard
+(@CGUID+158, 1, 2676.2434,3108.4949,129.68224, 100, 0, 0),
+(@CGUID+158, 2, 2695.884,3152.218,142.57837, 100, 0, 0),
+(@CGUID+158, 3, 2733.9094,3176.8804,147.73102, 100, 0, 0),
+(@CGUID+158, 4, 2767.524,3183.0664,149.01059, 100, 0, 0),
+(@CGUID+158, 5, 2783.0461,3200.549,148.76402, 100, 0, 0),
+(@CGUID+158, 6, 2795.1108,3234.7832,147.5972, 100, 0, 0),
+-- Felblade Doomguard
+(@CGUID+159, 1, 2666.155,3128.539,136.19554, 100, 0, 0),
+(@CGUID+159, 2, 2681.547,3107.0217,129.7392, 100, 0, 0),
+(@CGUID+159, 3, 2714.7917,3083.177,125.97599, 100, 0, 0),
+(@CGUID+159, 4, 2742.4736,3066.7026,126.90543, 100, 0, 0),
+(@CGUID+159, 5, 2771.3164,3055.7148,125.33494, 100, 0, 0),
+-- Felblade Doomguard
+(@CGUID+160, 1, 2789.9812,3059.688,127.22473, 100, 0, 0),
+(@CGUID+160, 2, 2808.2354,3051.4807,129.19807, 100, 0, 0),
+(@CGUID+160, 3, 2828.0496,3064.0322,130.24457, 100, 0, 0),
+(@CGUID+160, 4, 2825.4067,3085.0708,131.07745, 100, 0, 0),
+(@CGUID+160, 5, 2828.7065,3113.5422,132.90123, 100, 0, 0),
+(@CGUID+160, 6, 2834.658,3132.8125,135.12311, 100, 0, 0),
+(@CGUID+160, 7, 2820.653,3168.3298,138.29019, 100, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -512,7 +572,6 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (19569, 0, 20, 3381.026,4289.326,120.66898, 100, 0, 0),
 (19569, 0, 21, 3384.844,4272.874,122.67322, 100, 0, 0),
 (19569, 0, 22, 3389.8567,4267.7715,122.70082,100, 0, 0);
-
 -- SpawnData
 DELETE FROM creature_spawn_data WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 DELETE FROM creature_spawn_data WHERE guid BETWEEN @CGUID+1 AND @CGUID+95;
@@ -614,7 +673,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Farahlon Giant 
 (@SGGUID+11, 'Netherstorm - Group 011 - Farahlon Giant (6)', 0, 0, 0, 0, 0),
 -- Artifact Seeker
-(@SGGUID+11, 'Netherstorm - Group 012 - Artifact Seeker (13)', 0, 0, 0, 0, 0),
+(@SGGUID+12, 'Netherstorm - Group 012 - Artifact Seeker (13)', 0, 0, 0, 0, 0),
+-- Felblade Doomguard
+(@SGGUID+13, 'Netherstorm - Group 013 - Felblade Doomguard (7)', 0, 0, 0, 0, 0),
 
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
 (@SGGUID+100, 'Netherstorm - Etherlithium Matrix Crystal', 1, 21, 0, 0, 0);
@@ -775,6 +836,14 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+12, @CGUID+151, -1, 0), -- Artifact Seeker
 (@SGGUID+12, @CGUID+152, -1, 0), -- Artifact Seeker
 (@SGGUID+12, @CGUID+153, -1, 0), -- Artifact Seeker
+-- Felblade Doomguard
+(@SGGUID+13, @CGUID+154, -1, 0), -- Felblade Doomguard
+(@SGGUID+13, @CGUID+155, -1, 0), -- Felblade Doomguard
+(@SGGUID+13, @CGUID+156, -1, 0), -- Felblade Doomguard
+(@SGGUID+13, @CGUID+157, -1, 0), -- Felblade Doomguard
+(@SGGUID+13, @CGUID+158, -1, 0), -- Felblade Doomguard
+(@SGGUID+13, @CGUID+159, -1, 0), -- Felblade Doomguard
+(@SGGUID+13, @CGUID+160, -1, 0), -- Felblade Doomguard
 -- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
