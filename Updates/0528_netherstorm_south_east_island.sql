@@ -80,37 +80,24 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+43, 0, 530, 1, 3573.5, 3647.71, 131.662, 0.799555, 300, 360, 8, 1),  -- spawn_group_entry old guid 67518
 
 (@CGUID+44, 18872, 530, 1, 3584.14, 3595.16, 130.009, 5.36131, 300, 360, 8, 1),  -- Disembodied Vindicator old guid 67524
-
 (@CGUID+45, 18872, 530, 1, 3575.31, 3548.73, 127.209, 5.58143, 300, 360, 8, 1),  -- Disembodied Vindicator old guid 67525
 (@CGUID+46, 18873, 530, 1, 3551.81, 3525.41, 124.929, 0.497076, 360, 420, 8, 1), -- Disembodied Protector old guid 67544
 (@CGUID+47, 18873, 530, 1, 3527.85, 3549.21, 137.595, 5.68976, 360, 420, 8, 1), -- Disembodied Protector old guid 67543
 (@CGUID+48, 0, 530, 1, 3516.86, 3525.74, 131.554, 4.6102, 360, 420, 8, 1), -- spawn_group_entry old guid 67546
-
 -- Ruins of Enkaat entrance 
 (@CGUID+49, 21058, 530, 1, 3374.26, 3712.78, 142.87, 5.6495, 300, 360, 0, 4), -- Disembodied Exarch old guid 73962
-
 (@CGUID+50, 0, 530, 1, 3410.26, 3684.18, 147.597, 4.67748, 360, 420, 0, 0), -- spawn_group_entry old guid 67556
 (@CGUID+51, 18872, 530, 1, 3409.75, 3673.84, 148.697, 1.46608, 300, 360, 0, 0), -- Disembodied Vindicator old guid 67536
-
 (@CGUID+52, 18872, 530, 1, 3463.16, 3715.29, 145.986, 0.804, 300, 360, 0, 4), -- Disembodied Vindicator old guid 67517
--- ToDO: this npc should rnd switch between standstate 0 (stand) 1 (sit) and 3 (sleep) also should use STATE_USESTANDING_NOSHEATHE at some point will add later
 (@CGUID+53, 0, 530, 1, 3449.43, 3702.6, 147.646, 3.78736, 300, 360, 0, 0), -- spawn_group_entry old guid 67541
--- prob same as above - todo..
 (@CGUID+54, 18872, 530, 1, 3424.25, 3661.14, 153.203, 4.46804, 300, 360, 0, 0), -- Disembodied Vindicator old guid 67537--  
 (@CGUID+55, 18873, 530, 1, 3369.44, 3661.99, 143.635, 4.01426, 300, 360, 0, 0), -- Disembodied Protector old guid 67554
--- Npc before bridge
 (@CGUID+56, 18872, 530, 1, 3455.16, 3675.74, 150.064, 0.39114, 300, 360, 14, 1), -- Disembodied Vindicator old guid 67521
--- Exarch patroling from left under the bridge
 (@CGUID+57, 21058, 530, 1, 3493.2, 3717.37, 139.938, 5.39578, 300, 360, 0, 4), -- Disembodied Exarch old guid 73964
--- NPC patroling on the bridge
 (@CGUID+58, 18872, 530, 1, 3468.76, 3646.23, 154.458, 5.42845, 300, 360, 0, 2), -- Disembodied Vindicator old guid 67522
--- Random movement under bridge
 (@CGUID+59, 18872, 530, 1, 3458.56, 3627.43, 140.747, 1.7571, 300, 360, 15, 1), -- Disembodied Vindicator old guid 67523
--- Crater from the bridge right
 (@CGUID+60, 0, 530, 1, 3432.5, 3591.81, 144.274, 2.11479, 300, 360, 10, 1), -- spawn_group_entry old guid 67549
--- npc with rnd emote/standstate
 (@CGUID+61, 18872, 530, 1, 3412.48, 3609.1, 140.999, 0.785398, 300, 360, 0, 0), -- Disembodied Vindicator old guid 67535
--- 4 npcs outside right from entrace
 (@CGUID+62, 18873, 530, 1, 3343.02, 3682.69, 135.465, 4.66549, 300, 360, 8, 1), -- Disembodied Protector old guid 67555
 (@CGUID+63, 18872, 530, 1, 3349.59, 3647.52, 142.912, 3.58056, 300, 360, 10, 1), -- Disembodied Vindicator old guid 67534
 (@CGUID+64, 18873, 530, 1, 3382.97, 3646.03, 144.754, 4.86133, 300, 360, 0, 0), -- Disembodied Protector old guid 67552
