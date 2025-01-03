@@ -18825,12 +18825,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scrap Reaver X6000 (19849) - npc_scrap_reaver
 -- Negatron 19851 - creature_spell_list
 ('1985101','19851','11','0','100','0','0','0','0','0','0','0','11','34427','0','0','0','0','0','0','0','0','0','0','Negatron - Cast Ethereal Teleport on Spawn'),
--- Artifact Seeker 19852
-('1985201','19852','0','0','100','1025','6000','14000','18000','20000','0','0','11','11981','16','512','0','0','0','0','0','0','0','0','Artifact Seeker - Cast Mana Burn on Random Player Mana User'),
-('1985202','19852','0','0','100','1025','8000','17000','19000','30000','0','0','11','30849','16','512','0','0','0','0','0','0','0','0','Artifact Seeker - Cast Spell Lock on Random Player Mana User'),
--- Felblade Doomguard 19853
-('1985301','19853','0','0','100','1025','13000','22000','22000','32000','0','0','11','32736','1','0','0','0','0','0','0','0','0','0','Felblade Doomguard - Cast Mortal Strike'),
-('1985302','19853','0','0','100','1025','8000','12000','16000','21000','0','0','11','35238','1','0','0','0','0','0','0','0','0','0','Felblade Doomguard - Cast War Stomp'),
+-- Artifact Seeker 19852 - spell_list
+-- Felblade Doomguard 19853 - spell_list
 -- Nether-Stalker Khay'ji 19880
 ('1988001','19880','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Nether-Stalker Khay''ji - Start Relay Script (Random Emote) on Receive AI Event 5'),
 -- Severed Spirit 19881
@@ -18976,9 +18972,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shaleskin Flayer
 ('2021001','20210','1','0','100','1','1000','5000','1000','10000','0','0','11','36576','0','34','0','0','0','0','0','0','0','0','Shaleskin Flayer - Cast Shaleskin OOC'),
 ('2021002','20210','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Shaleskin Flayer - Flee at 15% HP'),
--- Pentatharon
-('2021501','20215','0','0','100','1025','5000','8500','7400','12500','0','0','11','36039','1','0','0','0','0','0','0','0','0','0','Pentatharon - Cast Carrion Swarm'),
-('2021502','20215','0','0','100','1025','5000','10000','25000','30000','0','0','11','20663','5','0','0','0','0','0','0','0','0','0','Pentatharon - Cast Sleep'),
+-- Pentatharon 20215 - spell_list
 -- Sunfury Technician 20218 - npc_manaforge_spawn
 ('2021801','20218','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Sunfury Technician - Interrupt Channelling on Aggro'),
 -- Sunfury Flamekeeper 20221
