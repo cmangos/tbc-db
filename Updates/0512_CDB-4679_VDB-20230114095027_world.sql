@@ -54,28 +54,31 @@ UPDATE `quest_template` SET `RewRepFaction1`=729, `RewRepFaction2`=68, `RewRepFa
 UPDATE `quest_template` SET `RewRepFaction1`=730, `RewRepFaction2`=47, `RewRepFaction3`=72, `RewRepValue1`=250, `RewRepValue2`=250, `RewRepValue3`=250 WHERE `entry`= 7282; -- tbc+ 250
 UPDATE `quest_template` SET `RewRepFaction1`=730, `RewRepFaction2`=47, `RewRepValue1`=250, `RewRepValue2`=250 WHERE `entry`= 7301; -- tbc+ 250
 UPDATE `quest_template` SET `RewRepFaction1`=729, `RewRepFaction2`=76, `RewRepValue1`=250, `RewRepValue2`=250 WHERE `entry`= 7302; -- tbc+ 250
-UPDATE `quest_template` SET `RewRepFaction1`=530, `RewRepFaction2`=729, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7361; -- tbc+ 0
-UPDATE `quest_template` SET `RewRepFaction1`=81, `RewRepFaction2`=729, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7362; -- tbc+ 0
-UPDATE `quest_template` SET `RewRepFaction1`=68, `RewRepFaction2`=729, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7363; -- tbc+ 0
-UPDATE `quest_template` SET `RewRepFaction1`=54, `RewRepFaction2`=730, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7364; -- tbc+ 0
-UPDATE `quest_template` SET `RewRepFaction1`=69, `RewRepFaction2`=730, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7365; -- tbc+ 0
-UPDATE `quest_template` SET `RewRepFaction1`=72, `RewRepFaction2`=730, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7366; -- tbc+ 0
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7361; -- tbc+ 0 (530 729)
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7362; -- tbc+ 0 (81 729)
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7363; -- tbc+ 0 (68 729)
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7364; -- tbc+ 0 (54 730)
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7365; -- tbc+ 0 (69 730)
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7366; -- tbc+ 0 (72 730)
 UPDATE `quest_template` SET `RewRepFaction1`=730, `RewRepFaction2`=47, `RewRepValue1`=250, `RewRepValue2`=250 WHERE `entry`= 7367; -- tbc+ 250
 UPDATE `quest_template` SET `RewRepFaction1`=729, `RewRepFaction2`=76, `RewRepValue1`=250, `RewRepValue2`=250 WHERE `entry`= 7368; -- tbc+ 250
-UPDATE `quest_template` SET `RewRepFaction1`=729, `RewRepFaction2`=76, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7381; -- tbc+ 0
-UPDATE `quest_template` SET `RewRepFaction1`=730, `RewRepFaction2`=47, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7382; -- tbc+ 0
-UPDATE `quest_template` SET `RewRepFaction1`=76, `RewRepFaction2`=729, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7401; -- tbc+ 0
-UPDATE `quest_template` SET `RewRepFaction1`=47, `RewRepFaction2`=730, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7402; -- tbc+ 0
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7381; -- tbc+ 0 (729 76)
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7382; -- tbc+ 0 (730 47)
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7401; -- tbc+ 0 (76 729)
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepValue1`=0, `RewRepValue2`=0 WHERE `entry`= 7402; -- tbc+ 0 (47 730)
 UPDATE `quest_template` SET `RewRepFaction1`=730, `RewRepFaction2`=47, `RewRepValue1`=10, `RewRepValue2`=10 WHERE `entry`= 8271;
 UPDATE `quest_template` SET `RewRepFaction1`=729, `RewRepFaction2`=76, `RewRepValue1`=10, `RewRepValue2`=10 WHERE `entry`= 8272;
-UPDATE `quest_template` SET `RewRepFaction1`=729, `RewRepFaction2`=889, `RewRepFaction3`=510, `RewRepValue1`=0, `RewRepValue2`=0, `RewRepValue3`=0 WHERE `entry` = 8367; -- tbc+ 0
+-- Quest X has `RewRepFaction1` = 0 but `RewRepValue1` = 0, quest will not reward this reputation.
+-- Quest X has `RewRepFaction2` = 0 but `RewRepValue2` = 0, quest will not reward this reputation.
+-- Quest X has `RewRepFaction3` = 0 but `RewRepValue3` = 0, quest will not reward this reputation.
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepFaction3`=0, `RewRepValue1`=0, `RewRepValue2`=0, `RewRepValue3`=0 WHERE `entry` = 8367; -- tbc+ 0 (729 889 510)
 UPDATE `quest_template` SET `RewRepFaction1`=729, `RewRepFaction2`=0, `RewRepValue1`=350, `RewRepValue2`=0 WHERE `entry`= 8369; -- tbc+ 350
-UPDATE `quest_template` SET `RewRepFaction1`=509, `RewRepFaction2`=730, `RewRepFaction3`=890, `RewRepValue1`=0, `RewRepValue2`=0, `RewRepValue3`=0 WHERE `entry` = 8371; -- tbc+ 0
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepFaction3`=0, `RewRepValue1`=0, `RewRepValue2`=0, `RewRepValue3`=0 WHERE `entry` = 8371; -- tbc+ 0 (509 730 890
 UPDATE `quest_template` SET `RewRepFaction1`=730, `RewRepFaction2`=0, `RewRepValue1`=350, `RewRepValue2`=0 WHERE `entry` = 8375; -- tbc+ 350
 UPDATE `quest_template` SET `RewRepFaction1`=730, `RewRepFaction2`=0, `RewRepValue1`=250, `RewRepValue2`=0 WHERE `entry`= 8383; -- tbc+ 250
-UPDATE `quest_template` SET `RewRepFaction1`=730, `RewRepFaction2`=509, `RewRepFaction3`=890, `RewRepValue1`=0, `RewRepValue2`=0, `RewRepValue3`=0 WHERE `entry` = 8385; -- tbc+ 0
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepFaction3`=0, `RewRepValue1`=0, `RewRepValue2`=0, `RewRepValue3`=0 WHERE `entry` = 8385; -- tbc+ 0 (730 509 890)
 UPDATE `quest_template` SET `RewRepFaction1`=729, `RewRepFaction2`=0, `RewRepValue1`=250, `RewRepValue2`=0 WHERE `entry`= 8387; -- tbc+ 250
-UPDATE `quest_template` SET `RewRepFaction1`=729, `RewRepFaction2`=889, `RewRepFaction3`=510, `RewRepValue1`=0, `RewRepValue2`=0, `RewRepValue3`=0 WHERE `entry` = 8388; -- tbc+ 0
+UPDATE `quest_template` SET `RewRepFaction1`=0, `RewRepFaction2`=0, `RewRepFaction3`=0, `RewRepValue1`=0, `RewRepValue2`=0, `RewRepValue3`=0 WHERE `entry` = 8388; -- tbc+ 0 (729 889 510)
 UPDATE `quest_template` SET `RewRepFaction1`=47, `RewRepFaction2`=0, `RewRepValue1`=25, `RewRepValue2`=0 WHERE `entry`= 5892;
 UPDATE `quest_template` SET `RewRepFaction1`=76, `RewRepFaction2`=0, `RewRepValue1`=25, `RewRepValue2`=0 WHERE `entry`= 5893;
 UPDATE `quest_template` SET `RewRepFaction1`=76, `RewRepFaction2`=0, `RewRepValue1`=10, `RewRepValue2`=0 WHERE `entry`= 6741;

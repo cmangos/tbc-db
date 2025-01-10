@@ -240,7 +240,7 @@ UPDATE `creature_template` SET `CharmedSpellList`='1913605' WHERE `entry`='19136
 UPDATE `creature_template` SET `CharmedSpellList`='1941305' WHERE `entry`='19413'; -- Shattered Hand Mage
 UPDATE `creature_template` SET `CharmedSpellList`='1941505' WHERE `entry`='19415'; -- Shattered Hand Acolyte
 UPDATE `creature_template` SET `CharmedSpellList`='1964305' WHERE `entry`='19643'; -- Sunfury Astromancer
-UPDATE `creature_template` SET `CharmedSpellList`='1966805' WHERE `entry`='19668'; -- Shadowfiend
+-- UPDATE `creature_template` SET `CharmedSpellList`='1966805' WHERE `entry`='19668'; -- Shadowfiend
 UPDATE `creature_template` SET `CharmedSpellList`='1970105' WHERE `entry`='19701'; -- Bonechewer Evoker
 UPDATE `creature_template` SET `CharmedSpellList`='1973205' WHERE `entry`='19732'; -- Ango'rosh Warlock
 UPDATE `creature_template` SET `CharmedSpellList`='1977905' WHERE `entry`='19779'; -- Sunfury Geologist
@@ -499,7 +499,7 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 (1941305, 'Tbc - Shattered Hand Mage', 0, 0),
 (1941505, 'Tbc - Shattered Hand Acolyte', 0, 0),
 (1964305, 'Tbc - Sunfury Astromancer', 0, 0),
-(1966805, 'Tbc - Shadowfiend', 0, 0),
+-- (1966805, 'Tbc - Shadowfiend', 0, 0),
 (1970105, 'Tbc - Bonechewer Evoker', 0, 0),
 (1973205, 'Tbc - Ango\'rosh Warlock', 0, 0),
 (1977905, 'Tbc - Sunfury Geologist', 0, 0),
@@ -1090,8 +1090,8 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1964305, 3, 38391, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Sunfury Astromancer - Scorch'),
 (1964305, 4, 35914, 0, -1, 0, 0, 100, 1, 0, 0, 15000, 15000, 'Sunfury Astromancer - Astral Focus'),
 (1964305, 5, 35917, 0, -1, 0, 0, 100, 1, 0, 0, 60000, 60000, 'Sunfury Astromancer - Fiery Intellect'),
-(1966805, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Shadowfiend - Attack'),
-(1966805, 6, 63619, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Shadowfiend - Shadowcrawl'),
+-- (1966805, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Shadowfiend - Attack'),
+-- (1966805, 6, 63619, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Shadowfiend - Shadowcrawl'),
 (1970105, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Bonechewer Evoker - Attack'),
 (1970105, 3, 9053, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Bonechewer Evoker - Fireball'),
 (1973205, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Ango\'rosh Warlock - Attack'),
