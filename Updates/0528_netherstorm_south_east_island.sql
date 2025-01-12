@@ -855,6 +855,13 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+2, @CGUID+30, -1, 0), -- Nether Ray
 (@SGGUID+2, @CGUID+128, -1, 0), -- Nether Ray
 (@SGGUID+2, @CGUID+129, -1, 0), -- Nether Ray
+(@SGGUID+2, @CGUID+173, -1, 0), -- Nether Ray
+(@SGGUID+2, @CGUID+174, -1, 0), -- Nether Ray
+(@SGGUID+2, @CGUID+175, -1, 0), -- Nether Ray
+(@SGGUID+2, @CGUID+176, -1, 0), -- Nether Ray
+(@SGGUID+2, @CGUID+177, -1, 0), -- Nether Ray
+(@SGGUID+2, @CGUID+178, -1, 0), -- Nether Ray
+(@SGGUID+2, @CGUID+179, -1, 0), -- Nether Ray
 -- Mana Snapper
 (@SGGUID+3, @CGUID+18, -1, 0), -- Mana Snapper
 -- Sgakeskin Flayer
