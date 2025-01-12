@@ -74,3 +74,52 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (2105801, 1, 33910, 0, -1, 204, 0, 100, 0, 2000, 10000, 2000, 10000, 'Disembodied Exarch - Heal Other - friendly missing 50% excluding self');
 
 UPDATE `creature_template` SET `SpellList` = 2105801 WHERE `entry` = 21058;
+
+
+-- Felblade Doomguard
+DELETE FROM `creature_template_spells` WHERE `entry` = 19853;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1985301;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1985301, 'Netherstorm - Felblade Doomguard', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1985301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1985301, 1, 35238, 0, -1, 1, 0, 100, 0, 8000, 16000, 12000, 24000, 'Felblade Doomguard - War Stomp - current'),
+(1985301, 2, 32736, 0, -1, 1, 0, 100, 0, 9000, 20000, 16000, 27000, 'Felblade Doomguard - Mortal Strike - current');
+
+UPDATE `creature_template` SET `SpellList` = 1985301 WHERE `entry` = 19853;
+
+-- Artifact Seeker
+DELETE FROM `creature_template_spells` WHERE `entry` = 19852;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1985201;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1985201, 'Netherstorm - Artifact Seeker', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1985201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1985201, 1, 30849, 0, -1, 134, 0, 100, 0, 1000, 15000, 10000, 25000, 'Artifact Seeker - Spell Lock - top aggro casting'),
+(1985201, 2, 11981, 0, -1, 133, 0, 100, 0, 6000, 16000, 14000, 24000, 'Artifact Seeker - Mana Burn - top aggro mana user');
+
+UPDATE `creature_template` SET `SpellList` = 1985201 WHERE `entry` = 19852;
+
+DELETE FROM creature_spell_targeting WHERE Id IN (133,134);
+INSERT INTO `creature_spell_targeting` (`Id`, `Type`, `Param1`, `Param2`, `Param3`, `Comments`) VALUES 
+(133, 1, 1, 0, 4, 'Attack - top aggro mana user'),
+(134, 1, 1, 0, 32768, 'Attack - top aggro casting');
+
+-- Pentatharon
+DELETE FROM `creature_template_spells` WHERE `entry` = 20215;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 2021501;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2021501, 'Netherstorm - Pentatharon', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2021501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2021501, 1, 20663, 0, -1, 101, 0, 100, 0, 1000, 15000, 10000, 25000, 'Pentatharon - Sleep - random player non tank'),
+(2021501, 2, 36039, 0, -1, 1, 0, 100, 0, 6000, 16000, 14000, 24000, 'Pentatharon - Carrion Swarm - current');
+
+UPDATE `creature_template` SET `SpellList` = 2021501 WHERE `entry` = 20215;
+
