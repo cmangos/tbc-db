@@ -753,6 +753,9 @@ INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+170, 1887901),
 (@CGUID+171, 1887901),
 (@CGUID+172, 1887901),
+(@CGUID+180, 1887901),
+(@CGUID+181, 1887901),
+(@CGUID+182, 1887901),
 -- Generic RunOn
 (@CGUID+95, 1);
 
@@ -865,6 +868,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+170, -1, 0), -- Phase Hunter
 (@SGGUID+1, @CGUID+171, -1, 0), -- Phase Hunter
 (@SGGUID+1, @CGUID+172, -1, 0), -- Phase Hunter
+
+(@SGGUID+1, @CGUID+180, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+181, -1, 0), -- Phase Hunter
+(@SGGUID+1, @CGUID+182, -1, 0), -- Phase Hunter
 -- Nether Ray
 (@SGGUID+2, @CGUID+17, -1, 0), -- Nether Ray
 (@SGGUID+2, @CGUID+30, -1, 0), -- Nether Ray
