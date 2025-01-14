@@ -974,7 +974,6 @@ UPDATE `gameobject_template` SET `flags`='0' WHERE `entry`='184431'; -- Ethereum
 UPDATE `gameobject_template` SET `flags`='32' WHERE `entry`='184453'; -- Strange Bookcase
 UPDATE `gameobject_template` SET `flags`='4' WHERE `entry`='184466'; -- Metal Coffer
 UPDATE `gameobject_template` SET `flags`='2' WHERE `entry`='184488'; -- Salvaged Ethereum Prison
-UPDATE `gameobject_template` SET `flags`='34' WHERE `entry`='184568'; -- Lady Vashj Bridge Console
 UPDATE `gameobject_template` SET `flags`='4' WHERE `entry`='184715'; -- Cursed Cauldron
 UPDATE `gameobject_template` SET `flags`='0' WHERE `entry`='184725'; -- Mana Bomb
 UPDATE `gameobject_template` SET `flags`='0' WHERE `entry`='184802'; -- Warden's Shield
@@ -984,16 +983,6 @@ UPDATE `gameobject_template` SET `flags`='4' WHERE `entry`='184967'; -- The Seco
 UPDATE `gameobject_template` SET `flags`='4' WHERE `entry`='184968'; -- The Third Prophecy
 UPDATE `gameobject_template` SET `flags`='4' WHERE `entry`='184969'; -- The Fourth Prophecy
 UPDATE `gameobject_template` SET `flags`='32' WHERE `entry`='185103'; -- Dark Portal
-UPDATE `gameobject_template` SET `flags`='2' WHERE `entry`='185114'; -- Serpentshrine Console
-UPDATE `gameobject_template` SET `flags`='16' WHERE `entry`='185114'; -- Serpentshrine Console
-UPDATE `gameobject_template` SET `flags`='16' WHERE `entry`='185115'; -- Serpentshrine Console
-UPDATE `gameobject_template` SET `flags`='2' WHERE `entry`='185115'; -- Serpentshrine Console
-UPDATE `gameobject_template` SET `flags`='16' WHERE `entry`='185116'; -- Serpentshrine Console
-UPDATE `gameobject_template` SET `flags`='2' WHERE `entry`='185116'; -- Serpentshrine Console
-UPDATE `gameobject_template` SET `flags`='2' WHERE `entry`='185117'; -- Serpentshrine Console
-UPDATE `gameobject_template` SET `flags`='16' WHERE `entry`='185117'; -- Serpentshrine Console
-UPDATE `gameobject_template` SET `flags`='16' WHERE `entry`='185118'; -- Serpentshrine Console
-UPDATE `gameobject_template` SET `flags`='2' WHERE `entry`='185118'; -- Serpentshrine Console
 UPDATE `gameobject_template` SET `flags`='0' WHERE `entry`='185119'; -- Dust Covered Chest
 UPDATE `gameobject_template` SET `flags`='0' WHERE `entry`='185123'; -- Lever
 UPDATE `gameobject_template` SET `flags`='4' WHERE `entry`='185193'; -- Legion Obelisk
