@@ -8122,6 +8122,23 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('618002','6180','11','0','100','0','0','0','0','0','0','0','11','7165','0','0','0','0','0','0','0','0','0','0','Defias Raider - Cast Battle Stance on Spawn'),
 ('618003','6180','0','0','100','1025','5000','7500','12500','15000','0','0','11','25710','1','0','0','0','0','0','0','0','0','0','Defias Raider - Cast Heroic Strike'),
 -- Daphne Stilwell 6182 - npc_daphne_stilwell
+-- Defias Drone 7050
+('705001','7050','8','0','100','1','1943','-1','0','0','0','0','11','10266','15','0','0','0','0','0','0','0','0','0','Defias Drone - Cast Lung Puncture on Rupture Rank 1 Spellhit'),
+('705002','7050','8','0','100','1','8639','-1','0','0','0','0','11','10266','15','0','0','0','0','0','0','0','0','0','Defias Drone - Cast Lung Puncture on Rupture Rank 2 Spellhit'),
+('705003','7050','8','0','100','1','8640','-1','0','0','0','0','11','10266','15','0','0','0','0','0','0','0','0','0','Defias Drone - Cast Lung Puncture on Rupture Rank 3 Spellhit'),
+('705004','7050','8','0','100','1','11273','-1','0','0','0','0','11','10266','15','0','0','0','0','0','0','0','0','0','Defias Drone - Cast Lung Puncture on Rupture Rank 4 Spellhit'),
+('705005','7050','8','0','100','1','11274','-1','0','0','0','0','11','10266','15','0','0','0','0','0','0','0','0','0','Defias Drone - Cast Lung Puncture on Rupture Rank 5 Spellhit'),
+('705006','7050','8','0','100','1','11275','-1','0','0','0','0','11','10266','15','0','0','0','0','0','0','0','0','0','Defias Drone - Cast Lung Puncture on Rupture Rank 6 Spellhit'),
+('705007','7050','8','0','100','1','26867','-1','0','0','0','0','11','10266','15','0','0','0','0','0','0','0','0','0','Defias Drone - Cast Lung Puncture on Rupture Rank 7 Spellhit'),
+-- Malformed Defias Drone 7051
+-- Defias Tower Patroller - 7052
+('731001','7052','8','0','100','1','8676','-1','0','0','0','0','11','10265','15','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Juggler Vein Rupture on Ambush Rank 1 Spellhit'),
+('731002','7310','8','0','100','1','8724','-1','0','0','0','0','11','10265','15','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Juggler Vein Rupture on Ambush Rank 2 Spellhit'),
+('731003','7310','8','0','100','1','8725','-1','0','0','0','0','11','10265','15','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Juggler Vein Rupture on Ambush Rank 3 Spellhit'),
+('731004','7310','8','0','100','1','11267','-1','0','0','0','0','11','10265','15','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Juggler Vein Rupture on Ambush Rank 4 Spellhit'),
+('731005','7310','8','0','100','1','11268','-1','0','0','0','0','11','10265','15','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Juggler Vein Rupture on Ambush Rank 5 Spellhit'),
+('731006','7310','8','0','100','1','11269','-1','0','0','0','0','11','10265','15','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Juggler Vein Rupture on Ambush Rank 6 Spellhit'),
+('731007','7310','8','0','100','1','27441','-1','0','0','0','0','11','10265','15','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Juggler Vein Rupture on Ambush Rank 7 Spellhit'),
 -- Klaven Mortwake 7053 - npc_foreman_klaven_mortwake
 
 
