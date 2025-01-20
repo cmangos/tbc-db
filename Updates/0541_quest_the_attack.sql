@@ -15,6 +15,22 @@ UPDATE creature_template SET ExtraFlags = 69634 WHERE entry = 8856;
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (1754, 8856);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
+-- Lord Gregor Lescovar waypoints
+(1754, 0, 1, -8332.951172, 394.819672, 122.457764, 100, 0, 0),
+(1754, 0, 2, -8336.935,402.70227,122.39286, 100, 0, 0),
+(1754, 0, 3, -8347.601,416.2128,122.39287, 100, 0, 0),
+(1754, 0, 4, -8356.598,408.69412,122.407906, 100, 0, 0),
+(1754, 0, 5, -8379.602,436.49112,122.39286, 100, 0, 0),
+(1754, 0, 6, -8392.416,452.59528,123.783485, 100, 5000, 175401), -- rp 1
+(1754, 0, 7, -8402.577,465.652,123.78349, 100, 600000, 175402),
+(1754, 0, 8, -8389.848,449.34464,124.39286, 100, 0, 0),
+(1754, 0, 9, -8374.16,429.65875,122.39287, 100, 0, 0),
+(1754, 0, 10, -8356.638,407.27484,122.40027, 100, 0, 0),
+(1754, 0, 11, -8364.035,397.6849,122.39286, 100, 0, 0),
+(1754, 0, 12, -8361.392,393.67535,122.39286, 100, 0, 0),
+(1754, 0, 13, -8352.217,382.51736,122.39285, 100, 0, 0),
+(1754, 0, 14, -8339.809,391.12012,122.45438, 100, 0, 0),
+(1754, 0, 15, -8332.951,394.81967,122.39287,2.251474618911743164, 1000, 175403),
 -- Tyrion's Spybot Waypoints after spawn
 (8856, 0, 1, -8430.70, 442.358, 122.35777, 100, 0, 0), 
 (8856, 0, 2, -8425.42,450.03125,122.39285, 100, 0, 0),
@@ -53,8 +69,22 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (8856, 1, 30, -8445.728,433.7933,119.1284, 100, 1000, 1);
 
 -- Movement Script
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (885601, 885602, 885603, 885604);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (175401, 175402, 175403, 885601, 885602, 885603, 885604);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Lord Gregor Lescovar RP 1
+(175401, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Emote OneShotTalk'),
+(175401, 0, 1, 0, 0, 0, 0, 0, 0, 0, 322, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Say Text'),
+(175401, 3000, 1, 36, 0, 0, 0, 1756, 10, 515, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Face Lord Gregor Lescovar'),
+(175401, 5000, 0, 1, 66, 0, 0, 1756, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Emote OneShotSalut'),
+(175401, 5000, 1, 0, 0, 0, 0, 1756, 10524, 16, 3690, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Say Text'),
+(175401, 8000, 0, 20, 2, 1, 0, 1756, 10524, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Start Waypoint'),
+(175401, 8000, 1, 20, 2, 2, 0, 1756, 10523, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Start Waypoint'),
+-- Lord Gregor Lescovar RP 2
+(175402, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 3721, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Say Text'),
+(175402, 23000, 0, 10, 1755, 60000, 0, 0, 0, 8, 0, 0, 0, 0, -8401.236, 491.13336, 123.84314,  3.9305, 'The Attack: Lord Gregor Lescovar - Summon Creature Marzon the Silent Blade'),
+-- Lord Gregor Lesovar Finish RP
+(175403, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Remove ActiveObject'),
+(175403, 0, 1, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Movement IDLE'),
 -- Tyrion\'s Spybot after waypoints to Tyrion
 (885601, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tyrion\'s Spybot -  Change Movement To 0 - Idle'),
 (885601, 4000, 0, 36, 0, 0, 0, 7766, 10, 515, 0, 0, 0, 0, 0, 0, 0, 0, 'Tyrion - Face Tyrion\'s Spybot'),
