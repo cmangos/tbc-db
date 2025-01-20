@@ -1,4 +1,4 @@
-INSERT INTO creature_template_addon(entry,auras) VALUES
+REPLACE INTO creature_template_addon(entry,auras) VALUES
 (15334,'18950');
 
 UPDATE broadcast_text SET ChatTypeId=2 WHERE Id IN(11476);
