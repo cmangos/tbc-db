@@ -22,15 +22,16 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (1754, 0, 4, -8356.598,408.69412,122.407906, 100, 0, 0),
 (1754, 0, 5, -8379.602,436.49112,122.39286, 100, 0, 0),
 (1754, 0, 6, -8392.416,452.59528,123.783485, 100, 5000, 175401), -- rp 1
-(1754, 0, 7, -8402.577,465.652,123.78349, 100, 600000, 175402),
-(1754, 0, 8, -8389.848,449.34464,124.39286, 100, 0, 0),
-(1754, 0, 9, -8374.16,429.65875,122.39287, 100, 0, 0),
-(1754, 0, 10, -8356.638,407.27484,122.40027, 100, 0, 0),
-(1754, 0, 11, -8364.035,397.6849,122.39286, 100, 0, 0),
-(1754, 0, 12, -8361.392,393.67535,122.39286, 100, 0, 0),
-(1754, 0, 13, -8352.217,382.51736,122.39285, 100, 0, 0),
-(1754, 0, 14, -8339.809,391.12012,122.45438, 100, 0, 0),
-(1754, 0, 15, -8332.951,394.81967,122.39287,2.251474618911743164, 1000, 175403),
+(1754, 0, 7, -8402.577,465.652,123.78349, 100, 58000, 175402),
+(1754, 0, 8, -8402.577,465.652,123.78349, 100, 100, 175403),
+(1754, 0, 9, -8389.848,449.34464,124.39286, 100, 0, 0),
+(1754, 0, 10, -8374.16,429.65875,122.39287, 100, 0, 0),
+(1754, 0, 11, -8356.638,407.27484,122.40027, 100, 0, 0),
+(1754, 0, 12, -8364.035,397.6849,122.39286, 100, 0, 0),
+(1754, 0, 13, -8361.392,393.67535,122.39286, 100, 0, 0),
+(1754, 0, 14, -8352.217,382.51736,122.39285, 100, 0, 0),
+(1754, 0, 15, -8339.809,391.12012,122.45438, 100, 0, 0),
+(1754, 0, 16, -8332.951,394.81967,122.39287,2.251474618911743164, 1000, 175404),
 -- Marzon the Silent Blade
 (1755, 0, 1, -8401.236, 491.13336, 123.84314, 100, 0, 0),
 (1755, 0, 2, -8405.023,470.18002,123.78349, 100, 20000, 175501), -- RP 1
@@ -102,7 +103,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 
 
 -- Movement Script
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (175401, 175402, 175403, 175501, 175601, 885601, 885602, 885603, 885604);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (175401, 175402, 175403, 175404, 175501, 175601, 885601, 885602, 885603, 885604);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Lord Gregor Lescovar RP 1
 (175401, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Emote OneShotTalk'),
@@ -114,9 +115,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Lord Gregor Lescovar RP 2
 (175402, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 3721, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Say Text'),
 (175402, 23000, 0, 10, 1755, 60000, 0, 0, 0, 8, 0, 0, 0, 0, -8401.236, 491.13336, 123.84314, 3.9305, 'The Attack: Lord Gregor Lescovar - Summon Creature Marzon the Silent Blade'),
+-- Lord Gregor Lescovar restore faction before moving back
+(175403, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Restore Faction'),
 -- Lord Gregor Lesovar Finish RP
-(175403, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Remove ActiveObject'),
-(175403, 0, 1, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Movement IDLE'),
+(175404, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Remove ActiveObject'),
+(175404, 0, 1, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Movement IDLE'),
 -- Marzon the Silent Blade
 (175501, 1000, 0, 1, 1, 0, 0, 1754, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Emote OneShotTalk'),
 (175501, 1000, 1, 0, 0, 0, 0, 1754, 10, 0, 323, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Say Text'),
