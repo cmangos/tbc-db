@@ -13,7 +13,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- ExtraFlags before change: 65538 (CREATURE_EXTRA_FLAG_NO_AGGRO_ON_SIGHT, CREATURE_EXTRA_FLAG_CIVILIAN)
 UPDATE creature_template SET ExtraFlags = 69634 WHERE entry = 8856;
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (1754, 8856);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (1754, 1755, 8856);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Lord Gregor Lescovar waypoints
 (1754, 0, 1, -8332.951172, 394.819672, 122.457764, 100, 0, 0),
@@ -31,6 +31,14 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (1754, 0, 13, -8352.217,382.51736,122.39285, 100, 0, 0),
 (1754, 0, 14, -8339.809,391.12012,122.45438, 100, 0, 0),
 (1754, 0, 15, -8332.951,394.81967,122.39287,2.251474618911743164, 1000, 175403),
+-- Marzon the Silent Blade
+(1755, 0, 1, -8401.236, 491.13336, 123.84314, 100, 0, 0),
+(1755, 0, 2, -8405.023,470.18002,123.78349, 100, 20000, 175501), -- RP 1
+(1755, 0, 3, -8417.703,482.35666,123.78349, 100, 0, 0),
+(1755, 0, 4, -8421.793,488.08002,122.39285, 100, 0, 0),
+(1755, 0, 5, -8429.174,482.75412,122.39285, 100, 0, 0),
+(1755, 0, 6, -8442.866,471.5549,122.39286, 100, 0, 0),
+(1755, 0, 7, -8439.279,465.37152,122.392876, 100, 1000, 0),
 -- Tyrion's Spybot Waypoints after spawn
 (8856, 0, 1, -8430.70, 442.358, 122.35777, 100, 0, 0), 
 (8856, 0, 2, -8425.42,450.03125,122.39285, 100, 0, 0),
@@ -69,7 +77,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (8856, 1, 30, -8445.728,433.7933,119.1284, 100, 1000, 1);
 
 -- Movement Script
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (175401, 175402, 175403, 885601, 885602, 885603, 885604);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (175401, 175402, 175403, 175501, 885601, 885602, 885603, 885604);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Lord Gregor Lescovar RP 1
 (175401, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Emote OneShotTalk'),
@@ -81,10 +89,22 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (175401, 8000, 1, 20, 2, 2, 0, 1756, 10523, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Start Waypoint'),
 -- Lord Gregor Lescovar RP 2
 (175402, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 3721, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Say Text'),
-(175402, 23000, 0, 10, 1755, 60000, 0, 0, 0, 8, 0, 0, 0, 0, -8401.236, 491.13336, 123.84314,  3.9305, 'The Attack: Lord Gregor Lescovar - Summon Creature Marzon the Silent Blade'),
+(175402, 23000, 0, 10, 1755, 60000, 0, 0, 0, 8, 0, 0, 0, 0, -8401.236, 491.13336, 123.84314, 3.9305, 'The Attack: Lord Gregor Lescovar - Summon Creature Marzon the Silent Blade'),
 -- Lord Gregor Lesovar Finish RP
 (175403, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Remove ActiveObject'),
 (175403, 0, 1, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Movement IDLE'),
+-- Marzon the Silent Blade
+(175501, 1000, 0, 1, 1, 0, 0, 1754, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Emote OneShotTalk'),
+(175501, 1000, 1, 0, 0, 0, 0, 1754, 10, 0, 323, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Say Text'),
+(175501, 2000, 0, 14, 7104, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Marzon the Silent Blade - Remove Aura Sneak'),
+(175501, 4000, 0, 0, 0, 0, 0, 0, 0, 0, 324, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Marzon the Silent Blade - Say Text'),
+(175501, 9000, 0, 1, 1, 0, 0, 1754, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Emote OneShotTalk'),
+(175501, 9000, 1, 0, 0, 0, 0, 1754, 10, 0, 326, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Say Text'),
+(175501, 13000, 0, 22, 34, 0, 0, 1754, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Set Faction to Defias Brotherhood'),
+(175501, 14000, 0, 0, 0, 0, 0, 0, 0, 0, 325, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Marzon the Silent Blade - Say Text'),
+(175501, 14000, 1, 22, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Marzon the Silent Blade - Set Faction to Defias Brotherhood'),
+(175501, 15000, 0, 1, 23, 0, 0, 7766, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Tyrion - Emote OneShotFlex'),
+(175501, 15000, 1, 0, 0, 0, 0, 7766, 30, 0, 4613, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Tyrion - Say Text'),
 -- Tyrion\'s Spybot after waypoints to Tyrion
 (885601, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tyrion\'s Spybot -  Change Movement To 0 - Idle'),
 (885601, 4000, 0, 36, 0, 0, 0, 7766, 10, 515, 0, 0, 0, 0, 0, 0, 0, 0, 'Tyrion - Face Tyrion\'s Spybot'),
@@ -143,4 +163,9 @@ INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `priority`, `command`, `d
 (434, 12000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0523599, 'The Attack: Tyrion - Reset Orientation'),
 (434, 14000, 0, 20, 2, 1, 0, 8856, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Tyrion\'s Spybot - Start Waypoints'),
 -- Give quest explore credit, have to be in quest_start script to get correct player as target
-(434, 188000, 0, 7, 434, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Tyrion - Quest Credit');
+(434, 191000, 0, 7, 434, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Tyrion - Quest Credit');
+
+-- Add aura to Marzon the Silent Blade
+DELETE FROM creature_template_addon WHERE entry = 1755;
+INSERT INTO creature_template_addon (entry, auras) VALUES (1755, 7104);
+UPDATE creature_template SET MovementType = 2 WHERE entry = 1755;
