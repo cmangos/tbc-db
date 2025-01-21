@@ -38,7 +38,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (1755, 0, 4, -8421.793,488.08002,122.39285, 100, 0, 0),
 (1755, 0, 5, -8429.174,482.75412,122.39285, 100, 0, 0),
 (1755, 0, 6, -8442.866,471.5549,122.39286, 100, 0, 0),
-(1755, 0, 7, -8439.279,465.37152,122.392876, 100, 1000, 0),
+(1755, 0, 7, -8439.279,465.37152,122.392876, 100, 1000, 1),
 -- Tyrion's Spybot Waypoints after spawn
 (8856, 0, 1, -8430.70, 442.358, 122.35777, 100, 0, 0), 
 (8856, 0, 2, -8425.42,450.03125,122.39285, 100, 0, 0),
@@ -76,8 +76,33 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (8856, 1, 29, -8435.206055, 442.783142, 122.504227, 100, 0, 0),
 (8856, 1, 30, -8445.728,433.7933,119.1284, 100, 1000, 1);
 
+DELETE FROM creature_movement WHERE id IN (10523, 10524);
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+-- Stormwind Royal Guard right
+(10523, 1, -8394.047, 449.45926, 123.783485, 100, 100, 9), -- Generic Set Active Object ON
+(10523, 2, -8374.245,428.69986,122.39287, 100, 0, 0),
+(10523, 3, -8356.376,404.74435,122.38098, 100, 0, 0),
+(10523, 4, -8367.224,396.23242,122.39286,0.663225114345550537, 66000, 0),
+(10523, 5, -8355.837,404.8713,122.37253, 100, 0, 0),
+(10523, 6, -8376.084,430.53375,122.39286, 100, 0, 0),
+(10523, 7, -8392.2,450.8392,123.783485, 100, 0, 0),
+(10523, 8, -8394.047,449.45926,123.783485,0.645771801471710205, 1000, 175601), -- Spawn Point, change to idle and Active object off
+-- Stormwind Royal Guard left
+(10524, 1, -8388.917, 453.05283, 123.95904, 100, 100, 9), -- Generic Set Active Object ON
+(10524, 2, -8389.245,452.9033,123.78451, 100, 0, 0),
+(10524, 3, -8353.658,405.95135,122.34162, 100, 0, 0),
+(10524, 4, -8342.475,414.8069,122.39287,3.769911050796508789, 66000, 0),
+(10524, 5, -8347.915,417.63022,122.39287, 100, 0, 0),
+(10524, 6, -8357.504,410.04797,122.4313, 100, 0, 0),
+(10524, 7, -8382.867,441.968,122.39285, 100, 0, 0),
+(10524, 8, -8357.7705,461.76053,122.39287, 100, 0, 0),
+(10524, 9, -8360.926,465.30426,122.39287, 100, 0, 0),
+(10524, 10, -8385.653,445.6149,122.39286, 100, 0, 0),
+(10524, 11, -8388.917,453.05283,123.95904,3.804817676544189453, 1000, 175601); -- Spawn Point, change to idle and Active object off
+
+
 -- Movement Script
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (175401, 175402, 175403, 175501, 885601, 885602, 885603, 885604);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (175401, 175402, 175403, 175501, 175601, 885601, 885602, 885603, 885604);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Lord Gregor Lescovar RP 1
 (175401, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Emote OneShotTalk'),
@@ -85,8 +110,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (175401, 3000, 1, 36, 0, 0, 0, 1756, 10, 515, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Face Lord Gregor Lescovar'),
 (175401, 5000, 0, 1, 66, 0, 0, 1756, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Emote OneShotSalut'),
 (175401, 5000, 1, 0, 0, 0, 0, 1756, 10524, 16, 3690, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Say Text'),
-(175401, 8000, 0, 20, 2, 1, 0, 1756, 10524, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Start Waypoint'),
-(175401, 8000, 1, 20, 2, 2, 0, 1756, 10523, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Start Waypoint'),
+(175401, 8000, 0, 20, 2, 0, 0, 1756, 10, 512, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Start Waypoint'),
 -- Lord Gregor Lescovar RP 2
 (175402, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 3721, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Lord Gregor Lescovar - Say Text'),
 (175402, 23000, 0, 10, 1755, 60000, 0, 0, 0, 8, 0, 0, 0, 0, -8401.236, 491.13336, 123.84314, 3.9305, 'The Attack: Lord Gregor Lescovar - Summon Creature Marzon the Silent Blade'),
@@ -105,6 +129,9 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (175501, 14000, 1, 22, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Marzon the Silent Blade - Set Faction to Defias Brotherhood'),
 (175501, 15000, 0, 1, 23, 0, 0, 7766, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Tyrion - Emote OneShotFlex'),
 (175501, 15000, 1, 0, 0, 0, 0, 7766, 30, 0, 4613, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Tyrion - Say Text'),
+-- Stormwind Royal Guard
+(175601, 0, 3, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Remove ActiveObject'),
+(175601, 0, 1, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Stormwind Royal Guard - Movement IDLE'),
 -- Tyrion\'s Spybot after waypoints to Tyrion
 (885601, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tyrion\'s Spybot -  Change Movement To 0 - Idle'),
 (885601, 4000, 0, 36, 0, 0, 0, 7766, 10, 515, 0, 0, 0, 0, 0, 0, 0, 0, 'Tyrion - Face Tyrion\'s Spybot'),
@@ -138,7 +165,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 
 
 -- On Retail Tyrion only has the QuestGiver flag when the Spybot is staying next to him
--- UPDATE creature_template SET NpcFlags = 1 WHERE entry = 7766;
+UPDATE creature_template SET NpcFlags = 1 WHERE entry = 7766;
 
 -- Remove emotes from quest
 UPDATE quest_template SET CompleteEmote = 0, OfferRewardEmote1 = 0, OfferRewardEmote2 = 0, OfferRewardEmote3 = 0 WHERE entry = 434;
