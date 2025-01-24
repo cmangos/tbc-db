@@ -442,10 +442,10 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 (@CGUID+76, 1863401),
 (@CGUID+77, 1863402);
 
+DELETE FROM `creature_spawn_data_template` WHERE `Entry` BETWEEN 1863401 AND 1863402;
 INSERT INTO `creature_spawn_data_template` (`Entry`, `StringId`, `Name`) VALUES 
 (1863401, @STRINGID+11, 'Shadow Labyrinth - WrathTarget 01'),
 (1863402, @STRINGID+12, 'Shadow Labyrinth - WrathTarget 02');
-
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+37, 0, 1, 1, 0, 0, ''), -- spawn_group_entry
@@ -1754,7 +1754,7 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@WORLDSTATEID+19, 'Shadow Labyrinth - Group 055 - Cabal Assasin'),
 (@WORLDSTATEID+20, 'Shadow Labyrinth - Group 056 - Cabal Assasin');
 
-DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @CONDITIONID+1 AND @CONDITIONID+33;
+DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @CONDITIONID+1 AND @CONDITIONID+35;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@CONDITIONID+1, 42, @WORLDSTATEID+1, 1, 0, 0, 0, 'Shadow Labyrinth - Group 001 -  Type 1'),
 (@CONDITIONID+2, 42, @WORLDSTATEID+1, 1, 1, 0, 0, 'Shadow Labyrinth - Group 001 -  Type 2'),

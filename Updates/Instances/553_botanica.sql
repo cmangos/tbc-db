@@ -473,7 +473,7 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- StringIDs
 -- ======
 
-DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+9;
+DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+19;
 INSERT INTO `string_id` (Id, Name) VALUES 
 (@STRINGID+1, 'BLOODWARDER_PROTECTOR_GROUP_01'),
 (@STRINGID+2, 'BLOODWARDER_PROTECTOR_GROUP_02'),
