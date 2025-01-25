@@ -1375,6 +1375,11 @@ INSERT INTO npc_text_broadcast_text(Id,Prob0,BroadcastTextId0) VALUES
 (8492,1,12215);
 
 UPDATE creature_template SET GossipMenuId=7172 WHERE entry IN(16252);
+-- Table `npc_text_broadcast_text` has record in `npc_text` (ID 8447) as well. Overwriting.
+-- Table `npc_text_broadcast_text` has record in `npc_text` (ID 8492) as well. Overwriting.
+DELETE FROM npc_gossip WHERE `npc_guid` = 81735;
+DELETE FROM npc_text WHERE `id` = 8447;
+DELETE FROM npc_text WHERE `id` = 8492;
 
 DELETE FROM gossip_menu WHERE entry IN(7436);
 INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
@@ -1384,6 +1389,8 @@ DELETE FROM npc_text_broadcast_text WHERE Id IN(9005);
 INSERT INTO npc_text_broadcast_text(Id,Prob0,BroadcastTextId0) VALUES
 (9005,1,14189);
 UPDATE creature_template SET GossipMenuId=7436 WHERE entry IN(16268);
+-- Table `npc_text_broadcast_text` has record in `npc_text` (ID 9005) as well. Overwriting.
+DELETE FROM npc_text WHERE `id` = 9005;
 
 DELETE FROM gossip_menu WHERE entry IN(7287);
 INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
@@ -1393,6 +1400,10 @@ DELETE FROM npc_text_broadcast_text WHERE Id IN(8617);
 INSERT INTO npc_text_broadcast_text(Id,Prob0,BroadcastTextId0) VALUES
 (8617,1,12526);
 UPDATE creature_template SET GossipMenuId=7287 WHERE entry IN(16528);
+
+-- Table `npc_text_broadcast_text` has record in `npc_text` (ID 8617) as well. Overwriting.
+DELETE FROM npc_gossip WHERE `npc_guid` = 81715;
+DELETE FROM npc_text WHERE `id` = 8617;
 
 INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
 (7171,8445,0,302); -- belf only
