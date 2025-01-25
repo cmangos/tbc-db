@@ -166,10 +166,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (885604, 5000, 0, 23, 8856, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Tyrion\'s Spybot - Update Entry to Tyrion\'s Spybot'),
 (885604, 6000, 0, 15, 11013, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Attack: Tyrion\'s Spybot - Cast Spell Sneak');
 
-
--- On Retail Tyrion only has the QuestGiver flag when the Spybot is staying next to him
-UPDATE creature_template SET NpcFlags = 1 WHERE entry = 7766;
-
 -- Remove emotes from quest
 UPDATE quest_template SET CompleteEmote = 0, OfferRewardEmote1 = 0, OfferRewardEmote2 = 0, OfferRewardEmote3 = 0 WHERE entry = 434;
 
