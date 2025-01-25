@@ -84,7 +84,7 @@ UPDATE gameobject_template SET data8=3602 WHERE entry IN (152620, 152621, 152622
 -- Link Crate with Holes, Snufflenose Command Stick and Snufflenose Owner's Manual GOs to quest 1221 so they are usable by players on the quest
 UPDATE gameobject_template SET data8=1221 WHERE entry IN (68865, 21530, 21277);
 
--- Thaurissan Relic - original tbc-db value 0, classic-db (and classic sniff) value 3702 - the quest which involves actually using this object is 3701
+-- Thaurissan Relic classic-db (and classic sniff) value 3702 - the quest which involves actually using this object is 3701
 UPDATE gameobject_template SET data1=3701 WHERE entry=153556;
 
 -- Make object 181444 (Kel'Thuzad Trigger) despawnable on usage
@@ -114,14 +114,14 @@ UPDATE gameobject_template SET `data3`=0, `data5`=1 WHERE entry=102413;
 -- Temporary fix data6 for GO 178559 (Larva Spewer) in prevision of coming core update
 UPDATE gameobject_template SET data6=0 WHERE entry=178559;
 
--- Drek'Thar's Scrolls 179004 - seemingly never used
-UPDATE gameobject_template SET data1=0 WHERE entry=179004;
-
 -- Inconspicuous Landmark 142189 - consumable, despawn on s.11462 expire
 UPDATE `gameobject_template` SET `data5` = 1 WHERE `entry` = 142189; -- 19660800 / 65536 = 300sec
 
 -- hack - this bypasses despawn prevention due to GO casting a hidden 6 second spell the GO should cast - note will be put down even in core
 UPDATE gameobject_template SET data3=65536*6 WHERE entry IN(180619);
+
+-- Plague Fissure: use wotlk sniff data for Eruption s.29371 spell dmg - might require go script for classic and tbc
+UPDATE gameobject_template SET `data3` = 29371 WHERE entry IN (181510,181511,181512,181513,181514,181515,181516,181517,181518,181519,181520,181521,181522,181523,181524,181525,181526,181527,181528,181529,181530,181531,181532,181533,181534,181535,181536,181537,181538,181539,181540,181541,181542,181543,181544,181545,181546,181547,181548,181549,181550,181551,181552,181676,181677,181678,181695);
 
 -- -------------------------------
 -- Item custom changes
