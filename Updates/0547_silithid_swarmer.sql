@@ -22,6 +22,6 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 -- 09:09:03.393
 DELETE FROM `creature_spell_list` WHERE `Id` IN (325201);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(325201, 2, 6589, 0, -1, 2, 0, 100, 0, 0, 8000, 0, 8000, 'Silithid Swarmer - Silithid Swarm - self');
+(325201, 1, 6589, 0, -1, 2, 0, 100, 0, 0, 8000, 0, 8000, 'Silithid Swarmer - Silithid Swarm - self');
 
 UPDATE `creature_template` SET `SpellList` = 325201 WHERE `entry` = 3252;
