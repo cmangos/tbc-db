@@ -1,6 +1,9 @@
 -- GUID: Full: 0x20520C0000028CC00000550000380CDB Creature/0 R5251/S85 Map: 0 (Eastern Kingdoms) Entry: 2611 (Fozruk) Low: 3673307 PathType: ExactPath
 SET @MOVID := 2611;
 UPDATE creature SET position_x=-794.44659423828125,position_y=-3187.984375,position_z=82.0687255859375,Orientation=1.691089868545532226 WHERE Id IN(@MOVID);
+UPDATE creature SET position_x=-791.44659423828125,position_y=-3184.984375,position_z=82.0687255859375,orientation=2.263196229934692382 WHERE Id IN(4063);
+UPDATE creature SET position_x=-793.44659423828125,position_y=-3186.984375,position_z=82.0687255859375,orientation=4.853379726409912109 WHERE Id IN(2764);
+UPDATE creature SET position_x=-792.44659423828125,position_y=-3185.984375,position_z=82.0687255859375,orientation=5.623077869415283203 WHERE Id IN(2765);
 DELETE FROM creature_movement_template WHERE Entry=@MOVID;
 INSERT INTO creature_movement_template (Entry, PathId, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
 (@MOVID + 0, 0, '1', '-794.5307', '-3187.2886', '82.01707', '100', '0', '0', NULL),
