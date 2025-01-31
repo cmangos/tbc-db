@@ -17,7 +17,8 @@ INSERT INTO creature_addon (guid, mount, stand_state, sheath_state, emote, movef
 (84507, 0, 0, 1, 0, 0, NULL);
 DELETE FROM dbscripts_on_relay WHERE id=10216;
 INSERT INTO dbscripts_on_relay (id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
-(10216, 0, 0, 15, 34432, 0, 0, 19677, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Consortium Engineer - Cast Ribbon of Souls'),
+(10216, 1, 0, 31, 19677, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Consortium Engineer - search for buddy'),
+(10216, 100, 0, 15, 34432, 0, 0, 19677, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Consortium Engineer - Cast Ribbon of Souls'),
 (10216, 10000, 0, 45, 10216, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Consortium Engineer - Start Relay Script'); -- creates loop intentionally
 -- add missing Consortium Spell Marker
 UPDATE creature_template SET InhabitType=4 WHERE Entry=19677; -- always flying
