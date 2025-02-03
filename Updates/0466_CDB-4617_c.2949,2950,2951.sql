@@ -103,9 +103,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (19026,'Mulgore - Ghost Howl (3056)', 0, 1, 0, 0);
 DELETE FROM `spawn_group_spawn` WHERE id = 19026;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(19026, 51845, 0),
-(19026, 51854, 1),
-(19026, 1007218, 2);
+(19026, 51845, -1),
+(19026, 51854, -1),
+(19026, 1007218, -1);
 DELETE FROM `creature_loot_template` WHERE `entry` = 3056 AND `item` = 4854; -- NPC LOOT (Rare NPC Loot) - Ghost Howl - Special Items
 -- Arra'chea 3058 - https://www.wowhead.com/classic/npc=3058/arrachea
 UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (8 / 7) WHERE `entry` = 3058;
@@ -145,9 +145,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (19027,'Mulgore - Sister Hatelash (5785)', 0, 1, 0, 0);
 DELETE FROM `spawn_group_spawn` WHERE id = 19027;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(19027, 26055, 0),
-(19027, 26051, 1),
-(19027, 26052, 2);
+(19027, 26055, -1),
+(19027, 26051, -1),
+(19027, 26052, -1);
 -- https://web.archive.org/web/20060718112010/http://wow.allakhazam.com/db/mob.html?wmob=5785
 DELETE FROM `reference_loot_template_names` WHERE `entry` = 65003 AND `name` LIKE '%Sister%';
 INSERT INTO `reference_loot_template_names` (`entry`, `name`) VALUES (65003, 'NPC LOOT (Rare NPC Loot) - Sister Hatelash - Special Items');
@@ -199,7 +199,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (19028,'Mulgore - The Rake (5807)', 0, 1, 0, 0);
 DELETE FROM `spawn_group_spawn` WHERE id = 19028;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(19028, 26611, 0);
+(19028, 26611, -1);
 -- Chief Sharptusk Thornmantle 8554 - https://www.wowhead.com/classic/npc=8554/chief-sharptusk-thornmantle - https://web.archive.org/web/20060619091134/http://wow.allakhazam.com/db/mob.html?wmob=8554
 UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (6 / 7) WHERE `entry` = 8554;
 UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 25 WHERE `entry` = 8554 AND `item` = 60000; -- NPC LOOT (Grey World Drop) - (Item Levels: 1-5) - (NPC Levels: 1-5)

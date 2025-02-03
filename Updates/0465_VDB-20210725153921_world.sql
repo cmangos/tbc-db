@@ -504,15 +504,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (43323, 14477, 1, 1, -7638.15, 1314.82, 2.18643, 0, 28800, 36000, 50, 1),
 (43422, 14477, 1, 1, -7523.97, 844.59, -2.88, 0, 28800, 36000, 50, 1);
 
-DELETE FROM `spawn_group` WHERE id = 19026;
+DELETE FROM `spawn_group` WHERE id = 19893;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(19026,'Silithus - Grubthor (14477)', 0, 1, 0, 0);
-DELETE FROM `spawn_group_spawn` WHERE id = 19026;
+(19893,'Silithus - Grubthor (14477)', 0, 1, 0, 0); -- Removed by mistake? also in TDB, overwritten in 0466
+DELETE FROM `spawn_group_spawn` WHERE id = 19893;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(19026, 43124, 0),
-(19026, 43280, 1),
-(19026, 43323, 2),
-(19026, 43422, 3);
+(19893, 43124, 0),
+(19893, 43280, 1),
+(19893, 43323, 2),
+(19893, 43422, 3);
 
 -- 14506, -- Lord Hel'nurath 62	62	2 - loot!
 -- UPDATE `creature_loot_template` SET `groupid` = 1 WHERE `entry` = 14506 AND `item` IN (18754,18755,18756,18757);
