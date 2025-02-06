@@ -907,15 +907,15 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+223, 1, 2915.91, 4496.36, 128.121, 100, 0, 0),
 (@CGUID+223, 2, 2895.1006,4429.939,116.29245, 100, 1000, 1887902),
 -- Sunfury Captain
-(@CGUID+237, 1, 2934.5164,4110.883,162.59389, 100, 0, 0),
-(@CGUID+237, 2, 2940.6106,4096.285,162.59383, 100, 0, 0),
-(@CGUID+237, 3, 2944.3489,4088.1736,160.377, 100, 0, 0),
-(@CGUID+237, 4, 2949.8572,4073.6836,157.7197, 100, 0, 0),
-(@CGUID+237, 5, 2957.3389,4060.2822,154.83763, 100, 0, 0),
-(@CGUID+237, 6, 2966.5818,4050.1016,152.47238, 100, 0, 0),
-(@CGUID+237, 7, 2975.9714,4039.9531,149.57062, 100, 0, 0),
-(@CGUID+237, 8, 2977.3284,4028.8186,147.57791, 100, 0, 0),
-(@CGUID+237, 9, 2979.0667,4019.794,146.80963, 100, 0, 0);
+(@CGUID+237, 1, 2934.5164,4110.883,162.59389, 100, 100, 1945301),
+(@CGUID+237, 2, 2940.6106,4096.285,162.59383, 100, 100, 1945301),
+(@CGUID+237, 3, 2944.3489,4088.1736,160.377, 100, 100, 1945301),
+(@CGUID+237, 4, 2949.8572,4073.6836,157.7197, 100, 100, 1945301),
+(@CGUID+237, 5, 2957.3389,4060.2822,154.83763, 100, 100, 1945301),
+(@CGUID+237, 6, 2966.5818,4050.1016,152.47238, 100, 100, 1945301),
+(@CGUID+237, 7, 2975.9714,4039.9531,149.57062, 100, 100, 1945301),
+(@CGUID+237, 8, 2977.3284,4028.8186,147.57791, 100, 100, 1945301),
+(@CGUID+237, 9, 2979.0667,4019.794,146.80963, 100, 100, 1945301);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569, 19635);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -1351,7 +1351,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 -- Scripts
 SET @RELAYID := 18000;
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+4;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+5;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Netherologist Coppernickels different text's
 (@RELAYID+1, 0, 16949, 0, 'Netherstorm - Nether Technician - Say 1'), 
@@ -1371,7 +1371,10 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+3, 1, @RELAYID+10, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Kneel (8)'),
 -- Captain Arathyn 15 chance to start RP
 (@RELAYID+4, 1, @RELAYID+12, 15, 'Netherstorm - Captain Arathyn - RP'),
-(@RELAYID+4, 1, 0, 85, 'Netherstorm - Captain Arathyn - Nothing');
+(@RELAYID+4, 1, 0, 85, 'Netherstorm - Captain Arathyn - Nothing'),
+-- Sunfury Captain RP - they use the same Rp as Captain Arathyn but with a higher chance
+(@RELAYID+5, 1, @RELAYID+12, 20, 'Netherstorm - Sunfury Captain - RP'),
+(@RELAYID+5, 1, 0, 80, 'Netherstorm - Sunfury Captain - Nothing');
 
 
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+12;
@@ -1410,7 +1413,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+12, 12000, 1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - start waypoint'); 
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 2020301);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 2020301);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Phase Hunter
 -- Flags: 33587968
@@ -1426,6 +1429,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1887903, 0, 1, 20, 1, 10, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Phase Hunter - Set RandomMovement around Point'), 
 -- Mana Snapper
 (1888301, 0, 1, 20, 1, 20, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Mana Snapper - Set RandomMovement around Point'), 
+-- Sunfury Captain
+(1945301, 0, 0, 45, 0, @RELAYID+5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Captain - RandomRP'),
 -- Netherologist Coppernickels
 -- Timer for how long he stays depens on how long he uses emote "STATE_USESTANDING_NOSHEATHE" this can vary between 15 and 30 seconds
 -- using hardcoded 25 seconds for now.
@@ -1444,7 +1449,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1963502, 0, 0, 24, 18697, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Set Mount'), 
 (1963502, 3000, 0, 20, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Change Movemen to Path 1'),
 -- Captain Arathyn 15% chance to start a RP with Sunfury Bloodwarder
-(1963503, 0, 0, 45, 0, @RELAYID+4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote Talk');
+(1963503, 0, 0, 45, 0, @RELAYID+4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - RandomRP');
 
 DELETE FROM dbscripts_on_spell WHERE id IN (34814);
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
