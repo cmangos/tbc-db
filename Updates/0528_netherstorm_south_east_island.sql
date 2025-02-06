@@ -27,7 +27,7 @@ DELETE FROM creature WHERE id IN (18885, 19852,  19853, 20215, 21077);
 -- Sunfury Bloodwarder, Captain Arathyn
 DELETE FROM creature WHERE id IN (18853, 19635);
 
-DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+224;
+DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+230;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
 (@CGUID+1, 20203, 530, 1, 3380.88, 4359.49, 123.702, 4.67748, 300, 300, 0, 0),
@@ -308,15 +308,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+228, 18853, 530, 1, 3023.85, 3944.71, 154.933, 6.10865, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67313
 (@CGUID+229, 18853, 530, 1, 3017.69, 3962.3, 156.185, 5.93412, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67312
 
-(@CGUID+230, 19635, 530, 1, 3032.15, 3960.44, 155.42, 4.2237, 120, 120, 0, 0); -- Captain Arathyn guid before 70059
+(@CGUID+230, 19635, 530, 1, 3032.15, 3960.44, 155.42, 4.2237, 120, 120, 0, 2); -- Captain Arathyn guid before 70059
 
-DELETE FROM creature_addon WHERE guid IN (67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
+DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
  
 DELETE FROM creature_addon WHERE guid IN (@CGUID+75, @CGUID+76, @CGUID+77);
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+75, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
 (@CGUID+76, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
 (@CGUID+77, 0, 8, 0, 0, 0, NULL); -- Disembodied Protector
+
+-- Captain Arathyn doesnt have mount on spawn, he gets it after intro
+DELETE FROM creature_template_addon WHERE entry = 19635;
 
 -- Waypoints
 DELETE FROM creature_movement WHERE id IN (67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708);
@@ -894,7 +897,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+223, 1, 2915.91, 4496.36, 128.121, 100, 0, 0),
 (@CGUID+223, 2, 2895.1006,4429.939,116.29245, 100, 1000, 1887902);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (19569);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (19569, 19635);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Netherologist Coppernickels patroling around the bridge
 (19569, 0, 1, 3392.6218, 4267.4937, 122.6924, 0.122173, 35000, 1956901), 
@@ -918,7 +921,17 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (19569, 0, 19, 3379.7979,4302.0923,120.30205, 100, 0, 0),
 (19569, 0, 20, 3381.026,4289.326,120.66898, 100, 0, 0),
 (19569, 0, 21, 3384.844,4272.874,122.67322, 100, 0, 0),
-(19569, 0, 22, 3389.8567,4267.7715,122.70082,100, 0, 0);
+(19569, 0, 22, 3389.8567,4267.7715,122.70082,100, 0, 0),
+-- Captain Arathyn intro Waypoints
+(19635, 0, 1, 3032.15, 3960.44, 155.42, 100, 0, 0),
+(19635, 0, 2, 3025.1475,3954.79,155.17096, 100, 10000, 1963501),
+(19635, 0, 3, 3021.1926,3971.568,156.8732, 100, 3000, 1963502),
+-- Captain Arathyn Waypoints after intro
+(19635, 1, 1, 3019.1038,3974.2063,157.06041, 100, 100, 0),
+(19635, 1, 2, 3024.375,3966.2192,156.24219, 100, 100, 1963503),
+(19635, 1, 3, 3022.0776,3955.9973,155.37415, 100, 100, 1963503),
+(19635, 1, 4, 3033.6973,3945.7258,154.78703, 100, 100, 1963503);
+
 -- SpawnData
 DELETE FROM creature_spawn_data WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 DELETE FROM creature_spawn_data WHERE guid BETWEEN @CGUID+1 AND @CGUID+204;
@@ -1318,7 +1331,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 -- Scripts
 SET @RELAYID := 18000;
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+3;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+4;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Netherologist Coppernickels different text's
 (@RELAYID+1, 0, 16949, 0, 'Netherstorm - Nether Technician - Say 1'), 
@@ -1335,10 +1348,13 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+3, 1, @RELAYID+7, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Stand (0)'), 
 (@RELAYID+3, 1, @RELAYID+8, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Sit (1)'),
 (@RELAYID+3, 1, @RELAYID+9, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Sleep (3)'), 
-(@RELAYID+3, 1, @RELAYID+10, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Kneel (8)');
+(@RELAYID+3, 1, @RELAYID+10, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Kneel (8)'),
+-- Captain Arathyn 15 chance to start RP
+(@RELAYID+4, 1, @RELAYID+12, 15, 'Netherstorm - Captain Arathyn - RP'),
+(@RELAYID+4, 1, 0, 85, 'Netherstorm - Captain Arathyn - Nothing');
 
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+11;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+12;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Nether Technician script via ACID - CGUID+4
 (@RELAYID+1, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1911, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
@@ -1358,10 +1374,23 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- Disembodied Exarch randomly stops waypoint, kneels for 4 seconds and resume path
 (@RELAYID+11, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Exarch - Stop Waypoints'),
 (@RELAYID+11, 0, 1, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Exarch - Emote Kneel'),
-(@RELAYID+11, 3000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Exarch - Unpause Waypoints');
+(@RELAYID+11, 3000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Exarch - Unpause Waypoints'),
+-- Captain Arathyn RP with Sunfury Bloodwarder
+(@RELAYID+12, 0, 0, 31, 18853, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Terminate Script if no Bloodwarder found'), 
+(@RELAYID+12, 1, 1, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - stop waypoint'), 
+(@RELAYID+12, 1, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - set Active object'), 
+(@RELAYID+12, 1, 3, 37, 0, 0, 2, 18853, 15, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - move to Bloodwarder'), 
+(@RELAYID+12, 2000, 0, 36, 0, 0, 0, 18853, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - facing to Captain Arathyn'), 
+(@RELAYID+12, 2000, 1, 1, 66, 0, 0, 18853, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - Emote OneShotSalute'), 
+(@RELAYID+12, 4000, 1, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote OneShotSalute'), -- 11:04:56.139
+(@RELAYID+12, 5000, 1, 1, 1, 0, 0, 18853, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - Emote OneShotTalk'), 
+(@RELAYID+12, 7000, 1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote OneShotExclamation'), -- 11:04:59.383
+(@RELAYID+12, 11000, 0, 36, 1, 0, 0, 18853, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - reset facing'), 
+(@RELAYID+12, 12000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - remove Active object'), 
+(@RELAYID+12, 12000, 1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - start waypoint'); 
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1956901, 1956902, 1956903, 1956904, 2020301);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 2020301);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Phase Hunter
 -- Flags: 33587968
@@ -1383,17 +1412,26 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1956901, 5000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Netherologist Coppernickels - Emote UseStanding'), 
 (1956901, 30000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Netherologist Coppernickels - Emote None'), 
 (1956901, 32000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Netherologist Coppernickels - Emote OneShotExclamation'), 
-(1956901, 32000, 1, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Netherologist Coppernickels - random text');
+(1956901, 32000, 1, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Netherologist Coppernickels - random text'),
+-- Captain Arathyn intro 3 texts
+(1963501, 1000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote Talk'), 
+(1963501, 1000, 1, 0, 0, 0, 0, 0, 0, 0, 17179, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Say Text'), 
+(1963501, 4000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote Talk'), 
+(1963501, 4000, 1, 0, 0, 0, 0, 0, 0, 0, 17180, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Say Text'), 
+(1963501, 7000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote Talk'), 
+(1963501, 7000, 1, 0, 0, 0, 0, 0, 0, 0, 17181, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Say Text'), 
+-- Captain Arathyn mount up
+(1963502, 0, 0, 24, 18697, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Set Mount'), 
+(1963502, 3000, 0, 20, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Change Movemen to Path 1'),
+-- Captain Arathyn 15% chance to start a RP with Sunfury Bloodwarder
+(1963503, 0, 0, 45, 0, @RELAYID+4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote Talk');
 
 DELETE FROM dbscripts_on_spell WHERE id IN (34814);
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Spell get used on a 7-10 minute OOC Timer by Phase Hunter and should despawn creature.
 (34814, 1000, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'De-Materializ - Despawn Caster'); 
 
-
-
 -- Movement Corrections
-
 -- Disembodied Exarch
 -- WalkSpeed: 2.5 
 -- RunSpeed: 8
