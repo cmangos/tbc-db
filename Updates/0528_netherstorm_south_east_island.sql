@@ -22,7 +22,12 @@ DELETE FROM creature WHERE guid IN (67423, 67424, 67425, 67426, 67427, 67428, 67
 -- Delete all Fellade Doomguard spawns
 -- Delete Pentatharon spawn
 DELETE FROM creature WHERE id IN (18885, 19852,  19853, 20215, 21077);
-DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+223;
+
+-- Manaforge B'naar npcs
+-- Sunfury Bloodwarder, Captain Arathyn
+DELETE FROM creature WHERE id IN (18853, 19635);
+
+DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+224;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
 (@CGUID+1, 20203, 530, 1, 3380.88, 4359.49, 123.702, 4.67748, 300, 300, 0, 0),
@@ -293,7 +298,17 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+222, 18879, 530, 1, 2958.25, 4469.85, 125.933, 4.58997, 120, 180, 0, 2), -- Phase Hunter guid before 67609
 (@CGUID+223, 18879, 530, 1, 2915.91, 4496.36, 128.121, 4.72475, 120, 180, 0, 2), -- Phase Hunter guid before 67608
 
-(@CGUID+224, 20210, 530, 1, 3335.08, 4048.89, 159.755, 0.448308, 360, 420, 4, 1); -- Shaleskin Flayer guid before 71871
+(@CGUID+224, 20210, 530, 1, 3335.08, 4048.89, 159.755, 0.448308, 360, 420, 4, 1), -- Shaleskin Flayer guid before 71871
+
+-- Manaforge B'naar
+(@CGUID+225, 18853, 530, 1, 3038.28, 3916.57, 147.058, 5.51524, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67309
+(@CGUID+226, 18853, 530, 1, 3054.48, 3920.3, 147.177, 4.46804, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67311
+
+(@CGUID+227, 18853, 530, 1, 3046.59, 3943.96, 156.478, 4.67748, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67310
+(@CGUID+228, 18853, 530, 1, 3023.85, 3944.71, 154.933, 6.10865, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67313
+(@CGUID+229, 18853, 530, 1, 3017.69, 3962.3, 156.185, 5.93412, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67312
+
+(@CGUID+230, 19635, 530, 1, 3032.15, 3960.44, 155.42, 4.2237, 120, 120, 0, 0); -- Captain Arathyn guid before 70059
 
 DELETE FROM creature_addon WHERE guid IN (67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
  
