@@ -164,5 +164,32 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1945301, 2, 32064, 0, -1, 2, 0, 100, 0, 6000, 14000, 14000, 28000, 'Sunfury Captain - Battle Shout - self'),
 (1945301, 3, 35871, 0, -1, 1, 0, 100, 0, 4000, 12000, 15000, 25000, 'Sunfury Captain - SpellBreaker - current');
 
-
 UPDATE `creature_template` SET `SpellList` = 1945301 WHERE `entry` = 19453;
+
+
+-- Sunfury Astromancer
+DELETE FROM `creature_template_spells` WHERE `entry` = 19643;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1964301;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1964301, 'Netherstorm - Sunfury Astromancer', 0, 70);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1964301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1964301, 1, 35914, 0, -1, 1, 0, 100, 0, 12000, 20000, 16000, 24000, 'Sunfury Astromancer - Astral Focus - current'),
+(1964301, 2, 38391, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Sunfury Astromancer - Scorch - current');
+
+UPDATE `creature_template` SET `SpellList` = 1964301 WHERE `entry` = 19643;
+
+-- Sunfury Magister
+DELETE FROM `creature_template_spells` WHERE `entry` = 18855;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1885501;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1885501, 'Netherstorm - Sunfury Magister', 0, 70);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1885501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1885501, 2, 9053, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Sunfury Magister - Fireball - current');
+
+UPDATE `creature_template` SET `SpellList` = 1885501 WHERE `entry` = 18855;
