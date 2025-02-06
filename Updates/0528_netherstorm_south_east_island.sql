@@ -24,8 +24,8 @@ DELETE FROM creature WHERE guid IN (67423, 67424, 67425, 67426, 67427, 67428, 67
 DELETE FROM creature WHERE id IN (18885, 19852,  19853, 20215, 21077);
 
 -- Manaforge B'naar npcs
--- Sunfury Bloodwarder, Captain Arathyn
--- DELETE FROM creature WHERE id IN (18853, 19635);
+-- Sunfury Bloodwarder, Captain Arathyn, Sunfury Captain, Sunfury Magister, Sunfury Astromancer
+-- DELETE FROM creature WHERE id IN (18853, 19635, 19453, 18855, 19643);
 
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+230;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -319,7 +319,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+235, 18853, 530, 1, 2937.89, 4088.52, 161.097, 5.58505, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67319
 (@CGUID+236, 18853, 530, 1, 2948.82, 4092.75, 160.55, 4.7473, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67318
 
-(@CGUID+237, 19453, 530, 1, 2934.37, 4111.43, 162.682, 4.97978, 330, 420, 0, 2), -- Sunfury Captain guid before 69669
+(@CGUID+237, 19453, 530, 1, 2934.37, 4111.43, 162.682, 4.97978, 360, 480, 0, 4), -- Sunfury Captain guid before 69669
+
+(@CGUID+238, 18855, 530, 1, 2978.48, 4085.93, 150.241, 0.279253, 300, 420, 0, 2), -- Sunfury Magister guid before 67354
+(@CGUID+239, 18855, 530, 1, 2984.35, 4098.23, 150.186, 5.00909, 300, 420, 0, 2), -- Sunfury Magister guid before 67356
+(@CGUID+240, 18855, 530, 1, 3014.67, 4103.79, 150.632, 4.67748, 300, 420, 0, 2), -- Sunfury Magister guid before 67355
+(@CGUID+241, 18855, 530, 1, 3021.76, 4092.47, 150.303, 4.10152, 300, 420, 0, 2), -- Sunfury Magister guid before 67353
+(@CGUID+242, 18855, 530, 1, 3034.89, 4090.47, 150.703, 2.84489, 300, 420, 0, 2), -- Sunfury Magister guid before 67351
+(@CGUID+243, 18855, 530, 1, 3027.89, 4076.43, 150.291, 3.14159, 300, 420, 0, 2), -- Sunfury Magister guid before 67352
+(@CGUID+244, 18855, 530, 1, 3036.04, 4063.57, 150.998, 1.93732, 300, 420, 0, 2), -- Sunfury Magister guid before 67350
+(@CGUID+245, 18855, 530, 1, 3015.23, 4061.71, 150.21, 2.0944, 300, 420, 0, 2), -- Sunfury Magister guid before 67349
+
+(@CGUID+246, 19643, 530, 1, 3002.18, 4103.35, 150.696, 5.89873, 360, 480, 0, 2); -- Sunfury Astromancer guid before 70069
 
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
  
@@ -333,7 +344,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 DELETE FROM creature_template_addon WHERE entry = 19635;
 
 -- Waypoints
-DELETE FROM creature_movement WHERE id IN (67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 69669, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708);
+DELETE FROM creature_movement WHERE id IN (67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 69669, 70069, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708);
 DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+223;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
@@ -915,7 +926,18 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+237, 6, 2966.5818,4050.1016,152.47238, 100, 100, 1945301),
 (@CGUID+237, 7, 2975.9714,4039.9531,149.57062, 100, 100, 1945301),
 (@CGUID+237, 8, 2977.3284,4028.8186,147.57791, 100, 100, 1945301),
-(@CGUID+237, 9, 2979.0667,4019.794,146.80963, 100, 100, 1945301);
+(@CGUID+237, 9, 2979.0667,4019.794,146.80963, 100, 100, 1945301),
+-- Sunfury Astromancer
+(@CGUID+246, 1, 3002.4746,4103.1904,150.60739, 100, 0, 0),
+(@CGUID+246, 2, 3012.2603,4099.2817,150.32962, 100, 0, 0),
+(@CGUID+246, 3, 3018.3914,4091.1106,150.13162, 100, 0, 0),
+(@CGUID+246, 4, 3022.2815,4077.8542,150.11853, 100, 0, 0),
+(@CGUID+246, 5, 3013.7163,4067.5378,150.01633, 100, 0, 0),
+(@CGUID+246, 6, 3005.347,4064.1946,149.95128, 100, 0, 0),
+(@CGUID+246, 7, 2987.4768,4064.9292,149.99225, 100, 0, 0),
+(@CGUID+246, 8, 2980.4868,4084.391,150.1267, 100, 0, 0),
+(@CGUID+246, 9, 2986.1475,4096.4175,150.10222, 100, 0, 0);
+
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569, 19635);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
