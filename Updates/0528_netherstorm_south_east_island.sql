@@ -25,7 +25,7 @@ DELETE FROM creature WHERE id IN (18885, 19852,  19853, 20215, 21077);
 
 -- Manaforge B'naar npcs
 -- Sunfury Bloodwarder, Captain Arathyn
-DELETE FROM creature WHERE id IN (18853, 19635);
+-- DELETE FROM creature WHERE id IN (18853, 19635);
 
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+230;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -308,7 +308,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+228, 18853, 530, 1, 3023.85, 3944.71, 154.933, 6.10865, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67313
 (@CGUID+229, 18853, 530, 1, 3017.69, 3962.3, 156.185, 5.93412, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67312
 
-(@CGUID+230, 19635, 530, 1, 3032.15, 3960.44, 155.42, 4.2237, 120, 120, 0, 2); -- Captain Arathyn guid before 70059
+(@CGUID+230, 19635, 530, 1, 3032.15, 3960.44, 155.42, 4.2237, 120, 120, 0, 2), -- Captain Arathyn guid before 70059
+
+(@CGUID+231, 18853, 530, 1, 2984.13, 4030.86, 148.562, 4.24115, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67314
+
+(@CGUID+232, 18853, 530, 1, 2967.75, 4040.7, 151.198, 5.75959, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67316
+(@CGUID+233, 18853, 530, 1, 2975.52, 4048.32, 151.357, 5.5676, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67315
+
+(@CGUID+234, 18853, 530, 1, 2946.24, 4072.66, 158.277, 5.63741, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67317
+(@CGUID+235, 18853, 530, 1, 2937.89, 4088.52, 161.097, 5.58505, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67319
+(@CGUID+236, 18853, 530, 1, 2948.82, 4092.75, 160.55, 4.7473, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67318
+
+(@CGUID+237, 19453, 530, 1, 2934.37, 4111.43, 162.682, 4.97978, 330, 420, 0, 2), -- Sunfury Captain guid before 69669
 
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
  
@@ -322,7 +333,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 DELETE FROM creature_template_addon WHERE entry = 19635;
 
 -- Waypoints
-DELETE FROM creature_movement WHERE id IN (67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708);
+DELETE FROM creature_movement WHERE id IN (67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 69669, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708);
 DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+223;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
@@ -889,13 +900,22 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 -- Phase Hunter
 (@CGUID+221, 1, 3018.82, 4426.31, 139.441, 100, 0, 0),
 (@CGUID+221, 2, 3034.3025,4331.9907,133.1419, 100, 1000, 1887902),
-
 -- Phase Hunter
 (@CGUID+222, 1, 2958.25, 4469.85, 125.933, 100, 0, 0),
 (@CGUID+222, 2, 2956.6296,4422.0146,111.4834, 100, 1000, 1887902),
 -- Phase Hunter
 (@CGUID+223, 1, 2915.91, 4496.36, 128.121, 100, 0, 0),
-(@CGUID+223, 2, 2895.1006,4429.939,116.29245, 100, 1000, 1887902);
+(@CGUID+223, 2, 2895.1006,4429.939,116.29245, 100, 1000, 1887902),
+-- Sunfury Captain
+(@CGUID+237, 1, 2934.5164,4110.883,162.59389, 100, 0, 0),
+(@CGUID+237, 2, 2940.6106,4096.285,162.59383, 100, 0, 0),
+(@CGUID+237, 3, 2944.3489,4088.1736,160.377, 100, 0, 0),
+(@CGUID+237, 4, 2949.8572,4073.6836,157.7197, 100, 0, 0),
+(@CGUID+237, 5, 2957.3389,4060.2822,154.83763, 100, 0, 0),
+(@CGUID+237, 6, 2966.5818,4050.1016,152.47238, 100, 0, 0),
+(@CGUID+237, 7, 2975.9714,4039.9531,149.57062, 100, 0, 0),
+(@CGUID+237, 8, 2977.3284,4028.8186,147.57791, 100, 0, 0),
+(@CGUID+237, 9, 2979.0667,4019.794,146.80963, 100, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569, 19635);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -1041,7 +1061,7 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 
 -- SpawnGroup
 -- Currently spawngroup is only used to get npcs into dynguid
-DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+27;
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+100;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 (@SGGUID+1, 'Netherstorm - Group 001 - Phase Hunter (15)', 0, 0, 0, 0, 0),
 (@SGGUID+2, 'Netherstorm - Group 002 - Nether Ray (2)', 0, 0, 0, 0, 0),
@@ -1070,7 +1090,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
 (@SGGUID+100, 'Netherstorm - Etherlithium Matrix Crystal', 1, 21, 0, 0, 0);
 
-DELETE FROM spawn_group_entry WHERE Id BETWEEN @SGGUID AND @SGGUID+36;
+DELETE FROM spawn_group_entry WHERE Id BETWEEN @SGGUID AND @SGGUID+100;
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+7, 18872, 0, 0, 0), (@SGGUID+7, 18873, 0, 0, 0); -- Disembodied Vindicator/Disembodied Protector
 
