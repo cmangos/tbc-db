@@ -321,7 +321,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+237, 19453, 530, 1, 2934.37, 4111.43, 162.682, 4.97978, 360, 480, 0, 4), -- Sunfury Captain guid before 69669
 
-(@CGUID+238, 18855, 530, 1, 2978.48, 4085.93, 150.241, 0.279253, 300, 420, 0, 2), -- Sunfury Magister guid before 67354
+(@CGUID+238, 18855, 530, 1, 2978.48, 4085.93, 150.241, 0.279253, 300, 420, 0, 2), -- Sunfury Magister guid before 67354 
 (@CGUID+239, 18855, 530, 1, 2984.35, 4098.23, 150.186, 5.00909, 300, 420, 0, 2), -- Sunfury Magister guid before 67356
 (@CGUID+240, 18855, 530, 1, 3014.67, 4103.79, 150.632, 4.67748, 300, 420, 0, 2), -- Sunfury Magister guid before 67355
 (@CGUID+241, 18855, 530, 1, 3021.76, 4092.47, 150.303, 4.10152, 300, 420, 0, 2), -- Sunfury Magister guid before 67353
@@ -344,7 +344,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 DELETE FROM creature_template_addon WHERE entry = 19635;
 
 -- Waypoints
-DELETE FROM creature_movement WHERE id IN (67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 69669, 70069, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708);
+DELETE FROM creature_movement WHERE id IN (67349, 67350, 67351, 67352, 67353, 67354, 67355, 67356, 67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 69669, 70069, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708);
 DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+223;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
@@ -1399,7 +1399,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+5, 1, 0, 80, 'Netherstorm - Sunfury Captain - Nothing');
 
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+12;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+13;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Nether Technician script via ACID - CGUID+4
 (@RELAYID+1, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1911, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
@@ -1420,7 +1420,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+11, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Exarch - Stop Waypoints'),
 (@RELAYID+11, 0, 1, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Exarch - Emote Kneel'),
 (@RELAYID+11, 3000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Exarch - Unpause Waypoints'),
--- Captain Arathyn RP with Sunfury Bloodwarder
+-- Captain Arathyn/Sunfury Captain RP with Sunfury Bloodwarder
 (@RELAYID+12, 0, 0, 31, 18853, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Terminate Script if no Bloodwarder found'), 
 (@RELAYID+12, 1, 1, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - stop waypoint'), 
 (@RELAYID+12, 1, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - set Active object'), 
@@ -1432,7 +1432,16 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+12, 7000, 1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote OneShotExclamation'), -- 11:04:59.383
 (@RELAYID+12, 11000, 0, 36, 1, 0, 0, 18853, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - reset facing'), 
 (@RELAYID+12, 12000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - remove Active object'), 
-(@RELAYID+12, 12000, 1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - start waypoint'); 
+(@RELAYID+12, 12000, 1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - start waypoint'),
+-- Sunfury Magister RP with Crystal
+(@RELAYID+13, 0, 0, 31, 19421, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Terminate Script if no Netherstorm Crystal Target found'), 
+(@RELAYID+13, 1, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - set Active object'), 
+(@RELAYID+13, 1, 3, 37, 0, 0, 8, 19421, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - move to Netherstorm Crystal Target'), 
+(@RELAYID+13, 5000, 0, 15, 35778, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Cast Bloodcrystal Surge'), 
+(@RELAYID+13, 5000, 1, 15, 33918, 0, 0, 19421, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Cast Crystal Channel'), 
+(@RELAYID+13, 13000, 0, 47, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Stop Channel'), 
+(@RELAYID+13, 14000, 0, 3, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Move to Home Position');
+
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 2020301);
