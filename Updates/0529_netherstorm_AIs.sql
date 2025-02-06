@@ -150,3 +150,19 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1885301, 2, 35877, 0, -1, 130, 0, 100, 0, 10000, 30000, 10000, 30000, 'Sunfury Bloodwarder - Mark of the Sunfury - top aggro aura not present');
 
 UPDATE `creature_template` SET `SpellList` = 1885301 WHERE `entry` = 18853;
+
+-- Sunfury Captain
+DELETE FROM `creature_template_spells` WHERE `entry` = 19453;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1945301;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1945301, 'Netherstorm - Sunfury Captain', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1945301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1945301, 1, 8599, 0, 5364, 0, 0, 100, 0, 0, 0, 1200000, 1200000, 'Sunfury Captain - Enrage - self'),
+(1945301, 2, 32064, 0, -1, 2, 0, 100, 0, 6000, 14000, 14000, 28000, 'Sunfury Captain - Battle Shout - self'),
+(1945301, 3, 35871, 0, -1, 1, 0, 100, 0, 4000, 12000, 15000, 25000, 'Sunfury Captain - SpellBreaker - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1945301 WHERE `entry` = 19453;
