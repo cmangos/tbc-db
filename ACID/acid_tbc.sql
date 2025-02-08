@@ -18734,6 +18734,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Captain Arathyn 19635 - spell_list
 ('1963501','19635','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Captain Arathyn - Despawn Guardians on Evade'),
 ('1963502','19635','4','0','100','0','0','0','0','0','0','0','11','35882','0','1','0','0','0','0','0','0','0','0','Captain Arathyn - Cast Summon Azurebeak on Aggro'),
+('1963503','19635','30','0','100','1','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Captain Arathyn - Set Phase 1 on ReciveEventAIB'),
+('1963504','19635','21','5','100','0','0','0','0','0','0','0','43','0','18697','0','0','0','0','0','0','0','0','0','Captain Arathyn - Set Mount on reached Home (Phase 1)'),
 -- Warp-Raider Nesaad
 ('1964101','19641','0','0','100','1025','8000','12000','17000','21000','0','0','11','35924','0','0','0','0','0','0','0','0','0','0','Warp-Raider Nesaad - Cast Energy Flux'),
 -- Zaxxis Stalker 19642
