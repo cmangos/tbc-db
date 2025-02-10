@@ -25,7 +25,7 @@ DELETE FROM creature WHERE id IN (18885, 19852,  19853, 20215, 21077);
 
 -- Manaforge B'naar npcs
 -- Sunfury Bloodwarder, Captain Arathyn, Sunfury Captain, Sunfury Magister, Sunfury Astromancer
-DELETE FROM creature WHERE id IN (18853, 19635, 19453, 18855, 19643);
+ DELETE FROM creature WHERE id IN (18853, 19635, 19453, 18855, 19643);
 
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+230;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -1484,7 +1484,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1963501, 7000, 1, 0, 0, 0, 0, 0, 0, 0, 17181, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Say Text'), 
 -- Captain Arathyn mount up
 (1963502, 0, 0, 24, 18697, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Set Mount'), 
-(1963502, 0, 0, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - SendAIEventB to self'), 
+(1963502, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - SendAIEventB to self'), 
 (1963502, 3000, 0, 20, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Change Movemen to Path 1');
 
 DELETE FROM dbscripts_on_spell WHERE id IN (34814);
