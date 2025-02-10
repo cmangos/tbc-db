@@ -1418,19 +1418,20 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- Captain Arathyn with Sunfury Bloodwarder
 -- Sunfury Captain with Sunfury Bloodwarder
 -- Base script moving to Sunfury Bloodwarder
-(@RELAYID+12, 0, 0, 31, 18853, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Terminate Script if no Bloodwarder found'), 
-(@RELAYID+12, 1, 1, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - stop waypoint'), 
-(@RELAYID+12, 1, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - set Active object'), 
-(@RELAYID+12, 1, 3, 37, 0, 0, 3, 18853, 15, 1, 0, @RELAYID+13, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - move to Bloodwarder'), 
+(@RELAYID+12, 0, 0, 31, 18853, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - Terminate Script if no Bloodwarder found'), 
+(@RELAYID+12, 1, 1, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - stop waypoint'), 
+(@RELAYID+12, 1, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - set Active object'), 
+(@RELAYID+12, 1, 3, 37, 0, 0, 3, 18853, 15, 9, 0, @RELAYID+13, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - move to Bloodwarder'), 
 -- Script when NPC reached waypoint
-(@RELAYID+13, 1000, 0, 36, 0, 0, 0, 18853, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - facing to Captain Arathyn'), 
-(@RELAYID+13, 1000, 1, 1, 66, 0, 0, 18853, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - Emote OneShotSalute'), 
-(@RELAYID+13, 3000, 1, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote OneShotSalute'),
-(@RELAYID+13, 4000, 1, 1, 1, 0, 0, 18853, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - Emote OneShotTalk'), 
-(@RELAYID+13, 6000, 1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote OneShotExclamation'),
-(@RELAYID+13, 10000, 0, 36, 1, 0, 0, 18853, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - reset facing'), 
-(@RELAYID+13, 11000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - remove Active object'), 
-(@RELAYID+13, 11000, 1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - start waypoint'),
+(@RELAYID+13, 1000, 0, 36, 0, 0, 0, 18853, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - facing to Captain Arathyn'), 
+(@RELAYID+13, 1000, 1, 36, 0, 0, 0, 18853, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - face Bloodwarder'), 
+(@RELAYID+13, 1000, 2, 1, 66, 0, 0, 18853, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - Emote OneShotSalute'), 
+(@RELAYID+13, 3000, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - Emote OneShotSalute'),
+(@RELAYID+13, 4000, 0, 1, 1, 0, 0, 18853, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - Emote OneShotTalk'), 
+(@RELAYID+13, 6000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - Emote OneShotExclamation'),
+(@RELAYID+13, 10000, 0, 36, 1, 0, 0, 18853, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - reset facing'), 
+(@RELAYID+13, 11000, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - remove Active object'), 
+(@RELAYID+13, 11000, 2, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - start waypoint'),
 -- Sunfury Magister RP with Crystal
 (@RELAYID+14, 0, 0, 31, 19421, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Terminate Script if no Netherstorm Crystal Target found'), 
 (@RELAYID+14, 1, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - set Active object'), 
@@ -1484,7 +1485,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1963501, 7000, 1, 0, 0, 0, 0, 0, 0, 0, 17181, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Say Text'), 
 -- Captain Arathyn mount up
 (1963502, 0, 0, 24, 18697, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Set Mount'), 
-(1963502, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - SendAIEventB to self'), 
+-- SendAiEventA to change Phase to 1
+(1963502, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - SendAIEventA to self'), 
 (1963502, 3000, 0, 20, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Change Movemen to Path 1');
 
 DELETE FROM dbscripts_on_spell WHERE id IN (34814);
