@@ -1535,3 +1535,6 @@ INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `priority`, `command`, `datalon
 -- RunSpeed: 8
 -- Before SpeedWalk 1,125 SpeedRun 1,14286
 UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 21058;
+
+-- Sunfury Astromancer
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 19643;
