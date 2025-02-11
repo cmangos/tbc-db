@@ -918,15 +918,15 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+223, 1, 2915.91, 4496.36, 128.121, 100, 0, 0),
 (@CGUID+223, 2, 2895.1006,4429.939,116.29245, 100, 1000, 1887902),
 -- Sunfury Captain
-(@CGUID+237, 1, 2934.5164,4110.883,162.59389, 100, 0, 0),
-(@CGUID+237, 2, 2940.6106,4096.285,162.59383, 100, 0, 0),
-(@CGUID+237, 3, 2944.3489,4088.1736,160.377, 100, 0, 0),
-(@CGUID+237, 4, 2949.8572,4073.6836,157.7197, 100, 0, 0),
-(@CGUID+237, 5, 2957.3389,4060.2822,154.83763, 100, 0, 0),
-(@CGUID+237, 6, 2966.5818,4050.1016,152.47238, 100, 0, 0),
-(@CGUID+237, 7, 2975.9714,4039.9531,149.57062, 100, 0, 0),
-(@CGUID+237, 8, 2977.3284,4028.8186,147.57791, 100, 0, 0),
-(@CGUID+237, 9, 2979.0667,4019.794,146.80963, 100, 0, 0),
+(@CGUID+237, 1, 2934.5164,4110.883,162.59389, 100, 0, 1945301),
+(@CGUID+237, 2, 2940.6106,4096.285,162.59383, 100, 0, 1945301),
+(@CGUID+237, 3, 2944.3489,4088.1736,160.377, 100, 0, 1945301),
+(@CGUID+237, 4, 2949.8572,4073.6836,157.7197, 100, 0, 1945301),
+(@CGUID+237, 5, 2957.3389,4060.2822,154.83763, 100, 0, 1945301),
+(@CGUID+237, 6, 2966.5818,4050.1016,152.47238, 100, 0, 1945301),
+(@CGUID+237, 7, 2975.9714,4039.9531,149.57062, 100, 0, 1945301),
+(@CGUID+237, 8, 2977.3284,4028.8186,147.57791, 100, 0, 1945301),
+(@CGUID+237, 9, 2979.0667,4019.794,146.80963, 100, 0, 1945301),
 -- Sunfury Astromancer
 (@CGUID+246, 1, 3002.4746,4103.1904,150.60739, 100, 0, 0),
 (@CGUID+246, 2, 3012.2603,4099.2817,150.32962, 100, 0, 0),
@@ -969,10 +969,10 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (19635, 0, 2, 3025.1475,3954.79,155.17096, 100, 10000, 1963501),
 (19635, 0, 3, 3021.1926,3971.568,156.8732, 100, 3000, 1963502),
 -- Captain Arathyn Waypoints after intro
-(19635, 1, 1, 3019.1038,3974.2063,157.06041, 100, 100, 0),
-(19635, 1, 2, 3024.375,3966.2192,156.24219, 100, 0, 0),
-(19635, 1, 3, 3022.0776,3955.9973,155.37415, 100, 0, 0),
-(19635, 1, 4, 3033.6973,3945.7258,154.78703, 100, 0, 0);
+(19635, 1, 1, 3019.1038,3974.2063,157.06041, 100, 0, 1963503),
+(19635, 1, 2, 3024.375,3966.2192,156.24219, 100, 0, 1963503),
+(19635, 1, 3, 3022.0776,3955.9973,155.37415, 100, 0, 1963503),
+(19635, 1, 4, 3033.6973,3945.7258,154.78703, 100, 0, 1963503);
 
 -- SpawnData
 DELETE FROM creature_spawn_data WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
@@ -1391,9 +1391,12 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+3, 1, @RELAYID+8, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Sit (1)'),
 (@RELAYID+3, 1, @RELAYID+9, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Sleep (3)'), 
 (@RELAYID+3, 1, @RELAYID+10, 0, 'Netherstorm - Disembodied Vindicator/Disembodied Protector - StandState Kneel (8)'),
+-- Captain Arathyn/Sunfury Captain RP script from dbscriptonmovement
+(@RELAYID+4, 1, @RELAYID+12, 20, 'Netherstorm - Sunfury Magister - Captain Arathyn/Sunfury Captain RP'), 
+(@RELAYID+4, 1, 0, 80, 'Netherstorm - Sunfury Magister - Captain Arathyn/Sunfury Captain RP'),
 -- Sunfury Magister 2 possible RPs
-(@RELAYID+4, 1, @RELAYID+14, 0, 'Netherstorm - Sunfury Magister - Netherstorm Crystal Target RP'), 
-(@RELAYID+4, 1, @RELAYID+16, 0, 'Netherstorm - Sunfury Magister - Netherstorm Kneel Target RP');
+(@RELAYID+5, 1, @RELAYID+14, 0, 'Netherstorm - Sunfury Magister - Netherstorm Crystal Target RP'), 
+(@RELAYID+5, 1, @RELAYID+16, 0, 'Netherstorm - Sunfury Magister - Netherstorm Kneel Target RP');
 
 SET @RELAYID := 18000;
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+18;
@@ -1426,9 +1429,9 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+12, 1, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - set Active object'), 
 (@RELAYID+12, 1, 3, 37, 0, 0, 3, 18853, 15, 9, 0, @RELAYID+13, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - move to Bloodwarder'), 
 -- Script when NPC reached waypoint
-(@RELAYID+13, 1000, 0, 36, 0, 0, 0, 18853, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - facing to Captain Arathyn'), 
+(@RELAYID+13, 1000, 0, 36, 0, 0, 0, 18853, 10, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - facing to Captain Arathyn'), 
 (@RELAYID+13, 1000, 1, 36, 0, 0, 0, 18853, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - face Bloodwarder'), 
-(@RELAYID+13, 1000, 2, 1, 66, 0, 0, 18853, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - Emote OneShotSalute'), 
+(@RELAYID+13, 1000, 2, 1, 66, 0, 0, 18853, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - Emote OneShotSalute'), 
 (@RELAYID+13, 3000, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - Emote OneShotSalute'),
 (@RELAYID+13, 4000, 0, 1, 1, 0, 0, 18853, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bloodwarder - Emote OneShotTalk'), 
 (@RELAYID+13, 6000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - Emote OneShotExclamation'),
@@ -1459,7 +1462,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 2020301);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 2020301);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Phase Hunter
 -- Flags: 33587968
@@ -1475,6 +1478,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1887903, 0, 1, 20, 1, 10, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Phase Hunter - Set RandomMovement around Point'), 
 -- Mana Snapper
 (1888301, 0, 1, 20, 1, 20, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Mana Snapper - Set RandomMovement around Point'), 
+-- Sunfury Captain RP script
+(1945301, 0, 0, 45, 0, 18004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Captain - Start RandomScript'),
 -- Netherologist Coppernickels
 -- Timer for how long he stays depens on how long he uses emote "STATE_USESTANDING_NOSHEATHE" this can vary between 15 and 30 seconds
 -- using hardcoded 25 seconds for now.
@@ -1493,7 +1498,9 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1963502, 0, 0, 24, 18697, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Set Mount'), 
 -- SendAiEventA to change Phase to 1
 (1963502, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - SendAIEventA to self'), 
-(1963502, 3000, 0, 20, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Change Movemen to Path 1');
+(1963502, 3000, 0, 20, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Change Movemen to Path 1'),
+-- StartScript
+(1963503, 0, 0, 45, 0, 18004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Start RandomScript');
 
 DELETE FROM dbscripts_on_spell WHERE id IN (34814);
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
