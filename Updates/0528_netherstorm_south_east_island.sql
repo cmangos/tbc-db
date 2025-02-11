@@ -929,14 +929,14 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+237, 9, 2979.0667,4019.794,146.80963, 100, 0, 1945301),
 -- Sunfury Astromancer
 (@CGUID+246, 1, 3002.4746,4103.1904,150.60739, 100, 0, 0),
-(@CGUID+246, 2, 3012.2603,4099.2817,150.32962, 100, 0, 0),
-(@CGUID+246, 3, 3018.3914,4091.1106,150.13162, 100, 0, 0),
-(@CGUID+246, 4, 3022.2815,4077.8542,150.11853, 100, 0, 0),
-(@CGUID+246, 5, 3013.7163,4067.5378,150.01633, 100, 0, 0),
+(@CGUID+246, 2, 3012.2603,4099.2817,150.32962, 100, 0, 1964301),
+(@CGUID+246, 3, 3018.3914,4091.1106,150.13162, 100, 0, 1964301),
+(@CGUID+246, 4, 3022.2815,4077.8542,150.11853, 100, 0, 1964301),
+(@CGUID+246, 5, 3013.7163,4067.5378,150.01633, 100, 0, 1964301),
 (@CGUID+246, 6, 3005.347,4064.1946,149.95128, 100, 0, 0),
 (@CGUID+246, 7, 2987.4768,4064.9292,149.99225, 100, 0, 0),
-(@CGUID+246, 8, 2980.4868,4084.391,150.1267, 100, 0, 0),
-(@CGUID+246, 9, 2986.1475,4096.4175,150.10222, 100, 0, 0);
+(@CGUID+246, 8, 2980.4868,4084.391,150.1267, 100, 0, 1964301),
+(@CGUID+246, 9, 2986.1475,4096.4175,150.10222, 100, 0, 1964301);
 
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569, 19635);
@@ -1402,7 +1402,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+6, 1, @RELAYID+18, 0, 'Netherstorm - Sunfury Magister - Netherstorm Kneel Target RP');
 
 SET @RELAYID := 18000;
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+18;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+20;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Nether Technician script via ACID - CGUID+4
 (@RELAYID+1, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1911, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
@@ -1460,15 +1460,28 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+17, 0, 0, 31, 19421, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Terminate Script if no Netherstorm Crystal Target found'), 
 (@RELAYID+17, 1, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - set Active object'), 
 (@RELAYID+17, 1, 3, 37, 0, 0, 13.5, 19421, 35, 9, 0, @RELAYID+14, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - move to Netherstorm Crystal Target'), 
--- Sunfury Magisterhas to move to Netherstorm Kneel Target
+-- Sunfury Magister has to move to Netherstorm Kneel Target
 (@RELAYID+18, 0, 0, 31, 19437, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Terminate Script if no Netherstorm Kneel Target found'), 
 (@RELAYID+18, 1, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - set Active object'), 
-(@RELAYID+18, 1, 3, 37, 0, 0, 1.5, 19437, 35, 9, 0, @RELAYID+15, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - move to Netherstorm Kneel Target');
-
-
+(@RELAYID+18, 1, 3, 37, 0, 0, 1.5, 19437, 35, 9, 0, @RELAYID+15, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - move to Netherstorm Kneel Target'),
+-- Sunfury Astromancer RP Script with Sunfury Magister
+(@RELAYID+19, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - set Active object'), 
+(@RELAYID+19, 0, 1, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - Stop Waypoint'), 
+(@RELAYID+19, 1, 3, 37, 0, 0, 3, 18855, 15, 9, 0, @RELAYID+20, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - move to Sunfury Magister'), 
+-- Sunfury Astromancer RP script with Sunfury Magister after reaching wp
+(@RELAYID+20, 1000, 0, 36, 0, 0, 0, 18855, 10, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - facing to Sunfury Astromancer'), 
+(@RELAYID+20, 1000, 1, 36, 0, 0, 0, 18855, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - face Sunfury Magister'), 
+(@RELAYID+20, 1000, 2, 1, 3, 0, 0, 18855, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Emote OneShotWave'), 
+(@RELAYID+20, 3000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - Emote OneShotExclamation'), 
+(@RELAYID+20, 4000, 0, 1, 6, 0, 0, 18855, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Emote OneShotQuestion'), 
+(@RELAYID+20, 6000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - Emote OneShotTalk'), 
+(@RELAYID+20, 7000, 0, 36, 1, 0, 0, 18855, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - reset facing'), 
+(@RELAYID+20, 10000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - remove Active object'), 
+(@RELAYID+20, 10000, 1, 35, 5, 0, 0, 18855, 15, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - SendAIEventA to Sunfury Magister'),
+(@RELAYID+20, 10000, 2, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - start waypoint');
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 2020301);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Phase Hunter
 -- Flags: 33587968
@@ -1505,8 +1518,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- SendAiEventA to change Phase to 1
 (1963502, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - SendAIEventA to self'), 
 (1963502, 3000, 0, 20, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Change Movemen to Path 1'),
--- StartScript
-(1963503, 0, 0, 45, 0, 18004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Start RandomScript');
+-- Captain Arathyn StartScript
+(1963503, 0, 0, 45, 0, 18004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Start RandomScript'),
+-- Sunfury Astromancer RP Script
+(1964301, 0, 0, 31, 18855, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - Terminate Script if no Sunfury Magister found'), 
+(1964301, 1, 1, 35, 6, 0, 0, 18855, 15, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - SendAIEventB to Sunfury Magister');
 
 DELETE FROM dbscripts_on_spell WHERE id IN (34814);
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

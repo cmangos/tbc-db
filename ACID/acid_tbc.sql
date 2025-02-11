@@ -18562,6 +18562,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1885502','18855','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Sunfury Magister - Flee at 15% HP'),
 ('1885503','18855','21','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Magister - Set Phase 1 ReachedHome'),
 ('1885504','18855','30','0','100','1','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Magister - Set Phase 1 on ReceiveEventAI A'),
+('1885505','18855','30','5','100','1','6','0','0','0','0','0','22','0','0','0','45','5','20','10','0','0','0','0','Sunfury Magister - Set Phase 0 and SendEventAI A on ReceiveEventAI B'),
 -- GUID based
 ('5306338','-5306338','1','5','100','1','2000','12000','8000','14000','0','0','53','-18006','0','0','22','0','0','0','0','0','0','0','Sunfury Magister (Guid EAI) - Start RandomScript OOC and set Phase 0 (Phase 1)'),
 ('5306339','-5306339','1','5','100','1','2000','12000','8000','14000','0','0','53','-18006','0','0','22','0','0','0','0','0','0','0','Sunfury Magister (Guid EAI) - Start RandomScript OOC and set Phase 0 (Phase 1)'),
@@ -18755,6 +18756,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunfury Astromancer 19643 - spell_list
 ('1964301','19643','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Sunfury Astromancer - Enable Range Mode on Spawn'),
 ('1964302','19643','27','0','100','1','35917','1','15000','30000','0','0','11','35917','0','0','0','0','0','0','0','0','0','0','Sunfury Astromancer - Cast Fiery Intellect on Missing Buff'),
+('1964303','19643','30','0','100','1','5','0','0','0','0','0','53','18019','0','0','0','0','0','0','0','0','0','0','Sunfury Astromancer - Start RelayScript on ReceiveEventAI A'),
 -- Papa Wheeler
 ('1964501','19645','1','0','100','1','120000','180000','120000','180000','0','0','54','0','0','10013','0','0','0','0','0','0','0','0','Papa Wheeler - Random Say OOC'),
 ('1964502','19645','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Papa Wheeler - Start Relay Script (Random Emote) on Receive AI Event 5'),
