@@ -190,6 +190,20 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1885501);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1885501, 2, 9053, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Sunfury Magister - Fireball - current');
+(1885501, 1, 9053, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Sunfury Magister - Fireball - current');
 
 UPDATE `creature_template` SET `SpellList` = 1885501 WHERE `entry` = 18855;
+
+-- Sunfury Geologist
+DELETE FROM `creature_template_spells` WHERE `entry` = 19779;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1977901;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1977901, 'Netherstorm - Sunfury Geologist', 0, 70);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1977901);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1977901, 1, 35918, 0, -1, 130, 0, 100, 0, 10000, 20000, 10000, 20000, 'Sunfury Geologist - Puncture Armor - top aggro aura not present'),
+(1977901, 2, 36645, 0, -1, 107, 0, 100, 0, 2000, 6000, 2000, 6000, 'Sunfury Geologist - Throw Rock - random not in melee');
+
+UPDATE `creature_template` SET `SpellList` = 1977901 WHERE `entry` = 19779;

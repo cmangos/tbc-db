@@ -24,8 +24,8 @@ DELETE FROM creature WHERE guid IN (67423, 67424, 67425, 67426, 67427, 67428, 67
 DELETE FROM creature WHERE id IN (18885, 19852,  19853, 20215, 21077);
 
 -- Manaforge B'naar npcs
--- Sunfury Bloodwarder, Captain Arathyn, Sunfury Captain, Sunfury Magister, Sunfury Astromancer
- DELETE FROM creature WHERE id IN (18853, 19635, 19453, 18855, 19643);
+-- Sunfury Bloodwarder, Captain Arathyn, Sunfury Captain, Sunfury Magister, Sunfury Astromancer, Sunfury Geologist
+ DELETE FROM creature WHERE id IN (18853, 19635, 19453, 18855, 19643, 19779);
 
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+230;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -330,7 +330,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+244, 18855, 530, 1, 3036.04, 4063.57, 150.998, 1.93732, 300, 420, 0, 0), -- Sunfury Magister guid before 67350
 (@CGUID+245, 18855, 530, 1, 3015.23, 4061.71, 150.21, 2.0944, 300, 420, 0, 0), -- Sunfury Magister guid before 67349
 
-(@CGUID+246, 19643, 530, 1, 3002.18, 4103.35, 150.696, 5.89873, 360, 480, 0, 2); -- Sunfury Astromancer guid before 70069
+(@CGUID+246, 19643, 530, 1, 3002.18, 4103.35, 150.696, 5.89873, 360, 480, 0, 2), -- Sunfury Astromancer guid before 70069
+
+(@CGUID+247, 19779, 530, 1, 2999.76, 4120.61, 155.337, 1.51844, 300, 420, 0, 0); -- Sunfury Geologist guid before 70732
 
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
  
@@ -341,7 +343,8 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+77, 0, 8, 0, 0, 0, NULL); -- Disembodied Protector
 
 -- Captain Arathyn doesnt have mount on spawn, he gets it after intro
-DELETE FROM creature_template_addon WHERE entry = 19635;
+-- Sunfury Geologist doesnt always use EmoteState 233
+DELETE FROM creature_template_addon WHERE entry IN (19635);
 
 -- Waypoints
 DELETE FROM creature_movement WHERE id IN (67349, 67350, 67351, 67352, 67353, 67354, 67355, 67356, 67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 69669, 70069, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708);
@@ -1478,7 +1481,15 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+20, 7000, 0, 36, 1, 0, 0, 18855, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - reset facing'), 
 (@RELAYID+20, 10000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - remove Active object'), 
 (@RELAYID+20, 10000, 1, 35, 5, 0, 0, 18855, 15, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - SendAIEventA to Sunfury Magister'),
-(@RELAYID+20, 10000, 2, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - start waypoint');
+(@RELAYID+20, 10000, 2, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - start waypoint'),
+-- Sunfury Geologist
+(@RELAYID+21, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Set ActiveObject'), 
+(@RELAYID+21, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteState none'), 
+(@RELAYID+21, 1000, 2, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - StandState Knee'), 
+(@RELAYID+21, 4000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Emote OneShotQuestion'), 
+(@RELAYID+21, 7000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - StandState stand'), 
+(@RELAYID+21, 11000, 0, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteState WorkMining'), 
+(@RELAYID+21, 11000, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Set ActiveObject');
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
