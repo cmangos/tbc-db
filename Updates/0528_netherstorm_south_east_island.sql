@@ -14,8 +14,8 @@ SET @SGGUID := 5306000; -- spawn_groups
 DELETE FROM creature WHERE guid IN (67423, 67424, 67425, 67426, 67427, 67428, 67429, 67430, 67431, 67432, 67434, 67435, 67436, 67437, 67438,  67439, 67440, 67441, 67442, 67443, 67444, 67445, 67446, 67447, 67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 
 67525, 67526, 67527, 67528, 67529, 67530, 67531, 67532, 67533, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67542, 67543, 67544, 67545, 67546, 67547, 67548, 67549, 67550, 67551, 67552, 67553, 67554, 67555, 67556, 67557, 67608, 67609, 67610, 67611, 67612, 67613, 67614, 67615, 67616, 67617, 
 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67625, 67626, 67627, 67628, 67629, 67630, 67631, 67632, 67633, 67634, 67635, 67636, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 67732, 
-70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71841, 71842, 71843, 71844, 71845, 71846, 71847, 71848, 71849, 71850, 71853, 71854, 71855,  71856, 71857, 71858, 71859, 71860, 71861, 71862, 71863, 71864, 71865, 71866, 71867, 71868, 71869, 
-71870, 71871, 71872, 71886, 71890, 72537, 73962, 73963, 73964, 73965, 1002671, 1002675, 1002679, 1002703); 
+70008, 70182, 70183, 70184, 70185, 70187, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71841, 71842, 71843, 71844, 71845, 71846, 71847, 71848, 71849, 71850, 71853, 71854, 71855,  71856, 71857, 71858, 71859, 71860, 71861, 71862, 71863, 71864, 71865, 71866, 71867, 71868, 71869, 
+71870, 71871, 71872, 71886, 71890, 72537, 73962, 73963, 73964, 73965, 1002671, 1002675, 1002679, 1002703);  
 -- Delete all Farahlon Giant, Farahlon Crumbler (only spawn on Giant death) spanws
 -- Old guids: 67834, 67833, 67835, 67836, 75856, 75559, 67832
 -- Delete all Artifact Seeker (12 spawns)
@@ -24,10 +24,10 @@ DELETE FROM creature WHERE guid IN (67423, 67424, 67425, 67426, 67427, 67428, 67
 DELETE FROM creature WHERE id IN (18885, 19852,  19853, 20215, 21077);
 
 -- Manaforge B'naar npcs
--- Sunfury Bloodwarder, Captain Arathyn, Sunfury Captain, Sunfury Magister, Sunfury Astromancer, Sunfury Geologist
- DELETE FROM creature WHERE id IN (18853, 19635, 19453, 18855, 19643, 19779);
+-- Sunfury Bloodwarder, Captain Arathyn, Sunfury Captain, Sunfury Magister, Sunfury Astromancer, Sunfury Geologist, Sunfury Warp-Master, Sunfury Warp-Engineer, Overseer Theredis
+-- DELETE FROM creature WHERE id IN (18853, 19635, 19453, 18855, 19643, 19779, 18857, 18852, 20416);
 
-DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+230;
+DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+282;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
 (@CGUID+1, 20203, 530, 1, 3380.88, 4359.49, 123.702, 4.67748, 300, 300, 0, 0),
@@ -332,7 +332,59 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+246, 19643, 530, 1, 3002.18, 4103.35, 150.696, 5.89873, 360, 480, 0, 2), -- Sunfury Astromancer guid before 70069
 
-(@CGUID+247, 19779, 530, 1, 2999.76, 4120.61, 155.337, 1.51844, 300, 420, 0, 0); -- Sunfury Geologist guid before 70732
+(@CGUID+247, 19779, 530, 1, 2999.76, 4120.61, 155.337, 1.51844, 300, 420, 0, 0), -- Sunfury Geologist guid before 70732
+
+(@CGUID+248, 19779, 530, 1, 2925.46, 4083.41, 147.984, 2.07694, 300, 420, 0, 0), -- Sunfury Geologist guid before 70733
+(@CGUID+249, 19779, 530, 1, 2897.67, 4088.99, 155.844, 2.51327, 300, 420, 0, 0), -- Sunfury Geologist guid before 70735
+(@CGUID+250, 19779, 530, 1, 2880.32, 4064.76, 148.698, 2.54818, 300, 420, 0, 0), -- Sunfury Geologist guid before 70737
+(@CGUID+251, 19779, 530, 1, 2866.22, 4063.33, 157.106, 3.82227, 300, 420, 0, 0), -- Sunfury Geologist guid before 70738
+(@CGUID+252, 19779, 530, 1, 2871.12, 4054.23, 157.272, 3.92699, 300, 420, 0, 0), -- Sunfury Geologist guid before 70734
+(@CGUID+253, 19779, 530, 1, 2876.11, 4045.08, 155.574, 3.83972, 300, 420, 0, 0), -- Sunfury Geologist guid before 70736
+
+(@CGUID+254, 18855, 530, 1, 2926.44, 4056.91, 149.323, 3.29867, 300, 420, 0, 0), -- Sunfury Magister guid before 67359
+(@CGUID+255, 18855, 530, 1, 2919.75, 4004.16, 149.871, 2.63545, 300, 420, 0, 0), -- Sunfury Magister guid before 67358
+(@CGUID+256, 18855, 530, 1, 2902.86, 4065.47, 149.259, 5.79449, 300, 420, 0, 0), -- Sunfury Magister guid before 67360
+(@CGUID+257, 18855, 530, 1, 2898.45, 4054.55, 149.472, 0.244346, 300, 420, 0, 0), -- Sunfury Magister guid before 67361
+
+(@CGUID+258, 19643, 530, 1, 2903.34, 4044.79, 150.321, 2.6529, 360, 480, 0, 2), -- Sunfury Astromancer guid before 70070
+
+(@CGUID+259, 18855, 530, 1, 2919.75, 4004.16, 149.871, 2.63545, 300, 420, 0, 0), -- Sunfury Magister guid before 67357
+(@CGUID+260, 18855, 530, 1, 2894.89, 4009.42, 149.813, 0.733038, 300, 420, 0, 0), -- Sunfury Magister guid before 67362
+
+(@CGUID+261, 18853, 530, 1, 2915.79, 3988.8, 153.181, 4.10152, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67320
+(@CGUID+262, 18853, 530, 1, 2894.35, 3992.06, 153.44, 6.14356, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67321
+
+(@CGUID+263, 18857, 530, 1, 2888.56, 4034.06, 152.3, 5.09636, 360, 480, 0, 2), -- Sunfury Warp-Master guid before 67377
+
+(@CGUID+264, 18853, 530, 1, 2839.8, 4033.06, 167.533, 1.39626, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67322
+(@CGUID+265, 18853, 530, 1, 2850.15, 4037.25, 166.736, 3.03687, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67325
+(@CGUID+266, 18853, 530, 1, 2857.96, 4042.26, 167.298, 2.79253, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67324
+(@CGUID+267, 18853, 530, 1, 2862.16, 4050.24, 170.225, 3.64774, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67323
+
+(@CGUID+268, 19686, 530, 1, 2839.81, 4036.71, 168.95, 4.59022, 360, 480, 0, 2), -- Nether Anomaly guid before 70187
+(@CGUID+269, 19686, 530, 1, 2845.93, 4041.9, 169.919, 5.68977, 360, 480, 0, 2), -- Nether Anomaly guid before 70184
+(@CGUID+270, 19686, 530, 1, 2850.66, 4046.76, 171.173, 5.95157, 360, 480, 0, 2), -- Nether Anomaly guid before 70183
+(@CGUID+271, 19686, 530, 1, 2857.77, 4049.44, 170.95, 0.383972, 360, 480, 0, 2); -- Nether Anomaly guid before 70182
+
+-- Manaforge B'Naar Innside
+(@CGUID+272, 18852, 530, 1, 2895.97, 4172.31, 161.966, 1.01229, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67287
+(@CGUID+273, 18852, 530, 1, 2919.19, 4178.64, 161.966, 3.76865, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67288
+(@CGUID+274, 18852, 530, 1, 2934.98, 4180.37, 163.845, 6.00312, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67286
+(@CGUID+275, 18852, 530, 1, 2871.98, 4186.13, 164.053, 2.82743, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 1002734
+(@CGUID+276, 18852, 530, 1, 2907.67, 4215.62, 164.07, 4.48646, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 1002735
+
+(@CGUID+277, 18857, 530, 1, 2893.93, 4195.61, 161.965, 5.53269, 360, 480, 0, 0), -- Sunfury Warp-Master guid before 1002737
+(@CGUID+278, 18857, 530, 1, 2913.14, 4196.44, 161.961, 2.5549, 360, 480, 0, 0), -- Sunfury Warp-Master guid before 1002738
+(@CGUID+279, 18857, 530, 1, 2828.32, 4152.31, 162.682, 4.13447, 360, 480, 0, 0), -- Sunfury Warp-Master guid before 1002739
+
+-- unclear how/when spawns
+-- (@CGUID+280, 20218, 530, 1, 2828.32, 4152.31, 162.682, 4.13447, 360, 480, 0, 0), -- Sunfury Technician guid before 1002739
+
+(@CGUID+281, 20416, 530, 1, 2854.82, 4162.97, 162.682, 3.52111, 360, 480, 0, 2); -- Overseer Theredis guid before 72389
+
+-- missing CreateObject2 sniff
+-- (@CGUID+282, 18857, 530, 1, 2854.82, 4162.97, 162.682, 3.52111, 360, 480, 0, 2), -- Sunfury Warp-Engineer guid before 1002736
+-- (@CGUID+283, 18855, 530, 1, 2898.45, 4054.55, 149.472, 0.244346, 300, 420, 0, 0), -- Sunfury Magister guid before 1002721
 
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
  
@@ -347,7 +399,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 DELETE FROM creature_template_addon WHERE entry IN (19635);
 
 -- Waypoints
-DELETE FROM creature_movement WHERE id IN (67349, 67350, 67351, 67352, 67353, 67354, 67355, 67356, 67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 69669, 70069, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708);
+DELETE FROM creature_movement WHERE id IN (67287, 67349, 67350, 67351, 67352, 67353, 67354, 67355, 67356, 67357, 67358, 67359, 67360, 67361, 67362, 67377, 67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 69669, 70069, 70070, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708);
 DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+223;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
