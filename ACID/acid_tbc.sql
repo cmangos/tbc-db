@@ -18756,7 +18756,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunfury Astromancer 19643 - spell_list
 ('1964301','19643','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Sunfury Astromancer - Enable Range Mode on Spawn'),
 ('1964302','19643','27','0','100','1','35917','1','15000','30000','0','0','11','35917','0','0','0','0','0','0','0','0','0','0','Sunfury Astromancer - Cast Fiery Intellect on Missing Buff'),
-('1964303','19643','30','0','100','1','5','0','0','0','0','0','53','18019','0','0','0','0','0','0','0','0','0','0','Sunfury Astromancer - Start RelayScript on ReceiveEventAI A'),
+-- ('1964303','19643','30','0','100','1','5','0','0','0','0','0','53','18019','0','0','0','0','0','0','0','0','0','0','Sunfury Astromancer - Start RelayScript on ReceiveEventAI A'),
 -- Papa Wheeler
 ('1964501','19645','1','0','100','1','120000','180000','120000','180000','0','0','54','0','0','10013','0','0','0','0','0','0','0','0','Papa Wheeler - Random Say OOC'),
 ('1964502','19645','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Papa Wheeler - Start Relay Script (Random Emote) on Receive AI Event 5'),
