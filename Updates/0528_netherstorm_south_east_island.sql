@@ -361,10 +361,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+266, 18853, 530, 1, 2857.96, 4042.26, 167.298, 2.79253, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67324
 (@CGUID+267, 18853, 530, 1, 2862.16, 4050.24, 170.225, 3.64774, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67323
 
-(@CGUID+268, 19686, 530, 1, 2839.81, 4036.71, 168.95, 4.59022, 360, 480, 0, 0), -- Nether Anomaly guid before 70187
-(@CGUID+269, 19686, 530, 1, 2845.93, 4041.9, 169.919, 5.68977, 360, 480, 0, 0), -- Nether Anomaly guid before 70184
-(@CGUID+270, 19686, 530, 1, 2850.66, 4046.76, 171.173, 5.95157, 360, 480, 0, 0), -- Nether Anomaly guid before 70183
-(@CGUID+271, 19686, 530, 1, 2857.77, 4049.44, 170.95, 0.383972, 360, 480, 0, 0), -- Nether Anomaly guid before 70182
+(@CGUID+268, 19686, 530, 1, 2839.81, 4036.71, 168.95, 4.59022, 2, 12, 0, 0), -- Nether Anomaly guid before 70187
+(@CGUID+269, 19686, 530, 1, 2845.93, 4041.9, 169.919, 5.68977, 2, 12, 0, 0), -- Nether Anomaly guid before 70184
+(@CGUID+270, 19686, 530, 1, 2850.66, 4046.76, 171.173, 5.95157, 2, 12, 0, 0), -- Nether Anomaly guid before 70183
+(@CGUID+271, 19686, 530, 1, 2857.77, 4049.44, 170.95, 0.383972, 2, 12, 0, 0), -- Nether Anomaly guid before 70182
 
 -- Manaforge B'Naar Innside
 (@CGUID+272, 18852, 530, 1, 2895.97, 4172.31, 161.966, 1.01229, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67287
@@ -573,11 +573,16 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
 
-DELETE FROM creature_addon WHERE guid IN (@CGUID+75, @CGUID+76, @CGUID+77);
+DELETE FROM creature_addon WHERE guid IN (@CGUID+75, @CGUID+76, @CGUID+77, @CGUID+264, @CGUID+265, @CGUID+266, @CGUID+267);
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+75, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
 (@CGUID+76, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
-(@CGUID+77, 0, 8, 0, 0, 0, NULL); -- Disembodied Protector
+(@CGUID+77, 0, 8, 0, 0, 0, NULL), -- Disembodied Protector
+
+(@CGUID+264, 0, 0, 1, 333, 0, NULL), -- Sunfury Bloodwarder
+(@CGUID+265, 0, 0, 1, 333, 0, NULL), -- Sunfury Bloodwarder
+(@CGUID+266, 0, 0, 1, 333, 0, NULL), -- Sunfury Bloodwarder
+(@CGUID+267, 0, 0, 1, 333, 0, NULL); -- Sunfury Bloodwarder
 
 -- Captain Arathyn doesnt have mount on spawn, he gets it after intro
 -- Sunfury Geologist doesnt always use EmoteState 233
@@ -1670,6 +1675,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+22, 'Netherstorm - Group 022 - Sunfury Warp-Master', 0, 0, 0, 0, 0),
 -- Overseer Theredis
 (@SGGUID+23, 'Netherstorm - Group 023 - Overseer Theredis (1)', 0, 1, 0, 0, 0),
+-- Sunfury Bloodcrystal group attacking Nether Anomaly
+(@SGGUID+24, 'Netherstorm - Group 024 - Sunfury Bloodwarder (4)', 0, 4, 0, 0, 0),
+-- 4 Nether Anomaly that attack Sunfury Bloodwarder
+(@SGGUID+25, 'Netherstorm - Group 025 - Nether Anomaly', 0, 1, @SGGUID+1, 0, 0),
+(@SGGUID+26, 'Netherstorm - Group 026 - Nether Anomaly', 0, 1, @SGGUID+1, 0, 0),
+(@SGGUID+27, 'Netherstorm - Group 027 - Nether Anomaly', 0, 1, @SGGUID+1, 0, 0),
+(@SGGUID+28, 'Netherstorm - Group 028 - Nether Anomaly', 0, 1, @SGGUID+1, 0, 0),
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
 (@SGGUID+100, 'Netherstorm - Etherlithium Matrix Crystal', 1, 21, 0, 0, 0);
 
@@ -1915,10 +1927,6 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+15, @CGUID+236, -1, 0), -- Sunfury Bloodwarder
 (@SGGUID+15, @CGUID+261, -1, 0), -- Sunfury Bloodwarder
 (@SGGUID+15, @CGUID+262, -1, 0), -- Sunfury Bloodwarder
-(@SGGUID+15, @CGUID+264, -1, 0), -- Sunfury Bloodwarder
-(@SGGUID+15, @CGUID+265, -1, 0), -- Sunfury Bloodwarder
-(@SGGUID+15, @CGUID+266, -1, 0), -- Sunfury Bloodwarder
-(@SGGUID+15, @CGUID+267, -1, 0), -- Sunfury Bloodwarder
 (@SGGUID+15, @CGUID+289, -1, 0), -- Sunfury Bloodwarder
 (@SGGUID+15, @CGUID+290, -1, 0), -- Sunfury Bloodwarder
 (@SGGUID+15, @CGUID+298, -1, 0), -- Sunfury Bloodwarder
@@ -2101,6 +2109,16 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+22, @CGUID+410, -1, 0), -- Sunfury Warp-Master
 -- Overseer Theredis
 (@SGGUID+23, @CGUID+280, -1, 0), -- Overseer Theredis
+-- Sunfury Bloodwarder attacking Nether Anomaly
+(@SGGUID+24, @CGUID+264, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+24, @CGUID+265, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+24, @CGUID+266, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+24, @CGUID+267, -1, 0), -- Sunfury Bloodwarder
+-- Nether Anomaly (Left) linked to Sunfury Bloodwarder 
+(@SGGUID+25, @CGUID+268, -1, 0), -- Nether Anomaly linked to Sunfury Bloodwarder @CGUID+264
+(@SGGUID+26, @CGUID+269, -1, 0), -- Nether Anomaly linked to Sunfury Bloodwarder @CGUID+265
+(@SGGUID+27, @CGUID+270, -1, 0), -- Nether Anomaly linked to Sunfury Bloodwarder @CGUID+266
+(@SGGUID+28, @CGUID+271, -1, 0), -- Nether Anomaly linked to Sunfury Bloodwarder @CGUID+267
 -- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
@@ -2131,6 +2149,21 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+100, @GGUID+27, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+28, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+29, -1, 0); -- Etherlithium Matrix Crystal
+
+
+DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4);
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
+(@SGGUID+1, 'Netherstorm - Manaforge B''nar - Nether Anomaly fighting Sunfury Bloodwarder - 01'),
+(@SGGUID+2, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 02'),
+(@SGGUID+2, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 03'),
+(@SGGUID+2, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 04');
+
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 01'),
+(@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 02'),
+(@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 03'),
+(@SGGUID+4, 42, @SGGUID+4, 1, 1, 0, 0, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 04');
 
 -- Scripts
 SET @RELAYID := 18000;
@@ -2163,7 +2196,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+6, 1, @RELAYID+18, 0, 'Netherstorm - Sunfury Magister - Netherstorm Kneel Target RP');
 
 SET @RELAYID := 18000;
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+25;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+37;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Nether Technician script via ACID - CGUID+4
 (@RELAYID+1, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1911, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
@@ -2184,6 +2217,20 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+11, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Exarch - Stop Waypoints'),
 (@RELAYID+11, 0, 1, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Exarch - Emote Kneel'),
 (@RELAYID+11, 3000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Disembodied Exarch - Unpause Waypoints'),
+-- Sunfury Bloodwarder scripts
+-- Sunfury Bloodwarder CGUID+264 - On Death change worldstate to stop respawning of Nether Anomaly
+(@RELAYID+12, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 1, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Bloodwarder - Change Worldstate'), -- OnSpawn
+(@RELAYID+13, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Bloodwarder - Change Worldstate'), -- OnDeath
+-- Sunfury Bloodwarder CGUID+265 - On Death change worldstate to stop respawning of Nether Anomaly
+(@RELAYID+14, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 1, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Bloodwarder - Change Worldstate'), -- OnSpawn
+(@RELAYID+15, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Bloodwarder - Change Worldstate'), -- OnDeath
+-- Sunfury Bloodwarder CGUID+266 - On Death change worldstate to stop respawning of Nether Anomaly
+(@RELAYID+16, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 1, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Bloodwarder - Change Worldstate'), -- OnSpawn
+(@RELAYID+17, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Bloodwarder - Change Worldstate'), -- OnDeath
+-- Sunfury Bloodwarder CGUID+267 - On Death change worldstate to stop respawning of Nether Anomaly
+(@RELAYID+18, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+4, 1, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Bloodwarder - Change Worldstate'), -- OnSpawn
+(@RELAYID+19, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+4, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Bloodwarder - Change Worldstate'); -- OnDeath
+
 -- Generic script in Nehterstorm, used by:
 -- Captain Arathyn with Sunfury Bloodwarder
 -- Sunfury Captain with Sunfury Bloodwarder
@@ -2247,7 +2294,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+21, 4000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Emote OneShotQuestion'), 
 (@RELAYID+21, 7000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - StandState stand'), 
 (@RELAYID+21, 11000, 0, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteState WorkMining'), 
-(@RELAYID+21, 11000, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Set ActiveObject');
+(@RELAYID+21, 11000, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Set ActiveObject'),
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
