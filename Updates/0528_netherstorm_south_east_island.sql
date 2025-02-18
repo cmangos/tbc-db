@@ -1625,7 +1625,7 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+29, 183767, 530, 1, 3572.510986328125, 3627.473876953125, 133.7910003662109375, 2.687806606292724609, 0, 0, 0.974370002746582031, 0.224951311945915222, 600, 600);
 
 -- SpawnGroup
--- Currently spawngroup is only used to get npcs into dynguid
+-- Currently most spawngroups are only used to get npcs into dynguid
 DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+100;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 (@SGGUID+1, 'Netherstorm - Group 001 - Phase Hunter (15)', 0, 0, 0, 0, 0),
@@ -1652,6 +1652,24 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+13, 'Netherstorm - Group 013 - Felblade Doomguard (7)', 0, 0, 0, 0, 0),
 -- Pentatharon
 (@SGGUID+14, 'Netherstorm - Group 014 - Pentatharon (1)', 0, 1, 0, 0, 0),
+-- Sunfury Bloodwarder - General
+(@SGGUID+15, 'Netherstorm - Group 015 - Sunfury Bloodwarder', 0, 0, 0, 0, 0),
+-- Captain Arathyn
+(@SGGUID+16, 'Netherstorm - Group 016 - Captain Arathyn (1)', 0, 1, 0, 0, 0),
+-- Sunfury Captain
+(@SGGUID+17, 'Netherstorm - Group 017 - Sunfury Captain', 0, 0, 0, 0, 0),
+-- Sunfury Magister
+(@SGGUID+18, 'Netherstorm - Group 018 - Sunfury Magister', 0, 0, 0, 0, 0),
+-- Sunfury Astromancer
+(@SGGUID+19, 'Netherstorm - Group 019 - Sunfury Astromancer', 0, 0, 0, 0, 0),
+-- Sunfury Geologist
+(@SGGUID+20, 'Netherstorm - Group 020 - Sunfury Geologist', 0, 0, 0, 0, 0),
+-- Sunfury Warp-Engineer
+(@SGGUID+21, 'Netherstorm - Group 021 - Sunfury Warp-Engineer', 0, 0, 0, 0, 0),
+-- Sunfury Warp-Master
+(@SGGUID+22, 'Netherstorm - Group 022 - Sunfury Warp-Master', 0, 0, 0, 0, 0),
+-- Overseer Theredis
+(@SGGUID+23, 'Netherstorm - Group 023 - Overseer Theredis (1)', 0, 1, 0, 0, 0),
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
 (@SGGUID+100, 'Netherstorm - Etherlithium Matrix Crystal', 1, 21, 0, 0, 0);
 
@@ -1883,6 +1901,206 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+13, @CGUID+160, -1, 0), -- Felblade Doomguard
 -- Pentatharon
 (@SGGUID+14, @CGUID+161, -1, 0), -- Pentatharon
+-- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+225, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+226, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+227, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+228, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+229, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+231, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+232, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+233, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+234, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+235, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+236, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+261, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+262, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+264, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+265, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+266, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+267, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+289, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+290, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+298, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+299, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+300, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+301, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+302, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+303, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+311, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+312, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+313, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+314, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+315, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+316, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+320, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+321, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+344, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+345, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+346, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+353, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+354, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+355, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+380, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+381, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+382, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+396, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+397, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+398, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+399, -1, 0), -- Sunfury Bloodwarder
+(@SGGUID+15, @CGUID+400, -1, 0), -- Sunfury Bloodwarder
+-- Captain Arathyn
+(@SGGUID+16, @CGUID+230, -1, 0), -- Captain Arathyn
+-- Sunfury Captain
+(@SGGUID+17, @CGUID+237, -1, 0), -- Sunfury Captain
+(@SGGUID+17, @CGUID+304, -1, 0), -- Sunfury Captain
+(@SGGUID+17, @CGUID+317, -1, 0), -- Sunfury Captain
+(@SGGUID+17, @CGUID+347, -1, 0), -- Sunfury Captain
+(@SGGUID+17, @CGUID+402, -1, 0), -- Sunfury Captain
+-- Sunfury Magister
+(@SGGUID+18, @CGUID+238, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+239, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+240, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+241, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+242, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+243, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+244, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+245, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+254, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+255, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+256, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+257, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+259, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+260, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+283, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+284, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+285, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+286, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+287, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+323, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+324, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+325, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+326, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+327, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+369, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+370, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+371, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+372, -1, 0), -- Sunfury Magister
+(@SGGUID+18, @CGUID+373, -1, 0), -- Sunfury Magister
+-- Sunfury Astromancer
+(@SGGUID+19, @CGUID+246, -1, 0), -- Sunfury Astromancer
+(@SGGUID+19, @CGUID+258, -1, 0), -- Sunfury Astromancer
+(@SGGUID+19, @CGUID+288, -1, 0), -- Sunfury Astromancer
+(@SGGUID+19, @CGUID+322, -1, 0), -- Sunfury Astromancer
+(@SGGUID+19, @CGUID+374, -1, 0), -- Sunfury Astromancer
+-- Sunfury Geologist
+(@SGGUID+20, @CGUID+247, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+248, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+249, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+250, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+251, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+252, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+253, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+334, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+335, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+336, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+337, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+338, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+339, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+340, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+341, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+342, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+348, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+349, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+350, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+351, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+352, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+356, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+357, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+358, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+359, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+360, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+362, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+363, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+364, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+365, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+366, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+367, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+375, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+376, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+377, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+378, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+379, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+383, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+384, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+385, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+386, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+387, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+388, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+389, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+390, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+391, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+392, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+393, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+394, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+395, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+403, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+404, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+405, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+406, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+407, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+408, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+416, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+417, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+418, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+419, -1, 0), -- Sunfury Geologist
+(@SGGUID+20, @CGUID+420, -1, 0), -- Sunfury Geologist
+-- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+272, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+273, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+274, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+275,  -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+276, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+282, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+293, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+294, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+295, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+296, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+297, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+305, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+306, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+307, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+308, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+309, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+318, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+319, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+328, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+329, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+330, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+331, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+332, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+333, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+411, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+412, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+413, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+414, -1, 0), -- Sunfury Warp-Engineer
+(@SGGUID+21, @CGUID+415, -1, 0), -- Sunfury Warp-Engineer
+-- Sunfury Warp-Master
+(@SGGUID+22, @CGUID+263, -1, 0), -- Sunfury Warp-Master
+(@SGGUID+22, @CGUID+277, -1, 0), -- Sunfury Warp-Master
+(@SGGUID+22, @CGUID+278, -1, 0), -- Sunfury Warp-Master
+(@SGGUID+22, @CGUID+279, -1, 0), -- Sunfury Warp-Master
+(@SGGUID+22, @CGUID+281, -1, 0), -- Sunfury Warp-Master
+(@SGGUID+22, @CGUID+291, -1, 0), -- Sunfury Warp-Master
+(@SGGUID+22, @CGUID+310, -1, 0), -- Sunfury Warp-Master
+(@SGGUID+22, @CGUID+343, -1, 0), -- Sunfury Warp-Master
+(@SGGUID+22, @CGUID+361, -1, 0), -- Sunfury Warp-Master
+(@SGGUID+22, @CGUID+368, -1, 0), -- Sunfury Warp-Master
+(@SGGUID+22, @CGUID+401, -1, 0), -- Sunfury Warp-Master
+(@SGGUID+22, @CGUID+409, -1, 0), -- Sunfury Warp-Master
+(@SGGUID+22, @CGUID+410, -1, 0), -- Sunfury Warp-Master
+-- Overseer Theredis
+(@SGGUID+23, @CGUID+280, -1, 0), -- Overseer Theredis
 -- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
