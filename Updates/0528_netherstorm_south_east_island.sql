@@ -573,17 +573,17 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
 
-DELETE FROM creature_addon WHERE guid IN (@CGUID+75, @CGUID+76, @CGUID+77, @CGUID+264, @CGUID+265, @CGUID+266, @CGUID+267, @CGUID+344, @CGUID+345, @CGUID+346, @CGUID+353, @CGUID+354, @CGUID+381, @CGUID+382, @CGUID+397, @CGUID+398, @CGUID+399);
+DELETE FROM creature_addon WHERE guid BETWEEN @CGUID+1 AND @CGUID+420;
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+75, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
 (@CGUID+76, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
 (@CGUID+77, 0, 8, 0, 0, 0, NULL), -- Disembodied Protector
-
+-- Sunfury Bloodwarder with Emote AttackStateReady
 (@CGUID+264, 0, 0, 1, 333, 0, NULL), -- Sunfury Bloodwarder
 (@CGUID+265, 0, 0, 1, 333, 0, NULL), -- Sunfury Bloodwarder
 (@CGUID+266, 0, 0, 1, 333, 0, NULL), -- Sunfury Bloodwarder
 (@CGUID+267, 0, 0, 1, 333, 0, NULL), -- Sunfury Bloodwarder
-
+-- Sunfury Bloodwarder with StandState Sit
 (@CGUID+344, 0, 1, 0, 0, 0, NULL), -- Sunfury Bloodwarder
 (@CGUID+345, 0, 1, 0, 0, 0, NULL), -- Sunfury Bloodwarder
 (@CGUID+346, 0, 1, 0, 0, 0, NULL), -- Sunfury Bloodwarder
@@ -593,11 +593,20 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+382, 0, 1, 0, 0, 0, NULL), -- Sunfury Bloodwarder
 (@CGUID+397, 0, 1, 0, 0, 0, NULL), -- Sunfury Bloodwarder
 (@CGUID+398, 0, 1, 0, 0, 0, NULL), -- Sunfury Bloodwarder
-(@CGUID+399, 0, 1, 0, 0, 0, NULL); -- Sunfury Bloodwarder
+(@CGUID+399, 0, 1, 0, 0, 0, NULL), -- Sunfury Bloodwarder
+-- Sunfury Geologists without movement
+(@CGUID+247, 0, 0, 0, 233, 0, NULL), -- Sunfury Geologist
+(@CGUID+248, 0, 0, 0, 233, 0, NULL), -- Sunfury Geologist
+(@CGUID+249, 0, 0, 0, 233, 0, NULL), -- Sunfury Geologist
+(@CGUID+250, 0, 0, 0, 233, 0, NULL), -- Sunfury Geologist
+(@CGUID+251, 0, 0, 0, 233, 0, NULL), -- Sunfury Geologist
+(@CGUID+252, 0, 0, 0, 233, 0, NULL), -- Sunfury Geologist
+(@CGUID+253, 0, 0, 0, 233, 0, NULL); -- Sunfury Geologist
 
 -- Captain Arathyn doesnt have mount on spawn, he gets it after intro
--- Sunfury Geologist doesnt always use EmoteState 233
 DELETE FROM creature_template_addon WHERE entry IN (19635);
+-- Sunfury Geologist doesnt always use EmoteState 233
+DELETE FROM creature_template_addon WHERE entry IN (19779);
 
 -- Waypoints
 DELETE FROM creature_movement WHERE id IN (67281,67283,67285,67288,67289,67290,67291,67292,67293,67294,67296,67297,67298,67299,67300,67301,67302,67303,67304,1002734,1002735,1002736,67286,1002731,1002730,1002729,1002728,1002727,67363,67364,67365,67366,67367,67368,67369,67370,67371,67372,1002721,1002720,1002719,1002718,1002717,67378,67379,67380,67382,67383,67384,67385,1002737,1002738,1002739,67381,1002726,69668,69671,69672,69670,1002722,70071,70072);
