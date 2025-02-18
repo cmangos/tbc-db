@@ -18805,6 +18805,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Experimental Pilot (19776) - SAY SEQUENCE WITH ENGINEERING CREWMEMBER
 -- Sunfury Geologist 19779 - spell_list
 ('1977901','19779','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Sunfury Geologist - Flee at 15% HP'),
+-- GUID Based
+('5306347','-5306347','1','0','100','1','20000','30000','30000','40000','0','0','53','18030','0','0','0','0','0','0','0','0','0','0','Sunfury Geologist (Guid EAI) - Start RelayScript OOC'),
 -- Off-Duty Engineer 19780
 ('1978001','19780','30','0','100','1','5','19617','0','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Off-Duty Engineer - Set Phase 1 on Receive AI Event 5 (A)'),
 ('1978002','19780','30','0','100','1','6','19617','0','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','Off-Duty Engineer - Set Phase 0 on Receive AI Event 6 (B)'),
