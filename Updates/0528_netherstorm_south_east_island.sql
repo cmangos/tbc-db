@@ -342,7 +342,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+253, 19779, 530, 1, 2876.11, 4045.08, 155.574, 3.83972, 300, 420, 0, 0), -- Sunfury Geologist guid before 70736
 
 (@CGUID+254, 18855, 530, 1, 2926.44, 4056.91, 149.323, 3.29867, 300, 420, 0, 0), -- Sunfury Magister guid before 67359
-(@CGUID+255, 18855, 530, 1, 2919.75, 4004.16, 149.871, 2.63545, 300, 420, 0, 0), -- Sunfury Magister guid before 67358
+(@CGUID+255, 18855, 530, 1, 2915.5, 4064.86, 149.253, 5.51524, 300, 420, 0, 0), -- Sunfury Magister guid before 67358
 (@CGUID+256, 18855, 530, 1, 2902.86, 4065.47, 149.259, 5.79449, 300, 420, 0, 0), -- Sunfury Magister guid before 67360
 (@CGUID+257, 18855, 530, 1, 2898.45, 4054.55, 149.472, 0.244346, 300, 420, 0, 0), -- Sunfury Magister guid before 67361
 
@@ -1195,19 +1195,19 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+246, 8, 2980.4868,4084.391,150.1267, 100, 0, 1964301),
 (@CGUID+246, 9, 2986.1475,4096.4175,150.10222, 100, 0, 1964301),
 -- Sunfury Astromancer
-(@CGUID+258, 1, 2903.1318,4045.0435,150.25317, 100, 0, 0),
-(@CGUID+258, 2,2900.9724,4054.7844,149.40512, 100, 0, 0),
-(@CGUID+258, 3, 2904.7153,4060.9895,149.22078, 100, 0, 0),
-(@CGUID+258, 4, 2915.959,4060.7952,149.2171, 100, 0, 0),
-(@CGUID+258, 5, 2923.4036,4055.2556,149.51854, 100, 0, 0),
-(@CGUID+258, 6, 2923.972,4037.3577,149.8975, 100, 0, 0),
-(@CGUID+258, 7, 2919.175,4017.136,149.72934, 100, 0, 0),
-(@CGUID+258, 8, 2910.8635,4004.7908,149.72931, 100, 0, 0),
-(@CGUID+258, 9, 2903.904,4002.093,149.73135, 100, 0, 0),
-(@CGUID+258, 10, 2897.3916,4011.309,149.72925, 100, 0, 0),
-(@CGUID+258, 11, 2904.7595,4017.5933,149.72925, 100, 0, 0),
-(@CGUID+258, 12, 2907.02,4029.9692,149.73036, 100, 0, 0),
-(@CGUID+258, 13, 2907.6182,4038.7092,149.75328, 100, 0, 0),
+(@CGUID+258, 1, 2903.1318,4045.0435,150.25317, 100, 0, 1964301),
+(@CGUID+258, 2,2900.9724,4054.7844,149.40512, 100, 0, 1964301),
+(@CGUID+258, 3, 2904.7153,4060.9895,149.22078, 100, 0, 1964301),
+(@CGUID+258, 4, 2915.959,4060.7952,149.2171, 100, 0, 1964301),
+(@CGUID+258, 5, 2923.4036,4055.2556,149.51854, 100, 0, 1964301),
+(@CGUID+258, 6, 2923.972,4037.3577,149.8975, 100, 0, 1964301),
+(@CGUID+258, 7, 2919.175,4017.136,149.72934, 100, 0, 1964301),
+(@CGUID+258, 8, 2910.8635,4004.7908,149.72931, 100, 0, 1964301),
+(@CGUID+258, 9, 2903.904,4002.093,149.73135, 100, 0, 1964301),
+(@CGUID+258, 10, 2897.3916,4011.309,149.72925, 100, 0, 1964301),
+(@CGUID+258, 11, 2904.7595,4017.5933,149.72925, 100, 0, 1964301),
+(@CGUID+258, 12, 2907.02,4029.9692,149.73036, 100, 0, 1964301),
+(@CGUID+258, 13, 2907.6182,4038.7092,149.75328, 100, 0, 1964301),
 -- Sunfury Warp-Master
 (@CGUID+263, 1, 2888.4463,4034.1992,152.29565, 100, 0, 0),
 (@CGUID+263, 2, 2882.89,4040.5195,153.85301, 100, 0, 0),
@@ -2264,25 +2264,25 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+21, 11000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - remove Active object'), 
 (@RELAYID+21, 11000, 1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn/Sunfury Captain - start waypoint'),
 -- Sunfury Magister move to a near Netherstorm Crystal Target
-(@RELAYID+22, 0, 0, 31, 19421, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Terminate Script if no Netherstorm Crystal Target found'), 
+(@RELAYID+22, 0, 0, 31, 19421, 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Terminate Script if no Netherstorm Crystal Target found'), 
 (@RELAYID+22, 1, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - SendAIEventA to self'), -- to change phase to 0
 (@RELAYID+22, 1, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - set Active object'), 
-(@RELAYID+22, 1, 3, 37, 0, 0, 13.5, 19421, 35, 9, 0, @RELAYID+24, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - move to Netherstorm Crystal Target'), 
+(@RELAYID+22, 1, 3, 37, 0, 0, 13.5, 19421, 45, 9, 0, @RELAYID+24, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - move to Netherstorm Crystal Target'), 
 -- Sunfury Magister has to move to Netherstorm Kneel Target
-(@RELAYID+23, 0, 0, 31, 19437, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Terminate Script if no Netherstorm Kneel Target found'), 
+(@RELAYID+23, 0, 0, 31, 19437, 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Terminate Script if no Netherstorm Kneel Target found'), 
 (@RELAYID+23, 1, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - SendAIEventA to self'), -- to change phase to 0
 (@RELAYID+23, 1, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - set Active object'), 
-(@RELAYID+23, 1, 3, 37, 0, 0, 1.5, 19437, 35, 9, 0, @RELAYID+25, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - move to Netherstorm Kneel Target'),
+(@RELAYID+23, 1, 3, 37, 0, 0, 1.5, 19437, 45, 9, 0, @RELAYID+25, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - move to Netherstorm Kneel Target'),
 -- Sunfury Magister BaseScript with Crystal Target
 (@RELAYID+24, 0, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - SendAIEventA to self'), -- to change phase to 0
-(@RELAYID+24, 0, 1, 36, 0, 0, 0, 19421, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - face Netherstorm Crystal Target'), 
+(@RELAYID+24, 0, 1, 36, 0, 0, 0, 19421, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - face Netherstorm Crystal Target'), 
 (@RELAYID+24, 0, 2, 15, 35778, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Cast Bloodcrystal Surge'), 
-(@RELAYID+24, 0, 3, 15, 33918, 0, 0, 19421, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Cast Crystal Channel'), 
+(@RELAYID+24, 0, 3, 15, 33918, 0, 0, 19421, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Cast Crystal Channel'), 
 (@RELAYID+24, 8000, 0, 47, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Stop Channel'), 
 (@RELAYID+24, 9000, 0, 3, @RELAYID+26, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Move to Home Position'),
 -- Sunfury Magister BaseScript with Netherstorm Kneel Target
 (@RELAYID+25, 0, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - SendAIEventA to self'), -- to change phase to 0
-(@RELAYID+25, 0, 1, 36, 0, 0, 0, 19437, 15, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - face Netherstorm Crystal Target'), 
+(@RELAYID+25, 0, 1, 36, 0, 0, 0, 19437, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - face Netherstorm Crystal Target'), 
 (@RELAYID+25, 0, 2, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - StandState Kneel'), 
 (@RELAYID+25, 4000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - Emote OneShotQuestion'), 
 (@RELAYID+25, 7000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Magister - StandState Stand'), 
