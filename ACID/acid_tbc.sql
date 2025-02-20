@@ -18611,8 +18611,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Arcane Annihilator 18856
 ('1885601','18856','0','0','100','1025','14500','17700','21400','23600','0','0','11','33860','17','0','0','0','0','0','0','0','0','0','Arcane Annihilator - Cast Arcane Explosion'),
 ('1885602','18856','0','0','100','1025','6300','9300','19500','22400','0','0','11','35892','17','0','0','0','0','0','0','0','0','0','Arcane Annihilator - Cast Suppression'),
--- Sunfury Warp-Master 18857
-('1885701','18857','0','0','100','1025','3000','6000','15000','20000','0','0','11','35919','1','0','0','0','0','0','0','0','0','0','Sunfury Warp-Master - Cast Welding Beam'),
+-- Sunfury Warp-Master 18857 - spell_list
 -- Wrathbringer (18858) - NSR
 -- Wrath Priestess
 ('1885901','18859','11','0','100','0','0','0','0','0','0','0','11','36226','0','1','0','0','0','0','0','0','0','0','Wrath Priestess - Cast Summon Fel Imp on Spawn'),
