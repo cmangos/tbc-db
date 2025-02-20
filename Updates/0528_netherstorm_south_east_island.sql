@@ -2437,7 +2437,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+7, 1, 0, 80, 'Netherstorm - Sunfury Astromancer - No RP'),
 -- Sunfury Warp-Master RP with Sunfury Geologist StartScript
 (@RELAYID+8, 1, @RELAYID+31, 20, 'Netherstorm - Sunfury Warp-Master - RP'), 
-(@RELAYID+8, 1, 0, 80, 'Netherstorm - Sunfury Warp-Master - No RP');
+(@RELAYID+8, 1, 0, 80, 'Netherstorm - Sunfury Warp-Master - No RP'),
 
 SET @RELAYID := 18000;
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+40;
@@ -2579,11 +2579,15 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+35, 1000, 1, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Emote StateUseStanding'), -- 13:57:50.215
 (@RELAYID+35, 11000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Remove Emote StateUseStanding'), -- 13:58:01.088
 (@RELAYID+35, 13000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - StandState Knee'), -- 13:58:03.522
-(@RELAYID+35, 17000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Emote OneShotExclamation'),  -- 13:58:07.167
+-- random emote
+-- 6 (OneShotQuestion)
+-- 274 (OneShotNo)
+-- 273 (OneShotYes)
+-- 5 (OneShotExclamation)
+(@RELAYID+35, 17000, 0, 1, 0, 0, 0, 0, 0, 0, 5, 6, 273, 274, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - RandomEmote'),  -- 13:58:07.167
 (@RELAYID+35, 20000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - StandState Stand'),  -- 13:58:10.809
 (@RELAYID+35, 23000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - remove Active object'),
 (@RELAYID+35, 23000, 1, 3, @RELAYID+26, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Move to Home Position'); -- 13:58:13.234
-
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
