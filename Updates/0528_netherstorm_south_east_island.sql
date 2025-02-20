@@ -578,7 +578,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+418, 19779, 530, 1, 2711.1, 3883.56, 136.056, 3.12414, 300, 420, 0, 0), -- Sunfury Geologist guid before 70791
 (@CGUID+419, 19779, 530, 1, 2702.71, 3889.59, 135.051, 3.76991, 300, 420, 0, 0), -- Sunfury Geologist missing before
-(@CGUID+420, 19779, 530, 1, 2704.93, 3901.34, 135.643, 3.9968, 300, 420, 0, 0); -- Sunfury Geologist guid before 70790
+(@CGUID+420, 19779, 530, 1, 2704.93, 3901.34, 135.643, 3.9968, 300, 420, 0, 0), -- Sunfury Geologist guid before 70790
 -- Netherstorm Kneel Targets
 (@CGUID+421, 19437, 530, 1, 3018.6711425781250, 4056.9301757812500, 151.8562164306641, 2.2165682315826, 300, 300, 0, 0), -- Netherstorm Kneel Target guid before 69507
 (@CGUID+422, 19437, 530, 1, 3034.9885253906250, 4062.9995117187500, 151.6412353515625, 5.8119463920593, 300, 300, 0, 0), -- Netherstorm Kneel Target guid before 69508
@@ -2528,12 +2528,14 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+29, 10000, 3, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - remove Active object'), 
 -- Sunfury Geologist
 (@RELAYID+30, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Set ActiveObject'), 
-(@RELAYID+30, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteState none'), 
+(@RELAYID+30, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - SendAIEventA to self'), -- to change phase to 0
+(@RELAYID+30, 0, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteState none'), 
 (@RELAYID+30, 1000, 2, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - StandState Knee'), 
 (@RELAYID+30, 4000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Emote OneShotQuestion'), 
 (@RELAYID+30, 7000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - StandState stand'), 
-(@RELAYID+30, 11000, 0, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteState WorkMining'), 
-(@RELAYID+30, 11000, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Set ActiveObject');
+(@RELAYID+30, 11000, 0, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteState WorkMining'),
+(@RELAYID+30, 11000, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - SendAIEventB to self'), -- to change phase to 1 
+(@RELAYID+30, 11000, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Remove ActiveObject');
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
