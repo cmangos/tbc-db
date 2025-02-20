@@ -1751,6 +1751,12 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (20416, 0, 4, 2826.6685,4154.0835,162.5938, 100, 0, 0),
 (20416, 0, 5, 2844.1633,4158.831,162.59386, 100, 0, 0);
 
+-- Equipment
+-- Sunfury Warp-Master - delte old equipment
+DELETE FROM creature_equip_template WHERE entry = 1885701;
+INSERT INTO creature_equip_template (`entry`, `equipentry1`, `equipentry2`, `equipentry3`) VALUES 
+(1885701, 1911, 0, 0);
+
 -- SpawnData
 DELETE FROM creature_spawn_data WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
 DELETE FROM creature_spawn_data WHERE guid BETWEEN @CGUID+1 AND @CGUID+204;
@@ -1810,14 +1816,17 @@ INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+221, 1887901),
 (@CGUID+222, 1887901),
 (@CGUID+223, 1887901),
+-- Sunfury Warp-Master different equipments
+(@CGUID+281, 1885701), -- Tool, Wrench Small
 -- Generic RunOn
 (@CGUID+95, 1),
 (@CGUID+190, 1),
 (@CGUID+204, 1);
 
-DELETE FROM creature_spawn_data_template WHERE Entry IN (1887901);
-INSERT INTO creature_spawn_data_template (`Entry`, `UnitFlags`, `Name`) VALUES 
-(1887901, 33587968, 'Phase Hunter (18879) - UnitFlags');
+DELETE FROM creature_spawn_data_template WHERE Entry IN (1885701, 1887901);
+INSERT INTO creature_spawn_data_template (`Entry`, `UnitFlags`, `EquipmentId`, `Name`) VALUES 
+(1885701, -1, 1885701, 'Sunfury Warp-Master (18857) - EquipmentId'),
+(1887901, 33587968, -1, 'Phase Hunter (18879) - UnitFlags');
 
 -- Gameobjects
 -- Etherlithium Matrix Crystal - 183767 objects before rework: 28 spawns
@@ -2559,7 +2568,22 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+33, 9000, 1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - start waypoint'),
 (@RELAYID+33, 9000, 1, 36, 233, 0, 0, 19779, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Emote StateWorkMining'),
 (@RELAYID+33, 9000, 2, 35, 6, 0, 0, 19779, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - SendAIEventB to Sunfury Magister'), -- to change magister phase to 1
-(@RELAYID+33, 9000, 3, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - remove Active object');
+(@RELAYID+33, 9000, 3, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - remove Active object'),
+-- Sunfury Warp-Master Solo RP 1 with Netherstorm Use Standing Target
+(@RELAYID+34, 0, 0, 31, 19483, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Terminate Script if no Netherstorm Use Standing Target'),
+(@RELAYID+34, 1, 1, 37, 0, 0, 1, 19483, 20, 9, 0, @RELAYID+35, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master move to Netherstorm Use Standing Target'),
+(@RELAYID+34, 1, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Set Active object'),
+-- (@RELAYID+34, 1, 3, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - SendAIEventA to self'), -- to change phase to 0
+-- Sunfury Warp-Master RP after reaching Netherstorm Use Standing Target
+(@RELAYID+35, 1000, 0, 36, 0, 0, 0, 19483, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - face Netherstorm Use Standing Target'), -- 13:57:50.215 13:57:50.215
+(@RELAYID+35, 1000, 1, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Emote StateUseStanding'), -- 13:57:50.215
+(@RELAYID+35, 11000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Remove Emote StateUseStanding'), -- 13:58:01.088
+(@RELAYID+35, 13000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - StandState Knee'), -- 13:58:03.522
+(@RELAYID+35, 17000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Emote OneShotExclamation'),  -- 13:58:07.167
+(@RELAYID+35, 20000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - StandState Stand'),  -- 13:58:10.809
+(@RELAYID+35, 23000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - remove Active object'),
+(@RELAYID+35, 23000, 1, 3, @RELAYID+26, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Move to Home Position'); -- 13:58:13.234
+
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
