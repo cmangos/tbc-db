@@ -217,6 +217,20 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1885701);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1885701, 1, 35919, 0, -1, 1, 0, 100, 0, 3000, 8000, 12000, 18000, 'Sunfury Warp-Master - Welding Beam - current');
+(1885701, 1, 35919, 0, -1, 1, 0, 100, 0, 2000, 8000, 12000, 18000, 'Sunfury Warp-Master - Welding Beam - current');
 
 UPDATE `creature_template` SET `SpellList` = 1885701 WHERE `entry` = 18857;
+
+-- Sunfury Warp-Engineer
+DELETE FROM `creature_template_spells` WHERE `entry` = 18852;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1885201;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1885201, 'Netherstorm - Sunfury Warp-Engineer', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1885201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1885201, 1, 35920, 0, -1, 134, 0, 100, 0, 10000, 22000, 10000, 22000, 'Sunfury Warp-Engineer - Electroshock - top aggro casting'),
+(1885201, 1, 35919, 0, -1, 1, 0, 100, 0, 2000, 8000, 12000, 18000, 'Sunfury Warp-Engineer - Welding Beam - current');
+
+UPDATE `creature_template` SET `SpellList` = 1885201 WHERE `entry` = 18852;
