@@ -1427,12 +1427,12 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+258, 12, 2907.02,4029.9692,149.73036, 100, 0, 1964301),
 (@CGUID+258, 13, 2907.6182,4038.7092,149.75328, 100, 0, 1964301),
 -- Sunfury Warp-Master
-(@CGUID+263, 1, 2888.4463,4034.1992,152.29565, 100, 0, 0),
-(@CGUID+263, 2, 2882.89,4040.5195,153.85301, 100, 0, 0),
-(@CGUID+263, 3, 2876.5286,4050.1367,156.21225, 100, 0, 0),
-(@CGUID+263, 4, 2873.1033,4057.861,157.59138, 100, 0, 0),
-(@CGUID+263, 5, 2869.4014,4066.7354,157.06836, 100, 0, 0),
-(@CGUID+263, 6, 2862.1602,4073.5168,156.95029, 100, 0, 0),
+(@CGUID+263, 1, 2888.4463,4034.1992,152.29565, 100, 0, 1885701),
+(@CGUID+263, 2, 2882.89,4040.5195,153.85301, 100, 0, 1885701),
+(@CGUID+263, 3, 2876.5286,4050.1367,156.21225, 100, 0, 1885701),
+(@CGUID+263, 4, 2873.1033,4057.861,157.59138, 100, 0, 1885701),
+(@CGUID+263, 5, 2869.4014,4066.7354,157.06836, 100, 0, 1885701),
+(@CGUID+263, 6, 2862.1602,4073.5168,156.95029, 100, 0, 1885701),
 -- Sunfury Warp-Master
 (@CGUID+279, 1, 2825.5164,4147.5024,162.59381, 100, 0, 0),
 (@CGUID+279, 2, 2822.966,4153.412,162.59381, 100, 0, 0),
@@ -2425,7 +2425,10 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+6, 1, @RELAYID+23, 0, 'Netherstorm - Sunfury Magister - Netherstorm Kneel Target RP'),
 -- Sunfury Astromancer RP with Sunfury Magister StartScript
 (@RELAYID+7, 1, @RELAYID+27, 20, 'Netherstorm - Sunfury Astromancer - RP'), 
-(@RELAYID+7, 1, 0, 80, 'Netherstorm - Sunfury Magister - No RP');
+(@RELAYID+7, 1, 0, 80, 'Netherstorm - Sunfury Astromancer - No RP'),
+-- Sunfury Warp-Master RP with Sunfury Geologist StartScript
+(@RELAYID+8, 1, @RELAYID+31, 20, 'Netherstorm - Sunfury Warp-Master - RP'), 
+(@RELAYID+8, 1, 0, 80, 'Netherstorm - Sunfury Warp-Master - No RP');
 
 SET @RELAYID := 18000;
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+40;
@@ -2535,11 +2538,34 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+30, 7000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - StandState stand'), 
 (@RELAYID+30, 11000, 0, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteState WorkMining'),
 (@RELAYID+30, 11000, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - SendAIEventB to self'), -- to change phase to 1 
-(@RELAYID+30, 11000, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Remove ActiveObject');
+(@RELAYID+30, 11000, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Remove ActiveObject'),
+-- Sunfury Warp-Master start RP with Sunfury Geologist
+(@RELAYID+31, 0, 0, 31, 19779, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Terminate Script if no Sunfury Geologist found'), 
+(@RELAYID+31, 1, 1, 35, 7, 0, 0, 19779, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - SendAIEventC to Sunfury Magister'),
+-- Sunfury Geologist RP with Sunfury Warp-Master
+(@RELAYID+32, 0, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - SendAIEventA to self'), -- to change phase to 0
+(@RELAYID+32, 0, 1, 21, 1, 0, 0, 18857, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - stop waypoint'), 
+(@RELAYID+32, 0, 2, 32, 1, 0, 0, 18857, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - set ActiveObject'), 
+(@RELAYID+32, 0, 3, 37, 0, 0, 3, 18857, 20, 3, 0, @RELAYID+33, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master move to Sunfury Warp-Master'),
+-- Sunfury Warp-Master script after reaching Sunfury Geologist
+(@RELAYID+33, 0, 0, 1, 0, 0, 0, 19779, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteStateNon'),
+(@RELAYID+33, 1000, 0, 36, 0, 0, 0, 19779, 5, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - facing to Sunfury Warp-Master'), 
+(@RELAYID+33, 1000, 1, 36, 0, 0, 0, 19779, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - face Sunfury Magister'), 
+(@RELAYID+33, 1000, 2, 1, 6, 0, 0, 19779, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Emote OneShotQuestion'),
+(@RELAYID+33, 3000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Emote OneShotExclamation'), 
+(@RELAYID+33, 4000, 0, 1, 274, 0, 0, 19779, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Emote OneShotNo'),
+(@RELAYID+33, 6000, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Emote OneShotPoint'),
+(@RELAYID+33, 7000, 0, 36, 1, 0, 0, 19779, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Reset Facing'), 
+(@RELAYID+33, 9000, 1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - start waypoint'),
+(@RELAYID+33, 9000, 1, 36, 233, 0, 0, 19779, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Emote StateWorkMining'),
+(@RELAYID+33, 9000, 2, 35, 6, 0, 0, 19779, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - SendAIEventB to Sunfury Magister'), -- to change magister phase to 1
+(@RELAYID+33, 9000, 3, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - remove Active object');
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Sunfury Warp-Master
+(1885701, 0, 0, 45, 0, 18008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Start RandomScript'),
 -- Phase Hunter
 -- Flags: 33587968
 -- They spawn with flags UNIT_FLAG_UNINTERACTIBLE UNIT_FLAG_IMMUNE_TO_NPC UNIT_FLAG_IMMUNE_TO_PLAYER UNIT_FLAG_SWIMMING (33587968)
