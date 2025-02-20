@@ -378,10 +378,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 -- Manaforge B'Naar Innside
 (@CGUID+272, 18852, 530, 1, 2895.97, 4172.31, 161.966, 1.01229, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67287
-(@CGUID+273, 18852, 530, 1, 2919.19, 4178.64, 161.966, 3.76865, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67288
+(@CGUID+273, 18852, 530, 1, 2919.19, 4178.64, 161.966, 2.6878070, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67288
 (@CGUID+274, 18852, 530, 1, 2934.98, 4180.37, 163.845, 6.00312, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67286
 (@CGUID+275, 18852, 530, 1, 2871.98, 4186.13, 164.053, 2.82743, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 1002734
-(@CGUID+276, 18852, 530, 1, 2907.67, 4215.62, 164.07, 4.48646, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 1002735
+(@CGUID+276, 18852, 530, 1, 2907.67, 4215.62, 164.07, 1.3264, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 1002735
 
 (@CGUID+277, 18857, 530, 1, 2893.93, 4195.61, 161.965, 5.53269, 360, 480, 0, 0), -- Sunfury Warp-Master guid before 1002737
 (@CGUID+278, 18857, 530, 1, 2913.14, 4196.44, 161.961, 4.06662, 360, 480, 0, 0), -- Sunfury Warp-Master guid before 1002738

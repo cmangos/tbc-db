@@ -18558,6 +18558,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1885204','18852','30','0','100','1','5','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 0 on ReceiveEventAI A'),
 ('1885205','18852','30','0','100','1','6','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 1 on ReceiveEventAI B'),
 ('1885206','18852','30','5','100','1','7','0','0','0','0','0','22','0','0','0','53','18032','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 0 and start Relayscript on ReceiveEventAI C (Phase 1)'),
+-- GUID BASED
+('5306272','-5306272','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306273','-5306273','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306274','-5306274','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306275','-5306275','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306276','-5306276','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306282','-5306282','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
 -- Sunfury Bloodwarder 18853 - spell_list
 ('1885301','18853','37','0','100','1','8599','0','0','0','0','0','1','1191','0','0','0','0','0','0','0','0','0','0','Sunfury Bloodwarder - Say EmotedText on Enrage'),
 -- GUID Based
