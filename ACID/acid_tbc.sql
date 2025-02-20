@@ -18553,6 +18553,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1885002','18850','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','1','1191','0','0','0','0','0','0','Sunfury Guardsman - Cast Enrage at 30% HP'),
 -- Sunfury Warp-Engineer 18852 - spell_list
 ('1885201','18852','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Sunfury Warp-Engineer - Flee at 15% HP'),
+('1885202','18852','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 1 on Spawn'),
+('1885203','18852','21','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 1 ReachedHome'),
+('1885204','18852','30','0','100','1','5','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 0 on ReceiveEventAI A'),
+('1885205','18852','30','0','100','1','6','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 1 on ReceiveEventAI B'),
+('1885206','18852','30','5','100','1','7','0','0','0','0','0','22','0','0','0','53','18032','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 0 and start Relayscript on ReceiveEventAI C (Phase 1)'),
 -- Sunfury Bloodwarder 18853 - spell_list
 ('1885301','18853','37','0','100','1','8599','0','0','0','0','0','1','1191','0','0','0','0','0','0','0','0','0','0','Sunfury Bloodwarder - Say EmotedText on Enrage'),
 -- GUID Based
