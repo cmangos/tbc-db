@@ -785,7 +785,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
 
-DELETE FROM creature_addon WHERE guid BETWEEN @CGUID+1 AND @CGUID+420;
+DELETE FROM creature_addon WHERE guid BETWEEN @CGUID+1 AND @CGUID+399;
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+75, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
 (@CGUID+76, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
@@ -1877,7 +1877,7 @@ INSERT INTO creature_equip_template (`entry`, `equipentry1`, `equipentry2`, `equ
 
 -- SpawnData
 DELETE FROM creature_spawn_data WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
-DELETE FROM creature_spawn_data WHERE guid BETWEEN @CGUID+1 AND @CGUID+204;
+DELETE FROM creature_spawn_data WHERE guid BETWEEN @CGUID+1 AND @CGUID+574;
 INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+1, 2020302), -- Monster - Tool, Wrench Small
 (@CGUID+2, 2020301), -- Monster - Mace, Basic Metal Hammer
@@ -2056,7 +2056,7 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+7, 18872, 0, 0, 0), (@SGGUID+7, 18873, 0, 0, 0); -- Disembodied Vindicator/Disembodied Protector
 
 
-DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID AND @SGGUID+100;
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+100;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+15, -1, 0), -- Phase Hunter
 (@SGGUID+1, @CGUID+16, -1, 0), -- Phase Hunter
@@ -2510,140 +2510,140 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+29, @CGUID+443, -1, 0), -- Netherstorm Kneel Target
 (@SGGUID+29, @CGUID+444, -1, 0), -- Netherstorm Kneel Target
 -- Netherstorm Crystal Targets
-(@SGGUID+230, @CGUID+445, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+446, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+447, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+448, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+449, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+450, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+451, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+452, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+453, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+454, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+455, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+456, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+457, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+458, -1, 0), -- Netherstorm Crystal Target
-(@SGGUID+230, @CGUID+459, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+445, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+446, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+447, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+448, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+449, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+450, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+451, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+452, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+453, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+454, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+455, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+456, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+457, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+458, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+30, @CGUID+459, -1, 0), -- Netherstorm Crystal Target
 -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+460, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+461, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+462, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+463, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+464, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+465, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+466, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+467, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+468, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+469, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+470, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+471, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+472, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+473, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+474, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+475, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+476, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+477, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+478, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+479, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+480, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+481, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+482, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+483, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+484, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+485, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+486, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+487, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+488, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+489, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+490, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+491, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+492, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+493, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+494, -1, 0), -- Netherstorm Repair Target
-(@SGGUID+231, @CGUID+495, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+460, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+461, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+462, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+463, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+464, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+465, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+466, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+467, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+468, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+469, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+470, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+471, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+472, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+473, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+474, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+475, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+476, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+477, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+478, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+479, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+480, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+481, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+482, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+483, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+484, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+485, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+486, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+487, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+488, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+489, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+490, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+491, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+492, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+493, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+494, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+31, @CGUID+495, -1, 0), -- Netherstorm Repair Target
 -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+496, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+497, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+498, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+499, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+500, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+501, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+502, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+503, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+504, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+505, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+506, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+507, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+508, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+509, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+510, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+511, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+512, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+513, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+514, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+515, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+516, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+517, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+518, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+519, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+520, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+521, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+522, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+523, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+524, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+525, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+526, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+527, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+528, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+529, -1, 0), -- Netherstorm Use Standing Target
-(@SGGUID+232, @CGUID+530, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+496, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+497, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+498, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+499, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+500, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+501, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+502, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+503, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+504, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+505, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+506, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+507, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+508, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+509, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+510, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+511, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+512, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+513, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+514, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+515, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+516, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+517, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+518, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+519, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+520, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+521, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+522, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+523, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+524, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+525, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+526, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+527, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+528, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+529, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+32, @CGUID+530, -1, 0), -- Netherstorm Use Standing Target
 -- Netherstorm Work Mining target
-(@SGGUID+233, @CGUID+531, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+532, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+533, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+534, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+535, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+536, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+537, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+538, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+539, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+540, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+541, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+542, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+543, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+544, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+545, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+546, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+547, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+548, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+549, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+550, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+551, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+552, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+553, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+554, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+555, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+556, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+557, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+558, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+559, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+560, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+561, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+562, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+563, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+564, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+565, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+566, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+567, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+568, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+569, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+570, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+571, -1, 0), -- Netherstorm Work Mining Target
-(@SGGUID+233, @CGUID+572, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+531, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+532, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+533, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+534, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+535, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+536, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+537, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+538, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+539, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+540, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+541, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+542, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+543, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+544, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+545, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+546, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+547, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+548, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+549, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+550, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+551, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+552, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+553, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+554, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+555, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+556, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+557, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+558, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+559, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+560, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+561, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+562, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+563, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+564, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+565, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+566, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+567, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+568, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+569, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+570, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+571, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+33, @CGUID+572, -1, 0), -- Netherstorm Work Mining Target
 -- Arcane Annihilator
-(@SGGUID+234, @CGUID+573, -1, 0), -- Arcane Annihilator
-(@SGGUID+234, @CGUID+574, -1, 0), -- Arcane Annihilator
+(@SGGUID+34, @CGUID+573, -1, 0), -- Arcane Annihilator
+(@SGGUID+34, @CGUID+574, -1, 0), -- Arcane Annihilator
 -- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
