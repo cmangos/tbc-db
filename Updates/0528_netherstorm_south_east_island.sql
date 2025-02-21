@@ -2575,28 +2575,28 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+33, 9000, 1, 36, 233, 0, 0, @STRINGID+1, 5, 0x800, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - StringID - Emote StateWorkMining'),
 (@RELAYID+33, 9000, 2, 35, 6, 0, 0, @STRINGID+1, 5, 0x801, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - SendAIEventB to StringID'), -- to change magister phase to 1
 (@RELAYID+33, 9000, 3, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - remove Active object'),
--- Sunfury Warp-Master Solo RP 1 with Netherstorm Use Standing Target
-(@RELAYID+34, 0, 0, 31, 19483, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Terminate Script if no Netherstorm Use Standing Target'),
-(@RELAYID+34, 1, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Set Active object'), 
-(@RELAYID+34, 1, 2, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Change Movement to Idle'), 
-(@RELAYID+35, 1, 3, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - SendAIEventA to self'), -- to change phase to 0
-(@RELAYID+34, 1, 4, 3, @RELAYID+35, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Move to Home Position'), 
+-- Sunfury Warp-Master/Warp-Engineer Solo RP 1 with Netherstorm Use Standing Target
+(@RELAYID+34, 0, 0, 31, 19483, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Terminate Script if no Netherstorm Use Standing Target'),
+(@RELAYID+34, 1, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Set Active object'), 
+(@RELAYID+34, 1, 2, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Change Movement to Idle'), 
+(@RELAYID+35, 1, 3, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - SendAIEventA to self'), -- to change phase to 0
+(@RELAYID+34, 1, 4, 3, @RELAYID+35, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Move to Home Position'), 
 -- Event Start
-(@RELAYID+35, 10000, 1, 37, 0, 0, 1, 19483, 20, 9, 0, @RELAYID+36, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master move to Netherstorm Use Standing Target'),
--- Sunfury Warp-Master RP after reaching Netherstorm Use Standing Target
-(@RELAYID+36, 1000, 0, 36, 0, 0, 0, 19483, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - face Netherstorm Use Standing Target'), 
-(@RELAYID+36, 1000, 1, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Emote StateUseStanding'), 
-(@RELAYID+36, 11000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Remove Emote StateUseStanding'), 
-(@RELAYID+36, 13000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - StandState Kneel'),
+(@RELAYID+35, 10000, 1, 37, 0, 0, 0, 19483, 20, 1, 0, @RELAYID+36, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer move to Netherstorm Use Standing Target'),
+-- Sunfury Warp-Master/Warp-Engineer RP after reaching Netherstorm Use Standing Target
+(@RELAYID+36, 1000, 0, 36, 0, 0, 0, 19483, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - face Netherstorm Use Standing Target'), 
+(@RELAYID+36, 1000, 1, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Emote StateUseStanding'), 
+(@RELAYID+36, 11000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Remove Emote StateUseStanding'), 
+(@RELAYID+36, 13000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - StandState Kneel'),
 -- random emote
 -- 6 (OneShotQuestion) 274 (OneShotNo)273 (OneShotYes) 5 (OneShotExclamation)
-(@RELAYID+36, 17000, 0, 1, 0, 0, 0, 0, 0, 0, 5, 6, 273, 274, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - RandomEmote'),  -- 13:58:07.167
-(@RELAYID+36, 20000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - StandState Stand'),  -- 13:58:10.809
-(@RELAYID+36, 23000, 1, 3, @RELAYID+37, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Move to Home Position'), -- 13:58:13.234
+(@RELAYID+36, 17000, 0, 1, 0, 0, 0, 0, 0, 0, 5, 6, 273, 274, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - RandomEmote'),  -- 13:58:07.167
+(@RELAYID+36, 20000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - StandState Stand'),  -- 13:58:10.809
+(@RELAYID+36, 23000, 1, 3, @RELAYID+37, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Move to Home Position'), -- 13:58:13.234
 -- Sunfury WarpMaster small reset, change to rnd movement
-(@RELAYID+37, 1000, 0, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - SendAIEventB to self'), -- to change phase to 1
-(@RELAYID+37, 1000, 1, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - RandomMovement around Point'),
-(@RELAYID+37, 1000, 2, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Reove Active object');
+(@RELAYID+37, 1000, 0, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - SendAIEventB to self'), -- to change phase to 1
+(@RELAYID+37, 1000, 1, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - RandomMovement around Point'),
+(@RELAYID+37, 1000, 2, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Reove Active object');
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
