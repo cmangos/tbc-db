@@ -805,20 +805,10 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+382, 0, 1, 0, 0, 0, NULL), -- Sunfury Bloodwarder
 (@CGUID+397, 0, 1, 0, 0, 0, NULL), -- Sunfury Bloodwarder
 (@CGUID+398, 0, 1, 0, 0, 0, NULL), -- Sunfury Bloodwarder
-(@CGUID+399, 0, 1, 0, 0, 0, NULL), -- Sunfury Bloodwarder
--- Sunfury Geologists without movement
-(@CGUID+247, 0, 0, 0, 233, 0, NULL), -- Sunfury Geologist
-(@CGUID+248, 0, 0, 0, 233, 0, NULL), -- Sunfury Geologist
-(@CGUID+249, 0, 0, 0, 233, 0, NULL), -- Sunfury Geologist
-(@CGUID+250, 0, 0, 0, 233, 0, NULL), -- Sunfury Geologist
-(@CGUID+251, 0, 0, 0, 233, 0, NULL), -- Sunfury Geologist
-(@CGUID+252, 0, 0, 0, 233, 0, NULL), -- Sunfury Geologist
-(@CGUID+253, 0, 0, 0, 233, 0, NULL); -- Sunfury Geologist
+(@CGUID+399, 0, 1, 0, 0, 0, NULL); -- Sunfury Bloodwarder
 
 -- Captain Arathyn doesnt have mount on spawn, he gets it after intro
 DELETE FROM creature_template_addon WHERE entry IN (19635);
--- Sunfury Geologist doesnt always use EmoteState 233
-DELETE FROM creature_template_addon WHERE entry IN (19779);
 
 -- Waypoints
 DELETE FROM creature_movement WHERE id IN (67281,67283,67285,67288,67289,67290,67291,67292,67293,67294,67296,67297,67298,67299,67300,67301,67302,67303,67304,67373,67374,1002734,1002735,1002736,67286,1002731,1002730,1002729,1002728,1002727,67363,67364,67365,67366,67367,67368,67369,67370,67371,67372,1002721,1002720,1002719,1002718,1002717,67378,67379,67380,67382,67383,67384,67385,1002737,1002738,1002739,67381,1002726,69668,69671,69672,69670,1002722,70071,70072);
@@ -2738,10 +2728,13 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+7, 1, 0, 80, 'Netherstorm - Sunfury Astromancer - No RP'),
 -- Sunfury Warp-Master RP with Sunfury Geologist/Sunfury Warp-Engineer StartScript
 (@RELAYID+8, 1, @RELAYID+31, 40, 'Netherstorm - Sunfury Warp-Master - RP'), 
-(@RELAYID+8, 1, 0, 60, 'Netherstorm - Sunfury Warp-Master - No RP');
+(@RELAYID+8, 1, 0, 60, 'Netherstorm - Sunfury Warp-Master - No RP'),
+-- Sunfury Geologist rnd event
+(@RELAYID+9, 1, @RELAYID+30, 0, 'Netherstorm - Sunfury Warp-Master - RP'), 
+(@RELAYID+9, 1, @RELAYID+40, 0, 'Netherstorm - Sunfury Warp-Master - Netherstorm Work Mining Target RP');
 
 SET @RELAYID := 18000;
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+40;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+42;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Nether Technician script via ACID - CGUID+4
 (@RELAYID+1, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1911, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
@@ -2895,13 +2888,31 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+38, 13000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - StandState Kneel'),
 -- random emote
 -- 6 (OneShotQuestion) 274 (OneShotNo)273 (OneShotYes) 5 (OneShotExclamation)
-(@RELAYID+38, 17000, 0, 1, 0, 0, 0, 0, 0, 0, 5, 6, 273, 274, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - RandomEmote'),  -- 13:58:07.167
-(@RELAYID+38, 20000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - StandState Stand'),  -- 13:58:10.809
-(@RELAYID+38, 23000, 1, 3, @RELAYID+39, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Move to Home Position'), -- 13:58:13.234
+(@RELAYID+38, 17000, 0, 1, 0, 0, 0, 0, 0, 0, 5, 6, 273, 274, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - RandomEmote'),
+(@RELAYID+38, 20000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - StandState Stand'),
+(@RELAYID+38, 23000, 1, 3, @RELAYID+39, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Move to Home Position'),
 -- Sunfury WarpMaster small reset, change to rnd movement
 (@RELAYID+39, 1000, 0, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - SendAIEventB to self'), -- to change phase to 1
 (@RELAYID+39, 1000, 1, 20, 1, 2, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - RandomMovement around Point'),
-(@RELAYID+39, 1000, 2, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Reove Active object');
+(@RELAYID+39, 1000, 2, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Reove Active object'),
+-- Sunfury Geologist Move script to Netherstorm Work Mining Target
+(@RELAYID+40, 0, 0, 31, 19439, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Terminate Script if no Netherstorm Work Mining Target'),
+(@RELAYID+40, 1, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Set Active object'), 
+(@RELAYID+40, 0, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteState none'), 
+(@RELAYID+40, 1, 3, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - SendAIEventA to self'), -- to change phase to 0
+(@RELAYID+40, 6000, 1, 37, 0, 0, 1, 19439, 10, 9, 0, @RELAYID+41, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer move to Netherstorm Use Standing Target'),
+-- Sunfury Geologist script after reaching Netherstorm Work Mining Target
+(@RELAYID+41, 1000, 0, 36, 0, 0, 0, 19439, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - face Netherstorm Work Mining Target'), 
+(@RELAYID+41, 1000, 1, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteState WorkMining'),
+(@RELAYID+41, 11000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteState None'),
+(@RELAYID+41, 13000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - StandState Knee'), 
+(@RELAYID+41, 16000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Emote OneShotQuestion'), 
+(@RELAYID+41, 20000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - StandState stand'), 
+(@RELAYID+41, 23000, 0, 3, @RELAYID+42, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Move to Home Position'),
+-- Sunfury Geologist when reached home position
+(@RELAYID+42, 3000, 0, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteState WorkMining'),
+(@RELAYID+42, 3000, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - SendAIEventA to self'), -- to change phase to 0
+(@RELAYID+42, 3000, 2, 21, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Remove Active Object');
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
