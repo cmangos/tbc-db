@@ -123,3 +123,142 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2021501 WHERE `entry` = 20215;
 
+-- Captain Arathyn
+DELETE FROM `creature_template_spells` WHERE `entry` = 19635;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1963501;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1963501, 'Netherstorm - Captain Arathyn', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1963501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1963501, 1, 17207, 0, -1, 2, 0, 100, 0, 8000, 15000, 15000, 20000, 'Captain Arathyn - Whirlwind - self');
+
+UPDATE `creature_template` SET `SpellList` = 1963501 WHERE `entry` = 19635;
+
+
+-- Sunfury Bloodwarder
+DELETE FROM `creature_template_spells` WHERE `entry` = 18853;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1885301;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1885301, 'Netherstorm - Sunfury Bloodwarder', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1885301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1885301, 1, 8599, 0, 5364, 0, 0, 100, 0, 0, 0, 1200000, 1200000, 'Sunfury Bloodwarder - Enrage - self'),
+(1885301, 2, 35877, 0, -1, 130, 0, 100, 0, 10000, 30000, 10000, 30000, 'Sunfury Bloodwarder - Mark of the Sunfury - top aggro aura not present');
+
+UPDATE `creature_template` SET `SpellList` = 1885301 WHERE `entry` = 18853;
+
+-- Sunfury Captain
+DELETE FROM `creature_template_spells` WHERE `entry` = 19453;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1945301;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1945301, 'Netherstorm - Sunfury Captain', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1945301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1945301, 1, 8599, 0, 5364, 0, 0, 100, 0, 0, 0, 1200000, 1200000, 'Sunfury Captain - Enrage - self'),
+(1945301, 2, 32064, 0, -1, 2, 0, 100, 0, 6000, 14000, 14000, 28000, 'Sunfury Captain - Battle Shout - self'),
+(1945301, 3, 35871, 0, -1, 1, 0, 100, 0, 4000, 12000, 15000, 25000, 'Sunfury Captain - SpellBreaker - current');
+
+UPDATE `creature_template` SET `SpellList` = 1945301 WHERE `entry` = 19453;
+
+
+-- Sunfury Astromancer
+DELETE FROM `creature_template_spells` WHERE `entry` = 19643;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1964301;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1964301, 'Netherstorm - Sunfury Astromancer', 0, 70);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1964301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1964301, 1, 35914, 0, -1, 1, 0, 100, 0, 12000, 20000, 16000, 24000, 'Sunfury Astromancer - Astral Focus - current'),
+(1964301, 2, 38391, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Sunfury Astromancer - Scorch - current');
+
+UPDATE `creature_template` SET `SpellList` = 1964301 WHERE `entry` = 19643;
+
+-- Sunfury Magister
+DELETE FROM `creature_template_spells` WHERE `entry` = 18855;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1885501;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1885501, 'Netherstorm - Sunfury Magister', 0, 70);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1885501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1885501, 1, 9053, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Sunfury Magister - Fireball - current');
+
+UPDATE `creature_template` SET `SpellList` = 1885501 WHERE `entry` = 18855;
+
+-- Sunfury Geologist
+DELETE FROM `creature_template_spells` WHERE `entry` = 19779;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1977901;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1977901, 'Netherstorm - Sunfury Geologist', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1977901);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1977901, 1, 35918, 0, -1, 130, 0, 100, 0, 10000, 20000, 10000, 20000, 'Sunfury Geologist - Puncture Armor - top aggro aura not present'),
+(1977901, 2, 36645, 0, -1, 107, 0, 100, 0, 2000, 6000, 2000, 6000, 'Sunfury Geologist - Throw Rock - random not in melee');
+
+UPDATE `creature_template` SET `SpellList` = 1977901 WHERE `entry` = 19779;
+
+-- Sunfury Warp-Master
+DELETE FROM `creature_template_spells` WHERE `entry` = 18857;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1885701;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1885701, 'Netherstorm - Sunfury Warp-Master', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1885701);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1885701, 1, 35919, 0, -1, 1, 0, 100, 0, 2000, 8000, 12000, 18000, 'Sunfury Warp-Master - Welding Beam - current');
+
+UPDATE `creature_template` SET `SpellList` = 1885701 WHERE `entry` = 18857;
+
+-- Sunfury Warp-Engineer
+DELETE FROM `creature_template_spells` WHERE `entry` = 18852;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1885201;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1885201, 'Netherstorm - Sunfury Warp-Engineer', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1885201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1885201, 1, 35920, 0, -1, 134, 0, 100, 0, 10000, 22000, 10000, 22000, 'Sunfury Warp-Engineer - Electroshock - top aggro casting'),
+(1885201, 2, 35919, 0, -1, 1, 0, 100, 0, 2000, 8000, 12000, 18000, 'Sunfury Warp-Engineer - Welding Beam - current');
+
+UPDATE `creature_template` SET `SpellList` = 1885201 WHERE `entry` = 18852;
+
+-- Overseer Theredis
+DELETE FROM `creature_template_spells` WHERE `entry` = 20416;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 2041601;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2041601, 'Netherstorm - Overseer Theredis', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2041601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2041601, 1, 6713, 0, -1, 1, 0, 100, 0, 10000, 20000, 20000, 34000, 'Overseer Theredis - Disarm - current'),
+(2041601, 2, 35871, 0, -1, 1, 0, 100, 0, 8000, 16000, 12000, 18000, 'Overseer Theredis - Spellbreaker - current');
+
+UPDATE `creature_template` SET `SpellList` = 2041601 WHERE `entry` = 20416;
+
+-- Arcane Annihilator
+DELETE FROM `creature_template_spells` WHERE `entry` = 18856;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1885601;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1885601, 'Netherstorm - Arcane Annihilator', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1885601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1885601, 1, 33860, 0, -1, 2, 0, 100, 0, 12000, 18000, 18000, 24000, 'Arcane Annihilator - Arcane Explosion - self'),
+(1885601, 2, 35892, 0, -1, 2, 0, 100, 0, 6000, 10000, 16000, 22000, 'Arcane Annihilator - Suppression - self');
+
+UPDATE `creature_template` SET `SpellList` = 1885601 WHERE `entry` = 18856;
