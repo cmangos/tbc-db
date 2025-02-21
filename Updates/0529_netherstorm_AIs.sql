@@ -234,3 +234,17 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1885201, 2, 35919, 0, -1, 1, 0, 100, 0, 2000, 8000, 12000, 18000, 'Sunfury Warp-Engineer - Welding Beam - current');
 
 UPDATE `creature_template` SET `SpellList` = 1885201 WHERE `entry` = 18852;
+
+-- Overseer Theredis
+DELETE FROM `creature_template_spells` WHERE `entry` = 20416;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 2041601;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2041601, 'Netherstorm - Overseer Theredis', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2041601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2041601, 1, 6713, 0, -1, 1, 0, 100, 0, 10000, 20000, 20000, 34000, 'Overseer Theredis - Disarm - current'),
+(2041601, 2, 35871, 0, -1, 1, 0, 100, 0, 8000, 16000, 12000, 18000, 'Overseer Theredis - Spellbreaker - current');
+
+UPDATE `creature_template` SET `SpellList` = 2041601 WHERE `entry` = 20416;
