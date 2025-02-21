@@ -18571,6 +18571,28 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('5306395','-5306395','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
 ('5306396','-5306396','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
 ('5306397','-5306397','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+
+('5306405','-5306405','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306406','-5306406','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306407','-5306407','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306408','-5306408','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306409','-5306409','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+
+('5306418','-5306418','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306419','-5306419','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+
+('5306428','-5306428','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306429','-5306429','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306430','-5306430','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306431','-5306431','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306432','-5306432','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306433','-5306433','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+
+('5306511','-5306511','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306512','-5306512','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306513','-5306513','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306514','-5306514','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306515','-5306515','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
 -- Sunfury Bloodwarder 18853 - spell_list
 ('1885301','18853','37','0','100','1','8599','0','0','0','0','0','1','1191','0','0','0','0','0','0','0','0','0','0','Sunfury Bloodwarder - Say EmotedText on Enrage'),
 -- GUID Based
