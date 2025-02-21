@@ -377,20 +377,20 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+271, 19686, 530, 1, 2857.77, 4049.44, 170.95, 0.383972, 2, 12, 0, 0), -- Nether Anomaly guid before 70182
 
 -- Manaforge B'Naar Innside
-(@CGUID+272, 18852, 530, 1, 2895.97, 4172.31, 161.966, 1.01229, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67287
-(@CGUID+273, 18852, 530, 1, 2919.19, 4178.64, 161.966, 2.6878070, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67288
-(@CGUID+274, 18852, 530, 1, 2934.98, 4180.37, 163.845, 6.00312, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67286
-(@CGUID+275, 18852, 530, 1, 2871.98, 4186.13, 164.053, 2.82743, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 1002734
-(@CGUID+276, 18852, 530, 1, 2907.67, 4215.62, 164.07, 1.3264, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 1002735
+(@CGUID+272, 18852, 530, 1, 2895.97, 4172.31, 161.966, 1.01229, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67287
+(@CGUID+273, 18852, 530, 1, 2919.19, 4178.64, 161.966, 2.6878070, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67288
+(@CGUID+274, 18852, 530, 1, 2934.98, 4180.37, 163.845, 6.00312, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67286
+(@CGUID+275, 18852, 530, 1, 2871.98, 4186.13, 164.053, 2.82743, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 1002734
+(@CGUID+276, 18852, 530, 1, 2907.67, 4215.62, 164.07, 1.3264, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 1002735
 
-(@CGUID+277, 18857, 530, 1, 2893.93, 4195.61, 161.965, 5.53269, 360, 480, 0, 0), -- Sunfury Warp-Master guid before 1002737
-(@CGUID+278, 18857, 530, 1, 2913.14, 4196.44, 161.961, 4.06662, 360, 480, 0, 0), -- Sunfury Warp-Master guid before 1002738
+(@CGUID+277, 18857, 530, 1, 2893.93, 4195.61, 161.965, 5.53269, 360, 480, 2, 1), -- Sunfury Warp-Master guid before 1002737
+(@CGUID+278, 18857, 530, 1, 2913.14, 4196.44, 161.961, 4.06662, 360, 480, 2, 1), -- Sunfury Warp-Master guid before 1002738
 (@CGUID+279, 18857, 530, 1, 2825.57, 4147.54, 162.682, 1.9875, 360, 480, 0, 2), -- Sunfury Warp-Master guid before 1002739
 
 (@CGUID+280, 20416, 530, 1, 2854.82, 4162.97, 162.682, 3.52111, 360, 480, 0, 2), -- Overseer Theredis guid before 72389
 
-(@CGUID+281, 18857, 530, 1, 2828.32, 4152.31, 162.682, 3.40456, 360, 480, 0, 0), -- Sunfury Warp-Master guid before 67383
-(@CGUID+282, 18852, 530, 1, 2979.56, 4215.06, 162.682, 0.279253, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 1002736
+(@CGUID+281, 18857, 530, 1, 2828.32, 4152.31, 162.682, 3.40456, 360, 480, 2, 1), -- Sunfury Warp-Master guid before 67383
+(@CGUID+282, 18852, 530, 1, 2979.56, 4215.06, 162.682, 0.279253, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 1002736
 
 -- Manaorge B'Naar North - West Exit
 (@CGUID+283, 18855, 530, 1, 3000.73, 4209.19, 160.967, 1.27409, 300, 420, 0, 0), -- Sunfury Magister guid before 1002717
@@ -406,11 +406,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- Pillar 
 (@CGUID+291, 18857, 530, 1, 2954.63, 4294.95, 151.89, 0.628319, 360, 480, 0, 2), -- Sunfury Warp-Master guid before 1002726
 
-(@CGUID+293, 18852, 530, 1, 2962.55, 4297.1, 149.571, 2.00712, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 1002731
-(@CGUID+294, 18852, 530, 1, 2972.45, 4322.28, 147.871, 3.45575, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 1002727
-(@CGUID+295, 18852, 530, 1, 2970.01, 4333.44, 148.965, 4.0491, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 1002728
-(@CGUID+296, 18852, 530, 1, 2958.54, 4335.18, 149.24, 4.53786, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 1002729
-(@CGUID+297, 18852, 530, 1, 2948.69, 4331.01, 154.045, 5.58505, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 1002730
+(@CGUID+293, 18852, 530, 1, 2962.55, 4297.1, 149.571, 2.00712, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 1002731
+(@CGUID+294, 18852, 530, 1, 2972.45, 4322.28, 147.871, 3.45575, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 1002727
+(@CGUID+295, 18852, 530, 1, 2970.01, 4333.44, 148.965, 4.0491, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 1002728
+(@CGUID+296, 18852, 530, 1, 2958.54, 4335.18, 149.24, 4.53786, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 1002729
+(@CGUID+297, 18852, 530, 1, 2948.69, 4331.01, 154.045, 5.58505, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 1002730
 -- West Exit
 (@CGUID+298, 18853, 530, 1, 2871.77, 4280.43, 160.025, 2.23402, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67326
 (@CGUID+299, 18853, 530, 1, 2859.57, 4275.77, 160.189, 1.95477, 330, 420, 0, 0), -- Sunfury Bloodwarder missing before 
@@ -422,11 +422,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+304, 19453, 530, 1, 2883.09, 4375.47, 158.305, 4.84596, 360, 480, 0, 4), -- Sunfury Captain guid before 69670
 
-(@CGUID+305, 18852, 530, 1, 2837.73, 4334.01, 146.746, 3.32256, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67285
-(@CGUID+306, 18852, 530, 1, 2834.61, 4345.15, 144.91, 3.56047, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67294
-(@CGUID+307, 18852, 530, 1, 2824.89, 4353.61, 142.763, 3.3811, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67296
-(@CGUID+308, 18852, 530, 1, 2814.55, 4356.75, 142.432, 4.69069, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67281
-(@CGUID+309, 18852, 530, 1, 2803.48, 4352.54, 141.888, 5.61068, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67283
+(@CGUID+305, 18852, 530, 1, 2837.73, 4334.01, 146.746, 3.19395, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67285
+(@CGUID+306, 18852, 530, 1, 2834.61, 4345.15, 144.91, 3.560471, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67294
+(@CGUID+307, 18852, 530, 1, 2824.89, 4353.61, 142.763, 4.2236, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67296
+(@CGUID+308, 18852, 530, 1, 2814.55, 4356.75, 142.432, 4.81710, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67281
+(@CGUID+309, 18852, 530, 1, 2803.48, 4352.54, 141.888, 5.70722, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67283
 
 (@CGUID+310, 18857, 530, 1, 2808.43, 4316.43, 150.29, 6.25682, 360, 480, 0, 2), -- Sunfury Warp-Master guid before 67381
 
@@ -440,8 +440,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+317, 19453, 530, 1, 2738.39, 4345.91, 139.135, 5.28835, 360, 480, 0, 4), -- Sunfury Captain guid before 69668
 
-(@CGUID+318, 18852, 530, 1, 2803.67, 4243.38, 171.76, 3.90954, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67291
-(@CGUID+319, 18852, 530, 1, 2797.05, 4248.79, 172.619, 4.29727, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67293
+(@CGUID+318, 18852, 530, 1, 2803.67, 4243.38, 171.76, 3.90954, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67291
+(@CGUID+319, 18852, 530, 1, 2797.05, 4248.79, 172.619, 3.07177, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67293
 
 (@CGUID+320, 18853, 530, 1, 2693.64, 4253.53, 154.35, 1.0821, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67333
 (@CGUID+321, 18853, 530, 1, 2686.35, 4269.63, 154.404, 5.3058, 330, 420, 0, 0), -- Sunfury Bloodwarder guid before 67334
@@ -456,12 +456,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+327, 18855, 530, 1, 2627.67, 4257.86, 155.165, 6.0912, 300, 420, 0, 0), -- Sunfury Magister guid before 67364
 -- Hill South West Manaforge B'Naar
 -- Pillar
-(@CGUID+328, 18852, 530, 1, 2761.43, 4244.97, 181.697, 0.0523599, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67299
-(@CGUID+329, 18852, 530, 1, 2762.66, 4234.74, 181.826, 0.619032, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67298
-(@CGUID+330, 18852, 530, 1, 2769.02, 4226.05, 180.206, 0.907571, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67297
-(@CGUID+331, 18852, 530, 1, 2776.94, 4218.59, 178.594, 1.0821, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67292
-(@CGUID+332, 18852, 530, 1, 2783.92, 4213.4, 177.684, 2.2103, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67290
-(@CGUID+333, 18852, 530, 1, 2793.85, 4209.25, 179.409, 5.79575, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67289
+(@CGUID+328, 18852, 530, 1, 2761.43, 4244.97, 181.697, 0.0523599, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67299
+(@CGUID+329, 18852, 530, 1, 2762.66, 4234.74, 181.826, 0.48869, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67298
+(@CGUID+330, 18852, 530, 1, 2769.02, 4226.05, 180.206, 0.907571, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67297
+(@CGUID+331, 18852, 530, 1, 2776.94, 4218.59, 178.594, 1.08210, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67292
+(@CGUID+332, 18852, 530, 1, 2783.92, 4213.4, 177.684, 1.01229, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67290
+(@CGUID+333, 18852, 530, 1, 2793.85, 4209.25, 179.409,  0.942477, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67289
 
 -- Stones
 (@CGUID+334, 19779, 530, 1, 2776.21, 4201.81, 179.682, 4.7822, 300, 420, 0, 0), -- Sunfury Geologist guid before 70743
@@ -566,12 +566,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+409, 18857, 530, 1, 2840.98, 3935.79, 151.741, 5.18363, 360, 480, 0, 2), -- Sunfury Warp-Master guid before 67384
 (@CGUID+410, 18857, 530, 1, 2762.76, 3853.1, 142.561, 2.61799, 360, 480, 0, 4), -- Sunfury Warp-Master guid before 67385
 
-(@CGUID+411, 18852, 530, 1, 2784.79, 3885.33, 159.175, 3.83972, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67303
-(@CGUID+412, 18852, 530, 1, 2791.76, 3877.74, 160.80, 3.63, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67300
-(@CGUID+413, 18852, 530, 1, 2773.75, 3888.24, 157.259, 4.41542, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67302
+(@CGUID+411, 18852, 530, 1, 2784.79, 3885.33, 159.175, 3.83972, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67303
+(@CGUID+412, 18852, 530, 1, 2791.76, 3877.74, 160.80, 3.63, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67300
+(@CGUID+413, 18852, 530, 1, 2773.75, 3888.24, 157.259, 4.41542, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67302
 
-(@CGUID+414, 18852, 530, 1, 2750.41, 3868.93, 141.36, 6.10865, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67301
-(@CGUID+415, 18852, 530, 1, 2750.91, 3859.45, 139.879, 0.37783, 360, 480, 0, 0), -- Sunfury Warp-Engineer guid before 67304
+(@CGUID+414, 18852, 530, 1, 2750.41, 3868.93, 141.36, 6.10865, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67301
+(@CGUID+415, 18852, 530, 1, 2750.91, 3859.45, 139.879, 0.37783, 360, 480, 2, 1), -- Sunfury Warp-Engineer guid before 67304
 
 (@CGUID+416, 19779, 530, 1, 2754.48, 3891.33, 143.098, 0.0174533, 300, 420, 0, 0), -- Sunfury Geologist guid before 70782
 (@CGUID+417, 19779, 530, 1, 2753.04, 3879.24, 142.638, 6.26573, 300, 420, 0, 0), -- Sunfury Geologist guid before 70780
@@ -1478,18 +1478,18 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+288, 15, 3010.3025,4195.54,160.78032, 100, 0, 1964301),
 (@CGUID+288, 16, 3008.5022,4188.886,160.85503, 100, 0, 1964301),
 -- Sunfury Warp-Master
-(@CGUID+291, 1, 2963.8486,4294.43,150.33046, 100, 0, 0),
-(@CGUID+291, 2, 2968.5125,4300.7944,147.69147, 100, 0, 0),
-(@CGUID+291, 3, 2971.737,4311.4873,144.67957, 100, 0, 0),
-(@CGUID+291, 4, 2977.107,4324.8745,146.42377, 100, 0, 0),
-(@CGUID+291, 5, 2976.9463,4324.4756,146.51361, 100, 0, 0),
-(@CGUID+291, 6, 2957.2593,4342.9604,145.57162, 100, 0, 0),
-(@CGUID+291, 7, 2944.1875,4340.1685,147.69101, 100, 0, 0),
-(@CGUID+291, 8, 2932.5444,4326.4893,147.07599, 100, 0, 0),
-(@CGUID+291, 9, 2934.425,4312.044,147.2676, 100, 0, 0),
-(@CGUID+291, 10, 2941.3098,4302.2485,151.3221, 100, 0, 0),
-(@CGUID+291, 11, 2947.9407,4298.309,151.43979, 100, 0, 0),
-(@CGUID+291, 12, 2945.6064,4299.6943,151.54628, 100, 0, 0),
+(@CGUID+291, 1, 2963.8486,4294.43,150.33046, 100, 0, 1885701),
+(@CGUID+291, 2, 2968.5125,4300.7944,147.69147, 100, 0, 1885701),
+(@CGUID+291, 3, 2971.737,4311.4873,144.67957, 100, 0, 1885701),
+(@CGUID+291, 4, 2977.107,4324.8745,146.42377, 100, 0, 1885701),
+(@CGUID+291, 5, 2976.9463,4324.4756,146.51361, 100, 0, 1885701),
+(@CGUID+291, 6, 2957.2593,4342.9604,145.57162, 100, 0, 1885701),
+(@CGUID+291, 7, 2944.1875,4340.1685,147.69101, 100, 0, 1885701),
+(@CGUID+291, 8, 2932.5444,4326.4893,147.07599, 100, 0, 1885701),
+(@CGUID+291, 9, 2934.425,4312.044,147.2676, 100, 0, 1885701),
+(@CGUID+291, 10, 2941.3098,4302.2485,151.3221, 100, 0, 1885701),
+(@CGUID+291, 11, 2947.9407,4298.309,151.43979, 100, 0, 1885701),
+(@CGUID+291, 12, 2945.6064,4299.6943,151.54628, 100, 0, 1885701),
 -- Sunfury Captain
 (@CGUID+304, 1, 2883.1345,4375.159,158.08275, 100, 0, 1945301),
 (@CGUID+304, 2, 2887.9548,4362.3066,157.65321, 100, 0, 1945301),
@@ -1506,19 +1506,19 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+304, 13, 2846.117,4298.626,151.5036, 100, 0, 1945301),
 (@CGUID+304, 14, 2840.5564,4314.648,148.62027, 100, 0, 1945301),
 -- Sunfury Warp-Master 
-(@CGUID+310, 1, 2808.4258,4316.6216,150.17184, 100, 0, 0),
-(@CGUID+310, 2, 2821.0144,4316.105,148.8177, 100, 0, 0),
-(@CGUID+310, 3, 2836.0042,4318.915,148.39146, 100, 0, 0),
-(@CGUID+310, 4, 2847.0112,4328.816,144.93724, 100, 0, 0),
-(@CGUID+310, 5, 2845.7654,4341.4307,141.56673, 100, 0, 0),
-(@CGUID+310, 6, 2841.097,4352.5195,142.42714, 100, 0, 0),
-(@CGUID+310, 7, 2828.339,4362.663,137.88916, 100, 0, 0),
-(@CGUID+310, 8, 2814.7063,4365.7476,138.72429, 100, 0, 0),
-(@CGUID+310, 9, 2802.4348,4361.0337,137.89543, 100, 0, 0),
-(@CGUID+310, 10, 2793.671,4351.9775,138.87804, 100, 0, 0),
-(@CGUID+310, 11, 2788.1316,4337.3306,140.8248, 100, 0, 0),
-(@CGUID+310, 12, 2787.7083,4323.5483,144.64473, 100, 0, 0),
-(@CGUID+310, 13, 2799.788,4318.851,149.24225, 100, 0, 0),
+(@CGUID+310, 1, 2808.4258,4316.6216,150.17184, 100, 0, 1885701),
+(@CGUID+310, 2, 2821.0144,4316.105,148.8177, 100, 0, 1885701),
+(@CGUID+310, 3, 2836.0042,4318.915,148.39146, 100, 0, 1885701),
+(@CGUID+310, 4, 2847.0112,4328.816,144.93724, 100, 0, 1885701),
+(@CGUID+310, 5, 2845.7654,4341.4307,141.56673, 100, 0, 1885701),
+(@CGUID+310, 6, 2841.097,4352.5195,142.42714, 100, 0, 1885701),
+(@CGUID+310, 7, 2828.339,4362.663,137.88916, 100, 0, 1885701),
+(@CGUID+310, 8, 2814.7063,4365.7476,138.72429, 100, 0, 1885701),
+(@CGUID+310, 9, 2802.4348,4361.0337,137.89543, 100, 0, 1885701),
+(@CGUID+310, 10, 2793.671,4351.9775,138.87804, 100, 0, 1885701),
+(@CGUID+310, 11, 2788.1316,4337.3306,140.8248, 100, 0, 1885701),
+(@CGUID+310, 12, 2787.7083,4323.5483,144.64473, 100, 0, 1885701),
+(@CGUID+310, 13, 2799.788,4318.851,149.24225, 100, 0, 1885701),
 -- Sunfury Captain
 (@CGUID+317, 1, 2738.5984,4346.4106,138.86057, 100, 0, 1945301),
 (@CGUID+317, 2, 2741.5198,4358.909,136.46068, 100, 0, 1945301),
@@ -2554,15 +2554,16 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+30, 11000, 0, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - EmoteState WorkMining'),
 (@RELAYID+30, 11000, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - SendAIEventB to self'), -- to change phase to 1 
 (@RELAYID+30, 11000, 2, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Geologist - Remove ActiveObject'),
--- Sunfury Warp-Master start RP with Sunfury Geologist
+-- Sunfury Warp-Master/Sunfury Warp-Engineer start RP with Sunfury Geologist
 (@RELAYID+31, 0, 0, 31, 0, 5, 0, @STRINGID+1, 10, 0x800, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Terminate Script if no STRINGID found'),
 (@RELAYID+31, 1, 1, 35, 7, 0, 0, @STRINGID+1, 10, 0x801, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - SendAIEventC to STRINGID'),
--- Sunfury Geologist RP with Sunfury Warp-Master
+-- Sunfury Geologist/Sunfury Warp-Engineer RP with Sunfury Warp-Master
 (@RELAYID+32, 0, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - StringID - SendAIEventA to self'), -- to change phase to 0
-(@RELAYID+32, 0, 1, 21, 1, 0, 0, 18857, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - stop waypoint'), 
-(@RELAYID+32, 0, 2, 32, 1, 0, 0, 18857, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - set ActiveObject'), 
-(@RELAYID+32, 0, 3, 37, 0, 0, 3, 18857, 15, 3, 0, @RELAYID+33, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master move to Sunfury Warp-Master'),
--- Sunfury Warp-Master script after reaching Sunfury Geologist
+(@RELAYID+32, 0, 1, 20, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - StringID - Move Idle'),
+(@RELAYID+32, 0, 2, 21, 1, 0, 0, 18857, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - stop waypoint'), 
+(@RELAYID+32, 0, 3, 32, 1, 0, 0, 18857, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - set ActiveObject'), 
+(@RELAYID+32, 0, 4, 37, 0, 0, 3, 18857, 15, 3, 0, @RELAYID+33, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master move to Sunfury Warp-Master'),
+-- Sunfury Warp-Master script after reaching Sunfury Geologist/Sunfury Warp-Engineer
 (@RELAYID+33, 0, 0, 1, 0, 0, 0, @STRINGID+1, 5, 0x800, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - StringID - EmoteStateNone'),
 (@RELAYID+33, 1000, 0, 36, 0, 0, 0, @STRINGID+1, 5, 0x803, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - StringID - facing to Sunfury Warp-Master'), 
 (@RELAYID+33, 1000, 1, 36, 0, 0, 0, @STRINGID+1, 5, 0x801, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - face StringID'), 
@@ -2572,8 +2573,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+33, 6000, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Emote OneShotPoint'),
 (@RELAYID+33, 7000, 0, 36, 1, 0, 0, @STRINGID+1, 5, 0x800, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - StringID - Reset Facing'), 
 (@RELAYID+33, 9000, 1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - start waypoint'),
-(@RELAYID+33, 9000, 1, 36, 233, 0, 0, @STRINGID+1, 5, 0x800, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - StringID - Emote StateWorkMining'),
-(@RELAYID+33, 9000, 2, 35, 6, 0, 0, @STRINGID+1, 5, 0x801, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - SendAIEventB to StringID'), -- to change magister phase to 1
+(@RELAYID+33, 9000, 2, 35, 6, 0, 0, @STRINGID+1, 5, 0x801, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - SendAIEventB to StringID'), -- to change magister phase to 1
 (@RELAYID+33, 9000, 3, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - remove Active object'),
 -- Sunfury Warp-Master/Warp-Engineer Solo RP 1 with Netherstorm Use Standing Target
 -- Use Bounding Radius for distance calculation
@@ -2583,7 +2583,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+34, 1, 3, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - SendAIEventA to self'), -- to change phase to 0
 (@RELAYID+34, 1, 4, 3, @RELAYID+35, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Move to Home Position'), 
 -- Event Start
-(@RELAYID+35, 10000, 1, 37, 0, 0, 0, 19483, 20, 1, 0, @RELAYID+38, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer move to Netherstorm Use Standing Target'),
+(@RELAYID+35, 6000, 1, 37, 0, 0, 0, 19483, 20, 1, 0, @RELAYID+38, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer move to Netherstorm Use Standing Target'),
 -- Sunfury Warp-Master/Warp-Engineer Solo RP 1 with Netherstorm Use Standing Target
 -- Ignore BoundingRadius for Distance calculation
 (@RELAYID+36, 0, 0, 31, 19483, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Terminate Script if no Netherstorm Use Standing Target'),
@@ -2592,7 +2592,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+36, 1, 3, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - SendAIEventA to self'), -- to change phase to 0
 (@RELAYID+36, 1, 4, 3, @RELAYID+37, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Move to Home Position'), 
 -- Event Start
-(@RELAYID+37, 10000, 1, 37, 0, 0, 1, 19483, 20, 9, 0, @RELAYID+38, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer move to Netherstorm Use Standing Target'),
+(@RELAYID+37, 6000, 1, 37, 0, 0, 1, 19483, 20, 9, 0, @RELAYID+38, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer move to Netherstorm Use Standing Target'),
 -- Sunfury Warp-Master/Warp-Engineer RP after reaching Netherstorm Use Standing Target
 (@RELAYID+38, 1000, 0, 36, 0, 0, 0, 19483, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - face Netherstorm Use Standing Target'), 
 (@RELAYID+38, 1000, 1, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Emote StateUseStanding'), 
@@ -2605,7 +2605,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+38, 23000, 1, 3, @RELAYID+39, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Move to Home Position'), -- 13:58:13.234
 -- Sunfury WarpMaster small reset, change to rnd movement
 (@RELAYID+39, 1000, 0, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - SendAIEventB to self'), -- to change phase to 1
-(@RELAYID+39, 1000, 1, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - RandomMovement around Point'),
+(@RELAYID+39, 1000, 1, 20, 1, 2, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - RandomMovement around Point'),
 (@RELAYID+39, 1000, 2, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master/Warp-Engineer - Reove Active object');
 
 -- Delete some old unused waypoint scripts

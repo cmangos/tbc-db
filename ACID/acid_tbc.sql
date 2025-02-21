@@ -18556,7 +18556,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1885202','18852','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 1 on Spawn'),
 ('1885203','18852','21','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 1 ReachedHome'),
 ('1885204','18852','30','0','100','1','5','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 0 on ReceiveEventAI A'),
-('1885205','18852','30','0','100','1','6','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 1 on ReceiveEventAI B'),
+('1885205','18852','30','0','100','1','6','0','0','0','0','0','22','1','0','0','48','1','2','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 1 and random movement on ReceiveEventAI B'),
 ('1885206','18852','30','5','100','1','7','0','0','0','0','0','22','0','0','0','53','18032','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 0 and start Relayscript on ReceiveEventAI C (Phase 1)'),
 -- GUID BASED
 ('5306372','-5306372','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
@@ -18570,7 +18570,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('5306394','-5306394','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
 ('5306395','-5306395','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
 ('5306396','-5306396','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
-('5306397','-5306397','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306397','-5306397','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
 
 ('5306405','-5306405','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
 ('5306406','-5306406','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
@@ -18879,7 +18879,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1977902','19779','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Geologist - Set Phase 1 on Spawn'),
 ('1977903','19779','21','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Geologist - Set Phase 1 ReachedHome'),
 ('1977904','19779','30','0','100','1','5','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Sunfury Geologist - Set Phase 0 on ReceiveEventAI A'),
-('1977905','19779','30','0','100','1','6','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Geologist - Set Phase 1 on ReceiveEventAI B'),
+('1977905','19779','30','0','100','1','6','0','0','0','0','0','22','1','0','0','5','233','0','0','0','0','0','0','Sunfury Geologist - Set Phase 1 and Emote StateWorkMiningon ReceiveEventAI B'),
 ('1977906','19779','30','5','100','1','7','0','0','0','0','0','22','0','0','0','53','18032','0','0','0','0','0','0','Sunfury Geologist - Set Phase 0 and start Relayscript on ReceiveEventAI C (Phase 1)'),
 -- GUID Based
 ('5306347','-5306347','1','5','100','1','20000','30000','30000','40000','0','0','53','18030','0','0','22','0','0','0','0','0','0','0','Sunfury Geologist (Guid EAI) - Start RelayScript OOC'),
