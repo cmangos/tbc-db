@@ -18559,12 +18559,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1885205','18852','30','0','100','1','6','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 1 on ReceiveEventAI B'),
 ('1885206','18852','30','5','100','1','7','0','0','0','0','0','22','0','0','0','53','18032','0','0','0','0','0','0','Sunfury Warp-Engineer - Set Phase 0 and start Relayscript on ReceiveEventAI C (Phase 1)'),
 -- GUID BASED
-('5306372','-5306372','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
-('5306373','-5306373','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306372','-5306372','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306373','-5306373','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
 ('5306374','-5306374','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
 ('5306375','-5306375','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
 ('5306376','-5306376','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
-('5306382','-5306382','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306382','-5306382','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+
+('5306393','-5306393','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306394','-5306394','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306395','-5306395','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306396','-5306396','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306397','-5306397','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Engineer (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
 -- Sunfury Bloodwarder 18853 - spell_list
 ('1885301','18853','37','0','100','1','8599','0','0','0','0','0','1','1191','0','0','0','0','0','0','0','0','0','0','Sunfury Bloodwarder - Say EmotedText on Enrage'),
 -- GUID Based
@@ -18627,9 +18633,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1885703','18857','30','0','100','1','5','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Sunfury Warp-Master - Set Phase 0 on ReceiveEventAI A'),
 ('1885704','18857','30','0','100','1','6','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Warp-Master - Set Phase 1 on ReceiveEventAI B'),
 -- GUID BASED
-('5306377','-5306377','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Master (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
-('5306378','-5306378','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Master (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
-('5306381','-5306381','1','5','100','1','2000','12000','2000','12000','0','0','53','18034','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Master (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306377','-5306377','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Master (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306378','-5306378','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Master (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
+('5306381','-5306381','1','5','100','1','2000','12000','2000','12000','0','0','53','18036','0','0','22','0','0','0','0','0','0','0','Sunfury Warp-Master (Guid EAI) - Start RandomScript and set Phase 0 OOC (Phase 1)'),
 -- Wrathbringer (18858) - NSR
 -- Wrath Priestess
 ('1885901','18859','11','0','100','0','0','0','0','0','0','0','11','36226','0','1','0','0','0','0','0','0','0','0','Wrath Priestess - Cast Summon Fel Imp on Spawn'),
