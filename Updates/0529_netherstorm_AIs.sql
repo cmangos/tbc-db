@@ -248,3 +248,17 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (2041601, 2, 35871, 0, -1, 1, 0, 100, 0, 8000, 16000, 12000, 18000, 'Overseer Theredis - Spellbreaker - current');
 
 UPDATE `creature_template` SET `SpellList` = 2041601 WHERE `entry` = 20416;
+
+-- Arcane Annihilator
+DELETE FROM `creature_template_spells` WHERE `entry` = 18856;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1885601;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1885601, 'Netherstorm - Arcane Annihilator', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1885601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1885601, 1, 33860, 0, -1, 2, 0, 100, 0, 12000, 18000, 18000, 24000, 'Arcane Annihilator - Arcane Explosion - self'),
+(1885601, 2, 35892, 0, -1, 2, 0, 100, 0, 6000, 10000, 16000, 22000, 'Arcane Annihilator - Suppression - self');
+
+UPDATE `creature_template` SET `SpellList` = 1885601 WHERE `entry` = 18856;

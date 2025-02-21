@@ -11,7 +11,7 @@ SET @CGUID := 5306100; -- creatures
 SET @SGGUID := 5306000; -- spawn_groups
 SET @STRINGID := 5306100; -- used for StringID's
  
-DELETE FROM creature WHERE guid IN (67423, 67424, 67425, 67426, 67427, 67428, 67429, 67430, 67431, 67432, 67434, 67435, 67436, 67437, 67438,  67439, 67440, 67441, 67442, 67443, 67444, 67445, 67446, 67447, 67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 
+DELETE FROM creature WHERE guid IN (67373, 67374, 67423, 67424, 67425, 67426, 67427, 67428, 67429, 67430, 67431, 67432, 67434, 67435, 67436, 67437, 67438,  67439, 67440, 67441, 67442, 67443, 67444, 67445, 67446, 67447, 67516, 67517, 67518, 67519, 67520, 67521, 67522, 67523, 67524, 
 67525, 67526, 67527, 67528, 67529, 67530, 67531, 67532, 67533, 67534, 67535, 67536, 67537, 67538, 67539, 67540, 67541, 67542, 67543, 67544, 67545, 67546, 67547, 67548, 67549, 67550, 67551, 67552, 67553, 67554, 67555, 67556, 67557, 67608, 67609, 67610, 67611, 67612, 67613, 67614, 67615, 67616, 67617, 
 67618, 67619, 67620, 67621, 67622, 67623, 67624, 67625, 67626, 67627, 67628, 67629, 67630, 67631, 67632, 67633, 67634, 67635, 67636, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 67732, 
 70008, 70182, 70183, 70184, 70185, 70186, 70187, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 71839, 71840, 71841, 71842, 71843, 71844, 71845, 71846, 71847, 71848, 71849, 71850, 71853, 71854, 71855,  71856, 71857, 71858, 71859, 71860, 71861, 71862, 71863, 71864, 71865, 71866, 71867, 71868, 71869, 
@@ -37,7 +37,7 @@ DELETE FROM creature WHERE guid IN (69742, 69743, 69744, 69745, 69746, 69747, 69
 -- Netherstorm Work Mining Target
 DELETE FROM creature WHERE guid IN (69588, 69589, 69590, 69591, 69592, 69593, 69594, 69595, 69596, 69597, 69598, 69599, 69600, 69601, 69602, 69603, 69604, 69605, 69606, 69607, 69608, 69609,  69610, 69611, 69612, 69613, 69614, 69615, 69616, 69617, 69618, 69619, 69620, 69621, 69622, 69623, 69624, 69625, 69626, 69627, 69628, 69629);
 
-DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+572;
+DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+574;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
 (@CGUID+1, 20203, 530, 1, 3380.88, 4359.49, 123.702, 4.67748, 300, 300, 0, 0),
@@ -777,7 +777,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+569, 19439, 530, 1, 2839.0957031250000, 3916.8666992187500, 154.1840972900391, 5.8817596435547, 300, 300, 0, 0), -- Netherstorm Work Mining Target guid before 69625
 (@CGUID+570, 19439, 530, 1, 2841.5556640625000, 3901.5903320312500, 159.5598602294922, 4.2760567665100, 300, 300, 0, 0), -- Netherstorm Work Mining Target guid before 69626
 (@CGUID+571, 19439, 530, 1, 2837.7309570312500, 3885.9992675781250, 165.0463867187500, 2.2689280509949, 300, 300, 0, 0), -- Netherstorm Work Mining Target guid before 69622
-(@CGUID+572, 19439, 530, 1, 2816.5852050781250, 3873.2058105468750, 167.0027618408203, 3.5430183410645, 300, 300, 0, 0); -- Netherstorm Work Mining Target guid before 69623
+(@CGUID+572, 19439, 530, 1, 2816.5852050781250, 3873.2058105468750, 167.0027618408203, 3.5430183410645, 300, 300, 0, 0), -- Netherstorm Work Mining Target guid before 69623
+
+(@CGUID+573, 18856, 530, 1, 2996.421630859375, 4396.68408203125, 116.344482421875, 5.554334163665771484, 120, 120, 0, 4), -- Arcane Annihilator guid before 67373
+(@CGUID+574, 18856, 530, 1, 2651.936767578125, 4182.54638671875, 157.877716064453125, 2.784525632858276367, 120, 120, 0, 4); -- Arcane Annihilator guid before 67374
 
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
@@ -818,9 +821,9 @@ DELETE FROM creature_template_addon WHERE entry IN (19635);
 DELETE FROM creature_template_addon WHERE entry IN (19779);
 
 -- Waypoints
-DELETE FROM creature_movement WHERE id IN (67281,67283,67285,67288,67289,67290,67291,67292,67293,67294,67296,67297,67298,67299,67300,67301,67302,67303,67304,1002734,1002735,1002736,67286,1002731,1002730,1002729,1002728,1002727,67363,67364,67365,67366,67367,67368,67369,67370,67371,67372,1002721,1002720,1002719,1002718,1002717,67378,67379,67380,67382,67383,67384,67385,1002737,1002738,1002739,67381,1002726,69668,69671,69672,69670,1002722,70071,70072);
+DELETE FROM creature_movement WHERE id IN (67281,67283,67285,67288,67289,67290,67291,67292,67293,67294,67296,67297,67298,67299,67300,67301,67302,67303,67304,67373,67374,1002734,1002735,1002736,67286,1002731,1002730,1002729,1002728,1002727,67363,67364,67365,67366,67367,67368,67369,67370,67371,67372,1002721,1002720,1002719,1002718,1002717,67378,67379,67380,67382,67383,67384,67385,1002737,1002738,1002739,67381,1002726,69668,69671,69672,69670,1002722,70071,70072);
 DELETE FROM creature_movement WHERE id IN (67287, 67349, 67350, 67351, 67352, 67353, 67354, 67355, 67356, 67357, 67358, 67359, 67360, 67361, 67362, 67377, 67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 69669, 70069, 70070, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708);
-DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+420;
+DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+574;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
 (@CGUID+3, 1, 3383.929,4348.6997,133.66545,0.20943951, 12000, 0), -- waittime between 12 and 15 seconds
@@ -1708,7 +1711,132 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+410, 8, 2778.632,3892.7695,155.1278, 100, 0, 0),
 (@CGUID+410, 9, 2787.5,3888.216,157.4899, 100, 0, 0),
 (@CGUID+410, 10, 2798.8206,3880.6384,159.69797, 100, 0, 0),
-(@CGUID+410, 11, 2820.7166,3878.201,165.19388, 100, 0, 0);
+(@CGUID+410, 11, 2820.7166,3878.201,165.19388, 100, 0, 0),
+-- Arcane Annihilator
+(@CGUID+573, 1, 2996.435,4396.0356,116.494896, 100, 0, 0),
+(@CGUID+573, 2, 3002.1458,4391.5684,117.44082, 100, 0, 0),
+(@CGUID+573, 3, 2995.8816,4381.6436,122.81413, 100, 0, 0),
+(@CGUID+573, 4, 3006.4653,4373.256,124.49015, 100, 0, 0),
+(@CGUID+573, 5, 2984.6458,4350.0737,138.36427, 100, 0, 0),
+(@CGUID+573, 6, 2975.3196,4340.0044,145.62614, 100, 0, 0),
+(@CGUID+573, 7, 2978.781,4322.687,145.65533, 100, 0, 0),
+(@CGUID+573, 8, 2977.074,4312.127,142.44177, 100, 0, 0),
+(@CGUID+573, 9, 2979.1265,4302.35,147.63031, 100, 0, 0),
+(@CGUID+573, 10, 2987.9565,4279.556,154.99379, 100, 0, 0),
+(@CGUID+573, 11, 2991.8784,4262.1064,159.26733, 100, 0, 0),
+(@CGUID+573, 12, 2989.9983,4245.296,160.8614, 100, 0, 0),
+(@CGUID+573, 13, 2994.507,4237.2256,160.82056, 100, 0, 0),
+(@CGUID+573, 14, 3004.421,4219.703,160.80054, 100, 0, 0),
+(@CGUID+573, 15, 3016.4922,4201.229,160.75562, 100, 0, 0),
+(@CGUID+573, 16, 3018.956,4185.17,159.8801, 100, 0, 0),
+(@CGUID+573, 17, 3023.5637,4167.4653,155.03801, 100, 0, 0),
+(@CGUID+573, 18, 3024.6936,4130.0376,152.82748, 100, 0, 0),
+(@CGUID+573, 19, 3024.7217,4109.3896,151.4462, 100, 0, 0),
+(@CGUID+573, 20, 3039.2515,4103.048,151.59177, 100, 0, 0),
+(@CGUID+573, 21, 3049.7368,4086.5786,151.55733, 100, 0, 0),
+(@CGUID+573, 22, 3049.8604,4068.165,151.42636, 100, 0, 0),
+(@CGUID+573, 23, 3035.8394,4054.8481,151.61588, 100, 0, 0),
+(@CGUID+573, 24, 3018.5535,4050.0696,151.41281, 100, 0, 0),
+(@CGUID+573, 25, 3007.4514,4052.1667,151.05464, 100, 0, 0),
+(@CGUID+573, 26, 2999.6074,4050.5967,149.7488, 100, 0, 0),
+(@CGUID+573, 27, 2991.3171,4057.7456,150.0729, 100, 0, 0),
+(@CGUID+573, 28, 2989.6157,4085.1406,150.10222, 100, 0, 0),
+(@CGUID+573, 29, 2988.6753,4050.557,149.93199, 100, 0, 0),
+(@CGUID+573, 30, 2976.6016,4040.237,149.58499, 100, 0, 0),
+(@CGUID+573, 31, 2965.3157,4051.0686,152.74611, 100, 0, 0),
+(@CGUID+573, 32, 2944.9788,4037.0247,153.00414, 100, 0, 0),
+(@CGUID+573, 33, 2927.7812,4034.3252,150.23375, 100, 0, 0),
+(@CGUID+573, 34, 2915.5227,4039.2354,149.74188, 100, 0, 0),
+(@CGUID+573, 35, 2906.4587,4031.9285,149.7335, 100, 0, 0),
+(@CGUID+573, 36, 2894.57,4026.2705,150.21198, 100, 0, 0),
+(@CGUID+573, 37, 2876.3782,4026.9766,154.73776, 100, 0, 0),
+(@CGUID+573, 38, 2856.0444,4038.2393,165.64133, 100, 0, 0),
+(@CGUID+573, 39, 2850.8325,4033.5269,164.69913, 100, 0, 0),
+(@CGUID+573, 40, 2864.1973,4022.333,156.37408, 100, 0, 0),
+(@CGUID+573, 41, 2872.8154,4015.122,153.3416, 100, 0, 0),
+(@CGUID+573, 42, 2892.9858,4018.6714,149.77734, 100, 0, 0),
+(@CGUID+573, 43, 2905.0496,4006.579,149.72925, 100, 0, 0),
+(@CGUID+573, 44, 2905.1868,3993.004,149.34825, 100, 0, 0),
+(@CGUID+573, 45, 2890.3838,3971.625,142.23819, 100, 0, 0),
+(@CGUID+573, 46, 2867.2375,3981.5312,141.89117, 100, 0, 0),
+(@CGUID+573, 47, 2846.812,3993.289,142.87721, 100, 0, 0),
+(@CGUID+573, 48, 2825.9067,3976.9229,142.85878, 100, 0, 0),
+(@CGUID+573, 49, 2813.641,3971.4504,142.20439, 100, 0, 0),
+(@CGUID+573, 50, 2802.1023,3991.4146,142.1291, 100, 0, 0),
+(@CGUID+573, 51, 2784.2043,3989.597,144.70331, 100, 0, 0),
+(@CGUID+573, 52, 2756.1343,4007.8438,144.6127, 100, 0, 0),
+(@CGUID+573, 53, 2736.9973,4018.7666,144.10327, 100, 0, 0),
+(@CGUID+573, 54, 2724.4602,4040.8838,150.57205, 100, 0, 0),
+(@CGUID+573, 55, 2697.7488,4052.6494,149.92725, 100, 0, 0),
+(@CGUID+573, 56, 2720.1082,4038.8938,148.95532, 100, 0, 0),
+(@CGUID+573, 57, 2730.4592,4018.056,142.82056, 100, 0, 0),
+(@CGUID+573, 58, 2749.7708,3989.0056,142.4068, 100, 0, 0),
+(@CGUID+573, 59, 2769.313,3958.0325,143.36684, 100, 0, 0),
+(@CGUID+573, 60, 2784.0647,3941.8403,143.16913, 100, 0, 0),
+(@CGUID+573, 61, 2766.1582,3923.721,142.09319, 100, 0, 0),
+(@CGUID+573, 62, 2735.0596,3945.1533,141.49823, 100, 0, 0),
+(@CGUID+573, 63, 2727.0525,3937.9983,141.00743, 100, 0, 0),
+(@CGUID+573, 64, 2735.134,3929.8274,139.27528, 100, 0, 0),
+(@CGUID+573, 65, 2723.7703,3917.361,137.067, 100, 0, 0),
+(@CGUID+573, 66, 2704.0757,3930.221,136.03125, 100, 0, 0),
+(@CGUID+573, 67, 2692.5522,3911.8147,134.9133, 100, 0, 0),
+(@CGUID+573, 68, 2710.7478,3905.5403,136.44005, 100, 0, 0),
+(@CGUID+573, 69, 2715.9229,3888.4592,136.47943, 100, 0, 0),
+(@CGUID+573, 70, 2732.2512,3890.569,138.27034, 100, 0, 0),
+(@CGUID+573, 71, 2744.8047,3873.0938,140.00046, 100, 0, 0),
+(@CGUID+573, 72, 2748.766,3890.554,141.02985, 100, 0, 0),
+(@CGUID+573, 73, 2736.4856,3912.908,138.40279, 100, 0, 0),
+(@CGUID+573, 74, 2746.1765,3924.6768,139.86684, 100, 0, 0),
+(@CGUID+573, 75, 2766.294,3905.3738,146.92526, 100, 0, 0),
+(@CGUID+573, 76, 2770.172,3894.7366,152.25821, 100, 0, 0),
+(@CGUID+573, 77, 2802.425,3905.4932,149.66096, 100, 0, 0),
+(@CGUID+573, 78, 2826.6914,3909.0742,153.23405, 100, 0, 0),
+(@CGUID+573, 79, 2828.428,3932.7683,149.0169, 100, 0, 0),
+(@CGUID+573, 80, 2837.6428,3946.6172,149.94266, 100, 0, 0),
+(@CGUID+573, 81, 2853.414,3938.4504,154.26352, 100, 0, 0),
+-- Arcane Annihilator
+(@CGUID+574, 1, 2650.8926,4182.207,157.68091, 100, 0, 0),
+(@CGUID+574, 2, 2638.0273,4187.7305,155.67805, 100, 0, 0),
+(@CGUID+574, 3, 2636.9832,4200.217,155.07974, 100, 0, 0),
+(@CGUID+574, 4, 2643.917,4213.9043,154.33298, 100, 0, 0),
+(@CGUID+574, 5, 2651.0752,4225.8867,154.32875, 100, 0, 0),
+(@CGUID+574, 6, 2659.0234,4238.569,154.32875, 100, 0, 0),
+(@CGUID+574, 7, 2666.1199,4249.2495,154.32875, 100, 0, 0),
+(@CGUID+574, 8, 2678.8936,4257.1016,153.96358, 100, 0, 0),
+(@CGUID+574, 9, 2695.0833,4263.393,153.89496, 100, 0, 0),
+(@CGUID+574, 10, 2714.503,4270.1484,153.87502, 100, 0, 0),
+(@CGUID+574, 11, 2730.7185,4280.526,153.14308, 100, 0, 0),
+(@CGUID+574, 12, 2745.8816,4288.487,152.15175, 100, 0, 0),
+(@CGUID+574, 13, 2762.157,4293.8984,151.61644, 100, 0, 0),
+(@CGUID+574, 14, 2779.536,4298.3228,151.93079, 100, 0, 0),
+(@CGUID+574, 15, 2789.7966,4297.022,152.06927, 100, 0, 0),
+(@CGUID+574, 16, 2796.828,4301.422,151.73065, 100, 0, 0),
+(@CGUID+574, 17, 2797.3098,4309.0923,150.8118, 100, 0, 0),
+(@CGUID+574, 18, 2790.2532,4316.9297,147.79288, 100, 0, 0),
+(@CGUID+574, 19, 2784.474,4324.302,143.74957, 100, 0, 0),
+(@CGUID+574, 20, 2778.6138,4332.0444,139.87827, 100, 0, 0),
+(@CGUID+574, 21, 2774.0999,4337.2197,137.68773, 100, 0, 0),
+(@CGUID+574, 22, 2767.5623,4343.9175,136.33429, 100, 0, 0),
+(@CGUID+574, 23, 2760.0918,4348.2173,136.41539, 100, 0, 0),
+(@CGUID+574, 24, 2761.3567,4351.9326,136.28473, 100, 0, 0),
+(@CGUID+574, 25, 2772.4475,4345.2837,136.25658, 100, 0, 0),
+(@CGUID+574, 26, 2781.9707,4364.053,136.40237, 100, 0, 0),
+(@CGUID+574, 27, 2785.5854,4361.927,136.52325, 100, 0, 0),
+(@CGUID+574, 28, 2775.839,4342.803,136.81233, 100, 0, 0),
+(@CGUID+574, 29, 2786.2131,4327.8745,142.76329, 100, 0, 0),
+(@CGUID+574, 30, 2792.0352,4318.54,147.66637, 100, 0, 0),
+(@CGUID+574, 31, 2803.6716,4305.7124,151.31993, 100, 0, 0),
+(@CGUID+574, 32, 2818.2268,4309.7896,149.83707, 100, 0, 0),
+(@CGUID+574, 33, 2832.4023,4315.2236,148.2334, 100, 0, 0),
+(@CGUID+574, 34, 2843.3547,4302.774,150.15947, 100, 0, 0),
+(@CGUID+574, 35, 2852.2522,4289.6255,155.35712, 100, 0, 0),
+(@CGUID+574, 36, 2864.63,4281.158,159.24307, 100, 0, 0),
+(@CGUID+574, 37, 2875.1538,4284.8984,158.82143, 100, 0, 0),
+(@CGUID+574, 38, 2876.5115,4313.337,157.59859, 100, 0, 0),
+(@CGUID+574, 39, 2878.586,4337.5903,157.52878, 100, 0, 0),
+(@CGUID+574, 40, 2878.9263,4364.6914,157.65298, 100, 0, 0),
+(@CGUID+574, 41, 2888.75,4364.9507,157.65298, 100, 0, 0),
+(@CGUID+574, 42, 2896.6987,4332.9966,157.65298, 100, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569, 19635, 20416);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -1922,6 +2050,14 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+26, 'Netherstorm - Group 026 - Nether Anomaly', 0, 1, @SGGUID+1, 0, 0),
 (@SGGUID+27, 'Netherstorm - Group 027 - Nether Anomaly', 0, 1, @SGGUID+1, 0, 0),
 (@SGGUID+28, 'Netherstorm - Group 028 - Nether Anomaly', 0, 1, @SGGUID+1, 0, 0),
+-- Invisible Netherstorm RP Targets
+(@SGGUID+29, 'Netherstorm - Group 029 - Netherstorm Kneel Target', 0, 0, 0, 0, 0),
+(@SGGUID+30, 'Netherstorm - Group 030 - Netherstorm Crystal Target', 0, 0, 0, 0, 0),
+(@SGGUID+31, 'Netherstorm - Group 031 - Netherstorm Repair Target', 0, 0, 0, 0, 0),
+(@SGGUID+32, 'Netherstorm - Group 032 - Netherstorm Use Standing Target', 0, 0, 0, 0, 0),
+(@SGGUID+33, 'Netherstorm - Group 033 - Netherstorm Work Mining Target', 0, 0, 0, 0, 0),
+-- Arcane Annihilator
+(@SGGUID+34, 'Netherstorm - Group 034 - Arcane Annihilator', 0, 2, 0, 0, 0),
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
 (@SGGUID+100, 'Netherstorm - Etherlithium Matrix Crystal', 1, 21, 0, 0, 0);
 
@@ -2359,6 +2495,165 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+26, @CGUID+269, -1, 0), -- Nether Anomaly linked to Sunfury Bloodwarder @CGUID+265
 (@SGGUID+27, @CGUID+270, -1, 0), -- Nether Anomaly linked to Sunfury Bloodwarder @CGUID+266
 (@SGGUID+28, @CGUID+271, -1, 0), -- Nether Anomaly linked to Sunfury Bloodwarder @CGUID+267
+(@SGGUID+29, @CGUID+421, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+422, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+423, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+424, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+425, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+426, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+427, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+428, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+429, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+430, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+431, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+432, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+433, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+434, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+435, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+436, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+437, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+438, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+439, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+440, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+441, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+442, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+443, -1, 0), -- Netherstorm Kneel Target
+(@SGGUID+29, @CGUID+444, -1, 0), -- Netherstorm Kneel Target
+-- Netherstorm Crystal Targets
+(@SGGUID+230, @CGUID+445, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+446, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+447, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+448, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+449, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+450, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+451, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+452, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+453, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+454, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+455, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+456, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+457, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+458, -1, 0), -- Netherstorm Crystal Target
+(@SGGUID+230, @CGUID+459, -1, 0), -- Netherstorm Crystal Target
+-- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+460, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+461, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+462, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+463, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+464, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+465, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+466, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+467, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+468, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+469, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+470, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+471, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+472, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+473, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+474, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+475, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+476, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+477, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+478, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+479, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+480, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+481, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+482, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+483, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+484, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+485, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+486, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+487, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+488, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+489, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+490, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+491, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+492, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+493, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+494, -1, 0), -- Netherstorm Repair Target
+(@SGGUID+231, @CGUID+495, -1, 0), -- Netherstorm Repair Target
+-- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+496, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+497, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+498, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+499, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+500, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+501, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+502, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+503, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+504, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+505, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+506, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+507, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+508, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+509, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+510, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+511, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+512, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+513, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+514, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+515, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+516, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+517, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+518, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+519, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+520, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+521, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+522, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+523, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+524, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+525, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+526, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+527, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+528, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+529, -1, 0), -- Netherstorm Use Standing Target
+(@SGGUID+232, @CGUID+530, -1, 0), -- Netherstorm Use Standing Target
+-- Netherstorm Work Mining target
+(@SGGUID+233, @CGUID+531, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+532, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+533, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+534, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+535, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+536, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+537, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+538, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+539, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+540, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+541, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+542, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+543, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+544, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+545, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+546, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+547, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+548, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+549, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+550, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+551, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+552, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+553, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+554, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+555, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+556, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+557, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+558, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+559, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+560, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+561, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+562, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+563, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+564, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+565, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+566, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+567, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+568, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+569, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+570, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+571, -1, 0), -- Netherstorm Work Mining Target
+(@SGGUID+233, @CGUID+572, -1, 0), -- Netherstorm Work Mining Target
+-- Arcane Annihilator
+(@SGGUID+234, @CGUID+573, -1, 0), -- Arcane Annihilator
+(@SGGUID+234, @CGUID+574, -1, 0), -- Arcane Annihilator
 -- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
