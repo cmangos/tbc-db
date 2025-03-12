@@ -17883,6 +17883,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1929402','19294','0','0','100','1025','3500','5500','10000','11000','0','0','11','33844','1','1024','0','0','0','0','0','0','0','0','Earthbinder Galandria Nightbreeze - Cast Entangling Roots'),
 ('1929403','19294','0','0','100','1025','5500','5500','12000','15000','0','0','11','31401','1','0','0','0','0','0','0','0','0','0','Earthbinder Galandria Nightbreeze - Cast Moonfire'),
 ('1929404','19294','0','0','100','1025','0','1000','1900','3300','0','0','11','21807','1','256','0','0','0','0','0','0','0','0','Earthbinder Galandria Nightbreeze - Cast Wrath'),
+('1929405','19294','7','0','100','0','0','0','0','0','0','0','53','19945','0','0','0','0','0','0','0','0','0','0','Earthbinder Galandria Nightbreeze - START_RELAY_SCRIPT on Evade'),
 -- Shattered Hand Grenadier 19295
 ('1929501','19295','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Shattered Hand Grenadier - Enable Range Mode on Aggro'),
 ('1929502','19295','6','0','10','0','0','0','0','0','0','0','11','38879','1','7','0','0','0','0','0','0','0','0','Shattered Hand Grenadier - Cast Soul Burden on Death'),
@@ -18149,6 +18150,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2250501','22505','11','0','100','0','0','0','0','0','0','0','11','39300','0','0','0','0','0','0','0','0','0','0','The Exorcism Bubbling Slimer Bunny (DND) - Cast 39300 on Spawn'),
 ('2250502','22505','1','0','100','1','1000','5000','22000','27000','0','0','12','22506','0','25000','0','0','0','0','0','0','0','0','The Exorcism Bubbling Slimer Bunny (DND) - Spawn Foul Purge'),
 -- Darkness Released 22507 - NullAI
+-- Lured Colossus 20599
+('2059901','20599','11','0','100','0','0','0','0','0','0','0','55','11','0','0','0','0','0','0','0','0','0','0','Lured Colossus - Attack summoner on Spawn'),
+('2059902','20599','21','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Lured Colossus - Forced Despawn on Reached Home'),
+('2059903','20599','6','0','100','0','0','0','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Lured Colossus - despawn on Death'),
 -- The Exorcism Lightning Cloud Bunny
 ('2250801','22508','1','0','100','1','1000','1000','35000','35000','0','0','11','39380','0','1','0','0','0','0','0','0','0','0','The Exorcism Lightning Cloud Bunny - Cast The Exorcism Lightning Cloud Bunny Visual'),
 ('2250802','22508','1','0','100','1','7000','7000','35000','35000','0','0','11','39381','0','1','0','0','0','0','0','0','0','0','The Exorcism Lightning Cloud Bunny - Cast The Exorcism Lightning Bunny Visual'),
