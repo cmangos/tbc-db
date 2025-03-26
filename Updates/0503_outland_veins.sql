@@ -2449,6 +2449,8 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+343, @GGUID+208, -1),
 (@SGGUID+343, @GGUID+515, -1),
 (@SGGUID+343, @GGUID+337, -1),
+(@SGGUID+343, @GGUID+530, -1),
+(@SGGUID+343, @GGUID+588, -1),
 -- Adamantite - BEM - Toshley Plateau North
 (@SGGUID+344, @GGUID+395, -1),
 (@SGGUID+344, @GGUID+453, -1),
@@ -2467,6 +2469,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+344, @GGUID+89, -1),
 (@SGGUID+344, @GGUID+410, -1),
 (@SGGUID+344, @GGUID+397, -1),
+(@SGGUID+344, @GGUID+532, -1),
 -- Adamantite - BEM - Vekhaar Stand
 (@SGGUID+345, @GGUID+178, -1),
 (@SGGUID+345, @GGUID+54, -1),
