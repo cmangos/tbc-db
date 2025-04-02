@@ -1,34 +1,35 @@
-/*
--- copper vein
-DELETE a FROM gameobject a WHERE Id IN(1731,2055,3763,103713) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
--- tin vein
-DELETE a FROM gameobject a WHERE Id IN(1732,2054,3764,103711) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
--- silver vein
-DELETE a FROM gameobject a WHERE Id IN(1733,73940,105569) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
--- iron deposit
-DELETE a FROM gameobject a WHERE Id IN(1735,73939,103710,103712) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
--- gold vein
-DELETE a FROM gameobject a WHERE Id IN(1734,73941,150080,181109) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
--- mithril deposit
-DELETE a FROM gameobject a WHERE Id IN(2040,123310,150079,176645) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
--- truesilver deposit
-DELETE a FROM gameobject a WHERE Id IN(2047,123309,150081,181108) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
--- dark iron deposit
-DELETE a FROM gameobject a WHERE Id IN(165658) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
--- small thorium vein
-DELETE a FROM gameobject a WHERE Id IN(324,123848,150082,176643) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
--- rich thorium vein
-DELETE a FROM gameobject a WHERE Id IN(175404,177388) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
--- small obsidian chunk
-DELETE a FROM gameobject a WHERE Id IN(181068) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
--- large obsidian chunk
-DELETE a FROM gameobject a WHERE Id IN(181069) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
--- incendicite
-DELETE a FROM gameobject a WHERE Id IN(1610,1667) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
--- lesser bloodstone deposit
-DELETE a FROM gameobject a WHERE Id IN(2653) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid);
-*/
 
+-- copper vein
+DELETE a FROM gameobject a WHERE Id IN(1731,2055,3763,103713) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+-- tin vein
+DELETE a FROM gameobject a WHERE Id IN(1732,2054,3764,103711) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+-- silver vein
+DELETE a FROM gameobject a WHERE Id IN(1733,73940,105569) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+-- iron deposit
+DELETE a FROM gameobject a WHERE Id IN(1735,73939,103710,103712) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+-- gold vein
+DELETE a FROM gameobject a WHERE Id IN(1734,73941,150080,181109) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+-- mithril deposit
+DELETE a FROM gameobject a WHERE Id IN(2040,123310,150079,176645) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+-- truesilver deposit
+DELETE a FROM gameobject a WHERE Id IN(2047,123309,150081,181108) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+-- dark iron deposit
+DELETE a FROM gameobject a WHERE Id IN(165658) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+-- small thorium vein
+DELETE a FROM gameobject a WHERE Id IN(324,123848,150082,176643) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+-- rich thorium vein
+DELETE a FROM gameobject a WHERE Id IN(175404,177388) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+-- small obsidian chunk
+DELETE a FROM gameobject a WHERE Id IN(181068) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+-- large obsidian chunk
+DELETE a FROM gameobject a WHERE Id IN(181069) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+-- incendicite
+DELETE a FROM gameobject a WHERE Id IN(1610,1667) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+-- lesser bloodstone deposit
+DELETE a FROM gameobject a WHERE Id IN(2653) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+
+
+/*
 SET @GGUID=400000;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
 (@GGUID+0,1731,0,1, -357.374176025390625, -456.945220947265625, 57.1995849609375, 1.605701684951782226, 0, 0, 0.719339370727539062, 0.694658815860748291,600,600),
@@ -1853,6 +1854,4 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+3,2653,0,1, -842.01422119140625, -3939.072998046875, 150.1113739013671875, 1.308995485305786132, 0, 0, 0.608760833740234375, 0.793353796005249023,600,600),
 (@GGUID+4,2653,0,1, -947.5614013671875, -3927.0517578125, 145.284332275390625, 4.049167633056640625, 0, 0, -0.89879322052001953, 0.438372820615768432,600,600);
 
-DELETE FROM gameobject WHERE guid IN(68096,1068003,1068002,1068004,1068005,1068001,1068003,1068006,1068016,1068009,1068017,1068007,1068021,1068008,1068019,1068018,1068025,1068024,1068027,1068011,1068014,1068020,1068015,1068026,1068022,1068013,1068012) AND NOT EXISTS(SELECT guid FROM spawn_group_spawn WHERE gameobject.guid=spawn_group_spawn.guid);
-DELETE FROM gameobject WHERE guid IN(1068010,1068023,78437,105019,78317,105013,105001,140611,140603,140601,140600,140583,140581,140580,140594,140590,140591,140641,140633,140632,105103,78311) AND NOT EXISTS(SELECT guid FROM spawn_group_spawn WHERE gameobject.guid=spawn_group_spawn.guid);
-DELETE FROM gameobject WHERE guid IN(140641,140633,140632,105103,78293,105121,78245,78239,105067,78305,78221,78215,78269,78257,78233,70996,71271,76283,71429,71021,140863,76643,76688,76678,76288,140341,140345,140340,140343,140344,95522) AND NOT EXISTS(SELECT guid FROM spawn_group_spawn WHERE gameobject.guid=spawn_group_spawn.guid);
+*/
