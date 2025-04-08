@@ -79,6 +79,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (291702, 4000, 1, 0, 0, 0, 0, 0, 0, 0, 927, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
 -- 1 Graveflint scout, up for 1 minute before despawning
 (291702, 7000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 1, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
+(291702, 8000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
 
 (291703, 2000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtrave - Emote Oneshot Question'),
 (291703, 2000, 1, 0, 0, 0, 0, 0, 0, 0, 928, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
@@ -87,6 +88,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (291704, 5000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtrave - Emote Oneshot Question'),
 (291704, 5000, 1, 0, 0, 0, 0, 0, 0, 0, 930, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
 (291704, 8000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 1, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
+(291704, 9000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
 
 (291705, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 931, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
 (291705, 1000, 1, 0, 0, 0, 0, 0, 0, 0, 932, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say EmotedText'),
@@ -95,6 +97,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (291706, 1000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtrave - Emote Oneshot Question'),
 (291706, 1000, 1, 0, 0, 0, 0, 0, 0, 0, 935, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
 (291704, 4000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 1, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
+(291704, 5000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
 
 (291707, 0, 0, 0, 0, 0, 0, 0, 0, 0, 936, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
 (291707, 5000, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Set RunMode'),
