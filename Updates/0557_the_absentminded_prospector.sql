@@ -3,6 +3,9 @@
 -- Quest - The Absent Minded Prospector (id 731) new script 
 -- ---------------
 
+SET @CGUID := 180800;
+SET @SGGUID := 18000; -- spawn_groups
+
 -- Correct spawn points to sniffed ones, respawn time is 1 minute
 DELETE FROM creature WHERE guid = 37085;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -75,6 +78,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (291702, 4000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtrave - Emote Oneshot Question'),
 (291702, 4000, 1, 0, 0, 0, 0, 0, 0, 0, 927, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
 -- 1 Graveflint scout, up for 1 minute before despawning
+(291702, 7000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 1, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
 
 (291703, 2000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtrave - Emote Oneshot Question'),
 (291703, 2000, 1, 0, 0, 0, 0, 0, 0, 0, 928, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
@@ -82,6 +86,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (291704, 2000, 0, 0, 0, 0, 0, 0, 0, 0, 929, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
 (291704, 5000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtrave - Emote Oneshot Question'),
 (291704, 5000, 1, 0, 0, 0, 0, 0, 0, 0, 930, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
+(291704, 8000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 1, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
 
 (291705, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 931, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
 (291705, 1000, 1, 0, 0, 0, 0, 0, 0, 0, 932, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say EmotedText'),
@@ -89,6 +94,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 
 (291706, 1000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtrave - Emote Oneshot Question'),
 (291706, 1000, 1, 0, 0, 0, 0, 0, 0, 0, 935, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
+(291704, 4000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 1, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
 
 (291707, 0, 0, 0, 0, 0, 0, 0, 0, 0, 936, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
 (291707, 5000, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Set RunMode'),
@@ -105,7 +111,6 @@ UPDATE broadcast_text SET ChatTypeID = '2' WHERE Id IN (932, 937);
 -- those are pre spawned on retail and get activated on different move points
 -- its possible that the npc isnt "respawned" when another escort starts, happend on retail too
 -- respawn time of those npcs are atleast 6 minutes, thats a succesful run of the escort quest
-SET @CGUID := 180800;
 DELETE FROM creature WHERE guid BETWEEN @CGUID AND @CGUID+4;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Wave 1
@@ -116,3 +121,31 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- Wave 3
 (@CGUID+3, 2160, 1, 1, 4570.2925, 548.49707, 5.821385, 2.635447, 360, 360, 0, 0),
 (@CGUID+4, 2159, 1, 1, 4567.71875, 551.78302, 5.24911, 1.553343, 360, 360, 0, 0);
+
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+3;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
+(@SGGUID+1, 'Darkshore - Absent Minded Prospector Escort - Wave 1 - Gravelflint Scout(1)', 0, 0, @SGGUID+1, 0, 0),
+(@SGGUID+2, 'Darkshore - Absent Minded Prospector Escort - Wave 2 - Gravelflint Scout(2)', 0, 0, @SGGUID+2, 2, 0),
+(@SGGUID+3, 'Darkshore - Absent Minded Prospector Escort - Wave 3 - Gravelflint Bonesnapper (1) | Geomancer (1)', 0, 0, @SGGUID+3, 2, 0);
+
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+3;
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+(@SGGUID+1, @CGUID, -1, 0), -- Gravelflint Scout
+
+(@SGGUID+2, @CGUID+1, -1, 0), -- Gravelflint Scout
+(@SGGUID+2, @CGUID+2, -1, 0), -- Gravelflint Scout
+
+(@SGGUID+3, @CGUID+3, -1, 0), -- Gravelflint Geomancer
+(@SGGUID+3, @CGUID+4, -1, 0); -- Gravelflint Bonesnapper
+
+DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
+(@SGGUID+1, 'Darkshore - Absent Minded Prospector Escort - Wave 1'),
+(@SGGUID+2, 'Darkshore - Absent Minded Prospector Escort - Wave 2'),
+(@SGGUID+3, 'Darkshore - Absent Minded Prospector Escort - Wave 3');
+
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 1'),
+(@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 2'),
+(@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 3');
