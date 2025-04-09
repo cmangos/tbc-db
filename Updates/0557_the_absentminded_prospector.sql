@@ -13,7 +13,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 -- Correct UnitFlags, gets set to 256 after starting escort quest
 -- [0] Flags: 768
-UPDATE creature_template SET UnitFlags = 768;
+UPDATE creature_template SET UnitFlags = 768 WHERE entry = 2917;
 
 -- Quest Start RP
 DELETE FROM dbscripts_on_quest_start WHERE id IN (731);
@@ -113,14 +113,14 @@ UPDATE broadcast_text SET ChatTypeID = '2' WHERE Id IN (932, 937);
 -- Enemy NPCs that get spawned during escort
 -- those are pre spawned on retail and get activated on different move points
 -- its possible that the npc isnt "respawned" when another escort starts, happend on retail too
--- respawn time of those npcs are atleast 6 minutes, thats a succesful run of the escort quest
+-- respawn time of those npcs is 6 minutes, thats a succesful run of the escort quest
 DELETE FROM creature WHERE guid BETWEEN @CGUID AND @CGUID+4;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Wave 1
 (@CGUID, 2158, 1, 1, 4644.36768, 633.74286, 8.7467, 3.1764, 360, 360, 0, 0),
 -- Wave 2
 (@CGUID+1, 2158, 1, 1, 4619.028, 650.8594, 8.136638, 5.3930, 360, 360, 0, 0),
-(@CGUID+2, 2158, 1, 1, 4621.446, 652.4161, 8.0052736, 4.5029, 360, 360, 0, 0),
+(@CGUID+2, 2158, 1, 1, 4621.446, 652.4161, 8.0052736, 4.5029, 360, 10, 0, 0),
 -- Wave 3
 (@CGUID+3, 2160, 1, 1, 4570.2925, 548.49707, 5.821385, 2.635447, 360, 360, 0, 0),
 (@CGUID+4, 2159, 1, 1, 4567.71875, 551.78302, 5.24911, 1.553343, 360, 360, 0, 0);
@@ -152,3 +152,32 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 1'),
 (@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 2'),
 (@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 3');
+
+
+-- Spell Lists
+-- Gravelflint Bonesnapper spell_list
+DELETE FROM `creature_template_spells` WHERE `entry` = 2159;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 215901;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(215901, 'Darkshore - Gravelflint Bonesnapper', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (215901);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(215901, 1, 3148, 0, -1, 130, 0, 100, 0, 6000, 12000, 8000, 14000, 'Gravelflint Bonesnapper - Head Crack - top aggro aura not present');
+
+UPDATE `creature_template` SET `SpellList` = 215901 WHERE `entry` = 2159;
+
+-- Gravelflint Geomancer spell_list
+DELETE FROM `creature_template_spells` WHERE `entry` = 2160;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 216001;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(216001, 'Darkshore - Gravelflint Geomancer', 0, 70);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (216001);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(216001, 1, 3148, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Gravelflint Bonesnapper - Fireball - current');
+
+UPDATE `creature_template` SET `SpellList` = 216001 WHERE `entry` = 2160;
+
