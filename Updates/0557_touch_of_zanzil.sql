@@ -69,7 +69,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Gossip Menu option Doc Mixilpixil has if player lost Eau d' Mixilpixil
 DELETE FROM gossip_menu_option WHERE menu_id IN (5763);
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `condition_id`) VALUES 
-(5763, 1, 0, 'I\'ve lost the cure, Doc! Tell me you got more!!!', 9532, 1, 1, 5763, 0, 0, 5765);
+(5763, 1, 0, 'I\'ve lost the cure, Doc! Tell me you got more!!!', 9532, 1, 1, 0, 0, 5763, 5765);
 
 DELETE FROM conditions WHERE condition_entry IN (5763, 5764, 5765);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`,  `flags`, `comments`) VALUES 
@@ -80,4 +80,4 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`,  `flags
 
 DELETE FROM dbscripts_on_gossip WHERE id = 5763;
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES 
-(5763, 0, 0, 15, 22943, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Doc Mixilpixil - cast Player Lost Eau d\' Mixilpixil DND');
+(5763, 0, 0, 15, 22943, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Doc Mixilpixil - cast Player Lost Eau d\' Mixilpixil DND');
