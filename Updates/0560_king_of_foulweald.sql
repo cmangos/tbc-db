@@ -24,7 +24,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+11, 12921, 1, 1, 2231.140625, -1518.4185791015625, 90.31430816650390625, 1.448623299598693847, 2, 2, 0, 2),
 (@CGUID+12, 12921, 1, 1, 2200.841796875, -1574.2091064453125, 85.82651519775390625, 1.117010712623596191, 2, 2, 0, 2),
 -- Chief Murgut
-(@CGUID+13, 12918, 1, 1, 2218.931884765625, -1587.732421875, 86.49947357177734375, 0.209439516067504882, 2, 2, 0, 2);
+(@CGUID+13, 12918, 1, 1, 2218.931884765625, -1587.732421875, 86.49947357177734375, 0.209439516067504882, 5, 5, 0, 2);
 
 -- It doesnt matter WHERE the Banner gets spawned, they have a fixed waypoint where they run to and then start channeling the spell
 DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+0 AND @CGUID+13;
@@ -98,7 +98,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 (@SGGUID+1, 'Ashenvale - King of the Fouldweald - Enraged Foulweald'),
-(@SGGUID+2, 'Darkshore - Absent Minded Prospector Escort - Wave 3');
+(@SGGUID+2, 'Ashenvale - King of the Fouldweald - Chief Murgut');
 
 DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
@@ -109,10 +109,12 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 DELETE FROM dbscripts_on_event WHERE id = 6721;
 INSERT INTO `dbscripts_on_event` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (6721, 0, 0, 21, 1, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'King of the Fouldweald - Karang\'s Banner - Set ActiveObject'),
-(6721, 3000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 1, 0, 0, 0, 0, 0, 0, 'King of the Fouldweald - Activate WorldState'),
-(6721, 180000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 0, 0, 0, 0, 0, 0, 0, 'King of the Fouldweald - Deactivate WorldState'),
-(6721, 180000, 2, 13, 0, 0, 0, 178205, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'King of the Fouldweald - Acivate Object'),
-(6721, 180000, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 1, 0, 0, 0, 0, 0, 0, 'King of the Fouldweald - Spawn Chief Murgut');
+(6721, 3000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 1, 0, 0, 0, 0, 0, 0, 'King of the Fouldweald - set Enraged Foulweald WorldState to true'),
+-- When the Banner gets destroyed from Enraged Foulwealds, worldstate gets changed to 0 again and last mob should not spawn
+(6721, 180000, 0, 34, @SGGUID+1, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'King of the Fouldweald - Terminate Script if Enraged Foulweald WorldState is false'),
+(6721, 180001, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 0, 0, 0, 0, 0, 0, 0, 'King of the Fouldweald - Deactivate WorldState'),
+(6721, 180001, 2, 13, 0, 0, 0, 178205, 100, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'King of the Fouldweald - Acivate Object'),
+(6721, 180001, 3, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 1, 0, 0, 0, 0, 0, 0, 'King of the Fouldweald - set Chief Murgut WorldState to true');
 
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1292101, 1291801);
@@ -122,6 +124,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1292101, 0, 2, 31, 178205, 20, 0, 0, 0, 1024, 0, 0, 0, 0, 0, 0, 0, 0, 'Ashenvale - Enraged Foulweald - Terminate Script when no Karangs Banner found'),
 (1292101, 1, 1, 0, 0, 0, 0, 0, 0, 0, 8398, 0, 0, 0, 0, 0, 0, 0, 'Ashenvale - Enraged Foulweald - Cast Destroy Karang\'s Banner'),
 (1292101, 1, 2, 15, 20786, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ashenvale - Enraged Foulweald - Cast Destroy Karang\'s Banner'),
-
+-- Chief Murgut
 (1291801, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ashenvale - Enraged Foulweald - RunMode Off'),
 (1291801, 0, 1, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Ashenvale - Enraged Foulweald - Move Random around point');
+
+-- Chief Murgut on Despawn or on Kill set WorldState to false
+DELETE FROM dbscripts_on_relay WHERE id = 1291801;
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1291801, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 0, 0, 0, 0, 0, 0, 0, 'Chief Murgut - set WorldState to false');
