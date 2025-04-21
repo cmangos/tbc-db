@@ -1501,7 +1501,7 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+1480,2055,0,1, -8891.0107421875, -1986.14697265625, 136.204193115234375, 0.401424884796142578, 0, 0, 0.199367523193359375, 0.979924798011779785,600,600),
 (@GGUID+1481,2055,0,1, -8987.3720703125, -2008.650146484375, 139.2642364501953125, 4.206246376037597656, 0, 0, -0.86162853240966796, 0.50753939151763916,600,600);
 
-DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+0 AND @SGGUID+40;
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+0 AND @SGGUID+20;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+0, 'Copper Vein - Redridge - Rethban cave', 1, 2, 0, 0),
 (@SGGUID+1, 'Copper Vein - Barrens - Mining Site', 1, 1, 0, 0),
@@ -1525,7 +1525,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+19, 'Copper Vein - Hillsbrad Foothills', 1, 1, 0, 0),
 (@SGGUID+20, 'Copper Vein - Darkshore', 1, 1, 0, 0);
 
-DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+0 AND @SGGUID+40;
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+0 AND @SGGUID+20;
 -- Redridge - Rethban cave
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+0, guid, -1 FROM gameobject WHERE guid IN(@GGUID+635,@GGUID+823,@GGUID+822,@GGUID+706,@GGUID+859,@GGUID+862,@GGUID+1375,@GGUID+1480,@GGUID+696,@GGUID+1435,@GGUID+1481);
 -- Barrens - Mining Site
@@ -1571,6 +1571,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+20, guid
 
 
 SET @GGUID=405000;
+DELETE FROM gameobject WHERE guid BETWEEN @GGUID+0 AND @GGUID+1000;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
 (@GGUID+0,1732,0,1, -196.458221435546875, -655.0936279296875, 66.22991180419921875, 1.239183306694030761, 0, 0, 0.580702781677246093, 0.814115643501281738,600,600),
 (@GGUID+1,1732,1,1, 1219.892333984375, 1498.0648193359375, 79.89258575439453125, 4.625123500823974609, 0, 0, -0.73727703094482421, 0.67559051513671875,600,600),
@@ -2249,6 +2250,80 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+703,2054,0,1, -8974.6103515625, -2020.087646484375, 136.6331329345703125, 4.380776405334472656, 0, 0, -0.81411552429199218, 0.580702960491180419,600,600),
 (@GGUID+704,103711,0,1, -772.421142578125, 158.3651885986328125, 21.11450576782226562, 5.410521507263183593, 0, 0, -0.42261791229248046, 0.906307935714721679,600,600),
 (@GGUID+706,103711,0,1, -796.20684814453125, 179.3605499267578125, 22.46364784240722656, 3.298687219619750976, 0, 0, -0.99691677093505859, 0.078466430306434631,600,600);
+
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+21 AND @SGGUID+30;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+21, 'Tin Vein - Redridge - Rethban cave', 1, 2, 0, 0),
+(@SGGUID+22, 'Tin Vein - Hillsbrad - Horde Only - Mine', 1, 2, 0, 0),
+(@SGGUID+23, 'Tin Vein - Barrens - Horde Only - South strip mine', 1, 2, 0, 0),
+(@SGGUID+24, 'Tin Vein - Barrens - Blood Shard - North', 1, 2, 0, 0),
+(@SGGUID+25, 'Tin Vein - Barrens - Blood Shard - Middle', 1, 2, 0, 0),
+(@SGGUID+26, 'Tin Vein - Barrens - Blood Shard - South', 1, 2, 0, 0),
+(@SGGUID+27, 'Tin Vein - Ashenvale', 1, 2, 0, 0),
+(@SGGUID+28, 'Tin Vein - Redridge', 1, 2, 0, 0),
+(@SGGUID+29, 'Tin Vein - Wetlands', 1, 2, 0, 0),
+(@SGGUID+30, 'Tin Vein - Duskwood', 1, 2, 0, 0),
+(@SGGUID+31, 'Tin Vein - Hillsbrad', 1, 2, 0, 0),
+(@SGGUID+32, 'Tin Vein - Loch Modan', 1, 2, 0, 0),
+(@SGGUID+33, 'Tin Vein - Thousand Needles', 1, 2, 0, 0),
+(@SGGUID+34, 'Tin Vein - Barrens', 1, 2, 0, 0),
+(@SGGUID+35, 'Tin Vein - Stonetalon Mountains', 1, 2, 0, 0),
+(@SGGUID+36, 'Tin Vein - Desolace', 1, 2, 0, 0),
+(@SGGUID+37, 'Tin Vein - Silverpine Forest', 1, 2, 0, 0),
+(@SGGUID+38, 'Tin Vein - Darkshore', 1, 2, 0, 0),
+(@SGGUID+39, 'Tin Vein - Arathi Highlands', 1, 2, 0, 0),
+(@SGGUID+40, 'Tin Vein - Westfall', 1, 2, 0, 0),
+(@SGGUID+41, 'Tin Vein - Alterac Mountains', 1, 2, 0, 0),
+(@SGGUID+42, 'Tin Vein - Stranglethorn Vale', 1, 2, 0, 0),
+(@SGGUID+43, 'Tin Vein - Dustwallow Marsh', 1, 2, 0, 0);
+
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+21 AND @SGGUID+43;
+-- Redridge - Rethban cave
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+21, guid, -1 FROM gameobject WHERE guid IN(@GGUID+696,@GGUID+656,@GGUID+695,@GGUID+217,@GGUID+308,@GGUID+655,@GGUID+215,@GGUID+389,@GGUID+212,@GGUID+288,@GGUID+703,@GGUID+667);
+-- Hillsbrad - Horde Only - Mine
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+22, guid, -1 FROM gameobject WHERE guid IN(@GGUID+108,@GGUID+527,@GGUID+31,@GGUID+125,@GGUID+119,@GGUID+405,@GGUID+312,@GGUID+26,@GGUID+27,@GGUID+66,@GGUID+341,@GGUID+82,@GGUID+144,@GGUID+704,@GGUID+118,@GGUID+706,@GGUID+69,@GGUID+69,@GGUID+498,@GGUID+356);
+-- Barrens - Horde Only - South strip mine
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+23, guid, -1 FROM gameobject WHERE guid IN(@GGUID+267,@GGUID+96,@GGUID+540,@GGUID+474,@GGUID+97,@GGUID+386,@GGUID+386,@GGUID+154,@GGUID+220,@GGUID+379);
+-- Barrens - Blood Shard - North
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+24, guid, -1 FROM gameobject WHERE guid IN(@GGUID+577,@GGUID+588,@GGUID+673,@GGUID+62,@GGUID+499,@GGUID+398,@GGUID+449);
+-- Barrens - Blood Shard - Middle
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+25, guid, -1 FROM gameobject WHERE guid IN(@GGUID+678,@GGUID+509,@GGUID+509,@GGUID+70,@GGUID+61,@GGUID+479,@GGUID+581,@GGUID+473,@GGUID+91,@GGUID+490,@GGUID+491,@GGUID+14,@GGUID+388,@GGUID+419,@GGUID+42,@GGUID+355,@GGUID+153,@GGUID+505,@GGUID+347,@GGUID+54,@GGUID+420,@GGUID+359,@GGUID+10,@GGUID+381,@GGUID+544,@GGUID+375,@GGUID+107);
+-- Barrens - Blood Shard - South
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+26, guid, -1 FROM gameobject WHERE guid IN(@GGUID+86,@GGUID+582,@GGUID+508,@GGUID+58,@GGUID+73);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+27, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+28, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+29, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+30, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+31, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+32, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+33, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+34, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+35, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+36, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+37, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+38, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+39, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+40, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+41, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+42, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
+-- 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+43, guid, -1 FROM gameobject WHERE guid IN(@GGUID+705);
 
 SET @GGUID=410000;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
