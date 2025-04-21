@@ -4,7 +4,8 @@
 -- ---------------
 
 SET @CGUID := 180800;
-SET @SGGUID := 18000; -- spawn_groups
+SET @SGGUID := 18002; -- spawn_groups
+SET @CONDITIONID := 1802; -- conditions
 
 -- Correct spawn points to sniffed ones, respawn time is 1 minute
 DELETE FROM creature WHERE guid = 37085;
@@ -147,11 +148,11 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@SGGUID+2, 'Darkshore - Absent Minded Prospector Escort - Wave 2'),
 (@SGGUID+3, 'Darkshore - Absent Minded Prospector Escort - Wave 3');
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@CONDITIONID+1, @CONDITIONID+2, @CONDITIONID+3);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 1'),
-(@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 2'),
-(@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 3');
+(@CONDITIONID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 1'),
+(@CONDITIONID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 2'),
+(@CONDITIONID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 3');
 
 
 -- Spell Lists
