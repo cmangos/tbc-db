@@ -4,8 +4,8 @@
 -- ---------------
 
 SET @CGUID := 180800;
-SET @SGGUID := 18002; -- spawn_groups
-SET @CONDITIONID := 1802; -- conditions
+SET @SGGUID := 18000; -- spawn_groups
+SET @CONDITIONID := 1800; -- conditions
 
 -- Correct spawn points to sniffed ones, respawn time is 1 minute
 DELETE FROM creature WHERE guid = 37085;
