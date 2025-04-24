@@ -3,8 +3,8 @@
 -- Quest - King of the Foulweald (id 6621) new script 
 -- ---------------
 
-SET @CGUID := 180800;
-SET @SGGUID := 18004;
+SET @CGUID := 180805;
+SET @SGGUID := 18002;
 
 -- Pre spawn all possible Enraged Foulweald
 -- They have a 2nd respawn Timer as long worldstate is active, but there will never be more then 2 up (spawn_group.maxcount)
