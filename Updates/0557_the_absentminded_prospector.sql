@@ -79,8 +79,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (291702, 4000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtrave - Emote Oneshot Question'),
 (291702, 4000, 1, 0, 0, 0, 0, 0, 0, 0, 927, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
 -- 1 Graveflint scout, up for 1 minute before despawning
-(291702, 7000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 1, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
-(291702, 8000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
+(291702, 7000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+0, 1, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
+(291702, 8000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
 
 (291703, 2000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtrave - Emote Oneshot Question'),
 (291703, 2000, 1, 0, 0, 0, 0, 0, 0, 0, 928, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
@@ -88,8 +88,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (291704, 2000, 0, 0, 0, 0, 0, 0, 0, 0, 929, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
 (291704, 5000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtrave - Emote Oneshot Question'),
 (291704, 5000, 1, 0, 0, 0, 0, 0, 0, 0, 930, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
-(291704, 8000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 1, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
-(291704, 9000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
+(291704, 8000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 1, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
+(291704, 9000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
 
 (291705, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 931, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
 (291705, 1000, 1, 0, 0, 0, 0, 0, 0, 0, 932, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say EmotedText'),
@@ -97,8 +97,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 
 (291706, 1000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtrave - Emote Oneshot Question'),
 (291706, 1000, 1, 0, 0, 0, 0, 0, 0, 0, 935, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
-(291704, 4000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 1, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
-(291704, 5000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
+(291704, 4000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 1, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
+(291704, 5000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Change Worldstate'),
 
 (291707, 0, 0, 0, 0, 0, 0, 0, 0, 0, 936, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Say Text'),
 (291707, 5000, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Absent Minded Prospector - Prospector Remtravel - Set RunMode'),
@@ -126,33 +126,33 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+3, 2160, 1, 1, 4570.2925, 548.49707, 5.821385, 2.635447, 360, 360, 0, 0),
 (@CGUID+4, 2159, 1, 1, 4567.71875, 551.78302, 5.24911, 1.553343, 360, 360, 0, 0);
 
-DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+3;
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID AND @SGGUID+2;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
-(@SGGUID+1, 'Darkshore - Absent Minded Prospector Escort - Wave 1 - Gravelflint Scout(1)', 0, 0, @SGGUID+1, 0, 0),
-(@SGGUID+2, 'Darkshore - Absent Minded Prospector Escort - Wave 2 - Gravelflint Scout(2)', 0, 0, @SGGUID+2, 2, 0),
-(@SGGUID+3, 'Darkshore - Absent Minded Prospector Escort - Wave 3 - Gravelflint Bonesnapper (1) | Geomancer (1)', 0, 0, @SGGUID+3, 2, 0);
+(@SGGUID+0, 'Darkshore - Absent Minded Prospector Escort - Wave 1 - Gravelflint Scout(1)', 0, 0, @SGGUID+0, 0, 0),
+(@SGGUID+1, 'Darkshore - Absent Minded Prospector Escort - Wave 2 - Gravelflint Scout(2)', 0, 0, @SGGUID+1, 2, 0),
+(@SGGUID+2, 'Darkshore - Absent Minded Prospector Escort - Wave 3 - Gravelflint Bonesnapper (1) | Geomancer (1)', 0, 0, @SGGUID+2, 2, 0);
 
-DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+3;
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+2;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
-(@SGGUID+1, @CGUID, -1, 0), -- Gravelflint Scout
+(@SGGUID+0, @CGUID, -1, 0), -- Gravelflint Scout
 
-(@SGGUID+2, @CGUID+1, -1, 0), -- Gravelflint Scout
-(@SGGUID+2, @CGUID+2, -1, 0), -- Gravelflint Scout
+(@SGGUID+1, @CGUID+1, -1, 0), -- Gravelflint Scout
+(@SGGUID+1, @CGUID+2, -1, 0), -- Gravelflint Scout
 
-(@SGGUID+3, @CGUID+3, -1, 0), -- Gravelflint Geomancer
-(@SGGUID+3, @CGUID+4, -1, 0); -- Gravelflint Bonesnapper
+(@SGGUID+2, @CGUID+3, -1, 0), -- Gravelflint Geomancer
+(@SGGUID+2, @CGUID+4, -1, 0); -- Gravelflint Bonesnapper
 
-DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
+DELETE FROM worldstate_name WHERE Id IN (@SGGUID+0, @SGGUID+1, @SGGUID+2);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
-(@SGGUID+1, 'Darkshore - Absent Minded Prospector Escort - Wave 1'),
-(@SGGUID+2, 'Darkshore - Absent Minded Prospector Escort - Wave 2'),
-(@SGGUID+3, 'Darkshore - Absent Minded Prospector Escort - Wave 3');
+(@SGGUID+0, 'Darkshore - Absent Minded Prospector Escort - Wave 1'),
+(@SGGUID+1, 'Darkshore - Absent Minded Prospector Escort - Wave 2'),
+(@SGGUID+2, 'Darkshore - Absent Minded Prospector Escort - Wave 3');
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@CONDITIONID+1, @CONDITIONID+2, @CONDITIONID+3);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@CONDITIONID+0, @CONDITIONID+1, @CONDITIONID+2);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(@CONDITIONID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 1'),
-(@CONDITIONID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 2'),
-(@CONDITIONID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 3');
+(@CONDITIONID+0, 42, @SGGUID+0, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 1'),
+(@CONDITIONID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 2'),
+(@CONDITIONID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Darkshore - Absent Minded Prospector Escort - Wave 3');
 
 
 -- Spell Lists
