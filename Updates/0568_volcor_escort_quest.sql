@@ -45,3 +45,34 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (3692, 1, 4608.442, -6.326, 69.7473, 100, 10000, 0), 
 (3692, 2, 4620.7637,25.817871,70.31253, 100, 0, 0), 
 (3692, 3, 4642.706,32.261177,67.791306, 100, 5000, 0);
+
+
+
+
+-- SpellList for Blackwood Ursa
+DELETE FROM `creature_template_spells` WHERE `entry` = 2170;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 217001;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(217001, 'Blackwood Ursa', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (217001);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(217001, 1, 1058, 0, -1, 200, 0, 100, 0, 2000, 8000, 18000, 21000, 'Blackwood Ursa - Rejuvenation - frindly missing 20% hp include self');
+
+UPDATE `creature_template` SET `SpellList` = 217001 WHERE `entry` = 2170; 
+
+-- SpellList for Blackwood Shaman
+DELETE FROM `creature_template_spells` WHERE `entry` = 2171;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 217101;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(217101, 'Blackwood Shaman', 0, 70);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (217101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(217101, 1, 913, 0, -1, 200, 0, 100, 0, 2000, 8000, 16000, 21000, 'Blackwood Shaman - Healing Wave - frindly missing 20% hp include self'),
+(217101, 2, 2606, 0, -1, 100, 0, 100, 0, 9000, 14000, 11000, 15000, 'Blackwood Shaman - Shock - random'),
+(217101, 3, 9532, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Blackwood Shaman - Lightning Bolt - current');
+
+UPDATE `creature_template` SET `SpellList` = 217101 WHERE `entry` = 2171; 
