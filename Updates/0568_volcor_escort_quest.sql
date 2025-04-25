@@ -10,15 +10,21 @@ SET @CONDITIONID := 18004;
 
 -- Correct spawnPosition and Respawn Timer based on Sniffs
 DELETE FROM creature WHERE guid = 37096;
-DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+2;
+DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+6;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (37096, 3692, 1, 1, 4608.44189453125, -6.32595491409301757, 69.7472991943359375, 1.850049018859863281, 60, 60, 0, 0),
 -- NPCs spawned during Escort
 -- Wave 1
 (@CGUID+1, 0, 1, 1, 4630.9873046875, 20.57942771911621093, 70.31865692138671875, 2.216568231582641601, 2, 2, 0, 2), -- spawn_group_entry
-(@CGUID+2, 0, 1, 1, 4606.6772460937500, 53.2311210632324, 70.5124816894531, 5.5326938629150, 2, 2, 0, 2); -- spawn_group_entry
+(@CGUID+2, 0, 1, 1, 4606.6772460937500, 53.2311210632324, 70.5124816894531, 5.5326938629150, 2, 2, 0, 2), -- spawn_group_entry
 
-DELETE FROM creature_movement WHERE id BETWEEN @CGUID+1 AND @CGUID+2;
+(@CGUID+3, 0, 1, 1, 4726.0693359375000, 100.7260208129883, 54.3944969177246, 3.1590459346771, 2, 2, 0, 2), -- spawn_group_entry
+(@CGUID+4, 0, 1, 1, 4604.9921875000000, 96.6590728759766, 64.6199493408203, 0.7155849933624, 2, 2, 0, 2), -- spawn_group_entry
+
+(@CGUID+5, 0, 1, 1, 4692.1928710937500, 202.8195037841797, 57.9679412841797, 5.4803338050842, 2, 2, 0, 2), -- spawn_group_entry
+(@CGUID+6, 0, 1, 1, 4763.4018554687500, 159.7842407226563, 54.8794937133789, 2.2689280509949, 2, 2, 0, 2); -- spawn_group_entry
+
+DELETE FROM creature_movement WHERE id BETWEEN @CGUID+1 AND @CGUID+6;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+1, 1, 4630.9873, 20.5794, 70.3187, 100, 100, 217001),
 (@CGUID+1, 2, 4617.987, 22.59733, 70.73513, 100, 0, 0),
@@ -26,13 +32,30 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 
 (@CGUID+2, 1, 4606.6772, 53.2311, 70.512, 100, 6000, 217001),
 (@CGUID+2, 2, 4619.928, 37.121964, 69.69718, 100, 0, 0),
-(@CGUID+2, 3, 4615.4106, 20.990452, 70.91237, 100, 1000, 3); -- idle
+(@CGUID+2, 3, 4615.4106, 20.990452, 70.91237, 100, 1000, 3), -- idle
+
+(@CGUID+3, 1, 4726.069, 100.726, 54.395, 100, 6000, 217001), 
+(@CGUID+3, 2, 4687.198,94.99501,52.92359,  100, 0, 0), 
+(@CGUID+3, 3, 4653.7007,92.59516,59.36527, 100, 1000, 3), -- idle
+
+(@CGUID+4, 1, 4604.992, 96.659, 64.6199, 100, 100, 217001),
+(@CGUID+4, 2, 4626.159,103.82465,62.678608,  100, 0, 0), 
+(@CGUID+4, 3, 4642.077,91.71484,61.255398, 100, 1000, 3), -- idle
+
+(@CGUID+5, 1, 4692.19287, 202.8195, 57.9679, 100, 100, 217001),
+(@CGUID+5, 2, 4710.5645,179.46864,55.01509, 100, 0, 0), 
+(@CGUID+5, 3, 4712.5806,152.18892,51.82158, 100, 1000, 3), -- idle
+
+(@CGUID+6, 1, 4763.4019, 159.78424, 54.8795, 100, 100, 217001),
+(@CGUID+6, 2, 4737.4463,166.4566,52.88087, 100, 0, 0), 
+(@CGUID+6, 3, 4718.637,152.93024,51.658363, 100, 1000, 3); -- idle
+
 
 -- Correct UnitFlags
 UPDATE creature_template SET UnitFlags = 768 WHERE entry = 3692;
 
 -- Change Text to emoted text
-UPDATE broadcast_text SET ChatTypeID = '2' WHERE Id IN (1238);
+UPDATE broadcast_text SET ChatTypeID = '2' WHERE Id IN (1238, 1241);
 
 
 DELETE FROM dbscripts_on_quest_start WHERE id IN (994, 995);
@@ -55,14 +78,33 @@ UPDATE quest_template SET StartScript = 994 WHERE entry = 994;
 UPDATE quest_template SET StartScript = 995 WHERE entry = 995;
 
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (217001, 369201);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (217001, 369201, 369202, 369203, 369204, 369501);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Let Escort npcs set Phase to 1 (CAI) and despawn OOC
 (217001, 0, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - RunMode'),
 (217001, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - SendAiEventA to self'),
 -- Escort spawn Wave 1
 (369201, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 1, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Change Worldstate to true'),
-(369201, 100, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Change Worldstate to false');
+(369201, 100, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Change Worldstate to false'),
+-- Escort spawn Wave 2
+(369202, 1000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 1, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Change Worldstate to true'),
+(369202, 1100, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Change Worldstate to false'),
+-- Escort spawn Wave 3
+(369203, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 1, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Change Worldstate to true'),
+(369203, 100, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Change Worldstate to false'),
+-- Escort Finish -- 08:33:57.610
+(369204, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Set ActiveObject'), 
+(369204, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Emote OneShotTalk'), 
+(369204, 0, 2, 0, 0, 0, 0, 0, 0, 0, 1243, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Say Text'), 
+(369204, 5000, 0, 20, 0, 0, 0, 3695, 20, 0, 2, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Grimclaw - Move to Volcor'),
+(369204, 5000, 1, 37, 0, 0, 1, 3695, 20, 0, 2, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Grimclaw - Move to Volcor'),
+(369204, 7000, 0, 0, 0, 0, 0, 3695, 20, 0, 1241, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Grimclaw - Say EmotedText'), 
+(369204, 12000, 0, 36, 0, 0, 0, 3695, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Face Grimclaw'), 
+(369204, 12000, 1, 0, 0, 0, 0, 0, 0, 0, 1244, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Say Text'), 
+(369204, 26000, 0, 3, 369501, 0, 0, 3695, 10, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Grimclaw - Move to Homeposition'),
+(369204, 26000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Remove ActiveObject'), 
+(369204, 26000, 2, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Force Despawn'),
+(369501, 0, 0, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Grimclaw - Move random around Point');
 
 -- Waypoints for Volcor when doing escort Quest: Escape Through Stealth or Escape Though Force
 DELETE FROM waypoint_path_name WHERE PathId IN (3692, 3693);
@@ -83,35 +125,50 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (3693, 4, 4623.653,31.363064,69.554825, 100, 0, 0), 
 (3693, 5, 4630.4756,43.982746,68.412445, 100, 0, 0), 
 (3693, 6, 4636.2656,61.76519,65.63667, 100, 0, 0), 
-(3693, 7, 4639.3594,78.0166,61.94827, 100, 0, 0), 
+(3693, 7, 4639.3594,78.0166,61.94827, 100, 1000, 369202), 
 (3693, 8, 4642.826,85.68848,60.83361, 100, 0, 0), 
 (3693, 9, 4654.8657,98.59516,58.740883, 100, 0, 0), 
 (3693, 10, 4692.1865,114.21354,52.798996, 100, 0, 0), 
-(3693, 11, 4704.088,135.93317,53.587494, 100, 0, 0), 
+(3693, 11, 4704.088,135.93317,53.587494, 100, 100, 369203), 
 (3693, 12, 4721.8975,154.84029,51.77296, 100, 0, 0), 
 (3693, 13, 4745.759,171.77951,53.13714, 100, 0, 0), 
-(3693, 14, 4761.3286,194.15158,52.92282, 100, 0, 0);
+(3693, 14, 4761.3286,194.15158,52.92282, 100, 1000, 0),
+(3693, 15, 4761.3286,194.15158,52.92282, 1.57079, 1000, 369204);
 
 DELETE FROM spawn_group WHERE id BETWEEN @SGGUID+1 AND @SGGUID+3;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
-(@SGGUID+1, 'Darkshore - Volcor - Quest: Escape Through Force - Wave 1', 0, 2, @SGGUID+1, 0, 0);
+(@SGGUID+1, 'Darkshore - Volcor - Quest: Escape Through Force - Wave 1', 0, 0, @SGGUID+1, 0, 0),
+(@SGGUID+2, 'Darkshore - Volcor - Quest: Escape Through Force - Wave 2', 0, 0, @SGGUID+2, 0, 0),
+(@SGGUID+3, 'Darkshore - Volcor - Quest: Escape Through Force - Wave 3', 0, 0, @SGGUID+3, 0, 0);
 
 DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+3;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+1, -1, 0), -- spawn_group_entry
-(@SGGUID+1, @CGUID+2, -1, 0); -- spawn_group_entry
+(@SGGUID+1, @CGUID+2, -1, 0), -- spawn_group_entry
+
+(@SGGUID+2, @CGUID+3, -1, 0), -- spawn_group_entry
+(@SGGUID+2, @CGUID+4, -1, 0), -- spawn_group_entry
+
+(@SGGUID+3, @CGUID+5, -1, 0), -- spawn_group_entry
+(@SGGUID+3, @CGUID+6, -1, 0); -- spawn_group_entry
 
 DELETE FROM spawn_group_entry WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+3;
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGGUID+1, 2170, 0, 0, 0), (@SGGUID+1, 2171, 0, 0, 0); -- Blackwood Ursa / Blackwood Shaman
+(@SGGUID+1, 2170, 0, 0, 0), (@SGGUID+1, 2171, 0, 0, 0), -- Blackwood Ursa / Blackwood Shaman
+(@SGGUID+2, 2170, 0, 0, 0), (@SGGUID+2, 2171, 0, 0, 0), -- Blackwood Ursa / Blackwood Shaman
+(@SGGUID+3, 2170, 0, 0, 0), (@SGGUID+3, 2171, 0, 0, 0); -- Blackwood Ursa / Blackwood Shaman
 
 DELETE FROM worldstate_name WHERE id BETWEEN @SGGUID+1 AND @SGGUID+3;
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
-(@SGGUID+1, 'Darkshore - Volcor - Quest: Escape Through Force - Wave 1');
+(@SGGUID+1, 'Darkshore - Volcor - Quest: Escape Through Force - Wave 1'),
+(@SGGUID+2, 'Darkshore - Volcor - Quest: Escape Through Force - Wave 2'),
+(@SGGUID+3, 'Darkshore - Volcor - Quest: Escape Through Force - Wave 3');
 
 DELETE FROM conditions WHERE condition_entry  BETWEEN @CONDITIONID+1 AND @CONDITIONID+3;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(@CONDITIONID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Darkshore - Volcor - Quest: Escape Through Force - Wave 1');
+(@CONDITIONID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Darkshore - Volcor - Quest: Escape Through Force - Wave 1'),
+(@CONDITIONID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Darkshore - Volcor - Quest: Escape Through Force - Wave 2'),
+(@CONDITIONID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Darkshore - Volcor - Quest: Escape Through Force - Wave 3');
 
 -- SpellList for Blackwood Ursa
 DELETE FROM `creature_template_spells` WHERE `entry` = 2170;
