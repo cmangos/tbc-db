@@ -77,7 +77,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+1, 'Ashenvale - King of the Fouldweald - Enraged Foulweald ', 0, 2, @SGGUID+1, 0, 0),
 (@SGGUID+2, 'Ashenvale - King of the Fouldweald - Chief Murgut', 0, 1, @SGGUID+2, 0, 0);
 
-DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+0 AND @SGGUID+3;
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+0 AND @SGGUID+2;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+0, -1, 0), -- Enraged Foulweald
 (@SGGUID+1, @CGUID+1, -1, 0), -- Enraged Foulweald

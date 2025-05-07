@@ -96,7 +96,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (369204, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Set ActiveObject'), 
 (369204, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Emote OneShotTalk'), 
 (369204, 0, 2, 0, 0, 0, 0, 0, 0, 0, 1243, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Say Text'), 
-(369204, 5000, 0, 20, 0, 0, 0, 3695, 20, 0, 2, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Grimclaw - Move to Volcor'),
+(369204, 5000, 0, 20, 0, 0, 0, 3695, 20, 0, 2, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Grimclaw - Disable random Movement'),
 (369204, 5000, 1, 37, 0, 0, 1, 3695, 20, 0, 2, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Grimclaw - Move to Volcor'),
 (369204, 7000, 0, 0, 0, 0, 0, 3695, 20, 0, 1241, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Grimclaw - Say EmotedText'), 
 (369204, 12000, 0, 36, 0, 0, 0, 3695, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Face Grimclaw'), 
