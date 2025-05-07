@@ -95,12 +95,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+2, @CGUID+13, -1, 0); -- Chief Murgut
 
-DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
+DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+2);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 (@SGGUID+1, 'Ashenvale - King of the Fouldweald - Enraged Foulweald'),
 (@SGGUID+2, 'Ashenvale - King of the Fouldweald - Chief Murgut');
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Ashenvale - King of the Fouldweald - Enraged Foulweald'),
 (@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Ashenvale - King of the Fouldweald - Chief Murgut');
