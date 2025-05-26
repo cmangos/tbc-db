@@ -275,3 +275,16 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1887501, 1, 35922, 0, -1, 2, 0, 100, 0, 5000, 18000, 15000, 23000, 'Zaxxis Raider - Energy Flare - self');
 
 UPDATE `creature_template` SET `SpellList` = 1887501 WHERE `entry` = 18875;
+
+-- Warp-Raider Nesaad
+DELETE FROM `creature_template_spells` WHERE `entry` = 19641;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1964101;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1964101, 'Netherstorm - Warp-Raider Nesaad', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1964101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1964101, 1, 35924, 0, -1, 2, 0, 100, 0, 9000, 16000, 9000, 16000, 'Warp-Raider Nesaad - Energy Flux - self');
+
+UPDATE `creature_template` SET `SpellList` = 1964101 WHERE `entry` = 19641;
