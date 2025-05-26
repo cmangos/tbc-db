@@ -262,3 +262,16 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1885601, 2, 35892, 0, -1, 2, 0, 100, 0, 6000, 10000, 16000, 22000, 'Arcane Annihilator - Suppression - self');
 
 UPDATE `creature_template` SET `SpellList` = 1885601 WHERE `entry` = 18856;
+
+-- Zaxxis Raider
+DELETE FROM `creature_template_spells` WHERE `entry` = 18875;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1887501;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1887501, 'Netherstorm - Zaxxis Raider', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1887501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1887501, 1, 35922, 0, -1, 2, 0, 100, 0, 5000, 18000, 15000, 23000, 'Zaxxis Raider - Energy Flare - self');
+
+UPDATE `creature_template` SET `SpellList` = 1887501 WHERE `entry` = 18875;

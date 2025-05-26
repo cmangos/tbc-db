@@ -18707,8 +18707,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Disembodied Vindicator 18872 - spell_list
 ('1887201','18872','6','0','100','0','0','0','0','0','0','0','11','36003','15','7','0','0','0','0','0','0','0','0','Disembodied Vindicator - Cast Revenge of the Fallen on Death'),
 -- Disembodied Protector 18873 - spell_list
--- Zaxxis Raider 18875
-('1887501','18875','0','0','100','1025','12000','18000','17000','20000','0','0','11','35922','0','0','0','0','0','0','0','0','0','0','Zaxxis Raider - Cast Energy Flare'),
+-- Zaxxis Raider 18875 - spell_list
 -- Nether Drake
 ('1887701','18877','9','0','100','1025','0','30','14000','18000','0','0','11','36513','0','0','0','0','0','0','0','0','0','0','Nether Drake - Cast Intangible Presence'),
 -- Phase Hunter 18879 - spell_dummy_npc - spell_list
