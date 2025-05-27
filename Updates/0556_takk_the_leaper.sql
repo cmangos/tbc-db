@@ -20,4 +20,5 @@
 -- CastID: Full: 0xBC45A8002014A90700000D00002F4E58 Cast/7 R4458/S13 Map: 1 Entry: 21156 Low: 3100248
 -- SpellID: 21156 (21156)
 -- UnitGUID: Full: 0x2045A8002005B48000000D00002F4E55 Creature/0 R4458/S13 Map: 1 Entry: 5842 Low: 3100245
-INSERT INTO creature_addon (`guid`, `auras`) VALUES ('5842', '21156');
+UPDATE `creature_template_addon` SET `auras` = '21156' WHERE `entry` = 5842;
+
