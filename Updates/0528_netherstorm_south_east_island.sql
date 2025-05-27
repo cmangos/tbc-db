@@ -40,7 +40,7 @@ DELETE FROM creature WHERE guid IN (69588, 69589, 69590, 69591, 69592, 69593, 69
 -- Zaxxis Raider, Warp-Raider Nesaad, Zaxxis Stalker
 DELETE FROM creature WHERE id IN (18875, 19641, 19642);
 
-DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+630;
+DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+685;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
 (@CGUID+1, 20203, 530, 1, 3380.88, 4359.49, 123.702, 4.67748, 300, 300, 0, 0),
@@ -924,13 +924,20 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- Zaxxis Stalker
 (@CGUID+673, 19642, 530, 1, 2493.5598144531250, 3915.5947265625000, 127.1955184936523, 1.2740902900696, 120, 180, 0, 0), -- Zaxxis Stalker missing before 
 (@CGUID+674, 19642, 530, 1, 2504.7141113281250, 3903.3269042968750, 129.3993225097656, 0.1396263390779, 120, 180, 0, 0), -- Zaxxis Stalker old guid 70067
-
--- Zaxxis Stalker 1
+-- Zaxxis Stalker 1 - positions
 (@CGUID+675, 19642, 530, 1, 2694.89990234375, 3753.47998046875, 143.0850067138672, 4.4080114364624, 300, 420, 4, 1), -- Zaxxis Stalker
 (@CGUID+676, 19642, 530, 1, 2687.159912109375, 3733.260009765625, 143.8200073242188, 5.3474297523499, 300, 420, 4, 1), -- Zaxxis Stalker
 (@CGUID+677, 19642, 530, 1, 2679.75, 3713.080078125, 144.1040039062500, 3.917683839798, 300, 420, 4, 1), -- Zaxxis Stalker
-(@CGUID+678, 19642, 530, 1, 2668.26, 3750.03, 143.608, 5.692256, 300, 420, 4, 1); -- Zaxxis Stalker
-
+(@CGUID+678, 19642, 530, 1, 2668.26, 3750.03, 143.608, 5.692256, 300, 420, 4, 1), -- Zaxxis Stalker
+-- Zaxxis Stalker 2
+(@CGUID+679, 19642, 530, 1, 2648.0, 3763.06, 143.565, 3.1641817, 300, 420, 4, 1), -- Zaxxis Stalker
+(@CGUID+680, 19642, 530, 1, 2618.97, 3766.44, 143.529, 5.950653, 300, 420, 4, 1), -- Zaxxis Stalker
+(@CGUID+681, 19642, 530, 1, 2624.01, 3755.87, 144.174, 5.029341, 300, 420, 4, 1), -- Zaxxis Stalker
+(@CGUID+682, 19642, 530, 1, 2628.27, 3734.59, 144.932, 2.5821824, 300, 420, 4, 1), -- Zaxxis Stalker
+-- Zaxxis Stalker 3
+(@CGUID+683, 19642, 530, 1, 2671.83, 3800.06, 140.558, 3.1308017, 300, 420, 4, 1), -- Zaxxis Stalker
+(@CGUID+684, 19642, 530, 1, 2662.68, 3848.3, 138.181, 2.2347946, 300, 420, 4, 1), -- Zaxxis Stalker
+(@CGUID+685, 19642, 530, 1, 2663.59, 3822.31, 138.388, 3.8144562, 300, 420, 4, 1); -- Zaxxis Stalker
 
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67540, 67545, 67550, 67541, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
@@ -2361,8 +2368,12 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+36, 'Netherstorm - Group 036 - Zaxxis Raider', 0, 0, 0, 0, 0),
 -- Warp-Raider Nesaad
 (@SGGUID+37, 'Netherstorm - Group 037 - Warp-Raider Nesaad | Zaxxis Stalker', 0, 0, 0, 0, 0),
--- Zaxxis Stalker 1 - 3 spawn points, only 1 up
+-- Zaxxis Stalker 1 - 4 spawn points, only 1 up
 (@SGGUID+38, 'Netherstorm - Group 038 - Zaxxis Stalker (1)', 0, 1, 0, 0, 0),
+-- Zaxxis Stalker 2 - 4 spawn points, only 1 up
+(@SGGUID+39, 'Netherstorm - Group 039 - Zaxxis Stalker (2)', 0, 1, 0, 0, 0),
+-- Zaxxis Stalker 3 - 3 spawn points, only 1 up
+(@SGGUID+40, 'Netherstorm - Group 040 - Zaxxis Stalker (3)', 0, 1, 0, 0, 0),
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
 (@SGGUID+100, 'Netherstorm - Etherlithium Matrix Crystal', 1, 21, 0, 0, 0);
 
@@ -3066,6 +3077,15 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+38, @CGUID+676, -1, 0), -- Zaxxis Stalker
 (@SGGUID+38, @CGUID+677, -1, 0), -- Zaxxis Stalker
 (@SGGUID+38, @CGUID+678, -1, 0), -- Zaxxis Stalker
+-- Zaxxis Stalker 2
+(@SGGUID+39, @CGUID+679, -1, 0), -- Zaxxis Stalker
+(@SGGUID+39, @CGUID+680, -1, 0), -- Zaxxis Stalker
+(@SGGUID+39, @CGUID+681, -1, 0), -- Zaxxis Stalker
+(@SGGUID+39, @CGUID+682, -1, 0), -- Zaxxis Stalker
+-- Zaxxis Stalker 3
+(@SGGUID+40, @CGUID+683, -1, 0), -- Zaxxis Stalker
+(@SGGUID+40, @CGUID+684, -1, 0), -- Zaxxis Stalker
+(@SGGUID+40, @CGUID+685, -1, 0), -- Zaxxis Stalker
 -- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
@@ -3118,7 +3138,7 @@ INSERT INTO `string_id` (Id, Name) VALUES
 
 -- Scripts
 SET @RELAYID := 18000;
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+10;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+12;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Netherologist Coppernickels different text's
 (@RELAYID+1, 0, 16949, 0, 'Netherstorm - Nether Technician - Say 1'), 
@@ -3158,10 +3178,20 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+10, 1, @RELAYID+43, 0, 'Netherstorm - Zaxxis Stalker (1) - Teleport Position 1'), 
 (@RELAYID+10, 1, @RELAYID+44, 0, 'Netherstorm - Zaxxis Stalker (1) - Teleport Position 2'), 
 (@RELAYID+10, 1, @RELAYID+45, 0, 'Netherstorm - Zaxxis Stalker (1) - Teleport Position 3'), 
-(@RELAYID+10, 1, @RELAYID+46, 0, 'Netherstorm - Zaxxis Stalker (1) - Teleport Position 4');
+(@RELAYID+10, 1, @RELAYID+46, 0, 'Netherstorm - Zaxxis Stalker (1) - Teleport Position 4'),
+-- Zaxxis Stalker (2) teleport to random position
+(@RELAYID+11, 1, @RELAYID+47, 0, 'Netherstorm - Zaxxis Stalker (2) - Teleport Position 1'), 
+(@RELAYID+11, 1, @RELAYID+48, 0, 'Netherstorm - Zaxxis Stalker (2) - Teleport Position 2'), 
+(@RELAYID+11, 1, @RELAYID+49, 0, 'Netherstorm - Zaxxis Stalker (2) - Teleport Position 3'), 
+(@RELAYID+11, 1, @RELAYID+50, 0, 'Netherstorm - Zaxxis Stalker (2) - Teleport Position 4'),
+-- Zaxxis Stalker (3) teleport to random position
+(@RELAYID+12, 1, @RELAYID+51, 0, 'Netherstorm - Zaxxis Stalker (3) - Teleport Position 1'), 
+(@RELAYID+12, 1, @RELAYID+52, 0, 'Netherstorm - Zaxxis Stalker (3) - Teleport Position 2'), 
+(@RELAYID+12, 1, @RELAYID+53, 0, 'Netherstorm - Zaxxis Stalker (3) - Teleport Position 3');
+
 
 SET @RELAYID := 18000;
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+46;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+53;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Nether Technician script via ACID - CGUID+4
 (@RELAYID+1, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1911, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
@@ -3359,7 +3389,43 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+46, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (1) - Stop Movement'),
 (@RELAYID+46, 0, 1, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (1) - Cast Ethereal Teleport'),
 (@RELAYID+46, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2668.26, 3750.03, 143.608, 5.692256, 'Netherstorm - Zaxxis Stalker (1) - Teleport to Position 4'),
-(@RELAYID+46, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (1) - Move Random Around Point');
+(@RELAYID+46, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (1) - Move Random Around Point'),
+-- Zaxxis Stalker 2 - teleport position 1
+(@RELAYID+47, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (2) - Stop Movement'),
+(@RELAYID+47, 0, 1, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (2) - Cast Ethereal Teleport'),
+(@RELAYID+47, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2648.0, 3763.06, 143.565, 3.1641817, 'Netherstorm - Zaxxis Stalker (2) - Teleport to Position 1'),
+(@RELAYID+47, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (2) - Move Random Around Point'),
+-- Zaxxis Stalker 2 - teleport position 2
+(@RELAYID+48, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (2) - Stop Movement'),
+(@RELAYID+48, 0, 1, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (2) - Cast Ethereal Teleport'),
+(@RELAYID+48, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2618.97, 3766.44, 143.529, 5.950653, 'Netherstorm - Zaxxis Stalker (2) - Teleport to Position 2'),
+(@RELAYID+48, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (2) - Move Random Around Point'),
+-- Zaxxis Stalker 2 - teleport position 3
+(@RELAYID+49, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (2) - Stop Movement'),
+(@RELAYID+49, 0, 1, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (2) - Cast Ethereal Teleport'),
+(@RELAYID+49, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2624.01, 3755.87, 144.174, 5.029341, 'Netherstorm - Zaxxis Stalker (2) - Teleport to Position 3'),
+(@RELAYID+49, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (2) - Move Random Around Point'),
+-- Zaxxis Stalker 2 - teleport position 4
+(@RELAYID+50, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (2) - Stop Movement'),
+(@RELAYID+50, 0, 1, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (2) - Cast Ethereal Teleport'),
+(@RELAYID+50, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2628.27, 3734.59, 144.932, 2.5821824, 'Netherstorm - Zaxxis Stalker (2) - Teleport to Position 4'),
+(@RELAYID+50, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (2) - Move Random Around Point'),
+-- Zaxxis Stalker 3 - teleport position 1
+(@RELAYID+51, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (3) - Stop Movement'),
+(@RELAYID+51, 0, 1, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (3) - Cast Ethereal Teleport'),
+(@RELAYID+51, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2671.83, 3800.06, 140.558, 3.1308017, 'Netherstorm - Zaxxis Stalker (3) - Teleport to Position 1'),
+(@RELAYID+51, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (3) - Move Random Around Point'),
+-- Zaxxis Stalker 3 - teleport position 2
+(@RELAYID+52, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (3) - Stop Movement'),
+(@RELAYID+52, 0, 1, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (3) - Cast Ethereal Teleport'),
+(@RELAYID+52, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2662.68, 3848.3, 138.181, 2.2347946, 'Netherstorm - Zaxxis Stalker (3) - Teleport to Position 2'),
+(@RELAYID+52, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (3) - Move Random Around Point'),
+-- Zaxxis Stalker 3 - teleport position 3
+(@RELAYID+53, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (3) - Stop Movement'),
+(@RELAYID+53, 0, 1, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (3) - Cast Ethereal Teleport'),
+(@RELAYID+53, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2663.59, 3822.31, 138.388, 3.8144562, 'Netherstorm - Zaxxis Stalker (3) - Teleport to Position 3'),
+(@RELAYID+53, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (3) - Move Random Around Point');
+
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
