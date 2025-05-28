@@ -288,3 +288,19 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1964101, 1, 35924, 0, -1, 2, 0, 100, 0, 9000, 16000, 9000, 16000, 'Warp-Raider Nesaad - Energy Flux - self');
 
 UPDATE `creature_template` SET `SpellList` = 1964101 WHERE `entry` = 19641;
+
+-- Zaxxis Stalker
+DELETE FROM creature_ai_scripts where creature_id = 19642;
+DELETE FROM `creature_template_spells` WHERE `entry` = 19642;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1964201;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1964201, 'Netherstorm - Zaxxis Stalker', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1964201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1964201, 1, 7159, 0, -1, 1, 0, 100, 0, 2000, 8000, 10000, 24000, 'Zaxxis Stalker - Backstab - current'),
+-- UnitCondition  number of melee attackers >=1
+(1964201, 2, 32920, 0, 1071, 1, 0, 100, 0, 4000, 10000, 10000, 20000, 'Zaxxis Stalker - Warp - current');
+
+UPDATE `creature_template` SET `SpellList` = 1964201 WHERE `entry` = 19642;
