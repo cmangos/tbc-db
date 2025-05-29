@@ -3213,7 +3213,7 @@ INSERT INTO `string_id` (Id, Name) VALUES
 
 -- Scripts
 SET @RELAYID := 18000;
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+18;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+20;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Netherologist Coppernickels different text's
 (@RELAYID+1, 0, 16949, 0, 'Netherstorm - Nether Technician - Say 1'), 
@@ -3293,11 +3293,22 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+18, 1, @RELAYID+75, 0, 'Netherstorm - Zaxxis Stalker (8) - Teleport Position 1'), 
 (@RELAYID+18, 1, @RELAYID+76, 0, 'Netherstorm - Zaxxis Stalker (8) - Teleport Position 2'), 
 (@RELAYID+18, 1, @RELAYID+77, 0, 'Netherstorm - Zaxxis Stalker (8) - Teleport Position 3'),
-(@RELAYID+18, 1, @RELAYID+78, 0, 'Netherstorm - Zaxxis Stalker (8) - Teleport Position 4');
-
+(@RELAYID+18, 1, @RELAYID+78, 0, 'Netherstorm - Zaxxis Stalker (8) - Teleport Position 4'),
+-- Warp-Raider Nesaad - RP scripts
+(@RELAYID+19, 1, @RELAYID+79, 0, 'Netherstorm - Warp-Raider Nesaad - Teleport Stalker Left'), 
+(@RELAYID+19, 1, @RELAYID+80, 0, 'Netherstorm - Warp-Raider Nesaad - Teleport Stalker Right'), 
+-- Warp-Raider Nesaad random talks
+(@RELAYID+20, 0, 17429, 0, 'Netherstorm - Warp-Raider Nesaad - Say 1'), 
+(@RELAYID+20, 0, 17430, 0, 'Netherstorm - Warp-Raider Nesaad - Say 2'), 
+(@RELAYID+20, 0, 17431, 0, 'Netherstorm - Warp-Raider Nesaad - Say 3'), 
+(@RELAYID+20, 0, 17432, 0, 'Netherstorm - Warp-Raider Nesaad - Say 4'), 
+(@RELAYID+20, 0, 17433, 0, 'Netherstorm - Warp-Raider Nesaad - Say 5'), 
+(@RELAYID+20, 0, 17434, 0, 'Netherstorm - Warp-Raider Nesaad - Say 6'), 
+(@RELAYID+20, 0, 17435, 0, 'Netherstorm - Warp-Raider Nesaad - Say 7'), 
+(@RELAYID+20, 0, 17436, 0, 'Netherstorm - Warp-Raider Nesaad - Say 8');
 
 SET @RELAYID := 18000;
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+78;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+80;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Nether Technician script via ACID - CGUID+4
 (@RELAYID+1, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1911, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
@@ -3655,7 +3666,18 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+78, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (9) - Stop Movement'),
 (@RELAYID+78, 0, 1, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (9) - Cast Ethereal Teleport'),
 (@RELAYID+78, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2449.39, 4049.83, 121.664, 4.7628884, 'Netherstorm - Zaxxis Stalker (9) - Teleport to Position 4'),
-(@RELAYID+78, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (9) - Move Random Around Point');
+(@RELAYID+78, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (9) - Move Random Around Point'),
+-- Warp-Raider Nesaad left RP
+-- Both Talk RPs happen even if stalkers are dead
+(@RELAYID+79, 1, 1, 0, 18020, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Say RandomText'),
+(@RELAYID+79, 1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.0381, 'Netherstorm - Warp-Raider Nesaad - Change Orientation'),
+(@RELAYID+79, 1, 3, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Emote OneShotRoar'),
+(@RELAYID+79, 5000, 0, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Reset orientation'),
+-- Warp-Raider Nesaad right RP
+(@RELAYID+80, 1, 1, 0, 18020, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Say RandomText'),
+(@RELAYID+80, 1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.7632, 'Netherstorm - Warp-Raider Nesaad - Change Orientation'),
+(@RELAYID+80, 1, 3, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Emote OneShotRoar'),
+(@RELAYID+80, 5000, 0, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Reset orientation');
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
