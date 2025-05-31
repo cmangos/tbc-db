@@ -922,8 +922,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+672, 19641, 530, 1, 2497.712158203125, 3907.362060546875, 128.7069396972656, 0.4014257192612, 120, 180, 0, 0), -- Warp-Raider Nesaad old guid 70060
 -- Zaxxis Stalker
-(@CGUID+673, 19642, 530, 1, 2493.5598144531250, 3915.5947265625000, 127.1955184936523, 1.2740902900696, 120, 180, 0, 0), -- Zaxxis Stalker missing before 
-(@CGUID+674, 19642, 530, 1, 2504.7141113281250, 3903.3269042968750, 129.3993225097656, 0.1396263390779, 120, 180, 0, 0), -- Zaxxis Stalker old guid 70067
+(@CGUID+673, 19642, 530, 1, 2504.72, 3903.35, 129.319, 0.1396, 120, 180, 0, 0), -- Zaxxis Stalker missing before 
+(@CGUID+674, 19642, 530, 1, 2493.55, 3915.61, 127.11, 1.2740, 120, 180, 0, 0), -- Zaxxis Stalker old guid 70067
 -- Zaxxis Stalker 1 - positions
 (@CGUID+675, 19642, 530, 1, 2694.89990234375, 3753.47998046875, 143.0850067138672, 4.4080114364624, 300, 420, 4, 1), -- Zaxxis Stalker
 (@CGUID+676, 19642, 530, 1, 2687.159912109375, 3733.260009765625, 143.8200073242188, 5.3474297523499, 300, 420, 4, 1), -- Zaxxis Stalker
@@ -3200,12 +3200,13 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@SGGUID+3, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 03'),
 (@SGGUID+4, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 04');
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4, @SGGUID+5);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 01'),
 (@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 02'),
 (@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 03'),
-(@SGGUID+4, 42, @SGGUID+4, 1, 1, 0, 0, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 04');
+(@SGGUID+4, 42, @SGGUID+4, 1, 1, 0, 0, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 04'),
+(@SGGUID+5, 43, 1, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Check OutOfCombat');
 
 DELETE FROM string_id WHERE Id = @STRINGID+1;
 INSERT INTO `string_id` (Id, Name) VALUES 
@@ -3666,18 +3667,48 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+78, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (9) - Stop Movement'),
 (@RELAYID+78, 0, 1, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (9) - Cast Ethereal Teleport'),
 (@RELAYID+78, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2449.39, 4049.83, 121.664, 4.7628884, 'Netherstorm - Zaxxis Stalker (9) - Teleport to Position 4'),
-(@RELAYID+78, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (9) - Move Random Around Point'),
+(@RELAYID+78, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (9) - Move Random Around Point');
+
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `condition_id`, `comments`) VALUES
 -- Warp-Raider Nesaad left RP
 -- Both Talk RPs happen even if stalkers are dead
-(@RELAYID+79, 1, 1, 0, 18020, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Say RandomText'),
-(@RELAYID+79, 1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.0381, 'Netherstorm - Warp-Raider Nesaad - Change Orientation'),
-(@RELAYID+79, 1, 3, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Emote OneShotRoar'),
-(@RELAYID+79, 5000, 0, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Reset orientation'),
+(@RELAYID+79, 1, 1, 0, 18020, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Say RandomText'),
+(@RELAYID+79, 1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.7632, 0, 'Netherstorm - Warp-Raider Nesaad - Change Orientation'),
+(@RELAYID+79, 1, 3, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Emote OneShotRoar'),
+(@RELAYID+79, 3000, 0, 35, 5, 0, 0, 19642, @CGUID+673, 17, 0, 0, 0, 0, 0, 0, 0, 0, @SGGUID+5, 'Netherstorm - Warp-Raider Nesaad - SendAiEventA'),
+(@RELAYID+79, 5000, 0, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Reset orientation'),
 -- Warp-Raider Nesaad right RP
-(@RELAYID+80, 1, 1, 0, 18020, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Say RandomText'),
-(@RELAYID+80, 1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.7632, 'Netherstorm - Warp-Raider Nesaad - Change Orientation'),
-(@RELAYID+80, 1, 3, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Emote OneShotRoar'),
-(@RELAYID+80, 5000, 0, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Reset orientation');
+(@RELAYID+80, 1, 1, 0, 18020, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Say RandomText'),
+(@RELAYID+80, 1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.0381, 0, 'Netherstorm - Warp-Raider Nesaad - Change Orientation'),
+(@RELAYID+80, 1, 3, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Emote OneShotRoar'),
+(@RELAYID+80, 3000, 0, 35, 5, 0, 0, 19642, @CGUID+674, 17, 0, 0, 0, 0, 0, 0, 0, 0, @SGGUID+5, 'Netherstorm - Warp-Raider Nesaad - SendAiEventA'),
+(@RELAYID+80, 5000, 0, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warp-Raider Nesaad - Reset orientation'),
+-- Zaxxis Stalker left from Nesaad 
+-- Set Active to make sure they teleport back even if no player is around
+(@RELAYID+81, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Set Active Object'),
+(@RELAYID+81, 0, 1, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Stop Movement'),
+(@RELAYID+81, 0, 2, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Cast Ethereal Teleport'),
+(@RELAYID+81, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2534.98, 3860.13, 138.612, 5.2185345, 0, 'Netherstorm - Zaxxis Stalker - Teleport away'),
+(@RELAYID+81, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker (9) - Move Random Around Point'),
+-- Zaxxis Stalker left from Nesaad teleport back to home position
+(@RELAYID+82, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Stop Movement'),
+(@RELAYID+82, 0, 1, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Cast Ethereal Teleport'),
+(@RELAYID+82, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2504.72, 3903.35, 129.319, 0.1396,  0, 'Netherstorm - Zaxxis Stalker - Teleport back to home position'),
+(@RELAYID+82, 1000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Remove Active Object'),
+-- Zaxxis Stalker right from Nesaad 
+-- Set Active to make sure they teleport back even if no player is around
+(@RELAYID+83, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Set Active Object'),
+(@RELAYID+83, 0, 1, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Stop Movement'),
+(@RELAYID+83, 0, 2, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Cast Ethereal Teleport'),
+(@RELAYID+83, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2466.27, 4010.33, 124.156, 5.218, 0, 'Netherstorm - Zaxxis Stalker - Teleport away'),
+(@RELAYID+83, 1000, 0, 20, 1, 4, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Move Random Around Point'),
+-- Zaxxis Stalker left from Nesaad teleport back to home position
+(@RELAYID+84, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Stop Movement'),
+(@RELAYID+84, 0, 1, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Cast Ethereal Teleport'),
+(@RELAYID+84, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2493.55, 3915.61, 127.11, 1.274, 0, 'Netherstorm - Zaxxis Stalker - Teleport back to home position'),
+(@RELAYID+84, 1000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Remove Active Object');
+
+
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
