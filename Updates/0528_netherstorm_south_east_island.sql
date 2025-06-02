@@ -43,6 +43,8 @@ DELETE FROM creature WHERE id IN (18875, 19641, 19642);
 DELETE FROM creature WHERE id = 20498;
 -- Netherock
 DELETE FROM creature WHERE id = 20772;
+-- Goblin Equipment Trigger
+DELETE FROM creature WHERE guid IN (74500, 74501, 74502, 74503);
 
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+710;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -991,7 +993,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+723, 18881, 530, 1, 2649.1662597656250, 4351.4106445312500, 132.8381958007813, 2.3760502338409, 360, 420, 45, 1), -- Sundered Rumbler old guid 67698
 (@CGUID+724, 18881, 530, 1, 2716.0798339843750, 4424.6772460937500, 109.2945480346680, 1.4491665363312, 360, 420, 45, 1), -- Sundered Rumbler old guid 67693
 
-(@CGUID+725, 20772, 530, 1, 2714.768798828125, 4447.31787109375, 102.428009033203125, 4.339272975921630859, 60, 60, 0, 4); -- Netherock old guid 73307
+(@CGUID+725, 20772, 530, 1, 2714.768798828125, 4447.31787109375, 102.428009033203125, 4.339272975921630859, 60, 60, 0, 4), -- Netherock old guid 73307
+
+(@CGUID+726, 20772, 530, 1, 2716.299560546875, 3193.04638671875, 147.6805267333984375, 4.310963153839111328, 300, 300, 0, 0), -- Goblin Equipment Trigger old guid 74500
+(@CGUID+727, 20772, 530, 1, 2774.045654296875, 3114.075439453125, 154.5260467529296875, 1.239183783531188964, 300, 300, 0, 0), -- Goblin Equipment Trigger old guid 74503
+(@CGUID+728, 20772, 530, 1, 2787.894775390625, 3172.16845703125, 146.1259765625, 5.689773082733154296, 300, 300, 0, 0), -- Goblin Equipment Trigger old guid 74502
+(@CGUID+729, 20772, 530, 1, 2746.846923828125, 3239.638427734375, 147.6805267333984375, 6.17846536636352539, 300, 300, 0, 0); -- Goblin Equipment Trigger old guid 74501
 
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67463, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67464, 67461, 67540, 67545, 67550, 67541, 67559, 67560, 67562, 67565, 67566, 67567, 67568, 67569, 67574, 67575, 67576, 67577, 67578, 67579, 67580, 67582, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
@@ -2391,6 +2398,10 @@ DELETE FROM gameobject WHERE id = 183767;
 -- After rework 30 shared spawns (spawn_group_entry)
 DELETE FROM gameobject WHERE id IN (183813, 183814); 
 
+-- Object for 'Quest Invaluable Asset Zapping'
+-- Multi-Spectrum Terrain Analyzer, Hyper Rotational Dig-A-Matic, Servo-Pneumatic Dredging Claw, Big Wagon Full of Explosives
+DELETE FROM gameobject WHERE id IN (183805, 183806, 183807, 183808);
+
 -- Add sniff based spawns
 SET @GGUID := 157038;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
@@ -2453,7 +2464,15 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+56, 0, 530, 1, 2665.191650390625, 3745.9296875, 143.5021820068359375, 3.106652259826660156, 0.0, 0.0, 0.999847412109375, 0.017469281330704689, 600, 600),
 (@GGUID+57, 0, 530, 1, 2673.892822265625, 3710.828125, 144.0692901611328125, 3.22885894775390625, 0.0, 0.0, -0.99904823303222656, 0.043619260191917419, 600, 600),
 (@GGUID+58, 0, 530, 1, 2680.40576171875, 3803.87109375, 139.8585205078125, 2.740161895751953125, 0.0, 0.0, 0.979924201965332031, 0.199370384216308593, 600, 600),
-(@GGUID+59, 0, 530, 1, 2699.5087890625, 3763.645751953125, 142.3436737060546875, 1.710421562194824218, 0.0, 0.0, 0.754709243774414062, 0.656059443950653076, 600, 600);
+(@GGUID+59, 0, 530, 1, 2699.5087890625, 3763.645751953125, 142.3436737060546875, 1.710421562194824218, 0.0, 0.0, 0.754709243774414062, 0.656059443950653076, 600, 600),
+-- Multi-Spectrum Terrain Analyzer
+(@GGUID+60, 183807, 530, 1, 2746.592041015625, 3239.635009765625, 147.597198486328125, 4.345870018005371093, 0, 0, -0.82412624359130859, 0.566406130790710449, 30, 30), -- old guid 24654
+-- Hyper Rotational Dig-A-Matic
+(@GGUID+61, 183805, 530, 1, 2715.8759765625, 3192.03857421875, 147.597198486328125, 4.188792228698730468, 0, 0, -0.86602497100830078, 0.50000077486038208, 30, 30), -- old guid 24652
+-- Servo-Pneumatic Dredging Claw
+(@GGUID+62, 183806, 530, 1, 2787.984619140625, 3172.166259765625, 146.0415191650390625, 4.869470596313476562, 0, 0, -0.64944744110107421, 0.760406434535980224, 30, 30), -- old guid 24653
+-- Big Wagon Full of Explosives
+(@GGUID+63, 183808, 530, 1, 2774.06396484375, 3114.282470703125, 154.420318603515625, 1.169368624687194824, 0, 0, 0.551936149597167968, 0.833886384963989257, 30, 30); -- old guid 24655
 
 
 -- SpawnGroup
@@ -2543,6 +2562,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+46, 'Netherstorm - Group 046 - Zaxxis Stalker (9)', 0, 1, 0, 0, 0),
 -- Netherock
 (@SGGUID+47, 'Netherstorm - Group 047 - Netherock', 0, 1, 0, 0, 0),
+-- Goblin Equipment Trigger
+(@SGGUID+48, 'Netherstorm - Group 048 - Goblin Equipment Trigger', 0, 0, 0, 0, 0),
+-- Object for 'Quest Invaluable Asset Zapping'
+-- Multi-Spectrum Terrain Analyzer, Hyper Rotational Dig-A-Matic, Servo-Pneumatic Dredging Claw, Big Wagon Full of Explosives
+(@SGGUID+98, 'Netherstorm - Quest:Invaluable Asset Zapping - GameObjects', 1, 0, 0, 0, 0),
 -- Grouping for Ethereal Technology - 30 spawns, max spawned 23
 (@SGGUID+99, 'Netherstorm - Ethereal Technology', 1, 23, 0, 0, 0),
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
@@ -3304,6 +3328,16 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+46, @CGUID+710, -1, 0), -- Zaxxis Stalker
 -- Netherock
 (@SGGUID+47, @CGUID+725, -1, 0), -- Netherock
+-- Goblin Equipment Trigger
+(@SGGUID+48, @CGUID+726, -1, 0), -- Goblin Equipment Trigger
+(@SGGUID+48, @CGUID+727, -1, 0), -- Goblin Equipment Trigger
+(@SGGUID+48, @CGUID+728, -1, 0), -- Goblin Equipment Trigger
+(@SGGUID+48, @CGUID+729, -1, 0), -- Goblin Equipment Trigger
+-- Object for 'Quest Invaluable Asset Zapping'
+(@SGGUID+98, @GGUID+60, -1, 0), -- Multi-Spectrum Terrain Analyzer
+(@SGGUID+98, @GGUID+61, -1, 0), -- Hyper Rotational Dig-A-Matic
+(@SGGUID+98, @GGUID+62, -1, 0), -- Servo-Pneumatic Dredging Claw
+(@SGGUID+98, @GGUID+63, -1, 0), -- Big Wagon Full of Explosives
 -- Ethereal Technology
 (@SGGUID+99, @GGUID+30, -1, 0), -- Ethereal Technology
 (@SGGUID+99, @GGUID+31, -1, 0), -- Ethereal Technology
