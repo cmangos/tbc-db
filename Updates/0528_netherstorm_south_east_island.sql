@@ -793,7 +793,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+576, 18881, 530, 1, 2582.009765625, 3214.752685546875, 113.0846862792969, 0.76485902071, 360, 420, 25, 1), -- Sundered Rumbler old guid 67714
 
 (@CGUID+577, 18865, 530, 1, 2591.247314453125, 3172.494873046875, 118.1934585571289, 1.4967581033707, 360, 420, 0, 4), -- Warp Aberration old guid 67469
-(@CGUID+578, 18881, 530, 1, 2582.009765625, 3214.752685546875, 113.0846862792969, 0.76485902071, 360, 420, 40, 1), -- Sundered Rumbler missing before
 (@CGUID+579, 18865, 530, 1, 2550.69921875, 3251.90185546875, 107.1901779174805, 2.0682737827301, 360, 420, 25, 1), -- Warp Aberration old guid 67470
 
 (@CGUID+580, 18881, 530, 1, 2580.640625, 3282.8264160156250, 122.5094451904297, 0.0417645573616, 360, 420, 40, 1), -- Sundered Rumbler old guid 67712
@@ -2779,7 +2778,6 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+10, @CGUID+127, -1, 0), -- Sundered Rumbler
 (@SGGUID+10, @CGUID+575, -1, 0), -- Sundered Rumbler
 (@SGGUID+10, @CGUID+576, -1, 0), -- Sundered Rumbler
-(@SGGUID+10, @CGUID+578, -1, 0), -- Sundered Rumbler
 (@SGGUID+10, @CGUID+580, -1, 0), -- Sundered Rumbler
 (@SGGUID+10, @CGUID+581, -1, 0), -- Sundered Rumbler
 (@SGGUID+10, @CGUID+584, -1, 0), -- Sundered Rumbler
