@@ -2544,12 +2544,15 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+46, 'Netherstorm - Group 046 - Zaxxis Stalker (9)', 0, 1, 0, 0, 0),
 -- Netherock
 (@SGGUID+47, 'Netherstorm - Group 047 - Netherock', 0, 1, 0, 0, 0),
+-- Grouping for Ethereal Technology - 30 spawns, max spawned 23
+(@SGGUID+99, 'Netherstorm - Ethereal Technology', 1, 23, 0, 0, 0),
 -- Grouping for Etherlithium Matrix Crystal - 29 spawns, max spawned 21
 (@SGGUID+100, 'Netherstorm - Etherlithium Matrix Crystal', 1, 21, 0, 0, 0);
 
 DELETE FROM spawn_group_entry WHERE Id BETWEEN @SGGUID AND @SGGUID+100;
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGGUID+7, 18872, 0, 0, 0), (@SGGUID+7, 18873, 0, 0, 0); -- Disembodied Vindicator/Disembodied Protector
+(@SGGUID+7, 18872, 0, 0, 0), (@SGGUID+7, 18873, 0, 0, 0), -- Disembodied Vindicator/Disembodied Protector
+(@SGGUID+99, 183813, 0, 0, 0), (@SGGUID+99, 183814, 0, 0, 0); -- Ethereal Technology/Ethereal Technology
 
 DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+100;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
@@ -3303,6 +3306,37 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+46, @CGUID+710, -1, 0), -- Zaxxis Stalker
 -- Netherock
 (@SGGUID+47, @CGUID+725, -1, 0), -- Netherock
+-- Ethereal Technology
+(@SGGUID+99, @GGUID+30, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+31, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+32, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+33, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+34, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+35, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+36, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+37, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+38, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+39, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+40, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+41, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+42, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+43, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+44, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+45, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+46, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+47, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+48, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+49, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+50, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+51, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+52, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+53, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+54, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+55, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+56, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+57, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+58, -1, 0), -- Ethereal Technology
+(@SGGUID+99, @GGUID+59, -1, 0), -- Ethereal Technology
 -- Etherlithium Matrix Crystal 
 (@SGGUID+100, @GGUID+1, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+2, -1, 0), -- Etherlithium Matrix Crystal
