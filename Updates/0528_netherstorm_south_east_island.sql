@@ -45,6 +45,8 @@ DELETE FROM creature WHERE id = 20498;
 DELETE FROM creature WHERE id = 20772;
 -- Goblin Equipment Trigger
 DELETE FROM creature WHERE guid IN (74500, 74501, 74502, 74503);
+-- Northern/Eastern/Southern/Western Pipe Credit Marker
+DELETE FROM creature WHERE id IN (20333, 20336, 20337, 20338);
 
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+710;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -998,7 +1000,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+726, 20772, 530, 1, 2716.299560546875, 3193.04638671875, 147.6805267333984375, 4.310963153839111328, 300, 300, 0, 0), -- Goblin Equipment Trigger old guid 74500
 (@CGUID+727, 20772, 530, 1, 2774.045654296875, 3114.075439453125, 154.5260467529296875, 1.239183783531188964, 300, 300, 0, 0), -- Goblin Equipment Trigger old guid 74503
 (@CGUID+728, 20772, 530, 1, 2787.894775390625, 3172.16845703125, 146.1259765625, 5.689773082733154296, 300, 300, 0, 0), -- Goblin Equipment Trigger old guid 74502
-(@CGUID+729, 20772, 530, 1, 2746.846923828125, 3239.638427734375, 147.6805267333984375, 6.17846536636352539, 300, 300, 0, 0); -- Goblin Equipment Trigger old guid 74501
+(@CGUID+729, 20772, 530, 1, 2746.846923828125, 3239.638427734375, 147.6805267333984375, 6.17846536636352539, 300, 300, 0, 0), -- Goblin Equipment Trigger old guid 74501
+
+(@CGUID+730, 20333, 530, 1, 3216.60400390625, 4051.8125, 109.884033203125, 1.989675283432006835, 300, 300, 0, 0), -- Northern Pipe Credit Marker old guid 72243
+(@CGUID+731, 20336, 530, 1, 2766.365234375, 3867.381103515625, 152.6981353759765625, 4.363323211669921875, 300, 300, 0, 0), -- Eastern Pipe Credit Marker old guid 72249
+(@CGUID+732, 20337, 530, 1, 2816.19580078125, 4337.658203125, 152.9962921142578125, 0.401425719261169433, 300, 300, 0, 0), -- Southern Pipe Credit Marker old guid 72250
+(@CGUID+733, 20338, 530, 1, 2954.907470703125, 4316.294921875, 158.0459442138671875, 2.897246599197387695, 300, 300, 0, 0), -- Western Pipe Credit Marker old guid 72251
+
 
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67463, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67464, 67461, 67540, 67545, 67550, 67541, 67559, 67560, 67562, 67565, 67566, 67567, 67568, 67569, 67574, 67575, 67576, 67577, 67578, 67579, 67580, 67582, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
@@ -2564,6 +2572,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+47, 'Netherstorm - Group 047 - Netherock', 0, 1, 0, 0, 0),
 -- Goblin Equipment Trigger
 (@SGGUID+48, 'Netherstorm - Group 048 - Goblin Equipment Trigger', 0, 0, 0, 0, 0),
+-- Northern/Eastern/Southern/Western Pipe Credit Marker
+(@SGGUID+49, 'Netherstorm - Group 049 - Pipe Credit Marker', 0, 0, 0, 0, 0),
 -- Object for 'Quest Invaluable Asset Zapping'
 -- Multi-Spectrum Terrain Analyzer, Hyper Rotational Dig-A-Matic, Servo-Pneumatic Dredging Claw, Big Wagon Full of Explosives
 (@SGGUID+98, 'Netherstorm - Quest:Invaluable Asset Zapping - GameObjects', 1, 0, 0, 0, 0),
@@ -3333,6 +3343,11 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+48, @CGUID+727, -1, 0), -- Goblin Equipment Trigger
 (@SGGUID+48, @CGUID+728, -1, 0), -- Goblin Equipment Trigger
 (@SGGUID+48, @CGUID+729, -1, 0), -- Goblin Equipment Trigger
+-- Northern/Eastern/Southern/Western Pipe Credit Marker
+(@SGGUID+49, @CGUID+730, -1, 0), -- Northern Pipe Credit Marker
+(@SGGUID+49, @CGUID+731, -1, 0), -- Eastern Pipe Credit Marker
+(@SGGUID+49, @CGUID+732, -1, 0), -- Southern Pipe Credit Marker
+(@SGGUID+49, @CGUID+733, -1, 0), -- Western Pipe Credit Marker
 -- Object for 'Quest Invaluable Asset Zapping'
 (@SGGUID+98, @GGUID+60, -1, 0), -- Multi-Spectrum Terrain Analyzer
 (@SGGUID+98, @GGUID+61, -1, 0), -- Hyper Rotational Dig-A-Matic
