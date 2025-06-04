@@ -47,8 +47,10 @@ DELETE FROM creature WHERE id = 20772;
 DELETE FROM creature WHERE guid IN (74500, 74501, 74502, 74503);
 -- Northern/Eastern/Southern/Western Pipe Credit Marker
 DELETE FROM creature WHERE id IN (20333, 20336, 20337, 20338);
+-- Bot-Specialist Alley, Maxx A. Million Mk. I, Maxx A. Million Mk. II, Maxx A. Million Mk. V
+DELETE FROM creature WHERE id IN (19578, 19582, 19588, 19589);
 
-DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+710;
+DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+733;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
 (@CGUID+1, 20203, 530, 1, 3380.88, 4359.49, 123.702, 4.67748, 300, 300, 0, 0),
@@ -1007,11 +1009,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+732, 20337, 530, 1, 2816.19580078125, 4337.658203125, 152.9962921142578125, 0.401425719261169433, 300, 300, 0, 0), -- Southern Pipe Credit Marker old guid 72250
 (@CGUID+733, 20338, 530, 1, 2954.907470703125, 4316.294921875, 158.0459442138671875, 2.897246599197387695, 300, 300, 0, 0), -- Western Pipe Credit Marker old guid 72251
 
+(@CGUID+734, 19578, 530, 1, 3352.842041015625, 3726.39111328125, 141.5120391845703125, 2.181661605834960937, 300, 300, 0, 0),  -- Bot-Specialist Alley old guid 70016
+(@CGUID+735, 19582, 530, 1, 3351.948974609375, 3727.857177734375, 141.3197479248046875, 5.270894527435302734, 300, 300, 0, 0),  -- Maxx A. Million Mk. I old guid 70018
+(@CGUID+736, 19588, 530, 1, 3359.7725, 3743.218,1 41.84927, 300, 300, 17, 1),  -- Maxx A. Million Mk. II old guid 70020
+(@CGUID+737, 19589, 530, 1, 3351.604736328125, 3722.505126953125, 141.3250732421875, 0.628318548202514648, 120, 120, 0, 0),  -- Maxx A. Million Mk. V old guid 70021
 
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67463, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67464, 67461, 67540, 67545, 67550, 67541, 67559, 67560, 67562, 67565, 67566, 67567, 67568, 67569, 67574, 67575, 67576, 67577, 67578, 67579, 67580, 67582, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
 
-DELETE FROM creature_addon WHERE guid BETWEEN @CGUID+1 AND @CGUID+399;
+DELETE FROM creature_addon WHERE guid BETWEEN @CGUID+1 AND @CGUID+733;
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+75, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
 (@CGUID+76, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
@@ -1042,7 +1048,7 @@ DELETE FROM creature_template_addon WHERE entry = 18875;
 -- Waypoints 
 DELETE FROM creature_movement WHERE id IN (67281,67283,67285,67288,67289,67290,67291,67292,67461,67464,67293,67294,67296,67297,67298,67299,67300,67301,67302,67303,67304,67373,67374,67704,67575,67580,1002734,1002735,1002736,67286,1002731,1002730,1002729,1002728,1002727,67363,67364,67365,67366,67367,67368,67369,67370,67371,67372,1002721,1002720,1002719,1002718,1002717,67378,67379,67380,67382,67383,67384,67385,1002737,1002738,1002739,67381,1002726,69668,69671,69672,69670,1002722,70071,70072);
 DELETE FROM creature_movement WHERE id IN (67287, 67349, 67350, 67351, 67352, 67353, 67354, 67355, 67356, 67357, 67358, 67359, 67360, 67361, 67362, 67377, 67466, 67469, 67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67682, 67683, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 69669, 70069, 70070, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 71879, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708, 1002741, 1002869, 1002870, 1002871, 1002872);
-DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+630;
+DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+733;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
 (@CGUID+3, 1, 3383.929,4348.6997,133.66545,0.20943951, 12000, 0), -- waittime between 12 and 15 seconds
@@ -2574,6 +2580,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+48, 'Netherstorm - Group 048 - Goblin Equipment Trigger', 0, 0, 0, 0, 0),
 -- Northern/Eastern/Southern/Western Pipe Credit Marker
 (@SGGUID+49, 'Netherstorm - Group 049 - Pipe Credit Marker', 0, 0, 0, 0, 0),
+-- Bot-Specialist Alley, Maxx A. Million Mk. I, Maxx A. Million Mk. II
+(@SGGUID+50, 'Netherstorm - Group 050 - Bot-Specialist Alley | Maxx A. Million Mk. I | Maxx A. Million Mk. II', 0, 0, 0, 0, 0),
+-- Maxx A. Million Mk. V - Escort npc
+(@SGGUID+51, 'Netherstorm - Group 051 - Maxx A. Million Mk. V', 0, 1, 0, 0, 0),
+
 -- Object for 'Quest Invaluable Asset Zapping'
 -- Multi-Spectrum Terrain Analyzer, Hyper Rotational Dig-A-Matic, Servo-Pneumatic Dredging Claw, Big Wagon Full of Explosives
 (@SGGUID+98, 'Netherstorm - Quest:Invaluable Asset Zapping - GameObjects', 1, 0, 0, 0, 0),
@@ -3348,6 +3359,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+49, @CGUID+731, -1, 0), -- Eastern Pipe Credit Marker
 (@SGGUID+49, @CGUID+732, -1, 0), -- Southern Pipe Credit Marker
 (@SGGUID+49, @CGUID+733, -1, 0), -- Western Pipe Credit Marker
+-- Bot-Specialist Alley, Maxx A. Million Mk. I, Maxx A. Million Mk. II
+(@SGGUID+50, @CGUID+734, 0, 0), -- Bot-Specialist Alley
+(@SGGUID+50, @CGUID+735, 1, 0), -- Maxx A. Million Mk. I
+(@SGGUID+50, @CGUID+736, 2, 0), -- Maxx A. Million Mk. II
+-- Maxx A. Million Mk. V - Escort npc
+(@SGGUID+51, @CGUID+737, 0, 0), -- Maxx A. Million Mk. V
 -- Object for 'Quest Invaluable Asset Zapping'
 (@SGGUID+98, @GGUID+60, -1, 0), -- Multi-Spectrum Terrain Analyzer
 (@SGGUID+98, @GGUID+61, -1, 0), -- Hyper Rotational Dig-A-Matic
