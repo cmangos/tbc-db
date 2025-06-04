@@ -3454,7 +3454,7 @@ INSERT INTO `string_id` (Id, Name) VALUES
 
 -- Scripts
 SET @RELAYID := 18000;
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+20;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+21;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Netherologist Coppernickels different text's
 (@RELAYID+1, 0, 16949, 0, 'Netherstorm - Nether Technician - Say 1'), 
@@ -3546,14 +3546,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+20, 0, 17433, 0, 'Netherstorm - Warp-Raider Nesaad - Say 5'), 
 (@RELAYID+20, 0, 17434, 0, 'Netherstorm - Warp-Raider Nesaad - Say 6'), 
 (@RELAYID+20, 0, 17435, 0, 'Netherstorm - Warp-Raider Nesaad - Say 7'), 
-(@RELAYID+20, 0, 17436, 0, 'Netherstorm - Warp-Raider Nesaad - Say 8'),
--- Bot-Specialist Alley
-(@RELAYID+21, 1, @RELAYID+85, 0, 'Netherstorm - Bot-Specialist Alley - RP with Maxx A. Million Mk. I'),
-(@RELAYID+21, 1, @RELAYID+86, 0, 'Netherstorm - Bot-Specialist Alley - RP with Maxx A. Million Mk. II'),
--- Maxx A. Million Mk. II
-(@RELAYID+22, 1, @RELAYID+87, 0, 'Netherstorm - Maxx A. Million Mk. II - Stop RND Movement'),
-(@RELAYID+22, 1, @RELAYID+86, 0, 'Netherstorm - Maxx A. Million Mk. II - Move Run'),
-(@RELAYID+22, 1, @RELAYID+86, 0, 'Netherstorm - Maxx A. Million Mk. II - Move Walk');
+(@RELAYID+20, 0, 17436, 0, 'Netherstorm - Warp-Raider Nesaad - Say 8');
 
 
 SET @RELAYID := 18000;
@@ -3966,10 +3959,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+85, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 16965, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Say Text'),
 (@RELAYID+85, 21000, 0, 14, 29266 , 0, 0, 19582, 5, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Maxx A. Million Mk. I - Remove Permanent Feign Death'),
 (@RELAYID+85, 36000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - EmoteState StateuseStandingNoSheathe'),
-(@RELAYID+85, 36000, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Set ActiveObject'),
--- Bot-Specialist Alley - RP with Maxx A. Million Mk. II
--- (@RELAYID+85, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Set ActiveObject'),
--- Maxx A. Million Mk. II - Randomly stop and starts emoting for some time
+(@RELAYID+85, 36000, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Set ActiveObject');
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
@@ -4033,3 +4023,6 @@ UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 1
 
 -- Sunfury Warp-Master
 UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 18857;
+
+-- Maxx A. Million Mk. II
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 19588;
