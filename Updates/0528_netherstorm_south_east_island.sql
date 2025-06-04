@@ -1011,8 +1011,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+734, 19578, 530, 1, 3352.842041015625, 3726.39111328125, 141.5120391845703125, 2.181661605834960937, 300, 300, 0, 0),  -- Bot-Specialist Alley old guid 70016
 (@CGUID+735, 19582, 530, 1, 3351.948974609375, 3727.857177734375, 141.3197479248046875, 5.270894527435302734, 300, 300, 0, 0),  -- Maxx A. Million Mk. I old guid 70018
-(@CGUID+736, 19588, 530, 1, 3359.7725, 3743.218,1 41.84927, 300, 300, 17, 1),  -- Maxx A. Million Mk. II old guid 70020
-(@CGUID+737, 19589, 530, 1, 3351.604736328125, 3722.505126953125, 141.3250732421875, 0.628318548202514648, 120, 120, 0, 0),  -- Maxx A. Million Mk. V old guid 70021
+(@CGUID+736, 19588, 530, 1, 3359.7725, 3743.218, 141.84927, 0, 300, 300, 17, 1),  -- Maxx A. Million Mk. II old guid 70020
+(@CGUID+737, 19589, 530, 1, 3351.604736328125, 3722.505126953125, 141.3250732421875, 0.628318548202514648, 120, 120, 0, 0);  -- Maxx A. Million Mk. V old guid 70021
 
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67463, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67464, 67461, 67540, 67545, 67550, 67541, 67559, 67560, 67562, 67565, 67566, 67567, 67568, 67569, 67574, 67575, 67576, 67577, 67578, 67579, 67580, 67582, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
@@ -3546,10 +3546,18 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+20, 0, 17433, 0, 'Netherstorm - Warp-Raider Nesaad - Say 5'), 
 (@RELAYID+20, 0, 17434, 0, 'Netherstorm - Warp-Raider Nesaad - Say 6'), 
 (@RELAYID+20, 0, 17435, 0, 'Netherstorm - Warp-Raider Nesaad - Say 7'), 
-(@RELAYID+20, 0, 17436, 0, 'Netherstorm - Warp-Raider Nesaad - Say 8');
+(@RELAYID+20, 0, 17436, 0, 'Netherstorm - Warp-Raider Nesaad - Say 8'),
+-- Bot-Specialist Alley
+(@RELAYID+21, 1, @RELAYID+85, 0, 'Netherstorm - Bot-Specialist Alley - RP with Maxx A. Million Mk. I'),
+(@RELAYID+21, 1, @RELAYID+86, 0, 'Netherstorm - Bot-Specialist Alley - RP with Maxx A. Million Mk. II'),
+-- Maxx A. Million Mk. II
+(@RELAYID+22, 1, @RELAYID+87, 0, 'Netherstorm - Maxx A. Million Mk. II - Stop RND Movement'),
+(@RELAYID+22, 1, @RELAYID+86, 0, 'Netherstorm - Maxx A. Million Mk. II - Move Run'),
+(@RELAYID+22, 1, @RELAYID+86, 0, 'Netherstorm - Maxx A. Million Mk. II - Move Walk');
+
 
 SET @RELAYID := 18000;
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+80;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+85;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Nether Technician script via ACID - CGUID+4
 (@RELAYID+1, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1911, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
@@ -3946,9 +3954,22 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+84, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Stop Movement'),
 (@RELAYID+84, 0, 1, 15, 34427, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Cast Ethereal Teleport'),
 (@RELAYID+84, 0, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 2493.55, 3915.61, 127.11, 1.274, 0, 'Netherstorm - Zaxxis Stalker - Teleport back to home position'),
-(@RELAYID+84, 1000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Remove Active Object');
-
-
+(@RELAYID+84, 1000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Remove Active Object'),
+-- Bot-Specialist Alley - RP with  Maxx A. Million Mk. I
+(@RELAYID+85, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Set ActiveObject'),
+(@RELAYID+85, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - EmoteState non'),
+(@RELAYID+85, 1000, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Emote OneShotPoint'),
+(@RELAYID+85, 2000, 0, 0, 0, 0, 0, 0, 0, 0, 16964, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Say Text'),
+(@RELAYID+85, 5000, 0, 1, 35, 0, 0, 19582, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Maxx A. Million Mk. I - Emote OneShotAttackUnarmed'),
+(@RELAYID+85, 8000, 0, 15, 29266 , 0, 0, 19582, 5, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Maxx A. Million Mk. I - Cast Permanent Feign Death'),
+(@RELAYID+85, 12000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Emote OneShotExclamation'),
+(@RELAYID+85, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 16965, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Say Text'),
+(@RELAYID+85, 21000, 0, 14, 29266 , 0, 0, 19582, 5, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Maxx A. Million Mk. I - Remove Permanent Feign Death'),
+(@RELAYID+85, 36000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - EmoteState StateuseStandingNoSheathe'),
+(@RELAYID+85, 36000, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Set ActiveObject'),
+-- Bot-Specialist Alley - RP with Maxx A. Million Mk. II
+-- (@RELAYID+85, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Set ActiveObject'),
+-- Maxx A. Million Mk. II - Randomly stop and starts emoting for some time
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);

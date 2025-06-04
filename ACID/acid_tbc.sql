@@ -18844,10 +18844,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1957501','19575','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Qiff - Start Relay Script (Random Emote) on Receive AI Event 5'),
 -- Xyrol 19576
 ('1957601','19576','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Xyrol - Start Relay Script (Random Emote) on Receive AI Event 5'),
--- Bot-Specialist Alley (19578) - NSR
+-- Bot-Specialist Alley (19578) 
+('1957801','19578','1','0','100','1','5000','10000','90000','210000','0','0','53','18085','0','0','0','0','0','0','0','0','0','0','Bot-Specialist Alley - Start RandomScript OOC'),
 -- Maxx A. Million Mk. I (19582) - NSR
 -- Grennik (19583) - NSR
--- Maxx A. Million Mk. II (19588) - NSR
+-- Maxx A. Million Mk. II (19588) 
 -- Maxx A. Million Mk. V (19589) - npc_maxx_a_million
 -- Spellbinder Maryana 19593
 ('1959301','19593','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Spellbinder Maryana - Enable Range Mode on Aggro'),
