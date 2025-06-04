@@ -18858,6 +18858,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Drained Phase Hunter (19595) - NSR
 -- Irradiated Worker 19610
 ('1961001','19610','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Irradiated Worker - Start Relay Script (Random Emote) on Receive AI Event 5'),
+
+('530684001','-5306840','11','0','100','0','0','0','0','0','0','0','5','69','0','0','22','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase and Emote StateUsing 1 on Spawn'),
+('530684002','-5306840','1','5','100','1','30000','60000','30000','60000','0','0','22','2','0','0','5','233','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Emote StateWorkMining and set Phase 2 (Phase 1)'),
+('530684003','-5306840','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','69','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsingand set Phase 1 (Phase 2)'),
+
+('530684101','-5306841','11','0','100','0','0','0','0','0','0','0','5','69','0','0','22','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase and Emote StateUsing 1 on Spawn'),
+('530684102','-5306841','1','5','100','1','30000','60000','30000','60000','0','0','22','2','0','0','5','233','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Emote StateWorkMining and set Phase 2 (Phase 1)'),
+('530684103','-5306841','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','69','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsingand set Phase 1 (Phase 2)'),
+
+('530684201','-5306842','11','0','100','0','0','0','0','0','0','0','5','69','0','0','22','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase and Emote StateUsing 1 on Spawn'),
+('530684202','-5306842','1','5','100','1','30000','60000','30000','60000','0','0','22','2','0','0','5','233','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Emote StateWorkMining and set Phase 2 (Phase 1)'),
+('530684203','-5306842','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','69','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsingand set Phase 1 (Phase 2)'),
 -- Irradiated Manager 19612
 ('1961201','19612','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Irradiated Manager - Start Relay Script (Random Emote) on Receive AI Event 5'),
 -- Boots (19617) - NSR
@@ -19489,7 +19501,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fel Imp 21135
 ('2113501','21135','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Fel Imp - Enable Range Mode on Aggro'),
 ('2113502','21135','9','0','100','1025','0','30','3400','4700','0','0','11','36227','1','256','0','0','0','0','0','0','0','0','Fel Imp - Cast Firebolt'),
--- Crash Bigbomb 21259
+-- Crash Bigbomb 21259 NSR
 -- Seeping Ooze 21264
 -- Parasitic Fleshling 21265
 -- Mana Beast
