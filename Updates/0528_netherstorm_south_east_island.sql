@@ -2313,7 +2313,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+715, 12, 2467.289,4100.7856,124.74638, 100, 0, 0),
 -- Irradiated Worker 
 (@CGUID+774, 1, 3017.509,3653.2434,128.91335, 100, 1000, 1961002), -- rp 1 waittime handled via cai
-(@CGUID+774, 2, 3017.509,3653.2434,128.91335, 100, 2000, 1961007), -- always remove emotestate 2 seconds before moving next point
+(@CGUID+774, 2, 3017.509,3653.2434,128.91335, 100, 2000, 1961006), -- always remove emotestate 2 seconds before moving next point
 (@CGUID+774, 3, 3014.8945,3662.9084,130.73813, 100, 0, 0),
 (@CGUID+774, 4, 3008.828,3674.9514,131.55328, 100, 0, 0),
 (@CGUID+774, 5, 3010.913,3692.5308,136.3377, 100, 0, 0),
@@ -2330,7 +2330,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+774, 16, 3007.7942,3680.1575,133.86882, 100, 0, 0),
 (@CGUID+774, 17, 3017.8374,3679.322,138.41211, 100, 0, 0),
 (@CGUID+774, 18, 3019.697,3676.4502,138.4706, 100, 50000, 1961003), -- rp 3 waittime handled via cai
-(@CGUID+774, 19, 3019.697,3676.4502,138.4706, 100, 2000, 1961006), -- remove emote state + add equipment 2 seconds before starting wp
+(@CGUID+774, 19, 3019.697,3676.4502,138.4706, 100, 2000, 1961007), -- remove emote state + add equipment 2 seconds before starting wp
 (@CGUID+774, 20, 3009.3945,3678.971,133.05138, 100, 1000, 0),
 (@CGUID+774, 21, 3014.4927,3666.136,130.1914, 100, 0, 0),
 (@CGUID+774, 22, 3013.5215,3668.1113,130.42224, 100, 0, 0),
