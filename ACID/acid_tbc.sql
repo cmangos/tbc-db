@@ -18859,17 +18859,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Irradiated Worker 19610
 ('1961001','19610','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Irradiated Worker - Start Relay Script (Random Emote) on Receive AI Event 5'),
 
-('530684001','-5306840','11','0','100','0','0','0','0','0','0','0','5','133','0','0','22','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase and Emote StateUsing 1 on Spawn'),
+('530684001','-5306840','11','0','100','0','0','0','0','0','0','0','5','69','0','0','22','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase and Emote StateUsing 1 on Spawn'),
 ('530684002','-5306840','1','5','100','1','30000','60000','30000','60000','0','0','22','2','0','0','5','233','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Emote StateWorkMining and set Phase 2 (Phase 1)'),
-('530684003','-5306840','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','133','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsing and set Phase 1 (Phase 2)'),
+('530684003','-5306840','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','69','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsing and set Phase 1 (Phase 2)'),
 
-('530684101','-5306841','11','0','100','0','0','0','0','0','0','0','5','133','0','0','22','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase and Emote StateUsing 1 on Spawn'),
+('530684101','-5306841','11','0','100','0','0','0','0','0','0','0','5','69','0','0','22','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase and Emote StateUsing 1 on Spawn'),
 ('530684102','-5306841','1','5','100','1','30000','60000','30000','60000','0','0','22','2','0','0','5','233','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Emote StateWorkMining and set Phase 2 (Phase 1)'),
-('530684103','-5306841','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','133','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsing and set Phase 1 (Phase 2)'),
+('530684103','-5306841','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','69','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsing and set Phase 1 (Phase 2)'),
 
-('530684201','-5306842','11','0','100','0','0','0','0','0','0','0','5','133','0','0','22','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase and Emote StateUsing 1 on Spawn'),
+('530684201','-5306842','11','0','100','0','0','0','0','0','0','0','5','69','0','0','22','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase and Emote StateUsing 1 on Spawn'),
 ('530684202','-5306842','1','5','100','1','30000','60000','30000','60000','0','0','22','2','0','0','5','233','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Emote StateWorkMining and set Phase 2 (Phase 1)'),
-('530684203','-5306842','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','133','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsing and set Phase 1 (Phase 2)'),
+('530684203','-5306842','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','69','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsing and set Phase 1 (Phase 2)'),
 
 ('530687401','-5306874','30','0','100','1','5','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Pause Waypoints and Set Phase 1 on ReceiveEventAI A'),
 ('530687402','-5306874','30','0','100','1','5','0','0','0','0','0','22','2','0','0','51','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Pause Waypoints and Set Phase 2 on ReceiveEventAI A'),
@@ -18881,7 +18881,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 ('530687601','-5306876','11','0','100','0','0','0','0','0','0','0','5','69','0','0','22','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase and Emote StateUsing 1 on Spawn'),
 ('530687602','-5306876','1','5','100','1','30000','60000','30000','60000','0','0','22','2','0','0','5','233','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Emote StateWorkMining and set Phase 2 (Phase 1)'),
-('530687603','-5306876','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','133','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsing and set Phase 1 (Phase 2)'),
+('530687603','-5306876','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','69','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsing and set Phase 1 (Phase 2)'),
 
 ('530687701','-5306877','30','0','100','1','5','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase 1 and Pause Waypoints on ReceiveEventAI A'),
 ('530687702','-5306877','1','5','100','0','15000','25000','0','0','0','0','54','0','0','18021','0','0','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Say RandomText OOC (Phase 1)'),

@@ -4168,8 +4168,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1961002, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventA to self'), 
 (1961002, 2000, 0, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState WorkMining'),
 -- Irradiated Worker RP 2
-(1961003, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventB to self'), 
-(1961003, 2000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState UseStandingNoSheath'),
+(1961003, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventA to self'), 
+(1961003, 2000, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState UseStanding'),
 -- Irradiated Worker RP 3
 (1961004, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventA to self'), 
 (1961004, 2000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState UseStandingNoSheath'),
@@ -4193,7 +4193,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1961005, 42000, 0, 42, 0, 0, 0, 0, 0, 0, 4994, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Add Equipment'),
 -- Irradiated Worker Remove emotestate+equipment
 (1961006, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState None'),
-(1961006, 0, 1, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Remove Equipment'),
+(1961006, 2000, 1, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Remove Equipment'),
 -- Irradiated Worker Remove emotestate+equipment
 (1961007, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState None'),
 (1961007, 0, 1, 42, 0, 0, 0, 0, 0, 0, 1910, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Add Equipment'),
