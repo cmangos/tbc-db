@@ -262,3 +262,57 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1885601, 2, 35892, 0, -1, 2, 0, 100, 0, 6000, 10000, 16000, 22000, 'Arcane Annihilator - Suppression - self');
 
 UPDATE `creature_template` SET `SpellList` = 1885601 WHERE `entry` = 18856;
+
+-- Zaxxis Raider
+DELETE FROM `creature_template_spells` WHERE `entry` = 18875;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1887501;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1887501, 'Netherstorm - Zaxxis Raider', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1887501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1887501, 1, 35922, 0, -1, 2, 0, 100, 0, 5000, 18000, 15000, 23000, 'Zaxxis Raider - Energy Flare - self');
+
+UPDATE `creature_template` SET `SpellList` = 1887501 WHERE `entry` = 18875;
+
+-- Warp-Raider Nesaad
+DELETE FROM `creature_template_spells` WHERE `entry` = 19641;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1964101;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1964101, 'Netherstorm - Warp-Raider Nesaad', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1964101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1964101, 1, 35924, 0, -1, 2, 0, 100, 0, 9000, 16000, 9000, 16000, 'Warp-Raider Nesaad - Energy Flux - self');
+
+UPDATE `creature_template` SET `SpellList` = 1964101 WHERE `entry` = 19641;
+
+-- Zaxxis Stalker
+DELETE FROM `creature_template_spells` WHERE `entry` = 19642;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1964201;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1964201, 'Netherstorm - Zaxxis Stalker', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1964201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1964201, 1, 7159, 0, -1, 1, 0, 100, 0, 2000, 8000, 10000, 24000, 'Zaxxis Stalker - Backstab - current'),
+-- UnitCondition  number of melee attackers >=1
+(1964201, 2, 32920, 0, 1071, 1, 0, 100, 0, 4000, 10000, 10000, 20000, 'Zaxxis Stalker - Warp - current');
+
+UPDATE `creature_template` SET `SpellList` = 1964201 WHERE `entry` = 19642;
+
+-- Warp Aberration
+DELETE FROM `creature_template_spells` WHERE `entry` = 18865;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1886501;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1886501, 'Netherstorm - Warp Aberration', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1886501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1886501, 1, 36577, 0, -1, 0, 0, 100, 0, 10000, 20000, 20000, 30000, 'Warp Aberration - Warp Storm - none');
+
+UPDATE `creature_template` SET `SpellList` = 1886501 WHERE `entry` = 18865;
