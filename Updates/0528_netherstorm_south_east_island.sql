@@ -2307,7 +2307,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+715, 11, 2485.3198,4135.018,118.67705, 100, 0, 0),
 (@CGUID+715, 12, 2467.289,4100.7856,124.74638, 100, 0, 0),
 -- Irradiated Worker 
-(@CGUID+774, 1, 3017.509,3653.2434,128.91335, 100, 60000, 1961002), -- rp 1 waittime between 50-70
+(@CGUID+774, 1, 3017.509,3653.2434,128.91335, 100, 1000, 1961002), -- rp 1 waittime handled via cai
 (@CGUID+774, 2, 3017.509,3653.2434,128.91335, 100, 2000, 1961001), -- always remove emotestate 2 seconds before moving next point
 (@CGUID+774, 3, 3014.8945,3662.9084,130.73813, 100, 0, 0),
 (@CGUID+774, 4, 3008.828,3674.9514,131.55328, 100, 0, 0),
@@ -2315,7 +2315,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+774, 6, 3002.216,3695.3157,143.92982, 100, 0, 0),
 (@CGUID+774, 7, 2998.7236,3690.2957,143.63736, 100, 0, 0),
 (@CGUID+774, 8, 2990.565,3683.612,142.8087, 100, 0, 0),
-(@CGUID+774, 9, 2977.4797,3662.7634,143.14029, 100, 50000, 1961003), -- rp 2 waittime between 40-60
+(@CGUID+774, 9, 2977.4797,3662.7634,143.14029, 100, 50000, 1961003), -- rp 2 waittime handled via cai
 (@CGUID+774, 10, 2977.4797,3662.7634,143.14029, 100, 2000, 1961001), -- always remove emotestate 2 seconds before moving next point
 (@CGUID+774, 11, 2985.3376,3681.793,143.08551, 100, 0, 0),
 (@CGUID+774, 12, 2993.6147,3687.9854,143.1722, 100, 0, 0),
@@ -2324,17 +2324,17 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+774, 15, 3010.9663,3695.3237,136.6101, 100, 0, 0),
 (@CGUID+774, 16, 3007.7942,3680.1575,133.86882, 100, 0, 0),
 (@CGUID+774, 17, 3017.8374,3679.322,138.41211, 100, 0, 0),
-(@CGUID+774, 18, 3019.697,3676.4502,138.4706, 100, 50000, 1961003), -- rp 3 waittime between 40-60
+(@CGUID+774, 18, 3019.697,3676.4502,138.4706, 100, 50000, 1961003), -- rp 3 waittime handled via cai
 (@CGUID+774, 19, 3019.697,3676.4502,138.4706, 100, 2000, 1961001), -- always remove emotestate 2 seconds before moving next point
 (@CGUID+774, 20, 3009.3945,3678.971,133.05138, 100, 0, 0),
 (@CGUID+774, 21, 3014.4927,3666.136,130.1914, 100, 0, 0),
 (@CGUID+774, 22, 3013.5215,3668.1113,130.42224, 100, 0, 0),
 (@CGUID+774, 23, 3013.9546,3656.2864,129.47292, 100, 0, 0),
 -- Irradiated Worker 
-(@CGUID+775, 1, 3017.0068,3660.0972,129.52814,5.410520553588867187, 15000, 1961002), -- rp 1 waittime between 10-20
+(@CGUID+775, 1, 3017.0068,3660.0972,129.52814,5.410520553588867187, 1000, 1961002), -- rp 1 waittime handled via cai
 (@CGUID+775, 2, 3017.0068,3660.0972,129.52814, 100, 2000, 1961001) -- remove emote
 (@CGUID+775, 3, 3018.9802,3662.023,130.22513, 100, 2000, 1961001), -- remove emote
-(@CGUID+775, 4, 3018.9802,3662.023,130.22513,0.209439516067504882, 15000, 1961002), -- rp 2
+(@CGUID+775, 4, 3018.9802,3662.023,130.22513,0.209439516067504882, 1000, 1961002), -- rp 2 waittime handled via cai
 -- Irradiated Worker 
 (@CGUID+777, 1,3038.358,3728.303,139.94199, 100, 30000, 1961004), -- RP 1 waittimer 20-40
 (@CGUID+777, 2,3018.8699,3715.6277,138.61366, 100, 0, 0),
@@ -4121,8 +4121,10 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Irradiated Worker General - remove emote before moving to next waypoint (2 seconds before moving
 (1961001, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState None'),
 -- Irradiated Worker RP 1
+(1961002, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventA to self'), 
 (1961002, 2000, 0, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState WorkMining'),
 -- Irradiated Worker RP 2
+(1961004, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventB to self'), 
 (1961003, 2000, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState UseStanding'),
 -- Irradiated Worker RP 3
 (1961004, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventA to self'), 
