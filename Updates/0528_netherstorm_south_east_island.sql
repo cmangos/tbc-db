@@ -1073,7 +1073,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+775, 19610, 530, 1,  3017.0068359375, 3660.09716796875, 129.52813720703125, 5.410520553588867187, 300, 300, 0, 4), -- Irradiated Worker old guid 70030
 (@CGUID+776, 19610, 530, 1,  3014.447021484375, 3700.1689453125, 138.939849853515625, 5.951572895050048828, 300, 300, 0, 0), -- Irradiated Worker old guid 70031
-(@CGUID+777, 19610, 530, 1,  3038.35791015625, 3728.302978515625, 139.941986083984375, 0.760398924350738525, 300, 300, 0, 2), -- Irradiated Worker old guid 70032
+(@CGUID+777, 19610, 530, 1,  3038.35791015625, 3728.302978515625, 139.941986083984375, 0.760398924350738525, 300, 300, 0, 2); -- Irradiated Worker old guid 70032
 
 -- not used guid atm 70033 + 70731 (moving)
 -- Area 52 NPCs
@@ -2336,30 +2336,32 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+775, 3, 3018.9802,3662.023,130.22513, 100, 2000, 1961001), -- remove emote
 (@CGUID+775, 4, 3018.9802,3662.023,130.22513,0.209439516067504882, 1000, 1961002), -- rp 2 waittime handled via cai
 -- Irradiated Worker 
-(@CGUID+777, 1,3038.358,3728.303,139.94199, 100, 30000, 1961004), -- RP 1 waittimer 20-40
-(@CGUID+777, 2,3018.8699,3715.6277,138.61366, 100, 0, 0),
-(@CGUID+777, 3,3011.5674,3697.7786,136.65543, 100, 0, 0),
-(@CGUID+777, 4,3011.7441,3691.342,136.05435, 100, 0, 0),
-(@CGUID+777, 5,3009.9026,3680.2822,132.94742, 100, 0, 0),
-(@CGUID+777, 6,3013.428,3664.1501,131.05283, 100, 0, 0),
-(@CGUID+777, 7,3014.494,3651.6614,128.92159, 100, 0, 0),
-(@CGUID+777, 8,3013.6965,3637.2642,131.65248, 100, 0, 0),
-(@CGUID+777, 9,3009.4858,3627.3025,134.24057, 100, 0, 0), -- rp 2
-(@CGUID+777, 10,3013.7517,3635.7278,131.95508, 100, 0, 0),
-(@CGUID+777, 11,3014.8564,3648.6768,129.25916, 100, 0, 0),
-(@CGUID+777, 12,3014.9119,3656.1458,129.29941, 100, 0, 0),
-(@CGUID+777, 13,3010.7131,3675.1619,131.338, 100, 0, 0),
-(@CGUID+777, 14,3012.1128,3693.6863,136.42221, 100, 0, 0),
-(@CGUID+777, 15,3001.846,3695.3242,143.94815, 100, 0, 0),
-(@CGUID+777, 16,3005.3398,3687.5503,143.63722, 100, 0, 0),
-(@CGUID+777, 17,3018.151,3684.889,143.6369, 100, 0, 0),
-(@CGUID+777, 18,3021.3057,3684.9524,143.63683, 100, 0, 0), -- big rp
-(@CGUID+777, 19,3009.5173,3685.8772,143.63713, 100, 0, 0),
-(@CGUID+777, 20,3001.9346,3690.7534,143.63727, 100, 0, 0),
-(@CGUID+777, 21,3000.9585,3696.4648,143.95537, 100, 0, 0),
-(@CGUID+777, 22,3011.5955,3695.3018,136.62035, 100, 0, 0),
-(@CGUID+777, 23,3015.358,3708.3142,137.34958, 100, 0, 0),
-(@CGUID+777, 24,3032.567,3722.8196,139.1177, 100, 0, 0),
+(@CGUID+777, 1,3038.358,3728.303,139.94199, 100, 1000, 1961004), -- RP 1 waittimer 20-40 handled via cai
+(@CGUID+777, 2,3038.358,3728.303,139.94199, 100, 2000, 1961001), -- remove emotestate 2sec before waypoint continues
+(@CGUID+777, 3,3018.8699,3715.6277,138.61366, 100, 0, 0),
+(@CGUID+777, 4,3011.5674,3697.7786,136.65543, 100, 0, 0),
+(@CGUID+777, 5,3011.7441,3691.342,136.05435, 100, 0, 0),
+(@CGUID+777, 6,3009.9026,3680.2822,132.94742, 100, 0, 0),
+(@CGUID+777, 7,3013.428,3664.1501,131.05283, 100, 0, 0),
+(@CGUID+777, 8,3014.494,3651.6614,128.92159, 100, 0, 0),
+(@CGUID+777, 9,3013.6965,3637.2642,131.65248, 100, 0, 0),
+(@CGUID+777, 10,3009.4858,3627.3025,134.24057, 100, 1000, 1961004), -- rp 2 waittimer 20-40 handled via cai
+(@CGUID+777, 11,3009.4858,3627.3025,134.24057, 100, 2000, 1961001), -- remove emotestate 2sec before waypoint continues
+(@CGUID+777, 12,3013.7517,3635.7278,131.95508, 100, 0, 0),
+(@CGUID+777, 13,3014.8564,3648.6768,129.25916, 100, 0, 0),
+(@CGUID+777, 14,3014.9119,3656.1458,129.29941, 100, 0, 0),
+(@CGUID+777, 15,3010.7131,3675.1619,131.338, 100, 0, 0),
+(@CGUID+777, 16,3012.1128,3693.6863,136.42221, 100, 0, 0),
+(@CGUID+777, 17,3001.846,3695.3242,143.94815, 100, 0, 0),
+(@CGUID+777, 18,3005.3398,3687.5503,143.63722, 100, 0, 0),
+(@CGUID+777, 19,3018.151,3684.889,143.6369, 100, 0, 0),
+(@CGUID+777, 20,3021.3057,3684.9524,143.63683, 100, 0, 0), -- big rp
+(@CGUID+777, 21,3009.5173,3685.8772,143.63713, 100, 0, 0),
+(@CGUID+777, 22,3001.9346,3690.7534,143.63727, 100, 0, 0),
+(@CGUID+777, 23,3000.9585,3696.4648,143.95537, 100, 0, 0),
+(@CGUID+777, 24,3011.5955,3695.3018,136.62035, 100, 0, 0),
+(@CGUID+777, 25,3015.358,3708.3142,137.34958, 100, 0, 0),
+(@CGUID+777, 26,3032.567,3722.8196,139.1177, 100, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19569, 19635, 19709, 20416, 20772);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -3672,8 +3674,13 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+20, 0, 17433, 0, 'Netherstorm - Warp-Raider Nesaad - Say 5'), 
 (@RELAYID+20, 0, 17434, 0, 'Netherstorm - Warp-Raider Nesaad - Say 6'), 
 (@RELAYID+20, 0, 17435, 0, 'Netherstorm - Warp-Raider Nesaad - Say 7'), 
-(@RELAYID+20, 0, 17436, 0, 'Netherstorm - Warp-Raider Nesaad - Say 8');
-
+(@RELAYID+20, 0, 17436, 0, 'Netherstorm - Warp-Raider Nesaad - Say 8'),
+-- Irradiated Worker random text
+(@RELAYID+21, 0, 17020, 0, 'Netherstorm - Irradiated Worker - Say 1'), 
+(@RELAYID+21, 0, 17021, 0, 'Netherstorm - Irradiated Worker - Say 2'), 
+(@RELAYID+21, 0, 17022, 0, 'Netherstorm - Irradiated Worker - Say 3'), 
+(@RELAYID+21, 0, 17023, 0, 'Netherstorm - Irradiated Worker - Say 4'), 
+(@RELAYID+21, 0, 17024, 0, 'Netherstorm - Irradiated Worker - Say 5');
 
 SET @RELAYID := 18000;
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+85;
@@ -4124,7 +4131,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1961002, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventA to self'), 
 (1961002, 2000, 0, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState WorkMining'),
 -- Irradiated Worker RP 2
-(1961004, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventB to self'), 
+(1961003, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventB to self'), 
 (1961003, 2000, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState UseStanding'),
 -- Irradiated Worker RP 3
 (1961004, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventA to self'), 
