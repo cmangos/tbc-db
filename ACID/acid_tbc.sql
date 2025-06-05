@@ -18870,6 +18870,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('530684201','-5306842','11','0','100','0','0','0','0','0','0','0','5','69','0','0','22','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase and Emote StateUsing 1 on Spawn'),
 ('530684202','-5306842','1','5','100','1','30000','60000','30000','60000','0','0','22','2','0','0','5','233','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Emote StateWorkMining and set Phase 2 (Phase 1)'),
 ('530684203','-5306842','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','69','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsingand set Phase 1 (Phase 2)'),
+
+('530687601','-5306876','11','0','100','0','0','0','0','0','0','0','5','69','0','0','22','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase and Emote StateUsing 1 on Spawn'),
+('530687602','-5306876','1','5','100','1','30000','60000','30000','60000','0','0','22','2','0','0','5','233','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Emote StateWorkMining and set Phase 2 (Phase 1)'),
+('530687603','-5306876','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','69','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsingand set Phase 1 (Phase 2)'),
 -- Irradiated Manager 19612
 ('1961201','19612','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Irradiated Manager - Start Relay Script (Random Emote) on Receive AI Event 5'),
 -- Boots (19617) - NSR
