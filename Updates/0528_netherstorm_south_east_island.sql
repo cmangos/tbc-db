@@ -1042,7 +1042,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+755, 19575, 530, 1, 2975.4609375, 3663.06591796875, 143.16839599609375, 1.256637096405029296, 300, 300, 0, 0), -- Qiff old guid 70014
 (@CGUID+756, 19576, 530, 1, 2973.995849609375, 3672.6875, 143.634307861328125, 0, 300, 300, 0, 0), -- Xyrol old guid 70015
-(@CGUID+757, 19709, 530, 1, 2974.390869140625, 3675.2978515625, 143.3737030029296875, 3.03687286376953125, 300, 300, 0, 2), -- Chief Engineer Trep old guid 70350
+(@CGUID+757, 19709, 530, 1, 2974.390869140625, 3675.2978515625, 143.3737030029296875, 3.03687286376953125, 300, 300, 0, 4), -- Chief Engineer Trep old guid 70350
 
 (@CGUID+758, 20389, 530, 1, 2976.17919921875, 3693.489501953125, 143.340423583984375, 0.628318548202514648, 300, 300, 0, 0), -- Lee Sparks old guid 72339
 
@@ -2396,10 +2396,9 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (19635, 1, 3, 3022.0776,3955.9973,155.37415, 100, 0, 1963503),
 (19635, 1, 4, 3033.6973,3945.7258,154.78703, 100, 0, 1963503),
 -- Chief Engineer Trep 19709
-(19709, 0, 1, 2974.3909,3675.2979,143.3737,3.03687286376953125, 30000, 1970901), -- Waittime between 20-40 seconds
-(19709, 0, 2, 2974.3909,3675.2979,143.3737,3.03687286376953125, 2000, 1970902), -- 2 seconds before turning to console stop emoting
+(19709, 0, 1, 2974.3909,3675.2979,143.3737,3.03687286376953125, 1000, 1970901), -- Waittime between 20-40 seconds handled via cai
+(19709, 0, 2, 2974.3909,3675.2979,143.3737, 100, 2000, 1970902), -- 2 seconds before turning to console stop emoting
 (19709, 0, 3, 2974.7083,3676.1584,143.45195, 100, 5000, 1970903),
-(19709, 0, 4, 2974.3909,3675.2979,143.3737, 100, 2000, 0),
 -- Overseer Theredis
 (20416, 0, 1, 2853.4512,4162.422,162.59381, 100, 0, 0),
 (20416, 0, 2, 2844.1633,4158.831,162.59386, 100, 0, 0),
@@ -4145,6 +4144,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Sunfury Astromancer RP Script
 (1964301, 0, 0, 45, 0, 18007, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - Start RandomScript'),
 -- Chief Engineer Trep
+-- Use SendAiEvent to self, to change phase for random waittime
+(1970901, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - SendAIEventA to self'), 
 (1970901, 8000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - EmoteState UseStandingNoSheath'),
 (1970902, 2000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - Stop Emote'),
 (1970903, 2000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - Emote OneShotExclamation');

@@ -18973,6 +18973,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1970705','19707','9','0','100','1025','5','30','2300','3900','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Sunfury Archer - Cast Shoot'),
 -- Chief Engineer Trep 19709
 ('1970901','19709','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Chief Engineer Trep - Start Relay Script (Random Emote) on Receive AI Event 5'),
+
+('1970902','19709','30','0','100','1','5','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Chief Engineer Trep - Set Phase 1 and PauseWaypoints on ReceiveEventAI A'),
+('1970903','197097','1','5','100','1','20000','40000','20000','40000','0','0','22','0','0','0','51','0','0','0','0','0','0','0','Chief Engineer Trep - UnPause Waypoints and set Phase 0 OOC (Phase 1)'),
 -- Mama Wheeler (19728) - NSR
 -- Nether Beast (19731) - NSR
 -- Engineering Crewmember 19737 - SAY SEQUENCE WITH EXPERIMENTAL PILOT
