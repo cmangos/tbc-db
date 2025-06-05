@@ -1474,6 +1474,20 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+811,1617,1,1, 6535.283203125, 57.42545700073242187, 36.34660720825195312, 5.70722818374633789, 0, 0, -0.28401470184326171, 0.958819925785064697,600,600),
 (@GGUID+812,1617,1,1, 5837.623046875, 72.4459075927734375, 31.32549095153808593, 3.700104713439941406, 0, 0, -0.96126079559326171, 0.275640487670898437,600,600);
 
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+11 AND @SGGUID+21;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+11, 'Silverleaf - Barrens - Special', 1, 3, 0, 0),
+(@SGGUID+12, 'Silverleaf - Tirisfal Glades', 1, 3, 0, 0),
+(@SGGUID+13, 'Silverleaf - Elwynn Forest', 1, 3, 0, 0),
+(@SGGUID+14, 'Silverleaf - Teldrassil', 1, 3, 0, 0),
+(@SGGUID+15, 'Silverleaf - Mulgore', 1, 3, 0, 0),
+(@SGGUID+16, 'Silverleaf - Dun Morogh', 1, 3, 0, 0),
+(@SGGUID+17, 'Silverleaf - Durotar', 1, 3, 0, 0),
+(@SGGUID+18, 'Silverleaf - Silverpine Forest', 1, 3, 0, 0),
+(@SGGUID+19, 'Silverleaf - Loch Modan', 1, 3, 0, 0),
+(@SGGUID+20, 'Silverleaf - Westfall', 1, 3, 0, 0),
+(@SGGUID+21, 'Silverleaf - Darkshore', 1, 3, 0, 0);
+
 SET @GGUID=402000;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
 (@GGUID+0,1619,1,1, 4317.63525390625, -46.5241966247558593, 90.21546173095703125, 2.321287870407104492, 0, 0, 0.917060077190399169, 0.398749083280563354,600,600),
@@ -1962,6 +1976,21 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+493,1619,1,1, 9771.6103515625, 1338.1766357421875, 1332.7840576171875, 3.996806621551513671, 0, 0, -0.90996074676513671, 0.414694398641586303,600,600),
 (@GGUID+494,1619,1,1, 7146.619140625, -961.3865966796875, 66.53195953369140625, 3.43830275535583496, 0, 0, -0.98901557922363281, 0.147811368107795715,600,600),
 (@GGUID+495,1619,1,1, 6036.64501953125, -134.44049072265625, 73.012298583984375, 2.740161895751953125, 0, 0, 0.979924201965332031, 0.199370384216308593,600,600);
+
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+22 AND @SGGUID+33;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+22, 'Earthroot - Barrens - Special', 1, 3, 0, 0),
+(@SGGUID+23, 'Earthroot - Tirisfal Glades', 1, 3, 0, 0),
+(@SGGUID+24, 'Earthroot - Teldrassil', 1, 3, 0, 0),
+(@SGGUID+25, 'Earthroot - Dun Morogh', 1, 3, 0, 0),
+(@SGGUID+26, 'Earthroot - Elwynn Forest', 1, 3, 0, 0),
+(@SGGUID+27, 'Earthroot - Redridge Mountains', 1, 3, 0, 0),
+(@SGGUID+28, 'Earthroot - Mulgore', 1, 3, 0, 0),
+(@SGGUID+29, 'Earthroot - Durotar', 1, 3, 0, 0),
+(@SGGUID+30, 'Earthroot - Darkshore', 1, 3, 0, 0),
+(@SGGUID+31, 'Earthroot - Silverpine Forest', 1, 3, 0, 0),
+(@SGGUID+32, 'Earthroot - Westfall', 1, 3, 0, 0),
+(@SGGUID+33, 'Earthroot - Loch Modan', 1, 3, 0, 0);
 
 SET @GGUID=403000;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
@@ -2521,6 +2550,22 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+558,1620,1,1, 2874.862548828125, 39.6865234375, 94.62535858154296875, 3.473210096359252929, 0, 0, -0.98628520965576171, 0.165049895644187927,600,600),
 (@GGUID+559,1620,1,1, 10301.5439453125, 1411.99609375, 1341.858642578125, 5.305802345275878906, 0, 0, -0.46947097778320312, 0.882947921752929687,600,600),
 (@GGUID+560,1620,0,1, -10504.271484375, 853.87335205078125, 38.42238235473632812, 2.356194972991943359, 0, 0, 0.923879623413085937, 0.382683247327804565,600,600);
+
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+34 AND @SGGUID+46;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+34, 'Mageroyal - Barrens - Special', 1, 3, 0, 0),
+(@SGGUID+35, 'Mageroyal - Silverpine Forest', 1, 3, 0, 0),
+(@SGGUID+36, 'Mageroyal - Loch Modan', 1, 3, 0, 0),
+(@SGGUID+37, 'Mageroyal - Redridge Mountains', 1, 3, 0, 0),
+(@SGGUID+38, 'Mageroyal - Westfall', 1, 3, 0, 0),
+(@SGGUID+39, 'Mageroyal - Darkshore', 1, 3, 0, 0),
+(@SGGUID+40, 'Mageroyal - Wetlands', 1, 3, 0, 0),
+(@SGGUID+41, 'Mageroyal - Ashenvale', 1, 3, 0, 0),
+(@SGGUID+42, 'Mageroyal - Teldrassil', 1, 3, 0, 0),
+(@SGGUID+43, 'Mageroyal - Duskwood', 1, 3, 0, 0),
+(@SGGUID+44, 'Mageroyal - Stonetalon Mountains', 1, 3, 0, 0),
+(@SGGUID+45, 'Mageroyal - Hillsbrad Foothills', 1, 3, 0, 0),
+(@SGGUID+46, 'Mageroyal - Durotar', 1, 3, 0, 0);
 
 SET @GGUID=404000;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
@@ -3186,6 +3231,20 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+666,1621,1,1, 6311.71337890625, -58.46923828125, 38.73254013061523437, 0.890116631984710693, 0, 0, 0.430510520935058593, 0.902585566043853759,600,600),
 (@GGUID+667,1621,1,1, 5448.75390625, 112.7137069702148437, 34.00455093383789062, 5.462882041931152343, 0, 0, -0.39874839782714843, 0.917060375213623046,600,600);
 
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+47 AND @SGGUID+57;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+47, 'Briarthorn - Barrens - Special', 1, 3, 0, 0),
+(@SGGUID+48, 'Briarthorn - Redridge Mountains', 1, 3, 0, 0),
+(@SGGUID+49, 'Briarthorn - Duskwood', 1, 3, 0, 0),
+(@SGGUID+50, 'Briarthorn - Silverpine Forest', 1, 3, 0, 0),
+(@SGGUID+51, 'Briarthorn - Westfall', 1, 3, 0, 0),
+(@SGGUID+52, 'Briarthorn - Hillsbrad Foothills', 1, 3, 0, 0),
+(@SGGUID+53, 'Briarthorn - Wetlands', 1, 3, 0, 0),
+(@SGGUID+54, 'Briarthorn - Ashenvale', 1, 3, 0, 0),
+(@SGGUID+55, 'Briarthorn - Loch Modan', 1, 3, 0, 0),
+(@SGGUID+56, 'Briarthorn - Darkshore', 1, 3, 0, 0),
+(@SGGUID+57, 'Briarthorn - Stonetalon Mountains', 1, 3, 0, 0);
+
 SET @GGUID=405000;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
 (@GGUID+0,2045,1,1, 3911.830322265625, 889.6846923828125, -4.77805805206298828, 2.792526721954345703, 0, 0, 0.984807729721069335, 0.173648223280906677,600,600),
@@ -3830,6 +3889,24 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+645,2045,1,1, -4240.900390625, 2440.165283203125, -6.63345909118652343, 2.740161895751953125, 0, 0, 0.979924201965332031, 0.199370384216308593,600,600),
 (@GGUID+646,2045,0,1, -14700.3837890625, 597.57708740234375, -34.6239051818847656, 4.049167633056640625, 0, 0, -0.89879322052001953, 0.438372820615768432,600,600);
 
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+58 AND @SGGUID+72;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+58, 'Stranglekelp - Stranglethorn Vale', 1, 3, 0, 0),
+(@SGGUID+59, 'Stranglekelp - Westfall', 1, 3, 0, 0),
+(@SGGUID+60, 'Stranglekelp - Wetlands', 1, 3, 0, 0),
+(@SGGUID+61, 'Stranglekelp - Hillsbrad Foothills', 1, 3, 0, 0),
+(@SGGUID+62, 'Stranglekelp - Ashenvale', 1, 3, 0, 0),
+(@SGGUID+63, 'Stranglekelp - Darkshore', 1, 3, 0, 0),
+(@SGGUID+64, 'Stranglekelp - Desolace', 1, 3, 0, 0),
+(@SGGUID+65, 'Stranglekelp - Swamp of Sorrows', 1, 3, 0, 0),
+(@SGGUID+66, 'Stranglekelp - Barrens', 1, 3, 0, 0),
+(@SGGUID+67, 'Stranglekelp - Hinterlands', 1, 3, 0, 0),
+(@SGGUID+68, 'Stranglekelp - Silverpine Forest', 1, 3, 0, 0),
+(@SGGUID+69, 'Stranglekelp - Azshara', 1, 3, 0, 0),
+(@SGGUID+70, 'Stranglekelp - Feralas', 1, 3, 0, 0),
+(@SGGUID+71, 'Stranglekelp - Dustwallow Marsh', 1, 3, 0, 0),
+(@SGGUID+72, 'Stranglekelp - Tanaris', 1, 3, 0, 0);
+
 SET @GGUID=406000;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
 (@GGUID+0,1622,1,1, -133.756942749023437, -665.55120849609375, 8.782579421997070312, -0.97738438844680786, 0, 0, 0.469471573829650878, -0.88294756412506103,600,600),
@@ -4430,6 +4507,24 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+598,1622,1,1, 5684.28466796875, 95.62944793701171875, 32.29579544067382812, 6.14356088638305664, 0, 0, -0.06975555419921875, 0.997564136981964111,600,600),
 (@GGUID+599,3730,1,1, -593.159423828125, -2232.8427734375, 222.4456634521484375, 4.310965538024902343, 0, 0, -0.83388519287109375, 0.55193793773651123,600,600);
 
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+73 AND @SGGUID+87;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+73, 'Bruiseweed - Barrens - Special', 1, 3, 0, 0),
+(@SGGUID+74, 'Bruiseweed - Stonetalon Mountains', 1, 3, 0, 0),
+(@SGGUID+75, 'Bruiseweed - Redridge Mountains', 1, 3, 0, 0),
+(@SGGUID+76, 'Bruiseweed - Duskwood', 1, 3, 0, 0),
+(@SGGUID+77, 'Bruiseweed - Ashenvale', 1, 3, 0, 0),
+(@SGGUID+78, 'Bruiseweed - Hillsbrad Foothills', 1, 3, 0, 0),
+(@SGGUID+79, 'Bruiseweed - Wetlands', 1, 3, 0, 0),
+(@SGGUID+80, 'Bruiseweed - Westfall', 1, 3, 0, 0),
+(@SGGUID+81, 'Bruiseweed - Thousand Needles', 1, 3, 0, 0),
+(@SGGUID+82, 'Bruiseweed - Desolace', 1, 3, 0, 0),
+(@SGGUID+83, 'Bruiseweed - Loch Modan', 1, 3, 0, 0),
+(@SGGUID+84, 'Bruiseweed - Silverpine Forest', 1, 3, 0, 0),
+(@SGGUID+85, 'Bruiseweed - Darkshore', 1, 3, 0, 0),
+(@SGGUID+86, 'Bruiseweed - Alterac Mountains', 1, 3, 0, 0),
+(@SGGUID+87, 'Bruiseweed - Arathi Highlands', 1, 3, 0, 0);
+
 SET @GGUID=407000;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
 (@GGUID+0,1623,0,1, -244.6474609375, -1761.1785888671875, 134.6208038330078125, 0.994837701320648193, 0, 0, 0.47715875506401062, 0.878817141056060791,600,600),
@@ -4787,6 +4882,20 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+356,1623,0,1, -3286.852783203125, -3204.50244140625, 73.861785888671875, 0.314158439636230468, 0, 0, 0.156434059143066406, 0.987688362598419189,600,600),
 (@GGUID+357,1623,0,1, -3508.575439453125, -2015.298583984375, 162.3240509033203125, 2.565631866455078125, 0, 0, 0.958819389343261718, 0.284016460180282592,600,600),
 (@GGUID+358,1623,0,1, -1431.2105712890625, -1182.22119140625, 66.78751373291015625, 2.373644113540649414, 0, 0, 0.927183151245117187, 0.37460830807685852,600,600);
+
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+88 AND @SGGUID+98;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+88, 'Wild Steelbloom - Stranglethorn Vale', 1, 3, 0, 0),
+(@SGGUID+89, 'Wild Steelbloom - Stonetalon Mountains', 1, 3, 0, 0),
+(@SGGUID+90, 'Wild Steelbloom - Arathi Highlands', 1, 3, 0, 0),
+(@SGGUID+91, 'Wild Steelbloom - Wetlands', 1, 3, 0, 0),
+(@SGGUID+92, 'Wild Steelbloom - Thousand Needles', 1, 3, 0, 0),
+(@SGGUID+93, 'Wild Steelbloom - Hillsbrad Foothills', 1, 3, 0, 0),
+(@SGGUID+94, 'Wild Steelbloom - Duskwood', 1, 3, 0, 0),
+(@SGGUID+95, 'Wild Steelbloom - Barrens', 1, 3, 0, 0),
+(@SGGUID+96, 'Wild Steelbloom - Badlands', 1, 3, 0, 0),
+(@SGGUID+97, 'Wild Steelbloom - Desolace', 1, 3, 0, 0),
+(@SGGUID+98, 'Wild Steelbloom - Ashenvale', 1, 3, 0, 0);
 
 SET @GGUID=408000;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
