@@ -1075,7 +1075,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+776, 19610, 530, 1, 3014.447021484375, 3700.1689453125, 138.939849853515625, 5.951572895050048828, 300, 300, 0, 0), -- Irradiated Worker old guid 70031
 (@CGUID+777, 19610, 530, 1, 3038.35791015625, 3728.302978515625, 139.941986083984375, 0.760398924350738525, 300, 300, 0, 2), -- Irradiated Worker old guid 70032
 
-(@CGUID+778, 19612, 530, 1, 3023.831787109375, 3684.98388671875, 143.718231201171875, 3.351032257080078125, 300, 300, 0, 0); -- irradiated Manager old guid 70037
+(@CGUID+778, 19612, 530, 1, 3023.831787109375, 3684.98388671875, 143.718231201171875, 3.351032257080078125, 300, 300, 0, 0); -- Irradiated Manager old guid 70037
 
 -- not used guid atm 70033 + 70731 (moving)
 -- Area 52 NPCs
@@ -2313,11 +2313,11 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+715, 12, 2467.289,4100.7856,124.74638, 100, 0, 0),
 -- Irradiated Worker 
 (@CGUID+774, 1, 3017.509,3653.2434,128.91335, 100, 1000, 1961002), -- rp 1 waittime handled via cai
-(@CGUID+774, 2, 3017.509,3653.2434,128.91335, 100, 2000, 1961001), -- always remove emotestate 2 seconds before moving next point
+(@CGUID+774, 2, 3017.509,3653.2434,128.91335, 100, 2000, 1961007), -- always remove emotestate 2 seconds before moving next point
 (@CGUID+774, 3, 3014.8945,3662.9084,130.73813, 100, 0, 0),
 (@CGUID+774, 4, 3008.828,3674.9514,131.55328, 100, 0, 0),
 (@CGUID+774, 5, 3010.913,3692.5308,136.3377, 100, 0, 0),
-(@CGUID+774, 6, 3002.216,3695.3157,143.92982, 100, 0, 0),
+(@CGUID+774, 6, 3002.216,3695.3157,143.92982, 100, 1000, 0),
 (@CGUID+774, 7, 2998.7236,3690.2957,143.63736, 100, 0, 0),
 (@CGUID+774, 8, 2990.565,3683.612,142.8087, 100, 0, 0),
 (@CGUID+774, 9, 2977.4797,3662.7634,143.14029, 100, 50000, 1961003), -- rp 2 waittime handled via cai
@@ -2326,12 +2326,12 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+774, 12, 2993.6147,3687.9854,143.1722, 100, 0, 0),
 (@CGUID+774, 13, 2998.7344,3689.6567,143.63737, 100, 0, 0),
 (@CGUID+774, 14, 3001.7922,3694.8347,143.92233, 100, 0, 0),
-(@CGUID+774, 15, 3010.9663,3695.3237,136.6101, 100, 0, 0),
+(@CGUID+774, 15, 3010.9663,3695.3237,136.6101, 100, 1000, 0),
 (@CGUID+774, 16, 3007.7942,3680.1575,133.86882, 100, 0, 0),
 (@CGUID+774, 17, 3017.8374,3679.322,138.41211, 100, 0, 0),
 (@CGUID+774, 18, 3019.697,3676.4502,138.4706, 100, 50000, 1961003), -- rp 3 waittime handled via cai
-(@CGUID+774, 19, 3019.697,3676.4502,138.4706, 100, 2000, 1961001), -- always remove emotestate 2 seconds before moving next point
-(@CGUID+774, 20, 3009.3945,3678.971,133.05138, 100, 0, 0),
+(@CGUID+774, 19, 3019.697,3676.4502,138.4706, 100, 2000, 1961006), -- remove emote state + add equipment 2 seconds before starting wp
+(@CGUID+774, 20, 3009.3945,3678.971,133.05138, 100, 1000, 0),
 (@CGUID+774, 21, 3014.4927,3666.136,130.1914, 100, 0, 0),
 (@CGUID+774, 22, 3013.5215,3668.1113,130.42224, 100, 0, 0),
 (@CGUID+774, 23, 3013.9546,3656.2864,129.47292, 100, 0, 0),
@@ -2360,7 +2360,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+777, 17,3001.846,3695.3242,143.94815, 100, 0, 0),
 (@CGUID+777, 18,3005.3398,3687.5503,143.63722, 100, 0, 0),
 (@CGUID+777, 19,3018.151,3684.889,143.6369, 100, 0, 0),
-(@CGUID+777, 20,3021.3057,3684.9524,143.63683, 100, 0, 0), -- big rp
+(@CGUID+777, 20,3021.3057,3684.9524,143.63683, 100, 43000, 1961005), -- big rp
 (@CGUID+777, 21,3009.5173,3685.8772,143.63713, 100, 0, 0),
 (@CGUID+777, 22,3001.9346,3690.7534,143.63727, 100, 0, 0),
 (@CGUID+777, 23,3000.9585,3696.4648,143.95537, 100, 0, 0),
@@ -2527,12 +2527,17 @@ INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+95, 1),
 (@CGUID+190, 1),
 (@CGUID+204, 1),
-(@CGUID+613, 1);
+(@CGUID+613, 1),
+-- Irradiated Worker Moster - item, Pick
+-- Irradiated Worker Monster - Item, Gizmo
+(@CGUID+777, 1961002);
 
-DELETE FROM creature_spawn_data_template WHERE Entry IN (1885701, 1887901);
+DELETE FROM creature_spawn_data_template WHERE Entry IN (1885701, 1887901, 1961002);
 INSERT INTO creature_spawn_data_template (`Entry`, `UnitFlags`, `EquipmentId`, `Name`) VALUES 
 (1885701, -1, 1885701, 'Sunfury Warp-Master (18857) - EquipmentId'),
-(1887901, 33587968, -1, 'Phase Hunter (18879) - UnitFlags');
+(1887901, 33587968, -1, 'Phase Hunter (18879) - UnitFlags'),
+(1961001, -1, 19610, 'Irradiated Worker (19610) - EquipmentId - Pick'),
+(1961002, -1, 19612, 'Irradiated Worker (19610) - EquipmentId - Gizmo');
 
 -- Gameobjects
 -- Etherlithium Matrix Crystal - 183767 objects before rework: 28 spawns
@@ -3680,13 +3685,40 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+20, 0, 17434, 0, 'Netherstorm - Warp-Raider Nesaad - Say 6'), 
 (@RELAYID+20, 0, 17435, 0, 'Netherstorm - Warp-Raider Nesaad - Say 7'), 
 (@RELAYID+20, 0, 17436, 0, 'Netherstorm - Warp-Raider Nesaad - Say 8'),
--- Irradiated Worker random text
+-- Irradiated Worker random text 1
 (@RELAYID+21, 0, 17020, 0, 'Netherstorm - Irradiated Worker - Say 1'), 
 (@RELAYID+21, 0, 17021, 0, 'Netherstorm - Irradiated Worker - Say 2'), 
 (@RELAYID+21, 0, 17022, 0, 'Netherstorm - Irradiated Worker - Say 3'), 
 (@RELAYID+21, 0, 17023, 0, 'Netherstorm - Irradiated Worker - Say 4'), 
-(@RELAYID+21, 0, 17024, 0, 'Netherstorm - Irradiated Worker - Say 5');
+(@RELAYID+21, 0, 17024, 0, 'Netherstorm - Irradiated Worker - Say 5'),
+-- Irradiated Worker random text 2
+(@RELAYID+22, 0, 17034, 0, 'Netherstorm - Irradiated Worker - Say 1'), 
+(@RELAYID+22, 0, 17035, 0, 'Netherstorm - Irradiated Worker - Say 2'), 
+(@RELAYID+22, 0, 17036, 0, 'Netherstorm - Irradiated Worker - Say 3'), 
+(@RELAYID+22, 0, 17037, 0, 'Netherstorm - Irradiated Worker - Say 4'), 
+(@RELAYID+22, 0, 17038, 0, 'Netherstorm - Irradiated Worker - Say 5'),
+-- Irradiated Manager Text 1
+(@RELAYID+23, 0, 17040, 0, 'Netherstorm - Irradiated Worker - Say 1'),
+(@RELAYID+23, 0, 17041, 0, 'Netherstorm - Irradiated Worker - Say 2'), 
+(@RELAYID+23, 0, 17042, 0, 'Netherstorm - Irradiated Worker - Say 3'),
+(@RELAYID+23, 0, 17043, 0, 'Netherstorm - Irradiated Worker - Say 4'),
+(@RELAYID+23, 0, 17045, 0, 'Netherstorm - Irradiated Worker - Say 5'),
+ -- Irradiated Manager Text 2
+(@RELAYID+24, 0, 17049, 0, 'Netherstorm - Irradiated Manager - Say '),
+(@RELAYID+24, 0, 17050, 0, 'Netherstorm - Irradiated Manager - Say '),
+(@RELAYID+24, 0, 17052, 0, 'Netherstorm - Irradiated Manager - Say '), 
+(@RELAYID+24, 0, 17053, 0, 'Netherstorm - Irradiated Manager - Say '),
+(@RELAYID+24, 0, 17056, 0, 'Netherstorm - Irradiated Manager - Say '),
+ -- Irradiated Manager Text 3
+(@RELAYID+25, 0, 17057, 0, 'Netherstorm - Irradiated Worker - Say 1'),
+(@RELAYID+25, 0, 17058, 0, 'Netherstorm - Irradiated Worker - Say 2'),
+(@RELAYID+25, 0, 17059, 0, 'Netherstorm - Irradiated Worker - Say 3'),
+(@RELAYID+25, 0, 17060, 0, 'Netherstorm - Irradiated Worker - Say 4'),
+(@RELAYID+25, 0, 17061, 0, 'Netherstorm - Irradiated Worker - Say 5');
 
+
+ 
+ 
 SET @RELAYID := 18000;
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+85;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -4103,7 +4135,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 2020301);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 2020301);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Sunfury Warp-Master
 (1885701, 0, 0, 45, 0, 18008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Start RandomScript'),
@@ -4141,6 +4173,30 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Irradiated Worker RP 3
 (1961004, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventA to self'), 
 (1961004, 2000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState UseStandingNoSheath'),
+-- Irradiated Worker RP with Irradiated Manager
+(1961005, 0, 0, 31, 19612, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Terminate Script if Irradiated Manager not found'), 
+(1961005, 1, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Set Active object'), 
+(1961005, 2000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Emote neShotTalk'), 
+(1961005, 2000, 1, 0, @RELAYID+22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Random text'), 
+(1961005, 8000, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Emote OneShotPoint'),
+(1961005, 10000, 0, 1, 25, 0, 0, 19612, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Manager - Emote OneShotPoint'),
+(1961005, 11000, 0, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Remove Equipment'),
+(1961005, 13000, 0, 42, 0, 0, 0, 19612, 10, 0, 4994, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Manager - Add Equipment'),
+(1961005, 13000, 1, 1, 1, 0, 0, 19612, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Manager - Emote OneShotTalk'),
+(1961005, 13000, 2, 0, @RELAYID+23, 0, 0, 19612, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Manager - Say Random Text'),
+(1961005, 21000, 0, 1, 1, 0, 0, 19612, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Manager - Emote OneShotTalk'),
+(1961005, 21000, 1, 0, @RELAYID+24, 0, 0, 19612, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Manager - Say Random Text'),
+(1961005, 29000, 0, 1, 25, 0, 0, 19612, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Manager - Emote OneShotPoint'),
+(1961005, 32000, 0, 42, 0, 0, 0, 19612, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Manager - Remove Equipment'),
+(1961005, 35000, 0, 1, 1, 0, 0, 19612, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Manager - Emote OneShotTalk'),
+(1961005, 35000, 1, 0, @RELAYID+25, 0, 0, 19612, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Manager - Say Random Text'),
+(1961005, 42000, 0, 42, 0, 0, 0, 0, 0, 0, 4994, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Add Equipment'),
+-- Irradiated Worker Remove emotestate+equipment
+(1961006, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState None'),
+(1961006, 0, 1, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Remove Equipment'),
+-- Irradiated Worker Remove emotestate+equipment
+(1961007, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState None'),
+(1961007, 0, 1, 42, 0, 0, 0, 0, 0, 0, 1910, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Add Equipment'),
 -- Captain Arathyn intro 3 texts
 (1963501, 1000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote Talk'), 
 (1963501, 1000, 1, 0, 0, 0, 0, 0, 0, 0, 17179, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Say Text'), 
@@ -4187,3 +4243,6 @@ UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 1
 
 -- Irradiated Worker
 UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 19610;
+
+-- Irradiated Manager remove Equipment, only have this during rp 
+UPDATE creature_template SET EquipmentTemplateId = 0 WHERE entry = 19612;
