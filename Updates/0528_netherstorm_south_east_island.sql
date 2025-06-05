@@ -1018,7 +1018,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+738, 18938, 530, 1, 3078.10400390625, 3602.15625, 144.14971923828125, 4.852015495300292968, 300, 300, 0, 0), -- Krexcil old guid 67960
 (@CGUID+739, 20162, 530, 1, 3068.913330078125, 3598.244873046875, 144.156890869140625, 4.537856101989746093, 300, 300, 0, 0), -- Veronia old guid 71733
 
-(@CGUID+740, 19610, 530, 1, 2990.5771484375, 3602.728515625, 137.095245361328125, 1.029744267463684082, 300, 300, 0, 0),-- Irradiated Worker old guid 70034
+(@CGUID+740, 19610, 530, 1, 2990.5771484375, 3602.728515625, 137.095245361328125, 1.029744267463684082, 300, 300, 0, 0), -- Irradiated Worker old guid 70034
 (@CGUID+741, 19610, 530, 1, 2971.5185546875, 3576.502685546875, 135.5597991943359375, 4.363323211669921875, 300, 300, 0, 0), -- Irradiated Worker old guid 70036
 (@CGUID+742, 19610, 530, 1, 2936.903564453125, 3572.37841796875, 133.28558349609375, 5.009094715118408203, 300, 300, 0, 0), -- Irradiated Worker old guid 70035
 
@@ -1042,7 +1042,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+755, 19575, 530, 1, 2975.4609375, 3663.06591796875, 143.16839599609375, 1.256637096405029296, 300, 300, 0, 0), -- Qiff old guid 70014
 (@CGUID+756, 19576, 530, 1, 2973.995849609375, 3672.6875, 143.634307861328125, 0, 300, 300, 0, 0), -- Xyrol old guid 70015
-(@CGUID+757, 19709, 530, 1, 2974.390869140625, 3675.2978515625, 143.3737030029296875, 4.309518814086914062, 300, 300, 0, 0), -- Chief Engineer Trep old guid 70350
+(@CGUID+757, 19709, 530, 1, 2974.390869140625, 3675.2978515625, 143.3737030029296875, 3.03687286376953125, 300, 300, 0, 2), -- Chief Engineer Trep old guid 70350
 
 (@CGUID+758, 20389, 530, 1, 2976.17919921875, 3693.489501953125, 143.340423583984375, 0.628318548202514648, 300, 300, 0, 0), -- Lee Sparks old guid 72339
 
@@ -2302,7 +2302,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+715, 11, 2485.3198,4135.018,118.67705, 100, 0, 0),
 (@CGUID+715, 12, 2467.289,4100.7856,124.74638, 100, 0, 0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (19569, 19635, 20416, 20772);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (19569, 19635, 19709, 20416, 20772);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Netherologist Coppernickels patroling around the bridge
 (19569, 0, 1, 3392.6218, 4267.4937, 122.6924, 0.122173, 35000, 1956901), 
@@ -2336,6 +2336,11 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (19635, 1, 2, 3024.375,3966.2192,156.24219, 100, 0, 1963503),
 (19635, 1, 3, 3022.0776,3955.9973,155.37415, 100, 0, 1963503),
 (19635, 1, 4, 3033.6973,3945.7258,154.78703, 100, 0, 1963503),
+-- Chief Engineer Trep 19709
+(19709, 0, 1, 2974.3909,3675.2979,143.3737,3.03687286376953125, 30000, 1970901), -- Waittime between 20-40 seconds
+(19709, 0, 2, 2974.3909,3675.2979,143.3737,3.03687286376953125, 2000, 1970902), -- 2 seconds before turning to console stop emoting
+(19709, 0, 3, 2974.7083,3676.1584,143.45195, 100, 5000, 1970903),
+(19709, 0, 4, 2974.3909,3675.2979,143.3737, 100, 2000, 0),
 -- Overseer Theredis
 (20416, 0, 1, 2853.4512,4162.422,162.59381, 100, 0, 0),
 (20416, 0, 2, 2844.1633,4158.831,162.59386, 100, 0, 0),
@@ -4023,9 +4028,12 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+85, 21000, 0, 14, 29266 , 0, 0, 19582, 5, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Maxx A. Million Mk. I - Remove Permanent Feign Death'),
 (@RELAYID+85, 36000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - EmoteState StateuseStandingNoSheathe'),
 (@RELAYID+85, 36000, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Set ActiveObject');
+-- Bot-Specialist Alley - RP with  Maxx A. Million Mk. II
+-- (@RELAYID+86, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Set ActiveObject'),
+
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 2020301);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 2020301);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Sunfury Warp-Master
 (1885701, 0, 0, 45, 0, 18008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Start RandomScript'),
@@ -4067,7 +4075,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Captain Arathyn StartScript
 (1963503, 0, 0, 45, 0, 18004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Start RandomScript'),
 -- Sunfury Astromancer RP Script
-(1964301, 0, 0, 45, 0, 18007, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - Start RandomScript');
+(1964301, 0, 0, 45, 0, 18007, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - Start RandomScript'),
+-- Chief Engineer Trep
+(1970901, 8000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - EmoteState UseStandingNoSheath'),
+(1970902, 2000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - Stop Emote'),
+(1970903, 2000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - Emote OneShotExclamation');
 
 DELETE FROM dbscripts_on_spell WHERE id IN (34814);
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
