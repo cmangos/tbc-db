@@ -4197,7 +4197,27 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+88, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.660930156707763671, 0, 'Netherstorm - Warpy - Orientation change'),
 (@RELAYID+89, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.520575046539306648, 0, 'Netherstorm - Warpy - Orientation change'),
 (@RELAYID+90, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.656582355499267578, 0, 'Netherstorm - Warpy - Orientation change'),
-(@RELAYID+91, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.535441875457763671, 0, 'Netherstorm - Warpy - Orientation change');
+(@RELAYID+91, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.535441875457763671, 0, 'Netherstorm - Warpy - Orientation change'),
+-- Area 52 INN RP started by Anchorite Karja with Exarch Orelis, Spymaster Thalodien AND Magistrix Larynna
+(@RELAYID+92, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Anchorite Karja - Set Active Object'),
+(@RELAYID+92, 0, 1, 0, 0, 0, 0, 0, 0, 0, 16870, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Anchorite Karja - Say Text'), -- 09:18:28.165 With all due respect, A'dal sent us here to investigate Kael's activities, not mount a full-scaled attack.
+(@RELAYID+92, 11000, 0, 0, 0, 0, 0, 19468, 10, 0, 16872, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Spymaster Thalodien - Say Text'), -- 09:18:39.217 Look, sweetheart.  No one's talking about storming Tempest Keep ourselves, but when we see a target of opportunity we have to take it.
+(@RELAYID+92, 17000, 0, 3, 0, 0, 0, 19466, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0.780171692371368408, 0, 'Netherstorm - Exarch Orelis - Change Orientation'), -- 09:18:45.572
+(@RELAYID+92, 20000, 0, 1, 25, 0, 0, 19466, 10, 0, 0, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Exarch Orelis - Emote OneShotPoint'), -- 09:18:48.828
+(@RELAYID+92, 20000, 1, 0, 0, 0, 0, 19466, 10, 0, 16873, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Exarch Orelis - Say Text'), -- Hold your tongue, knave!  Do not dare use that tone with a priestess of the Light!
+(@RELAYID+92, 25000, 0, 3, 0, 0, 0, 19466, 10, 0, 0, 0, 0, 0, 0, 0, 0, 1.099557399749755859, 0, 'Netherstorm - Exarch Orelis - Change Orientation'), -- 09:18:53.684
+(@RELAYID+92, 30000, 0, 1, 5, 0, 0, 19469, 10, 0, 0, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Magistrix Larynna - Emote OneShotPoint'),  -- 09:18:58.565
+(@RELAYID+92, 30000, 1, 0, 0, 0, 0, 19469, 10, 0, 16874, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Magistrix Larynna - Say Text'), -- 09:18:58.666 Dor dorados'no ni dorini!
+(@RELAYID+92, 43000, 0, 0, 0, 0, 0, 0, 0, 0, 16875, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Anchorite Karja - Say Text'), -- 09:19:11.626 The magistrix will be happy to know  I'm  fluent in Thalassian.  Your courtesy is not lost on me.
+(@RELAYID+92, 54000, 0, 0, 0, 0, 0, 0, 0, 0, 16876, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Anchorite Karja - Say Text'), -- 09:19:22.963 Back to the topic...  we should focus our attention on these manaforges.  We need to learn what the enemy is doing with them and why.
+(@RELAYID+92, 62000, 0, 1, 22, 0, 0, 19469, 10, 0, 0, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Magistrix Larynna - Emote OneShotShot'),  -- 09:19:30.989
+(@RELAYID+92, 62000, 1, 0, 0, 0, 0, 19469, 10, 0, 16883, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Magistrix Larynna - Say Text'), -- We've told you all there is to know!  Do you forget that many of us used to be trusted followers of Kael'thas?
+(@RELAYID+92, 72000, 0, 0, 0, 0, 0, 16889, 10, 0, 16872, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Spymaster Thalodien - Say Text'), -- 09:19:40.846 ...and just look at where that got us!
+(@RELAYID+92, 84000, 0, 1, 5, 0, 0, 19466, 10, 0, 0, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Exarch Orelis - Emote OneShotPoint'), -- 09:19:52.089
+(@RELAYID+92, 84000, 1, 0, 0, 0, 0, 19466, 10, 0, 16890, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Exarch Orelis - Say Text'), -- Even you must admit that your information from defectors is outdated and unreliable.  Let us make calculated attacks on these manaforges and gather what information we can.
+(@RELAYID+92, 93000, 0, 1, 1, 0, 0, 16889, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Spymaster Thalodien - Emote Talk'),
+(@RELAYID+92, 93000, 1, 0, 0, 0, 0, 16889, 10, 0, 16891, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Spymaster Thalodien - Say Text'); -- 09:20:01.823 Finally some talk of action from the big guy!
+
 
 -- Delete some old unused waypoint scripts
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 2020301, 2497701, 2497702);

@@ -18781,7 +18781,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunfury Captain 19453 - spell_list
 ('1945301','19453','37','0','100','1','8599','0','0','0','0','0','1','1191','0','0','0','0','0','0','0','0','0','0','Sunfury Captain - Say EmotedText on Enrage'),
 -- Exarch Orelis 19466 - spell_list
--- Anchorite Karja 19467
+-- Anchorite Karja 19467 - spell_list
+('1946701','19467','1','0','100','1','5000','5000','256000','256000','0','0','53','18092','0','0','0','0','0','0','0','0','0','0','Anchorite Karja - Start RelayScript OOC'),
 -- Spymaster Thalodien 19468 - SAY SEQUENCE
 -- Magistrix Larynna 19469 - SAY SEQUENCE
 -- Archmage Vargoth (19481) - NSR
