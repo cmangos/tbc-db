@@ -316,3 +316,32 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1886501, 1, 36577, 0, -1, 0, 0, 100, 0, 10000, 20000, 20000, 30000, 'Warp Aberration - Warp Storm - none');
 
 UPDATE `creature_template` SET `SpellList` = 1886501 WHERE `entry` = 18865;
+
+-- Exarch Orelis
+DELETE FROM `creature_template_spells` WHERE `entry` = 19466;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1946601;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1946601, 'Netherstorm - Exarch Orelis', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1946601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1946601, 1, 13730, 0, -1, 2, 0, 100, 0, 4000, 20000, 8000, 30000, 'Exarch Orelis - Demoralizing Shout - self'),
+(1946601, 1, 16509, 0, -1, 1, 0, 100, 0, 16000, 20000, 32000, 36000, 'Exarch Orelis - Rend - current'),
+(1946601, 1, 29426, 0, -1, 1, 0, 100, 0, 2000, 10000, 30000, 38000, 'Exarch Orelis - Heroic Strike - current');
+
+UPDATE `creature_template` SET `SpellList` = 1946601 WHERE `entry` = 19466;
+
+
+-- Anchorite Karja
+DELETE FROM `creature_template_spells` WHERE `entry` = 19467;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id`= 1946701;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1946701, 'Netherstorm - Anchorite Karja', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1946701);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1946701, 1, 17141, 0, -1, 1, 0, 100, 0, 15000, 20000, 15000, 20000, 'Anchorite Karja - Holy Fire - current');
+
+UPDATE `creature_template` SET `SpellList` = 1946701 WHERE `entry` = 19467;

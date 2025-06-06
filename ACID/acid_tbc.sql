@@ -18780,12 +18780,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Netherstorm Crystal Target 19421
 -- Sunfury Captain 19453 - spell_list
 ('1945301','19453','37','0','100','1','8599','0','0','0','0','0','1','1191','0','0','0','0','0','0','0','0','0','0','Sunfury Captain - Say EmotedText on Enrage'),
--- Exarch Orelis 19466
-('1946601','19466','0','0','100','1025','5000','10000','20000','30000','0','0','11','13730','0','0','0','0','0','0','0','0','0','0','Exarch Orelis - Cast Demoralizing Shout'),
-('1946602','19466','0','0','100','1025','5000','10000','20000','30000','0','0','11','16509','1','0','0','0','0','0','0','0','0','0','Exarch Orelis - Cast Rend'),
-('1946603','19466','0','0','100','1025','2000','5000','5000','10000','0','0','11','29426','1','0','0','0','0','0','0','0','0','0','Exarch Orelis - Cast Heroic Strike'),
+-- Exarch Orelis 19466 - spell_list
 -- Anchorite Karja 19467
-('1946701','19467','0','0','100','1025','0','0','20000','20000','0','0','11','17141','1','0','0','0','0','0','0','0','0','0','Anchorite Karja - Cast Holy Fire'),
 -- Spymaster Thalodien 19468 - SAY SEQUENCE
 -- Magistrix Larynna 19469 - SAY SEQUENCE
 -- Archmage Vargoth (19481) - NSR
