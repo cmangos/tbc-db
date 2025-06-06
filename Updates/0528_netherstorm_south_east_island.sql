@@ -4212,11 +4212,11 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+92, 54000, 0, 0, 0, 0, 0, 0, 0, 0, 16876, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Anchorite Karja - Say Text'), -- 09:19:22.963 Back to the topic...  we should focus our attention on these manaforges.  We need to learn what the enemy is doing with them and why.
 (@RELAYID+92, 62000, 0, 1, 22, 0, 0, 19469, 10, 0, 0, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Magistrix Larynna - Emote OneShotShot'),  -- 09:19:30.989
 (@RELAYID+92, 62000, 1, 0, 0, 0, 0, 19469, 10, 0, 16883, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Magistrix Larynna - Say Text'), -- We've told you all there is to know!  Do you forget that many of us used to be trusted followers of Kael'thas?
-(@RELAYID+92, 72000, 0, 0, 0, 0, 0, 16889, 10, 0, 16872, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Spymaster Thalodien - Say Text'), -- 09:19:40.846 ...and just look at where that got us!
+(@RELAYID+92, 72000, 0, 0, 0, 0, 0, 19468, 10, 0, 16889, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Spymaster Thalodien - Say Text'), -- 09:19:40.846 ...and just look at where that got us!
 (@RELAYID+92, 84000, 0, 1, 5, 0, 0, 19466, 10, 0, 0, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Exarch Orelis - Emote OneShotPoint'), -- 09:19:52.089
 (@RELAYID+92, 84000, 1, 0, 0, 0, 0, 19466, 10, 0, 16890, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Exarch Orelis - Say Text'), -- Even you must admit that your information from defectors is outdated and unreliable.  Let us make calculated attacks on these manaforges and gather what information we can.
-(@RELAYID+92, 93000, 0, 1, 1, 0, 0, 16889, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Spymaster Thalodien - Emote Talk'),
-(@RELAYID+92, 93000, 1, 0, 0, 0, 0, 16889, 10, 0, 16891, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Spymaster Thalodien - Say Text'); -- 09:20:01.823 Finally some talk of action from the big guy!
+(@RELAYID+92, 93000, 0, 1, 1, 0, 0, 19468, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Spymaster Thalodien - Emote Talk'),
+(@RELAYID+92, 93000, 1, 0, 0, 0, 0, 19468, 10, 0, 16891, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Spymaster Thalodien - Say Text'); -- 09:20:01.823 Finally some talk of action from the big guy!
 
 
 -- Delete some old unused waypoint scripts

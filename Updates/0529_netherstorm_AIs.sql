@@ -327,8 +327,8 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1946601);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (1946601, 1, 13730, 0, -1, 2, 0, 100, 0, 4000, 20000, 8000, 30000, 'Exarch Orelis - Demoralizing Shout - self'),
-(1946601, 1, 16509, 0, -1, 1, 0, 100, 0, 16000, 20000, 32000, 36000, 'Exarch Orelis - Rend - current'),
-(1946601, 1, 29426, 0, -1, 1, 0, 100, 0, 2000, 10000, 30000, 38000, 'Exarch Orelis - Heroic Strike - current');
+(1946601, 2, 16509, 0, -1, 1, 0, 100, 0, 16000, 20000, 32000, 36000, 'Exarch Orelis - Rend - current'),
+(1946601, 3, 29426, 0, -1, 1, 0, 100, 0, 2000, 10000, 30000, 38000, 'Exarch Orelis - Heroic Strike - current');
 
 UPDATE `creature_template` SET `SpellList` = 1946601 WHERE `entry` = 19466;
 
