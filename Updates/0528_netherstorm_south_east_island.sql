@@ -2408,7 +2408,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+777, 25,3015.358,3708.3142,137.34958, 100, 0, 0),
 (@CGUID+777, 26,3032.567,3722.8196,139.1177, 100, 0, 0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (19569, 19635, 19709, 20416, 20772, 24977);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (19466, 19569, 19635, 19709, 20416, 20772, 24977);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Netherologist Coppernickels patroling around the bridge
 (19569, 0, 1, 3392.6218, 4267.4937, 122.6924, 0.122173, 35000, 1956901), 
@@ -4200,7 +4200,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+91, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.535441875457763671, 0, 'Netherstorm - Warpy - Orientation change');
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 2020301, 2497701, 2497702);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 2020301, 2497701, 2497702);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Sunfury Warp-Master
 (1885701, 0, 0, 45, 0, 18008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Start RandomScript'),
