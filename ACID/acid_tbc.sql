@@ -19612,6 +19612,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Krixel Pinchwhistle 23396
 -- Liza Cutlerflix 24974
 -- Warpy 24977
+('2497701','24977','30','0','100','1','5','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Warp - Set Phase 1 and PauseWaypoints on ReceiveEventAI A'),
+('2497702','24977','30','0','100','1','6','0','0','0','0','0','22','2','0','0','51','1','0','0','0','0','0','0','Warp - Set Phase 2 and PauseWaypoints on ReceiveEventAI B'),
+('2497703','24977','1','5','100','1','20000','40000','20000','40000','0','0','22','0','0','0','51','0','0','0','0','0','0','0','Warp - UnPause Waypoints and set Phase 0 OOC (Phase 1)'),
+('2497704','24977','1','3','100','1','2000','2000','20000','40000','0','0','53','-18026','0','0','0','0','0','0','0','0','0','0','Warp - Change to random Orientation OOC(Phase 2)'),
+('2497705','24977','1','3','100','1','15000','50000','0','0','0','0','51','0','0','0','22','0','0','0','0','0','0','0','Warp - Unpause Waypoints OOC and set Phase 0(Phase 2)'),
+,
+
 -- Netherstorm Flame Keeper 25918
 -- Meeda 28343
 -- Blazzle 28344

@@ -1075,11 +1075,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+776, 19610, 530, 1, 3014.447021484375, 3700.1689453125, 138.939849853515625, 5.951572895050048828, 300, 300, 0, 0), -- Irradiated Worker old guid 70031
 (@CGUID+777, 19610, 530, 1, 3038.35791015625, 3728.302978515625, 139.941986083984375, 0.760398924350738525, 300, 300, 0, 2), -- Irradiated Worker old guid 70032
 
-(@CGUID+778, 19612, 530, 1, 3023.831787109375, 3684.98388671875, 143.718231201171875, 3.351032257080078125, 300, 300, 0, 0); -- Irradiated Manager old guid 70037
+(@CGUID+778, 19612, 530, 1, 3023.831787109375, 3684.98388671875, 143.718231201171875, 3.351032257080078125, 300, 300, 0, 0), -- Irradiated Manager old guid 70037
 
--- not used guid atm 70033 + 70731 (moving)
+(@CGUID+779, 24977, 530, 1, 3042.223633, 3705.786377,144.701843, 4.242102, 300, 300, 0, 2); -- Warpy old guid 1002683
+
+
 -- Area 52 NPCs
-DELETE FROM creature WHERE guid IN (67960, 71733, 70034, 70035, 70036, 70058, 74495, 72518, 72516, 70013, 72524, 72522, 72523, 75955, 75956, 75957, 70014, 70015, 70350, 72339, 72519, 72520, 105898, 69954, 69953, 70731, 72521, 72517, 68747, 69741, 69952, 69951, 70030, 70031, 70032, 70033, 70037);
+DELETE FROM creature WHERE guid IN (67960, 71733, 70034, 70035, 70036, 70058, 74495, 72518, 72516, 70013, 72524, 72522, 72523, 75955, 75956, 75957, 70014, 70015, 70350, 72339, 72519, 72520, 105898, 69954, 69953, 70731, 72521, 72517, 68747, 69741, 69952, 69951, 70030, 70031, 70032, 70033, 70037, 1002683);
 
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67463, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67464, 67461, 67540, 67545, 67550, 67541, 67559, 67560, 67562, 67565, 67566, 67567, 67568, 67569, 67574, 67575, 67576, 67577, 67578, 67579, 67580, 67582, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70030,70032,70033, 70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
@@ -1120,7 +1122,7 @@ DELETE FROM creature_template_addon WHERE entry = 19610;
 
 -- Waypoints 
 DELETE FROM creature_movement WHERE id IN (67281,67283,67285,67288,67289,67290,67291,67292,67461,67464,67293,67294,67296,67297,67298,67299,67300,67301,67302,67303,67304,67373,67374,67704,67575,67580,70030,70032,70033,70037,1002734,1002735,1002736,67286,1002731,1002730,1002729,1002728,1002727,67363,67364,67365,67366,67367,67368,67369,67370,67371,67372,1002721,1002720,1002719,1002718,1002717,67378,67379,67380,67382,67383,67384,67385,1002737,1002738,1002739,67381,1002726,69668,69671,69672,69670,1002722,70071,70072);
-DELETE FROM creature_movement WHERE id IN (67287, 67349, 67350, 67351, 67352, 67353, 67354, 67355, 67356, 67357, 67358, 67359, 67360, 67361, 67362, 67377, 67466, 67469, 67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67682, 67683, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 69669, 70069, 70070, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 71879, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708, 1002741, 1002869, 1002870, 1002871, 1002872);
+DELETE FROM creature_movement WHERE id IN (67287, 67349, 67350, 67351, 67352, 67353, 67354, 67355, 67356, 67357, 67358, 67359, 67360, 67361, 67362, 67377, 67466, 67469, 67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67682, 67683, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 69669, 70069, 70070, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 71879, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708, 1002741, 1002869, 1002870, 1002871, 1002872, 1002683);
 DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+733;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
@@ -2368,7 +2370,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+777, 25,3015.358,3708.3142,137.34958, 100, 0, 0),
 (@CGUID+777, 26,3032.567,3722.8196,139.1177, 100, 0, 0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (19569, 19635, 19709, 20416, 20772);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (19569, 19635, 19709, 20416, 20772, 24977);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Netherologist Coppernickels patroling around the bridge
 (19569, 0, 1, 3392.6218, 4267.4937, 122.6924, 0.122173, 35000, 1956901), 
@@ -2451,8 +2453,15 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (20772, 0, 36, 2547.8271,3299.667,112.78455, 100, 0, 0),
 (20772, 0, 37, 2559.0432,3266.7888,105.43729, 100, 0, 0),
 (20772, 0, 38, 2566.746,3233.6855,113.43643, 100, 0, 0),
-(20772, 0, 39, 2581.4548,3199.8137,121.000916, 100, 0, 0);
-
+(20772, 0, 39, 2581.4548,3199.8137,121.000916, 100, 0, 0),
+-- Warpy 24977
+(24977, 0, 1, 3043.5781,3707.5557,144.87923, 100, 0, 0),
+(24977, 0, 2, 3042.2236,3705.7864,144.70184, 100, 0, 0),
+(24977, 0, 3, 3043.5732,3703.2214,143.7268, 100, 1000, 2497701),
+(24977, 0, 4, 3044.6672,3710.817,146.02542, 100, 0, 0),
+(24977, 0, 5, 3052.7395,3717.5396,146.20921, 100, 100, 2497702),
+(24977, 0, 6, 3043.899,3708.3047,145.06354, 100, 1000, 2497701),
+(24977, 0, 7, 3044.908,3718.5847,150.15128, 100, 1000, 2497701);
 
 -- Equipment
 -- Sunfury Warp-Master - delte old equipment
@@ -3714,9 +3723,13 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+25, 0, 17058, 0, 'Netherstorm - Irradiated Worker - Say 2'),
 (@RELAYID+25, 0, 17059, 0, 'Netherstorm - Irradiated Worker - Say 3'),
 (@RELAYID+25, 0, 17060, 0, 'Netherstorm - Irradiated Worker - Say 4'),
-(@RELAYID+25, 0, 17061, 0, 'Netherstorm - Irradiated Worker - Say 5');
-
-
+(@RELAYID+25, 0, 17061, 0, 'Netherstorm - Irradiated Worker - Say 5'),
+-- Warpy different Orientations
+(@RELAYID+26, 1, @RELAYID+87, 0, 'Netherstorm - Warpy - Orientation 1'),
+(@RELAYID+26, 1, @RELAYID+88, 0, 'Netherstorm - Warpy - Orientation 2'),
+(@RELAYID+26, 1, @RELAYID+89, 0, 'Netherstorm - Warpy - Orientation 3'),
+(@RELAYID+26, 1, @RELAYID+90, 0, 'Netherstorm - Warpy - Orientation 4'),
+(@RELAYID+26, 1, @RELAYID+91, 0, 'Netherstorm - Warpy - Orientation 5');
  
  
 SET @RELAYID := 18000;
@@ -4129,13 +4142,18 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+85, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 16965, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Say Text'),
 (@RELAYID+85, 21000, 0, 14, 29266 , 0, 0, 19582, 5, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Maxx A. Million Mk. I - Remove Permanent Feign Death'),
 (@RELAYID+85, 36000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - EmoteState StateuseStandingNoSheathe'),
-(@RELAYID+85, 36000, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Set ActiveObject');
+(@RELAYID+85, 36000, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Set ActiveObject'),
 -- Bot-Specialist Alley - RP with  Maxx A. Million Mk. II
 -- (@RELAYID+86, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Set ActiveObject'),
-
+-- Warpy hardcoded orientation change
+(@RELAYID+87, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.382148116827011108, 0, 'Netherstorm - Warpy - Orientation change'),
+(@RELAYID+88, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.660930156707763671, 0, 'Netherstorm - Warpy - Orientation change'),
+(@RELAYID+89, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.520575046539306648, 0, 'Netherstorm - Warpy - Orientation change'),
+(@RELAYID+90, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.656582355499267578, 0, 'Netherstorm - Warpy - Orientation change'),
+(@RELAYID+91, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.535441875457763671, 0, 'Netherstorm - Warpy - Orientation change');
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 2020301);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 2020301, 2497701, 2497702);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Sunfury Warp-Master
 (1885701, 0, 0, 45, 0, 18008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Start RandomScript'),
@@ -4218,7 +4236,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1970901, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - SendAIEventA to self'), 
 (1970901, 8000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - EmoteState UseStandingNoSheath'),
 (1970902, 2000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - Stop Emote'),
-(1970903, 2000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - Emote OneShotExclamation');
+(1970903, 2000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - Emote OneShotExclamation'),
+-- Warpy random waittime
+(2497701, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warpy - SendAIEventA to self'), 
+(2497702, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warpy - SendAIEventB to self');
+
 
 DELETE FROM dbscripts_on_spell WHERE id IN (34814);
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
