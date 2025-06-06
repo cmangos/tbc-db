@@ -1081,10 +1081,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+780, 24974, 530, 1, 3047.939697265625, 3698.225341796875, 143.5148162841796875, 3.647738218307495117, 300, 300, 0, 0), -- Liza Cutlerflix old guid 39629
 (@CGUID+781, 28344, 530, 1, 3063.40625, 3677.5703125, 142.7606658935546875, 4.276056766510009765, 300, 300, 0, 0), -- Blazzle old guid 105899
+(@CGUID+782, 19541, 530, 1, 3051.939208984375, 3694.3994140625, 143.1973876953125, 6.161012172698974609, 300, 300, 0, 0), -- Netherstorm Agent old guid 69948
 
 -- Area 52 NPCs
 DELETE FROM creature WHERE guid IN (67960, 71733, 70034, 70035, 70036, 70058, 74495, 72518, 72516, 70013, 72524, 72522, 72523, 75955, 75956, 75957, 70014, 70015, 70350, 
-72339, 72519, 72520, 105898, 69954, 69953, 70731, 72521, 72517, 68747, 69741, 69952, 69951, 70030, 70031, 70032, 70033, 70037, 1002683, 39629, 105899);
+72339, 72519, 72520, 105898, 69954, 69953, 70731, 72521, 72517, 68747, 69741, 69952, 69951, 70030, 70031, 70032, 70033, 70037, 1002683, 39629, 105899, 69948);
 
 DELETE FROM creature_addon WHERE guid IN (67323, 67335, 67337, 67338, 67340, 67463, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67464, 67461, 67540, 67545, 67550, 67541, 67559, 67560, 67562, 67565, 67566, 67567, 67568, 67569, 67574, 67575, 67576, 67577, 67578, 67579, 67580, 67582, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70030,70032,70033, 70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
@@ -3732,8 +3733,17 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+26, 1, @RELAYID+88, 0, 'Netherstorm - Warpy - Orientation 2'),
 (@RELAYID+26, 1, @RELAYID+89, 0, 'Netherstorm - Warpy - Orientation 3'),
 (@RELAYID+26, 1, @RELAYID+90, 0, 'Netherstorm - Warpy - Orientation 4'),
-(@RELAYID+26, 1, @RELAYID+91, 0, 'Netherstorm - Warpy - Orientation 5');
- 
+(@RELAYID+26, 1, @RELAYID+91, 0, 'Netherstorm - Warpy - Orientation 5'),
+-- Netherstorm Agent random talk 
+(@RELAYID+27, 0, 17114, 0, 'Netherstorm - Netherstorm Agent - Say 1'), -- I can't believe that Papa Wheeler thinks he's going to dupe anyone into going out to Manaforge B'naar!
+(@RELAYID+27, 0, 17115, 0, 'Netherstorm - Netherstorm Agent - Say 2'), -- Maybe I should gather up some other agents and head out there after this shift?
+(@RELAYID+27, 0, 17116, 0, 'Netherstorm - Netherstorm Agent - Say 3'), -- Hmm, arcane annihilators are pretty tough.  I wonder if Papa Wheeler knows what he's asking for?
+(@RELAYID+27, 0, 17117, 0, 'Netherstorm - Netherstorm Agent - Say 4'), -- We can't let a failing servo slow down the construction of the X-52 Nether-Rocket!
+(@RELAYID+27, 0, 17118, 0, 'Netherstorm - Netherstorm Agent - Say 5'), -- Hey!  Come over here and take a look at this wanted poster.  You're not going to believe this!
+(@RELAYID+27, 0, 17119, 0, 'Netherstorm - Netherstorm Agent - Say 6'), -- Good thing that we're surrounded by neighbors with excess machine parts.
+(@RELAYID+27, 0, 19659, 0, 'Netherstorm - Netherstorm Agent - Say 7'), -- Netherock?!  That thing'll squish you flat with one step of its massive foot!  No thanks!
+(@RELAYID+27, 0, 19660, 0, 'Netherstorm - Netherstorm Agent - Say 8'); -- Last time someone went out to try to collect the bounty on Netherock, all we got back was a compressed layer of foolhardy adventurer!
+
  
 SET @RELAYID := 18000;
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+85;
