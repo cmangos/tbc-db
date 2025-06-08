@@ -1127,12 +1127,24 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+811, 19572, 530, 1, 3073.6435546875, 3656.37548828125, 143.1742706298828125, 1.413716673851013183, 300, 300, 0, 0), -- Gant old guid 70011
 
 (@CGUID+812, 22279, 530, 1, 3086.0810546875, 3675.547119140625, 142.2828369140625, 2.132129192352294921, 300, 300, 0, 0), -- Nadja old guid 78314
-(@CGUID+813, 22280, 530, 1, 3085.65771484375, 3675.281005859375, 142.2913360595703125, 1.890686631202697753, 300, 300, 0, 0); -- Soren old guid 78315
+(@CGUID+813, 22280, 530, 1, 3085.65771484375, 3675.281005859375, 142.2913360595703125, 1.890686631202697753, 300, 300, 0, 0), -- Soren old guid 78315
+
+(@CGUID+814, 20484, 530, 1, 3059.668701171875, 3653.40185546875, 142.8984527587890625, 2.286381244659423828, 300, 300, 0, 0), -- Area 52 Big Bruiser old guid 72507
+(@CGUID+815, 20484, 530, 1, 3055.49609375, 3649.35595703125, 142.992645263671875, 2.443460941314697265, 300, 300, 0, 0), -- Area 52 Big Bruiser old guid 72508
+
+(@CGUID+816, 20485, 530, 1, 3065.517578125, 3640.852783203125, 143.863311767578125, 6.021385669708251953, 300, 300, 0, 0), -- Area 52 Bruiser old guid 72510
+(@CGUID+817, 20485, 530, 1, 3068.559814453125, 3643.86279296875, 143.86285400390625, 5.480333805084228515, 300, 300, 0, 0), -- Area 52 Bruiser old guid 72515
+
+(@CGUID+818, 19645, 530, 1, 3053.075439453125, 3644.4140625, 143.2633056640625, 4.834561824798583984, 300, 300, 0, 0), -- Papa Wheeler old guid 70073
+
+(@CGUID+819, 21751, 530, 1,  3055.2080078125, 3637.9111328125, 143.099609375, 6.126105785369873046, 300, 300, 0, 2), -- Chubis old guid 76063
+
+
 
 -- Area 52 NPCs
-DELETE FROM creature WHERE guid IN (67960, 71733, 70034, 70035, 70036, 70058, 74495, 72518, 72516, 70013, 72524, 72522, 72523, 75955, 75956, 75957, 70014, 70015, 70350, 
-72339, 72519, 72520, 105898, 69954, 69953, 70731, 72521, 72517, 68747, 69741, 69952, 69951, 70030, 70031, 70032, 70033, 70037, 1002683, 39629, 105899, 69948, 72512, 72514, 72509, 
-70010, 70082, 70083, 70084, 70085, 66749, 66751, 66750, 66748, 69729, 69730, 69727, 69725, 72511, 71003, 70042, 70038, 70792, 70043, 63367, 69947, 69946, 70012, 75402, 70011, 78314, 78315);
+DELETE FROM creature WHERE guid IN (67960, 71733, 70034, 70035, 70036, 70058, 74495, 72518, 72516, 70013, 72524, 72522, 72523, 75955, 75956, 75957, 70014, 70015, 70350, 72339, 72519, 72520, 105898, 69954, 69953, 70731, 72521, 72517, 68747, 69741, 69952, 
+69951, 70030, 70031, 70032, 70033, 70037, 1002683, 39629, 105899, 69948, 72512, 72514, 72509, 70010, 70082, 70083, 70084, 70085, 66749, 66751, 66750, 66748, 69729, 69730, 69727, 69725, 72511, 71003, 70042, 70038, 70792, 70043, 63367, 69947, 69946, 70012,
+75402, 70011, 78314, 78315, 72513, 72507, 72508, 72510, 72515, 70073, 76063);
 
 DELETE FROM creature_addon WHERE guid IN (69727,67323, 67335, 67337, 67338, 67340, 67463, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67464, 67461, 67540, 67545, 67550, 67541, 67559, 67560, 67562, 67565, 67566, 67567, 67568, 67569, 67574, 67575, 67576, 67577, 67578, 67579, 67580, 67582, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70030,70032,70033,66748,70085,70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
@@ -2431,7 +2443,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+777, 25,3015.358,3708.3142,137.34958, 100, 0, 0),
 (@CGUID+777, 26,3032.567,3722.8196,139.1177, 100, 0, 0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (19466, 19569, 19635, 19709, 20416, 20772, 24977);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (19466, 19569, 19635, 19709, 20416, 20772, 21751, 24977);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Netherologist Coppernickels patroling around the bridge
 (19569, 0, 1, 3392.6218, 4267.4937, 122.6924, 0.122173, 35000, 1956901), 
@@ -2515,6 +2527,15 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (20772, 0, 37, 2559.0432,3266.7888,105.43729, 100, 0, 0),
 (20772, 0, 38, 2566.746,3233.6855,113.43643, 100, 0, 0),
 (20772, 0, 39, 2581.4548,3199.8137,121.000916, 100, 0, 0),
+-- Chubis 21751
+(21751, 0, 1, 3055.208,3637.9111,143.09961,6.126105785369873046, 1000, 2175102),
+(21751, 0, 2, 3055.208,3637.9111,143.09961, 100, 3000, 2175101), -- wait 3 seconds after removing emotestate before moving to next waypoint
+(21751, 0, 3, 3054.4324,3633.92,143.09386, 100, 1000, 0), -- wait 1 second before turning
+(21751, 0, 4, 3054.4324,3633.92,143.09386,5.288347721099853515,  1000, 2175102),
+(21751, 0, 5, 3054.4324,3633.92,143.09386, 100, 3000, 2175101),
+(21751, 0, 6, 3054.167,3640.6658,143.09386, 100, 1000, 0), -- wait 1 second before turning
+(21751, 0, 7, 3054.167,3640.6658,143.09386,0.872664630413055419,  1000, 2175103),
+(21751, 0, 8, 3055.208,3637.9111,143.09961, 100, 1000, 0), -- -- wait 1 second before turning
 -- Warpy 24977
 (24977, 0, 1, 3043.5781,3707.5557,144.87923, 100, 0, 0),
 (24977, 0, 2, 3042.2236,3705.7864,144.70184, 100, 0, 0),
@@ -3655,7 +3676,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@SGGUID+55, 1, 2, 0, @SGGUID+55, 2, 'Netherstorm - Group 055 - Nadja | Soren - Formation 001');
+(@SGGUID+55, 1, 3, 0, @SGGUID+55, 2, 'Netherstorm - Group 055 - Nadja | Soren - Formation 001');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+55,'Netherstorm - Group 055 - Nadja | Soren - Formation 001');
@@ -3851,7 +3872,13 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+27, 0, 17118, 0, 'Netherstorm - Netherstorm Agent - Say 5'), -- Hey!  Come over here and take a look at this wanted poster.  You're not going to believe this!
 (@RELAYID+27, 0, 17119, 0, 'Netherstorm - Netherstorm Agent - Say 6'), -- Good thing that we're surrounded by neighbors with excess machine parts.
 (@RELAYID+27, 0, 19659, 0, 'Netherstorm - Netherstorm Agent - Say 7'), -- Netherock?!  That thing'll squish you flat with one step of its massive foot!  No thanks!
-(@RELAYID+27, 0, 19660, 0, 'Netherstorm - Netherstorm Agent - Say 8'); -- Last time someone went out to try to collect the bounty on Netherock, all we got back was a compressed layer of foolhardy adventurer!
+(@RELAYID+27, 0, 19660, 0, 'Netherstorm - Netherstorm Agent - Say 8'), -- Last time someone went out to try to collect the bounty on Netherock, all we got back was a compressed layer of foolhardy adventurer!
+-- Papa Wheeler random texts
+(@RELAYID+28, 0, 19378, 0, 'Netherstorm - Papa Wheeler - Say 1'), -- Chubis Chubisimo!  Get those things fixed... we haven't got all day!
+(@RELAYID+28, 0, 19379, 0, 'Netherstorm - Papa Wheeler - Say 2'), -- When I was your age I could have had all of those shredders fixed before breakfast and still had time for all of my other chores.  In the Winterspring snow, no less.  And it's uphill both ways there!
+(@RELAYID+28, 0, 19380, 0, 'Netherstorm - Papa Wheeler - Say 3'), -- Chubis, after you're done there, make sure that you put another coat of wax on the Wheeler mobile.  I want to take mama out for a spin tonight.
+(@RELAYID+28, 0, 19381, 0, 'Netherstorm - Papa Wheeler - Say 4'), -- How much am I paying you?  You call that working?
+(@RELAYID+28, 0, 19382, 0, 'Netherstorm - Papa Wheeler - Say 5'); -- I just knew that I shouldn't have fired Beebo!
 
  
 SET @RELAYID := 18000;
@@ -4295,7 +4322,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1961201, 1961202, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 2020301, 2497701, 2497702);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1961201, 1961202, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 2020301, 2175101, 2175102, 2175103, 2497701, 2497702);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Sunfury Warp-Master
 (1885701, 0, 0, 45, 0, 18008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Start RandomScript'),
@@ -4375,10 +4402,16 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1964301, 0, 0, 45, 0, 18007, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - Start RandomScript'),
 -- Chief Engineer Trep
 -- Use SendAiEvent to self, to change phase for random waittime
-(1970901, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - SendAIEventA to self'), 
+(1970901, 0, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - SendAIEventA to self'), 
 (1970901, 8000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - EmoteState UseStandingNoSheath'),
 (1970902, 2000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - Stop Emote'),
 (1970903, 2000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - Emote OneShotExclamation'),
+-- Chubis
+-- -- Use SendAiEvent to self, to change phase for random waittime
+(2175101, 0, 0, 1, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chubis - Remove EmoteState'), 
+(2175102, 0, 0, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chubis - SendAIEventB to self'), 
+(2175102, 200, 0, 1, 133, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chubis - EmoteState UseStandingNoSheath'), 
+(2175103, 0, 0, 35, 7, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chubis - SendAIEventC to self'), 
 -- Warpy random waittime
 (2497701, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warpy - SendAIEventA to self'), 
 (2497702, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warpy - SendAIEventB to self');
@@ -4418,3 +4451,6 @@ UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 2
 
 -- Delete old linking for Nadja+Soren
 DELETE FROM creature_linking_template WHERE entry = 22280;
+
+-- Delete some old unused dbscripts
+DELETE FROM dbscript_random_templates WHERE id = 10013;

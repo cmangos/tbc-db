@@ -18963,7 +18963,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1964301','19643','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Sunfury Astromancer - Enable Range Mode on Spawn'),
 ('1964302','19643','27','0','100','1','35917','1','15000','30000','0','0','11','35917','0','0','0','0','0','0','0','0','0','0','Sunfury Astromancer - Cast Fiery Intellect on Missing Buff'),
 -- Papa Wheeler
-('1964501','19645','1','0','100','1','120000','180000','120000','180000','0','0','54','0','0','10013','0','0','0','0','0','0','0','0','Papa Wheeler - Random Say OOC'),
+('1964501','19645','1','0','100','1','120000','180000','120000','180000','0','0','54','0','0','18028','5','5','0','0','0','0','0','0','Papa Wheeler - Random Say and Emote OneShotExclamation OOC'),
 ('1964502','19645','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Papa Wheeler - Start Relay Script (Random Emote) on Receive AI Event 5'),
 -- Seasoned Vindicator (19651)
 ('5306887','-5306887','1','0','100','1','14000','95000','14000','95000','0','0','5','274','0','0','0','0','0','0','0','0','0','0','Seasoned Vindicator (GUID EAI) - Emote OneShotNo OOC'),
@@ -19555,6 +19555,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zixxy 21734
 -- Chubis 21751
 ('2175101','21751','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Chubis - Start Relay Script (Random Emote) on Receive AI Event 5'),
+('2175102','21751','30','0','100','1','6','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Chubis - Set Phase 1 and Pause Waypoints on Receive AI Event B'),
+('2175103','21751','1','5','100','1','40000','70000','40000','70000','0','0','22','0','0','0','51','0','0','0','0','0','0','0','Chubis - Set Phase 0 and Unpause Waypoints on OOC (Phase 1)'),
+('2175104','21751','30','0','100','1','7','0','0','0','0','0','22','2','0','0','51','1','0','0','0','0','0','0','Chubis - Set Phase 2 and Pause Waypoints on Receive AI Event C'),
+('2175105','21751','1','3','100','1','8000','10000','8000','10000','0','0','22','0','0','0','51','0','0','0','0','0','0','0','Chubis - Set Phase 0 and Unpause Waypoints on OOC (Phase 2)'),
 -- Spawn of Dimensius 21780 - NullAI
 -- Protectorate Regenerator 21783
 ('2178301','21783','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Protectorate Regenerator - Enable Range Mode on Aggro'),
