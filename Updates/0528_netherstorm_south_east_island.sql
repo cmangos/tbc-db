@@ -1124,12 +1124,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+810, 20485, 530, 1, 3081.389892578125, 3665.25732421875, 142.861724853515625, 2.111848354339599609, 300, 300, 0, 0), --  Area 52 Bruiser missing before
 
-(@CGUID+811, 19572, 530, 1, 3073.6435546875, 3656.37548828125, 143.1742706298828125, 1.413716673851013183, 300, 300, 0, 0); -- Gant old guid 70011
+(@CGUID+811, 19572, 530, 1, 3073.6435546875, 3656.37548828125, 143.1742706298828125, 1.413716673851013183, 300, 300, 0, 0), -- Gant old guid 70011
+
+(@CGUID+812, 22279, 530, 1, 3086.0810546875, 3675.547119140625, 142.2828369140625, 2.132129192352294921, 300, 300, 0, 0), -- Nadja old guid 78314
+(@CGUID+813, 22280, 530, 1, 3085.65771484375, 3675.281005859375, 142.2913360595703125, 1.890686631202697753, 300, 300, 0, 0); -- Soren old guid 78315
 
 -- Area 52 NPCs
 DELETE FROM creature WHERE guid IN (67960, 71733, 70034, 70035, 70036, 70058, 74495, 72518, 72516, 70013, 72524, 72522, 72523, 75955, 75956, 75957, 70014, 70015, 70350, 
 72339, 72519, 72520, 105898, 69954, 69953, 70731, 72521, 72517, 68747, 69741, 69952, 69951, 70030, 70031, 70032, 70033, 70037, 1002683, 39629, 105899, 69948, 72512, 72514, 72509, 
-70010, 70082, 70083, 70084, 70085, 66749, 66751, 66750, 66748, 69729, 69730, 69727, 69725, 72511, 71003, 70042, 70038, 70792, 70043, 63367, 69947, 69946, 70012, 75402, 70011);
+70010, 70082, 70083, 70084, 70085, 66749, 66751, 66750, 66748, 69729, 69730, 69727, 69725, 72511, 71003, 70042, 70038, 70792, 70043, 63367, 69947, 69946, 70012, 75402, 70011, 78314, 78315);
 
 DELETE FROM creature_addon WHERE guid IN (69727,67323, 67335, 67337, 67338, 67340, 67463, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67464, 67461, 67540, 67545, 67550, 67541, 67559, 67560, 67562, 67565, 67566, 67567, 67568, 67569, 67574, 67575, 67576, 67577, 67578, 67579, 67580, 67582, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70030,70032,70033,66748,70085,70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
@@ -2595,6 +2598,8 @@ INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+190, 1),
 (@CGUID+204, 1),
 (@CGUID+613, 1),
+(@CGUID+812, 1),
+(@CGUID+813, 1),
 -- Irradiated Worker Moster - item, Pick
 -- Irradiated Worker Monster - Item, Gizmo
 (@CGUID+777, 1961002);
@@ -2789,7 +2794,15 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+50, 'Netherstorm - Group 050 - Bot-Specialist Alley | Maxx A. Million Mk. I | Maxx A. Million Mk. II', 0, 0, 0, 0, 0),
 -- Maxx A. Million Mk. V - Escort npc
 (@SGGUID+51, 'Netherstorm - Group 051 - Maxx A. Million Mk. V', 0, 1, 0, 0, 0),
-
+-- Area 52
+-- Irradiated Worker
+(@SGGUID+52, 'Netherstorm - Group 052 - Irradiated Worker', 0, 0, 0, 0, 0),
+-- Area 52 Bruiser
+(@SGGUID+53, 'Netherstorm - Group 053 - Area 52 Bruiser ', 0, 0, 0, 0, 0),
+-- Netherstorm Agent
+(@SGGUID+54, 'Netherstorm - Group 054 - Netherstorm Agent', 0, 0, 0, 0, 0),
+-- Nadja getting chased by Soren
+(@SGGUID+55, 'Netherstorm - Group 055 - Nadja | Soren - Formation 001', 0, 0, 0, 0, 0),
 -- Object for 'Quest Invaluable Asset Zapping'
 -- Multi-Spectrum Terrain Analyzer, Hyper Rotational Dig-A-Matic, Servo-Pneumatic Dredging Claw, Big Wagon Full of Explosives
 (@SGGUID+98, 'Netherstorm - Quest:Invaluable Asset Zapping - GameObjects', 1, 0, 0, 0, 0),
@@ -3570,6 +3583,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+50, @CGUID+736, 2, 0), -- Maxx A. Million Mk. II
 -- Maxx A. Million Mk. V - Escort npc
 (@SGGUID+51, @CGUID+737, 0, 0), -- Maxx A. Million Mk. V
+-- Nadja + Soren
+(@SGGUID+55, @CGUID+812, 0, 0), -- Nadja
+(@SGGUID+55, @CGUID+813, 1, 0), -- Soren
 -- Object for 'Quest Invaluable Asset Zapping'
 (@SGGUID+98, @GGUID+60, -1, 0), -- Multi-Spectrum Terrain Analyzer
 (@SGGUID+98, @GGUID+61, -1, 0), -- Hyper Rotational Dig-A-Matic
@@ -3636,6 +3652,45 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+100, @GGUID+27, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+28, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+29, -1, 0); -- Etherlithium Matrix Crystal
+
+
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@SGGUID+55, 1, 2, 0, @SGGUID+55, 2, 'Netherstorm - Group 055 - Nadja | Soren - Formation 001');
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+55,'Netherstorm - Group 055 - Nadja | Soren - Formation 001');
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@SGGUID+55, 1, 3082.68,3673.1042,142.35098, 100, 0, 0),
+(@SGGUID+55, 2, 3088.5596,3666.6267,142.58907, 100, 0, 0),
+(@SGGUID+55, 3, 3098.2373,3669.9614,143.03476, 100, 0, 0),
+(@SGGUID+55, 4, 3103.1929,3679.2588,142.87999, 100, 0, 0),
+(@SGGUID+55, 5, 3101.086,3686.3972,143.11525, 100, 0, 0),
+(@SGGUID+55, 6, 3092.6875,3677.4463,142.59375, 100, 0, 0),
+(@SGGUID+55, 7, 3086.6775,3676.842,142.26987, 100, 0, 0),
+(@SGGUID+55, 8, 3071.3625,3668.251,142.35165, 100, 0, 0),
+(@SGGUID+55, 9, 3067.256,3660.048,142.826, 100, 0, 0),
+(@SGGUID+55, 10, 3083.9548,3656.7305,142.82068, 100, 0, 0),
+(@SGGUID+55, 11, 3095.1877,3663.7532,142.2017, 100, 0, 0),
+(@SGGUID+55, 12, 3104.451,3669.7517,143.38731, 100, 0, 0),
+(@SGGUID+55, 13, 3091.447,3668.8372,142.17468, 100, 0, 0),
+(@SGGUID+55, 14, 3098.3806,3676.8503,143.08696, 100, 0, 0),
+(@SGGUID+55, 15, 3085.4695,3668.4675,142.61084, 100, 0, 0),
+(@SGGUID+55, 16, 3091.006,3657.7266,142.76047, 100, 0, 0),
+(@SGGUID+55, 17, 3075.1543,3657.558,143.1045, 100, 0, 0),
+(@SGGUID+55, 18, 3064.506,3666.7495,142.1906, 100, 0, 0),
+(@SGGUID+55, 19, 3077.805,3671.5266,142.36243, 100, 0, 0),
+(@SGGUID+55, 20, 3090.9727,3681.8176,142.52303, 100, 0, 0),
+(@SGGUID+55, 21, 3097.2456,3673.091,143.14355, 100, 0, 0),
+(@SGGUID+55, 22, 3089.1353,3663.8972,142.62735, 100, 0, 0),
+(@SGGUID+55, 23, 3090.1077,3653.0793,142.7016, 100, 0, 0),
+(@SGGUID+55, 24, 3098.48,3661.888,142.41476, 100, 0, 0),
+(@SGGUID+55, 25, 3101.6396,3674.1497,143.28249, 100, 0, 0),
+(@SGGUID+55, 26, 3078.8606,3668.9236,142.50272, 100, 0, 0),
+(@SGGUID+55, 27, 3072.3813,3661.13,142.91429, 100, 0, 0),
+(@SGGUID+55, 28, 3086.1602,3655.8438,142.84802, 100, 0, 0),
+(@SGGUID+55, 29, 3093.1934,3664.8372,142.16168, 100, 0, 0),
+(@SGGUID+55, 30, 3094.016,3674.958,142.82355, 100, 0, 0);
 
 
 DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4);
@@ -4240,7 +4295,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 2020301, 2497701, 2497702);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1961201, 1961202, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 2020301, 2497701, 2497702);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Sunfury Warp-Master
 (1885701, 0, 0, 45, 0, 18008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Start RandomScript'),
@@ -4355,3 +4410,11 @@ UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 1
 
 -- Irradiated Manager remove Equipment, only have this during rp 
 UPDATE creature_template SET EquipmentTemplateId = 0 WHERE entry = 19612;
+
+-- Nadja
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 22279;
+-- Soren
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 22280;
+
+-- Delete old linking for Nadja+Soren
+DELETE FROM creature_linking_template WHERE entry = 22280;
