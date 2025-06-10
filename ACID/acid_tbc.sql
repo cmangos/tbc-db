@@ -19000,6 +19000,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nether Beast (19731) - NSR
 -- Engineering Crewmember 19737 - SAY SEQUENCE WITH EXPERIMENTAL PILOT
 ('1973701','19737','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Engineering Crewmember - Start Relay Script (Random Emote) on Receive AI Event 5'),
+
+('530692401','-5306924','11','0','100','1','0','0','0','0','0','0','5','133','0','0','22','1','0','0','0','0','0','0','Engineering Crewmember (Guid EAI) - Emote StateUsestandingNoSheath and Set Phase 1 on Spawn'),
+('530692402','-5306924','1','5','100','1','35000','50000','35000','50000','0','0','5','233','0','0','22','2','0','0','0','0','0','0','Engineering Crewmember (Guid EAI) - Emote StateMining and Set Phase 2 OOC (Phase 1'),
+('530692403','-5306924','1','3','100','1','35000','50000','35000','50000','0','0','5','133','0','0','22','1','0','0','0','0','0','0','Engineering Crewmember (Guid EAI) - Emote StateMining and Set Phase 1 (Phase 2)'),
+
+('530692501','-5306925','11','0','100','1','0','0','0','0','0','0','5','133','0','0','22','1','0','0','0','0','0','0','Engineering Crewmember (Guid EAI) - Emote StateUsestandingNoSheath and Set Phase 1 on Spawn'),
+('530692502','-5306925','1','5','100','1','35000','50000','35000','50000','0','0','5','233','0','0','22','2','0','0','0','0','0','0','Engineering Crewmember (Guid EAI) - Emote StateMining and Set Phase 2 OOC (Phase 1'),
+('530692503','-5306925','1','3','100','1','35000','50000','35000','50000','0','0','5','133','0','0','22','1','0','0','0','0','0','0','Engineering Crewmember (Guid EAI) - Emote StateMining and Set Phase 1 (Phase 2)'),
+
+('530692601','-5306926','30','0','100','1','6','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Engineering Crewmember (Guid EAI) - Pause waypoints and Set Phase 1 on Receive AI Event B'),
+('530692602','-5306926','1','5','100','1','30000','60000','30000','60000','0','0','51','0','0','0','22','0','0','0','5','0','0','0','Engineering Crewmember (Guid EAI) - Unpaus Waypoint remove EmoteState and set Phase 0 OOC (Phase 1'),
 -- Doomclaw
 ('1973801','19738','9','0','100','1025','0','5','8000','11000','0','0','11','34261','8','32','0','0','0','0','0','0','0','0','Doomclaw - Cast Slime Spray'),
 ('1973802','19738','9','0','100','1025','0','10','14000','18000','0','0','11','36205','0','0','11','36996','1','0','0','0','0','0','Doomclaw - Cast Claw Swipe'),

@@ -1150,7 +1150,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+822, 19570, 530, 1, 3041.7978515625, 3658.854248046875, 143.40618896484375, 0.261799395084381103, 300, 300, 0, 0), -- Rocket-Chief Fuselage old guid 70009
 
-(@CGUID+823, 19737, 530, 1, 3041.7451171875, 3655.565185546875, 143.5550537109375, 5.25344085693359375, 300, 300, 0, 0), -- Engineering Crewmember old guid 70614
+(@CGUID+823, 19737, 530, 1, 3041.7451171875, 3655.565185546875, 143.5550537109375, 2.199114799499511718, 300, 300, 0, 0), -- Engineering Crewmember old guid 70614
 
 (@CGUID+824, 19737, 530, 1, 3046.62646484375, 3666.35888671875, 143.3967132568359375, 2.373647689819335937, 300, 300, 0, 0), -- Engineering Crewmember old guid 70612
 (@CGUID+825, 19737, 530, 1, 3044.8623046875, 3668.8916015625, 143.087249755859375, 4.817108631134033203, 300, 300, 0, 0), -- Engineering Crewmember old guid 70613
@@ -1202,6 +1202,9 @@ DELETE FROM creature_template_addon WHERE entry = 18875;
 
 -- Irradiated Worker
 DELETE FROM creature_template_addon WHERE entry = 19610;
+
+-- Engineering Crewmember
+DELETE FROM creature_template_addon WHERE entry = 19737;
 
 -- Waypoints 
 DELETE FROM creature_movement WHERE id IN (67281,67283,67285,67288,67289,67290,67291,67292,67461,67464,67293,67294,67296,67297,67298,67299,67300,67301,67302,67303,67304,67373,67374,67704,67575,67580,70030,70032,70033,70037,1002734,1002735,1002736,67286,1002731,1002730,1002729,1002728,1002727,67363,67364,67365,67366,67367,67368,67369,67370,67371,67372,1002721,1002720,1002719,1002718,1002717,67378,67379,67380,67382,67383,67384,67385,1002737,1002738,1002739,67381,1002726,69668,69671,69672,69670,1002722,70071,70072);
@@ -2451,7 +2454,20 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+777, 23,3000.9585,3696.4648,143.95537, 100, 0, 0),
 (@CGUID+777, 24,3011.5955,3695.3018,136.62035, 100, 0, 0),
 (@CGUID+777, 25,3015.358,3708.3142,137.34958, 100, 0, 0),
-(@CGUID+777, 26,3032.567,3722.8196,139.1177, 100, 0, 0);
+(@CGUID+777, 26,3032.567,3722.8196,139.1177, 100, 0, 0),
+-- Engineering Crewmember @CGUID+826
+(@CGUID+826, 1, 3049.3396,3669.0244,143.17247, 100, 1000, 1973701), -- random waittime handled via cai
+(@CGUID+826, 2, 3049.3396,3669.0244,143.17247, 100, 3000, 0), -- wait 3 seconds after removing emotestate before moving to next waypoint
+(@CGUID+826, 3, 3049.9778,3664.273,142.88187, 100, 0, 0),
+(@CGUID+826, 4, 3033.9111,3656.17,143.63556, 100, 0, 0),
+(@CGUID+826, 5, 3032.0325,3657.2434,144.01093, 100, 1000, 1973701),
+(@CGUID+826, 6, 3032.0325,3657.2434,144.01093, 100, 3000, 0),
+(@CGUID+826, 7, 3048.718,3661.3025,142.8751, 100, 0, 0),
+(@CGUID+826, 8, 3050.2974,3676.6267,142.42941, 100, 0, 0),
+(@CGUID+826, 9, 3033.9194,3679.9062,143.5225, 100, 0, 0),
+(@CGUID+826, 10, 3032.5835,3678.6868,143.59676, 100, 1000, 1973701),
+(@CGUID+826, 11, 3032.5835,3678.6868,143.59676, 100, 3000, 0),
+(@CGUID+826, 12, 3051.1008,3670.1528,142.91414, 100, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19466, 19569, 19635, 19709, 20416, 20772, 21751, 24977);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -2545,7 +2561,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (21751, 0, 5, 3054.4324,3633.92,143.09386, 100, 3000, 2175101),
 (21751, 0, 6, 3054.167,3640.6658,143.09386, 100, 1000, 0), -- wait 1 second before turning
 (21751, 0, 7, 3054.167,3640.6658,143.09386,0.872664630413055419,  1000, 2175103),
-(21751, 0, 8, 3055.208,3637.9111,143.09961, 100, 1000, 0), -- -- wait 1 second before turning
+(21751, 0, 8, 3055.208,3637.9111,143.09961, 100, 1000, 0), -- wait 1 second before turning
 -- Warpy 24977
 (24977, 0, 1, 3043.5781,3707.5557,144.87923, 100, 0, 0),
 (24977, 0, 2, 3042.2236,3705.7864,144.70184, 100, 0, 0),
@@ -2633,7 +2649,10 @@ INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+813, 1),
 -- Irradiated Worker Moster - item, Pick
 -- Irradiated Worker Monster - Item, Gizmo
-(@CGUID+777, 1961002);
+(@CGUID+777, 1961002),
+-- Engineering Crewmember using Gizmo instead of Pick
+(@CGUID+823, 1961002),
+(@CGUID+826, 1961002);
 
 DELETE FROM creature_spawn_data_template WHERE Entry IN (1885701, 1887901, 1961002);
 INSERT INTO creature_spawn_data_template (`Entry`, `UnitFlags`, `EquipmentId`, `Name`) VALUES 
@@ -4332,7 +4351,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1961201, 1961202, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 2020301, 2175101, 2175102, 2175103, 2497701, 2497702);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1961201, 1961202, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 1973701, 2020301, 2175101, 2175102, 2175103, 2497701, 2497702);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Sunfury Warp-Master
 (1885701, 0, 0, 45, 0, 18008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Start RandomScript'),
@@ -4416,6 +4435,9 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1970901, 8000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - EmoteState UseStandingNoSheath'),
 (1970902, 2000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - Stop Emote'),
 (1970903, 2000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - Emote OneShotExclamation'),
+-- Engineering Crewmember
+(1973701, 0, 0, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - SendAIEventB to self'), 
+(1973701, 1000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - EmoteState UseStandingNoSheath'),
 -- Chubis
 -- -- Use SendAiEvent to self, to change phase for random waittime
 (2175101, 0, 0, 1, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chubis - Remove EmoteState'), 
@@ -4464,3 +4486,6 @@ DELETE FROM creature_linking_template WHERE entry = 22280;
 
 -- Delete some old unused dbscripts
 DELETE FROM dbscript_random_templates WHERE id = 10013;
+
+-- Engineering Crewmember
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 19737;
