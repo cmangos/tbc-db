@@ -1064,7 +1064,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+765, 19541, 530, 1, 2955.5729980468750, 3716.1945800781250, 143.0242004394531, 2.0594885349274, 300, 300, 0, 0), -- Netherstorm Agent old guid 69954
 (@CGUID+766, 19541, 530, 1, 2955.4211425781250, 3722.9660644531250, 143.1160430908203, 4.2935099601746, 300, 300, 0, 0), -- Netherstorm Agent old guid 69953
 
-(@CGUID+767, 19776, 530, 1, 2966.1420898437500, 3733.0009765625000, 143.4712829589844, 5.6723198890686, 300, 300, 0, 0), -- Experimental Pilot old guid 70731
+(@CGUID+767, 19776, 530, 1, 2966.1420898437500, 3733.0009765625000, 143.4712829589844, 5.6723198890686, 300, 300, 0, 2), -- Experimental Pilot old guid 70731
 
 (@CGUID+768, 20485, 530, 1, 2976.5290527343750, 3743.7812500000000, 144.0309143066406, 4.9043750762939, 300, 300, 0, 0), -- Area 52 Bruiser old guid 72521
 (@CGUID+769, 20485, 530, 1, 3002.5390625000000, 3721.6311035156250, 145.2623291015625, 2.4783675670624, 300, 300, 0, 0), -- Area 52 Bruiser old guid 72517
@@ -2469,7 +2469,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+826, 11, 3032.5835,3678.6868,143.59676, 100, 3000, 0),
 (@CGUID+826, 12, 3051.1008,3670.1528,142.91414, 100, 0, 0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (19466, 19569, 19635, 19709, 20416, 20772, 21751, 24977);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (19466, 19569, 19635, 19709, 19776, 20416, 20772, 21751, 24977);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Netherologist Coppernickels patroling around the bridge
 (19569, 0, 1, 3392.6218, 4267.4937, 122.6924, 0.122173, 35000, 1956901), 
@@ -2507,6 +2507,23 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (19709, 0, 1, 2974.3909,3675.2979,143.3737,3.03687286376953125, 1000, 1970901), -- Waittime between 20-40 seconds handled via cai
 (19709, 0, 2, 2974.3909,3675.2979,143.3737, 100, 2000, 1970902), -- 2 seconds before turning to console stop emoting
 (19709, 0, 3, 2974.7083,3676.1584,143.45195, 100, 5000, 1970903),
+-- Experimental Pilot 19776
+(19776, 0, 1,2966.142,3733.001,143.47128,5.672319889068603515, 1800000, 0), -- around 30 min waittime before doing his rp
+(19776, 0, 2, 2975.3489,3713.289,142.3104, 100, 0, 0),
+(19776, 0, 3, 2989.187,3685.7708,142.73021, 100, 0, 0),
+(19776, 0, 4, 2987.9797,3654.3806,143.08904, 100, 0, 0),
+(19776, 0, 5, 2998.6177,3646.3738,143.67043, 100, 0, 0),
+(19776, 0, 6, 3042.511,3644.431,142.82062, 100, 0, 0),
+(19776, 0, 7, 3043.931,3649.7847,142.84573, 100, 0, 0),
+(19776, 0, 8, 3043.0225,3651.9045,143.01718, 100, 157000, 1977601), -- rp
+(19776, 0, 9, 3028.7869,3644.29,143.32631, 100, 0, 0),
+(19776, 0, 10, 3041.9622,3650.6267,143.12038, 100, 0, 0),
+(19776, 0, 11, 2998.3877,3646.053,143.69397, 100, 0, 0),
+(19776, 0, 12, 2987.8623,3654.4775,143.07855, 100, 0, 0),
+(19776, 0, 13, 2989.1047,3685.2979,142.73337, 100, 0, 0),
+(19776, 0, 14, 2973.2322,3713.5435,142.38895, 100, 0, 0),
+(19776, 0, 15, 2967.869,3732.154,143.41946, 100, 1000, 0),
+(19776, 0, 16, 2966.142,3733.001,143.47128, 100, 1000, 0),
 -- Overseer Theredis
 (20416, 0, 1, 2853.4512,4162.422,162.59381, 100, 0, 0),
 (20416, 0, 2, 2844.1633,4158.831,162.59386, 100, 0, 0),
@@ -4351,7 +4368,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1961201, 1961202, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 1973701, 2020301, 2175101, 2175102, 2175103, 2497701, 2497702);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1961201, 1961202, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 1973701, 1977601, 2020301, 2175101, 2175102, 2175103, 2497701, 2497702);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Sunfury Warp-Master
 (1885701, 0, 0, 45, 0, 18008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Start RandomScript'),
@@ -4438,6 +4455,42 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Engineering Crewmember
 (1973701, 0, 0, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - SendAIEventB to self'), 
 (1973701, 1000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - EmoteState UseStandingNoSheath'),
+-- Experimental Pilot
+(1977601, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Set ActiveObject'), 
+(1977601, 0, 1, 31, 0, 0, 0, 19737, @CGUID+823, 17, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - TerminateScript if Engineering Crewmember not found'), 
+(1977601, 4000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Emote Talk'), 
+(1977601, 4000, 1, 0, 0, 0, 0, 0, 0, 0, 17413, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Say Text'),  -- 16:12:35.466
+(1977601, 20000, 0, 3, 0, 0, 0, 19737, @CGUID+823, 16, 0, 0, 0, 0, 0, 0, 0, 5.25344085693359375, 'Netherstorm - Engineering Crewmember - Change Orientation'), -- 16:12:51.855
+
+(1977601, 24000, 0, 1, 274, 0, 0, 19737, @CGUID+823, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Emote OneShotNo'), 
+(1977601, 24000, 1, 0, 0, 0, 0, 19737, @CGUID+823, 16, 17414, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Say Text'), -- 16:12:55.774 
+
+(1977601, 50000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Emote OneShotQuestion'), 
+(1977601, 50000, 1, 0, 0, 0, 0, 0, 0, 0, 17416, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Say Text'), -- 16:13:17.138
+
+(1977601, 65000, 0, 1, 1, 0, 0, 19737, @CGUID+823, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Emote Talk'), 
+(1977601, 65000, 1, 0, 0, 0, 0, 19737, @CGUID+823, 16, 17417, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Say Text'), -- 16:13:32.487
+
+(1977601, 80000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Emote Talk'), 
+(1977601, 80000, 1, 0, 0, 0, 0, 0, 0, 0, 17419, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Say Text'), -- 16:13:47.972
+
+(1977601, 95000, 0, 1, 6, 0, 0, 19737, @CGUID+823, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Emote OneShotQuestion'), 
+(1977601, 95000, 1, 0, 0, 0, 0, 19737, @CGUID+823, 16, 17420, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Say Text'), -- 16:14:03.324
+
+(1977601, 105000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Emote Talk'), 
+(1977601, 105000, 1, 0, 0, 0, 0, 0, 0, 0, 17421, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Say Text'), -- 16:14:13.659
+
+(1977601, 121000, 0, 1, 6, 0, 0, 19737, @CGUID+823, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Emote OneShotQuestion'), 
+(1977601, 121000, 1, 0, 0, 0, 0, 19737, @CGUID+823, 16, 17422, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Say Text'), -- 16:14:29.424
+
+(1977601, 131000, 0, 1, 274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Emote OneShotNo'), 
+(1977601, 131000, 1, 0, 0, 0, 0, 0, 0, 0, 17423, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Say Text'), -- 16:14:39.729
+
+(1977601, 148000, 0, 1, 6, 0, 0, 19737, @CGUID+823, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Emote Talk'), 
+(1977601, 148000, 1, 0, 0, 0, 0, 19737, @CGUID+823, 16, 17424, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Say Text'), -- 16:14:56.508
+-- SendAiEvent for orientation change 
+(1977601, 157000, 0, 35, 6, 0, 0, 19737, @CGUID+823, 17, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - SendAiEventA'),
+(1977601, 157000, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Remove ActiveObject'), 
 -- Chubis
 -- -- Use SendAiEvent to self, to change phase for random waittime
 (2175101, 0, 0, 1, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chubis - Remove EmoteState'), 
@@ -4489,3 +4542,6 @@ DELETE FROM dbscript_random_templates WHERE id = 10013;
 
 -- Engineering Crewmember
 UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 19737;
+
+-- Experimental Pilot
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 19776;

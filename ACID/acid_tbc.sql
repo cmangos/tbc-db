@@ -19011,6 +19011,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 ('530692601','-5306926','30','0','100','1','6','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Engineering Crewmember (Guid EAI) - Pause waypoints and Set Phase 1 on Receive AI Event B'),
 ('530692602','-5306926','1','5','100','1','30000','60000','30000','60000','0','0','51','0','0','0','22','0','0','0','5','0','0','0','Engineering Crewmember (Guid EAI) - Unpaus Waypoint remove EmoteState and set Phase 0 OOC (Phase 1'),
+
+('530692301','-5306923','30','0','100','1','6','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Engineering Crewmember (Guid EAI) -Set Phase 1 on Receive AI Event B'),
+('530692302','-5306923','1','5','100','1','10000','15000','10000','15000','0','0','59','0','1','0','22','0','0','0','5','0','0','0','Engineering Crewmember (Guid EAI) - reset orientation and set Phase 0 OOC (Phase 1'),
 -- Doomclaw
 ('1973801','19738','9','0','100','1025','0','5','8000','11000','0','0','11','34261','8','32','0','0','0','0','0','0','0','0','Doomclaw - Cast Slime Spray'),
 ('1973802','19738','9','0','100','1025','0','10','14000','18000','0','0','11','36205','0','0','11','36996','1','0','0','0','0','0','Doomclaw - Cast Claw Swipe'),
