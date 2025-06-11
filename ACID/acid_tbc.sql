@@ -18888,6 +18888,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('530687701','-5306877','30','0','100','1','5','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase 1 and Pause Waypoints on ReceiveEventAI A'),
 ('530687702','-5306877','1','5','100','0','15000','25000','0','0','0','0','54','0','0','18021','0','0','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Say RandomText OOC (Phase 1)'),
 ('530687703','-5306877','1','5','100','1','30000','40000','30000','40000','0','0','51','0','0','0','22','0','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Unpause Waypoints (Phase 1)'),
+
+('5306929','-5306929','11','0','100','0','0','0','0','0','0','0','1','17851','0','0','0','0','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Say text on Spawn)'),
 -- Irradiated Manager 19612
 ('1961201','19612','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Irradiated Manager - Start Relay Script (Random Emote) on Receive AI Event 5'),
 -- Boots (19617) 
