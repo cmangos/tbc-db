@@ -56,7 +56,7 @@ DELETE FROM creature WHERE guid IN (67960, 71733, 70034, 70035, 70036, 70058, 74
 75402, 70011, 78314, 78315, 72513, 72507, 72508, 72510, 72515, 70073, 76063, 69950, 69949, 70009, 70614, 70612, 70613, 70615);
 
 
-DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+826;
+DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+829;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Nether Technician
 (@CGUID+1, 20203, 530, 1, 3380.88, 4359.49, 123.702, 4.67748, 300, 300, 0, 0),
@@ -1154,7 +1154,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+824, 19737, 530, 1, 3046.62646484375, 3666.35888671875, 143.3967132568359375, 2.373647689819335937, 300, 300, 0, 0), -- Engineering Crewmember old guid 70612
 (@CGUID+825, 19737, 530, 1, 3044.8623046875, 3668.8916015625, 143.087249755859375, 4.817108631134033203, 300, 300, 0, 0), -- Engineering Crewmember old guid 70613
-(@CGUID+826, 19737, 530, 1, 3049.339599609375, 3669.0244140625, 143.1724700927734375, 3.711358070373535156, 300, 300, 0, 2); -- Engineering Crewmember old guid 70615
+(@CGUID+826, 19737, 530, 1, 3049.339599609375, 3669.0244140625, 143.1724700927734375, 3.711358070373535156, 300, 300, 0, 2), -- Engineering Crewmember old guid 70615
+
+-- Ravandwyr RP group
+(@CGUID+827, 19610, 530, 1, 3009.065673828125, 3683.96435546875, 144.3752593994140625, 3.333578824996948242, 300, 300, 0, 0), -- Irradiated Worker missing before
+(@CGUID+828, 19610, 530, 1, 3010.647216796875, 3683.838623046875, 144.3752593994140625, 2.914699792861938476, 300, 300, 0, 0), -- Irradiated Worker missing before
+(@CGUID+829, 19610, 530, 1, 3012.294677734375, 3683.772705078125, 144.3752593994140625, 3.089232683181762695, 300, 300, 0, 0); -- Irradiated Worker missing before
 
 DELETE FROM creature_addon WHERE guid IN (69727,67323, 67335, 67337, 67338, 67340, 67463, 67342, 67345, 67347, 67348, 67527, 67530, 67533, 67537, 67464, 67461, 67540, 67545, 67550, 67541, 67559, 67560, 67562, 67565, 67566, 67567, 67568, 67569, 67574, 67575, 67576, 67577, 67578, 67579, 67580, 67582, 70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819, 75856);
 DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67290,67298,67301,67302,67349,67351,67353,67354,67355,67357,67358,67362,67363,67364,67369,67371,67383,70030,70032,70033,66748,70085,70733,70734,70736,70737,70740,70742,70743,70744,70745,70747,70748,70750,70755,70758,70759,70761,70764,70768,70770,70772,70774,70775,70776,70779,70781,70782,70783,70784,70785,70786,70787,70788,70789,70790,70791);
@@ -2870,6 +2875,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+54, 'Netherstorm - Group 054 - Netherstorm Agent', 0, 0, 0, 0, 0),
 -- Nadja getting chased by Soren
 (@SGGUID+55, 'Netherstorm - Group 055 - Nadja | Soren - Formation 001', 0, 0, 0, 0, 0),
+-- 3 Irradiated Worker respawning every 5 minutes having a RP Dialog with Ravandwyr 
+(@SGGUID+56, 'Netherstorm - Group 056 - Irradiated Worker - Special - Patrol 002', 0, 0, 0, 2, @STRINGID+2),
 -- Object for 'Quest Invaluable Asset Zapping'
 -- Multi-Spectrum Terrain Analyzer, Hyper Rotational Dig-A-Matic, Servo-Pneumatic Dredging Claw, Big Wagon Full of Explosives
 (@SGGUID+98, 'Netherstorm - Quest:Invaluable Asset Zapping - GameObjects', 1, 0, 0, 0, 0),
@@ -3653,6 +3660,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 -- Nadja + Soren
 (@SGGUID+55, @CGUID+812, 0, 0), -- Nadja
 (@SGGUID+55, @CGUID+813, 1, 0), -- Soren
+-- Irradiated Worker Special
+(@SGGUID+56, @CGUID+827, 0, 0), -- Irradiated Worker
+(@SGGUID+56, @CGUID+828, 1, 0), -- Irradiated Worker
+(@SGGUID+56, @CGUID+829, 2, 0), -- Irradiated Worker
 -- Object for 'Quest Invaluable Asset Zapping'
 (@SGGUID+98, @GGUID+60, -1, 0), -- Multi-Spectrum Terrain Analyzer
 (@SGGUID+98, @GGUID+61, -1, 0), -- Hyper Rotational Dig-A-Matic
@@ -3722,10 +3733,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@SGGUID+55, 1, 3, 0, @SGGUID+55, 2, 'Netherstorm - Group 055 - Nadja | Soren - Formation 001');
+(@SGGUID+55, 1, 3, 0, @SGGUID+55, 2, 'Netherstorm - Group 055 - Nadja | Soren - Formation 001'),
+(@SGGUID+56, 1, 2, 0, @SGGUID+56, 2, 'Netherstorm - Group 056 - Irradiated Worker - Special - Patrol 002');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
-(@SGGUID+55,'Netherstorm - Group 055 - Nadja | Soren - Formation 001');
+(@SGGUID+55,'Netherstorm - Group 055 - Nadja | Soren - Formation 001'),
+(@SGGUID+56,'Netherstorm - Group 056 - Irradiated Worker - Special - Patrol 002');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+55, 1, 3082.68,3673.1042,142.35098, 100, 0, 0),
@@ -3757,8 +3770,16 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+55, 27, 3072.3813,3661.13,142.91429, 100, 0, 0),
 (@SGGUID+55, 28, 3086.1602,3655.8438,142.84802, 100, 0, 0),
 (@SGGUID+55, 29, 3093.1934,3664.8372,142.16168, 100, 0, 0),
-(@SGGUID+55, 30, 3094.016,3674.958,142.82355, 100, 0, 0);
-
+(@SGGUID+55, 30, 3094.016,3674.958,142.82355, 100, 0, 0),
+-- Irradiated Worker - Special - RP
+(@SGGUID+56, 1, 2989.1555,3689.337,142.91876, 100, 0, 0),
+(@SGGUID+56, 2, 2983.2693,3701.2869,142.56747, 100, 0, 0),
+(@SGGUID+56, 3, 2978.8323,3708.1836,142.33011, 100, 0, 0),
+(@SGGUID+56, 4, 2976.5176,3713.1255,142.34305, 100, 0, 0),
+(@SGGUID+56, 5, 2983.6033,3717.49,142.44923, 100, 0, 0),
+(@SGGUID+56, 6, 2991.181,3719.8,143.07474, 100, 0, 0),
+(@SGGUID+56, 7, 2996.115,3729.779,143.98383, 100, 0, 0),
+(@SGGUID+56, 8, 3063.4836,3695.8108,142.3304, 100, 5000, 1961008);
 
 DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
@@ -3775,9 +3796,11 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+4, 42, @SGGUID+4, 1, 1, 0, 0, 'Netherstorm - Manaforge B''naar - Nether Anomaly fighting Sunfury Bloodwarder - 04'),
 (@SGGUID+5, 43, 1, 0, 0, 0, 0, 'Netherstorm - Zaxxis Stalker - Check OutOfCombat');
 
-DELETE FROM string_id WHERE Id = @STRINGID+1;
+DELETE FROM string_id WHERE Id IN (@STRINGID+1, @STRINGID+2);
 INSERT INTO `string_id` (Id, Name) VALUES 
-(@STRINGID+1, 'NETHERSTORM_SUNFURY_WARP_MASTER_RP_TARGET');
+(@STRINGID+1, 'NETHERSTORM_SUNFURY_WARP_MASTER_RP_TARGET'),
+(@STRINGID+2, 'NETHERSTORM_IRRADIATED_WORKER_SPECIAL');
+
 
 -- Scripts
 SET @RELAYID := 18000;
@@ -4368,7 +4391,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1961201, 1961202, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 1973701, 1977601, 2020301, 2175101, 2175102, 2175103, 2497701, 2497702);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1961007, 1961008, 1961201, 1961202, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 1973701, 1977601, 2020301, 2175101, 2175102, 2175103, 2497701, 2497702);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Sunfury Warp-Master
 (1885701, 0, 0, 45, 0, 18008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Start RandomScript'),
@@ -4430,6 +4453,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Irradiated Worker Remove emotestate+equipment
 (1961007, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState None'),
 (1961007, 0, 1, 42, 0, 0, 0, 0, 0, 0, 1910, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Add Equipment'),
+-- Irradiated Worker - Special - RP with Ravandwyr 
+(1961008, 1000, 0, 18, 0, 0, 0, @STRINGID+2, 10, 2567, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Despawn StringIDs'),
 -- Captain Arathyn intro 3 texts
 (1963501, 1000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote Talk'), 
 (1963501, 1000, 1, 0, 0, 0, 0, 0, 0, 0, 17179, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Say Text'), 
@@ -4461,31 +4486,22 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1977601, 4000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Emote Talk'), 
 (1977601, 4000, 1, 0, 0, 0, 0, 0, 0, 0, 17413, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Say Text'),  -- 16:12:35.466
 (1977601, 20000, 0, 3, 0, 0, 0, 19737, @CGUID+823, 16, 0, 0, 0, 0, 0, 0, 0, 5.25344085693359375, 'Netherstorm - Engineering Crewmember - Change Orientation'), -- 16:12:51.855
-
 (1977601, 24000, 0, 1, 274, 0, 0, 19737, @CGUID+823, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Emote OneShotNo'), 
 (1977601, 24000, 1, 0, 0, 0, 0, 19737, @CGUID+823, 16, 17414, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Say Text'), -- 16:12:55.774 
-
 (1977601, 50000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Emote OneShotQuestion'), 
 (1977601, 50000, 1, 0, 0, 0, 0, 0, 0, 0, 17416, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Say Text'), -- 16:13:17.138
-
 (1977601, 65000, 0, 1, 1, 0, 0, 19737, @CGUID+823, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Emote Talk'), 
 (1977601, 65000, 1, 0, 0, 0, 0, 19737, @CGUID+823, 16, 17417, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Say Text'), -- 16:13:32.487
-
 (1977601, 80000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Emote Talk'), 
 (1977601, 80000, 1, 0, 0, 0, 0, 0, 0, 0, 17419, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Say Text'), -- 16:13:47.972
-
 (1977601, 95000, 0, 1, 6, 0, 0, 19737, @CGUID+823, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Emote OneShotQuestion'), 
 (1977601, 95000, 1, 0, 0, 0, 0, 19737, @CGUID+823, 16, 17420, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Say Text'), -- 16:14:03.324
-
 (1977601, 105000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Emote Talk'), 
 (1977601, 105000, 1, 0, 0, 0, 0, 0, 0, 0, 17421, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Say Text'), -- 16:14:13.659
-
 (1977601, 121000, 0, 1, 6, 0, 0, 19737, @CGUID+823, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Emote OneShotQuestion'), 
 (1977601, 121000, 1, 0, 0, 0, 0, 19737, @CGUID+823, 16, 17422, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Say Text'), -- 16:14:29.424
-
 (1977601, 131000, 0, 1, 274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Emote OneShotNo'), 
 (1977601, 131000, 1, 0, 0, 0, 0, 0, 0, 0, 17423, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Experimental Pilot - Say Text'), -- 16:14:39.729
-
 (1977601, 148000, 0, 1, 6, 0, 0, 19737, @CGUID+823, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Emote Talk'), 
 (1977601, 148000, 1, 0, 0, 0, 0, 19737, @CGUID+823, 16, 17424, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Engineering Crewmember - Say Text'), -- 16:14:56.508
 -- SendAiEvent for orientation change 
