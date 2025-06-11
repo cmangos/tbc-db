@@ -3772,14 +3772,15 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+55, 29, 3093.1934,3664.8372,142.16168, 100, 0, 0),
 (@SGGUID+55, 30, 3094.016,3674.958,142.82355, 100, 0, 0),
 -- Irradiated Worker - Special - RP
-(@SGGUID+56, 1, 2989.1555,3689.337,142.91876, 100, 0, 0),
-(@SGGUID+56, 2, 2983.2693,3701.2869,142.56747, 100, 0, 0),
-(@SGGUID+56, 3, 2978.8323,3708.1836,142.33011, 100, 0, 0),
-(@SGGUID+56, 4, 2976.5176,3713.1255,142.34305, 100, 0, 0),
-(@SGGUID+56, 5, 2983.6033,3717.49,142.44923, 100, 0, 0),
-(@SGGUID+56, 6, 2991.181,3719.8,143.07474, 100, 0, 0),
-(@SGGUID+56, 7, 2996.115,3729.779,143.98383, 100, 0, 0),
-(@SGGUID+56, 8, 3063.4836,3695.8108,142.3304, 100, 5000, 1961008);
+(@SGGUID+56, 1, 3009.0657, 3683.9644, 144.37526, 100, 1000, 0), -- spawn point
+(@SGGUID+56, 2, 2989.1555,3689.337,142.91876, 100, 0, 0),
+(@SGGUID+56, 3, 2983.2693,3701.2869,142.56747, 100, 0, 0),
+(@SGGUID+56, 4, 2978.8323,3708.1836,142.33011, 100, 0, 0),
+(@SGGUID+56, 5, 2976.5176,3713.1255,142.34305, 100, 0, 0),
+(@SGGUID+56, 6, 2983.6033,3717.49,142.44923, 100, 0, 0),
+(@SGGUID+56, 7, 2991.181,3719.8,143.07474, 100, 0, 0),
+(@SGGUID+56, 8, 2996.115,3729.779,143.98383, 100, 0, 1961008), -- RP with Ravandwyr 
+(@SGGUID+56, 9, 3063.4836,3695.8108,142.3304, 100, 5000, 1961009); -- Group Despawn
 
 DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
@@ -4391,7 +4392,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1961007, 1961008, 1961201, 1961202, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 1973701, 1977601, 2020301, 2175101, 2175102, 2175103, 2497701, 2497702);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1961007, 1961008, 1961009, 1961201, 1961202, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 1973701, 1977601, 2020301, 2175101, 2175102, 2175103, 2497701, 2497702);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Sunfury Warp-Master
 (1885701, 0, 0, 45, 0, 18008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Start RandomScript'),
@@ -4454,7 +4455,12 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1961007, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState None'),
 (1961007, 0, 1, 42, 0, 0, 0, 0, 0, 0, 1910, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Add Equipment'),
 -- Irradiated Worker - Special - RP with Ravandwyr 
-(1961008, 1000, 0, 18, 0, 0, 0, @STRINGID+2, 10, 2567, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Despawn StringIDs'),
+(1961008, 1000, 0, 51, 100, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - Change FormationShape'),
+(1961008, 4000, 0, 31, 19217, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Terminate Script if Ravandwyr not found'),
+(1961008, 5000, 0, 0, 0, 0, 0, 19610, @CGUID+829, 16, 17852, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - Say Text'),
+(1961008, 5000, 1, 35, 5, 0, 0, 19217, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - SendAiEvent A to Ravandwyr'),
+-- Irradiated Worker - Special - Group Despawn
+(1961009, 1000, 0, 18, 0, 0, 0, @STRINGID+2, 10, 2567, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Despawn StringIDs'),
 -- Captain Arathyn intro 3 texts
 (1963501, 1000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote Talk'), 
 (1963501, 1000, 1, 0, 0, 0, 0, 0, 0, 0, 17179, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Say Text'), 
