@@ -18776,7 +18776,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1888602','18886','2','0','100','1024','50','0','0','0','0','0','11','36046','0','0','0','0','0','0','0','0','0','0','Farahlon Breaker - Cast Summon Farahlon Shardling at 50% HP'),
 ('1888603','18886','2','0','100','1024','25','0','0','0','0','0','11','36047','0','0','0','0','0','0','0','0','0','0','Farahlon Breaker - Cast Summon Farahlon Shardling at 25% HP'),
 -- Krexcil (18938) - NSR
--- Ravandwyr (19217) - NSR
+-- Ravandwyr (19217) 
+('1921701','19217','30','0','100','1','5','0','0','0','0','0','1','1','0','0','0','0','0','0','0','0','0','0','Ravandwyr - Start Relay Script on Receive AI Event A'),
 -- Netherstorm Crystal Target 19421
 -- Sunfury Captain 19453 - spell_list
 ('1945301','19453','37','0','100','1','8599','0','0','0','0','0','1','1191','0','0','0','0','0','0','0','0','0','0','Sunfury Captain - Say EmotedText on Enrage'),

@@ -3779,8 +3779,9 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+56, 5, 2976.5176,3713.1255,142.34305, 100, 0, 0),
 (@SGGUID+56, 6, 2983.6033,3717.49,142.44923, 100, 0, 0),
 (@SGGUID+56, 7, 2991.181,3719.8,143.07474, 100, 0, 0),
-(@SGGUID+56, 8, 2996.115,3729.779,143.98383, 100, 0, 1961008), -- RP with Ravandwyr 
-(@SGGUID+56, 9, 3063.4836,3695.8108,142.3304, 100, 5000, 1961009); -- Group Despawn
+(@SGGUID+56, 8, 2996.115,3729.779,143.98383, 100, 44000, 1961008), -- RP with Ravandwyr 
+(@SGGUID+56, 9, 2996.115,3729.779,143.98383, 100, 2000, 1961009), -- change back formation shape
+(@SGGUID+56, 10, 3063.4836,3695.8108,142.3304, 100, 5000, 1961010); -- Group Despawn
 
 DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
@@ -4459,8 +4460,10 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1961008, 4000, 0, 31, 19217, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Terminate Script if Ravandwyr not found'),
 (1961008, 5000, 0, 0, 0, 0, 0, 19610, @CGUID+829, 16, 17852, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - Say Text'),
 (1961008, 5000, 1, 35, 5, 0, 0, 19217, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - SendAiEvent A to Ravandwyr'),
+-- Irradiated Worker - Special - Change back FormationShape before going to next waypoint
+(1961009, 1000, 0, 51, 100, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - Change FormationShape'),
 -- Irradiated Worker - Special - Group Despawn
-(1961009, 1000, 0, 18, 0, 0, 0, @STRINGID+2, 10, 2567, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Despawn StringIDs'),
+(1961010, 1000, 0, 18, 0, 0, 0, @STRINGID+2, 10, 2567, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Despawn StringIDs'),
 -- Captain Arathyn intro 3 texts
 (1963501, 1000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Emote Talk'), 
 (1963501, 1000, 1, 0, 0, 0, 0, 0, 0, 0, 17179, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Captain Arathyn - Say Text'), 
