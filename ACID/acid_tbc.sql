@@ -18879,7 +18879,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('530687403','-5306874','1','5','100','1','40000','70000','40000','70000','0','0','51','0','0','0','22','0','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Unpause waypoints and set Phase 0 (Phase 1)'),
 ('530687404','-5306874','1','3','100','1','40000','60000','40000','60000','0','0','51','0','0','0','22','0','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Unpause waypoints and set Phase 0 (Phase 2)'),
 
-('530687501','-5306875','30','0','100','1','5','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Pause Waypoints and Set Phase 1 on ReceiveEventAI A'),
+('530687501','-5306875','30','0','100','1','6','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Pause Waypoints and Set Phase 1 on ReceiveEventAI A'),
 ('530687502','-5306875','1','5','100','1','10000','20000','10000','20000','0','0','51','0','0','0','22','0','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Unpause waypoints and set Phase 0 (Phase 1)'),
 
 ('530687601','-5306876','11','0','100','0','0','0','0','0','0','0','5','69','0','0','22','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase and Emote StateUsing 1 on Spawn'),
