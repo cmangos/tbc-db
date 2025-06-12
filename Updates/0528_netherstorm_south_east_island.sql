@@ -2474,8 +2474,22 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+826, 11, 3032.5835,3678.6868,143.59676, 100, 3000, 0),
 (@CGUID+826, 12, 3051.1008,3670.1528,142.91414, 100, 0, 0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (19466, 19569, 19635, 19709, 19776, 20416, 20772, 21751, 24977);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (19482, 19466, 19569, 19635, 19709, 19776, 20416, 20772, 21751, 24977);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
+-- Sagan WAypoints during RP 19482
+(19482, 1, 1, 2999.4966, 3734.3408, 144.31628, 100, 0, 0), -- PathType: None
+(19482, 1, 2, 2996.4966, 3734.3408, 144.31628, 100, 0, 0),
+(19482, 1, 3, 2993.7466, 3734.0908, 144.06628, 100, 0, 0),
+(19482, 1, 4, 2991.7466, 3732.5908, 144.06628, 100, 0, 0),
+(19482, 1, 5, 2990.7466, 3730.3408, 144.06628, 100, 0, 0),
+(19482, 1, 6, 2991.2466, 3727.5908, 144.06628, 100, 0, 0),
+(19482, 1, 7, 2993.4966, 3725.5908, 144.06628, 100, 0, 0),
+(19482, 1, 8, 2996.7466, 3724.3408, 144.06628, 100, 0, 0),
+(19482, 1, 9, 2999.9966, 3725.8408, 144.06628, 100, 0, 0),
+(19482, 1, 10, 3001.2466, 3730.0908, 144.06628, 100, 0, 0),
+(19482, 1, 11, 2999.4016, 3734.0596, 144.0778, 100, 1000, 0),
+(19482, 1, 12, 2999.5913, 3734.6223, 144.05475, 100, 1000, 0),
+(19482, 1, 13, 2999.5913, 3734.6223, 144.05475, 4.118977069854736328, 1000, 1948201),
 -- Netherologist Coppernickels patroling around the bridge
 (19569, 0, 1, 3392.6218, 4267.4937, 122.6924, 0.122173, 35000, 1956901), 
 (19569, 0, 2, 3387.336,4271.7876,122.673416, 100, 0, 0),
@@ -2674,7 +2688,11 @@ INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+777, 1961002),
 -- Engineering Crewmember using Gizmo instead of Pick
 (@CGUID+823, 1961002),
-(@CGUID+826, 1961002);
+(@CGUID+826, 1961002),
+-- Irradiated Worker - Special Group for Ravandwyr RP should have no equipment
+(@CGUID+827, 50),
+(@CGUID+828, 50),
+(@CGUID+829, 50);
 
 DELETE FROM creature_spawn_data_template WHERE Entry IN (1885701, 1887901, 1961002);
 INSERT INTO creature_spawn_data_template (`Entry`, `UnitFlags`, `EquipmentId`, `Name`) VALUES 
@@ -3734,7 +3752,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+55, 1, 3, 0, @SGGUID+55, 2, 'Netherstorm - Group 055 - Nadja | Soren - Formation 001'),
-(@SGGUID+56, 1, 2, 0, @SGGUID+56, 2, 'Netherstorm - Group 056 - Irradiated Worker - Special - Patrol 002');
+(@SGGUID+56, 1, 3, 0, @SGGUID+56, 2, 'Netherstorm - Group 056 - Irradiated Worker - Special - Patrol 002');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+55,'Netherstorm - Group 055 - Nadja | Soren - Formation 001'),
@@ -3773,15 +3791,30 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+55, 30, 3094.016,3674.958,142.82355, 100, 0, 0),
 -- Irradiated Worker - Special - RP
 (@SGGUID+56, 1, 3009.0657, 3683.9644, 144.37526, 100, 1000, 0), -- spawn point
-(@SGGUID+56, 2, 2989.1555,3689.337,142.91876, 100, 0, 0),
-(@SGGUID+56, 3, 2983.2693,3701.2869,142.56747, 100, 0, 0),
-(@SGGUID+56, 4, 2978.8323,3708.1836,142.33011, 100, 0, 0),
-(@SGGUID+56, 5, 2976.5176,3713.1255,142.34305, 100, 0, 0),
-(@SGGUID+56, 6, 2983.6033,3717.49,142.44923, 100, 0, 0),
-(@SGGUID+56, 7, 2991.181,3719.8,143.07474, 100, 0, 0),
-(@SGGUID+56, 8, 2996.115,3729.779,143.98383, 100, 44000, 1961008), -- RP with Ravandwyr 
-(@SGGUID+56, 9, 2996.115,3729.779,143.98383, 100, 2000, 1961009), -- change back formation shape
-(@SGGUID+56, 10, 3063.4836,3695.8108,142.3304, 100, 5000, 1961010); -- Group Despawn
+(@SGGUID+56, 2, 2995.3606, 3684.1506, 143.897, 100, 0, 0), -- IntermediatePoint
+(@SGGUID+56, 3, 2989.1555,3689.337,142.91876, 100, 0, 0),
+(@SGGUID+56, 4, 2983.2693,3701.2869,142.56747, 100, 0, 0),
+(@SGGUID+56, 5, 2978.8323,3708.1836,142.33011, 100, 0, 0),
+(@SGGUID+56, 6, 2976.5176,3713.1255,142.34305, 100, 0, 0),
+(@SGGUID+56, 7, 2983.6033,3717.49,142.44923, 100, 0, 0),
+(@SGGUID+56, 8, 2991.181,3719.8,143.07474, 100, 0, 0),
+(@SGGUID+56, 9, 2996.115,3729.779,143.98383, 100, 1000, 1961008), -- RP with Ravandwyr 
+(@SGGUID+56, 10, 2996.115,3729.779,143.98383, 100, 3000, 1961009), -- change back formation shape
+-- Some IntermediatePoints 
+(@SGGUID+56, 11, 2989.7993, 3720.795, 143.1571, 100, 0, 0),
+(@SGGUID+56, 12, 2982.7993, 3714.545, 142.9071, 100, 0, 0),
+(@SGGUID+56, 13, 2980.5493, 3708.295, 142.9071, 100, 0, 0),
+(@SGGUID+56, 14, 2981.2993, 3700.795, 142.9071, 100, 0, 0),
+(@SGGUID+56, 15, 2983.2993, 3693.045, 143.1571, 100, 0, 0),
+(@SGGUID+56, 16, 2993.0493, 3689.295, 143.4071, 100, 0, 0),
+(@SGGUID+56, 17, 3008.7993, 3690.045, 143.9071, 100, 0, 0),
+(@SGGUID+56, 18, 3022.0493, 3690.045, 143.9071, 100, 0, 0),
+(@SGGUID+56, 19, 3032.2993, 3688.545, 143.1571, 100, 0, 0),
+(@SGGUID+56, 20, 3043.2993, 3686.545, 142.9071, 100, 0, 0),
+(@SGGUID+56, 21, 3052.7993, 3690.295, 142.9071, 100, 0, 0),
+(@SGGUID+56, 22, 3060.0493, 3694.045, 143.1571, 100, 0, 0),
+-- Last sniffed one before despawning
+(@SGGUID+56, 23, 3063.4836,3695.8108,142.3304, 100, 5000, 1961010); -- Group Despawn
 
 DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
@@ -3949,8 +3982,11 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+28, 0, 19379, 0, 'Netherstorm - Papa Wheeler - Say 2'), -- When I was your age I could have had all of those shredders fixed before breakfast and still had time for all of my other chores.  In the Winterspring snow, no less.  And it's uphill both ways there!
 (@RELAYID+28, 0, 19380, 0, 'Netherstorm - Papa Wheeler - Say 3'), -- Chubis, after you're done there, make sure that you put another coat of wax on the Wheeler mobile.  I want to take mama out for a spin tonight.
 (@RELAYID+28, 0, 19381, 0, 'Netherstorm - Papa Wheeler - Say 4'), -- How much am I paying you?  You call that working?
-(@RELAYID+28, 0, 19382, 0, 'Netherstorm - Papa Wheeler - Say 5'); -- I just knew that I shouldn't have fired Beebo!
-
+(@RELAYID+28, 0, 19382, 0, 'Netherstorm - Papa Wheeler - Say 5'), -- I just knew that I shouldn't have fired Beebo!
+-- Ravandwyr random RP
+(@RELAYID+29, 1, @RELAYID+94, 0, 'Netherstorm - Ravandwyr Fire RP'),
+(@RELAYID+29, 1, @RELAYID+95, 0, 'Netherstorm - Ravandwyr Frost RP'),
+(@RELAYID+29, 1, @RELAYID+96, 0, 'Netherstorm - Ravandwyr Arcane RP');
  
 SET @RELAYID := 18000;
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+85;
@@ -4389,11 +4425,60 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+92, 84000, 0, 1, 5, 0, 0, 19466, 10, 0, 0, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Exarch Orelis - Emote OneShotPoint'), -- 09:19:52.089
 (@RELAYID+92, 84000, 1, 0, 0, 0, 0, 19466, 10, 0, 16890, 0, 0, 0, 0, 0, 0,  0, 0, 'Netherstorm - Exarch Orelis - Say Text'), -- Even you must admit that your information from defectors is outdated and unreliable.  Let us make calculated attacks on these manaforges and gather what information we can.
 (@RELAYID+92, 93000, 0, 1, 1, 0, 0, 19468, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Spymaster Thalodien - Emote Talk'),
-(@RELAYID+92, 93000, 1, 0, 0, 0, 0, 19468, 10, 0, 16891, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Spymaster Thalodien - Say Text'); -- 09:20:01.823 Finally some talk of action from the big guy!
-
+(@RELAYID+92, 93000, 1, 0, 0, 0, 0, 19468, 10, 0, 16891, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Spymaster Thalodien - Say Text'), -- 09:20:01.823 Finally some talk of action from the big guy!
+-- Ravandwyr BaseScript (happening at all 3 possible RPs)
+(@RELAYID+93, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Set Active Object'),
+(@RELAYID+93, 4000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Emote OneShotTalk'),
+(@RELAYID+93, 4000, 1, 0, 0, 0, 0, 0, 0, 0, 17848, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Say Text'),
+(@RELAYID+93, 9000, 0, 0, 0, 0, 0, 0, 0, 0, 17849, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Say EmotedText'),
+(@RELAYID+93, 10000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Emote OneShotTalk'),
+(@RELAYID+93, 10000, 1, 0, 0, 0, 0, 0, 0, 0, 17850, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Say Text'),
+(@RELAYID+93, 14000, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Emote OneShotPoint'),
+(@RELAYID+93, 14000, 1, 45, 0, @RELAYID+29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Start RandomScript'),
+-- Ravandwyr Fire RP
+(@RELAYID+94, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17854, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Say Text'),
+(@RELAYID+94, 3000, 0, 15, 29389, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Cast Firebreathing'),
+(@RELAYID+94, 4000, 0, 1, 22, 0, 0, 19610, @CGUID+827, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Emote OneShotShot'),
+(@RELAYID+94, 4000, 1, 0, 0, 0, 0, 19610, @CGUID+827, 16, 20285, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Say Text'),
+(@RELAYID+94, 8000, 0, 1, 11, 0, 0, 19610, @CGUID+828, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Emote OneShotLaugh'),
+(@RELAYID+94, 8000, 1, 0, 0, 0, 0, 19610, @CGUID+828, 16, 20286, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Say Text'),
+(@RELAYID+94, 11000, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Emote OneShotBow'),
+(@RELAYID+94, 11000, 1, 0, 0, 0, 0, 0, 0, 0, 17856, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Say Text'),
+(@RELAYID+94, 16000, 0, 1, 4, 0, 0, @STRINGID+2, 10, 2567, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker (StringID) - Emote OneShotCheer'),
+(@RELAYID+94, 16000, 1, 0, 0, 0, 0, 19610, @CGUID+827, 16, 17853, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Say Text'),
+(@RELAYID+94, 19000, 0, 32, 0, 0, 0, 19610, @CGUID+827, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Unpause Waypoints'),
+(@RELAYID+94, 19000, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Remove Active Object'),
+-- Ravandwyr Frost RP
+(@RELAYID+95, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17877, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Say Text'),
+(@RELAYID+95, 3000, 0, 15, 34326, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Cast Frost Nova'),
+(@RELAYID+95, 5000, 0, 15, 34973, 0, 0, 19610, @CGUID+828, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Cast Ravandwyr\'s Ice Block'),
+(@RELAYID+95, 8000, 0, 0, 0, 0, 0, 19610, @CGUID+828, 16, 17874, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Say Text'),
+(@RELAYID+95, 9000, 0, 1, 11, 0, 0, @STRINGID+2, 10, 2567, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker (StringID) - Emote OneShot Laugh'),
+(@RELAYID+95, 13000, 0, 0, 0, 0, 0, 19610, @CGUID+827, 16, 17875, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Say Text'),
+(@RELAYID+95, 16000, 0, 1, 11, 0, 0, @STRINGID+2, 10, 2567, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker (StringID) - Emote OneShot Laugh'),
+(@RELAYID+95, 16000, 1, 0, 0, 0, 0, 19610, @CGUID+829, 16, 17876, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Say Text'),
+(@RELAYID+95, 19000, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Emote OneShotBow'),
+(@RELAYID+95, 19000, 1, 0, 0, 0, 0, 0, 0, 0, 17856, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Say Text'),
+(@RELAYID+95, 24000, 0, 1, 4, 0, 0, @STRINGID+2, 10, 2567, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker (StringID) - Emote OneShotCheer'),
+(@RELAYID+95, 24000, 1, 0, 0, 0, 0, 19610, @CGUID+827, 16, 17853, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Say Text'),
+(@RELAYID+95, 27000, 0, 32, 0, 0, 0, 19610, @CGUID+827, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Unpause Waypoints'),
+(@RELAYID+95, 27000, 2, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Remove Active Object'),
+-- Ravandwyr Arcane RP
+(@RELAYID+96, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17855, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Say Text'),
+(@RELAYID+96, 4000, 0, 15, 34656, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Cast Arcane Explosion (Cosmetic)'),
+(@RELAYID+96, 5000, 0, 15, 34718, 0, 0, 19482, 5, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sagan - Transform Sagan (Skunk)'),
+(@RELAYID+96, 5000, 1, 20, 2, 1, 0, 19482, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sagan - Start Waypoints'),
+(@RELAYID+96, 9000, 1, 0, 0, 0, 0, 19610, @CGUID+828, 16, 17857, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Say Text'),
+(@RELAYID+96, 13000, 1, 0, 0, 0, 0, 19610, @CGUID+829, 16, 17858, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Say Text'),
+(@RELAYID+96, 24000, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Emote OneShotBow'),
+(@RELAYID+96, 24000, 1, 0, 0, 0, 0, 0, 0, 0, 17856, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Say Text'),
+(@RELAYID+96, 30000, 0, 1, 4, 0, 0, @STRINGID+2, 10, 2567, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker (StringID) - Emote OneShotCheer'),
+(@RELAYID+96, 30000, 1, 0, 0, 0, 0, 19610, @CGUID+827, 16, 17853, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Say Text'),
+(@RELAYID+96, 33000, 0, 32, 0, 0, 0, 19610, @CGUID+827, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Unpause Waypoints'),
+(@RELAYID+96, 33000, 2, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Remove Active Object');
 
 -- Delete some old unused waypoint scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1961007, 1961008, 1961009, 1961201, 1961202, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 1973701, 1977601, 2020301, 2175101, 2175102, 2175103, 2497701, 2497702);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1885701, 1887901, 1887902, 1887903, 1888301, 1946601, 1945301, 1948201, 1956901, 1956902, 1956903, 1956904, 1961001, 1961002, 1961003, 1961004, 1961005, 1961006, 1961007, 1961008, 1961009, 1961010, 1961201, 1961202, 1963501, 1963502, 1963503, 1964301, 1970901, 1970902, 1970903, 1973701, 1977601, 2020301, 2175101, 2175102, 2175103, 2497701, 2497702);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Sunfury Warp-Master
 (1885701, 0, 0, 45, 0, 18008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Warp-Master - Start RandomScript'),
@@ -4413,6 +4498,9 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1888301, 0, 1, 20, 1, 20, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Mana Snapper - Set RandomMovement around Point'), 
 -- Sunfury Captain RP script
 (1945301, 0, 0, 45, 0, 18004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Captain - Start RandomScript'),
+-- Sagan
+(1948201, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sagan - Change Movement'),
+(1948201, 0, 1, 14, 34718, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sagan - Remove Transform Sagan (Skunk)'),
 -- Netherologist Coppernickels
 -- Timer for how long he stays depens on how long he uses emote "STATE_USESTANDING_NOSHEATHE" this can vary between 15 and 30 seconds
 -- using hardcoded 25 seconds for now.
@@ -4456,10 +4544,13 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1961007, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState None'),
 (1961007, 0, 1, 42, 0, 0, 0, 0, 0, 0, 1910, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Add Equipment'),
 -- Irradiated Worker - Special - RP with Ravandwyr 
-(1961008, 1000, 0, 51, 100, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - Change FormationShape'),
-(1961008, 4000, 0, 31, 19217, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Terminate Script if Ravandwyr not found'),
-(1961008, 5000, 0, 0, 0, 0, 0, 19610, @CGUID+829, 16, 17852, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - Say Text'),
-(1961008, 5000, 1, 35, 5, 0, 0, 19217, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - SendAiEvent A to Ravandwyr'),
+(1961008, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - Stop Waypoints'),
+(1961008, 2000, 0, 51, 100, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - Change FormationShape'),
+(1961008, 5000, 0, 31, 19217, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Terminate Script if Ravandwyr not found'),
+(1961008, 5000, 1, 3, 0, 0, 0, 19610, @CGUID+828, 16, 0, 0, 0, 0, 0, 0, 0, 0.889897167682647705, 'Netherstorm - Irradiated Worker - SpecialGroup - Change Orientation'),
+(1961008, 5000, 2, 3, 0, 0, 0, 19610, @CGUID+829, 16, 0, 0, 0, 0, 0, 0, 0, 1.281009197235107421, 'Netherstorm - Irradiated Worker - SpecialGroup - Change Orientation'),
+(1961008, 6000, 0, 0, 0, 0, 0, 19610, @CGUID+829, 16, 17852, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - Say Text'),
+(1961008, 6000, 1, 35, 5, 0, 0, 19217, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - SendAiEvent A to Ravandwyr'),
 -- Irradiated Worker - Special - Change back FormationShape before going to next waypoint
 (1961009, 1000, 0, 51, 100, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SpecialGroup - Change FormationShape'),
 -- Irradiated Worker - Special - Group Despawn
@@ -4570,3 +4661,9 @@ UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 1
 
 -- Experimental Pilot
 UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 19776;
+
+-- Sagan
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 8/7 WHERE entry = 19482;
+
+-- Text: %s sighs audibly and glances at Sagan. should be MonsterEmote
+UPDATE broadcast_text SET ChatTypeID = 2 WHERE Id= 17849;
