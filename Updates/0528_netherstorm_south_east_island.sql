@@ -2896,6 +2896,24 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+55, 'Netherstorm - Group 055 - Nadja | Soren - Formation 001', 0, 0, 0, 0, 0),
 -- 3 Irradiated Worker respawning every 5 minutes having a RP Dialog with Ravandwyr 
 (@SGGUID+56, 'Netherstorm - Group 056 - Irradiated Worker - Special - Patrol 002', 0, 0, 0, 2, @STRINGID+2),
+-- Aldor NPCs inside INN
+(@SGGUID+57, 'Netherstorm - Group 057 - Seasoned Vindicator (4) | Anchorite Karja | Exarch Orelis', 0, 0, 0, 0, 0),
+-- Scryer NPCs inside INN
+(@SGGUID+58, 'Netherstorm - Group 058 - Scryer Retainer | Spymaster Thalodien | Magistrix Larynna', 0, 0, 0, 0, 0),
+-- Area 52 General NPCs
+(@SGGUID+59, 'Netherstorm - Group 059 - Area 52 General', 0, 0, 0, 0, 0),
+-- Area 52 AuctionHouse NPCs
+(@SGGUID+60, 'Netherstorm - Group 060 - Auction House', 0, 0, 0, 0, 0),
+-- Area 52 Vendors
+(@SGGUID+61, 'Netherstorm - Group 061 - Area52 Vendors', 0, 0, 0, 0, 0),
+-- Area 52 QuestGiver
+(@SGGUID+62, 'Netherstorm - Group 062 - Area 52 QuestGiver', 0, 0, 0, 0, 0),
+-- Ravandwyr + Pet Sagan
+(@SGGUID+63, 'Netherstorm - Group 063 - Ravandwyr | Sagan ', 0, 0, 0, 0, 0),
+-- Area 52 Roleplay NPCs (All other NPCs)
+(@SGGUID+64, 'Netherstorm - Group 064 - Area 52 RolePlay', 0, 0, 0, 0, 0),
+-- Engineering Crewmember
+(@SGGUID+65, 'Netherstorm - Group 065 - Engineering Crewmember', 0, 0, 0, 0, 0),
 -- Object for 'Quest Invaluable Asset Zapping'
 -- Multi-Spectrum Terrain Analyzer, Hyper Rotational Dig-A-Matic, Servo-Pneumatic Dredging Claw, Big Wagon Full of Explosives
 (@SGGUID+98, 'Netherstorm - Quest:Invaluable Asset Zapping - GameObjects', 1, 0, 0, 0, 0),
@@ -3676,6 +3694,47 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+50, @CGUID+736, 2, 0), -- Maxx A. Million Mk. II
 -- Maxx A. Million Mk. V - Escort npc
 (@SGGUID+51, @CGUID+737, 0, 0), -- Maxx A. Million Mk. V
+-- Irradiated Worker
+(@SGGUID+52, @CGUID+740, -1, 0), -- Irradiated Worker
+(@SGGUID+52, @CGUID+741, -1, 0), -- Irradiated Worker
+(@SGGUID+52, @CGUID+742, -1, 0), -- Irradiated Worker
+(@SGGUID+52, @CGUID+744, -1, 0), -- Irradiated Worker
+(@SGGUID+52, @CGUID+775, -1, 0), -- Irradiated Worker
+(@SGGUID+52, @CGUID+776, -1, 0), -- Irradiated Worker
+(@SGGUID+52, @CGUID+777, -1, 0), -- Irradiated Worker
+-- Area 52 Bruiser
+(@SGGUID+53, @CGUID+745, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+746, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+747, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+749, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+750, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+751, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+759, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+760, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+761, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+762, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+763, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+768, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+769, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+783, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+784, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+785, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+799, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+810, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+814, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+815, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+816, -1, 0), -- Area 52 Bruiser
+(@SGGUID+53, @CGUID+817, -1, 0), -- Area 52 Bruiser
+-- Netherstorm Agent
+(@SGGUID+54, @CGUID+765, -1, 0), -- Netherstorm Agent
+(@SGGUID+54, @CGUID+766, -1, 0), -- Netherstorm Agent
+(@SGGUID+54, @CGUID+772, -1, 0), -- Netherstorm Agent
+(@SGGUID+54, @CGUID+773, -1, 0), -- Netherstorm Agent
+(@SGGUID+54, @CGUID+782, -1, 0), -- Netherstorm Agent
+(@SGGUID+54, @CGUID+806, -1, 0), -- Netherstorm Agent
+(@SGGUID+54, @CGUID+807, -1, 0), -- Netherstorm Agent
+(@SGGUID+54, @CGUID+820, -1, 0), -- Netherstorm Agent
+(@SGGUID+54, @CGUID+821, -1, 0), -- Netherstorm Agent
 -- Nadja + Soren
 (@SGGUID+55, @CGUID+812, 0, 0), -- Nadja
 (@SGGUID+55, @CGUID+813, 1, 0), -- Soren
@@ -3683,6 +3742,65 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+56, @CGUID+827, 0, 0), -- Irradiated Worker
 (@SGGUID+56, @CGUID+828, 1, 0), -- Irradiated Worker
 (@SGGUID+56, @CGUID+829, 2, 0), -- Irradiated Worker
+-- Aldor NPCs inside INN
+(@SGGUID+57, @CGUID+787, -1, 0), -- Seasoned Vindicator
+(@SGGUID+57, @CGUID+788, -1, 0), -- Seasoned Vindicator
+(@SGGUID+57, @CGUID+789, -1, 0), -- Seasoned Vindicator
+(@SGGUID+57, @CGUID+790, -1, 0), -- Seasoned Vindicator
+(@SGGUID+57, @CGUID+797, -1, 0), -- Anchorite Karja
+(@SGGUID+57, @CGUID+798, -1, 0), -- Exarch Orelis
+-- Scryer NPCs inside INN
+(@SGGUID+58, @CGUID+791, -1, 0), -- Scryer Retainer
+(@SGGUID+58, @CGUID+792, -1, 0), -- Scryer Retainer
+(@SGGUID+58, @CGUID+793, -1, 0), -- Scryer Retainer
+(@SGGUID+58, @CGUID+794, -1, 0), -- Scryer Retainerr
+(@SGGUID+58, @CGUID+795, -1, 0), -- Spymaster Thalodien
+(@SGGUID+58, @CGUID+796, -1, 0), -- Magistrix Larynna
+-- Area 52 General NPCs
+(@SGGUID+59, @CGUID+738, -1, 0), -- Krexcil (Flightmaster)
+(@SGGUID+59, @CGUID+756, -1, 0), -- Xyrol (Engineering Trainer)
+(@SGGUID+59, @CGUID+764, -1, 0), -- Meeda (Banker)
+(@SGGUID+59, @CGUID+780, -1, 0), -- Liza Cutlerflix (Stable Master)
+(@SGGUID+59, @CGUID+786, -1, 0), -- Inkeeper Remi Dodoso
+(@SGGUID+59, @CGUID+809, -1, 0), -- Kablamm Farflinger (
+-- Area 52 AuctionHouse NPCs
+(@SGGUID+60, @CGUID+752, -1, 0), -- Nandirx
+(@SGGUID+60, @CGUID+753, -1, 0), -- Karzo
+(@SGGUID+60, @CGUID+754, -1, 0), -- Zixxy
+-- Area 52 Vendors
+(@SGGUID+61, @CGUID+748, -1, 0), -- Kizzie
+(@SGGUID+61, @CGUID+755, -1, 0), -- Qiff
+(@SGGUID+61, @CGUID+781, -1, 0), -- Blazzle
+(@SGGUID+61, @CGUID+808, -1, 0), -- Dash
+(@SGGUID+61, @CGUID+811, -1, 0), -- Gant
+-- Area 52 QuestGiver
+(@SGGUID+62, @CGUID+739, -1, 0), -- Veronia
+(@SGGUID+62, @CGUID+743, -1, 0), -- Lead Sapper Blastfizzle
+(@SGGUID+62, @CGUID+757, -1, 0), -- Chief Engineer Trep
+(@SGGUID+62, @CGUID+800, -1, 0), -- Nether-Stalker Khay'ji
+(@SGGUID+62, @CGUID+802, -1, 0), -- Boots
+(@SGGUID+62, @CGUID+805, -1, 0), -- Kalynna Lathred
+(@SGGUID+62, @CGUID+818, -1, 0), -- Papa Wheeler
+(@SGGUID+62, @CGUID+822, -1, 0), -- Rocket-Chief Fuselage
+-- Ravandwyr + Pet Sagan
+(@SGGUID+63, @CGUID+770, 0, 0), -- Ravandwyr
+(@SGGUID+63, @CGUID+771, 1, 0), -- Sagan
+-- Area 52 Roleplay NPCs (All other NPCs)
+(@SGGUID+64, @CGUID+744, -1, 0), -- Crash Bigbomb
+(@SGGUID+64, @CGUID+758, -1, 0), -- Lee Sparks
+(@SGGUID+64, @CGUID+767, -1, 0), -- Experimental Pilot
+(@SGGUID+64, @CGUID+778, -1, 0), -- Irradiated Manager
+(@SGGUID+64, @CGUID+779, -1, 0), -- Warpy
+(@SGGUID+64, @CGUID+778, -1, 0), -- Irradiated Manager
+(@SGGUID+64, @CGUID+801, -1, 0), -- Bill
+(@SGGUID+64, @CGUID+803, -1, 0), -- Off-Duty Engineer
+(@SGGUID+64, @CGUID+804, -1, 0), -- Doc
+(@SGGUID+64, @CGUID+819, -1, 0), -- Chubis
+-- Engineering Crewmember
+(@SGGUID+65, @CGUID+823, -1, 0), -- Engineering Crewmember
+(@SGGUID+65, @CGUID+824, -1, 0), -- Engineering Crewmember
+(@SGGUID+65, @CGUID+825, -1, 0), -- Engineering Crewmember
+(@SGGUID+65, @CGUID+826, -1, 0), -- Engineering Crewmember
 -- Object for 'Quest Invaluable Asset Zapping'
 (@SGGUID+98, @GGUID+60, -1, 0), -- Multi-Spectrum Terrain Analyzer
 (@SGGUID+98, @GGUID+61, -1, 0), -- Hyper Rotational Dig-A-Matic
