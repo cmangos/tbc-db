@@ -18874,8 +18874,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('530684202','-5306842','1','5','100','1','30000','60000','30000','60000','0','0','22','2','0','0','5','233','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Emote StateWorkMining and set Phase 2 (Phase 1)'),
 ('530684203','-5306842','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','69','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsing and set Phase 1 (Phase 2)'),
 
-('530687401','-5306874','30','0','100','1','5','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Pause Waypoints and Set Phase 1 on ReceiveEventAI A'),
-('530687402','-5306874','30','0','100','1','5','0','0','0','0','0','22','2','0','0','51','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Pause Waypoints and Set Phase 2 on ReceiveEventAI A'),
+('530687401','-5306874','30','0','100','1','6','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Pause Waypoints and Set Phase 1 on ReceiveEventAI B'),
+('530687402','-5306874','30','0','100','1','7','0','0','0','0','0','22','2','0','0','51','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Pause Waypoints and Set Phase 2 on ReceiveEventAI C'),
 ('530687403','-5306874','1','5','100','1','40000','70000','40000','70000','0','0','51','0','0','0','22','0','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Unpause waypoints and set Phase 0 (Phase 1)'),
 ('530687404','-5306874','1','3','100','1','40000','60000','40000','60000','0','0','51','0','0','0','22','0','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Unpause waypoints and set Phase 0 (Phase 2)'),
 
@@ -18886,7 +18886,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('530687602','-5306876','1','5','100','1','30000','60000','30000','60000','0','0','22','2','0','0','5','233','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Emote StateWorkMining and set Phase 2 (Phase 1)'),
 ('530687603','-5306876','1','3','100','1','30000','60000','30000','60000','0','0','22','1','0','0','5','69','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Emote StateUsing and set Phase 1 (Phase 2)'),
 
-('530687701','-5306877','30','0','100','1','5','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase 1 and Pause Waypoints on ReceiveEventAI A'),
+('530687701','-5306877','30','0','100','1','6','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Set Phase 1 and Pause Waypoints on ReceiveEventAI B'),
 ('530687702','-5306877','1','5','100','0','15000','25000','0','0','0','0','54','0','0','18021','0','0','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Say RandomText OOC (Phase 1)'),
 ('530687703','-5306877','1','5','100','1','30000','40000','30000','40000','0','0','51','0','0','0','22','0','0','0','0','0','0','0','Irradiated Worker (Guid EAI) - Unpause Waypoints (Phase 1)'),
 
@@ -18997,7 +18997,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1970705','19707','9','0','100','1025','5','30','2300','3900','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Sunfury Archer - Cast Shoot'),
 -- Chief Engineer Trep 19709
 ('1970901','19709','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Chief Engineer Trep - Start Relay Script (Random Emote) on Receive AI Event 5'),
-('1970902','19709','30','0','100','1','5','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Chief Engineer Trep - Set Phase 1 and PauseWaypoints on ReceiveEventAI A'),
+('1970902','19709','30','0','100','1','6','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Chief Engineer Trep - Set Phase 1 and PauseWaypoints on ReceiveEventAI B'),
 ('1970903','19709','1','5','100','1','20000','40000','20000','40000','0','0','22','0','0','0','51','0','0','0','0','0','0','0','Chief Engineer Trep - UnPause Waypoints and set Phase 0 OOC (Phase 1)'),
 -- Mama Wheeler (19728) - NSR
 -- Nether Beast (19731) - NSR

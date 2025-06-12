@@ -4513,19 +4513,19 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1956901, 32000, 1, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Netherologist Coppernickels - random text'),
 -- Irradiated Worker General - remove emote before moving to next waypoint (2 seconds before moving
 (1961001, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState None'),
--- Irradiated Worker RP 1
-(1961002, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventA to self'), 
+-- Irradiated Worker RP 1 - EmoteState WorkMining
+(1961002, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventB to self'), 
 (1961002, 2000, 0, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState WorkMining'),
--- Irradiated Worker RP 2
-(1961003, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventA to self'), 
+-- Irradiated Worker RP 2 UseStanding
+(1961003, 0, 1, 35, 7, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventC to self'), 
 (1961003, 2000, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState UseStanding'),
--- Irradiated Worker RP 3
-(1961004, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventA to self'), 
+-- Irradiated Worker RP 3 UseStandingNoSheath
+(1961004, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - SendAIEventB to self'), 
 (1961004, 2000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState UseStandingNoSheath'),
 -- Irradiated Worker RP with Irradiated Manager
 (1961005, 0, 0, 31, 19612, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Terminate Script if Irradiated Manager not found'), 
 (1961005, 1, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Set Active object'), 
-(1961005, 2000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Emote neShotTalk'), 
+(1961005, 2000, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Emote OneShotTalk'), 
 (1961005, 2000, 1, 0, @RELAYID+22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Random text'), 
 (1961005, 8000, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Emote OneShotPoint'),
 (1961005, 10000, 0, 1, 25, 0, 0, 19612, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Manager - Emote OneShotPoint'),
@@ -4543,7 +4543,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Irradiated Worker Remove emotestate+equipment
 (1961006, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState None'),
 (1961006, 2000, 1, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Remove Equipment'),
--- Irradiated Worker Remove emotestate+equipment
+-- Irradiated Worker Add emotestate+equipment
 (1961007, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - EmoteState None'),
 (1961007, 0, 1, 42, 0, 0, 0, 0, 0, 0, 1910, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Irradiated Worker - Add Equipment'),
 -- Irradiated Worker - Special - RP with Ravandwyr 
@@ -4576,7 +4576,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1964301, 0, 0, 45, 0, 18007, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Sunfury Astromancer - Start RandomScript'),
 -- Chief Engineer Trep
 -- Use SendAiEvent to self, to change phase for random waittime
-(1970901, 0, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - SendAIEventA to self'), 
+(1970901, 0, 0, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - SendAIEventA to self'), 
 (1970901, 8000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - EmoteState UseStandingNoSheath'),
 (1970902, 2000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - Stop Emote'),
 (1970903, 2000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chief Engineer Trep - Emote OneShotExclamation'),
