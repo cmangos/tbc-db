@@ -1416,8 +1416,7 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+4,3714,1,1, -4040.5390625, -2384.229248046875, 125.2983322143554687, 1.954769015312194824, 0, 0, 0.829037666320800781, 0.559192776679992675,600,600),
 (@GGUID+5,3714,1,1, -4033.603759765625, -2404.291748046875, 126.1305999755859375, 3.577930212020874023, 0, 0, -0.97629547119140625, 0.216442063450813293,600,600),
 (@GGUID+6,105570,0,1, 96.92534637451171875, 367.758697509765625, 44.21123886108398437, 3.9793548583984375, 0, 0, -0.9135446548461914, 0.406738430261611938,600,600),
-(@GGUID+7,105570,0,1, 121.8784713745117187, 454.22222900390625, 44.12338638305664062, 0.034906249493360519, 0, 0, 0.017452239990234375, 0.999847710132598876,600,600),
-(@GGUID+8,3714,1,1, -4065.353759765625, -2417.5048828125, 126.132568359375, 3.577930212020874023, 0, 0, -0.97629547119140625, 0.216442063450813293,600,600);
+(@GGUID+7,3714,1,1, -4065.353759765625, -2417.5048828125, 126.132568359375, 3.577930212020874023, 0, 0, -0.97629547119140625, 0.216442063450813293,600,600);
 
 SET @GGUID=154030;
 DELETE FROM gameobject WHERE guid BETWEEN @GGUID AND @GGUID+10;
@@ -1479,7 +1478,48 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+45,181798,530,1, -1276.03564453125, 2647.8046875, 11.09479522705078125, 1.518436193466186523, 0, 0, 0.6883544921875, 0.725374460220336914,600,600),
 (@GGUID+46,181798,530,1, 85.49154, 3213.53638, 32.5583076, 3.92699552, 0, 0, -0.92387867, 0.3826855,600,600); -- mass_parse_v2_5_4_42940_mantislord.sql - @SNIFFID+13
 
--- 12 groups
+DELETE FROM spawn_group WHERE Id BETWEEN @TBCSGGUID+0 AND @TBCSGGUID+11;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@TBCSGGUID+0, 'Fel Iron Chest - Hellfire 1', 1, 1, 0, 0),
+(@TBCSGGUID+1, 'Fel Iron Chest - Hellfire 2', 1, 1, 0, 0),
+(@TBCSGGUID+2, 'Fel Iron Chest - Hellfire 3', 1, 1, 0, 0),
+(@TBCSGGUID+3, 'Fel Iron Chest - Hellfire 4', 1, 1, 0, 0),
+(@TBCSGGUID+4, 'Fel Iron Chest - Hellfire 5', 1, 1, 0, 0),
+(@TBCSGGUID+5, 'Fel Iron Chest - Hellfire 6', 1, 1, 0, 0),
+(@TBCSGGUID+6, 'Fel Iron Chest - Zangarmarsh 1', 1, 1, 0, 0),
+(@TBCSGGUID+7, 'Fel Iron Chest - Zangarmarsh 2', 1, 1, 0, 0),
+(@TBCSGGUID+8, 'Fel Iron Chest - Zangarmarsh 3', 1, 1, 0, 0),
+(@TBCSGGUID+9, 'Fel Iron Chest - Zangarmarsh 4 - missing 1 spawn', 1, 1, 0, 0),
+(@TBCSGGUID+10, 'Fel Iron Chest - Terokkar 1', 1, 1, 0, 0),
+(@TBCSGGUID+11, 'Fel Iron Chest - Terokkar 2', 1, 1, 0, 0);
+
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @TBCSGGUID+0 AND @TBCSGGUID+11;
+-- Hellfire 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+0, guid, -1 FROM gameobject WHERE guid IN(@GGUID+40,@GGUID+7,@GGUID+28,@GGUID+37);
+-- Hellfire 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+1, guid, -1 FROM gameobject WHERE guid IN(@GGUID+9,@GGUID+46,@GGUID+10,@GGUID+26);
+-- Hellfire 3
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+2, guid, -1 FROM gameobject WHERE guid IN(@GGUID+35,@GGUID+11,@GGUID+29,@GGUID+41);
+-- Hellfire 4
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+3, guid, -1 FROM gameobject WHERE guid IN(@GGUID+43,@GGUID+45,@GGUID+36,@GGUID+13);
+-- Hellfire 5
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+4, guid, -1 FROM gameobject WHERE guid IN(@GGUID+31,@GGUID+32,@GGUID+12,@GGUID+18);
+-- Hellfire 6
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+5, guid, -1 FROM gameobject WHERE guid IN(@GGUID+42,@GGUID+22,@GGUID+34,@GGUID+33);
+
+-- Zangarmarsh 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+6, guid, -1 FROM gameobject WHERE guid IN(@GGUID+8,@GGUID+19,@GGUID+20,@GGUID+3);
+-- Zangarmarsh 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+7, guid, -1 FROM gameobject WHERE guid IN(@GGUID+21,@GGUID+30,@GGUID+39,@GGUID+44);
+-- Zangarmarsh 3
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+8, guid, -1 FROM gameobject WHERE guid IN(@GGUID+38,@GGUID+24,@GGUID+17,@GGUID+5);
+-- Zangarmarsh 4
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+9, guid, -1 FROM gameobject WHERE guid IN(@GGUID+4,@GGUID+0,@GGUID+6); -- is missing 1
+
+-- Terokkar 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+10, guid, -1 FROM gameobject WHERE guid IN(@GGUID+2,@GGUID+15,@GGUID+1,@GGUID+25);
+-- Terokkar 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+11, guid, -1 FROM gameobject WHERE guid IN(@GGUID+23,@GGUID+14,@GGUID+27,@GGUID+16);
 
 SET @GGUID=154200;
 DELETE FROM gameobject WHERE guid BETWEEN @GGUID AND @GGUID+100;
@@ -1560,7 +1600,66 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+73,181800,530,1, 3036.93798828125, 5713.65478515625, 144.7516326904296875, 0.296705186367034912, 0, 0, 0.147809028625488281, 0.989015936851501464,600,600),
 (@GGUID+74,181800,530,1, 3204.733642578125, 5302.6298828125, 177.0395050048828125, 2.338739633560180664, 0, 0, 0.920504570007324218, 0.3907318115234375,600,600);
 
--- 18 groups
+DELETE FROM spawn_group WHERE Id BETWEEN @TBCSGGUID+12 AND @TBCSGGUID+28;
+DELETE FROM spawn_group WHERE Id = @TBCSGGUID+56;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@TBCSGGUID+12, 'Heavy Fel Iron Chest - Hellfire 1', 1, 1, 0, 0),
+(@TBCSGGUID+13, 'Heavy Fel Iron Chest - Hellfire 2', 1, 1, 0, 0),
+(@TBCSGGUID+14, 'Heavy Fel Iron Chest - Hellfire 3', 1, 1, 0, 0),
+(@TBCSGGUID+56, 'Heavy Fel Iron Chest - Zangarmarsh 1', 1, 1, 0, 0),
+(@TBCSGGUID+15, 'Heavy Fel Iron Chest - Zangarmarsh 2', 1, 1, 0, 0),
+(@TBCSGGUID+16, 'Heavy Fel Iron Chest - Zangarmarsh 3', 1, 1, 0, 0),
+(@TBCSGGUID+17, 'Heavy Fel Iron Chest - Zangarmarsh 4', 1, 1, 0, 0),
+(@TBCSGGUID+18, 'Heavy Fel Iron Chest - Terokkar 1', 1, 1, 0, 0),
+(@TBCSGGUID+19, 'Heavy Fel Iron Chest - Terokkar 2', 1, 1, 0, 0),
+(@TBCSGGUID+20, 'Heavy Fel Iron Chest - Terokkar 3', 1, 1, 0, 0),
+(@TBCSGGUID+21, 'Heavy Fel Iron Chest - Terokkar 4', 1, 1, 0, 0),
+(@TBCSGGUID+22, 'Heavy Fel Iron Chest - Terokkar 5', 1, 1, 0, 0),
+(@TBCSGGUID+23, 'Heavy Fel Iron Chest - Nagrand 1', 1, 1, 0, 0),
+(@TBCSGGUID+24, 'Heavy Fel Iron Chest - Nagrand 2', 1, 1, 0, 0),
+(@TBCSGGUID+25, 'Heavy Fel Iron Chest - Blade''s Edge Mountains 1', 1, 1, 0, 0),
+(@TBCSGGUID+26, 'Heavy Fel Iron Chest - Blade''s Edge Mountains 2', 1, 1, 0, 0),
+(@TBCSGGUID+27, 'Heavy Fel Iron Chest - Blade''s Edge Mountains 3', 1, 1, 0, 0),
+(@TBCSGGUID+28, 'Heavy Fel Iron Chest - Blade''s Edge Mountains 4', 1, 1, 0, 0);
+
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @TBCSGGUID+12 AND @TBCSGGUID+28;
+DELETE FROM spawn_group_spawn WHERE Id = @TBCSGGUID+56;
+-- Hellfire 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+12, guid, -1 FROM gameobject WHERE guid IN(@GGUID+22,@GGUID+40,@GGUID+52,@GGUID+26);
+-- Hellfire 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+13, guid, -1 FROM gameobject WHERE guid IN(@GGUID+45,@GGUID+41,@GGUID+44);
+-- Hellfire 3
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+14, guid, -1 FROM gameobject WHERE guid IN(@GGUID+39,@GGUID+47,@GGUID+33,@GGUID+57);
+-- Zangarmarsh 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+56, guid, -1 FROM gameobject WHERE guid IN(@GGUID+50,@GGUID+53,@GGUID+35,@GGUID+28);
+-- Zangarmarsh 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+15, guid, -1 FROM gameobject WHERE guid IN(@GGUID+61,@GGUID+6,@GGUID+31,@GGUID+7);
+-- Zangarmarsh 3
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+16, guid, -1 FROM gameobject WHERE guid IN(@GGUID+0,@GGUID+29,@GGUID+9,@GGUID+32);
+-- Zangarmarsh 4
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+17, guid, -1 FROM gameobject WHERE guid IN(@GGUID+30,@GGUID+42,@GGUID+54,@GGUID+68);
+-- Terokkar 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+18, guid, -1 FROM gameobject WHERE guid IN(@GGUID+21,@GGUID+19,@GGUID+20,@GGUID+8);
+-- Terokkar 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+19, guid, -1 FROM gameobject WHERE guid IN(@GGUID+1,@GGUID+4,@GGUID+2,@GGUID+13);
+-- Terokkar 3
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+20, guid, -1 FROM gameobject WHERE guid IN(@GGUID+3,@GGUID+15,@GGUID+43,@GGUID+51);
+-- Terokkar 4
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+21, guid, -1 FROM gameobject WHERE guid IN(@GGUID+25,@GGUID+46,@GGUID+38,@GGUID+58);
+-- Terokkar 5
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+22, guid, -1 FROM gameobject WHERE guid IN(@GGUID+10,@GGUID+24,@GGUID+17,@GGUID+11);
+-- Nagrand 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+23, guid, -1 FROM gameobject WHERE guid IN(@GGUID+55,@GGUID+16,@GGUID+18,@GGUID+12);
+-- Nagrand 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+24, guid, -1 FROM gameobject WHERE guid IN(@GGUID+27,@GGUID+14,@GGUID+23,@GGUID+5);
+-- Blade''s Edge Mountains 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+25, guid, -1 FROM gameobject WHERE guid IN(@GGUID+56,@GGUID+48,@GGUID+69,@GGUID+65);
+-- Blade''s Edge Mountains 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+26, guid, -1 FROM gameobject WHERE guid IN(@GGUID+70,@GGUID+74,@GGUID+73,@GGUID+36);
+-- Blade''s Edge Mountains 3
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+27, guid, -1 FROM gameobject WHERE guid IN(@GGUID+66,@GGUID+67,@GGUID+63,@GGUID+37,@GGUID+71);
+-- Blade''s Edge Mountains 4
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+28, guid, -1 FROM gameobject WHERE guid IN(@GGUID+72,@GGUID+34,@GGUID+64,@GGUID+62,@GGUID+49);
 
 SET @GGUID=154300;
 DELETE FROM gameobject WHERE guid BETWEEN @GGUID AND @GGUID+100;
@@ -1648,7 +1747,67 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+80,181802,530,1, -3840.89673, 3324.47339, 324.0385, 4.50295162, 0, 0, -0.7771454, 0.6293211,600,600), -- mass_parse_v2_5_4_44171_kittnz.sql - @SNIFFID+1
 (@GGUID+81,181802,530,1, -3664.34033, 3388.45435, 312.956726, 1.64060688, 0, 0, 0.7313528, 0.6819993,600,600); -- mass_parse_v2_5_4_42940_mantislord.sql - @SNIFFID+13
 
--- 20 groups
+DELETE FROM spawn_group WHERE Id BETWEEN @TBCSGGUID+29 AND @TBCSGGUID+47;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@TBCSGGUID+29, 'Adamantite Bound Chest - Terokkar 1', 1, 1, 0, 0),
+(@TBCSGGUID+30, 'Adamantite Bound Chest - Terokkar 2', 1, 1, 0, 0),
+(@TBCSGGUID+31, 'Adamantite Bound Chest - Nagrand 1', 1, 1, 0, 0),
+(@TBCSGGUID+32, 'Adamantite Bound Chest - Nagrand 2', 1, 1, 0, 0),
+(@TBCSGGUID+33, 'Adamantite Bound Chest - Nagrand 3', 1, 1, 0, 0),
+(@TBCSGGUID+34, 'Adamantite Bound Chest - Nagrand 4', 1, 1, 0, 0),
+(@TBCSGGUID+35, 'Adamantite Bound Chest - Blade''s Edge Mountains 1', 1, 1, 0, 0),
+(@TBCSGGUID+36, 'Adamantite Bound Chest - Blade''s Edge Mountains 2', 1, 1, 0, 0),
+(@TBCSGGUID+37, 'Adamantite Bound Chest - Blade''s Edge Mountains 3', 1, 1, 0, 0),
+(@TBCSGGUID+38, 'Adamantite Bound Chest - Netherstorm 1', 1, 1, 0, 0),
+(@TBCSGGUID+39, 'Adamantite Bound Chest - Netherstorm 2', 1, 1, 0, 0),
+(@TBCSGGUID+40, 'Adamantite Bound Chest - Netherstorm 3', 1, 1, 0, 0),
+(@TBCSGGUID+41, 'Adamantite Bound Chest - Netherstorm 4', 1, 1, 0, 0),
+(@TBCSGGUID+42, 'Adamantite Bound Chest - Netherstorm 5', 1, 1, 0, 0),
+(@TBCSGGUID+43, 'Adamantite Bound Chest - Netherstorm 6', 1, 1, 0, 0),
+(@TBCSGGUID+44, 'Adamantite Bound Chest - Shadowmoon Valley 1', 1, 1, 0, 0),
+(@TBCSGGUID+45, 'Adamantite Bound Chest - Shadowmoon Valley 2', 1, 1, 0, 0),
+(@TBCSGGUID+46, 'Adamantite Bound Chest - Shadowmoon Valley 3', 1, 1, 0, 0),
+(@TBCSGGUID+47, 'Adamantite Bound Chest - Shadowmoon Valley 4', 1, 1, 0, 0);
+
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @TBCSGGUID+29 AND @TBCSGGUID+47;
+-- Terokkar 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+29, guid, -1 FROM gameobject WHERE guid IN(@GGUID+42,@GGUID+39,@GGUID+43,@GGUID+80,@GGUID+1);
+-- Terokkar 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+30, guid, -1 FROM gameobject WHERE guid IN(@GGUID+81,@GGUID+40,@GGUID+76,@GGUID+68,@GGUID+0);
+-- Nagrand 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+31, guid, -1 FROM gameobject WHERE guid IN(@GGUID+50,@GGUID+36,@GGUID+35,@GGUID+6);
+-- Nagrand 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+32, guid, -1 FROM gameobject WHERE guid IN(@GGUID+12,@GGUID+7,@GGUID+16,@GGUID+14);
+-- Nagrand 3
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+33, guid, -1 FROM gameobject WHERE guid IN(@GGUID+49,@GGUID+15,@GGUID+9,@GGUID+34);
+-- Nagrand 4
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+34, guid, -1 FROM gameobject WHERE guid IN(@GGUID+37,@GGUID+44,@GGUID+8,@GGUID+13);
+-- Blade''s Edge Mountains 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+35, guid, -1 FROM gameobject WHERE guid IN(@GGUID+53,@GGUID+25,@GGUID+72,@GGUID+71);
+-- Blade''s Edge Mountains 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+36, guid, -1 FROM gameobject WHERE guid IN(@GGUID+33,@GGUID+57,@GGUID+29,@GGUID+74,@GGUID+38);
+-- Blade''s Edge Mountains 3
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+37, guid, -1 FROM gameobject WHERE guid IN(@GGUID+31,@GGUID+75,@GGUID+52,@GGUID+73,@GGUID+30,@GGUID+60);
+-- Netherstorm 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+38, guid, -1 FROM gameobject WHERE guid IN(@GGUID+79,@GGUID+69,@GGUID+47,@GGUID+67);
+-- Netherstorm 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+39, guid, -1 FROM gameobject WHERE guid IN(@GGUID+77,@GGUID+27,@GGUID+70,@GGUID+58);
+-- Netherstorm 3
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+40, guid, -1 FROM gameobject WHERE guid IN(@GGUID+23,@GGUID+45,@GGUID+4,@GGUID+56);
+-- Netherstorm 4
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+41, guid, -1 FROM gameobject WHERE guid IN(@GGUID+17,@GGUID+66,@GGUID+11,@GGUID+28);
+-- Netherstorm 5
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+42, guid, -1 FROM gameobject WHERE guid IN(@GGUID+48,@GGUID+46,@GGUID+55,@GGUID+26);
+-- Netherstorm 6
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+43, guid, -1 FROM gameobject WHERE guid IN(@GGUID+10,@GGUID+54,@GGUID+78,@GGUID+24);
+-- Shadowmoon Valley 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+44, guid, -1 FROM gameobject WHERE guid IN(@GGUID+21,@GGUID+59,@GGUID+20,@GGUID+62);
+-- Shadowmoon Valley 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+45, guid, -1 FROM gameobject WHERE guid IN(@GGUID+65,@GGUID+5,@GGUID+2,@GGUID+3);
+-- Shadowmoon Valley 3
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+46, guid, -1 FROM gameobject WHERE guid IN(@GGUID+18,@GGUID+63,@GGUID+32,@GGUID+19);
+-- Shadowmoon Valley 4
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+47, guid, -1 FROM gameobject WHERE guid IN(@GGUID+64,@GGUID+61,@GGUID+22,@GGUID+41);
 
 SET @GGUID=154450;
 DELETE FROM gameobject WHERE guid BETWEEN @GGUID AND @GGUID+50;
@@ -1686,4 +1845,31 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+30,181804,530,1, -3290.04761, 253.840286, 120.477943, 3.76991153, 0, 0, -0.9510565, 0.309017122,600,600), -- kittnz @SNIFFID+11 mass_parse_v2_5_1_38988_kittnz.sql
 (@GGUID+31,181804,530,1, -3230.486328125, 370.513671875, 119.945892333984375, 2.460912704467773437, 0, 0, 0.942641258239746093, 0.333807557821273803,600,600);
 
--- 8 groups
+DELETE FROM spawn_group WHERE Id BETWEEN @TBCSGGUID+48 AND @TBCSGGUID+55;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@TBCSGGUID+48, 'Felsteel Chest - Nagrand 1', 1, 1, 0, 0),
+(@TBCSGGUID+49, 'Felsteel Chest - Nagrand 2', 1, 1, 0, 0),
+(@TBCSGGUID+50, 'Felsteel Chest - Netherstorm 1', 1, 1, 0, 0),
+(@TBCSGGUID+51, 'Felsteel Chest - Netherstorm 2', 1, 1, 0, 0),
+(@TBCSGGUID+52, 'Felsteel Chest - Shadowmoon Valley 1', 1, 1, 0, 0),
+(@TBCSGGUID+53, 'Felsteel Chest - Shadowmoon Valley 2', 1, 1, 0, 0),
+(@TBCSGGUID+54, 'Felsteel Chest - Shadowmoon Valley 3', 1, 1, 0, 0),
+(@TBCSGGUID+55, 'Felsteel Chest - Shadowmoon Valley 4', 1, 1, 0, 0);
+
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @TBCSGGUID+48 AND @TBCSGGUID+55;
+-- Nagrand 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+48, guid, -1 FROM gameobject WHERE guid IN(@GGUID+25,@GGUID+16,@GGUID+26,@GGUID+8);
+-- Nagrand 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+49, guid, -1 FROM gameobject WHERE guid IN(@GGUID+6,@GGUID+1,@GGUID+0,@GGUID+10);
+-- Netherstorm 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+50, guid, -1 FROM gameobject WHERE guid IN(@GGUID+13,@GGUID+27,@GGUID+24,@GGUID+5);
+-- Netherstorm 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+51, guid, -1 FROM gameobject WHERE guid IN(@GGUID+23,@GGUID+17,@GGUID+28,@GGUID+20);
+-- Shadowmoon Valley 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+52, guid, -1 FROM gameobject WHERE guid IN(@GGUID+21,@GGUID+19,@GGUID+4,@GGUID+12);
+-- Shadowmoon Valley 2
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+53, guid, -1 FROM gameobject WHERE guid IN(@GGUID+18,@GGUID+14,@GGUID+22,@GGUID+15);
+-- Shadowmoon Valley 3
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+54, guid, -1 FROM gameobject WHERE guid IN(@GGUID+3,@GGUID+30,@GGUID+31,@GGUID+9);
+-- Shadowmoon Valley 4
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+55, guid, -1 FROM gameobject WHERE guid IN(@GGUID+7,@GGUID+29,@GGUID+11,@GGUID+2);
