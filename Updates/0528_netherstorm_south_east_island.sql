@@ -1167,7 +1167,7 @@ DELETE FROM creature_addon WHERE guid IN (67285,67288,67289,67285,67288,67289,67
 -- Area 52 NPCs
 DELETE FROM creature_addon WHERE guid IN (70034, 70035, 70036);
 
-DELETE FROM creature_addon WHERE guid BETWEEN @CGUID+1 AND @CGUID+733;
+DELETE FROM creature_addon WHERE guid BETWEEN @CGUID+1 AND @CGUID+829;
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+75, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
 (@CGUID+76, 0, 8, 0, 0, 0, NULL), -- Disembodied Vindicator
@@ -1214,7 +1214,7 @@ DELETE FROM creature_template_addon WHERE entry = 19737;
 -- Waypoints 
 DELETE FROM creature_movement WHERE id IN (67281,67283,67285,67288,67289,67290,67291,67292,67461,67464,67293,67294,67296,67297,67298,67299,67300,67301,67302,67303,67304,67373,67374,67704,67575,67580,70615,70030,70032,70033,70037,1002734,1002735,1002736,67286,1002731,1002730,1002729,1002728,1002727,67363,67364,67365,67366,67367,67368,67369,67370,67371,67372,1002721,1002720,1002719,1002718,1002717,67378,67379,67380,67382,67383,67384,67385,1002737,1002738,1002739,67381,1002726,69668,69671,69672,69670,1002722,70071,70072);
 DELETE FROM creature_movement WHERE id IN (67287, 67349, 67350, 67351, 67352, 67353, 67354, 67355, 67356, 67357, 67358, 67359, 67360, 67361, 67362, 67377, 67466, 67469, 67522, 67674, 67675, 67676, 67677, 67678, 67679, 67680, 67681, 67682, 67683, 67684, 67685, 67686, 67687, 67688, 67689, 67694, 67695, 67696, 67697, 69669, 70069, 70070, 70990, 70991, 70992, 70993, 70994, 70989, 71811, 71814, 71856, 71872, 71879, 72537, 73962, 73963, 73964, 73965, 75856, 1002671, 1002675, 1002679, 1002703, 1002708, 1002741, 1002869, 1002870, 1002871, 1002872, 1002683);
-DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+826;
+DELETE FROM creature_movement WHERE Id BETWEEN @CGUID+1 AND @CGUID+829;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Nether Technician, changing orientation only
 (@CGUID+3, 1, 3383.929,4348.6997,133.66545,0.20943951, 12000, 0), -- waittime between 12 and 15 seconds
@@ -2615,7 +2615,7 @@ INSERT INTO creature_equip_template (`entry`, `equipentry1`, `equipentry2`, `equ
 
 -- SpawnData
 DELETE FROM creature_spawn_data WHERE guid IN (70008, 71807, 71808, 71809, 71810, 71811, 71812, 71813, 71814, 71815, 71816, 71817, 71818, 71819);
-DELETE FROM creature_spawn_data WHERE guid BETWEEN @CGUID+1 AND @CGUID+613;
+DELETE FROM creature_spawn_data WHERE guid BETWEEN @CGUID+1 AND @CGUID+829;
 INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+1, 2020302), -- Monster - Tool, Wrench Small
 (@CGUID+2, 2020301), -- Monster - Mace, Basic Metal Hammer
@@ -2694,7 +2694,7 @@ INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+828, 50),
 (@CGUID+829, 50);
 
-DELETE FROM creature_spawn_data_template WHERE Entry IN (1885701, 1887901, 1961002);
+DELETE FROM creature_spawn_data_template WHERE Entry IN (1885701, 1887901, 1961001, 1961002);
 INSERT INTO creature_spawn_data_template (`Entry`, `UnitFlags`, `EquipmentId`, `Name`) VALUES 
 (1885701, -1, 1885701, 'Sunfury Warp-Master (18857) - EquipmentId'),
 (1887901, 33587968, -1, 'Phase Hunter (18879) - UnitFlags'),
@@ -2718,6 +2718,7 @@ DELETE FROM gameobject WHERE id IN (183805, 183806, 183807, 183808);
 
 -- Add sniff based spawns
 SET @GGUID := 157038;
+DELETE FROM gameobject WHERE guid BETWEEN @GGUID+1 AND @GGUID+63;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
 (@GGUID+1, 183767, 530, 1, 3362.163330078125, 3455.52294921875, 140.27886962890625, 2.914689540863037109, 0, 0, 0.993571281433105468, 0.113208353519439697, 300, 420),
 (@GGUID+2, 183767, 530, 1, 3364.127197265625, 3689.97607421875, 142.813690185546875, 1.640606880187988281, 0, 0, 0.731352806091308593, 0.6819993257522583, 300, 420),
@@ -3749,15 +3750,17 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+100, @GGUID+28, -1, 0), -- Etherlithium Matrix Crystal
 (@SGGUID+100, @GGUID+29, -1, 0); -- Etherlithium Matrix Crystal
 
-
+DELETE FROM spawn_group_formation WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+100;
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+55, 1, 3, 0, @SGGUID+55, 2, 'Netherstorm - Group 055 - Nadja | Soren - Formation 001'),
 (@SGGUID+56, 1, 3, 0, @SGGUID+56, 2, 'Netherstorm - Group 056 - Irradiated Worker - Special - Patrol 002');
 
+DELETE FROM waypoint_path_name WHERE PathId IN (@SGGUID+55, @SGGUID+56);
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+55,'Netherstorm - Group 055 - Nadja | Soren - Formation 001'),
 (@SGGUID+56,'Netherstorm - Group 056 - Irradiated Worker - Special - Patrol 002');
 
+DELETE FROM waypoint_path WHERE PathId IN (@SGGUID+55, @SGGUID+56);
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+55, 1, 3082.68,3673.1042,142.35098, 100, 0, 0),
 (@SGGUID+55, 2, 3088.5596,3666.6267,142.58907, 100, 0, 0),
@@ -3839,7 +3842,7 @@ INSERT INTO `string_id` (Id, Name) VALUES
 
 -- Scripts
 SET @RELAYID := 18000;
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+21;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+29;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Netherologist Coppernickels different text's
 (@RELAYID+1, 0, 16949, 0, 'Netherstorm - Nether Technician - Say 1'), 
@@ -3989,7 +3992,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+29, 1, @RELAYID+96, 0, 'Netherstorm - Ravandwyr Arcane RP');
  
 SET @RELAYID := 18000;
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+85;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+96;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Nether Technician script via ACID - CGUID+4
 (@RELAYID+1, 0, 0, 42, 0, 0, 0, 0, 0, 0, 1911, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Nether Technician - Set EquipmentSlot'),
@@ -4672,6 +4675,7 @@ UPDATE broadcast_text SET ChatTypeID = 2 WHERE Id= 17849;
 -- DB Error Fixes
 --  Table `npc_gossip` have nonexistent creature entry, ignore. 
 DELETE FROM npc_gossip WHERE npc_guid IN (69727, 70009, 70016, 70038, 70073, 72339);
+DELETE FROM npc_gossip WHERE npc_guid IN (@CGUID+734, @CGUID+758, @CGUID+734, @CGUID+797, @CGUID+802, @CGUID+822, @CGUID+828);
 INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES 
 (@CGUID+797, 10042), -- Anchorite Karja old guid 69727
 (@CGUID+822, 9844), -- Rocket-Chief Fuselage old guid 70009
