@@ -3791,7 +3791,6 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+64, @CGUID+767, -1, 0), -- Experimental Pilot
 (@SGGUID+64, @CGUID+778, -1, 0), -- Irradiated Manager
 (@SGGUID+64, @CGUID+779, -1, 0), -- Warpy
-(@SGGUID+64, @CGUID+778, -1, 0), -- Irradiated Manager
 (@SGGUID+64, @CGUID+801, -1, 0), -- Bill
 (@SGGUID+64, @CGUID+803, -1, 0), -- Off-Duty Engineer
 (@SGGUID+64, @CGUID+804, -1, 0), -- Doc
