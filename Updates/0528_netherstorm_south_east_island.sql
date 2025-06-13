@@ -2902,8 +2902,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+58, 'Netherstorm - Group 058 - Scryer Retainer | Spymaster Thalodien | Magistrix Larynna', 0, 0, 0, 0, 0),
 -- Area 52 General NPCs
 (@SGGUID+59, 'Netherstorm - Group 059 - Area 52 General', 0, 0, 0, 0, 0),
--- Area 52 AuctionHouse NPCs
-(@SGGUID+60, 'Netherstorm - Group 060 - Auction House', 0, 0, 0, 0, 0),
+-- Area 52 Bank NPCs
+(@SGGUID+60, 'Netherstorm - Group 060 - Bank', 0, 0, 0, 0, 0),
 -- Area 52 Vendors
 (@SGGUID+61, 'Netherstorm - Group 061 - Area52 Vendors', 0, 0, 0, 0, 0),
 -- Area 52 QuestGiver
@@ -3698,7 +3698,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+52, @CGUID+740, -1, 0), -- Irradiated Worker
 (@SGGUID+52, @CGUID+741, -1, 0), -- Irradiated Worker
 (@SGGUID+52, @CGUID+742, -1, 0), -- Irradiated Worker
-(@SGGUID+52, @CGUID+744, -1, 0), -- Irradiated Worker
+(@SGGUID+52, @CGUID+774, -1, 0), -- Irradiated Worker
 (@SGGUID+52, @CGUID+775, -1, 0), -- Irradiated Worker
 (@SGGUID+52, @CGUID+776, -1, 0), -- Irradiated Worker
 (@SGGUID+52, @CGUID+777, -1, 0), -- Irradiated Worker
@@ -3759,14 +3759,14 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 -- Area 52 General NPCs
 (@SGGUID+59, @CGUID+738, -1, 0), -- Krexcil (Flightmaster)
 (@SGGUID+59, @CGUID+756, -1, 0), -- Xyrol (Engineering Trainer)
-(@SGGUID+59, @CGUID+764, -1, 0), -- Meeda (Banker)
 (@SGGUID+59, @CGUID+780, -1, 0), -- Liza Cutlerflix (Stable Master)
 (@SGGUID+59, @CGUID+786, -1, 0), -- Inkeeper Remi Dodoso
 (@SGGUID+59, @CGUID+809, -1, 0), -- Kablamm Farflinger (
--- Area 52 AuctionHouse NPCs
+-- Area 52 Bank NPCs
 (@SGGUID+60, @CGUID+752, -1, 0), -- Nandirx
 (@SGGUID+60, @CGUID+753, -1, 0), -- Karzo
 (@SGGUID+60, @CGUID+754, -1, 0), -- Zixxy
+(@SGGUID+60, @CGUID+764, -1, 0), -- Meeda (Banker)
 -- Area 52 Vendors
 (@SGGUID+61, @CGUID+748, -1, 0), -- Kizzie
 (@SGGUID+61, @CGUID+755, -1, 0), -- Qiff
@@ -4792,11 +4792,254 @@ UPDATE broadcast_text SET ChatTypeID = 2 WHERE Id= 17849;
 -- DB Error Fixes
 --  Table `npc_gossip` have nonexistent creature entry, ignore. 
 DELETE FROM npc_gossip WHERE npc_guid IN (69727, 70009, 70016, 70038, 70073, 72339);
-DELETE FROM npc_gossip WHERE npc_guid IN (@CGUID+734, @CGUID+758, @CGUID+734, @CGUID+797, @CGUID+802, @CGUID+822, @CGUID+828);
-INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES 
-(@CGUID+797, 10042), -- Anchorite Karja old guid 69727
-(@CGUID+822, 9844), -- Rocket-Chief Fuselage old guid 70009
-(@CGUID+734, 9846), -- Bot-Specialist Alley old guid 70016
-(@CGUID+802, 9863), -- Boots old guid 70038
-(@CGUID+828, 9875), -- Papa Wheeler old guid 70073
-(@CGUID+758, 10031); -- Lee Sparks old guid 72339
+
+-- Veronia Gossip
+-- GossipID: 8082
+-- BroadcastTextID2: 17759
+-- BroadcastTextID2: 17780
+DELETE FROM npc_text_broadcast_text WHERE Id IN (17759, 17760);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(17759, 1, 17759), -- I'm a little busy negotiating a bribe right now.  You might want to come back later.
+(17760, 1, 17760); -- I've arranged for your flight to Manaforge Coruu.  Are you ready, $n?  You will be dropped off behind enemy lines so make sure you bring everything you need.
+DELETE FROM npc_text WHERE ID IN (9989, 9990);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (8082);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(8082, 17759, 0, 0),
+(8082, 17760, 0, 80);
+
+-- Lead Sapper Blastfizzle
+-- GossipID: 8003
+-- BroadcastTextID: 17088
+DELETE FROM npc_text_broadcast_text WHERE Id IN (17088);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(17088, 1, 17088); -- Radiation?!$B$BNo, you don't need to worry about that!  Sheesh, the things that people believe these days.$B$BSo, what do you think of our operations down here?  State of the art, baby!  You better believe it.
+DELETE FROM npc_text WHERE ID IN (9869);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (8003);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(8003, 17088, 0, 0);
+
+-- Chief Engineer Trep
+-- GossipID: 8030
+-- BroadcastTextID: 17345
+DELETE FROM npc_text_broadcast_text WHERE Id IN (17345);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(17345, 1, 17345); -- When Rocket-Chief Fuselage was asking for volunteers to help out with building the X-52 Nether-Rocket, I submitted my resume for the security division.$B$BUnfortunately, the only position that was left was chief engineer.  Lucky for me, I have Xyrol here to look over my shoulder.
+DELETE FROM npc_text WHERE ID IN (9916);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (8030);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(8030, 17345, 0, 0);
+
+-- Lee Sparks
+-- GossipID: 8106
+-- BroadcastTextID: 18008
+DELETE FROM npc_text_broadcast_text WHERE Id IN (18008);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(18008, 1, 18008); -- If you've been to Zangarmarsh, you might've run into a fellow named Daniels. You know -- wears a strange helmet, only answers to "the Specialist."$B$BOf course, I taught him everything he knows.$B$BDon't let the fine clothing fool you. I'm still a rogue at heart. Daniels and I spent a lot of time in the trenches together, but that was before I retired. As far as I know, he's still out there, giving 'em hell.
+DELETE FROM npc_text WHERE ID IN (10031);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (8106);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(8106, 18008, 0, 0);
+
+UPDATE creature_template SET GossipMenuId = 8106 WHERE entry =  20389;
+
+
+-- Ravandwyr
+-- GossipID: 7981
+-- BroadcastTextID: 16869
+DELETE FROM npc_text_broadcast_text WHERE Id IN (16867, 16869);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(16867, 1, 16867), -- 'Netherstorm' was not always as you see it now.$B$BThere was a time when this crumbling land was known as the Plains of Farahlon. Little of those days has survived the evil that has taken hold here.
+(16869, 1, 16869); -- Archmage Vargoth enstrusted me with his staff when he told me to flee from the blood elf attack on Violet Tower. I did as he told me, hoping to take refuge in the old draenei settlement of Arklon.$B$BThere was to be no respite. I had walked right into the leading edge of a Burning Legion force. The demons wrested the staff from me, but I managed to escape with my life.$B$BThough my master knows nothing of my failure, it still shames me.
+DELETE FROM npc_text WHERE ID IN (9826, 9828);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (7981);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(7981, 16867, 0, 0),
+(7981, 16869, 0, @SGGUID+8);
+
+-- Gossip Menu is available after Player completed Quest Rebuilding the Staff (ID: 10300)
+-- Gossip Menu isnt available after Player completed Quest Ar'kelos the Guardian (ID: 10176)
+DELETE FROM gossip_menu_option WHERE menu_id = 7981;
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `box_broadcast_text`, `condition_id`) VALUES 
+(7981, 0, 0, 'I\'ve lost Archmage Vargoth\'s Staff. Can you replace it?', 18546, 1, 1, 0, 0, 7981, 0, 0, NULL, 0, @SGGUID+12);
+
+-- Ravandwyr Gossip Conditions
+-- Before Accepting The Archmage's Staff quest he will show npc_text 16867
+-- After Player Accepts quest 10173 The Archmage's Staff 16869
+
+-- Delete old Conditions and change 2 conditions to new one
+DELETE FROM `conditions` WHERE condition_entry IN (3705, 3709, 3710);
+
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+6, @SGGUID+7, @SGGUID+8, @SGGUID+9, @SGGUID+10, @SGGUID+11, @SGGUID+12);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@SGGUID+6, 9, 10173, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Quest 10173 taken, no matter if completed or not'),
+(@SGGUID+7, 8, 10173, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Quest 10173 Rewarded'),
+(@SGGUID+8, -2, @SGGUID+6, @SGGUID+7, 0, 0, 0, 'Netherstorm - Ravandwyr - Condition 28016 OR 28017'),
+(@SGGUID+9, 8, 10300, 0, 0, 0, 0, 'Netherstorm - Ravandwyr - Quest 10300 Rewarded'),
+(@SGGUID+10, 8, 10176, 0, 0, 0, 1, 'Netherstorm - Ravandwyr - Quest 10176 Not Rewarded'),
+(@SGGUID+11, 23, 28455, 1, 0, 0, 1, 'Netherstorm - Ravandwyr - Player does not have item 28455'),
+(@SGGUID+12, -1, @SGGUID+9, @SGGUID+10, @SGGUID+11, 0, 0, 'Netherstorm - Ravandwyr - Condition 28019 AND 28020');
+
+-- Inkeeper Remi Dodoso
+-- GossipID: 8103 
+DELETE FROM npc_text_broadcast_text WHERE Id = 17951;
+INSERT INTO `npc_text_broadcast_text` (`Id`, `Prob0`, `Prob1`, `BroadcastTextId0`, `BroadcastTextId1`) VALUES 
+(17951, 1, 1, 17951, 17952);
+
+DELETE FROM npc_text WHERE ID IN (10022);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (8103);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(8103, 17951, 0, 0);
+
+-- Anchorite Karja
+-- GossipID: 8112
+-- BroadcastTextID: 18115
+DELETE FROM npc_text_broadcast_text WHERE Id IN (18115);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(18115, 1, 18115);
+DELETE FROM npc_text WHERE ID IN (10042);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (8112);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(8112, 18115, 0, 0);
+
+UPDATE creature_template SET GossipMenuId = 8112 WHERE entry =  19467;
+
+
+-- Exarch Orelis 19466
+-- GossipID: 8074
+-- BroadcastTextID: 17744
+DELETE FROM npc_text_broadcast_text WHERE Id IN (17744);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(17744, 1, 17744);
+DELETE FROM npc_text WHERE ID IN (9980);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (8074);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(8074, 17744, 0, 0);
+
+
+-- Nether-Stalker Khay'ji 19880
+-- GossipID: 8048
+-- BroadcastTextID: 17594
+DELETE FROM npc_text_broadcast_text WHERE Id IN (17594);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(17594, 1, 17594);
+DELETE FROM npc_text WHERE ID IN (9960);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (8048);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(8048, 17594, 0, 0);
+
+-- Boots 19617
+-- GossipID: 8001
+-- BroadcastTextID: 17048
+DELETE FROM npc_text_broadcast_text WHERE Id IN (17048);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(17048, 1, 17048);
+DELETE FROM npc_text WHERE ID IN (9863);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (8001);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(8001, 17048, 0, 0);
+
+UPDATE creature_template SET GossipMenuId = 8001 WHERE entry = 19617;
+
+-- Kablamm Farflinger 21493
+-- Old Gossip 20003
+-- Sniffed
+-- GossipID: 8308
+-- BroadcastTextID: 19134
+-- GossipOptionID: 92117
+-- This Dimensional Imploder sounds dangerous!  How can I make one?
+-- GossipID: 8309 
+-- BroadcastTextID: 9995
+DELETE FROM npc_text_broadcast_text WHERE Id IN (19134, 9995, 19135);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(19134, 1, 19134), -- With the help of my brother Zap in Everlook I have constructed a Dimensional Imploder right here in Area 52.   Who needs a rocket when you have instant transportation via Goblin Engineering!   Are you a skilled enough Goblin Engineer to learn how to build your own Imploder beacon?
+-- have to use higher id to not duplicate npc_text
+(999501, 1, 9995), -- The theory behind it is that we completely destroy you with a massive explosion wherever you are and send those particles through a dimensional rip and then re-implode you at the machine here.   Instant Transport!    It might not work ALL the time, but what kind of goblin engineer are you!   If survival was your first priority you could never be a real Goblin Engineer! Here is the recipe you will need to make the Dimensional Ripper and try it out!
+(19135, 1, 19135); -- I am happy to talk with another qualified Goblin Engineer!   So many Goblin Engineers learn how to make the Dimension Ripper and then we never hear from them again.  Puzzling.
+
+DELETE FROM npc_text WHERE ID IN (10365);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (8308, 8309, 20003);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(8308, 19134, 0, 177), -- Opens for everyone that didnt learn Dimensional Ripper - Area 52
+(8308, 19135, 0, 0), -- Opens for everyone that learned Dimensional Ripper - Area 52
+(8309, 999501, 0, 0); -- Opens after learning Dimensional Ripper - Area 52
+
+DELETE FROM gossip_menu_option WHERE menu_id IN (8308, 20003);
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `box_broadcast_text`, `condition_id`) VALUES 
+(8308, 0, 0, 'This Dimensional Imploder sounds dangerous!  How can I make one?', 9994, 1, 1, 8309, 0, 830801, 0, 0, NULL, 0, 190);
+
+
+DELETE FROM dbscripts_on_gossip WHERE id IN (20003, 830801);
+INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(830801, 0, 0, 15, 36956, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Kablamm Farflinger - Cast Dimensional Ripper - Area 52');
+
+UPDATE creature_template SET GossipMenuId = 8308 WHERE entry =  21493;
+
+
+-- Papa Wheeler 19645
+-- GossipID: 8008
+-- BroadcastTextID: 17130
+DELETE FROM npc_text_broadcast_text WHERE Id IN (17130);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(17130, 1, 17130);
+DELETE FROM npc_text WHERE ID IN (9875);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (8008);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(8008, 17130, 0, 0);
+
+UPDATE creature_template SET GossipMenuId = 8008 WHERE entry = 19645;
+
+
+-- Rocket-Chief Fuselage 19570
+-- GossipID: 7992
+-- BroadcastTextID: 16957
+DELETE FROM npc_text_broadcast_text WHERE Id IN (16957);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(16957, 1, 16957);
+DELETE FROM npc_text WHERE ID IN (9844);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (7992);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(7992, 16957, 0, 0);
+
+UPDATE creature_template SET GossipMenuId = 7992 WHERE entry = 19570;
+
+
+-- Bot-Specialist Alley
+-- GossipID: 7994
+-- BroadcastTextID: 16959
+DELETE FROM npc_text_broadcast_text WHERE Id IN (16959);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(16959, 1, 16959);
+DELETE FROM npc_text WHERE ID IN (9846);
+
+-- Sniffed Values
+DELETE FROM gossip_menu WHERE entry IN (7994);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(7994, 16959, 0, 0);
+
+UPDATE creature_template SET GossipMenuId = 7994 WHERE entry = 19578;
