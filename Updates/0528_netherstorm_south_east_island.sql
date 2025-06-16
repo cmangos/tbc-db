@@ -4732,7 +4732,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (2175101, 0, 0, 1, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chubis - Remove EmoteState'), 
 (2175102, 0, 0, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chubis - SendAIEventB to self'), 
 (2175102, 200, 0, 1, 133, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chubis - EmoteState UseStandingNoSheath'), 
-(2175103, 0, 0, 35, 7, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chubis - SendAIEventC to self'), 
+(2175103, 0, 0, 35, 8, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Chubis - SendAIEventC to self'), 
 -- Warpy random waittime
 (2497701, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warpy - SendAIEventA to self'), 
 (2497702, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Warpy - SendAIEventB to self');
