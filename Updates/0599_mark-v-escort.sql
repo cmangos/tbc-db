@@ -5,7 +5,7 @@ SET @OGUID := 157101;
 
 
 DELETE FROM gameobject WHERE id = 183771;
--- DELETE FROM gameobject WHERE guid BETWEEN @OGUID+1 AND @OGUID+3;
+DELETE FROM gameobject WHERE guid BETWEEN @OGUID+1 AND @OGUID+3;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
 (@OGUID+1, 183771, 530, 1, 3450.944091796875, 3699.927978515625, 148.1732940673828125, 0.994837164878845214, 0, 0, 0.477158546447753906, 0.878817260265350341, 65, 65),
 (@OGUID+2, 183771, 530, 1, 3415.23828125, 3612.20361328125, 141.1843109130859375, 0.593410074710845947, 0, 0, 0.292370796203613281, 0.95630502700805664, 65, 65),
@@ -16,7 +16,7 @@ DELETE FROM spawn_group WHERE Id = @SGGUID+1;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 (@SGGUID+1, 'Netherstorm - Quest:Mark V is Alive! - GameObjects', 1, 0, 0, 0, 0);
 
-DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+100;
+DELETE FROM spawn_group_spawn WHERE Id = @SGGUID+1;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @OGUID+1, -1, 0), -- Draenei Machine
 (@SGGUID+1, @OGUID+2, -1, 0), -- Draenei Machine
@@ -105,7 +105,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1958902, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 19484, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Maxx A. Million Mk. V - Say Text'),
 -- Maxx A. Million Mk. V EndRP
 (1958903, 1000, 0, 36, 0, 0, 0, 19578, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Face Maxx A. Million Mk. V'),
-(1958901, 1000, 1, 1, 0, 0, 0, 19578, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Remove EmoteState'),
+(1958903, 1000, 1, 1, 0, 0, 0, 19578, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Remove EmoteState'),
 (1958903, 2000, 0, 1, 4, 0, 0, 19578, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Emote OneShotCheer'),
 (1958903, 3000, 1, 0, 0, 0, 0, 19578, 10, 0, 17014, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Say Text'),
 (1958903, 15000, 0, 36, 1, 0, 0, 19578, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Netherstorm - Bot-Specialist Alley - Reset Orientation'),
