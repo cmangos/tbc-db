@@ -50,6 +50,10 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+6, 2, 4737.4463,166.4566,52.88087, 100, 0, 0), 
 (@CGUID+6, 3, 4718.637,152.93024,51.658363, 100, 1000, 3); -- idle
 
+DELETE FROM creature_movement_template WHERE entry = 3695 AND pathId = 1;
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `WaitTime`, `ScriptId`) VALUES
+-- Grimclaw - Path triggered when player completes quest Escape Through Force
+(3695, 1, 1, 4775.9326, 207.56445, 50.76735, 100, 1000, 369501); -- homeposition
 
 -- Correct UnitFlags
 UPDATE creature_template SET UnitFlags = 768 WHERE entry = 3692;
@@ -84,27 +88,28 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (217001, 0, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - RunMode'),
 (217001, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - SendAiEventA to self'),
 -- Escort spawn Wave 1
-(369201, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 1, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Change Worldstate to true'),
-(369201, 100, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Change Worldstate to false'),
+(369201, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 1, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Volcor - Change Worldstate to true'),
+(369201, 100, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Volcor - Change Worldstate to false'),
 -- Escort spawn Wave 2
-(369202, 1000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 1, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Change Worldstate to true'),
-(369202, 1100, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Change Worldstate to false'),
+(369202, 1000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 1, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Volcor - Change Worldstate to true'),
+(369202, 1100, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Volcor - Change Worldstate to false'),
 -- Escort spawn Wave 3
-(369203, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 1, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Change Worldstate to true'),
-(369203, 100, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Change Worldstate to false'),
+(369203, 0, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 1, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Volcor - Change Worldstate to true'),
+(369203, 100, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Volcor - Change Worldstate to false'),
 -- Escort Finish -- 08:33:57.610
-(369204, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Set ActiveObject'), 
-(369204, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Emote OneShotTalk'), 
-(369204, 0, 2, 0, 0, 0, 0, 0, 0, 0, 1243, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Say Text'), 
-(369204, 5000, 0, 20, 0, 0, 0, 3695, 20, 0, 2, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Grimclaw - Disable random Movement'),
-(369204, 5000, 1, 37, 0, 0, 1, 3695, 20, 0, 2, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Grimclaw - Move to Volcor'),
-(369204, 7000, 0, 0, 0, 0, 0, 3695, 20, 0, 1241, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Grimclaw - Say EmotedText'), 
-(369204, 12000, 0, 36, 0, 0, 0, 3695, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Face Grimclaw'), 
-(369204, 12000, 1, 0, 0, 0, 0, 0, 0, 0, 1244, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Say Text'), 
-(369204, 26000, 0, 3, 369501, 0, 0, 3695, 10, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Grimclaw - Move to Homeposition'),
-(369204, 26000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Remove ActiveObject'), 
-(369204, 26000, 2, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Stealth - Volcor - Force Despawn'),
-(369501, 0, 0, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Grimclaw - Move random around Point');
+(369204, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Volcor - Set ActiveObject'), 
+(369204, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Volcor - Emote OneShotTalk'), 
+(369204, 0, 2, 0, 0, 0, 0, 0, 0, 0, 1243, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Volcor - Say Text'), 
+(369204, 5000, 0, 20, 0, 0, 0, 3695, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Grimclaw - Disable random Movement'),
+(369204, 5000, 1, 37, 0, 0, 1, 3695, 30, 0, 2, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Grimclaw - Move to Volcor'),
+(369204, 7000, 0, 0, 0, 0, 0, 3695, 30, 0, 1241, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Grimclaw - Say EmotedText'), 
+(369204, 12000, 0, 36, 0, 0, 0, 3695, 30, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Volcor - Face Grimclaw'), 
+(369204, 12000, 1, 0, 0, 0, 0, 0, 0, 0, 1244, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Volcor - Say Text'), 
+(369204, 26000, 0, 20, 2, 1, 0, 3695, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Grimclaw - Move back to homeposition'),
+(369204, 26000, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Volcor - Remove ActiveObject'), 
+(369204, 26000, 2, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Escape Through Force - Volcor - Force Despawn'),
+(369501, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Grimclaw - Move Idle'),
+(369501, 0, 1, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Grimclaw - Move random around Point');
 
 -- Waypoints for Volcor when doing escort Quest: Escape Through Stealth or Escape Though Force
 DELETE FROM waypoint_path_name WHERE PathId IN (3692, 3693);
@@ -197,3 +202,7 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (217101, 3, 9532, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Blackwood Shaman - Lightning Bolt - current');
 
 UPDATE `creature_template` SET `SpellList` = 217101 WHERE `entry` = 2171; 
+
+
+-- Having this result in Volcor always getting StandState sit on reset
+DELETE FROM creature_template_addon WHERE entry = 3692;
