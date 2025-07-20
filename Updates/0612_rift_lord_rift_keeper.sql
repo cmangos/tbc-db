@@ -7,12 +7,15 @@
 -- OLd HealthMultiplier  5,568 (* 7181) = 39.983,808 Health
 -- New HealthMultiplier = 9 (*7181) = 64629
 UPDATE creature_template SET HealthMultiplier = 9 WHERE entry = 17839;
+UPDATE creature_template SET HealthMultiplier = 9 WHERE entry = 21140; -- Rift Lord (5,568H)
 
 -- Heroic: https://youtu.be/DWo7pD423v4?t=6
 -- UnitClass = 1, MinLevel = 71, MaxLevel = 71
 -- Old HealthMultiplier = 18,561 (*7181) = 133.286,541
 -- New HealthMultiplier = 12 (*7181) = 86.172
 UPDATE creature_template SET HealthMultiplier = 12 WHERE entry = 20744;
+UPDATE creature_template SET HealthMultiplier = 12 WHERE entry = 22172; --  Rift Lord (1) (18,561H)
+
 
 -- Rift Keeper
 -- Normal https://youtu.be/JZ5Iv8jCvCU
@@ -20,9 +23,12 @@ UPDATE creature_template SET HealthMultiplier = 12 WHERE entry = 20744;
 -- Old HealthMultiplier =  6,96 (*5744) = 39.978,24
 -- New HealthMultiplier = 9 (*5744) = 51696
 UPDATE creature_template SET HealthMultiplier = 9 WHERE entry = 21104;
+UPDATE creature_template SET HealthMultiplier = 9 WHERE entry = 21148; -- Rift Keeper (6,96H)
 
 -- Heroic https://youtu.be/DWo7pD423v4?t=435
 -- UnitClass = 2, MinLevel = 71, MaxLevel = 71
 -- Old HealthMultiplier =  23,205 (*5744) = 133.289,52
 -- New HealthMultiplier = 12 (*5744) = 68.928
 UPDATE creature_template SET HealthMultiplier = 12 WHERE entry = 22170;
+UPDATE creature_template SET HealthMultiplier = 12 WHERE entry = 22171; -- Rift Keeper (1) (23,205H)
+
