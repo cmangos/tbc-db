@@ -65,3 +65,35 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 
 UPDATE `creature_template` SET `SpellList` = 2003401 WHERE `entry` = 20034;
+
+
+-- Bloodwarder Marshal
+DELETE FROM `creature_template_spells` WHERE `entry` = 20035;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2003501;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2003501, 'The Eye - Bloodwarder Marshal', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2003501;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2003501, 1, 35949, 0, -1, 2, 0, 100, 0, 8000, 18000, 22000, 24000, 'Bloodwarder Marshal - Bloodthirst - self'),
+(2003501, 2, 34996, 0, -1, 1, 0, 100, 0, 19000, 29000, 22000, 31000, 'Bloodwarder Marshal - Uppercut - current'),
+(2003501, 3, 36132, 0, -1, 2, 0, 100, 0, 10000, 15000, 14000, 17000, 'Bloodwarder Marshal - Whirlwind - self');
+
+UPDATE `creature_template` SET `SpellList` = 2003501 WHERE `entry` = 20035;
+
+-- Bloodwarder Squire
+DELETE FROM `creature_template_spells` WHERE `entry` = 20036;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2003601;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2003601, 'The Eye - Bloodwarder Squire', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2003601;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2003601, 1, 37255, 0, -1, 100, 0, 100, 0, 3000, 5000, 6000, 10000, 'Bloodwarder Squire - Hammer of Wrath - random player'),
+(2003601, 2, 37254, 0, -1, 206, 0, 100, 0, 9000, 17000, 9000, 17000, 'Bloodwarder Squire - Flash of Light - missing 25% including self'),
+(2003601, 3, 39078, 0, -1, 3, 0, 100, 0, 5000, 10000, 5000, 10000, 'Bloodwarder Squire - Cleanse - eligible friendly dispel'),
+(2003601, 4, 39077, 0, -1, 1, 0, 100, 0, 3000, 9000, 18000, 24000, 'Bloodwarder Squire - Hammer of Justice - current');
+
+UPDATE `creature_template` SET `SpellList` = 2003601 WHERE `entry` = 20036;
