@@ -17,12 +17,6 @@ SET @RELAYID := 5500000; -- used for dbscript_relay
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(@CGUID+30, 1, 110.946, -1.64237, -2.31968, 6.28317, 6000, 10124),
-(@CGUID+30, 2, 186.551, -0.884694, -2.42957, 6.28317, 6000, 0),
-(@CGUID+30, 3, 248.222, -0.884694, -2.42957, 6.28317, 6000, 0),
-(@CGUID+30, 4, 190.47, -0.884694, -2.42957, 3.12193, 6000, 10124),
-(@CGUID+30, 5, 111.311, -1.74098, -2.31917, 3.12113, 6000, 10124),
-(@CGUID+30, 6, 60.5976, -1.7476, -2.42826, 3.12113, 6000, 10124),
 (@CGUID+46, 1, 298.818, 31.3542, -2.38937, 3.94531, 10000, 0),
 (@CGUID+46, 2, 287.566, 15.7041, -2.3894, 4.19022, 10000, 0),
 (@CGUID+46, 3, 312.201, 37.5505, -2.3894, 0.530266, 10000, 0),
@@ -494,7 +488,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+136, @CGUID+1, 1025), -- Nether Scryer -> High Astromancer Solarian
 (@CGUID+137, @CGUID+1, 1025), -- Astromancer Lord -> High Astromancer Solarian
 
-(@CGUID+30, @CGUID+3, 1025), -- Bloodwarder Marshal -> Al'ar
 (@CGUID+46, @CGUID+3, 1025), -- Tempest Falconer -> Al'ar
 (@CGUID+48, @CGUID+3, 1025), -- Tempest Falconer -> Al'ar
 (@CGUID+62, @CGUID+3, 1025), -- Phoenix-Hawk -> Al'ar
@@ -522,10 +515,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+173, @CGUID+5, 1024), -- Crimson Hand Inquisitor -> Kael'thas Sunstrider
 
 -- individual trash groups
-
-(@CGUID+38, @CGUID+30, 1679), -- Bloodwarder Squire -> Bloodwarder Marshal
-(@CGUID+39, @CGUID+30, 1679), -- Bloodwarder Squire -> Bloodwarder Marshal
-
 (@CGUID+152, @CGUID+31, 1167), -- Crimson Hand Centurion -> Bloodwarder Marshal
 (@CGUID+164, @CGUID+31, 1167), -- Crimson Hand Blood Knight -> Bloodwarder Marshal
 (@CGUID+174, @CGUID+31, 1167), -- Crimson Hand Inquisitor -> Bloodwarder Marshal
@@ -714,7 +703,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+27, 0, 550, 1, 53.8861, -10.7066, -2.34495, 1.8326, 10800, 10800, 0, 0), -- spawn_group_squad
 (@CGUID+28, 0, 550, 1, 57.8223, 7.00091, -2.34492, 4.10152, 10800, 10800, 0, 0), -- spawn_group_squad
 (@CGUID+29, 0, 550, 1, 188.045, 8.61233, -2.39762, 3.42085, 10800, 10800, 0, 0), -- spawn_group_squad
-(@CGUID+30, 20035, 550, 1, 60.2258, -1.6927, -2.42826, 6.28241, 10800, 10800, 0, 2), -- Bloodwarder Marshal
+(@CGUID+30, 20035, 550, 1, 61.8024, -1.52268, -2.41246, 0.00479514, 10800, 10800, 0, 0), -- Bloodwarder Marshal
 (@CGUID+31, 20035, 550, 1, 639.83, 2.04339, 46.8622, 6.21337, 7200, 7200, 0, 0), -- Bloodwarder Marshal
 (@CGUID+32, 20035, 550, 1, 724.668, 47.5516, 46.8622, 5.48033, 7200, 7200, 0, 0), -- Bloodwarder Marshal
 (@CGUID+33, 20035, 550, 1, 728.804, -43.1283, 46.8621, 3.76991, 7200, 7200, 0, 0), -- Bloodwarder Marshal
@@ -722,8 +711,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+35, 20036, 550, 1, 505.606, -151.263, 20.3535, 2.56563, 7200, 7200, 0, 0), -- Bloodwarder Squire
 (@CGUID+36, 20036, 550, 1, 504.446, -156.253, 21.6161, 0.331613, 7200, 7200, 0, 0), -- Bloodwarder Squire
 (@CGUID+37, 20036, 550, 1, 504.087, -237.534, 20.3063, 3.82227, 7200, 7200, 0, 0), -- Bloodwarder Squire
-(@CGUID+38, 20036, 550, 1, 58.5983, -3.398, -2.42851, 0.070686, 10800, 10800, 0, 0), -- Bloodwarder Squire
-(@CGUID+39, 20036, 550, 1, 58.5983, 0.217363, -2.42851, 0.070686, 10800, 10800, 0, 0), -- Bloodwarder Squire
+(@CGUID+38, 20036, 550, 1, 60.1519, 0.705531, -2.34493, 5.72144, 10800, 10800, 0, 0), -- Bloodwarder Squire
+(@CGUID+39, 20036, 550, 1, 60.3027, -3.7269, -2.34493, 0.576039, 10800, 10800, 0, 0), -- Bloodwarder Squire
 (@CGUID+40, 20036, 550, 1, 335.747, -376.818, 22.1003, 4.64258, 7200, 7200, 0, 0), -- Bloodwarder Squire
 (@CGUID+41, 20036, 550, 1, 510.537, -246.791, 20.2972, 6.17846, 7200, 7200, 0, 0), -- Bloodwarder Squire
 (@CGUID+42, 20036, 550, 1, 531.456, -366.802, 22.1002, 3.38594, 7200, 7200, 0, 0), -- Bloodwarder Squire
@@ -966,8 +955,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Star Scryer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire, Astromancer, Star Scryer
 -- Star Scryer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire, Bloodwarder Vindicator, Astromancer
 -- Star Scryer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire, Astromancer, Astromancer
-(@SGGUID+3, 'The Eye - Group 003 - Squad 003', 0, 6, @SGGUID+1, 3, 0); -- spawn_group_squad
-
+(@SGGUID+3, 'The Eye - Group 003 - Squad 003', 0, 6, @SGGUID+1, 3, 0), -- spawn_group_squad
+(@SGGUID+4, 'The Eye - Group 004 - Patrol 001', 0, 3, @SGGUID+1, 3, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @CGUID+24, -1), -- spawn_group_squad
@@ -989,7 +978,11 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+3, @CGUID+15, -1), -- spawn_group_squad
 (@SGGUID+3, @CGUID+10, -1), -- spawn_group_squad
 (@SGGUID+3, @CGUID+23, -1), -- spawn_group_squad
-(@SGGUID+3, @CGUID+22, -1); -- spawn_group_squad
+(@SGGUID+3, @CGUID+22, -1), -- spawn_group_squad
+
+(@SGGUID+4, @CGUID+30, 0), -- Bloodwarder Marshal
+(@SGGUID+4, @CGUID+38, 1), -- Bloodwarder Squire
+(@SGGUID+4, @CGUID+39, 2); -- Bloodwarder Squire
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 (@SGGUID+1, 1, @CGUID+24, 20033), -- Astromancer
@@ -1055,13 +1048,38 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 (@SGGUID+3, 3, @CGUID+23, 20033), -- Astromancer
 (@SGGUID+3, 3, @CGUID+22, 20033); -- Astromancer
 
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@SGGUID+4, 2, 2, 0, @SGGUID+4, 4, 'The Eye - Group 004 - Patrol 001');
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+4,'The Eye - Group 004 - Patrol 001');
+
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@SGGUID+4, 1, 73.21876,-1.467932,-2.428264, 100, 0, 0),
+(@SGGUID+4, 2, 90.9155,-1.446664,-2.391149, 100, 0, 0),
+(@SGGUID+4, 3, 110.70197,-1.826883,-2.3415165, 100, 8000, 0),
+(@SGGUID+4, 4, 139.67517,-1.740406,-2.4282646, 100, 0, 0),
+(@SGGUID+4, 5, 167.337,-1.744653,-2.4282644, 100, 0, 0),
+(@SGGUID+4, 6, 181.79326,-1.723237,-2.4566164, 100, 8000, 0),
+(@SGGUID+4, 7, 219.74161,-0.849849,-2.4282396, 100, 0, 0),
+(@SGGUID+4, 8, 250.74739,-0.837852,-2.4254498, 100, 0, 0),
+(@SGGUID+4, 9, 285.23624,-0.667373,-2.3893993, 100, 16000, 0),
+(@SGGUID+4, 10, 254.69905,-0.906747,-2.4255166, 100, 0, 0),
+(@SGGUID+4, 11, 234.27116,-0.930597,-2.4254591, 100, 0, 0),
+(@SGGUID+4, 12, 210.60254,-0.957067,-2.4282544, 100, 0, 0),
+(@SGGUID+4, 13, 184.18263,-1.004889,-2.445923, 100, 8000, 0),
+(@SGGUID+4, 14, 151.39961,-1.254917,-2.4282634, 100, 0, 0),
+(@SGGUID+4, 15, 111.48205,-1.692717,-2.3092167, 100, 8000, 0),
+(@SGGUID+4, 16, 77.92409,-1.4717377,-2.428264, 100, 0, 0),
+(@SGGUID+4, 17, 59.693306,-1.38827,-2.428264, 100, 8000, 0);
+
 DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
 (@SGGUID+1, 42, 4817, 1, 0, 0, 0, 'Al\'ar - Trash Respawn');
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
--- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 -- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 
