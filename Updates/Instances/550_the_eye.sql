@@ -8,6 +8,9 @@ EndDBScriptData */
 SET @CGUID := 5500000; -- creatures
 SET @OGUID := 5500000; -- gameobjects
 SET @PGUID := 48800; -- pools
+SET @SGGUID := 5500000; -- spawn_groups
+SET @STRINGID := 5500000; -- used for StringID's
+SET @RELAYID := 5500000; -- used for dbscript_relay
 
 -- =========
 -- CREATURES
@@ -27,33 +30,21 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+16, 1, 109.373, 6.28142, -2.32539, 4.47504, 0, 10130),
 (@CGUID+16, 2, 109.373, 6.28142, -2.32539, 4.47504, 0, 10133),
 (@CGUID+16, 3, 109.373, 6.28142, -2.32539, 4.47504, 183000, 10126),
-(@CGUID+17, 1, 62.1, -6.61192, -2.42826, 2.42577, 0, 10129),
-(@CGUID+17, 2, 62.1, -6.61192, -2.42826, 2.42577, 183000, 10126),
-(@CGUID+18, 1, 62.0598, 3.57977, -2.42826, 3.64867, 0, 10131),
-(@CGUID+18, 2, 62.0598, 3.57977, -2.42826, 3.64867, 183000, 10126),
 (@CGUID+19, 1, 189.543, 5.10516, -2.45922, 3.12193, 0, 10127),
 (@CGUID+19, 2, 189.543, 5.10516, -2.45922, 3.12193, 183000, 10126),
 (@CGUID+20, 1, 110.998, -8.62288, -2.32529, 1.40885, 0, 10130),
 (@CGUID+20, 2, 110.998, -8.62288, -2.32529, 1.40885, 0, 10133),
 (@CGUID+20, 3, 110.998, -8.62288, -2.32529, 1.40885, 183000, 10126),
-(@CGUID+21, 1, 59.0983, -9.55179, -2.4823, 1.88802, 0, 10131),
-(@CGUID+21, 2, 59.0983, -9.55179, -2.4823, 1.88802, 183000, 10126),
 (@CGUID+22, 1, 189.02, -9.23615, -2.46121, 3.12193, 0, 10127),
 (@CGUID+22, 2, 189.02, -9.23615, -2.46121, 3.12193, 183000, 10126),
 (@CGUID+23, 1, 189.879, -6.82053, -2.44555, 3.12193, 0, 10127),
 (@CGUID+23, 2, 189.879, -6.82053, -2.44555, 3.12193, 183000, 10126),
-(@CGUID+24, 1, 53.3193, 7.81006, -2.34492, 3.64867, 0, 10131),
-(@CGUID+24, 2, 53.3193, 7.81006, -2.34492, 3.64867, 183000, 10126),
 (@CGUID+25, 1, 114.992, -8.61683, -2.32622, 2.34534, 0, 10130),
 (@CGUID+25, 2, 114.992, -8.61683, -2.32622, 2.34534, 0, 10133),
 (@CGUID+25, 3, 114.992, -8.61683, -2.32622, 2.34534, 183000, 10126),
 (@CGUID+26, 1, 113.625, 5.77773, -2.32539, 4.48289, 0, 10130),
 (@CGUID+26, 2, 113.625, 5.77773, -2.32539, 4.48289, 0, 10133),
 (@CGUID+26, 3, 113.625, 5.77773, -2.32539, 4.48289, 183000, 10126),
-(@CGUID+27, 1, 55.3473, -10.7833, -2.42823, 1.80006, 0, 10131),
-(@CGUID+27, 2, 55.3473, -10.7833, -2.42823, 1.80006, 183000, 10126),
-(@CGUID+28, 1, 58.7437, 6.43855, -2.42957, 4.02588, 0, 10131),
-(@CGUID+28, 2, 58.7437, 6.43855, -2.42957, 4.02588, 183000, 10126),
 (@CGUID+29, 1, 188.499, 7.80885, -2.47599, 3.12193, 0, 10127),
 (@CGUID+29, 2, 188.499, 7.80885, -2.47599, 3.12193, 183000, 10126),
 (@CGUID+30, 1, 110.946, -1.64237, -2.31968, 6.28317, 6000, 10124),
@@ -534,7 +525,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+137, @CGUID+1, 1025), -- Astromancer Lord -> High Astromancer Solarian
 
 (@CGUID+16, @CGUID+3, 1025), -- Bloodwarder Vindicator -> Al'ar
-(@CGUID+17, @CGUID+3, 1025), -- Bloodwarder Vindicator -> Al'ar
 (@CGUID+19, @CGUID+3, 1025), -- Bloodwarder Vindicator -> Al'ar
 (@CGUID+30, @CGUID+3, 1025), -- Bloodwarder Marshal -> Al'ar
 (@CGUID+46, @CGUID+3, 1025), -- Tempest Falconer -> Al'ar
@@ -569,12 +559,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+20, @CGUID+16, 1167), -- Astromancer -> Bloodwarder Vindicator
 (@CGUID+25, @CGUID+16, 1167), -- Star Scryer -> Bloodwarder Vindicator
 (@CGUID+26, @CGUID+16, 1167), -- Star Scryer -> Bloodwarder Vindicator
-
-(@CGUID+18, @CGUID+17, 1167), -- Bloodwarder Vindicator -> Bloodwarder Vindicator
-(@CGUID+21, @CGUID+17, 1167), -- Astromancer -> Bloodwarder Vindicator
-(@CGUID+24, @CGUID+17, 1167), -- Astromancer -> Bloodwarder Vindicator
-(@CGUID+27, @CGUID+17, 1167), -- Star Scryer -> Bloodwarder Vindicator
-(@CGUID+28, @CGUID+17, 1167), -- Star Scryer -> Bloodwarder Vindicator
 
 (@CGUID+10, @CGUID+19, 1167), -- Bloodwarder Legionnaire -> Bloodwarder Vindicator
 (@CGUID+15, @CGUID+19, 1167), -- Bloodwarder Legionnaire -> Bloodwarder Vindicator
@@ -760,18 +744,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+14, 20031, 550, 1, 383.905, -426.031, 18.688, 5.69479, 10800, 10800, 0, 0), -- Bloodwarder Legionnaire
 (@CGUID+15, 20031, 550, 1, 191.375, 3.30484, -2.35456, 3.26377, 7200, 7200, 0, 2), -- Bloodwarder Legionnaire
 (@CGUID+16, 20032, 550, 1, 109.373, 6.28142, -2.32539, 4.47504, 10800, 10800, 0, 2), -- Bloodwarder Vindicator
-(@CGUID+17, 20032, 550, 1, 62.1, -6.61192, -2.42826, 2.42577, 10800, 10800, 0, 2), -- Bloodwarder Vindicator
-(@CGUID+18, 20032, 550, 1, 62.0598, 3.57977, -2.42826, 3.64867, 10800, 10800, 0, 2), -- Bloodwarder Vindicator
+(@CGUID+17, 0, 550, 1, 62.1931, -6.53074, -2.34494, 2.74017, 10800, 10800, 0, 0), -- spawn_group_squad
+(@CGUID+18, 0, 550, 1, 61.6321, 3.35163, -2.34492, 3.63028, 10800, 10800, 0, 0), -- spawn_group_squad
 (@CGUID+19, 20032, 550, 1, 189.543, 5.10516, -2.45922, 3.87072, 10800, 10800, 0, 2), -- Bloodwarder Vindicator
 (@CGUID+20, 20033, 550, 1, 110.998, -8.62288, -2.32529, 1.40885, 10800, 10800, 0, 2), -- Astromancer
-(@CGUID+21, 20033, 550, 1, 59.0983, -9.55179, -2.42823, 1.88802, 10800, 10800, 0, 2), -- Astromancer
+(@CGUID+21, 0, 550, 1, 58.5711, -10.2187, -2.34494, 2.26893, 10800, 10800, 0, 0), -- spawn_group_squad
 (@CGUID+22, 20033, 550, 1, 189.02, -9.23615, -2.46121, 2.55594, 10800, 10800, 0, 2), -- Astromancer
 (@CGUID+23, 20033, 550, 1, 189.879, -6.82053, -2.44555, 2.65961, 10800, 10800, 0, 2), -- Astromancer
-(@CGUID+24, 20033, 550, 1, 53.3193, 7.81006, -2.34492, 4.5204, 7200, 7200, 0, 2), -- Astromancer
+(@CGUID+24, 0, 550, 1, 53.3193, 7.81006, -2.34492, 4.5204, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+25, 20034, 550, 1, 114.992, -8.61683, -2.32622, 1.40885, 10800, 10800, 0, 2), -- Star Scryer
 (@CGUID+26, 20034, 550, 1, 113.625, 5.77773, -2.32539, 4.48289, 10800, 10800, 0, 2), -- Star Scryer
-(@CGUID+27, 20034, 550, 1, 55.3473, -10.7833, -2.42823, 1.80006, 10800, 10800, 0, 2), -- Star Scryer
-(@CGUID+28, 20034, 550, 1, 58.7437, 6.43855, -2.42957, 4.02588, 10800, 10800, 0, 2), -- Star Scryer
+(@CGUID+27, 0, 550, 1, 53.8861, -10.7066, -2.34495, 1.8326, 10800, 10800, 0, 0), -- spawn_group_squad
+(@CGUID+28, 0, 550, 1, 57.8223, 7.00091, -2.34492, 4.10152, 10800, 10800, 0, 0), -- spawn_group_squad
 (@CGUID+29, 20034, 550, 1, 188.499, 7.80885, -2.47599, 3.34667, 10800, 10800, 0, 2), -- Star Scryer
 (@CGUID+30, 20035, 550, 1, 60.2258, -1.6927, -2.42826, 6.28241, 10800, 10800, 0, 2), -- Bloodwarder Marshal
 (@CGUID+31, 20035, 550, 1, 639.83, 2.04339, 46.8622, 6.21337, 7200, 7200, 0, 0), -- Bloodwarder Marshal
@@ -1010,7 +994,43 @@ INSERT INTO `gameobject_addon` (`guid`, `state`) VALUES
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
+(@SGGUID+1, 'The Eye - Group 001 - Squad 001', 0, 6, @SGGUID+1, 3, 0); -- spawn_group_squad
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGGUID+1, @CGUID+24, 0), -- spawn_group_squad
+(@SGGUID+1, @CGUID+28, 0), -- spawn_group_squad
+(@SGGUID+1, @CGUID+18, 0), -- spawn_group_squad
+(@SGGUID+1, @CGUID+17, 0), -- spawn_group_squad
+(@SGGUID+1, @CGUID+21, 0), -- spawn_group_squad
+(@SGGUID+1, @CGUID+27, 0); -- spawn_group_squad
+
+INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
+(@SGGUID+1, 1, @CGUID+24, 20033), -- Astromancer
+(@SGGUID+1, 1, @CGUID+28, 20032), -- Bloodwarder Vindicator
+(@SGGUID+1, 1, @CGUID+18, 20031), -- Bloodwarder Legionnaire
+(@SGGUID+1, 1, @CGUID+17, 20031), -- Bloodwarder Legionnaire
+(@SGGUID+1, 1, @CGUID+21, 20032), -- Bloodwarder Vindicator
+(@SGGUID+1, 1, @CGUID+27, 20034), -- Star Scryer
+
+(@SGGUID+1, 2, @CGUID+24, 20033), -- Astromancer
+(@SGGUID+1, 2, @CGUID+28, 20032), -- Bloodwarder Vindicator
+(@SGGUID+1, 2, @CGUID+18, 20031), -- Bloodwarder Legionnaire
+(@SGGUID+1, 2, @CGUID+17, 20031), -- Bloodwarder Legionnaire
+(@SGGUID+1, 2, @CGUID+21, 20033), -- Astromancer
+(@SGGUID+1, 2, @CGUID+27, 20034), -- Star Scryer
+
+(@SGGUID+1, 3, @CGUID+24, 20034), -- Star Scryer
+(@SGGUID+1, 3, @CGUID+28, 20032), -- Bloodwarder Vindicator
+(@SGGUID+1, 3, @CGUID+18, 20031), -- Bloodwarder Legionnaire
+(@SGGUID+1, 3, @CGUID+17, 20031), -- Bloodwarder Legionnaire
+(@SGGUID+1, 3, @CGUID+21, 20033), -- Astromancer
+(@SGGUID+1, 3, @CGUID+27, 20034); -- Star Scryer
+
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
+(@SGGUID+1, 42, 4817, 1, 0, 0, 0, 'Al\'ar - Trash Respawn');
+
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
