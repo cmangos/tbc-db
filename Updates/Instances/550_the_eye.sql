@@ -995,6 +995,10 @@ INSERT INTO `gameobject_addon` (`guid`, `state`) VALUES
 -- ============
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
+-- 3 possible Squads from left to right
+-- Astromancer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire,  Bloodwarder Vindicator, Star Scryer
+-- Astromancer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire, Astromancer, Star Scryer
+-- Star Scryer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire, Astromancer, Star Scryer
 (@SGGUID+1, 'The Eye - Group 001 - Squad 001', 0, 6, @SGGUID+1, 3, 0); -- spawn_group_squad
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
