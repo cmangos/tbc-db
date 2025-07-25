@@ -945,17 +945,17 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Astromancer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire,  Bloodwarder Vindicator, Star Scryer
 -- Astromancer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire, Astromancer, Star Scryer
 -- Star Scryer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire, Astromancer, Star Scryer
-(@SGGUID+1, 'The Eye - Group 001 - Squad 001', 0, 6, @SGGUID+1, 3, 0), -- spawn_group_squad
+(@SGGUID+1, 'The Eye - Group 001 - Squad 001', 0, 6, @SGGUID+1, 3, @STRINGID+1), -- spawn_group_squad
 -- 3 possible Squads from left front-back to right front-back
 -- Bloodwarder Legionnaire, Astromancer, Star Scryer, Bloodwarder Legionnaire, Bloodwarder Vindicator, Star Scryer
 -- Bloodwarder Legionnaire, Astromancer, Astromancer, Bloodwarder Legionnaire, Bloodwarder Vindicator, Star Scryer
 -- Bloodwarder Legionnaire, Bloodwarder Vindicator, Astromancer, Bloodwarder Legionnaire, Bloodwarder Vindicator, Star Scryer
-(@SGGUID+2, 'The Eye - Group 002 - Squad 002', 0, 6, @SGGUID+1, 3, 0), -- spawn_group_squad
+(@SGGUID+2, 'The Eye - Group 002 - Squad 002', 0, 6, @SGGUID+1, 3, @STRINGID+1), -- spawn_group_squad
 -- 3 possible Squads from left to right
 -- Star Scryer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire, Astromancer, Star Scryer
 -- Star Scryer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire, Bloodwarder Vindicator, Astromancer
 -- Star Scryer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire, Astromancer, Astromancer
-(@SGGUID+3, 'The Eye - Group 003 - Squad 003', 0, 6, @SGGUID+1, 3, 0), -- spawn_group_squad
+(@SGGUID+3, 'The Eye - Group 003 - Squad 003', 0, 6, @SGGUID+1, 3, @STRINGID+1), -- spawn_group_squad
 (@SGGUID+4, 'The Eye - Group 004 - Patrol 001', 0, 3, @SGGUID+1, 3, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
@@ -1058,50 +1058,44 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+4, 1, 73.21876,-1.467932,-2.428264, 100, 0, 0),
 (@SGGUID+4, 2, 90.9155,-1.446664,-2.391149, 100, 0, 0),
-(@SGGUID+4, 3, 110.70197,-1.826883,-2.3415165, 100, 8000, 0),
+(@SGGUID+4, 3, 110.70197,-1.826883,-2.3415165, 100, 8000, 2003501),
 (@SGGUID+4, 4, 139.67517,-1.740406,-2.4282646, 100, 0, 0),
 (@SGGUID+4, 5, 167.337,-1.744653,-2.4282644, 100, 0, 0),
-(@SGGUID+4, 6, 181.79326,-1.723237,-2.4566164, 100, 8000, 0),
+(@SGGUID+4, 6, 181.79326,-1.723237,-2.4566164, 100, 8000, 2003501),
 (@SGGUID+4, 7, 219.74161,-0.849849,-2.4282396, 100, 0, 0),
 (@SGGUID+4, 8, 250.74739,-0.837852,-2.4254498, 100, 0, 0),
 (@SGGUID+4, 9, 285.23624,-0.667373,-2.3893993, 100, 16000, 0),
 (@SGGUID+4, 10, 254.69905,-0.906747,-2.4255166, 100, 0, 0),
 (@SGGUID+4, 11, 234.27116,-0.930597,-2.4254591, 100, 0, 0),
 (@SGGUID+4, 12, 210.60254,-0.957067,-2.4282544, 100, 0, 0),
-(@SGGUID+4, 13, 184.18263,-1.004889,-2.445923, 100, 8000, 0),
+(@SGGUID+4, 13, 184.18263,-1.004889,-2.445923, 100, 8000, 2003501),
 (@SGGUID+4, 14, 151.39961,-1.254917,-2.4282634, 100, 0, 0),
-(@SGGUID+4, 15, 111.48205,-1.692717,-2.3092167, 100, 8000, 0),
+(@SGGUID+4, 15, 111.48205,-1.692717,-2.3092167, 100, 8000, 2003501),
 (@SGGUID+4, 16, 77.92409,-1.4717377,-2.428264, 100, 0, 0),
-(@SGGUID+4, 17, 59.693306,-1.38827,-2.428264, 100, 8000, 0);
+(@SGGUID+4, 17, 59.693306,-1.38827,-2.428264, 100, 8000, 2003501);
 
 DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
 (@SGGUID+1, 42, 4817, 1, 0, 0, 0, 'Al\'ar - Trash Respawn');
 
+DELETE FROM string_id WHERE Id IN (@STRINGID+1);
+INSERT INTO `string_id` (Id, Name) VALUES 
+(@STRINGID+1, 'TEMPEST_KEEP_MARSHAL_RP');
+
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
--- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
--- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 
 -- =========
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (10121,10122,10123,10124,10125,10126,10127,10128,10129,10130,10131,10132,10133);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (10121,10122,10123, 2003501);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10121, 0, 45, 0, 10121, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Crystalcore Devastator - 10% chance (Tempest-Smith follower random say)'),
 (10122, 0, 45, 0, 10122, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest-Smith - 50% chance (run diagnostics on Crystalcore Sentinel)'),
 (10123, 0, 45, 0, 10123, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest-Smith - 50% chance (run diagnostics on Crystalcore Devastator)'),
-(10124, 3000, 0, 10124, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Marshal Chat'),
-(10125, 116000, 0, 10125, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad Three speaker'),
-(10126, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Terminate'),
-(10127, 116000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad three salute'),
-(10128, 153000, 0, 10128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'second squad speaker Round 2'),
-(10129, 178000, 0, 10129, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'first squad speaker'),
-(10130, 153000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad two salute Round 2'),
-(10131, 178000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad one salute'),
-(10132, 20000, 0, 10132, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'second squad speaker Round 1'),
-(10133, 20000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad two salute Round 1');
+-- Bloodwarder Marshal Patrol
+(2003501, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Marshal - Start RandomScript');
+
 
 DELETE FROM dbscripts_on_relay WHERE id IN (10121,10122,10123);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -1113,36 +1107,47 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalon
 (10123,6000,0,0,0,0,20,0,17818,0,0,0,0,0,0,0,'Tempest-Smith - say 1'),
 (10123,7000,0,0,0,20040,20,0,17821,17822,17820,0,0,0,0,0,'Crystalcore Devastator - say random');
 
+DELETE FROM dbscripts_on_relay WHERE id IN (@RELAYID+1);
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `condition_id`, `comments`) VALUES
+-- Bloodwarder Marshal - RP with Group
+(@RELAYID+1, 0, 0, 31, 0, 15, 0, @STRINGID+1, 15, 2048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Bloodwarder Marshal - TerminateScript when no StringID found'),
+(@RELAYID+1, 1, 2, 36, 0, 0, 0, @STRINGID+1, 15, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - StringID - Face Bloodwarder Marshal'),
+-- Delay Emoting a bit else you cant see it ingame cause it gets blocked from npcs turning movement
+(@RELAYID+1, 1000, 0, 1, 113, 0, 0, @STRINGID+1, 15, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - StringID - Emote OneShotSaluteNoSheath'),
+(@RELAYID+1, 1000, 1, 35, 5, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Bloodwarder Marshal - SendAIEvent A'),
+(@RELAYID+1, 6000, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Bloodwarder Marshal - Emote OneShotSalute'),
+(@RELAYID+1, 6000, 1, 0, @RELAYID+5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Bloodwarder Marshal - Yell Text'),
+(@RELAYID+1, 6000, 2, 36, 1, 0, 0, @STRINGID+1, 15, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - StringID - Reset Facing');
+
 DELETE FROM dbscript_random_templates WHERE id IN (10121,10122,10123,10124,10125,10128,10129,10132);
 INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 (10121,1,10121,10,''),(10121,1,0,90,''),
 (10122,1,10122,0,''),(10122,1,0,0,''),
-(10123,1,10123,0,''),(10123,1,0,0,''),
-(10124,0,18047,0,''),
-(10124,0,18048,0,''),
-(10124,0,18049,0,''),
-(10124,0,18045,0,''),
-(10124,0,18046,0,''),
-(10125,0,18038,0,''),
-(10125,0,18032,0,''),
-(10125,0,18040,0,''),
-(10125,0,18031,0,''),
-(10125,0,18036,0,''),
-(10128,0,18035,0,''),
-(10128,0,18037,0,''),
-(10128,0,18040,0,''),
-(10128,0,18031,0,''),
-(10128,0,18039,0,''),
-(10129,0,18030,0,''),
-(10129,0,18037,0,''),
-(10129,0,18040,0,''),
-(10129,0,18031,0,''),
-(10129,0,18032,0,''),
-(10132,0,18035,0,''),
-(10132,0,18037,0,''),
-(10132,0,18040,0,''),
-(10132,0,18031,0,''),
-(10132,0,18036,0,'');
+(10123,1,10123,0,''),(10123,1,0,0,'');
+
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+5;
+INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
+-- Bloodwarder Marshal 30% Chance to start relay script
+(@RELAYID+1, 1, @RELAYID+1, 90, 'Bloodwarder Marshal - RP Script'),
+(@RELAYID+1, 1, 0, 10, 'Bloodwarder Marshal - Nothing'),
+-- Bloodwarder Legionnaire - Group 1 Texts
+(@RELAYID+2, 0, 18030, 0, 'Bloodwarder Legionnaire Group 001 - Yell 1'),
+(@RELAYID+2, 0, 18031, 0, 'Bloodwarder Legionnaire Group 001 - Yell 2'),
+(@RELAYID+2, 0, 18032, 0, 'Bloodwarder Legionnaire Group 001 - Yell 3'),
+-- Bloodwarder Legionnaire - Group 2 Texts
+(@RELAYID+3, 0, 18035, 0, 'Bloodwarder Legionnaire Group 002 - Yell 1'),
+(@RELAYID+3, 0, 18036, 0, 'Bloodwarder Legionnaire Group 002 - Yell 2'),
+(@RELAYID+3, 0, 18037, 0, 'Bloodwarder Legionnaire Group 002 - Yell 3'),
+-- Bloodwarder Legionnaire - Group 3 Texts
+(@RELAYID+4, 0, 18038, 0, 'Bloodwarder Legionnaire Group 003 - Yell 1'),
+(@RELAYID+4, 0, 18039, 0, 'Bloodwarder Legionnaire Group 003 - Yell 2'),
+(@RELAYID+4, 0, 18040, 0, 'Bloodwarder Legionnaire Group 003 - Yell 3'),
+-- Bloodwarder Marshal - answer
+(@RELAYID+5, 0, 18045, 0, 'Bloodwarder Marshal - Yell 1'),
+(@RELAYID+5, 0, 18046, 0, 'Bloodwarder Marshal - Yell 2'),
+(@RELAYID+5, 0, 18047, 0, 'Bloodwarder Marshal - Yell 3'),
+(@RELAYID+5, 0, 18048, 0, 'Bloodwarder Marshal - Yell 4'),
+(@RELAYID+5, 0, 18049, 0, 'Bloodwarder Marshal - Yell 5');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

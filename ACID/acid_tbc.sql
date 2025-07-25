@@ -29603,6 +29603,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Arcane Orb Target 19577 - NullAI
 -- Kael'thas Sunstrider (19622) - boss_kaelthas
 -- Bloodwarder Legionnaire 20031 - spell_list
+('5500018','-5500018','30','0','100','1','5','0','0','0','0','0','54','0','0','5500002','0','0','0','0','0','0','0','0','Bloodwarder Legionnaire (Guid EAI) - Yell random Text on ReceiveEventAI A'),
+('5500009','-5500009','30','0','100','1','5','0','0','0','0','0','54','0','0','5500003','0','0','0','0','0','0','0','0','Bloodwarder Legionnaire (Guid EAI) - Yell random Text on ReceiveEventAI A'),
+('5500015','-5500015','30','0','100','1','5','0','0','0','0','0','54','0','0','5500004','0','0','0','0','0','0','0','0','Bloodwarder Legionnaire (Guid EAI) - Yell random Text on ReceiveEventAI A'),
 -- Bloodwarder Vindicator 20032 - spell_list
 -- Astromancer 20033 - spell_list
 ('2003301','20033','27','0','100','1','35915','1','15000','30000','0','0','11','35915','0','0','0','0','0','0','0','0','0','0','Astromancer - Cast Molten Armor on Missing Buff'),
