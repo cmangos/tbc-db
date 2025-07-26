@@ -17,19 +17,6 @@ SET @RELAYID := 5500000; -- used for dbscript_relay
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(@CGUID+46, 1, 298.818, 31.3542, -2.38937, 3.94531, 10000, 0),
-(@CGUID+46, 2, 287.566, 15.7041, -2.3894, 4.19022, 10000, 0),
-(@CGUID+46, 3, 312.201, 37.5505, -2.3894, 0.530266, 10000, 0),
-(@CGUID+46, 4, 341.315, 44.2515, -2.38824, 0.530266, 10000, 0),
-(@CGUID+46, 5, 312.201, 37.5505, -2.3894, 0.530266, 10000, 0),
-(@CGUID+46, 6, 287.566, 15.7041, -2.3894, 4.19022, 10000, 0),
-(@CGUID+48, 1, 354.06, -39.9079, -2.38663, 3.9, 10000, 0),
-(@CGUID+48, 2, 362.453, -34.206, -2.38677, 0.7, 10000, 0),
-(@CGUID+48, 3, 330.358, -44.848, -2.38922, 2.7, 10000, 0),
-(@CGUID+48, 4, 307.605, -34.1864, -2.38922, 2.5, 10000, 0),
-(@CGUID+48, 5, 291.588, -21.0585, -2.38922, 2.3, 10000, 0),
-(@CGUID+48, 6, 307.605, -34.1864, -2.38922, 2.5, 10000, 0),
-(@CGUID+48, 7, 330.358, -44.848, -2.38922, 2.7, 10000, 0),
 (@CGUID+62, 1, 399.986, -78.5058, 20.1777, 3.51642, 0, 0),
 (@CGUID+62, 2, 384.162, -84.109, 20.1777, 3.43631, 0, 0),
 (@CGUID+62, 3, 377.011, -86.2365, 20.1777, 3.3185, 0, 0),
@@ -488,13 +475,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+136, @CGUID+1, 1025), -- Nether Scryer -> High Astromancer Solarian
 (@CGUID+137, @CGUID+1, 1025), -- Astromancer Lord -> High Astromancer Solarian
 
-(@CGUID+46, @CGUID+3, 1025), -- Tempest Falconer -> Al'ar
-(@CGUID+48, @CGUID+3, 1025), -- Tempest Falconer -> Al'ar
-(@CGUID+62, @CGUID+3, 1025), -- Phoenix-Hawk -> Al'ar
-(@CGUID+63, @CGUID+3, 1025), -- Phoenix-Hawk -> Al'ar
-(@CGUID+64, @CGUID+3, 1025), -- Phoenix-Hawk -> Al'ar
-(@CGUID+65, @CGUID+3, 1025), -- Phoenix-Hawk -> Al'ar
-
 (@CGUID+67, @CGUID+4, 1025), -- Crystalcore Devastator -> Void Reaver
 (@CGUID+69, @CGUID+4, 1025), -- Crystalcore Devastator -> Void Reaver
 (@CGUID+71, @CGUID+4, 1025), -- Crystalcore Sentinel -> Void Reaver
@@ -586,21 +566,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+133, @CGUID+44, 1167), -- Novice Astromancer -> Bloodwarder Squire
 (@CGUID+134, @CGUID+44, 1167), -- Novice Astromancer -> Bloodwarder Squire
 
-(@CGUID+47, @CGUID+46, 1679), -- Tempest Falconer -> Tempest Falconer
-
-(@CGUID+49, @CGUID+48, 1679), -- Tempest Falconer -> Tempest Falconer
-(@CGUID+50, @CGUID+48, 1679), -- Phoenix-Hawk Hatchling -> Tempest Falconer
-(@CGUID+51, @CGUID+48, 1679), -- Phoenix-Hawk Hatchling -> Tempest Falconer
-(@CGUID+52, @CGUID+48, 1679), -- Phoenix-Hawk Hatchling -> Tempest Falconer
-(@CGUID+53, @CGUID+48, 1679), -- Phoenix-Hawk Hatchling -> Tempest Falconer
-(@CGUID+54, @CGUID+46, 1679), -- Phoenix-Hawk Hatchling -> Tempest Falconer
-(@CGUID+55, @CGUID+46, 1679), -- Phoenix-Hawk Hatchling -> Tempest Falconer
-(@CGUID+56, @CGUID+46, 1679), -- Phoenix-Hawk Hatchling -> Tempest Falconer
-(@CGUID+57, @CGUID+46, 1679), -- Phoenix-Hawk Hatchling -> Tempest Falconer
-(@CGUID+58, @CGUID+46, 1679), -- Phoenix-Hawk Hatchling -> Tempest Falconer
-(@CGUID+59, @CGUID+46, 1679), -- Phoenix-Hawk Hatchling -> Tempest Falconer
-(@CGUID+60, @CGUID+48, 1679), -- Phoenix-Hawk Hatchling -> Tempest Falconer
-(@CGUID+61, @CGUID+48, 1679), -- Phoenix-Hawk Hatchling -> Tempest Falconer
 
 (@CGUID+84, @CGUID+69, 1679), -- Tempest-Smith -> Crystalcore Devastator
 (@CGUID+85, @CGUID+69, 1679), -- Tempest-Smith -> Crystalcore Devastator
@@ -719,22 +684,22 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+43, 20036, 550, 1, 513.288, -421.953, 22.1003, 5.11381, 7200, 7200, 0, 0), -- Bloodwarder Squire
 (@CGUID+44, 20036, 550, 1, 388.687, -457.694, 22.1003, 1.8326, 7200, 7200, 0, 0), -- Bloodwarder Squire
 (@CGUID+45, 20036, 550, 1, 438.087, -471.081, 22.1003, 1.39626, 7200, 7200, 0, 0), -- Bloodwarder Squire
-(@CGUID+46, 20037, 550, 1, 298.818, 31.3542, -2.38937, 3.94531, 10800, 10800, 0, 2), -- Tempest Falconer
-(@CGUID+47, 20037, 550, 1, 316.016, 39.2348, -2.38816, 3.49277, 10800, 10800, 0, 0), -- Tempest Falconer
-(@CGUID+48, 20037, 550, 1, 354.06, -39.9079, -2.38663, 3.94531, 10800, 10800, 0, 2), -- Tempest Falconer
-(@CGUID+49, 20037, 550, 1, 337.438, -47.1613, -2.38916, 0.699114, 10800, 10800, 0, 0), -- Tempest Falconer
-(@CGUID+50, 20038, 550, 1, 346.361, -49.3807, -2.38573, 0.521749, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
-(@CGUID+51, 20038, 550, 1, 344.927, -45.2601, -2.38573, 0.517822, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
-(@CGUID+52, 20038, 550, 1, 349.254, -46.3709, -2.38573, 0.619139, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
-(@CGUID+53, 20038, 550, 1, 343.762, -38.935, -2.38849, 0.351202, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
-(@CGUID+54, 20038, 550, 1, 309.7, 36.0396, -2.38937, 3.62722, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
-(@CGUID+55, 20038, 550, 1, 305.542, 37.7042, -2.38937, 3.95709, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
-(@CGUID+56, 20038, 550, 1, 300.474, 35.5111, -2.38937, 3.95709, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
-(@CGUID+57, 20038, 550, 1, 303.647, 32.4885, -2.38937, 3.94531, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
-(@CGUID+58, 20038, 550, 1, 305.2, 28.1524, -2.39064, 3.42369, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
-(@CGUID+59, 20038, 550, 1, 311.187, 31.7648, -2.38916, 3.68444, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
-(@CGUID+60, 20038, 550, 1, 354.06, -39.9079, -2.38663, 3.94531, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
-(@CGUID+61, 20038, 550, 1, 346.227, -39.0626, -2.38708, 3.68444, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
+(@CGUID+46, 20037, 550, 1, 285.916, 16.4682, -2.34852, 0.678321, 10800, 10800, 0, 0), -- Tempest Falconer
+(@CGUID+47, 20037, 550, 1, 290.39, 13.2804, -2.30604, 6.23696, 10800, 10800, 0, 0), -- Tempest Falconer
+(@CGUID+48, 20037, 550, 1, 373.944, -16.3073, -2.32662, 3.97025, 10800, 10800, 0, 0), -- Tempest Falconer
+(@CGUID+49, 20037, 550, 1, 379.053, -16.1672, -2.30287, 3.60934, 10800, 10800, 0, 0), -- Tempest Falconer
+(@CGUID+50, 20038, 550, 1, 375.688, -19.1652, -2.30335, 4.11309, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
+(@CGUID+51, 20038, 550, 1, 382.835, -20.5917, -2.30167, 3.46843, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
+(@CGUID+52, 20038, 550, 1, 371.292, -17.9986, -2.3044, 3.60761, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
+(@CGUID+53, 20038, 550, 1, 384.011, -14.3954, -2.30193, 3.61841, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
+(@CGUID+54, 20038, 550, 1, 292.569, 8.86988, -2.30605, 0.576295, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
+(@CGUID+55, 20038, 550, 1, 289.016, 13.9236, -2.30604, 5.804, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
+(@CGUID+56, 20038, 550, 1, 280.948, 11.1975, -2.30602, 0.0826095, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
+(@CGUID+57, 20038, 550, 1, 299, 16.0934, -2.30607, 4.09528, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
+(@CGUID+58, 20038, 550, 1, 294.354, 22.0526, -2.30605, 4.73032, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
+(@CGUID+59, 20038, 550, 1, 284.131, 21.6924, -2.30603, 5.30217, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
+(@CGUID+60, 20038, 550, 1, 379.177, -10.8088, -2.30328, 3.80249, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
+(@CGUID+61, 20038, 550, 1, 373.836, -10.8204, -2.30446, 3.93352, 10800, 10800, 0, 0), -- Phoenix-Hawk Hatchling
 (@CGUID+62, 20039, 550, 1, 398.219, -78.8478, 20.1794, 3.67277, 10800, 10800, 0, 2), -- Phoenix-Hawk
 (@CGUID+63, 20039, 550, 1, 411.409, -39.8267, 20.1802, 4.18163, 10800, 10800, 0, 2), -- Phoenix-Hawk
 (@CGUID+64, 20039, 550, 1, 244.912, 35.6793, 20.1794, 1, 10800, 10800, 0, 2), -- Phoenix-Hawk
@@ -956,7 +921,10 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Star Scryer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire, Bloodwarder Vindicator, Astromancer
 -- Star Scryer, Bloodwarder Vindicator, Bloodwarder Legionnaire, Bloodwarder Legionnaire, Astromancer, Astromancer
 (@SGGUID+3, 'The Eye - Group 003 - Squad 003', 0, 6, @SGGUID+1, 3, @STRINGID+1), -- spawn_group_squad
-(@SGGUID+4, 'The Eye - Group 004 - Patrol 001', 0, 3, @SGGUID+1, 3, 0);
+(@SGGUID+4, 'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)', 0, 3, @SGGUID+1, 3, 0),
+-- Al'ar room Patrol
+(@SGGUID+5, 'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)', 0, 0, 0, 0, 0),
+(@SGGUID+6, 'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)', 0, 0, 0, 0, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @CGUID+24, -1), -- spawn_group_squad
@@ -982,7 +950,25 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 (@SGGUID+4, @CGUID+30, 0), -- Bloodwarder Marshal
 (@SGGUID+4, @CGUID+38, 1), -- Bloodwarder Squire
-(@SGGUID+4, @CGUID+39, 2); -- Bloodwarder Squire
+(@SGGUID+4, @CGUID+39, 2), -- Bloodwarder Squire
+
+(@SGGUID+5, @CGUID+48, 0), -- Tempest Falconer
+(@SGGUID+5, @CGUID+49, 1), -- Tempest Falconer
+(@SGGUID+5, @CGUID+50, 2), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+51, 3), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+52, 4), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+53, 5), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+60, 6), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+61, 7), -- Phoenix-Hawk Hatchling
+
+(@SGGUID+6, @CGUID+46, 0), -- Tempest Falconer
+(@SGGUID+6, @CGUID+47, 1), -- Tempest Falconer
+(@SGGUID+6, @CGUID+54, 2), -- Phoenix-Hawk Hatchling
+(@SGGUID+6, @CGUID+55, 3), -- Phoenix-Hawk Hatchling
+(@SGGUID+6, @CGUID+56, 4), -- Phoenix-Hawk Hatchling
+(@SGGUID+6, @CGUID+57, 5), -- Phoenix-Hawk Hatchling
+(@SGGUID+6, @CGUID+58, 6), -- Phoenix-Hawk Hatchling
+(@SGGUID+6, @CGUID+59, 7); -- Phoenix-Hawk Hatchling
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 (@SGGUID+1, 1, @CGUID+24, 20033), -- Astromancer
@@ -1048,14 +1034,19 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 (@SGGUID+3, 3, @CGUID+23, 20033), -- Astromancer
 (@SGGUID+3, 3, @CGUID+22, 20033); -- Astromancer
 
+
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@SGGUID+4, 2, 2, 0, @SGGUID+4, 4, 'The Eye - Group 004 - Patrol 001');
+(@SGGUID+4, 2, 2, 0, @SGGUID+4, 2, 'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)'),
+(@SGGUID+5, 0, 4, 0, @SGGUID+5, 2, 'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
+(@SGGUID+6, 0, 4, 0, @SGGUID+6, 2, 'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
-(@SGGUID+4,'The Eye - Group 004 - Patrol 001');
-
+(@SGGUID+4,'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)'),
+(@SGGUID+5,'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
+(@SGGUID+6,'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+-- Patrol 001
 (@SGGUID+4, 1, 73.21876,-1.467932,-2.428264, 100, 0, 0),
 (@SGGUID+4, 2, 90.9155,-1.446664,-2.391149, 100, 0, 0),
 (@SGGUID+4, 3, 110.70197,-1.826883,-2.3415165, 100, 8000, 2003501),
@@ -1072,7 +1063,22 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+4, 14, 151.39961,-1.254917,-2.4282634, 100, 0, 0),
 (@SGGUID+4, 15, 111.48205,-1.692717,-2.3092167, 100, 8000, 2003501),
 (@SGGUID+4, 16, 77.92409,-1.4717377,-2.428264, 100, 0, 0),
-(@SGGUID+4, 17, 59.693306,-1.38827,-2.428264, 100, 8000, 2003501);
+(@SGGUID+4, 17, 59.693306,-1.38827,-2.428264, 100, 8000, 2003501),
+-- Patrol 002
+(@SGGUID+5, 1, 350.90543,-41.430454,-2.3856533, 100, 0, 0), 
+(@SGGUID+5, 2, 314.68127,-41.644608,-2.3894813, 100, 0, 0),
+(@SGGUID+5, 3, 288.23596,-15.741143,-2.3894465, 100, 5000, 0), -- waitt
+(@SGGUID+5, 4, 314.1068,-41.330368,-2.3894804, 100, 0, 0),
+(@SGGUID+5, 5, 350.24118,-41.162407,-2.3858225, 100, 0, 0),
+(@SGGUID+5, 6, 377.03555,-15.332716,-2.3867216, 100, 5000, 0), -- wait
+-- Patrol 003
+(@SGGUID+6, 1,314.9742,39.8861,-2.3890655, 100, 0, 0),
+(@SGGUID+6, 2,350.92532,39.619263,-2.3884583, 100, 0, 0),
+(@SGGUID+6, 3,376.66275,13.843831,-2.3868701, 100, 5000, 0), -- wait rnd move
+(@SGGUID+6, 4, 350.39078,39.908775,-2.3885098, 100, 0, 0),
+(@SGGUID+6, 5, 314.34283,40.37823,-2.3890648, 100, 0, 0),
+(@SGGUID+6, 6, 287.89716,14.272659,-2.3893754, 100, 5000, 0); -- Wait rnd move
+
 
 DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
