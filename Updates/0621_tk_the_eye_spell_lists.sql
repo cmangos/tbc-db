@@ -97,3 +97,34 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (2003601, 4, 39077, 0, -1, 1, 0, 100, 0, 3000, 9000, 18000, 24000, 'Bloodwarder Squire - Hammer of Justice - current');
 
 UPDATE `creature_template` SET `SpellList` = 2003601 WHERE `entry` = 20036;
+
+
+-- Tempest Falconer
+DELETE FROM `creature_template_spells` WHERE `entry` = 20037;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2003701;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2003701, 'The Eye - Tempest Falconer', 0, 80);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2003701;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2003701, 1, 37317, 0, -1, 1, 0, 100, 0, 6000, 11000, 6000, 11000, 'Tempest Falconer - Knockback - current')
+(2003701, 2, 37154, 0, -1, 101, 0, 100, 0, 14000, 18000, 18000, 28000, 'Tempest Falconer - Immolation Arrow - random not top aggro')
+(2003701, 3, 39079, 0, -1, 1, 0, 100, 0, 0, 3000, 2000, 4000, 'Tempest Falconer - Shoot - current');
+
+UPDATE `creature_template` SET `SpellList` = 2003701 WHERE `entry` = 20037;
+
+
+-- Phoenix-Hawk Hatchling
+DELETE FROM `creature_template_spells` WHERE `entry` = 20038;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2003801;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2003801, 'The Eye - Phoenix-Hawk Hatchling', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2003801;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2003801, 1, 37160, 0, -1, 2, 0, 100, 0, 8000, 18000, 21000, 36000, 'Phoenix-Hawk Hatchling - Silence - self'),
+(2003801, 2, 37319, 0, -1, 2, 0, 100, 0, 7000, 18000, 23000, 30000, 'Phoenix-Hawk Hatchling - Wing Buffet - self');
+
+UPDATE `creature_template` SET `SpellList` = 2003801 WHERE `entry` = 20038;
