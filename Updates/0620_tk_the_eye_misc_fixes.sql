@@ -52,7 +52,7 @@ UPDATE creature_model_info SET bounding_radius = 0.766, combat_reach = 3 WHERE m
 -- RunSpeed: 10
 -- UNIT_FIELD_BOUNDINGRADIUS: 0.57449996
 -- UNIT_FIELD_COMBATREACH: 2.25
---UNIT_FIELD_DISPLAYID: 21001
+-- UNIT_FIELD_DISPLAYID: 21001
 UPDATE creature_template SET SpeedWalk = 4/2.5, SpeedRun = 10/7 WHERE entry = 20035;
 UPDATE creature_model_info SET bounding_radius = 0.57449996, combat_reach = 2.25 WHERE modelid IN (19394, 21001);
 

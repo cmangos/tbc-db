@@ -108,8 +108,8 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` = 2003701;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(2003701, 1, 37317, 0, -1, 1, 0, 100, 0, 6000, 11000, 6000, 11000, 'Tempest Falconer - Knockback - current')
-(2003701, 2, 37154, 0, -1, 101, 0, 100, 0, 14000, 18000, 18000, 28000, 'Tempest Falconer - Immolation Arrow - random not top aggro')
+(2003701, 1, 37317, 0, -1, 1, 0, 100, 0, 6000, 11000, 6000, 11000, 'Tempest Falconer - Knockback - current'),
+(2003701, 2, 37154, 0, -1, 101, 0, 100, 0, 14000, 18000, 18000, 28000, 'Tempest Falconer - Immolation Arrow - random not top aggro'),
 (2003701, 3, 39079, 0, -1, 1, 0, 100, 0, 0, 3000, 2000, 4000, 'Tempest Falconer - Shoot - current');
 
 UPDATE `creature_template` SET `SpellList` = 2003701 WHERE `entry` = 20037;
