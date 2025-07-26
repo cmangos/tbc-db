@@ -165,7 +165,7 @@ INSERT INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRange
 ('1606501', 'Naxxramas - Lady Blaumeux', '0', '0');
 
 UPDATE creature_template SET SpellList=entry*100+1 WHERE entry IN(16505,16506,15928,15929,15930,15931,15932,15936,15952,15953,15954,15956,15989,15990,16011,16028,16060,16061,16062,16063,16064,16065);
-UPDATE creature_template SET CharmedSpellList=entry*100+2 WHERE entry IN(16506);
+UPDATE creature_template SET CharmedSpellList=entry*100+2 WHERE entry IN(16506,16803);
 
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 ('1595601', '1', '28783', '0', '-1', '100', '0', '100', '2', '15000', '15000', '12000', '18000', 'Anub\'Rekhan - Impale'),
@@ -302,7 +302,23 @@ INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, T
 ('1599001', '4', '27808', '0', '-1', '1', '0', '100', '0', '40000', '60000', '40000', '60000', 'KelThuzad - Frost Blast'),
 ('1599001', '5', '28408', '0', '-1', '0', '0', '100', '0', '60000', '120000', '60000', '220000', 'KelThuzad - Chains of Kelthuzad');
 
-DELETE FROM creature_template_spells WHERE entry IN(16506);
+INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+('1680301', '1', '29060', '0', '-1', '0', '0', '100', '0', '0','0','0','0', 'Deathknight Understudy - Berserker Charge'),
+('1680301', '2', '29061', '0', '-1', '0', '0', '100', '0', '0','0','0','0', 'Deathknight Understudy - Silence');
+
+DELETE FROM creature_template_spells WHERE entry IN(16506,16803);
+
+UPDATE `creature_template` SET UnitFlags=33554432 WHERE Entry=17025;
+REPLACE INTO `creature_template_addon` (entry, auras) VALUES
+(17025, 29327);
+-- Various Fixes
+UPDATE creature_model_info SET combat_reach=3 WHERE modelid=16586;
+UPDATE `creature_template` SET UnitFlags=UnitFlags|256|33554432 WHERE entry=17293;
+
+DELETE FROM spell_script_target WHERE entry IN(28338,28339);
+INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) VALUES
+('28338', '1', '15930', '0'),
+('28339', '1', '15929', '0');
 
 
 

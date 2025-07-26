@@ -3365,7 +3365,9 @@ INSERT INTO creature_spawn_data(Guid, Id) VALUES
 DELETE FROM creature_spawn_data WHERE Id =5330001;
 INSERT INTO creature_spawn_data_template(Entry, StringId, Name) VALUES(5330001,5330001, 'Kel''Thuzad World Triggers Adds');
 INSERT INTO creature_spawn_data(Guid, Id) VALUES
+(@CGUID+1040,5330001),
 (@CGUID+1041,5330001),
+(@CGUID+1042,5330001),
 (@CGUID+1043,5330001),
 (@CGUID+1044,5330001),
 (@CGUID+1045,5330001),
