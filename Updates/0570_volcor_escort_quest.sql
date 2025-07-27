@@ -56,7 +56,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (3695, 1, 1, 4775.9326, 207.56445, 50.76735, 100, 1000, 369501); -- homeposition
 
 -- Correct UnitFlags
-UPDATE creature_template SET UnitFlags = 768 WHERE entry = 3692;
+-- UPDATE creature_template SET UnitFlags = 768 WHERE entry = 3692; -- [2] (46) UNIT_FIELD_FLAGS: (4608) OnlyAttackableByPlayerControlled, PVP
 
 -- Change Text to emoted text
 UPDATE broadcast_text SET ChatTypeID = '2' WHERE Id IN (1238, 1241);
