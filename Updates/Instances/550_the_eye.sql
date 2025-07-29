@@ -954,21 +954,21 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 (@SGGUID+5, @CGUID+48, 0), -- Tempest Falconer
 (@SGGUID+5, @CGUID+49, 1), -- Tempest Falconer
-(@SGGUID+5, @CGUID+61, 3), -- Phoenix-Hawk Hatchling
-(@SGGUID+5, @CGUID+60, 4), -- Phoenix-Hawk Hatchling
-(@SGGUID+5, @CGUID+53, 5), -- Phoenix-Hawk Hatchling
-(@SGGUID+5, @CGUID+52, 6), -- Phoenix-Hawk Hatchling
-(@SGGUID+5, @CGUID+50, 7), -- Phoenix-Hawk Hatchling
-(@SGGUID+5, @CGUID+51, 8), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+61, 2), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+60, 3), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+53, 4), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+52, 5), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+50, 6), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+51, 7), -- Phoenix-Hawk Hatchling
 
 (@SGGUID+6, @CGUID+46, 0), -- Tempest Falconer
 (@SGGUID+6, @CGUID+47, 1), -- Tempest Falconer
 (@SGGUID+6, @CGUID+54, 2), -- Phoenix-Hawk Hatchling
-(@SGGUID+6, @CGUID+55, 3), -- Phoenix-Hawk Hatchling
-(@SGGUID+6, @CGUID+56, 4), -- Phoenix-Hawk Hatchling
-(@SGGUID+6, @CGUID+57, 5), -- Phoenix-Hawk Hatchling
-(@SGGUID+6, @CGUID+58, 6), -- Phoenix-Hawk Hatchling
-(@SGGUID+6, @CGUID+59, 7); -- Phoenix-Hawk Hatchling
+(@SGGUID+6, @CGUID+57, 3), -- Phoenix-Hawk Hatchling
+(@SGGUID+6, @CGUID+58, 4), -- Phoenix-Hawk Hatchling
+(@SGGUID+6, @CGUID+59, 5), -- Phoenix-Hawk Hatchling
+(@SGGUID+6, @CGUID+55, 6), -- Phoenix-Hawk Hatchling
+(@SGGUID+6, @CGUID+56, 7); -- Phoenix-Hawk Hatchling
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 (@SGGUID+1, 1, @CGUID+24, 20033), -- Astromancer
