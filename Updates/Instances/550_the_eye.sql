@@ -954,12 +954,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 (@SGGUID+5, @CGUID+48, 0), -- Tempest Falconer
 (@SGGUID+5, @CGUID+49, 1), -- Tempest Falconer
-(@SGGUID+5, @CGUID+50, 2), -- Phoenix-Hawk Hatchling
-(@SGGUID+5, @CGUID+51, 3), -- Phoenix-Hawk Hatchling
-(@SGGUID+5, @CGUID+52, 4), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+61, 3), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+60, 4), -- Phoenix-Hawk Hatchling
 (@SGGUID+5, @CGUID+53, 5), -- Phoenix-Hawk Hatchling
-(@SGGUID+5, @CGUID+60, 6), -- Phoenix-Hawk Hatchling
-(@SGGUID+5, @CGUID+61, 7), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+52, 6), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+50, 7), -- Phoenix-Hawk Hatchling
+(@SGGUID+5, @CGUID+51, 8), -- Phoenix-Hawk Hatchling
 
 (@SGGUID+6, @CGUID+46, 0), -- Tempest Falconer
 (@SGGUID+6, @CGUID+47, 1), -- Tempest Falconer
