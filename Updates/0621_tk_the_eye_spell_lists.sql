@@ -128,3 +128,18 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (2003801, 2, 37319, 0, -1, 2, 0, 100, 0, 7000, 18000, 23000, 30000, 'Phoenix-Hawk Hatchling - Wing Buffet - self');
 
 UPDATE `creature_template` SET `SpellList` = 2003801 WHERE `entry` = 20038;
+
+
+-- Phoenix-Hawk
+DELETE FROM `creature_template_spells` WHERE `entry` = 20039;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2003901;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2003901, 'The Eye - Phoenix-Hawk', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2003901;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2003901, 1, 37156, 0, -1, 111, 0, 100, 0, 14000, 20000, 21000, 25000, 'Phoenix-Hawk - Dive - farthest player'),
+(2003901, 2, 37159, 0, -1, 105, 0, 100, 0, 3000, 6000, 11000, 14000, 'Phoenix-Hawk - Mana Burn - random mana user');
+
+UPDATE `creature_template` SET `SpellList` = 2003901 WHERE `entry` = 20039;
