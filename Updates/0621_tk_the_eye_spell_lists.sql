@@ -167,11 +167,40 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` = 2004101;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(2004101, 1, 37102, 0, -1, 1, 0, 100, 0, 20000, 25000, 23000, 28000, 'Crystalcore Sentinel - Arcane Explosion - self'),
-(2004101, 2, 35035, 0, -1, 2, 0, 100, 0, 20000, 30000, 30000, 40000, 'Crystalcore Sentinel - Overcharge - current');
+(2004101, 1, 37106, 0, -1, 2, 0, 100, 0, 21000, 25000, 25000, 30000, 'Crystalcore Sentinel - Arcane Explosion - self'),
+(2004101, 2, 37104, 0, -1, 1, 0, 100, 0, 9000, 14000, 25000, 35000, 'Crystalcore Sentinel - Overcharge - current');
 
-UPDATE `creature_template` SET `SpellList` = 2004101 WHERE `entry` = 2004101;
+UPDATE `creature_template` SET `SpellList` = 2004101 WHERE `entry` = 20041;
+
+-- Tempest-Smith
+DELETE FROM `creature_template_spells` WHERE `entry` = 20042;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2004201;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2004201, 'The Eye - Tempest-Smith', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2004201;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2004201, 1, 37112, 0, -1, 6, 0, 100, 0, 18000, 25000, 18000, 25000, 'Tempest-Smith - Power Up - friendly missing buff skip self'),
+(2004201, 2, 37118, 0, -1, 101, 0, 100, 0, 8000, 14000, 9000, 13000, 'Tempest-Smith - Shell Shock - random non tank'),
+(2004201, 3, 37120, 0, -1, 100, 0, 100, 0, 5000, 7000, 5000, 7000, 'Tempest-Smith - Fragmentation Bomb - random');
+
+UPDATE `creature_template` SET `SpellList` = 2004201 WHERE `entry` = 20042;
 
 
-('2004101','20041','0','0','100','1025','9000','14000','25000','35000','0','0','11','37104','1','0','1','19264','0','0','0','0','0','0','Crystalcore Sentinel - Cast Overcharge'),
-('2004102','20041','0','0','100','1025','21000','25000','25000','30000','0','0','11','37106','0','0','0','0','0','0','0','0','0','0','Crystalcore Sentinel - Cast Charged Arcane Explosion'),
+-- Crystalcore Mechanic
+DELETE FROM `creature_template_spells` WHERE `entry` = 20052;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2005201;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2005201, 'The Eye - Crystalcore Mechanic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2005201;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2005201, 1, 37121, 0, -1, 207, 0, 100, 0, 18000, 25000, 18000, 25000, 'Crystalcore Mechanic- Recharge - friendly missing 25 exclude self'),
+(2005201, 2, 37123, 0, -1, 100, 0, 100, 0, 8000, 14000, 9000, 13000, 'Crystalcore Mechanic - Saw Blade - random'),
+
+UPDATE `creature_template` SET `SpellList` = 2005201 WHERE `entry` = 20052;
+
+('2005204','20052','14','0','100','1025','200000','50','10000','10000','0','0','11','37121','12','0','0','0','0','0','0','0','0','0','Crystalcore Mechanic - Cast Recharge on Friendly Missing HP'),
+('2005205','20052','0','3','100','1025','0','0','250','250','0','0','11','37123','4','768','0','0','0','0','0','0','0','0','Crystalcore Mechanic - Cast Saw Blade (Phase 2)'),
