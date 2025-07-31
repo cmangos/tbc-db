@@ -123,10 +123,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+69, 43, 432.219, 308.106, 17.5454, 3.19152, 0, 0),
 (@CGUID+69, 44, 428.218, 308.206, 17.4046, 3.08942, 0, 0),
 (@CGUID+69, 45, 419.106, 309.858, 17.4325, 2.77919, 0, 10121),
-(@CGUID+80, 1, 401.038, 355.901, 14.8946, 3.5, 65000, 10122),
-(@CGUID+81, 1, 458.421, 346.141, 14.904, 5.43473, 60000, 10123),
-(@CGUID+82, 1, 466.821, 381.3, 14.9094, 0.247187, 80000, 10122),
-(@CGUID+83, 1, 430.174, 336.223, 14.6733, 4.57079, 75000, 10123),
 (@CGUID+135, 1, 478.763, -349.151, 15.8994, 5.14326, 0, 0),
 (@CGUID+135, 2, 479.248, -350.47, 15.8686, 4.98539, 0, 0),
 (@CGUID+135, 3, 482.582, -362.608, 15.7734, 4.86758, 0, 0),
@@ -451,31 +447,10 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+133, @CGUID+44, 1167), -- Novice Astromancer -> Bloodwarder Squire
 (@CGUID+134, @CGUID+44, 1167), -- Novice Astromancer -> Bloodwarder Squire
 
-
 (@CGUID+84, @CGUID+69, 1679), -- Tempest-Smith -> Crystalcore Devastator
 (@CGUID+85, @CGUID+69, 1679), -- Tempest-Smith -> Crystalcore Devastator
 
-(@CGUID+70, @CGUID+71, 1167), -- Crystalcore Sentinel -> Crystalcore Sentinel
-
 (@CGUID+72, @CGUID+73, 1167), -- Crystalcore Sentinel -> Crystalcore Sentinel
-
-(@CGUID+76, @CGUID+80, 1167), -- Crystalcore Sentinel -> Tempest-Smith
-(@CGUID+77, @CGUID+80, 1167), -- Crystalcore Sentinel -> Tempest-Smith
-(@CGUID+182, @CGUID+80, 1167), -- Crystalcore Mechanic -> Tempest-Smith
-(@CGUID+183, @CGUID+80, 1167), -- Crystalcore Mechanic -> Tempest-Smith
-
-(@CGUID+66, @CGUID+81, 1167), -- Crystalcore Devastator -> Tempest-Smith
-(@CGUID+179, @CGUID+81, 1167), -- Crystalcore Mechanic -> Tempest-Smith
-(@CGUID+180, @CGUID+81, 1167), -- Crystalcore Mechanic -> Tempest-Smith
-
-(@CGUID+78, @CGUID+82, 1167), -- Crystalcore Sentinel -> Tempest-Smith
-(@CGUID+79, @CGUID+82, 1167), -- Crystalcore Sentinel -> Tempest-Smith
-(@CGUID+178, @CGUID+82, 1167), -- Crystalcore Mechanic -> Tempest-Smith
-(@CGUID+184, @CGUID+82, 1167), -- Crystalcore Mechanic -> Tempest-Smith
-
-(@CGUID+68, @CGUID+83, 1167), -- Crystalcore Devastator -> Tempest-Smith
-(@CGUID+177, @CGUID+83, 1167), -- Crystalcore Mechanic -> Tempest-Smith
-(@CGUID+181, @CGUID+83, 1167), -- Crystalcore Mechanic -> Tempest-Smith
 
 (@CGUID+11, @CGUID+135, 1679), -- Bloodwarder Legionnaire -> Nether Scryer
 (@CGUID+12, @CGUID+135, 1679), -- Bloodwarder Legionnaire -> Nether Scryer
@@ -587,24 +562,24 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+63, 20039, 550, 1, 243.69856, -30.80361, 20.173082, 5.07862, 10800, 10800, 0, 4), -- Phoenix-Hawk
 (@CGUID+64, 20039, 550, 1, 244.32275, 38.13153, 20.180424, 1.05579, 10800, 10800, 0, 4), -- Phoenix-Hawk
 (@CGUID+65, 20039, 550, 1, 393.09442, 71.806984, 20.179276, 2.65501, 10800, 10800, 0, 2), -- Phoenix-Hawk
-(@CGUID+66, 20040, 550, 1, 463.794, 340.009, 15.2907, 2.25678, 10800, 10800, 0, 0), -- Crystalcore Devastator
+(@CGUID+66, 20040, 550, 1, 459.577, 337.187, 15.2522, 2.35619, 10800, 10800, 0, 0), -- Crystalcore Devastator
 (@CGUID+67, 20040, 550, 1, 475.72092, 86.03086, 20.252535, 1.26854, 10800, 10800, 0, 4), -- Crystalcore Devastator
-(@CGUID+68, 20040, 550, 1, 429.21, 328.567, 14.8908, 1.36325, 10800, 10800, 0, 0), -- Crystalcore Devastator
+(@CGUID+68, 20040, 550, 1, 423.913, 327.611, 15.2007, 1.48353, 10800, 10800, 0, 0), -- Crystalcore Devastator
 (@CGUID+69, 20040, 550, 1, 414.075, 311.577, 17.6373, 2.71344, 10800, 10800, 0, 2), -- Crystalcore Devastator
-(@CGUID+70, 20041, 550, 1, 516.203, 243.337, 20.233, 4.5203, 10800, 10800, 0, 0), -- Crystalcore Sentinel
-(@CGUID+71, 20041, 550, 1, 500.279, 235.073, 20.2303, 5.90574, 10800, 10800, 0, 0), -- Crystalcore Sentinel
+(@CGUID+70, 20041, 550, 1, 516.177, 243.245, 20.3168, 4.69494, 10800, 10800, 0, 0), -- Crystalcore Sentinel
+(@CGUID+71, 20041, 550, 1, 499.913, 234.991, 20.3294, 5.91667, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+72, 20041, 550, 1, 525.485, -139.615, 20.2642, 3.46851, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+73, 20041, 550, 1, 530.474, -157.159, 20.2641, 3.39424, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+74, 20041, 550, 1, 522.524, 136.295, 20.336, 2.94961, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+75, 20041, 550, 1, 528.337, 159.21, 20.3332, 3.07178, 10800, 10800, 0, 0), -- Crystalcore Sentinel
-(@CGUID+76, 20041, 550, 1, 395.712, 349.558, 15.2789, 0.467893, 10800, 10800, 0, 0), -- Crystalcore Sentinel
-(@CGUID+77, 20041, 550, 1, 392.303, 355.927, 15.2185, 0.381499, 10800, 10800, 0, 0), -- Crystalcore Sentinel
-(@CGUID+78, 20041, 550, 1, 475.678, 380.375, 15.2256, 3.50267, 10800, 10800, 0, 0), -- Crystalcore Sentinel
-(@CGUID+79, 20041, 550, 1, 473.384, 386.52, 15.1485, 3.49874, 10800, 10800, 0, 0), -- Crystalcore Sentinel
-(@CGUID+80, 20042, 550, 1, 401.038, 355.901, 14.8946, 3.5, 10800, 10800, 0, 2), -- Tempest-Smith
-(@CGUID+81, 20042, 550, 1, 458.421, 346.141, 14.904, 5.43473, 10800, 10800, 0, 2), -- Tempest-Smith
-(@CGUID+82, 20042, 550, 1, 466.821, 381.3, 14.9094, 0.247187, 10800, 10800, 0, 2), -- Tempest-Smith
-(@CGUID+83, 20042, 550, 1, 430.174, 336.223, 14.6733, 4.57079, 10800, 10800, 0, 2), -- Tempest-Smith
+(@CGUID+76, 20041, 550, 1, 393.282, 353.826, 15.3139, 0.349066, 10800, 10800, 0, 0), -- Crystalcore Sentinel
+(@CGUID+77, 20041, 550, 1, 389.993, 363.854, 15.3363, 0.279253, 10800, 10800, 0, 0), -- Crystalcore Sentinel
+(@CGUID+78, 20041, 550, 1, 476.323, 378.244, 15.319, 3.35103, 10800, 10800, 0, 0), -- Crystalcore Sentinel
+(@CGUID+79, 20041, 550, 1, 473.639, 388.329, 15.3246, 3.49066, 10800, 10800, 0, 0), -- Crystalcore Sentinel
+(@CGUID+80, 20042, 550, 1, 397.997, 361.119, 14.9771, 3.42085, 10800, 10800, 0, 0), -- Tempest-Smith
+(@CGUID+81, 20042, 550, 1, 457.151, 344.334, 14.9878, 4.99164, 10800, 10800, 0, 0), -- Tempest-Smith
+(@CGUID+82, 20042, 550, 1, 468.497, 382.066, 14.9938, 0.925025, 10800, 10800, 0, 0), -- Tempest-Smith
+(@CGUID+83, 20042, 550, 1, 426.618, 334.85, 14.6985, 4.29351, 10800, 10800, 0, 0), -- Tempest-Smith
 (@CGUID+84, 20042, 550, 1, 418.201, 313.49, 17.1063, 2.74485, 10800, 10800, 0, 0), -- Tempest-Smith
 (@CGUID+85, 20042, 550, 1, 414.958, 306.041, 18.1734, 2.36001, 10800, 10800, 0, 0), -- Tempest-Smith
 (@CGUID+86, 20043, 550, 1, 352.458, -319.709, 22.1003, 1.81514, 7200, 7200, 0, 0), -- Apprentice Star Scryer
@@ -698,14 +673,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+174, 20050, 550, 1, 639.662, -3.34107, 46.8622, 0.0523599, 7200, 7200, 0, 0), -- Crimson Hand Inquisitor
 (@CGUID+175, 20050, 550, 1, 730.171, 45.3477, 46.8622, 3.4383, 7200, 7200, 0, 0), -- Crimson Hand Inquisitor
 (@CGUID+176, 20050, 550, 1, 727.479, -46.945, 46.8621, 2.11185, 7200, 7200, 0, 0), -- Crimson Hand Inquisitor
-(@CGUID+177, 20052, 550, 1, 431.17, 322.653, 15.693, 1.87413, 10800, 10800, 0, 0), -- Crystalcore Mechanic
-(@CGUID+178, 20052, 550, 1, 482.047, 376.739, 15.9324, 2.5, 10800, 10800, 0, 0), -- Crystalcore Mechanic
-(@CGUID+179, 20052, 550, 1, 470.092, 339.954, 15.8623, 2.33924, 10800, 10800, 0, 0), -- Crystalcore Mechanic
-(@CGUID+180, 20052, 550, 1, 462.453, 334.369, 15.685, 1.92298, 10800, 10800, 0, 0), -- Crystalcore Mechanic
-(@CGUID+181, 20052, 550, 1, 422.161, 329, 15.1021, 0.010539, 10800, 10800, 0, 0), -- Crystalcore Mechanic
-(@CGUID+182, 20052, 550, 1, 388.124, 357.658, 15.6923, 0.31474, 10800, 10800, 0, 0), -- Crystalcore Mechanic
-(@CGUID+183, 20052, 550, 1, 394.039, 344.668, 15.8235, 0.675238, 10800, 10800, 0, 0), -- Crystalcore Mechanic
-(@CGUID+184, 20052, 550, 1, 474.989, 391.686, 15.5304, 3.59299, 10800, 10800, 0, 0), -- Crystalcore Mechanic
+(@CGUID+177, 20052, 550, 1, 425.733, 323.265, 15.5336, 1.8675, 10800, 10800, 0, 0), -- Crystalcore Mechanic
+(@CGUID+178, 20052, 550, 1, 481.119, 376.113, 15.8953, 2.37365, 10800, 10800, 0, 0), -- Crystalcore Mechanic
+(@CGUID+179, 20052, 550, 1, 465.414, 336.68, 15.8237, 2.58309, 10800, 10800, 0, 0), -- Crystalcore Mechanic
+(@CGUID+180, 20052, 550, 1, 454.04, 334.52, 15.2268, 0.279253, 10800, 10800, 0, 0), -- Crystalcore Mechanic
+(@CGUID+181, 20052, 550, 1, 418.131, 328.526, 15.5518, 6.12611, 10800, 10800, 0, 0), -- Crystalcore Mechanic
+(@CGUID+182, 20052, 550, 1, 390.007, 370.393, 15.2625, 4.27606, 10800, 10800, 0, 0), -- Crystalcore Mechanic
+(@CGUID+183, 20052, 550, 1, 388.995, 355.609, 15.7319, 5.68977, 10800, 10800, 0, 0), -- Crystalcore Mechanic
+(@CGUID+184, 20052, 550, 1, 469.932, 393.257, 15.0503, 5.06145, 10800, 10800, 0, 0), -- Crystalcore Mechanic
 (@CGUID+185, 20060, 550, 1, 785.7821, -20.39954, 48.81179, 2.303835, 604800, 604800, 0, 0), -- Lord Sanguinar
 (@CGUID+186, 20062, 550, 1, 792.4081, -13.24149, 48.81179, 2.687807, 604800, 604800, 0, 0), -- Grand Astromancer Capernian
 (@CGUID+187, 20063, 550, 1, 792.7254, 12.77545, 48.81183, 3.595378, 604800, 604800, 0, 0), -- Master Engineer Telonicus
@@ -813,6 +788,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Solo Patrol not respawning when Void Reaver is Dead
 (@SGGUID+8, 'The Eye - Group 008 - Crystalcore Devastator (1)', 0, 0, @SGGUID+2, 0, 0),
 (@SGGUID+9, 'The Eye - Group 009 - Crystalcore Sentinel (2)', 0, 0, @SGGUID+2, 1, 0),
+(@SGGUID+10, 'The Eye - Group 010 - Crystalcore Sentinel (2)', 0, 0, @SGGUID+2, 1, 0),
+-- Void Reaver Room
+(@SGGUID+11, 'The Eye - Group 011 - Tempest-Smith (1) | Crystalcore Sentinel (2) | Crystalcore Mechanic (2)', 0, 0, @SGGUID+2, 1, 0),
+(@SGGUID+12, 'The Eye - Group 012 - Tempest-Smith (1) | Crystalcore Devastator (1) | Crystalcore Mechanic (2)', 0, 0, @SGGUID+2, 1, 0),
+(@SGGUID+13, 'The Eye - Group 013 - Tempest-Smith (1) | Crystalcore Devastator (1) | Crystalcore Mechanic (2)', 0, 0, @SGGUID+2, 1, 0),
+
+(@SGGUID+14, 'The Eye - Group 014 - Tempest-Smith (1) | Crystalcore Sentinel (2) | Crystalcore Mechanic (2)', 0, 0, @SGGUID+2, 1, 0),
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @CGUID+24, -1), -- spawn_group_squad
@@ -867,6 +849,32 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 (@SGGUID+9, @CGUID+74, -1), -- Crystalcore Sentinel
 (@SGGUID+9, @CGUID+75, -1), -- Crystalcore Sentinel
+
+(@SGGUID+10, @CGUID+70, -1), -- Crystalcore Sentinel
+(@SGGUID+10, @CGUID+71, -1), -- Crystalcore Sentinel
+
+(@SGGUID+11, @CGUID+80, -1), -- Tempest-Smith
+(@SGGUID+11, @CGUID+76, -1), -- Crystalcore Sentinel
+(@SGGUID+11, @CGUID+77, -1), -- Crystalcore Sentinel
+(@SGGUID+11, @CGUID+182, -1), -- Crystalcore Mechanic
+(@SGGUID+11, @CGUID+183, -1), -- Crystalcore Mechanic
+
+(@SGGUID+12, @CGUID+83, -1), -- Tempest-Smith
+(@SGGUID+12, @CGUID+68, -1), -- Crystalcore Devastator
+(@SGGUID+12, @CGUID+177, -1), -- Crystalcore Mechanic
+(@SGGUID+12, @CGUID+181, -1), -- Crystalcore Mechanic
+
+(@SGGUID+13, @CGUID+81, -1), -- Tempest-Smith
+(@SGGUID+13, @CGUID+66, -1), -- Crystalcore Devastator
+(@SGGUID+13, @CGUID+179, -1), -- Crystalcore Mechanic
+(@SGGUID+13, @CGUID+180, -1), -- Crystalcore Mechanic
+
+(@SGGUID+14, @CGUID+82, -1), -- Tempest-Smith
+(@SGGUID+14, @CGUID+79, -1), -- Crystalcore Sentinel
+(@SGGUID+14, @CGUID+78, -1), -- Crystalcore Sentinel
+(@SGGUID+14, @CGUID+184, -1), -- Crystalcore Mechanic
+(@SGGUID+14, @CGUID+178, -1), -- Crystalcore Mechanic
+
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 (@SGGUID+1, 1, @CGUID+24, 20033), -- Astromancer
