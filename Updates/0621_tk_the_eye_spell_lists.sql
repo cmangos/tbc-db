@@ -197,10 +197,27 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` = 2005201;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(2005201, 1, 37121, 0, -1, 207, 0, 100, 0, 18000, 25000, 18000, 25000, 'Crystalcore Mechanic- Recharge - friendly missing 25 exclude self'),
-(2005201, 2, 37123, 0, -1, 100, 0, 100, 0, 8000, 14000, 9000, 13000, 'Crystalcore Mechanic - Saw Blade - random'),
+(2005201, 1, 37121, 0, -1, 207, 0, 100, 0, 10000, 10000, 10000, 10000, 'Crystalcore Mechanic - Recharge - friendly missing 25 exclude self'),
+(2005201, 2, 37123, 0, -1, 100, 0, 100, 0, 8000, 14000, 9000, 13000, 'Crystalcore Mechanic - Saw Blade - random');
 
 UPDATE `creature_template` SET `SpellList` = 2005201 WHERE `entry` = 20052;
 
-('2005204','20052','14','0','100','1025','200000','50','10000','10000','0','0','11','37121','12','0','0','0','0','0','0','0','0','0','Crystalcore Mechanic - Cast Recharge on Friendly Missing HP'),
-('2005205','20052','0','3','100','1025','0','0','250','250','0','0','11','37123','4','768','0','0','0','0','0','0','0','0','Crystalcore Mechanic - Cast Saw Blade (Phase 2)'),
+
+-- Astromancer Lord
+DELETE FROM `creature_template_spells` WHERE `entry` = 20046;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2004601;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2004601, 'The Eye - Astromancer Lord', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2004601;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2004601, 1, 37289, 0, -1, 1, 0, 100, 0, 10000, 20000, 15000, 20000, 'Astromancer Lord - Dragon''s Breath - current'),
+(2004601, 2, 37110, 0, -1, 100, 0, 100, 0, 14000, 19000, 18000, 28000, 'Astromancer Lord - Fire Blast - random'),
+(2004601, 3, 37109, 0, -1, 1, 0, 100, 0, 8000, 13000, 11000, 16000, 'Astromancer Lord - Fireball Volley - current'),
+
+UPDATE `creature_template` SET `SpellList` = 2004601 WHERE `entry` = 20046;
+
+('2004601','20046','0','0','100','1025','1000','2000','15000','30000','0','0','11','38732','0','32','0','0','0','0','0','0','0','0','Astromancer Lord - Cast Fire Shield'),
+('2004603','20046','0','0','100','1025','14000','19000','18000','28000','0','0','11','37110','4','512','0','0','0','0','0','0','0','0','Astromancer Lord - Cast Fire Blast'),
+('2004604','20046','0','0','100','1025','8000','13000','11000','16000','0','0','11','37109','1','0','0','0','0','0','0','0','0','0','Astromancer - Cast Fireball Volley'),
