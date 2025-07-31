@@ -29628,23 +29628,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nether Scryer 20045 - spell_list
 -- Astromancer Lord 20046 - spell_list
 ('2004601','20046','0','0','100','1025','1000','2000','15000','30000','0','0','11','38732','0','32','0','0','0','0','0','0','0','0','Astromancer Lord - Cast Fire Shield'),
--- Crimson Hand Battle Mage 20047
-('2004701','20047','0','0','100','1025','9000','21000','13000','23000','0','0','11','37265','1','0','0','0','0','0','0','0','0','0','Crimson Hand Battle Mage - Cast Cone of Cold'),
-('2004702','20047','0','0','100','1025','10000','20000','20000','27000','0','0','11','37263','4','512','0','0','0','0','0','0','0','0','Crimson Hand Battle Mage - Cast Blizzard'),
-('2004703','20047','0','0','100','1025','17000','26000','19000','33000','0','0','11','37262','1','0','0','0','0','0','0','0','0','0','Crimson Hand Battle Mage - Cast Frostbolt Volley'),
--- Crimson Hand Centurion
-('2004801','20048','0','0','100','1025','5000','9000','19000','26000','0','0','11','37268','0','0','0','0','0','0','0','0','0','0','Crimson Hand Centurion - Cast Arcane Flurry'),
--- Crimson Hand Blood Knight 20049 - init heal timer?
-('2004901','20049','0','0','100','1025','3000','9000','18000','28000','0','0','11','39077','1','32','0','0','0','0','0','0','0','0','Crimson Hand Blood Knight - Cast Hammer of Justice'),
-('2004902','20049','14','0','100','1025','2000','40','5000','10000','0','0','11','37260','12','0','0','0','0','0','0','0','0','0','Crimson Hand Blood Knight - Cast Renew on Friendly Missing HP'),
-('2004903','20049','15','0','100','1025','7','30','5000','10000','0','0','11','39078','12','0','0','0','0','0','0','0','0','0','Crimson Hand Blood Knight - Cast Cleanse on Friendly CC'),
-('2004904','20049','14','0','100','1025','20000','50','4000','8000','0','0','11','37257','12','0','0','0','0','0','0','0','0','0','Crimson Hand Blood Knight - Cast Flash of Light on Friendly Missing HP'),
-('2004905','20049','0','0','100','1025','0','0','3000','5000','0','0','11','37259','4','0','0','0','0','0','0','0','0','0','Crimson Hand Blood Knight - Cast Hammer of Wrath on Random Target 20% HP'),
--- Crimson Hand Inquisitor 20050
-('2005001','20050','4','0','100','0','0','0','0','0','0','0','11','37274','0','0','0','0','0','0','0','0','0','0','Crimson Hand Inquisitor - Cast Power Infusion on Aggro'),
-('2005002','20050','0','0','100','1025','25000','31000','30000','43000','0','0','11','37274','0','0','0','0','0','0','0','0','0','0','Crimson Hand Inquisitor - Cast Power Infusion'),
-('2005003','20050','9','0','100','1025','0','20','6000','8000','0','0','11','37276','1','0','0','0','0','0','0','0','0','0','Crimson Hand Inquisitor - Cast Mind Flay'),
-('2005004','20050','0','0','100','1025','7000','11000','21000','26000','0','0','11','37275','5','512','0','0','0','0','0','0','0','0','Crimson Hand Inquisitor - Cast Shadow Word: Pain'),
+-- Crimson Hand Battle Mage 20047 - spell_list
+-- Crimson Hand Centurion 20048 - spell_list
+-- Crimson Hand Blood Knight 20049 - spell_list
+-- Crimson Hand Inquisitor 20050 - spell_list
 -- Crystalcore Mechanic 20052 - spell_list
 -- Lord Sanguinar (20060) - boss_lord_sanguinar
 -- Grand Astromancer Capernian (20062) - boss_grand_astromancer_capernian

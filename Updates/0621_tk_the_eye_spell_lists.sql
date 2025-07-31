@@ -263,3 +263,64 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (2004501, 2, 37126, 0, -1, 100, 0, 100, 0, 12000, 16000, 12000, 16000, 'Nether Scryer - Arcane Blast - random');
 
 UPDATE `creature_template` SET `SpellList` = 2004501 WHERE `entry` = 20045;
+
+-- Crimson Hand Battle Mage
+DELETE FROM `creature_template_spells` WHERE `entry` = 20047;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2004701;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2004701, 'The Eye - Crimson Hand Battle Mage', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2004701;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2004701, 1, 37265, 0, -1, 1, 0, 100, 0, 9000, 21000, 13000, 23000, 'Crimson Hand Battle Mage - Cone of Cold - current'),
+(2004701, 2, 37263, 0, -1, 100, 0, 100, 0, 10000, 20000, 20000, 27000, 'Crimson Hand Battle Mage - Blizzard - random'),
+(2004701, 3, 37262, 0, -1, 1, 0, 100, 0, 17000, 26000, 19000, 33000, 'Crimson Hand Battle Mage - Frostbolt Volley - current');
+
+UPDATE `creature_template` SET `SpellList` = 2004701 WHERE `entry` = 20047;
+
+-- Crimson Hand Centurion
+DELETE FROM `creature_template_spells` WHERE `entry` = 20048;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2004801;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2004801, 'The Eye - Crimson Hand Centurion', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2004801;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2004801, 1, 37268, 0, -1, 2, 0, 100, 0, 5000, 9000, 19000, 26000, 'Crimson Hand Centurion - Arcane Flurry - self');
+
+UPDATE `creature_template` SET `SpellList` = 2004801 WHERE `entry` = 20048;
+
+-- Crimson Hand Blood Knight
+DELETE FROM `creature_template_spells` WHERE `entry` = 20049;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2004901;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2004901, 'The Eye - Crimson Hand Blood Knight', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2004901;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2004901, 1, 37257, 0, -1, 201, 0, 100, 0, 4000, 8000, 4000, 8000, 'Crimson Hand Blood Knight - Flash of Light - missing 50% including self'),
+(2004901, 2, 37260, 0, -1, 200, 0, 100, 0, 5000, 10000, 5000, 10000, 'Crimson Hand Blood Knight - Renew - missing 10% including self'),
+(2004901, 3, 39078, 0, -1, 3, 0, 100, 0, 5000, 10000, 5000, 10000, 'Crimson Hand Blood Knight - Cleanse - eligible friendly dispel'),
+(2004901, 4, 37259, 0, -1, 100, 0, 100, 0, 3000, 5000, 3000, 5000, 'Crimson Hand Blood Knight - Hammer of Wrath - random'),
+(2004901, 5, 39077, 0, -1, 1, 0, 100, 0, 3000, 9000, 18000, 28000, 'Crimson Hand Blood Knight - Hammer of Justice - current');
+
+UPDATE `creature_template` SET `SpellList` = 2004901 WHERE `entry` = 20049;
+
+
+-- Crimson Hand Inquisitor
+DELETE FROM `creature_template_spells` WHERE `entry` = 20050;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2005001;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2005001, 'The Eye - Crimson Hand Inquisitor', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2005001;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2005001, 1, 37274, 0, -1, 2, 0, 100, 0, 25000, 31000, 30000, 43000, 'Crimson Hand Inquisitor - Power Infusion - self'),
+(2005001, 2, 37275, 0, -1, 100, 0, 100, 0, 7000, 11000, 21000, 26000, 'Crimson Hand Inquisitor - Shadow Word: Pain - random'),
+(2005001, 3, 37276, 0, -1, 1, 0, 100, 0, 6000, 8000, 6000, 8000, 'Crimson Hand Inquisitor - Mind Flay - current');
+
+UPDATE `creature_template` SET `SpellList` = 2005001 WHERE `entry` = 20050;
