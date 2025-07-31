@@ -70,13 +70,13 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+65, 16, 409.24487,45.13489,20.179453, 100, 0, 0),
 -- Crystalcore Devastator
 (@CGUID+67, 1, 475.72092,86.03086,20.252535, 100, 0, 0),
-(@CGUID+67, 1, 486.81604,97.507996,20.289883, 100, 0, 0),
-(@CGUID+67, 2, 497.40924,110.58228,20.289906, 100, 0, 0),
-(@CGUID+67, 3, 507.257,127.883,20.271929, 100, 0, 0),
-(@CGUID+67, 4, 514.15625,150.00967,20.235924, 100, 0, 0),
-(@CGUID+67, 5, 520.88763,179.39882,20.278658, 100, 0, 0),
-(@CGUID+67, 6, 518.6552,206.79694,20.289883, 100, 0, 0),
-(@CGUID+67, 7, 511.54654,229.24347,20.301516, 100, 0, 0),
+(@CGUID+67, 2, 486.81604,97.507996,20.289883, 100, 0, 0),
+(@CGUID+67, 3, 497.40924,110.58228,20.289906, 100, 0, 0),
+(@CGUID+67, 4, 507.257,127.883,20.271929, 100, 0, 0),
+(@CGUID+67, 5, 514.15625,150.00967,20.235924, 100, 0, 0),
+(@CGUID+67, 6, 520.88763,179.39882,20.278658, 100, 0, 0),
+(@CGUID+67, 7, 518.6552,206.79694,20.289883, 100, 0, 0),
+(@CGUID+67, 8, 511.54654,229.24347,20.301516, 100, 0, 0),
 --
 (@CGUID+135, 1, 478.763, -349.151, 15.8994, 5.14326, 0, 0),
 (@CGUID+135, 2, 479.248, -350.47, 15.8686, 4.98539, 0, 0),
@@ -288,15 +288,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (21271, 0, 0, 1, 0, 0, '12787'); -- Infinity Blades
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
--- link "leaders" to bosses
-(@CGUID+36, @CGUID+1, 1025), -- Bloodwarder Squire -> High Astromancer Solarian
-(@CGUID+40, @CGUID+1, 1025), -- Bloodwarder Squire -> High Astromancer Solarian
-(@CGUID+41, @CGUID+1, 1025), -- Bloodwarder Squire -> High Astromancer Solarian
-(@CGUID+43, @CGUID+1, 1025), -- Bloodwarder Squire -> High Astromancer Solarian
-(@CGUID+44, @CGUID+1, 1025), -- Bloodwarder Squire -> High Astromancer Solarian
-(@CGUID+73, @CGUID+1, 1025), -- Crystalcore Sentinel -> High Astromancer Solarian
-(@CGUID+135, @CGUID+1, 1025), -- Nether Scryer -> High Astromancer Solarian
-(@CGUID+136, @CGUID+1, 1025), -- Nether Scryer -> High Astromancer Solarian
 
 (@CGUID+31, @CGUID+5, 1024), -- Bloodwarder Marshal -> Kael'thas Sunstrider
 (@CGUID+32, @CGUID+5, 1024), -- Bloodwarder Marshal -> Kael'thas Sunstrider
@@ -320,66 +311,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+158, @CGUID+33, 1167), -- Crimson Hand Centurion -> Bloodwarder Marshal
 (@CGUID+168, @CGUID+33, 1167), -- Crimson Hand Blood Knight -> Bloodwarder Marshal
 (@CGUID+176, @CGUID+33, 1167), -- Crimson Hand Inquisitor -> Bloodwarder Marshal
-
-(@CGUID+35, @CGUID+36, 1167), -- Bloodwarder Squire -> Bloodwarder Squire
-(@CGUID+88, @CGUID+36, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+89, @CGUID+36, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+90, @CGUID+36, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+91, @CGUID+36, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+110, @CGUID+36, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+114, @CGUID+36, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+115, @CGUID+36, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+116, @CGUID+36, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+117, @CGUID+36, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+120, @CGUID+36, 1167), -- Novice Astromancer -> Bloodwarder Squire
-
-(@CGUID+34, @CGUID+40, 1167), -- Bloodwarder Squire -> Bloodwarder Squire
-(@CGUID+86, @CGUID+40, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+87, @CGUID+40, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+93, @CGUID+40, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+95, @CGUID+40, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+99, @CGUID+40, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+111, @CGUID+40, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+112, @CGUID+40, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+113, @CGUID+40, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+118, @CGUID+40, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+125, @CGUID+40, 1167), -- Novice Astromancer -> Bloodwarder Squire
-
-(@CGUID+37, @CGUID+41, 1167), -- Bloodwarder Squire -> Bloodwarder Squire
-(@CGUID+92, @CGUID+41, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+94, @CGUID+41, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+96, @CGUID+41, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+97, @CGUID+41, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+98, @CGUID+41, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+119, @CGUID+41, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+121, @CGUID+41, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+122, @CGUID+41, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+123, @CGUID+41, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+124, @CGUID+41, 1167), -- Novice Astromancer -> Bloodwarder Squire
-
-(@CGUID+42, @CGUID+43, 1167), -- Bloodwarder Squire -> Bloodwarder Squire
-(@CGUID+100, @CGUID+43, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+101, @CGUID+43, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+102, @CGUID+43, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+103, @CGUID+43, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+104, @CGUID+43, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+126, @CGUID+43, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+127, @CGUID+43, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+128, @CGUID+43, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+129, @CGUID+43, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+130, @CGUID+43, 1167), -- Novice Astromancer -> Bloodwarder Squire
-
-(@CGUID+45, @CGUID+44, 1167), -- Bloodwarder Squire -> Bloodwarder Squire
-(@CGUID+105, @CGUID+44, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+106, @CGUID+44, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+107, @CGUID+44, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+108, @CGUID+44, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+109, @CGUID+44, 1167), -- Apprentice Star Scryer -> Bloodwarder Squire
-(@CGUID+131, @CGUID+44, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+132, @CGUID+44, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+133, @CGUID+44, 1167), -- Novice Astromancer -> Bloodwarder Squire
-(@CGUID+134, @CGUID+44, 1167), -- Novice Astromancer -> Bloodwarder Squire
-
 
 (@CGUID+11, @CGUID+135, 1679), -- Bloodwarder Legionnaire -> Nether Scryer
 (@CGUID+12, @CGUID+135, 1679), -- Bloodwarder Legionnaire -> Nether Scryer
@@ -456,18 +387,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+31, 20035, 550, 1, 639.83, 2.04339, 46.8622, 6.21337, 7200, 7200, 0, 0), -- Bloodwarder Marshal
 (@CGUID+32, 20035, 550, 1, 724.668, 47.5516, 46.8622, 5.48033, 7200, 7200, 0, 0), -- Bloodwarder Marshal
 (@CGUID+33, 20035, 550, 1, 728.804, -43.1283, 46.8621, 3.76991, 7200, 7200, 0, 0), -- Bloodwarder Marshal
-(@CGUID+34, 20036, 550, 1, 351.418, -316.259, 22.1003, 5.14872, 7200, 7200, 0, 0), -- Bloodwarder Squire
-(@CGUID+35, 20036, 550, 1, 505.606, -151.263, 20.3535, 2.56563, 7200, 7200, 0, 0), -- Bloodwarder Squire
-(@CGUID+36, 20036, 550, 1, 504.446, -156.253, 21.6161, 0.331613, 7200, 7200, 0, 0), -- Bloodwarder Squire
-(@CGUID+37, 20036, 550, 1, 504.087, -237.534, 20.3063, 3.82227, 7200, 7200, 0, 0), -- Bloodwarder Squire
+(@CGUID+34, 0, 550, 1, 351.418, -316.259, 22.1003, 5.14872, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+35, 0, 550, 1, 505.606, -151.263, 20.3535, 2.56563, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+36, 0, 550, 1, 504.446, -156.253, 21.6161, 0.331613, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+37, 0, 550, 1, 504.087, -237.534, 20.3063, 3.82227, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+38, 20036, 550, 1, 60.1519, 0.705531, -2.34493, 5.72144, 10800, 10800, 0, 0), -- Bloodwarder Squire
 (@CGUID+39, 20036, 550, 1, 60.3027, -3.7269, -2.34493, 0.576039, 10800, 10800, 0, 0), -- Bloodwarder Squire
-(@CGUID+40, 20036, 550, 1, 335.747, -376.818, 22.1003, 4.64258, 7200, 7200, 0, 0), -- Bloodwarder Squire
-(@CGUID+41, 20036, 550, 1, 510.537, -246.791, 20.2972, 6.17846, 7200, 7200, 0, 0), -- Bloodwarder Squire
-(@CGUID+42, 20036, 550, 1, 531.456, -366.802, 22.1002, 3.38594, 7200, 7200, 0, 0), -- Bloodwarder Squire
-(@CGUID+43, 20036, 550, 1, 513.288, -421.953, 22.1003, 5.11381, 7200, 7200, 0, 0), -- Bloodwarder Squire
-(@CGUID+44, 20036, 550, 1, 388.687, -457.694, 22.1003, 1.8326, 7200, 7200, 0, 0), -- Bloodwarder Squire
-(@CGUID+45, 20036, 550, 1, 438.087, -471.081, 22.1003, 1.39626, 7200, 7200, 0, 0), -- Bloodwarder Squire
+(@CGUID+40, 0, 550, 1, 335.747, -376.818, 22.1003, 4.64258, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+41, 0, 550, 1, 510.537, -246.791, 20.2972, 6.17846, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+42, 0, 550, 1, 531.456, -366.802, 22.1002, 3.38594, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+43, 0, 550, 1, 513.288, -421.953, 22.1003, 5.11381, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+44, 0, 550, 1, 388.687, -457.694, 22.1003, 1.8326, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+45, 0, 550, 1, 438.087, -471.081, 22.1003, 1.39626, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+46, 20037, 550, 1, 285.916, 16.4682, -2.34852, 0.678321, 10800, 10800, 0, 0), -- Tempest Falconer
 (@CGUID+47, 20037, 550, 1, 290.39, 13.2804, -2.30604, 6.23696, 10800, 10800, 0, 0), -- Tempest Falconer
 (@CGUID+48, 20037, 550, 1, 373.944, -16.3073, -2.32662, 3.97025, 10800, 10800, 0, 0), -- Tempest Falconer
@@ -508,55 +439,55 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+83, 20042, 550, 1, 426.618, 334.85, 14.6985, 4.29351, 10800, 10800, 0, 0), -- Tempest-Smith
 (@CGUID+84, 20042, 550, 1, 490.7227, 338.2184, 18.172142, 4.09591, 10800, 10800, 0, 0), -- Tempest-Smith
 (@CGUID+85, 20042, 550, 1, 484.1029, 342.70276, 17.150923, 3.96082, 10800, 10800, 0, 0), -- Tempest-Smith
-(@CGUID+86, 20043, 550, 1, 352.458, -319.709, 22.1003, 1.81514, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+87, 20043, 550, 1, 344.225, -333.593, 22.1003, 2.28638, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+88, 20043, 550, 1, 503.185, -146.249, 20.3612, 5.5676, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+89, 20043, 550, 1, 502.495, -149.418, 20.3666, 4.90438, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+90, 20043, 550, 1, 506.166, -154.226, 20.3567, 3.9619, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+91, 20043, 550, 1, 508.967, -158.539, 20.3488, 2.74017, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+92, 20043, 550, 1, 498.681, -241.203, 20.3193, 1.69297, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+93, 20043, 550, 1, 335.097, -368.078, 22.1003, 6.05629, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+94, 20043, 550, 1, 500.876, -238.636, 20.3007, 4.74729, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+95, 20043, 550, 1, 340.303, -370.587, 22.1003, 2.28638, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+96, 20043, 550, 1, 516.495, -247.968, 20.3432, 1.53589, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+97, 20043, 550, 1, 514.988, -242.227, 20.329, 4.45059, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+98, 20043, 550, 1, 516.322, -245.612, 20.313, 3.22886, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+99, 20043, 550, 1, 330.858, -377.786, 22.1003, 5.91667, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+100, 20043, 550, 1, 528.726, -364.973, 22.1002, 5.41052, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+101, 20043, 550, 1, 527.223, -368.722, 22.1002, 0.680678, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+102, 20043, 550, 1, 527.879, -381.096, 22.1001, 0.575959, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+103, 20043, 550, 1, 518.084, -415.48, 22.1003, 0.331613, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+104, 20043, 550, 1, 519.811, -413.351, 22.1003, 5.2709, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+105, 20043, 550, 1, 380.025, -451.003, 22.1003, 3.47321, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+106, 20043, 550, 1, 376.944, -455.145, 22.1003, 5.60251, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+107, 20043, 550, 1, 439.473, -468.015, 22.1003, 3.90954, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+108, 20043, 550, 1, 435.639, -466.829, 22.1003, 5.02655, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+109, 20043, 550, 1, 428.962, -474.043, 22.1003, 1.90241, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+110, 20043, 550, 1, 506.688, -157.552, 20.3571, 3.94444, 7200, 7200, 0, 0), -- Apprentice Star Scryer
-(@CGUID+111, 20044, 550, 1, 354.351, -317.713, 22.1003, 3.29867, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+112, 20044, 550, 1, 343.001, -330.82, 22.1003, 5.55015, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+113, 20044, 550, 1, 346.987, -331.116, 22.1003, 2.47837, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+114, 20044, 550, 1, 505.014, -159.059, 20.4535, 6.19592, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+115, 20044, 550, 1, 503.468, -153.307, 20.5073, 5.5676, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+116, 20044, 550, 1, 502.859, -151.514, 22.0813, 1.309, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+117, 20044, 550, 1, 505.813, -148.402, 20.3507, 3.92699, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+118, 20044, 550, 1, 338.58, -366.39, 22.1003, 4.99164, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+119, 20044, 550, 1, 501.313, -241.167, 20.2896, 0.541052, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+120, 20044, 550, 1, 507.289, -160.424, 20.3595, 2.32129, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+121, 20044, 550, 1, 502.845, -244.156, 20.3911, 1.23918, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+122, 20044, 550, 1, 513.877, -247.938, 20.2956, 1.62316, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+123, 20044, 550, 1, 504.222, -240.496, 20.3758, 4.18879, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+124, 20044, 550, 1, 512.657, -244.061, 20.3157, 5.65487, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+125, 20044, 550, 1, 337.739, -380.531, 22.1003, 2.89725, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+126, 20044, 550, 1, 526.949, -375.875, 22.1001, 4.90438, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+127, 20044, 550, 1, 531.524, -379.077, 22.1002, 2.67035, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+128, 20044, 550, 1, 512.518, -425.02, 22.1003, 0.802851, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+129, 20044, 550, 1, 521.402, -415.551, 22.1003, 2.84489, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+130, 20044, 550, 1, 515.806, -426.442, 22.1003, 2.56563, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+131, 20044, 550, 1, 375.265, -452.356, 22.1003, 4.59022, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+132, 20044, 550, 1, 391.798, -459.901, 22.1003, 3.94444, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+133, 20044, 550, 1, 388.877, -462.481, 22.1003, 1.62316, 7200, 7200, 0, 0), -- Novice Astromancer
-(@CGUID+134, 20044, 550, 1, 427.989, -468.895, 22.1003, 4.62512, 7200, 7200, 0, 0), -- Novice Astromancer
+(@CGUID+86, 0, 550, 1, 352.458, -319.709, 22.1003, 1.81514, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+87, 0, 550, 1, 344.225, -333.593, 22.1003, 2.28638, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+88, 0, 550, 1, 503.185, -146.249, 20.3612, 5.5676, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+89, 0, 550, 1, 502.495, -149.418, 20.3666, 4.90438, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+90, 0, 550, 1, 506.166, -154.226, 20.3567, 3.9619, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+91, 0, 550, 1, 508.967, -158.539, 20.3488, 2.74017, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+92, 0, 550, 1, 498.681, -241.203, 20.3193, 1.69297, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+93, 0, 550, 1, 335.097, -368.078, 22.1003, 6.05629, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+94, 0, 550, 1, 500.876, -238.636, 20.3007, 4.74729, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+95, 0, 550, 1, 340.303, -370.587, 22.1003, 2.28638, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+96, 0, 550, 1, 516.495, -247.968, 20.3432, 1.53589, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+97, 0, 550, 1, 514.988, -242.227, 20.329, 4.45059, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+98, 0, 550, 1, 516.322, -245.612, 20.313, 3.22886, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+99, 0, 550, 1, 330.858, -377.786, 22.1003, 5.91667, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+100, 0, 550, 1, 528.726, -364.973, 22.1002, 5.41052, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+101, 0, 550, 1, 527.223, -368.722, 22.1002, 0.680678, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+102, 0, 550, 1, 527.879, -381.096, 22.1001, 0.575959, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+103, 0, 550, 1, 518.084, -415.48, 22.1003, 0.331613, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+104, 0, 550, 1, 519.811, -413.351, 22.1003, 5.2709, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+105, 0, 550, 1, 380.025, -451.003, 22.1003, 3.47321, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+106, 0, 550, 1, 376.944, -455.145, 22.1003, 5.60251, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+107, 0, 550, 1, 439.473, -468.015, 22.1003, 3.90954, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+108, 0, 550, 1, 435.639, -466.829, 22.1003, 5.02655, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+109, 0, 550, 1, 428.962, -474.043, 22.1003, 1.90241, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+110, 0, 550, 1, 506.688, -157.552, 20.3571, 3.94444, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+111, 0, 550, 1, 354.351, -317.713, 22.1003, 3.29867, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+112, 0, 550, 1, 343.001, -330.82, 22.1003, 5.55015, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+113, 0, 550, 1, 346.987, -331.116, 22.1003, 2.47837, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+114, 0, 550, 1, 505.014, -159.059, 20.4535, 6.19592, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+115, 0, 550, 1, 503.468, -153.307, 20.5073, 5.5676, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+116, 0, 550, 1, 502.859, -151.514, 22.0813, 1.309, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+117, 0, 550, 1, 505.813, -148.402, 20.3507, 3.92699, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+118, 0, 550, 1, 338.58, -366.39, 22.1003, 4.99164, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+119, 0, 550, 1, 501.313, -241.167, 20.2896, 0.541052, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+120, 0, 550, 1, 507.289, -160.424, 20.3595, 2.32129, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+121, 0, 550, 1, 502.845, -244.156, 20.3911, 1.23918, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+122, 0, 550, 1, 513.877, -247.938, 20.2956, 1.62316, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+123, 0, 550, 1, 504.222, -240.496, 20.3758, 4.18879, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+124, 0, 550, 1, 512.657, -244.061, 20.3157, 5.65487, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+125, 0, 550, 1, 337.739, -380.531, 22.1003, 2.89725, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+126, 0, 550, 1, 526.949, -375.875, 22.1001, 4.90438, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+127, 0, 550, 1, 531.524, -379.077, 22.1002, 2.67035, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+128, 0, 550, 1, 512.518, -425.02, 22.1003, 0.802851, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+129, 0, 550, 1, 521.402, -415.551, 22.1003, 2.84489, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+130, 0, 550, 1, 515.806, -426.442, 22.1003, 2.56563, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+131, 0, 550, 1, 375.265, -452.356, 22.1003, 4.59022, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+132, 0, 550, 1, 391.798, -459.901, 22.1003, 3.94444, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+133, 0, 550, 1, 388.877, -462.481, 22.1003, 1.62316, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+134, 0, 550, 1, 427.989, -468.895, 22.1003, 4.62512, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+135, 20045, 550, 1, 475.085, -340.752, 16.0336, 5.06647, 10800, 10800, 0, 2), -- Nether Scryer
 (@CGUID+136, 20045, 550, 1, 385.207, -429.638, 18.9141, 5.83616, 10800, 10800, 0, 2), -- Nether Scryer
 (@CGUID+137, 20046, 550, 1, 473.847, -84.88, 20.216, 5.49388, 10800, 10800, 0, 0), -- Astromancer Lord
@@ -724,6 +655,43 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Solarian
 (@SGGUID+16, 'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire', 0, 0, @SGGUID+3, 1, 0),
 (@SGGUID+17, 'The Eye - Group 017 - Crystalcore Sentinel (2)', 0, 0, @SGGUID+3, 1, 0),
+-- Some research Info:
+-- There are 5 groups (2 outside solarian room 3 inside solarian room) that are splited into 2 seperate groups (for spawn_entry) that are linked together
+-- All groups will have 2 Bloodwarder Squire 5 Novice Astromancer and 5 Apprentice Star Scryer spawned splitted into following:
+-- Left (group) side will always be 
+-- 1 Bloodwarder Squire, 2 Novice Astromancer, 3 Apprentice Star Scryer
+-- Right (group) side will alway be
+-- 1 Bloodwarder Squire, 3 Novice Astromancer, 2 Apprentice Star Scryer
+(@SGGUID+18, 'The Eye - Group 018 - LeftSide - Bloodwarder Squire (1) | Novice Astromancer (2) | Apprentice Star Scryer (3)', 0, 0, @SGGUID+3, 1, 0),
+(@SGGUID+19, 'The Eye - Group 018 - RightSide - Bloodwarder Squire (1) | Novice Astromancer (3) | Apprentice Star Scryer (2)', 0, 0, @SGGUID+3, 1, 0),
+
+(@SGGUID+20, 'The Eye - Group 019 - LeftSide - Bloodwarder Squire (1) | Novice Astromancer (2) | Apprentice Star Scryer (3)', 0, 0, @SGGUID+3, 1, 0),
+(@SGGUID+21, 'The Eye - Group 019 - RightSide - Bloodwarder Squire (1) | Novice Astromancer (3) | Apprentice Star Scryer (2)', 0, 0, @SGGUID+3, 1, 0),
+
+(@SGGUID+22, 'The Eye - Group 020 - LeftSide - Bloodwarder Squire (1) | Novice Astromancer (2) | Apprentice Star Scryer (3)', 0, 0, @SGGUID+3, 1, 0),
+(@SGGUID+23, 'The Eye - Group 020 - RightSide - Bloodwarder Squire (1) | Novice Astromancer (3) | Apprentice Star Scryer (2)', 0, 0, @SGGUID+3, 1, 0),
+
+(@SGGUID+24, 'The Eye - Group 021 - LeftSide - Bloodwarder Squire (1) | Novice Astromancer (2) | Apprentice Star Scryer (3)', 0, 0, @SGGUID+3, 1, 0),
+(@SGGUID+25, 'The Eye - Group 021 - RightSide - Bloodwarder Squire (1) | Novice Astromancer (3) | Apprentice Star Scryer (2)', 0, 0, @SGGUID+3, 1, 0),
+
+(@SGGUID+26, 'The Eye - Group 022 - LeftSide - Bloodwarder Squire (1) | Novice Astromancer (2) | Apprentice Star Scryer (3)', 0, 0, @SGGUID+3, 1, 0),
+(@SGGUID+27, 'The Eye - Group 022 - RightSide - Bloodwarder Squire (1) | Novice Astromancer (3) | Apprentice Star Scryer (2)', 0, 0, @SGGUID+3, 1, 0);
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+18, 20036, 1, 1, 0), (@SGGUID+18, 20043, 3, 3, 0), (@SGGUID+18, 20044, 2, 2, 0), -- Bloodwarder Squire, Apprentice Star Scryer,  Novice Astromancer
+(@SGGUID+19, 20036, 1, 1, 0), (@SGGUID+19, 20043, 2, 2, 0), (@SGGUID+19, 20044, 3, 3, 0), -- Bloodwarder Squire, Apprentice Star Scryer,  Novice Astromancer
+
+(@SGGUID+20, 20036, 1, 1, 0), (@SGGUID+20, 20043, 3, 3, 0), (@SGGUID+20, 20044, 2, 2, 0), -- Bloodwarder Squire, Apprentice Star Scryer,  Novice Astromancer
+(@SGGUID+21, 20036, 1, 1, 0), (@SGGUID+21, 20043, 2, 2, 0), (@SGGUID+21, 20044, 3, 3, 0), -- Bloodwarder Squire, Apprentice Star Scryer,  Novice Astromancer
+
+(@SGGUID+22, 20036, 1, 1, 0), (@SGGUID+22, 20043, 3, 3, 0), (@SGGUID+22, 20044, 2, 2, 0), -- Bloodwarder Squire, Apprentice Star Scryer,  Novice Astromancer
+(@SGGUID+23, 20036, 1, 1, 0), (@SGGUID+23, 20043, 2, 2, 0), (@SGGUID+23, 20044, 3, 3, 0), -- Bloodwarder Squire, Apprentice Star Scryer,  Novice Astromancer
+
+(@SGGUID+24, 20036, 1, 1, 0), (@SGGUID+24, 20043, 3, 3, 0), (@SGGUID+24, 20044, 2, 2, 0), -- Bloodwarder Squire, Apprentice Star Scryer,  Novice Astromancer
+(@SGGUID+25, 20036, 1, 1, 0), (@SGGUID+25, 20043, 2, 2, 0), (@SGGUID+25, 20044, 3, 3, 0), -- Bloodwarder Squire, Apprentice Star Scryer,  Novice Astromancer
+
+(@SGGUID+26, 20036, 1, 1, 0), (@SGGUID+26, 20043, 3, 3, 0), (@SGGUID+26, 20044, 2, 2, 0), -- Bloodwarder Squire, Apprentice Star Scryer,  Novice Astromancer
+(@SGGUID+27, 20036, 1, 1, 0), (@SGGUID+27, 20043, 2, 2, 0), (@SGGUID+27, 20044, 3, 3, 0); -- Bloodwarder Squire, Apprentice Star Scryer,  Novice Astromancer
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @CGUID+24, -1), -- spawn_group_squad
@@ -815,6 +783,77 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+17, @CGUID+72, -1), -- Crystalcore Sentinel
 (@SGGUID+17, @CGUID+73, -1), -- Crystalcore Sentinel
 
+(@SGGUID+18, @CGUID+90, -1), -- spawn_group_entry
+(@SGGUID+18, @CGUID+36, -1), -- spawn_group_entry
+(@SGGUID+18, @CGUID+110, -1), -- spawn_group_entry
+(@SGGUID+18, @CGUID+114, -1), -- spawn_group_entry
+(@SGGUID+18, @CGUID+91, -1), -- spawn_group_entry
+(@SGGUID+18, @CGUID+120, -1), -- spawn_group_entry
+
+(@SGGUID+19, @CGUID+88, -1), -- spawn_group_entry
+(@SGGUID+19, @CGUID+117, -1), -- spawn_group_entry
+(@SGGUID+19, @CGUID+89, -1), -- spawn_group_entry
+(@SGGUID+19, @CGUID+116, -1), -- spawn_group_entry
+(@SGGUID+19, @CGUID+35, -1), -- spawn_group_entry
+(@SGGUID+19, @CGUID+115, -1), -- spawn_group_entry
+
+(@SGGUID+20, @CGUID+96, -1), -- spawn_group_entry
+(@SGGUID+20, @CGUID+98, -1), -- spawn_group_entry
+(@SGGUID+20, @CGUID+122, -1), -- spawn_group_entry
+(@SGGUID+20, @CGUID+97, -1), -- spawn_group_entry
+(@SGGUID+20, @CGUID+124, -1), -- spawn_group_entry
+(@SGGUID+20, @CGUID+41, -1), -- spawn_group_entry
+
+(@SGGUID+21, @CGUID+121, -1), -- spawn_group_entry
+(@SGGUID+21, @CGUID+123, -1), -- spawn_group_entry
+(@SGGUID+21, @CGUID+37, -1), -- spawn_group_entry
+(@SGGUID+21, @CGUID+94, -1), -- spawn_group_entry
+(@SGGUID+21, @CGUID+119, -1), -- spawn_group_entry
+(@SGGUID+21, @CGUID+92, -1), -- spawn_group_entry
+
+
+(@SGGUID+22, @CGUID+100, -1), -- spawn_group_entry
+(@SGGUID+22, @CGUID+42, -1), -- spawn_group_entry
+(@SGGUID+22, @CGUID+101, -1), -- spawn_group_entry
+(@SGGUID+22, @CGUID+126, -1), -- spawn_group_entry
+(@SGGUID+22, @CGUID+127, -1), -- spawn_group_entry
+(@SGGUID+22, @CGUID+102, -1), -- spawn_group_entry
+
+(@SGGUID+23, @CGUID+104, -1), -- spawn_group_entry
+(@SGGUID+23, @CGUID+129, -1), -- spawn_group_entry
+(@SGGUID+23, @CGUID+103, -1), -- spawn_group_entry
+(@SGGUID+23, @CGUID+43, -1), -- spawn_group_entry
+(@SGGUID+23, @CGUID+130, -1), -- spawn_group_entry
+(@SGGUID+23, @CGUID+128, -1), -- spawn_group_entry
+
+(@SGGUID+24, @CGUID+107, -1), -- spawn_group_entry
+(@SGGUID+24, @CGUID+45, -1), -- spawn_group_entry
+(@SGGUID+24, @CGUID+108, -1), -- spawn_group_entry
+(@SGGUID+24, @CGUID+109, -1), -- spawn_group_entry
+(@SGGUID+24, @CGUID+134, -1), -- spawn_group_entry
+-- (@SGGUID+18, @CGUID+92, -1), -- spawn_group_entry missing
+
+(@SGGUID+25, @CGUID+132, -1), -- spawn_group_entry
+(@SGGUID+25, @CGUID+133, -1), -- spawn_group_entry
+(@SGGUID+25, @CGUID+44, -1), -- spawn_group_entry
+(@SGGUID+25, @CGUID+105, -1), -- spawn_group_entry
+(@SGGUID+25, @CGUID+106, -1), -- spawn_group_entry
+(@SGGUID+25, @CGUID+131, -1), -- spawn_group_entry
+
+(@SGGUID+26, @CGUID+125, -1), -- spawn_group_entry
+(@SGGUID+26, @CGUID+99, -1), -- spawn_group_entry
+(@SGGUID+26, @CGUID+40, -1), -- spawn_group_entry
+(@SGGUID+26, @CGUID+95, -1), -- spawn_group_entry
+(@SGGUID+26, @CGUID+93, -1), -- spawn_group_entry
+(@SGGUID+26, @CGUID+118, -1), -- spawn_group_entry
+
+(@SGGUID+27, @CGUID+87, -1), -- spawn_group_entry
+(@SGGUID+27, @CGUID+112, -1), -- spawn_group_entry
+(@SGGUID+27, @CGUID+113, -1), -- spawn_group_entry
+(@SGGUID+27, @CGUID+86, -1), -- spawn_group_entry
+(@SGGUID+27, @CGUID+34, -1), -- spawn_group_entry
+(@SGGUID+27, @CGUID+111, -1); -- spawn_group_entry
+
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 (@SGGUID+1, 1, @CGUID+24, 20033), -- Astromancer
 (@SGGUID+1, 1, @CGUID+28, 20032), -- Bloodwarder Vindicator
@@ -879,20 +918,26 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 (@SGGUID+3, 3, @CGUID+23, 20033), -- Astromancer
 (@SGGUID+3, 3, @CGUID+22, 20033); -- Astromancer
 
+INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
+(@SGGUID+18, @SGGUID+19), (@SGGUID+19, @SGGUID+18),
+(@SGGUID+20, @SGGUID+21), (@SGGUID+21, @SGGUID+20),
+(@SGGUID+22, @SGGUID+23), (@SGGUID+23, @SGGUID+22),
+(@SGGUID+24, @SGGUID+25), (@SGGUID+25, @SGGUID+24),
+(@SGGUID+26, @SGGUID+27), (@SGGUID+27, @SGGUID+26);
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+4, 2, 2, 0, @SGGUID+4, 2, 'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)'),
 (@SGGUID+5, 0, 4, 0, @SGGUID+5, 2, 'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
 (@SGGUID+6, 0, 4, 0, @SGGUID+6, 2, 'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
 (@SGGUID+15, 2, 4, 0, @SGGUID+15, 4, 'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)'),
-(@SGGUID+16, 2, 4, 0, @SGGUID+16, 4, 'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire'),
+(@SGGUID+16, 2, 4, 0, @SGGUID+16, 4, 'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+4,'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)'),
 (@SGGUID+5,'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
 (@SGGUID+6,'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
 (@SGGUID+15,'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)'),
-(@SGGUID+16,'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire'),
+(@SGGUID+16,'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Patrol 001
@@ -942,7 +987,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+16, 5, 517.2678,-163.51216,20.239647, 100, 0, 0),
 (@SGGUID+16, 6, 520.61035,-185.82002,20.289864, 100, 0, 0),
 (@SGGUID+16, 7, 517.4262,-208.08437,20.289856, 100, 0, 0),
-(@SGGUID+16, 8, 511.51535,-232.16605,20.341183, 100, 0, 0),
+(@SGGUID+16, 8, 511.51535,-232.16605,20.341183, 100, 0, 0);
 
 DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
@@ -954,7 +999,6 @@ DELETE FROM string_id WHERE Id IN (@STRINGID+1);
 INSERT INTO `string_id` (Id, Name) VALUES 
 (@STRINGID+1, 'TEMPEST_KEEP_MARSHAL_RP');
 
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
 -- =========
 -- DBSCRIPTS
