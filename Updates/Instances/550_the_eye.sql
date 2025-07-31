@@ -76,40 +76,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+67, 5, 514.15625,150.00967,20.235924, 100, 0, 0),
 (@CGUID+67, 6, 520.88763,179.39882,20.278658, 100, 0, 0),
 (@CGUID+67, 7, 518.6552,206.79694,20.289883, 100, 0, 0),
-(@CGUID+67, 8, 511.54654,229.24347,20.301516, 100, 0, 0),
---
-(@CGUID+172, 1, 614.401, -113.937, 44.4139, 3.60943, 0, 0),
-(@CGUID+172, 2, 611.277, -115.516, 43.1568, 3.60943, 0, 0),
-(@CGUID+172, 3, 605.029, -118.672, 40.7805, 3.60943, 0, 0),
-(@CGUID+172, 4, 598.781, -121.829, 38.8485, 3.60943, 0, 0),
-(@CGUID+172, 5, 592.533, -124.986, 36.9165, 3.60943, 0, 0),
-(@CGUID+172, 6, 588.614, -126.469, 36.06, 3.53167, 0, 0),
-(@CGUID+172, 7, 582.14, -129.131, 36.06, 3.53167, 0, 0),
-(@CGUID+172, 8, 587.194, -127.445, 36.0592, 0.437989, 0, 0),
-(@CGUID+172, 9, 593.534, -124.476, 37.2256, 0.437989, 0, 0),
-(@CGUID+172, 10, 596.703, -122.992, 38.1917, 0.437989, 0, 0),
-(@CGUID+172, 11, 603.043, -120.023, 40.1239, 0.437989, 0, 0),
-(@CGUID+172, 12, 606.212, -118.539, 41.09, 0.437989, 0, 0),
-(@CGUID+172, 13, 612.868, -115.421, 43.6855, 0.437989, 0, 0),
-(@CGUID+172, 14, 614.342, -114.708, 44.2737, 0.558155, 0, 0),
-(@CGUID+172, 15, 620.279, -111, 46.3367, 0.558155, 0, 0),
-(@CGUID+172, 16, 623.248, -109.146, 46.4781, 0.558155, 0, 0),
-(@CGUID+172, 17, 625.048, -108.049, 46.5632, 3.72724, 0, 0),
-(@CGUID+172, 18, 619.214, -111.918, 46.2806, 3.72724, 0, 0),
-(@CGUID+173, 1, 614.895, 112.283, 44.6004, 2.57532, 0, 0),
-(@CGUID+173, 2, 609.558, 115.627, 42.351, 2.69313, 0, 0),
-(@CGUID+173, 3, 596.942, 121.697, 38.229, 2.69313, 0, 0),
-(@CGUID+173, 4, 590.634, 124.732, 36.2972, 2.69313, 0, 0),
-(@CGUID+173, 5, 578.019, 130.803, 35.5675, 2.69313, 0, 0),
-(@CGUID+173, 6, 575.71, 131.913, 35.0714, 5.73497, 0, 0),
-(@CGUID+173, 7, 575.71, 131.913, 35.0714, 5.82529, 0, 0),
-(@CGUID+173, 8, 588.268, 125.725, 36.0603, 5.82529, 0, 0),
-(@CGUID+173, 9, 594.547, 122.63, 37.5215, 5.82529, 0, 0),
-(@CGUID+173, 10, 600.826, 119.536, 39.4537, 5.82529, 0, 0),
-(@CGUID+173, 11, 607.105, 116.441, 41.4303, 5.82529, 0, 0),
-(@CGUID+173, 12, 613.384, 113.347, 43.9449, 5.82529, 0, 0),
-(@CGUID+173, 13, 617.546, 111.25, 45.619, 5.70748, 0, 0),
-(@CGUID+173, 14, 623.417, 107.439, 46.4887, 5.70748, 0, 0);
+(@CGUID+67, 8, 511.54654,229.24347,20.301516, 100, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (19514);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
@@ -135,60 +102,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (20039, 0, 0, 0, 0, 0, '19818'), -- Phoenix-Hawk - Double Attack
 (21271, 0, 0, 1, 0, 0, '12787'); -- Infinity Blades
 
-INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-
-(@CGUID+31, @CGUID+5, 1024), -- Bloodwarder Marshal -> Kael'thas Sunstrider
-(@CGUID+32, @CGUID+5, 1024), -- Bloodwarder Marshal -> Kael'thas Sunstrider
-(@CGUID+33, @CGUID+5, 1024), -- Bloodwarder Marshal -> Kael'thas Sunstrider
-(@CGUID+161, @CGUID+5, 1024), -- Crimson Hand Blood Knight -> Kael'thas Sunstrider
-(@CGUID+162, @CGUID+5, 1024), -- Crimson Hand Blood Knight -> Kael'thas Sunstrider
-(@CGUID+166, @CGUID+5, 1024), -- Crimson Hand Blood Knight -> Kael'thas Sunstrider
-(@CGUID+171, @CGUID+5, 1024), -- Crimson Hand Blood Knight -> Kael'thas Sunstrider
-(@CGUID+172, @CGUID+5, 1024), -- Crimson Hand Inquisitor -> Kael'thas Sunstrider
-(@CGUID+173, @CGUID+5, 1024), -- Crimson Hand Inquisitor -> Kael'thas Sunstrider
-
--- individual trash groups
-(@CGUID+152, @CGUID+31, 1167), -- Crimson Hand Centurion -> Bloodwarder Marshal
-(@CGUID+164, @CGUID+31, 1167), -- Crimson Hand Blood Knight -> Bloodwarder Marshal
-(@CGUID+174, @CGUID+31, 1167), -- Crimson Hand Inquisitor -> Bloodwarder Marshal
-
-(@CGUID+157, @CGUID+32, 1167), -- Crimson Hand Centurion -> Bloodwarder Marshal
-(@CGUID+167, @CGUID+32, 1167), -- Crimson Hand Blood Knight -> Bloodwarder Marshal
-(@CGUID+175, @CGUID+32, 1167), -- Crimson Hand Inquisitor -> Bloodwarder Marshal
-
-(@CGUID+158, @CGUID+33, 1167), -- Crimson Hand Centurion -> Bloodwarder Marshal
-(@CGUID+168, @CGUID+33, 1167), -- Crimson Hand Blood Knight -> Bloodwarder Marshal
-(@CGUID+176, @CGUID+33, 1167), -- Crimson Hand Inquisitor -> Bloodwarder Marshal
-
-(@CGUID+139, @CGUID+161, 1167), -- Crimson Hand Battle Mage -> Crimson Hand Blood Knight
-(@CGUID+142, @CGUID+161, 1167), -- Crimson Hand Battle Mage -> Crimson Hand Blood Knight
-(@CGUID+147, @CGUID+161, 1167), -- Crimson Hand Centurion -> Crimson Hand Blood Knight
-(@CGUID+148, @CGUID+161, 1167), -- Crimson Hand Centurion -> Crimson Hand Blood Knight
-(@CGUID+163, @CGUID+161, 1167), -- Crimson Hand Blood Knight -> Crimson Hand Blood Knight
-
-(@CGUID+140, @CGUID+162, 1167), -- Crimson Hand Battle Mage -> Crimson Hand Blood Knight
-(@CGUID+141, @CGUID+162, 1167), -- Crimson Hand Battle Mage -> Crimson Hand Blood Knight
-(@CGUID+146, @CGUID+162, 1167), -- Crimson Hand Centurion -> Crimson Hand Blood Knight
-(@CGUID+149, @CGUID+162, 1167), -- Crimson Hand Centurion -> Crimson Hand Blood Knight
-(@CGUID+170, @CGUID+162, 1167), -- Crimson Hand Blood Knight -> Crimson Hand Blood Knight
-
-(@CGUID+143, @CGUID+166, 1167), -- Crimson Hand Battle Mage -> Crimson Hand Blood Knight
-(@CGUID+155, @CGUID+166, 1167), -- Crimson Hand Centurion -> Crimson Hand Blood Knight
-(@CGUID+144, @CGUID+166, 1167), -- Crimson Hand Battle Mage -> Crimson Hand Blood Knight
-(@CGUID+156, @CGUID+166, 1167), -- Crimson Hand Centurion -> Crimson Hand Blood Knight
-(@CGUID+165, @CGUID+166, 1167), -- Crimson Hand Blood Knight -> Crimson Hand Blood Knight
-
-(@CGUID+138, @CGUID+171, 1167), -- Crimson Hand Battle Mage -> Crimson Hand Blood Knight
-(@CGUID+145, @CGUID+171, 1167), -- Crimson Hand Battle Mage -> Crimson Hand Blood Knight
-(@CGUID+159, @CGUID+171, 1167), -- Crimson Hand Centurion -> Crimson Hand Blood Knight
-(@CGUID+160, @CGUID+171, 1167), -- Crimson Hand Centurion -> Crimson Hand Blood Knight
-(@CGUID+169, @CGUID+171, 1167), -- Crimson Hand Blood Knight -> Crimson Hand Blood Knight
-
-(@CGUID+150, @CGUID+172, 1679), -- Crimson Hand Centurion -> Crimson Hand Inquisitor
-(@CGUID+153, @CGUID+172, 1679), -- Crimson Hand Centurion -> Crimson Hand Inquisitor
-
-(@CGUID+151, @CGUID+173, 1679), -- Crimson Hand Centurion -> Crimson Hand Inquisitor
-(@CGUID+154, @CGUID+173, 1679); -- Crimson Hand Centurion -> Crimson Hand Inquisitor
+-- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (18806, 550, 18805, 4112, 0), -- Solarium Priest -> High Astromancer Solarian
@@ -200,7 +114,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+2, 18928, 550, 1, 432.419, -373.063, 17.9609, 4.09901, 10800, 10800, 0, 0), -- Astromancer Solarian Spotlight
 (@CGUID+3, 19514, 550, 1, 370.328, -32.5953, 44.0863, 3.19012, 604800, 604800, 0, 3), -- Al'ar
 (@CGUID+4, 19516, 550, 1, 424.235, 403.475, 14.9773, 4.99164, 604800, 604800, 0, 0), -- Void Reaver
-(@CGUID+5, 19622, 550, 1, 795.007, -0.460572, 48.7285, 3.08436, 604800, 604800, 0, 0), -- Kael'thas Sunstrider
+(@CGUID+5, 19622, 550, 1, 795.408, -1.60475, 48.8118, 3.14159, 604800, 604800, 0, 0), -- Kael'thas Sunstrider
 (@CGUID+6, 20031, 550, 1, 476.057, -82.85, 20.235, 5.427, 10800, 10800, 0, 0), -- Bloodwarder Legionnaire
 (@CGUID+7, 20031, 550, 1, 471.636, -86.907, 20.237, 5.449, 10800, 10800, 0, 0), -- Bloodwarder Legionnaire
 (@CGUID+8, 0, 550, 1, 104.595, -11.3571, -2.25123, 2.46091, 10800, 10800, 0, 0), -- spawn_group_squad
@@ -341,34 +255,34 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+143, 20047, 550, 1, 641.158, -80.6899, 46.888, 4.18879, 7200, 7200, 0, 0), -- Crimson Hand Battle Mage
 (@CGUID+144, 20047, 550, 1, 651.704, -86.6527, 46.9888, 3.82227, 7200, 7200, 0, 0), -- Crimson Hand Battle Mage
 (@CGUID+145, 20047, 550, 1, 642.403, 80.5288, 46.891, 2.14675, 7200, 7200, 0, 0), -- Crimson Hand Battle Mage
-(@CGUID+146, 20048, 550, 1, 596.609, -116.182, 39.0845, 3.56047, 7200, 7200, 0, 0), -- Crimson Hand Centurion
+(@CGUID+146, 20048, 550, 1, 596.609, -116.181, 39.0845, 3.56047, 7200, 7200, 0, 0), -- Crimson Hand Centurion
 (@CGUID+147, 20048, 550, 1, 590.499, 115.313, 37.5283, 2.47837, 7200, 7200, 0, 0), -- Crimson Hand Centurion
 (@CGUID+148, 20048, 550, 1, 598.221, 130.282, 37.6214, 3.21141, 7200, 7200, 0, 0), -- Crimson Hand Centurion
 (@CGUID+149, 20048, 550, 1, 601.667, -127.031, 39.08, 3.19395, 7200, 7200, 0, 0), -- Crimson Hand Centurion
-(@CGUID+150, 20048, 550, 1, 622.398, -111.378, 46.3981, 3.67173, 7200, 7200, 0, 0), -- Crimson Hand Centurion
-(@CGUID+151, 20048, 550, 1, 620.267, 104.935, 46.6604, 2.40712, 7200, 7200, 0, 0), -- Crimson Hand Centurion
+(@CGUID+150, 20048, 550, 1, 568.688, -132.15492, 33.953083, 0.487, 7200, 7200, 0, 0), -- Crimson Hand Centurion
+(@CGUID+151, 20048, 550, 1, 566.1901, 137.39757, 32.908386, 5.8718, 7200, 7200, 0, 0), -- Crimson Hand Centurion
 (@CGUID+152, 20048, 550, 1, 642.194, -5.84332, 46.8622, 0.122173, 7200, 7200, 0, 0), -- Crimson Hand Centurion
-(@CGUID+153, 20048, 550, 1, 620.228, -108.019, 46.4097, 3.67211, 7200, 7200, 0, 0), -- Crimson Hand Centurion
-(@CGUID+154, 20048, 550, 1, 623.418, 110.223, 46.4633, 2.58254, 7200, 7200, 0, 0), -- Crimson Hand Centurion
+(@CGUID+153, 20048, 550, 1, 570.14514, -135.88005, 33.909874, 0.487, 7200, 7200, 0, 0), -- Crimson Hand Centurion
+(@CGUID+154, 20048, 550, 1, 563.2037, 132.19359, 32.79257, 5.871, 7200, 7200, 0, 0), -- Crimson Hand Centurion
 (@CGUID+155, 20048, 550, 1, 645.018, -81.1729, 46.9552, 4.08407, 7200, 7200, 0, 0), -- Crimson Hand Centurion
 (@CGUID+156, 20048, 550, 1, 651.807, -89.1971, 46.8866, 3.76991, 7200, 7200, 0, 0), -- Crimson Hand Centurion
-(@CGUID+157, 20048, 550, 1, 723.401, 42.6383, 46.8622, 0.436332, 7200, 7200, 0, 0), -- Crimson Hand Centurion
+(@CGUID+157, 20048, 550, 1, 723.4, 42.6383, 46.8622, 0.436332, 7200, 7200, 0, 0), -- Crimson Hand Centurion
 (@CGUID+158, 20048, 550, 1, 723.422, -42.6315, 46.8622, 5.34071, 7200, 7200, 0, 0), -- Crimson Hand Centurion
 (@CGUID+159, 20048, 550, 1, 644.955, 78.4049, 46.925, 2.18166, 7200, 7200, 0, 0), -- Crimson Hand Centurion
 (@CGUID+160, 20048, 550, 1, 651.478, 85.3616, 46.9853, 2.46091, 7200, 7200, 0, 0), -- Crimson Hand Centurion
 (@CGUID+161, 20049, 550, 1, 594.701, 114.735, 38.6178, 2.67035, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
-(@CGUID+162, 20049, 550, 1, 598.754, -130.387, 37.9272, 3.08923, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
+(@CGUID+162, 20049, 550, 1, 598.754, -130.387, 37.9273, 3.08923, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
 (@CGUID+163, 20049, 550, 1, 601.037, 127.576, 38.6695, 3.05433, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
 (@CGUID+164, 20049, 550, 1, 642.273, 4.88217, 46.8622, 6.16101, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
 (@CGUID+165, 20049, 550, 1, 643.371, -78.528, 46.8777, 4.15388, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
-(@CGUID+166, 20049, 550, 1, 654.186, -91.0955, 46.8259, 3.68265, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
-(@CGUID+167, 20049, 550, 1, 728.148, 39.5605, 46.8622, 1.69297, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
+(@CGUID+166, 20049, 550, 1, 654.186, -91.0955, 46.8259, 3.68264, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
+(@CGUID+167, 20049, 550, 1, 728.148, 39.5604, 46.8622, 1.69297, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
 (@CGUID+168, 20049, 550, 1, 722.735, -47.1292, 46.8622, 0.471239, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
 (@CGUID+169, 20049, 550, 1, 654.737, 88.4818, 46.8289, 2.58309, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
 (@CGUID+170, 20049, 550, 1, 592.64, -116.013, 38.1448, 3.66519, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
 (@CGUID+171, 20049, 550, 1, 641.161, 77.8304, 46.8841, 2.07694, 7200, 7200, 0, 0), -- Crimson Hand Blood Knight
-(@CGUID+172, 20050, 550, 1, 616.976, -112.604, 45.4553, 3.71297, 7200, 7200, 0, 2), -- Crimson Hand Inquisitor
-(@CGUID+173, 20050, 550, 1, 620.557, 108.496, 46.4144, 2.5702, 7200, 7200, 0, 2), -- Crimson Hand Inquisitor
+(@CGUID+172, 20050, 550, 1, 569.4054, -134.02185, 33.929092, 0.3858, 7200, 7200, 0, 0), -- Crimson Hand Inquisitor
+(@CGUID+173, 20050, 550, 1, 564.6969, 134.79558, 32.850483, 5.8718, 7200, 7200, 0, 0), -- Crimson Hand Inquisitor
 (@CGUID+174, 20050, 550, 1, 639.662, -3.34107, 46.8622, 0.0523599, 7200, 7200, 0, 0), -- Crimson Hand Inquisitor
 (@CGUID+175, 20050, 550, 1, 730.171, 45.3477, 46.8622, 3.4383, 7200, 7200, 0, 0), -- Crimson Hand Inquisitor
 (@CGUID+176, 20050, 550, 1, 727.479, -46.945, 46.8621, 2.11185, 7200, 7200, 0, 0), -- Crimson Hand Inquisitor
@@ -380,10 +294,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+182, 20052, 550, 1, 390.007, 370.393, 15.2625, 4.27606, 10800, 10800, 0, 0), -- Crystalcore Mechanic
 (@CGUID+183, 20052, 550, 1, 388.995, 355.609, 15.7319, 5.68977, 10800, 10800, 0, 0), -- Crystalcore Mechanic
 (@CGUID+184, 20052, 550, 1, 469.932, 393.257, 15.0503, 5.06145, 10800, 10800, 0, 0), -- Crystalcore Mechanic
-(@CGUID+185, 20060, 550, 1, 785.7821, -20.39954, 48.81179, 2.303835, 604800, 604800, 0, 0), -- Lord Sanguinar
-(@CGUID+186, 20062, 550, 1, 792.4081, -13.24149, 48.81179, 2.687807, 604800, 604800, 0, 0), -- Grand Astromancer Capernian
-(@CGUID+187, 20063, 550, 1, 792.7254, 12.77545, 48.81183, 3.595378, 604800, 604800, 0, 0), -- Master Engineer Telonicus
-(@CGUID+188, 20064, 550, 1, 785.8074, 19.48621, 48.81183, 3.979351, 604800, 604800, 0, 0), -- Thaladred the Darkener
+(@CGUID+185, 20060, 550, 1, 785.782, -20.3995, 48.8118, 2.30383, 604800, 604800, 0, 0), -- Lord Sanguinar
+(@CGUID+186, 20062, 550, 1, 792.408, -13.2415, 48.8118, 2.68781, 604800, 604800, 0, 0), -- Grand Astromancer Capernian
+(@CGUID+187, 20063, 550, 1, 792.725, 12.7754, 48.8118, 3.59538, 604800, 604800, 0, 0), -- Master Engineer Telonicus
+(@CGUID+188, 20064, 550, 1, 785.807, 19.4862, 48.8118, 3.97935, 604800, 604800, 0, 0), -- Thaladred the Darkener
 
 -- transition triggers, need to be explicitly in this order else animations wont work accordingly
 (@CGUID+189, 22517, 550, 1, 799.8832, -39.79063, 86.04091, 3.316126, 300, 300, 0, 0), -- World Trigger (Large AOI)
@@ -521,11 +435,23 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+26, 'The Eye - Group 022 - LeftSide - Bloodwarder Squire (1) | Novice Astromancer (2) | Apprentice Star Scryer (3)', 0, 0, @SGGUID+3, 1, 0),
 (@SGGUID+27, 'The Eye - Group 022 - RightSide - Bloodwarder Squire (1) | Novice Astromancer (3) | Apprentice Star Scryer (2)', 0, 0, @SGGUID+3, 1, 0),
 -- Patrols in Solarian Room
-(@SGGUID+28, 'The Eye - Group 023 - Patrol 006 -Nether Scryer (1) | Bloodwarder Legionnaire', 0, 0, @SGGUID+3, 1, 0),
-(@SGGUID+29, 'The Eye - Group 024 - Patrol 007 -Nether Scryer (1) | Bloodwarder Legionnaire', 0, 0, @SGGUID+3, 1, 0),
+(@SGGUID+28, 'The Eye - Group 023 - Patrol 006 - Nether Scryer (1) | Bloodwarder Legionnaire', 0, 0, @SGGUID+3, 1, 0),
+(@SGGUID+29, 'The Eye - Group 024 - Patrol 007 - Nether Scryer (1) | Bloodwarder Legionnaire', 0, 0, @SGGUID+3, 1, 0),
 -- Solarian
 -- All groups in her room should aggro when you aggro her
-(@SGGUID+30, 'The Eye - Group 025 - High Astromancer Solarian', 0, 0, 0, 0, 0);
+(@SGGUID+30, 'The Eye - Group 025 - High Astromancer Solarian', 0, 0, 0, 0, 0),
+-- Trash from Solarian -> Kael
+(@SGGUID+31, 'The Eye - Group 026 - Crimson Hand Battle Mage (2) | Crimson Hand Blood Knight (2) | Crimson Hand Centurion (2)', 0, 0, @SGGUID+4, 1, 0),
+(@SGGUID+32, 'The Eye - Group 027 - Patrol 008 - Crimson Hand inquisitor (1) | Crimson Hand Centurion (2)', 0, 0, @SGGUID+4, 1, 0),
+(@SGGUID+33, 'The Eye - Group 028 - Crimson Hand Battle Mage (2) | Crimson Hand Blood Knight (2) | Crimson Hand Centurion (2)', 0, 0, @SGGUID+4, 1, 0),
+-- Trash from Void Reaver -> Kael
+(@SGGUID+34, 'The Eye - Group 029 - Crimson Hand Battle Mage (2) | Crimson Hand Blood Knight (2) | Crimson Hand Centurion (2)', 0, 0, @SGGUID+4, 1, 0),
+(@SGGUID+35, 'The Eye - Group 030 - Patrol 009 - Crimson Hand inquisitor (1) | Crimson Hand Centurion (2)', 0, 0, @SGGUID+4, 1, 0),
+(@SGGUID+36, 'The Eye - Group 031 - Crimson Hand Battle Mage (2) | Crimson Hand Blood Knight (2) | Crimson Hand Centurion (2)', 0, 0, @SGGUID+4, 1, 0),
+-- Kael Room
+(@SGGUID+37, 'The Eye - Group 032 - Crimson Hand Centurion | Crimson Hand Inquisitor | Bloodwarder Marshal | Crimson Hand Blood Knight', 0, 0, @SGGUID+4, 1, 0),
+(@SGGUID+38, 'The Eye - Group 033 - Crimson Hand Centurion | Crimson Hand Inquisitor | Bloodwarder Marshal | Crimson Hand Blood Knight', 0, 0, @SGGUID+4, 1, 0),
+(@SGGUID+39, 'The Eye - Group 033 - Crimson Hand Centurion | Crimson Hand Inquisitor | Bloodwarder Marshal | Crimson Hand Blood Knight', 0, 0, @SGGUID+4, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+18, 20036, 1, 1, 0), (@SGGUID+18, 20043, 3, 3, 0), (@SGGUID+18, 20044, 2, 2, 0), -- Bloodwarder Squire, Apprentice Star Scryer,  Novice Astromancer
@@ -712,7 +638,59 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+29, @CGUID+13, 1), -- Bloodwarder Legionnaire
 (@SGGUID+29, @CGUID+14, 2), -- Bloodwarder Legionnaire
 
-(@SGGUID+30, @CGUID+1, 0); -- High Astromancer Solarian
+(@SGGUID+30, @CGUID+1, 0), -- High Astromancer Solarian
+
+(@SGGUID+31, @CGUID+140, -1), -- Crimson Hand Battle Mage
+(@SGGUID+31, @CGUID+170, -1), -- Crimson Hand Blood Knight
+(@SGGUID+31, @CGUID+146, -1), -- Crimson Hand Centurion
+(@SGGUID+31, @CGUID+149, -1), -- Crimson Hand Centurion
+(@SGGUID+31, @CGUID+162, -1), -- Crimson Hand Blood Knight
+(@SGGUID+31, @CGUID+141, -1), -- Crimson Hand Battle Mage
+
+(@SGGUID+32, @CGUID+172, 0), -- Crimson Hand Inquisitor
+(@SGGUID+32, @CGUID+150, 1), -- Crimson Hand Centurion
+(@SGGUID+32, @CGUID+153, 2), -- Crimson Hand Centurion
+
+(@SGGUID+33, @CGUID+143, -1), -- Crimson Hand Battle Mage
+(@SGGUID+33, @CGUID+165, -1), -- Crimson Hand Blood Knight
+(@SGGUID+33, @CGUID+155, -1), -- Crimson Hand Centurion
+(@SGGUID+33, @CGUID+144, -1), -- Crimson Hand Battle Mage
+(@SGGUID+33, @CGUID+156, -1), -- Crimson Hand Centurion
+(@SGGUID+33, @CGUID+166, -1), -- Crimson Hand Blood Knight
+
+(@SGGUID+34, @CGUID+148, -1), -- Crimson Hand Centurion
+(@SGGUID+34, @CGUID+163, -1), -- Crimson Hand Blood Knight
+(@SGGUID+34, @CGUID+142, -1), -- Crimson Hand Battle Mage
+(@SGGUID+34, @CGUID+139, -1), -- Crimson Hand Battle Mage
+(@SGGUID+34, @CGUID+161, -1), -- Crimson Hand Blood Knight
+(@SGGUID+34, @CGUID+147, -1), -- Crimson Hand Centurion
+
+(@SGGUID+35, @CGUID+173, 0), -- Crimson Hand Inquisitor
+(@SGGUID+35, @CGUID+151, 1), -- Crimson Hand Centurion
+(@SGGUID+35, @CGUID+154, 2), -- Crimson Hand Centurion
+
+(@SGGUID+36, @CGUID+169, -1), -- Crimson Hand Blood Knight
+(@SGGUID+36, @CGUID+138, -1), -- Crimson Hand Battle Mage
+(@SGGUID+36, @CGUID+160, -1), -- Crimson Hand Centurion
+(@SGGUID+36, @CGUID+159, -1), -- Crimson Hand Centurion
+(@SGGUID+36, @CGUID+145, -1), -- Crimson Hand Battle Mage
+(@SGGUID+36, @CGUID+171, -1), -- Crimson Hand Blood Knight
+
+(@SGGUID+37, @CGUID+152, -1), -- Crimson Hand Centurion
+(@SGGUID+37, @CGUID+174, -1), -- Crimson Hand Inquisitor 
+(@SGGUID+37, @CGUID+31, -1), -- Bloodwarder Marshal
+(@SGGUID+37, @CGUID+164, -1), -- Crimson Hand Blood Knight
+
+(@SGGUID+38, @CGUID+157, -1), -- Crimson Hand Centurion
+(@SGGUID+38, @CGUID+175, -1), -- Crimson Hand Inquisitor 
+(@SGGUID+38, @CGUID+32, -1), -- Bloodwarder Marshal
+(@SGGUID+38, @CGUID+167, -1), -- Crimson Hand Blood Knight
+
+(@SGGUID+39, @CGUID+158, -1), -- Crimson Hand Centurion
+(@SGGUID+39, @CGUID+176, -1), -- Crimson Hand Inquisitor 
+(@SGGUID+39, @CGUID+33, -1), -- Bloodwarder Marshal
+(@SGGUID+39, @CGUID+168, -1); -- Crimson Hand Blood Knight
+
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 (@SGGUID+1, 1, @CGUID+24, 20033), -- Astromancer
@@ -795,7 +773,9 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+15, 2, 4, 0, @SGGUID+15, 4, 'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)'),
 (@SGGUID+16, 2, 3, 0, @SGGUID+16, 4, 'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire'),
 (@SGGUID+28, 2, 3, 0, @SGGUID+28, 4, 'The Eye - Group 023 - Patrol 006 - Nether Scryer (1) | Bloodwarder Legionnaire'),
-(@SGGUID+29, 2, 3, 0, @SGGUID+29, 4, 'The Eye - Group 024 - Patrol 007 - Nether Scryer (1) | Bloodwarder Legionnaire');
+(@SGGUID+29, 2, 3, 0, @SGGUID+29, 4, 'The Eye - Group 024 - Patrol 007 - Nether Scryer (1) | Bloodwarder Legionnaire'),
+(@SGGUID+32, 2, 3, 0, @SGGUID+32, 4, 'The Eye - Group 027 - Patrol 008 - Crimson Hand inquisitor (1) | Crimson Hand Centurion (2)'),
+(@SGGUID+35, 2, 3, 0, @SGGUID+35, 4, 'The Eye - Group 030 - Patrol 009 - Crimson Hand inquisitor (1) | Crimson Hand Centurion (2)');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+4,'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)'),
@@ -804,7 +784,10 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+15,'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)'),
 (@SGGUID+16,'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire'),
 (@SGGUID+28,'The Eye - Group 023 - Patrol 006 -Nether Scryer (1) | Bloodwarder Legionnaire'),
-(@SGGUID+29,'The Eye - Group 024 - Patrol 007 -Nether Scryer (1) | Bloodwarder Legionnaire');
+(@SGGUID+29,'The Eye - Group 024 - Patrol 007 -Nether Scryer (1) | Bloodwarder Legionnaire'),
+(@SGGUID+32,'The Eye - Group 027 - Patrol 008 - Crimson Hand inquisitor (1) | Crimson Hand Centurion (2)'),
+(@SGGUID+35,'The Eye - Group 030 - Patrol 009 - Crimson Hand inquisitor (1) | Crimson Hand Centurion (2)');
+
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Patrol 001
@@ -889,13 +872,32 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+29, 15, 510.29065,-382.46686,19.228214, 100, 0, 0),
 (@SGGUID+29, 16, 509.67813,-363.055,19.14545, 100, 0, 0),
 (@SGGUID+29, 17, 505.61807,-344.76736,19.232473, 100, 0, 0),
-(@SGGUID+29, 18, 500.6301,-334.621,19.279722, 100, 0, 0);
+(@SGGUID+29, 18, 500.6301,-334.621,19.279722, 100, 0, 0),
+-- Patrol 008
+(@SGGUID+32, 1, 569.4054,-134.02185,33.929092, 100, 0, 0),
+(@SGGUID+32, 2, 588.5716,-126.52433,36.050453, 100, 0, 0),
+(@SGGUID+32, 3, 597.0831,-122.83465,38.35739, 100, 0, 0),
+(@SGGUID+32, 4, 614.51105,-114.18895,44.410213, 100, 0, 0),
+(@SGGUID+32, 5, 629.024,-104.85851,46.76857, 100, 0, 0),
+(@SGGUID+32, 6, 644.30804,-89.03651,46.81918, 100, 0, 0),
+(@SGGUID+32, 7, 658.1658,-70.976105,46.769356, 100, 0, 0),
+-- Patrol 009
+(@SGGUID+35, 1, 564.6969,134.79558,32.850483, 100, 0, 0),
+(@SGGUID+35, 2, 578.00616,129.33405,35.686752, 100, 0, 0),
+(@SGGUID+35, 3, 586.87726,125.51434,36.059555, 100, 0, 0),
+(@SGGUID+35, 4, 596.7023,121.07731,38.24356, 100, 0, 0),
+(@SGGUID+35, 5, 612.29346,113.80901,43.52018, 100, 0, 0),
+(@SGGUID+35, 6, 627.3768,104.11148,46.740154, 100, 0, 0),
+(@SGGUID+35, 7, 642.7598,88.49879,46.82853, 100, 0, 0),
+(@SGGUID+35, 8, 657.5163,70.17264,46.771988, 100, 0, 0);
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
 (@SGGUID+1, 42, 4817, 1, 0, 0, 0, 'Al\'ar - Trash Respawn'),
 (@SGGUID+2, 42, 4818, 1, 0, 0, 0, 'Void Reaver - Trash Respawn'),
-(@SGGUID+3, 42, 4819, 1, 0, 0, 0, 'High Astromancer Solarian - Trash Respawn');
+(@SGGUID+3, 42, 4819, 1, 0, 0, 0, 'High Astromancer Solarian - Trash Respawn'),
+(@SGGUID+4, 42, 4820, 1, 0, 0, 0, 'Kael\'thas Sunstrider - Trash Respawn');
+
 
 DELETE FROM string_id WHERE Id IN (@STRINGID+1);
 INSERT INTO `string_id` (Id, Name) VALUES 
