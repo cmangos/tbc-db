@@ -29616,10 +29616,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2003701','20037','11','0','100','0','0','0','0','0','0','0','57','2','40','0','0','0','0','0','0','0','0','0','Tempest Falconer - Enable Range Mode on Spawn'),
 -- Phoenix-Hawk Hatchling 20038 - spell_list
 -- Phoenix-Hawk 20039 - spell_list
--- Crystalcore Devastator 20040 - Power Down 34937 RP only, Caster Silence Knockback -37.5% Threat Reduce
+-- Crystalcore Devastator 20040 - spell_list
 ('2004001','20040','11','0','100','0','0','0','0','0','0','0','11','18943','0','34','0','0','0','0','0','0','0','0','Crystalcore Devastator - Cast Double Attack on Spawn'),
-('2004002','20040','0','0','100','1025','20000','30000','30000','40000','0','0','11','35035','0','0','0','0','0','0','0','0','0','0','Crystalcore Devastator - Cast Countercharge'),
-('2004003','20040','0','0','100','1025','20000','25000','23000','28000','0','0','11','37102','1','0','0','0','0','0','0','0','0','0','Crystalcore Devastator - Cast Knock Away'),
 -- Crystalcore Sentinel 20041
 ('2004101','20041','0','0','100','1025','9000','14000','25000','35000','0','0','11','37104','1','0','1','19264','0','0','0','0','0','0','Crystalcore Sentinel - Cast Overcharge'),
 ('2004102','20041','0','0','100','1025','21000','25000','25000','30000','0','0','11','37106','0','0','0','0','0','0','0','0','0','0','Crystalcore Sentinel - Cast Charged Arcane Explosion'),
