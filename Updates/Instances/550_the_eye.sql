@@ -583,7 +583,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+220, 15384, 550, 1, 276.0723, -0.578703, 26.20747, 2.111848, 300, 300, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
 (@CGUID+221, 15384, 550, 1, 259.2285, 35.87902, 20.26298, 5.009095, 300, 300, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
 (@CGUID+222, 15384, 550, 1, 258.9592, -38.68707, 20.26289, 5.72468, 300, 300, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
-(@CGUID+223, 22515, 550, 1, 810.1933, -0.727374, 50.13386, 3.141593, 300, 300, 0, 0); -- World Trigger
+(@CGUID+223, 22515, 550, 1, 810.1933, -0.727374, 50.13386, 3.141593, 300, 300, 0, 0), -- World Trigger
+-- Some missing npcs
+(@CGUID+224, 0, 550, 1, 425.113, -471.939, 22.1003, 0.261799, 7200, 7200, 0, 0); -- spawn_group_entry
 
 -- ===========
 -- GAMEOBJECTS
@@ -831,7 +833,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+24, @CGUID+108, -1), -- spawn_group_entry
 (@SGGUID+24, @CGUID+109, -1), -- spawn_group_entry
 (@SGGUID+24, @CGUID+134, -1), -- spawn_group_entry
--- (@SGGUID+18, @CGUID+92, -1), -- spawn_group_entry missing
+(@SGGUID+24, @CGUID+224, -1), -- spawn_group_entry
 
 (@SGGUID+25, @CGUID+132, -1), -- spawn_group_entry
 (@SGGUID+25, @CGUID+133, -1), -- spawn_group_entry
