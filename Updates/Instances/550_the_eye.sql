@@ -196,7 +196,7 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (19551, 550, 19514, 12304, 0); -- Ember of Al'ar -> Al'ar
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
-(@CGUID+1, 18805, 550, 1, 432.7402, -373.6453, 18.01385, 1.396263, 604800, 604800, 0, 0), -- High Astromancer Solarian
+(@CGUID+1, 18805, 550, 1, 432.74, -373.645, 18.0138, 1.39626, 604800, 604800, 0, 0), -- High Astromancer Solarian
 (@CGUID+2, 18928, 550, 1, 432.419, -373.063, 17.9609, 4.09901, 10800, 10800, 0, 0), -- Astromancer Solarian Spotlight
 (@CGUID+3, 19514, 550, 1, 370.328, -32.5953, 44.0863, 3.19012, 604800, 604800, 0, 3), -- Al'ar
 (@CGUID+4, 19516, 550, 1, 424.235, 403.475, 14.9773, 4.99164, 604800, 604800, 0, 0), -- Void Reaver
@@ -522,8 +522,10 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+27, 'The Eye - Group 022 - RightSide - Bloodwarder Squire (1) | Novice Astromancer (3) | Apprentice Star Scryer (2)', 0, 0, @SGGUID+3, 1, 0),
 -- Patrols in Solarian Room
 (@SGGUID+28, 'The Eye - Group 023 - Patrol 006 -Nether Scryer (1) | Bloodwarder Legionnaire', 0, 0, @SGGUID+3, 1, 0),
-(@SGGUID+29, 'The Eye - Group 024 - Patrol 007 -Nether Scryer (1) | Bloodwarder Legionnaire', 0, 0, @SGGUID+3, 1, 0);
-
+(@SGGUID+29, 'The Eye - Group 024 - Patrol 007 -Nether Scryer (1) | Bloodwarder Legionnaire', 0, 0, @SGGUID+3, 1, 0),
+-- Solarian
+-- All groups in her room should aggro when you aggro her
+(@SGGUID+30, 'The Eye - Group 025 - High Astromancer Solarian', 0, 0, 0, 0, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+18, 20036, 1, 1, 0), (@SGGUID+18, 20043, 3, 3, 0), (@SGGUID+18, 20044, 2, 2, 0), -- Bloodwarder Squire, Apprentice Star Scryer,  Novice Astromancer
@@ -708,7 +710,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 (@SGGUID+29, @CGUID+136, 0), -- Nether Scryer
 (@SGGUID+29, @CGUID+13, 1), -- Bloodwarder Legionnaire
-(@SGGUID+29, @CGUID+14, 2); -- Bloodwarder Legionnaire
+(@SGGUID+29, @CGUID+14, 2), -- Bloodwarder Legionnaire
+
+(@SGGUID+30, @CGUID+1, 0); -- High Astromancer Solarian
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 (@SGGUID+1, 1, @CGUID+24, 20033), -- Astromancer
@@ -779,7 +783,10 @@ INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+20, @SGGUID+21), (@SGGUID+21, @SGGUID+20),
 (@SGGUID+22, @SGGUID+23), (@SGGUID+23, @SGGUID+22),
 (@SGGUID+24, @SGGUID+25), (@SGGUID+25, @SGGUID+24),
-(@SGGUID+26, @SGGUID+27), (@SGGUID+27, @SGGUID+26);
+(@SGGUID+26, @SGGUID+27), (@SGGUID+27, @SGGUID+26),
+-- All groups that should aggro when Solarian gets attacked
+(@SGGUID+30, @SGGUID+22), (@SGGUID+30, @SGGUID+23), (@SGGUID+30, @SGGUID+24), (@SGGUID+30, @SGGUID+25), (@SGGUID+30, @SGGUID+26), (@SGGUID+30, @SGGUID+27), (@SGGUID+30, @SGGUID+28), (@SGGUID+30, @SGGUID+29);
+
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+4, 2, 2, 0, @SGGUID+4, 2, 'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)'),
