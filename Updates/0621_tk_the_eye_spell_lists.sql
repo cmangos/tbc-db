@@ -214,10 +214,52 @@ DELETE FROM `creature_spell_list` WHERE `Id` = 2004601;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (2004601, 1, 37289, 0, -1, 1, 0, 100, 0, 10000, 20000, 15000, 20000, 'Astromancer Lord - Dragon''s Breath - current'),
 (2004601, 2, 37110, 0, -1, 100, 0, 100, 0, 14000, 19000, 18000, 28000, 'Astromancer Lord - Fire Blast - random'),
-(2004601, 3, 37109, 0, -1, 1, 0, 100, 0, 8000, 13000, 11000, 16000, 'Astromancer Lord - Fireball Volley - current'),
+(2004601, 3, 37109, 0, -1, 1, 0, 100, 0, 8000, 13000, 11000, 16000, 'Astromancer Lord - Fireball Volley - current');
 
 UPDATE `creature_template` SET `SpellList` = 2004601 WHERE `entry` = 20046;
 
-('2004601','20046','0','0','100','1025','1000','2000','15000','30000','0','0','11','38732','0','32','0','0','0','0','0','0','0','0','Astromancer Lord - Cast Fire Shield'),
-('2004603','20046','0','0','100','1025','14000','19000','18000','28000','0','0','11','37110','4','512','0','0','0','0','0','0','0','0','Astromancer Lord - Cast Fire Blast'),
-('2004604','20046','0','0','100','1025','8000','13000','11000','16000','0','0','11','37109','1','0','0','0','0','0','0','0','0','0','Astromancer - Cast Fireball Volley'),
+-- Apprentice Star Scryer
+DELETE FROM `creature_template_spells` WHERE `entry` = 20043;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2004301;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2004301, 'The Eye - Apprentice Star Scryer', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2004301;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2004301, 1, 37133, 0, -1, 1, 0, 100, 0, 20000, 22000, 15000, 22000, 'Apprentice Star Scryer - Arcane Buffet - current'),
+(2004301, 2, 37132, 0, -1, 100, 0, 100, 0, 12000, 19000, 16000, 23000, 'Apprentice Star Scryer - Arcane Shock - random'),
+(2004301, 3, 38725, 0, -1, 2, 0, 100, 0, 10000, 12000, 17000, 23000, 'Apprentice Star Scryer - Arcane Explosion - self'),
+(2004301, 4, 37129, 0, -1, 1, 0, 100, 0, 9000, 21000, 13000, 26000, 'Apprentice Star Scryer - Arcane Volley - current');
+
+UPDATE `creature_template` SET `SpellList` = 2004301 WHERE `entry` = 20043;
+
+
+-- Novice Astromancer
+DELETE FROM `creature_template_spells` WHERE `entry` = 20044;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2004401;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2004401, 'The Eye - Novice Astromancer', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2004401;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2004401, 1, 37279, 0, -1, 101, 0, 100, 0, 10000, 13000, 11000, 17000, 'Novice Astromancer - Rain of Fire - random not top'),
+(2004401, 2, 38728, 0, -1, 1, 0, 100, 0, 15000, 27000, 19000, 32000, 'Novice Astromancer - Fire Nova - current'),
+(2004401, 3, 37111, 0, -1, 12, 0, 100, 0, 7000, 11000, 9000, 19000, 'Novice Astromancer - Fireball - current');
+
+UPDATE `creature_template` SET `SpellList` = 2004401 WHERE `entry` = 20044;
+
+-- Nether Scryer
+DELETE FROM `creature_template_spells` WHERE `entry` = 20045;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2004501;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2004501, 'The Eye - Nether Scryer', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2004501;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2004501, 1, 37135, 0, -1, 101, 0, 100, 0, 9000, 12000, 18000, 22000, 'Nether Scryer - Domination - random not top'),
+(2004501, 2, 37126, 0, -1, 100, 0, 100, 0, 12000, 16000, 12000, 16000, 'Nether Scryer - Arcane Blast - random');
+
+UPDATE `creature_template` SET `SpellList` = 2004501 WHERE `entry` = 20045;
