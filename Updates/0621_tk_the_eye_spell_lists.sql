@@ -144,7 +144,6 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2003901 WHERE `entry` = 20039;
 
-
 -- Crystalcore Devastator
 DELETE FROM `creature_template_spells` WHERE `entry` = 20040;
 
@@ -158,3 +157,21 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (2004001, 2, 35035, 0, -1, 2, 0, 100, 0, 20000, 30000, 30000, 40000, 'Crystalcore Devastator - Countercharge - self');
 
 UPDATE `creature_template` SET `SpellList` = 2004001 WHERE `entry` = 20040;
+
+-- Crystalcore Sentinel
+DELETE FROM `creature_template_spells` WHERE `entry` = 20041;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2004101;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2004101, 'The Eye - Crystalcore Sentinel', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2004101;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2004101, 1, 37102, 0, -1, 1, 0, 100, 0, 20000, 25000, 23000, 28000, 'Crystalcore Sentinel - Arcane Explosion - self'),
+(2004101, 2, 35035, 0, -1, 2, 0, 100, 0, 20000, 30000, 30000, 40000, 'Crystalcore Sentinel - Overcharge - current');
+
+UPDATE `creature_template` SET `SpellList` = 2004101 WHERE `entry` = 2004101;
+
+
+('2004101','20041','0','0','100','1025','9000','14000','25000','35000','0','0','11','37104','1','0','1','19264','0','0','0','0','0','0','Crystalcore Sentinel - Cast Overcharge'),
+('2004102','20041','0','0','100','1025','21000','25000','25000','30000','0','0','11','37106','0','0','0','0','0','0','0','0','0','0','Crystalcore Sentinel - Cast Charged Arcane Explosion'),

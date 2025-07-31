@@ -29618,9 +29618,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Phoenix-Hawk 20039 - spell_list
 -- Crystalcore Devastator 20040 - spell_list
 ('2004001','20040','11','0','100','0','0','0','0','0','0','0','11','18943','0','34','0','0','0','0','0','0','0','0','Crystalcore Devastator - Cast Double Attack on Spawn'),
--- Crystalcore Sentinel 20041
-('2004101','20041','0','0','100','1025','9000','14000','25000','35000','0','0','11','37104','1','0','1','19264','0','0','0','0','0','0','Crystalcore Sentinel - Cast Overcharge'),
-('2004102','20041','0','0','100','1025','21000','25000','25000','30000','0','0','11','37106','0','0','0','0','0','0','0','0','0','0','Crystalcore Sentinel - Cast Charged Arcane Explosion'),
+-- Crystalcore Sentinel 20041 - spell_list
+('2004101','20041','37','0','100','1','37104','0','0','0','0','0','1','19264','0','0','0','0','0','0','0','0','0','0','Crystalcore Sentinel - On Cast Overcharge EmotedText'),
 -- Tempest-Smith 20042
 ('2004201','20042','4','0','100','0','0','0','0','0','0','0','57','2','25','0','52','3','0','0','0','0','0','0','Tempest-Smith - Enable Range Mode and Interrupt Channelling on Aggro'),
 ('2004202','20042','0','0','100','1025','8000','14000','9000','13000','0','0','11','37118','4','512','0','0','0','0','0','0','0','0','Tempest-Smith - Cast Shell Shock'),

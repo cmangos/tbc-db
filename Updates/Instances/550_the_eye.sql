@@ -459,8 +459,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 (@CGUID+72, @CGUID+73, 1167), -- Crystalcore Sentinel -> Crystalcore Sentinel
 
-(@CGUID+74, @CGUID+75, 1167), -- Crystalcore Sentinel -> Crystalcore Sentinel
-
 (@CGUID+76, @CGUID+80, 1167), -- Crystalcore Sentinel -> Tempest-Smith
 (@CGUID+77, @CGUID+80, 1167), -- Crystalcore Sentinel -> Tempest-Smith
 (@CGUID+182, @CGUID+80, 1167), -- Crystalcore Mechanic -> Tempest-Smith
@@ -597,8 +595,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+71, 20041, 550, 1, 500.279, 235.073, 20.2303, 5.90574, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+72, 20041, 550, 1, 525.485, -139.615, 20.2642, 3.46851, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+73, 20041, 550, 1, 530.474, -157.159, 20.2641, 3.39424, 10800, 10800, 0, 0), -- Crystalcore Sentinel
-(@CGUID+74, 20041, 550, 1, 525.812, 137.098, 20.2655, 2.73463, 10800, 10800, 0, 0), -- Crystalcore Sentinel
-(@CGUID+75, 20041, 550, 1, 530.559, 155.899, 20.2648, 2.79649, 10800, 10800, 0, 0), -- Crystalcore Sentinel
+(@CGUID+74, 20041, 550, 1, 522.524, 136.295, 20.336, 2.94961, 10800, 10800, 0, 0), -- Crystalcore Sentinel
+(@CGUID+75, 20041, 550, 1, 528.337, 159.21, 20.3332, 3.07178, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+76, 20041, 550, 1, 395.712, 349.558, 15.2789, 0.467893, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+77, 20041, 550, 1, 392.303, 355.927, 15.2185, 0.381499, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+78, 20041, 550, 1, 475.678, 380.375, 15.2256, 3.50267, 10800, 10800, 0, 0), -- Crystalcore Sentinel
@@ -813,8 +811,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Phoenix-Hawk group not respawning when Al'ar is Dead
 (@SGGUID+7, 'The Eye - Group 007 - Phoenix-Hawk (4)', 0, 0, @SGGUID+1, 0, 0),
 -- Solo Patrol not respawning when Void Reaver is Dead
-(@SGGUID+8, 'The Eye - Group 008 - Crystalcore Devastator (1)', 0, 0, @SGGUID+2, 0, 0);
-
+(@SGGUID+8, 'The Eye - Group 008 - Crystalcore Devastator (1)', 0, 0, @SGGUID+2, 0, 0),
+(@SGGUID+9, 'The Eye - Group 009 - Crystalcore Sentinel (2)', 0, 0, @SGGUID+2, 1, 0),
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @CGUID+24, -1), -- spawn_group_squad
@@ -866,6 +864,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+7, @CGUID+65, -1), -- Phoenix-Hawk
 
 (@SGGUID+8, @CGUID+67, -1), -- Crystalcore Devastator
+
+(@SGGUID+9, @CGUID+74, -1), -- Crystalcore Sentinel
+(@SGGUID+9, @CGUID+75, -1), -- Crystalcore Sentinel
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 (@SGGUID+1, 1, @CGUID+24, 20033), -- Astromancer
