@@ -230,27 +230,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+136, 81, 360.464, -399.091, 19.3192, 5.08591, 0, 0),
 (@CGUID+136, 82, 369.304, -415.63, 19.2722, 5.46683, 0, 0),
 (@CGUID+136, 83, 379.036, -425.16, 19.0518, 5.63568, 0, 0),
-(@CGUID+137, 1, 517.678, -165.821, 20.2417, 4.84751, 0, 0),
-(@CGUID+137, 2, 519.564, -179.693, 20.2721, 4.84751, 0, 0),
-(@CGUID+137, 3, 520.34, -185.704, 20.2887, 4.7297, 0, 0),
-(@CGUID+137, 4, 520.357, -196.192, 20.2887, 4.49408, 0, 0),
-(@CGUID+137, 5, 517.325, -209.86, 20.2887, 4.49408, 0, 0),
-(@CGUID+137, 6, 514.141, -224.211, 20.2842, 4.49408, 0, 0),
-(@CGUID+137, 7, 516.85, -213.361, 20.289, 1.36662, 0, 0),
-(@CGUID+137, 8, 519.689, -199.652, 20.289, 1.36662, 0, 0),
-(@CGUID+137, 9, 519.817, -179.63, 20.2735, 1.75775, 0, 0),
-(@CGUID+137, 10, 517.215, -165.874, 20.2431, 1.75775, 0, 0),
-(@CGUID+137, 11, 514.613, -152.117, 20.2372, 1.75775, 0, 0),
-(@CGUID+137, 12, 513.202, -145.268, 20.2374, 1.95332, 0, 0),
-(@CGUID+137, 13, 505.364, -125.786, 20.2689, 1.95332, 0, 0),
-(@CGUID+137, 14, 499.153, -115.167, 20.2879, 2.18894, 0, 0),
-(@CGUID+137, 15, 491.039, -103.757, 20.2879, 2.18894, 0, 0),
-(@CGUID+137, 16, 482.427, -93.673, 20.2879, 2.3468, 0, 0),
-(@CGUID+137, 17, 489.335, -101.904, 20.2879, 5.4287, 0, 0),
-(@CGUID+137, 18, 498.303, -113.521, 20.2879, 5.31089, 0, 0),
-(@CGUID+137, 19, 505.312, -125.851, 20.2708, 5.15539, 0, 0),
-(@CGUID+137, 20, 512.193, -140.451, 20.2438, 5.03757, 0, 0),
-(@CGUID+137, 21, 516.509, -156.868, 20.2395, 4.88207, 0, 0),
 (@CGUID+172, 1, 614.401, -113.937, 44.4139, 3.60943, 0, 0),
 (@CGUID+172, 2, 611.277, -115.516, 43.1568, 3.60943, 0, 0),
 (@CGUID+172, 3, 605.029, -118.672, 40.7805, 3.60943, 0, 0),
@@ -318,7 +297,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+73, @CGUID+1, 1025), -- Crystalcore Sentinel -> High Astromancer Solarian
 (@CGUID+135, @CGUID+1, 1025), -- Nether Scryer -> High Astromancer Solarian
 (@CGUID+136, @CGUID+1, 1025), -- Nether Scryer -> High Astromancer Solarian
-(@CGUID+137, @CGUID+1, 1025), -- Astromancer Lord -> High Astromancer Solarian
 
 (@CGUID+31, @CGUID+5, 1024), -- Bloodwarder Marshal -> Kael'thas Sunstrider
 (@CGUID+32, @CGUID+5, 1024), -- Bloodwarder Marshal -> Kael'thas Sunstrider
@@ -410,9 +388,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+13, @CGUID+136, 1679), -- Bloodwarder Legionnaire -> Nether Scryer
 (@CGUID+14, @CGUID+136, 1679), -- Bloodwarder Legionnaire -> Nether Scryer
 
-(@CGUID+6, @CGUID+137, 1679), -- Bloodwarder Legionnaire -> Astromancer Lord
-(@CGUID+7, @CGUID+137, 1679), -- Bloodwarder Legionnaire -> Astromancer Lord
-
 (@CGUID+139, @CGUID+161, 1167), -- Crimson Hand Battle Mage -> Crimson Hand Blood Knight
 (@CGUID+142, @CGUID+161, 1167), -- Crimson Hand Battle Mage -> Crimson Hand Blood Knight
 (@CGUID+147, @CGUID+161, 1167), -- Crimson Hand Centurion -> Crimson Hand Blood Knight
@@ -452,10 +427,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+1, 18805, 550, 1, 432.7402, -373.6453, 18.01385, 1.396263, 604800, 604800, 0, 0), -- High Astromancer Solarian
 (@CGUID+2, 18928, 550, 1, 432.419, -373.063, 17.9609, 4.09901, 10800, 10800, 0, 0), -- Astromancer Solarian Spotlight
 (@CGUID+3, 19514, 550, 1, 370.328, -32.5953, 44.0863, 3.19012, 604800, 604800, 0, 3), -- Al'ar
-(@CGUID+4, 19516, 550, 1, 424.2349, 403.4754, 14.97731, 4.991642, 604800, 604800, 0, 0), -- Void Reaver
+(@CGUID+4, 19516, 550, 1, 424.235, 403.475, 14.9773, 4.99164, 604800, 604800, 0, 0), -- Void Reaver
 (@CGUID+5, 19622, 550, 1, 795.007, -0.460572, 48.7285, 3.08436, 604800, 604800, 0, 0), -- Kael'thas Sunstrider
-(@CGUID+6, 20031, 550, 1, 519.164, -157.407, 20.2431, 4.86057, 10800, 10800, 0, 0), -- Bloodwarder Legionnaire
-(@CGUID+7, 20031, 550, 1, 514.414, -158.116, 20.2424, 4.86057, 10800, 10800, 0, 0), -- Bloodwarder Legionnaire
+(@CGUID+6, 20031, 550, 1, 476.057, -82.85, 20.235, 5.427, 10800, 10800, 0, 0), -- Bloodwarder Legionnaire
+(@CGUID+7, 20031, 550, 1, 471.636, -86.907, 20.237, 5.449, 10800, 10800, 0, 0), -- Bloodwarder Legionnaire
 (@CGUID+8, 0, 550, 1, 104.595, -11.3571, -2.25123, 2.46091, 10800, 10800, 0, 0), -- spawn_group_squad
 (@CGUID+9, 0, 550, 1, 104.795, 8.55721, -2.25027, 3.80482, 10800, 10800, 0, 0), -- spawn_group_squad
 (@CGUID+10, 0, 550, 1, 191.414, -5.72624, -2.35336, 3.01942, 10800, 10800, 0, 0), -- spawn_group_squad
@@ -585,7 +560,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+134, 20044, 550, 1, 427.989, -468.895, 22.1003, 4.62512, 7200, 7200, 0, 0), -- Novice Astromancer
 (@CGUID+135, 20045, 550, 1, 475.085, -340.752, 16.0336, 5.06647, 10800, 10800, 0, 2), -- Nether Scryer
 (@CGUID+136, 20045, 550, 1, 385.207, -429.638, 18.9141, 5.83616, 10800, 10800, 0, 2), -- Nether Scryer
-(@CGUID+137, 20046, 550, 1, 517.028, -159.7, 20.2391, 4.80952, 10800, 10800, 0, 2), -- Astromancer Lord
+(@CGUID+137, 20046, 550, 1, 473.847, -84.88, 20.216, 5.49388, 10800, 10800, 0, 0), -- Astromancer Lord
 (@CGUID+138, 20047, 550, 1, 651.426, 87.7581, 46.8958, 2.32129, 7200, 7200, 0, 0), -- Crimson Hand Battle Mage
 (@CGUID+139, 20047, 550, 1, 597.978, 114.958, 39.383, 2.79253, 7200, 7200, 0, 0), -- Crimson Hand Battle Mage
 (@CGUID+140, 20047, 550, 1, 587.318, -118.038, 37.4877, 3.76991, 7200, 7200, 0, 0), -- Crimson Hand Battle Mage
@@ -746,7 +721,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+12, 'The Eye - Group 012 - Tempest-Smith (1) | Crystalcore Devastator (1) | Crystalcore Mechanic (2)', 0, 0, @SGGUID+2, 1, 0),
 (@SGGUID+13, 'The Eye - Group 013 - Tempest-Smith (1) | Crystalcore Devastator (1) | Crystalcore Mechanic (2)', 0, 0, @SGGUID+2, 1, 0),
 (@SGGUID+14, 'The Eye - Group 014 - Tempest-Smith (1) | Crystalcore Sentinel (2) | Crystalcore Mechanic (2)', 0, 0, @SGGUID+2, 1, 0),
-(@SGGUID+15, 'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)', 0, 0, @SGGUID+2, 1, 0);
+(@SGGUID+15, 'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)', 0, 0, @SGGUID+2, 1, 0),
+-- Solarian
+(@SGGUID+16, 'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire', 0, 0, @SGGUID+3, 1, 0),
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @CGUID+24, -1), -- spawn_group_squad
@@ -831,6 +808,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+15, @CGUID+84, 1), -- Tempest-Smith
 (@SGGUID+15, @CGUID+85, 2); -- Tempest-Smith
 
+(@SGGUID+16, @CGUID+137, 0), -- Astromancer Lord
+(@SGGUID+16, @CGUID+6, 1), -- Bloodwarder Legionnaire
+(@SGGUID+16, @CGUID+7, 2); -- Bloodwarder Legionnaire
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 (@SGGUID+1, 1, @CGUID+24, 20033), -- Astromancer
@@ -901,14 +881,15 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+4, 2, 2, 0, @SGGUID+4, 2, 'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)'),
 (@SGGUID+5, 0, 4, 0, @SGGUID+5, 2, 'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
 (@SGGUID+6, 0, 4, 0, @SGGUID+6, 2, 'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
-(@SGGUID+15, 2, 4, 0, @SGGUID+15, 4, 'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)');
-
+(@SGGUID+15, 2, 4, 0, @SGGUID+15, 4, 'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)'),
+(@SGGUID+16, 2, 4, 0, @SGGUID+16, 4, 'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire'),
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+4,'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)'),
 (@SGGUID+5,'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
 (@SGGUID+6,'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
-(@SGGUID+15,'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)');
+(@SGGUID+15,'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)'),
+(@SGGUID+16,'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire'),
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Patrol 001
@@ -949,12 +930,22 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+15, 3, 460.9808,314.85217,17.816645, 100, 0, 0),
 (@SGGUID+15, 4, 430.38788,306.61725,17.640047, 100, 0, 0),
 (@SGGUID+15, 5, 402.40613,313.23843,18.359625, 100, 0, 0),
-(@SGGUID+15, 6, 386.8443,324.3896,18.262718, 100, 0, 0);
+(@SGGUID+15, 6, 386.8443,324.3896,18.262718, 100, 0, 0),
+-- Patrol 005
+(@SGGUID+16, 1, 473.84668,-84.87884,20.216114, 100, 0, 0),
+(@SGGUID+16, 2, 491.02115,-103.594,20.289865, 100, 0, 0),
+(@SGGUID+16, 3, 502.49777,-118.99611,20.28987, 100, 0, 0),
+(@SGGUID+16, 4, 511.05252,-140.89236,20.237894, 100, 0, 0),
+(@SGGUID+16, 5, 517.2678,-163.51216,20.239647, 100, 0, 0),
+(@SGGUID+16, 6, 520.61035,-185.82002,20.289864, 100, 0, 0),
+(@SGGUID+16, 7, 517.4262,-208.08437,20.289856, 100, 0, 0),
+(@SGGUID+16, 8, 511.51535,-232.16605,20.341183, 100, 0, 0),
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
 (@SGGUID+1, 42, 4817, 1, 0, 0, 0, 'Al\'ar - Trash Respawn'),
-(@SGGUID+1, 42, 4818, 1, 0, 0, 0, 'Void Reaver - Trash Respawn');
+(@SGGUID+2, 42, 4818, 1, 0, 0, 0, 'Void Reaver - Trash Respawn'),
+(@SGGUID+3, 42, 4819, 1, 0, 0, 0, 'High Astromancer Solarian - Trash Respawn');
 
 DELETE FROM string_id WHERE Id IN (@STRINGID+1);
 INSERT INTO `string_id` (Id, Name) VALUES 
