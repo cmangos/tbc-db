@@ -380,7 +380,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+133, @CGUID+44, 1167), -- Novice Astromancer -> Bloodwarder Squire
 (@CGUID+134, @CGUID+44, 1167), -- Novice Astromancer -> Bloodwarder Squire
 
-(@CGUID+72, @CGUID+73, 1167), -- Crystalcore Sentinel -> Crystalcore Sentinel
 
 (@CGUID+11, @CGUID+135, 1679), -- Bloodwarder Legionnaire -> Nether Scryer
 (@CGUID+12, @CGUID+135, 1679), -- Bloodwarder Legionnaire -> Nether Scryer
@@ -495,8 +494,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+69, 20040, 550, 1, 488.87756, 342.66516, 17.682777, 4.13185, 10800, 10800, 0, 0), -- Crystalcore Devastator
 (@CGUID+70, 20041, 550, 1, 516.177, 243.245, 20.3168, 4.69494, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+71, 20041, 550, 1, 499.913, 234.991, 20.3294, 5.91667, 10800, 10800, 0, 0), -- Crystalcore Sentinel
-(@CGUID+72, 20041, 550, 1, 525.485, -139.615, 20.2642, 3.46851, 10800, 10800, 0, 0), -- Crystalcore Sentinel
-(@CGUID+73, 20041, 550, 1, 530.474, -157.159, 20.2641, 3.39424, 10800, 10800, 0, 0), -- Crystalcore Sentinel
+(@CGUID+72, 20041, 550, 1, 523.206, -137.925, 20.3386, 3.47321, 10800, 10800, 0, 0), -- Crystalcore Sentinel
+(@CGUID+73, 20041, 550, 1, 530.071, -158.822, 20.3428, 3.59538, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+74, 20041, 550, 1, 522.524, 136.295, 20.336, 2.94961, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+75, 20041, 550, 1, 528.337, 159.21, 20.3332, 3.07178, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+76, 20041, 550, 1, 393.282, 353.826, 15.3139, 0.349066, 10800, 10800, 0, 0), -- Crystalcore Sentinel
@@ -660,15 +659,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- ===========
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`) VALUES
-(@OGUID+1, 184069, 550, 1, 743.0566, 4.634431, 137.7959, 3.141593, 0, 0, -1, 0, 7200, 7200), -- Tempest Bridge Window
-(@OGUID+2, 184324, 550, 1, 676.6985, 43.16431, 48.28136, 0.6108655, 0, 0, 0.3007059, 0.9537169, 300, 300), -- Doodad_TK_Arcane_Door_Horiz04
-(@OGUID+3, 184325, 550, 1, 676.5166, -44.52248, 48.28133, 2.530723, 0, 0, 0.9537163, 0.3007079, 300, 300), -- Doodad_TK_Arcane_Door_Horiz03
-(@OGUID+4, 184326, 550, 1, 654.1447, -76.82803, 48.19501, 2.530723, 0, 0, 0.9537163, 0.3007079, 300, 300), -- Doodad_TK_Arcane_Door_Vert03
-(@OGUID+5, 184327, 550, 1, 544.538, -143.1392, 26.34531, 3.403396, 0, 0, -0.9914446, 0.1305283, 300, 300), -- Doodad_TK_Raid_Door03
-(@OGUID+6, 184328, 550, 1, 654.1292, 75.33163, 48.19505, 0.6108655, 0, 0, 0.3007059, 0.9537169, 300, 300), -- Doodad_TK_Arcane_Door_Vert04
-(@OGUID+7, 184329, 550, 1, 544.6263, 141.888, 26.34531, 2.879789, 0, 0, 0.9914446, 0.1305283, 300, 300), -- Doodad_TK_Raid_Door04
-(@OGUID+8, 184596, 550, 1, 744.0446, -44.63448, 46.66097, 3.141593, 0, 0, -1, 0, 300, 300), -- Doodad_Kael_Explode_FX_Right01
-(@OGUID+9, 184597, 550, 1, 744.0448, 42.35362, 46.661, 3.141593, 0, 0, -1, 0, 300, 300); -- Doodad_Kael_Explode_FX_Left01
+(@OGUID+1, 184069, 550, 1, 743.056640625, 4.634430885314941406, 137.7958526611328125, 3.141592741012573242, 0, 0, -1, 0, 7200, 7200), -- Tempest Bridge Window
+(@OGUID+2, 184324, 550, 1, 676.698486328125, 43.16431427001953125, 48.28136062622070312, 0.610865473747253417, 0, 0, 0.300705909729003906, 0.953716933727264404, 300, 300), -- Doodad_TK_Arcane_Door_Horiz04
+(@OGUID+3, 184325, 550, 1, 676.5166015625, -44.5224761962890625, 48.28133010864257812, 2.530723094940185546, 0, 0, 0.953716278076171875, 0.300707906484603881, 300, 300), -- Doodad_TK_Arcane_Door_Horiz03
+(@OGUID+4, 184326, 550, 1, 654.1446533203125, -76.8280258178710937, 48.19501495361328125, 2.530723094940185546, 0, 0, 0.953716278076171875, 0.300707906484603881, 300, 300), -- Doodad_TK_Arcane_Door_Vert03
+(@OGUID+5, 184327, 550, 1, 544.5379638671875, -143.139236450195312, 26.34531021118164062, 3.403396368026733398, 0, 0, -0.99144458770751953, 0.130528271198272705, 300, 300), -- Doodad_TK_Raid_Door03
+(@OGUID+6, 184328, 550, 1, 654.129150390625, 75.33162689208984375, 48.19504547119140625, 0.610865473747253417, 0, 0, 0.300705909729003906, 0.953716933727264404, 300, 300), -- Doodad_TK_Arcane_Door_Vert04
+(@OGUID+7, 184329, 550, 1, 544.62628173828125, 141.8879852294921875, 26.34531021118164062, 2.879789113998413085, 0, 0, 0.991444587707519531, 0.130528271198272705, 300, 300), -- Doodad_TK_Raid_Door04
+(@OGUID+8, 184596, 550, 1, 744.04461669921875, -44.6344795227050781, 46.66096878051757812, 3.141592741012573242, 0, 0, -1, 0, 300, 300), -- Doodad_Kael_Explode_FX_Right01
+(@OGUID+9, 184597, 550, 1, 744.0447998046875, 42.35361862182617187, 46.66099929809570312, 3.141592741012573242, 0, 0, -1, 0, 300, 300); -- Doodad_Kael_Explode_FX_Left01
 
 INSERT INTO `gameobject_addon` (`guid`, `state`) VALUES
 (@OGUID+2, 0), -- Doodad_TK_Arcane_Door_Horiz04
@@ -724,6 +723,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+15, 'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)', 0, 0, @SGGUID+2, 1, 0),
 -- Solarian
 (@SGGUID+16, 'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire', 0, 0, @SGGUID+3, 1, 0),
+(@SGGUID+17, 'The Eye - Group 017 - Crystalcore Sentinel (2)', 0, 0, @SGGUID+3, 1, 0),
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @CGUID+24, -1), -- spawn_group_squad
@@ -806,11 +806,14 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 (@SGGUID+15, @CGUID+69, 0), -- Crystalcore Devastator
 (@SGGUID+15, @CGUID+84, 1), -- Tempest-Smith
-(@SGGUID+15, @CGUID+85, 2); -- Tempest-Smith
+(@SGGUID+15, @CGUID+85, 2), -- Tempest-Smith
 
 (@SGGUID+16, @CGUID+137, 0), -- Astromancer Lord
 (@SGGUID+16, @CGUID+6, 1), -- Bloodwarder Legionnaire
-(@SGGUID+16, @CGUID+7, 2); -- Bloodwarder Legionnaire
+(@SGGUID+16, @CGUID+7, 2), -- Bloodwarder Legionnaire
+
+(@SGGUID+17, @CGUID+72, -1), -- Crystalcore Sentinel
+(@SGGUID+17, @CGUID+73, -1), -- Crystalcore Sentinel
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 (@SGGUID+1, 1, @CGUID+24, 20033), -- Astromancer
