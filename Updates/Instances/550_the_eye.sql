@@ -78,51 +78,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+67, 6, 518.6552,206.79694,20.289883, 100, 0, 0),
 (@CGUID+67, 7, 511.54654,229.24347,20.301516, 100, 0, 0),
 --
-(@CGUID+69, 1, 409.93, 315.616, 17.5192, 2.34329, 0, 0),
-(@CGUID+69, 2, 405.045, 320.629, 17.324, 2.34329, 0, 0),
-(@CGUID+69, 3, 400.159, 325.642, 16.9644, 2.34329, 0, 0),
-(@CGUID+69, 4, 395.422, 330.796, 16.8512, 2.3001, 0, 0),
-(@CGUID+69, 5, 390.803, 336.055, 16.8577, 2.27653, 0, 10121),
-(@CGUID+69, 6, 383.62, 346.108, 16.8607, 2.08411, 0, 0),
-(@CGUID+69, 7, 381.398, 350.473, 16.7824, 1.98201, 0, 0),
-(@CGUID+69, 8, 378.823, 356.968, 16.895, 1.91132, 0, 0),
-(@CGUID+69, 9, 378.552, 357.387, 16.9158, 5.07255, 0, 0),
-(@CGUID+69, 10, 381.333, 350.965, 16.7724, 5.13539, 0, 10121),
-(@CGUID+69, 11, 385.459, 342.605, 16.9163, 5.29639, 0, 0),
-(@CGUID+69, 12, 388.967, 337.665, 16.9019, 5.39849, 0, 0),
-(@CGUID+69, 13, 393.462, 332.3, 16.915, 5.41027, 0, 0),
-(@CGUID+69, 14, 398.275, 327.22, 16.8755, 5.48096, 0, 0),
-(@CGUID+69, 15, 403.141, 322.188, 17.2643, 5.48096, 0, 10121),
-(@CGUID+69, 16, 410.988, 314.873, 17.5164, 5.65374, 0, 0),
-(@CGUID+69, 17, 417.886, 311.027, 17.4, 5.97575, 0, 0),
-(@CGUID+69, 18, 426.737, 308.961, 17.2627, 6.17995, 0, 0),
-(@CGUID+69, 19, 430.454, 308.767, 17.4062, 0.010646, 0, 0),
-(@CGUID+69, 20, 436.035, 309.208, 17.5302, 0.112748, 0, 10121),
-(@CGUID+69, 21, 442.971, 310.145, 17.646, 0.155945, 0, 0),
-(@CGUID+69, 22, 454.154, 312.519, 17.7654, 0.320878, 0, 0),
-(@CGUID+69, 23, 460.74, 314.886, 17.7986, 0.399418, 0, 0),
-(@CGUID+69, 24, 467.734, 319.03, 17.7331, 0.729285, 0, 0),
-(@CGUID+69, 25, 472.503, 323.842, 17.5517, 0.835314, 0, 10121),
-(@CGUID+69, 26, 476.929, 329.263, 17.4535, 0.906, 0, 0),
-(@CGUID+69, 27, 481.085, 334.894, 17.3167, 0.960978, 0, 0),
-(@CGUID+69, 28, 483.62, 339.085, 17.329, 1.06308, 0, 0),
-(@CGUID+69, 29, 486.617, 345.144, 17.2735, 1.16911, 0, 0),
-(@CGUID+69, 30, 489.004, 351.722, 17.2158, 1.25943, 0, 10121),
-(@CGUID+69, 31, 491.309, 359.54, 17.2488, 4.45601, 0, 0),
-(@CGUID+69, 32, 489.534, 352.769, 17.2488, 4.45601, 0, 0),
-(@CGUID+69, 33, 487.668, 346.024, 17.3338, 4.38925, 0, 0),
-(@CGUID+69, 34, 484.867, 339.615, 17.4323, 4.18505, 0, 0),
-(@CGUID+69, 35, 481.1, 333.717, 17.4221, 4.0908, 0, 10121),
-(@CGUID+69, 36, 475.713, 326.386, 17.6065, 3.98477, 0, 0),
-(@CGUID+69, 37, 472.36, 322.813, 17.6314, 3.87875, 0, 0),
-(@CGUID+69, 38, 467.108, 318.185, 17.7936, 3.86304, 0, 0),
-(@CGUID+69, 39, 461.508, 314.473, 17.8915, 3.54102, 0, 0),
-(@CGUID+69, 40, 456.534, 312.505, 17.8556, 3.43892, 0, 10121),
-(@CGUID+69, 41, 443.294, 309.724, 17.7104, 3.31718, 0, 0),
-(@CGUID+69, 42, 436.397, 308.528, 17.6268, 3.29362, 0, 0),
-(@CGUID+69, 43, 432.219, 308.106, 17.5454, 3.19152, 0, 0),
-(@CGUID+69, 44, 428.218, 308.206, 17.4046, 3.08942, 0, 0),
-(@CGUID+69, 45, 419.106, 309.858, 17.4325, 2.77919, 0, 10121),
 (@CGUID+135, 1, 478.763, -349.151, 15.8994, 5.14326, 0, 0),
 (@CGUID+135, 2, 479.248, -350.47, 15.8686, 4.98539, 0, 0),
 (@CGUID+135, 3, 482.582, -362.608, 15.7734, 4.86758, 0, 0),
@@ -447,9 +402,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+133, @CGUID+44, 1167), -- Novice Astromancer -> Bloodwarder Squire
 (@CGUID+134, @CGUID+44, 1167), -- Novice Astromancer -> Bloodwarder Squire
 
-(@CGUID+84, @CGUID+69, 1679), -- Tempest-Smith -> Crystalcore Devastator
-(@CGUID+85, @CGUID+69, 1679), -- Tempest-Smith -> Crystalcore Devastator
-
 (@CGUID+72, @CGUID+73, 1167), -- Crystalcore Sentinel -> Crystalcore Sentinel
 
 (@CGUID+11, @CGUID+135, 1679), -- Bloodwarder Legionnaire -> Nether Scryer
@@ -565,7 +517,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+66, 20040, 550, 1, 459.577, 337.187, 15.2522, 2.35619, 10800, 10800, 0, 0), -- Crystalcore Devastator
 (@CGUID+67, 20040, 550, 1, 475.72092, 86.03086, 20.252535, 1.26854, 10800, 10800, 0, 4), -- Crystalcore Devastator
 (@CGUID+68, 20040, 550, 1, 423.913, 327.611, 15.2007, 1.48353, 10800, 10800, 0, 0), -- Crystalcore Devastator
-(@CGUID+69, 20040, 550, 1, 414.075, 311.577, 17.6373, 2.71344, 10800, 10800, 0, 2), -- Crystalcore Devastator
+(@CGUID+69, 20040, 550, 1, 488.87756, 342.66516, 17.682777, 4.13185, 10800, 10800, 0, 0), -- Crystalcore Devastator
 (@CGUID+70, 20041, 550, 1, 516.177, 243.245, 20.3168, 4.69494, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+71, 20041, 550, 1, 499.913, 234.991, 20.3294, 5.91667, 10800, 10800, 0, 0), -- Crystalcore Sentinel
 (@CGUID+72, 20041, 550, 1, 525.485, -139.615, 20.2642, 3.46851, 10800, 10800, 0, 0), -- Crystalcore Sentinel
@@ -580,8 +532,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+81, 20042, 550, 1, 457.151, 344.334, 14.9878, 4.99164, 10800, 10800, 0, 0), -- Tempest-Smith
 (@CGUID+82, 20042, 550, 1, 468.497, 382.066, 14.9938, 0.925025, 10800, 10800, 0, 0), -- Tempest-Smith
 (@CGUID+83, 20042, 550, 1, 426.618, 334.85, 14.6985, 4.29351, 10800, 10800, 0, 0), -- Tempest-Smith
-(@CGUID+84, 20042, 550, 1, 418.201, 313.49, 17.1063, 2.74485, 10800, 10800, 0, 0), -- Tempest-Smith
-(@CGUID+85, 20042, 550, 1, 414.958, 306.041, 18.1734, 2.36001, 10800, 10800, 0, 0), -- Tempest-Smith
+(@CGUID+84, 20042, 550, 1, 490.7227, 338.2184, 18.172142, 4.09591, 10800, 10800, 0, 0), -- Tempest-Smith
+(@CGUID+85, 20042, 550, 1, 484.1029, 342.70276, 17.150923, 3.96082, 10800, 10800, 0, 0), -- Tempest-Smith
 (@CGUID+86, 20043, 550, 1, 352.458, -319.709, 22.1003, 1.81514, 7200, 7200, 0, 0), -- Apprentice Star Scryer
 (@CGUID+87, 20043, 550, 1, 344.225, -333.593, 22.1003, 2.28638, 7200, 7200, 0, 0), -- Apprentice Star Scryer
 (@CGUID+88, 20043, 550, 1, 503.185, -146.249, 20.3612, 5.5676, 7200, 7200, 0, 0), -- Apprentice Star Scryer
@@ -793,8 +745,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+11, 'The Eye - Group 011 - Tempest-Smith (1) | Crystalcore Sentinel (2) | Crystalcore Mechanic (2)', 0, 0, @SGGUID+2, 1, 0),
 (@SGGUID+12, 'The Eye - Group 012 - Tempest-Smith (1) | Crystalcore Devastator (1) | Crystalcore Mechanic (2)', 0, 0, @SGGUID+2, 1, 0),
 (@SGGUID+13, 'The Eye - Group 013 - Tempest-Smith (1) | Crystalcore Devastator (1) | Crystalcore Mechanic (2)', 0, 0, @SGGUID+2, 1, 0),
-
 (@SGGUID+14, 'The Eye - Group 014 - Tempest-Smith (1) | Crystalcore Sentinel (2) | Crystalcore Mechanic (2)', 0, 0, @SGGUID+2, 1, 0),
+(@SGGUID+15, 'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)', 0, 0, @SGGUID+2, 1, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @CGUID+24, -1), -- spawn_group_squad
@@ -875,6 +827,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+14, @CGUID+184, -1), -- Crystalcore Mechanic
 (@SGGUID+14, @CGUID+178, -1), -- Crystalcore Mechanic
 
+(@SGGUID+15, @CGUID+69, 0), -- Crystalcore Devastator
+(@SGGUID+15, @CGUID+84, 1), -- Tempest-Smith
+(@SGGUID+15, @CGUID+85, 2); -- Tempest-Smith
+
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 (@SGGUID+1, 1, @CGUID+24, 20033), -- Astromancer
@@ -944,12 +900,15 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+4, 2, 2, 0, @SGGUID+4, 2, 'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)'),
 (@SGGUID+5, 0, 4, 0, @SGGUID+5, 2, 'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
-(@SGGUID+6, 0, 4, 0, @SGGUID+6, 2, 'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)');
+(@SGGUID+6, 0, 4, 0, @SGGUID+6, 2, 'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
+(@SGGUID+15, 2, 4, 0, @SGGUID+15, 4, 'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)');
+
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+4,'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)'),
 (@SGGUID+5,'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
-(@SGGUID+6,'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)');
+(@SGGUID+6,'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
+(@SGGUID+15,'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 -- Patrol 001
@@ -983,8 +942,14 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+6, 3,376.66275,13.843831,-2.3868701, 100, 5000, 0), -- wait rnd move
 (@SGGUID+6, 4, 350.39078,39.908775,-2.3885098, 100, 0, 0),
 (@SGGUID+6, 5, 314.34283,40.37823,-2.3890648, 100, 0, 0),
-(@SGGUID+6, 6, 287.89716,14.272659,-2.3893754, 100, 5000, 0); -- Wait rnd move
-
+(@SGGUID+6, 6, 287.89716,14.272659,-2.3893754, 100, 5000, 0), -- Wait rnd move
+-- Patrol 004
+(@SGGUID+15, 1, 488.87756,342.66516,17.682777, 100, 0, 0),
+(@SGGUID+15, 2, 480.81116,330.3677,17.701866, 100, 0, 0),
+(@SGGUID+15, 3, 460.9808,314.85217,17.816645, 100, 0, 0),
+(@SGGUID+15, 4, 430.38788,306.61725,17.640047, 100, 0, 0),
+(@SGGUID+15, 5, 402.40613,313.23843,18.359625, 100, 0, 0),
+(@SGGUID+15, 6, 386.8443,324.3896,18.262718, 100, 0, 0);
 
 DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
