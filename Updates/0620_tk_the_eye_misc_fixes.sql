@@ -110,6 +110,99 @@ UPDATE creature_model_info SET bounding_radius = 0.3, combat_reach = 1.5 WHERE m
 UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 12/7, MeleeBaseAttackTime = 2000 WHERE entry = 20039;
 UPDATE creature_model_info SET bounding_radius = 0.75, combat_reach = 3.75 WHERE modelid = 19299;
 
+-- Crystalcore Devastator 20040
+-- WalkSpeed: 4
+-- RunSpeed: 12
+-- UNIT_FIELD_BOUNDINGRADIUS: 1.5
+-- UNIT_FIELD_COMBATREACH: 9
+UPDATE creature_template SET SpeedWalk = 4/2.5, SpeedRun = 12/7 WHERE entry = 20040;
+UPDATE creature_model_info SET bounding_radius = 1.5, combat_reach = 9 WHERE modelid = 19410;
+
+-- Crystalcore Sentinel 20041
+-- RunSpeed: 12
+-- UNIT_FIELD_BOUNDINGRADIUS: 1.25
+-- UNIT_FIELD_COMBATREACH: 7.5
+UPDATE creature_template SET SpeedRun = 12/7 WHERE entry = 20041;
+UPDATE creature_model_info SET bounding_radius = 1.25, combat_reach = 7.5 WHERE modelid = 19300;
+
+-- Tempest-Smith 20042
+-- WalkSpeed: 4
+-- RunSpeed: 10
+-- UNIT_FIELD_BOUNDINGRADIUS: 0.57449996
+-- UNIT_FIELD_COMBATREACH: 2.25
+UPDATE creature_template SET SpeedWalk = 4/2.5, SpeedRun = 10/7 WHERE entry = 20042;
+UPDATE creature_model_info SET bounding_radius = 0.57449996, combat_reach = 2.25 WHERE modelid = 19412;
+
+-- Apprentice Star Scryer 20043
+-- WalkSpeed: 4
+-- RunSpeed: 10
+-- UNIT_FIELD_BOUNDINGRADIUS: 0.57449996
+-- UNIT_FIELD_COMBATREACH: 2.25
+UPDATE creature_template SET SpeedWalk = 4/2.5, SpeedRun = 10/7 WHERE entry = 20043;
+UPDATE creature_model_info SET bounding_radius = 0.57449996, combat_reach = 2.25 WHERE modelid IN (19470, 19471);
+
+-- Novice Astromancer 20044
+-- UNIT_FIELD_BOUNDINGRADIUS: 0.57449996
+-- UNIT_FIELD_COMBATREACH: 2.25
+UPDATE creature_model_info SET bounding_radius = 0.57449996, combat_reach = 2.25 WHERE modelid IN (19472, 19473);
+
+-- Nether Scryer 20045
+-- [1] WalkSpeed: 4
+-- RunSpeed: 10
+-- UNIT_FIELD_BOUNDINGRADIUS: 0.766
+-- UNIT_FIELD_COMBATREACH: 3
+UPDATE creature_template SET SpeedWalk = 4/2.5, SpeedRun = 10/7 WHERE entry = 20045;
+UPDATE creature_model_info SET bounding_radius = 0.766, combat_reach = 3 WHERE modelid IN (19474, 19475);
+
+-- Astromancer Lord 20046
+-- WalkSpeed: 4
+-- RunSpeed: 10
+-- UNIT_FIELD_BOUNDINGRADIUS: 0.766
+-- UNIT_FIELD_COMBATREACH: 3
+UPDATE creature_template SET SpeedWalk = 4/2.5, SpeedRun = 10/7 WHERE entry = 20046;
+UPDATE creature_model_info SET bounding_radius = 0.766, combat_reach = 3 WHERE modelid IN (19423, 19424);
+
+-- Crimson Hand Battle Mage 20047
+-- WalkSpeed: 4
+-- RunSpeed: 12
+-- UNIT_FIELD_BOUNDINGRADIUS: 0.57449996
+-- UNIT_FIELD_COMBATREACH: 2.25
+UPDATE creature_template SET SpeedWalk = 4/2.5, SpeedRun = 12/7 WHERE entry = 20047;
+UPDATE creature_model_info SET bounding_radius = 0.57449996, combat_reach = 2.25 WHERE modelid IN (19499, 19500);
+
+-- Crimson Hand Centurion 20048
+-- WalkSpeed: 4
+-- RunSpeed: 12
+-- UNIT_FIELD_BOUNDINGRADIUS: 0.68939996
+-- UNIT_FIELD_COMBATREACH: 2.6999998
+UPDATE creature_template SET SpeedWalk = 4/2.5, SpeedRun = 12/7 WHERE entry = 20048;
+UPDATE creature_model_info SET bounding_radius = 0.68939996, combat_reach = 2.6999998 WHERE modelid IN (19505, 19506);
+
+-- Crimson Hand Blood Knight 20049
+-- [3] WalkSpeed: 4
+-- [3] RunSpeed: 12
+-- [3] UNIT_FIELD_BOUNDINGRADIUS: 0.68939996
+-- [3] UNIT_FIELD_COMBATREACH: 2.6999998
+UPDATE creature_template SET SpeedWalk = 4/2.5, SpeedRun = 12/7 WHERE entry = 20049;
+UPDATE creature_model_info SET bounding_radius = 0.68939996, combat_reach = 2.6999998 WHERE modelid IN (19503, 19504);
+
+-- Crimson Hand Inquisitor 20050
+-- WalkSpeed: 4
+-- RunSpeed: 12
+-- UNIT_FIELD_BOUNDINGRADIUS: 0.766
+-- UNIT_FIELD_COMBATREACH: 3
+UPDATE creature_template SET SpeedWalk = 4/2.5, SpeedRun = 12/7 WHERE entry = 20050;
+UPDATE creature_model_info SET bounding_radius = 0.766, combat_reach = 3 WHERE modelid IN (19507, 19508);
+
+-- Crystalcore Mechanic 20052
+-- WalkSpeed: 2.36110997200012207
+-- RunSpeed: 10
+-- UNIT_FIELD_BOUNDINGRADIUS: 0.75
+-- UNIT_FIELD_COMBATREACH: 1.5
+UPDATE creature_template SET SpeedWalk = 2.36110997200012207/2.5, SpeedRun = 10/7 WHERE entry = 20052;
+UPDATE creature_model_info SET bounding_radius = 0.75, combat_reach = 1.5 WHERE modelid = 19254;
+
+
 -- Delete old unused DBscripts
 -- Table `dbscripts_on_creature_movement` contain unused script, id 10124.
 -- Table `dbscripts_on_creature_movement` contain unused script, id 10125.
