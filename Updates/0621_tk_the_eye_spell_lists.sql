@@ -27,10 +27,10 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` = 2003201;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(2003201, 1, 37251, 0, -1, 100, 0, 100, 0, 3000, 7000, 6000, 10000, 'Bloodwarder Legionnaire - Hammer of Wrath - random player'),
-(2003201, 2, 37249, 0, -1, 201, 0, 100, 0, 2000, 8000, 8000, 16000, 'Bloodwarder Legionnaire - Flash of Light - missing 50% including self'),
-(2003201, 3, 39078, 0, -1, 3, 0, 100, 0, 4000, 12000, 6000, 14000, 'Bloodwarder Legionnaire - Cleanse - eligible friendly dispel'),
-(2003201, 4, 13005, 0, -1, 1, 0, 100, 0, 6000, 19000, 9000, 24000, 'Bloodwarder Legionnaire - Hammer of Justice - current');
+(2003201, 1, 37251, 0, -1, 100, 0, 100, 0, 3000, 7000, 6000, 10000, 'Bloodwarder Vindicator - Hammer of Wrath - random player'),
+(2003201, 2, 37249, 0, -1, 201, 0, 100, 0, 2000, 8000, 8000, 16000, 'Bloodwarder Vindicator - Flash of Light - missing 50% including self'),
+(2003201, 3, 39078, 0, -1, 3, 0, 100, 0, 4000, 12000, 6000, 14000, 'Bloodwarder Vindicator - Cleanse - eligible friendly dispel'),
+(2003201, 4, 13005, 0, -1, 1, 0, 100, 0, 6000, 19000, 9000, 24000, 'Bloodwarder Vindicator - Hammer of Justice - current');
 
 UPDATE `creature_template` SET `SpellList` = 2003201 WHERE `entry` = 20032;
 
@@ -106,9 +106,9 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` = 2003701;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(2003701, 1, 37317, 0, -1, 1, 0, 100, 0, 6000, 11000, 6000, 11000, 'Tempest Falconer - Knockback - current'),
-(2003701, 2, 37154, 0, -1, 101, 0, 100, 0, 14000, 18000, 18000, 28000, 'Tempest Falconer - Immolation Arrow - random not top aggro'),
-(2003701, 3, 39079, 2, -1, 1, 0, 100, 0, 0, 3000, 2000, 4000, 'Tempest Falconer - Shoot - current');
+(2003701, 1, 37317, 0, -1, 109, 0, 100, 0, 4000, 14000, 4000, 14000, 'Tempest Falconer - Knockback - random player in melee range'),
+(2003701, 2, 37154, 0, -1, 100, 0, 100, 0, 6000, 21000, 11000, 26000, 'Tempest Falconer - Immolation Arrow - random'),
+(2003701, 3, 39079, 2, -1, 1, 0, 100, 0, 0, 5000, 3000, 5000, 'Tempest Falconer - Shoot - current');
 
 UPDATE `creature_template` SET `SpellList` = 2003701 WHERE `entry` = 20037;
 
@@ -122,8 +122,8 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` = 2003801;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(2003801, 1, 37160, 0, -1, 2, 0, 100, 0, 8000, 18000, 21000, 36000, 'Phoenix-Hawk Hatchling - Silence - self'),
-(2003801, 2, 37319, 0, -1, 2, 0, 100, 0, 7000, 18000, 23000, 30000, 'Phoenix-Hawk Hatchling - Wing Buffet - self');
+(2003801, 1, 37160, 0, -1, 2, 0, 100, 0, 6000, 20000, 20000, 32000, 'Phoenix-Hawk Hatchling - Silence - self'),
+(2003801, 2, 37319, 0, -1, 2, 0, 100, 0, 7000, 16000, 11000, 26000, 'Phoenix-Hawk Hatchling - Wing Buffet - self');
 
 UPDATE `creature_template` SET `SpellList` = 2003801 WHERE `entry` = 20038;
 
@@ -137,8 +137,8 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` = 2003901;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(2003901, 1, 37156, 0, -1, 111, 0, 100, 0, 14000, 20000, 21000, 25000, 'Phoenix-Hawk - Dive - farthest player'),
-(2003901, 2, 37159, 0, -1, 105, 0, 100, 0, 3000, 6000, 11000, 14000, 'Phoenix-Hawk - Mana Burn - random mana user');
+(2003901, 1, 37156, 0, -1, 111, 0, 100, 0, 6000, 24000, 16000, 30000, 'Phoenix-Hawk - Dive - farthest player'),
+(2003901, 2, 37159, 0, -1, 105, 0, 100, 0, 5000, 14000, 16000, 26000, 'Phoenix-Hawk - Mana Burn - random mana user');
 
 UPDATE `creature_template` SET `SpellList` = 2003901 WHERE `entry` = 20039;
 

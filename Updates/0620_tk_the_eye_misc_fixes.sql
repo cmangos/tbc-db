@@ -76,7 +76,6 @@ UPDATE creature_model_info SET bounding_radius = 0.68939996, combat_reach = 2.69
 UPDATE creature_template SET SpeedWalk = 4/2.5, SpeedRun = 10/7 WHERE entry = 20035;
 UPDATE creature_model_info SET bounding_radius = 0.766, combat_reach = 3 WHERE modelid IN (19397, 20978);
 
-
 -- Bloodwarder Squire 20036
 -- WalkSpeed: 4
 -- RunSpeed: 10
@@ -84,6 +83,32 @@ UPDATE creature_model_info SET bounding_radius = 0.766, combat_reach = 3 WHERE m
 -- UNIT_FIELD_COMBATREACH: 2.25
 UPDATE creature_template SET SpeedWalk = 4/2.5, SpeedRun = 10/7 WHERE entry = 20036;
 UPDATE creature_model_info SET bounding_radius = 0.57449996, combat_reach = 2.25 WHERE modelid IN (19394, 21001);
+
+-- Tempest Falconer
+-- WalkSpeed: 4
+-- UNIT_FIELD_BOUNDINGRADIUS: 0.766
+-- UNIT_FIELD_COMBATREACH: 3
+UPDATE creature_template SET SpeedWalk = 4/2.5 WHERE entry = 20037;
+UPDATE creature_model_info SET bounding_radius = 0.766, combat_reach = 3 WHERE modelid IN (19398, 19399);
+
+
+-- Phoenix-Hawk Hatchling 20038
+-- WalkSpeed: 4
+-- RunSpeed: 12
+-- UNIT_FIELD_BOUNDINGRADIUS: 0.3
+-- UNIT_FIELD_COMBATREACH: 1.5
+UPDATE creature_template SET SpeedWalk = 4/2.5, SpeedRun = 12/7 WHERE entry = 20038;
+UPDATE creature_model_info SET bounding_radius = 0.3, combat_reach = 1.5 WHERE modelid = 19298;
+
+
+-- Phoenix-Hawk 20039
+-- WalkSpeed: 2.5
+-- RunSpeed: 12
+-- UNIT_FIELD_BASEATTACKTIME: 2000
+-- UNIT_FIELD_BOUNDINGRADIUS: 0.75
+-- UNIT_FIELD_COMBATREACH: 3.75
+UPDATE creature_template SET SpeedWalk = 2.5/2.5, SpeedRun = 12/7, MeleeBaseAttackTime = 2000 WHERE entry = 20039;
+UPDATE creature_model_info SET bounding_radius = 0.75, combat_reach = 3.75 WHERE modelid = 19299;
 
 -- Delete old unused DBscripts
 -- Table `dbscripts_on_creature_movement` contain unused script, id 10124.
