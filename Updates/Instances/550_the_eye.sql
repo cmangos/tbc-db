@@ -3,6 +3,7 @@ DBName: Tempest Keep - The Eye
 DBScriptName: instance_the_eye
 DB%Complete: 80
 DBComment:
+ToDO: Check for more RPs and rework Tempest-Smith RPs
 EndDBScriptData */
 
 SET @CGUID := 5500000; -- creatures
@@ -908,24 +909,12 @@ INSERT INTO `string_id` (Id, Name) VALUES
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (10121,10122,10123, 2003501);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2003501);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(10121, 0, 45, 0, 10121, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Crystalcore Devastator - 10% chance (Tempest-Smith follower random say)'),
-(10122, 0, 45, 0, 10122, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest-Smith - 50% chance (run diagnostics on Crystalcore Sentinel)'),
-(10123, 0, 45, 0, 10123, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest-Smith - 50% chance (run diagnostics on Crystalcore Devastator)'),
 -- Bloodwarder Marshal Patrol
 (2003501, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Marshal - Start RandomScript');
 
 
-DELETE FROM dbscripts_on_relay WHERE id IN (10121,10122,10123);
-INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(10121,0,0,0,0,20042,20,0,17839,17840,17841,0,0,0,0,0,'Tempest-Smith to say random'),
-(10122,1000,15,34946,0,0,0,0,0,0,0,0,0,0,0,0,'Tempest-Smith - Cast Repair Golem'),
-(10122,6000,0,0,0,0,0,0,17818,0,0,0,0,0,0,0,'Tempest-Smith - say 1'),
-(10122,7000,0,0,0,20041,20,0,17821,17822,17820,0,0,0,0,0,'Crystalcore Sentinel - say random'),
-(10123,1000,15,34946,0,0,0,0,0,0,0,0,0,0,0,0,'Tempest-Smith - Cast Repair Golem'),
-(10123,6000,0,0,0,0,20,0,17818,0,0,0,0,0,0,0,'Tempest-Smith - say 1'),
-(10123,7000,0,0,0,20040,20,0,17821,17822,17820,0,0,0,0,0,'Crystalcore Devastator - say random');
 
 DELETE FROM dbscripts_on_relay WHERE id IN (@RELAYID+1);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `condition_id`, `comments`) VALUES
@@ -938,12 +927,6 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+1, 6000, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Bloodwarder Marshal - Emote OneShotSalute'),
 (@RELAYID+1, 6000, 1, 0, @RELAYID+5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Bloodwarder Marshal - Yell Text'),
 (@RELAYID+1, 6000, 2, 36, 1, 0, 0, @STRINGID+1, 15, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - StringID - Reset Facing');
-
-DELETE FROM dbscript_random_templates WHERE id IN (10121,10122,10123,10124,10125,10128,10129,10132);
-INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
-(10121,1,10121,10,''),(10121,1,0,90,''),
-(10122,1,10122,0,''),(10122,1,0,0,''),
-(10123,1,10123,0,''),(10123,1,0,0,'');
 
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+5;
 INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
