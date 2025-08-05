@@ -14329,7 +14329,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Galgrom (20080) - NSR
 -- Bortega (20081) - NSR
 -- Yarley (20082) - NSR
--- Custodian of Time 20129 - npc_custodian_of_time
+-- Custodian of Time 20129
+('2012901','20129','29','0','100','0','1','1','0','0','0','0','11','17321','0','0','59','11','0','0','0','0','0','0','Custodian of Time - Face Summoner and Cast Spirit Spawn-in on Timer'),
+('2012902','20129','29','0','100','0','1000','1000','0','0','0','0','53','19900','11','0','0','0','0','0','0','0','0','0','Custodian of Time - START_RELAY_SCRIPT on Timer'),
+('2012903','20129','30','0','100','0','5','20129','0','0','0','0','53','19901','11','0','0','0','0','0','0','0','0','0','Custodian of Time - START_RELAY_SCRIPT on Receive AI Event 5'),
+('2012904','20129','30','0','100','0','6','20129','0','0','0','0','53','19906','11','0','0','0','0','0','0','0','0','0','Custodian of Time - START_RELAY_SCRIPT on Receive AI Event 6'),
+('2012905','20129','30','0','100','0','8','20129','0','0','0','0','53','19902','11','0','0','0','0','0','0','0','0','0','Custodian of Time - START_RELAY_SCRIPT on Receive AI Event 8'),
+('2012906','20129','30','0','100','0','9','20129','0','0','0','0','53','19903','11','0','0','0','0','0','0','0','0','0','Custodian of Time - START_RELAY_SCRIPT on Receive AI Event 9'),
+('2012907','20129','30','0','100','0','10','20129','0','0','0','0','53','19904','11','0','0','0','0','0','0','0','0','0','Custodian of Time - START_RELAY_SCRIPT on Receive AI Event 10'),
+('2012908','20129','30','0','100','0','11','20129','0','0','0','0','53','19905','11','0','0','0','0','0','0','0','0','0','Custodian of Time - START_RELAY_SCRIPT on Receive AI Event 11'),
 -- Andormu (20130) - NSR
 -- Nozari (20131) - NSR
 -- Steward of Time (20142) - npc_steward_of_time

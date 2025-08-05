@@ -190,6 +190,9 @@ UPDATE broadcast_text SET `text`="This large jack-o'-lantern rests in the middle
 -- source: https://warcraft.blizzplanet.com/blog/comments/wow_burning_crusade___patch_2_4___agamath_the_first_gate
 UPDATE broadcast_text SET `text`="Should Kil'jaeden rise up through the Sunwell our world will be thrown into a war the likes of which has not been seen for 10,000 years!$B$BOur mages are $3253w percent through the defenses of the first gate, Agamath." WHERE id=24247;
 
+-- q.10277 'The Caverns of Time' - Addition of "The Culling of Stratholme" Dungeon
+UPDATE broadcast_text SET `Text1`="This timeway is currently collapsing. What that may hold for the past, present and future is currently unknown..." WHERE `Id` = 17669; -- This timeway collapsed and reformed. The result was Stratholme of yore. What could possibly be happening inside?
+
 -- -------------------------------
 -- Creature custom changes
 -- -------------------------------
