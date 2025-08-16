@@ -76,7 +76,7 @@ DELETE FROM `creature_spell_list` WHERE `Id` = 2003501;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (2003501, 1, 35949, 0, -1, 2, 0, 100, 0, 6000, 25000, 16000, 32000, 'Bloodwarder Marshal - Bloodthirst - self'),
 (2003501, 2, 36132, 0, -1, 2, 0, 100, 0, 6000, 17000, 16000, 32000, 'Bloodwarder Marshal - Whirlwind - self'),
-(2003501, 3, 34996, 0, -1, 1, 0, 100, 0, 17000, 32000, 16000, 30000, 'Bloodwarder Marshal - Uppercut - current'),
+(2003501, 3, 34996, 0, -1, 1, 0, 100, 0, 17000, 32000, 16000, 30000, 'Bloodwarder Marshal - Uppercut - current');
 
 UPDATE `creature_template` SET `SpellList` = 2003501 WHERE `entry` = 20035;
 
