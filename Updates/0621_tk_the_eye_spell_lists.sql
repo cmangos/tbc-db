@@ -152,7 +152,8 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 DELETE FROM `creature_spell_list` WHERE `Id` = 2004001;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (2004001, 1, 37102, 0, -1, 1, 0, 100, 0, 16000, 26000, 16000, 26000, 'Crystalcore Devastator - Knock Away - current'),
-(2004001, 2, 35035, 0, -1, 2, 0, 100, 0, 17000, 28000, 30000, 40000, 'Crystalcore Devastator - Countercharge - self');
+(2004001, 1, 35039, 0, 1189, 122, 0, 100, 0, 2000, 20000, 2000, 20000, 'Crystalcore Devastator - Countercharge - random casting'),
+(2004001, 2, 35035, 0, 1190, 0, 0, 100, 0, 17000, 28000, 30000, 40000, 'Crystalcore Devastator - Countercharge - self');
 
 UPDATE `creature_template` SET `SpellList` = 2004001 WHERE `entry` = 20040;
 
