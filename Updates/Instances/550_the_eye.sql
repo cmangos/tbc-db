@@ -397,7 +397,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+3, 'The Eye - Group 003 - Squad 003', 0, 6, @SGGUID+1, 3, @STRINGID+1), -- spawn_group_squad
 (@SGGUID+4, 'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)', 0, 3, @SGGUID+1, 3, 0),
 -- Al'ar room Patrol
-(@SGGUID+5, 'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)', 0, 0, @SGGUID+1, 3, 0),
+(@SGGUID+5, 'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)', 0, 0, @SGGUID+1, 3, @STRINGID+2),
 (@SGGUID+6, 'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)', 0, 0, @SGGUID+1, 3, 0),
 -- Phoenix-Hawk group not respawning when Al'ar is Dead
 (@SGGUID+7, 'The Eye - Group 007 - Phoenix-Hawk (4)', 0, 0, @SGGUID+1, 0, 0),
@@ -769,8 +769,8 @@ INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+4, 2, 2, 0, @SGGUID+4, 2, 'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)'),
-(@SGGUID+5, 0, 4, 0, @SGGUID+5, 2, 'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
-(@SGGUID+6, 0, 4, 0, @SGGUID+6, 2, 'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
+(@SGGUID+5, 0, 5, 0, @SGGUID+5, 2, 'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
+(@SGGUID+6, 0, 5, 0, @SGGUID+7, 2, 'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
 (@SGGUID+15, 2, 4, 0, @SGGUID+15, 4, 'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)'),
 (@SGGUID+16, 2, 3, 0, @SGGUID+16, 4, 'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire'),
 (@SGGUID+28, 2, 3, 0, @SGGUID+28, 4, 'The Eye - Group 023 - Patrol 006 - Nether Scryer (1) | Bloodwarder Legionnaire'),
@@ -780,8 +780,9 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+4,'The Eye - Group 004 - Patrol 001 - Bloodwarder Marshal | Bloodwarder Squire (2)'),
-(@SGGUID+5,'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
-(@SGGUID+6,'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
+(@SGGUID+5,'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6) - Path 1'),
+(@SGGUID+6,'The Eye - Group 005 - Patrol 002 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6) - Path 2'),
+(@SGGUID+7,'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6)'),
 (@SGGUID+15,'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)'),
 (@SGGUID+16,'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire'),
 (@SGGUID+28,'The Eye - Group 023 - Patrol 006 -Nether Scryer (1) | Bloodwarder Legionnaire'),
@@ -809,20 +810,23 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+4, 15, 111.48205,-1.692717,-2.3092167, 100, 8000, 2003501),
 (@SGGUID+4, 16, 77.92409,-1.4717377,-2.428264, 100, 0, 0),
 (@SGGUID+4, 17, 59.693306,-1.38827,-2.428264, 100, 8000, 2003501),
--- Patrol 002
-(@SGGUID+5, 1, 350.90543,-41.430454,-2.3856533, 100, 0, 0), 
-(@SGGUID+5, 2, 314.68127,-41.644608,-2.3894813, 100, 0, 0),
-(@SGGUID+5, 3, 288.23596,-15.741143,-2.3894465, 100, 5000, 0), -- waitt
-(@SGGUID+5, 4, 314.1068,-41.330368,-2.3894804, 100, 0, 0),
-(@SGGUID+5, 5, 350.24118,-41.162407,-2.3858225, 100, 0, 0),
-(@SGGUID+5, 6, 377.03555,-15.332716,-2.3867216, 100, 5000, 0), -- wait
+-- Patrol 002 - Path 1
+(@SGGUID+5, 1, 377.03555,-15.332716,-2.3867216, 100, 0, 0),
+(@SGGUID+5, 2, 350.90543,-41.430454,-2.3856533, 100, 0, 0),
+(@SGGUID+5, 3, 314.68127,-41.644608,-2.3894813, 100, 0, 0),
+(@SGGUID+5, 4, 288.23596,-15.741143,-2.3894465, 100, 10000, 2003701), -- Change to random Movement for 15-30 seconds before changing to Path 2
+-- Patrol 002 - Path 2
+(@SGGUID+6, 1, 288.23596,-15.741143,-2.3894465, 100, 0, 0),
+(@SGGUID+6, 2, 314.1068,-41.330368,-2.3894804, 100, 0, 0),
+(@SGGUID+6, 3, 350.24118,-41.162407,-2.3858225, 100, 0, 0),
+(@SGGUID+6, 4, 377.03555,-15.332716,-2.3867216, 100, 10000, 2003702), -- wait
 -- Patrol 003
-(@SGGUID+6, 1,314.9742,39.8861,-2.3890655, 100, 0, 0),
-(@SGGUID+6, 2,350.92532,39.619263,-2.3884583, 100, 0, 0),
-(@SGGUID+6, 3,376.66275,13.843831,-2.3868701, 100, 5000, 0), -- wait rnd move
-(@SGGUID+6, 4, 350.39078,39.908775,-2.3885098, 100, 0, 0),
-(@SGGUID+6, 5, 314.34283,40.37823,-2.3890648, 100, 0, 0),
-(@SGGUID+6, 6, 287.89716,14.272659,-2.3893754, 100, 5000, 0), -- Wait rnd move
+(@SGGUID+7, 1,314.9742,39.8861,-2.3890655, 100, 0, 0),
+(@SGGUID+7, 2,350.92532,39.619263,-2.3884583, 100, 0, 0),
+(@SGGUID+7, 3,376.66275,13.843831,-2.3868701, 100, 5000, 0), -- wait rnd move
+(@SGGUID+7, 4, 350.39078,39.908775,-2.3885098, 100, 0, 0),
+(@SGGUID+7, 5, 314.34283,40.37823,-2.3890648, 100, 0, 0),
+(@SGGUID+7, 6, 287.89716,14.272659,-2.3893754, 100, 5000, 0), -- Wait rnd move
 -- Patrol 004
 (@SGGUID+15, 1, 488.87756,342.66516,17.682777, 100, 0, 0),
 (@SGGUID+15, 2, 480.81116,330.3677,17.701866, 100, 0, 0),
@@ -900,23 +904,34 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+4, 42, 4820, 1, 0, 0, 0, 'Kael\'thas Sunstrider - Trash Respawn');
 
 
-DELETE FROM string_id WHERE Id IN (@STRINGID+1);
+DELETE FROM string_id WHERE Id IN (@STRINGID+1, @STRINGID+2);
 INSERT INTO `string_id` (Id, Name) VALUES 
-(@STRINGID+1, 'TEMPEST_KEEP_MARSHAL_RP');
-
+(@STRINGID+1, 'TEMPEST_KEEP_MARSHAL_RP'),
+(@STRINGID+2, 'TEMPEST_KEEP_FALCONER_RP_01');
 
 -- =========
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (2003501);
-INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2003501, 2003701, 2003702);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Bloodwarder Marshal Patrol
-(2003501, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Marshal - Start RandomScript');
+(2003501, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Marshal - Start RandomScript'),
+-- The Eye - Group 006 - Patrol 003 - random switching between random movement and waypoint movement
+-- WaypointPath - SpawnGroup Formation leader starts script on last waypoint - Path 1
+(2003701, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Stop Waypoint'), -- Important to remove current waypoints, else we cant delete formation
+(2003701, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - SendAIEvent A to self'), -- Inform self that we stoped to get random waittimer (guid cai)
+(2003701, 0, 2, 51, 151, @SGGUID+5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Remove Formation'), 
+(2003701, 0, 3, 20, 1, 10, 0, @STRINGID+2, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement'), -- all npcs from spawn_group have stringid assigned and start random movement.
+-- The Eye - Group 006 - Patrol 003 - random switching between random movement and waypoint movement
+-- WaypointPath - SpawnGroup Formation leader starts script on last waypoint - Path 2
+(2003702, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Stop Waypoint'),
+(2003702, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - SendAIEvent B to self'), -- Inform self that we stoped to get random waittimer (guid cai)
+(2003702, 0, 2, 51, 151, @SGGUID+5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Remove Formation'),
+(2003702, 0, 3, 20, 1, 10, 0, @STRINGID+2, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement');
 
 
-
-DELETE FROM dbscripts_on_relay WHERE id IN (@RELAYID+1);
+DELETE FROM dbscripts_on_relay WHERE id IN (@RELAYID+1, @RELAYID+2, @RELAYID+3);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `condition_id`, `comments`) VALUES
 -- Bloodwarder Marshal - RP with Group
 (@RELAYID+1, 0, 0, 31, 0, 15, 0, @STRINGID+1, 15, 2048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Bloodwarder Marshal - TerminateScript when no StringID found'),
@@ -926,7 +941,16 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+1, 1000, 1, 35, 5, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Bloodwarder Marshal - SendAIEvent A'),
 (@RELAYID+1, 6000, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Bloodwarder Marshal - Emote OneShotSalute'),
 (@RELAYID+1, 6000, 1, 0, @RELAYID+5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Bloodwarder Marshal - Yell Text'),
-(@RELAYID+1, 6000, 2, 36, 1, 0, 0, @STRINGID+1, 15, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - StringID - Reset Facing');
+(@RELAYID+1, 6000, 2, 36, 1, 0, 0, @STRINGID+1, 15, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - StringID - Reset Facing'),
+-- The Eye - Group 006 - Patrol 003 - Get back Formation and move waypoints - Path 2
+-- Leader at last waypoint changes phase to 1 (guid cai) and starts this relay script after 15-30 seconds
+(@RELAYID+2, 0, 0, 20, 0, 0, 0, @STRINGID+2, 15, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Group 006 - StringID - Remove Random Movement'), -- all npcs from spawn_group have stringid assigned and will stop random movement
+(@RELAYID+2, 0, 0, 51, 150, @SGGUID+5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 'The Eye - Group 006 - Patrol 003 - Add Formation'), -- add back to Formation - Type 0 - Spread 4
+(@RELAYID+2, 0, 0, 20, 2, @SGGUID+6, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Group 006 - Patrol 003 - Move Path 2'), -- start 2nd path
+-- The Eye - Group 006 - Patrol 003 - Get back Formation and move waypoints - Path 1
+(@RELAYID+3, 0, 0, 20, 0, 0, 0, @STRINGID+2, 15, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Group 006 - StringID - Remove Random Movement'),
+(@RELAYID+3, 0, 0, 51, 150, @SGGUID+5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 'The Eye - Group 006 - Patrol 003 - Add Formation'),
+(@RELAYID+3, 0, 0, 20, 2, @SGGUID+5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Group 006 - Patrol 003 - Move Path 1');
 
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+5;
 INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES

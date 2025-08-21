@@ -29614,7 +29614,30 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodwarder Squire 20036 - spell_list
 -- Tempest Falconer 20037 - spell_list
 ('2003701','20037','11','0','100','0','0','0','0','0','0','0','57','2','40','0','0','0','0','0','0','0','0','0','Tempest Falconer - Enable Range Mode on Spawn'),
+('2003702','20037','30','0','100','1','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Tempest Falconer - Set Phase 1 on Receive EventAI A'),
+('2003703','20037','30','0','100','1','6','0','0','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Tempest Falconer - Set Phase 2 on Receive EventAI B'),
+-- GUID CAI
+('2003704','-5500048','1','5','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500002','0','0','0','0','0','0','Tempest Falconer (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 1)'),
+('2003705','-5500048','1','3','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500003','0','0','0','0','0','0','Tempest Falconer (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 2)'),
+('2003706','-5500049','1','5','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500002','0','0','0','0','0','0','Tempest Falconer (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 1)'),
+('2003707','-5500049','1','3','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500003','0','0','0','0','0','0','Tempest Falconer (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 2)'),
+
 -- Phoenix-Hawk Hatchling 20038 - spell_list
+('2003801','20038','30','0','100','1','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Phoenix-Hawk Hatchling - Set Phase 1 on Receive EventAI A'),
+('2003802','20038','30','0','100','1','6','0','0','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Phoenix-Hawk Hatchling - Set Phase 2 on Receive EventAI B'),
+-- GUID CAI
+('2003803','-5500050','1','5','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500002','0','0','0','0','0','0','Phoenix-Hawk Hatchling (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 1)'),
+('2003804','-5500050','1','3','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500003','0','0','0','0','0','0','Phoenix-Hawk Hatchling (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 2)'),
+('2003805','-5500051','1','5','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500002','0','0','0','0','0','0','Phoenix-Hawk Hatchling (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 1)'),
+('2003806','-5500051','1','3','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500003','0','0','0','0','0','0','Phoenix-Hawk Hatchling (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 2)'),
+('2003807','-5500052','1','5','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500002','0','0','0','0','0','0','Phoenix-Hawk Hatchling (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 1)'),
+('2003808','-5500052','1','3','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500003','0','0','0','0','0','0','Phoenix-Hawk Hatchling (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 2)'),
+('2003809','-5500053','1','5','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500002','0','0','0','0','0','0','Phoenix-Hawk Hatchling (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 1)'),
+('2003810','-5500053','1','3','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500003','0','0','0','0','0','0','Phoenix-Hawk Hatchling (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 2)'),
+('2003811','-5500060','1','5','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500002','0','0','0','0','0','0','Phoenix-Hawk Hatchling (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 1)'),
+('2003812','-5500060','1','3','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500003','0','0','0','0','0','0','Phoenix-Hawk Hatchling (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 2)'),
+('2003813','-5500061','1','5','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500002','0','0','0','0','0','0','Phoenix-Hawk Hatchling (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 1)'),
+('2003814','-5500061','1','3','100','1','15000','30000','15000','30000','0','0','22','0','0','0','53','5500003','0','0','0','0','0','0','Phoenix-Hawk Hatchling (Guid EAI) - Set Phase 0 and Start RelayScript OOC (Phase 2)'),
 -- Phoenix-Hawk 20039 - spell_list
 -- Crystalcore Devastator 20040 - spell_list
 ('2004001','20040','11','0','100','0','0','0','0','0','0','0','11','18943','0','34','0','0','0','0','0','0','0','0','Crystalcore Devastator - Cast Double Attack on Spawn'),
