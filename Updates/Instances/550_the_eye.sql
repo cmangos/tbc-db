@@ -90,9 +90,13 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (19514, 0, 7, 294.213, -32.4156, 43.6141, 100, 0, 0),
 (19514, 0, 8, 332.342, -47.5406, 43.6975, 100, 0, 0);
 
-DELETE FROM creature_spawn_data WHERE guid IN(@CGUID+3);
+DELETE FROM creature_spawn_data WHERE guid IN(@CGUID+3, @CGUID+62, @CGUID+63, @CGUID+64, @CGUID+65);
 INSERT INTO creature_spawn_data(Guid,Id) VALUES
-(@CGUID+3, 1);
+(@CGUID+3, 1),
+(@CGUID+62, 1),
+(@CGUID+63, 1),
+(@CGUID+64, 1),
+(@CGUID+65, 1);
 
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 
@@ -939,7 +943,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (2003703, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Stop Waypoint'), -- Important to remove current waypoints, else we cant delete formation
 (2003703, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - SendAIEvent A to self'), -- Inform self that we stoped to get random waittimer (guid cai)
 (2003703, 1, 2, 51, 151, @SGGUID+6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Remove Formation'),
-(2003703, 1000, 0, 20, 1, 10, 0, @STRINGID+2, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement'), -- all npcs from spawn_group have stringid assigned and start random movement.
+(2003703, 1000, 0, 20, 1, 10, 0, @STRINGID+3, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement'), -- all npcs from spawn_group have stringid assigned and start random movement.
 -- The Eye - Group 007 - Patrol 004 - random switching between random movement and waypoint movement
 -- WaypointPath - SpawnGroup Formation leader starts script on last waypoint - Path 2
 (2003704, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Stop Waypoint'),
