@@ -822,7 +822,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+6, 3, 350.24118,-41.162407,-2.3858225, 100, 0, 0),
 (@SGGUID+6, 4, 377.03555,-15.332716,-2.3867216, 100, 1000, 2003702), -- Change to random Movement for 15-30 seconds before changing to Path 2
 -- Patrol 003 - Path 1
-(@SGGUID+7, 1, 350.39078,39.908775,-2.3885098, 100, 0, 0),
+(@SGGUID+7, 1, 287.89716,14.272659,-2.3893754, 100, 0, 0),
 (@SGGUID+7, 2, 314.9742,39.8861,-2.3890655, 100, 0, 0),
 (@SGGUID+7, 3, 350.92532,39.619263,-2.3884583, 100, 0, 0),
 (@SGGUID+7, 4, 376.66275,13.843831,-2.3868701, 100, 1000, 2003703), -- Change to random Movement for 15-30 seconds before changing to Path 2
@@ -926,26 +926,26 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- WaypointPath - SpawnGroup Formation leader starts script on last waypoint - Path 1
 (2003701, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Stop Waypoint'), -- Important to remove current waypoints, else we cant delete formation
 (2003701, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - SendAIEvent A to self'), -- Inform self that we stoped to get random waittimer (guid cai)
-(2003701, 0, 2, 51, 151, @SGGUID+5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Remove Formation'), 
-(2003701, 0, 3, 20, 1, 10, 0, @STRINGID+2, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement'), -- all npcs from spawn_group have stringid assigned and start random movement.
+(2003701, 1, 2, 51, 151, @SGGUID+5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Remove Formation'), 
+(2003701, 1000, 0, 20, 1, 10, 0, @STRINGID+2, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement'), -- all npcs from spawn_group have stringid assigned and start random movement.
 -- The Eye - Group 006 - Patrol 003 - random switching between random movement and waypoint movement
 -- WaypointPath - SpawnGroup Formation leader starts script on last waypoint - Path 2
 (2003702, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Stop Waypoint'),
 (2003702, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - SendAIEvent B to self'), -- Inform self that we stoped to get random waittimer (guid cai)
-(2003702, 0, 2, 51, 151, @SGGUID+6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Remove Formation'),
-(2003702, 0, 3, 20, 1, 10, 0, @STRINGID+3, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement'),
+(2003702, 1, 2, 51, 151, @SGGUID+5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Remove Formation'),
+(2003702, 1000, 0, 20, 1, 10, 0, @STRINGID+3, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement'),
 -- The Eye - Group 007 - Patrol 004 - random switching between random movement and waypoint movement
 -- WaypointPath - SpawnGroup Formation leader starts script on last waypoint - Path 1
 (2003703, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Stop Waypoint'), -- Important to remove current waypoints, else we cant delete formation
 (2003703, 0, 1, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - SendAIEvent A to self'), -- Inform self that we stoped to get random waittimer (guid cai)
-(2003703, 0, 2, 51, 151, @SGGUID+5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Remove Formation'), 
-(2003703, 0, 3, 20, 1, 10, 0, @STRINGID+2, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement'), -- all npcs from spawn_group have stringid assigned and start random movement.
+(2003703, 1, 2, 51, 151, @SGGUID+6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Remove Formation'),
+(2003703, 1000, 0, 20, 1, 10, 0, @STRINGID+2, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement'), -- all npcs from spawn_group have stringid assigned and start random movement.
 -- The Eye - Group 007 - Patrol 004 - random switching between random movement and waypoint movement
 -- WaypointPath - SpawnGroup Formation leader starts script on last waypoint - Path 2
 (2003704, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Stop Waypoint'),
 (2003704, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - SendAIEvent B to self'), -- Inform self that we stoped to get random waittimer (guid cai)
-(2003704, 0, 2, 51, 151, @SGGUID+6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Remove Formation'),
-(2003704, 0, 3, 20, 1, 10, 0, @STRINGID+3, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement');
+(2003704, 1, 2, 51, 151, @SGGUID+6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Remove Formation'),
+(2003704, 1000, 0, 20, 1, 10, 0, @STRINGID+3, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement');
 
 
 
