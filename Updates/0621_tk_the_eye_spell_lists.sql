@@ -152,8 +152,8 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 DELETE FROM `creature_spell_list` WHERE `Id` = 2004001;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (2004001, 1, 37102, 0, -1, 1, 0, 100, 0, 16000, 26000, 16000, 26000, 'Crystalcore Devastator - Knock Away - current'),
-(2004001, 1, 35039, 0, 1189, 122, 0, 100, 0, 2000, 15000, 1000, 15000, 'Crystalcore Devastator - Countercharge - random casting'),
-(2004001, 2, 35035, 0, 1190, 0, 0, 100, 0, 17000, 28000, 30000, 40000, 'Crystalcore Devastator - Countercharge - self');
+(2004001, 2, 35039, 0, 1189, 122, 0, 100, 0, 2000, 15000, 1000, 15000, 'Crystalcore Devastator - Countercharge - random casting'),
+(2004001, 3, 35035, 0, 1190, 0, 0, 100, 0, 17000, 28000, 30000, 40000, 'Crystalcore Devastator - Countercharge - self');
 
 UPDATE `creature_template` SET `SpellList` = 2004001 WHERE `entry` = 20040;
 
@@ -245,7 +245,7 @@ DELETE FROM `creature_spell_list` WHERE `Id` = 2004401;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (2004401, 1, 37279, 0, -1, 100, 0, 100, 0, 6000, 14000, 11000, 17000, 'Novice Astromancer - Rain of Fire - random'),
 (2004401, 2, 38728, 0, -1, 1, 0, 100, 0, 11000, 20000, 11000, 20000, 'Novice Astromancer - Fire Nova - current'),
-(2004401, 3, 37111, 0, -1, 12, 0, 100, 0, 6000, 12000, 6000, 12000, 'Novice Astromancer - Fireball - current');
+(2004401, 3, 37111, 0, -1, 1, 0, 100, 0, 6000, 12000, 6000, 12000, 'Novice Astromancer - Fireball - current');
 
 UPDATE `creature_template` SET `SpellList` = 2004401 WHERE `entry` = 20044;
 
