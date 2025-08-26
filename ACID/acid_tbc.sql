@@ -29660,6 +29660,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2004101','20041','37','0','100','1','37104','0','0','0','0','0','1','19264','0','0','0','0','0','0','0','0','0','0','Crystalcore Sentinel - On Cast Overcharge EmotedText'),
 -- Tempest-Smith 20042 - spell_list
 ('2004201','20042','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Tempest-Smith - Interrupt Channelling on Aggro'),
+-- GUID
+('2004202','5500084','1','0','100','1','20000','80000','20000','80000','0','0','5','1','0','0','54','0','0','5500006','0','0','0','0','Tempest-Smith (Guid EAI) - Emote Talk and Say RandomText'),
+('2004203','5500085','1','0','100','1','30000','100000','30000','100000','0','0','5','1','0','0','54','17840','0','0','0','0','0','0','Tempest-Smith (Guid EAI) - Emote Talk and Say Text'),
 -- Apprentice Star Scryer 20043 - spell_list
 -- Novice Astromancer 20044 - spell_list
 ('2004401','20044','0','0','100','1025','0','0','600000','600000','0','0','11','37282','0','0','0','0','0','0','0','0','0','0','Novice Astromancer - Cast Fire Shield'),

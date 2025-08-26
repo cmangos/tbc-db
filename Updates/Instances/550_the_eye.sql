@@ -790,8 +790,8 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+8,'The Eye - Group 006 - Patrol 003 - Tempest Falconer (2) | Phoenix-Hawk Hatchling (6) - Path 2'),
 (@SGGUID+15,'The Eye - Group 015 - Patrol 004 - Crystalcore Devastator (1) | Tempest-Smith (2)'),
 (@SGGUID+16,'The Eye - Group 016 - Patrol 005 - Astromancer Lorder (1) | Bloodwarder Legionnaire'),
-(@SGGUID+28,'The Eye - Group 023 - Patrol 006 -Nether Scryer (1) | Bloodwarder Legionnaire'),
-(@SGGUID+29,'The Eye - Group 024 - Patrol 007 -Nether Scryer (1) | Bloodwarder Legionnaire'),
+(@SGGUID+28,'The Eye - Group 023 - Patrol 006 - Nether Scryer (1) | Bloodwarder Legionnaire'),
+(@SGGUID+29,'The Eye - Group 024 - Patrol 007 - Nether Scryer (1) | Bloodwarder Legionnaire'),
 (@SGGUID+32,'The Eye - Group 027 - Patrol 008 - Crimson Hand inquisitor (1) | Crimson Hand Centurion (2)'),
 (@SGGUID+35,'The Eye - Group 030 - Patrol 009 - Crimson Hand inquisitor (1) | Crimson Hand Centurion (2)');
 
@@ -983,7 +983,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+5, 0, 0, 51, 150, @SGGUID+6, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 'The Eye - Group 007 - Patrol 004 - Add Formation'),
 (@RELAYID+5, 0, 0, 20, 2, @SGGUID+7, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Group 007 - Patrol 004 - Move Path 1');
 
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+5;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
 INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 -- Bloodwarder Marshal 30% Chance to start relay script
 (@RELAYID+1, 1, @RELAYID+1, 90, 'Bloodwarder Marshal - RP Script'),
@@ -1005,7 +1005,10 @@ INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `c
 (@RELAYID+5, 0, 18046, 0, 'Bloodwarder Marshal - Yell 2'),
 (@RELAYID+5, 0, 18047, 0, 'Bloodwarder Marshal - Yell 3'),
 (@RELAYID+5, 0, 18048, 0, 'Bloodwarder Marshal - Yell 4'),
-(@RELAYID+5, 0, 18049, 0, 'Bloodwarder Marshal - Yell 5');
+(@RELAYID+5, 0, 18049, 0, 'Bloodwarder Marshal - Yell 5'),
+-- Tempest-Smith - random text
+(@RELAYID+6, 0, 17839, 0, 'Tempest-Smith - Say 1'),
+(@RELAYID+6, 0, 17841, 0, 'Tempest-Smith - Say 2');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
