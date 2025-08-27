@@ -949,7 +949,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (2003702, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Stop Waypoint'),
 (2003702, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - SendAIEvent B to self'), -- Inform self that we stoped to get random waittimer (guid cai)
 (2003702, 1, 2, 51, 151, @SGGUID+5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Remove Formation'),
-(2003702, 1000, 0, 20, 1, 10, 0, @STRINGID+3, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement'),
+(2003702, 1000, 0, 20, 1, 10, 0, @STRINGID+2, 20, 2568, 0, 0, 0, 0, 0, 0, 0, 0, 'StringID - Change to Random Movement'),
 -- The Eye - Group 007 - Patrol 004 - random switching between random movement and waypoint movement
 -- WaypointPath - SpawnGroup Formation leader starts script on last waypoint - Path 1
 (2003703, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest Falconer - Stop Waypoint'), -- Important to remove current waypoints, else we cant delete formation
