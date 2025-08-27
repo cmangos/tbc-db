@@ -96,7 +96,17 @@ INSERT INTO creature_spawn_data(Guid,Id) VALUES
 (@CGUID+62, 1),
 (@CGUID+63, 1),
 (@CGUID+64, 1),
-(@CGUID+65, 1);
+(@CGUID+65, 1),
+(@CGUID+66, 2004201), -- Crystalcore Devastator
+(@CGUID+68, 2004201), -- Crystalcore Devastator
+(@CGUID+76, 2004201), -- Crystalcore Sentinel
+(@CGUID+77, 2004201), -- Crystalcore Sentinel
+(@CGUID+78, 2004201), -- Crystalcore Sentinel
+(@CGUID+79, 2004201); -- Crystalcore Sentinel
+
+DELETE FROM creature_spawn_data_template WHERE Entry IN (20042, 2004201);
+INSERT INTO `creature_spawn_data_template` (`Entry`, `StringId`, `Name`) VALUES 
+(2004201, @STRINGID+4, 'Tempest Keep - The Eye - Tempest-Smith - RP Target');
 
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 
@@ -912,11 +922,13 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+4, 42, 4820, 1, 0, 0, 0, 'Kael\'thas Sunstrider - Trash Respawn');
 
 
-DELETE FROM string_id WHERE Id IN (@STRINGID+1, @STRINGID+2, @STRINGID+3);
+DELETE FROM string_id WHERE Id IN (@STRINGID+1, @STRINGID+2, @STRINGID+3, @STRINGID+4);
 INSERT INTO `string_id` (Id, Name) VALUES 
 (@STRINGID+1, 'TEMPEST_KEEP_MARSHAL_RP'),
 (@STRINGID+2, 'TEMPEST_KEEP_FALCONER_RP_01'),
-(@STRINGID+3, 'TEMPEST_KEEP_FALCONER_RP_01');
+(@STRINGID+3, 'TEMPEST_KEEP_FALCONER_RP_01'),
+(@STRINGID+4, 'TEMPEST_KEEP_TEMPEST_SMITH_RP_TARGET');
+
 
 -- =========
 -- DBSCRIPTS
@@ -953,7 +965,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 
 
 
-DELETE FROM dbscripts_on_relay WHERE id IN (@RELAYID+1, @RELAYID+2, @RELAYID+3, @RELAYID+4, @RELAYID+5);
+DELETE FROM dbscripts_on_relay WHERE id IN (@RELAYID+1, @RELAYID+2, @RELAYID+3, @RELAYID+4, @RELAYID+5, @RELAYID+6, @RELAYID+7, @RELAYID+8);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `condition_id`, `comments`) VALUES
 -- Bloodwarder Marshal - RP with Group
 (@RELAYID+1, 0, 0, 31, 0, 15, 0, @STRINGID+1, 15, 2048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Bloodwarder Marshal - TerminateScript when no StringID found'),
@@ -981,9 +993,27 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- The Eye - Group 007 - Patrol 004 - Get back Formation and move waypoints - Path 1
 (@RELAYID+5, 0, 0, 20, 0, 0, 0, @STRINGID+3, 15, 2560, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Group 007 - StringID - Remove Random Movement'),
 (@RELAYID+5, 0, 0, 51, 150, @SGGUID+6, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 'The Eye - Group 007 - Patrol 004 - Add Formation'),
-(@RELAYID+5, 0, 0, 20, 2, @SGGUID+7, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Group 007 - Patrol 004 - Move Path 1');
+(@RELAYID+5, 0, 0, 20, 2, @SGGUID+7, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Group 007 - Patrol 004 - Move Path 1'),
+-- Tempest-Smith RP with Crystalcore Devastator
+(@RELAYID+6, 0, 0, 31, 0, 15, 0, @STRINGID+4, 10, 2048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Tempest-Smith - TerminateScript when no StringID found'),
+(@RELAYID+6, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Tempest-Smith - Emote OneShotTalk'),
+(@RELAYID+6, 1, 2, 0, 0, 0, 0, 0, 0, 0, 17818, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Tempest-Smith - Say Text'),
+(@RELAYID+6, 6000, 0, 1, 1, 0, 0, @STRINGID+4, 10, 2048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - StringID  - Emote OneShotTalk'),
+(@RELAYID+6, 6000, 1, 0, @RELAYID+7, 0, 0, @STRINGID+4, 10, 2048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - StringID  - Say RandomText'),
+-- Tempest-Smith channel spell
+(@RELAYID+7, 0, 0, 31, 0, 15, 0, @STRINGID+4, 10, 2048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Tempest-Smith - TerminateScript when no StringID found'),
+(@RELAYID+7, 1, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Tempest-Smith - Set ActiveObject'),
+(@RELAYID+7, 1, 2, 15, 34946, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Tempest-Smith - Cast Golem Repair'),
+(@RELAYID+7, 5000, 1, 47, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Tempest-Smith - Interupt Golem Repair'),
+(@RELAYID+7, 5000, 2, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Tempest-Smith - Remove ActiveObject'),
+-- Crystalcore Mechanic
+(@RELAYID+8, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Crystalcore Mechanic - Set ActiveObject'),
+(@RELAYID+8, 0, 1, 1, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Crystalcore Mechanic - Set EmoteState'),
+(@RELAYID+8, 6000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Crystalcore Mechanic - Remove EmoteState'),
+(@RELAYID+8, 6000, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'The Eye - Crystalcore Mechanic - Remove ActiveObject');
 
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
+
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+8;
 INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 -- Bloodwarder Marshal 30% Chance to start relay script
 (@RELAYID+1, 1, @RELAYID+1, 90, 'Bloodwarder Marshal - RP Script'),
@@ -1008,7 +1038,15 @@ INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `c
 (@RELAYID+5, 0, 18049, 0, 'Bloodwarder Marshal - Yell 5'),
 -- Tempest-Smith - random text
 (@RELAYID+6, 0, 17839, 0, 'Tempest-Smith - Say 1'),
-(@RELAYID+6, 0, 17841, 0, 'Tempest-Smith - Say 2');
+(@RELAYID+6, 0, 17841, 0, 'Tempest-Smith - Say 2'),
+-- Crystalcore Devastator/Crystalcore Sentinel random answer
+(@RELAYID+7, 0, 17820, 0, 'Crystalcore Devastator/Crystalcore Sentinel - Say 1'),
+(@RELAYID+7, 0, 17821, 0, 'Crystalcore Devastator/Crystalcore Sentinel - Say 2'),
+(@RELAYID+7, 0, 17822, 0, 'Crystalcore Devastator/Crystalcore Sentinel - Say 3'),
+-- Tempest-Smith - Random RP with Crystalcore Devastator
+(@RELAYID+8, 1, @RELAYID+6, 0, 'Tempest-Smith - RP 1'), -- Saying texts and devastator/sentinel answering
+(@RELAYID+8, 1, @RELAYID+7, 0, 'Tempest-Smith - RP 2'); -- Casting Golem Repair
+
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
