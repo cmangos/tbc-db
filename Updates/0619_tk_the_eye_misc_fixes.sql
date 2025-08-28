@@ -15,7 +15,7 @@
 UPDATE creature_template SET MeleeBaseAttackTime = 1500 WHERE entry = 18806;
 -- SniffedDB bounding_radius = 0,766 (2 cmangos)
 -- SniffedDB combat_reach = 3 (0 cmangos)
-UPDATE creature_model_info SET bounding_radius = 0.766, combat_reach = 2 WHERE modelid IN (19050, 19051, 19052);
+UPDATE creature_model_info SET bounding_radius = 0.766, combat_reach = 3 WHERE modelid IN (19050, 19051, 19052);
 
 -- Solarium Agent 
 -- SniffedDB Level 60-70 (cmangos only 69)
