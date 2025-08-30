@@ -31693,6 +31693,33 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==================================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 
+-- =================
+-- Public Test Realm
+-- =================
+('2672401','26724','1','0','100','0','5000','5000','0','0','0','0','11','47327','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Armor, Cloth - Cast TAR Pedestal - Armor, Cloth on Spawn'),
+('2673801','26738','1','0','100','0','5000','5000','0','0','0','0','11','47347','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Accessories - Cast TAR Pedestal - Accessories on Spawn'),
+('2673901','26739','1','0','100','0','5000','5000','0','0','0','0','11','47348','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Enchantments - Cast TAR Pedestal - Enchantments on Spawn'),
+('2674001','26740','1','0','100','0','5000','5000','0','0','0','0','11','47349','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Gems - Cast TAR Pedestal - Gems on Spawn'),
+('2674101','26741','1','0','100','0','5000','5000','0','0','0','0','11','47350','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - General Goods - Cast TAR Pedestal - General Goods on Spawn'),
+('2674201','26742','1','0','100','0','5000','5000','0','0','0','0','11','47351','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Armor, Leather - Cast TAR Pedestal - Armor, Leather on Spawn'),
+('2674301','26743','1','0','100','0','5000','5000','0','0','0','0','11','47352','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Armor, Mail - Cast TAR Pedestal - Armor, Mail on Spawn'),
+('2674401','26744','1','0','100','0','5000','5000','0','0','0','0','11','47353','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Armor, Plate - Cast TAR Pedestal - Armor, Plate on Spawn'),
+('2674501','26745','1','0','100','0','5000','5000','0','0','0','0','11','47354','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Weapons - Cast TAR Pedestal - Weapons on Spawn'),
+('2674701','26747','1','0','100','0','5000','5000','0','0','0','0','11','47355','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Arena Organizer - Cast TAR Pedestal - Arena Organizer on Spawn'),
+('2674801','26748','1','0','100','0','5000','5000','0','0','0','0','11','47356','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Beastmaster - Cast TAR Pedestal - Beastmaster on Spawn'),
+('2674901','26749','1','0','100','0','5000','5000','0','0','0','0','11','47357','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Paymaster - Cast TAR Pedestal - Paymaster on Spawn'),
+('2675001','26750','1','0','100','0','5000','5000','0','0','0','0','11','47358','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Teleporter - Cast TAR Pedestal - Teleporter on Spawn'),
+('2675101','26751','1','0','100','0','5000','5000','0','0','0','0','11','47359','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Trainer, Druid - Cast TAR Pedestal - Trainer, Druid on Spawn'),
+('2675201','26752','1','0','100','0','5000','5000','0','0','0','0','11','47360','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Trainer, Hunter - Cast TAR Pedestal - Trainer, Hunter on Spawn'),
+('2675301','26753','1','0','100','0','5000','5000','0','0','0','0','11','47361','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Trainer, Mage - Cast TAR Pedestal - Trainer, Mage on Spawn'),
+('2675401','26754','1','0','100','0','5000','5000','0','0','0','0','11','47362','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Trainer, Paladin - Cast TAR Pedestal - Trainer, Paladin on Spawn'),
+('2675501','26755','1','0','100','0','5000','5000','0','0','0','0','11','47363','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Trainer, Priest - Cast TAR Pedestal - Trainer, Priest on Spawn'),
+('2675601','26756','1','0','100','0','5000','5000','0','0','0','0','11','47364','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Trainer, Rogue - Cast TAR Pedestal - Trainer, Rogue on Spawn'),
+('2675701','26757','1','0','100','0','5000','5000','0','0','0','0','11','47365','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Trainer, Shaman - Cast TAR Pedestal - Trainer, Shaman on Spawn'),
+('2675801','26758','1','0','100','0','5000','5000','0','0','0','0','11','47366','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Trainer, Warlock - Cast TAR Pedestal - Trainer, Warlock on Spawn'),
+('2675901','26759','1','0','100','0','5000','5000','0','0','0','0','11','47367','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Trainer, Warrior - Cast TAR Pedestal - Trainer, Warrior on Spawn'),
+('2676501','26765','1','0','100','0','5000','5000','0','0','0','0','11','47368','0','34','0','0','0','0','0','0','0','0','[DND] TAR Pedestal - Fight Promoter - Cast TAR Pedestal - Fight Promoter on Spawn'),
+
 -- ================
 -- Scourge Invasion
 -- ================
