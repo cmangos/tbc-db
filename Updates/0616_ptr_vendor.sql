@@ -1756,7 +1756,15 @@ DELETE FROM `creature` WHERE `guid` IN (
 96583, -- 26307
 96587, -- 26309
 96588, -- 26309
-96589); -- 26309
+96589, -- 26309
+95240, -- 26012
+95279, -- 26012
+95273, -- 26325
+95243, -- 26326
+95280, -- 26327
+95274, -- 26328
+95281, -- 26329
+95275); -- 26760
 
 UPDATE `creature` SET `id` = 26758, `position_z` = 52.093628 WHERE `guid` = 95370 AND `id` = 26331; -- pedestal missing at this location, prob deleted by mistake
 UPDATE `creature` SET `id` = 26756 WHERE `guid` = 95896 AND `id` = 26329; -- pedestal missing at this location, prob deleted by mistake
