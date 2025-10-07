@@ -20,6 +20,7 @@ UPDATE `locales_creature` SET `name_loc3`='Weissager Nobundo' WHERE `entry`=1720
 UPDATE `locales_creature` SET `subname_loc3`='Reitlehrer' WHERE `entry`=20500; -- Olrokk Riding Trainer
 UPDATE `locales_creature` SET `name_loc3`='Ilsa Trubelbräu', `subname_loc3`='Reitlehrerin' WHERE `entry`=20511; -- Ilsa TrubelbrÃ¤u Riding Trainer
 UPDATE `locales_creature` SET `subname_loc3`='Reitlehrerin' WHERE `entry`=20914; -- Aalun Riding Trainer
+UPDATE `locales_creature` SET `name_loc3`='Brunnenbehüter Solanian' WHERE `entry`=15295; -- wrong name "Verderbnis" eng: Well Watcher Solanian
 
 -- Zeppelin Master in Durotar, Tirisfal and Gromgol
 UPDATE `locales_creature` SET `subname_loc3`='Zeppelinmeister' WHERE `entry`=3149 OR `entry`=3150 OR `entry`=9564 OR `entry`=9566 OR `entry`=12137 OR `entry`=12136; 
