@@ -18082,4 +18082,4 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (28596, '', '', 'Zwergischer Bauarbeiter', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (29089, '', '', 'Mini-Tyrael', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (29093, '', '', 'Ian Drake', '', '', '', '', '', NULL, NULL, 'Ältester', NULL, NULL, NULL, NULL, NULL),
-(29095, '', '', 'Edward Cairn', '', '', '', '', '', NULL, NULL, 'Ältester', NULL, NULL, NULL, NULL, NULL),
+(29095, '', '', 'Edward Cairn', '', '', '', '', '', NULL, NULL, 'Ältester', NULL, NULL, NULL, NULL, NULL);
