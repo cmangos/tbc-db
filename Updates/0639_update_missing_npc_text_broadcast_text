@@ -86,4 +86,35 @@ insert into npc_text_broadcast_text values ('11258', '1', '0', '0', '0', '0', '0
 insert into npc_text_broadcast_text values ('11259', '1', '0', '0', '0', '0', '0', '0', '0', '22235', '0', '0', '0', '0', '0', '0', '0');
 insert into npc_text_broadcast_text values ('8580', '1', '0', '0', '0', '0', '0', '0', '0', '12447', '0', '0', '0', '0', '0', '0', '0');
 
+-- Blasted Lands --
+
+insert into npc_text_broadcast_text values ('9969', '1', '0', '0', '0', '0', '0', '0', '0', '17626', '0', '0', '0', '0', '0', '0', '0');
+
+-- Tanaris --
+
+insert into npc_text_broadcast_text values ('9978', '1', '0', '0', '0', '0', '0', '0', '0', '17741', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('10237', '1', '0', '0', '0', '0', '0', '0', '0', '18663', '0', '0', '0', '0', '0', '0', '0');
+
+-- Azuremyst Isle --
+
+insert into npc_text_broadcast_text values ('8667', '1', '0', '0', '0', '0', '0', '0', '0', '12774', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8768', '1', '0', '0', '0', '0', '0', '0', '0', '13391', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8592', '1', '0', '0', '0', '0', '0', '0', '0', '12467', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8584', '1', '0', '0', '0', '0', '0', '0', '0', '12459', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8590', '1', '0', '0', '0', '0', '0', '0', '0', '12465', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8785', '1', '0', '0', '0', '0', '0', '0', '0', '13452', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8588', '1', '0', '0', '0', '0', '0', '0', '0', '12463', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8586', '1', '0', '0', '0', '0', '0', '0', '0', '12461', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8775', '1', '0', '0', '0', '0', '0', '0', '0', '13402', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8616', '1', '0', '0', '0', '0', '0', '0', '0', '12525', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8780', '1', '0', '0', '0', '0', '0', '0', '0', '13413', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8664', '1', '0', '0', '0', '0', '0', '0', '0', '12771', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('10012', '1', '0', '0', '0', '0', '0', '0', '0', '17908', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('10008', '1', '0', '0', '0', '0', '0', '0', '0', '17904', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8662', '1', '0', '0', '0', '0', '0', '0', '0', '12769', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8793', '1', '0', '0', '0', '0', '0', '0', '0', '13471', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8804', '1', '0', '0', '0', '0', '0', '0', '0', '13493', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('10066', '1', '0', '0', '0', '0', '0', '0', '0', '18274', '0', '0', '0', '0', '0', '0', '0');
+
+
 -- Neeeext --
