@@ -89,6 +89,7 @@ insert into npc_text_broadcast_text values ('8580', '1', '0', '0', '0', '0', '0'
 -- Blasted Lands --
 
 insert into npc_text_broadcast_text values ('9969', '1', '0', '0', '0', '0', '0', '0', '0', '17626', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8770', '1', '0', '0', '0', '0', '0', '0', '0', '13393', '0', '0', '0', '0', '0', '0', '0');
 
 -- Tanaris --
 
@@ -189,5 +190,28 @@ insert into npc_text_broadcast_text values ('10153', '1', '0', '0', '0', '0', '0
 insert into npc_text_broadcast_text values ('10524', '1', '0', '0', '0', '0', '0', '0', '0', '19651', '0', '0', '0', '0', '0', '0', '0');
 insert into npc_text_broadcast_text values ('9457', '1', '0', '0', '0', '0', '0', '0', '0', '15641', '0', '0', '0', '0', '0', '0', '0');
 insert into npc_text_broadcast_text values ('10051', '1', '0', '0', '0', '0', '0', '0', '0', '18164', '0', '0', '0', '0', '0', '0', '0');
+
+-- Hellfire Peninsula --
+
+insert into npc_text_broadcast_text values ('13557', '1', '0', '0', '0', '0', '0', '0', '0', '30178', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9546', '1', '0', '0', '0', '0', '0', '0', '0', '15847', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('10934', '1', '0', '0', '0', '0', '0', '0', '0', '21417', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8718', '1', '0', '0', '0', '0', '0', '0', '0', '13148', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8717', '1', '0', '0', '0', '0', '0', '0', '0', '13147', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('10306', '1', '0', '0', '0', '0', '0', '0', '0', '18926', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9657', '1', '0', '0', '0', '0', '0', '0', '0', '16141', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8634', '1', '0', '0', '0', '0', '0', '0', '0', '12598', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('10846', '1', '0', '0', '0', '0', '0', '0', '0', '20985', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9997', '1', '0', '0', '0', '0', '0', '0', '0', '17809', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8962', '1', '0', '0', '0', '0', '0', '0', '0', '14033', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9995', '1', '0', '0', '0', '0', '0', '0', '0', '17806', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('12812', '1', '0', '0', '0', '0', '0', '0', '0', '26463', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('10005', '1', '0', '0', '0', '0', '0', '0', '0', '17899', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9771', '1', '0', '0', '0', '0', '0', '0', '0', '16430', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9801', '1', '0', '0', '0', '0', '0', '0', '0', '16597', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('10293', '1', '0', '0', '0', '0', '0', '0', '0', '18867', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('10006', '1', '0', '0', '0', '0', '0', '0', '0', '17901', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9991', '1', '0', '0', '0', '0', '0', '0', '0', '17477', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('15878', '1', '0', '0', '0', '0', '0', '0', '0', '12744', '0', '0', '0', '0', '0', '0', '0');
 
 -- Neeeext --
