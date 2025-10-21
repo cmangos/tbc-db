@@ -32192,6 +32192,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Pulsing Pumpkin 23694
 ('2369401','23694','0','0','100','1027','1000','3000','7000','10000','0','0','11','42514','1','0','0','0','0','0','0','0','0','0','Pulsing Pumpkin - Cast Squash Soul'),
 -- Head of the Horseman (23775) - boss_head_of_horseman
+-- Pumpkin Soldier 27936
+('2793601','27936','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Pumpkin Soldier - Enable Range Mode on Spawn'),
+('2793602','27936','0','0','100','1281','0','0','2000','3000','0','0','11','50066','1','256','0','0','0','0','0','0','0','0','Pumpkin Soldier - Cast Pumpkin Blast (Range Mode)'),
+('2793603','27936','0','0','100','1537','0','0','3000','10000','0','0','11','50066','1','256','0','0','0','0','0','0','0','0','Pumpkin Soldier - Cast Pumpkin Blast (Melee Mode)'),
 
 -- ========
 -- Brewfest
