@@ -40,7 +40,6 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (144903, 0, 2, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Witch Doctor Unbagwa - Stop Casting'),
 (144903, 0, 3, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Witch Doctor Unbagwa - Remove Activeobject');
 
-
 DELETE FROM creature WHERE guid = 1219;
 DELETE FROM creature_addon WHERE guid = 1219;
 
@@ -82,16 +81,17 @@ INSERT INTO creature_spawn_data(Guid,Id) VALUES
 (@CGUID+13, 1),
 (@CGUID+14, 1);
 
-DELETE FROM string_id WHERE Id = @STRINGID+0;
+DELETE FROM string_id WHERE Id IN (@STRINGID+0, @STRINGID+1);
 INSERT INTO `string_id` (Id, Name) VALUES 
-(@STRINGID+0, 'STV_WITCH_DOCTOR_UNBAGWA');
+(@STRINGID+0, 'STV_WITCH_DOCTOR_UNBAGWA'),
+(@STRINGID+1, 'STV_FEVER_WAVES');
 
 DELETE FROM spawn_group WHERE id BETWEEN @SGGUID+0 AND @SGGUID+3;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 (@SGGUID+0, 'STV - Witch Doctor Unbagwa', 0, 0, 0, 0, @SGGUID+0),
-(@SGGUID+1, 'STV - Quest:Stranglethorn Fever Wave 1 - Enraged Silverback Gorilla (3)', 0, 0, @SGGUID+1, 1, 0),
-(@SGGUID+2, 'STV - Quest:Stranglethorn Fever Wave 2 - Konda | Enraged Silverback Gorilla (4)', 0, 0, @SGGUID+2, 1, 0),
-(@SGGUID+3, 'STV - Quest:Stranglethorn Fever Wave 3 - Mokk the Savage | Enraged Silverback Gorilla (5)', 0, 0, @SGGUID+3, 1, 0);
+(@SGGUID+1, 'STV - Quest:Stranglethorn Fever Wave 1 - Enraged Silverback Gorilla (3)', 0, 0, @SGGUID+1, 1, @STRINGID+1),
+(@SGGUID+2, 'STV - Quest:Stranglethorn Fever Wave 2 - Konda | Enraged Silverback Gorilla (4)', 0, 0, @SGGUID+2, 1, @STRINGID+1),
+(@SGGUID+3, 'STV - Quest:Stranglethorn Fever Wave 3 - Mokk the Savage | Enraged Silverback Gorilla (5)', 0, 0, @SGGUID+3, 1, @STRINGID+1);
 
 DELETE FROM spawn_group_spawn WHERE ID BETWEEN @SGGUID+0 AND @SGGUID+3;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
@@ -132,16 +132,23 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+1, 2, -13777.561,-2.8964844,39.831615, 100, 0, 0),
 (@SGGUID+1, 3, -13763.384,-11.975261,45.06178, 100, 0, 0),
 (@SGGUID+1, 4, -13745.515,-22.961372,44.981564, 100, 0, 0),
-(@SGGUID+1, 5, -13735.692,-33.317165,45.429634, 100, 10000, 3), -- move idle
+(@SGGUID+1, 5, -13735.692,-33.317165,45.429634, 100, 10000, 151101), -- move idle
 (@SGGUID+2, 1, -13812.6,9.011122,27.627281, 100, 0, 0),
 (@SGGUID+2, 2, -13794.561,6.778212,32.361076, 100, 0, 0),
 (@SGGUID+2, 3, -13770.931,-7.349501,42.814438, 100, 0, 0),
 (@SGGUID+2, 4, -13751.048,-19.82394,44.325195, 100, 0, 0),
-(@SGGUID+2, 5, -13735.427,-33.767143,45.569283, 100, 10000, 3), -- move idle
+(@SGGUID+2, 5, -13735.427,-33.767143,45.569283, 100, 10000, 151101), -- move idle
 (@SGGUID+3, 1, -13791.743,5.1065,32.91057, 100, 0, 0),
 (@SGGUID+3, 2, -13777.821,-1.650174,39.538128, 100, 0, 0),
 (@SGGUID+3, 3, -13749.035,-20.493708,44.407917, 100, 0, 0),
-(@SGGUID+3, 4, -13735.712,-33.456272,45.459396, 100, 10000, 3); -- move idle
+(@SGGUID+3, 4, -13735.712,-33.456272,45.459396, 100, 10000, 151101); -- move idle
+
+DELETE FROM dbscripts_on_creature_movement WHERE id = 151101;
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(151101, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'STV Fever - Change Movement To 0 - Idle'),
+(151101, 0, 1, 31, 0, 150, 0, @STRINGID+1, 150, 0x800, 0, 0, 0, 0, 0, 0, 0, 0, 'STV Fever - Search for string id - Terminate if not found'),
+(151101, 1, 1, 35, 5, 0, 0, @STRINGID+1, 150, 2561, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - send AI Event A');
+
 
 DELETE FROM worldstate_name WHERE id BETWEEN @SGGUID+0 AND @SGGUID+3;
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
