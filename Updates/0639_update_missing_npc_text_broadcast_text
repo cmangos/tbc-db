@@ -258,5 +258,47 @@ insert into npc_text_broadcast_text values ('9770', '1', '0', '0', '0', '0', '0'
 insert into npc_text_broadcast_text values ('8750', '1', '0', '0', '0', '0', '0', '0', '0', '13303', '0', '0', '0', '0', '0', '0', '0');
 insert into npc_text_broadcast_text values ('8716', '1', '0', '0', '0', '0', '0', '0', '0', '13146', '0', '0', '0', '0', '0', '0', '0');
 insert into npc_text_broadcast_text values ('8715', '1', '0', '0', '0', '0', '0', '0', '0', '13145', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('10275', '1', '0', '0', '0', '0', '0', '0', '0', '18823', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9942', '1', '0', '0', '0', '0', '0', '0', '0', '17521', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('8713', '1', '0', '0', '0', '0', '0', '0', '0', '13143', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9632', '1', '0', '0', '0', '0', '0', '0', '0', '16042', '0', '0', '0', '0', '0', '0', '0');
+
+-- Zangarmarsh --
+
+insert into npc_text_broadcast_text values ('9177', '1', '0', '0', '0', '0', '0', '0', '0', '14740', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9176', '1', '0', '0', '0', '0', '0', '0', '0', '14738', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9131', '1', '0', '0', '0', '0', '0', '0', '0', '14619', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9199', '1', '0', '0', '0', '0', '0', '0', '0', '14781', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9196', '1', '0', '0', '0', '0', '0', '0', '0', '14777', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('10735', '1', '0', '0', '0', '0', '0', '0', '0', '20471', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9274', '1', '0', '0', '0', '0', '0', '0', '0', '14994', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9167', '1', '0', '0', '0', '0', '0', '0', '0', '14696', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9086', '1', '0', '0', '0', '0', '0', '0', '0', '14442', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9617', '1', '0', '0', '0', '0', '0', '0', '0', '16012', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9074', '1', '0', '0', '0', '0', '0', '0', '0', '14417', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9441', '1', '0', '0', '0', '0', '0', '0', '0', '15561', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9267', '1', '0', '0', '0', '0', '0', '0', '0', '14976', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9268', '1', '0', '0', '0', '0', '0', '0', '0', '14980', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9269', '1', '0', '0', '0', '0', '0', '0', '0', '14981', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9260', '1', '0', '0', '0', '0', '0', '0', '0', '14959', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9249', '1', '0', '0', '0', '0', '0', '0', '0', '14946', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9752', '1', '0', '0', '0', '0', '0', '0', '0', '16293', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9259', '1', '0', '0', '0', '0', '0', '0', '0', '14957', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9618', '1', '0', '0', '0', '0', '0', '0', '0', '16013', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9248', '1', '0', '0', '0', '0', '0', '0', '0', '14945', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9250', '1', '0', '0', '0', '0', '0', '0', '0', '14947', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9085', '1', '0', '0', '0', '0', '0', '0', '0', '14437', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9128', '1', '0', '0', '0', '0', '0', '0', '0', '14605', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9204', '1', '0', '0', '0', '0', '0', '0', '0', '14790', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9113', '1', '0', '0', '0', '0', '0', '0', '0', '14549', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9202', '1', '0', '0', '0', '0', '0', '0', '0', '14788', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9106', '1', '0', '0', '0', '0', '0', '0', '0', '14542', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9108', '1', '0', '0', '0', '0', '0', '0', '0', '14544', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9111', '1', '0', '0', '0', '0', '0', '0', '0', '14547', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9201', '1', '0', '0', '0', '0', '0', '0', '0', '14786', '0', '0', '0', '0', '0', '0', '0');
+
+-- Orgrimmar --
+
+insert into npc_text_broadcast_text values ('11189', '1', '0', '0', '0', '0', '0', '0', '0', '22106', '0', '0', '0', '0', '0', '0', '0');
 
 -- Neeeext --
