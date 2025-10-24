@@ -6179,6 +6179,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('115201','1152','0','0','100','1025','11200','12000','11200','12000','0','0','11','3604','1','0','0','0','0','0','0','0','0','0','Snapjaw Crocolisk - Cast Tendon Rip'),
 -- Thysta
 ('138701','1387','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','4561','0','0','0','0','0','0','Thysta - Cast Summon Enraged Wyvern and Yell on Aggro'),
+-- Witch Doctor Unbagwa 1449
+('144901','1449','30','0','100','0','5','0','0','0','0','0','53','144901','0','0','0','0','0','0','0','0','0','0','Witch Doctor Unbagwa - Start RelayScript Receive Event AI A'),
+('144902','1449','30','0','100','0','6','0','0','0','0','0','53','144902','0','0','0','0','0','0','0','0','0','0','Witch Doctor Unbagwa - Start RelayScript Receive Event AI B'),
+('144903','1449','30','0','100','0','8','0','0','0','0','0','53','144903','0','0','0','0','0','0','0','0','0','0','Witch Doctor Unbagwa - Start RelayScript Receive Event AI C'),
 -- Zanzil Zombie 1488 - creature_spell_list
 ('148801','1488','11','0','100','0','0','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Zanzil Zombie - Cast Birth on Spawn'),
 -- Zanzil Hunter 1489 - creature_spell_list
@@ -6194,6 +6198,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Negolash 1494 - creature_spell_list
 -- Enraged Silverback Gorilla
 ('151101','1511','2','0','100','1024','10','0','0','0','0','0','11','8599','0','0','1','2384','0','0','0','0','0','0','Enraged Silverback Gorilla - Cast Enrage at 10% HP'),
+('151102','1511','1','0','100','0','120000','120000','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Enraged Silverback Gorilla - Force Despawn OOC'),
 -- Mokk the Savage 1514
 ('151401','1514','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','54','2384','0','0','0','0','0','0','Mokk the Savage - Cast Enrage at 30% HP'),
 -- Konda 1516
