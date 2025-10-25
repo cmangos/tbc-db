@@ -296,6 +296,18 @@ insert into npc_text_broadcast_text values ('9106', '1', '0', '0', '0', '0', '0'
 insert into npc_text_broadcast_text values ('9108', '1', '0', '0', '0', '0', '0', '0', '0', '14544', '0', '0', '0', '0', '0', '0', '0');
 insert into npc_text_broadcast_text values ('9111', '1', '0', '0', '0', '0', '0', '0', '0', '14547', '0', '0', '0', '0', '0', '0', '0');
 insert into npc_text_broadcast_text values ('9201', '1', '0', '0', '0', '0', '0', '0', '0', '14786', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9264', '1', '0', '0', '0', '0', '0', '0', '0', '14972', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9263', '1', '0', '0', '0', '0', '0', '0', '0', '14968', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9262', '1', '0', '0', '0', '0', '0', '0', '0', '14966', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9261', '1', '0', '0', '0', '0', '0', '0', '0', '14962', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9370', '1', '0', '0', '0', '0', '0', '0', '0', '15331', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9265', '1', '0', '0', '0', '0', '0', '0', '0', '14973', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9238', '1', '0', '0', '0', '0', '0', '0', '0', '14931', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9239', '1', '0', '0', '0', '0', '0', '0', '0', '14933', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9751', '1', '0', '0', '0', '0', '0', '0', '0', '16291', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9235', '1', '0', '0', '0', '0', '0', '0', '0', '14920', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9236', '1', '0', '0', '0', '0', '0', '0', '0', '14921', '0', '0', '0', '0', '0', '0', '0');
+insert into npc_text_broadcast_text values ('9237', '1', '0', '0', '0', '0', '0', '0', '0', '14924', '0', '0', '0', '0', '0', '0', '0');
 
 -- Orgrimmar --
 
