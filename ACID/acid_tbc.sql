@@ -20225,6 +20225,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2131505','21315','0','0','100','1025','5000','7000','16000','21000','0','0','11','39153','1','0','0','0','0','0','0','0','0','0','Ruul the Darkener - Cast Darkfury'),
 -- Deathforged Infernal 21316
 ('2131601','21316','6','0','100','0','0','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Deathforged Infernal - Remove Immolation on Death'),
+('2131602','21316','8','0','100','1','36632','-1','0','0','0','0','28','0','16245','0','48','2','0','0','0','0','0','0','Deathforged Infernal -  Remove aura and set waypoints on Spell Hit'),
 -- Spirit Hunter 21332
 ('2133201','21332','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Spirit Hunter - Set Defensive State on Spawn'),
 -- Veneratus Spawn Node 21334 - npc_veneratus_spawn_node
