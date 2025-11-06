@@ -1,5 +1,5 @@
--- QuestEnd script In Search of Knowledge
--- Quest ID: 2939
+-- QuestEnd script Return to Troyas
+-- Quest ID: 2943
 
 -- Old script had wrong spawn position and waypoint position, also target for 2nd text was wrong
 -- slightly adjust timers to sniffed ones
