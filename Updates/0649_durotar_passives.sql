@@ -16,7 +16,7 @@ INSERT INTO creature_template_addon (`entry`, `mount`, `stand_state`, `sheath_st
 -- should cast shield bash on current player, was random player casting before
 DELETE FROM `creature_spell_list` WHERE `Id` = 312901;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(312901, 1, 11972, 0, -1, 1, 0, 100, 0, 1000, 6000, 16000, 32000, 'Kul Tiras Marine - Shield Bash - random player casting');
+(312901, 1, 11972, 0, -1, 1, 0, 100, 0, 1000, 6000, 16000, 32000, 'Kul Tiras Marine - Shield Bash - current');
 
 -- Lieutenant Benedict
 -- Doesnt have any defensive aura in classic sniffs
