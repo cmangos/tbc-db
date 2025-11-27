@@ -37,8 +37,9 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- Reset Flags and finish event.
 (144903, 0, 0, 29, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Witch Doctor Unbagwa - Set NPC Flags'),
 (144903, 0, 1, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Witch Doctor Unbagwa - Reset Faction'),
-(144903, 0, 2, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Witch Doctor Unbagwa - Stop Casting'),
-(144903, 0, 3, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Witch Doctor Unbagwa - Remove Activeobject');
+(144903, 0, 2, 47, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Witch Doctor Unbagwa - Stop Casting'),
+(144903, 0, 3, 14, 12380, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Witch Doctor Unbagwa - Remove Aura'),
+(144903, 0, 4, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Witch Doctor Unbagwa - Remove Activeobject');
 
 DELETE FROM creature WHERE guid = 1219;
 DELETE FROM creature_addon WHERE guid = 1219;
