@@ -10,7 +10,7 @@ INSERT INTO creature_template_addon (`entry`, `mount`, `stand_state`, `sheath_st
 -- Clattering Scorpid
 -- Passive via creature_template_addon 
 DELETE FROM creature_template_addon WHERE entry = 3125;
-INSERT INTO creature_template_addon (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (3125, 0, 0, 1, 0, 0, 6752);
+INSERT INTO creature_template_addon (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (3125, 0, 0, 1, 0, 0, 11959);
 
 -- Kul Tiras Marine
 -- should cast shield bash on current player, was random player casting before
@@ -20,7 +20,7 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 -- Lieutenant Benedict
 -- Doesnt have any defensive aura in classic sniffs
-DELETE FROM creature_template_addon WHERE entry = 3192 ;
+DELETE FROM creature_template_addon WHERE entry = 3192;
 INSERT INTO creature_template_addon (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (3192 , 0, 0, 1, 0, 0, NULL);
 
 
@@ -43,5 +43,6 @@ INSERT INTO creature_template_addon (`entry`, `mount`, `stand_state`, `sheath_st
 
 -- Sarkoth
 -- Confirmed with classic sniffs that he has passive on spawn
-DELETE FROM creature_template_addon WHERE entry = 3281 ;
-INSERT INTO creature_template_addon (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (3281 , 0, 0, 1, 0, 0, 11919);
+DELETE FROM creature_template_addon WHERE entry = 3281;
+INSERT INTO creature_template_addon (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (3281, 0, 0, 1, 0, 0, 11919);
+
