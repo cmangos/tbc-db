@@ -368,12 +368,8 @@ INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`,
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 -- Stil needed after rework 
-(@CGUID+58, 17728), (@CGUID+58, 17729), -- Murkblood Tribesman, Murkblood Spearman
-(@CGUID+59, 17728), (@CGUID+59, 17771), -- Murkblood Tribesman, Murkblood Oracle
 (@CGUID+67, 17728), (@CGUID+67, 17771), -- Murkblood Tribesman, Murkblood Oracle
 (@CGUID+71, 17728), (@CGUID+71, 17729), -- Murkblood Tribesman, Murkblood Spearman
-(@CGUID+103, 17728), (@CGUID+103, 17771), -- Murkblood Tribesman, Murkblood Oracle
-(@CGUID+104, 17728), (@CGUID+104, 17729), -- Murkblood Tribesman, Murkblood Spearman
 (@CGUID+256, 17728), (@CGUID+256, 17729), -- Murkblood Tribesman, Murkblood Spearman
 (@CGUID+258, 17728), (@CGUID+258, 17771), -- Murkblood Tribesman, Murkblood Oracle
 (@CGUID+260, 17728), (@CGUID+260, 17729), -- Murkblood Tribesman, Murkblood Spearman
@@ -437,9 +433,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+55, 17726, 546, 3, 167.425, -453.476, 72.5512, 4.29793, 7200, 7200, 0, 0), -- Wrathfin Myrmidon
 (@CGUID+56, 17727, 546, 3, 150.961, -417.711, 48.614, 2.93215, 7200, 7200, 0, 0), -- Wrathfin Sentry
 (@CGUID+57, 17727, 546, 3, 148.124, -424.815, 48.624, 2.79253, 7200, 7200, 0, 0), -- Wrathfin Sentry
-(@CGUID+58, 0, 546, 3, 161.478, -439.538, 48.2097, 2.04204, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+59, 0, 546, 3, 175.806, -416.587, 48.2694, 2.9147, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+60, 17730, 546, 3, 181.5612, -410.9746, 48.28504, 2.897247, 7200, 7200, 0, 0), -- Murkblood Healer
+(@CGUID+58, 0, 546, 3, 161.478, -439.538, 48.2097, 2.04204, 7200, 7200, 0, 0), -- spawn_group_squad
+(@CGUID+59, 0, 546, 3, 175.806, -416.587, 48.2694, 2.9147, 7200, 7200, 0, 0), -- spawn_group_squad
+(@CGUID+60, 0, 546, 3, 181.5612, -410.9746, 48.28504, 2.897247, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+61, 0, 546, 3, 204.723, -378.969, 48.1204, 2.89045, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+62, 0, 546, 3, 205.144, -379.315, 48.1253, 3.33967, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+63, 17728, 546, 3, 271.075, -372.563, 72.4, 0.296706, 7200, 7200, 0, 0), -- Murkblood Tribesman
@@ -475,15 +471,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+93, 17732, 546, 3, 268.859, -219.26, 29.0504, 5.8466, 7200, 7200, 4, 1), -- Lykul Wasp
 (@CGUID+94, 17732, 546, 3, 262.481, -187.086, 28.5443, 5.04345, 7200, 7200, 0, 0), -- Lykul Wasp
 (@CGUID+95, 17732, 546, 3, 253.957, -183.706, 28.186, 1.28959, 7200, 7200, 0, 0), -- Lykul Wasp
-(@CGUID+96, 17735, 546, 3, 162.697, -444.884, 48.2681, 2.35619, 7200, 7200, 0, 0), -- Wrathfin Warrior
+(@CGUID+96, 0, 546, 3, 162.697, -444.884, 48.2681, 2.35619, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+97, 17735, 546, 3, 204.415, -378.89, 48.1181, 3.02724, 7200, 7200, 0, 0), -- Wrathfin Warrior
 (@CGUID+98, 17735, 546, 3, 250.059, -367.167, 72.1729, 2.29696, 7200, 7200, 0, 4), -- Wrathfin Warrior
 (@CGUID+99, 17735, 546, 3, 177.434, -404.174, 72.4244, 6.16101, 7200, 7200, 0, 0), -- Wrathfin Warrior
 (@CGUID+100, 17735, 546, 3, 163.9, -429.202, 72.4437, 0.0698132, 7200, 7200, 0, 0), -- Wrathfin Warrior
 (@CGUID+101, 17770, 546, 3, -121.3438, -388.6259, 36.86593, 1.396263, 86400, 86400, 0, 0), -- Hungarfen
-(@CGUID+102, 17771, 546, 3, 158.19, -444.127, 48.1899, 1.64061, 7200, 7200, 0, 0), -- Murkblood Oracle
-(@CGUID+103, 0, 546, 3, 166.555, -438.527, 48.2826, 2.04204, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+104, 0, 546, 3, 177.115, -412.503, 48.2597, 2.67035, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+102, 0, 546, 3, 158.19, -444.127, 48.1899, 1.64061, 7200, 7200, 0, 0), -- spawn_group_squad
+(@CGUID+103, 0, 546, 3, 166.555, -438.527, 48.2826, 2.04204, 7200, 7200, 0, 0), -- spawn_group_squad
+(@CGUID+104, 0, 546, 3, 177.115, -412.503, 48.2597, 2.67035, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+105, 0, 546, 3, 201.346, -384.036, 72.4265, 5.96903, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+106, 17730, 546, 3, 171.282, -402.482, 72.3152, 5.91667, 7200, 7200, 0, 0), -- Murkblood Healer
 (@CGUID+107, 0, 546, 3, 176.266, -399.841, 72.3586, 0.122173, 7200, 7200, 0, 0), -- spawn_group_entry
@@ -561,11 +557,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+182, 20465, 546, 3, 239.0633, -447.297, 26.67825, 5.18439, 7200, 7200, 10, 1), -- Underbog Frenzy
 (@CGUID+183, 20465, 546, 3, 262.9901, -483.4717, 3.48419, 2.199908, 7200, 7200, 10, 1), -- Underbog Frenzy
 (@CGUID+184, 20465, 546, 3, 222.3083, -440.5487, 3.48419, 2.439165, 7200, 7200, 10, 1), -- Underbog Frenzy
-(@CGUID+188, 17735, 546, 3, 162.697, -444.884, 48.2681, 2.35619, 7200, 7200, 0, 0), -- Wrathfin Warrior
-(@CGUID+189, 0, 546, 3, 166.555, -438.527, 48.2826, 2.04204, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+190, 17729, 546, 3, 161.478, -439.538, 48.2097, 2.04204, 7200, 7200, 0, 0), -- Murkblood Spearman
-(@CGUID+191, 17730, 546, 3, 158.19, -444.127, 48.1899, 1.64061, 7200, 7200, 0, 0), -- Murkblood Healer
--- reuse 192-194
+-- reuse 188-194
 (@CGUID+195, 1420, 546, 3, 30.74248, -25.90349, -2.751264, 4.955046, 900, 900, 2, 1), -- Toad
 (@CGUID+196, 1420, 546, 3, 35.07812, -32.37487, -2.747718, 2.450685, 900, 900, 2, 1), -- Toad
 (@CGUID+197, 1420, 546, 3, -3.45067, -103.0038, -4.533685, 1.083949, 900, 900, 2, 1), -- Toad
@@ -618,10 +610,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+243, 20465, 546, 3, 28.50401, -270.2094, -30.45346, 5.199517, 7200, 7200, 3, 1), -- Underbog Frenzy
 (@CGUID+244, 20465, 546, 3, 34.37368, -286.1991, -30.45346, 2.115175, 7200, 7200, 3, 1), -- Underbog Frenzy
 (@CGUID+245, 20465, 546, 3, 208.0295, -314.826, -28.25239, 2.625107, 7200, 7200, 3, 1), -- Underbog Frenzy
-
-(@CGUID+246, 17771, 546, 3, 177.115, -412.503, 48.2597, 2.67035, 7200, 7200, 0, 0), -- Murkblood Oracle
-(@CGUID+247, 17728, 546, 3, 181.5612, -410.9746, 48.28504, 2.897247, 7200, 7200, 0, 0), -- Murkblood Tribesman
-(@CGUID+248, 17728, 546, 3, 175.806, -416.587, 48.2694, 2.9147, 7200, 7200, 0, 0), -- Murkblood Tribesman
 
 (@CGUID+249, 17728, 546, 3, 182.3, -390.59, 48.1715, 5.39307, 7200, 7200, 0, 0), -- Murkblood Tribesman
 (@CGUID+250, 17728, 546, 3, 179.034, -391.338, 48.1567, 5.18363, 7200, 7200, 0, 0), -- Murkblood Tribesman
@@ -786,8 +774,6 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+2, 'The Underbog - Group 002 - Underbog Shambler | Underbog Lurker (2)', 0, 0, 0, 1, 0),
 -- Spawn Group Squad
 (@SGGUID+3, 'The Underbog - Group 003 - Squad 001 - Underbat | Underbog Shambler | Underbog Lurker', 0, 0, 0, 1, 0),
-
--- 
 (@SGGUID+5, 'The Underbog - Group 004 - Underbat (3) - Patrol 01', 0, 0, 0, 1, 0),
 -- Spawn Group Squad -  Group behind first pillar
 (@SGGUID+6, 'The Underbog - Group 005 -  Squad 002 - Underbat | Underbog Shambler | Underbog Lurker', 0, 0, 0, 1, 0),
@@ -804,34 +790,19 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+12, 'The Underbog - Group 009 - Underbog Lurker', 0, 0, 0, 1, 0),
 -- Static group before "stairs/ramp"
 (@SGGUID+13, 'The Underbog - Group 010 - Underbog Lurker (2) | Underbog Shambler', 0, 0, 0, 1, 0),
--- Pat around "stairs/ramp"
-(@SGGUID+14, 'The Underbog - Group 011 - Squad 003 - Underbat | Underbog Shambler | Underbog Lurker - Patrol 05', 0, 0, 0, 1, 0),
--- Pat on "stairs/ramp"
+-- Spawn Group Squad - Patrol behind "Stairs" to first boss
+(@SGGUID+14, 'The Underbog - Group 011 - Squad 004 - Underbat | Underbog Shambler | Underbog Lurker - Patrol 05', 0, 0, 0, 1, 0),
+-- Patrol on "stairs" to first boss
 (@SGGUID+15, 'The Underbog - Group 012 - Underbat (3) - Patrol 06', 0, 0, 0, 1, 0),
 (@SGGUID+16, 'The Underbog - Group 013 - Bog Giant (2)', 0, 0, 0, 1, 0),
 (@SGGUID+17, 'The Underbog - Group 014 - Underbat (4) - Patrol 07', 0, 0, 0, 1, 0),
 (@SGGUID+18, 'The Underbog - Group 015 - Wrathfin Myrmidon (2) - Patrol 08', 0, 0, 0, 1, 0),
 (@SGGUID+19, 'The Underbog - Group 016 - Wrathfin Sentry (2)', 0, 0, 0, 1, 0),
 (@SGGUID+20, 'The Underbog - Group 017 - Wrathfin Myrmidon (2) - Patrol 09', 0, 0, 0, 1, 0),
--- This Group has following conditions:
--- There can never be a Murkblood Healer if a Murkblood Oracle is spawned
--- Middle NPC will always be a Murkblood Tribesman or Murkblood Spearman
--- Murkblood Healer can always only be spawned on the right side
--- Possible Combinations found:
--- Spearman, Spearman, Healer
--- Tribesman, Spearman, Healer 
--- Oracle, Tribesman, Oracle 
--- Tribesman, Spearman, Oracle
--- Tribesman, Tribesman, Spearman (currently missing)
-(@SGGUID+21, 'The Underbog - Group 018 - Wrathfin Warrior | Murkblood Oracle | Murkblood Tribesman/Murkblood Spearman', 0, 0, @SGGUID+3, 1, 0),
-(@SGGUID+22, 'The Underbog - Group 018 - Wrathfin Warrior | Murkblood Healer | Murkblood Tribesman/Murkblood Spearman', 0, 0, @SGGUID+4, 1, 0),
--- Group of 3 right side of the room
--- Possible Combinations found:
--- Healer, Spearman, Tribesman
--- Healer, Tribesman, Oracle
--- Tribesman Oracle, Tribesman
-(@SGGUID+23, 'The Underbog - Group 019 - Murkblood Healer | Murkblood Tribesman/Murkblood Spearman/Murkblood Oracle', 0, 0, @SGGUID+5, 1, 0),
-(@SGGUID+24, 'The Underbog - Group 019 - Murkblood Tribesman (2) | Murkblood Oracle', 0, 0, @SGGUID+6, 1, 0),
+-- Spawn Group Squad 
+(@SGGUID+21, 'The Underbog - Group 018 - Squad 005 - Wrathfin Warrior | Murkblood Oracle | Murkblood Tribesman | Murkblood Spearman', 0, 0, 0, 1, 0),
+-- Spawn Group Squad 
+(@SGGUID+23, 'The Underbog - Group 019 - Squad 006 - Murkblood Healer | Murkblood Tribesman | Murkblood Spearman | Murkblood Oracle', 0, 0, 0, 1, 0),
 -- Group of 3 left side of the room
 -- Possible Combinations found:
 -- Healer Tribesman Spearman
@@ -880,9 +851,6 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+43, 'The Underbog - Group 033 - Lykul Wasp | Fen Ray (2)', 0, 0, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGGUID+21, 17728, 1, 2, 0), (@SGGUID+21, 17729, 0, 1, 0), (@SGGUID+21, 17771, 0, 2, 0), -- Murkblood Tribesman, Murkblood Spearman, Murkblood Oracle
-(@SGGUID+22, 17728, 0, 1, 0), (@SGGUID+22, 17729, 0, 2, 0), -- Murkblood Tribesman, Murkblood Spearman
-(@SGGUID+23, 17728, 0, 1, 0), (@SGGUID+23, 17729, 0, 1, 0), (@SGGUID+23, 17771, 0, 1, 0), -- Murkblood Tribesman, Murkblood Spearman, Murkblood Oracle
 (@SGGUID+25, 17728, 0, 1, 0), (@SGGUID+25, 17729, 0, 1, 0), (@SGGUID+25, 17771, 0, 1, 0), -- Murkblood Tribesman, Murkblood Spearman, Murkblood Oracle
 (@SGGUID+27, 17728, 0, 2, 0), (@SGGUID+27, 17729, 0, 2, 0), (@SGGUID+27, 17730, 0, 1, 0), (@SGGUID+27, 17771, 0, 2, 0), -- Murkblood Tribesman, Murkblood Spearman, Murkblood Healer, Murkblood Oracle
  
@@ -961,22 +929,13 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+20, @CGUID+53, 1, 0), -- Wrathfin Myrmidon
 
 (@SGGUID+21, @CGUID+96, 0, 0), -- Wrathfin Warrior
-(@SGGUID+21, @CGUID+103, 1, 0), -- creature_spawn_entry (left)
-(@SGGUID+21, @CGUID+58, 2, 0), -- creature_spawn_entry (middle)
-(@SGGUID+21, @CGUID+102, 3, 0), -- Murkblood Oracle (right)
+(@SGGUID+21, @CGUID+103, 1, 0), -- spawn_group_squad (left)
+(@SGGUID+21, @CGUID+58, 2, 0), -- spawn_group_squad (middle)
+(@SGGUID+21, @CGUID+102, 3, 0), -- spawn_group_squad (right)
 
-(@SGGUID+22, @CGUID+188, 0, 0), -- Wrathfin Myrmidon
-(@SGGUID+22, @CGUID+189, 1, 0), -- spawn_group_entry (left)
-(@SGGUID+22, @CGUID+190, 2, 0), -- Murkblood Spearman (middle)
-(@SGGUID+22, @CGUID+191, 3, 0), -- Murkblood Healer (right)
-
-(@SGGUID+23, @CGUID+104, 0, 0), -- creature_spawn_entry (middle)
-(@SGGUID+23, @CGUID+60, 1, 0), -- Murkblood Healer (left)
-(@SGGUID+23, @CGUID+59, 2, 0), -- creature_spawn_entry (right)
-
-(@SGGUID+24, @CGUID+246, 0, 0), -- Murkblood Oracle (middle)
-(@SGGUID+24, @CGUID+247, 1, 0), -- Murkblood Tribesman (left)
-(@SGGUID+24, @CGUID+248, 2, 0), -- Murkblood Tribesman (right)
+(@SGGUID+23, @CGUID+104, 0, 0), -- spawn_group_squad (middle)
+(@SGGUID+23, @CGUID+60, 1, 0), -- spawn_group_squad (left)
+(@SGGUID+23, @CGUID+59, 2, 0), -- spawn_group_squad (right)
 
 (@SGGUID+25, @CGUID+67, 0, 0), -- creature_spawn_entry (middle)
 (@SGGUID+25, @CGUID+75, 1, 0), -- Murkblood Healer (left)
@@ -1113,7 +1072,7 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 (@SGGUID+7, 4, @CGUID+45, 17871), -- Underbog Shambler
 (@SGGUID+7, 4, @CGUID+113, 17871), -- Underbog Shambler
 
--- Group 011 - Squad 003 - Patrol behind stairs to first boss
+-- Group 011 - Squad 004 - Patrol behind stairs to first boss
 -- Leader, behind right, behind left
 (@SGGUID+14, 1, @CGUID+28, 17725), -- Underbog Lurker
 (@SGGUID+14, 1, @CGUID+29, 17724), -- Underbat
@@ -1129,8 +1088,40 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 
 (@SGGUID+14, 4, @CGUID+28, 17724), -- Underbat
 (@SGGUID+14, 4, @CGUID+29, 17725), -- Underbog Lurker
-(@SGGUID+14, 4, @CGUID+49, 17871); -- Underbog Shambler
+(@SGGUID+14, 4, @CGUID+49, 17871), -- Underbog Shambler
 
+-- Group 018 - Squad 005
+-- Wrathfin Warrior in back is static
+-- Back Middle, Front Left, Front Middle, Front Right 
+(@SGGUID+21, 1, @CGUID+96, 17735), -- Wrathfin Warrior
+(@SGGUID+21, 1, @CGUID+103, 17771), -- Murkblood Oracle
+(@SGGUID+21, 1, @CGUID+58, 17728), -- Murkblood Tribesman
+(@SGGUID+21, 1, @CGUID+102, 17771), -- Murkblood Oracle
+
+(@SGGUID+21, 2, @CGUID+96, 17735), -- Wrathfin Warrior
+(@SGGUID+21, 2, @CGUID+103, 17728), -- Murkblood Tribesman
+(@SGGUID+21, 2, @CGUID+58, 17728), -- Murkblood Tribesman
+(@SGGUID+21, 2, @CGUID+102, 17729), -- Murkblood Speerman
+
+(@SGGUID+21, 3, @CGUID+96, 17735), -- Wrathfin Warrior
+(@SGGUID+21, 3, @CGUID+103, 17729), -- Murkblood Speerman
+(@SGGUID+21, 3, @CGUID+58, 17729), -- Murkblood Speerman
+(@SGGUID+21, 3, @CGUID+102, 17730), -- Murkblood Healer
+
+(@SGGUID+21, 4, @CGUID+96, 17735), -- Wrathfin Warrior
+(@SGGUID+21, 4, @CGUID+103, 17728), -- Murkblood Tribesman
+(@SGGUID+21, 4, @CGUID+58, 17729), -- Murkblood Speerman
+(@SGGUID+21, 4, @CGUID+102, 17771), -- Murkblood Oracle
+
+(@SGGUID+21, 5, @CGUID+96, 17735), -- Wrathfin Warrior
+(@SGGUID+21, 5, @CGUID+103, 17728), -- Murkblood Tribesman
+(@SGGUID+21, 5, @CGUID+58, 17729), -- Murkblood Speerman
+(@SGGUID+21, 5, @CGUID+102, 17730), -- Murkblood Healer
+
+-- Group 018 - Squad 005
+(@SGGUID+23, 1, @CGUID+60, 0), -- 
+(@SGGUID+23, 1, @CGUID+104, 0), -- 
+(@SGGUID+23, 1, @CGUID+59, 0), -- 
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+5, 3, 8, 0, @SGGUID+5, 4, 'The Underbog - Group 004 - Underbat (3) - Patrol 01'),
@@ -1266,29 +1257,13 @@ INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 (@SGGUID+11, @SGGUID+12),
 (@SGGUID+12, @SGGUID+11);
 
-DELETE FROM worldstate_name WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+7;
-INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
-(@SGGUID+2, 'The Underbog - Group 018'),
-(@SGGUID+3, 'The Underbog - Group 019'),
-(@SGGUID+4, 'The Underbog - Group 020'),
-(@SGGUID+5, 'The Underbog - Group 022'),
-(@SGGUID+6, 'The Underbog - Group 024'),
-(@SGGUID+7, 'The Underbog - Group 025');
+-- DELETE FROM worldstate_name WHERE Id 
+-- INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 
-DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @SGGUID+1 AND @SGGUID+14;
-INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(@SGGUID+3, 42, @SGGUID+2, 1, 0, 0, 0, 'The Underbog - Group 018 -  Type 1'),
-(@SGGUID+4, 42, @SGGUID+2, 1, 1, 0, 0, 'The Underbog - Group 018 -  Type 2'),
-(@SGGUID+5, 42, @SGGUID+3, 1, 0, 0, 0, 'The Underbog - Group 019 -  Type 1'),
-(@SGGUID+6, 42, @SGGUID+3, 1, 1, 0, 0, 'The Underbog - Group 019 -  Type 2'),
-(@SGGUID+7, 42, @SGGUID+4, 1, 0, 0, 0, 'The Underbog - Group 020 -  Type 1'),
-(@SGGUID+8, 42, @SGGUID+4, 1, 1, 0, 0, 'The Underbog - Group 020 -  Type 2'),
-(@SGGUID+9, 42, @SGGUID+5, 1, 0, 0, 0, 'The Underbog - Group 022 -  Type 1'),
-(@SGGUID+10, 42, @SGGUID+5, 1, 1, 0, 0, 'The Underbog - Group 022 -  Type 2'),
-(@SGGUID+11, 42, @SGGUID+6, 1, 0, 0, 0, 'The Underbog - Group 024 -  Type 1'),
-(@SGGUID+12, 42, @SGGUID+6, 1, 1, 0, 0, 'The Underbog - Group 024 -  Type 2'),
-(@SGGUID+13, 42, @SGGUID+7, 1, 0, 0, 0, 'The Underbog - Group 025 -  Type 1'),
-(@SGGUID+14, 42, @SGGUID+7, 1, 1, 0, 0, 'The Underbog - Group 025 -  Type 2');
+
+-- DELETE FROM `conditions` WHERE `condition_entry` 
+-- INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+
 
 -- =======
 -- POOLING
