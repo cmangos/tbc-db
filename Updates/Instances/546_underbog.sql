@@ -366,14 +366,7 @@ INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`,
 (17827, 546, 17826, 3, 0), -- Claw -> Swamplord Musel'ek
 (22299, 546, 17882, 16, 0); -- Spore Strider -> The Black Stalker
 
-INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
--- Stil needed after rework 
-(@CGUID+67, 17728), (@CGUID+67, 17771), -- Murkblood Tribesman, Murkblood Oracle
-(@CGUID+71, 17728), (@CGUID+71, 17729), -- Murkblood Tribesman, Murkblood Spearman
-(@CGUID+256, 17728), (@CGUID+256, 17729), -- Murkblood Tribesman, Murkblood Spearman
-(@CGUID+258, 17728), (@CGUID+258, 17771), -- Murkblood Tribesman, Murkblood Oracle
-(@CGUID+260, 17728), (@CGUID+260, 17729), -- Murkblood Tribesman, Murkblood Spearman
-(@CGUID+261, 17728), (@CGUID+261, 17771); -- Murkblood Tribesman, Murkblood Oracle
+-- INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 17723, 546, 3, 10.6361, -206.855, -4.44989, 1.20428, 7200, 7200, 3, 1), -- Bog Giant
