@@ -407,8 +407,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+25, 0, 546, 3, 73.6437, -245.246, -4.4013, 0.507308, 7200, 7200, 3, 1), -- spawn_group_squad
 (@CGUID+26, 17724, 546, 3, -17.5913, -229.733, -4.53506, 2.92587, 7200, 7200, 0, 0), -- Underbat
 (@CGUID+27, 17724, 546, 3, -10.6199, -226.992, -4.53459, 1.97021, 7200, 7200, 0, 0), -- Underbat
-(@CGUID+28, 0, 546, 3, -138.291, -228.478, -3.94639, 0.951339, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+29, 0, 546, 3,-147.414, -235.283, -3.79813, 0.561871, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+28, 0, 546, 3, -138.291, -228.478, -3.94639, 0.951339, 7200, 7200, 0, 0), -- spawn_group_squad
+(@CGUID+29, 0, 546, 3,-147.414, -235.283, -3.79813, 0.561871, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+30, 17724, 546, 3, -112.645, -264.269, 15.6255, 3.85227, 7200, 7200, 0, 0), -- Underbat
 (@CGUID+31, 17724, 546, 3, -107.078, -261.814, 19.3368, 1.23998, 7200, 7200, 0, 0), -- Underbat
 (@CGUID+32, 17724, 546, 3, -110.375, -258.027, 20.5684, 6.10865, 7200, 7200, 0, 0), -- Underbat
@@ -428,7 +428,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+46, 17725, 546, 3, -16.0056, -238.124, -4.45149, 0.471239, 7200, 7200, 2, 1), -- Underbog Lurker
 (@CGUID+47, 17725, 546, 3, -51.8767, -246.594, -4.45338, 0.471239, 7200, 7200, 0, 0), -- Underbog Lurker
 (@CGUID+48, 17725, 546, 3, -55.9498, -257.519, -4.45344, 5.91667, 7200, 7200, 0, 0), -- Underbog Lurker
-(@CGUID+49, 0, 546, 3, -139.659, -240.512, -4.10634, 1.24407, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+49, 0, 546, 3, -139.659, -240.512, -4.10634, 1.24407, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+50, 17726, 546, 3, 115.961, -404.269, 42.5224, 5.85158, 7200, 7200, 0, 0), -- Wrathfin Myrmidon
 (@CGUID+51, 17726, 546, 3, 117.006, -401.999, 42.5095, 5.85158, 7200, 7200, 0, 0), -- Wrathfin Myrmidon
 (@CGUID+52, 17726, 546, 3, 161.062, -432.518, 48.0883, 4.41558, 7200, 7200, 0, 0), -- Wrathfin Myrmidon
@@ -793,9 +793,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+6, 'The Underbog - Group 005 -  Squad 002 - Underbat | Underbog Shambler | Underbog Lurker', 0, 0, 0, 1, 0),
 -- Spawn Group Squad -  Group at Water
 (@SGGUID+7, 'The Underbog - Group 006 - Squad 003 - Underbat | Underbog Shambler | Underbog Lurker', 0, 0, 0, 1, 0),
-
 (@SGGUID+8, 'The Underbog - Group 007 - Underbat (2) - Patrol 02', 0, 0, 0, 1, 0),
-
 -- Group with 2 Underbat patroling around 1 lurker
 (@SGGUID+9, 'The Underbog - Group 008 - Underbat (2) - Patrol 03', 0, 0, 0, 1, 0),
 -- for safty add solo lurker into spawn_group and link them to Patrol
@@ -807,7 +805,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Static group before "stairs/ramp"
 (@SGGUID+13, 'The Underbog - Group 010 - Underbog Lurker (2) | Underbog Shambler', 0, 0, 0, 1, 0),
 -- Pat around "stairs/ramp"
-(@SGGUID+14, 'The Underbog - Group 011 - Underbat/Underbog Lurker/Underbog Shambler - Patrol 05', 0, 0, 0, 1, 0),
+(@SGGUID+14, 'The Underbog - Group 011 - Squad 003 - Underbat | Underbog Shambler | Underbog Lurker - Patrol 05', 0, 0, 0, 1, 0),
 -- Pat on "stairs/ramp"
 (@SGGUID+15, 'The Underbog - Group 012 - Underbat (3) - Patrol 06', 0, 0, 0, 1, 0),
 (@SGGUID+16, 'The Underbog - Group 013 - Bog Giant (2)', 0, 0, 0, 1, 0),
@@ -882,8 +880,6 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+43, 'The Underbog - Group 033 - Lykul Wasp | Fen Ray (2)', 0, 0, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGGUID+14, 17724, 0, 2, 0), (@SGGUID+14, 17725, 0, 2, 0), (@SGGUID+14, 17871, 0, 2, 0), -- Underbat, Underbog Lurker, Underbog Shambler
-
 (@SGGUID+21, 17728, 1, 2, 0), (@SGGUID+21, 17729, 0, 1, 0), (@SGGUID+21, 17771, 0, 2, 0), -- Murkblood Tribesman, Murkblood Spearman, Murkblood Oracle
 (@SGGUID+22, 17728, 0, 1, 0), (@SGGUID+22, 17729, 0, 2, 0), -- Murkblood Tribesman, Murkblood Spearman
 (@SGGUID+23, 17728, 0, 1, 0), (@SGGUID+23, 17729, 0, 1, 0), (@SGGUID+23, 17771, 0, 1, 0), -- Murkblood Tribesman, Murkblood Spearman, Murkblood Oracle
@@ -939,9 +935,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+13, @CGUID+48, 1, 0), -- Underbog Lurker
 (@SGGUID+13, @CGUID+114, 2, 0), -- Underbog Shambler
 
-(@SGGUID+14, @CGUID+28, 0, 0), -- spawn_group_entry
-(@SGGUID+14, @CGUID+29, 1, 0), -- spawn_group_entry
-(@SGGUID+14, @CGUID+49, 2, 0), -- spawn_group_entry
+(@SGGUID+14, @CGUID+28, 0, 0), -- spawn_group_squad
+(@SGGUID+14, @CGUID+29, 1, 0), -- spawn_group_squad
+(@SGGUID+14, @CGUID+49, 2, 0), -- spawn_group_squad
 
 (@SGGUID+15, @CGUID+30, 0, 0), -- Underbat
 (@SGGUID+15, @CGUID+31, 1, 0), -- Underbat
@@ -1115,7 +1111,25 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 
 (@SGGUID+7, 4, @CGUID+25, 17724), -- Underbat
 (@SGGUID+7, 4, @CGUID+45, 17871), -- Underbog Shambler
-(@SGGUID+7, 4, @CGUID+113, 17871); -- Underbog Shambler
+(@SGGUID+7, 4, @CGUID+113, 17871), -- Underbog Shambler
+
+-- Group 011 - Squad 003 - Patrol behind stairs to first boss
+-- Leader, behind right, behind left
+(@SGGUID+14, 1, @CGUID+28, 17725), -- Underbog Lurker
+(@SGGUID+14, 1, @CGUID+29, 17724), -- Underbat
+(@SGGUID+14, 1, @CGUID+49, 17724), -- Underbat
+
+(@SGGUID+14, 2, @CGUID+28, 17724), -- Underbat
+(@SGGUID+14, 2, @CGUID+29, 17725), -- Underbog Lurker
+(@SGGUID+14, 2, @CGUID+49, 17725), -- Underbog Lurker
+
+(@SGGUID+14, 3, @CGUID+28, 17724), -- Underbat
+(@SGGUID+14, 3, @CGUID+29, 17871), -- Underbog Shambler
+(@SGGUID+14, 3, @CGUID+49, 17871), -- Underbog Shambler
+
+(@SGGUID+14, 4, @CGUID+28, 17724), -- Underbat
+(@SGGUID+14, 4, @CGUID+29, 17725), -- Underbog Lurker
+(@SGGUID+14, 4, @CGUID+49, 17871); -- Underbog Shambler
 
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
@@ -1123,7 +1137,7 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+8, 1, 8, 0, @SGGUID+8, 4, 'The Underbog - Group 007 - Underbat (2) - Patrol 02'),
 (@SGGUID+9, 1, 8, 0, @SGGUID+9, 2, 'The Underbog - Group 008 - Underbat (2) - Patrol 03'),
 (@SGGUID+11, 1, 8, 0, @SGGUID+11, 2, 'The Underbog - Group 009 - Underbat (2) - Patrol 04'),
-(@SGGUID+14, 3, 7, 0, @SGGUID+14, 4, 'The Underbog - Group 011 - Underbat/Underbog Lurker/Underbog Shambler - Patrol 05'),
+(@SGGUID+14, 3, 7, 0, @SGGUID+14, 4, 'The Underbog - Group 011 - Squad 003 - Underbat | Underbog Shambler | Underbog Lurker - Patrol 05'),
 (@SGGUID+15, 3, 8, 0, @SGGUID+15, 4, 'The Underbog - Group 012 - Underbat (3) - Patrol 06'),
 (@SGGUID+17, 0, 8, 0, @SGGUID+17, 2, 'The Underbog - Group 014 - Underbat (4) - Patrol 07'),
 (@SGGUID+18, 2, 3, 0, @SGGUID+18, 4, 'The Underbog - Group 015 - Wrathfin Myrmidon (2) - Patrol 08'),
@@ -1139,7 +1153,7 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+8,'The Underbog - Group 007 - Underbat (2) - Patrol 02'),
 (@SGGUID+9,'The Underbog - Group 008 - Underbat (2) - Patrol 03'),
 (@SGGUID+11,'The Underbog - Group 009 - Underbat (2) - Patrol 04'),
-(@SGGUID+14,'The Underbog - Group 011 - Underbat/Underbog Lurker/Underbog Shambler - Patrol 05'),
+(@SGGUID+14,'The Underbog - Group 011 - Squad 003 - Underbat | Underbog Shambler | Underbog Lurker - Patrol 05'),
 (@SGGUID+15,'The Underbog - Group 012 - Underbat (3) - Patrol 06'),
 (@SGGUID+17,'The Underbog - Group 014 - Underbat (4) - Patrol 07'),
 (@SGGUID+18,'The Underbog - Group 015 - Wrathfin Myrmidon (2) - Patrol 08'),
