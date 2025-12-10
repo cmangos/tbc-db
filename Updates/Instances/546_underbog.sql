@@ -1118,10 +1118,19 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 (@SGGUID+21, 5, @CGUID+58, 17729), -- Murkblood Speerman
 (@SGGUID+21, 5, @CGUID+102, 17730), -- Murkblood Healer
 
--- Group 018 - Squad 005
-(@SGGUID+23, 1, @CGUID+60, 0), -- 
-(@SGGUID+23, 1, @CGUID+104, 0), -- 
-(@SGGUID+23, 1, @CGUID+59, 0), -- 
+-- Group 019 - Squad 006
+-- Left, Middle, Right
+(@SGGUID+23, 1, @CGUID+60, 17730), -- Murkblood Healer
+(@SGGUID+23, 1, @CGUID+104, 17729), -- Murkblood Speerman
+(@SGGUID+23, 1, @CGUID+59, 17728), -- Murkblood Tribesman
+
+(@SGGUID+23, 1, @CGUID+60, 17728), -- Murkblood Tribesman
+(@SGGUID+23, 1, @CGUID+104, 17771), -- Murkblood Oracle
+(@SGGUID+23, 1, @CGUID+59, 17728), -- Murkblood Tribesman
+
+(@SGGUID+23, 1, @CGUID+60, 17730), -- Murkblood Healer
+(@SGGUID+23, 1, @CGUID+104, 17728), -- Murkblood Tribesman
+(@SGGUID+23, 1, @CGUID+59, 17771), -- Murkblood Oracle
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+5, 3, 8, 0, @SGGUID+5, 4, 'The Underbog - Group 004 - Underbat (3) - Patrol 01'),
