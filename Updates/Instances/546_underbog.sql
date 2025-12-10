@@ -1080,20 +1080,20 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 -- Group 005 -  Squad 002
 -- Back Left - Back Right - Front Middle
 (@SGGUID+6, 1, @CGUID+111, 17871), -- Underbog Shambler
-(@SGGUID+6, 1, @CGUID+40, 17724), -- Underbat
-(@SGGUID+6, 1, @CGUID+24, 17871), -- Underbog Shambler
+(@SGGUID+6, 1, @CGUID+24, 17724), -- Underbat
+(@SGGUID+6, 1, @CGUID+40, 17871), -- Underbog Shambler
 
 (@SGGUID+6, 2, @CGUID+111, 17724), -- Underbat
-(@SGGUID+6, 2, @CGUID+40, 17725), -- Underbog Lurker
-(@SGGUID+6, 2, @CGUID+24, 17724), -- Underbat
+(@SGGUID+6, 2, @CGUID+24, 17725), -- Underbog Lurker
+(@SGGUID+6, 2, @CGUID+40, 17724), -- Underbat
 
 (@SGGUID+6, 3, @CGUID+111, 17871), -- Underbog Shambler
-(@SGGUID+6, 3, @CGUID+40, 17724), -- Underbat
-(@SGGUID+6, 3, @CGUID+24, 17725), -- Underbog Lurker
+(@SGGUID+6, 3, @CGUID+24, 17724), -- Underbat
+(@SGGUID+6, 3, @CGUID+40, 17725), -- Underbog Lurker
 
 (@SGGUID+6, 4, @CGUID+111, 17725), -- Underbog Lurker
-(@SGGUID+6, 4, @CGUID+40, 17724), -- Underbat
-(@SGGUID+6, 4, @CGUID+24, 17725), -- Underbog Lurker
+(@SGGUID+6, 4, @CGUID+24, 17724), -- Underbat
+(@SGGUID+6, 4, @CGUID+40, 17725), -- Underbog Lurker
 
 -- Group 006 - Squad 003
 -- Back Left - Back Right - Front Middle
