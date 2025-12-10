@@ -831,9 +831,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+4, @CGUID+15, 1, 0), -- Underbat
 (@SGGUID+4, @CGUID+18, 2, 0), -- Underbat
 
-(@SGGUID+5,, @CGUID+24, 0, 0), -- spawn_group_squad
-(@SGGUID+5,, @CGUID+40, 1, 0), -- spawn_group_squad
-(@SGGUID+5,, @CGUID+111, 2, 0), -- spawn_group_squad
+(@SGGUID+5, @CGUID+24, 0, 0), -- spawn_group_squad
+(@SGGUID+5, @CGUID+40, 1, 0), -- spawn_group_squad
+(@SGGUID+5, @CGUID+111, 2, 0), -- spawn_group_squad
 
 (@SGGUID+6, @CGUID+25, 0, 0), -- spawn_group_squad
 (@SGGUID+6, @CGUID+45, 1, 0), -- spawn_group_squad
