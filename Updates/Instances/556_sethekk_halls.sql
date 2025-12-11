@@ -402,11 +402,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+4, 18318, 556, 3, 75.8563, 116.047, 0.350004, 5.5676, 7200, 7200, 0, 0), -- Sethekk Initiate
 (@CGUID+5, 18318, 556, 3, 58.4921, 83.405, 0.227436, 4.32842, 7200, 7200, 0, 0), -- Sethekk Initiate
 (@CGUID+6, 18318, 556, 3, 50.9244, 98.9922, 0.234138, 3.10669, 7200, 7200, 0, 0), -- Sethekk Initiate
-(@CGUID+7, 18318, 556, 3, -65.7626, 167.779, 0.0931773, 3.40339, 7200, 7200, 0, 0), -- Sethekk Initiate
+(@CGUID+7, 0, 556, 3, -65.7626, 167.779, 0.0931773, 3.40339, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+8, 18318, 556, 3, -238.53963,160.60075,-0.12405233, 1.61169, 7200, 7200, 0, 4), -- Sethekk Initiate
 (@CGUID+9, 18318, 556, 3, 42.6617, 38.4536, 0.0475968, 5.8117, 7200, 7200, 0, 0), -- Sethekk Initiate
 (@CGUID+10, 0, 556, 3, -58.0166, 107.975, 0.0905323, 1.55334, 7200, 7200, 0, 0), -- spawn_group_squad
-(@CGUID+11, 18318, 556, 3, -69.1325, 83.7427, 0.0905363, 2.82743, 7200, 7200, 0, 0), -- Sethek Initiate
+(@CGUID+11, 0, 556, 3, -69.1325, 83.7427, 0.0905363, 2.82743, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+12, 18318, 556, 3, -264.9457, 179.76292, 0.0339, 0.440397, 7200, 7200, 0, 4), -- Sethekk Initiate
 (@CGUID+13, 18318, 556, 3, 36.5259, 99.3303, 0.234139, 6.26573, 7200, 7200, 0, 0), -- Sethekk Initiate
 (@CGUID+14, 18319, 556, 3, -241.915, 155.992, 0.145592, 1.78024, 7200, 7200, 0, 0), -- Time-Lost Scryer
@@ -468,17 +468,17 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+70, 18327, 556, 3, 55.5351, 78.7888, -0.00838766, 1.29154, 7200, 7200, 0, 0), -- Time-Lost Controller
 (@CGUID+71, 18327, 556, 3, 43.636, 106.916, 0.234138, 4.76475, 7200, 7200, 0, 0), -- Time-Lost Controller
 (@CGUID+72, 0, 556, 3, -60.3833, 114.664, 0.0905323, 5.68977, 7200, 7200, 0, 0), -- spawn_group_squad
-(@CGUID+73, 18318, 556, 3, -80.6658, 105.136, 0.0905313, 2.32129, 7200, 7200, 0, 0), -- Sethekk Initiate
+(@CGUID+73, 0, 556, 3, -80.6658, 105.136, 0.0905313, 2.32129, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+74, 18327, 556, 3, -259.193, 191.827, 0.119915, 5.41052, 7200, 7200, 0, 0), -- Time-Lost Controller
-(@CGUID+75, 18318, 556, 3, -68.5954, 173.012, 0.0928473, 4.17134, 7200, 7200, 0, 0), -- Time-Lost Controller
-(@CGUID+76, 18327, 556, 3, -76.569, 83.7339, 0.0905353, 0.785398, 7200, 7200, 0, 0), -- Time-Lost Controller
+(@CGUID+75, 0, 556, 3, -68.5954, 173.012, 0.0928473, 4.17134, 7200, 7200, 0, 0), -- spawn_group_squad
+(@CGUID+76, 0, 556, 3, -76.569, 83.7339, 0.0905353, 0.785398, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+77, 18327, 556, 3, -246.218, 159.874, 0.151296, 0.383972, 7200, 7200, 0, 0), -- Time-Lost Controller
 (@CGUID+78, 18319, 556, 3, -266.165, 190.07, 0.117231, 5.68977, 7200, 7200, 0, 0), -- Time-Lost Scryer
-(@CGUID+79, 18327, 556, 3, -83.8602, 113.572, 0.0905293, 5.8294, 7200, 7200, 0, 0), -- Time-Lost Controller
+(@CGUID+79, 0, 556, 3, -83.8602, 113.572, 0.0905293, 5.8294, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+80, 0, 556, 3, -51.8655, 110.682, 0.0905323, 3.78736, 7200, 7200, 0, 0), -- spawn_group_squad
-(@CGUID+81, 18328, 556, 3, -75.4351, 173.65, 0.0930253, 5.81195, 7200, 7200, 0, 0), -- Sethekk Oracle
-(@CGUID+82, 18328, 556, 3, -86.2176, 107.357, 0.0899813, 0.785398, 7200, 7200, 0, 0), -- Sethekk Oracle
-(@CGUID+83, 18328, 556, 3, -76.1875, 89.6284, 0.0905363, 5.68977, 7200, 7200, 0, 0), -- Sethekk Oracle
+(@CGUID+81, 0, 556, 3, -75.4351, 173.65, 0.0930253, 5.81195, 7200, 7200, 0, 0), -- spawn_group_squad
+(@CGUID+82, 0, 556, 3, -86.2176, 107.357, 0.0899813, 0.785398, 7200, 7200, 0, 0), -- spawn_group_squad
+(@CGUID+83, 0, 556, 3, -76.1875, 89.6284, 0.0905363, 5.68977, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+84, 18328, 556, 3, -245.401, 164.807, 0.152779, 0.0349066, 7200, 7200, 0, 0), -- Sethekk Oracle
 (@CGUID+85, 18328, 556, 3, -268.4883, 184.286, 0.1172123, 0.6108652, 7200, 7200, 0, 0), -- Sethekk Oracle
 (@CGUID+86, 18472, 556, 3, -144.827, 173.557, 1.76865, 0.0698132, 86400, 86400, 0, 0), -- Darkweaver Syth
@@ -583,18 +583,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+185, 14881, 556, 3, -244.4173, 199.3081, 0.1475653, 2.565634, 900, 900, 2, 1), -- Spider
 (@CGUID+186, 14881, 556, 3, -213.7181, 177.5785, 27.0924, 0, 900, 900, 2, 1), -- Spider
 -- random spawns
-(@CGUID+190, 18328, 556, 3, -76.1875, 89.6284, 0.0905363, 5.68977, 7200, 7200, 0, 0), -- Sethekk Oracle
-(@CGUID+191, 18328, 556, 3, -76.569, 83.7339, 0.0905353, 0.785398, 7200, 7200, 0, 0), -- Sethekk Oracle
-(@CGUID+192, 18327, 556, 3, -69.1325, 83.7427, 0.0905363, 2.82743, 7200, 7200, 0, 0), -- Time-Lost Controller
-
-(@CGUID+193, 18328, 556, 3, -86.2176, 107.357, 0.0899813, 0.785398, 7200, 7200, 0, 0), -- Sethekk Oracle
-(@CGUID+194, 18327, 556, 3, -80.6658, 105.136, 0.0905313, 2.32129, 7200, 7200, 0, 0), -- Time-Lost Controller
-(@CGUID+195, 18328, 556, 3, -83.8602, 113.572, 0.0905293, 5.8294, 7200, 7200, 0, 0), -- Sethekk Oracle
-
-(@CGUID+196, 18328, 556, 3, -75.4351, 173.65, 0.0930253, 5.81195, 7200, 7200, 0, 0), -- Sethekk Oracle
-(@CGUID+197, 18328, 556, 3, -68.5954, 173.012, 0.0928473, 4.17134, 7200, 7200, 0, 0), -- Sethekk Oracle
-(@CGUID+198, 18327, 556, 3, -65.7626, 167.779, 0.0931773, 3.40339, 7200, 7200, 0, 0), -- Time-Lost Controller
-
 (@CGUID+199, 18319, 556, 3,-241.915, 155.992, 0.145592, 1.78024, 7200, 7200, 0, 0), -- Time-Lost Scryer
 (@CGUID+200, 18328, 556, 3, -246.218, 159.874, 0.151296, 0.383972, 7200, 7200, 0, 0), -- Sethek Oracle
 (@CGUID+201, 18319, 556, 3, -245.401, 164.807, 0.152779, 0.0349066, 7200, 7200, 0, 0), -- Time-Lost Scryer
@@ -728,23 +716,19 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+5, 'Sethekk Halls - Group 005 - Sethekk Guard (2)', 0, 0, 0, 1, 0),
 (@SGGUID+6, 'Sethekk Halls - Group 006 - Sethekk Initiate | Time-Lost Controller | Avian Darkhawk', 0, 0, 0, 1, 0),
 (@SGGUID+7, 'Sethekk Halls - Group 007 - Sethekk Initiate (2) | Time-Lost Controller', 0, 0, 0, 1, 0),
-(@SGGUID+8, 'Sethekk Halls - Group 008 - Sethekk Guard (2)', 0, 0, @SGGUID+13, 9, 0), -- this group despawns when endboss is killed
+(@SGGUID+8, 'Sethekk Halls - Group 008 - Sethekk Guard (2)', 0, 0, @SGGUID+1, 9, 0), -- this group despawns when endboss is killed
 (@SGGUID+9, 'Sethekk Halls - Group 009 - Sethekk Initiate (2) | Time-Lost Controller', 0, 0, 0, 1, 0),
 (@SGGUID+10, 'Sethekk Halls - Group 010 - Sethekk Initiate | Time-Lost Controller | Avian Darkhawk', 0, 0, 0, 1, 0),
 (@SGGUID+11, 'Sethekk Halls - Group 011 - Sethekk Guard (2)', 0, 0, 0, 1, 0),
 -- Spawn Group Squad
 (@SGGUID+12, 'Sethekk Halls - Group 012 - Squad 001 - Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, 0, 1, 0),
 -- Spawn Group Squad
-(@SGGUID+14, 'Sethekk Halls - Group 013 - Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, @SGGUID+3, 1, 0),
-(@SGGUID+15, 'Sethekk Halls - Group 013 - Sethekk Oracle (2) | Time-Lost Controller', 0, 0, @SGGUID+4, 1, 0),
+(@SGGUID+14, 'Sethekk Halls - Group 013 - - Squad 002 . Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, 0, 1, 0),
 -- Spawn Group Squad
-(@SGGUID+16, 'Sethekk Halls - Group 014 - Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, @SGGUID+5, 1, 0),
-(@SGGUID+17, 'Sethekk Halls - Group 014 - Sethekk Oracle (2) | Time-Lost Controller', 0, 0, @SGGUID+6, 1, 0),
-
+(@SGGUID+16, 'Sethekk Halls - Group 014 - Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, 0, 1, 0),
 (@SGGUID+18, 'Sethekk Halls - Group 015 - Sethekk Guard (2)', 0, 0, 0, 1, 0),
 -- Spawn Group Squad
-(@SGGUID+19, 'Sethekk Halls - Group 016 - Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, @SGGUID+7, 1, 0),
-(@SGGUID+20, 'Sethekk Halls - Group 016 - Sethekk Oracle (2) | Time-Lost Controller', 0, 0, @SGGUID+8, 1, 0),
+(@SGGUID+19, 'Sethekk Halls - Group 016 - Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, 0, 1, 0),
 
 (@SGGUID+21, 'Sethekk Halls - Group 017 - Sethekk Guard (2)', 0, 0, 0, 1, 0),
 (@SGGUID+22, 'Sethekk Halls - Group 018 - Sethekk Ravenguard (2)', 0, 0, 0, 1, 0),
@@ -842,32 +826,20 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+12, @CGUID+10, 1, 0), -- spawn_group_squad
 (@SGGUID+12, @CGUID+72, 2, 0), -- spawn_group_squad
 
-(@SGGUID+14, @CGUID+83, 0, 0), -- Sethekk Oracle
-(@SGGUID+14, @CGUID+11, 1, 0), -- Sethek Initiate
-(@SGGUID+14, @CGUID+76, 2, 0), -- Time-Lost Controller
+(@SGGUID+14, @CGUID+83, 0, 0), -- spawn_group_squad
+(@SGGUID+14, @CGUID+11, 1, 0), -- spawn_group_squad
+(@SGGUID+14, @CGUID+76, 2, 0), -- spawn_group_squad
 
-(@SGGUID+15, @CGUID+190, 0, 0), -- Sethekk Oracle
-(@SGGUID+15, @CGUID+191, 1, 0), -- Sethekk Oracle
-(@SGGUID+15, @CGUID+192, 2, 0), -- Time-Lost Controller
-
-(@SGGUID+16, @CGUID+82, 0, 0), -- Sethekk Oracle
-(@SGGUID+16, @CGUID+79, 1, 0), -- Sethek Initiate
-(@SGGUID+16, @CGUID+97, 2, 0), -- Time-Lost Controller
-
-(@SGGUID+17, @CGUID+193, 0, 0), -- Sethekk Oracle
-(@SGGUID+17, @CGUID+194, 1, 0), -- Time-Lost Controller
-(@SGGUID+17, @CGUID+195, 2, 0), -- Sethekk Oracle
+(@SGGUID+16, @CGUID+82, 0, 0), -- spawn_group_squad
+(@SGGUID+16, @CGUID+79, 1, 0), -- spawn_group_squad
+(@SGGUID+16, @CGUID+73, 2, 0), -- spawn_group_squad
 
 (@SGGUID+18, @CGUID+50, 0, 0), -- Sethekk Guard
 (@SGGUID+18, @CGUID+51, 1, 0), -- Sethekk Guard
 
-(@SGGUID+19, @CGUID+81, 0, 0), -- Sethekk Oracle
-(@SGGUID+19, @CGUID+7, 1, 0), -- Sethek Initiater
-(@SGGUID+19, @CGUID+75, 2, 0), -- Time-Lost Controller
-
-(@SGGUID+20, @CGUID+196, 0, 0), -- Sethekk Oracle
-(@SGGUID+20, @CGUID+197, 1, 0), -- Sethekk Oracle
-(@SGGUID+20, @CGUID+198, 2, 0), -- Time-Lost Controller
+(@SGGUID+19, @CGUID+81, 0, 0), -- spawn_group_squad
+(@SGGUID+19, @CGUID+7, 1, 0), -- spawn_group_squad
+(@SGGUID+19, @CGUID+75, 2, 0), -- spawn_group_squad
 
 (@SGGUID+21, @CGUID+40, 0, 0), -- Sethekk Guard
 (@SGGUID+21, @CGUID+41, 1, 0), -- Sethekk Guard
@@ -991,6 +963,36 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 (@SGGUID+12, 2, @CGUID+72, 18328), -- Sethekk Oracle
 (@SGGUID+12, 2, @CGUID+80, 18328), -- Sethekk Oracle
 
+-- Group 13 - Squad 002
+-- Left - Middle - Right
+(@SGGUID+14, 1, @CGUID+11, 18318), -- Sethekk Initiate
+(@SGGUID+14, 1, @CGUID+76, 18327), -- Time-Lost Controller
+(@SGGUID+14, 1, @CGUID+83, 18328), -- Sethekk Oracle
+
+(@SGGUID+14, 2, @CGUID+11, 18327), -- Time-Lost Controller
+(@SGGUID+14, 2, @CGUID+76, 18328), -- Sethekk Oracle
+(@SGGUID+14, 2, @CGUID+83, 18328), -- Sethekk Oracle
+
+-- Group 14 - Squad 003
+-- Left - Middle - Right
+(@SGGUID+16, 1, @CGUID+73, 18318), -- Sethekk Initiate
+(@SGGUID+16, 1, @CGUID+82, 18328), -- Sethekk Oracle
+(@SGGUID+16, 1, @CGUID+79, 18327), -- Time-Lost Controller
+
+(@SGGUID+16, 2, @CGUID+73, 18327), -- Time-Lost Controller
+(@SGGUID+16, 2, @CGUID+82, 18328), -- Sethekk Oracle
+(@SGGUID+16, 2, @CGUID+79, 18328), -- Sethekk Oracle
+
+-- Group 16 - Squad 004
+-- Left - Middle - Right
+(@SGGUID+19, 1, @CGUID+81, 18328), -- Sethekk Oracle
+(@SGGUID+19, 1, @CGUID+75, 18327), --Time-Lost Controller
+(@SGGUID+19, 1, @CGUID+7, 18318), -- Sethekk Initiate
+
+(@SGGUID+19, 2, @CGUID+81, 18328), -- Sethekk Oracle
+(@SGGUID+19, 2, @CGUID+75, 18328), -- Sethekk Oracle
+(@SGGUID+19, 2, @CGUID+7, 18327), -- Time-Lost Controller
+
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+2, 2, 3, 0, @SGGUID+2, 2, 'Sethekk Halls - Group 002 - Sethekk Initiate | Avian Darkhawk - Patrol 01');
 
@@ -1007,28 +1009,13 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+2, 7, 38.962692,30.885172,0.0074734767, 100, 0, 0),
 (@SGGUID+2, 8, 39.64863,40.192886,0.0074779084, 100, 0, 0);
 
-DELETE FROM worldstate_name WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+6;
-INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
-(@SGGUID+2, 'Sethekk Halls - Group 013'),
-(@SGGUID+3, 'Sethekk Halls - Group 014'),
-(@SGGUID+4, 'Sethekk Halls - Group 016'),
-(@SGGUID+5, 'Sethekk Halls - Group 020'),
-(@SGGUID+6, 'Sethekk Halls - Group 021');
+-- DELETE FROM worldstate_name WHERE Id 
+-- INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 
-DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @SGGUID+1 AND @SGGUID+13;
+DELETE FROM `conditions` WHERE `condition_entry` = @SGGUID+1;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(@SGGUID+3, 42, @SGGUID+2, 1, 0, 0, 0, 'Sethekk Halls - Group 013 -  Type 1'),
-(@SGGUID+4, 42, @SGGUID+2, 1, 1, 0, 0, 'Sethekk Halls - Group 013 -  Type 2'),
-(@SGGUID+5, 42, @SGGUID+3, 1, 0, 0, 0, 'Sethekk Halls - Group 014 -  Type 1'),
-(@SGGUID+6, 42, @SGGUID+3, 1, 1, 0, 0, 'Sethekk Halls - Group 014 -  Type 2'),
-(@SGGUID+7, 42, @SGGUID+4, 1, 0, 0, 0, 'Sethekk Halls - Group 016 -  Type 1'),
-(@SGGUID+8, 42, @SGGUID+4, 1, 1, 0, 0, 'Sethekk Halls - Group 016 -  Type 2'),
-(@SGGUID+9, 42, @SGGUID+5, 1, 0, 0, 0, 'Sethekk Halls - Group 020 -  Type 1'),
-(@SGGUID+10, 42, @SGGUID+5, 1, 1, 0, 0, 'Sethekk Halls - Group 020 -  Type 2'),
-(@SGGUID+11, 42, @SGGUID+6, 1, 0, 0, 0, 'Sethekk Halls - Group 021 -  Type 1'),
-(@SGGUID+12, 42, @SGGUID+6, 1, 1, 0, 0, 'Sethekk Halls - Group 021 -  Type 2'),
 -- SpawnGroup 008 should despawn when endboss dies
-(@SGGUID+13, 42, 2818, 1, 0, 0, 0, 'Sethekk Halls - Talon King Ikiss Alive');
+(@SGGUID+1, 42, 2818, 1, 0, 0, 0, 'Sethekk Halls - Talon King Ikiss Alive');
 
 -- =======
 -- POOLING
