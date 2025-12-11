@@ -678,8 +678,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2447702','24477','33','0','100','1025','0','0','1800','9800','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Syndicate Thief - Cast Backstab on Facing Target Back'),
 ('2447703','24477','0','0','100','1025','5000','9000','18000','24000','0','0','11','8379','1','0','0','0','0','0','0','0','0','0','Syndicate Thief - Cast Disarm'),
 ('2447704','24477','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Syndicate Thief - Flee at 15% HP'),
--- Arathi Flame Warden (25887) - NSR
--- Arathi Flame Keeper (25923) - NSR
 -- Wisp of Ragnaros (26502) - NSR
 
 
@@ -869,7 +867,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- 7:XT (3.1.1 Official Data)
 ('1422401','14224','1','0','100','1','10000','60000','120000','240000','0','0','1','9091','9093','9092','0','0','0','0','0','0','0','0','7:XT - Random Say OOC'),
 -- Advisor Sarophas (17097) - NSR
--- Badlands Flame Keeper (25925) - NSR
 
 
 
@@ -1185,7 +1182,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nethergarde Advisor (19566) - NSR
 -- Watcher Theronus (19567) - NSR
 -- Agent Proudwell 19942 - npc_agent_proudwell
--- Blasted Lands Flame Warden (25890) - NSR
 
 
 
@@ -1424,8 +1420,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2481901','24819','11','0','100','0','0','0','0','0','0','0','11','3417','0','34','0','0','0','0','0','0','0','0','Anvilrage Enforcer - Cast Thrash on Spawn'),
 ('2481902','24819','0','0','100','1025','1000','3000','9000','12000','0','0','11','13608','1','0','0','0','0','0','0','0','0','0','Anvilrage Enforcer - Cast Hooked Net'),
 ('2481903','24819','0','0','100','1025','6000','9000','12000','15000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Anvilrage Enforcer - Cast Shield Bash'),
--- Burning Steppes Flame Warden (25892) - NSR
--- Burning Steppes Flame Keeper (25927) - NSR
 -- Wisp of Ragnaros (26502) - NSR
 
 
@@ -1822,7 +1816,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Swift Racing Ram (24463) - NSR
 -- Pol Amberstill (24468) - NSR
 -- Ipfelkofer Ironkeg (24710) - npc_brewfest_barker
--- Dun Morogh Flame Warden (25895) - NSR
 -- High Admiral "Shelly" Jorrik (26081) - NSR
 -- Beastmaster (26307) - NSR
 -- Wisp of Ragnaros (26502) - NSR
@@ -2103,7 +2096,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1562505','15625','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Twilight Corrupter - Cast Thrash on Spawn'),
 -- Anchorite Delan (17104) - NSR
 -- Weakened Morbent Fel (24782) - NSR
--- Duskwood Flame Warden (25896) - NSR
 
 
 
@@ -2880,7 +2872,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Thunderbrew Apprentice (23510) - NSR
 -- Gordok Brew Apprentice (23511) - NSR
 -- Transport Bot D3 (24832) - NSR
--- Elwynn Forest Flame Warden (25898) - NSR
 -- Wisp of Ragnaros (26502) - NSR
 
 
@@ -3206,7 +3197,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Silver Dragonhawk Hatchling 21063
 -- Red Dragonhawk Hatchling 21064
 -- Eversong Pink Elekk (23531) - NSR
--- Eversong Woods Flame Keeper (25931) - NSR
 -- Silvermoon Dragonhawk 27946
 ('2794601','27946','0','0','100','1025','4000','7000','6000','9000','0','0','11','37985','0','0','0','0','0','0','0','0','0','0','Silvermoon Dragonhawk - Cast Fire Breath'),
 
@@ -3537,7 +3527,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2514501','25145','4','0','100','0','0','0','0','0','0','0','57','2','15','0','0','0','0','0','0','0','0','0','Budd''s Bodyguard - Enable Range Mode on Aggro'),
 ('2514502','25145','9','0','100','1025','0','20','8000','13000','0','0','11','12024','1','1024','0','0','0','0','0','0','0','0','Budd''s Bodyguard - Cast Net'),
 ('2514503','25145','9','0','100','1025','0','45','2300','3900','0','0','11','23337','1','256','0','0','0','0','0','0','0','0','Budd''s Bodyguard - Cast Shoot'),
--- Ghostlands Flame Keeper (25933) - NSR
 -- Fight Promoter (26760) - npc_innkeeper
 
 
@@ -3873,8 +3862,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Forsaken Raider 17108
 ('1710801','17108','11','0','100','0','0','0','0','0','0','0','11','6718','0','34','11','8601','0','34','0','0','0','0','Forsaken Raider - Cast Phasing Stealth and Slowing Poison on Spawn'),
 -- Huraan (17218) - NSR
--- Hillsbrad Flame Warden (25901) - NSR
--- Hillsbrad Flame Keeper (25935) - NSR
 
 
 
@@ -4083,11 +4070,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tormek Stoneriver 16009
 -- Deliana 16013
 ('1601301','16013','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Deliana - Enable Range Mode on Spawn'),
-('1601302','16013','9','0','100','1025','0','40','3000','4000','0','0','11','15228','1','256','0','0','0','0','0','0','0','0','Deliana - Cast Fireball'),
+('1601302','16013','9','0','100','1025','0','40','3000','4000','0','0','11','15228','1','256','0','0','0','0','0','0','0','0','Deliana - Cast Fireball');
 -- Garel Redrock 16070
--- Festival Loremaster 16817
--- Ironforge Firebreather
-('1704801','17048','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','Ironforge Firebreather - Cast Firebreath');
 -- Max Xim 19915
 -- Kandaar 20374
 -- Exodar Commendation Officer 21969
@@ -4096,11 +4080,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Farseer Javad 23127
 -- Lucky 23198
 -- Farmer Leon 23200
--- Master Fire Eater 25975
 -- Arena Organizer 26012
 -- Paymaster 26075
--- Midsummer Supplier 26123
--- Earthen Ring Elder 26221
 -- Beastmaster 26307
 -- Fight Promoter 26760 - npc_innkeeper
 -- Gilbarta Grandhammer 27398
@@ -5000,7 +4981,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1680201','16802','0','0','100','1025','5000','7000','5000','9000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Lor''themar Theron - Cast Cleave'),
 ('1680202','16802','0','0','100','1025','8000','11000','10000','13000','0','0','11','33385','4','0','0','0','0','0','0','0','0','0','Lor''themar Theron - Cast Mana Burn'),
 ('1680203','16802','0','0','100','1025','22000','24000','44000','48000','0','0','11','33384','0','0','0','0','0','0','0','0','0','0','Lor''themar Theron - Cast Mass Charm'),
--- Festival Talespinner (16818) - NSR
 -- Honor Hold Target Dummy Middle (16897) - NSR
 -- Jenath 17627
 -- Vynna 17628
@@ -5148,9 +5128,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2520701','25207','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Roitau - Set Invincible on Spawn'),
 -- Lord Solanar Bloodwrath 25223
 -- Arena Organizer (26012) - NSR
--- Master Flame Eater (26113) - NSR
--- Midsummer Merchant (26124) - NSR
--- Earthen Ring Elder (26221) - NSR
 -- Fight Promoter (26760) - npc_innkeeper
 
 
@@ -5452,7 +5429,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Silverpine Elite (15138) - NSR
 -- Elder Obsidian (15561) - NSR
 -- Advisor Sorrelon (16288) - NSR
--- Silverpine Forest Flame Keeper (25939) - NSR
 -- Prince Atherann (27616) - NSR
 -- Prince Keleseth (27618) - NSR
 -- Prince Valanar (27619) - NSR
@@ -5855,8 +5831,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Aristan Mottar 16105
 -- Evert Sorisam 16106
 -- Lieutenant Orrin (16478) - NSR
--- Midsummer Firebreather 17038
-('1703801','17038','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','SW Firebreather Firebreath Cast'),
 -- Emissary Taluun 17103
 -- Squire Rowe 17804 - npc_squire_rowe
 -- Harbinger Ennarth 19848
@@ -6614,7 +6588,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1822102','18221','27','0','100','1','1006','1','15000','30000','0','0','11','1006','0','0','0','0','0','0','0','0','0','0','Holaaru - Cast Inner Fire on Missing Buff'),
 ('1822103','18221','2','0','100','1025','50','0','15000','21000','0','0','11','12039','0','0','0','0','0','0','0','0','0','0','Holaaru - Cast Heal at 50% HP'),
 ('1822104','18221','9','0','100','1025','0','40','3400','4800','0','0','11','15498','1','256','0','0','0','0','0','0','0','0','Holaaru - Cast Holy Smite'),
--- Swamp of Sorrows Flame Keeper (25941) - NSR
 -- Lorrin Foxfire (4.0.3a Official Data)
 ('2770501','27705','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Lorrin Foxfire - Flee at 15% HP'),
 
@@ -6896,8 +6869,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1723601','17236','11','0','100','0','0','0','0','0','0','0','11','3616','0','34','0','0','0','0','0','0','0','0','Tcha''kaz - Cast Poison Proc on Spawn'),
 ('1723602','17236','6','0','100','0','0','0','0','0','0','0','11','11018','0','7','0','0','0','0','0','0','0','0','Tcha''kaz - Cast Summon Witherbark Bloodlings on Death'),
 -- Renn'az (17598) - NSR
--- The Hinterlands Flame Warden (25908) - NSR
--- The Hinterlands Flame Keeper (25944) - NSR
 
 
 
@@ -7503,8 +7474,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Auctioneer Tricket 15684
 -- Auctioneer Rhyker 15686
 -- Ambassador Sunsorrow 16287
--- Midsummer Fireeater
-('1705101','17051','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','UC Fireeater Firebreath Cast'),
 -- Rex Pixem (19909) - NSR
 -- Lyrlia Blackshield
 ('2038601','20386','9','0','100','1025','0','5','8000','11000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Lyrlia Blackshield - Cast Cleave'),
@@ -7921,7 +7890,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elder Meadowrun (15602) - NSR
 -- Ghost of Uther Lightbringer (17233) - NSR
 -- Anchorite Truuen (17238) - npc_anchorite_truuen
--- Western Plaguelands Flame Warden (25909) - NSR
 
 
 
@@ -9144,29 +9112,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2473803','24738','9','0','100','1025','5','30','2600','3500','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Elenna Edune - Cast Shoot'),
 -- Benjari Edune (24739) - NSR
 -- Goodie (24740) - NSR
--- Earthen Ring Guide 25324
-('2532401','25324','11','0','100','0','0','0','0','0','0','0','50','0','0','0','53','19986','0','0','0','0','0','0','Earthen Ring Guide - START_RELAY_SCRIPT and set passive on Spawn'),
-('2532402','25324','30','0','100','0','6','26534','0','0','0','0','53','19987','0','0','0','0','0','0','0','0','0','0','Earthen Ring Guide - START_RELAY_SCRIPT on Receive AI Event Custom B'),
--- Twilight Firesworn 25863
-('2586301','25863','4','0','25','0','0','0','0','0','0','0','1','25098','25099','25100','0','0','0','0','0','0','0','0','Twilight Firesworn - (25% chance) Random Say on Aggro'),
--- Twilight Flameguard 25866
-('2586601','25866','4','0','25','0','0','0','0','0','0','0','1','25098','25099','25100','0','0','0','0','0','0','0','0','Twilight Flameguard - (25% chance) Random Say on Aggro'),
--- Ashenvale Flame Warden (25883) - NSR
--- Ashenvale Flame Keeper (25884) - NSR
--- Twilight Speaker Viktor 25924
-('2592401','25924','4','0','25','0','0','0','0','0','0','0','1','25098','25099','25100','0','0','0','0','0','0','0','0','Twilight Speaker Viktor - (25% chance) Random Say on Aggro'),
--- Ice Caller Briatha (25949) - NSR
--- Heretic Emissary (25951) - NSR
--- Heretic Bodyguard (25980) - NSR
 -- Frostwave Lieutenant 26116
 ('2611601','26116','11','0','100','0','0','0','0','0','0','0','1','25372','0','0','0','0','0','0','0','0','0','0','Frostwave Lieutenant - Say on Spawn'),
 ('2611602','26116','0','0','100','1025','2000','20000','15000','30000','0','0','11','122','17','0','0','0','0','0','0','0','0','0','Frostwave Lieutenant - Cast Frost Nova'),
 ('2611603','26116','0','0','100','1025','5000','20000','15000','20000','0','0','11','8056','1','0','0','0','0','0','0','0','0','0','Frostwave Lieutenant - Cast Frost Shock'),
 -- Wisp of Ragnaros (26502) - NSR
--- Totemic Beacon 26534
-('2653401','26534','11','0','100','0','0','0','0','0','0','0','45','5','200','0','22','1','0','0','0','0','0','0','Earthen Ring Guide - Set Phase 1 on Spawn'),
-('2653402','26534','1','5','100','1','5000','5000','5000','5000','0','0','45','6','5','0','0','0','0','0','0','0','0','0','Earthen Ring Guide - Send Event AI 6 - OOC Timer (Phase 1)'),
-('2653403','26534','30','5','100','0','8','25324','0','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Earthen Ring Guide - Set Phase 2 on Receive AI Event Custom 8'),
 
 
 
@@ -9735,7 +9685,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Great Blue Elekk (20848) - NSR
 -- Great Purple Elekk (20850) - NSR
 -- Crusty Bob (21376) - NSR
--- Azuremyst Isle Flame Warden (25888) - NSR
 -- Paymaster (26075) - NSR
 -- Fight Promoter (26760) - npc_innkeeper
 
@@ -10019,7 +9968,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2206001','22060','9','0','100','1025','0','5','5000','8000','0','0','11','14873','1','0','0','0','0','0','0','0','0','0','Fenissa the Assassin - Cast Sinister Strike'),
 ('2206002','22060','33','0','100','1025','1','0','12000','15000','0','0','11','38863','1','0','0','0','0','0','0','0','0','0','Fenissa the Assassin - Cast Gouge on Facing Target'),
 ('2206003','22060','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Fenissa the Assassin - Flee at 15% HP'),
--- Bloodmyst Isle Flame Warden (25891) - NSR
 -- Fight Promoter (26760) - npc_innkeeper
 
 
@@ -10386,7 +10334,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Thamarian 12656
 ('1265601','12656','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Thamarian - Flee at 15% HP'),
 -- Elder Starweave (15601) - NSR
--- Darkshore Flame Warden (25893) - NSR
 -- Beastmaster (26307) - NSR
 -- Wisp of Ragnaros (26502) - NSR
 
@@ -10841,8 +10788,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Accursed Slitherblade (14229) - NSR
 -- Crusty
 ('1824101','18241','2','0','100','1025','20','0','120000','120000','0','0','11','8599','0','0','1','1191','0','0','0','0','0','0','Crusty - Cast Enrage at 20% HP'),
--- Desolace Flame Warden (25894) - NSR
--- Desolace Flame Keeper (25928) - NSR
 -- Heretic Crystal Guard 26166
 ('2616601','26166','11','0','100','0','0','0','0','0','0','0','11','7165','0','0','0','0','0','0','0','0','0','0','Heretic Crystal Guard - Cast Battle Stance on Spawn'),
 ('2616602','26166','0','0','100','1025','0','10000','10000','20000','0','0','11','7947','1','0','0','0','0','0','0','0','0','0','Heretic Crystal Guard - Cast Localized Toxin'),
@@ -11212,7 +11157,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bok Dropcertain (24527) - NSR
 -- Glodrak Huntsniper (24657) - NSR
 -- Tapper Swindlekeg (24711) - npc_brewfest_barker
--- Durotar Flame Keeper (25929) - NSR
 -- Wisp of Ragnaros (26502) - NSR
 
 
@@ -11768,8 +11712,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Invis Firework Helper 24025 - mob_invis_firework_helper
 -- Ancient Grimtotem Spirit Guide (24133) - NSR
 -- "Little" Logok (24208) - npc_innkeeper
--- Dustwallow Marsh Flame Warden (25897) - NSR
--- Dustwallow Marsh Flame Keeper (25930) - NSR
 -- Grimtotem Spirit Wolf (26111) - NSR
 -- Ysuria
 ('2770301','27703','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Ysuria - Flee at 15% HP'),
@@ -12497,8 +12439,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Demented Druid Spirit (15260) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Shade of Taerar (15302) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Elder Grimtotem (15581) - NSR
--- Feralas Flame Warden (25899) - NSR
--- Feralas Flame Keeper (25932) - NSR
 
 
 
@@ -12860,7 +12800,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ahab Wheathoof
 ('2361801','23618','10','0','100','1','1','10','120000','120000','0','0','1','22167','22168','22166','0','0','0','0','0','0','0','0','Ahab Wheathoof - Random Say on LOS'),
 -- Kyle the Friendly (23622) - NSR
--- Mulgore Flame Keeper (25936) - NSR
 -- Paymaster (26075) - NSR
 -- Fight Promoter (26760) - npc_innkeeper
 
@@ -13130,9 +13069,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mokvar 16012
 -- Tharl Stonebleeder 16076
 -- Lieutenant Dagel 16493
--- Festival Talespinner 16818
--- Orgrimmar Fireeater
-('1704101','17041','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','Org Fireeater Firebreath Cast'),
 -- Hellfire Combat Dummy 17059
 -- Ambassador Dawnsinger 17098
 -- Councilor Arial D'Anastasis 19850
@@ -13151,10 +13087,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- D'rei 23201
 -- Arena Organizer 26012
 -- Paymaster 26075
--- Master Flame Eater 26113
--- Midsummer Merchant 26124
--- Earthen Ring Elder 26221
--- Big Dancing Flames 26267
 -- Beastmaster 26307
 -- Fight Promoter 26760 - npc_innkeeper
 -- Muja 27399
@@ -13664,8 +13596,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1776603','17766','9','0','100','1025','0','5','12000','14000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Mortal Strike'),
 ('1776604','17766','0','0','100','1025','6000','8000','22000','24000','0','0','11','18328','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Incapacitating Shout'),
 ('1776605','17766','13','0','100','1025','20000','30000','22000','24000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Shield Bash on Target Casting'),
--- Silithus Flame Warden 25914
--- Silithus Flame Keeper 25919
 -- Glacial Lieutenant 26215
 ('2621501','26215','11','0','100','0','0','0','0','0','0','0','1','25372','0','0','0','0','0','0','0','0','0','0','Glacial Lieutenant - Say on Spawn'),
 ('2621502','26215','0','0','100','1025','2000','20000','15000','30000','0','0','11','14907','17','0','0','0','0','0','0','0','0','0','Glacial Lieutenant - Cast Frost Nova'),
@@ -13992,7 +13922,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Xen'Zilla
 ('1281601','12816','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Xen''Zilla - Flee at 15% HP'),
 -- Innkeeper Faralia (16458) - npc_innkeeper
--- Stonetalon Flame Keeper (25940) - NSR
 
 
 
@@ -14337,8 +14266,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2144804','21448','0','0','100','1025','0','10000','7000','12000','0','0','11','23337','4','512','0','0','0','0','0','0','0','0','Gadgetzan Sniper - Cast Shoot'),
 ('2144805','21448','9','0','100','1025','5','80','2300','3900','0','0','11','22121','1','256','0','0','0','0','0','0','0','0','Gadgetzan Sniper - Cast Shoot'),
 -- Alurmi (21643) - NSR
--- Tanaris Flame Warden (25916) - NSR
--- Tanaris Flame Keeper (25921) - NSR
 -- Don Carlos (28126) - NSR
 
 
@@ -14630,14 +14557,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1443202','14432','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Threggil - Flee at 15% HP'),
 -- Elder Bladeleaf 15595
 -- Forest Wisp 15624
--- Festival Loremaster 16817
--- Darnassus Firebreather
-('1704901','17049','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','Darn Firebreather Firebreath Cast'),
--- Teldrassil Flame Warden 25906
--- Master Fire Eater 25975
 -- Paymaster (26075) - NSR
--- Midsummer Supplier 26123
--- Earthen Ring Elder 26221
 -- Fight Promoter (26760) - npc_innkeeper
 
 
@@ -15557,8 +15477,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mulgore Pink Elekk 23529
 -- T'chali's Voodoo Brewery Apprentice 23533
 -- Drohn's Distillery Apprentice 24501
--- Midsummer Fireeater
-('1705001','17050','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','TB Fireeater Firebreath Cast'),
 
 
 
@@ -15993,8 +15911,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1562305','15623','6','0','100','0','0','0','0','0','0','0','11','25791','0','7','0','0','0','0','0','0','0','0','Xandivious - Cast Xandivious Demon Bag on Death');
 -- Vi'el 16015
 -- Bronn Fitzwrench 16416
--- Winterspring Flame Warden 25917
--- Winterspring Flame Keeper 25922
 -- Lemming 28100 NSR
 
 
@@ -19883,7 +19799,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2497703','24977','1','5','100','1','20000','40000','20000','40000','0','0','22','0','0','0','51','0','0','0','0','0','0','0','Warp - UnPause Waypoints and set Phase 0 OOC (Phase 1)'),
 ('2497704','24977','1','3','100','1','2000','2000','20000','40000','0','0','53','-18026','0','0','0','0','0','0','0','0','0','0','Warp - Change to random Orientation OOC(Phase 2)'),
 ('2497705','24977','1','3','100','1','15000','50000','0','0','0','0','51','0','0','0','22','0','0','0','0','0','0','0','Warp - Unpause Waypoints OOC and set Phase 0(Phase 2)'),
--- Netherstorm Flame Keeper 25918
 -- Meeda 28343
 -- Blazzle 28344
 -- GUID Based
@@ -32606,6 +32521,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('19228120','19228','1','7','100','0','274000','274000','0','0','0','0','5','21','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Emote (Phase 3)'),
 ('19228121','19228','1','7','100','0','281000','281000','0','0','0','0','1','16381','16343','16345','0','0','0','0','0','0','0','0','Perry Gatner - Closing Random Say (Phase 3)'),
 
+
+
 -- ===============
 -- Children's Week
 -- ===============
@@ -32616,12 +32533,29 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Masked Orphan Matron 23973 - npc_orphan_matron
 -- Costumed Orphan Matron 24519 - npc_orphan_matron
 
+
+
 -- =======================
 -- Midsummer Fire Festival
 -- =======================
+-- Midsummer Bonfire 16592
 -- Midsummer Celebrant 16781
 ('1678101','16781','1','0','100','1','0','20000','5000','20000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Midsummer Celebrant - Talk Emote'),
 ('1678102','16781','1','0','100','1','0','60000','5000','60000','0','0','5','4','0','0','0','0','0','0','0','0','0','0','Midsummer Celebrant - Cheer Emote'),
+-- Festival Loremaster 16817
+-- Festival Talespinner 16818
+-- Stormwind Firebreather 17038
+('1703801','17038','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','Stormwind Firebreather - Cast Holiday Breath of Fire, Effect (NPC)'),
+-- Orgrimmar Fireeater 17041
+('1704101','17041','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','Orgrimmar Fireeater - Cast Holiday Breath of Fire, Effect (NPC)'),
+-- Ironforge Firebreather 17048
+('1704801','17048','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','Ironforge Firebreather - Cast Holiday Breath of Fire, Effect (NPC)'),
+-- Darnassus Firebreather 17049
+('1704901','17049','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','Darnassus Firebreather - Cast Holiday Breath of Fire, Effect (NPC)'),
+-- Thunder Bluff Fireeater 17050
+('1705001','17050','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','Thunder Bluff Fireeater - Cast Holiday Breath of Fire, Effect (NPC)'),
+-- Undercity Fireeater 17051
+('1705101','17051','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','Undercity Fireeater - Cast Holiday Breath of Fire, Effect (NPC)'),
 -- Dancing Flames 25305
 ('2530501','25305','11','0','100','0','0','0','0','0','0','0','11','45427','0','0','5','10','0','0','0','0','0','0','Dancing Flames - Cast Brazier Dance and Emote Dance on Spawn'),
 ('2530502','25305','22','0','100','1','34','0','0','0','0','0','11','47057','6','0','0','0','0','0','0','0','0','0','Dancing Flames - Cast Fiery Seduction on Player on Receive Emote Dance'),
@@ -32629,15 +32563,135 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2530504','25305','22','0','100','1','101','0','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Dancing Flames - Wave on Receive Emote Wave'),
 ('2530505','25305','22','0','100','1','58','0','0','0','0','0','5','33','0','0','0','0','0','0','0','0','0','0','Dancing Flames - shy on Receive Emote Kiss'),
 ('2530506','25305','22','0','100','1','329','0','0','0','0','0','5','11','0','0','0','0','0','0','0','0','0','0','Dancing Flames - shy on Receive Emote Joke/Silly'),
+-- Earthen Ring Guide 25324
+('2532401','25324','11','0','100','0','0','0','0','0','0','0','50','0','0','0','53','19986','0','0','0','0','0','0','Earthen Ring Guide - START_RELAY_SCRIPT and set passive on Spawn'),
+('2532402','25324','30','0','100','0','6','26534','0','0','0','0','53','19987','0','0','0','0','0','0','0','0','0','0','Earthen Ring Guide - START_RELAY_SCRIPT on Receive AI Event Custom B'),
+-- [DNT] Torch Tossing Target Bunny 25535
 -- [DNT] Torch Tossing Target Bunny Controller 25536 - npc_torch_tossing_bunny_controller
+-- Twilight Firesworn 25863
+('2586301','25863','4','0','25','0','0','0','0','0','0','0','1','25098','25099','25100','0','0','0','0','0','0','0','0','Twilight Firesworn - (25% chance) Random Say on Aggro'),
+-- Twilight Flameguard 25866
+('2586601','25866','4','0','25','0','0','0','0','0','0','0','1','25098','25099','25100','0','0','0','0','0','0','0','0','Twilight Flameguard - (25% chance) Random Say on Aggro'),
+-- Ashenvale Flame Warden 25883
+('2588301','25883','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Ashenvale Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Ashenvale Flame Keeper 25884
+-- Arathi Flame Warden 25887
+('2588701','25887','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Arathi Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Azuremyst Isle Flame Warden 25888
+('2588801','25888','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Azuremyst Isle Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Blade's Edge Flame Warden 25889
+('2588901','25889','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Blade''s Edge Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Blasted Lands Flame Warden 25890
+('2589001','25890','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Blasted Lands Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Bloodmyst Isle Flame Warden 25891
+('2589101','25891','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Bloodmyst Isle Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Burning Steppes Flame Warden 25892
+('2589201','25892','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Burning Steppes Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Darkshore Flame Warden 25893
+('2589301','25893','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Darkshore Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Desolace Flame Warden 25894
+('2589401','25894','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Desolace Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Dun Morogh Flame Warden 25895
+('2589501','25895','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Dun Morogh Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Duskwood Flame Warden 25896
+('2589601','25896','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Duskwood Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Dustwallow Marsh Flame Warden 25897
+('2589701','25897','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Dustwallow Marsh Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Elwynn Forest Flame Warden 25898
+('2589801','25898','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Elwynn Forest Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Feralas Flame Warden 25899
+('2589901','25899','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Feralas Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Hellfire Peninsula Flame Warden 25900
+('2590001','25900','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Hellfire Peninsula Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Hillsbrad Flame Warden 25901
+('2590101','25901','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Hillsbrad Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Loch Modan Flame Warden 25902
+('2590201','25902','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Loch Modan Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Nagrand Flame Warden 25903
+('2590301','25903','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Nagrand Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Redridge Flame Warden 25904
+('2590401','25904','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Redridge Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Shadowmoon Valley Flame Warden 25905
+('2590501','25905','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Shadowmoon Valley Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Teldrassil Flame Warden 25906
+('2590601','25906','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Teldrassil Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Terokkar Forest Flame Warden 25907
+('2590701','25907','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Terokkar Forest Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- The Hinterlands Flame Warden 25908
+('2590801','25908','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','The Hinterlands Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Western Plaguelands Flame Warden 25909
+('2590901','25909','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Western Plaguelands Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Westfall Flame Warden 25910
+('2591001','25910','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Westfall Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Wetlands Flame Warden 25911
+('2591101','25911','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Wetlands Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Zangarmarsh Flame Warden 25912
+('2591201','25912','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Zangarmarsh Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Netherstorm Flame Warden 25913
+('2591301','25913','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Netherstorm Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Silithus Flame Warden 25914
+('2591401','25914','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Silithus Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Stranglethorn Vale Flame Warden 25915
+('2591501','25915','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Stranglethorn Vale Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Tanaris Flame Warden 25916
+('2591601','25916','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Tanaris Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Winterspring Flame Warden 25917
+('2591701','25917','11','0','100','0','0','0','0','0','0','0','11','46972','0','0','0','0','0','0','0','0','0','0','Winterspring Flame Warden - Cast Summon Summer Scorchling on Spawn'),
+-- Netherstorm Flame Keeper 25918
+-- Silithus Flame Keeper 25919
+-- Stranglethorn Vale Flame Keeper 25920
+-- Tanaris Flame Keeper 25921
+-- Winterspring Flame Keeper 25922
+-- Arathi Flame Keeper 25923
+-- Twilight Speaker Viktor 25924
+('2592401','25924','4','0','25','0','0','0','0','0','0','0','1','25098','25099','25100','0','0','0','0','0','0','0','0','Twilight Speaker Viktor - (25% chance) Random Say on Aggro'),
+-- Badlands Flame Keeper 25925
+-- Blade's Edge Flame Keeper 25926
+-- Burning Steppes Flame Keeper 25927
+-- Desolace Flame Keeper 25928
+-- Durotar Flame Keeper 25929
+-- Dustwallow Marsh Flame Keeper 25930
+-- Eversong Woods Flame Keeper 25931
+-- Feralas Flame Keeper 25932
+-- Ghostlands Flame Keeper 25933
+-- Hellfire Peninsula Flame Keeper 25934
+-- Hillsbrad Flame Keeper 25935
+-- Mulgore Flame Keeper 25936
+-- Nagrand Flame Keeper 25937
+-- Shadowmoon Valley Flame Keeper 25938
+-- Silverpine Forest Flame Keeper 25939
+-- Stonetalon Flame Keeper 25940
+-- Swamp of Sorrows Flame Keeper 25941
+-- Terokkar Forest Flame Keeper 25942
+-- The Barrens Flame Keeper 25943
+-- The Hinterlands Flame Keeper 25944
+-- Thousand Needles Flame Keeper 25945
+-- Tirisfal Glades Flame Keeper 25946
+-- Zangarmarsh Flame Keeper 25947
+-- Ice Caller Briatha (25949) - NSR
+-- Heretic Emissary (25951) - NSR
+-- Heretic Bodyguard (25980) - NSR
 -- Fire Eater 25962
 ('2596201','25962','1','0','100','1','30000','45000','30000','45000','0','0','53','-12009','0','0','0','0','0','0','0','0','0','0','Fire Eater - Start Random Relay Script on Timer OOC'),
+-- Master Fire Eater 25975
 -- Flame Eater 25994
 ('2599401','25994','1','0','100','1','30000','45000','30000','45000','0','0','53','-12009','0','0','0','0','0','0','0','0','0','0','Flame Eater - Start Random Relay Script on Timer OOC'),
+-- Master Flame Eater 26113
+-- Midsummer Supplier 26123
+-- Midsummer Merchant 26124
+-- [PH] Torch Catching Target Bunny 26188
+-- Earthen Ring Elder 26221
+-- [DND] Midsummer Bonfire Faction Bunny - A 26258
 -- Big Dancing Flames 26267
-('2626701','26267','11','0','100','0','0','0','0','0','0','0','11','46828','0','0','5','10','0','0','0','0','0','0','Big Dancing Flames - Cast Brazier Dance, Big and Emote Dance on Spawn');
+('2626701','26267','11','0','100','0','0','0','0','0','0','0','11','46828','0','0','5','10','0','0','0','0','0','0','Big Dancing Flames - Cast Brazier Dance, Big and Emote Dance on Spawn'),
+-- [DND] Midsummer Bonfire Faction Bunny - H 26355
 -- Summer Scorchling 26401
 -- Festival Scorchling 26520
+-- Totemic Beacon 26534
+('2653401','26534','11','0','100','0','0','0','0','0','0','0','45','5','200','0','22','1','0','0','0','0','0','0','Earthen Ring Guide - Set Phase 1 on Spawn'),
+('2653402','26534','1','5','100','1','5000','5000','5000','5000','0','0','45','6','5','0','0','0','0','0','0','0','0','0','Earthen Ring Guide - Send Event AI 6 - OOC Timer (Phase 1)'),
+('2653403','26534','30','5','100','0','8','25324','0','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Earthen Ring Guide - Set Phase 2 on Receive AI Event Custom 8');
+
 
 
 -- =======================================================
