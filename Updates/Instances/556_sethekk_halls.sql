@@ -732,37 +732,43 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+22, 'Sethekk Halls - Group 020 - Sethekk Initiate', 0, 0, 0, 1, 0),
 -- Spawn Group Squad
 (@SGGUID+23, 'Sethekk Halls - Group 021 - Squad 006 - Time-Lost Scryer | Time-Lost Controller | Sethekk Oracle', 0, 0, 0, 1, 0),
-(@SGGUID+28, 'Sethekk Halls - Group 022 - Sethekk Ravenguard (2)', 0, 0, 0, 1, 0),
-(@SGGUID+29, 'Sethekk Halls - Group 023 - Avian Ripper (10)', 0, 0, 0, 1, 0),
-(@SGGUID+30, 'Sethekk Halls - Group 024 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
-(@SGGUID+31, 'Sethekk Halls - Group 025 - Time-Lost Scryer | Sethekk Prophet | Sethekk Shaman/Sethekk Prophet', 0, 0, 0, 1, 0),
-(@SGGUID+32, 'Sethekk Halls - Group 026 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
-(@SGGUID+33, 'Sethekk Halls - Group 027 - Time-Lost Scryer | Sethekk Prophet | Sethekk Shaman/Sethekk Prophet', 0, 0, 0, 1, 0),
-(@SGGUID+34, 'Sethekk Halls - Group 028 - Avian Ripper (5)', 0, 0, 0, 1, 0),
-(@SGGUID+35, 'Sethekk Halls - Group 029 - Avian Ripper (5)', 0, 0, 0, 1, 0),
-(@SGGUID+36, 'Sethekk Halls - Group 030 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
-(@SGGUID+37, 'Sethekk Halls - Group 031 - Time-Lost Scryer | Sethekk Prophet | Sethekk Shaman/Sethekk Prophet', 0, 0, 0, 1, 0),
-(@SGGUID+38, 'Sethekk Halls - Group 032 - Sethekk Ravenguard (2)', 0, 0, 0, 1, 0),
-(@SGGUID+39, 'Sethekk Halls - Group 033 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
-(@SGGUID+40, 'Sethekk Halls - Group 034 - Time-Lost Shadowmage | Sethekk Prophet/Sethekk Shaman/Time-Lost Scryer | Sethekk Prophet', 0, 0, 0, 1, 0),
-(@SGGUID+41, 'Sethekk Halls - Group 035 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
-(@SGGUID+42, 'Sethekk Halls - Group 036 - Time-Lost Shadowmage | Sethekk Prophet/Sethekk Shaman/Time-Lost Scryer | Sethekk Prophet', 0, 0, 0, 1, 0),
-(@SGGUID+43, 'Sethekk Halls - Group 037 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
-(@SGGUID+44, 'Sethekk Halls - Group 038 - Time-Lost Shadowmage | Sethekk Prophet/Sethekk Shaman/Time-Lost Scryer | Sethekk Prophet', 0, 0, 0, 1, 0),
-(@SGGUID+45, 'Sethekk Halls - Group 039 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
-(@SGGUID+46, 'Sethekk Halls - Group 040 - Time-Lost Shadowmage | Sethekk Prophet/Sethekk Shaman/Time-Lost Scryer | Sethekk Prophet', 0, 0, 0, 1, 0),
-(@SGGUID+47, 'Sethekk Halls - Group 041 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
-(@SGGUID+48, 'Sethekk Halls - Group 042 - Time-Lost Shadowmage | Sethekk Prophet/Sethekk Shaman/Time-Lost Scryer | Sethekk Prophet', 0, 0, 0, 1, 0),
-(@SGGUID+49, 'Sethekk Halls - Group 043 - Avian Warhawk | Sethekk Talon Lord | Sethekk Prophet | Sethekk Shaman | Time-Lost Shadowmage', 0, 0, 0, 1, 0);
+(@SGGUID+24, 'Sethekk Halls - Group 022 - Sethekk Ravenguard (2)', 0, 0, 0, 1, 0),
+(@SGGUID+25, 'Sethekk Halls - Group 023 - Avian Ripper (10)', 0, 0, 0, 1, 0),
+(@SGGUID+26, 'Sethekk Halls - Group 024 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
+(@SGGUID+27, 'Sethekk Halls - Group 025 - Time-Lost Scryer | Sethekk Prophet | Sethekk Shaman/Sethekk Prophet', 0, 0, 0, 1, 0),
+(@SGGUID+28, 'Sethekk Halls - Group 026 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
+(@SGGUID+29, 'Sethekk Halls - Group 027 - Time-Lost Scryer | Sethekk Prophet | Sethekk Shaman/Sethekk Prophet', 0, 0, 0, 1, 0),
+(@SGGUID+30, 'Sethekk Halls - Group 028 - Avian Ripper (5)', 0, 0, 0, 1, 0),
+(@SGGUID+31, 'Sethekk Halls - Group 029 - Avian Ripper (5)', 0, 0, 0, 1, 0),
+(@SGGUID+32, 'Sethekk Halls - Group 030 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
+(@SGGUID+33, 'Sethekk Halls - Group 031 - Time-Lost Scryer | Sethekk Prophet | Sethekk Shaman/Sethekk Prophet', 0, 0, 0, 1, 0),
+(@SGGUID+34, 'Sethekk Halls - Group 032 - Sethekk Ravenguard (2)', 0, 0, 0, 1, 0),
+(@SGGUID+35, 'Sethekk Halls - Group 033 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
+(@SGGUID+36, 'Sethekk Halls - Group 034 - Time-Lost Shadowmage | Sethekk Prophet/Sethekk Shaman/Time-Lost Scryer | Sethekk Prophet', 0, 0, 0, 1, 0),
+(@SGGUID+37, 'Sethekk Halls - Group 035 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
+(@SGGUID+38, 'Sethekk Halls - Group 036 - Time-Lost Shadowmage | Sethekk Prophet/Sethekk Shaman/Time-Lost Scryer | Sethekk Prophet', 0, 0, 0, 1, 0),
+(@SGGUID+39, 'Sethekk Halls - Group 037 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
+(@SGGUID+40, 'Sethekk Halls - Group 038 - Time-Lost Shadowmage | Sethekk Prophet/Sethekk Shaman/Time-Lost Scryer | Sethekk Prophet', 0, 0, 0, 1, 0),
+(@SGGUID+41, 'Sethekk Halls - Group 039 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
+(@SGGUID+42, 'Sethekk Halls - Group 040 - Time-Lost Shadowmage | Sethekk Prophet/Sethekk Shaman/Time-Lost Scryer | Sethekk Prophet', 0, 0, 0, 1, 0),
+(@SGGUID+43, 'Sethekk Halls - Group 041 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
+(@SGGUID+44, 'Sethekk Halls - Group 042 - Time-Lost Shadowmage | Sethekk Prophet/Sethekk Shaman/Time-Lost Scryer | Sethekk Prophet', 0, 0, 0, 1, 0),
+(@SGGUID+45, 'Sethekk Halls - Group 043 - Avian Warhawk | Sethekk Talon Lord | Sethekk Prophet | Sethekk Shaman | Time-Lost Shadowmage', 0, 0, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGGUID+30, 18321, 0, 0, 0), (@SGGUID+30, 21904, 0, 0, 0), -- Sethekk Talon Lord, Avian Warhawk
-(@SGGUID+31, 18325, 0, 0, 0), (@SGGUID+31, 18326, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman
+(@SGGUID+26, 18321, 0, 0, 0), (@SGGUID+26, 21904, 0, 0, 0), -- Sethekk Talon Lord, Avian Warhawk
+(@SGGUID+27, 18325, 0, 0, 0), (@SGGUID+27, 18326, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman
+(@SGGUID+28, 18321, 0, 0, 0), (@SGGUID+28, 21904, 0, 0, 0), -- Sethekk Talon Lord, Avian Warhawk
+(@SGGUID+29, 18325, 0, 0, 0), (@SGGUID+29, 18326, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman
+
 (@SGGUID+32, 18321, 0, 0, 0), (@SGGUID+32, 21904, 0, 0, 0), -- Sethekk Talon Lord, Avian Warhawk
 (@SGGUID+33, 18325, 0, 0, 0), (@SGGUID+33, 18326, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman
+(@SGGUID+35, 18321, 0, 0, 0), (@SGGUID+35, 21904, 0, 0, 0), -- Sethekk Talon Lord, Avian Warhawk
+(@SGGUID+36, 18325, 0, 0, 0), (@SGGUID+36, 18326, 0, 0, 0), (@SGGUID+36, 18319, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman, Time-Lost Scryer
 
-(@SGGUID+36, 18321, 0, 0, 0), (@SGGUID+36, 21904, 0, 0, 0), -- Sethekk Talon Lord, Avian Warhawk
-(@SGGUID+37, 18325, 0, 0, 0), (@SGGUID+37, 18326, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman
+(@SGGUID+37, 18321, 0, 0, 0), (@SGGUID+37, 21904, 0, 0, 0), -- Sethekk Talon Lord, Avian Warhawk
+(@SGGUID+38, 18325, 0, 0, 0), (@SGGUID+38, 18326, 0, 0, 0), (@SGGUID+38, 18319, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman, Time-Lost Scryer
+
 (@SGGUID+39, 18321, 0, 0, 0), (@SGGUID+39, 21904, 0, 0, 0), -- Sethekk Talon Lord, Avian Warhawk
 (@SGGUID+40, 18325, 0, 0, 0), (@SGGUID+40, 18326, 0, 0, 0), (@SGGUID+40, 18319, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman, Time-Lost Scryer
 
@@ -770,13 +776,7 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+42, 18325, 0, 0, 0), (@SGGUID+42, 18326, 0, 0, 0), (@SGGUID+42, 18319, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman, Time-Lost Scryer
 
 (@SGGUID+43, 18321, 0, 0, 0), (@SGGUID+43, 21904, 0, 0, 0), -- Sethekk Talon Lord, Avian Warhawk
-(@SGGUID+44, 18325, 0, 0, 0), (@SGGUID+44, 18326, 0, 0, 0), (@SGGUID+44, 18319, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman, Time-Lost Scryer
-
-(@SGGUID+45, 18321, 0, 0, 0), (@SGGUID+45, 21904, 0, 0, 0), -- Sethekk Talon Lord, Avian Warhawk
-(@SGGUID+46, 18325, 0, 0, 0), (@SGGUID+46, 18326, 0, 0, 0), (@SGGUID+46, 18319, 0, 0, 0), -- Sethekk Prophet, Sethekk Shaman, Time-Lost Scryer
-
-(@SGGUID+47, 18321, 0, 0, 0), (@SGGUID+47, 21904, 0, 0, 0), -- Sethekk Talon Lord, Avian Warhawk
-(@SGGUID+48, 18325, 0, 0, 0), (@SGGUID+48, 18326, 0, 0, 0), (@SGGUID+48, 18319, 0, 0, 0); -- Sethekk Prophet, Sethekk Shaman, Time-Lost Scryer
+(@SGGUID+44, 18325, 0, 0, 0), (@SGGUID+44, 18326, 0, 0, 0), (@SGGUID+44, 18319, 0, 0, 0); -- Sethekk Prophet, Sethekk Shaman, Time-Lost Scryer
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+39, 0, 0), -- Sethekk Guard
@@ -860,88 +860,88 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+23, @CGUID+74, 1, 0), -- spawn_group_squadr
 (@SGGUID+23, @CGUID+85, 2, 0), -- spawn_group_squad
 
-(@SGGUID+28, @CGUID+35, 0, 0), -- Sethekk Ravenguard
-(@SGGUID+28, @CGUID+38, 1, 0), -- Sethekk Ravenguard
+(@SGGUID+24, @CGUID+35, 0, 0), -- Sethekk Ravenguard
+(@SGGUID+24, @CGUID+38, 1, 0), -- Sethekk Ravenguard
 
-(@SGGUID+29, @CGUID+100, -1, 0), -- Avian Ripper
-(@SGGUID+29, @CGUID+101, -1, 0), -- Avian Ripper
-(@SGGUID+29, @CGUID+102, -1, 0), -- Avian Ripper
-(@SGGUID+29, @CGUID+116, -1, 0), -- Avian Ripper
-(@SGGUID+29, @CGUID+117, -1, 0), -- Avian Ripper
-(@SGGUID+29, @CGUID+118, -1, 0), -- Avian Ripper
-(@SGGUID+29, @CGUID+119, -1, 0), -- Avian Ripper
-(@SGGUID+29, @CGUID+120, -1, 0), -- Avian Ripper
-(@SGGUID+29, @CGUID+121, -1, 0), -- Avian Ripper
-(@SGGUID+29, @CGUID+122, -1, 0), -- Avian Ripper
+(@SGGUID+25, @CGUID+100, -1, 0), -- Avian Ripper
+(@SGGUID+25, @CGUID+101, -1, 0), -- Avian Ripper
+(@SGGUID+25, @CGUID+102, -1, 0), -- Avian Ripper
+(@SGGUID+25, @CGUID+116, -1, 0), -- Avian Ripper
+(@SGGUID+25, @CGUID+117, -1, 0), -- Avian Ripper
+(@SGGUID+25, @CGUID+118, -1, 0), -- Avian Ripper
+(@SGGUID+25, @CGUID+119, -1, 0), -- Avian Ripper
+(@SGGUID+25, @CGUID+120, -1, 0), -- Avian Ripper
+(@SGGUID+25, @CGUID+121, -1, 0), -- Avian Ripper
+(@SGGUID+25, @CGUID+122, -1, 0), -- Avian Ripper
 
-(@SGGUID+30, @CGUID+28, 0, 0), -- spawn_group_entry
+(@SGGUID+26, @CGUID+28, 0, 0), -- spawn_group_entry
 
-(@SGGUID+31, @CGUID+15, 0, 0), -- Time-Lost Scryer
-(@SGGUID+31, @CGUID+54, 1, 0), -- spawn_group_entry
-(@SGGUID+31, @CGUID+56, 2, 0), -- Sethekk Prophet
+(@SGGUID+27, @CGUID+15, 0, 0), -- Time-Lost Scryer
+(@SGGUID+27, @CGUID+54, 1, 0), -- spawn_group_entry
+(@SGGUID+27, @CGUID+56, 2, 0), -- Sethekk Prophet
 
-(@SGGUID+32, @CGUID+125, 0, 0), -- spawn_group_entry
+(@SGGUID+28, @CGUID+125, 0, 0), -- spawn_group_entry
 
-(@SGGUID+33, @CGUID+19, 0, 0), -- Time-Lost Scryer
-(@SGGUID+33, @CGUID+55, 1, 0), -- spawn_group_entry
-(@SGGUID+33, @CGUID+57, 2, 0), -- Sethekk Prophet
+(@SGGUID+29, @CGUID+19, 0, 0), -- Time-Lost Scryer
+(@SGGUID+29, @CGUID+55, 1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+57, 2, 0), -- Sethekk Prophet
 
-(@SGGUID+34, @CGUID+103, -1, 0), -- Avian Ripper
-(@SGGUID+34, @CGUID+104, -1, 0), -- Avian Ripper
-(@SGGUID+34, @CGUID+105, -1, 0), -- Avian Ripper
-(@SGGUID+34, @CGUID+106, -1, 0), -- Avian Ripper
-(@SGGUID+34, @CGUID+107, -1, 0), -- Avian Ripper
+(@SGGUID+30, @CGUID+103, -1, 0), -- Avian Ripper
+(@SGGUID+30, @CGUID+104, -1, 0), -- Avian Ripper
+(@SGGUID+30, @CGUID+105, -1, 0), -- Avian Ripper
+(@SGGUID+30, @CGUID+106, -1, 0), -- Avian Ripper
+(@SGGUID+30, @CGUID+107, -1, 0), -- Avian Ripper
 
-(@SGGUID+35, @CGUID+108, -1, 0), -- Avian Ripper
-(@SGGUID+35, @CGUID+109, -1, 0), -- Avian Ripper
-(@SGGUID+35, @CGUID+110, -1, 0), -- Avian Ripper
-(@SGGUID+35, @CGUID+123, -1, 0), -- Avian Ripper
-(@SGGUID+35, @CGUID+124, -1, 0), -- Avian Ripper
+(@SGGUID+31, @CGUID+108, -1, 0), -- Avian Ripper
+(@SGGUID+31, @CGUID+109, -1, 0), -- Avian Ripper
+(@SGGUID+31, @CGUID+110, -1, 0), -- Avian Ripper
+(@SGGUID+31, @CGUID+123, -1, 0), -- Avian Ripper
+(@SGGUID+31, @CGUID+124, -1, 0), -- Avian Ripper
 
-(@SGGUID+36, @CGUID+126, 0, 0), -- spawn_group_entry
+(@SGGUID+32, @CGUID+126, 0, 0), -- spawn_group_entry
 
-(@SGGUID+37, @CGUID+20, 0, 0), -- Time-Lost Scryer
-(@SGGUID+37, @CGUID+66, 1, 0), -- spawn_group_entry
-(@SGGUID+37, @CGUID+60, 2, 0), -- Sethekk Prophet
+(@SGGUID+33, @CGUID+20, 0, 0), -- Time-Lost Scryer
+(@SGGUID+33, @CGUID+66, 1, 0), -- spawn_group_entry
+(@SGGUID+33, @CGUID+60, 2, 0), -- Sethekk Prophet
 
-(@SGGUID+38, @CGUID+36, 0, 0), -- Sethekk Ravenguard
-(@SGGUID+38, @CGUID+37, 1, 0), -- Sethekk Ravenguard
+(@SGGUID+34, @CGUID+36, 0, 0), -- Sethekk Ravenguard
+(@SGGUID+34, @CGUID+37, 1, 0), -- Sethekk Ravenguard
 
-(@SGGUID+39, @CGUID+127, 0, 0), -- spawn_group_entry
+(@SGGUID+35, @CGUID+127, 0, 0), -- spawn_group_entry
 
-(@SGGUID+40, @CGUID+23, 0, 0), -- Time-Lost Shadowmage
-(@SGGUID+40, @CGUID+58, 1, 0), -- Sethekk Prophet
-(@SGGUID+40, @CGUID+16, 2, 0), -- spawn_group_entry
+(@SGGUID+36, @CGUID+23, 0, 0), -- Time-Lost Shadowmage
+(@SGGUID+36, @CGUID+58, 1, 0), -- Sethekk Prophet
+(@SGGUID+36, @CGUID+16, 2, 0), -- spawn_group_entry
 
-(@SGGUID+41, @CGUID+30, 0, 0), -- spawn_group_entry
+(@SGGUID+37, @CGUID+30, 0, 0), -- spawn_group_entry
 
-(@SGGUID+42, @CGUID+21, 0, 0), -- Time-Lost Shadowmage
-(@SGGUID+42, @CGUID+53, 1, 0), -- Sethekk Prophet
-(@SGGUID+42, @CGUID+25, 2, 0), -- spawn_group_entry
+(@SGGUID+38, @CGUID+21, 0, 0), -- Time-Lost Shadowmage
+(@SGGUID+38, @CGUID+53, 1, 0), -- Sethekk Prophet
+(@SGGUID+38, @CGUID+25, 2, 0), -- spawn_group_entry
 
-(@SGGUID+43, @CGUID+31, 0, 0), -- spawn_group_entry
+(@SGGUID+39, @CGUID+31, 0, 0), -- spawn_group_entry
 
-(@SGGUID+44, @CGUID+17, 0, 0), -- Time-Lost Shadowmage
-(@SGGUID+44, @CGUID+61, 1, 0), -- Sethekk Prophet
-(@SGGUID+44, @CGUID+22, 2, 0), -- spawn_group_entry
+(@SGGUID+40, @CGUID+17, 0, 0), -- Time-Lost Shadowmage
+(@SGGUID+40, @CGUID+61, 1, 0), -- Sethekk Prophet
+(@SGGUID+40, @CGUID+22, 2, 0), -- spawn_group_entry
 
-(@SGGUID+45, @CGUID+128, 0, 0), -- spawn_group_entry
+(@SGGUID+41, @CGUID+128, 0, 0), -- spawn_group_entry
 
-(@SGGUID+46, @CGUID+26, 0, 0), -- Time-Lost Shadowmage
-(@SGGUID+46, @CGUID+63, 1, 0), -- Sethekk Prophet
-(@SGGUID+46, @CGUID+62, 2, 0), -- spawn_group_entry
+(@SGGUID+42, @CGUID+26, 0, 0), -- Time-Lost Shadowmage
+(@SGGUID+42, @CGUID+63, 1, 0), -- Sethekk Prophet
+(@SGGUID+42, @CGUID+62, 2, 0), -- spawn_group_entry
 
-(@SGGUID+47, @CGUID+32, 0, 0), -- spawn_group_entry
+(@SGGUID+43, @CGUID+32, 0, 0), -- spawn_group_entry
 
-(@SGGUID+48, @CGUID+27, 0, 0), -- Time-Lost Shadowmage
-(@SGGUID+48, @CGUID+64, 1, 0), -- Sethekk Prophet
-(@SGGUID+48, @CGUID+18, 2, 0), -- spawn_group_entry
+(@SGGUID+44, @CGUID+27, 0, 0), -- Time-Lost Shadowmage
+(@SGGUID+44, @CGUID+64, 1, 0), -- Sethekk Prophet
+(@SGGUID+44, @CGUID+18, 2, 0), -- spawn_group_entry
 
-(@SGGUID+49, @CGUID+129, 0, 0), -- Avian Warhawk
-(@SGGUID+49, @CGUID+29, 1, 0), -- Sethekk Talon Lord
-(@SGGUID+49, @CGUID+59, 2, 0), -- Sethekk Prophet
-(@SGGUID+49, @CGUID+65, 3, 0), -- Sethekk Shaman
-(@SGGUID+49, @CGUID+24, 4, 0); -- Time-Lost Shadowmage
+(@SGGUID+45, @CGUID+129, 0, 0), -- Avian Warhawk
+(@SGGUID+45, @CGUID+29, 1, 0), -- Sethekk Talon Lord
+(@SGGUID+45, @CGUID+59, 2, 0), -- Sethekk Prophet
+(@SGGUID+45, @CGUID+65, 3, 0), -- Sethekk Shaman
+(@SGGUID+45, @CGUID+24, 4, 0); -- Time-Lost Shadowmage
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 -- Group 12 - Squad 001
