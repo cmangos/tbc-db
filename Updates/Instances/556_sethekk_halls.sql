@@ -848,7 +848,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+19, @CGUID+114, -1, 0), -- Avian Ripper
 (@SGGUID+19, @CGUID+115, -1, 0), -- Avian Ripper
 
-(@SGGUID+20, @CGUID+9, -1, 0), -- Sethekk Initiate
+(@SGGUID+20, @CGUID+8, -1, 0), -- Sethekk Initiate
 
 (@SGGUID+21, @CGUID+14, 0, 0), -- spawn_group_squad
 (@SGGUID+21, @CGUID+77, 1, 0), -- spawn_group_squad
