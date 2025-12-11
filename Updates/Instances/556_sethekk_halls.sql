@@ -715,20 +715,19 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Spawn Group Squad
 (@SGGUID+12, 'Sethekk Halls - Group 012 - Squad 001 - Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, 0, 1, 0),
 -- Spawn Group Squad
-(@SGGUID+14, 'Sethekk Halls - Group 013 - - Squad 002 . Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, 0, 1, 0),
+(@SGGUID+14, 'Sethekk Halls - Group 013 - Squad 002 - Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, 0, 1, 0),
 -- Spawn Group Squad
-(@SGGUID+16, 'Sethekk Halls - Group 014 - Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, 0, 1, 0),
+(@SGGUID+16, 'Sethekk Halls - Group 014 - Squad 003 - Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, 0, 1, 0),
 (@SGGUID+18, 'Sethekk Halls - Group 015 - Sethekk Guard (2)', 0, 0, 0, 1, 0),
 -- Spawn Group Squad
-(@SGGUID+19, 'Sethekk Halls - Group 016 - Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, 0, 1, 0),
-
+(@SGGUID+19, 'Sethekk Halls - Group 016 - Squad 004 - Sethekk Oracle | Time-Lost Controller | Sethekk Initiate', 0, 0, 0, 1, 0),
 (@SGGUID+21, 'Sethekk Halls - Group 017 - Sethekk Guard (2)', 0, 0, 0, 1, 0),
 (@SGGUID+22, 'Sethekk Halls - Group 018 - Sethekk Ravenguard (2)', 0, 0, 0, 1, 0),
 (@SGGUID+23, 'Sethekk Halls - Group 019 - Avian Ripper (2)', 0, 0, 0, 1, 0),
 -- Spawn Group Squad
-(@SGGUID+24, 'Sethekk Halls - Group 020 - Time-Lost Scryer | Time-Lost Controller | Sethekk Oracle', 0, 0, 0, 1, 0),
+(@SGGUID+24, 'Sethekk Halls - Group 020 - Squad 005 - Time-Lost Scryer | Time-Lost Controller | Sethekk Oracle', 0, 0, 0, 1, 0),
 -- Spawn Group Squad
-(@SGGUID+26, 'Sethekk Halls - Group 021 - Time-Lost Scryer | Time-Lost Controller | Sethekk Oracle', 0, 0, 0, 1, 0),
+(@SGGUID+26, 'Sethekk Halls - Group 021 - Squad 006 - Time-Lost Scryer | Time-Lost Controller | Sethekk Oracle', 0, 0, 0, 1, 0),
 (@SGGUID+28, 'Sethekk Halls - Group 022 - Sethekk Ravenguard (2)', 0, 0, 0, 1, 0),
 (@SGGUID+29, 'Sethekk Halls - Group 023 - Avian Ripper (10)', 0, 0, 0, 1, 0),
 (@SGGUID+30, 'Sethekk Halls - Group 024 - Sethekk Talon Lord / Avian Warhawk', 0, 0, 0, 1, 0),
