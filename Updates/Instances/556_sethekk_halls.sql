@@ -397,7 +397,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 18318, 556, 3, 27.6608, 76.7642, 0.286547, 2.77507, 7200, 7200, 0, 0), -- Sethekk Initiate
-(@CGUID+2, 18318, 556, 3, 220.4726, 81.6956, 0.0484983, 5.51524, 7200, 7200, 0, 0), -- Sethekk Initiate
+(@CGUID+2, 18318, 556, 3, 20.4726, 81.6956, 0.0484983, 5.51524, 7200, 7200, 0, 0), -- Sethekk Initiate
 (@CGUID+3, 18318, 556, 3, 11.9275, 102.475, 0.506651, 0.959931, 7200, 7200, 0, 0), -- Sethekk Initiate
 (@CGUID+4, 18318, 556, 3, 75.8563, 116.047, 0.350004, 5.5676, 7200, 7200, 0, 0), -- Sethekk Initiate
 (@CGUID+5, 18318, 556, 3, 58.4921, 83.405, 0.227436, 4.32842, 7200, 7200, 0, 0), -- Sethekk Initiate
