@@ -256,3 +256,10 @@ UPDATE `creature_template` SET `name` = 'Redeemed Spirit of Earth' WHERE `entry`
 -- Dance Vibe spell should not stack
 UPDATE `spell_template` SET `StackAmount`='1' WHERE (`Id`='29521');
 
+
+-- -------------------------------
+-- CORE - remove after added in core
+-- -------------------------------
+-- spell FIX (unique - no stack)
+UPDATE spell_template SET AttributesEx=AttributesEx|0x00000800 WHERE Id IN(15971); -- Demoralizing Roar
+
