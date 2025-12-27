@@ -80,7 +80,7 @@ INSERT INTO `creature_template_addon` (`entry`, `auras`, `sheath_state`) VALUES(
 
 -- https://www.wowhead.com/tbc/npc=19698/greatfather-aldrimus#comments:id=2842392
 DELETE FROM `creature_template_addon` WHERE `entry` = 19698;
-INSERT INTO `creature_template_addon` (`entry`, `auras`, `sheath_state`, `emote`) VALUES(19698, '32648', 1, 8);
+INSERT INTO `creature_template_addon` (`entry`, `auras`, `sheath_state`, `stand_state`) VALUES(19698, '32648', 1, 8);
 
 -- https://www.wowhead.com/tbc/npc=19719/ricole-nichie
 DELETE FROM `creature_template_addon` WHERE `entry` = 19719;
@@ -130,39 +130,39 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Spawn group used with condition to despawn the ghosts around him when he is dead
 (@SGGUID+0, 'Terokkar Forest - Levixus <The Soul Caller> - Draenei Spirits', 0, 0, 19100, 8);
 
-DELETE FROM `spawn_group_spawn` WHERE `Id` = @SGGUID+1;
+DELETE FROM `spawn_group_spawn` WHERE `Id` = @SGGUID+0;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(@SGGUID+1, @CGUID+1, -1),
-(@SGGUID+1, @CGUID+2, -1),
-(@SGGUID+1, @CGUID+3, -1),
-(@SGGUID+1, @CGUID+4, -1),
-(@SGGUID+1, @CGUID+5, -1),
-(@SGGUID+1, @CGUID+6, -1),
-(@SGGUID+1, @CGUID+7, -1),
-(@SGGUID+1, @CGUID+8, -1),
-(@SGGUID+1, @CGUID+9, -1),
-(@SGGUID+1, @CGUID+10, -1),
-(@SGGUID+1, @CGUID+11, -1),
-(@SGGUID+1, @CGUID+12, -1),
-(@SGGUID+1, @CGUID+13, -1),
-(@SGGUID+1, @CGUID+14, -1),
-(@SGGUID+1, @CGUID+15, -1),
-(@SGGUID+1, @CGUID+16, -1),
-(@SGGUID+1, @CGUID+17, -1),
-(@SGGUID+1, @CGUID+18, -1),
-(@SGGUID+1, @CGUID+19, -1),
-(@SGGUID+1, @CGUID+20, -1),
-(@SGGUID+1, @CGUID+21, -1),
-(@SGGUID+1, @CGUID+22, -1),
-(@SGGUID+1, @CGUID+23, -1),
-(@SGGUID+1, @CGUID+24, -1),
-(@SGGUID+1, @CGUID+25, -1),
-(@SGGUID+1, @CGUID+26, -1),
-(@SGGUID+1, @CGUID+27, -1),
-(@SGGUID+1, @CGUID+28, -1),
-(@SGGUID+1, @CGUID+29, -1),
-(@SGGUID+1, @CGUID+30, -1),
-(@SGGUID+1, @CGUID+31, -1);
+(@SGGUID+0, @CGUID+1, -1),
+(@SGGUID+0, @CGUID+2, -1),
+(@SGGUID+0, @CGUID+3, -1),
+(@SGGUID+0, @CGUID+4, -1),
+(@SGGUID+0, @CGUID+5, -1),
+(@SGGUID+0, @CGUID+6, -1),
+(@SGGUID+0, @CGUID+7, -1),
+(@SGGUID+0, @CGUID+8, -1),
+(@SGGUID+0, @CGUID+9, -1),
+(@SGGUID+0, @CGUID+10, -1),
+(@SGGUID+0, @CGUID+11, -1),
+(@SGGUID+0, @CGUID+12, -1),
+(@SGGUID+0, @CGUID+13, -1),
+(@SGGUID+0, @CGUID+14, -1),
+(@SGGUID+0, @CGUID+15, -1),
+(@SGGUID+0, @CGUID+16, -1),
+(@SGGUID+0, @CGUID+17, -1),
+(@SGGUID+0, @CGUID+18, -1),
+(@SGGUID+0, @CGUID+19, -1),
+(@SGGUID+0, @CGUID+20, -1),
+(@SGGUID+0, @CGUID+21, -1),
+(@SGGUID+0, @CGUID+22, -1),
+(@SGGUID+0, @CGUID+23, -1),
+(@SGGUID+0, @CGUID+24, -1),
+(@SGGUID+0, @CGUID+25, -1),
+(@SGGUID+0, @CGUID+26, -1),
+(@SGGUID+0, @CGUID+27, -1),
+(@SGGUID+0, @CGUID+28, -1),
+(@SGGUID+0, @CGUID+29, -1),
+(@SGGUID+0, @CGUID+30, -1),
+(@SGGUID+0, @CGUID+31, -1);
 
 DELETE FROM `worldstate_name` WHERE `Id` = 19100;
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
