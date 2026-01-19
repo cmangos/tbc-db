@@ -1,14 +1,14 @@
 
 -- copper vein
-DELETE a FROM gameobject a WHERE Id IN(1731,2055,3763,103713) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+DELETE a FROM gameobject a WHERE Id IN(1731,2055,3763,103713) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b JOIN spawn_group c on b.id=c.id WHERE b.guid=a.guid AND c.type=1) AND map IN(0,1);
 -- tin vein
-DELETE a FROM gameobject a WHERE Id IN(1732,2054,3764,103711) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+DELETE a FROM gameobject a WHERE Id IN(1732,2054,3764,103711) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b JOIN spawn_group c on b.id=c.id WHERE b.guid=a.guid AND c.type=1) AND map IN(0,1);
 -- silver vein
-DELETE a FROM gameobject a WHERE Id IN(1733,73940,105569) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+DELETE a FROM gameobject a WHERE Id IN(1733,73940,105569) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b JOIN spawn_group c on b.id=c.id WHERE b.guid=a.guid AND c.type=1) AND map IN(0,1);
 -- iron deposit
-DELETE a FROM gameobject a WHERE Id IN(1735,73939,103710,103712) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+DELETE a FROM gameobject a WHERE Id IN(1735,73939,103710,103712) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b JOIN spawn_group c on b.id=c.id WHERE b.guid=a.guid AND c.type=1) AND map IN(0,1);
 -- gold vein
-DELETE a FROM gameobject a WHERE Id IN(1734,73941,150080,181109) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
+DELETE a FROM gameobject a WHERE Id IN(1734,73941,150080,181109) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b JOIN spawn_group c on b.id=c.id WHERE b.guid=a.guid AND c.type=1) AND map IN(0,1);
 /*
 -- mithril deposit
 DELETE a FROM gameobject a WHERE Id IN(2040,123310,150079,176645) AND NOT EXISTS (SELECT guid FROM spawn_group_spawn b WHERE b.guid=a.guid) AND map IN(0,1);
