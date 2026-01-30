@@ -2085,7 +2085,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Steven Black (10062) - NSR
 -- Guardian Felhunter (10656) - NSR
 -- Watcher Brownell (11040) - NSR
--- Dream Fog 15224 - uses s.24956 Dream Fog, maybe this aura kills itself after 60ses as the bosses seem to cast new ones every 60secs
+-- Dream Fog 15224 - NO_MELEE_FLEE/uses s.24956 Dream Fog, maybe this aura kills itself after 60ses as the bosses seem to cast new ones every 60secs
 ('1522401','15224','29','0','100','0','1000','1000','0','0','0','0','11','24780','0','1','20','0','0','0','0','0','0','0','Dream Fog - Cast Dream Fog and Disable Combat Melee'),
 ('1522402','15224','29','0','100','0','2000','2000','0','0','0','0','11','24777','0','1','0','0','0','0','0','0','0','0','Dream Fog - Cast Dream Fog'),
 -- Demented Druid Spirit 15260
@@ -4125,7 +4125,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==================
 -- Isle of Quel'Danas
 -- ==================
--- Undercity Practice Dummy (5652) - NSR
+-- Undercity Practice Dummy (5652) - NO_MELEE_FLEE
 -- Purple Ground Rune 18562
 ('1856201','18562','30','4','100','1','5','24978','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Purple Ground Rune - Increment Phase on Receive AI Event 5 (Phase 0 and 1)'),
 ('1856202','18562','30','1','100','1','6','24978','0','0','0','0','23','-1','0','0','52','3','0','0','0','0','0','0','Purple Ground Rune - Decrement Phase and Interrupt Channel on Receive AI Event 6 (Phase 1 and 2)'),
@@ -5598,7 +5598,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('141501','1415','30','0','100','1','5','1413','0','0','0','0','64','0','0','0','0','0','0','0','0','0','0','0','Suzanne - Stop following master on Receive AI Event Custom A'),
 ('141502','1415','30','0','100','1','6','1413','0','0','0','0','64','1','0','0','0','0','0','0','0','0','0','0','Suzanne - Start following master on Receive AI Event Custom B'),
 -- Grimand Elmore 1416
--- Fizzles 1419
+-- Fizzles 1419 - NO_MELEE_FLEE
 -- Harlan Bagley 1427
 -- Rema Schneider 1428
 -- Thurman Schneider 1429
@@ -8992,7 +8992,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lilyn Darkriver (11712) - NSR
 -- Loruk Foreststrider (11720) - NSR
 -- Feran Strongwind (11749) - NSR
--- Sentinel Onaeya
+-- Sentinel Onaeya 11806 - NO_MELEE_FLEE
 ('1180601','11806','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Sentinel Onaeya - Flee at 15% HP'),
 -- Locke Okarr
 ('1182001','11820','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Locke Okarr - Flee at 15% HP'),
@@ -11502,7 +11502,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('495102','4951','1','0','100','1','10000','40000','120000','180000','0','0','53','14','0','0','0','0','0','0','0','0','0','0','Theramore Practicing Guard - START_RELAY_SCRIPT on OOC Timer'),
 ('495103','4951','30','0','100','1','5','4951','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Theramore Practicing Guard - Evade on Receive AI Event Custom A'),
 ('495104','4951','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Theramore Practicing Guard - Flee at 15% HP'),
--- Theramore Combat Dummy 4952
+-- Theramore Combat Dummy 4952 - NO_MELEE_FLEE
 ('495201','4952','30','0','100','1','5','4951','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Theramore Combat Dummy - Evade on Receive AI Event Custom A'),
 -- Commander Samaul
 ('496401','4964','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Commander Samaul - Flee at 15% HP'),
@@ -13208,7 +13208,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hive'Zora Tunneler 11726
 -- Hive'Zora Wasp 11727
 ('1172702','11727','0','0','100','1025','3000','15000','4000','20000','0','0','11','19448','1','0','0','0','0','0','0','0','0','0','Hive''Zora Wasp - Cast Poison'),
--- Hive'Zora Reaver
+-- Hive'Zora Reaver 11728
 ('1172801','11728','0','0','100','1025','8000','15000','11000','16000','0','0','11','16790','4','0','0','0','0','0','0','0','0','0','Hive''Zora Reaver - Cast Knockdown'),
 ('1172802','11728','0','0','100','1025','13800','19200','8100','17800','0','0','11','40504','1','0','0','0','0','0','0','0','0','0','Hive''Zora Reaver - Cast Cleave'),
 -- Hive'Zora Hive Sister 11729
@@ -13295,6 +13295,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tortured Sentinel
 ('1217901','12179','6','0','75','0','0','0','0','0','0','0','11','21327','0','2','1','8619','0','0','0','0','0','0','Tortured Sentinel - Cast Hive Ashi Drone on Death'),
 -- Shade of Ambermoon 12199
+-- Hive'Zora Egg 12276 - NO_MELEE_FLEE
 -- Zannok Hidepiercer 12956
 -- Hive'Ashi Drone 13136
 -- Layo Starstrike 13220
@@ -13366,7 +13367,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cenarion Hold Infantry 15184 - guard_contested & creature_spell_list
 ('1518401','15184','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Cenarion Hold Infantry - Cast Invisibility and Stealth Detection on Spawn'),
 ('1518402','15184','36','0','100','1025','0','0','0','0','0','0','11','21727','1','0','0','0','0','0','0','0','0','0','Cenarion Hold Infantry - Cast Summon Player on Unreachable'),
--- Brood of Nozdormu 15185
+-- Brood of Nozdormu 15185 - NO_MELEE_FLEE
 -- Beetix Ficklespragg 15189
 -- Noggle Ficklespragg 15190
 -- Windcaller Proudhorn 15191
@@ -14512,7 +14513,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('210701','2107','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Gaerolas Talvethren - Flee at 15% HP'),
 -- Zenn Foulhoof
 ('215001','2150','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Zenn Foulhoof - Flee at 15% HP'),
--- Moon Priestess Amara 2151
+-- Moon Priestess Amara 2151 - NO_MELEE_FLEE
 ('215101','2151','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Moon Priestess Amara - Enable Range Mode on Aggro'),
 ('215102','2151','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Moon Priestess Amara - Flee at 15% HP'),
 ('215103','2151','9','0','100','1025','5','30','2300','3900','0','0','11','18561','1','256','0','0','0','0','0','0','0','0','Moon Priestess Amara - Cast Shoot'),
@@ -15006,7 +15007,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('540901','5409','8','0','100','0','7277','-1','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Servant of Razelikh - Die on Harvest Swarm Spellhit'),
 -- Savannah Cub 5766
 -- Cloned Ectoplasm 5780 - NSR
--- Silithid Creeper Egg 5781
+-- Silithid Creeper Egg 5781 - NO_MELEE_FLEE
 ('578101','5781','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Silithid Creeper Egg - Set ReactState Passive on Spawn'),
 ('578102','5781','29','0','100','0','2000','2000','0','0','0','0','1','1409','0','0','0','0','0','0','0','0','0','0','Silithid Creeper Egg - Text Emote on Generic Timer'),
 ('578103','5781','29','0','100','0','4000','4000','0','0','0','0','1','1410','0','0','0','0','0','0','0','0','0','0','Silithid Creeper Egg - Text Emote on Generic Timer'),
@@ -24584,7 +24585,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1438503','14385','0','0','100','1025','1000','20000','9000','24000','0','0','11','19474','4','512','0','0','0','0','0','0','0','0','Doomguard Minion - Cast Rain of Fire'),
 ('1438504','14385','0','0','100','1025','4000','20000','20000','30000','0','0','11','19482','17','0','0','0','0','0','0','0','0','0','Doomguard Minion - Cast War Stomp'),
 ('1438505','14385','0','0','100','1025','7000','14000','17000','22000','0','0','11','15090','1','0','0','0','0','0','0','0','0','0','Doomguard Minion - Cast Dispel Magic'),
--- Wandering Eye of Kilrogg 14386 - Currently only casts successfully when Movement is stopped, which also reflects real behavior
+-- Wandering Eye of Kilrogg 14386 - NO_MELEE_FLEE/Currently only casts successfully when Movement is stopped, which also reflects real behavior
 ('1438601','14386','4','0','100','0','0','0','0','0','0','0','21','0','0','0','11','22876','0','0','1','9489','0','0','Wandering Eye of Kilrogg - Stop Movement and Cast Summon Netherwalker and Emote on Aggro'),
 -- Netherwalker 14389 - creature_spell_list
 ('1438901','14389','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','38','0','0','0','0','0','0','0','Netherwalker - Cast Invisibility and Stealth Detection and Zone Combat Pulse on Spawn'),
@@ -24767,8 +24768,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('760301','7603','4','0','100','0','0','0','0','0','0','0','39','10','0','0','0','0','0','0','0','0','0','0','Leprous Assistant - Call for Help on Aggro'),
 ('760302','7603','4','0','20','0','0','0','0','0','0','0','54','0','0','3','0','0','0','0','0','0','0','0','Leprous Assistant - Random Say on Aggro'),
 ('760303','7603','8','0','100','0','9798','-1','0','0','0','0','1','3367','0','0','0','0','0','0','0','0','0','0','Leprous Assistant - Emote on Radiation Spellhit'),
--- Dupe Bug 7732
--- ('773201','7732','11','0','100','0','0','0','0','0','0','0','20','0','0','0','25','0','0','0','0','0','0','0','Dupe Bug - Prevent Melee, Flee on Spawn'),
+-- Dupe Bug 7732 - NO_MELEE_FLEE
 -- Burning Servant 7738 (Rough Scripted Data)
 ('773801','7738','0','0','100','1025','0','10000','20000','30000','0','0','11','10869','15','0','0','0','0','0','0','0','0','0','Burning Servant - Cast Summon Embers'),
 -- Mekgineer Thermaplugg (7800) - boss_thermaplugg
@@ -28126,7 +28126,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==============
 -- Blackwing Lair
 -- ==============
--- Eye of Kilrogg (4277) - NSR
+-- Eye of Kilrogg (4277) - NO_MELEE_FLEE
 -- Lord Victor Nefarius (10162) - boss_victor_nefarius
 -- Gyth 10339 - boss_gyth
 -- Nefarian (11583) - boss_nefarian
@@ -30406,7 +30406,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zulian Crocolisk
 ('1504301','15043','0','0','100','1025','1000','3000','5000','7000','0','0','11','13445','1','32','0','0','0','0','0','0','0','0','Zulian Crocolisk - Cast Rend'),
 ('1504302','15043','0','0','100','1025','3000','6000','20000','25000','0','0','11','3604','1','32','0','0','0','0','0','0','0','0','Zulian Crocolisk - Cast Tendon Rip'),
--- Gurubashi 15047 - Closest Player?
+-- Gurubashi 15047 - NO_MELEE_FLEE/Closest Player?
 ('1504701','15047','11','0','100','0','0','0','0','0','0','0','61','1','0','0','20','0','0','0','0','0','0','0','Gurubashi - Set Immobilized State and Disable Melee on Spawn'),
 ('1504702','15047','0','0','100','0','1000','1000','0','0','0','0','11','24178','4','512','0','0','0','0','0','0','0','0','Gurubashi - Cast Will of Hakkar on Generic Timer'),
 ('1504703','15047','0','0','100','0','21000','21000','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Gurubashi - Die on Generic Timer'),
@@ -31161,22 +31161,23 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Chicken (620) - npc_chicken_cluck - Critter
 -- Chicken 621 - Critter
 -- Rabbit (721) - Critter
--- Deer (883) - Critter
+-- Deer (883) - NO_MELEE_FLEE
 -- Fawn (890) - Critter
 -- White Ram 1262 - Critter
 -- Fluffy (1352) - Critter
 -- Squirrel (1412) - Critter
 -- Toad (1420) - Critter
 -- Black Sheep 1932 - Critter
--- Sheep (1933) - Critter
--- Ram 2098 - Critter
+-- Sheep (1933) - NO_MELEE_FLEE
+-- Ram 2098 - NO_MELEE_FLEE
 -- Black Rat (2110) - Critter
--- Cow (2442) - Critter
+-- Cow (2442) - NO_MELEE_FLEE
+-- Mechanical Squirrel (2671) - NO_MELEE_FLEE
 -- Prairie Dog (2620) - Critter
 -- Snake (2914) - Critter
 -- Adder (3300) - Critter
 -- Dig Rat 3444 - Critter
--- Wisp 3681 - Critter
+-- Wisp 3681 - NO_MELEE_FLEE
 -- Biletoad 3835 - Critter
 ('383501','3835','6','0','75','0','0','0','0','0','0','0','11','10251','7','7','0','0','0','0','0','0','0','0','Biletoad - Cast Biletoad Infection on Death'),
 -- Rat (4075) - Critter
@@ -31201,7 +31202,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- A 7186 - Critter
 -- Noarm (7208) - Critter
 -- Pirate treasure trigger mob 7898 - Critter
--- Riding Ram (8881) - Critter
+-- Riding Ram (8881) - NO_MELEE_FLEE
 -- Effsee 8963 - Critter
 -- Parrot 9600 - Critter
 -- Distract Test 9658 - Critter
@@ -31209,6 +31210,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lava Crab (9700) - Critter
 -- Tainted Rat (10016) - Critter
 -- Tainted Cockroach (10017) - Critter
+-- Ash'ari Crystal 10415 - NO_MELEE_FLEE
 -- Plagued Rat 10441 - Critter
 ('1044101','10441','0','0','100','1025','0','20000','6000','14000','0','0','11','16448','4','32','0','0','0','0','0','0','0','0','Plagued Rat - Cast Black Rot'),
 -- Plagued Insect 10461 - Critter
@@ -31218,7 +31220,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1053601','10536','0','0','100','1025','0','20000','6000','14000','0','0','11','16449','4','32','0','0','0','0','0','0','0','0','Plagued Maggot - Cast Maggot Slime'),
 -- Krakle's Thermometer 10541 - Critter
 -- Dog 10582 - Critter
--- Swine (10685) - Critter
+-- Swine (10685) - NO_MELEE_FLEE
 -- Belfry Bat 10716 - Critter
 -- Infected Squirrel (10779) - Critter
 -- Infected Deer (10780) - Critter
@@ -31237,8 +31239,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Enthralled Deeprun Rat (13017) - Critter
 -- Frog (13321) - Critter
 -- Core Rat 13338 - Critter
--- Shen'dralar Wisp 14361 - Critter
+-- Shen'dralar Wisp 14361 - NO_MELEE_FLEE
+-- Alliance Battle Standard 14465
+-- Horde Battle Standard 14466 - NO_MELEE_FLEE
 -- Transporter Malfunction 14681 - Critter
+-- Frostwolf Battle Standard 14751
+-- Stormpike Battle Standard 14752
 -- Wild Polymorph Target 14801 - Critter
 -- Spider (14881) - Critter
 -- The Good Rabbit 14886 - Critter
@@ -31250,11 +31256,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Underfoot 15071 - Critter
 -- Spike 15072 - Critter
 -- Trick - Critter 15219 - Critter
--- Beetle (15475) - Critter
--- Scorpion (15476) - Critter
--- Golden Hare 15923 - Critter
--- Maggot 16030 - Critter
--- Larva 16068 - Critter
+-- Beetle (15475) - NO_MELEE_FLEE
+-- Scorpion (15476) - NO_MELEE_FLEE
+-- Golden Hare 15923 - NO_MELEE_FLEE
+-- Maggot 16030 - NO_MELEE_FLEE
+-- Larva 16068 - NO_MELEE_FLEE
 -- Polymorphed Chicken 16369 - Critter
 -- Polymorphed Sheep 16372 - Critter
 -- Polymorphed Rat 16373 - Critter
@@ -31264,7 +31270,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dragonhawk Hatchling 16859 - Critter
 -- Broom (17213) - Critter
 -- Ragnarose (17285) - Critter
--- Skunk (17467) - Critter
+-- Skunk (17467) - NO_MELEE_FLEE
 -- Niblet 17559 - Critter
 -- Stormcrow Shape 17970 - Critter
 -- The Evil Rabbit 18078 - Critter
@@ -31273,14 +31279,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sagan (19482) - Critter
 -- Ewe 19665 - Critter
 -- Sagan (Skunk Form) 19941 - Critter
--- Captured Critter (20396) - Critter
--- Reanimated Critter (20398) - Critter
+-- Captured Critter (20396) - NO_MELEE_FLEE
+-- Reanimated Critter (20398) - NO_MELEE_FLEE
 -- Spectral Bovine 20411 - Critter
--- Bat 20725 - Critter
+-- Bat 20725 - NO_MELEE_FLEE
 -- Boar Piglet 21034 - Critter
 -- Oronok's Chicken 21247 - Critter
 -- [PH]Test Skunk 21333 - Critter
--- Talbuk 21922 - Critter
+-- Talbuk 21922 - NO_MELEE_FLEE
 -- Ruuan Weald Wisp 22152 - Critter
 -- Marmot 22189 - Critter
 -- Skittering Cavern Crawler 22306 - Critter
@@ -31289,9 +31295,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2281601','22816','6','0','100','0','0','0','0','0','0','0','11','39477','13','39','0','0','0','0','0','0','0','0','Black Cat - Cast Bad Luck on Death');
 -- Corvax 22842 - Critter
 -- Rook 22843 - Critter
--- Sewer Rat (23086) - Critter
+-- Sewer Rat (23086) - NO_MELEE_FLEE
 -- Sewer Crocolisk (23087) - Critter
--- Giant Marsh Frog (23979) - Critter
+-- Giant Marsh Frog (23979) - NO_MELEE_FLEE
+-- Advanced Training Dummy 24792 - NO_MELEE_FLEE
 -- Fuzz (25058) - Critter
 -- Doomsday Rat 25886 - Critter
 -- 2.4 Sunwell 5 Man Tradeskill Bunny [PH] 26177 - Critter
@@ -31506,15 +31513,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 -- Infernal 89
 ('8901','89','11','0','100','0','0','0','0','0','0','0','11','22707','0','2','11','19483','0','34','0','0','0','0','Infernal - Cast Root and Immolation on Spawn'),
--- Imp 416 - PetAI
+-- Imp 416 - NO_MELEE_FLEE
 -- Succubus 1863 - s.6358
 -- Combat Dummy 1921 - NSR
 -- Searing Totem 2523 - TotemAI
 -- Earthbind Totem 2630 - TotemAI
 -- Ward of Laze 2667 - TotemAI
--- Target Dummy 2673
+-- Target Dummy 2673 - NO_MELEE_FLEE
 ('267301','2673','11','0','100','0','0','0','0','0','0','0','11','4044','0','34','11','27791','0','34','0','0','0','0','Target Dummy - Cast Target Dummy Passive, Suicide on Spawn'),
--- Advanced Target Dummy 2674
+-- Advanced Target Dummy 2674 - npc_advanced_target_dummy/NO_MELEE_FLEE
 ('267402','2674','11','0','100','0','0','0','0','0','0','0','11','4048','0','34','11','27791','0','34','0','0','0','0','Advanced Target Dummy - Cast Advanced Target Dummy Passive, Suicide on Spawn'),
 -- Explosive Sheep 2675
 ('267501','2675','11','0','100','0','0','0','0','0','0','0','11','4051','0','2','11','8279','0','2','0','0','0','0','Explosive Sheep - Cast Explosive Sheep Passive and Stealth Detection on Spawn'),
@@ -31542,12 +31549,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('419601','4196','11','0','100','0','0','0','0','0','0','0','11','6590','0','34','50','1','0','0','0','0','0','0','Silithid Swarm - Cast Silithid Swarm Passive, Set ReactState Defensive on Spawn'),
 ('419602','4196','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Forced Despawn on Evade'),
 -- Hammerhead Shark 5185 - NSR
--- Archery Target 5202 - NSR
+-- Archery Target 5202 - NO_MELEE_FLEE
 -- Coral Shark 5434
 ('543401','5434','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Coral Shark - Cast Thrash on Spawn'),
 -- Sand Shark 5435
 ('543501','5435','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Sand Shark - Cast Thrash on Spawn'),
--- Practice Target 5674 - NSR
+-- Practice Target 5674 - NO_MELEE_FLEE
 -- Summoned Voidwalker 5676
 ('567601','5676','11','0','100','0','0','0','0','0','0','0','11','7741','0','0','1','1987','0','0','0','0','0','0','Summoned Voidwalker - Cast Summoned Demon, Say on Spawn'),
 ('567602','5676','29','0','100','0','1000','1000','0','0','0','0','2','14','0','0','55','11','0','0','0','0','0','0','Summoned Voidwalker - Set Faction Monster, Attack Spawner (Player) on Generic Timer'),
@@ -31606,7 +31613,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Windfury Totem III 7484 - TotemAI
 -- Grace of Air Totem 7486 - TotemAI
 -- Grace of Air Totem II 7487 - TotemAI
--- Goblin Land Mine 7527 - s.4100,10837,21688
+-- Goblin Land Mine 7527 - s.4100,10837,21688 - NO_MELEE_FLEE
 ('752701','7527','11','0','100','0','0','0','0','0','0','0','11','11816','0','34','50','0','0','0','0','0','0','0','Goblin Land Mine - Cast Land Mine Arming, Set ReactState Passive on Spawn'),
 ('752702','7527','29','0','100','0','100','100','0','0','0','0','1','3541','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Say on Generic Timer'),
 ('752703','7527','29','0','100','0','5000','5000','0','0','0','0','1','3542','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Say on Generic Timer'),
@@ -31647,7 +31654,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1071803','10718','29','5','100','32','1000','3000','0','0','0','0','11','16597','15','0','11','16596','15','0','11','16600','15','0','Shahram - Cast Curse of Shahram, Flames of Shahram, or Might of Shahram on Generic Timer (Phase 1)'),
 ('1071804','10718','29','3','100','32','1000','3000','0','0','0','0','11','16599','15','0','11','16601','15','0','11','16598','15','0','Shahram - Cast Blessing of Shahram, Fist of Shahram, or Will of Shahram on Generic Timer (Phase 2)'),
 -- Succubus Minion 10928 - NSR
--- Crimson Cannon 11199
+-- Crimson Cannon 11199 - NO_MELEE_FLEE
 ('1119901','11199','11','0','100','0','0','0','0','0','0','0','11','17507','0','34','21','0','0','0','20','0','0','0','Crimson Cannon - Cast Passive Root, Prevent Movement, Prevent Melee on Spawn'),
 ('1119902','11199','9','0','100','1025','0','40','1000','1500','0','0','11','17501','1','0','0','0','0','0','0','0','0','0','Crimson Cannon - Cast Cannon Fire'),
 -- Panda Cub 11325
@@ -31667,7 +31674,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ice Totem 12141 - TotemAI
 -- Masterwork Target Dummy 12426
 ('1242601','12426','11','0','100','0','0','0','0','0','0','0','11','19809','0','34','11','27791','0','34','0','0','0','0','Masterwork Target Dummy - Cast Masterwork Target Dummy Passive, Suicide on Spawn'),
--- Imp Minion 12922
+-- Imp Minion 12922 - NO_MELEE_FLEE
 ('1292201','12922','11','0','100','0','0','0','0','0','0','0','57','3','20','0','0','0','0','0','0','0','0','0','Imp Minion - Enable No Melee Mode on Aggro'),
 ('1292202','12922','4','0','10','0','0','0','0','0','0','0','54','0','0','1','0','0','0','0','0','0','0','0','Imp Minion - Random Say on Aggro'),
 ('1292203','12922','0','0','100','1025','1000','2000','2000','3000','0','0','11','20801','1','256','0','0','0','0','0','0','0','0','Imp Minion - Cast Firebolt'),
