@@ -253,6 +253,10 @@ UPDATE `creature_template` SET `name` = 'Redeemed Spirit of Earth' WHERE `entry`
 -- Spell custom changes
 -- -------------------------------
 
+-- s.14108 Venomhide Poison
+-- was 4 (poison) - and source has immunity to it - so it prevents itself with applying aura - had to remove it.
+UPDATE spell_template SET Dispel = 0 WHERE id = 14108;
+
 -- Dance Vibe spell should not stack
 UPDATE `spell_template` SET `StackAmount`='1' WHERE (`Id`='29521');
 
