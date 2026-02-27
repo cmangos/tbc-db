@@ -19803,8 +19803,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Crash Bigbomb 21259 NSR
 -- Seeping Ooze 21264
 -- Parasitic Fleshling 21265
--- Mana Beast
-('2126701','21267','18','0','100','1025','100','1','5000','10000','0','0','11','36484','0','0','0','0','0','0','0','0','0','0','Mana Beast - Cast Mana Burn on Target Mana User'),
+-- Mana Beast 21267
+('2126701','21267','0','0','100','1024','6000','12000','0','0','0','0','11','36484','17','0','0','0','0','0','0','0','0','0','Mana Beast - Cast Mana Burn'),
 -- Ethereum Mace
 ('2128601','21286','11','0','100','0','0','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Ethereum Mace - Cast Simple Teleport on Spawn'),
 -- Warp Storm 21322
