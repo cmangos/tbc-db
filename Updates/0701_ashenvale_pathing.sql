@@ -7,7 +7,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '11684', '1', '1', '1616.5979', '-2522.462', '97.884094', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x20566000200B6900000113000077F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 11684 (Warsong Shredder) Low: 7861405
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '12', '1616.5979', '-2522.462', '97.884094', '100', '0', '0', NULL),
 (@MOVID, '13', '1598.9205', '-2513.629', '99.8578', '100', '0', '0', NULL),
 (@MOVID, '14', '1601.3906', '-2514.8594', '99.18703', '100', '0', '0', NULL),
@@ -40,7 +40,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '11684', '1', '1', '2444.4524', '-3357.64', '103.01454', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x20566000200B6900000113000077F4A0 Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 11684 (Warsong Shredder) Low: 7861408
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '1', '2444.4524', '-3357.64', '103.01454', '100', '0', '0', NULL), -- PathType: None
 (@MOVID, '2', '2449.5923', '-3374.0422', '102.54707', '100', '0', '0', NULL),
 (@MOVID, '3', '2476.188', '-3390.3901', '101.94953', '100', '0', '0', NULL),
@@ -112,7 +112,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '11683', '1', '1', '2634.562', '-3456.797', '108.45066', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x20566000200B68C0000113000177F4A0 Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 11683 (Warsong Shaman) Low: 24638624
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '11', '2634.562', '-3456.797', '108.45066', '100', '0', '0', NULL),
 (@MOVID, '12', '2606.2434', '-3454.551', '106.51528', '100', '0', '0', NULL),
 (@MOVID, '13', '2576.8042', '-3448.9575', '105.20218', '100', '0', '0', NULL),
@@ -138,7 +138,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '11683', '1', '1', '2472.2043', '-3491.7686', '92.33869', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x20516000200B68C00000190000C344F0 Creature/0 R5208/S25 Map: 1 (Kalimdor) Entry: 11683 (Warsong Shaman) Low: 12797168
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '17', '2472.2043', '-3491.7686', '92.33869', '100', '0', '0', NULL),
 (@MOVID, '18', '2463.9966', '-3477.1223', '92.583725', '100', '0', '0', NULL),
 (@MOVID, '19', '2453.5925', '-3470.2195', '93.26829', '100', '0', '0', NULL),
@@ -165,7 +165,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '0', '1', '1', '3056.481', '-1813.1693', '169.72469', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003D3C00001130000F7F49A Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3919 (Withered Ancient) Low: 16250010
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '8', '3056.481', '-1813.1693', '169.72469', '100', '0', '0', NULL),
 (@MOVID, '9', '3034.7773', '-1841.154', '171.14442', '100', '0', '0', NULL),
 (@MOVID, '10', '2996.5322', '-1850.6975', '169.9409', '100', '0', '0', NULL),
@@ -189,7 +189,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '0', '1', '1', '3209.8718', '-1777.0548', '178.81577', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003D3C00001130000F7F49C Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3919 (Withered Ancient) Low: 16250012
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '5', '3209.8718', '-1777.0548', '178.81577', '100', '0', '0', NULL),
 (@MOVID, '6', '3190.1807', '-1757.608', '172.82372', '100', '0', '0', NULL),
 (@MOVID, '7', '3153.9849', '-1786.8268', '172.92308', '100', '0', '0', NULL),
@@ -220,7 +220,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '0', '1', '1', '2895.312', '-1795.9882', '188.52303', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003D3C0000113000077F49C Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3919 (Withered Ancient) Low: 7861404
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '9', '2895.312', '-1795.9882', '188.52303', '100', '0', '0', NULL),
 (@MOVID, '10', '2913.1973', '-1789.5515', '185.37085', '100', '0', '0', NULL),
 (@MOVID, '11', '2932.4849', '-1770.2592', '185.16084', '100', '0', '0', NULL),
@@ -242,7 +242,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '0', '1', '1', '3114.7217', '-1419.2324', '187.17633', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BE800001130001F7F49A Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3834 (Crazed Ancient) Low: 33027226
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '15', '3114.7217', '-1419.2324', '187.17633', '100', '0', '0', NULL),
 (@MOVID, '16', '3107.7212', '-1451.0675', '192.66599', '100', '0', '0', NULL),
 (@MOVID, '17', '3109.2847', '-1493.2042', '194.0055', '100', '0', '0', NULL),
@@ -264,7 +264,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '0', '1', '1', '3556.9368', '-1456.0491', '174.00815', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BE80000113000177F49A Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3834 (Crazed Ancient) Low: 24638618
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '11', '3317.7986', '-1431.3938', '174.68982', '100', '0', '0', NULL),
 (@MOVID, '12', '3335.6304', '-1427.4762', '171.3704', '100', '0', '0', NULL),
 (@MOVID, '13', '3358.409', '-1471.6471', '166.61893', '100', '0', '0', NULL),
@@ -283,7 +283,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '0', '1', '1', '3562.6543', '-1585.2852', '176.20984', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BE80000113000077F49A Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3834 (Crazed Ancient) Low: 7861402
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '14', '3562.6543', '-1585.2852', '176.20984', '100', '0', '0', NULL),
 (@MOVID, '13', '3524.256', '-1574.1124', '169.56982', '100', '0', '0', NULL),
 (@MOVID, '15', '3484.4656', '-1583.8153', '168.4464', '100', '0', '0', NULL),
@@ -306,7 +306,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3825', '1', '1', '2796.7266', '-2041.4277', '164.73933', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BC400001130003F7F49E Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3825 (Ghostpaw Alpha) Low: 66581662
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '19', '2796.7266', '-2041.4277', '164.73933', '100', '0', '0', NULL),
 (@MOVID, '20', '2827.6646', '-2016.0363', '163.66066', '100', '0', '0', NULL),
 (@MOVID, '21', '2846.2595', '-2007.0695', '163.32437', '100', '0', '0', NULL),
@@ -341,7 +341,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3825', '1', '1', '3044.893', '-1838.4082', '172.10512', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BC40000113000277F49E Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3825 (Ghostpaw Alpha) Low: 41415838
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '17', '3130.1145', '-1907.0017', '205.69269', '100', '0', '0', NULL),
 (@MOVID, '18', '3143.4958', '-1910.5104', '204.38576', '100', '0', '0', NULL),
 (@MOVID, '19', '3147.8176', '-1893.147', '197.06456', '100', '0', '0', NULL),
@@ -364,7 +364,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3825', '1', '1', '2897.1243', '-1780.3457', '200.73242', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BC400001130003F7F49B Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3825 (Ghostpaw Alpha) Low: 66581659
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '10', '2897.1243', '-1780.3457', '200.73242', '100', '0', '0', NULL),
 (@MOVID, '11', '2898.285', '-1790.1161', '190.06805', '100', '0', '0', NULL),
 (@MOVID, '12', '2914.9526', '-1792.7352', '184.4997', '100', '0', '0', NULL),
@@ -385,7 +385,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '0', '1', '1', '3187.6594', '-1471.982', '206.12036', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BC40000113000377F49B Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3825 (Ghostpaw Alpha) Low: 58193051
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '12', '3187.6594', '-1471.982', '206.12036', '100', '0', '0', NULL),
 (@MOVID, '13', '3169.9324', '-1478.1423', '206.94485', '100', '0', '0', NULL),
 (@MOVID, '14', '3160.0159', '-1460.0011', '206.83568', '100', '0', '0', NULL),
@@ -412,7 +412,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3825', '1', '1', '3551.4868', '-1545.1895', '168.57285', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BC40000113000377F49E Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3825 (Ghostpaw Alpha) Low: 58193054
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '20', '3551.4868', '-1545.1895', '168.57285', '100', '0', '0', NULL),
 (@MOVID, '19', '3531.5864', '-1552.0358', '170.95703', '100', '0', '0', NULL),
 (@MOVID, '21', '3514.2598', '-1564.7617', '168.48749', '100', '0', '0', NULL),
@@ -441,7 +441,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3825', '1', '1', '3353.446', '-1558.328', '167.41385', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BC40000113000277F49C Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3825 (Ghostpaw Alpha) Low: 41415836
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '35', '3353.446', '-1558.328', '167.41385', '100', '0', '0', NULL),
 (@MOVID, '36', '3372.1638', '-1583.9626', '168.8616', '100', '0', '0', NULL),
 (@MOVID, '37', '3368.0303', '-1594.9742', '167.71106', '100', '0', '0', NULL),
@@ -499,7 +499,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3825', '1', '1', '3324.8271', '-1726.1813', '185.3376', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BC400001130001F7F49C Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3825 (Ghostpaw Alpha) Low: 33027228
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '14', '3324.8271', '-1726.1813', '185.3376', '100', '0', '0', NULL),
 (@MOVID, '15', '3299.3342', '-1709.5863', '179.16467', '100', '0', '0', NULL),
 (@MOVID, '16', '3292.087', '-1696.6501', '177.68874', '100', '0', '0', NULL),
@@ -539,7 +539,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '3360.4849', '46.575306', '7.333963', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003BBC0000113000277F4A0 Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 41415840
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '10', '3360.4849', '46.575306', '7.333963', '100', '0', '0', NULL),
 (@MOVID, '11', '3376.5293', '20.05664', '20.239138', '100', '0', '0', NULL),
 (@MOVID, '12', '3404.4944', '8.098308', '7.5654993', '100', '0', '0', NULL),
@@ -571,7 +571,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '3636.6946', '65.89692', '2.521203', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003BBC0000113000577F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 91747485
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '10', '3636.6946', '65.89692', '2.521203', '100', '0', '0', NULL),
 (@MOVID, '11', '3600.1985', '74.916016', '5.2279134', '100', '0', '0', NULL),
 (@MOVID, '12', '3585.0518', '41.638237', '3.2843301', '100', '0', '0', NULL),
@@ -600,7 +600,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '4058.7014', '40.355686', '14.889296', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BBC00000680001FC1F8D Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 33300365
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '21', '4058.7014', '40.355686', '14.889296', '100', '0', '0', NULL),
 (@MOVID, '18', '4037.8572', '29.485895', '14.381011', '100', '0', '0', NULL),
 (@MOVID, '19', '4014.9346', '39.35742', '9.861214', '100', '0', '0', NULL),
@@ -630,7 +630,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '3986.654', '124.70541', '5.5540476', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003BBC00000680002FC1F8D Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 50077581
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '7', '4036.0088', '187.99762', '4.0975933', '100', '0', '0', NULL),
 (@MOVID, '8', '4011.3901', '191.5709', '4.0045624', '100', '0', '0', NULL),
 (@MOVID, '9', '3990.7556', '161.37001', '3.8875704', '100', '0', '0', NULL),
@@ -664,7 +664,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '3304.5903', '432.2347', '5.130131', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003BBC000006800017C1F8D Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 24911757
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '1', '3312.6177', '343.49728', '5.4585733', '100', '0', '0', NULL), -- PathType: None
 (@MOVID, '2', '3283.1516', '340.05588', '5.262062', '100', '0', '0', NULL),
 (@MOVID, '3', '3251.0708', '326.4987', '5.989766', '100', '0', '0', NULL),
@@ -694,7 +694,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '3266.8313', '527.351', '0.2742809', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003BBC00000680001FC1F89 Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 33300361
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '1', '3266.8313', '527.351', '0.2742809', '100', '0', '0', NULL), -- PathType: None
 (@MOVID, '2', '3302.034', '547.1073', '1.5578096', '100', '0', '0', NULL),
 (@MOVID, '3', '3345.8079', '565.2076', '4.0541077', '100', '0', '0', NULL),
@@ -720,7 +720,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '3249.4414', '553.6018', '-1.4838974', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003BBC00000680005FC1F8D Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 100409229
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '1', '3249.4414', '553.6018', '-1.4838974', '100', '0', '0', NULL), -- PathType: None
 (@MOVID, '2', '3281.2524', '555.16455', '0.57715225', '100', '0', '0', NULL),
 (@MOVID, '3', '3294.3223', '545.4094', '1.3680086', '100', '0', '0', NULL),
@@ -750,7 +750,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '3526.0317', '742.38666', '5.608039', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003BBC000006800047C1F8C Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 75243404
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '1', '3526.0317', '742.38666', '5.608039', '100', '0', '0', NULL), -- PathType: None
 (@MOVID, '2', '3523.26', '717.5076', '6.8386703', '100', '0', '0', NULL),
 (@MOVID, '3', '3509.6504', '687.01587', '6.528803', '100', '0', '0', NULL),
@@ -779,7 +779,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '2973.6304', '355.51694', '102.17226', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BBC000006800037C1F8B Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 58466187
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '9', '2973.6304', '355.51694', '102.17226', '100', '0', '0', NULL),
 (@MOVID, '10', '2959.2322', '362.3282', '96.62027', '100', '0', '0', NULL),
 (@MOVID, '11', '2946.188', '373.72858', '92.26492', '100', '0', '0', NULL),
@@ -799,7 +799,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '2812.7834', '440.09012', '94.86547', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BBC00000680013FC1F8D Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 335290253
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '5', '2812.7834', '440.09012', '94.86547', '100', '0', '0', NULL),
 (@MOVID, '6', '2805.625', '435.9624', '92.3327', '100', '0', '0', NULL),
 (@MOVID, '7', '2795.3477', '409.19788', '92.381035', '100', '0', '0', NULL),
@@ -833,7 +833,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '2840.626', '508.43408', '101.72179', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BBC000006800007C1F87 Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 8134535
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '10', '2840.626', '508.43408', '101.72179', '100', '0', '0', NULL),
 (@MOVID, '11', '2825.0876', '506.94586', '93.650406', '100', '0', '0', NULL),
 (@MOVID, '12', '2799.2087', '491.36465', '91.67144', '100', '0', '0', NULL),
@@ -853,7 +853,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '2718.4011', '647.86633', '100.45912', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BBC00000680008FC1F8D Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 150740877
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '8', '2667.675', '562.68353', '92.915245', '100', '0', '0', NULL),
 (@MOVID, '9', '2641.3196', '570.52985', '98.33377', '100', '0', '0', NULL),
 (@MOVID, '10', '2636.597', '593.77325', '101.519775', '100', '0', '0', NULL),
@@ -877,7 +877,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '2473.958', '635.0509', '126.77722', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BBC0000068000A7C1F8D Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 175906701
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '9', '2473.958', '635.0509', '126.77722', '100', '0', '0', NULL),
 (@MOVID, '10', '2474.8323', '612.3132', '118.27316', '100', '0', '0', NULL),
 (@MOVID, '11', '2490.6362', '599.6549', '112.80127', '100', '0', '0', NULL),
@@ -897,7 +897,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '2325.3784', '421.2066', '128.59358', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BBC000006800017C1F8B Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 24911755
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '10', '2325.3784', '421.2066', '128.59358', '100', '0', '0', NULL),
 (@MOVID, '11', '2352.3418', '440.97745', '117.83303', '100', '0', '0', NULL),
 (@MOVID, '12', '2378.4731', '444.7352', '111.55008', '100', '0', '0', NULL),
@@ -916,7 +916,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '2707.1213', '156.05122', '92.740005', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BBC00000680009FC1F8D Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 167518093
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '7', '2707.1213', '156.05122', '92.740005', '100', '0', '0', NULL),
 (@MOVID, '8', '2682.2844', '133.71812', '93.16483', '100', '0', '0', NULL),
 (@MOVID, '9', '2643.6309', '136.90718', '92.39087', '100', '0', '0', NULL),
@@ -935,7 +935,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '2653.1025', '4.134874', '105.94609', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BBC000006800067C1F8C Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 108797836
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '21', '2653.1025', '4.134874', '105.94609', '100', '0', '0', NULL),
 (@MOVID, '22', '2657.9985', '-3.984538', '105.8243', '100', '0', '0', NULL),
 (@MOVID, '23', '2664.9749', '-6.465386', '105.59794', '100', '0', '0', NULL),
@@ -969,7 +969,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '2622.966', '-247.07677', '109.49042', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BBC00000680005FC1F8C Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 100409228
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '23', '2622.966', '-247.07677', '109.49042', '100', '0', '0', NULL),
 (@MOVID, '24', '2631.5188', '-236.54292', '107.90909', '100', '0', '0', NULL),
 (@MOVID, '25', '2639.3806', '-201.2206', '107.04841', '100', '0', '0', NULL),
@@ -1003,7 +1003,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '2630.336', '-104.03993', '99.95373', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BBC0000068000F7C1F8D Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 259792781
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '7', '2630.336', '-104.03993', '99.95373', '100', '0', '0', NULL),
 (@MOVID, '8', '2650.4524', '-96.150665', '97.40522', '100', '0', '0', NULL),
 (@MOVID, '9', '2677.847', '-73.52469', '94.06401', '100', '0', '0', NULL),
@@ -1025,7 +1025,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '2431.6082', '-330.6561', '100.96674', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BBC000006800057C1F8C Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 92020620
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '14', '2431.6082', '-330.6561', '100.96674', '100', '0', '0', NULL),
 (@MOVID, '15', '2448.109', '-329.26596', '101.92092', '100', '0', '0', NULL),
 (@MOVID, '16', '2466.677', '-339.95395', '103.31667', '100', '0', '0', NULL),
@@ -1046,7 +1046,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3823', '1', '1', '2387.5647', '-381.45074', '101.21952', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BBC000006800117C1F8D Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3823 (Ghostpaw Runner) Low: 293347213
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '39', '2387.5647', '-381.45074', '101.21952', '100', '0', '0', NULL),
 (@MOVID, '40', '2383.356', '-373.96182', '96.6267', '100', '0', '0', NULL),
 (@MOVID, '41', '2374.3628', '-350.30557', '93.425476', '100', '0', '0', NULL),
@@ -1082,7 +1082,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3824', '1', '1', '1895.9371', '-1785.1747', '64.55681', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003BC0000006800007CFADD Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3824 (Ghostpaw Howler) Low: 8190685
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '5', '1895.9371', '-1785.1747', '64.55681', '100', '0', '0', NULL),
 (@MOVID, '6', '1918.0634', '-1768.3776', '62.634583', '100', '0', '0', NULL),
 (@MOVID, '7', '1922.6572', '-1783.6895', '63.519512', '100', '0', '0', NULL),
@@ -1136,7 +1136,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3811', '1', '1', '2985.0356', '-3166.29', '187.76047', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B8C0000113000077F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3811 (Giant Ashenvale Bear) Low: 7861405
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '17', '2985.0356', '-3166.29', '187.76047', '100', '0', '0', NULL),
 (@MOVID, '18', '2949.6086', '-3163.384', '179.68512', '100', '0', '0', NULL),
 (@MOVID, '19', '2927.083', '-3143.947', '180.70003', '100', '0', '0', NULL),
@@ -1154,7 +1154,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3811', '1', '1', '2881.2986', '-3055.6472', '200.18604', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003B8C0000113000177F49C Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3811 (Giant Ashenvale Bear) Low: 24638620
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '1', '2881.2986', '-3055.6472', '200.18604', '100', '0', '0', NULL), -- PathType: None
 (@MOVID, '2', '2876.3042', '-3032.592', '199.63571', '100', '0', '0', NULL),
 (@MOVID, '3', '2883.8147', '-3006.658', '201.32983', '100', '0', '0', NULL),
@@ -1186,7 +1186,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3811', '1', '1', '2745.7158', '-3123.533', '167.69876', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B8C00001130000F7F49C Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3811 (Giant Ashenvale Bear) Low: 16250012
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '6', '2745.7158', '-3123.533', '167.69876', '100', '0', '0', NULL),
 (@MOVID, '7', '2775.9697', '-3120.6602', '171.02939', '100', '0', '0', NULL),
 (@MOVID, '8', '2797.4067', '-3117.7075', '174.6821', '100', '0', '0', NULL),
@@ -1204,7 +1204,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3811', '1', '1', '2858.898', '-3094.251', '196.85649', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B8C0000113000077F49C Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3811 (Giant Ashenvale Bear) Low: 7861404
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '3', '2858.898', '-3094.251', '196.85649', '100', '0', '0', NULL),
 (@MOVID, '4', '2865.8865', '-3053.8684', '198.41423', '100', '0', '0', NULL),
 (@MOVID, '5', '2865.699', '-3024.1946', '200.21599', '100', '0', '0', NULL),
@@ -1222,7 +1222,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2606.2288', '-1400.3759', '168.13614', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B8400001130007F7F49F Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 133690527
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '10', '2606.2288', '-1400.3759', '168.13614', '100', '0', '0', NULL),
 (@MOVID, '11', '2569.561', '-1417.4742', '157.8599', '100', '0', '0', NULL),
 (@MOVID, '12', '2554.731', '-1435.8768', '157.92693', '100', '0', '0', NULL),
@@ -1241,7 +1241,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2728.904', '-1534.1578', '202.36404', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B840000113000477F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 74970269
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '11', '2728.904', '-1534.1578', '202.36404', '100', '0', '0', NULL),
 (@MOVID, '12', '2708.888', '-1524.2275', '193.81265', '100', '0', '0', NULL),
 (@MOVID, '13', '2704.2458', '-1502.7249', '195.02516', '100', '0', '0', NULL),
@@ -1258,7 +1258,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2622.4927', '-1190.9452', '154.195', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B8400001130004F7F49E Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 83358878
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '10', '2622.4927', '-1190.9452', '154.195', '100', '0', '0', NULL),
 (@MOVID, '11', '2639.2156', '-1181.2921', '153.04973', '100', '0', '0', NULL),
 (@MOVID, '12', '2680.5793', '-1181.0884', '156.88017', '100', '0', '0', NULL),
@@ -1279,7 +1279,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2676.328', '-1245.8959', '161.78313', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B8400001130004F7F4A0 Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 83358880
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '7', '2676.328', '-1245.8959', '161.78313', '100', '0', '0', NULL),
 (@MOVID, '22', '2655.8362', '-1254.6642', '156.32126', '100', '0', '0', NULL),
 (@MOVID, '23', '2629.222', '-1239.4769', '150.40933', '100', '0', '0', NULL),
@@ -1298,7 +1298,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2599.1309', '-1344.8922', '156.77393', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B840000113000077F49A Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 7861402
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '25', '2599.1309', '-1344.8922', '156.77393', '100', '0', '0', NULL),
 (@MOVID, '26', '2580.3745', '-1328.5797', '150.80673', '100', '0', '0', NULL),
 (@MOVID, '27', '2567.874', '-1325.776', '149.77675', '100', '0', '0', NULL),
@@ -1319,7 +1319,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2710.2026', '-1259.2174', '176.18108', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B840000113000077F49B Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 7861403
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '26', '2710.2026', '-1259.2174', '176.18108', '100', '0', '0', NULL),
 (@MOVID, '27', '2723.6165', '-1253.8066', '172.03514', '100', '0', '0', NULL),
 (@MOVID, '28', '2728.9722', '-1219.6942', '166.87943', '100', '0', '0', NULL),
@@ -1341,7 +1341,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2583.3572', '-1032.8915', '122.9966', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003B840000113000977F4A0 Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 158856352
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '23', '2583.3572', '-1032.8915', '122.9966', '100', '0', '0', NULL),
 (@MOVID, '24', '2600.0005', '-1041.9215', '121.69023', '100', '0', '0', NULL),
 (@MOVID, '25', '2610.1665', '-1062.2184', '121.65088', '100', '0', '0', NULL),
@@ -1364,7 +1364,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2958.73', '-1222.0642', '189.3869', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B840000113000777F4A0 Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 125301920
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '91', '2958.73', '-1222.0642', '189.3869', '100', '0', '0', NULL),
 (@MOVID, '92', '2922.0383', '-1210.816', '183.85233', '100', '0', '0', NULL),
 (@MOVID, '93', '2894.8994', '-1199.9185', '180.83516', '100', '0', '0', NULL),
@@ -1390,7 +1390,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2912.3926', '-1311.737', '204.04884', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B840000113000477F4A0 Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 74970272
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '9', '2912.3926', '-1311.737', '204.04884', '100', '0', '0', NULL),
 (@MOVID, '10', '2923.1667', '-1293.9878', '201.11186', '100', '0', '0', NULL),
 (@MOVID, '11', '2919.2085', '-1279.0367', '198.12083', '100', '0', '0', NULL),
@@ -1419,7 +1419,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2573.539', '-944.69586', '137.3547', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B8400001130005F7F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 100136093
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '5', '2573.539', '-944.69586', '137.3547', '100', '0', '0', NULL),
 (@MOVID, '6', '2576.5347', '-930.7991', '139.26024', '100', '0', '0', NULL),
 (@MOVID, '7', '2571.6892', '-913.1696', '140.24036', '100', '0', '0', NULL),
@@ -1438,7 +1438,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2658.724', '-895.36896', '159.05098', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B8400001130001F7F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 33027229
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '3', '2658.724', '-895.36896', '159.05098', '100', '0', '0', NULL),
 (@MOVID, '4', '2657.5798', '-899.9754', '161.67377', '100', '0', '0', NULL),
 (@MOVID, '5', '2659.2239', '-887.07745', '146.09294', '100', '0', '0', NULL),
@@ -1463,7 +1463,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2875.4336', '-779.5879', '159.38158', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B840000113000177F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 24638621
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '18', '2875.4336', '-779.5879', '159.38158', '100', '0', '0', NULL),
 (@MOVID, '19', '2906.0547', '-760.6028', '163.64665', '100', '0', '0', NULL),
 (@MOVID, '20', '2952.4543', '-742.3217', '170.23705', '100', '0', '0', NULL),
@@ -1490,7 +1490,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2929.5317', '-742.7804', '166.35733', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003B8400001130000F7F49E Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 16250014
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '30', '2929.5317', '-742.7804', '166.35733', '100', '0', '0', NULL),
 (@MOVID, '31', '2945.2869', '-727.71625', '168.58795', '100', '0', '0', NULL),
 (@MOVID, '32', '2957.3748', '-751.815', '171.11978', '100', '0', '0', NULL),
@@ -1514,7 +1514,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '3039.2095', '-619.5213', '172.53503', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B840000113000677F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 108524701
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '29', '3039.2095', '-619.5213', '172.53503', '100', '0', '0', NULL),
 (@MOVID, '30', '3030.5935', '-639.10156', '165.52707', '100', '0', '0', NULL),
 (@MOVID, '31', '3027.6477', '-660.7366', '166.73663', '100', '0', '0', NULL),
@@ -1536,7 +1536,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '3076.4192', '-862.5241', '199.45108', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B840000113000077F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 7861405
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '3', '3076.4192', '-862.5241', '199.45108', '100', '0', '0', NULL),
 (@MOVID, '4', '3058.3877', '-848.4251', '194.72818', '100', '0', '0', NULL),
 (@MOVID, '5', '3041.2314', '-831.64453', '193.59407', '100', '0', '0', NULL),
@@ -1581,7 +1581,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2083.6953', '-804.0004', '106.84119', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B8400000680000FC1F8E Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 16523150
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '11', '2083.6953', '-804.0004', '106.84119', '100', '0', '0', NULL),
 (@MOVID, '12', '2073.8608', '-802.3736', '103.08815', '100', '0', '0', NULL),
 (@MOVID, '13', '2061.621', '-799.3045', '100.97311', '100', '0', '0', NULL),
@@ -1601,7 +1601,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '7815.905', '-4443.398', '667.3878', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B84000006800117C1F8D Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 293347213
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '16', '2247.4211', '-910.60266', '89.7098', '100', '0', '0', NULL),
 (@MOVID, '17', '2259.2976', '-936.61566', '86.21726', '100', '0', '0', NULL),
 (@MOVID, '18', '2228.208', '-949.9618', '87.145424', '100', '0', '0', NULL),
@@ -1619,7 +1619,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2190.9219', '-732.2624', '105.223625', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B8400000680009FC1F8E Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 167518094
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '15', '2190.9219', '-732.2624', '105.223625', '100', '0', '0', NULL),
 (@MOVID, '16', '2206.2795', '-718.3344', '109.490135', '100', '0', '0', NULL),
 (@MOVID, '17', '2190.9219', '-732.2624', '105.223625', '100', '0', '0', NULL),
@@ -1654,7 +1654,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3809', '1', '1', '2372.7957', '-932.06934', '97.83822', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003B8400000680004FC1F8D Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3809 (Ashenvale Bear) Low: 83632013
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '9', '2372.7957', '-932.06934', '97.83822', '100', '0', '0', NULL),
 (@MOVID, '10', '2348.897', '-932.5547', '97.06183', '100', '0', '0', NULL),
 (@MOVID, '11', '2318.3586', '-934.85535', '89.351234', '100', '0', '0', NULL),
@@ -1674,7 +1674,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3815', '1', '1', '2898.3838', '-1356.2653', '206.5876', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003B9C00001130000F7F49C Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3815 (Blink Dragon) Low: 16250012
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '9', '2898.3838', '-1356.2653', '206.5876', '100', '0', '0', NULL),
 (@MOVID, '10', '2892.8315', '-1376.7125', '207.79324', '100', '0', '0', NULL),
 (@MOVID, '11', '2881.6624', '-1364.4888', '212.62207', '100', '0', '0', NULL),
@@ -1722,7 +1722,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3815', '1', '1', '1918.7743', '-1577.9518', '63.197205', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003B9C000006800007C1F89 Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3815 (Blink Dragon) Low: 8134537
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '51', '1918.7743', '-1577.9518', '63.197205', '100', '0', '0', NULL),
 (@MOVID, '52', '1941.457', '-1581.2991', '61.977562', '100', '0', '0', NULL),
 (@MOVID, '53', '1979.671', '-1585.8401', '61.91165', '100', '0', '0', NULL),
@@ -1769,7 +1769,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3926', '1', '1', '3245.9556', '-554.0596', '156.08455', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003D5800001130000F7F49F Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3926 (Thistlefur Pathfinder) Low: 16250015
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '19', '3245.9556', '-554.0596', '156.08455', '100', '0', '0', NULL),
 (@MOVID, '20', '3263.344', '-566.751', '156.59906', '100', '0', '0', NULL),
 (@MOVID, '21', '3283.2673', '-563.2302', '156.08455', '100', '0', '0', NULL),
@@ -1799,7 +1799,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3926', '1', '1', '3350.0854', '-452.17676', '153.03552', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003D580000113000077F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3926 (Thistlefur Pathfinder) Low: 7861405
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '17', '3350.0854', '-452.17676', '153.03552', '100', '0', '0', NULL),
 (@MOVID, '18', '3340.8938', '-464.2716', '153.75', '100', '0', '0', NULL),
 (@MOVID, '19', '3336.7305', '-476.03625', '154.30948', '100', '0', '0', NULL),
@@ -1828,7 +1828,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3926', '1', '1', '3274.504', '-374.04037', '152.86844', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003D580000113000077F49E Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3926 (Thistlefur Pathfinder) Low: 7861406
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '21', '3274.504', '-374.04037', '152.86844', '100', '0', '0', NULL),
 (@MOVID, '22', '3270.7996', '-368.47314', '153.02156', '100', '0', '0', NULL),
 (@MOVID, '23', '3264.615', '-361.93338', '153.10321', '100', '0', '0', NULL),
@@ -1859,7 +1859,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3926', '1', '1', '3255.6692', '-580.75714', '156.32866', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003D580000113000177F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3926 (Thistlefur Pathfinder) Low: 24638621
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '16', '3255.6692', '-580.75714', '156.32866', '100', '0', '0', NULL),
 (@MOVID, '17', '3265.234', '-551.6218', '157.25159', '100', '0', '0', NULL),
 (@MOVID, '18', '3270.2004', '-537.6502', '156.1453', '100', '0', '0', NULL),
@@ -1879,7 +1879,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3926', '1', '1', '3506.533', '-496.408', '186.6573', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003D5800001130000F7F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3926 (Thistlefur Pathfinder) Low: 16250013
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '23', '3506.533', '-496.408', '186.6573', '100', '0', '0', NULL),
 (@MOVID, '24', '3491.0564', '-494.5729', '184.18616', '100', '0', '0', NULL),
 (@MOVID, '25', '3480.9714', '-488.21527', '181.4179', '100', '0', '0', NULL),
@@ -1909,7 +1909,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3926', '1', '1', '3445.8484', '-350.73206', '134.24686', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003D580000113000077F49B Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3926 (Thistlefur Pathfinder) Low: 7861403
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '7', '3445.8484', '-350.73206', '134.24686', '100', '0', '0', NULL),
 (@MOVID, '8', '3437.651', '-355.29337', '133.86626', '100', '0', '0', NULL),
 (@MOVID, '9', '3432.3362', '-361.43448', '133.89264', '100', '0', '0', NULL),
@@ -1931,7 +1931,7 @@ INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_
 (@MOVID, '3926', '1', '1', '3401.9714', '-460.43854', '159.67883', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003D5800001130001F7F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3926 (Thistlefur Pathfinder) Low: 33027229
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '46', '3401.9714', '-460.43854', '159.67883', '100', '0', '0', NULL),
 (@MOVID, '47', '3399.6516', '-431.2418', '151.52917', '100', '0', '0', NULL),
 (@MOVID, '48', '3408.3271', '-402.74808', '143.82062', '100', '0', '0', NULL),
@@ -1953,70 +1953,79 @@ SET @MOVID=@CGUID;
 SET @CGUID=@CGUID+1;
 DELETE FROM creature WHERE guid IN(@MOVID);
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
-(@MOVID, '3987', '1', '1',  '3267.9226', '-365.4456', '153.10321', '0.64330601692199710000', '300', '300', '0', '2');
--- GUID: Full: 0x205660002003E4C0000113000077F49A Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3987 (Dal Bloodclaw) Low: 7861402
+(@MOVID, '3987', '1', '1',  '3278.1917', '-577.94165', '156.303', '0.64330601692199710000', '300', '300', '0', '2');
+-- GUID: Full: 0x205160002003E4C000001900004950BA Creature/0 R5208/S25 Map: 1 (Kalimdor) Entry: 3987 (Dal Bloodclaw) Low: 4804794
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
-(@MOVID, '1', '3267.9226', '-365.4456', '153.10321', '100', '0', '0', NULL), -- PathType: None
-(@MOVID, '2', '3287.4258', '-443.352', '150.17413', '100', '0', '0', NULL),
-(@MOVID, '3', '3294.3245', '-477.36002', '151.18445', '100', '0', '0', NULL),
-(@MOVID, '4', '3298.4949', '-497.44055', '153.67023', '100', '0', '0', NULL),
-(@MOVID, '5', '3286.191', '-522.32056', '155.09822', '100', '0', '0', NULL),
-(@MOVID, '6', '3273.2844', '-544.9744', '156.76042', '100', '0', '0', NULL),
-(@MOVID, '7', '3280.7874', '-570.0608', '156.08455', '100', '0', '0', NULL),
-(@MOVID, '8', '3277.355', '-582.273', '156.71709', '100', '0', '0', NULL),
-(@MOVID, '9', '3277.1033', '-583.5028', '156.89435', '100', '0', '0', NULL),
-(@MOVID, '10', '3278.1917', '-577.94165', '156.303', '100', '0', '0', NULL),
-(@MOVID, '11', '3279.9854', '-540.8979', '156.2312', '100', '0', '0', NULL),
-(@MOVID, '12', '3296.901', '-505.11197', '154.3121', '100', '0', '0', NULL),
-(@MOVID, '13', '3323.4956', '-475.8291', '154.46762', '100', '0', '0', NULL),
-(@MOVID, '14', '3337.675', '-476.30264', '154.35735', '100', '0', '0', NULL),
-(@MOVID, '15', '3350.461', '-481.57498', '154.21774', '100', '0', '0', NULL),
-(@MOVID, '16', '3356.5308', '-480.24533', '154.21774', '100', '0', '0', NULL),
-(@MOVID, '17', '3358.8948', '-475.90833', '154.21774', '100', '0', '0', NULL),
-(@MOVID, '18', '3365.3162', '-459.21475', '154.41882', '100', '0', '0', NULL),
-(@MOVID, '19', '3373.1072', '-443.3609', '152.49747', '100', '0', '0', NULL),
-(@MOVID, '20', '3397.0278', '-412.37814', '146.07268', '100', '0', '0', NULL),
-(@MOVID, '21', '3420.868', '-394.09082', '140.32162', '100', '0', '0', NULL),
-(@MOVID, '22', '3437.9915', '-366.16656', '134.09451', '100', '0', '0', NULL),
-(@MOVID, '23', '3447.12', '-370.6861', '134.71156', '100', '0', '0', NULL),
-(@MOVID, '24', '3431.1143', '-361.92047', '133.92043', '100', '0', '0', NULL),
-(@MOVID, '25', '3415.658', '-358.48102', '135.0502', '100', '0', '0', NULL),
-(@MOVID, '26', '3389.8987', '-390.63174', '143.2368', '100', '0', '0', NULL),
-(@MOVID, '27', '3368.3152', '-421.7806', '150.41495', '100', '0', '0', NULL),
-(@MOVID, '28', '3338.3508', '-434.5713', '150.74695', '100', '0', '0', NULL),
-(@MOVID, '29', '3304.8447', '-417.84854', '149.6639', '100', '0', '0', NULL),
-(@MOVID, '30', '3285.1567', '-390.7629', '151.55154', '100', '0', '0', NULL),
-(@MOVID, '31', '3276.086', '-382.9121', '152.33496', '100', '0', '0', NULL),
-(@MOVID, '32', '3267.9226', '-365.4456', '153.10321', '100', '0', '0', NULL),
-(@MOVID, '33', '3262.2542', '-368.05963', '153.10321', '100', '0', '0', NULL),
-(@MOVID, '34', '3258.0579', '-374.17404', '152.87671', '100', '0', '0', NULL),
-(@MOVID, '35', '3261.8672', '-390.89606', '151.8825', '100', '0', '0', NULL),
-(@MOVID, '36', '3268.1807', '-406.90247', '150.47668', '100', '0', '0', NULL),
-(@MOVID, '37', '3287.4258', '-443.352', '150.17413', '100', '0', '0', NULL),
-(@MOVID, '38', '3294.3245', '-477.36002', '151.18445', '100', '0', '0', NULL),
-(@MOVID, '39', '3298.4949', '-497.44055', '153.67023', '100', '0', '0', NULL),
-(@MOVID, '40', '3286.191', '-522.32056', '155.09822', '100', '0', '0', NULL),
-(@MOVID, '41', '3273.2844', '-544.9744', '156.76042', '100', '0', '0', NULL),
-(@MOVID, '42', '3350.461', '-481.57498', '154.21774', '100', '0', '0', NULL),
-(@MOVID, '43', '3356.5308', '-480.24533', '154.21774', '100', '0', '0', NULL),
-(@MOVID, '44', '3447.12', '-370.6861', '134.71156', '100', '0', '0', NULL),
-(@MOVID, '45', '3431.1143', '-361.92047', '133.92043', '100', '0', '0', NULL),
-(@MOVID, '46', '3415.658', '-358.48102', '135.0502', '100', '0', '0', NULL),
-(@MOVID, '47', '3389.8987', '-390.63174', '143.2368', '100', '0', '0', NULL),
-(@MOVID, '48', '3368.3152', '-421.7806', '150.41495', '100', '0', '0', NULL),
-(@MOVID, '49', '3338.3508', '-434.5713', '150.74695', '100', '0', '0', NULL),
-(@MOVID, '50', '3304.8447', '-417.84854', '149.6639', '100', '0', '0', NULL);
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
+(@MOVID, '3', '3278.1917', '-577.94165', '156.303', '100', '0', '0', NULL),
+(@MOVID, '4', '3279.9854', '-540.8979', '156.2312', '100', '0', '0', NULL),
+(@MOVID, '5', '3296.901', '-505.11197', '154.3121', '100', '0', '0', NULL),
+(@MOVID, '6', '3323.4956', '-475.8291', '154.46762', '100', '0', '0', NULL),
+(@MOVID, '7', '3337.675', '-476.30264', '154.35735', '100', '0', '0', NULL),
+(@MOVID, '8', '3350.461', '-481.57498', '154.21774', '100', '0', '0', NULL),
+(@MOVID, '9', '3356.5308', '-480.24533', '154.21774', '100', '0', '60000', NULL),
+(@MOVID, '10', '3358.8948', '-475.90833', '154.21774', '100', '0', '0', NULL),
+(@MOVID, '11', '3365.3162', '-459.21475', '154.41882', '100', '0', '0', NULL),
+(@MOVID, '12', '3373.1072', '-443.3609', '152.49747', '100', '0', '0', NULL),
+(@MOVID, '13', '3397.0278', '-412.37814', '146.07268', '100', '0', '0', NULL),
+(@MOVID, '14', '3420.868', '-394.09082', '140.32162', '100', '0', '0', NULL),
+(@MOVID, '15', '3437.9915', '-366.16656', '134.09451', '100', '0', '0', NULL),
+(@MOVID, '16', '3447.12', '-370.6861', '134.71156', '100', '0', '60000', NULL),
+(@MOVID, '17', '3431.1143', '-361.92047', '133.92043', '100', '0', '0', NULL),
+(@MOVID, '18', '3415.658', '-358.48102', '135.0502', '100', '0', '0', NULL),
+(@MOVID, '19', '3389.8987', '-390.63174', '143.2368', '100', '0', '0', NULL),
+(@MOVID, '20', '3391.9082', '-388.16797', '142.77167', '100', '0', '0', NULL),
+(@MOVID, '21', '3391.2832', '-388.94922', '142.97223', '100', '0', '0', NULL),
+(@MOVID, '22', '3390.0332', '-390.51172', '143.18184', '100', '0', '0', NULL),
+(@MOVID, '23', '3389.8987', '-390.63174', '143.2368', '100', '0', '0', NULL),
+(@MOVID, '24', '3389.329', '-391.45312', '143.39723', '100', '0', '0', NULL),
+(@MOVID, '25', '3388.1904', '-393.09766', '143.69025', '100', '0', '0', NULL),
+(@MOVID, '26', '3387.0518', '-394.7422', '143.979', '100', '0', '0', NULL),
+(@MOVID, '27', '3385.913', '-396.38672', '144.42467', '100', '0', '0', NULL),
+(@MOVID, '28', '3385.3438', '-397.20898', '144.73572', '100', '0', '0', NULL),
+(@MOVID, '29', '3384.205', '-398.85352', '145.0918', '100', '0', '0', NULL),
+(@MOVID, '30', '3383.0664', '-400.49805', '145.4843', '100', '0', '0', NULL),
+(@MOVID, '31', '3381.9277', '-402.14258', '145.84465', '100', '0', '0', NULL),
+(@MOVID, '32', '3380.789', '-403.7871', '146.23206', '100', '0', '0', NULL),
+(@MOVID, '33', '3379.6504', '-405.43164', '146.6264', '100', '0', '0', NULL),
+(@MOVID, '34', '3379.081', '-406.2539', '147.0203', '100', '0', '0', NULL),
+(@MOVID, '35', '3377.9424', '-407.89844', '147.37376', '100', '0', '0', NULL),
+(@MOVID, '36', '3376.8037', '-409.54297', '147.83778', '100', '0', '0', NULL),
+(@MOVID, '37', '3375.665', '-411.1875', '148.05551', '100', '0', '0', NULL),
+(@MOVID, '38', '3374.5264', '-412.83203', '148.25607', '100', '0', '0', NULL),
+(@MOVID, '39', '3373.957', '-413.6543', '148.46747', '100', '0', '0', NULL),
+(@MOVID, '40', '3372.8184', '-415.29883', '148.69571', '100', '0', '0', NULL),
+(@MOVID, '41', '3371.6797', '-416.94336', '148.99988', '100', '0', '0', NULL),
+(@MOVID, '42', '3370.541', '-418.5879', '149.34123', '100', '0', '0', NULL),
+(@MOVID, '43', '3369.4023', '-420.23242', '149.88417', '100', '0', '0', NULL),
+(@MOVID, '44', '3368.833', '-421.0547', '150.05861', '100', '0', '0', NULL),
+(@MOVID, '45', '3368.3152', '-421.7806', '150.41495', '100', '0', '0', NULL),
+(@MOVID, '46', '3338.3508', '-434.5713', '150.74695', '100', '0', '0', NULL),
+(@MOVID, '47', '3304.8447', '-417.84854', '149.6639', '100', '0', '0', NULL),
+(@MOVID, '48', '3285.1567', '-390.7629', '151.55154', '100', '0', '0', NULL),
+(@MOVID, '49', '3276.086', '-382.9121', '152.33496', '100', '0', '0', NULL),
+(@MOVID, '50', '3267.9226', '-365.4456', '153.10321', '100', '0', '60000', NULL),
+(@MOVID, '51', '3262.2542', '-368.05963', '153.10321', '100', '0', '0', NULL),
+(@MOVID, '52', '3258.0579', '-374.17404', '152.87671', '100', '0', '0', NULL),
+(@MOVID, '53', '3261.8672', '-390.89606', '151.8825', '100', '0', '0', NULL),
+(@MOVID, '54', '3268.1807', '-406.90247', '150.47668', '100', '0', '0', NULL),
+(@MOVID, '55', '3287.4258', '-443.352', '150.17413', '100', '0', '0', NULL),
+(@MOVID, '56', '3294.3245', '-477.36002', '151.18445', '100', '0', '0', NULL),
+(@MOVID, '57', '3298.4949', '-497.44055', '153.67023', '100', '0', '0', NULL),
+(@MOVID, '58', '3286.191', '-522.32056', '155.09822', '100', '0', '0', NULL),
+(@MOVID, '59', '3273.2844', '-544.9744', '156.76042', '100', '0', '0', NULL),
+(@MOVID, '60', '3280.7874', '-570.0608', '156.08455', '100', '0', '0', NULL),
+(@MOVID, '61', '3277.355', '-582.273', '156.71709', '100', '0', '0', NULL),
+(@MOVID, '62', '3277.1033', '-583.5028', '156.89435', '100', '0', '60000', NULL);
 
 SET @MOVID=@CGUID;
 SET @CGUID=@CGUID+1;
 DELETE FROM creature WHERE guid IN(@MOVID);
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
-(@MOVID, '3745', '1', '1', '2350.553', '-1230.9636', '88.42668', '0.64330601692199710000', '300', '300', '0', '2');
+(@MOVID, '3745', '1', '1', '2378.5073', '-1221.1986', '91.00992', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003A8400000680000FC1F8C Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3745 (Foulweald Pathfinder) Low: 16523148
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
-(@MOVID, '1', '2350.553', '-1230.9636', '88.42668', '100', '0', '0', NULL), -- PathType: None
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '2', '2378.5073', '-1221.1986', '91.00992', '100', '0', '0', NULL),
 (@MOVID, '3', '2342.7375', '-1346.1803', '87.999756', '100', '0', '0', NULL),
 (@MOVID, '4', '2332.6802', '-1285.8842', '85.380264', '100', '0', '0', NULL),
@@ -2033,55 +2042,16 @@ INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz
 (@MOVID, '15', '2342.7375', '-1346.1803', '87.999756', '100', '0', '0', NULL),
 (@MOVID, '16', '2339.976', '-1362.577', '91.947586', '100', '0', '0', NULL),
 (@MOVID, '17', '2329.64', '-1391.8043', '88.9505', '100', '0', '0', NULL),
-(@MOVID, '18', '2322.0508', '-1402.8591', '87.16774', '100', '0', '0', NULL),
-(@MOVID, '19', '2329.64', '-1391.8043', '88.9505', '100', '0', '0', NULL),
-(@MOVID, '20', '2339.976', '-1362.577', '91.947586', '100', '0', '0', NULL),
-(@MOVID, '21', '2342.7375', '-1346.1803', '87.999756', '100', '0', '0', NULL),
-(@MOVID, '22', '2342.0364', '-1315.396', '85.13477', '100', '0', '0', NULL),
-(@MOVID, '23', '2332.6802', '-1285.8842', '85.380264', '100', '0', '0', NULL),
-(@MOVID, '24', '2333.5164', '-1255.0474', '84.40136', '100', '0', '0', NULL),
-(@MOVID, '25', '2350.553', '-1230.9636', '88.42668', '100', '0', '0', NULL);
+(@MOVID, '18', '2322.0508', '-1402.8591', '87.16774', '100', '0', '0', NULL);
 
 SET @MOVID=@CGUID;
 SET @CGUID=@CGUID+1;
 DELETE FROM creature WHERE guid IN(@MOVID);
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
-(@MOVID, '3745', '1', '1', '2261.4956', '-1511.5275', '89.06153', '0.64330601692199710000', '300', '300', '0', '2');
+(@MOVID, '3745', '1', '1', '2195.5156', '-1399.2715', '88.86077', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003A84000006800007C1F8C Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3745 (Foulweald Pathfinder) Low: 8134540
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
-(@MOVID, '1', '2261.4956', '-1511.5275', '89.06153', '100', '0', '0', NULL), -- PathType: None
-(@MOVID, '2', '2261.5676', '-1486.6023', '89.5626', '100', '0', '0', NULL),
-(@MOVID, '3', '2266.1125', '-1458.4224', '91.14578', '100', '0', '0', NULL),
-(@MOVID, '4', '2283.789', '-1448.0603', '88.764404', '100', '0', '0', NULL),
-(@MOVID, '5', '2281.614', '-1431.9961', '87.86863', '100', '0', '0', NULL),
-(@MOVID, '6', '2267.918', '-1421.2522', '87.47379', '100', '0', '0', NULL),
-(@MOVID, '7', '2250.6692', '-1411.8442', '86.930725', '100', '0', '0', NULL),
-(@MOVID, '8', '2227.55', '-1409.9681', '88.06694', '100', '0', '0', NULL),
-(@MOVID, '9', '2195.5156', '-1399.2715', '88.86077', '100', '0', '0', NULL),
-(@MOVID, '10', '2227.55', '-1409.9681', '88.06694', '100', '0', '0', NULL),
-(@MOVID, '11', '2250.6692', '-1411.8442', '86.930725', '100', '0', '0', NULL),
-(@MOVID, '12', '2267.918', '-1421.2522', '87.47379', '100', '0', '0', NULL),
-(@MOVID, '13', '2261.4956', '-1511.5275', '89.06153', '100', '0', '0', NULL),
-(@MOVID, '14', '2261.5676', '-1486.6023', '89.5626', '100', '0', '0', NULL),
-(@MOVID, '15', '2266.1125', '-1458.4224', '91.14578', '100', '0', '0', NULL),
-(@MOVID, '16', '2283.789', '-1448.0603', '88.764404', '100', '0', '0', NULL),
-(@MOVID, '17', '2250.6692', '-1411.8442', '86.930725', '100', '0', '0', NULL),
-(@MOVID, '18', '2267.918', '-1421.2522', '87.47379', '100', '0', '0', NULL),
-(@MOVID, '19', '2281.614', '-1431.9961', '87.86863', '100', '0', '0', NULL),
-(@MOVID, '20', '2283.789', '-1448.0603', '88.764404', '100', '0', '0', NULL),
-(@MOVID, '21', '2266.1125', '-1458.4224', '91.14578', '100', '0', '0', NULL),
-(@MOVID, '22', '2261.5676', '-1486.6023', '89.5626', '100', '0', '0', NULL),
-(@MOVID, '23', '2261.4956', '-1511.5275', '89.06153', '100', '0', '0', NULL),
-(@MOVID, '24', '2243.7812', '-1535.0826', '89.17749', '100', '0', '0', NULL),
-(@MOVID, '25', '2261.4956', '-1511.5275', '89.06153', '100', '0', '0', NULL),
-(@MOVID, '26', '2261.5676', '-1486.6023', '89.5626', '100', '0', '0', NULL),
-(@MOVID, '27', '2266.1125', '-1458.4224', '91.14578', '100', '0', '0', NULL),
-(@MOVID, '28', '2283.789', '-1448.0603', '88.764404', '100', '0', '0', NULL),
-(@MOVID, '29', '2281.614', '-1431.9961', '87.86863', '100', '0', '0', NULL),
-(@MOVID, '30', '2267.918', '-1421.2522', '87.47379', '100', '0', '0', NULL),
-(@MOVID, '31', '2250.6692', '-1411.8442', '86.930725', '100', '0', '0', NULL),
-(@MOVID, '32', '2227.55', '-1409.9681', '88.06694', '100', '0', '0', NULL),
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '33', '2195.5156', '-1399.2715', '88.86077', '100', '0', '0', NULL),
 (@MOVID, '34', '2227.55', '-1409.9681', '88.06694', '100', '0', '0', NULL),
 (@MOVID, '35', '2250.6692', '-1411.8442', '86.930725', '100', '0', '0', NULL),
@@ -2091,49 +2061,16 @@ INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz
 (@MOVID, '39', '2266.1125', '-1458.4224', '91.14578', '100', '0', '0', NULL),
 (@MOVID, '40', '2261.5676', '-1486.6023', '89.5626', '100', '0', '0', NULL),
 (@MOVID, '41', '2261.4956', '-1511.5275', '89.06153', '100', '0', '0', NULL),
-(@MOVID, '42', '2243.7812', '-1535.0826', '89.17749', '100', '0', '0', NULL),
-(@MOVID, '43', '2261.4956', '-1511.5275', '89.06153', '100', '0', '0', NULL),
-(@MOVID, '44', '2250.6692', '-1411.8442', '86.930725', '100', '0', '0', NULL),
-(@MOVID, '45', '2227.55', '-1409.9681', '88.06694', '100', '0', '0', NULL);
+(@MOVID, '42', '2243.7812', '-1535.0826', '89.17749', '100', '0', '0', NULL);
 
 SET @MOVID=@CGUID;
 SET @CGUID=@CGUID+1;
 DELETE FROM creature WHERE guid IN(@MOVID);
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
-(@MOVID, '3745', '1', '1', '2266.6267', '-1561.0787', '89.44597', '0.64330601692199710000', '300', '300', '0', '2');
+(@MOVID, '3745', '1', '1', '2338.0747', '-1178.1737', '88.12819', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003A84000006800007C1F88 Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3745 (Foulweald Pathfinder) Low: 8134536
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
-(@MOVID, '1', '2266.6267', '-1561.0787', '89.44597', '100', '0', '0', NULL), -- PathType: None
-(@MOVID, '2', '2268', '-1524.0781', '88.754555', '100', '0', '0', NULL),
-(@MOVID, '3', '2268.3186', '-1501.7443', '88.230835', '100', '0', '0', NULL),
-(@MOVID, '4', '2264.0117', '-1481.1953', '90.12137', '100', '0', '0', NULL),
-(@MOVID, '5', '2274.6057', '-1466.4957', '90.39488', '100', '0', '0', NULL),
-(@MOVID, '6', '2255.7544', '-1439.7167', '88.867035', '100', '0', '0', NULL),
-(@MOVID, '7', '2261.722', '-1407.0388', '85.392525', '100', '0', '0', NULL),
-(@MOVID, '8', '2261.504', '-1408.2168', '85.50372', '100', '0', '0', NULL),
-(@MOVID, '9', '2261.6836', '-1407.2324', '85.32802', '100', '0', '0', NULL),
-(@MOVID, '10', '2261.722', '-1407.0388', '85.392525', '100', '0', '0', NULL),
-(@MOVID, '11', '2260.9346', '-1405.1992', '85.08559', '100', '0', '0', NULL),
-(@MOVID, '12', '2258.5732', '-1399.6797', '84.81402', '100', '0', '0', NULL),
-(@MOVID, '13', '2255.4248', '-1392.3203', '84.64047', '100', '0', '0', NULL),
-(@MOVID, '14', '2254.2441', '-1389.5605', '84.32809', '100', '0', '0', NULL),
-(@MOVID, '15', '2253.8506', '-1388.6406', '84.525536', '100', '0', '0', NULL),
-(@MOVID, '16', '2253.457', '-1387.7207', '84.340706', '100', '0', '0', NULL),
-(@MOVID, '17', '2252.67', '-1385.8809', '84.1203', '100', '0', '0', NULL),
-(@MOVID, '18', '2252.2764', '-1384.9609', '83.89462', '100', '0', '0', NULL),
-(@MOVID, '19', '2251.4893', '-1383.1211', '83.59061', '100', '0', '0', NULL),
-(@MOVID, '20', '2251.0957', '-1382.2012', '83.34949', '100', '0', '0', NULL),
-(@MOVID, '21', '2250.7021', '-1381.2812', '83.587105', '100', '0', '0', NULL),
-(@MOVID, '22', '2250.3086', '-1380.3613', '83.397606', '100', '0', '0', NULL),
-(@MOVID, '23', '2249.918', '-1379.5022', '83.307465', '100', '0', '0', NULL),
-(@MOVID, '24', '2240.9048', '-1355.769', '82.58413', '100', '0', '0', NULL),
-(@MOVID, '25', '2253.7795', '-1326.2659', '79.605835', '100', '0', '0', NULL),
-(@MOVID, '26', '2278.507', '-1295.0961', '76.21719', '100', '0', '0', NULL),
-(@MOVID, '27', '2299.0486', '-1263.3639', '78.03004', '100', '0', '0', NULL),
-(@MOVID, '28', '2315.0005', '-1242.396', '81.061325', '100', '0', '0', NULL),
-(@MOVID, '29', '2324.5771', '-1220.1914', '85.80078', '100', '0', '0', NULL),
-(@MOVID, '30', '2328.1306', '-1195.7614', '87.80732', '100', '0', '0', NULL),
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '31', '2338.0747', '-1178.1737', '88.12819', '100', '0', '0', NULL),
 (@MOVID, '32', '2328.1306', '-1195.7614', '87.80732', '100', '0', '0', NULL),
 (@MOVID, '33', '2324.5771', '-1220.1914', '85.80078', '100', '0', '0', NULL),
@@ -2151,52 +2088,21 @@ INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz
 (@MOVID, '45', '2267.995', '-1524.0573', '88.72243', '100', '0', '0', NULL),
 (@MOVID, '46', '2266.6267', '-1561.0787', '89.44597', '100', '0', '0', NULL),
 (@MOVID, '47', '2244.7173', '-1585.233', '87.219574', '100', '0', '0', NULL),
-(@MOVID, '48', '2214.8835', '-1599.4513', '86.97017', '100', '0', '0', NULL),
-(@MOVID, '49', '2244.6611', '-1585.2715', '87.16446', '100', '0', '0', NULL),
-(@MOVID, '50', '2266.6267', '-1561.0787', '89.44597', '100', '0', '0', NULL),
-(@MOVID, '51', '2268', '-1524.0781', '88.754555', '100', '0', '0', NULL),
-(@MOVID, '52', '2268.3186', '-1501.7443', '88.230835', '100', '0', '0', NULL),
-(@MOVID, '53', '2264.0117', '-1481.1953', '90.12137', '100', '0', '0', NULL),
-(@MOVID, '54', '2274.6057', '-1466.4957', '90.39488', '100', '0', '0', NULL),
-(@MOVID, '55', '2255.7544', '-1439.7167', '88.867035', '100', '0', '0', NULL),
-(@MOVID, '56', '2261.722', '-1407.0388', '85.392525', '100', '0', '0', NULL),
-(@MOVID, '57', '2249.918', '-1379.5022', '83.307465', '100', '0', '0', NULL),
-(@MOVID, '58', '2240.9048', '-1355.769', '82.58413', '100', '0', '0', NULL),
-(@MOVID, '59', '2328.1306', '-1195.7614', '87.80732', '100', '0', '0', NULL),
-(@MOVID, '60', '2324.5771', '-1220.1914', '85.80078', '100', '0', '0', NULL),
-(@MOVID, '61', '2315.0005', '-1242.396', '81.061325', '100', '0', '0', NULL),
-(@MOVID, '62', '2299.0486', '-1263.3639', '78.03004', '100', '0', '0', NULL),
-(@MOVID, '63', '2278.507', '-1295.0961', '76.21719', '100', '0', '0', NULL),
-(@MOVID, '64', '2253.7795', '-1326.2659', '79.605835', '100', '0', '0', NULL),
-(@MOVID, '65', '2264.0115', '-1481.1852', '90.05942', '100', '0', '0', NULL),
-(@MOVID, '66', '2268.3186', '-1501.7443', '88.230835', '100', '0', '0', NULL);
+(@MOVID, '48', '2214.8835', '-1599.4513', '86.97017', '100', '0', '0', NULL);
 
 -- forsaken
 
-SET @MOVID=@CGUID;
+SET @MOVID=156134;
 SET @CGUID=@CGUID+1;
 DELETE FROM creature WHERE guid IN(@MOVID);
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
-(@MOVID, '3734', '1', '1', '7815.905', '-4443.398', '667.3878', '0.64330601692199710000', '300', '300', '0', '2');
+(@MOVID, '3734', '1', '1', '3884.9214', '-99.50825', '5.1864324', '0.64330601692199710000', '300', '300', '0', '0');
 -- GUID: Full: 0x205660002003A580000113000077F49C Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3734 (Forsaken Thug) Low: 7861404
-DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
-(@MOVID, '1', '3749.2961', '-131.13162', '2.054502', '100', '0', '0', NULL), -- PathType: None
-(@MOVID, '2', '3757.2332', '-122.13867', '1.6026189', '100', '0', '0', NULL),
-(@MOVID, '3', '3769.3213', '-113.48893', '0.25171715', '100', '0', '0', NULL),
-(@MOVID, '4', '3778.3235', '-108.97841', '0.10147635', '100', '0', '0', NULL),
-(@MOVID, '5', '3790.589', '-112.32584', '0.2555086', '100', '0', '0', NULL),
-(@MOVID, '6', '3801.3586', '-120.86534', '0.19541524', '100', '0', '0', NULL),
-(@MOVID, '7', '3749.2961', '-131.13162', '2.054502', '100', '0', '0', NULL),
-(@MOVID, '8', '3757.2332', '-122.13867', '1.6026189', '100', '0', '0', NULL),
-(@MOVID, '9', '3769.3213', '-113.48893', '0.25171715', '100', '0', '0', NULL),
-(@MOVID, '10', '3778.3235', '-108.97841', '0.10147635', '100', '0', '0', NULL),
-(@MOVID, '11', '3790.589', '-112.32584', '0.2555086', '100', '0', '0', NULL),
-(@MOVID, '12', '3801.3586', '-120.86534', '0.19541524', '100', '0', '0', NULL),
-(@MOVID, '13', '3816.2175', '-123.42025', '-0.6893021', '100', '0', '0', NULL),
-(@MOVID, '14', '3829.4062', '-118.01671', '-0.08540026', '100', '0', '0', NULL),
-(@MOVID, '15', '3841.722', '-115.62544', '2.641479', '100', '0', '0', NULL),
-(@MOVID, '16', '3866.139', '-107.37066', '4.205177', '100', '0', '0', NULL),
+DELETE FROM waypoint_path_name WHERE PathId=9101;
+DELETE FROM waypoint_path WHERE PathId=9101;
+INSERT INTO waypoint_path_name(PathId, Name) VALUES(9101,'Ashenvale - Forsaken Thug Formation');
+SET @MOVID=9101;
+INSERT INTO waypoint_path (PathId, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
 (@MOVID, '17', '3884.9214', '-99.50825', '5.1864324', '100', '0', '0', NULL),
 (@MOVID, '18', '3866.139', '-107.37066', '4.205177', '100', '0', '0', NULL),
 (@MOVID, '19', '3841.722', '-115.62544', '2.641479', '100', '0', '0', NULL),
@@ -2209,284 +2115,34 @@ INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz
 (@MOVID, '26', '3757.2332', '-122.13867', '1.6026189', '100', '0', '0', NULL),
 (@MOVID, '27', '3749.2961', '-131.13162', '2.054502', '100', '0', '0', NULL),
 (@MOVID, '28', '3744.005', '-137.12228', '3.1203516', '100', '0', '0', NULL),
-(@MOVID, '29', '3749.2961', '-131.13162', '2.054502', '100', '0', '0', NULL),
-(@MOVID, '30', '3757.2332', '-122.13867', '1.6026189', '100', '0', '0', NULL),
-(@MOVID, '31', '3769.3213', '-113.48893', '0.25171715', '100', '0', '0', NULL),
-(@MOVID, '32', '3778.3235', '-108.97841', '0.10147635', '100', '0', '0', NULL),
-(@MOVID, '33', '3790.589', '-112.32584', '0.2555086', '100', '0', '0', NULL),
-(@MOVID, '34', '3801.3586', '-120.86534', '0.19541524', '100', '0', '0', NULL),
-(@MOVID, '35', '3816.2175', '-123.42025', '-0.6893021', '100', '0', '0', NULL),
-(@MOVID, '36', '3829.4062', '-118.01671', '-0.08540026', '100', '0', '0', NULL),
-(@MOVID, '37', '3841.722', '-115.62544', '2.641479', '100', '0', '0', NULL),
-(@MOVID, '38', '3866.139', '-107.37066', '4.205177', '100', '0', '0', NULL),
-(@MOVID, '39', '3884.9214', '-99.50825', '5.1864324', '100', '0', '0', NULL),
-(@MOVID, '40', '3866.139', '-107.37066', '4.205177', '100', '0', '0', NULL),
-(@MOVID, '41', '3841.722', '-115.62544', '2.641479', '100', '0', '0', NULL),
-(@MOVID, '42', '3829.4062', '-118.01671', '-0.08540026', '100', '0', '0', NULL),
-(@MOVID, '43', '3816.2175', '-123.42025', '-0.6893021', '100', '0', '0', NULL),
-(@MOVID, '44', '3801.3586', '-120.86534', '0.19541524', '100', '0', '0', NULL),
-(@MOVID, '45', '3790.589', '-112.32584', '0.2555086', '100', '0', '0', NULL),
-(@MOVID, '46', '3778.3235', '-108.97841', '0.10147635', '100', '0', '0', NULL),
-(@MOVID, '47', '3769.3213', '-113.48893', '0.25171715', '100', '0', '0', NULL),
-(@MOVID, '48', '3757.2332', '-122.13867', '1.6026189', '100', '0', '0', NULL),
-(@MOVID, '49', '3749.2961', '-131.13162', '2.054502', '100', '0', '0', NULL),
-(@MOVID, '50', '3744.005', '-137.12228', '3.1203516', '100', '0', '0', NULL),
-(@MOVID, '51', '3749.2961', '-131.13162', '2.054502', '100', '0', '0', NULL),
-(@MOVID, '52', '3757.2332', '-122.13867', '1.6026189', '100', '0', '0', NULL),
-(@MOVID, '53', '3769.3213', '-113.48893', '0.25171715', '100', '0', '0', NULL),
-(@MOVID, '54', '3778.3235', '-108.97841', '0.10147635', '100', '0', '0', NULL),
-(@MOVID, '55', '3790.589', '-112.32584', '0.2555086', '100', '0', '0', NULL),
-(@MOVID, '56', '3801.3586', '-120.86534', '0.19541524', '100', '0', '0', NULL),
-(@MOVID, '57', '3816.2175', '-123.42025', '-0.6893021', '100', '0', '0', NULL),
-(@MOVID, '58', '3829.4062', '-118.01671', '-0.08540026', '100', '0', '0', NULL),
-(@MOVID, '59', '3841.722', '-115.62544', '2.641479', '100', '0', '0', NULL),
-(@MOVID, '60', '3866.139', '-107.37066', '4.205177', '100', '0', '0', NULL);
+(@MOVID, '29', '3749.2961', '-131.13162', '2.054502', '100', '0', '0', NULL);
 
-SET @MOVID=@CGUID;
+SET @MOVID=156135;
 SET @CGUID=@CGUID+1;
 DELETE FROM creature WHERE guid IN(@MOVID);
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
-(@MOVID, '3734', '1', '1', '7815.905', '-4443.398', '667.3878', '0.64330601692199710000', '300', '300', '0', '2');
+(@MOVID, '3734', '1', '1', '7815.905', '-4443.398', '667.3878', '0.64330601692199710000', '300', '300', '0', '0');
 -- GUID: Full: 0x205660002003A5800001130000F7F49C Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3734 (Forsaken Thug) Low: 16250012
-DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
-(@MOVID, '1', '3759.5874', '-116.765686', '0.472409', '100', '0', '0', NULL), -- PathType: None
-(@MOVID, '2', '3762.8906', '-114.40205', '0.37257951', '100', '0', '0', NULL),
-(@MOVID, '3', '3766.2122', '-112.0249', '0.32689407', '100', '0', '0', NULL),
-(@MOVID, '4', '3770.112', '-109.7384', '0.25284123', '100', '0', '0', NULL),
-(@MOVID, '5', '3773.7468', '-107.91658', '0.11909837', '100', '0', '0', NULL),
-(@MOVID, '6', '3779.554', '-106.20464', '0.16545631', '100', '0', '0', NULL),
-(@MOVID, '7', '3783.4253', '-107.262535', '0.22677904', '100', '0', '0', NULL),
-(@MOVID, '8', '3787.3838', '-108.342094', '0.18302006', '100', '0', '0', NULL),
-(@MOVID, '9', '3791.348', '-109.423195', '0.24761249', '100', '0', '0', NULL),
-(@MOVID, '10', '3749.591', '-135.32828', '2.7619872', '100', '0', '0', NULL),
-(@MOVID, '11', '3747.8086', '-128.45703', '1.4806913', '100', '0', '0', NULL),
-(@MOVID, '12', '3750.5005', '-125.23341', '1.645146', '100', '0', '0', NULL),
-(@MOVID, '13', '3753.1902', '-122.18652', '1.6558015', '100', '0', '0', NULL),
-(@MOVID, '14', '3756.561', '-118.930954', '1.1108639', '100', '0', '0', NULL),
-(@MOVID, '15', '3759.8264', '-116.59466', '0.45106435', '100', '0', '0', NULL),
-(@MOVID, '16', '3763.134', '-114.22785', '0.3767077', '100', '0', '0', NULL),
-(@MOVID, '17', '3766.4539', '-111.85195', '0.3313993', '100', '0', '0', NULL),
-(@MOVID, '18', '3770.3826', '-109.60285', '0.24608067', '100', '0', '0', NULL),
-(@MOVID, '19', '3774.0374', '-107.770935', '0.10807636', '100', '0', '0', NULL),
-(@MOVID, '20', '3779.86', '-106.28832', '0.16977862', '100', '0', '0', NULL),
-(@MOVID, '21', '3783.7847', '-107.36053', '0.22580574', '100', '0', '0', NULL),
-(@MOVID, '22', '3787.6965', '-108.4274', '0.18513906', '100', '0', '0', NULL),
-(@MOVID, '23', '3792.6755', '-110.15165', '0.2675733', '100', '0', '0', NULL),
-(@MOVID, '24', '3795.8638', '-112.68024', '0.26894674', '100', '0', '0', NULL),
-(@MOVID, '25', '3799.0923', '-115.240715', '0.31668302', '100', '0', '0', NULL),
-(@MOVID, '26', '3802.3232', '-117.80286', '0.23788188', '100', '0', '0', NULL),
-(@MOVID, '27', '3804.4854', '-118.36022', '0.18982366', '100', '0', '0', NULL),
-(@MOVID, '28', '3808.6145', '-119.07228', '-0.049843803', '100', '0', '0', NULL),
-(@MOVID, '29', '3812.653', '-119.76873', '-0.46977243', '100', '0', '0', NULL),
-(@MOVID, '30', '3816.6318', '-120.44775', '-0.6748835', '100', '0', '0', NULL),
-(@MOVID, '31', '3818.7222', '-119.15333', '-0.5323346', '100', '0', '0', NULL),
-(@MOVID, '32', '3822.5105', '-117.6028', '-0.2415901', '100', '0', '0', NULL),
-(@MOVID, '33', '3826.284', '-116.058395', '-0.015490614', '100', '0', '0', NULL),
-(@MOVID, '34', '3830.632', '-114.7219', '0.3768114', '100', '0', '0', NULL),
-(@MOVID, '35', '3834.6462', '-113.93912', '0.74734825', '100', '0', '0', NULL),
-(@MOVID, '36', '3838.454', '-113.197266', '1.6220635', '100', '0', '0', NULL),
-(@MOVID, '37', '3841.8142', '-112.42708', '2.896721', '100', '0', '0', NULL),
-(@MOVID, '38', '3845.6514', '-111.12935', '3.5108244', '100', '0', '0', NULL),
-(@MOVID, '39', '3849.5564', '-109.8089', '3.6599798', '100', '0', '0', NULL),
-(@MOVID, '40', '3853.4543', '-108.49082', '3.6748967', '100', '0', '0', NULL),
-(@MOVID, '41', '3857.3286', '-107.18076', '3.6661534', '100', '0', '0', NULL),
-(@MOVID, '42', '3861.2512', '-105.85435', '3.7031822', '100', '0', '0', NULL),
-(@MOVID, '43', '3865.0745', '-104.56341', '4.0425987', '100', '0', '0', NULL),
-(@MOVID, '44', '3868.5684', '-103.100204', '4.6163793', '100', '0', '0', NULL),
-(@MOVID, '45', '3872.253', '-101.55078', '5.1587477', '100', '0', '0', NULL),
-(@MOVID, '46', '3876.0242', '-99.97591', '5.59294', '100', '0', '0', NULL),
-(@MOVID, '47', '3879.75', '-98.4146', '5.724885', '100', '0', '0', NULL),
-(@MOVID, '48', '3883.3535', '-96.91211', '5.348367', '100', '0', '0', NULL),
-(@MOVID, '49', '3883.7705', '-96.73773', '5.3762755', '100', '0', '0', NULL),
-(@MOVID, '50', '3879.051', '-98.71523', '5.775681', '100', '0', '0', NULL),
-(@MOVID, '51', '3877.632', '-105.8153', '5.3501043', '100', '0', '0', NULL),
-(@MOVID, '52', '3873.873', '-107.390564', '5.136733', '100', '0', '0', NULL),
-(@MOVID, '53', '3870.2568', '-108.9043', '4.8171988', '100', '0', '0', NULL),
-(@MOVID, '54', '3866.2488', '-110.500534', '4.3199177', '100', '0', '0', NULL),
-(@MOVID, '55', '3862.3926', '-111.80468', '4.12245', '100', '0', '0', NULL),
-(@MOVID, '56', '3858.5237', '-113.11293', '4.1929607', '100', '0', '0', NULL),
-(@MOVID, '57', '3854.6736', '-114.414764', '4.0635843', '100', '0', '0', NULL),
-(@MOVID, '58', '3850.9365', '-115.677734', '3.7328732', '100', '0', '0', NULL),
-(@MOVID, '59', '3847.1133', '-116.9707', '3.4225338', '100', '0', '0', NULL),
-(@MOVID, '60', '3843.2676', '-118.271484', '2.946762', '100', '0', '0', NULL),
-(@MOVID, '61', '3839.069', '-119.19884', '0.95808315', '100', '0', '0', NULL),
-(@MOVID, '62', '3835.3125', '-119.92578', '0.03688097', '100', '0', '0', NULL),
-(@MOVID, '63', '3831.1968', '-120.73219', '-0.26430014', '100', '0', '0', NULL),
-(@MOVID, '64', '3827.9563', '-121.85259', '-0.25993222', '100', '0', '0', NULL),
-(@MOVID, '65', '3824.1934', '-123.3927', '0.24256834', '100', '0', '0', NULL),
-(@MOVID, '66', '3820.425', '-124.93502', '0.34574673', '100', '0', '0', NULL),
-(@MOVID, '67', '3815.3413', '-126.313385', '-0.8136965', '100', '0', '0', NULL),
-(@MOVID, '68', '3811.212', '-125.60099', '-0.6728375', '100', '0', '0', NULL),
-(@MOVID, '69', '3807.1265', '-124.89642', '0.024394974', '100', '0', '0', NULL),
-(@MOVID, '70', '3803.0574', '-124.19824', '0.21342726', '100', '0', '0', NULL),
-(@MOVID, '71', '3798.0825', '-122.09617', '0.12207939', '100', '0', '0', NULL),
-(@MOVID, '72', '3794.917', '-119.586105', '0.6314653', '100', '0', '0', NULL),
-(@MOVID, '73', '3791.7073', '-117.04111', '0.43091252', '100', '0', '0', NULL),
-(@MOVID, '74', '3789.6072', '-115.16754', '0.32371762', '100', '0', '0', NULL),
-(@MOVID, '75', '3785.6738', '-114.0941', '0.28946838', '100', '0', '0', NULL),
-(@MOVID, '76', '3781.7163', '-113.01405', '0.32739535', '100', '0', '0', NULL),
-(@MOVID, '77', '3777.8955', '-111.97266', '0.11309296', '100', '0', '0', NULL),
-(@MOVID, '78', '3776.2903', '-113.35265', '-0.040379107', '100', '0', '0', NULL),
-(@MOVID, '79', '3772.6123', '-115.19552', '-0.2761224', '100', '0', '0', NULL),
-(@MOVID, '80', '3769.5273', '-117.0301', '-0.015729308', '100', '0', '0', NULL),
-(@MOVID, '81', '3766.2217', '-119.39469', '0.1909872', '100', '0', '0', NULL),
-(@MOVID, '82', '3762.9028', '-121.76938', '0.58290195', '100', '0', '0', NULL),
-(@MOVID, '83', '3759.7012', '-124.0625', '1.2384048', '100', '0', '0', NULL),
-(@MOVID, '84', '3757.3533', '-126.53591', '1.515449', '100', '0', '0', NULL),
-(@MOVID, '85', '3754.637', '-129.61276', '1.6805153', '100', '0', '0', NULL),
-(@MOVID, '86', '3752.003', '-132.59961', '2.2406287', '100', '0', '0', NULL),
-(@MOVID, '87', '3749.874', '-132.76938', '2.36109', '100', '0', '0', NULL),
-(@MOVID, '88', '3746.8313', '-135.04135', '2.7141542', '100', '0', '0', NULL),
-(@MOVID, '89', '3746.4226', '-135.37093', '2.8252666', '100', '0', '0', NULL),
-(@MOVID, '90', '3749.591', '-135.32828', '2.7619872', '100', '0', '0', NULL),
-(@MOVID, '91', '3747.8164', '-128.39258', '1.4806913', '100', '0', '0', NULL),
-(@MOVID, '92', '3750.5137', '-125.21841', '1.6462269', '100', '0', '0', NULL),
-(@MOVID, '93', '3753.232', '-122.13945', '1.6553068', '100', '0', '0', NULL),
-(@MOVID, '94', '3756.595', '-118.906624', '1.1024485', '100', '0', '0', NULL),
-(@MOVID, '95', '3759.8608', '-116.57003', '0.44867477', '100', '0', '0', NULL),
-(@MOVID, '96', '3763.1545', '-114.21324', '0.37693888', '100', '0', '0', NULL),
-(@MOVID, '97', '3766.4763', '-111.83594', '0.3318236', '100', '0', '0', NULL),
-(@MOVID, '98', '3770.407', '-109.590515', '0.24546963', '100', '0', '0', NULL),
-(@MOVID, '99', '3774.042', '-107.768684', '0.10792244', '100', '0', '0', NULL),
-(@MOVID, '100', '3779.8623', '-106.28897', '0.16981204', '100', '0', '0', NULL),
-(@MOVID, '101', '3783.7627', '-107.35459', '0.22586635', '100', '0', '0', NULL),
-(@MOVID, '102', '3787.7207', '-108.434', '0.18555003', '100', '0', '0', NULL),
-(@MOVID, '103', '3792.6638', '-110.14238', '0.26740125', '100', '0', '0', NULL),
-(@MOVID, '104', '3795.8835', '-112.695946', '0.26832965', '100', '0', '0', NULL),
-(@MOVID, '105', '3799.0903', '-115.23919', '0.31653345', '100', '0', '0', NULL),
-(@MOVID, '106', '3802.3035', '-117.78721', '0.23907451', '100', '0', '0', NULL),
-(@MOVID, '107', '3804.4578', '-118.35549', '0.19202045', '100', '0', '0', NULL),
-(@MOVID, '108', '3808.5415', '-119.05969', '-0.04178056', '100', '0', '0', NULL),
-(@MOVID, '109', '3812.5527', '-119.751396', '-0.4620949', '100', '0', '0', NULL),
-(@MOVID, '110', '3816.5115', '-120.4274', '-0.66968936', '100', '0', '0', NULL),
-(@MOVID, '111', '3818.587', '-119.20867', '-0.54645777', '100', '0', '0', NULL),
-(@MOVID, '112', '3822.3738', '-117.65883', '-0.24695177', '100', '0', '0', NULL),
-(@MOVID, '113', '3826.1663', '-116.106575', '-0.026440024', '100', '0', '0', NULL),
-(@MOVID, '114', '3830.4875', '-114.75004', '0.36578304', '100', '0', '0', NULL),
-(@MOVID, '115', '3834.5134', '-113.96503', '0.7359253', '100', '0', '0', NULL),
-(@MOVID, '116', '3838.3447', '-113.2168', '1.6220635', '100', '0', '0', NULL),
-(@MOVID, '117', '3841.7026', '-112.46484', '2.8769548', '100', '0', '0', NULL),
-(@MOVID, '118', '3845.5798', '-111.15351', '3.503138', '100', '0', '0', NULL),
-(@MOVID, '119', '3849.4438', '-109.84697', '3.6575978', '100', '0', '0', NULL),
-(@MOVID, '120', '3853.3418', '-108.5289', '3.6758504', '100', '0', '0', NULL),
-(@MOVID, '121', '3857.2686', '-107.20102', '3.6649837', '100', '0', '0', NULL),
-(@MOVID, '122', '3861.184', '-105.877045', '3.700488', '100', '0', '0', NULL),
-(@MOVID, '123', '3865.0344', '-104.57678', '4.0352373', '100', '0', '0', NULL),
-(@MOVID, '124', '3868.5474', '-103.10901', '4.6130047', '100', '0', '0', NULL),
-(@MOVID, '125', '3872.2305', '-101.56836', '5.1587477', '100', '0', '0', NULL),
-(@MOVID, '126', '3876.0168', '-99.97889', '5.592326', '100', '0', '0', NULL),
-(@MOVID, '127', '3879.7842', '-98.40021', '5.72202', '100', '0', '0', NULL),
-(@MOVID, '128', '3883.4268', '-96.88086', '5.348367', '100', '0', '0', NULL),
-(@MOVID, '129', '3883.7705', '-96.73773', '5.3762755', '100', '0', '0', NULL),
-(@MOVID, '130', '3879.051', '-98.71523', '5.775681', '100', '0', '0', NULL),
-(@MOVID, '131', '3877.6113', '-105.82397', '5.3495617', '100', '0', '0', NULL),
-(@MOVID, '132', '3873.8523', '-107.39922', '5.1350517', '100', '0', '0', NULL),
-(@MOVID, '133', '3870.253', '-108.89453', '4.8171988', '100', '0', '0', NULL),
-(@MOVID, '134', '3866.2043', '-110.51552', '4.313299', '100', '0', '0', NULL),
-(@MOVID, '135', '3862.369', '-111.812706', '4.122235', '100', '0', '0', NULL),
-(@MOVID, '136', '3858.493', '-113.12335', '4.1940775', '100', '0', '0', NULL),
-(@MOVID, '137', '3854.6216', '-114.4324', '4.0596595', '100', '0', '0', NULL),
-(@MOVID, '138', '3850.875', '-115.69922', '3.7328732', '100', '0', '0', NULL),
-(@MOVID, '139', '3847.0137', '-117.00586', '3.4225338', '100', '0', '0', NULL),
-(@MOVID, '140', '3843.166', '-118.30664', '2.946762', '100', '0', '0', NULL),
-(@MOVID, '141', '3838.9973', '-119.212845', '0.9363647', '100', '0', '0', NULL),
-(@MOVID, '142', '3835.25', '-119.94336', '0.03688097', '100', '0', '0', NULL),
-(@MOVID, '143', '3831.1428', '-120.74237', '-0.26720616', '100', '0', '0', NULL),
-(@MOVID, '144', '3827.8845', '-121.88197', '-0.2555536', '100', '0', '0', NULL),
-(@MOVID, '145', '3824.1182', '-123.41992', '0.19966924', '100', '0', '0', NULL),
-(@MOVID, '146', '3820.349', '-124.9661', '0.33035573', '100', '0', '0', NULL),
-(@MOVID, '147', '3815.2795', '-126.30273', '-0.81517774', '100', '0', '0', NULL),
-(@MOVID, '148', '3811.15', '-125.59027', '-0.6613782', '100', '0', '0', NULL),
-(@MOVID, '149', '3807.0793', '-124.88829', '0.031118885', '100', '0', '0', NULL),
-(@MOVID, '150', '3802.964', '-124.18234', '0.20010608', '100', '0', '0', NULL),
-(@MOVID, '151', '3798.0286', '-122.05345', '0.13958067', '100', '0', '0', NULL),
-(@MOVID, '152', '3794.829', '-119.5164', '0.6252005', '100', '0', '0', NULL),
-(@MOVID, '153', '3791.623', '-116.97436', '0.4258359', '100', '0', '0', NULL),
-(@MOVID, '154', '3789.483', '-115.13364', '0.3200325', '100', '0', '0', NULL),
-(@MOVID, '155', '3785.5273', '-114.0541', '0.29137677', '100', '0', '0', NULL),
-(@MOVID, '156', '3781.596', '-112.98117', '0.3251837', '100', '0', '0', NULL),
-(@MOVID, '157', '3777.7725', '-111.93945', '0.11309296', '100', '0', '0', NULL),
-(@MOVID, '158', '3776.1748', '-113.41055', '-0.054163642', '100', '0', '0', NULL),
-(@MOVID, '159', '3772.4958', '-115.25392', '-0.2707192', '100', '0', '0', NULL),
-(@MOVID, '160', '3769.4155', '-117.11003', '-0.007357266', '100', '0', '0', NULL),
-(@MOVID, '161', '3766.1104', '-119.47266', '0.20402843', '100', '0', '0', NULL),
-(@MOVID, '162', '3762.7852', '-121.853645', '0.60460454', '100', '0', '0', NULL),
-(@MOVID, '163', '3759.5112', '-124.19712', '1.3201176', '100', '0', '0', NULL),
-(@MOVID, '164', '3757.209', '-126.69943', '1.5185232', '100', '0', '0', NULL),
-(@MOVID, '165', '3754.4924', '-129.77643', '1.7249316', '100', '0', '0', NULL),
-(@MOVID, '166', '3751.8682', '-132.75195', '2.2406287', '100', '0', '0', NULL),
-(@MOVID, '167', '3749.72', '-132.95097', '2.3633296', '100', '0', '0', NULL),
-(@MOVID, '168', '3746.6853', '-135.21567', '2.8305717', '100', '0', '0', NULL),
-(@MOVID, '169', '3746.4448', '-135.40639', '2.7995286', '100', '0', '0', NULL),
-(@MOVID, '170', '3749.591', '-135.32828', '2.7619872', '100', '0', '0', NULL),
-(@MOVID, '171', '3747.8027', '-128.43945', '1.4806913', '100', '0', '0', NULL),
-(@MOVID, '172', '3750.5005', '-125.23341', '1.645146', '100', '0', '0', NULL),
-(@MOVID, '173', '3753.2085', '-122.1658', '1.6556635', '100', '0', '0', NULL),
-(@MOVID, '174', '3756.581', '-118.91663', '1.105862', '100', '0', '0', NULL),
-(@MOVID, '175', '3759.8447', '-116.581604', '0.4497544', '100', '0', '0', NULL),
-(@MOVID, '176', '3763.1504', '-114.21618', '0.37694415', '100', '0', '0', NULL),
-(@MOVID, '177', '3766.4702', '-111.84031', '0.33170864', '100', '0', '0', NULL),
-(@MOVID, '178', '3770.4004', '-109.59387', '0.24561074', '100', '0', '0', NULL),
-(@MOVID, '179', '3774.053', '-107.76308', '0.10750771', '100', '0', '0', NULL),
-(@MOVID, '180', '3779.853', '-106.28639', '0.1696789', '100', '0', '0', NULL),
-(@MOVID, '181', '3783.775', '-107.3579', '0.2258312', '100', '0', '0', NULL),
-(@MOVID, '182', '3787.7158', '-108.432686', '0.18546927', '100', '0', '0', NULL),
-(@MOVID, '183', '3792.695', '-110.16714', '0.2678644', '100', '0', '0', NULL),
-(@MOVID, '184', '3795.8833', '-112.695786', '0.26839814', '100', '0', '0', NULL),
-(@MOVID, '185', '3799.112', '-115.25633', '0.31826916', '100', '0', '0', NULL),
-(@MOVID, '186', '3802.3252', '-117.80441', '0.23774774', '100', '0', '0', NULL),
-(@MOVID, '187', '3804.4626', '-118.35634', '0.1916627', '100', '0', '0', NULL),
-(@MOVID, '188', '3808.592', '-119.06839', '-0.047360737', '100', '0', '0', NULL),
-(@MOVID, '189', '3812.6306', '-119.76484', '-0.46806636', '100', '0', '0', NULL),
-(@MOVID, '190', '3816.607', '-120.443535', '-0.67380446', '100', '0', '0', NULL),
-(@MOVID, '191', '3818.697', '-119.163574', '-0.5349976', '100', '0', '0', NULL),
-(@MOVID, '192', '3822.4802', '-117.615204', '-0.24279092', '100', '0', '0', NULL),
-(@MOVID, '193', '3826.2493', '-116.07256', '-0.018722598', '100', '0', '0', NULL),
-(@MOVID, '194', '3830.5757', '-114.73289', '0.3727085', '100', '0', '0', NULL),
-(@MOVID, '195', '3834.565', '-113.95498', '0.74040985', '100', '0', '0', NULL),
-(@MOVID, '196', '3838.418', '-113.203125', '1.6220635', '100', '0', '0', NULL),
-(@MOVID, '197', '3841.7761', '-112.43995', '2.8901486', '100', '0', '0', NULL),
-(@MOVID, '198', '3845.6084', '-111.14387', '3.5061736', '100', '0', '0', NULL),
-(@MOVID, '199', '3849.5156', '-109.822685', '3.65912', '100', '0', '0', NULL),
-(@MOVID, '200', '3853.4375', '-108.4965', '3.6750467', '100', '0', '0', NULL);
+
+DELETE FROM spawn_group WHERE Id = 9101;
+INSERT INTO spawn_group(Id, Name, Type, MaxCount, WorldState, WorldStateExpression, Flags, StringId, RespawnOverrideMin, RespawnOverrideMax) VALUES
+('9101', 'Ashenvale - Forsaken Thug Formation', '0', '0', '0', '0', '0', '0', NULL, NULL);
+DELETE FROM spawn_group_formation WHERE Id = 9101;
+INSERT INTO spawn_group_formation(Id, FormationType, FormationSpread, FormationOptions, PathId, MovementType, Comment) VALUES
+('9101', '2', '1', '0', '9101', '2', 'Ashenvale - Forsaken Thug Formation');
+DELETE FROM spawn_group_spawn WHERE Id IN(9101);
+INSERT INTO spawn_group_spawn(Id, Guid, SlotId, Chance) VALUES
+(9101, 156134, 0, 0),
+(9101, 156135, 1, 0);
 
 SET @MOVID=@CGUID;
 SET @CGUID=@CGUID+1;
 DELETE FROM creature WHERE guid IN(@MOVID);
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
-(@MOVID, '3734', '1', '1', '7815.905', '-4443.398', '667.3878', '0.64330601692199710000', '300', '300', '0', '2');
+(@MOVID, '3734', '1', '1', '3795.2551', '-153.92616', '0.48319542', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003A5800001130001F7F49D Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3734 (Forsaken Thug) Low: 33027229
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
-(@MOVID, '1', '3833.343', '-167.01161', '0.46112397', '100', '0', '0', NULL), -- PathType: None
-(@MOVID, '2', '3840.355', '-171.2245', '1.019983', '100', '0', '0', NULL),
-(@MOVID, '3', '3844.1138', '-177.53397', '0.8246439', '100', '0', '0', NULL),
-(@MOVID, '4', '3844.9832', '-184.96408', '1.4402382', '100', '0', '0', NULL),
-(@MOVID, '5', '3845.4053', '-188.9414', '1.896718', '100', '0', '0', NULL),
-(@MOVID, '6', '3844.129', '-177.55273', '0.83372986', '100', '0', '0', NULL),
-(@MOVID, '7', '3840.355', '-171.2245', '1.019983', '100', '0', '0', NULL),
-(@MOVID, '8', '3833.343', '-167.01161', '0.46112397', '100', '0', '0', NULL),
-(@MOVID, '9', '3822.1472', '-164.33409', '0.16236192', '100', '0', '0', NULL),
-(@MOVID, '10', '3814.487', '-163.17525', '0.7989431', '100', '0', '0', NULL),
-(@MOVID, '11', '3807.4592', '-163.54688', '0.5525746', '100', '0', '0', NULL),
-(@MOVID, '12', '3800.7456', '-150.54698', '-0.017332554', '100', '0', '0', NULL),
-(@MOVID, '13', '3795.2551', '-153.92616', '0.48319542', '100', '0', '0', NULL),
-(@MOVID, '14', '3800.7456', '-150.54698', '-0.017332554', '100', '0', '0', NULL),
-(@MOVID, '15', '3807.4592', '-163.54688', '0.5525746', '100', '0', '0', NULL),
-(@MOVID, '16', '3814.487', '-163.17525', '0.7989431', '100', '0', '0', NULL),
-(@MOVID, '17', '3822.1472', '-164.33409', '0.16236192', '100', '0', '0', NULL),
-(@MOVID, '18', '3833.343', '-167.01161', '0.46112397', '100', '0', '0', NULL),
-(@MOVID, '19', '3840.355', '-171.2245', '1.019983', '100', '0', '0', NULL),
-(@MOVID, '20', '3844.1138', '-177.53397', '0.8246439', '100', '0', '0', NULL),
-(@MOVID, '21', '3844.9832', '-184.96408', '1.4402382', '100', '0', '0', NULL),
-(@MOVID, '22', '3845.4053', '-188.9414', '1.896718', '100', '0', '0', NULL),
-(@MOVID, '23', '3844.129', '-177.55273', '0.83372986', '100', '0', '0', NULL),
-(@MOVID, '24', '3833.343', '-167.01161', '0.46112397', '100', '0', '0', NULL),
-(@MOVID, '25', '3822.1472', '-164.33409', '0.16236192', '100', '0', '0', NULL),
-(@MOVID, '26', '3814.487', '-163.17525', '0.7989431', '100', '0', '0', NULL),
-(@MOVID, '27', '3807.4592', '-163.54688', '0.5525746', '100', '0', '0', NULL),
-(@MOVID, '28', '3800.7456', '-150.54698', '-0.017332554', '100', '0', '0', NULL),
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '29', '3795.2551', '-153.92616', '0.48319542', '100', '0', '0', NULL),
 (@MOVID, '30', '3800.7456', '-150.54698', '-0.017332554', '100', '0', '0', NULL),
 (@MOVID, '31', '3807.4592', '-163.54688', '0.5525746', '100', '0', '0', NULL),
@@ -2504,46 +2160,16 @@ INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz
 (@MOVID, '43', '3814.487', '-163.17525', '0.7989431', '100', '0', '0', NULL),
 (@MOVID, '44', '3807.4592', '-163.54688', '0.5525746', '100', '0', '0', NULL),
 (@MOVID, '45', '3800.7456', '-150.54698', '-0.017332554', '100', '0', '0', NULL),
-(@MOVID, '46', '3795.2551', '-153.92616', '0.48319542', '100', '0', '0', NULL),
-(@MOVID, '47', '3800.7456', '-150.54698', '-0.017332554', '100', '0', '0', NULL),
-(@MOVID, '48', '3807.4592', '-163.54688', '0.5525746', '100', '0', '0', NULL),
-(@MOVID, '49', '3814.487', '-163.17525', '0.7989431', '100', '0', '0', NULL),
-(@MOVID, '50', '3822.1472', '-164.33409', '0.16236192', '100', '0', '0', NULL),
-(@MOVID, '51', '3833.343', '-167.01161', '0.46112397', '100', '0', '0', NULL),
-(@MOVID, '52', '3840.355', '-171.2245', '1.019983', '100', '0', '0', NULL),
-(@MOVID, '53', '3844.1138', '-177.53397', '0.8246439', '100', '0', '0', NULL),
-(@MOVID, '54', '3844.9832', '-184.96408', '1.4402382', '100', '0', '0', NULL),
-(@MOVID, '55', '3845.4053', '-188.9414', '1.896718', '100', '0', '0', NULL),
-(@MOVID, '56', '3844.129', '-177.55273', '0.83372986', '100', '0', '0', NULL),
-(@MOVID, '57', '3840.355', '-171.2245', '1.019983', '100', '0', '0', NULL),
-(@MOVID, '58', '3833.343', '-167.01161', '0.46112397', '100', '0', '0', NULL),
-(@MOVID, '59', '3822.1472', '-164.33409', '0.16236192', '100', '0', '0', NULL),
-(@MOVID, '60', '3814.487', '-163.17525', '0.7989431', '100', '0', '0', NULL),
-(@MOVID, '61', '3807.4592', '-163.54688', '0.5525746', '100', '0', '0', NULL),
-(@MOVID, '62', '3800.7456', '-150.54698', '-0.017332554', '100', '0', '0', NULL),
-(@MOVID, '63', '3795.2551', '-153.92616', '0.48319542', '100', '0', '0', NULL),
-(@MOVID, '64', '3800.7456', '-150.54698', '-0.017332554', '100', '0', '0', NULL),
-(@MOVID, '65', '3807.4592', '-163.54688', '0.5525746', '100', '0', '0', NULL),
-(@MOVID, '66', '3814.487', '-163.17525', '0.7989431', '100', '0', '0', NULL),
-(@MOVID, '67', '3822.1472', '-164.33409', '0.16236192', '100', '0', '0', NULL);
+(@MOVID, '46', '3795.2551', '-153.92616', '0.48319542', '100', '0', '0', NULL);
 
 SET @MOVID=@CGUID;
 SET @CGUID=@CGUID+1;
 DELETE FROM creature WHERE guid IN(@MOVID);
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
-(@MOVID, '3734', '1', '1', '7815.905', '-4443.398', '667.3878', '0.64330601692199710000', '300', '300', '0', '2');
+(@MOVID, '3734', '1', '1', '3862.711', '-189.00581', '2.4535205', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003A580000113000177F49C Creature/0 R5528/S275 Map: 1 (Kalimdor) Entry: 3734 (Forsaken Thug) Low: 24638620
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
-(@MOVID, '1', '3823.9644', '-193.49153', '2.119935', '100', '0', '0', NULL), -- PathType: None
-(@MOVID, '2', '3824.6602', '-198.89143', '2.5127487', '100', '0', '0', NULL),
-(@MOVID, '3', '3827.8782', '-202.90913', '2.7925234', '100', '0', '0', NULL),
-(@MOVID, '4', '3836.0156', '-204.37207', '3.1097887', '100', '0', '0', NULL),
-(@MOVID, '5', '3845.8315', '-202.47694', '3.1638331', '100', '0', '0', NULL),
-(@MOVID, '6', '3850.7043', '-201.0331', '2.83983', '100', '0', '0', NULL),
-(@MOVID, '7', '3855.3252', '-200.6709', '3.0830505', '100', '0', '0', NULL),
-(@MOVID, '8', '3861.817', '-198.23524', '3.6931767', '100', '0', '0', NULL),
-(@MOVID, '9', '3863.48', '-193.71773', '3.0078108', '100', '0', '0', NULL),
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '10', '3862.711', '-189.00581', '2.4535205', '100', '0', '0', NULL),
 (@MOVID, '11', '3860.967', '-182.92036', '2.2184825', '100', '0', '0', NULL),
 (@MOVID, '12', '3856.9614', '-175.3718', '2.1113617', '100', '0', '0', NULL),
@@ -2570,61 +2196,20 @@ INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz
 (@MOVID, '33', '3845.8315', '-202.47694', '3.1638331', '100', '0', '0', NULL),
 (@MOVID, '34', '3855.3252', '-200.6709', '3.0830505', '100', '0', '0', NULL),
 (@MOVID, '35', '3861.817', '-198.23524', '3.6931767', '100', '0', '0', NULL),
-(@MOVID, '36', '3863.48', '-193.71773', '3.0078108', '100', '0', '0', NULL),
-(@MOVID, '37', '3862.711', '-189.00581', '2.4535205', '100', '0', '0', NULL),
-(@MOVID, '38', '3860.967', '-182.92036', '2.2184825', '100', '0', '0', NULL),
-(@MOVID, '39', '3856.9614', '-175.3718', '2.1113617', '100', '0', '0', NULL),
-(@MOVID, '40', '3851.1228', '-171.21446', '1.3389027', '100', '0', '0', NULL),
-(@MOVID, '41', '3842.4856', '-167.04639', '1.2728108', '100', '0', '0', NULL),
-(@MOVID, '42', '3832.4983', '-171.60666', '0.43726128', '100', '0', '0', NULL),
-(@MOVID, '43', '3826.6702', '-178.4279', '0.86981946', '100', '0', '0', NULL),
-(@MOVID, '44', '3827.7102', '-188.42497', '1.6817355', '100', '0', '0', NULL),
-(@MOVID, '45', '3823.9644', '-193.49153', '2.119935', '100', '0', '0', NULL),
-(@MOVID, '46', '3824.6602', '-198.89143', '2.5127487', '100', '0', '0', NULL),
-(@MOVID, '47', '3827.8782', '-202.90913', '2.7925234', '100', '0', '0', NULL),
-(@MOVID, '48', '3836.0156', '-204.37207', '3.1097887', '100', '0', '0', NULL),
-(@MOVID, '49', '3845.8315', '-202.47694', '3.1638331', '100', '0', '0', NULL),
-(@MOVID, '50', '3850.7043', '-201.0331', '2.83983', '100', '0', '0', NULL),
-(@MOVID, '51', '3855.3252', '-200.6709', '3.0830505', '100', '0', '0', NULL),
-(@MOVID, '52', '3861.817', '-198.23524', '3.6931767', '100', '0', '0', NULL),
-(@MOVID, '53', '3863.48', '-193.71773', '3.0078108', '100', '0', '0', NULL),
-(@MOVID, '54', '3862.711', '-189.00581', '2.4535205', '100', '0', '0', NULL),
-(@MOVID, '55', '3860.967', '-182.92036', '2.2184825', '100', '0', '0', NULL),
-(@MOVID, '56', '3856.9614', '-175.3718', '2.1113617', '100', '0', '0', NULL),
-(@MOVID, '57', '3851.1228', '-171.21446', '1.3389027', '100', '0', '0', NULL),
-(@MOVID, '58', '3842.4856', '-167.04639', '1.2728108', '100', '0', '0', NULL),
-(@MOVID, '59', '3832.4983', '-171.60666', '0.43726128', '100', '0', '0', NULL),
-(@MOVID, '60', '3826.6702', '-178.4279', '0.86981946', '100', '0', '0', NULL),
-(@MOVID, '61', '3827.7102', '-188.42497', '1.6817355', '100', '0', '0', NULL),
-(@MOVID, '62', '3823.9644', '-193.49153', '2.119935', '100', '0', '0', NULL),
-(@MOVID, '63', '3825.9258', '-190.83984', '1.8861487', '100', '0', '0', NULL),
-(@MOVID, '64', '3824.1416', '-193.2539', '2.079244', '100', '0', '0', NULL),
-(@MOVID, '65', '3823.9644', '-193.49153', '2.119935', '100', '0', '0', NULL),
-(@MOVID, '66', '3824.3486', '-196.46875', '2.3146782', '100', '0', '0', NULL),
-(@MOVID, '67', '3824.6602', '-198.89143', '2.5127487', '100', '0', '0', NULL),
-(@MOVID, '68', '3827.8782', '-202.90913', '2.7925234', '100', '0', '0', NULL),
-(@MOVID, '69', '3836.0156', '-204.37207', '3.1097887', '100', '0', '0', NULL),
-(@MOVID, '70', '3845.8315', '-202.47694', '3.1638331', '100', '0', '0', NULL),
-(@MOVID, '71', '3850.7043', '-201.0331', '2.83983', '100', '0', '0', NULL),
-(@MOVID, '72', '3855.3252', '-200.6709', '3.0830505', '100', '0', '0', NULL),
-(@MOVID, '73', '3861.817', '-198.23524', '3.6931767', '100', '0', '0', NULL),
-(@MOVID, '74', '3863.48', '-193.71773', '3.0078108', '100', '0', '0', NULL),
-(@MOVID, '75', '3862.711', '-189.00581', '2.4535205', '100', '0', '0', NULL),
-(@MOVID, '76', '3860.967', '-182.92036', '2.2184825', '100', '0', '0', NULL),
-(@MOVID, '77', '3856.9614', '-175.3718', '2.1113617', '100', '0', '0', NULL),
-(@MOVID, '78', '3851.1228', '-171.21446', '1.3389027', '100', '0', '0', NULL),
-(@MOVID, '79', '3842.4856', '-167.04639', '1.2728108', '100', '0', '0', NULL);
+(@MOVID, '36', '3863.48', '-193.71773', '3.0078108', '100', '0', '0', NULL);
 
--- elemental
+-- murloc
 
-SET @MOVID=@CGUID;
-SET @CGUID=@CGUID+1;
+SET @MOVID=156138;
 DELETE FROM creature WHERE guid IN(@MOVID);
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
-(@MOVID, '3739', '1', '1', '7815.905', '-4443.398', '667.3878', '0.64330601692199710000', '300', '300', '0', '2');
+(@MOVID, '3739', '1', '1', '3041.809', '471.78738', '5.4188557', '0.64330601692199710000', '300', '300', '0', '0');
 -- GUID: Full: 0x205660002003A6C000006800017C1F88 Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3739 (Saltspittle Warrior) Low: 24911752
-DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
+DELETE FROM waypoint_path_name WHERE PathId=9100;
+DELETE FROM waypoint_path WHERE PathId=9100;
+INSERT INTO waypoint_path_name(PathId, Name) VALUES(9100,'Ashenvale - Saltspittle Puddlejumper Formation');
+SET @MOVID=9100;
+INSERT INTO waypoint_path (PathId, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
 (@MOVID, '1', '3041.809', '471.78738', '5.4188557', '100', '0', '0', NULL), -- PathType: None
 (@MOVID, '2', '3059.2285', '471.40137', '6.020967', '100', '0', '0', NULL),
 (@MOVID, '3', '3070.85', '473.29416', '5.3955507', '100', '0', '0', NULL),
@@ -2659,179 +2244,35 @@ INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz
 (@MOVID, '32', '2996.4968', '489.10162', '5.67764', '100', '0', '0', NULL),
 (@MOVID, '33', '3007.773', '485.96268', '5.4157443', '100', '0', '0', NULL),
 (@MOVID, '34', '3018.5916', '481.00223', '5.424569', '100', '0', '0', NULL),
-(@MOVID, '35', '3030.7688', '472.97238', '5.562662', '100', '0', '0', NULL),
-(@MOVID, '36', '3041.809', '471.78738', '5.4188557', '100', '0', '0', NULL),
-(@MOVID, '37', '3059.2285', '471.40137', '6.020967', '100', '0', '0', NULL),
-(@MOVID, '38', '3070.85', '473.29416', '5.3955507', '100', '0', '0', NULL),
-(@MOVID, '39', '3081.31', '474.74698', '5.712356', '100', '0', '0', NULL),
-(@MOVID, '40', '3091.6885', '479.77155', '5.4088235', '100', '0', '0', NULL),
-(@MOVID, '41', '3098.47', '485.62418', '5.4500837', '100', '0', '0', NULL),
-(@MOVID, '42', '3102.4622', '491.9315', '5.346616', '100', '0', '0', NULL),
-(@MOVID, '43', '3103.2678', '500.59494', '5.804351', '100', '0', '0', NULL),
-(@MOVID, '44', '3101.619', '514.448', '4.517261', '100', '0', '0', NULL),
-(@MOVID, '45', '3099.1152', '523.87836', '4.5298333', '100', '0', '0', NULL),
-(@MOVID, '46', '3097.9553', '533.0711', '4.680785', '100', '0', '0', NULL),
-(@MOVID, '47', '3095.1157', '544.0179', '4.1005144', '100', '0', '0', NULL);
+(@MOVID, '35', '3030.7688', '472.97238', '5.562662', '100', '0', '0', NULL);
 
-SET @MOVID=@CGUID;
+SET @MOVID=156139; -- formation
 SET @CGUID=@CGUID+1;
 DELETE FROM creature WHERE guid IN(@MOVID);
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
 (@MOVID, '3737', '1', '1', '7815.905', '-4443.398', '667.3878', '0.64330601692199710000', '300', '300', '0', '2');
 -- GUID: Full: 0x205660002003A64000006800017C1F88 Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3737 (Saltspittle Puddlejumper) Low: 24911752
-DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
-(@MOVID, '1', '3036.0469', '474.41394', '5.7379513', '100', '0', '0', NULL), -- PathType: None
-(@MOVID, '2', '3040.09', '473.97766', '5.590468', '100', '0', '0', NULL),
-(@MOVID, '3', '3043.9827', '473.7411', '5.4016304', '100', '0', '0', NULL),
-(@MOVID, '4', '3048.0654', '473.65323', '5.396387', '100', '0', '0', NULL),
-(@MOVID, '5', '3052.146', '473.5655', '5.522416', '100', '0', '0', NULL),
-(@MOVID, '6', '3056.2236', '473.47787', '5.6754465', '100', '0', '0', NULL),
-(@MOVID, '7', '3059.9026', '473.53674', '5.7784753', '100', '0', '0', NULL),
-(@MOVID, '8', '3063.9324', '474.18988', '5.666582', '100', '0', '0', NULL),
-(@MOVID, '9', '3067.8447', '474.82617', '5.46163', '100', '0', '0', NULL),
-(@MOVID, '10', '3072.0168', '475.47433', '5.278888', '100', '0', '0', NULL),
-(@MOVID, '11', '3076.0625', '476.03336', '5.377808', '100', '0', '0', NULL),
-(@MOVID, '12', '3079.9697', '476.57812', '5.6308002', '100', '0', '0', NULL),
-(@MOVID, '13', '3083.2266', '477.8953', '5.951076', '100', '0', '0', NULL),
-(@MOVID, '14', '3086.9138', '479.6784', '5.7787166', '100', '0', '0', NULL),
-(@MOVID, '15', '3090.5603', '481.44684', '5.4805202', '100', '0', '0', NULL),
-(@MOVID, '16', '3093.2612', '483.7707', '5.4045024', '100', '0', '0', NULL),
-(@MOVID, '17', '3096.3574', '486.44284', '5.3882875', '100', '0', '0', NULL),
-(@MOVID, '18', '3098.3792', '489.2203', '5.354644', '100', '0', '0', NULL),
-(@MOVID, '19', '3100.5571', '492.66113', '5.35717', '100', '0', '0', NULL),
-(@MOVID, '20', '3100.8093', '495.7546', '5.5029855', '100', '0', '0', NULL),
-(@MOVID, '21', '3101.1877', '499.82278', '5.6924167', '100', '0', '0', NULL),
-(@MOVID, '22', '3100.9158', '503.42905', '5.4772363', '100', '0', '0', NULL),
-(@MOVID, '23', '3100.439', '507.43283', '4.9814205', '100', '0', '0', NULL),
-(@MOVID, '24', '3099.9688', '511.3828', '4.584384', '100', '0', '0', NULL),
-(@MOVID, '25', '3099.3547', '515.182', '4.414326', '100', '0', '0', NULL),
-(@MOVID, '26', '3098.3071', '519.1274', '4.311671', '100', '0', '0', NULL),
-(@MOVID, '27', '3097.262', '523.06415', '4.37056', '100', '0', '0', NULL),
-(@MOVID, '28', '3096.6611', '527.3574', '4.64617', '100', '0', '0', NULL),
-(@MOVID, '29', '3096.1504', '531.40204', '4.6459007', '100', '0', '0', NULL),
-(@MOVID, '30', '3095.3596', '535.1144', '4.309909', '100', '0', '0', NULL),
-(@MOVID, '31', '3094.3394', '539.052', '4.0245395', '100', '0', '0', NULL),
-(@MOVID, '32', '3093.3123', '543.00653', '3.9205942', '100', '0', '0', NULL),
-(@MOVID, '33', '3091.7712', '546.3669', '4.071136', '100', '0', '0', NULL),
-(@MOVID, '34', '3090.0405', '549.9763', '4.420127', '100', '0', '0', NULL),
-(@MOVID, '35', '3088.121', '554.4293', '4.5313063', '100', '0', '0', NULL),
-(@MOVID, '36', '3087.8926', '558.5226', '4.4119954', '100', '0', '0', NULL),
-(@MOVID, '37', '3087.5972', '561.3284', '4.68666', '100', '0', '0', NULL),
-(@MOVID, '38', '3085.4548', '564.74023', '5.182495', '100', '0', '0', NULL),
-(@MOVID, '39', '3083.284', '568.19763', '5.751189', '100', '0', '0', NULL),
-(@MOVID, '40', '3081.3098', '570.6794', '5.8042464', '100', '0', '0', NULL),
-(@MOVID, '41', '3077.9822', '572.9554', '5.403136', '100', '0', '0', NULL),
-(@MOVID, '42', '3075.6655', '574.3556', '5.3446484', '100', '0', '0', NULL),
-(@MOVID, '43', '3071.5022', '574.61646', '5.5670333', '100', '0', '0', NULL),
-(@MOVID, '44', '3068.1133', '574.6229', '5.4505935', '100', '0', '0', NULL),
-(@MOVID, '45', '3064.1287', '573.6895', '5.350673', '100', '0', '0', NULL),
-(@MOVID, '46', '3060.1636', '572.7607', '5.380541', '100', '0', '0', NULL),
-(@MOVID, '47', '3056.201', '571.83246', '5.2042246', '100', '0', '0', NULL),
-(@MOVID, '48', '3052.174', '570.96716', '4.45594', '100', '0', '0', NULL),
-(@MOVID, '49', '3048.1887', '570.17334', '3.912597', '100', '0', '0', NULL),
-(@MOVID, '50', '3044.588', '569.4785', '3.5549119', '100', '0', '0', NULL),
-(@MOVID, '51', '3040.8809', '567.96027', '2.9159203', '100', '0', '0', NULL),
-(@MOVID, '52', '3037.2048', '566.4541', '2.5646908', '100', '0', '0', NULL),
-(@MOVID, '53', '3033.2898', '564.9348', '1.5927194', '100', '0', '0', NULL),
-(@MOVID, '54', '3029.5005', '563.7643', '2.8381524', '100', '0', '0', NULL),
-(@MOVID, '55', '3026.0115', '562.68695', '3.45', '100', '0', '0', NULL),
-(@MOVID, '56', '3021.9185', '561.7668', '3.45', '100', '0', '0', NULL),
-(@MOVID, '57', '3019.6746', '560.8645', '2.303264', '100', '0', '0', NULL),
-(@MOVID, '58', '3016.6592', '560.06647', '3.45', '100', '0', '0', NULL),
-(@MOVID, '59', '3013.8071', '559.3117', '2.0949059', '100', '0', '0', NULL),
-(@MOVID, '60', '3010.0986', '558.33026', '3.4375916', '100', '0', '0', NULL),
-(@MOVID, '61', '3006.656', '557.3156', '3.3349147', '100', '0', '0', NULL),
-(@MOVID, '62', '3002.9844', '555.8023', '1.9327846', '100', '0', '0', NULL),
-(@MOVID, '63', '2999.5706', '554.3949', '3.6017907', '100', '0', '0', NULL),
-(@MOVID, '64', '2997.0876', '554.7682', '4.694402', '100', '0', '0', NULL),
-(@MOVID, '65', '2992.7605', '551.1995', '5.045539', '100', '0', '0', NULL),
-(@MOVID, '66', '2989.4482', '548.8375', '4.8207526', '100', '0', '0', NULL),
-(@MOVID, '67', '2986.1353', '546.4715', '4.5266895', '100', '0', '0', NULL),
-(@MOVID, '68', '2983.1768', '543.99835', '4.5195217', '100', '0', '0', NULL),
-(@MOVID, '69', '2980.134', '541.2827', '4.4614644', '100', '0', '0', NULL),
-(@MOVID, '70', '2977.8809', '539.34375', '4.3253956', '100', '0', '0', NULL),
-(@MOVID, '71', '2976.3228', '535.38116', '4.120123', '100', '0', '0', NULL),
-(@MOVID, '72', '2974.871', '531.519', '4.265989', '100', '0', '0', NULL),
-(@MOVID, '73', '2973.7092', '527.9117', '4.497313', '100', '0', '0', NULL),
-(@MOVID, '74', '2972.7632', '523.94293', '4.574382', '100', '0', '0', NULL),
-(@MOVID, '75', '2971.895', '520.7051', '4.5897436', '100', '0', '0', NULL),
-(@MOVID, '76', '2972.4373', '516.6953', '4.9894385', '100', '0', '0', NULL),
-(@MOVID, '77', '2973.0005', '512.7423', '5.470151', '100', '0', '0', NULL),
-(@MOVID, '78', '2974.1511', '508.63278', '5.567727', '100', '0', '0', NULL),
-(@MOVID, '79', '2975.302', '504.52142', '5.7918463', '100', '0', '0', NULL),
-(@MOVID, '80', '2976.4526', '500.41003', '5.7965', '100', '0', '0', NULL),
-(@MOVID, '81', '2978.024', '497.53027', '6.268164', '100', '0', '0', NULL),
-(@MOVID, '82', '2980.3796', '494.1535', '6.547244', '100', '0', '0', NULL),
-(@MOVID, '83', '2982.3047', '491.94336', '6.1703076', '100', '0', '0', NULL),
-(@MOVID, '84', '2985.8896', '489.9827', '5.6496906', '100', '0', '0', NULL),
-(@MOVID, '85', '2988.4739', '490.29196', '5.739046', '100', '0', '0', NULL),
-(@MOVID, '86', '2992.7427', '490.72757', '5.7642508', '100', '0', '0', NULL),
-(@MOVID, '87', '2997.2546', '490.9668', '5.9494395', '100', '0', '0', NULL),
-(@MOVID, '88', '3001.2441', '489.85812', '5.9396', '100', '0', '0', NULL),
-(@MOVID, '89', '3005.2585', '488.7426', '5.7762365', '100', '0', '0', NULL),
-(@MOVID, '90', '3009.3804', '487.42584', '5.4479547', '100', '0', '0', NULL),
-(@MOVID, '91', '3013.1008', '485.7199', '5.3475285', '100', '0', '0', NULL),
-(@MOVID, '92', '3016.8262', '484.01187', '5.3484945', '100', '0', '0', NULL),
-(@MOVID, '93', '3020.6897', '482.0141', '5.765932', '100', '0', '0', NULL),
-(@MOVID, '94', '3024.0862', '479.77356', '5.9060793', '100', '0', '0', NULL),
-(@MOVID, '95', '3027.3633', '477.60742', '5.452964', '100', '0', '0', NULL),
-(@MOVID, '96', '3030.8835', '475.29202', '5.419217', '100', '0', '0', NULL),
-(@MOVID, '97', '3033.8208', '474.65448', '5.609446', '100', '0', '0', NULL),
-(@MOVID, '98', '3037.8755', '474.21637', '5.733276', '100', '0', '0', NULL),
-(@MOVID, '99', '3041.9053', '473.7882', '5.485497', '100', '0', '0', NULL),
-(@MOVID, '100', '3045.8171', '473.7016', '5.3683167', '100', '0', '0', NULL),
-(@MOVID, '101', '3049.8772', '473.61423', '5.440878', '100', '0', '0', NULL),
-(@MOVID, '102', '3053.83', '473.5332', '5.5758696', '100', '0', '0', NULL),
-(@MOVID, '103', '3057.9014', '473.4453', '5.7186384', '100', '0', '0', NULL),
-(@MOVID, '104', '3061.6838', '473.82544', '5.7479315', '100', '0', '0', NULL),
-(@MOVID, '105', '3065.7168', '474.4791', '5.58162', '100', '0', '0', NULL),
-(@MOVID, '106', '3069.62', '475.1211', '5.295307', '100', '0', '0', NULL),
-(@MOVID, '107', '3073.7976', '475.7204', '5.291725', '100', '0', '0', NULL),
-(@MOVID, '108', '3077.8257', '476.27698', '5.463194', '100', '0', '0', NULL),
-(@MOVID, '109', '3081.1555', '476.89383', '5.844907', '100', '0', '0', NULL),
-(@MOVID, '110', '3084.841', '478.67603', '5.88791', '100', '0', '0', NULL),
-(@MOVID, '111', '3088.5217', '480.45605', '5.6373396', '100', '0', '0', NULL),
-(@MOVID, '112', '3091.5117', '482.2608', '5.4072733', '100', '0', '0', NULL),
-(@MOVID, '113', '3094.6106', '484.9352', '5.3879786', '100', '0', '0', NULL),
-(@MOVID, '114', '3097.1514', '487.28043', '5.3678102', '100', '0', '0', NULL),
-(@MOVID, '115', '3099.3364', '490.73273', '5.34179', '100', '0', '0', NULL),
-(@MOVID, '116', '3100.5989', '493.49408', '5.3857517', '100', '0', '0', NULL),
-(@MOVID, '117', '3100.9763', '497.5488', '5.5801497', '100', '0', '0', NULL),
-(@MOVID, '118', '3101.1848', '501.17322', '5.6096315', '100', '0', '0', NULL),
-(@MOVID, '119', '3100.7039', '505.20938', '5.2852964', '100', '0', '0', NULL),
-(@MOVID, '120', '3100.2314', '509.1582', '4.813577', '100', '0', '0', NULL),
-(@MOVID, '121', '3099.7463', '513.2571', '4.482944', '100', '0', '0', NULL),
-(@MOVID, '122', '3098.8938', '516.9181', '4.3448763', '100', '0', '0', NULL),
-(@MOVID, '123', '3097.843', '520.87585', '4.296008', '100', '0', '0', NULL),
-(@MOVID, '124', '3096.9436', '525.1146', '4.4933877', '100', '0', '0', NULL),
-(@MOVID, '125', '3096.433', '529.16266', '4.741772', '100', '0', '0', NULL),
-(@MOVID, '126', '3095.9211', '532.9476', '4.55621', '100', '0', '0', NULL),
-(@MOVID, '127', '3094.9001', '536.8875', '4.1087193', '100', '0', '0', NULL),
-(@MOVID, '128', '3093.878', '540.8318', '3.95382', '100', '0', '0', NULL);
+
+DELETE FROM spawn_group WHERE Id = 9100;
+INSERT INTO spawn_group(Id, Name, Type, MaxCount, WorldState, WorldStateExpression, Flags, StringId, RespawnOverrideMin, RespawnOverrideMax) VALUES
+('9100', 'Ashenvale - Saltspittle Puddlejumper Formation', '0', '0', '0', '0', '0', '0', NULL, NULL);
+DELETE FROM spawn_group_formation WHERE Id = 9100;
+INSERT INTO spawn_group_formation(Id, FormationType, FormationSpread, FormationOptions, PathId, MovementType, Comment) VALUES
+('9100', '2', '1', '0', '9100', '2', 'Ashenvale - Saltspittle Puddlejumper Formation');
+DELETE FROM spawn_group_spawn WHERE Id IN(9100);
+INSERT INTO spawn_group_spawn(Id, Guid, SlotId, Chance) VALUES
+(9100, 156138, 0, 0),
+(9100, 156139, 1, 0);
 
 -- demon
 
-SET @MOVID=@CGUID;
-SET @CGUID=@CGUID+1;
+SET @MOVID=156140;
 DELETE FROM creature WHERE guid IN(@MOVID);
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
-(@MOVID, '3772', '1', '1', '7815.905', '-4443.398', '667.3878', '0.64330601692199710000', '300', '300', '0', '2');
+(@MOVID, '3772', '1', '1', '2350.5916', '57.10395', '91.290855', '0.64330601692199710000', '300', '300', '0', '4');
 -- GUID: Full: 0x205660002003AF000000680001FC1F8A Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3772 (Lesser Felguard) Low: 33300362
 DELETE FROM creature_movement WHERE id=@MOVID;
-INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`waittime`,`scriptId`,`orientation`,`comment`) VALUES
-(@MOVID, '1', '2379.0754', '455.30023', '111.17779', '100', '0', '0', NULL), -- PathType: None
-(@MOVID, '2', '2355.5842', '452.98502', '116.58884', '100', '0', '0', NULL),
-(@MOVID, '3', '2221.014', '244.46404', '134.24437', '100', '0', '0', NULL),
-(@MOVID, '4', '2221.2349', '218.05437', '133.63948', '100', '0', '0', NULL),
-(@MOVID, '5', '2222.5068', '194.78477', '130.58588', '100', '0', '0', NULL),
-(@MOVID, '6', '2224.3826', '171.91553', '124.549515', '100', '0', '0', NULL),
-(@MOVID, '7', '2220.0762', '137.18945', '114.56413', '100', '0', '0', NULL),
-(@MOVID, '8', '2217.4817', '94.93077', '109.77527', '100', '0', '0', NULL),
-(@MOVID, '9', '2243.4697', '73.11903', '101.57895', '100', '0', '0', NULL),
-(@MOVID, '10', '2270.4172', '69.0128', '99.142456', '100', '0', '0', NULL),
-(@MOVID, '11', '2300.3665', '63.4362', '95.52814', '100', '0', '0', NULL),
-(@MOVID, '12', '2330.6836', '64.161896', '92.50643', '100', '0', '0', NULL),
+INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`scriptId`,`waittime`,`comment`) VALUES
 (@MOVID, '13', '2350.5916', '57.10395', '91.290855', '100', '0', '0', NULL),
 (@MOVID, '14', '2330.8018', '64.11719', '92.50409', '100', '0', '0', NULL),
 (@MOVID, '15', '2300.3665', '63.4362', '95.52814', '100', '0', '0', NULL),
@@ -2851,20 +2292,4 @@ INSERT INTO `creature_movement` (`id`,`point`,`positionx`,`positiony`,`positionz
 (@MOVID, '29', '2297.1436', '426.04877', '130.09076', '100', '0', '0', NULL),
 (@MOVID, '30', '2326.373', '441.38867', '127.10461', '100', '0', '0', NULL),
 (@MOVID, '31', '2355.5842', '452.98502', '116.58884', '100', '0', '0', NULL),
-(@MOVID, '32', '2379.0754', '455.30023', '111.17779', '100', '0', '0', NULL),
-(@MOVID, '33', '2355.5842', '452.98502', '116.58884', '100', '0', '0', NULL),
-(@MOVID, '34', '2326.4302', '441.41574', '127.14665', '100', '0', '0', NULL),
-(@MOVID, '35', '2297.1436', '426.04877', '130.09076', '100', '0', '0', NULL),
-(@MOVID, '36', '2285.8843', '396.736', '131.30269', '100', '0', '0', NULL),
-(@MOVID, '37', '2267.6914', '371.38336', '130.39047', '100', '0', '0', NULL),
-(@MOVID, '38', '2248.9617', '340.3793', '129.45084', '100', '0', '0', NULL),
-(@MOVID, '39', '2235.3313', '308.4733', '133.5378', '100', '0', '0', NULL),
-(@MOVID, '40', '2221.7307', '280.3546', '132.84032', '100', '0', '0', NULL),
-(@MOVID, '41', '2221.014', '244.46404', '134.24437', '100', '0', '0', NULL),
-(@MOVID, '42', '2221.2349', '218.05437', '133.63948', '100', '0', '0', NULL),
-(@MOVID, '43', '2222.5068', '194.78477', '130.58588', '100', '0', '0', NULL),
-(@MOVID, '44', '2224.3826', '171.91553', '124.549515', '100', '0', '0', NULL),
-(@MOVID, '45', '2220.0762', '137.18945', '114.56413', '100', '0', '0', NULL),
-(@MOVID, '46', '2217.4817', '94.93077', '109.77527', '100', '0', '0', NULL),
-(@MOVID, '47', '2243.4697', '73.11903', '101.57895', '100', '0', '0', NULL),
-(@MOVID, '48', '2270.4172', '69.0128', '99.142456', '100', '0', '0', NULL);
+(@MOVID, '32', '2379.0754', '455.30023', '111.17779', '100', '0', '0', NULL);
