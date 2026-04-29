@@ -18194,7 +18194,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fel Guard Hound 21847 - npc_fel_guard_hound
 -- Demoniac Scryer 22258 - npc_demoniac_scryer
 -- Hellfire Wardling 22259
-('2225901','22259','11','0','100','0','0','0','0','0','0','0','11','38683','0','0','0','0','0','0','0','0','0','0','Hellfire Wardling - Cast Magic Sucker Device Despawner, Mob on Spawn'),
+('2225901','22259','11','0','100','0','0','0','0','0','0','0','11','38683','0','0','1','20027','0','0','0','0','0','0','Hellfire Wardling - Cast Magic Sucker Device Despawner, Mob, Say on Spawn'),
 ('2225902','22259','6','0','100','0','0','0','0','0','0','0','11','38891','0','2','0','0','0','0','0','0','0','0','Hellfire Wardling - Cast Magic Sucker Device (Despawn Visual) on Death'),
 -- Magic Sucker Device Buttress 22267
 -- Fel Warden 22273 - Range Mode?
