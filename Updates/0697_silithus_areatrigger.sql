@@ -1,4 +1,4 @@
-SET @CGUID:=160015;
+SET @CGUID:=160016;
 DELETE FROM creature WHERE guid BETWEEN @CGUID AND @CGUID+2;
 INSERT INTO creature (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
 (@CGUID+0,13136,1,0,-7184.5796,443.38177,26.530767,4.956735134124755859,600,600,0,0),
