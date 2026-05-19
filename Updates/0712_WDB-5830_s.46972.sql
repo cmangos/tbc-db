@@ -1,4 +1,5 @@
 -- s.46972 summons c.id.26401
 DELETE FROM `game_event_creature` where `guid` IN (SELECT `guid` FROM `creature` where `id` = 26401); -- -27
 DELETE FROM `creature` WHERE `id` = 26401; -- -27
+DELETE FROM `creature_addon` WHERE guid IN(86242,86243,86244,86245,86246,86247,86248,86250,86251,86252,86253,86254,86255,86256,86259,86260,86261,86262,86266,86267,86268);
 
