@@ -28393,9 +28393,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2121807','21218','1','0','75','1','10000','60000','60000','60000','0','0','54','0','0','10027','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Random Say OOC'),
 -- Coilfang Priestess 21220 - creature_spell_list
 ('2122001','21220','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Set Instace Data64 (SD2) on Generic Timer'),
--- Coilfang Beast-Tamer 21221
-('2122101','21221','9','0','100','1025','0','5','9900','10900','0','0','11','38474','1','0','0','0','0','0','0','0','0','0','Coilfang Beast-Tamer - Cast Cleave'),
-('2122102','21221','0','0','100','1025','2000','9000','19300','23400','0','0','11','38484','15','0','0','0','0','0','0','0','0','0','Coilfang Beast-Tamer - Cast Bestial Wrath'),
+-- Coilfang Beast-Tamer 21221 - spell_list
 -- Tidewalker Depth-Seer 21224
 ('2122401','21224','14','0','100','1025','10000','40','15000','17000','0','0','11','38657','12','0','0','0','0','0','0','0','0','0','Tidewalker Depth-Seer - Cast Rejuvenation on Friendly Missing HP'),
 ('2122402','21224','14','0','100','1025','25000','40','12000','21000','0','0','11','38658','12','0','0','0','0','0','0','0','0','0','Tidewalker Depth-Seer - Cast Healing Touch on Friendly Missing HP'),
