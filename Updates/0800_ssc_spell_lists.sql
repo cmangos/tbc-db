@@ -36,3 +36,19 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 
 UPDATE `creature_template` SET `SpellList` = 2124601 WHERE `entry` = 21246;
+
+
+-- Coilfang Hate-Screamer
+DELETE FROM `creature_template_spells` WHERE `entry` = 21339;
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 2133901;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2133901, 'Serpentshrine Cavern - Coilfang Hate-Screamer', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` = 2133901;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+-- TARGET_ENUM_UNITS_ENEMY_IN_CONE_24
+(2133901, 1, 38491, 0, -1, 0, 0, 100, 0, 6000, 16000, 11000, 25000, 'Coilfang Hate-Screamer - Silence - none'),
+(2133901, 2, 38496, 0, -1, 100, 0, 100, 0, 3000, 12000, 3000, 12000, 'Coilfang Hate-Screamer - Sonic Scream - random');
+
+UPDATE `creature_template` SET `SpellList` = 2133901 WHERE `entry` = 21339;

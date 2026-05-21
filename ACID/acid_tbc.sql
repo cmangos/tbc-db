@@ -28476,9 +28476,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Coilfang Shatterer 21301
 ('2130101','21301','0','0','100','1025','7600','14100','18200','21500','0','0','11','38591','1','0','0','0','0','0','0','0','0','0','Coilfang Shatterer - Cast Shatter Armor'),
 ('2130102','21301','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coilfang Shatterer - Set Instance Data64 (SD2) on Generic Timer'),
--- Coilfang Hate-Screamer 21339
-('2133901','21339','0','0','100','1025','5000','9000','21000','38600','0','0','11','38491','4','512','0','0','0','0','0','0','0','0','Coilfang Hate-Screamer - Cast Silence'),
-('2133902','21339','0','0','100','1025','6100','11200','7000','12000','0','0','11','38496','4','512','0','0','0','0','0','0','0','0','Coilfang Hate-Screamer - Cast Sonic Scream'),
+-- Coilfang Hate-Screamer 21339 - spell_list
 -- Coilfang Frenzy 21508
 ('2150801','21508','11','0','100','0','0','0','0','0','0','0','55','11','0','0','0','0','0','0','0','0','0','0','Coilfang Frenzy - Attack Spawner on Spawn'),
 -- Coilfang Frenzy Corpse 21689 - NSR
