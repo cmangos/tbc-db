@@ -22046,12 +22046,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Angered Skeleton (18524)
 ('1852401','18524','11','0','100','0','0','0','0','0','0','0','11','32885','0','34','0','0','0','0','0','0','0','0','Angered Skeleton - Cast Infuriate on Spawn'),
 -- Phasing Soldier 18556 - spell_list
-('1855602','18556','11','0','100','0','0','0','0','0','0','0','11','32828','0','0','0','0','0','0','0','0','0','0','Phasing Soldier - Cast Protection Aura on Spawn'),
+('1855601','18556','11','0','100','0','0','0','0','0','0','0','11','32828','0','0','0','0','0','0','0','0','0','0','Phasing Soldier - Cast Protection Aura on Spawn'),
+('1855602','18556','4','0','100','0','0','0','0','0','0','0','28','0','32754','0','0','0','0','0','0','0','0','0','Phasing Soldier - Remove Invisibility on Aggro'),
 -- Phasing Cleric 18557 - spell_list
+('1855701','18557','4','0','100','0','0','0','0','0','0','0','28','0','32754','0','0','0','0','0','0','0','0','0','Phasing Cleric - Remove Invisibility on Aggro'),
 -- Phasing Sorcerer 18558 - spell_list
 ('1855801','18558','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Phasing Sorcerer - Enable Range Mode on Spawn'),
+('1855802','18558','4','0','100','0','0','0','0','0','0','0','28','0','32754','0','0','0','0','0','0','0','0','0','Phasing Sorcerer - Remove Invisibility on Aggro'),
 -- Phasing Stalker 18559 - spell_list
 ('1855901','18559','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Phasing Stalker - Enable Range Mode on Spawn'),
+('1855902','18559','4','0','100','0','0','0','0','0','0','0','28','0','32754','0','0','0','0','0','0','0','0','0','Phasing Stalker - Remove Invisibility on Aggro'),
 -- Reanimated Bones 18700 - spell_list
 ('1870001','18700','11','0','100','0','0','0','0','0','0','0','11','19818','0','34','0','0','0','0','0','0','0','0','Reanimated Bones - Cast Double Attack on Spawn'),
 -- Auchenai Necromancer 18702
