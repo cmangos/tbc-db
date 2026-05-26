@@ -8,6 +8,7 @@ EndDBScriptData */
 SET @CGUID := 5480000; -- creatures
 SET @OGUID := 5480000; -- gameobjects
 SET @PGUID := 48700; -- pools
+SET @SGGUID := 5480000; -- spawn_groups
 
 -- =========
 -- CREATURES
@@ -736,7 +737,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+186, @CGUID+40, 1024), -- Coilfang Serpentguard -> Leotheras the Blind
 (@CGUID+275, @CGUID+40, 1024), -- Greyheart Spellbinder -> Leotheras the Blind
 
-(@CGUID+60, @CGUID+41, 1024), -- Coilfang Beast-Tamer -> Hydross the Unstable
 (@CGUID+61, @CGUID+41, 1024), -- Coilfang Beast-Tamer -> Hydross the Unstable
 (@CGUID+62, @CGUID+41, 1024), -- Coilfang Beast-Tamer -> Hydross the Unstable
 (@CGUID+145, @CGUID+41, 1024), -- Underbog Colossus -> Hydross the Unstable
@@ -803,11 +803,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+178, @CGUID+47, 1167), -- Greyheart Technician -> Vashj'ir Honor Guard
 (@CGUID+211, @CGUID+47, 1167), -- Coilfang Shatterer -> Vashj'ir Honor Guard
 (@CGUID+212, @CGUID+47, 1167), -- Coilfang Shatterer -> Vashj'ir Honor Guard
-
-(@CGUID+139, @CGUID+60, 1167), -- Serpentshrine Sporebat -> Coilfang Beast-Tamer
-(@CGUID+140, @CGUID+60, 1167), -- Serpentshrine Sporebat -> Coilfang Beast-Tamer
-(@CGUID+217, @CGUID+60, 1167), -- Coilfang Hate-Screamer -> Coilfang Beast-Tamer
-(@CGUID+218, @CGUID+60, 1167), -- Coilfang Hate-Screamer -> Coilfang Beast-Tamer
 
 (@CGUID+141, @CGUID+61, 1167), -- Serpentshrine Sporebat -> Coilfang Beast-Tamer
 (@CGUID+142, @CGUID+61, 1167), -- Serpentshrine Sporebat -> Coilfang Beast-Tamer
@@ -1330,12 +1325,27 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
+-- Coilfang Hate-Screamer, Serpentshrine Sporebat, Coilfang Beast-Tamer, Serpentshrine Sporebat, Coilfang Hate-Screamer
+(@SGGUID+1, 'Serpentshrine Cavern - Group 001', 0, 5, @SGGUID+1, 3, 0),
+
+
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGGUID+1, @CGUID+60, 0), -- Coilfang Beast-Tamer
+(@SGGUID+1, @CGUID+139, 1), -- Serpentshrine Sporebat (left)
+(@SGGUID+1, @CGUID+140, 2), -- Serpentshrine Sporebat (right)
+(@SGGUID+1, @CGUID+217, 3), -- Coilfang Hate-Screamer (left)
+(@SGGUID+1, @CGUID+218, 4), -- Coilfang Hate-Screamer (right)
+
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 -- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
+(@SGGUID+1, 42, 2853, 1, 0, 0, 0, 'Hydross the Unstable - Trash Respawn');
 
 -- =========
 -- DBSCRIPTS
