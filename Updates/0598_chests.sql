@@ -1809,7 +1809,8 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+43,181798,530,1, -1186.9873046875, 2598.97998046875, 35.83261489868164062, 6.073746204376220703, 0, 0, -0.10452842712402343, 0.994521915912628173,600,600),
 (@GGUID+44,181798,530,1, 1045.2740478515625, 8260.9921875, 57.65306854248046875, 3.019413232803344726, 0, 0, 0.998134613037109375, 0.061051756143569946,600,600),
 (@GGUID+45,181798,530,1, -1276.03564453125, 2647.8046875, 11.09479522705078125, 1.518436193466186523, 0, 0, 0.6883544921875, 0.725374460220336914,600,600),
-(@GGUID+46,181798,530,1, 85.49154, 3213.53638, 32.5583076, 3.92699552, 0, 0, -0.92387867, 0.3826855,600,600); -- mass_parse_v2_5_4_42940_mantislord.sql - @SNIFFID+13
+(@GGUID+46,181798,530,1, 85.49154, 3213.53638, 32.5583076, 3.92699552, 0, 0, -0.92387867, 0.3826855,600,600), -- mass_parse_v2_5_4_42940_mantislord.sql - @SNIFFID+13
+(@GGUID+47,181798,530,1, -383.82073974609375, 7235.703125, 55.8798065185546875, 0.855210542678833007, 0, 0, 0.414692878723144531, 0.909961462020874023,600,600); 
 
 DELETE FROM spawn_group WHERE Id BETWEEN @TBCSGGUID+0 AND @TBCSGGUID+11;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
@@ -1822,7 +1823,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@TBCSGGUID+6, 'Fel Iron Chest - Zangarmarsh 1', 1, 1, 0, 0),
 (@TBCSGGUID+7, 'Fel Iron Chest - Zangarmarsh 2', 1, 1, 0, 0),
 (@TBCSGGUID+8, 'Fel Iron Chest - Zangarmarsh 3', 1, 1, 0, 0),
-(@TBCSGGUID+9, 'Fel Iron Chest - Zangarmarsh 4 - missing 1 spawn', 1, 1, 0, 0),
+(@TBCSGGUID+9, 'Fel Iron Chest - Zangarmarsh 4', 1, 1, 0, 0),
 (@TBCSGGUID+10, 'Fel Iron Chest - Terokkar 1', 1, 1, 0, 0),
 (@TBCSGGUID+11, 'Fel Iron Chest - Terokkar 2', 1, 1, 0, 0);
 
@@ -1847,7 +1848,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+7, gu
 -- Zangarmarsh 3
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+8, guid, -1 FROM gameobject WHERE guid IN(@GGUID+38,@GGUID+24,@GGUID+17,@GGUID+5);
 -- Zangarmarsh 4
-INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+9, guid, -1 FROM gameobject WHERE guid IN(@GGUID+4,@GGUID+0,@GGUID+6); -- is missing 1
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+9, guid, -1 FROM gameobject WHERE guid IN(@GGUID+4,@GGUID+0,@GGUID+6,@GGUID+47);
 
 -- Terokkar 1
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @TBCSGGUID+10, guid, -1 FROM gameobject WHERE guid IN(@GGUID+2,@GGUID+15,@GGUID+1,@GGUID+25);
