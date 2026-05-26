@@ -733,8 +733,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+186, @CGUID+40, 1024), -- Coilfang Serpentguard -> Leotheras the Blind
 (@CGUID+275, @CGUID+40, 1024), -- Greyheart Spellbinder -> Leotheras the Blind
 
-(@CGUID+62, @CGUID+41, 1024), -- Coilfang Beast-Tamer -> Hydross the Unstable
-
 (@CGUID+42, @CGUID+154, 1024), -- Vashj'ir Honor Guard -> World Trigger (Not Immune PC)
 (@CGUID+43, @CGUID+154, 1024), -- Vashj'ir Honor Guard -> World Trigger (Not Immune PC)
 (@CGUID+44, @CGUID+154, 1024), -- Vashj'ir Honor Guard -> World Trigger (Not Immune PC)
@@ -796,11 +794,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+178, @CGUID+47, 1167), -- Greyheart Technician -> Vashj'ir Honor Guard
 (@CGUID+211, @CGUID+47, 1167), -- Coilfang Shatterer -> Vashj'ir Honor Guard
 (@CGUID+212, @CGUID+47, 1167), -- Coilfang Shatterer -> Vashj'ir Honor Guard
-
-(@CGUID+143, @CGUID+62, 1167), -- Serpentshrine Sporebat -> Coilfang Beast-Tamer
-(@CGUID+144, @CGUID+62, 1167), -- Serpentshrine Sporebat -> Coilfang Beast-Tamer
-(@CGUID+221, @CGUID+62, 1167), -- Coilfang Hate-Screamer -> Coilfang Beast-Tamer
-(@CGUID+222, @CGUID+62, 1167), -- Coilfang Hate-Screamer -> Coilfang Beast-Tamer
 
 (@CGUID+67, @CGUID+63, 1679), -- Murloc Group 1
 (@CGUID+68, @CGUID+63, 1679), -- Murloc Group 1
@@ -1319,7 +1312,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+2, 'Serpentshrine Cavern - Underbog Colossus - Solo Patrol 001', 0, 1, @SGGUID+1, 0, 0),
 (@SGGUID+3, 'Serpentshrine Cavern - Group 002', 0, 5, @SGGUID+1, 3, 0),
 (@SGGUID+4, 'Serpentshrine Cavern - Underbog Colossus - Solo Patrol 002', 0, 1, @SGGUID+1, 0, 0),
-
+(@SGGUID+5, 'Serpentshrine Cavern - Group 003', 0, 5, @SGGUID+1, 3, 0);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -1339,6 +1332,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+3, @CGUID+220, 4), -- Coilfang Hate-Screamer (right)
 
 (@SGGUID+4, @CGUID+146, 0), -- Underbog Colossus
+
+(@SGGUID+5, @CGUID+62, 0), -- Coilfang Beast-Tamer
+(@SGGUID+5, @CGUID+143, 1), -- Serpentshrine Sporebat (left)
+(@SGGUID+5, @CGUID+144, 2), -- Serpentshrine Sporebat (right)
+(@SGGUID+5, @CGUID+222, 3), -- Coilfang Hate-Screamer (left)
+(@SGGUID+5, @CGUID+221, 4); -- Coilfang Hate-Screamer (right)
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
