@@ -8,6 +8,7 @@ EndDBScriptData */
 SET @CGUID := 5480000; -- creatures
 SET @OGUID := 5480000; -- gameobjects
 SET @PGUID := 48700; -- pools
+SET @SGGUID := 5480000; -- spawn_groups
 
 -- =========
 -- CREATURES
@@ -212,20 +213,16 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+132, 3, 300.573, -363.467, 22.4876, 100, 0, 0),
 (@CGUID+132, 4, 306.136, -362.389, 22.3329, 100, 0, 0),
 (@CGUID+132, 5, 300.504, -363.685, 22.4899, 100, 0, 0),
-(@CGUID+145, 1, -136.007, -208.69, 1.58924, 100, 0, 0),
-(@CGUID+145, 2, -125.404, -195.916, 1.58924, 100, 0, 0),
-(@CGUID+145, 3, -123.784, -187.831, 1.38142, 100, 0, 0),
-(@CGUID+145, 4, -124.998, -195.981, 1.58924, 100, 0, 0),
-(@CGUID+145, 5, -136.044, -209.183, 1.58924, 100, 0, 0),
-(@CGUID+145, 6, -153.328, -212.668, 1.58924, 100, 0, 0),
-(@CGUID+145, 7, -166.656, -216.784, 1.1677, 100, 0, 0),
-(@CGUID+146, 1, -181.282, -222.566, -1.8796, 100, 0, 0),
-(@CGUID+146, 2, -192.431, -231.99, -5.4074, 100, 0, 0),
-(@CGUID+146, 3, -203.463, -243.966, -5.4074, 100, 0, 0),
-(@CGUID+146, 4, -210.202, -256.538, -5.4074, 100, 0, 0),
-(@CGUID+146, 5, -217.847, -295.52, -4.03072, 100, 0, 0),
-(@CGUID+146, 6, -210.164, -256.787, -5.40739, 100, 0, 0),
-(@CGUID+146, 7, -203.286, -244.007, -5.40739, 100, 0, 0),
+(@CGUID+145, 1, -165.20982, -214.39952, 1.195061, 100, 0, 0),
+(@CGUID+145, 2, -146.33992, -211.18149, 1.5892345, 100, 0, 0),
+(@CGUID+145, 3, -134.41182, -209.09871, 1.5892347, 100, 0, 0),
+(@CGUID+145, 4, -128.65396, -201.67705, 1.5892346, 100, 0, 0),
+(@CGUID+145, 5, -124.65933, -190.59663, 1.4886333, 100, 0, 0),
+(@CGUID+146, 1, -216.01543, -298.16553, -3.6778715, 100, 0, 0),
+(@CGUID+146, 2, -216.74303, -263.31705, -5.724139, 100, 0, 0),
+(@CGUID+146, 3, -210.19562, -248.11974, -5.4074435, 100, 0, 0),
+(@CGUID+146, 4, -193.7607, -233.10352, -5.407426, 100, 0, 0),
+(@CGUID+146, 5, -180.86557, -222.5891, -1.8157071, 100, 0, 0),
 (@CGUID+147, 1, 197.688, -335.745, 13.7477, 4.17656, 0, 0),
 (@CGUID+147, 2, 188.683, -355.779, 12.6845, 4.33363, 0, 0),
 (@CGUID+147, 3, 189.004, -367.237, 11.98, 4.57317, 0, 0),
@@ -736,12 +733,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+186, @CGUID+40, 1024), -- Coilfang Serpentguard -> Leotheras the Blind
 (@CGUID+275, @CGUID+40, 1024), -- Greyheart Spellbinder -> Leotheras the Blind
 
-(@CGUID+60, @CGUID+41, 1024), -- Coilfang Beast-Tamer -> Hydross the Unstable
-(@CGUID+61, @CGUID+41, 1024), -- Coilfang Beast-Tamer -> Hydross the Unstable
-(@CGUID+62, @CGUID+41, 1024), -- Coilfang Beast-Tamer -> Hydross the Unstable
-(@CGUID+145, @CGUID+41, 1024), -- Underbog Colossus -> Hydross the Unstable
-(@CGUID+146, @CGUID+41, 1024), -- Underbog Colossus -> Hydross the Unstable
-
 (@CGUID+42, @CGUID+154, 1024), -- Vashj'ir Honor Guard -> World Trigger (Not Immune PC)
 (@CGUID+43, @CGUID+154, 1024), -- Vashj'ir Honor Guard -> World Trigger (Not Immune PC)
 (@CGUID+44, @CGUID+154, 1024), -- Vashj'ir Honor Guard -> World Trigger (Not Immune PC)
@@ -803,21 +794,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+178, @CGUID+47, 1167), -- Greyheart Technician -> Vashj'ir Honor Guard
 (@CGUID+211, @CGUID+47, 1167), -- Coilfang Shatterer -> Vashj'ir Honor Guard
 (@CGUID+212, @CGUID+47, 1167), -- Coilfang Shatterer -> Vashj'ir Honor Guard
-
-(@CGUID+139, @CGUID+60, 1167), -- Serpentshrine Sporebat -> Coilfang Beast-Tamer
-(@CGUID+140, @CGUID+60, 1167), -- Serpentshrine Sporebat -> Coilfang Beast-Tamer
-(@CGUID+217, @CGUID+60, 1167), -- Coilfang Hate-Screamer -> Coilfang Beast-Tamer
-(@CGUID+218, @CGUID+60, 1167), -- Coilfang Hate-Screamer -> Coilfang Beast-Tamer
-
-(@CGUID+141, @CGUID+61, 1167), -- Serpentshrine Sporebat -> Coilfang Beast-Tamer
-(@CGUID+142, @CGUID+61, 1167), -- Serpentshrine Sporebat -> Coilfang Beast-Tamer
-(@CGUID+219, @CGUID+61, 1167), -- Coilfang Hate-Screamer -> Coilfang Beast-Tamer
-(@CGUID+220, @CGUID+61, 1167), -- Coilfang Hate-Screamer -> Coilfang Beast-Tamer
-
-(@CGUID+143, @CGUID+62, 1167), -- Serpentshrine Sporebat -> Coilfang Beast-Tamer
-(@CGUID+144, @CGUID+62, 1167), -- Serpentshrine Sporebat -> Coilfang Beast-Tamer
-(@CGUID+221, @CGUID+62, 1167), -- Coilfang Hate-Screamer -> Coilfang Beast-Tamer
-(@CGUID+222, @CGUID+62, 1167), -- Coilfang Hate-Screamer -> Coilfang Beast-Tamer
 
 (@CGUID+67, @CGUID+63, 1679), -- Murloc Group 1
 (@CGUID+68, @CGUID+63, 1679), -- Murloc Group 1
@@ -1111,8 +1087,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+142, 21246, 548, 1, -131.458, -223.564, 1.67257, 2.05949, 7200, 7200, 0, 0), -- Serpentshrine Sporebat
 (@CGUID+143, 21246, 548, 1, -220.37, -248.003, -5.32409, 0.628318, 7200, 7200, 0, 0), -- Serpentshrine Sporebat
 (@CGUID+144, 21246, 548, 1, -221.885, -243.646, -5.32409, 0.296706, 7200, 7200, 0, 0), -- Serpentshrine Sporebat
-(@CGUID+145, 21251, 548, 1, -152.484, -212.229, 1.58923, 0.168913, 7200, 7200, 0, 2), -- Underbog Colossus
-(@CGUID+146, 21251, 548, 1, -192.512, -232.086, -5.40743, 0.684048, 7200, 7200, 0, 2), -- Underbog Colossus
+(@CGUID+145, 21251, 548, 1, -165.20982, -214.39952, 1.195061, 0.186753, 7200, 7200, 0, 4), -- Underbog Colossus
+(@CGUID+146, 21251, 548, 1, -216.01543, -298.16553, -3.6778715, 1.547076, 7200, 7200, 0, 4), -- Underbog Colossus
 (@CGUID+147, 21251, 548, 1, 209.571, -319.302, 10.6757, 4.49363, 7200, 7200, 0, 2), -- Underbog Colossus
 (@CGUID+148, 21251, 548, 1, 231.283, -650.963, -7.36396, 2.25831, 7200, 7200, 0, 2), -- Underbog Colossus
 (@CGUID+149, 21251, 548, 1, 459.046, -481.498, -13.1583, 4.17599, 7200, 7200, 0, 2), -- Underbog Colossus
@@ -1330,12 +1306,46 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
+-- Coilfang Hate-Screamer, Serpentshrine Sporebat, Coilfang Beast-Tamer, Serpentshrine Sporebat, Coilfang Hate-Screamer
+(@SGGUID+1, 'Serpentshrine Cavern - Group 001', 0, 5, @SGGUID+1, 3, 0),
+(@SGGUID+2, 'Serpentshrine Cavern - Underbog Colossus - Solo Patrol 001', 0, 1, @SGGUID+1, 0, 0),
+(@SGGUID+3, 'Serpentshrine Cavern - Group 002', 0, 5, @SGGUID+1, 3, 0),
+(@SGGUID+4, 'Serpentshrine Cavern - Underbog Colossus - Solo Patrol 002', 0, 1, @SGGUID+1, 0, 0),
+(@SGGUID+5, 'Serpentshrine Cavern - Group 003', 0, 5, @SGGUID+1, 3, 0);
+
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGGUID+1, @CGUID+60, 0), -- Coilfang Beast-Tamer
+(@SGGUID+1, @CGUID+139, 1), -- Serpentshrine Sporebat (left)
+(@SGGUID+1, @CGUID+140, 2), -- Serpentshrine Sporebat (right)
+(@SGGUID+1, @CGUID+217, 3), -- Coilfang Hate-Screamer (left)
+(@SGGUID+1, @CGUID+218, 4), -- Coilfang Hate-Screamer (right)
+
+(@SGGUID+2, @CGUID+145, 0), -- Underbog Colossus
+
+(@SGGUID+3, @CGUID+61, 0), -- Coilfang Beast-Tamer
+(@SGGUID+3, @CGUID+142, 1), -- Serpentshrine Sporebat (left)
+(@SGGUID+3, @CGUID+141, 2), -- Serpentshrine Sporebat (right)
+(@SGGUID+3, @CGUID+219, 3), -- Coilfang Hate-Screamer (left)
+(@SGGUID+3, @CGUID+220, 4), -- Coilfang Hate-Screamer (right)
+
+(@SGGUID+4, @CGUID+146, 0), -- Underbog Colossus
+
+(@SGGUID+5, @CGUID+62, 0), -- Coilfang Beast-Tamer
+(@SGGUID+5, @CGUID+143, 1), -- Serpentshrine Sporebat (left)
+(@SGGUID+5, @CGUID+144, 2), -- Serpentshrine Sporebat (right)
+(@SGGUID+5, @CGUID+222, 3), -- Coilfang Hate-Screamer (left)
+(@SGGUID+5, @CGUID+221, 4); -- Coilfang Hate-Screamer (right)
+
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 -- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
+(@SGGUID+1, 42, 2853, 1, 0, 0, 0, 'Hydross the Unstable - Trash Respawn');
 
 -- =========
 -- DBSCRIPTS
