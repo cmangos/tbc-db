@@ -247,7 +247,14 @@ UPDATE `creature_template` SET `name` = 'Redeemed Spirit of Earth' WHERE `entry`
 -- Quest custom changes
 -- -------------------------------
 
--- None
+-- quests fail upon death of a single person, but are meant to fail if whole group dies. TODO: Possibly change stay alive flag implementation for quests with QUEST_FLAGS_PARTY_ACCEPT
+UPDATE `quest_template` SET `QuestFlags` = `QuestFlags`&~1 WHERE `entry` IN ( -- Remove QUEST_FLAGS_STAY_ALIVE
+9962, -- The Ring of Blood: Brokentoe
+9967, -- The Ring of Blood: The Blue Brothers
+9970, -- The Ring of Blood: Rokdar the Sundered Lord
+9972, -- The Ring of Blood: Skra'gath
+9973, -- The Ring of Blood: The Warmaul Champion
+9977); -- The Ring of Blood: The Final Challenge
 
 -- -------------------------------
 -- Spell custom changes
