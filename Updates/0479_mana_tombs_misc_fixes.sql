@@ -108,8 +108,8 @@ DELETE FROM `creature_template_spells` WHERE `entry` = 20257;
 
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1831701, 2025701);
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
-(1831701, 'Mana Tombs - Ethereal Priest - Normal', 0, 0),
-(2025701, 'Mana Tombs - Ethereal Priest - Heroic', 0, 0);
+(1831701, 'Mana Tombs - Ethereal Priest - Normal', 75, 0),
+(2025701, 'Mana Tombs - Ethereal Priest - Heroic', 75, 0);
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1831701, 2025701);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
