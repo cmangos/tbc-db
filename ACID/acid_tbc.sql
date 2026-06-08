@@ -19367,7 +19367,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2021002','20210','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Shaleskin Flayer - Flee at 15% HP'),
 -- Pentatharon 20215 - spell_list
 -- Sunfury Technician 20218 - npc_manaforge_spawn
-('2021801','20218','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Sunfury Technician - Interrupt Channelling on Aggro'),
+('2021801','20218','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Sunfury Technician - Set ReactState Defensive on Spawn'),
+('2021802','20218','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Sunfury Technician - Interrupt Channelling on Aggro'),
 -- Sunfury Flamekeeper 20221
 ('2022101','20221','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','1','2384','0','0','0','0','0','0','Sunfury Flamekeeper - Cast Enrage at 30% HP'),
 ('2022102','20221','0','0','100','1025','8000','14000','14000','18000','0','0','11','35857','1','0','0','0','0','0','0','0','0','0','Sunfury Flamekeeper - Cast Torch'),
