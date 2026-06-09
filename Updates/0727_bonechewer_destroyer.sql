@@ -6,5 +6,4 @@ INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, Scrip
 (1727101, 1, 10101, 0, 1, 0, 100, 0, 21000, 36000, 12000, 25000, "Bonechewer Destroyer - Knock Away - on current"),
 (1727101, 2, 16856, 0, 1, 0, 100, 0, 5000, 10000, 6000, 12000, "Bonechewer Destroyer - Mortal Strike - on current"),
 -- heroic
-(1805201, 1, 10101, 0, 1, 0, 100, 0, 21000, 36000, 12000, 25000, "Bonechewer Destroyer - Knock Away - on current"),
-(1805201, 2, 15708, 0, 1, 0, 100, 0, 5000, 10000, 6000, 12000, "Bonechewer Destroyer - Mortal Strike - on current");
+(1805201, 1, 15708, 0, 1, 0, 100, 0, 5000, 10000, 6000, 12000, "Bonechewer Destroyer - Mortal Strike - on current");
