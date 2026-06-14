@@ -1002,9 +1002,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Group of 6 all static, only warlock pet is random between 3 entrys
 (@SGGUID+25, 'Shadow Labyrinth - Group 023 - Cabal Shadow Priest | Cabal Deathsworn | Cabal Acolyte | Cabal Cultist | Cabal Warlock | Fel Guardhound/Maiden of Discipline/Cabal Familiar', 0, 0, 0, 1, @STRINGID+3),
 -- Solo Patrol linked to boss
-(@SGGUID+26, 'Shadow Labyrinth - Group 024 - Malicious Instructor', 0, 0, 0, 0, 0),
+(@SGGUID+26, 'Shadow Labyrinth - Group 024 - Malicious Instructor', 0, 0, 0, 1, 0),
 -- Middle Patrol
-(@SGGUID+27, 'Shadow Labyrinth - Group 025 - Malicious Instructor', 0, 0, 0, 0, 0),
+(@SGGUID+27, 'Shadow Labyrinth - Group 025 - Malicious Instructor', 0, 0, 0, 1, 0),
 -- Middle Group left back - 4 npcs 3 possible combinations:
 -- Cabal Deathsworn- Cabal Cultist - Cabal Shadow Priest - Cabal Acolyte
 -- Cabal Deathsworn- Cabal Cultist - Cabal Acolyte -	Cabal Cultist
@@ -1030,9 +1030,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Solo Patrol right side
 (@SGGUID+33, 'Shadow Labyrinth - Group 028 - Malicious Instructor', 0, 0, 0, 0, 0),
 -- Boss Blackheart the Inciter to link all groups in his room to him for aggro
-(@SGGUID+34, 'Shadow Labyrinth - Group 029 - Blackheart the Inciter', 0, 0, 0, 0, 0),
+(@SGGUID+34, 'Shadow Labyrinth - Group 029 - Blackheart the Inciter', 0, 0, 0, 1, 0),
 -- Solo Patrol with spawn_group_entry
-(@SGGUID+35, 'Shadow Labyrinth - Group 030 - Fel Overseer/Malicious Instructor', 0, 0, 0, 0, 0),
+(@SGGUID+35, 'Shadow Labyrinth - Group 030 - Fel Overseer/Malicious Instructor', 0, 0, 0, 1, 0),
 -- 2 groups of 4 Tortured Skeleton on hills
 (@SGGUID+36, 'Shadow Labyrinth - Group 031 - Tortured Skeleton (4)', 0, 0, 0, 1, 0),
 (@SGGUID+37, 'Shadow Labyrinth - Group 032 - Tortured Skeleton (4)', 0, 0, 0, 1, 0),
