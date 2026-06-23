@@ -19386,6 +19386,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2024804','20248','0','0','100','1025','35000','38000','30000','35000','0','0','11','35778','0','0','0','0','0','0','0','0','0','0','Sunfury Nethermancer - Cast Bloodcrystal Surge'),
 ('2024805','20248','2','0','75','1025','75','0','10000','20000','0','0','11','17173','1','0','0','0','0','0','0','0','0','0','Sunfury Nethermancer - Cast Drain Life below 75% HP'),
 ('2024806','20248','9','0','100','1025','0','40','3400','4800','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Sunfury Nethermancer - Cast Shadow Bolt'),
+('2024807','20248','6','0','100','0','0','0','0','0','0','0','11','36485','0','0','0','0','0','0','0','0','0','0','Sunfury Nethermancer - Cast Avenger Trigger Death on Death'),
 -- Vixton Pinchwhistle (20278) - NSR
 -- Drijya (20281) - npc_drijya
 -- Dr. Boom 20284 - ss.35134 Boom Bot Rotation
