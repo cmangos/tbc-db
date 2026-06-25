@@ -19472,12 +19472,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2045804','20458','0','1','100','1025','0','0','8100','8100','0','0','11','35924','0','0','54','18929','0','0','0','0','0','0','Ethereum Archon - Cast Energy Flux and Text Emote (Phase 1)'),
 ('2045805','20458','7','0','100','0','0','0','0','0','0','0','22','0','0','0','21','1','0','0','0','0','0','0','Ethereum Researcher - Set Phase 0 and Allow Combat Movement on Evade'),
 -- Ethereum Overlord 20459
-('2045901','20459','11','0','100','0','0','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Ethereum Overlord - Cast Simple Teleport on Spawn'),
+('2045901','20459','11','0','100','0','0','0','0','0','0','0','11','12980','0','0','62','7','0','0','0','0','0','0','Ethereum Overlord - Cast Simple Teleport, Enable Despawn Aggregation (Evade,Death) on Spawn'),
 ('2045902','20459','0','0','100','1025','6000','18000','15000','25000','0','0','11','32064','0','0','0','0','0','0','0','0','0','0','Ethereum Overlord - Cast Battle Shout'),
 ('2045903','20459','0','0','100','1025','5000','20000','40000','50000','0','0','11','36510','0','0','0','0','0','0','0','0','0','0','Ethereum Overlord - Cast Enchanted Weapons'),
 ('2045904','20459','0','0','100','1025','0','10000','15000','21000','0','0','11','36509','1','0','0','0','0','0','0','0','0','0','Ethereum Overlord - Cast Charge'),
 ('2045905','20459','8','0','100','1','30023','-1','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Despawn Guardians on Spellhit'),
-('2045906','20459','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Despawn Guardians on Evade'),
 -- Chief Engineer Gork'lonn 20460 - npc_manaforge_spawn
 -- Apprentice Andrethan 20463
 -- Thadell 20464
