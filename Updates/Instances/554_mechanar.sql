@@ -263,7 +263,7 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 (@SGGUID+1, 'The Mechanar - Bound / Solid Adamantite Chest', 1, 1, 0, 0, 0),
-(@SGGUID+2, 'The Mechanar - Group 001', 0, 3, 0, 0, 0),
+(@SGGUID+2, 'The Mechanar - Group 001', 0, 3, 0, 1, 0),
 (@SGGUID+3, 'The Mechanar - Group 002', 0, 3, 0, 1, 0),
 -- left side entrance to first boss
 (@SGGUID+4, 'The Mechanar - Group 003', 0, 2, 0, 1, 0),
