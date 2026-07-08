@@ -16774,7 +16774,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2179601','21796','11','0','100','0','0','0','0','0','0','0','11','37510','0','0','0','0','0','0','0','0','0','0','Wyrm from Beyond - Cast Summon Singing Ridge Void Storm on Spawn'),
 ('2179602','21796','1','0','100','0','3000','3000','0','0','0','0','11','34876','0','0','19','33554432','0','0','19','256','0','0','Wyrm from Beyond - Cast Wyrm from Beyond Transform and Remove UntFlags on OOC timer'),
 ('2179603','21796','1','0','100','0','4000','4000','0','0','0','0','55','11','0','0','0','0','0','0','0','0','0','0','Wyrm from Beyond - Attack summoner on OOC timer'),
-('2179604','21796','0','0','100','1025','4000','6000','5500','7000','0','0','11','13321','1','0','0','0','0','0','0','0','0','0','Wyrm from Beyond - Cast Mana Burn'),
+('2179604','21796','0','0','100','1025','4000','13000','5500','17000','0','0','11','13321','16','0','0','0','0','0','0','0','0','0','Wyrm from Beyond - Cast Mana Burn on Random Target Mana User'),
 -- Wyrmcult Poacher 21809
 ('2180901','21809','11','0','100','0','0','0','0','0','0','0','11','37547','0','0','0','0','0','0','0','0','0','0','Wyrmcult Poacher - Cast Wyrmcult BroodlingCall on Spawn'),
 ('2180902','21809','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Wyrmcult Poacher - Enable Range Mode on Aggro'),
@@ -31724,6 +31724,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1609301','16093','29','0','100','0','5000','5000','0','0','0','0','19','768','0','0','0','0','0','0','0','0','0','0','Spectral Stalker - Remove UnitFlags on Generic Timer'),
 -- Sandworm 17075 - npc_burster_worm
 -- Invisible Man 17286 - npc_invible_man
+-- Crashin' Thrashin' Robot 17299
 -- Totem of Wrath 17539 - TotemAI
 -- Tainted Earthgrab Totem 18176 - TotemAI
 -- Tainted Earthgrab Totem (1) 19897 - NSR
@@ -32220,6 +32221,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2716601','27166','11','0','100','0','0','0','0','0','0','0','11','48032','0','2','11','48186','0','2','11','51847','0','2','The Brewmaiden - Cast Brewmaiden Spotlight and Cast Brewmaiden Despawn Control Aura and Cast The Brewmaiden''s Blessing (Rank 6) on Spawn'),
 ('2716602','27166','11','0','100','0','0','0','0','0','0','0','41','30000','0','0','21','0','0','0','1','26303','0','0','The Brewmaiden - Delayed Despawn and Disable Combat Movement and Say Text on Spawn'),
 -- The Black Brewmaiden 27169
+-- Bizzle Quicklift 27216
+-- Slurpo Fizzykeg 28329
+-- Great Brewfest Kodo 27707
 
 -- ==================
 -- Love is in the Air
