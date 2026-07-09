@@ -24915,12 +24915,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lesser Shadow Fissure 17471 - npc_aoe_damage_trigger
 -- Training Dummy 17578
 ('1757801','17578','11','0','100','0','0','0','0','0','0','0','42','1','0','0','20','0','0','0','0','0','0','0','Training Dummy - Set Invincible, Disable Melee on Spawn'),
--- Heathen Guard - spell_list
+-- Heathen Guard 17621 - spell_list
 ('1762101','17621','2','0','100','1025','30','0','120000','120000','0','0','11','30485','0','0','1','1191','0','0','0','0','0','0','Heathen Guard - Cast Enrage at 30% HP'),
+('1762102','17621','11','0','100','0','0','0','0','0','0','0','11','41634','0','34','0','0','0','0','0','0','0','0','Heathen Guard - Cast Invisibility and Stealth Detection on Spawn'),
 -- Sharpshooter Guard 17622 - spell_list
-('1762201','17622','1','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Sharpshooter Guard - Enable Range Mode on Spawn'),
--- Shattered Hand Reaver - spell_list
+('1762201','17622','1','0','100','0','0','0','0','0','0','0','57','2','25','0','11','41634','0','34','0','0','0','0','Sharpshooter Guard - Enable Range Mode, Cast Invisibility and Stealth Detection on Spawn'),
+-- Shattered Hand Reaver 17623 - spell_list
 ('1762301','17623','2','0','100','1025','30','0','120000','120000','0','0','11','30485','0','0','1','1191','0','0','0','0','0','0','Shattered Hand Reaver - Cast Enrage at 30% HP'),
+('1762302','17623','11','0','100','0','0','0','0','0','0','0','11','41634','0','34','0','0','0','0','0','0','0','0','Shattered Hand Reaver - Cast Invisibility and Stealth Detection on Spawn'),
 -- Rabid Warhound - spell_list
 -- Shattered Hand Houndmaster 17670
 ('1767001','17670','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Shattered Hand Houndmaster - Enable Range Mode on Spawn'),
