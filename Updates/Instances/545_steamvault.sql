@@ -877,13 +877,13 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+2,0,2,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Dreghood Slave - Emote OneShotExclamation'),
 (@RELAYID+2,0,3,0,@RELAYID+1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Dreghood Slave - random yell'),
 (@RELAYID+2,2000,0,20,2,1,0,0,0,0,2,0,0,0,0,0,0,0,'Dreghood Slave - Change Movement'),
--- Dreghood Slave on recive Event A - if slavemaster starts combat he sends AI Event A to Drehood Slave
+-- Dreghood Slave on recive Event A - if slavemaster starts combat he sends AI Event A to Dreghood Slave
 (@RELAYID+3,0,1,22,16,3,0,0,0,0,0,0,0,0,0,0,0,0,'Dreghood Slave - Set Faction to 16'),
 (@RELAYID+3,0,2,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Dreghood Slave - Zone Combat pulse'),
 (@RELAYID+3,0,3,55,@STRINGID+1,1,0,0,0,0,0,0,0,0,0,0,0,0,'Dreghood Slave - set StringID'),
 -- Coilfang Slavemaster on Death script
 (@RELAYID+4,0,0,31,0,5,0,@STRINGID+1,15,0x800,0,0,0,0,0,0,0,0, 'Coilfang Slavemaster - search for string id - terminate if not found'),
-(@RELAYID+4,1,0,35,7,0,0,@STRINGID+1,15,2561,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event B too StringID');
+(@RELAYID+4,1,0,35,6,0,0,@STRINGID+1,15,2561,0,0,0,0,0,0,0,0,'Coilfang Slavemaster - send AI_EVENT_CUSTOM_EVENTAI_B too StringID');
 
 
 DELETE FROM dbscript_random_templates WHERE id IN (@RELAYID+1, @RELAYID+2);
