@@ -14,7 +14,15 @@ UPDATE `spell_script_target` SET `targetEntry` = '21682' WHERE (`entry` = '37775
 UPDATE `spell_script_target` SET `targetEntry` = '21683' WHERE (`entry` = '37775') and (`type` = '1') and (`targetEntry` = '21750');
 UPDATE `spell_script_target` SET `targetEntry` = '21684' WHERE (`entry` = '37775') and (`type` = '1') and (`targetEntry` = '21752');
 
-# Armor and agility multiplier should be 0 for chess pieces as they have no armor
+-- Fix missing script targets for 37824 Shadow Mend Action
+INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`, `inverseEffectMask`) VALUES ('37824', '1', '17469', '0');
+INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`, `inverseEffectMask`) VALUES ('37824', '1', '21748', '0');
+INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`, `inverseEffectMask`) VALUES ('37824', '1', '21750', '0');
+INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`, `inverseEffectMask`) VALUES ('37824', '1', '21747', '0');
+INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`, `inverseEffectMask`) VALUES ('37824', '1', '21726', '0');
+INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`, `inverseEffectMask`) VALUES ('37824', '1', '21752', '0');
+
+-- Armor and agility multiplier should be 0 for chess pieces as they have no armor
 UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '17469');
 UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '21748');
 UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '21750');
