@@ -22,17 +22,3 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`, `inverseEffec
 INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`, `inverseEffectMask`) VALUES ('37824', '1', '21726', '0');
 INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`, `inverseEffectMask`) VALUES ('37824', '1', '21752', '0');
 
--- Armor and agility multiplier should be 0 for chess pieces as they have no armor
-UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '17469');
-UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '21748');
-UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '21750');
-UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '21747');
-UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '21726');
-UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '21752');
-UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '17211');
-UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '21664');
-UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '21683');
-UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '21682');
-UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '21160');
-UPDATE `creature_template` SET `ArmorMultiplier` = '0', `AgilityMultiplier` = 0 WHERE (`Entry` = '21684');
-
