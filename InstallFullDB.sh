@@ -7,7 +7,7 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE_ZIP="TBCDB_1.10.0_ReturnOfTheVengeance.sql.gz"
+FULLDB_FILE_ZIP="TBCDB_1.11.0_Vengeance_One_A_Cmangos_Story.sql.gz"
 FULLDB_FILE=${FULLDB_FILE_ZIP%.gz}
 NEXT_MILESTONES="0.12.4 0.13"
 
@@ -128,11 +128,11 @@ function initialize()
   IFS=$'\n'
   while read -r line; do
     grepResult+=("$line")
-  done < <(grep -h -A15 "CREATE TABLE .db_version" "${ADDITIONAL_PATH}Full_DB/${FULLDB_FILE}")
+  done < <(grep -h -A16 "CREATE TABLE .db_version" "${ADDITIONAL_PATH}Full_DB/${FULLDB_FILE}")
 
   local coreVerRegex="^[ ]+.required_([0-9A-Za-z_]+)"
   # todo this may fail, we need to uniformise all db title with some title schema
-  local contentDBVerRegex="\('${EXPANSION}[A-Za-z -]+([0-9\.]+)[ \"']+([0-9A-Za-z _'-]+)[\"'\. ]+[fF]or"
+  local contentDBVerRegex="\('${EXPANSION}[A-Za-z -]+([0-9\.]+)[ \"']+([0-9A-Za-z _'-:]+)[\"'\. ]+[fF]or"
   local coreDBVer=""
   local contentDBVer=""
   local contentDBTittle=""
