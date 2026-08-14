@@ -28425,11 +28425,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Leotheras the Blind (21215) - boss_leotheras_the_blind
 -- Hydross the Unstable (21216) - boss_hydross_the_unstable
 -- The Lurker Below (21217) - boss_lurker_below
--- Vashj'ir Honor Guard 21218
-('2121801','21218','0','0','100','1025','8000','10000','11000','17000','0','0','11','38572','1','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Mortal Cleave'),
-('2121802','21218','0','0','100','1025','13600','18300','8700','14400','0','0','11','38576','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Knockback'),
-('2121803','21218','0','0','100','1025','7000','12000','13000','17000','0','0','11','38945','1','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Frightening Shout'),
-('2121804','21218','12','0','100','1025','20','0','30000','35000','0','0','11','38959','1','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Execute at 20% Player HP'),
+-- Vashj'ir Honor Guard 21218 - spell_list
 ('2121805','21218','2','0','100','1024','50','0','0','0','0','0','11','38947','0','0','1','19891','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Enrage at 50% HP'),
 ('2121806','21218','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Set Instance Data64 (SD2) on Generic Timer'),
 ('2121807','21218','1','0','75','1','10000','60000','60000','60000','0','0','54','0','0','10027','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Random Say OOC'),
@@ -28500,8 +28496,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tainted Water Elemental 21253
 ('2125301','21253','11','0','100','0','0','0','0','0','0','0','11','25035','0','0','0','0','0','0','0','0','0','0','Tainted Water Elemental - Cast Elemental Spawn-in on Spawn'),
 -- Purified Water Elemental (21260) - NSR
--- Greyheart Technician 21263
-('2126301','21263','0','0','100','1025','8000','12000','8000','16000','0','0','11','38995','4','512','0','0','0','0','0','0','0','0','Greyheart Technician - Cast Hamstring'),
+-- Greyheart Technician 21263 - spell_list
 ('2126302','21263','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - Set Instace Data64 (SD2) on Generic Timer'),
 ('2126303','21263','30','0','100','1','5','21218','0','0','0','0','5','26','0','0','51','0','0','0','0','0','0','0','Greyheart Technician - Emote and Set Waypoint Movement on Receive Custom AI Event A'),
 -- Coilfang Serpentguard 21298
@@ -28512,8 +28507,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2129901','21299','0','0','100','1025','3400','4800','5000','8000','0','0','11','38628','4','512','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Cast Shadow Bolt'),
 ('2129902','21299','0','0','100','1025','8200','13700','25000','30000','0','0','11','38627','0','0','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Cast Shadow Nova'),
 ('2129903','21299','0','0','100','1025','13200','18700','22900','32100','0','0','11','38626','9','0','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Cast Domination'),
--- Coilfang Shatterer 21301
-('2130101','21301','0','0','100','1025','7600','14100','18200','21500','0','0','11','38591','1','0','0','0','0','0','0','0','0','0','Coilfang Shatterer - Cast Shatter Armor'),
+-- Coilfang Shatterer 21301 - spell_list
 ('2130102','21301','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coilfang Shatterer - Set Instance Data64 (SD2) on Generic Timer'),
 -- Coilfang Hate-Screamer 21339 - spell_list
 -- Coilfang Frenzy 21508
