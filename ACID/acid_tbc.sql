@@ -10008,7 +10008,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Darkshore
 -- =========
 -- Moonstalker (2069) - NSR
--- Moonstalker Runt (2070) - NSR
+-- Moonstalker Runt 2070
+('207001','2070','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Moonstalker Runt - Flee at 15% HP'),
 -- Moonstalker Matriarch
 ('207101','2071','11','0','100','0','0','0','0','0','0','0','11','8594','0','0','0','0','0','0','0','0','0','0','Moonstalker Matriarch - Cast Summon Moonstalker Runt on Spawn'),
 -- Cracked Golem 2156
