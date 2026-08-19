@@ -10,6 +10,7 @@ SET @CGUID := 5320000; -- creatures
 SET @OGUID := 5320000; -- gameobjects
 SET @PGUID := 47700; -- pools
 SET @SGGUID := 5320000; -- spawn_groups
+SET @STRINGID := 5320000; -- StringIDs
 
 -- =========
 -- CREATURES
@@ -2590,216 +2591,216 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 -- SPAWN GROUPS
 -- ============
 
-INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 -- Sealed Tome Objects
-(@SGGUID+1, 'Karazhan - Sealed Tome (1)', 1, 1, 0, 0),
-(@SGGUID+2, 'Karazhan - Sealed Tome (2)', 1, 3, 0, 0),
-(@SGGUID+3, 'Karazhan - Sealed Tome (3)', 1, 5, 0, 0),
-(@SGGUID+4, 'Karazhan - Sealed Tome (4)', 1, 1, 0, 0),
-(@SGGUID+5, 'Karazhan - Sealed Tome (5)', 1, 1, 0, 0),
-(@SGGUID+6, 'Karazhan - Sealed Tome (6)', 1, 2, 0, 0),
-(@SGGUID+7, 'Karazhan - Sealed Tome (7)', 1, 2, 0, 0),
-(@SGGUID+8, 'Karazhan - Sealed Tome (8)', 1, 2, 0, 0),
-(@SGGUID+9, 'Karazhan - Sealed Tome (9)', 1, 1, 0, 0),
-(@SGGUID+10, 'Karazhan - Sealed Tome (10)', 1, 1, 0, 0),
-(@SGGUID+11, 'Karazhan - Sealed Tome (11)', 1, 1, 0, 0),
-(@SGGUID+12, 'Karazhan - Sealed Tome (12)', 1, 1, 0, 0),
-(@SGGUID+13, 'Karazhan - Sealed Tome (13)', 1, 2, 0, 0),
-(@SGGUID+14, 'Karazhan - Sealed Tome (14)', 1, 1, 0, 0),
-(@SGGUID+15, 'Karazhan - Sealed Tome (15)', 1, 1, 0, 0),
-(@SGGUID+16, 'Karazhan - Sealed Tome (16)', 1, 5, 0, 0),
-(@SGGUID+17, 'Karazhan - Sealed Tome (17)', 1, 1, 0, 0),
-(@SGGUID+18, 'Karazhan - Sealed Tome (18)', 1, 2, 0, 0),
-(@SGGUID+19, 'Karazhan - Sealed Tome (19)', 1, 1, 0, 0),
-(@SGGUID+20, 'Karazhan - Sealed Tome (20)', 1, 1, 0, 0),
-(@SGGUID+21, 'Karazhan - Sealed Tome (21)', 1, 2, 0, 0),
-(@SGGUID+22, 'Karazhan - Sealed Tome (22)', 1, 1, 0, 0),
-(@SGGUID+23, 'Karazhan - Sealed Tome (23)', 1, 1, 0, 0),
-(@SGGUID+24, 'Karazhan - Sealed Tome (24)', 1, 2, 0, 0),
+(@SGGUID+1, 'Karazhan - Sealed Tome (1)', 1, 1, 0, 0, 0),
+(@SGGUID+2, 'Karazhan - Sealed Tome (2)', 1, 3, 0, 0, 0),
+(@SGGUID+3, 'Karazhan - Sealed Tome (3)', 1, 5, 0, 0, 0),
+(@SGGUID+4, 'Karazhan - Sealed Tome (4)', 1, 1, 0, 0, 0),
+(@SGGUID+5, 'Karazhan - Sealed Tome (5)', 1, 1, 0, 0, 0),
+(@SGGUID+6, 'Karazhan - Sealed Tome (6)', 1, 2, 0, 0, 0),
+(@SGGUID+7, 'Karazhan - Sealed Tome (7)', 1, 2, 0, 0, 0),
+(@SGGUID+8, 'Karazhan - Sealed Tome (8)', 1, 2, 0, 0, 0),
+(@SGGUID+9, 'Karazhan - Sealed Tome (9)', 1, 1, 0, 0, 0),
+(@SGGUID+10, 'Karazhan - Sealed Tome (10)', 1, 1, 0, 0, 0),
+(@SGGUID+11, 'Karazhan - Sealed Tome (11)', 1, 1, 0, 0, 0),
+(@SGGUID+12, 'Karazhan - Sealed Tome (12)', 1, 1, 0, 0, 0),
+(@SGGUID+13, 'Karazhan - Sealed Tome (13)', 1, 2, 0, 0, 0),
+(@SGGUID+14, 'Karazhan - Sealed Tome (14)', 1, 1, 0, 0, 0),
+(@SGGUID+15, 'Karazhan - Sealed Tome (15)', 1, 1, 0, 0, 0),
+(@SGGUID+16, 'Karazhan - Sealed Tome (16)', 1, 5, 0, 0, 0),
+(@SGGUID+17, 'Karazhan - Sealed Tome (17)', 1, 1, 0, 0, 0),
+(@SGGUID+18, 'Karazhan - Sealed Tome (18)', 1, 2, 0, 0, 0),
+(@SGGUID+19, 'Karazhan - Sealed Tome (19)', 1, 1, 0, 0, 0),
+(@SGGUID+20, 'Karazhan - Sealed Tome (20)', 1, 1, 0, 0, 0),
+(@SGGUID+21, 'Karazhan - Sealed Tome (21)', 1, 2, 0, 0, 0),
+(@SGGUID+22, 'Karazhan - Sealed Tome (22)', 1, 1, 0, 0, 0),
+(@SGGUID+23, 'Karazhan - Sealed Tome (23)', 1, 1, 0, 0, 0),
+(@SGGUID+24, 'Karazhan - Sealed Tome (24)', 1, 2, 0, 0, 0),
 -- Boss Spawns
-(@SGGUID+25, 'Karazhan - Midnight', 0, 0, 0, 0),
+(@SGGUID+25, 'Karazhan - Midnight', 0, 0, 0, 0, @STRINGID+1),
 -- Trash
 -- Midnight linked
-(@SGGUID+50, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable', 0, 0, @SGGUID+1, 0), -- single mob that uses spawn_group_entry 
-(@SGGUID+51, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable Group 1', 0, 0, @SGGUID+1, 1),
-(@SGGUID+52, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable Group 2', 0, 0, @SGGUID+1, 1),
-(@SGGUID+53, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable Group 3', 0, 0, @SGGUID+1, 1),
-(@SGGUID+54, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Livery Stable Group 4', 0, 0, @SGGUID+1, 1),
-(@SGGUID+55, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable Group 5', 0, 0, @SGGUID+1, 1),
-(@SGGUID+56, 'Karazhan - Spectral Charger (2) | Spectral Stable Hand (2) | Livery Stable Group 6', 0, 0, @SGGUID+1, 1),
-(@SGGUID+57, 'Karazhan - Spectral Charger | Spectral Stallion | Spectral Stable Hand (3) | Livery Stable Group 7', 0, 0, @SGGUID+1, 1),
-(@SGGUID+58, 'Karazhan - Spectral Stable Hand | Spectral Stallion (2) | Livery Stable Patrol 001', 0, 0, @SGGUID+1, 1), -- Patrol
-(@SGGUID+59, 'Karazhan - Spectral Servent (2) | Spectral Apprentice (3) | Livery Stable Group 8', 0, 0, @SGGUID+1, 1), 
-(@SGGUID+60, 'Karazhan - Spectral Servent (2) | Spectral Apprentice (3) | Livery Stable Group 9', 0, 0, @SGGUID+1, 1),
-(@SGGUID+61, 'Karazhan - Spectral Stable Hand (2) | Patrols', 0, 0, @SGGUID+1, 0), -- 2 solo patroling mobs, dont need to put them in 2 seperate spawn_groups
+(@SGGUID+50, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable', 0, 0, @SGGUID+1, 0, 0), -- single mob that uses spawn_group_entry 
+(@SGGUID+51, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable Group 1', 0, 0, @SGGUID+1, 1, 0),
+(@SGGUID+52, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable Group 2', 0, 0, @SGGUID+1, 1, 0),
+(@SGGUID+53, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable Group 3', 0, 0, @SGGUID+1, 1, 0),
+(@SGGUID+54, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Livery Stable Group 4', 0, 0, @SGGUID+1, 1, 0),
+(@SGGUID+55, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable Group 5', 0, 0, @SGGUID+1, 1, 0),
+(@SGGUID+56, 'Karazhan - Spectral Charger (2) | Spectral Stable Hand (2) | Livery Stable Group 6', 0, 0, @SGGUID+1, 1, 0),
+(@SGGUID+57, 'Karazhan - Spectral Charger | Spectral Stallion | Spectral Stable Hand (3) | Livery Stable Group 7', 0, 0, @SGGUID+1, 1, 0),
+(@SGGUID+58, 'Karazhan - Spectral Stable Hand | Spectral Stallion (2) | Livery Stable Patrol 001', 0, 0, @SGGUID+1, 1, 0), -- Patrol
+(@SGGUID+59, 'Karazhan - Spectral Servent (2) | Spectral Apprentice (3) | Livery Stable Group 8', 0, 0, @SGGUID+1, 1, 0), 
+(@SGGUID+60, 'Karazhan - Spectral Servent (2) | Spectral Apprentice (3) | Livery Stable Group 9', 0, 0, @SGGUID+1, 1, 0),
+(@SGGUID+61, 'Karazhan - Spectral Stable Hand (2) | Patrols', 0, 0, @SGGUID+1, 0, 0), -- 2 solo patroling mobs, dont need to put them in 2 seperate spawn_groups
  -- Moroes linked
  -- Upper Livery Stable
-(@SGGUID+62, 'Karazhan - Spectral Sentry (2) | Upper Livery Stable Group 1', 0, 2, @SGGUID+2, 1),
-(@SGGUID+63, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Patrol 001', 0, 2, @SGGUID+2, 1),
-(@SGGUID+64, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 2', 0, 4, @SGGUID+2, 3), -- fighting each other, flag respawn together
-(@SGGUID+65, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 3', 0, 4, @SGGUID+2, 3), -- fighting each other, flag respawn together
-(@SGGUID+66, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 4', 0, 4, @SGGUID+2, 3), -- fighting each other, flag respawn together
-(@SGGUID+67, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Group 5', 0, 1, @SGGUID+2, 0), -- single patrol using spawn_group_entry
-(@SGGUID+68, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Group 6', 0, 1, @SGGUID+2, 0), -- single patrol using spawn_group_entry
-(@SGGUID+69, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Group 7', 0, 3, @SGGUID+2, 1),
-(@SGGUID+70, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Group 8', 0, 3, @SGGUID+2, 1),
-(@SGGUID+71, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 9', 0, 4, @SGGUID+2, 1),
+(@SGGUID+62, 'Karazhan - Spectral Sentry (2) | Upper Livery Stable Group 1', 0, 2, @SGGUID+2, 1, 0),
+(@SGGUID+63, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Patrol 001', 0, 2, @SGGUID+2, 1, 0),
+(@SGGUID+64, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 2', 0, 4, @SGGUID+2, 3, 0), -- fighting each other, flag respawn together
+(@SGGUID+65, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 3', 0, 4, @SGGUID+2, 3, 0), -- fighting each other, flag respawn together
+(@SGGUID+66, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 4', 0, 4, @SGGUID+2, 3, 0), -- fighting each other, flag respawn together
+(@SGGUID+67, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Group 5', 0, 1, @SGGUID+2, 0, 0), -- single patrol using spawn_group_entry
+(@SGGUID+68, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Group 6', 0, 1, @SGGUID+2, 0, 0), -- single patrol using spawn_group_entry
+(@SGGUID+69, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Group 7', 0, 3, @SGGUID+2, 1, 0),
+(@SGGUID+70, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Group 8', 0, 3, @SGGUID+2, 1, 0),
+(@SGGUID+71, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 9', 0, 4, @SGGUID+2, 1, 0),
 -- The Scullery
-(@SGGUID+72, 'Karazhan - Ghostly Steward (2) | The Scullery Group 1', 0, 2, @SGGUID+2, 1),
-(@SGGUID+73, 'Karazhan - Spectral Chef (2) | Ghostly Baker | The Scullery Group 2', 0, 3, @SGGUID+2, 1),
-(@SGGUID+74, 'Karazhan - Skeletal Waiter (2) | The Scullery Group 3', 0, 2, @SGGUID+2, 1), -- 3 possible spawns-points, 2 active spawns
-(@SGGUID+75, 'Karazhan - Spectral Chef | Ghostly Baker | The Scullery Group 4', 0, 3, @SGGUID+2, 1), -- spawn_group_entry
-(@SGGUID+76, 'Karazhan - Spectral Chef | Ghostly Baker | The Scullery Group 5', 0, 3, @SGGUID+2, 1), -- spawn_group_entry
-(@SGGUID+77, 'Karazhan - Ghostly Steward (2) | The Scullery Group 6', 0, 2, @SGGUID+2, 1),
-(@SGGUID+78, 'Karazhan - Skeletal Waiter (2) | The Scullery Group 7', 0, 2, @SGGUID+2, 1),
-(@SGGUID+79, 'Karazhan - spectral Servant | The Scullery Group 8', 0, 1, @SGGUID+2, 1), -- solo patroling pat in the scullery
+(@SGGUID+72, 'Karazhan - Ghostly Steward (2) | The Scullery Group 1', 0, 2, @SGGUID+2, 1, 0),
+(@SGGUID+73, 'Karazhan - Spectral Chef (2) | Ghostly Baker | The Scullery Group 2', 0, 3, @SGGUID+2, 1, 0),
+(@SGGUID+74, 'Karazhan - Skeletal Waiter (2) | The Scullery Group 3', 0, 2, @SGGUID+2, 1, 0), -- 3 possible spawns-points, 2 active spawns
+(@SGGUID+75, 'Karazhan - Spectral Chef | Ghostly Baker | The Scullery Group 4', 0, 3, @SGGUID+2, 1, 0), -- spawn_group_entry
+(@SGGUID+76, 'Karazhan - Spectral Chef | Ghostly Baker | The Scullery Group 5', 0, 3, @SGGUID+2, 1, 0), -- spawn_group_entry
+(@SGGUID+77, 'Karazhan - Ghostly Steward (2) | The Scullery Group 6', 0, 2, @SGGUID+2, 1, 0),
+(@SGGUID+78, 'Karazhan - Skeletal Waiter (2) | The Scullery Group 7', 0, 2, @SGGUID+2, 1, 0),
+(@SGGUID+79, 'Karazhan - spectral Servant | The Scullery Group 8', 0, 1, @SGGUID+2, 1, 0), -- solo patroling pat in the scullery
 -- The Banquet Hall
-(@SGGUID+80, 'Karazhan - Ghostly Steward (2) | The Banquet Hall Group 1', 0, 2, @SGGUID+2, 1),
-(@SGGUID+81, 'Karazhan - Phantom Guest (9) | The Banquet Hall Group 2', 0, 9, @SGGUID+2, 1),  -- Phantom Guest groups, 10 spawn points, 9 active, only aggro together - left table from moroes
-(@SGGUID+82, 'Karazhan - Phantom Guest (9) | The Banquet Hall Group 3', 0, 9, @SGGUID+2, 1),  -- only aggro together - right table from moroes
-(@SGGUID+83, 'Karazhan - Phantom Guest (9) | The Banquet Hall Group 4', 0, 9, @SGGUID+2, 1),  -- 10 spawn points, 9 active, only aggro together - big table, moroes side
-(@SGGUID+84, 'Karazhan - Phantom Guest (9) | The Banquet Hall Group 5', 0, 9, @SGGUID+2, 1),  -- 10 spawn points, 9 active, only aggro together - big table, ballroom side
-(@SGGUID+85, 'Karazhan - Ghostly Steward (2) | The Banquet Hall Group 6', 0, 2, @SGGUID+2, 1),
-(@SGGUID+86, 'Karazhan - Skeletal Waiter (4) | The Banquet Hall Group 7', 0, 0, @SGGUID+2, 0), -- 4 patrols, spawn_group only to prevent respawn when moroes dead (no need to put them into 4 seperate spawn_groups)
+(@SGGUID+80, 'Karazhan - Ghostly Steward (2) | The Banquet Hall Group 1', 0, 2, @SGGUID+2, 1, 0),
+(@SGGUID+81, 'Karazhan - Phantom Guest (9) | The Banquet Hall Group 2', 0, 9, @SGGUID+2, 1, 0),  -- Phantom Guest groups, 10 spawn points, 9 active, only aggro together - left table from moroes
+(@SGGUID+82, 'Karazhan - Phantom Guest (9) | The Banquet Hall Group 3', 0, 9, @SGGUID+2, 1, 0),  -- only aggro together - right table from moroes
+(@SGGUID+83, 'Karazhan - Phantom Guest (9) | The Banquet Hall Group 4', 0, 9, @SGGUID+2, 1, 0),  -- 10 spawn points, 9 active, only aggro together - big table, moroes side
+(@SGGUID+84, 'Karazhan - Phantom Guest (9) | The Banquet Hall Group 5', 0, 9, @SGGUID+2, 1, 0),  -- 10 spawn points, 9 active, only aggro together - big table, ballroom side
+(@SGGUID+85, 'Karazhan - Ghostly Steward (2) | The Banquet Hall Group 6', 0, 2, @SGGUID+2, 1, 0),
+(@SGGUID+86, 'Karazhan - Skeletal Waiter (4) | The Banquet Hall Group 7', 0, 0, @SGGUID+2, 0, 0), -- 4 patrols, spawn_group only to prevent respawn when moroes dead (no need to put them into 4 seperate spawn_groups)
 -- The Grand Ballroom - lower
-(@SGGUID+87, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 1', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
-(@SGGUID+88, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 2', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
-(@SGGUID+89, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 3', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
-(@SGGUID+90, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 4', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
-(@SGGUID+91, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 5', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
-(@SGGUID+92, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 6', 0, 3, @SGGUID+2, 0), -- This group has atleast 15 spawn points (possible more) at the chairs around this room, there are always 3 active spawned
-(@SGGUID+93, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | The Grand Ballroom Group 7', 0, 5, @SGGUID+2, 1), 
-(@SGGUID+94, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | The Grand Ballroom Group 8', 0, 5, @SGGUID+2, 1), 
+(@SGGUID+87, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 1', 0, 9, @SGGUID+2, 1, 0), -- 10 spawn points, 9 active, aggro together
+(@SGGUID+88, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 2', 0, 9, @SGGUID+2, 1, 0), -- 10 spawn points, 9 active, aggro together
+(@SGGUID+89, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 3', 0, 9, @SGGUID+2, 1, 0), -- 10 spawn points, 9 active, aggro together
+(@SGGUID+90, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 4', 0, 9, @SGGUID+2, 1, 0), -- 10 spawn points, 9 active, aggro together
+(@SGGUID+91, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 5', 0, 9, @SGGUID+2, 1, 0), -- 10 spawn points, 9 active, aggro together
+(@SGGUID+92, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 6', 0, 3, @SGGUID+2, 0, 0), -- This group has atleast 15 spawn points (possible more) at the chairs around this room, there are always 3 active spawned
+(@SGGUID+93, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | The Grand Ballroom Group 7', 0, 5, @SGGUID+2, 1, 0), 
+(@SGGUID+94, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | The Grand Ballroom Group 8', 0, 5, @SGGUID+2, 1, 0), 
 -- all other npcs in this room (3 phantom valets, 4 spectral servent patrols) they only need spawn_group worldstate to prevent them respawning (despawning on soft reset) when moroes is dead
-(@SGGUID+95, 'Karazhan - Phantom Valets (3) | Spectral Servent (4) | The Grand Ballroom Group 9', 0, 0, @SGGUID+2, 0), 
+(@SGGUID+95, 'Karazhan - Phantom Valets (3) | Spectral Servent (4) | The Grand Ballroom Group 9', 0, 0, @SGGUID+2, 0, 0), 
 -- The Grand Ballroom - Upper
-(@SGGUID+96, 'Karazhan - Phantom Guests (9) | The Grand Ballroom  Group 10', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active
-(@SGGUID+97, 'Karazhan - Phantom Guests (9) | The Grand Ballroom  Group 11', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active
-(@SGGUID+98, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | The Grand Ballroom  Group 12', 0, 5, @SGGUID+2, 1), 
-(@SGGUID+99, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | The Grand Ballroom  Group 13', 0, 5, @SGGUID+2, 1),
+(@SGGUID+96, 'Karazhan - Phantom Guests (9) | The Grand Ballroom  Group 10', 0, 9, @SGGUID+2, 1, 0), -- 10 spawn points, 9 active
+(@SGGUID+97, 'Karazhan - Phantom Guests (9) | The Grand Ballroom  Group 11', 0, 9, @SGGUID+2, 1, 0), -- 10 spawn points, 9 active
+(@SGGUID+98, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | The Grand Ballroom  Group 12', 0, 5, @SGGUID+2, 1, 0), 
+(@SGGUID+99, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | The Grand Ballroom  Group 13', 0, 5, @SGGUID+2, 1, 0),
 -- The Grand Ballroom  - Balcony groups
-(@SGGUID+100, 'Karazhan - Phantom Guests (2) | The Grand Ballroom  Group 14', 0, 2, @SGGUID+2, 1), -- 4 spawn points, 2 spawned
-(@SGGUID+101, 'Karazhan - Phantom Guests (2) | The Grand Ballroom  Group 15', 0, 2, @SGGUID+2, 1), -- 4 spawn points, 2 spawned
-(@SGGUID+102, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 16', 0, 1, @SGGUID+2, 1), -- 2 spawn points, 1 spawned
-(@SGGUID+103, 'Karazhan - Phantom Guests (2) | The Grand Ballroom  Group 17', 0, 2, @SGGUID+2, 1), -- 2 spawn points, 2 spawned
-(@SGGUID+104, 'Karazhan - Phantom Guests (2) | The Grand Ballroom  Group 18', 0, 2, @SGGUID+2, 1), -- 4 spawn points, 2 spawned
-(@SGGUID+105, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 19', 0, 1, @SGGUID+2, 1), -- 4 spawn points, 1 spawned
-(@SGGUID+106, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 20', 0, 1, @SGGUID+2, 1), -- 3 spawn points, 1 spawned
-(@SGGUID+107, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 21', 0, 1, @SGGUID+2, 1), -- 2 spawn points, 1 spawned
+(@SGGUID+100, 'Karazhan - Phantom Guests (2) | The Grand Ballroom  Group 14', 0, 2, @SGGUID+2, 1, 0), -- 4 spawn points, 2 spawned
+(@SGGUID+101, 'Karazhan - Phantom Guests (2) | The Grand Ballroom  Group 15', 0, 2, @SGGUID+2, 1, 0), -- 4 spawn points, 2 spawned
+(@SGGUID+102, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 16', 0, 1, @SGGUID+2, 1, 0), -- 2 spawn points, 1 spawned
+(@SGGUID+103, 'Karazhan - Phantom Guests (2) | The Grand Ballroom  Group 17', 0, 2, @SGGUID+2, 1, 0), -- 2 spawn points, 2 spawned
+(@SGGUID+104, 'Karazhan - Phantom Guests (2) | The Grand Ballroom  Group 18', 0, 2, @SGGUID+2, 1, 0), -- 4 spawn points, 2 spawned
+(@SGGUID+105, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 19', 0, 1, @SGGUID+2, 1, 0), -- 4 spawn points, 1 spawned
+(@SGGUID+106, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 20', 0, 1, @SGGUID+2, 1, 0), -- 3 spawn points, 1 spawned
+(@SGGUID+107, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 21', 0, 1, @SGGUID+2, 1, 0), -- 2 spawn points, 1 spawned
 -- all other npcs in this room they only need spawn_group worldstate to prevent them respawning (despawning on soft reset) when moroes is dead
-(@SGGUID+108, 'Karazhan - Patrols | The Grand Ballroom Group 22', 0, 0, @SGGUID+2, 0), 
+(@SGGUID+108, 'Karazhan - Patrols | The Grand Ballroom Group 22', 0, 0, @SGGUID+2, 0, 0), 
 -- Servents' Quarter 
 -- all npcs in here are not linked to any boss
 -- Spiders
-(@SGGUID+110, 'Karazhan - Coldmist Widow (1) | Coldmist Stalker (2) | Servent''s Quarter Group 1', 0, 0, 0, 1),
-(@SGGUID+111, 'Karazhan - Coldmist Widow (1) | Coldmist Stalker (2) | Servent''s Quarter Group 2', 0, 0, 0, 1),
-(@SGGUID+112, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 3', 0, 0, 0, 1),
-(@SGGUID+113, 'Karazhan - Coldmist Widow (1) | Coldmist Stalker (2) | Servent''s Quarter Group 4', 0, 0, 0, 1),
-(@SGGUID+114, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 5', 0, 0, 0, 1),
-(@SGGUID+115, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 6', 0, 0, 0, 1),
+(@SGGUID+110, 'Karazhan - Coldmist Widow (1) | Coldmist Stalker (2) | Servent''s Quarter Group 1', 0, 0, 0, 1, 0),
+(@SGGUID+111, 'Karazhan - Coldmist Widow (1) | Coldmist Stalker (2) | Servent''s Quarter Group 2', 0, 0, 0, 1, 0),
+(@SGGUID+112, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 3', 0, 0, 0, 1, 0),
+(@SGGUID+113, 'Karazhan - Coldmist Widow (1) | Coldmist Stalker (2) | Servent''s Quarter Group 4', 0, 0, 0, 1, 0),
+(@SGGUID+114, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 5', 0, 0, 0, 1, 0),
+(@SGGUID+115, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 6', 0, 0, 0, 1, 0),
 -- Bats
-(@SGGUID+116, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 7', 0, 0, 0, 0), -- spawn_group_entry 
-(@SGGUID+117, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 8', 0, 0, 0, 0), -- spawn_group_entry patrol
-(@SGGUID+118, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 9', 0, 0, 0, 0), -- spawn_group_entry 
-(@SGGUID+119, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 10', 0, 0, 0, 0), -- spawn_group_entry 
+(@SGGUID+116, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 7', 0, 0, 0, 0, 0), -- spawn_group_entry 
+(@SGGUID+117, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 8', 0, 0, 0, 0, 0), -- spawn_group_entry patrol
+(@SGGUID+118, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 9', 0, 0, 0, 0, 0), -- spawn_group_entry 
+(@SGGUID+119, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 10', 0, 0, 0, 0, 0), -- spawn_group_entry 
 -- Dogs
-(@SGGUID+120, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Phase Hound (2) | Servent''s Quarter Group 11', 0, 0, 0, 1), 
-(@SGGUID+121, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 12', 0, 0, 0, 1), 
-(@SGGUID+122, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 13', 0, 0, 0, 1), 
-(@SGGUID+123, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Phase Hound (2) | Servent''s Quarter Group 14', 0, 0, 0, 1), 
-(@SGGUID+124, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 15', 0, 0, 0, 1), 
-(@SGGUID+125, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 16', 0, 0, 0, 1), -- solo pat spawn_group_entry
-(@SGGUID+126, 'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 001', 0, 0, 0, 1), -- side by side patrol
+(@SGGUID+120, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Phase Hound (2) | Servent''s Quarter Group 11', 0, 0, 0, 1, 0), 
+(@SGGUID+121, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 12', 0, 0, 0, 1, 0), 
+(@SGGUID+122, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 13', 0, 0, 0, 1, 0), 
+(@SGGUID+123, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Phase Hound (2) | Servent''s Quarter Group 14', 0, 0, 0, 1, 0), 
+(@SGGUID+124, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 15', 0, 0, 0, 1, 0), 
+(@SGGUID+125, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 16', 0, 0, 0, 1, 0), -- solo pat spawn_group_entry
+(@SGGUID+126, 'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 001', 0, 0, 0, 1, 0), -- side by side patrol
 -- The Guest Chambers - Virtual Maid linked Trash
-(@SGGUID+127, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 001', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
-(@SGGUID+128, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 002', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
-(@SGGUID+129, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 003', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
-(@SGGUID+130, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 004', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
-(@SGGUID+131, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 005', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
-(@SGGUID+132, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 006', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
-(@SGGUID+133, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 007', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
-(@SGGUID+134, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 008', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
-(@SGGUID+135, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 009', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
-(@SGGUID+136, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Group 010', 0, 2, @SGGUID+3, 1),
-(@SGGUID+137, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Group 011', 0, 2, @SGGUID+3, 1),
-(@SGGUID+138, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Group 012', 0, 2, @SGGUID+3, 1),
-(@SGGUID+139, 'Karazhan - Spectral Sentry (2) | The Guest Chambers Patrol 001', 0, 2, @SGGUID+3, 1),
-(@SGGUID+140, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Patrol 002', 0, 2, @SGGUID+3, 1),
+(@SGGUID+127, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 001', 0, 4, @SGGUID+3, 1, 0), -- spawn_group_entry
+(@SGGUID+128, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 002', 0, 4, @SGGUID+3, 1, 0), -- spawn_group_entry
+(@SGGUID+129, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 003', 0, 4, @SGGUID+3, 1, 0), -- spawn_group_entry
+(@SGGUID+130, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 004', 0, 4, @SGGUID+3, 1, 0), -- spawn_group_entry
+(@SGGUID+131, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 005', 0, 4, @SGGUID+3, 1, 0), -- spawn_group_entry
+(@SGGUID+132, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 006', 0, 4, @SGGUID+3, 1, 0), -- spawn_group_entry
+(@SGGUID+133, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 007', 0, 4, @SGGUID+3, 1, 0), -- spawn_group_entry
+(@SGGUID+134, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 008', 0, 4, @SGGUID+3, 1, 0), -- spawn_group_entry
+(@SGGUID+135, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 009', 0, 4, @SGGUID+3, 1, 0), -- spawn_group_entry
+(@SGGUID+136, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Group 010', 0, 2, @SGGUID+3, 1, 0),
+(@SGGUID+137, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Group 011', 0, 2, @SGGUID+3, 1, 0),
+(@SGGUID+138, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Group 012', 0, 2, @SGGUID+3, 1, 0),
+(@SGGUID+139, 'Karazhan - Spectral Sentry (2) | The Guest Chambers Patrol 001', 0, 2, @SGGUID+3, 1, 0),
+(@SGGUID+140, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Patrol 002', 0, 2, @SGGUID+3, 1, 0),
 -- The Opera Hall
-(@SGGUID+141, 'Karazhan - Skeletal Usher (2) | The Opera Hall Group 001', 0, 2, @SGGUID+4, 1),
-(@SGGUID+142, 'Karazhan - Skeletal Usher (2) | The Opera Hall Group 002', 0, 2, @SGGUID+4, 1),
-(@SGGUID+143, 'Karazhan - Skeletal Usher (1) | The Opera Hall Solo Patrol', 0, 1, @SGGUID+4, 0),
-(@SGGUID+144, 'Karazhan - Skeletal Usher (1) | The Opera Hall Group Solo Static 01', 0, 1, @SGGUID+4, 0),
-(@SGGUID+145, 'Karazhan - Skeletal Usher (1) | The Opera Hall Group Solo Static 02', 0, 1, @SGGUID+4, 0),
-(@SGGUID+146, 'Karazhan - Spectral Patron (8) | The Opera Hall Group 003', 0, 8, @SGGUID+4, 1), -- 10 Different spawn Points - 8 active
-(@SGGUID+147, 'Karazhan - Spectral Patron (8) | The Opera Hall Group 004', 0, 8, @SGGUID+4, 1), -- 10 Different spawn Points - 8 active
-(@SGGUID+148, 'Karazhan - Spectral Patron (8) | The Opera Hall Group 005', 0, 8, @SGGUID+4, 1), -- 10 Different spawn Points - 8 active
-(@SGGUID+149, 'Karazhan - Spectral Patron (8) | The Opera Hall Group 006', 0, 8, @SGGUID+4, 1), -- 10 Different spawn Points - 8 active
-(@SGGUID+150, 'Karazhan - Spectral Performer (2) | The Opera Hall Group 007', 0, 2, @SGGUID+4, 1),
-(@SGGUID+151, 'Karazhan - Spectral Performer (2) | The Opera Hall Group 008', 0, 2, @SGGUID+4, 1),
-(@SGGUID+152, 'Karazhan - Spectral Performer (2) | The Opera Hall Group 009', 0, 2, @SGGUID+4, 1),
-(@SGGUID+153, 'Karazhan - Spectral Performer (2) | The Opera Hall Group 009', 0, 2, @SGGUID+4, 1),
-(@SGGUID+154, 'Karazhan - Phantom Stagehand (3) | The Opera Hall Patrols', 0, 0, @SGGUID+4, 0),
-(@SGGUID+155, 'Karazhan - Ghostly Philanthropist (2) | Spectral Patron (4) | The Opera Hall Group 010', 0, 6, @SGGUID+4, 1),
-(@SGGUID+156, 'Karazhan - Ghostly Philanthropist (2) | Spectral Patron (4) | The Opera Hall Group 011', 0, 6, @SGGUID+4, 1),
-(@SGGUID+157, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 001', 0, 3, @SGGUID+4, 1),
-(@SGGUID+158, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Group 012', 0, 3, @SGGUID+4, 0), -- 4 spawns - 3 active
-(@SGGUID+159, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Group 013', 0, 3, @SGGUID+4, 0), -- 4 spawns - 3 active
-(@SGGUID+160, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Group 014', 0, 3, @SGGUID+4, 0), -- 4 spawns - 3 active
-(@SGGUID+161, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Group 015', 0, 3, @SGGUID+4, 0), -- 4 spawns - 3 active
-(@SGGUID+162, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 002', 0, 3, @SGGUID+4, 1),
+(@SGGUID+141, 'Karazhan - Skeletal Usher (2) | The Opera Hall Group 001', 0, 2, @SGGUID+4, 1, 0),
+(@SGGUID+142, 'Karazhan - Skeletal Usher (2) | The Opera Hall Group 002', 0, 2, @SGGUID+4, 1, 0),
+(@SGGUID+143, 'Karazhan - Skeletal Usher (1) | The Opera Hall Solo Patrol', 0, 1, @SGGUID+4, 0, 0),
+(@SGGUID+144, 'Karazhan - Skeletal Usher (1) | The Opera Hall Group Solo Static 01', 0, 1, @SGGUID+4, 0, 0),
+(@SGGUID+145, 'Karazhan - Skeletal Usher (1) | The Opera Hall Group Solo Static 02', 0, 1, @SGGUID+4, 0, 0),
+(@SGGUID+146, 'Karazhan - Spectral Patron (8) | The Opera Hall Group 003', 0, 8, @SGGUID+4, 1, 0), -- 10 Different spawn Points - 8 active
+(@SGGUID+147, 'Karazhan - Spectral Patron (8) | The Opera Hall Group 004', 0, 8, @SGGUID+4, 1, 0), -- 10 Different spawn Points - 8 active
+(@SGGUID+148, 'Karazhan - Spectral Patron (8) | The Opera Hall Group 005', 0, 8, @SGGUID+4, 1, 0), -- 10 Different spawn Points - 8 active
+(@SGGUID+149, 'Karazhan - Spectral Patron (8) | The Opera Hall Group 006', 0, 8, @SGGUID+4, 1, 0), -- 10 Different spawn Points - 8 active
+(@SGGUID+150, 'Karazhan - Spectral Performer (2) | The Opera Hall Group 007', 0, 2, @SGGUID+4, 1, 0),
+(@SGGUID+151, 'Karazhan - Spectral Performer (2) | The Opera Hall Group 008', 0, 2, @SGGUID+4, 1, 0),
+(@SGGUID+152, 'Karazhan - Spectral Performer (2) | The Opera Hall Group 009', 0, 2, @SGGUID+4, 1, 0),
+(@SGGUID+153, 'Karazhan - Spectral Performer (2) | The Opera Hall Group 009', 0, 2, @SGGUID+4, 1, 0),
+(@SGGUID+154, 'Karazhan - Phantom Stagehand (3) | The Opera Hall Patrols', 0, 0, @SGGUID+4, 0, 0),
+(@SGGUID+155, 'Karazhan - Ghostly Philanthropist (2) | Spectral Patron (4) | The Opera Hall Group 010', 0, 6, @SGGUID+4, 1, 0),
+(@SGGUID+156, 'Karazhan - Ghostly Philanthropist (2) | Spectral Patron (4) | The Opera Hall Group 011', 0, 6, @SGGUID+4, 1, 0),
+(@SGGUID+157, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 001', 0, 3, @SGGUID+4, 1, 0),
+(@SGGUID+158, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Group 012', 0, 3, @SGGUID+4, 0, 0), -- 4 spawns - 3 active
+(@SGGUID+159, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Group 013', 0, 3, @SGGUID+4, 0, 0), -- 4 spawns - 3 active
+(@SGGUID+160, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Group 014', 0, 3, @SGGUID+4, 0, 0), -- 4 spawns - 3 active
+(@SGGUID+161, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Group 015', 0, 3, @SGGUID+4, 0, 0), -- 4 spawns - 3 active
+(@SGGUID+162, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 002', 0, 3, @SGGUID+4, 1, 0),
 -- The Broken Stair -
 -- All 'Ghosts' can either be a Ghostly Haunt or Trapped Soul - all of them are linked to 'The Curator'
 -- 10 spawns putting all of them into one group with flags 0
-(@SGGUID+163, 'Karazhan - Ghostly Haunt | Trapped Soul | The Broken Stair Group 001', 0, 0, @SGGUID+5, 0),
+(@SGGUID+163, 'Karazhan - Ghostly Haunt | Trapped Soul | The Broken Stair Group 001', 0, 0, @SGGUID+5, 0, 0),
 -- The Menagerie
-(@SGGUID+164, 'Karazhan - Arcane Watchman (2) | The Menagerie Group 001', 0, 2, @SGGUID+5, 1),
-(@SGGUID+165, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 002', 0, 6, @SGGUID+5, 1),
-(@SGGUID+166, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 003', 0, 6, @SGGUID+5, 1),
-(@SGGUID+167, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 004', 0, 6, @SGGUID+5, 1),
-(@SGGUID+168, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 005', 0, 6, @SGGUID+5, 1),
-(@SGGUID+169, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 006', 0, 6, @SGGUID+5, 1),
-(@SGGUID+170, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 007', 0, 6, @SGGUID+5, 1),
+(@SGGUID+164, 'Karazhan - Arcane Watchman (2) | The Menagerie Group 001', 0, 2, @SGGUID+5, 1, 0),
+(@SGGUID+165, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 002', 0, 6, @SGGUID+5, 1, 0),
+(@SGGUID+166, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 003', 0, 6, @SGGUID+5, 1, 0),
+(@SGGUID+167, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 004', 0, 6, @SGGUID+5, 1, 0),
+(@SGGUID+168, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 005', 0, 6, @SGGUID+5, 1, 0),
+(@SGGUID+169, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 006', 0, 6, @SGGUID+5, 1, 0),
+(@SGGUID+170, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 007', 0, 6, @SGGUID+5, 1, 0),
 -- The Guardian's Library
-(@SGGUID+171, 'Karazhan - Arcane Watchman (2) | Guardian\'s Library Group 001', 0, 2, @SGGUID+6, 1),
-(@SGGUID+172, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 002', 0, 3, @SGGUID+6, 1),
-(@SGGUID+173, 'Karazhan - Mana Feeder (3) | Chaotic Sentience (1) | Guardian\'s Library Group 003', 0, 4, @SGGUID+6, 1),
-(@SGGUID+174, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 004', 0, 3, @SGGUID+6, 1),
-(@SGGUID+175, 'Karazhan - Mana Feeder (3) | Chaotic Sentience (1) | Guardian\'s Library Group 005', 0, 4, @SGGUID+6, 1),
-(@SGGUID+176, 'Karazhan - Mana Feeder (3) | Chaotic Sentience (1) | Guardian\'s Library Group 006', 0, 4, @SGGUID+6, 1),
-(@SGGUID+177, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 007', 0, 3, @SGGUID+6, 1),
-(@SGGUID+178, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 008', 0, 3, @SGGUID+6, 1),
-(@SGGUID+179, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 009', 0, 3, @SGGUID+6, 1),
-(@SGGUID+180, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 010', 0, 3, @SGGUID+6, 1),
-(@SGGUID+181, 'Karazhan - Mana Feeder (3) | Chaotic Sentience (1) | Guardian\'s Library Group 011', 0, 4, @SGGUID+6, 1),
-(@SGGUID+182, 'Karazhan - Chaotic Sentience (1) | Guardian\'s Library Group 012', 0, 1, @SGGUID+6, 0),
+(@SGGUID+171, 'Karazhan - Arcane Watchman (2) | Guardian\'s Library Group 001', 0, 2, @SGGUID+6, 1, 0),
+(@SGGUID+172, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 002', 0, 3, @SGGUID+6, 1, 0),
+(@SGGUID+173, 'Karazhan - Mana Feeder (3) | Chaotic Sentience (1) | Guardian\'s Library Group 003', 0, 4, @SGGUID+6, 1, 0),
+(@SGGUID+174, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 004', 0, 3, @SGGUID+6, 1, 0),
+(@SGGUID+175, 'Karazhan - Mana Feeder (3) | Chaotic Sentience (1) | Guardian\'s Library Group 005', 0, 4, @SGGUID+6, 1, 0),
+(@SGGUID+176, 'Karazhan - Mana Feeder (3) | Chaotic Sentience (1) | Guardian\'s Library Group 006', 0, 4, @SGGUID+6, 1, 0),
+(@SGGUID+177, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 007', 0, 3, @SGGUID+6, 1, 0),
+(@SGGUID+178, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 008', 0, 3, @SGGUID+6, 1, 0),
+(@SGGUID+179, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 009', 0, 3, @SGGUID+6, 1, 0),
+(@SGGUID+180, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 010', 0, 3, @SGGUID+6, 1, 0),
+(@SGGUID+181, 'Karazhan - Mana Feeder (3) | Chaotic Sentience (1) | Guardian\'s Library Group 011', 0, 4, @SGGUID+6, 1, 0),
+(@SGGUID+182, 'Karazhan - Chaotic Sentience (1) | Guardian\'s Library Group 012', 0, 1, @SGGUID+6, 0, 0),
 -- 8 Solo Patrols - only using worldstate to prevent respawning when Shade of Aran is dead
-(@SGGUID+183, 'Karazhan - Arcane Protector (8) | Guardian\'s Library Patrols', 0, 8, @SGGUID+6, 0),
-(@SGGUID+184, 'Karazhan - Magical Horror (1) | Mana Warp (3) | Guardian\'s Library Group 013', 0, 4, @SGGUID+6, 1), -- pack standing in the middle
-(@SGGUID+185, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 014', 0, 4, @SGGUID+6, 1), -- pack standing right, rnd movement, after some time pathing together
-(@SGGUID+186, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 015', 0, 4, @SGGUID+6, 1), -- pack standing left, rnd movement, after some time pathing together
-(@SGGUID+187, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 016', 0, 4, @SGGUID+6, 1), -- pack standing in the back, rnd movement, after some time pathing together
+(@SGGUID+183, 'Karazhan - Arcane Protector (8) | Guardian\'s Library Patrols', 0, 8, @SGGUID+6, 0, 0),
+(@SGGUID+184, 'Karazhan - Magical Horror (1) | Mana Warp (3) | Guardian\'s Library Group 013', 0, 4, @SGGUID+6, 1, 0), -- pack standing in the middle
+(@SGGUID+185, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 014', 0, 4, @SGGUID+6, 1, 0), -- pack standing right, rnd movement, after some time pathing together
+(@SGGUID+186, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 015', 0, 4, @SGGUID+6, 1, 0), -- pack standing left, rnd movement, after some time pathing together
+(@SGGUID+187, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 016', 0, 4, @SGGUID+6, 1, 0), -- pack standing in the back, rnd movement, after some time pathing together
 -- 6 rnd moving patrols
-(@SGGUID+188, 'Karazhan - Spell Shade (4) | Guardian\'s Library Group 017', 0, 4, @SGGUID+6, 0),
-(@SGGUID+189, 'Karazhan - Spell Shade (4) | Guardian\'s Library Group 018', 0, 4, @SGGUID+6, 1),
+(@SGGUID+188, 'Karazhan - Spell Shade (4) | Guardian\'s Library Group 017', 0, 4, @SGGUID+6, 0, 0),
+(@SGGUID+189, 'Karazhan - Spell Shade (4) | Guardian\'s Library Group 018', 0, 4, @SGGUID+6, 1, 0),
 -- Imp Groups, linked to Terestian Illhoof
-(@SGGUID+190, 'Karazhan - Shadow Pillager (3) | Homunculus (3) | Guardian\'s Library Group 019', 0, 6, @SGGUID+7, 1),
-(@SGGUID+191, 'Karazhan - Homunculus (8) | Guardian\'s Library Group 020', 0, 8, @SGGUID+7, 1),
+(@SGGUID+190, 'Karazhan - Shadow Pillager (3) | Homunculus (3) | Guardian\'s Library Group 019', 0, 6, @SGGUID+7, 1, 0),
+(@SGGUID+191, 'Karazhan - Homunculus (8) | Guardian\'s Library Group 020', 0, 8, @SGGUID+7, 1, 0),
 -- Group before Shade of Aran
-(@SGGUID+192, 'Karazhan - Spell Shade (4) | Guardian\'s Library Group 021', 0, 8, @SGGUID+6, 1),
+(@SGGUID+192, 'Karazhan - Spell Shade (4) | Guardian\'s Library Group 021', 0, 8, @SGGUID+6, 1, 0),
 -- Groups are linked to Netherspite *confirmed on wotlk classic
-(@SGGUID+193, 'Karazhan - Spell Shade (3) | Sorcerous Shade (1) | Guardian\'s Library Group 022', 0, 4, @SGGUID+8, 1),
-(@SGGUID+194, 'Karazhan - Spell Shade (3) | Sorcerous Shade (1) | Guardian\'s Library Group 023', 0, 4, @SGGUID+8, 1),
-(@SGGUID+195, 'Karazhan - Spell Shade (3) | Sorcerous Shade (1) | Guardian\'s Library Group 024', 0, 4, @SGGUID+8, 1),
-(@SGGUID+196, 'Karazhan - Ethereal Thief (6) | Guardian\'s Library Group 025', 0, 6, @SGGUID+8, 0),
-(@SGGUID+197, 'Karazhan - Ethereal Thief | Ethereal Spellfilcher | Guardian\'s Library Group 026', 0, 0, @SGGUID+8, 0), -- 5 spawns using spawn_group_entry
+(@SGGUID+193, 'Karazhan - Spell Shade (3) | Sorcerous Shade (1) | Guardian\'s Library Group 022', 0, 4, @SGGUID+8, 1, 0),
+(@SGGUID+194, 'Karazhan - Spell Shade (3) | Sorcerous Shade (1) | Guardian\'s Library Group 023', 0, 4, @SGGUID+8, 1, 0),
+(@SGGUID+195, 'Karazhan - Spell Shade (3) | Sorcerous Shade (1) | Guardian\'s Library Group 024', 0, 4, @SGGUID+8, 1, 0),
+(@SGGUID+196, 'Karazhan - Ethereal Thief (6) | Guardian\'s Library Group 025', 0, 6, @SGGUID+8, 0, 0),
+(@SGGUID+197, 'Karazhan - Ethereal Thief | Ethereal Spellfilcher | Guardian\'s Library Group 026', 0, 0, @SGGUID+8, 0, 0), -- 5 spawns using spawn_group_entry
 -- Trash after Chess Event linked to Prince
-(@SGGUID+198, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 001', 0, 0, @SGGUID+9, 1),
-(@SGGUID+199, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 002', 0, 0, @SGGUID+9, 1),
-(@SGGUID+200, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 003', 0, 0, @SGGUID+9, 1),
-(@SGGUID+201, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 004', 0, 0, @SGGUID+9, 1),
-(@SGGUID+202, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 005', 0, 0, @SGGUID+9, 1),
-(@SGGUID+203, 'Karazhan - Greater Fleshbeast (4) | Medivh\'s Chambers Patrols', 0, 0, @SGGUID+9, 0);
+(@SGGUID+198, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 001', 0, 0, @SGGUID+9, 1, 0),
+(@SGGUID+199, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 002', 0, 0, @SGGUID+9, 1, 0),
+(@SGGUID+200, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 003', 0, 0, @SGGUID+9, 1, 0),
+(@SGGUID+201, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 004', 0, 0, @SGGUID+9, 1, 0),
+(@SGGUID+202, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 005', 0, 0, @SGGUID+9, 1, 0),
+(@SGGUID+203, 'Karazhan - Greater Fleshbeast (4) | Medivh\'s Chambers Patrols', 0, 0, @SGGUID+9, 0, 0);
 
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
@@ -3889,6 +3890,12 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+7, 42, 2336, 1, 0, 0, 0, 'Terestian Illhoof - Trash Respawn'),
 (@SGGUID+8, 42, 2865, 1, 0, 0, 0, 'Netherspite - Trash Respawn'),
 (@SGGUID+9, 42, 4807, 1, 0, 0, 0, 'Prince Malchezaar - Trash Respawn');
+
+
+-- StringIDs
+DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+17;
+INSERT INTO `string_id` (Id, Name) VALUES 
+(@STRINGID+1, 'KARAZHAN_MIDNIGHT');
 
 -- =========
 -- DBSCRIPTS
