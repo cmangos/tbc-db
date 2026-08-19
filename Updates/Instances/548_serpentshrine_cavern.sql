@@ -9,7 +9,7 @@ SET @CGUID := 5480000; -- creatures
 SET @OGUID := 5480000; -- gameobjects
 SET @PGUID := 48700; -- pools
 SET @SGGUID := 5480000; -- spawn_groups
-
+SET @RELAYID := 5480000; -- used for dbscripts
 -- =========
 -- CREATURES
 -- =========
@@ -318,18 +318,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+158, 1, 51.644, -333.03, 0.741714, 5.13904, 1000, 2126301),
 (@CGUID+158, 2, 51.644, -333.03, 0.741714, 5.13904, 0, 0),
 (@CGUID+158, 3, 42.8488, -308.956, 1.58653, 1.83289, 7000, 2126302),
-(@CGUID+159, 1, -51.333, -340.184, 0.824673, 1.46608, 1000, 2126301),
-(@CGUID+159, 2, -51.333, -340.184, 0.824673, 1.46608, 0, 0),
-(@CGUID+159, 3, -56.9158, -367.32, 1.58654, 100, 7000, 2126302),
-(@CGUID+160, 1, -26.5779, -376.689, 0.825803, 6.16101, 1000, 2126301),
-(@CGUID+160, 2, -26.5779, -376.689, 0.825803, 6.16101, 0, 0),
-(@CGUID+160, 3, -52.6689, -372.319, 1.58649, 100, 7000, 2126302),
-(@CGUID+161, 1, -33.319, -391.098, 0.825579, 5.39307, 1000, 2126301),
-(@CGUID+161, 2, -33.319, -391.098, 0.825579, 5.39307, 0, 0),
-(@CGUID+161, 3, -53.6642, -374.926, 1.58651, 100, 7000, 2126302),
-(@CGUID+162, 1, -46.3299, -400.239, 0.82536, 5.0091, 1000, 2126301),
-(@CGUID+162, 2, -46.3299, -400.239, 0.82536, 5.0091, 0, 0),
-(@CGUID+162, 3, -57.7352, -375.661, 1.58651, 100, 7000, 2126302),
 (@CGUID+163, 1, -87.4249, -473.787, 0.823709, 2.86234, 1000, 2126301),
 (@CGUID+163, 2, -87.4249, -473.787, 0.823709, 2.86234, 0, 0),
 (@CGUID+163, 3, -60.6005, -481.853, 1.58653, 100, 7000, 2126302),
@@ -1088,10 +1076,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+156, 21263, 548, 1, 17.6475, -283.172, 0.824995, 2.72271, 7200, 7200, 0, 2), -- Greyheart Technician
 (@CGUID+157, 21263, 548, 1, 61.458, -280.532, 0.825862, 0.802851, 7200, 7200, 0, 2), -- Greyheart Technician
 (@CGUID+158, 21263, 548, 1, 44.6756, -314.65, 1.0382, 1.91847, 7200, 7200, 0, 2), -- Greyheart Technician
-(@CGUID+159, 21263, 548, 1, -51.333, -340.184, 0.824673, 1.46608, 7200, 7200, 0, 2), -- Greyheart Technician
-(@CGUID+160, 21263, 548, 1, -26.5779, -376.689, 0.825803, 6.16101, 7200, 7200, 0, 2), -- Greyheart Technician
-(@CGUID+161, 21263, 548, 1, -33.319, -391.098, 0.825579, 5.39307, 7200, 7200, 0, 2), -- Greyheart Technician
-(@CGUID+162, 21263, 548, 1, -46.3299, -400.239, 0.82536, 5.0091, 7200, 7200, 0, 2), -- Greyheart Technician
+(@CGUID+159, 21263, 548, 1, -51.333, -340.184, 0.824673, 1.46608, 7200, 7200, 0, 0), -- Greyheart Technician
+(@CGUID+160, 21263, 548, 1, -26.5779, -376.689, 0.825803, 6.16101, 7200, 7200, 0, 0), -- Greyheart Technician
+(@CGUID+161, 21263, 548, 1, -33.319, -391.098, 0.825579, 5.39307, 7200, 7200, 0, 0), -- Greyheart Technician
+(@CGUID+162, 21263, 548, 1, -46.3299, -400.239, 0.82536, 5.0091, 7200, 7200, 0, 0), -- Greyheart Technician
 (@CGUID+163, 21263, 548, 1, -87.4249, -473.787, 0.823709, 2.86234, 7200, 7200, 0, 2), -- Greyheart Technician
 (@CGUID+164, 21263, 548, 1, -48.6206, -451.718, 0.8232, 1.16937, 7200, 7200, 0, 2), -- Greyheart Technician
 (@CGUID+165, 21263, 548, 1, -78.6161, -459.737, 0.824055, 2.58309, 7200, 7200, 0, 2), -- Greyheart Technician
@@ -1373,12 +1361,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2125301, 0, 36, 0, 0, 0, 21216, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Tainted Water Elemental - Face Hydross'),
 (2125301, 1000, 15, 36461, 0, 0, 21216, 50, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Tainted Water Elemental - Force Hydross to cast Purify Elemental'),
 (2125301, 2000, 44, 21260, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tainted Water Elemental - Change to Purified'),
-(2126301, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Greyheart Technician - Pause waypoints'),
-(2126301, 0, 1, 173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Greyheart Technician - STATE_WORK'),
--- (2126301,0,1,0,0,0,0,0,173,69,0,0,0,0,0,0,'Greyheart Technician - Random between STATE_WORK and STATE_USESTANDING'), -- STATE_USESTANDING doesn't work for Broken model creatures?
-(2126301, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Greyheart Technician - Run on'),
-(2126302, 1000, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Greyheart Technician - Bow'),
-(2126302, 4000, 1, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Greyheart Technician - Beg'),
 (2129801, 1000, 0, 0, 0, 0, 21299, 10, 0, 17713, 17711, 18145, 0, 0, 0, 0, 0, 'Coilfang Fathom-Witch - random say'),
 (2129801, 3000, 0, 0, 0, 0, 0, 0, 0, 18146, 18410, 0, 0, 0, 0, 0, 0, 'Coilfang Serpentguard - random response');
 
@@ -1490,6 +1472,73 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance) VALUES
 (10102,0,18894,0),
 (10102,0,18899,0),
 (10102,0,18896,0);
+
+
+-- New DBScripts
+-- RandomScripts
+DELETE FROM `dbscript_random_templates` WHERE `id` BETWEEN @RELAYID+1 AND @RELAYID+5;
+INSERT INTO dbscript_random_templates (id, type, target_id, chance) VALUES
+-- Vashj'ir Honor Guard - Random RP during Waypoints
+(@RELAYID+1, 1, @RELAYID+1, 0 ), -- Say RandomText
+(@RELAYID+1, 1, @RELAYID+2, 0 ), -- HomePosition RP
+(@RELAYID+1, 1, @RELAYID+3, 0 ), -- Talk with Friend
+-- Vashj'ir Honor Guard - RP 1 just Random SayText during Waypoints
+(@RELAYID+2, 0, 18878, 0), -- We must work faster.
+(@RELAYID+2, 0, 18879, 0), -- Our work is not yet complete.
+(@RELAYID+2, 0, 18880, 0), -- You should be honored to be doing Lady Vashj's bidding.
+(@RELAYID+2, 0, 18881, 0), -- Lady Vashj expects our work to be done soon.
+(@RELAYID+2, 0, 18882, 0), -- Maintain focus.
+(@RELAYID+2, 0, 18883, 0), -- Steady the pumps.
+(@RELAYID+2, 0, 18884, 0), -- Keep those pumps working.
+(@RELAYID+2, 0, 18885, 0), -- We're in the home stretch now.
+-- Vashj'ir Honor Guard - Random RP with Friend - random text 1
+(@RELAYID+3, 0, 18886, 0), -- Things are proceeding as planned.
+(@RELAYID+3, 0, 18888, 0), -- The pumps are working magnificently.
+(@RELAYID+3, 0, 18889, 0), -- Soon all of Draenor's water will be ours.
+(@RELAYID+3, 0, 18880, 0), -- The reservoir fills nicely.
+(@RELAYID+3, 0, 18890, 0), -- Purification seems to be ahead of schedule.
+(@RELAYID+3, 0, 18891, 0), -- We appear to be on target.
+(@RELAYID+3, 0, 18892, 0), -- If we can keep working at this rate, the Lady will be pleased.
+(@RELAYID+3, 0, 18893, 0), -- We will be at capacity soon enough.
+-- Vashj'ir Honor Guard - Random RP with Friend - random text 2 - coilfang shatterer/coilfang priestess answer
+(@RELAYID+4, 0, 18902, 0), -- My thoughts exactly.
+(@RELAYID+4, 0, 18903, 0), -- I couldn't agree more.
+(@RELAYID+4, 0, 18904, 0), -- It's as if you were reading my mind.
+(@RELAYID+4, 0, 18905, 0), -- You speak the truth.
+-- Vashj'ir Honor Guard - Random RP with Friend - random text 3
+(@RELAYID+5, 0, 18894, 0), -- Keep everyone working efficiently.
+(@RELAYID+5, 0, 18895, 0), -- Don't let the levels get too low.
+(@RELAYID+5, 0, 18896, 0), -- Keep ample pressure on the southern pump.
+(@RELAYID+5, 0, 18897, 0), -- Direct the flow from from the western bog.
+(@RELAYID+5, 0, 18898, 0), -- Open the purification valves and continue work.
+(@RELAYID+5, 0, 18899, 0), -- Make sure these Broken are thoroughly cleaned before touching the water.
+(@RELAYID+5, 0, 18900, 0), -- Keep regulating the main valve to ensure steady flow.
+(@RELAYID+5, 0, 18901, 0); -- Don't take your eyes off of these filthy Broken. I don't trust them.
+
+
+-- RelayScripts
+SET @RELAYID := 5480000; -- used for dbscripts
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+7;
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `condition_id`, `comments`) VALUES
+-- Vashj'ir Honor Guard - Random Text during Waypoints
+(@RELAYID+1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Emote Talk'),
+(@RELAYID+1, 0, 1, 0, @RELAYID+2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Say RandomText'),
+-- This is needed to setting Phase back to 1 
+(@RELAYID+1, 0, 2, 35, 4, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - SendAI A Event - self'),
+-- Vashj'ir Honor Guard - center RP
+(@RELAYID+2, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Pause Waypoints'),
+(@RELAYID+2, 0, 1, 3, @RELAYID+3, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Move to Homeposition'),
+-- Start ActionSet in CAI when at homeposition
+(@RELAYID+3, 0, 0, 35, 5, 0, 0, 21263, 35, 513, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Send AI Event A to Greyheart Technician'),
+(@RELAYID+3, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - SendAI Event B - self'),
+-- Greyheart Technician - Move to Honor Guard
+(@RELAYID+4, 0, 1, 37, 0, 0, 3, 21218, 35, 1, 2, @RELAYID+5, 0, 0, 0, 0, 0, 0, 0, 'SSC - Greyheart Technician - Move to Honor Guard'),
+-- Greyheart Technician reached Honor Guard SendAiEvent B to start own ActionSet
+(@RELAYID+5, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Greyheart Technician - SendAI B Event - self'),
+-- Greyheart Technician - Event Done move home and start work emote on reached position
+(@RELAYID+6, 0, 0, 3, @RELAYID+7, 2, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Move to Homeposition'),
+-- Reached Home
+(@RELAYID+7, 0, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Emote State');
 
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

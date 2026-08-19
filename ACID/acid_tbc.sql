@@ -28426,9 +28426,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hydross the Unstable (21216) - boss_hydross_the_unstable
 -- The Lurker Below (21217) - boss_lurker_below
 -- Vashj'ir Honor Guard 21218 - spell_list
-('2121805','21218','2','0','100','1024','50','0','0','0','0','0','11','38947','0','0','1','19891','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Enrage at 50% HP'),
-('2121806','21218','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Set Instance Data64 (SD2) on Generic Timer'),
-('2121807','21218','1','0','75','1','10000','60000','60000','60000','0','0','54','0','0','10027','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Random Say OOC'),
+('2121801','21218','2','0','100','1024','50','0','0','0','0','0','11','38947','0','0','1','19891','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Enrage at 50% HP'),
+-- To prevent Multiple RPs called OOC set Phase 1
+('2121802','21218','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Set Phase 1 on Spawn'),
+-- Only start RP if none is started yet (phase 1) and change phase to 0 to prevent another rp getting started
+('2121803','-5480043','1','1','100','1','2000','10000','2000','10000','0','0','53','5480002','0','0','22','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Start RandomScript Set Phase 0 (Phase 1)'),
+-- RP was just random text - set phase back to 1
+('2121804','-5480043','30','0','100','1','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Set Phase 1 on Receive Custom AI Event A'),
+-- First Action Set - started when NPC reached homeposition (center position rp with technicians)
+('2121805','-5480043','30','0','100','1','6','0','0','0','0','0','66','1','0','3','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Start ActionSet 1 on Receive Custom AI Event B'),
+('2121806','-5480043','43','0','100','0','1','0','5000','0','0','0','1','18910','0','0','5','1','0','0','0','0','0','0','Vashj''ir Honor Guard - ActionSet 1 Step 0 - Say Text and Emote OneShotTalk'),
+('2121807','-5480043','43','0','100','0','1','1','3000','0','0','0','1','18911','0','0','5','15','0','0','0','0','0','0','Vashj''ir Honor Guard - ActionSet 1 Step 1 - Say Text and Emote OneShotRoar'),
+('2121808','-5480043','43','0','100','0','1','2','5000','0','0','0','22','1','0','0','51','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Start ActionSet 1 Step 2 - Start Waypoints and Set Phase 1'),
 -- Coilfang Priestess 21220 - creature_spell_list
 ('2122001','21220','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Set Instace Data64 (SD2) on Generic Timer'),
 -- Coilfang Beast-Tamer 21221 - spell_list
@@ -28497,8 +28506,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2125301','21253','11','0','100','0','0','0','0','0','0','0','11','25035','0','0','0','0','0','0','0','0','0','0','Tainted Water Elemental - Cast Elemental Spawn-in on Spawn'),
 -- Purified Water Elemental (21260) - NSR
 -- Greyheart Technician 21263 - spell_list
-('2126302','21263','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - Set Instace Data64 (SD2) on Generic Timer'),
-('2126303','21263','30','0','100','1','5','21218','0','0','0','0','5','26','0','0','51','0','0','0','0','0','0','0','Greyheart Technician - Emote and Set Waypoint Movement on Receive Custom AI Event A'),
+-- Emote in Sniff is 69 - somehow tbc client doesnt show 69 for this creatures
+('2126301','21263','11','0','100','0','0','0','0','0','0','0','5','173','0','0','','0','0','0','0','0','0','0','Greyheart Technician - Set EmoteState on Spawn'),
+('2126302','21263','30','0','100','1','5','21218','0','0','0','0','53','5480004','0','0','5','0','0','0','0','0','0','0','Greyheart Technician - Start RelayScript Stop EmoteState on Receive Custom AI Event A'),
+('2126303','21263','30','0','100','1','6','0','0','0','0','0','66','1','0','3','0','0','0','0','0','0','0','0','Greyheart Technician - Start ActionSet 1 on Receive Custom AI Event B'),
+('2126304','21263','43','0','100','0','1','0','0','0','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - ActionSet 1 Step 0 - Emote OneShotBow'),
+('2126305','21263','43','0','100','0','1','1','3000','0','0','0','5','20','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - ActionSet 1 Step 1 - Emote OneShotBeg'),
+-- RelayScript to move to homeposition and start work emote again
+('2126306','21263','43','0','100','0','1','2','3000','0','0','0','53','5480006','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - ActionSet 1 Step 2 - RelayScript'),
 -- Coilfang Serpentguard 21298
 ('2129801','21298','4','0','100','0','0','0','0','0','0','0','11','38603','0','34','0','0','0','0','0','0','0','0','Coilfang Serpentguard - Cast Corrupt Devotion Aura on Aggro'),
 ('2129802','21298','0','0','100','1025','9000','18000','12000','18000','0','0','11','38599','0','0','0','0','0','0','0','0','0','0','Coilfang Serpentguard - Cast Spell Reflection'),
