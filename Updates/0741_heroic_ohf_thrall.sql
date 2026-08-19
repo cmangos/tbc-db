@@ -21,4 +21,5 @@ UPDATE `creature_template` SET `DamageMultiplier` = '10.0285' WHERE (`Entry` = '
 UPDATE `creature_template` SET `DamageMultiplier` = '9.77778' WHERE (`Entry` = '23185');
 UPDATE `creature_template` SET `DamageMultiplier` = '9.77778' WHERE (`Entry` = '23186');
 
-
+-- get rid of update_template as we handle this with 33133 spell dummy
+DELETE FROM dbscripts_on_creature_movement WHERE ID IN (1809201, 1809301, 1809401) AND command = 44;
