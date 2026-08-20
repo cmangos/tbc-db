@@ -28429,17 +28429,26 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2121801','21218','2','0','100','1024','50','0','0','0','0','0','11','38947','0','0','1','19891','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Enrage at 50% HP'),
 -- To prevent Multiple RPs called OOC set Phase 1
 ('2121802','21218','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Set Phase 1 on Spawn'),
--- Only start RP if none is started yet (phase 1) and change phase to 0 to prevent another rp getting started
-('2121803','-5480043','1','1','100','1','2000','10000','2000','10000','0','0','53','5480002','0','0','22','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Start RandomScript Set Phase 0 (Phase 1)'),
--- RP was just random text - set phase back to 1
-('2121804','-5480043','30','0','100','1','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Set Phase 1 on Receive Custom AI Event A'),
+-- Only start RP if none is started yet (phase 1) to prevent another rp getting started
+('2121803','21218','1','1','100','1','2000','2000','10000','10000','0','0','53','-5480001','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Start RandomScript (Phase 1)'),
+-- RP startet set Phase 1
+('2121804','21218','30','0','100','1','5','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Set Phase 0 on Receive Custom AI Event A'),
 -- First Action Set - started when NPC reached homeposition (center position rp with technicians)
-('2121805','-5480043','30','0','100','1','6','0','0','0','0','0','66','1','0','3','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Start ActionSet 1 on Receive Custom AI Event B'),
-('2121806','-5480043','43','0','100','0','1','0','5000','0','0','0','1','18910','0','0','5','1','0','0','0','0','0','0','Vashj''ir Honor Guard - ActionSet 1 Step 0 - Say Text and Emote OneShotTalk'),
-('2121807','-5480043','43','0','100','0','1','1','3000','0','0','0','1','18911','0','0','5','15','0','0','0','0','0','0','Vashj''ir Honor Guard - ActionSet 1 Step 1 - Say Text and Emote OneShotRoar'),
-('2121808','-5480043','43','0','100','0','1','2','5000','0','0','0','22','1','0','0','51','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Start ActionSet 1 Step 2 - Start Waypoints and Set Phase 1'),
+('2121805','21218','30','0','100','1','6','0','0','0','0','0','66','1','0','2','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Start ActionSet 1 on Receive Custom AI Event B'),
+('2121806','21218','43','0','100','1','1','0','5000','0','0','0','1','18910','0','0','5','1','0','0','0','0','0','0','Vashj''ir Honor Guard - ActionSet 1 Step 0 - Say Text and Emote OneShotTalk'),
+('2121807','21218','43','0','100','1','1','1','3000','0','0','0','1','18911','0','0','5','15','0','0','0','0','0','0','Vashj''ir Honor Guard - ActionSet 1 Step 1 - Say Text and Emote OneShotRoar'),
+('2121808','21218','43','0','100','1','1','2','5000','0','0','0','22','1','0','0','51','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Start ActionSet 1 Step 2 - Start Waypoints and Set Phase 1'),
+-- 2nd Action Set - started when NPC reached StringID
+('2121809','21218','30','0','100','1','8','0','0','0','0','0','66','2','0','2','22','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Start ActionSet 2 and Set Phase 0 on Receive Custom AI Event C'),
+('2121810','21218','43','0','100','1','2','0','3000','0','0','0','54','0','0','5480003','5','1','0','0','0','0','0','0','Vashj''ir Honor Guard - ActionSet 2 Step 0 - Say RandomText and Emote OneShotTalk'),
+('2121811','21218','43','0','100','1','2','1','2000','0','0','0','54','0','0','5480005','5','1','0','0','0','0','0','0','Vashj''ir Honor Guard - ActionSet 2 Step 1 - Say RandomText and Emote OneShotTalk'),
+('2121812','21218','43','0','100','1','2','2','3000','0','0','0','22','1','0','0','51','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Start ActionSet 2 Step 2 - Start Waypoints and Set Phase 1'),
 -- Coilfang Priestess 21220 - creature_spell_list
-('2122001','21220','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Set Instace Data64 (SD2) on Generic Timer'),
+-- Event B starts the ActionStep
+('2122001','21220','30','0','100','1','6','0','0','0','0','0','66','1','0','2','59','10','0','0','0','0','0','0','Coilfang Priestess - Start ActionScript set Facing on Receive Custom AI Event B'),
+('2122002','21220','43','0','100','1','1','0','0','0','0','0','1','18909','0','0','5','1','0','0','0','0','0','0','Coilfang Priestess - ActionSet 1 Step 0 - Say Text and Emote OneShotTalk'),
+('2122003','21220','43','0','100','1','1','1','3000','0','0','0','54','0','0','5480004','5','1','0','0','0','0','0','0','Coilfang Priestess - ActionSet 1 Step 1 - Say RandomText and Emote OneShotTalk'),
+('2122004','21220','43','0','100','1','1','2','6000','0','0','0','59','0','1','0','0','0','0','0','0','0','0','0','Coilfang Priestess - ActionSet 1 Step 2 - Reset Facing'),
 -- Coilfang Beast-Tamer 21221 - spell_list
 -- Tidewalker Depth-Seer 21224
 ('2122401','21224','14','0','100','1025','10000','40','15000','17000','0','0','11','38657','12','0','0','0','0','0','0','0','0','0','Tidewalker Depth-Seer - Cast Rejuvenation on Friendly Missing HP'),
@@ -28506,14 +28515,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2125301','21253','11','0','100','0','0','0','0','0','0','0','11','25035','0','0','0','0','0','0','0','0','0','0','Tainted Water Elemental - Cast Elemental Spawn-in on Spawn'),
 -- Purified Water Elemental (21260) - NSR
 -- Greyheart Technician 21263 - spell_list
--- Emote in Sniff is 69 - somehow tbc client doesnt show 69 for this creatures
-('2126301','21263','11','0','100','0','0','0','0','0','0','0','5','173','0','0','','0','0','0','0','0','0','0','Greyheart Technician - Set EmoteState on Spawn'),
-('2126302','21263','30','0','100','1','5','21218','0','0','0','0','53','5480004','0','0','5','0','0','0','0','0','0','0','Greyheart Technician - Start RelayScript Stop EmoteState on Receive Custom AI Event A'),
-('2126303','21263','30','0','100','1','6','0','0','0','0','0','66','1','0','3','0','0','0','0','0','0','0','0','Greyheart Technician - Start ActionSet 1 on Receive Custom AI Event B'),
-('2126304','21263','43','0','100','0','1','0','0','0','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - ActionSet 1 Step 0 - Emote OneShotBow'),
-('2126305','21263','43','0','100','0','1','1','3000','0','0','0','5','20','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - ActionSet 1 Step 1 - Emote OneShotBeg'),
+-- On spawn start random emote and then ooc switch emote
+('2126301','21263','11','0','100','0','0','0','0','0','0','0','10','69','173','0','','0','0','0','0','0','0','0','Greyheart Technician - Set EmoteState and Phase 1 on Spawn'),
+('2126302','21263','1','5','100','1','0','0','0','0','0','0','5','69','0','0','','22','2','0','0','0','0','0','Greyheart Technician - Change EmoteState and Phase 2 OOC (Phase 1)'),
+('2126303','21263','1','3','100','1','0','0','0','0','0','0','5','173','0','0','','22','1','0','0','0','0','0','Greyheart Technician - Change EmoteState and Phase 1 OOC (Phase 2)'),
+
+('2126304','21263','30','0','100','1','5','21218','0','0','0','0','53','5480006','0','0','5','0','0','0','0','0','0','0','Greyheart Technician - Start RelayScript Stop EmoteState on Receive Custom AI Event A'),
+('2126305','21263','30','0','100','1','6','0','0','0','0','0','66','1','0','3','0','0','0','0','0','0','0','0','Greyheart Technician - Start ActionSet 1 on Receive Custom AI Event B'),
+('2126306','21263','43','0','100','0','1','0','0','0','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - ActionSet 1 Step 0 - Emote OneShotBow'),
+('2126307','21263','43','0','100','0','1','1','3000','0','0','0','5','20','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - ActionSet 1 Step 1 - Emote OneShotBeg'),
 -- RelayScript to move to homeposition and start work emote again
-('2126306','21263','43','0','100','0','1','2','3000','0','0','0','53','5480006','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - ActionSet 1 Step 2 - RelayScript'),
+('2126308','21263','43','0','100','0','1','2','3000','0','0','0','53','5480008','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - ActionSet 1 Step 2 - RelayScript'),
 -- Coilfang Serpentguard 21298
 ('2129801','21298','4','0','100','0','0','0','0','0','0','0','11','38603','0','34','0','0','0','0','0','0','0','0','Coilfang Serpentguard - Cast Corrupt Devotion Aura on Aggro'),
 ('2129802','21298','0','0','100','1025','9000','18000','12000','18000','0','0','11','38599','0','0','0','0','0','0','0','0','0','0','Coilfang Serpentguard - Cast Spell Reflection'),
@@ -28523,7 +28535,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2129902','21299','0','0','100','1025','8200','13700','25000','30000','0','0','11','38627','0','0','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Cast Shadow Nova'),
 ('2129903','21299','0','0','100','1025','13200','18700','22900','32100','0','0','11','38626','9','0','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Cast Domination'),
 -- Coilfang Shatterer 21301 - spell_list
-('2130102','21301','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coilfang Shatterer - Set Instance Data64 (SD2) on Generic Timer'),
+-- ------------
+-- On EventA stop waypoints and start timer to prevent getting stucked
+('2130101','21301','30','0','100','1','5','0','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Coilfang Shatterer - Set Phase 1 and Stop Waypoints on Receive Custom AI Event A'),
+-- Nothing happend for 10 seconds go back to movement
+('2130102','21301','1','1','100','1','10000','10000','10000','10000','0','0','22','0','0','0','51','0','0','0','0','0','0','0','Coilfang Shatterer - Set Phase 0 and Start Waypoints OOC Timer (Phase 1)'),
+-- Event B starts the ActionStep
+('2130103','21301','30','0','100','1','6','0','0','0','0','0','66','1','0','2','59','10','0','0','22','0','0','0','Coilfang Shatterer - Start ActionScript set phase 0 on Receive Custom AI Event B'),
+('2130104','21301','43','0','100','1','1','0','0','0','0','0','1','18909','0','0','5','1','0','0','0','0','0','0','Coilfang Shatterer - ActionSet 1 Step 0 - Say Text and Emote OneShotTalk'),
+('2130105','21301','43','0','100','1','1','1','3000','0','0','0','54','0','0','5480004','5','1','0','0','0','0','0','0','Coilfang Shatterer - ActionSet 1 Step 1 - Say RandomText and Emote OneShotTalk'),
+('2130106','21301','43','0','100','1','1','2','6000','0','0','0','51','0','0','0','0','0','0','0','0','0','0','0','Coilfang Shatterer - ActionSet 1 Step 2 - Start Waypoints'),
+-- ------
 -- Coilfang Hate-Screamer 21339 - spell_list
 -- Coilfang Frenzy 21508
 ('2150801','21508','11','0','100','0','0','0','0','0','0','0','55','11','0','0','0','0','0','0','0','0','0','0','Coilfang Frenzy - Attack Spawner on Spawn'),

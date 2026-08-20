@@ -10,6 +10,7 @@ SET @OGUID := 5480000; -- gameobjects
 SET @PGUID := 48700; -- pools
 SET @SGGUID := 5480000; -- spawn_groups
 SET @RELAYID := 5480000; -- used for dbscripts
+SET @STRINGID := 5480000; -- used for StringID
 -- =========
 -- CREATURES
 -- =========
@@ -1209,6 +1210,21 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+289, 22820, 548, 1, 451.099, -544.984, -7.46327, 0.174533, 604800, 604800, 0, 0), -- Seer Olum
 (@CGUID+290, 21212, 548, 1, 29.99015, -922.4088, 42.98521, 1.396263, 604800, 604800, 0, 0); -- Lady Vashj
 
+-- Honor Guard Conversation Partners
+
+
+DELETE FROM creature_spawn_data WHERE Id = 2121801;
+INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
+-- (@CGUID+50, '2121801'),
+-- (@CGUID+51, '2121801'),
+(@CGUID+203, '2121801'),
+(@CGUID+204, '2121801');
+
+
+DELETE FROM creature_spawn_data_template WHERE Entry = 2121801;
+INSERT INTO `creature_spawn_data_template` (`Entry`, `StringId`, `Name`) VALUES 
+('2121801', @STRINGID+1, 'SSC - Platforms');
+
 -- Greyheart Nether-Mage/Tidecaller - 1 hammer
 REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`, `Name`) VALUES (2122901, 2122901, 'Greyheart Tidecaller (21229) | Greyheart Nether-Mage (21230) - RelayScript (2122901)');
 REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 2122901 FROM `creature` WHERE `guid` IN (@CGUID+93,@CGUID+95,@CGUID+108,@CGUID+110,@CGUID+119);
@@ -1343,6 +1359,12 @@ DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
 (@SGGUID+1, 42, 2853, 1, 0, 0, 0, 'Hydross the Unstable - Trash Respawn'),
 (@SGGUID+2, 42, 2855, 1, 0, 0, 0, 'The Lurker Below - Trash Respawn');
+
+
+-- StringIDs
+DELETE FROM string_id WHERE Id = @STRINGID+1;
+INSERT INTO `string_id` (Id, Name) VALUES 
+(@STRINGID+1, 'SSC_HONORGUARD_CONVERSATION_PARTNER');
 
 -- =========
 -- DBSCRIPTS
@@ -1479,9 +1501,10 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance) VALUES
 DELETE FROM `dbscript_random_templates` WHERE `id` BETWEEN @RELAYID+1 AND @RELAYID+5;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance) VALUES
 -- Vashj'ir Honor Guard - Random RP during Waypoints
-(@RELAYID+1, 1, @RELAYID+1, 0 ), -- Say RandomText
-(@RELAYID+1, 1, @RELAYID+2, 0 ), -- HomePosition RP
-(@RELAYID+1, 1, @RELAYID+3, 0 ), -- Talk with Friend
+(@RELAYID+1, 1, @RELAYID+1, 0 ), -- Say RandomText + Emote
+(@RELAYID+1, 1, @RELAYID+2, 0 ), -- RP with Greyheart Technician
+(@RELAYID+1, 1, @RELAYID+3, 0 ), -- RP with Coilfang Shatterer
+(@RELAYID+1, 1, @RELAYID+4, 0 ), -- RP with Coilfang Priestess
 -- Vashj'ir Honor Guard - RP 1 just Random SayText during Waypoints
 (@RELAYID+2, 0, 18878, 0), -- We must work faster.
 (@RELAYID+2, 0, 18879, 0), -- Our work is not yet complete.
@@ -1518,27 +1541,37 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance) VALUES
 
 -- RelayScripts
 SET @RELAYID := 5480000; -- used for dbscripts
+SET @STRINGID := 5480000; -- used for StringID
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+7;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `condition_id`, `comments`) VALUES
--- Vashj'ir Honor Guard - Random Text during Waypoints
-(@RELAYID+1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Emote Talk'),
-(@RELAYID+1, 0, 1, 0, @RELAYID+2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Say RandomText'),
--- This is needed to setting Phase back to 1 
-(@RELAYID+1, 0, 2, 35, 4, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - SendAI A Event - self'),
--- Vashj'ir Honor Guard - center RP
-(@RELAYID+2, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Pause Waypoints'),
-(@RELAYID+2, 0, 1, 3, @RELAYID+3, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Move to Homeposition'),
--- Start ActionSet in CAI when at homeposition
-(@RELAYID+3, 0, 0, 35, 5, 0, 0, 21263, 35, 513, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Send AI Event A to Greyheart Technician'),
-(@RELAYID+3, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - SendAI Event B - self'),
+-- Vashj'ir Honor Guard - 3 different Sets of RP
+-- Vashj'ir Honor Guard - Set 1 - Random Text+Emote during walk
+(@RELAYID+1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - Emote OneShotTalk'),
+(@RELAYID+1, 0, 1, 0, @RELAYID+2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - Say RandomText'),
+-- Vashj'ir Honor Guard - Set 2 Moving to middle calling all Greyheart Technician in range
+(@RELAYID+2, 0, 0, 35, 4, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - SendAIEvent A - self'), -- Event Started set Phase 1
+(@RELAYID+2, 0, 1, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - Pause Waypoints'),
+(@RELAYID+2, 0, 2, 3, @RELAYID+4, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - Move to Homeposition'),
+-- Vashj'ir Honor Guard - Set 3 - RP with Coilfang Shatterer/Coilfang Priestess
+(@RELAYID+3, 0, 0, 31, 0, 20, 0, @STRINGID+1, 20, 2048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - search for SringID - terminate if not found'),
+(@RELAYID+3, 1, 1, 35, 4, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - SendAIEvent A - self'), -- Event Started set Phase 1
+(@RELAYID+3, 1, 2, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - Pause Waypoints'),
+(@RELAYID+3, 1, 3, 35, 5, 0, 0, @STRINGID+1, 20, 2049, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - SendAIEvent A to StringID'), -- Coilfang Shatterer will stop waypoints when getting EventAI A
+(@RELAYID+3, 1, 4, 37, 0, 0, 3, @STRINGID+1, 20, 2050, 0, @RELAYID+5, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - Move to StringID'),
+-- Vashj'ir Honor Guard - Start ActionSet in CAI when Homeposition reached
+(@RELAYID+4, 0, 0, 35, 5, 0, 0, 21263, 35, 513, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - SendAIEvent A to Greyheart Technician'),
+(@RELAYID+4, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - SendAIEvent B - self'),
+-- Vashj'ir Honor Guard - Start ActionSet in CAI when reached StringID
+(@RELAYID+5, 0, 0, 35, 6, 0, 0, @STRINGID+1, 5, 2049, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - SendAIEvent B to StringID'), -- Coilfang Shatterer / Coilfang Priestess will start their action set
+(@RELAYID+5, 0, 1, 35, 8, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Vashj\'ir Honor Guard - SendAIEvent C - self'), -- Starting own action set
 -- Greyheart Technician - Move to Honor Guard
-(@RELAYID+4, 0, 1, 37, 0, 0, 3, 21218, 35, 1, 2, @RELAYID+5, 0, 0, 0, 0, 0, 0, 0, 'SSC - Greyheart Technician - Move to Honor Guard'),
+(@RELAYID+6, 0, 1, 37, 0, 0, 3, 21218, 35, 1, 2, @RELAYID+7, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Greyheart Technician - Move to Vashj\'ir Honor Guard'),
 -- Greyheart Technician reached Honor Guard SendAiEvent B to start own ActionSet
-(@RELAYID+5, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Greyheart Technician - SendAI B Event - self'),
+(@RELAYID+7, 0, 1, 35, 6, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Greyheart Technician - SendAIEvent B - self'),
 -- Greyheart Technician - Event Done move home and start work emote on reached position
-(@RELAYID+6, 0, 0, 3, @RELAYID+7, 2, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Move to Homeposition'),
--- Reached Home
-(@RELAYID+7, 0, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'SSC - Honor Guard - Emote State');
+(@RELAYID+8, 0, 0, 3, @RELAYID+7, 2, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Greyheart Technician - Move to Homeposition'),
+-- Greyheart Technician - Reached Home
+(@RELAYID+9, 0, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Serpentshrine Cavern - Greyheart Technician - Emote State');
 
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
