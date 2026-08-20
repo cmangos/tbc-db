@@ -12,3 +12,11 @@ UPDATE `creature_template` SET `DamageMultiplier` = '9.77778' WHERE (`Entry` = '
 
 -- get rid of update_template as we handle this with 33133 spell dummy
 DELETE FROM dbscripts_on_creature_movement WHERE ID IN (1809201, 1809301, 1809401) AND command = 44;
+
+-- Increase delay of dbscript to account for cast on arrival of final waypoint; first wave attacks 13 seconds after stopping
+UPDATE `dbscripts_on_creature_movement` SET `delay` = '12000' WHERE `id` = '1809401' AND `command` = '48';
+UPDATE `dbscripts_on_creature_movement` SET `delay` = '12000' WHERE `id` = '1809301' AND `command` = '48';
+UPDATE `dbscripts_on_creature_movement` SET `delay` = '12000' WHERE `id` = '1809201' AND `command` = '48';
+UPDATE `dbscripts_on_creature_movement` SET `delay` = '13000' WHERE `id` = '1809401' AND `command` = '26';
+UPDATE `dbscripts_on_creature_movement` SET `delay` = '13000' WHERE `id` = '1809301' AND `command` = '26';
+UPDATE `dbscripts_on_creature_movement` SET `delay` = '13000' WHERE `id` = '1809201' AND `command` = '26';
