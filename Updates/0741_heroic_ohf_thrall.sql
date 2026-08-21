@@ -2,6 +2,8 @@
 -- Appears it would be closer to 700-900 against Epoch Hunter, this is 330-850 as variance is unknown
 UPDATE `creature_template` SET `DamageMultiplier` = '4.00578' WHERE (`Entry` = '20548');
 
+-- TODO: Lieutenant Drake Heroic Damage is too low, hitting under 1.5k mortal strike on tier 4 tank, I suggest 3x multiplier from current 12.09, judging from what we have now to 2.4.3 video showing 4.5k mortal strike on tier 4 paladin
+
 -- Heroic summoned variants of Tarren Mill mobs were doing much less damage than normal mode and regular heroic patrol versions; make them consistent damage with regular variant
 UPDATE `creature_template` SET `DamageMultiplier` = '8.61135' WHERE (`Entry` = '23181');
 UPDATE `creature_template` SET `DamageMultiplier` = '8.61135' WHERE (`Entry` = '23182');
