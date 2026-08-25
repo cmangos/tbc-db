@@ -388,7 +388,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+339,2,299.4695,-76.63259,1.9365374,100,0,0),
 (@CGUID+339,3,291.05557,-90.919136,1.9129256,100,0,0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (16593, 16807, 16700, 17083, 17462, 17693);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (16593, 16594, 16807, 16700, 17083, 17462, 17621, 17622, 17623, 17693);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Sleeping Npcs
 (16593, 1, 1, 43.5588, 265.281, -10.7783, 1.658063, 1, 5),
