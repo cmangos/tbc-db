@@ -28430,7 +28430,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- To prevent Multiple RPs called OOC set Phase 1
 ('2121802','21218','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Set Phase 1 on Spawn'),
 -- Only start RP if none is started yet (phase 1) to prevent another rp getting started
-('2121803','21218','1','1','100','1','10000','10000','20000','20000','0','0','53','5480002','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Start RandomScript (Phase 1)'),
+('2121803','21218','1','1','100','1','10000','10000','20000','20000','0','0','53','5480003','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Start RandomScript (Phase 1)'),
 -- RP startet set Phase 1
 ('2121804','21218','30','0','100','1','5','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Set Phase 0 on Receive Custom AI Event A'),
 -- First Action Set - started when NPC reached homeposition (center position rp with technicians)

@@ -1195,7 +1195,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- The Lurker Below - Trash
 -- Vashj'ir Honor Guard, Coilfang Shatterer (2) - Coilfang Priestess (2) - Greyheart Technician (3)
 -- There is 1 Greyheart Technician on the Platform not linked to this group
-(@SGGUID+6, 'Serpentshrine Cavern - Group 004 - Platform 1', 0, 8, @SGGUID+2, 3, 0),
+(@SGGUID+6, 'Serpentshrine Cavern - Group 004 - Platform 1', 0, 8, @SGGUID+2, 1, 0),
 -- Boss respawn handling for solo Greyheart Technician
 (@SGGUID+7, 'Serpentshrine Cavern - Greyheart Technician - Platform 1', 0, 1, @SGGUID+2, 0, 0),
 -- Vashj'ir Honor Guard, Coilfang Shatterer (2) - Coilfang Priestess (2) - Greyheart Technician (4)
