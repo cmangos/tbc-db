@@ -41,18 +41,18 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+43, 10, -66.54419, -371.83008, 1.5864933, 100, 0, 0),
 (@CGUID+43, 11, -65.511696, -366.97833, 1.58649331, 100, 0, 0),
 (@CGUID+43, 12, -62.409973, -363.24777, 1.5864933, 100, 0, 0),
-(@CGUID+44, 1, -52.4339, -491.187, 1.58655, 100, 0, 2121807),
-(@CGUID+44, 2, -48.4612, -487.032, 1.58655, 100, 0, 0),
-(@CGUID+44, 3, -47.3638, -482.815, 1.58655, 100, 0, 2121807),
-(@CGUID+44, 4, -48.812, -477.822, 1.58655, 100, 0, 2121806),
-(@CGUID+44, 5, -52.2993, -474.365, 1.58655, 100, 0, 2121806),
-(@CGUID+44, 6, -56.9205, -473.117, 1.58655, 100, 0, 2121808),
-(@CGUID+44, 7, -61.5747, -474.302, 1.58655, 100, 0, 0),
-(@CGUID+44, 8, -65.0446, -478.092, 1.58655, 100, 0, 0),
-(@CGUID+44, 9, -66.3798, -482.712, 1.58655, 100, 0, 2121806),
-(@CGUID+44, 10, -65.3944, -487.29, 1.58655, 100, 0, 2121808),
-(@CGUID+44, 11, -61.7429, -491.062, 1.58655, 100, 0, 2121806),
-(@CGUID+44, 12, -56.8779, -492.298, 1.58654, 100, 0, 2121806),
+(@CGUID+44, 1, -56.670326, -491.75327, 1.5864933, 100, 0, 0),
+(@CGUID+44, 2, -61.20656, -490.8588, 1.5864933, 100, 0, 0),
+(@CGUID+44, 3, -64.49001, -487.4668, 1.5864933, 100, 0, 0),
+(@CGUID+44, 4, -65.1697, -483.00314, 1.5864933, 100, 0, 0),
+(@CGUID+44, 5, -64.1514, -478.39053, 1.5864933, 100, 0, 0),
+(@CGUID+44, 6, -61.007786, -475.54514, 1.5864933, 100, 0, 0),
+(@CGUID+44, 7, -57.01871, -473.8506, 1.5864933, 100, 0, 0),
+(@CGUID+44, 8, -52.735817, -475.25793, 1.5864933, 100, 0, 0),
+(@CGUID+44, 9, -48.937927, -478.29044, 1.5864933, 100, 0, 0),
+(@CGUID+44, 10, -47.84635, -482.8627, 1.5864933, 100, 0, 0),
+(@CGUID+44, 11, -48.9969, -487.53284, 1.5864933, 100, 0, 0),
+(@CGUID+44, 12, -52.198235, -490.69196, 1.5864933, 100, 0, 0),
 (@CGUID+45, 1, 137.17047, -345.40033, 1.5864933, 100, 0, 0),
 (@CGUID+45, 2, 141.65688, -344.1078, 1.5864933, 100, 0, 0),
 (@CGUID+45, 3, 146.34543, -345.24225, 1.5864933, 100, 0, 0),
@@ -392,14 +392,12 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+204, 1, -66.2682, -390.667, 0.7613164, 100, 0, 0),
 (@CGUID+204, 2, -55.385273, -391.62332, 0.7604899, 100, 0, 0),
 (@CGUID+204, 3, -45.85048, -388.25064, 0.7635734, 100, 0, 0),
-(@CGUID+205, 1, -67.3108, -463.924, 0.760803, 100, 0, 0),
-(@CGUID+205, 2, -56.7574, -460.999, 0.760338, 100, 0, 0),
-(@CGUID+205, 3, -46.4616, -464.688, 0.762229, 100, 0, 0),
-(@CGUID+205, 4, -56.7982, -459.909, 0.75935, 100, 0, 0),
-(@CGUID+206, 1, -76.1053, -493.036, 0.761507, 100, 0, 0),
-(@CGUID+206, 2, -67.4938, -499.978, 0.76244, 100, 0, 0),
-(@CGUID+206, 3, -75.874, -493.342, 0.761045, 100, 0, 0),
-(@CGUID+206, 4, -78.368, -481.391, 0.759631, 100, 0, 0),
+(@CGUID+205, 1, -44.559875, -462.7717, 0.75798285, 100, 0, 0),
+(@CGUID+205, 2, -56.109814, -459.61774, 0.7587654, 100, 0, 0),
+(@CGUID+205, 3, -66.91323, -463.23758, 0.7606716,, 100, 0, 0),
+(@CGUID+206, 1, -68.46898, -502.21713, 0.75963044, 100, 0, 0),
+(@CGUID+206, 2, -76.489, -493.4667, 0.7602745, 100, 0, 0),
+(@CGUID+206, 3, -78.40147, -482.65717, 0.7617649, 100, 0, 0),
 (@CGUID+207, 1, 33.942554, -533.19305, 0.7596705, 100, 0, 0),
 (@CGUID+207, 2, 24.328913, -539.42645, 0.7598172, 100, 0, 0),
 (@CGUID+207, 3, 20.529978, -549.3595, 0.7656961, 100, 0, 0),
@@ -705,17 +703,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+181, @CGUID+40, 1024), -- Coilfang Serpentguard -> Leotheras the Blind
 (@CGUID+186, @CGUID+40, 1024), -- Coilfang Serpentguard -> Leotheras the Blind
 (@CGUID+275, @CGUID+40, 1024), -- Greyheart Spellbinder -> Leotheras the Blind
-
-(@CGUID+44, @CGUID+154, 1024), -- Vashj'ir Honor Guard -> World Trigger (Not Immune PC)
--- individual trash groups
-(@CGUID+54, @CGUID+44, 1167), -- Coilfang Priestess -> Vashj'ir Honor Guard
-(@CGUID+55, @CGUID+44, 1167), -- Coilfang Priestess -> Vashj'ir Honor Guard
-(@CGUID+163, @CGUID+44, 1167), -- Greyheart Technician -> Vashj'ir Honor Guard
-(@CGUID+164, @CGUID+44, 1167), -- Greyheart Technician -> Vashj'ir Honor Guard
-(@CGUID+165, @CGUID+44, 1167), -- Greyheart Technician -> Vashj'ir Honor Guard
-(@CGUID+166, @CGUID+44, 1167), -- Greyheart Technician -> Vashj'ir Honor Guard
-(@CGUID+205, @CGUID+44, 1167), -- Coilfang Shatterer -> Vashj'ir Honor Guard
-(@CGUID+206, @CGUID+44, 1167), -- Coilfang Shatterer -> Vashj'ir Honor Guard
 
 (@CGUID+67, @CGUID+63, 1679), -- Murloc Group 1
 (@CGUID+68, @CGUID+63, 1679), -- Murloc Group 1
@@ -1069,8 +1056,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+202, 21301, 548, 1, 42.6779, -323.763, 0.843758, 0.209976, 7200, 7200, 0, 4), -- Coilfang Shatterer
 (@CGUID+203, 21301, 548, 1, -58.6284, -350.516, 0.84253, 0.46868, 7200, 7200, 0, 4), -- Coilfang Shatterer
 (@CGUID+204, 21301, 548, 1, -74.5106, -383.18472, 0.84065, 5.54609, 7200, 7200, 0, 4), -- Coilfang Shatterer
-(@CGUID+205, 21301, 548, 1, -60.7019, -461.156, 0.761909, 3.4649, 7200, 7200, 0, 2), -- Coilfang Shatterer
-(@CGUID+206, 21301, 548, 1, -78.4015, -482.657, 0.761765, 4.8875, 7200, 7200, 0, 2), -- Coilfang Shatterer
+(@CGUID+205, 21301, 548, 1, -36.8277, -472.174, 0.8427, 2.25904, 7200, 7200, 0, 4), -- Coilfang Shatterer
+(@CGUID+206, 21301, 548, 1,  -56.8662, -505.403, 0.843122, 2.87364, 7200, 7200, 0, 4), -- Coilfang Shatterer
 (@CGUID+207, 21301, 548, 1, 45.1106, -534.412, 0.842754, 3.03292, 7200, 7200, 0, 2), -- Coilfang Shatterer
 (@CGUID+208, 21301, 548, 1, 123.485, -363.243, 0.842279, 5.31621, 7200, 7200, 0, 4), -- Coilfang Shatterer
 (@CGUID+209, 21301, 548, 1, 57.1376, -567.243, 0.843855, 3.67326, 7200, 7200, 0, 4), -- Coilfang Shatterer
@@ -1267,7 +1254,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+10, 'Serpentshrine Cavern - Group 007 - Platform 4', 0, 9, @SGGUID+2, 3, 0),
 -- Vashj'ir Honor Guard, Coilfang Shatterer (2) - Coilfang Priestess (2) - Greyheart Technician (4)
 (@SGGUID+11, 'Serpentshrine Cavern - Group 008 - Platform 5', 0, 9, @SGGUID+2, 3, 0),
-
+-- Vashj'ir Honor Guard, Coilfang Shatterer (2) - Coilfang Priestess (2) - Greyheart Technician (4)
+(@SGGUID+12, 'Serpentshrine Cavern - Group 009 - Platform 6', 0, 9, @SGGUID+2, 3, 0);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -1344,6 +1332,16 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+11, @CGUID+169, 6), -- Greyheart Technician
 (@SGGUID+11, @CGUID+170, 7), -- Greyheart Technician
 (@SGGUID+11, @CGUID+171, 8), -- Greyheart Technician
+
+(@SGGUID+12, @CGUID+44, 0), -- Vashj'ir Honor Guard
+(@SGGUID+12, @CGUID+206, 1), -- Coilfang Shatterer (left)
+(@SGGUID+12, @CGUID+205, 2), -- Coilfang Shatterer (right)
+(@SGGUID+12, @CGUID+55, 3), -- Coilfang Priestess (left)
+(@SGGUID+12, @CGUID+54, 4), -- Coilfang Priestess (right)
+(@SGGUID+12, @CGUID+163, 5), -- Greyheart Technician
+(@SGGUID+12, @CGUID+164, 6), -- Greyheart Technician
+(@SGGUID+12, @CGUID+165, 7), -- Greyheart Technician
+(@SGGUID+12, @CGUID+166, 8); -- Greyheart Technician
 
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
