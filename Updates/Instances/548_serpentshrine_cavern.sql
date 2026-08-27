@@ -1315,16 +1315,8 @@ INSERT INTO `string_id` (Id, Name) VALUES
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (2121801,2121802,2121803,2121804,2121805,2121806,2121807,2121808,2125301,2126301,2126302,2129801);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2125301,2126301,2126302,2129801);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(2121801, 0, 45, 0, 10105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Honor Guard - 10% chance (call Technicians - platform 1)'),
-(2121802, 0, 45, 0, 10106, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Honor Guard - 10% chance (call Technicians - platform 2)'),
-(2121803, 0, 45, 0, 10107, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Honor Guard - 10% chance (call Technicians - platform 3)'),
-(2121804, 0, 45, 0, 10108, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Honor Guard - 10% chance (call Technicians - platform 4)'),
-(2121805, 0, 45, 0, 10109, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Honor Guard - 10% chance (call Technicians - platform 5)'),
-(2121806, 0, 45, 0, 10110, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Honor Guard - 10% chance (call Technicians - platform 6)'),
-(2121807, 0, 45, 0, 10111, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Honor Guard - 25% chance (speak to Priestess)'),
-(2121808, 0, 45, 0, 10112, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Honor Guard - 25% chance (speak to Shatterer)'),
 (2125301, 0, 36, 0, 0, 0, 21216, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Tainted Water Elemental - Face Hydross'),
 (2125301, 1000, 15, 36461, 0, 0, 21216, 50, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Tainted Water Elemental - Force Hydross to cast Purify Elemental'),
 (2125301, 2000, 44, 21260, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tainted Water Elemental - Change to Purified'),
@@ -1338,108 +1330,10 @@ INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`,
 (21214, 2000, 3, 0, 0, 0, 22820, 100, 3, 0, 0, 0, 0, 457.031, -543.231, -7.54802, 0.39321, 'Move Seer Olum out of cage'),
 (21214, 3000, 0, 0, 0, 0, 22820, 100, 3, 20460, 0, 0, 0, 0, 0, 0, 0, 'Force Seer Olum to say text');
 
-DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN 10105 AND 10112;
-INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(10105,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - pause waypoints'),
-(10105,0,3,0,0,0,0,0,0,0,0,0,-57.3285,-371.109,1.58651,0,'Honor Guard - move to center (platform 1)'),
-(10105,6000,35,5,45,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - send AI event A'),
-(10105,12000,0,0,0,0,0,0,18910,0,0,0,0,0,0,0,'Honor Guard - say'),
-(10105,15000,0,0,0,0,0,0,18911,0,0,0,0,0,0,0,'Honor Guard - say'),
-(10105,17000,32,0,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - unpause waypoints'),
-
-(10106,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - pause waypoints'),
-(10106,0,3,0,0,0,0,0,0,0,0,0,40.2521,-304.251,1.5865,0,'Honor Guard - move to center (platform 2)'),
-(10106,6000,35,5,45,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - send AI event A'),
-(10106,12000,0,0,0,0,0,0,18910,0,0,0,0,0,0,0,'Honor Guard - say'),
-(10106,15000,0,0,0,0,0,0,18911,0,0,0,0,0,0,0,'Honor Guard - say'),
-(10106,17000,32,0,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - unpause waypoints'),
-
-(10107,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - pause waypoints'),
-(10107,0,3,0,0,0,0,0,0,0,0,0,140.93,-353.593,1.58652,0,'Honor Guard - move to center (platform 3)'),
-(10107,6000,35,5,45,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - send AI event A'),
-(10107,12000,0,0,0,0,0,0,18910,0,0,0,0,0,0,0,'Honor Guard - say'),
-(10107,15000,0,0,0,0,0,0,18911,0,0,0,0,0,0,0,'Honor Guard - say'),
-(10107,17000,32,0,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - unpause waypoints'),
-
-(10108,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - pause waypoints'),
-(10108,0,3,0,0,0,0,0,0,0,0,0,141.894,-509.504,1.58652,0,'Honor Guard - move to center (platform 4)'),
-(10108,6000,35,5,45,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - send AI event A'),
-(10108,12000,0,0,0,0,0,0,18910,0,0,0,0,0,0,0,'Honor Guard - say'),
-(10108,15000,0,0,0,0,0,0,18911,0,0,0,0,0,0,0,'Honor Guard - say'),
-(10108,17000,32,0,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - unpause waypoints'),
-
-(10109,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - pause waypoints'),
-(10109,0,3,0,0,0,0,0,0,0,0,0,40.9439,-554.403,1.58541,0,'Honor Guard - move to center (platform 5)'),
-(10109,6000,35,5,45,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - send AI event A'),
-(10109,12000,0,0,0,0,0,0,18910,0,0,0,0,0,0,0,'Honor Guard - say'),
-(10109,15000,0,0,0,0,0,0,18911,0,0,0,0,0,0,0,'Honor Guard - say'),
-(10109,17000,32,0,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - unpause waypoints'),
-
-(10110,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - pause waypoints'),
-(10110,0,3,0,0,0,0,0,0,0,0,0,-57.0144,-482.826,1.58653,0,'Honor Guard - move to center (platform 6)'),
-(10110,6000,35,5,45,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - send AI event A'),
-(10110,12000,0,0,0,0,0,0,18910,0,0,0,0,0,0,0,'Honor Guard - say'),
-(10110,15000,0,0,0,0,0,0,18911,0,0,0,0,0,0,0,'Honor Guard - say'),
-(10110,17000,32,0,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - unpause waypoints'),
-
-(10111,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - pause waypoints'),
-(10111,1000,37,0,0,21220,20,2,0,0,0,0,0,0,0,0,'Honor Guard - move to Priestess'),
-(10111,6000,36,0,0,21220,20,0,0,0,0,0,0,0,0,0,'Priestess - face Honor Guard'),
-(10111,6000,0,0,0,21220,5,0,18909,0,0,0,0,0,0,0,'Priestess - say'),
-(10111,7000,36,0,0,21220,20,1,0,0,0,0,0,0,0,0,'Honor Guard - face Priestess'),
-(10111,9000,0,10101,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - say random (template)'),
-(10111,12000,0,0,0,21220,5,0,18903,18905,18902,18904,0,0,0,0,'Priestess - say random'),
-(10111,15000,0,10102,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - say random (template)'),
-(10111,17000,32,0,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - unpause waypoints'),
-(10111,17000,36,1,0,21220,5,0,0,0,0,0,0,0,0,0,'Priestess - reset orientation'),
-
-(10112,0,32,1,0,21301,40,0,0,0,0,0,0,0,0,0,'Shatterer - pause waypoints'),
-(10112,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - pause waypoints'),
-(10112,1000,37,0,0,21301,40,2,0,0,0,0,0,0,0,0,'Honor Guard - move to Shatterer'),
-(10112,3000,37,0,0,21301,40,0,0,0,0,0,0,0,0,0,'Shatterer - move to Honor Guard'),
-(10112,7000,36,0,0,21301,40,0,0,0,0,0,0,0,0,0,'Shatterer - face Honor Guard'),
-(10112,7000,36,0,0,21301,40,1,0,0,0,0,0,0,0,0,'Honor Guard - face Shatterer'),
-(10112,8000,0,0,0,21301,10,0,18909,0,0,0,0,0,0,0,'Shatterer - say'),
-(10112,10000,0,10101,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - say random (template)'),
-(10112,13000,0,0,0,21301,10,0,18903,18905,18902,18904,0,0,0,0,'Shatterer - say random'),
-(10112,16000,0,10102,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - say random (template)'),
-(10112,18000,32,0,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - unpause waypoints'),
-(10112,18000,32,0,0,21301,10,0,0,0,0,0,0,0,0,0,'Shatterer - unpause waypoints');
-
 DELETE FROM `dbscripts_on_relay` WHERE `id` IN (2122901,2123201);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (2122901, 0, 42, 0, 0, 0, 0, 0, 0, 2028, 0, 0, 0, 0, 0, 0, 0, '21229/21230 - EquipSet 2'),
 (2123201, 0, 42, 0, 0, 0, 0, 0, 0, 2028, 31805, 0, 0, 0, 0, 0, 0, '21232 - EquipSet 2');
-
-DELETE FROM `dbscript_random_templates` WHERE `id` IN (10101,10102,10105,10106,10107,10108,10109,10110,10111,10112);
-INSERT INTO dbscript_random_templates (id, type, target_id, chance) VALUES
-(10105,1,10105,10),(10105,1,0,90),
-(10106,1,10106,10),(10106,1,0,90),
-(10107,1,10107,10),(10107,1,0,90),
-(10108,1,10108,10),(10108,1,0,90),
-(10109,1,10109,10),(10109,1,0,90),
-(10110,1,10110,10),(10110,1,0,90),
-(10111,1,10111,25),(10111,1,0,75),
-(10112,1,10112,25),(10112,1,0,75),
--- Vashj'ir Honor Guard Response 1
-(10101,0,18893,0),
-(10101,0,18888,0),
-(10101,0,18889,0),
-(10101,0,18891,0),
-(10101,0,18890,0),
-(10101,0,19344,0),
-(10101,0,18887,0),
-(10101,0,18892,0),
--- Vashj'ir Honor Guard Response 2
-(10102,0,18895,0),
-(10102,0,18897,0),
-(10102,0,18900,0),
-(10102,0,18898,0),
-(10102,0,18901,0),
-(10102,0,18894,0),
-(10102,0,18899,0),
-(10102,0,18896,0);
-
 
 -- New DBScripts
 -- RandomScripts
