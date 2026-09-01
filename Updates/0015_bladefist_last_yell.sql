@@ -32,3 +32,14 @@
 -- https://github.com/cmangos/mangos-tbc/commit/c0d3643003839653bd5977b885ed764b665e76ee#diff-0356dba4d68dcb72de15cc754be85afadfca32b4582db9c9394c2934030ce2a1
 UPDATE `broadcast_text` SET `ChatTypeID` = 1, `SoundEntriesId1` = 10324 WHERE `Id` = 17616; -- I'll carve the meat from your bones!
 
+-- Execution Event Yells
+-- 13721	The Alliance dares to intrude this far into my fortress?  Bring out the Honor Hold prisoners and call for the executioner!  They'll pay with their lives for this trespass!
+-- 13722	Thrall's false Horde dares to intrude this far into my fortress?  Bring out the Thrallmar prisoners and call for the executioner!  They'll pay with their lives for this trespass!
+-- 13723	The excecutioner has arrived!  Ready the prisoners!
+-- 13724	Execute one of the prisoners at once!  Slay the dwarf first... he talks far too much for his own good.
+-- 13725	Execute one of the prisoners at once!  Slay the tauren first... keep his head as a trophy.
+-- 13726	It looks like we have a ranking officer among our captives... how amusing.  Execute the Alliance wench!
+-- 13727	It looks like we have a ranking officer among our captives... how amusing.  Execute this green-skinned dog at once!
+-- 13728	Slay the last prisoner.  Maybe our intruders will reconsider their foolish actions now!
+UPDATE `broadcast_text` SET `ChatTypeID` = 6 WHERE `Id` IN (13721, 13722, 13723, 13724, 13725, 13726, 13727, 13728);
+
