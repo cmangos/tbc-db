@@ -3066,7 +3066,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+3, 'Old Hillsbrad Foothills - Light Crystal', 1, 1, @SGGUID+3, 8, 0),
 (@SGGUID+4, 'Old Hillsbrad Foothills - Scarlet Crusade Children', 0, 0, 0, 0, 0),
 (@SGGUID+5, 'Old Hillsbrad Foothills - Hillsbrad Citizen Patrol', 0, 0, 0, 0, 0),
-(@SGGUID+6, 'Old Hillsbrad Foothills - Pirate Captains', 0, 0, 0, 0, 0);
+(@SGGUID+6, 'Old Hillsbrad Foothills - Pirate Captains', 0, 0, 0, 0, 0),
+-- gameobject
+(@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0'),
+(@SGGUID+1002, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel (182589)', '1', '1', '0', '0'),
+(@SGGUID+1003, 'Old Hillsbrad Foothills - Orc Hut 3 - Barrel (182589)', '1', '1', '0', '0'),
+(@SGGUID+1004, 'Old Hillsbrad Foothills - Orc Hut 4 - Barrel (182589)', '1', '1', '0', '0'),
+(@SGGUID+1005, 'Old Hillsbrad Foothills - Orc Hut 5 - Barrel (182589)', '1', '1', '0', '0');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @OGUID+300, -1, 0), -- Mograine's Stronbox
@@ -3078,7 +3084,23 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+5, @CGUID+558, 0, 0), -- creature_spawn_entry
 (@SGGUID+5, @CGUID+572, 1, 0), -- creature_spawn_entry
 (@SGGUID+6, @CGUID+487, 0, 0), -- Captain Sanders
-(@SGGUID+6, @CGUID+507, 1, 0); -- Captain Edward Hanes
+(@SGGUID+6, @CGUID+507, 1, 0), -- Captain Edward Hanes
+-- gameobject
+(@SGGUID+1001, @OGUID+36, -1, 0), -- Barrel
+(@SGGUID+1001, @OGUID+47, -1, 0), -- Barrel
+(@SGGUID+1001, @OGUID+48, -1, 0), -- Barrel
+(@SGGUID+1002, @OGUID+38, -1, 0), -- Barrel
+(@SGGUID+1002, @OGUID+39, -1, 0), -- Barrel
+(@SGGUID+1002, @OGUID+46, -1, 0), -- Barrel
+(@SGGUID+1003, @OGUID+35, -1, 0), -- Barrel
+(@SGGUID+1003, @OGUID+41, -1, 0), -- Barrel
+(@SGGUID+1003, @OGUID+45, -1, 0), -- Barrel
+(@SGGUID+1004, @OGUID+34, -1, 0), -- Barrel
+(@SGGUID+1004, @OGUID+43, -1, 0), -- Barrel
+(@SGGUID+1004, @OGUID+44, -1, 0), -- Barrel
+(@SGGUID+1005, @OGUID+37, -1, 0), -- Barrel
+(@SGGUID+1005, @OGUID+40, -1, 0), -- Barrel
+(@SGGUID+1005, @OGUID+42, -1, 0); -- Barrel
 
 DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
@@ -3259,39 +3281,11 @@ INSERT INTO `creature_spawn_data` (`guid`, `Id`) VALUES
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 1, 'Old Hillsbrad Foothills - Orc Hut 1'),
-(@PGUID+2, 1, 'Old Hillsbrad Foothills - Orc Hut 2'),
-(@PGUID+3, 1, 'Old Hillsbrad Foothills - Orc Hut 3'),
-(@PGUID+4, 1, 'Old Hillsbrad Foothills - Orc Hut 4'),
-(@PGUID+5, 1, 'Old Hillsbrad Foothills - Orc Hut 5'),
 (@PGUID+11, 11, 'Old Hillsbrad Foothills - Pit Spectator (17846)');
-
--- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 (17846, @PGUID+11, 0, 'Old Hillsbrad Foothills - Pit Spectator (17846)');
-
-INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+36, @PGUID+1, 0, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel'),
-(@OGUID+47, @PGUID+1, 0, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel'),
-(@OGUID+48, @PGUID+1, 0, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel'),
-(@OGUID+38, @PGUID+2, 0, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel'),
-(@OGUID+39, @PGUID+2, 0, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel'),
-(@OGUID+46, @PGUID+2, 0, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel'),
-(@OGUID+35, @PGUID+3, 0, 'Old Hillsbrad Foothills - Orc Hut 3 - Barrel'),
-(@OGUID+41, @PGUID+3, 0, 'Old Hillsbrad Foothills - Orc Hut 3 - Barrel'),
-(@OGUID+45, @PGUID+3, 0, 'Old Hillsbrad Foothills - Orc Hut 3 - Barrel'),
-(@OGUID+34, @PGUID+4, 0, 'Old Hillsbrad Foothills - Orc Hut 4 - Barrel'),
-(@OGUID+43, @PGUID+4, 0, 'Old Hillsbrad Foothills - Orc Hut 4 - Barrel'),
-(@OGUID+44, @PGUID+4, 0, 'Old Hillsbrad Foothills - Orc Hut 4 - Barrel'),
-(@OGUID+37, @PGUID+5, 0, 'Old Hillsbrad Foothills - Orc Hut 5 - Barrel'),
-(@OGUID+40, @PGUID+5, 0, 'Old Hillsbrad Foothills - Orc Hut 5 - Barrel'),
-(@OGUID+42, @PGUID+5, 0, 'Old Hillsbrad Foothills - Orc Hut 5 - Barrel');
-
--- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 -- =========
 -- DBSCRIPTS
