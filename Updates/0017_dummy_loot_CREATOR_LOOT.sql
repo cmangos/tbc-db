@@ -41,5 +41,12 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (12426, 10561, 40, 0, 1, 1, 0, 'Mithril Casing'),
 (12426, 15994, 75, 0, 1, 2, 0, 'Thorium Widget'),
 (12426, 8170, 100, 0, 1, 2, 0, 'Rugged Leather'),
-(12426, 7191, 40, 0, 1, 1, 0, 'Fused Wiring');
+(12426, 7191, 40, 0, 1, 1, 0, 'Fused Wiring'),
+-- tbc+
+-- https://www.wowhead.com/tbc/npc=17458/gnomish-flame-turret
+-- https://www.wowhead.com/tbc/item=23841/gnomish-flame-turret#comments:id=3325008
+(17458, 23784, 25, 0, 1, 1, 0, 'Adamantite Frame'),
+(17458, 23783, 50, 0, 1, 2, 0, 'Handful of Fel Iron Bolts'),
+(17458, 23781, 75, 0, 1, 3, 0, 'Elemental Blasting Powder'),
+(17458, 23782, 25, 0, 1, 1, 0, 'Fel Iron Casing');
 
