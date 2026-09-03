@@ -3067,6 +3067,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+4, 'Old Hillsbrad Foothills - Scarlet Crusade Children', 0, 0, 0, 0, 0),
 (@SGGUID+5, 'Old Hillsbrad Foothills - Hillsbrad Citizen Patrol', 0, 0, 0, 0, 0),
 (@SGGUID+6, 'Old Hillsbrad Foothills - Pirate Captains', 0, 0, 0, 0, 0),
+-- Keep Range till +20 free for more RP related Stuff
+-- First Boss Trash
+(@SGGUID+20, 'Old Hillsbrad Foothills - Group 001 - Durnholde Sentry', 0, 0, 0, 0, 0),
 -- gameobject
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
 (@SGGUID+1002, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3085,6 +3088,8 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+5, @CGUID+572, 1, 0), -- creature_spawn_entry
 (@SGGUID+6, @CGUID+487, 0, 0), -- Captain Sanders
 (@SGGUID+6, @CGUID+507, 1, 0), -- Captain Edward Hanes
+-- First Boss Trash
+(@SGGUID+20, @CGUID+367, 1, 0), -- Durnholde Sentry
 -- gameobject
 (@SGGUID+1001, @OGUID+36, -1, 0), -- Barrel
 (@SGGUID+1001, @OGUID+47, -1, 0), -- Barrel
