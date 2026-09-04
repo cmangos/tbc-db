@@ -3111,8 +3111,8 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+4, 3, 3, 0, @SGGUID+4, 2, 'Old Hillsbrad Foothills - Scarlet Crusade Children'),
 (@SGGUID+5, 2, 3, 0, @SGGUID+5, 4, 'Old Hillsbrad Foothills - Hillsbrad Citizen Patrol'),
 (@SGGUID+6, 1, 3, 0, @SGGUID+6, 2, 'Old Hillsbrad Foothills - Pirate Captains'),
-(@SGGUID+22, 1, 3, 0, @SGGUID+22, 2, 'Old Hillsbrad Foothills - Group 003 - Patrol 001 - Durnholde Sentry - Durnholde Tracking Hound'),
-(@SGGUID+24, 1, 3, 0, @SGGUID+24, 2, 'Old Hillsbrad Foothills - Group 005 - Patrol 002 - Durnholde Sentry - Durnholde Tracking Hound');
+(@SGGUID+22, 1, 3, 0, @SGGUID+22, 4, 'Old Hillsbrad Foothills - Group 003 - Patrol 001 - Durnholde Sentry - Durnholde Tracking Hound'),
+(@SGGUID+24, 1, 3, 0, @SGGUID+24, 4, 'Old Hillsbrad Foothills - Group 005 - Patrol 002 - Durnholde Sentry - Durnholde Tracking Hound');
 
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES

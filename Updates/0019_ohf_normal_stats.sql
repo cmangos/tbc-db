@@ -36,7 +36,7 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 205
 -- Old values
 -- SpeedWalk 1,48 DamageMultiplier 2,84954 MinDmg  361 MaxDmg 506
 UPDATE creature_template SET MinLevel = 65, MaxLevel = 65, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 1200, DamageMultiplier = 3.0, DamageVariance = 0.38, MinMeleeDmg = 387, MaxMeleeDmg = 543 WHERE entry = 17840;
-UPDATE creature_template SET MSpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 20528;
+UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 20528;
 
 -- Durnholde Rifleman - 17820 - 20526
 -- Level 67 
