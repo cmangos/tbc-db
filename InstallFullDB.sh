@@ -2149,29 +2149,37 @@ function build_backup_filename()
   case $1 in
     "WORLD")
       if ! get_clean_core_version $DB_WORLDDB_VERSION; then
+      	echo ">>> ERROR: Unable to read $1 version!"
         false
         return
       fi
       ;;
     "CHAR")
       if ! get_clean_core_version $DB_CHARDB_VERSION; then
+      	echo ">>> ERROR: Unable to read $1 version!"
         false
         return
       fi
       ;;
     "REALM")
       if ! get_clean_core_version $DB_REALMDB_VERSION; then
+      	echo ">>> ERROR: Unable to read $1 version!"
         false
         return
       fi
       ;;
     "LOGS")
       if ! get_clean_core_version $DB_LOGSDB_VERSION; then
+      	echo ">>> ERROR: Unable to read $1 version!"
         false
         return
       fi
       ;;
-    *) false; return;;
+    *)
+      echo ">>> ERROR: Missing backup file option for $1!"
+      false
+      return
+    ;;
   esac
 
   cleanversion="${CLEAN_CORE_VERSION}"
@@ -2194,7 +2202,6 @@ function build_backup_filename()
 # valid dbname: WORLD, CHAR, REALM, LOGS
 function backup_create()
 {
-  clear
   check_dbs_accessibility
   local compress=${2:-true}
   local filename=""
