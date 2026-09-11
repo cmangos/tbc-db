@@ -1940,8 +1940,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+380, @CGUID+412, 3), -- Durnholde Sentry -> Durnholde Warden
 (@CGUID+398, @CGUID+412, 3), -- Durnholde Rifleman -> Durnholde Warden
 (@CGUID+413, @CGUID+412, 3), -- Durnholde Warden -> Durnholde Warden
-(@CGUID+391, @CGUID+408, 3), -- Durnholde Rifleman -> Durnholde Warden
-(@CGUID+402, @CGUID+384, 3), -- creature_spawn_entry -> Durnholde Sentry
 (@CGUID+407, @CGUID+370, 3), -- Durnholde Warden -> Durnholde Sentry
 (@CGUID+390, @CGUID+406, 3), -- Durnholde Rifleman -> Durnholde Warden
 (@CGUID+400, @CGUID+381, 3), -- Durnholde Rifleman -> Durnholde Sentry
@@ -1979,7 +1977,6 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+395, 17819), (@CGUID+395, 17820), -- Durnholde Sentry, Durnholde Rifleman
 (@CGUID+397, 17819), (@CGUID+397, 17820), -- Durnholde Sentry, Durnholde Rifleman
 (@CGUID+401, 17819), (@CGUID+401, 17820), -- Durnholde Sentry, Durnholde Rifleman
-(@CGUID+402, 17819), (@CGUID+402, 17820), -- Durnholde Sentry, Durnholde Rifleman
 (@CGUID+404, 17819), (@CGUID+404, 17820), -- Durnholde Sentry, Durnholde Rifleman
 (@CGUID+409, 17820), (@CGUID+409, 17833), -- Durnholde Rifleman, Durnholde Warden
 (@CGUID+432, 17819), (@CGUID+432, 17860), -- Durnholde Sentry, Durnholde Veteran
@@ -2344,7 +2341,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+315, 17846, 560, 3, 2200.4507, 30.2315, 66.17768, 3.124139308929443359, 7200, 7200, 0, 0), -- Pit Spectator
 -- REUSE 316 - 318
 (@CGUID+319, 12999, 560, 3, 2381.441, 715.7634, 42.083565, 0.174532920122146606, 7200, 7200, 0, 0), -- World Invisible Trigger
-(@CGUID+321, 17819, 560, 3, 2104.2727, 47.808395, 53.636097, 0.86128, 7200, 7200, 0, 2), -- Durnholde Rifleman
+(@CGUID+321, 0, 560, 3, 2104.2727, 47.808395, 53.636097, 0.86128, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+322, 17840, 560, 3, 2062.995605, 162.76324462890625, 65.15723419189453125, 4.199841022491455078, 7200, 7200, 0, 0), -- Durnholde Tracking Hound
 (@CGUID+323, 0, 560, 3, 2061.64917, 159.985992431640625, 65.19301605224609375, 4.072443485260009765, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+324, 8883, 560, 3, 1891.65, 994.035, 15.1516, 2.33433, 86400, 86400, 0, 0), -- Riding Horse
@@ -2407,14 +2404,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+381, 17819, 560, 3, 2207.5837, 125.05024, 103.461845, 1.50098, 7200, 7200, 0, 0), -- Durnholde Sentry
 (@CGUID+382, 17819, 560, 3, 2257.8013, 259.87036, 65.17412, 1.37881, 7200, 7200, 0, 0), -- Durnholde Sentry
 (@CGUID+383, 17819, 560, 3, 2257.9175, 263.70966, 64.97887, 4.83456, 7200, 7200, 0, 0), -- Durnholde Sentry
-(@CGUID+384, 17819, 560, 3, 2090.35, 44.7203, 52.4421, 4.33673, 7200, 7200, 0, 0), -- Durnholde Sentry
+-- reuse +384
 (@CGUID+385, 17819, 560, 3, 2055.22, 83.8672, 52.4861, 3.67686, 7200, 7200, 0, 0), -- Durnholde Sentry
 (@CGUID+386, 17820, 560, 3, 2109.3005, 189.2159, 66.3049, 2.3911, 7200, 7200, 0, 0), -- Durnholde Rifleman
 (@CGUID+387, 0, 560, 3, 2169.51221, 65.7450, 65.16895, 2.11294, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+388, 0, 560, 3, 2141.513916, 174.3792266845703125, 66.304931640625, 2.58308720588684082, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+389, 0, 560, 3, 2137.442383, 168.600555419921875, 66.30493927001953125, 2.39110112190246582, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+390, 17820, 560, 3, 2072.6418, 105.68772, 53.317158, 5.93411, 7200, 7200, 0, 0), -- Durnholde Rifleman
-(@CGUID+391, 17820, 560, 3, 2117.6218, 54.548504, 52.673676, 1.09955, 7200, 7200, 0, 0), -- Durnholde Rifleman
+(@CGUID+391, 17820, 560, 3, 2117.6218, 54.5485, 52.6737, 1.0996, 7200, 7200, 0, 0), -- Durnholde Rifleman
 (@CGUID+392, 0, 560, 3, 2128.452148, 54.026524, 52.546238, 2.61807227, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+393, 0, 560, 3, 2186.312, 146.63777, 88.299866, 2.89724, 7200, 7200, 0, 0), -- Durnholde Rifleman
 (@CGUID+394, 17820, 560, 3, 2208.24, 106.283, 89.4549, 2.97721, 7200, 7200, 0, 2), -- Durnholde Rifleman
@@ -2425,13 +2422,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+399, 17820, 560, 3, 2223.4128, 120.82661, 89.53843, 0.48869, 7200, 7200, 0, 0), -- Durnholde Rifleman
 (@CGUID+400, 17820, 560, 3, 2215.645, 133.40657, 103.46184, 4.76474, 7200, 7200, 0, 0), -- Durnholde Rifleman
 (@CGUID+401, 0, 560, 3, 2222.5786, 88.64117, 91.684204, 2.68780, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+402, 0, 560, 3, 2085.2646, 46.59722, 52.632256, 4.39822, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+402, 17819, 560, 3, 2085.2646, 46.5972, 52.6323, 4.3982, 7200, 7200, 0, 0), -- Durnholde Sentry
 (@CGUID+403, 17820, 560, 3, 2053.1458, 88.54264, 52.6012, 3.66519, 7200, 7200, 0, 0), -- Durnholde Rifleman
 (@CGUID+404, 0, 560, 3, 2068.6, 112.257, 54.68, 1.89859, 7200, 7200, 0, 2), -- creature_spawn_entry
 (@CGUID+405, 17820, 560, 3, 2191.2456, 256.829, 52.524235, 4.31096, 7200, 7200, 0, 0), -- Durnholde Rifleman
 (@CGUID+406, 17833, 560, 3, 2075.1501, 110.61784, 53.322304, 5.91666, 7200, 7200, 0, 0), -- Durnholde Warden
 (@CGUID+407, 17833, 560, 3, 2082.6824, 73.90994, 52.52425, 0.45378, 7200, 7200, 0, 0), -- Durnholde Warden
-(@CGUID+408, 17833, 560, 3, 2122.4045, 52.18327, 52.52425, 1.30899, 7200, 7200, 0, 0), -- Durnholde Warden
+(@CGUID+408, 17833, 560, 3, 2122.4045, 52.1833, 52.5243, 1.3090, 7200, 7200, 0, 0), -- Durnholde Warden
 (@CGUID+409, 0, 560, 3, 2181.9778, 138.92584, 88.299866, 2.37364, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+410, 17833, 560, 3, 2121.6597, 176.59029, 52.979218, 6.00393, 7200, 7200, 0, 0), -- Durnholde Warden
 (@CGUID+411, 17833, 560, 3, 2124.713, 180.7857, 52.700176, 4.22369, 7200, 7200, 0, 0), -- Durnholde Warden
@@ -2943,7 +2940,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Patrol between all Houses
 (@SGGUID+29, 'Old Hillsbrad Foothills - Group 010 - Patrol 005 - spawn_group_entry - Durnholde Tracking Hound', 0, 0, 0, 1, 0),
 -- Downstairs - Barrel Houses
-(@SGGUID+30, 'Old Hillsbrad Foothills - Group 009 - Patrol 004 - spawn_group_entry - Durnholde Tracking Hound', 0, 0, 0, 1, 0), 
+(@SGGUID+30, 'Old Hillsbrad Foothills - Group 011 - Orc Hut 1', 0, 0, 0, 1, 0), 
 -- gameobject
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
 (@SGGUID+1002, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -2991,6 +2988,11 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+29, @CGUID+375, 0, 0), -- spawn_group_entry
 (@SGGUID+29, @CGUID+423, 1, 0), -- Durnholde Tracking Hound
+
+(@SGGUID+30, @CGUID+408, 0, 0), -- Durnholde Warden (Entrance Left)
+(@SGGUID+30, @CGUID+391, 0, 0), -- Durnholde Rifleman (Entrance Right)
+(@SGGUID+30, @CGUID+321, 0, 0), -- spawn_group_entry (Patrol Inside)
+(@SGGUID+30, @CGUID+402, 0, 0), -- Durnholde Sentry (Back Exit)
 -- gameobject
 (@SGGUID+1001, @OGUID+36, -1, 0), -- Barrel
 (@SGGUID+1001, @OGUID+47, -1, 0), -- Barrel
@@ -3014,7 +3016,8 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+26, 17819, 0, 0, 0), (@SGGUID+26, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
 (@SGGUID+27, 17819, 0, 0, 0), (@SGGUID+27, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
 (@SGGUID+28, 17819, 0, 0, 0), (@SGGUID+28, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
-(@SGGUID+29, 17819, 0, 0, 0), (@SGGUID+29, 17820, 0, 0, 0); -- Durnholde Sentry, Durnholde Rifleman
+(@SGGUID+29, 17819, 0, 0, 0), (@SGGUID+29, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
+(@SGGUID+30, 17819, 0, 0, 0), (@SGGUID+30, 17820, 0, 0, 0); -- Durnholde Sentry, Durnholde Rifleman
 
 DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
