@@ -35,11 +35,11 @@ DELETE FROM `creature_spell_list` WHERE `Id` IN (1782001, 2052601);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (1782001, 1, 23601, 0, -1, 1, 0, 100, 0, 10000, 22000, 20000, 32000, 'Durnholde Rifleman - Scatter Shot - current'),
 (1782001, 2, 31942, 0, -1, 1, 0, 100, 0, 12000, 20000, 14000, 28000, 'Durnholde Rifleman - Multi-Shot - current'),
-(1782001, 3, 16100, 1, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Durnholde Rifleman - Shoot - current'),
+(1782001, 3, 16100, 2, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Durnholde Rifleman - Shoot - current'),
 -- Heroic
 (2052601, 1, 23601, 0, -1, 1, 0, 100, 0, 10000, 22000, 20000, 32000, 'Durnholde Rifleman - Scatter Shot - current'),
 (2052601, 2, 38383, 0, -1, 1, 0, 100, 0, 12000, 20000, 14000, 28000, 'Durnholde Rifleman - Multi-Shot - current'),
-(2052601, 3, 22907, 1, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Durnholde Rifleman - Shoot - current');
+(2052601, 3, 22907, 2, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Durnholde Rifleman - Shoot - current');
 
 UPDATE `creature_template` SET `SpellList` = 1781901 WHERE `entry` = 17820;
 UPDATE `creature_template` SET `SpellList` = 2052701 WHERE `entry` = 20526;
