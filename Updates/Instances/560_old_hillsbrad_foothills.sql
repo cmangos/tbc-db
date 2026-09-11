@@ -2411,8 +2411,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+385, 17819, 560, 3, 2055.22, 83.8672, 52.4861, 3.67686, 7200, 7200, 0, 0), -- Durnholde Sentry
 (@CGUID+386, 17820, 560, 3, 2109.3005, 189.2159, 66.3049, 2.3911, 7200, 7200, 0, 0), -- Durnholde Rifleman
 (@CGUID+387, 0, 560, 3, 2169.51221, 65.7450, 65.16895, 2.11294, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+388, 0, 560, 3, 2142.372, 174.2907, 66.30494, 2.56563, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+389, 0, 560, 3, 2138.1775, 168.6046, 66.30494, 2.47836, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+388, 0, 560, 3, 2141.513916, 174.3792266845703125, 66.304931640625, 2.58308720588684082, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+389, 0, 560, 3, 2137.442383, 168.600555419921875, 66.30493927001953125, 2.39110112190246582, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+390, 17820, 560, 3, 2072.6418, 105.68772, 53.317158, 5.93411, 7200, 7200, 0, 0), -- Durnholde Rifleman
 (@CGUID+391, 17820, 560, 3, 2117.6218, 54.548504, 52.673676, 1.09955, 7200, 7200, 0, 0), -- Durnholde Rifleman
 (@CGUID+392, 0, 560, 3, 2128.452148, 54.026524, 52.546238, 2.61807227, 7200, 7200, 0, 0), -- spawn_group_entry
@@ -3012,7 +3012,9 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+22, 17819, 0, 0, 0), (@SGGUID+22, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
 (@SGGUID+24, 17819, 0, 0, 0), (@SGGUID+24, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
 (@SGGUID+26, 17819, 0, 0, 0), (@SGGUID+26, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
-(@SGGUID+27, 17819, 0, 0, 0), (@SGGUID+27, 17820, 0, 0, 0); -- Durnholde Sentry, Durnholde Rifleman
+(@SGGUID+27, 17819, 0, 0, 0), (@SGGUID+27, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
+(@SGGUID+28, 17819, 0, 0, 0), (@SGGUID+28, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
+(@SGGUID+29, 17819, 0, 0, 0), (@SGGUID+29, 17820, 0, 0, 0); -- Durnholde Sentry, Durnholde Rifleman
 
 DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
