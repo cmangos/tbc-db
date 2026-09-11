@@ -59,10 +59,10 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1783301, 2, 22884, 0, -1, 0, 0, 100, 0, 18800, 33800, 30100, 48300, 'Durnholde Warden - Psychic Scream - nonef'),
 (1783301, 3, 15654, 0, -1, 1, 0, 100, 0, 3800, 8400, 10800, 24100, 'Durnholde Warden - Shadow Word: Pain - Current'),
 -- Heroic
-(1783301, 1, 17201, 0, -1, 3, 0, 100, 0, 7000, 12000, 10000, 16000, 'Durnholde Warden - Dispel Magic on Friendly Dispel'),
-(1783301, 2, 15586, 0, -1, 201, 0, 100, 0, 5000, 10000, 6000, 12000, 'Durnholde Warden - Heal - Friendly missing 50% including self'),
-(1783301, 3, 22884, 0, -1, 0, 0, 100, 0, 18800, 33800, 30100, 48300, 'Durnholde Warden - Psychic Scream - nonef'),
-(1783301, 4, 15654, 0, -1, 1, 0, 100, 0, 3800, 8400, 10800, 24100, 'Durnholde Warden - Shadow Word: Pain - Current');
+(2053001, 1, 17201, 0, -1, 3, 0, 100, 0, 7000, 12000, 10000, 16000, 'Durnholde Warden - Dispel Magic on Friendly Dispel'),
+(2053001, 2, 15586, 0, -1, 201, 0, 100, 0, 5000, 10000, 6000, 12000, 'Durnholde Warden - Heal - Friendly missing 50% including self'),
+(2053001, 3, 22884, 0, -1, 0, 0, 100, 0, 18800, 33800, 30100, 48300, 'Durnholde Warden - Psychic Scream - nonef'),
+(2053001, 4, 15654, 0, -1, 1, 0, 100, 0, 3800, 8400, 10800, 24100, 'Durnholde Warden - Shadow Word: Pain - Current');
 
 UPDATE `creature_template` SET `SpellList` = 1783301 WHERE `entry` = 17833;
 UPDATE `creature_template` SET `SpellList` = 2053001 WHERE `entry` = 20530;
