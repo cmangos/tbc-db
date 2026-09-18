@@ -19,26 +19,25 @@ SET @OGUID := 5600000; -- gameobjects
 SET @PGUID := 49600; -- pools
 SET @SGGUID := 5600000; -- spawn_groups
 SET @STRINGID := 5600000; -- used for StringID's
-
+SET @RELAYID := 5600000; -- used for dbscripts
 -- =========
 -- CREATURES
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(@CGUID+321, 1, 2112.395, 49.795464, 53.86632, 100, 0, 0),
-(@CGUID+321, 2, 2116.2764, 49.749023, 53.842293, 100, 0, 0),
-(@CGUID+321, 3, 2119.165, 51.97732, 53.83542, 100, 0, 0),
-(@CGUID+321, 4, 2115.989, 50.291813, 53.846695, 100, 0, 0),
-(@CGUID+321, 5, 2112.395, 49.795464, 53.86632, 100, 0, 0),
-(@CGUID+321, 6, 2108.2795, 49.783096, 53.74777, 100, 0, 0),
-(@CGUID+321, 7, 2105.007, 48.66352, 53.64801, 100, 0, 0),
-(@CGUID+321, 8, 2102.9553, 46.27409, 53.61472, 100, 0, 0),
-(@CGUID+321, 9, 2100.4917, 45.43674, 53.539524, 100, 0, 0),
-(@CGUID+321, 10, 2098.6775, 46.957573, 53.447086, 100, 0, 0),
-(@CGUID+321, 11, 2096.8335, 50.638237, 53.387196, 100, 0, 0),
-(@CGUID+321, 12, 2096.4756, 53.981228, 53.428577, 100, 0, 0),
-(@CGUID+321, 13, 2091.025, 51.800346, 53.509926, 100, 0, 0),
-(@CGUID+321, 14, 2089.375, 49.77268, 53.498997, 100, 0, 0),
+(@CGUID+321, 1, 2088.4302, 47.26443, 53.456894, 100, 0, 0),
+(@CGUID+321, 2, 2091.025, 51.800346, 53.498848, 100, 0, 0),
+(@CGUID+321, 3, 2094.0168, 55.05827, 53.4755, 100, 0, 0),
+(@CGUID+321, 4, 2096.4756, 53.981228, 53.417492, 100, 0, 0),
+(@CGUID+321, 5, 2096.8335, 50.638237, 53.376106, 100, 0, 0),
+(@CGUID+321, 6, 2098.6775, 46.957573, 53.434757, 100, 0, 0),
+(@CGUID+321, 7, 2100.4917, 45.43674, 53.527184, 100, 0, 0),
+(@CGUID+321, 8, 2102.9553, 46.27409, 53.60237, 100, 0, 0),
+(@CGUID+321, 9, 2105.007, 48.66352, 53.635662, 100, 0, 0),
+(@CGUID+321, 10, 2108.2795, 49.783096, 53.73541, 100, 0, 0),
+(@CGUID+321, 11, 2112.395, 49.795464, 53.85694, 100, 0, 0),
+(@CGUID+321, 12, 2116.2764, 49.749023, 53.832905, 100, 0, 0),
+(@CGUID+321, 13, 2119.165, 51.97732, 53.82603, 100, 0, 0),
 -- Broom
 (@CGUID+325, 1,  1816.8607, 1010.83, 18.567032, 3.6669321, 0, 0),
 (@CGUID+325, 2,  1819.9545, 1004.7511, 18.567032, 100, 0, 0),
@@ -2299,7 +2298,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+315, 17846, 560, 3, 2200.4507, 30.2315, 66.17768, 3.124139308929443359, 7200, 7200, 0, 0), -- Pit Spectator
 -- REUSE 316 - 318
 (@CGUID+319, 12999, 560, 3, 2381.441, 715.7634, 42.083565, 0.174532920122146606, 7200, 7200, 0, 0), -- World Invisible Trigger
-(@CGUID+321, 0, 560, 3, 2104.2727, 47.808395, 53.636097, 0.86128, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+321, 0, 560, 3, 2088.4302, 47.26443, 53.456894, 1.1007, 7200, 7200, 0, 4), -- spawn_group_entry
 (@CGUID+322, 17840, 560, 3, 2062.995605, 162.76324462890625, 65.15723419189453125, 4.199841022491455078, 7200, 7200, 0, 0), -- Durnholde Tracking Hound
 (@CGUID+323, 0, 560, 3, 2061.64917, 159.985992431640625, 65.19301605224609375, 4.072443485260009765, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+324, 8883, 560, 3, 1891.65, 994.035, 15.1516, 2.33433, 86400, 86400, 0, 0), -- Riding Horse
@@ -3665,8 +3664,18 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscript_random_templates` WHERE `id` IN (10203,10204,10205);
+DELETE FROM `dbscript_random_templates` WHERE `id` IN (10203,10204,10205, @RELAYID+1, @RELAYID+2);
 INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
+(@RELAYID+1, 0, 19511, 0, 'OHF - Random Aggro Texts'),
+(@RELAYID+1, 0, 19512, 0, 'OHF - Random Aggro Texts'),
+(@RELAYID+1, 0, 19513, 0, 'OHF - Random Aggro Texts'),
+(@RELAYID+1, 0, 19514, 0, 'OHF - Random Aggro Texts'),
+
+(@RELAYID+2, 0, 19515, 0, 'OHF - Random Death Texts'),
+(@RELAYID+2, 0, 19516, 0, 'OHF - Random Death Texts'),
+(@RELAYID+2, 0, 19517, 0, 'OHF - Random Death Texts'),
+(@RELAYID+2, 0, 19518, 0, 'OHF - Random Death Texts'),
+
 (10203, 1, 10223, 0, 'Nat Pagle - Dream 1'),
 (10203, 1, 10224, 0, 'Nat Pagle - Dream 2'),
 (10203, 1, 10225, 0, 'Nat Pagle - Dream 3'),
