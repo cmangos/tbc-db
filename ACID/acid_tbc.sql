@@ -29843,7 +29843,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Netherstrand Longbow 21268 - spell_list
 ('2126801','21268','11','0','100','0','0','0','0','0','0','0','57','1','95','0','0','0','0','0','0','0','0','0','Netherstrand Longbow - Enable Caster Mode on Spawn'),
 ('2126802','21268','9','0','100','1025','0','8','5000','5000','0','0','14','-100','0','0','0','0','0','0','0','0','0','0','Netherstrand Longbow - Drop Aggro'),
--- Devastation 21270 - spell_list
+-- Devastation 21269 - spell_list
 -- Cosmic Infuser 21270 - spell_list
 -- Infinity Blades 21271
 ('2127101','21271','11','0','100','0','0','0','0','0','0','0','11','12787','0','32','0','0','0','0','0','0','0','0','Infinity Blades - Cast Thrash on Spawn'),
