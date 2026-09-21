@@ -26,17 +26,17 @@ SET @RELAYID := 5600000; -- used for dbscripts
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+321, 1, 2088.4302, 47.26443, 53.456894, 100, 0, 0),
-(@CGUID+321, 2, 2091.025, 51.800346, 53.498848, 100, 0, 0),
-(@CGUID+321, 3, 2094.0168, 55.05827, 53.4755, 100, 0, 0),
-(@CGUID+321, 4, 2096.4756, 53.981228, 53.417492, 100, 0, 0),
-(@CGUID+321, 5, 2096.8335, 50.638237, 53.376106, 100, 0, 0),
-(@CGUID+321, 6, 2098.6775, 46.957573, 53.434757, 100, 0, 0),
-(@CGUID+321, 7, 2100.4917, 45.43674, 53.527184, 100, 0, 0),
-(@CGUID+321, 8, 2102.9553, 46.27409, 53.60237, 100, 0, 0),
-(@CGUID+321, 9, 2105.007, 48.66352, 53.635662, 100, 0, 0),
-(@CGUID+321, 10, 2108.2795, 49.783096, 53.73541, 100, 0, 0),
-(@CGUID+321, 11, 2112.395, 49.795464, 53.85694, 100, 0, 0),
-(@CGUID+321, 12, 2116.2764, 49.749023, 53.832905, 100, 0, 0),
+(@CGUID+321, 2, 2091.025, 51.800346, 53.498848, 100, 0, 13),
+(@CGUID+321, 3, 2094.0168, 55.05827, 53.4755, 100, 0, 13),
+(@CGUID+321, 4, 2096.4756, 53.981228, 53.417492, 100, 0, 13),
+(@CGUID+321, 5, 2096.8335, 50.638237, 53.376106, 100, 0, 13),
+(@CGUID+321, 6, 2098.6775, 46.957573, 53.434757, 100, 0, 13),
+(@CGUID+321, 7, 2100.4917, 45.43674, 53.527184, 100, 0, 13),
+(@CGUID+321, 8, 2102.9553, 46.27409, 53.60237, 100, 0, 13),
+(@CGUID+321, 9, 2105.007, 48.66352, 53.635662, 100, 0, 13),
+(@CGUID+321, 10, 2108.2795, 49.783096, 53.73541, 100, 0, 13),
+(@CGUID+321, 11, 2112.395, 49.795464, 53.85694, 100, 0, 13),
+(@CGUID+321, 12, 2116.2764, 49.749023, 53.832905, 100, 0, 13),
 (@CGUID+321, 13, 2119.165, 51.97732, 53.82603, 100, 0, 0),
 -- Broom
 (@CGUID+325, 1,  1816.8607, 1010.83, 18.567032, 3.6669321, 0, 0),
@@ -3440,6 +3440,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN 10220 AND 10242;
+DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN @RELAYID+1 AND @RELAYID+6;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10220, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12742, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Brown'),
 (10221, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12750, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Black Skull Glowing'),
@@ -3656,7 +3657,15 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- convo #3 between @CGUID+621 and @CGUID+622/@CGUID+623
 (10242, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15665, 15666, 15667, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #1 - Convo Path 3'),
 (10242, 6500, 0, 0, 0, 0, 0, 18657, @CGUID+623, 16, 15668, 15669, 0, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #2 - Convo Path 3'),
-(10242, 13000, 0, 0, 0, 0, 0, 18657, @CGUID+622, 16, 15670, 15671, 15672, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #3 - Convo Path 3');
+(10242, 13000, 0, 0, 0, 0, 0, 18657, @CGUID+622, 16, 15670, 15671, 15672, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #3 - Convo Path 3'),
+
+-- Used via ACID to get rnd movement with different times
+(@RELAYID+1, 0, 0, 20, 1, 3, 5000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 5 seconds'),
+(@RELAYID+2, 0, 0, 20, 1, 3, 6000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 6 seconds'),
+(@RELAYID+3, 0, 0, 20, 1, 3, 7000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 7 seconds'),
+(@RELAYID+4, 0, 0, 20, 1, 3, 8000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 8 seconds'),
+(@RELAYID+5, 0, 0, 20, 1, 3, 9000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 9 seconds'),
+(@RELAYID+6, 0, 0, 20, 1, 3, 10000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 10 seconds');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -3664,7 +3673,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscript_random_templates` WHERE `id` IN (10203,10204,10205, @RELAYID+1, @RELAYID+2);
+DELETE FROM `dbscript_random_templates` WHERE `id` IN (10203,10204,10205, @RELAYID+1, @RELAYID+2, @RELAYID+3);
 INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 (@RELAYID+1, 0, 19511, 0, 'OHF - Random Aggro Texts'),
 (@RELAYID+1, 0, 19512, 0, 'OHF - Random Aggro Texts'),
@@ -3675,6 +3684,13 @@ INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `c
 (@RELAYID+2, 0, 19516, 0, 'OHF - Random Death Texts'),
 (@RELAYID+2, 0, 19517, 0, 'OHF - Random Death Texts'),
 (@RELAYID+2, 0, 19518, 0, 'OHF - Random Death Texts'),
+
+(@RELAYID+3, 1, @RELAYID+1, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 5 seconds'),
+(@RELAYID+3, 1, @RELAYID+2, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 6 seconds'),
+(@RELAYID+3, 1, @RELAYID+3, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 7 seconds'),
+(@RELAYID+3, 1, @RELAYID+4, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 8 seconds'),
+(@RELAYID+3, 1, @RELAYID+5, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 9 seconds'),
+(@RELAYID+3, 1, @RELAYID+6, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 10 seconds'),
 
 (10203, 1, 10223, 0, 'Nat Pagle - Dream 1'),
 (10203, 1, 10224, 0, 'Nat Pagle - Dream 2'),
