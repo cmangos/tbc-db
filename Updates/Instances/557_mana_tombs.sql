@@ -414,7 +414,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+37, 'Mana Tombs - Group 033 - Ethereal Darkcaster | Ethereal Sorcerer', 0, 0, 0, 1, 0),
 -- 2 possible versions
 (@SGGUID+38, 'Mana Tombs - Group 034 - Ethereal Darkcaster (2) | Nexus Stalker', 0, 0, @SGGUID+9, 1, 0),
-(@SGGUID+39, 'Mana Tombs - Group 034 - Nexus Stalker/Ethereal Theurgist | Nexus Stalker', 0, 0, @SGGUID+10, 1, 0),
+(@SGGUID+39, 'Mana Tombs - Group 034 - Ethereal Sorcerer | Nexus Stalker | Ethereal Theurgist | Ethereal Darkcaster', 0, 0, @SGGUID+10, 1, 0),
 -- 2 possible versions
 (@SGGUID+40, 'Mana Tombs - Group 035 - Ethereal Darkcaster/Ethereal Spellbinder | Ethereal Spellbinder', 0, 0, @SGGUID+11, 1, 0),
 (@SGGUID+41, 'Mana Tombs - Group 035 - Ethereal Spellbinder | Nexus Stalker/Ethereal Spellbinder', 0, 0, @SGGUID+12, 1, 0),
@@ -446,7 +446,7 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+28, 18317, 0, 0, 0), (@SGGUID+28, 18331, 1, 2, 0), -- Ethereal Priest, Ethereal Darkcaster
 (@SGGUID+32, 18317, 0, 0, 0), (@SGGUID+32, 18313, 0, 0, 0), (@SGGUID+32, 18331, 0, 0, 0), -- Ethereal Priest, Ethereal Sorcerer, Ethereal Darkcaster
 (@SGGUID+34, 18331, 0, 0, 0), (@SGGUID+34, 18314, 0, 0, 0), -- Ethereal Darkcaster, Nexus Stalker
-(@SGGUID+39, 18313, 0, 0, 0), (@SGGUID+39, 18314, 0, 0, 0), -- Ethereal Sorcerer, Nexus Stalker
+(@SGGUID+39, 18313, 0, 0, 0), (@SGGUID+39, 18314, 0, 0, 0), (@SGGUID+39, 18315, 0, 0, 0), (@SGGUID+39, 18331, 0, 0, 0), -- Ethereal Sorcerer, Nexus Stalker, Ethereal Theurgist, Ethereal Darkcaster // confirm 18313
 (@SGGUID+40, 18331, 0, 0, 0), (@SGGUID+40, 18312, 0, 0, 0), -- Ethereal Darkcaster, Ethereal Spellbinder
 (@SGGUID+41, 18314, 0, 0, 0), (@SGGUID+41, 18312, 0, 0, 0), -- Nexus Stalker, Ethereal Spellbinder
 (@SGGUID+42, 18314, 1, 2, 0), (@SGGUID+42, 18312, 1, 2, 0), -- Nexus Stalker, Ethereal Spellbinder
