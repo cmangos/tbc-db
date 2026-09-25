@@ -64,3 +64,18 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 205
 -- SpeedWalk 1,48 DamageMultiplier 1,91046 MinMeleeDmg 307 MaxMeleeDmg 431 
 UPDATE creature_template SET MinLevel = 67, MaxLevel = 67, UnitClass = 2, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 5, DamageVariance = 0.37, MinMeleeDmg = 816.96, MaxMeleeDmg = 1147.81 WHERE entry = 17833;
 UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 20530;
+
+-- Durnholde Veteran 17860 - 20529
+-- Level 67
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+-- AttackRoundBaseTime: 2000
+-- MinControle Data
+-- Level 67 UnitClass 1
+-- MinDmg 880.66 MaxDmg 1238.78 AP 288 Armmor 5892
+-- Str 154 Agi 112 Sta 291 Int 32 SP 93
+-- Old Values
+-- SpeedWalk 1,48, DamageMultiplier 2,04872 MinMeleeDmg 331 MaxMeleeDmg 465
+UPDATE creature_template SET MinLevel = 67, MaxLevel = 67, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 5.45, DamageVariance = 0.38, MinMeleeDmg = 880.66, MaxMeleeDmg = 1238.78 WHERE entry = 17860;
+UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 20529;
+
