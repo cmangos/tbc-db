@@ -23640,10 +23640,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Pit Announcer (18673) - NSR
 -- Erozion (18723) - npc_erozion
 -- Brazen (18725) - npc_brazen
--- Durnholde Armorer (18764) -
+-- Durnholde Armorer (18764)
 ('1876401','18764','30','0','100','1','5','0','0','0','0','0','51','1','0','0','5','69','0','0','22','1','0','0','Durnholde Armorer - Set Phase 1 stop waypoints and EmoteState 69 on ReceiveEventAIvent A'),
 ('1876402','18764','1','1','100','1','10000','20000','10000','20000','0','0','51','0','0','0','5','0','0','0','22','0','0','0','Durnholde Armorer - Phase 0 EmoteState 0 Start Waypoints (Phase 1)'),
--- Durnholde Cook (18765) - NSR
+-- Durnholde Cook (18765)
+('1876501','18765','30','0','100','1','5','0','0','0','0','0','51','1','0','0','22','1','0','0','0','0','0','0','Durnholde Cook - Set Phase 1 and stop waypoints on ReceiveEventAIvent A'),
+('1876502','18765','1','1','100','1','10000','16000','10000','16000','0','0','51','0','0','0','5','0','0','0','22','0','0','0','Durnholde Cook - Phase 0 EmoteState 0 Start Waypoints (Phase 1)'),
 -- Taretha (18887) - npc_taretha
 -- Durnholde Mage 18934 (4.3.4 Official Data - Normal/Heroic)
 ('1893401','18934','4','0','10','32','0','0','0','0','0','0','1','19513','19511','19512','1','19511','19512','19514','1','19513','19511','19512','Durnholde Mage - Random Say on Aggro'),
