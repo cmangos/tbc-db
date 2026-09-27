@@ -2920,7 +2920,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+25, @CGUID+362, 0, 0), -- Durnholde Sentry (left)
 (@SGGUID+25, @CGUID+386, 1, 0), -- Durnholde Rifleman (right)
 
-(@SGGUID+26, @CGUID+388, 0, 0), -- spawn_group_entre
+(@SGGUID+26, @CGUID+388, 0, 0), -- spawn_group_entry
 (@SGGUID+26, @CGUID+389, 1, 0), -- Durnholde Rifleman
 
 (@SGGUID+27, @CGUID+387, 0, 0), -- spawn_group_entry
