@@ -3735,7 +3735,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscript_random_templates` WHERE `id` IN (10203,10204,10205, @RELAYID+1, @RELAYID+2, @RELAYID+3);
+DELETE FROM `dbscript_random_templates` WHERE `id` IN (10203,10204,10205, @RELAYID+1, @RELAYID+2, @RELAYID+3, @RELAYID+4);
 INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 (@RELAYID+1, 0, 19511, 0, 'OHF - Random Aggro Texts'),
 (@RELAYID+1, 0, 19512, 0, 'OHF - Random Aggro Texts'),
@@ -3753,6 +3753,10 @@ INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `c
 (@RELAYID+3, 1, @RELAYID+4, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 8 seconds'),
 (@RELAYID+3, 1, @RELAYID+5, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 9 seconds'),
 (@RELAYID+3, 1, @RELAYID+6, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 10 seconds'),
+
+(@RELAYID+4, 0, 19560, 0, 'OHF - Random OOC Texts'),
+(@RELAYID+4, 0, 19561, 0, 'OHF - Random OOC Texts'),
+(@RELAYID+4, 0, 19562, 0, 'OHF - Random OOC Texts'),
 
 (10203, 1, 10223, 0, 'Nat Pagle - Dream 1'),
 (10203, 1, 10224, 0, 'Nat Pagle - Dream 2'),
