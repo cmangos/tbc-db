@@ -79,3 +79,17 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 205
 UPDATE creature_template SET MinLevel = 67, MaxLevel = 67, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 5.45, DamageVariance = 0.38, MinMeleeDmg = 880.66, MaxMeleeDmg = 1238.78 WHERE entry = 17860;
 UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 20529;
 
+-- Lieutenant Drake 17848 - 20535
+-- Level 68 UnitClass 1
+-- Level 71 Heroic
+-- WalkSpeed: 2.5
+-- RunSpeed: 10
+-- AttackRoundBaseTime: 2500
+-- Damage Values based on Dungeon Companion II Book
+-- MinDmg 1911 MaxDmg 2695
+-- Heroic MinDmg 7331 MaxDmg 10368
+-- Old Values
+-- Normal - SpeedWalk 1,48 DamageMultiplier 7,36572 DamageVariance 0,4 MinDmg 1344 MaxDmg 1894
+-- Heroic - SpeedWalk 1,48 DamageMultiplier 8,61135 DamageVariance 0,4 MinDmg 2054 MaxDmg 2905
+UPDATE creature_template SET MinLevel = 68, MaxLevel = 68, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2500, DamageMultiplier = 10.4773, DamageVariance = 0.3761, MinMeleeDmg = 1911, MaxMeleeDmg = 2695 WHERE entry = 17848;
+UPDATE creature_template SET MinLevel = 71, MaxLevel = 71, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2500, DamageMultiplier = 30.7390, DamageVariance = 0.3761, MinMeleeDmg = 7331, MaxMeleeDmg = 10368 WHERE entry = 20535;
