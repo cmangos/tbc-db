@@ -995,8 +995,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+443, 5, 2079.586, 106.11903, 52.57554, 100, 0, 0),
 (@CGUID+443, 6, 2092.46, 109.93956, 52.49108, 100, 0, 0),
 (@CGUID+443, 7, 2096.817, 110.9936, 52.917103, 2.7227, 1000, 1859803),
-
-(@CGUID+444, 1, 2081.7551, 130.9593, 54.325413, 100, 1000, 0), -- waittime between 30-40 seconds
+(@CGUID+444, 1, 2081.7551, 130.9593, 54.325413, 100, 1000, 0), -- waittime between 30-40 seconds standstate sit
 (@CGUID+444, 2, 2076.0337, 132.7258, 54.299946, 100, 0, 0),
 (@CGUID+444, 3, 2073.8977, 131.71223, 54.258545, 100, 0, 0),
 (@CGUID+444, 4, 2072.703, 127.50651, 54.255287, 100, 0, 0),
@@ -1023,13 +1022,13 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+444, 25, 2069.845, 118.52821, 54.631805, 100, 0, 0),
 (@CGUID+444, 26, 2071.7205, 123.49686, 54.41834, 100, 0, 0),
 (@CGUID+444, 27, 2074.6536, 126.94336, 54.241978, 100, 0, 0),
-
 (@CGUID+445, 1, 2064.00562, 73.96376, 54.67927, 100, 100, 5),
 (@CGUID+445, 2, 2077.99, 68.71951, 53.79027, 100, 0, 0),
 (@CGUID+445, 3, 2082.0696, 70.7692, 53.741764, 100, 0, 0),
 (@CGUID+445, 4, 2095.6433, 75.91699, 53.170578, 100, 0, 0),
 (@CGUID+445, 5, 2100.223, 77.486115, 52.78131, 100, 0, 0),
 (@CGUID+445, 6, 2104.7349, 78.9171, 52.991695, 3.8222, 1000, 1859802),
+(@CGUID+446, 1, 2093.3528, 95.49967, 52.495453, 3.2812, 1000, 3),
 (@CGUID+447, 1, 2063.67065, 93.99501, 54.95841, 100, 100, 5),
 (@CGUID+447, 2, 2073.8633, 80.67318, 53.840244, 100, 0, 0),
 (@CGUID+447, 3, 2077.4094, 75.0944, 53.65774, 100, 0, 0),
@@ -1122,7 +1121,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+614, 9, 2620.766, 592.524, 56.46237, 0, 0, 0),
 (@CGUID+614, 10, 2637.223, 612.3849, 55.86766, 0, 0, 0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (17848,18092,18093,18094,18649,18664,18764,18765,28132,18672,18655,18656,20350,20360,20373,20378,20401);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (17848,18092,18093,18094,18598,18649,18664,18764,18765,28132,18672,18655,18656,20350,20360,20373,20378,20401);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Lieutenant Drake
 (17848, 1, 1, 2113.8572, 93.34234, 52.54737, 100, 0, 0),
@@ -1282,6 +1281,12 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (18094,1,2,2639.01,708.38,56.156,100,0,0),
 (18094,1,3,2638.18,699.705,55.949,100,0,0),
 (18094,1,4,2638.18,699.705,55.949,100,5000,1809401),
+
+-- Orc Prisoner - Patrols that get other waypoints when first boss spawns
+-- @CGUID+444
+(18598, 1, 1, 2087.4426, 105.12012, 52.906998, 100, 0, 0),
+(18598, 1, 2, 2091.8333, 105.95063, 52.532944, 100, 0, 0),
+(18598, 1, 3, 2096.3777, 106.39041, 52.692852, 2.80998, 1000, 3),
 
 (18649, 0, 1, 2659.13, 661.505, 57.1724, 0, 0, 0),
 (18649, 0, 2, 2666.43, 656.46, 57.6475, 0, 0, 0),
@@ -2468,17 +2473,17 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+433, 0, 560, 3, 2192.8989, 141.4605, 88.2999, 2.7925, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+434, 0, 560, 3, 2218.0603, 125.7249, 89.5384, 4.7822, 7200, 7200, 0, 0), -- spawn_group_squad
 (@CGUID+435, 17876, 560, 3, 2231.5212, 119.13487, 82.38263, 4.18879, 86400, 86400, 0, 0), -- Thrall
-(@CGUID+436, 18598, 560, 3, 2105, 90.8334, 53.7094, 2.03389, 86400, 86400, 0, 0), -- Orc Prisoner
-(@CGUID+437, 18598, 560, 3, 2097.41, 96.3022, 53.1664, 6.25306, 86400, 86400, 0, 0), -- Orc Prisoner
-(@CGUID+438, 18598, 560, 3, 2106.53, 99.6178, 53.0049, 3.87722, 86400, 86400, 0, 0), -- Orc Prisoner
+(@CGUID+436, 18598, 560, 3, 2105.20264, 90.97635, 53.78843, 1.93732, 86400, 86400, 0, 0), -- Orc Prisoner
+(@CGUID+437, 18598, 560, 3, 2097.39063, 96.71582, 53.24551, 0.01745, 86400, 86400, 0, 0), -- Orc Prisoner
+(@CGUID+438, 18598, 560, 3, 2107.56372, 98.09126, 53.08395, 4.10152, 86400, 86400, 0, 0), -- Orc Prisoner
 (@CGUID+439, 18598, 560, 3, 2104.5386, 55.8831, 54.3669, 1.7977, 86400, 86400, 0, 0), -- Orc Prisoner
-(@CGUID+440, 18598, 560, 3, 2103.31, 79.1084, 52.8917, 2.78709, 86400, 86400, 10, 1), -- Orc Prisoner
+(@CGUID+440, 18598, 560, 3, 2107.42920, 76.05393, 53.13523, 4.65475, 86400, 86400, 5, 1), -- Orc Prisoner
 (@CGUID+441, 18598, 560, 3, 2115.5989, 42.4467, 54.6804, 0.4538, 86400, 86400, 0, 0), -- Orc Prisoner
 (@CGUID+442, 18598, 560, 3, 2062.58521, 112.85072, 55.53974, 5.07891, 86400, 86400, 0, 0), -- Orc Prisoner
 (@CGUID+443, 18598, 560, 3, 2058.54346, 117.40628, 55.53479, 2.47837, 86400, 86400, 0, 0), -- Orc Prisoner
 (@CGUID+444, 18598, 560, 3, 2081.75513, 130.95930, 54.32541, 2.74017, 86400, 86400, 0, 0), -- Orc Prisoner
 (@CGUID+445, 18598, 560, 3, 2064.00562, 73.96376, 54.67927, 1.02974, 86400, 86400, 0, 0), -- Orc Prisoner
-(@CGUID+446, 18598, 560, 3, 2086.52, 95.0915, 52.9514, 5.15978, 86400, 86400, 10, 1), -- Orc Prisoner
+(@CGUID+446, 18598, 560, 3, 2083.46582, 95.49002, 53.27802, 5.99887, 86400, 86400, 5, 1), -- Orc Prisoner
 (@CGUID+447, 18598, 560, 3, 2063.67065, 93.99501, 54.95841, 2.82743, 86400, 86400, 0, 0), -- Orc Prisoner
 (@CGUID+448, 18598, 560, 3, 2173.2, 230.036, 52.441, 2.22401, 86400, 86400, 0, 2), -- Orc Prisoner
 (@CGUID+449, 18598, 560, 3, 2178.18, 235.514, 52.4842, 5.30747, 86400, 86400, 0, 0), -- Orc Prisoner
@@ -2985,7 +2990,10 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- First Boss
 (@SGGUID+43, 'Old Hillsbrad Foothills - Boss 01 - Lieutenant Drake', 0, 0, 0, 1, @STRINGID+2),
 -- Orc prisoners
-(@SGGUID+44, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners', 0, 0, 0, 0, @STRINGID+3),
+(@SGGUID+44, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Sleeping in Huts', 0, 0, 0, 0, @STRINGID+3), 
+(@SGGUID+45, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Patrol with special', 0, 0, 0, 0, @STRINGID+3), -- todo
+(@SGGUID+46, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Outside - Sitting', 0, 0, 0, 0, @STRINGID+3),
+(@SGGUID+47, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Outside - Rnd movement', 0, 0, 0, 0, @STRINGID+3),
 -- gameobject
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
 (@SGGUID+1002, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3108,7 +3116,16 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+44, @CGUID+384, 0, 0), -- Orc Prisoner
 
 -- Orc Prisoner special with waypoint
-(@SGGUID+44, @CGUID+444, 0, 0), -- Orc Prisoner
+(@SGGUID+45, @CGUID+444, 0, 0), -- Orc Prisoner
+
+-- Orc Prisoners sitting outside
+(@SGGUID+46, @CGUID+436, 0, 0), -- Orc Prisoner
+(@SGGUID+46, @CGUID+437, 0, 0), -- Orc Prisoner
+(@SGGUID+46, @CGUID+438, 0, 0), -- Orc Prisoner
+
+-- Orc Prisoners with rnd movement
+(@SGGUID+46, @CGUID+440, 0, 0), -- Orc Prisoner
+(@SGGUID+46, @CGUID+446, 0, 0), -- Orc Prisoner
 
 -- gameobject
 (@SGGUID+1001, @OGUID+36, -1, 0), -- Barrel
