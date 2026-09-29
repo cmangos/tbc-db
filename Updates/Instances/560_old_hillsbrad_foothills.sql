@@ -2991,9 +2991,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+43, 'Old Hillsbrad Foothills - Boss 01 - Lieutenant Drake', 0, 0, 0, 1, @STRINGID+2),
 -- Orc prisoners
 (@SGGUID+44, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Sleeping in Huts', 0, 0, 0, 0, @STRINGID+3), 
-(@SGGUID+45, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Patrol with special', 0, 0, 0, 0, @STRINGID+3), -- todo
-(@SGGUID+46, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Outside - Sitting', 0, 0, 0, 0, @STRINGID+3),
-(@SGGUID+47, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Outside - Rnd movement', 0, 0, 0, 0, @STRINGID+3),
+(@SGGUID+45, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Patrol with special', 0, 0, 0, 0, @STRINGID+4), -- todo
+(@SGGUID+46, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Outside - Sitting', 0, 0, 0, 0, 0),
+(@SGGUID+47, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Outside - Rnd movement', 0, 0, 0, 0, 0),
 -- gameobject
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
 (@SGGUID+1002, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3463,10 +3463,12 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+42, 19, 2195.4954, 116.26254, 103.36876, 100, 0, 0, NULL),
 (@SGGUID+42, 20, 2203.0107, 133.8224, 103.36875, 100, 0, 0, NULL);
 
-DELETE FROM `string_id` WHERE `Id` IN (@STRINGID+1, @STRINGID+2);
+DELETE FROM `string_id` WHERE `Id` IN (@STRINGID+1, @STRINGID+2, @STRINGID+3, @STRINGID+4);
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+1, 'OHF_CITIZEN_CONVO_PARTNER'),
-(@STRINGID+2, 'OHF_LIEUTENANTDRAKE');
+(@STRINGID+2, 'OHF_LIEUTENANTDRAKE'),
+(@STRINGID+3, 'OHF_ORC_PRISONERS_HUT'), -- Prisoners sleeping inside huts just running out
+(@STRINGID+4, 'OHF_ORC_PRISONERS_SPECIAL'); -- Prisoner that already has waypoints and changes path
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES
