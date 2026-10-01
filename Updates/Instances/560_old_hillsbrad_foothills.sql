@@ -962,17 +962,14 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+377, 10, 2094.5537, 78.12489, 53.05088, 3.525565, 1000, 1859804),
 
 (@CGUID+384, 1, 2060.84033, 121.37503, 55.50213, 100, 100, 1859801),
-(@CGUID+384, 2, 2073.183, 129.70166, 54.212833, 100, 0, 0),
-(@CGUID+384, 3, 2081.791, 134.293, 54.389324, 100, 0, 0),
-(@CGUID+384, 4, 2060.8403, 121.37503, 54.68423, 100, 0, 0),
-(@CGUID+384, 5, 2066.9258, 113.2449, 54.670494, 100, 0, 0),
-(@CGUID+384, 6, 2070.2102, 110.05209, 54.666897, 100, 0, 0),
-(@CGUID+384, 7, 2077.4597, 106.49165, 52.61813, 100, 0, 0),
-(@CGUID+384, 8, 2085.2097, 109.33507, 52.675686, 100, 0, 0),
-(@CGUID+384, 9, 2089.7695, 112.24534, 52.446083, 100, 0, 0),
-(@CGUID+384, 10, 2094.2668, 114.81358, 52.522224, 2.7401669, 1000, 3),
+(@CGUID+384, 2, 2066.9258, 113.2449, 54.670494, 100, 0, 0),
+(@CGUID+384, 3, 2070.2102, 110.05209, 54.666897, 100, 0, 0),
+(@CGUID+384, 4, 2077.4597, 106.49165, 52.61813, 100, 0, 0),
+(@CGUID+384, 5, 2085.2097, 109.33507, 52.675686, 100, 0, 0),
+(@CGUID+384, 6, 2089.7695, 112.24534, 52.446083, 100, 0, 0),
+(@CGUID+384, 7, 2094.2668, 114.81358, 52.522224, 2.7401669, 1000, 3),
 
-(@CGUID+439, 1, 2104.5386, 55.8831, 54.3669, 100, 100, 5),
+(@CGUID+439, 1, 2104.5386, 55.8831, 54.3669, 100, 100, 1859801),
 (@CGUID+439, 2, 2117.1719, 50.08919, 53.829067, 100, 0, 0),
 (@CGUID+439, 3, 2121.3376, 56.77376, 52.440918, 100, 0, 0),
 (@CGUID+439, 4, 2121.2473, 64.69423, 52.66535, 100, 0, 0),
@@ -985,21 +982,15 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+441, 5, 2112.6008, 74.15039, 52.999355, 4.171336, 1000, 3),
 
 (@CGUID+442, 1, 2062.58521, 112.85072, 55.53974, 100, 100, 1859801),
-(@CGUID+442, 2, 2075.3228, 108.63237, 53.248024, 100, 0, 0),
-(@CGUID+442, 3, 2072.4854, 96.52344, 52.517696, 100, 0, 0),
-(@CGUID+442, 4, 2062.5852, 112.85072, 54.646954, 100, 0, 0),
-(@CGUID+442, 5, 2083.1328, 104.87988, 52.903374, 100, 0, 0),
-(@CGUID+442, 6, 2091.5276, 100.9451, 52.5294, 2.687807, 1000, 1859802),
+(@CGUID+442, 2, 2076.8342, 107.34397, 52.749413, 100, 0, 0),
+(@CGUID+442, 3, 2083.1328, 104.87988, 52.903374, 100, 0, 0),
+(@CGUID+442, 4, 2091.5276, 100.9451, 52.5294, 2.687807, 1000, 1859802),
 
 (@CGUID+443, 1, 2058.54346, 117.40628, 55.53479, 2.47837, 100, 1859801),
-(@CGUID+443, 2, 2064.912, 123.12538, 54.549896, 100, 0, 0),
-(@CGUID+443, 3, 2077.0422, 127.2814, 54.206596, 100, 0, 0),
-(@CGUID+443, 4, 2075.027, 141.0822, 54.42858, 100, 0, 0),
-(@CGUID+443, 5, 2058.5435, 117.40628, 54.655224, 100, 0, 0),
-(@CGUID+443, 6, 2067.6868, 111.9413, 54.666203, 100, 0, 0),
-(@CGUID+443, 7, 2079.586, 106.11903, 52.57554, 100, 0, 0),
-(@CGUID+443, 8, 2092.46, 109.93956, 52.49108, 100, 0, 0),
-(@CGUID+443, 9, 2096.817, 110.9936, 52.917103, 2.7227, 1000, 1859804),
+(@CGUID+443, 2, 2071.7612, 109.23058, 54.669407, 100, 0, 0),
+(@CGUID+443, 3, 2079.586, 106.11903, 52.57554, 100, 0, 0),
+(@CGUID+443, 4, 2092.46, 109.93956, 52.49108, 100, 0, 0),
+(@CGUID+443, 5, 2096.817, 110.9936, 52.917103, 2.7227, 1000, 1859804),
 
 (@CGUID+444, 1, 2081.7551, 130.9593, 54.325413, 2.74016, 1000, 1859805), -- waittime between 30-40 seconds standstate sit
 (@CGUID+444, 2, 2076.0337, 132.7258, 54.299946, 100, 0, 0),
@@ -2999,11 +2990,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+42, 'Old Hillsbrad Foothills - Group 023 - Patrol 007 - spawn_group_entry - Durnholde Tracking Hound', 0, 0, 0, 1, 0),
 -- First Boss
 (@SGGUID+43, 'Old Hillsbrad Foothills - Boss 01 - Lieutenant Drake', 0, 0, 0, 1, @STRINGID+2),
--- Orc prisoners
-(@SGGUID+44, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Sleeping in Huts', 0, 0, 0, 0, @STRINGID+4), 
-(@SGGUID+45, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Patrol with special', 0, 0, 0, 0, @STRINGID+5), -- todo
+-- Orc Prisoners
+(@SGGUID+44, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Sleeping in Huts', 0, 0, 0, 0, @STRINGID+4),
+(@SGGUID+45, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Patrol with special', 0, 0, 0, 0, @STRINGID+5),
 (@SGGUID+46, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Outside - Sitting', 0, 0, 0, 0, 0),
-(@SGGUID+47, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Outside - Rnd movement', 0, 0, 0, 0, 0),
+(@SGGUID+47, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Outside - Rnd movement', 0, 0, 0, 0, @STRINGID+4),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3504,8 +3495,11 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+1, 'OHF_CITIZEN_CONVO_PARTNER'),
 (@STRINGID+2, 'OHF_LIEUTENANTDRAKE'),
 (@STRINGID+3, 'OHF_ROARING_FLAMES'),
-(@STRINGID+4, 'OHF_ORC_PRISONERS_HUT'), -- Prisoners sleeping inside huts just running out
-(@STRINGID+5, 'OHF_ORC_PRISONERS_SPECIAL'); -- Prisoner that already has waypoints and changes path
+-- Orc Prisoners will have different RPs after Huts are on Fire
+-- 1 - all sleeping Prisoners (inside hut) and random moving Prisoners will just change to waypoint movement
+(@STRINGID+4, 'OHF_ORC_PRISONERS_WAYPOINTS'), 
+-- 2 - These Prisoners have either already have waypoints or do some other sort of RP activated via core and executed in eai using SendAIEvent
+(@STRINGID+5, 'OHF_ORC_PRISONERS_SPECIAL');
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES
