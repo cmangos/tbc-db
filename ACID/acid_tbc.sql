@@ -23624,8 +23624,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('560044401','-5600444','44','0','100','1','2','1','0','0','0','0','22','1','0','0','51','1','0','0','47','1','0','0','Orc Prisoner - Set Phase 1 pause waypoint standstate sit on Waypoint 1'),
 ('560044402','-5600444','1','1','100','1','30000','40000','30000','40000','0','0','22','0','0','0','51','0','0','0','47','0','0','0','Orc Prisoner - Set Phase 0 unpause waypoint standstate stand OOC (Phase 1)'),
 ('560044403','-5600444','30','0','100','0','5','0','0','0','0','0','22','0','0','0','48','2','1','0','47','0','0','0','Orc Prisoner - Set Phase 0 change path standstate stand on ReceiveEventAI A'),
-
 ('5600446','-5600446','1','0','50','33','40000','60000','120000','180000','0','0','1','19521','19520','19519','1','19520','19519','19522','1','19521','19519','19522','Orc Prisoner - Random Say OOC'),
+-- Sitting Orcs standing up when fire spawns
+('560043601','-5600436','30','0','100','0','5','0','0','0','0','0','53','5600007','0','0','0','0','0','0','0','0','0','0','Orc Prisoner - StartRelayScript Set Phase 1 on ReceiveEventAI A'),
+('560043602','-5600436','1','1','100','0','5000','40000','0','0','0','0','22','0','0','0','53','5600010','0','0','0','0','0','0','Orc Prisoner - Set Phase 0 StartRelayScript OOC (Phase 1)'),
+('560043701','-5600437','30','0','100','0','5','0','0','0','0','0','53','5600008','0','0','0','0','0','0','0','0','0','0','Orc Prisoner - StartRelayScript Set Phase 1 on ReceiveEventAI A'),
+('560043702','-5600437','1','1','100','0','5000','40000','0','0','0','0','22','0','0','0','53','5600010','0','0','0','0','0','0','Orc Prisoner - Set Phase 0 StartRelayScript OOC (Phase 1)'),
+('560043801','-5600438','30','0','100','0','5','0','0','0','0','0','53','5600009','0','0','0','0','0','0','0','0','0','0','Orc Prisoner - StartRelayScript Set Phase 1 on ReceiveEventAI A'),
+('560043802','-5600438','1','1','100','0','5000','40000','0','0','0','0','22','0','0','0','53','5600010','0','0','0','0','0','0','Orc Prisoner - Set Phase 0 StartRelayScript OOC (Phase 1)'),
 -- Tarren Mill Peasant (18644) - NSR
 -- Tarren Mill Horsehand (18646) - NSR
 -- Innkeeper Monica (18649) - NSR

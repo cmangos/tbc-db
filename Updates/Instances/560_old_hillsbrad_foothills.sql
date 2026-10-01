@@ -3702,7 +3702,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN 10220 AND 10242;
-DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN @RELAYID+1 AND @RELAYID+6;
+DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN @RELAYID+1 AND @RELAYID+10;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10220, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12742, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Brown'),
 (10221, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12750, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Black Skull Glowing'),
@@ -3927,7 +3927,20 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+3, 0, 0, 20, 1, 3, 7000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 7 seconds'),
 (@RELAYID+4, 0, 0, 20, 1, 3, 8000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 8 seconds'),
 (@RELAYID+5, 0, 0, 20, 1, 3, 9000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 9 seconds'),
-(@RELAYID+6, 0, 0, 20, 1, 3, 10000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 10 seconds');
+(@RELAYID+6, 0, 0, 20, 1, 3, 10000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 10 seconds'),
+-- RelayScript for Sitting Orc Prisoners started via EAI
+(@RELAYID+7, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Orc Prisoner - SetActive'),
+(@RELAYID+7, 0, 1, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Orc Prisoner - StandState Stand'),
+(@RELAYID+7, 0, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.50811, 'OHF - Orc Prisoner - Change Orientation'),
+(@RELAYID+8, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Orc Prisoner - SetActive'),
+(@RELAYID+8, 0, 1, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Orc Prisoner - StandState Stand'),
+(@RELAYID+8, 0, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.2689, 'OHF - Orc Prisoner - Change Orientation'),
+(@RELAYID+9, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Orc Prisoner - SetActive'),
+(@RELAYID+9, 0, 1, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Orc Prisoner - StandState Stand'),
+(@RELAYID+9, 0, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.617993, 'OHF - Orc Prisoner - Change Orientation'),
+(@RELAYID+10, 0, 0, 3, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'OHF - Orc Prisoner - Move Homeposition'),
+(@RELAYID+10, 0, 1, 28, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, , 'OHF - Orc Prisoner - StandState Sit'),
+(@RELAYID+10, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Orc Prisoner - Remove ActiveObject'):
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
