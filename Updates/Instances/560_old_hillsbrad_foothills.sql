@@ -3993,11 +3993,10 @@ INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `c
 (@RELAYID+4, 0, 19561, 0, 'OHF - Random OOC Texts'),
 (@RELAYID+4, 0, 19562, 0, 'OHF - Random OOC Texts'),
 
-(@RELAYID+5, 0, 19519, 0, 'OHF - Orc Prisoner - Random OOC Texts'),
-(@RELAYID+5, 0, 19520, 0, 'OHF - Orc Prisoner - Random OOC Texts'),
-(@RELAYID+5, 0, 19521, 0, 'OHF - Orc Prisoner - Random OOC Texts'),
-(@RELAYID+5, 0, 19522, 0, 'OHF - Orc Prisoner - Random OOC Texts'),
-(@RELAYID+5, 0, 0, 0, 'OHF - Orc Prisoner - No Text'),
+(@RELAYID+5, 0, 19519, 10, 'OHF - Orc Prisoner - Random OOC Texts'),
+(@RELAYID+5, 0, 19520, 10, 'OHF - Orc Prisoner - Random OOC Texts'),
+(@RELAYID+5, 0, 19521, 10, 'OHF - Orc Prisoner - Random OOC Texts'),
+(@RELAYID+5, 0, 19522, 10, 'OHF - Orc Prisoner - Random OOC Texts'),
 
 (10203, 1, 10223, 0, 'Nat Pagle - Dream 1'),
 (10203, 1, 10224, 0, 'Nat Pagle - Dream 2'),
