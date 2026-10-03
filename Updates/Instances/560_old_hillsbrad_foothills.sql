@@ -3025,10 +3025,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- First Boss
 (@SGGUID+43, 'Old Hillsbrad Foothills - Boss 01 - Lieutenant Drake', 0, 0, 0, 1, @STRINGID+2),
 -- Orc Prisoners
-(@SGGUID+44, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Sleeping in Huts', 0, 0, 0, 0, @STRINGID+4),
-(@SGGUID+45, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Patrol with special', 0, 0, 0, 0, 0),
-(@SGGUID+46, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Outside - Sitting', 0, 0, 0, 0, 0),
-(@SGGUID+47, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners - Outside - Rnd movement', 0, 0, 0, 0, 0),
+(@SGGUID+44, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners', 0, 0, 0, 0, @STRINGID+4),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3150,19 +3147,15 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+44, @CGUID+442, 0, 0), -- Orc Prisoner
 (@SGGUID+44, @CGUID+443, 0, 0), -- Orc Prisoner
 (@SGGUID+44, @CGUID+384, 0, 0), -- Orc Prisoner
-
 -- Orc Prisoner special with waypoint
-(@SGGUID+45, @CGUID+444, 0, 0), -- Orc Prisoner
-
+(@SGGUID+44, @CGUID+444, 0, 0), -- Orc Prisoner
 -- Orc Prisoners sitting outside
-(@SGGUID+46, @CGUID+436, 0, 0), -- Orc Prisoner
-(@SGGUID+46, @CGUID+437, 0, 0), -- Orc Prisoner
-(@SGGUID+46, @CGUID+438, 0, 0), -- Orc Prisoner
-
+(@SGGUID+44, @CGUID+436, 0, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+437, 0, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+438, 0, 0), -- Orc Prisoner
 -- Orc Prisoners with rnd movement
-(@SGGUID+46, @CGUID+440, 0, 0), -- Orc Prisoner
-(@SGGUID+46, @CGUID+446, 0, 0), -- Orc Prisoner
-
+(@SGGUID+44, @CGUID+440, 0, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+446, 0, 0), -- Orc Prisoner
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
 (@SGGUID+1000, @OGUID+50, -1, 0),-- Roaring Flame
@@ -3977,7 +3970,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscript_random_templates` WHERE `id` IN (10203,10204,10205, @RELAYID+1, @RELAYID+2, @RELAYID+3, @RELAYID+4);
+DELETE FROM `dbscript_random_templates` WHERE `id` IN (10203,10204,10205, @RELAYID+1, @RELAYID+2, @RELAYID+3, @RELAYID+4, @RELAYID+5);
 INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 (@RELAYID+1, 0, 19511, 0, 'OHF - Random Aggro Texts'),
 (@RELAYID+1, 0, 19512, 0, 'OHF - Random Aggro Texts'),
@@ -3999,6 +3992,12 @@ INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `c
 (@RELAYID+4, 0, 19560, 0, 'OHF - Random OOC Texts'),
 (@RELAYID+4, 0, 19561, 0, 'OHF - Random OOC Texts'),
 (@RELAYID+4, 0, 19562, 0, 'OHF - Random OOC Texts'),
+
+(@RELAYID+5, 0, 19519, 0, 'OHF - Orc Prisoner - Random OOC Texts'),
+(@RELAYID+5, 0, 19520, 0, 'OHF - Orc Prisoner - Random OOC Texts'),
+(@RELAYID+5, 0, 19521, 0, 'OHF - Orc Prisoner - Random OOC Texts'),
+(@RELAYID+5, 0, 19522, 0, 'OHF - Orc Prisoner - Random OOC Texts'),
+(@RELAYID+5, 0, 0, 0, 'OHF - Orc Prisoner - No Text'),
 
 (10203, 1, 10223, 0, 'Nat Pagle - Dream 1'),
 (10203, 1, 10224, 0, 'Nat Pagle - Dream 2'),
