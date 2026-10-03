@@ -23634,6 +23634,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1817204','18172','0','0','100','1025','1000','5600','62700','66400','0','0','11','31976','0','0','0','0','0','0','0','0','0','0','Infinite Saboteur - Cast Shadow Shield'),
 ('1817205','18172','6','0','10','0','0','0','0','0','0','0','1','19537','19538','0','0','0','0','0','0','0','0','0','Infinite Saboteur - Random Say on Death'),
 -- Orc Prisoner - (18598) GUID based only
+('5600317','-5600317','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600377','-5600377','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600384','-5600384','30','0','100','0','5','0','0','0','0','0','47','0','0','0','0','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand and WaypointMovement on ReceiveEventAI A'),
 ('5600439','-5600439','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
@@ -23642,7 +23643,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('5600443','-5600443','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600445','-5600445','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600447','-5600447','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
+('5600449','-5600449','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
+
+('5600451','-5600451','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
+('5600452','-5600452','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
+
+('5600385','-5600385','1','0','100','1','2000','10000','15000','25000','0','0','5','1','0','0','54','0','0','5600005','0','0','0','0','Orc Prisoner - Emote Talk Random Say OOC'),
+
 ('5600440','-5600440','1','0','100','1','2000','10000','15000','25000','0','0','5','1','0','0','54','0','0','5600005','0','0','0','0','Orc Prisoner - Emote Talk Random Say OOC'),
+('5600450','-5600450','1','0','100','1','2000','10000','15000','25000','0','0','5','1','0','0','54','0','0','5600005','0','0','0','0','Orc Prisoner - Emote Talk Random Say OOC'),
+
 ('560044601','-5600446','1','0','100','1','2000','10000','15000','25000','0','0','5','1','0','0','54','0','0','5600005','0','0','0','0','Orc Prisoner - Emote Talk Random Say OOC'),
 ('560044602','-5600446','30','0','100','0','5','0','0','0','0','0','48','2','0','0','0','0','0','0','0','0','0','0','Orc Prisoner - Chance to WaypointMovement on ReceiveEventAI A'),
 -- Patrol with some RP
