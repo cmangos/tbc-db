@@ -23542,7 +23542,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1781904','17819','30','0','100','0','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Durnholde Sentry - Set Phase 1 on ReceiveEventAI A'),
 ('1781905','17819','30','0','10','1','8','0','0','0','0','0','53','-5600003','0','0','0','0','0','0','0','0','0','0','Durnholde Sentry - Start RandomScript on ReceiveEventAI C'),
 -- GUID Based
-('5600402','-5600402','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Sentry - RunMode and WaypointMovement OOC (Phase 1)'),
+('5600369','-5600369','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Sentry - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
+('5600370','-5600370','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Sentry - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
+('5600402','-5600402','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Sentry - RunMode and WaypointMovement SetPhase 0 OOC (Phase 1)'),
 -- Durnholde Rifleman 17820 - creature_spell_list
 ('1782001','17820','4','0','10','32','0','0','0','0','0','0','54','0','0','5600001','0','0','0','0','0','0','0','0','Durnholde Rifleman - Random Say on Aggro'),
 ('1782002','17820','6','0','10','32','0','0','0','0','0','0','54','0','0','5600002','0','0','0','0','0','0','0','0','Durnholde Rifleman - Random Say on Death'),
@@ -23551,7 +23553,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1782005','17820','30','0','100','0','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Durnholde Rifleman - Set Phase 1 on ReceiveEventAI A'),
 ('1782006','17820','30','0','10','1','8','0','0','0','0','0','53','-5600003','0','0','0','0','0','0','0','0','0','0','Durnholde Rifleman - Start RandomScript on ReceiveEventAI C'),
 -- GUID Based
-('5600391','-5600391','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Rifleman - RunMode and WaypointMovement OOC (Phase 1)'),
+('5600390','-5600390','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Rifleman - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
+('5600391','-5600391','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Rifleman - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
+('5600403','-5600403','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Rifleman - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
 -- Durnholde Warden - creature_spell_list
 ('1783301','17833','4','0','10','32','0','0','0','0','0','0','54','0','0','5600001','0','0','0','0','0','0','0','0','Durnholde Warden - Random Say on Aggro'),
 ('1783302','17833','6','0','10','32','0','0','0','0','0','0','54','0','0','5600002','0','0','0','0','0','0','0','0','Durnholde Warden - Random Say on Death'),
@@ -23559,7 +23563,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1783304','17833','30','0','100','0','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Durnholde Warden - Set Phase 1 on ReceiveEventAI A'),
 ('1783305','17833','30','0','10','1','8','0','0','0','0','0','53','-5600003','0','0','0','0','0','0','0','0','0','0','Durnholde Warden - Start RandomScript on ReceiveEventAI C'),
 -- GUID Based
-('5600408','-5600408','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Warden - RunMode and WaypointMovement OOC (Phase 1)'),
+('5600406','-5600406','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Warden - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
+('5600407','-5600407','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Warden - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
+('5600408','-5600408','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Warden - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
 -- Durnholde Tracking Hound 17840 
 ('1784001','17840','11','0','100','0','0','0','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Durnholde Tracking Hound - Cast Invisibility and Stealth Detection on Spawn'),
 ('1784002','17840','2','0','100','1024','50','0','0','0','0','0','11','8269','0','0','1','1191','0','0','0','0','0','0','Durnholde Tracking Hound - Cast Frenzy at 50% HP'),
@@ -23825,7 +23831,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2816301','28163','0','0','100','1025','0','10000','17000','20000','0','0','11','13738','1','0','0','0','0','0','0','0','0','0','Guerrero - Cast Rend'),
 ('2816302','28163','0','0','100','1025','1000','2000','9000','13000','0','0','11','50739','1','32','0','0','0','0','0','0','0','0','Guerrero - Cast Threatening Growl'),
 -- GUID Based
-('5600321','-5600321','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','5600010','2','0','0','0','0','spawn_group_entry - RunMode and WaypointMovement OOC (Phase 1)'),
+('5600321','-5600321','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','5600010','2','22','0','0','0','spawn_group_entry - RunMode and WaypointMovement SetPhase 0 OOC (Phase 1)'),
+('5600371','-5600371','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','5600011','2','22','0','0','0','spawn_group_entry - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
 ('5600373','-5600373','1','0','100','1','40000','300000','40000','300000','0','0','54','0','0','5600004','5','1','0','0','0','0','0','0','Durnholde Sentry - Emote Talk and Random Say OOC'),
 ('5600374','-5600374','1','0','100','1','40000','300000','40000','300000','0','0','54','0','0','5600004','5','1','0','0','0','0','0','0','Durnholde Sentry - Emote Talk and Random Say OOC'),
 ('5600399','-5600399','1','0','100','1','40000','300000','40000','300000','0','0','54','0','0','5600004','5','1','0','0','0','0','0','0','spawn_group_squad - Emote Talk and Random Say OOC'),

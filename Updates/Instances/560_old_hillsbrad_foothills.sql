@@ -2996,8 +2996,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+29, 'Old Hillsbrad Foothills - Group 010 - Patrol 005 - spawn_group_entry - Durnholde Tracking Hound', 0, 0, 0, 1, 0),
 -- Downstairs - Barrel Houses
 (@SGGUID+30, 'Old Hillsbrad Foothills - Group 011 - Orc Hut 1', 0, 0, 0, 1, @STRINGID+4), 
-(@SGGUID+31, 'Old Hillsbrad Foothills - Group 012 - Orc Hut 2', 0, 0, 0, 1, 0), 
-(@SGGUID+32, 'Old Hillsbrad Foothills - Group 013 - Orc Hut 3', 0, 0, 0, 1, 0), 
+(@SGGUID+31, 'Old Hillsbrad Foothills - Group 012 - Orc Hut 2', 0, 0, 0, 1, @STRINGID+4), 
+(@SGGUID+32, 'Old Hillsbrad Foothills - Group 013 - Orc Hut 3', 0, 0, 0, 1, @STRINGID+4), 
 (@SGGUID+33, 'Old Hillsbrad Foothills - Group 014 - Orc Hut 4', 0, 0, 0, 1, 0), 
 (@SGGUID+34, 'Old Hillsbrad Foothills - Group 015 - Orc Hut 5', 0, 0, 0, 1, 0), 
 -- Group of 4 under the bridge
@@ -3273,6 +3273,7 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+5, 'Old Hillsbrad Foothills - Hillsbrad Citizen Patrol'),
 (@SGGUID+6, 'Old Hillsbrad Foothills - Pirate Captains'),
 (@SGGUID+10, 'Old Hillsbrad Foothills - CGUID+321 spawn_group_entry Path after Lieutenant Drake spawned'),
+(@SGGUID+11, 'Old Hillsbrad Foothills - CGUID+371 spawn_group_entry Path after Lieutenant Drake spawned'),
 (@SGGUID+22, 'Old Hillsbrad Foothills - Group 003 - Patrol 001 - Durnholde Sentry - Durnholde Tracking Hound'),
 (@SGGUID+24, 'Old Hillsbrad Foothills - Group 005 - Patrol 002 - Durnholde Sentry - Durnholde Tracking Hound'),
 (@SGGUID+27, 'Old Hillsbrad Foothills - Group 008 - Patrol 003 - spawn_group_entry - Durnholde Tracking Hound'),
@@ -3395,6 +3396,12 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+10, 2, 2119.722, 66.49447, 52.716373, 100, 0, 0, NULL),
 (@SGGUID+10, 3, 2118.664, 72.54991, 52.72647, 100, 0, 0, NULL),
 (@SGGUID+10, 4, 2117.326, 77.79134, 52.705406, 4.04916, 1000, 3, NULL),
+-- CGUID+371 spawn_group_entry Path after Lieutenant Drake spawned
+(@SGGUID+11, 1, 2085.7427, 72.34354, 52.468174, 100, 0, 0, NULL),
+(@SGGUID+11, 2, 2091.593, 76.14486, 52.877373, 100, 0, 0, NULL),
+(@SGGUID+11, 3, 2102.2048, 84.09668, 52.76448, 100, 0, 0, NULL),
+(@SGGUID+11, 4, 2108.9653, 89.524635, 53.07366, 100, 0, 0, NULL),
+(@SGGUID+11, 5, 2111.0117, 93.36881, 52.649857, 3.595378, 1000, 3, NULL),
 -- Patrol left
 (@SGGUID+22, 1, 2105.6348, 227.95312, 65.92367, 100, 0, 0, NULL),
 (@SGGUID+22, 2, 2129.072, 236.64516, 64.47473, 100, 0, 0, NULL),
