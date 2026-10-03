@@ -23620,7 +23620,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1817205','18172','6','0','10','0','0','0','0','0','0','0','1','19537','19538','0','0','0','0','0','0','0','0','0','Infinite Saboteur - Random Say on Death'),
 -- Orc Prisoner - (18598) GUID based only
 ('5600377','-5600377','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
-('5600384','-5600384','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
+('5600384','-5600384','30','0','100','0','5','0','0','0','0','0','47','0','0','0','0','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand and WaypointMovement on ReceiveEventAI A'),
 ('5600439','-5600439','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600441','-5600441','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600442','-5600442','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
@@ -23630,9 +23630,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 ('5600440','-5600440','1','0','100','1','2000','10000','15000','25000','0','0','5','1','0','0','54','0','0','5600005','0','0','0','0','Orc Prisoner - Emote Talk Random Say OOC'),
-('5600446','-5600446','1','0','100','1','2000','10000','15000','25000','0','0','5','1','0','0','54','0','0','5600005','0','0','0','0','Orc Prisoner - Emote Talk Random Say OOC'),
+('560044601','-5600446','1','0','100','1','2000','10000','15000','25000','0','0','5','1','0','0','54','0','0','5600005','0','0','0','0','Orc Prisoner - Emote Talk Random Say OOC'),
+('560044602','-5600446','30','0','100','0','5','0','0','0','0','0','48','2','0','0','0','0','0','0','0','0','0','0','Orc Prisoner - Chance to WaypointMovement on ReceiveEventAI A'),
 -- Patrol with some RP
-('560044401','-5600444','44','0','100','1','2','1','0','0','0','0','22','1','0','0','51','1','0','0','47','1','0','0','Orc Prisoner - Set Phase 1 pause waypoint standstate sit on Waypoint 1'),
+('560044401','-5600444','44','0','100','1','2','1','0','0','0','0','22','1','0','0','51','1','0','0','47','1','0','0','Orc Prisoner - Set Phase 1 Pause Waypoint Standstate sit on Waypoint 1'),
 ('560044402','-5600444','1','1','100','1','30000','40000','30000','40000','0','0','22','0','0','0','51','0','0','0','47','0','0','0','Orc Prisoner - Set Phase 0 unpause waypoint standstate stand OOC (Phase 1)'),
 ('560044403','-5600444','30','0','100','0','5','0','0','0','0','0','22','0','0','0','48','2','1','0','47','0','0','0','Orc Prisoner - Set Phase 0 change path standstate stand on ReceiveEventAI A'),
 -- Sitting Orcs standing up when fire spawns
