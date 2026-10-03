@@ -1071,50 +1071,32 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+447, 5, 2099.7292, 81.30838, 52.587326, 100, 0, 0),
 (@CGUID+447, 6, 2103.6025, 83.858505, 52.99935, 3.75245, 1000, 3),
 
-(@CGUID+448, 1, 2180.82, 233.922, 52.4421, 0, 0, 0),
-(@CGUID+448, 2, 2190.96, 246.4, 52.5535, 0, 0, 0),
-(@CGUID+448, 3, 2183.91, 242.109, 52.8828, 0, 0, 0),
-(@CGUID+448, 4, 2178.55, 227.63, 52.4409, 0, 0, 0),
-(@CGUID+448, 5, 2158.69, 218.061, 52.536, 0, 0, 0),
-(@CGUID+448, 6, 2147.28, 209.24, 52.8493, 0, 0, 0),
-(@CGUID+448, 7, 2137.69, 195.197, 52.4411, 0, 0, 0),
-(@CGUID+448, 8, 2128.08, 184.306, 52.7819, 0, 0, 0),
-(@CGUID+448, 9, 2121.61, 171.933, 52.7363, 0, 0, 0),
-(@CGUID+448, 10, 2111.17, 158.333, 52.441, 0, 0, 0),
-(@CGUID+448, 11, 2105.6, 139.581, 52.8057, 0, 0, 0),
-(@CGUID+448, 12, 2094.98, 124.519, 52.4842, 0, 0, 0),
-(@CGUID+448, 13, 2092.72, 96.002, 52.4763, 0, 0, 0),
-(@CGUID+448, 14, 2091.2, 76.6567, 52.8143, 0, 0, 0),
-(@CGUID+448, 15, 2078.5, 69.1538, 53.7881, 0, 0, 0),
-(@CGUID+448, 16, 2072.3, 67.2213, 53.7802, 0, 0, 0),
-(@CGUID+448, 17, 2068.55, 74.1697, 53.7048, 0, 0, 0),
-(@CGUID+448, 18, 2061.92, 89.1792, 54.1012, 0, 0, 0),
-(@CGUID+448, 19, 2067.51, 74.6493, 53.7406, 0, 0, 0),
-(@CGUID+448, 20, 2072.52, 67.0591, 53.7853, 0, 0, 0),
-(@CGUID+448, 21, 2080.31, 69.6531, 53.7724, 0, 0, 0),
-(@CGUID+448, 22, 2089.71, 73.7002, 52.751, 0, 0, 0),
-(@CGUID+448, 23, 2105.1, 66.6614, 52.5804, 0, 0, 0),
-(@CGUID+448, 24, 2115.84, 65.2019, 52.6007, 0, 0, 0),
-(@CGUID+448, 25, 2107.39, 83.1457, 53.3359, 0, 0, 0),
-(@CGUID+448, 26, 2093.76, 89.7505, 52.4537, 0, 0, 0),
-(@CGUID+448, 27, 2096.11, 107.581, 52.7549, 0, 0, 0),
-(@CGUID+448, 28, 2101.5, 127.271, 52.5706, 0, 0, 0),
-(@CGUID+448, 29, 2108.5, 146.257, 52.4418, 0, 0, 0),
-(@CGUID+448, 30, 2115.04, 159.756, 52.5111, 0, 0, 0),
-(@CGUID+448, 31, 2120.53, 167.026, 52.6508, 0, 0, 0),
-(@CGUID+448, 32, 2124.68, 178.425, 52.634, 0, 0, 0),
-(@CGUID+448, 33, 2131.69, 188.464, 52.5914, 0, 0, 0),
-(@CGUID+448, 34, 2141.64, 198.599, 52.4418, 0, 0, 0),
-(@CGUID+448, 35, 2153.1, 209.287, 53.1284, 0, 0, 0),
-(@CGUID+448, 36, 2167.16, 227.906, 52.4409, 0, 0, 0),
-(@CGUID+448, 37, 2163.87, 233.083, 52.4411, 0, 0, 0),
-(@CGUID+448, 38, 2157.18, 241.131, 53.8787, 0, 0, 0),
-(@CGUID+448, 39, 2158.75, 247.807, 53.9186, 0, 0, 0),
-(@CGUID+448, 40, 2166.33, 247.603, 53.7073, 0, 0, 0),
-(@CGUID+448, 41, 2158.31, 238.862, 53.8797, 0, 0, 0),
-(@CGUID+448, 42, 2167.1, 228.618, 52.4411, 0, 0, 0),
-(@CGUID+448, 43, 2180.26, 229.167, 52.4411, 0, 0, 0),
-(@CGUID+448, 44, 2187.37, 241.135, 52.6137, 0, 0, 0),
+(@CGUID+448, 1, 2204.2732, 265.34732, 54.057617, 100, 0, 0),
+(@CGUID+448, 2, 2200.18, 262.2461, 54.051384, 100, 0, 0),
+(@CGUID+448, 3, 2195.3552, 258.14758, 54.04644, 100, 0, 0),
+(@CGUID+448, 4, 2191.3394, 251.16396, 52.46516, 100, 0, 0),
+(@CGUID+448, 5, 2185.4915, 241.1198, 52.711155, 100, 0, 0),
+(@CGUID+448, 6, 2175.9426, 230.64735, 52.440907, 100, 0, 0),
+(@CGUID+448, 7, 2164.7705, 218.99837, 52.588596, 100, 0, 0),
+(@CGUID+448, 8, 2153.1636, 207.78473, 53.1292, 100, 0, 0),
+(@CGUID+448, 9, 2144.1624, 200.20627, 52.44091, 100, 0, 0),
+(@CGUID+448, 10, 2136.3438, 193.32237, 52.440914, 100, 0, 0),
+(@CGUID+448, 11, 2132.7512, 187.74957, 52.75635, 100, 0, 0),
+(@CGUID+448, 12, 2131.409, 178.46115, 54.19138, 100, 0, 0),
+(@CGUID+448, 13, 2127.41, 173.97212, 54.00155, 100, 0, 0),
+(@CGUID+448, 14, 2122.8425, 172.54579, 52.700943, 100, 0, 0),
+(@CGUID+448, 15, 2115.6929, 161.25227, 52.45813, 100, 0, 0),
+(@CGUID+448, 16, 2109.169, 152.05176, 52.44091, 100, 0, 0),
+(@CGUID+448, 17, 2109.2148, 143.87305, 52.440918, 100, 0, 0),
+(@CGUID+448, 18, 2111.9768, 124.49219, 52.44091, 100, 0, 0),
+(@CGUID+448, 19, 2115.261, 102.1033, 52.440918, 100, 0, 0),
+(@CGUID+448, 20, 2119.7048, 71.55241, 52.79078, 100, 0, 0),
+(@CGUID+448, 21, 2120.9346, 62.610245, 52.571938, 100, 0, 0),
+(@CGUID+448, 22, 2121.8142, 57.14236, 52.440918, 100, 0, 0),
+(@CGUID+448, 23, 2118.769, 51.705296, 53.827137, 100, 0, 0),
+(@CGUID+448, 24, 2115.8464, 47.436848, 53.824287, 100, 0, 0),
+(@CGUID+448, 25, 2113.2634, 44.355904, 53.825138, 100, 0, 0),
+(@CGUID+448, 26, 2111.5552, 42.129017, 53.824776, 100, 0, 0),
 
 -- Tarren Mill Guardsman (18092) #1
 (@CGUID+602, 1, 2560.236, 765.303, 57.03683, 0, 0, 0),
@@ -2520,7 +2502,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+445, 18598, 560, 3, 2064.00562, 73.96376, 54.67927, 1.02974, 86400, 86400, 0, 0), -- Orc Prisoner
 (@CGUID+446, 18598, 560, 3, 2083.46582, 95.49002, 53.27802, 5.99887, 86400, 86400, 5, 1), -- Orc Prisoner
 (@CGUID+447, 18598, 560, 3, 2063.67065, 93.99501, 54.95841, 2.82743, 86400, 86400, 0, 0), -- Orc Prisoner
-(@CGUID+448, 18598, 560, 3, 2173.2, 230.036, 52.441, 2.22401, 86400, 86400, 0, 2), -- Orc Prisoner
+(@CGUID+448, 18598, 560, 3, 2204.2732, 265.34732, 54.057617, 3.770, 86400, 86400, 0, 2), -- Orc Prisoner
 (@CGUID+449, 18598, 560, 3, 2178.18, 235.514, 52.4842, 5.30747, 86400, 86400, 0, 0), -- Orc Prisoner
 (@CGUID+450, 18598, 560, 3, 2201.58, 241.879, 53.0639, 2.85876, 86400, 86400, 5, 1), -- Orc Prisoner
 (@CGUID+451, 18598, 560, 3, 2194.14, 229.534, 53.1529, 2.9805, 86400, 86400, 5, 1), -- Orc Prisoner
@@ -3137,25 +3119,28 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+43, @CGUID+316, 0, 0), -- Lieutenant Drake
 
 -- Orc Prisoners Hut 1
-(@SGGUID+44, @CGUID+439, 0, 0), -- Orc Prisoner
-(@SGGUID+44, @CGUID+441, 0, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+439, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+441, -1, 0), -- Orc Prisoner
 -- Orc Prisoners Hut 2
-(@SGGUID+44, @CGUID+445, 0, 0), -- Orc Prisoner
-(@SGGUID+44, @CGUID+447, 0, 0), -- Orc Prisoner
-(@SGGUID+44, @CGUID+377, 0, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+445, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+447, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+377, -1, 0), -- Orc Prisoner
 -- Orc Prisoners Hut 3
-(@SGGUID+44, @CGUID+442, 0, 0), -- Orc Prisoner
-(@SGGUID+44, @CGUID+443, 0, 0), -- Orc Prisoner
-(@SGGUID+44, @CGUID+384, 0, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+442, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+443, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+384, -1, 0), -- Orc Prisoner
 -- Orc Prisoner special with waypoint
-(@SGGUID+44, @CGUID+444, 0, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+444, -1, 0), -- Orc Prisoner
 -- Orc Prisoners sitting outside
-(@SGGUID+44, @CGUID+436, 0, 0), -- Orc Prisoner
-(@SGGUID+44, @CGUID+437, 0, 0), -- Orc Prisoner
-(@SGGUID+44, @CGUID+438, 0, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+436, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+437, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+438, -1, 0), -- Orc Prisoner
 -- Orc Prisoners with rnd movement
-(@SGGUID+44, @CGUID+440, 0, 0), -- Orc Prisoner
-(@SGGUID+44, @CGUID+446, 0, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+440, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+446, -1, 0), -- Orc Prisoner
+-- Long Patrol
+(@SGGUID+44, @CGUID+448, -1, 0), -- Orc Prisoner
+
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
 (@SGGUID+1000, @OGUID+50, -1, 0),-- Roaring Flame
@@ -3274,6 +3259,7 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+6, 'Old Hillsbrad Foothills - Pirate Captains'),
 (@SGGUID+10, 'Old Hillsbrad Foothills - CGUID+321 spawn_group_entry Path after Lieutenant Drake spawned'),
 (@SGGUID+11, 'Old Hillsbrad Foothills - CGUID+371 spawn_group_entry Path after Lieutenant Drake spawned'),
+(@SGGUID+12, 'Old Hillsbrad Foothills - CGUID+404 spawn_group_entry Path after Lieutenant Drake spawned'),
 (@SGGUID+22, 'Old Hillsbrad Foothills - Group 003 - Patrol 001 - Durnholde Sentry - Durnholde Tracking Hound'),
 (@SGGUID+24, 'Old Hillsbrad Foothills - Group 005 - Patrol 002 - Durnholde Sentry - Durnholde Tracking Hound'),
 (@SGGUID+27, 'Old Hillsbrad Foothills - Group 008 - Patrol 003 - spawn_group_entry - Durnholde Tracking Hound'),
@@ -3402,6 +3388,12 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+11, 3, 2102.2048, 84.09668, 52.76448, 100, 0, 0, NULL),
 (@SGGUID+11, 4, 2108.9653, 89.524635, 53.07366, 100, 0, 0, NULL),
 (@SGGUID+11, 5, 2111.0117, 93.36881, 52.649857, 3.595378, 1000, 3, NULL),
+-- CGUID+404 spawn_group_entry Path after Lieutenant Drake spawned
+(@SGGUID+12, 1, 2077.5251, 106.56358, 52.61238, 100, 0, 0, NULL),
+(@SGGUID+12, 1, 2085.9905, 107.36133, 52.833458, 100, 0, 0, NULL),
+(@SGGUID+12, 1, 2092.5981, 111.30556, 52.48387, 100, 0, 0, NULL),
+(@SGGUID+12, 1, 2100.2964, 116.73448, 53.165268, 100, 0, 0, NULL),
+(@SGGUID+12, 1, 2105.0347, 118.92025, 53.127617, 2.82743, 1000, 3, NULL),
 -- Patrol left
 (@SGGUID+22, 1, 2105.6348, 227.95312, 65.92367, 100, 0, 0, NULL),
 (@SGGUID+22, 2, 2129.072, 236.64516, 64.47473, 100, 0, 0, NULL),
