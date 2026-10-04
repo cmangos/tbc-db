@@ -1137,6 +1137,33 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+455, 4, 2196.9485, 231.86653, 52.496758, 100, 0, 0),
 (@CGUID+455, 5, 2201.0798, 226.41829, 52.49089, 1.2740, 1000, 1859802),
 
+(@CGUID+456, 1, 2200.9336, 236.18088, 52.96251, 1.3089, 1000, 0),
+(@CGUID+456, 2, 2196.5747, 243.2487, 52.440903, 100, 0, 0),
+(@CGUID+456, 3, 2193.8645, 245.25348, 52.46479, 100, 0, 0),
+(@CGUID+456, 4, 2192.3442, 248.55849, 52.463425, 100, 0, 0),
+(@CGUID+456, 5, 2192.2043, 251.74089, 52.449562, 100, 0, 0),
+(@CGUID+456, 6, 2195.093, 257.76758, 54.047028, 100, 0, 0),
+(@CGUID+456, 7, 2199.9307, 258.7423, 54.069008, 100, 0, 0),
+(@CGUID+456, 8, 2203.7786, 258.3803, 54.040886, 100, 0, 0),
+(@CGUID+456, 9, 2207.1577, 256.9257, 53.893837, 100, 0, 0),
+(@CGUID+456, 10, 2211.8984, 252.58084, 53.639748, 100, 0, 0),
+(@CGUID+456, 11, 2213.5278, 249.05025, 53.6219, 100, 0, 0),
+(@CGUID+456, 12, 2215.0964, 245.67871, 53.690968, 0.9773, 1000, 0),
+(@CGUID+456, 13, 2212.8555, 251.10005, 53.584965, 100, 0, 0),
+(@CGUID+456, 14, 2211.5322, 254.74078, 53.697227, 100, 0, 0),
+(@CGUID+456, 15, 2209.6396, 257.1351, 53.81235, 100, 0, 0),
+(@CGUID+456, 16, 2205.8794, 258.17514, 53.96397, 100, 0, 0),
+(@CGUID+456, 17, 2202.0095, 258.7463, 54.080708, 100, 0, 0),
+(@CGUID+456, 18, 2197.836, 258.31976, 54.059494, 100, 0, 0),
+(@CGUID+456, 19, 2194.7349, 256.4733, 54.064552, 100, 0, 0),
+(@CGUID+456, 20, 2192.7083, 253.39606, 52.440903, 100, 0, 0),
+(@CGUID+456, 21, 2193.1106, 251.23395, 52.44773, 100, 0, 0),
+(@CGUID+456, 22, 2194.1711, 248.57379, 52.441986, 100, 0, 0),
+(@CGUID+456, 23, 2196.1064, 245.71745, 52.45761, 100, 0, 0),
+(@CGUID+456, 24, 2198.758, 241.79036, 52.76088, 100, 0, 0),
+(@CGUID+456, 25, 2200.0408, 239.00488, 52.74265, 100, 0, 0),
+(@CGUID+456, 26, 2201.1172, 237.31001, 52.69326, 100, 0, 0),
+
 (@CGUID+526, 1, 2170.2908, 265.7039, 53.51977, 100, 0, 0),
 (@CGUID+526, 2, 2169.023, 271.963, 54.584507, 100, 0, 0),
 (@CGUID+526, 3, 2176.7432, 273.27127, 54.266907, 100, 0, 0),
@@ -2006,7 +2033,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+453, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
 (@CGUID+454, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
 (@CGUID+455, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
-(@CGUID+456, 0, 1, 0, 0, 0, NULL), -- Orc Prisoner
 (@CGUID+526, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
 (@CGUID+527, 0, 0, 1, 173, 0, NULL), -- Hillsbrad Peasant
 (@CGUID+528, 0, 0, 1, 173, 0, NULL), -- Hillsbrad Peasant
@@ -2573,7 +2599,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+453, 18598, 560, 3, 2149.5320, 245.0607, 54.7494, 3.6477, 86400, 86400, 0, 0), -- Orc Prisoner
 (@CGUID+454, 18598, 560, 3, 2176.8169, 252.5039, 54.3686, 1.6057, 86400, 86400, 0, 0), -- Orc Prisoner
 (@CGUID+455, 18598, 560, 3, 2207.9893, 267.2031, 54.8776, 4.7298, 86400, 86400, 0, 0), -- Orc Prisoner
-(@CGUID+456, 18598, 560, 3, 2224.65, 247.469, 53.8338, 2.45256, 86400, 86400, 0, 0), -- Orc Prisoner
+(@CGUID+456, 18598, 560, 3, 2200.9336, 236.1809, 52.9625, 1.3090, 86400, 86400, 0, 2), -- Orc Prisoner
 (@CGUID+457, 18644, 560, 3, 2560.29, 707.901, 55.2574, 3.18871, 86400, 86400, 0, 0), -- Tarren Mill Peasant
 (@CGUID+458, 18644, 560, 3, 2573.33, 695.682, 55.2084, 5.10901, 86400, 86400, 0, 0), -- Tarren Mill Peasant
 (@CGUID+459, 18644, 560, 3, 2554.37, 690.342, 55.4739, 2.46143, 86400, 86400, 0, 0), -- Tarren Mill Peasant
@@ -3229,8 +3255,6 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 -- patrol
 (@SGGUID+44, @CGUID+456, -1, 0),
 
-
-
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
 (@SGGUID+1000, @OGUID+50, -1, 0),-- Roaring Flame
@@ -3351,6 +3375,7 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+11, 'Old Hillsbrad Foothills - CGUID+371 spawn_group_entry Path after Lieutenant Drake spawned'),
 (@SGGUID+12, 'Old Hillsbrad Foothills - CGUID+404 spawn_group_entry Path after Lieutenant Drake spawned'),
 (@SGGUID+13, 'Old Hillsbrad Foothills - CGUID+318 Orc Prisoner Path after Lieutenant Drake spawned'),
+(@SGGUID+14, 'Old Hillsbrad Foothills - CGUID+456 Orc Prisoner Path after Lieutenant Drake spawned'),
 (@SGGUID+22, 'Old Hillsbrad Foothills - Group 003 - Patrol 001 - Durnholde Sentry - Durnholde Tracking Hound'),
 (@SGGUID+24, 'Old Hillsbrad Foothills - Group 005 - Patrol 002 - Durnholde Sentry - Durnholde Tracking Hound'),
 (@SGGUID+27, 'Old Hillsbrad Foothills - Group 008 - Patrol 003 - spawn_group_entry - Durnholde Tracking Hound'),
@@ -3491,6 +3516,12 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+13, 3, 2169.8755, 225.01584, 52.440907, 100, 0, 0, NULL),
 (@SGGUID+13, 4, 2176.0266, 223.49371, 52.55742, 100, 0, 0, NULL),
 (@SGGUID+13, 5, 2179.3445, 221.24707, 52.57214, 1.692969, 10000, 3, NULL),
+-- CGUID+456 Orc Prisoner Path after Lieutenant Drake spawned
+(@SGGUID+14, 1, 2209.256, 256.5421, 53.813313, 100, 0, 0, NULL),
+(@SGGUID+14, 2, 2203.0017, 261.4553, 54.071587, 100, 0, 0, NULL),
+(@SGGUID+14, 3, 2194.8506, 256.99512, 54.04986, 100, 0, 0, NULL),
+(@SGGUID+14, 4, 2188.9175, 241.92232, 52.57918, 100, 0, 0, NULL),
+(@SGGUID+14, 5, 2187.5798, 238.54166, 52.486412, 0.50614, 1000, 1859802, NULL),
 -- Patrol left
 (@SGGUID+22, 1, 2105.6348, 227.95312, 65.92367, 100, 0, 0, NULL),
 (@SGGUID+22, 2, 2129.072, 236.64516, 64.47473, 100, 0, 0, NULL),
