@@ -23647,6 +23647,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 ('5600451','-5600451','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600452','-5600452','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
+('5600453','-5600453','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
+('5600454','-5600454','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
+('5600526','-5600526','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 
 ('5600385','-5600385','1','0','100','1','2000','10000','15000','25000','0','0','5','1','0','0','54','0','0','5600005','0','0','0','0','Orc Prisoner - Emote Talk Random Say OOC'),
 
@@ -23655,6 +23658,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 ('560044601','-5600446','1','0','100','1','2000','10000','15000','25000','0','0','5','1','0','0','54','0','0','5600005','0','0','0','0','Orc Prisoner - Emote Talk Random Say OOC'),
 ('560044602','-5600446','30','0','100','0','5','0','0','0','0','0','48','2','0','0','0','0','0','0','0','0','0','0','Orc Prisoner - Chance to WaypointMovement on ReceiveEventAI A'),
+-- Patrol with some RP
+('560031801','-5600318','44','0','100','1','2','1','0','0','0','0','22','1','0','0','51','1','0','0','47','1','0','0','Orc Prisoner - Set Phase 1 Pause Waypoint Standstate sit on Waypoint 1 Point 1'),
+('560031802','-5600318','44','0','100','1','2','1','0','0','0','0','22','1','0','0','51','1','0','0','0','0','0','0','Orc Prisoner - Set Phase 1 Pause Waypoint on Waypoint 1 Point 1'),
+('560031803','-5600318','1','1','100','1','45000','55000','45000','55000','0','0','22','0','0','0','51','0','0','0','47','0','0','0','Orc Prisoner - Set Phase 0 unpause waypoint standstate stand OOC (Phase 1)'),
+('560031804','-5600318','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','5600013','2','22','0','0','0','spawn_group_entry - RunMode and WaypointMovement SetPhase 0 OOC (Phase 1)'),
 -- Patrol with some RP
 ('560044401','-5600444','44','0','100','1','2','1','0','0','0','0','22','1','0','0','51','1','0','0','47','1','0','0','Orc Prisoner - Set Phase 1 Pause Waypoint Standstate sit on Waypoint 1'),
 ('560044402','-5600444','1','1','100','1','30000','40000','30000','40000','0','0','22','0','0','0','51','0','0','0','47','0','0','0','Orc Prisoner - Set Phase 0 unpause waypoint standstate stand OOC (Phase 1)'),
