@@ -23644,12 +23644,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('5600445','-5600445','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600447','-5600447','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600449','-5600449','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
-
 ('5600451','-5600451','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600452','-5600452','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600453','-5600453','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600454','-5600454','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600526','-5600526','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
+
+('5600455','-5600455','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
+('5600557','-5600557','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
+('5600571','-5600571','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 
 ('5600385','-5600385','1','0','100','1','2000','10000','15000','25000','0','0','5','1','0','0','54','0','0','5600005','0','0','0','0','Orc Prisoner - Emote Talk Random Say OOC'),
 
