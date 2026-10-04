@@ -31916,7 +31916,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Summoned Windfury Totem 22897 - TotemAI
 -- Imp in a Ball 23224 - npc_imp_in_a_ball
 -- Imp in a Ball Special Case (Rogue) 23229 - npc_imp_in_a_ball
--- Captured Totem 23811 - TotemAI
+-- Captured Totem 23811 - Fake EventAI
 -- Fire Nova Totem 24320 - npc_fire_nova_totem
 -- Voodoo Servant 24529
 ('2452901','24529','0','0','100','1025','1000','3000','3000','7000','0','0','11','19874','1','0','0','0','0','0','0','0','0','0','Voodoo Servant - Cast Lightning Bolt'),
@@ -32887,7 +32887,7 @@ INSERT INTO `creature_ai_summons` (`id`,`position_x`,`position_y`,`position_z`,`
 -- =======================================================
 -- Set EventAI in Creature_Template and Final SQL Cleanups
 -- =======================================================
-
+UPDATE `creature_template` SET `AIName` = 'EventAI' WHERE `entry` = 23811; -- Captured Totem
 
 -- ============================================================
 -- Remove All Creature Template Entries That Conflict With ACID
