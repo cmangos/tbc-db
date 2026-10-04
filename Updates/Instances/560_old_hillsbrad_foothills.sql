@@ -3131,7 +3131,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Group of 4 under the bridge
 (@SGGUID+35, 'Old Hillsbrad Foothills - Group 016 - Durnholde Warden (2) - Durnholde Sentry (2)', 0, 0, 0, 1, 0), 
 -- Patrol around Orc hut 4 and 5
-(@SGGUID+36, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - spawn_group_entry - Durnholde Tracking Hound', 0, 0, 0, 1, 0),
+(@SGGUID+36, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - spawn_group_entry - Durnholde Tracking Hound', 0, 0, 0, 1, @STRINGID+5),
 -- Static group of 4 at the tower
 (@SGGUID+37, 'Old Hillsbrad Foothills - Group 019 - Durnholde Sentry | Durnholde Rifleman | Durnholde Warden (2)', 0, 0, 0, 1, 0),
 -- Entrance to Thrall - 2 Possible squads
@@ -3724,7 +3724,8 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+3, 'OHF_ROARING_FLAMES'),
 -- Orc Prisoners and all alive enemy NPC groups around the orc Huts will have differen RP elements after Lieutenant Drake spawned
 -- Everything gets handled via EAI activated with AI_EVENT_CUSTOM_EVENTAI_A from core script
-(@STRINGID+4, 'OHF_DRAKE_RP_SPECIAL');
+(@STRINGID+4, 'OHF_DRAKE_RP_SPECIAL'),
+(@STRINGID+5, 'OHF_DRAKE_PATROL_RP_SPECIAL');
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES
