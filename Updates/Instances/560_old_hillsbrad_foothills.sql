@@ -3264,54 +3264,36 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+43, @CGUID+316, 0, 0), -- Lieutenant Drake
 
--- Orc Prisoners Hut 1
-(@SGGUID+44, @CGUID+439, -1, 0), -- Orc Prisoner
-(@SGGUID+44, @CGUID+441, -1, 0), -- Orc Prisoner
--- Orc Prisoners Hut 2
-(@SGGUID+44, @CGUID+445, -1, 0), -- Orc Prisoner
-(@SGGUID+44, @CGUID+447, -1, 0), -- Orc Prisoner
+-- Orc Prisoners
+(@SGGUID+44, @CGUID+317, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+318, -1, 0), -- Orc Prisoner
 (@SGGUID+44, @CGUID+377, -1, 0), -- Orc Prisoner
--- Orc Prisoners Hut 3
-(@SGGUID+44, @CGUID+442, -1, 0), -- Orc Prisoner
-(@SGGUID+44, @CGUID+443, -1, 0), -- Orc Prisoner
 (@SGGUID+44, @CGUID+384, -1, 0), -- Orc Prisoner
--- Orc Prisoner special with waypoint
-(@SGGUID+44, @CGUID+444, -1, 0), -- Orc Prisoner
--- Orc Prisoners sitting outside
+(@SGGUID+44, @CGUID+385, -1, 0), -- Orc Prisoner
 (@SGGUID+44, @CGUID+436, -1, 0), -- Orc Prisoner
 (@SGGUID+44, @CGUID+437, -1, 0), -- Orc Prisoner
 (@SGGUID+44, @CGUID+438, -1, 0), -- Orc Prisoner
--- Orc Prisoners with rnd movement
+(@SGGUID+44, @CGUID+439, -1, 0), -- Orc Prisoner
 (@SGGUID+44, @CGUID+440, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+441, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+442, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+443, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+444, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+445, -1, 0), -- Orc Prisoner
 (@SGGUID+44, @CGUID+446, -1, 0), -- Orc Prisoner
--- Long Patrol
+(@SGGUID+44, @CGUID+447, -1, 0), -- Orc Prisoner
 (@SGGUID+44, @CGUID+448, -1, 0), -- Orc Prisoner
---  Sitting NPC
 (@SGGUID+44, @CGUID+449, -1, 0), -- Orc Prisoner
-
--- rnd movement
-(@SGGUID+44, @CGUID+317, -1, 0), -- Orc Prisoner
-(@SGGUID+44, @CGUID+385, -1, 0), -- Orc Prisoner
 (@SGGUID+44, @CGUID+450, -1, 0), -- Orc Prisoner
-
--- talkin with each other
 (@SGGUID+44, @CGUID+451, -1, 0), -- Orc Prisoner
 (@SGGUID+44, @CGUID+452, -1, 0), -- Orc Prisoner
-
--- hut 4
-(@SGGUID+44, @CGUID+318, -1, 0),
-(@SGGUID+44, @CGUID+453, -1, 0),
-(@SGGUID+44, @CGUID+454, -1, 0),
-(@SGGUID+44, @CGUID+526, -1, 0),
-
--- hut 5
--- sleeping
-(@SGGUID+44, @CGUID+455, -1, 0),
-(@SGGUID+44, @CGUID+557, -1, 0),
-(@SGGUID+44, @CGUID+571, -1, 0),
--- patrol
-(@SGGUID+44, @CGUID+456, -1, 0),
-
+(@SGGUID+44, @CGUID+453, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+454, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+455, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+456, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+526, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+557, -1, 0), -- Orc Prisoner
+(@SGGUID+44, @CGUID+571, -1, 0), -- Orc Prisoner
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
 (@SGGUID+1000, @OGUID+50, -1, 0),-- Roaring Flame
