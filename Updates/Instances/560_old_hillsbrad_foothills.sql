@@ -11,6 +11,7 @@ TODO
 * Innkeeper Monica missing random emote? "shakes her head at all of the commotion."
 * some creatures seem to be pooled with together with other entrys (patrols in the barracks)
 * Don Carlos, Guerrero Heroic Dummy Template?
+* Orc Prisoner seem to run away when players are fighting enemy nps near them, maybe a spell? - even the 'sleeping' ones
 
 EndDBScriptData */
 
@@ -3440,6 +3441,7 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+28, 'Old Hillsbrad Foothills - Group 009 - Patrol 004 - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+29, 'Old Hillsbrad Foothills - Group 010 - Patrol 005 - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+36, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - spawn_group_entry - Durnholde Tracking Hound'),
+(@SGGUID+37, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - Path 2 after Lieutenant Drake spawned - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+42, 'Old Hillsbrad Foothills - Group 023 - Patrol 007 - spawn_group_entry - Durnholde Tracking Hound');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
@@ -3694,6 +3696,23 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+36, 36, 2210.0654, 236.61133, 52.75355, 100, 0, 0, NULL),
 (@SGGUID+36, 37, 2213.8389, 235.2832, 52.52468, 100, 0, 0, NULL),
 (@SGGUID+36, 38, 2217.3633, 234.02864, 52.488518, 100, 0, 0, NULL),
+-- Path for Patrol around Orc Hut 4+5 after Lieutenant Drake spawns
+(@SGGUID+37, 1, 2213.3342, 233.69368, 52.515427, 100, 0, 0, NULL),
+(@SGGUID+37, 2, 2206.836, 236.66776, 52.803986, 100, 0, 0, NULL),
+(@SGGUID+37, 3, 2198.8843, 241.39986, 52.75914, 100, 0, 0, NULL),
+(@SGGUID+37, 4, 2189.1724, 246.8967, 52.668755, 100, 0, 0, NULL),
+(@SGGUID+37, 5, 2181.8386, 242.33702, 52.983253, 100, 0, 0, NULL),
+(@SGGUID+37, 6, 2179.1736, 234.08333, 52.467125, 100, 0, 0, NULL),
+(@SGGUID+37, 7, 2167.2844, 224.91406, 52.440907, 100, 0, 0, NULL),
+(@SGGUID+37, 8, 2157.1243, 222.70801, 52.68984, 100, 0, 0, NULL),
+(@SGGUID+37, 9, 2144.4514, 229.1914, 52.680847, 100, 0, 0, NULL),
+(@SGGUID+37, 10, 2143.206, 217.28146, 52.535328, 100, 0, 0, NULL),
+(@SGGUID+37, 11, 2145.823, 208.96344, 52.698753, 100, 0, 0, NULL),
+(@SGGUID+37, 12, 2157.4175, 200.70975, 52.56058, 100, 0, 0, NULL),
+(@SGGUID+37, 13, 2170.547, 201.58409, 53.724792, 100, 0, 0, NULL),
+(@SGGUID+37, 14, 2180.148, 205.75813, 53.844948, 100, 0, 0, NULL),
+(@SGGUID+37, 15, 2193.3423, 212.75282, 52.7555, 100, 0, 0, NULL),
+(@SGGUID+37, 16, 2206.553, 223.81316, 52.44091, 100, 0, 0, NULL),
 
 (@SGGUID+42, 1, 2211.856, 147.51253, 103.36876, 100, 0, 0, NULL),
 (@SGGUID+42, 2, 2230.6616, 138.40067, 98.27502, 100, 0, 0, NULL),
