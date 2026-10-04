@@ -171,6 +171,13 @@ UPDATE gameobject_template SET data8=1 WHERE entry=184910; -- Power Converter (s
 -- trap makes it look like double spawn - removing its display fixes issue
 UPDATE gameobject_template SET displayId = 0 WHERE entry = 184958;
 
+-- Two Tin Vein spawns are parser mistakes (wrong map assignment / duplicate):
+--   guid 146676 is actually an Eastern Kingdoms spawn parsed onto map 1
+--   guid 147133 is a copy of spawn 700005 from map 70
+-- Delete both from gameobject and from their Tin Vein spawn groups.
+DELETE FROM `spawn_group_spawn` WHERE `Guid` IN (146676, 147133);
+DELETE FROM `gameobject` WHERE `guid` IN (146676, 147133);
+
 -- -------------------------------
 -- Item custom changes
 -- -------------------------------
