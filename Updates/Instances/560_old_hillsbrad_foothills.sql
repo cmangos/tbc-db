@@ -3123,11 +3123,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Patrol between all Houses
 (@SGGUID+29, 'Old Hillsbrad Foothills - Group 010 - Patrol 005 - spawn_group_entry - Durnholde Tracking Hound', 0, 0, 0, 1, 0),
 -- Downstairs - Barrel Houses
-(@SGGUID+30, 'Old Hillsbrad Foothills - Group 011 - Orc Hut 1', 0, 0, 0, 1, @STRINGID+4), 
-(@SGGUID+31, 'Old Hillsbrad Foothills - Group 012 - Orc Hut 2', 0, 0, 0, 1, @STRINGID+4), 
-(@SGGUID+32, 'Old Hillsbrad Foothills - Group 013 - Orc Hut 3', 0, 0, 0, 1, @STRINGID+4), 
-(@SGGUID+33, 'Old Hillsbrad Foothills - Group 014 - Orc Hut 4', 0, 0, 0, 1, @STRINGID+4), 
-(@SGGUID+34, 'Old Hillsbrad Foothills - Group 015 - Orc Hut 5', 0, 0, 0, 1, @STRINGID+4), 
+(@SGGUID+30, 'Old Hillsbrad Foothills - Group 011 - Orc Hut 1', 0, 0, @SGGUID+4, 1, @STRINGID+4), 
+(@SGGUID+31, 'Old Hillsbrad Foothills - Group 012 - Orc Hut 2', 0, 0, @SGGUID+4, 1, @STRINGID+4), 
+(@SGGUID+32, 'Old Hillsbrad Foothills - Group 013 - Orc Hut 3', 0, 0, @SGGUID+4, 1, @STRINGID+4), 
+(@SGGUID+33, 'Old Hillsbrad Foothills - Group 014 - Orc Hut 4', 0, 0, @SGGUID+4, 1, @STRINGID+4), 
+(@SGGUID+34, 'Old Hillsbrad Foothills - Group 015 - Orc Hut 5', 0, 0, @SGGUID+4, 1, @STRINGID+4), 
 -- Group of 4 under the bridge
 (@SGGUID+35, 'Old Hillsbrad Foothills - Group 016 - Durnholde Warden (2) - Durnholde Sentry (2)', 0, 0, 0, 1, 0), 
 -- Patrol around Orc hut 4 and 5
@@ -3380,17 +3380,19 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 (@SGGUID+40, 2, @CGUID+434, 17860), -- Durnholde Veteran (Back Left)
 (@SGGUID+40, 2, @CGUID+416, 17833); -- Durnholde Warden (Back Right)
 
-DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3);
+DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3,@SGGUID+4);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@SGGUID+1, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
 (@SGGUID+2, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
-(@SGGUID+3, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal');
+(@SGGUID+3, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal'),
+(@SGGUID+4, 'Old Hillsbrad Foothills - Lieutenant Drake - Trash respawn');
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3, @SGGUID+4);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
 (@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
-(@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal');
+(@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal'),
+(@SGGUID+4, 42, @SGGUID+4, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Lieutenant Drake - Trash respawn');
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
