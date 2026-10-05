@@ -3574,7 +3574,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+16, 2, 2190.2722, 246.76161, 52.59523, 100, 0, 0, NULL),
 (@CGUID+16, 3, 2190.737, 243.232, 52.525105, 0.85521, 1000, 3, NULL),
 -- CGUID+448 Orc Prisoner Path after Lieutenant Drake spawned
-(@CGUID+17, 1, 2111.4958, 79.96868, 53.264374, 4.1538, 1000, 3, NULL),
+(@CGUID+17, 1, 2111.1716, 81.91653, 53.342503, 4.1538, 1000, 3, NULL),
 -- Patrol left
 (@SGGUID+22, 1, 2105.6348, 227.95312, 65.92367, 100, 0, 0, NULL),
 (@SGGUID+22, 2, 2129.072, 236.64516, 64.47473, 100, 0, 0, NULL),
