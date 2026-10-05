@@ -9,7 +9,7 @@
 -- https://www.warcrafttavern.com/wow-classic/guides/fishing-1-300/ - confirms the dungeons
 -- Trinitycore uses "WoWWiki's table once its 95-point grace band comes off" so their values are +95, can be used for junk filtering implementation
 -- Some ø values were saved by zone fallback from area value
-DELETE FROM `skill_fishing_base_level` WHERE `entry` IN (19,718,719,1497,796,16,1477,1583,1584,2717,2557,2279,3487,3557,3479,2366,2367,3606,3521,3655,3659,3607,3715,3716,3717,3905,3518,3805,4075,4131,3703,3653,3656,3720,3519,3679,3621,3680,3690,3691,3692,3693,3975);
+DELETE FROM `skill_fishing_base_level` WHERE `entry` IN (19,25,718,719,1497,796,16,1477,1583,1584,2717,2557,2279,3487,3557,3479,2366,2367,3606,3521,3655,3659,3607,3715,3716,3717,3905,3518,3805,4075,4131,3703,3653,3656,3720,3519,3679,3621,3680,3690,3691,3692,3693,3975);
 INSERT INTO `skill_fishing_base_level` (`entry`, `skill`) VALUES
 -- vanilla brackets - 0, 55, 130, 205, 330
 (19, 330), -- ZG (Outside)(TC)
