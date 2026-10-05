@@ -23666,6 +23666,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('560044601','-5600446','1','0','100','1','2000','10000','15000','25000','0','0','5','1','0','0','54','0','0','5600005','0','0','0','0','Orc Prisoner - Emote Talk Random Say OOC'),
 ('560044602','-5600446','30','0','100','0','5','0','0','0','0','0','48','2','0','0','0','0','0','0','0','0','0','0','Orc Prisoner - Chance to WaypointMovement on ReceiveEventAI A'),
 ('5600447','-5600447','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
+('5600448','-5600448','30','0','100','0','5','0','0','0','0','0','58','0','0','0','48','2','5600017','2','47','0','0','0','spawn_group_entry - RunMode and WaypointMovement SetPhase 0 OOC (Phase 1)'),
 ('5600449','-5600449','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600451','-5600451','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600452','-5600452','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),

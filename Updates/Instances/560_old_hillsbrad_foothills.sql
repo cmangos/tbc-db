@@ -3417,6 +3417,7 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+14, 'Old Hillsbrad Foothills - CGUID+456 Orc Prisoner Path after Lieutenant Drake spawned'),
 (@SGGUID+15, 'Old Hillsbrad Foothills - CGUID+417 Durnholde Warden Path after Lieutenant Drake spawned'),
 (@SGGUID+16, 'Old Hillsbrad Foothills - CGUID+397 spawn_group_entry Path after Lieutenant Drake spawned'),
+(@SGGUID+17, 'Old Hillsbrad Foothills - CGUID+448 Orc Prisoner Path after Lieutenant Drake spawned'),
 (@SGGUID+22, 'Old Hillsbrad Foothills - Group 003 - Patrol 001 - Durnholde Sentry - Durnholde Tracking Hound'),
 (@SGGUID+24, 'Old Hillsbrad Foothills - Group 005 - Patrol 002 - Durnholde Sentry - Durnholde Tracking Hound'),
 (@SGGUID+27, 'Old Hillsbrad Foothills - Group 008 - Patrol 003 - spawn_group_entry - Durnholde Tracking Hound'),
@@ -3572,6 +3573,8 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+16, 1, 2192.1875, 252.60352, 52.44568, 100, 0, 0, NULL),
 (@CGUID+16, 2, 2190.2722, 246.76161, 52.59523, 100, 0, 0, NULL),
 (@CGUID+16, 3, 2190.737, 243.232, 52.525105, 0.85521, 1000, 3, NULL),
+-- CGUID+448 Orc Prisoner Path after Lieutenant Drake spawned
+(@CGUID+17, 1, 2111.4958, 79.96868, 53.264374, 4.1538, 1000, 3, NULL),
 -- Patrol left
 (@SGGUID+22, 1, 2105.6348, 227.95312, 65.92367, 100, 0, 0, NULL),
 (@SGGUID+22, 2, 2129.072, 236.64516, 64.47473, 100, 0, 0, NULL),
