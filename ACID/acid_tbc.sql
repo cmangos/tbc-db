@@ -23575,6 +23575,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Durnholde Tracking Hound 17840 
 ('1784001','17840','11','0','100','0','0','0','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Durnholde Tracking Hound - Cast Invisibility and Stealth Detection on Spawn'),
 ('1784002','17840','2','0','100','1024','50','0','0','0','0','0','11','8269','0','0','1','1191','0','0','0','0','0','0','Durnholde Tracking Hound - Cast Frenzy at 50% HP'),
+('560042401','-5600424','30','0','100','0','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Durnholde Tracking Hound - Set Phase 1 on ReceiveEventAI A'),
+('560042402','-5600424','1','1','100','0','0','0','0','0','0','0','58','0','0','0','53','5600011','0','0','22','0','0','0','Durnholde Tracking Hound - RunMode and StartRelayScript SetPhase 0 OOC (Phase 1)'),
 -- Pit Spectator (17846) - NSR
 -- Lieutenant Drake 17848 (4.3.4 Official Data - Normal/Heroic)
 ('1784801','17848','4','0','100','0','0','0','0','0','0','0','1','16650','0','0','0','0','0','0','0','0','0','0','Lieutenant Drake - Yell on Aggro'),
@@ -23860,6 +23862,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('5600371','-5600371','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','5600011','2','22','0','0','0','spawn_group_entry - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
 ('5600373','-5600373','1','0','100','1','40000','300000','40000','300000','0','0','54','0','0','5600004','5','1','0','0','0','0','0','0','Durnholde Sentry - Emote Talk and Random Say OOC'),
 ('5600374','-5600374','1','0','100','1','40000','300000','40000','300000','0','0','54','0','0','5600004','5','1','0','0','0','0','0','0','Durnholde Sentry - Emote Talk and Random Say OOC'),
+('5600379','-5600379','1','1','100','0','0','0','0','0','0','0','58','0','0','0','53','5600011','0','0','22','0','0','0','spawn_group_entry - RunMode and StartRelayScript SetPhase 0 OOC (Phase 1)'),
 ('5600395','-5600395','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','spawn_group_entry - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
 ('5600397','-5600397','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','5600016','2','22','0','0','0','spawn_group_entry - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
 ('5600399','-5600399','1','0','100','1','40000','300000','40000','300000','0','0','54','0','0','5600004','5','1','0','0','0','0','0','0','spawn_group_squad - Emote Talk and Random Say OOC'),

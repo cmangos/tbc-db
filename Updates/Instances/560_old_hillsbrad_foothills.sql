@@ -3131,7 +3131,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Group of 4 under the bridge
 (@SGGUID+35, 'Old Hillsbrad Foothills - Group 016 - Durnholde Warden (2) - Durnholde Sentry (2)', 0, 0, 0, 1, 0), 
 -- Patrol around Orc hut 4 and 5
-(@SGGUID+36, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - spawn_group_entry - Durnholde Tracking Hound', 0, 0, 0, 1, @STRINGID+5),
+(@SGGUID+36, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - spawn_group_entry - Durnholde Tracking Hound', 0, 0, 0, 1, @STRINGID+4),
 -- Static group of 4 at the tower
 (@SGGUID+37, 'Old Hillsbrad Foothills - Group 019 - Durnholde Sentry | Durnholde Rifleman | Durnholde Warden (2)', 0, 0, 0, 1, 0),
 -- Entrance to Thrall - 2 Possible squads
@@ -3682,7 +3682,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+36, 37, 2213.8389, 235.2832, 52.52468, 100, 0, 0, NULL),
 (@SGGUID+36, 38, 2217.3633, 234.02864, 52.488518, 100, 0, 0, NULL),
 -- Path for Patrol around Orc Hut 4+5 after Lieutenant Drake spawns
-(@SGGUID+37, 1, 2213.3342, 233.69368, 52.515427, 100, 0, 0, NULL),
+(@SGGUID+37, 1, 2213.3342, 233.69368, 52.515427, 100, 1, 6, NULL),
 (@SGGUID+37, 2, 2206.836, 236.66776, 52.803986, 100, 0, 0, NULL),
 (@SGGUID+37, 3, 2198.8843, 241.39986, 52.75914, 100, 0, 0, NULL),
 (@SGGUID+37, 4, 2189.1724, 246.8967, 52.668755, 100, 0, 0, NULL),
@@ -3727,8 +3727,7 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+3, 'OHF_ROARING_FLAMES'),
 -- Orc Prisoners and all alive enemy NPC groups around the orc Huts will have differen RP elements after Lieutenant Drake spawned
 -- Everything gets handled via EAI activated with AI_EVENT_CUSTOM_EVENTAI_A from core script
-(@STRINGID+4, 'OHF_DRAKE_RP_SPECIAL'),
-(@STRINGID+5, 'OHF_DRAKE_PATROL_RP_SPECIAL');
+(@STRINGID+4, 'OHF_DRAKE_RP_SPECIAL');
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES
@@ -4166,7 +4165,9 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+9, 0, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.617993, 'OHF - Orc Prisoner - Change Orientation'),
 (@RELAYID+10, 0, 0, 3, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'OHF - Orc Prisoner - Move Homeposition'),
 (@RELAYID+10, 0, 1, 28, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Orc Prisoner - StandState Sit'),
-(@RELAYID+10, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Orc Prisoner - Remove ActiveObject');
+(@RELAYID+10, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Orc Prisoner - Remove ActiveObject'),
+-- Patrol Movement change handled via dbscript_relay
+(@RELAYID+11, 0, 0, 20, 2, @SGGUID+37, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - spawn_group_entry - change formation path');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
