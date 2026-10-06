@@ -2871,7 +2871,28 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+660, 2408, 560, 3, 1916.857, 886.4165, 6.000483, 6.100729, 180, 180, 5, 1), -- Snapjaw
 (@CGUID+661, 2408, 560, 3, 1882.515, 882.6821, 5.957302, 3.853127, 180, 180, 5, 1), -- Snapjaw
 (@CGUID+662, 2408, 560, 3, 1851.137, 879.8439, 5.843376, 4.572376, 180, 180, 5, 1), -- Snapjaw
-(@CGUID+663, 2408, 560, 3, 1817.257, 893.0259, 5.687848, 2.627696, 180, 180, 5, 1); -- Snapjaw
+(@CGUID+663, 2408, 560, 3, 1817.257, 893.0259, 5.687848, 2.627696, 180, 180, 5, 1), -- Snapjaw
+-- Groups spawned during escort
+-- Group 1 - Building Exit
+(@CGUID+664, 17833, 560, 0, 2188.55859375, 138.885528564453125, 88.29986572265625, 6.060823440551757812, 7200, 7200, 0, 0), -- Front left
+(@CGUID+665, 17833, 560, 0, 2189.733642578125, 140.6455078125, 88.29986572265625, 6.069665908813476562, 7200, 7200, 0, 0), -- Front Right
+(@CGUID+666, 17833, 560, 0, 2185.916015625, 140.3883514404296875, 88.29986572265625, 6.085828304290771484, 7200, 7200, 0, 0), -- Back Left
+(@CGUID+667, 17833, 560, 0, 2186.985595703125, 142.199005126953125, 88.29986572265625, 5.293957710266113281, 7200, 7200, 0, 0), -- Back Right
+-- Group 2
+(@CGUID+668, 17833, 560, 0, 2149.2119140625, 107.2005233764648437, 74.15676116943359375, 2.042882442474365234, 7200, 7200, 0, 0), -- Front left
+(@CGUID+669, 17833, 560, 0, 2147.328125, 106.7235336303710937, 74.3444671630859375, 1.797499537467956542, 7200, 7200, 0, 0), -- Front Right
+(@CGUID+670, 17833, 560, 0, 2149.46337890625, 104.9755935668945312, 73.63238525390625, 1.770441055297851562, 7200, 7200, 0, 0), -- Back Left
+(@CGUID+671, 17833, 560, 0, 2147.6240234375, 104.6104583740234375, 73.90929412841796875, 1.692137598991394042, 7200, 7200, 0, 0), -- Back Right
+-- Group 3 Bridge 1
+(@CGUID+672, 17833, 560, 0, 2138.177490234375, 168.6045989990234375, 66.30493927001953125, 2.478367567062377929, 7200, 7200, 0, 0), -- Outter Left
+(@CGUID+673, 17833, 560, 0, 2140.145751953125, 169.2364349365234375, 66.30493927001953125, 2.49582076072692871, 7200, 7200, 0, 0), -- Inner Left
+(@CGUID+674, 17833, 560, 0, 2142.36328125, 172.425994873046875, 66.30493927001953125, 2.548180580139160156, 7200, 7200, 0, 0), -- Inner Right
+(@CGUID+675, 17833, 560, 0, 2142.3720703125, 174.2906951904296875, 66.30493927001953125, 2.565634012222290039, 7200, 7200, 0, 0), -- Outter Left
+-- Group 4 Bridge 2
+(@CGUID+676, 17833, 560, 0, 2108.485595703125, 189.9345703125, 66.30493927001953125, 2.687807083129882812, 7200, 7200, 0, 0), -- Outter Left
+(@CGUID+677, 17833, 560, 0, 2107.937744140625, 192.0753021240234375, 66.30493927001953125, 2.548180580139160156, 7200, 7200, 0, 0), -- Inner Left
+(@CGUID+678, 17833, 560, 0, 2109.851806640625, 195.1403045654296875, 66.304931640625, 2.426007747650146484, 7200, 7200, 0, 0), -- Inner Right
+(@CGUID+679, 17833, 560, 0, 2112.38720703125, 195.49468994140625, 66.30493927001953125, 2.39110112190246582, 7200, 7200, 0, 0); -- Outter Left
 
 -- ===========
 -- GAMEOBJECTS
@@ -3156,6 +3177,12 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+44, 'Old Hillsbrad Foothills - Group 024 - Orc Prisoners', 0, 0, 0, 0, @STRINGID+4),
 -- Durnholde Armorer
 (@SGGUID+45, 'Old Hillsbrad Foothills - Group 025 - Durnholde Armorer', 0, 0, 0, 0, @STRINGID+5),
+
+(@SGGUID+46, 'Old Hillsbrad Foothills - Group 026 - Thrall', 0, 0, 0, 0, 0),
+(@SGGUID+47, 'Old Hillsbrad Foothills - Group 027 - Escort Group 1', 0, 0, 0, 0, 0),
+(@SGGUID+48, 'Old Hillsbrad Foothills - Group 028 - Escort Group 2', 0, 0, 0, 0, 0),
+(@SGGUID+49, 'Old Hillsbrad Foothills - Group 028 - Escort Group 3', 0, 0, 0, 0, 0),
+(@SGGUID+50, 'Old Hillsbrad Foothills - Group 028 - Escort Group 4', 0, 0, 0, 0, 0),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3298,6 +3325,29 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+44, @CGUID+571, -1, 0), -- Orc Prisoner
 
 (@SGGUID+45, @CGUID+476, -1, 0), -- Durnholde Armorer
+
+(@SGGUID+46, @CGUID+435, -1, 0), -- Thrall
+
+(@SGGUID+47, @CGUID+664, -1, 0), -- Durnholde  Front Left
+(@SGGUID+47, @CGUID+665, -1, 0), -- Durnholde  Front Right
+(@SGGUID+47, @CGUID+666, -1, 0), -- Durnholde  Back Left
+(@SGGUID+47, @CGUID+667, -1, 0), -- Durnholde  Back Right
+
+(@SGGUID+48, @CGUID+668, -1, 0), -- Durnholde  Front Left
+(@SGGUID+48, @CGUID+669, -1, 0), -- Durnholde  Front Right
+(@SGGUID+48, @CGUID+670, -1, 0), -- Durnholde  Back Left
+(@SGGUID+48, @CGUID+671, -1, 0), -- Durnholde  Back Right
+
+(@SGGUID+49, @CGUID+672, -1, 0), -- Durnholde  Outter Left
+(@SGGUID+49, @CGUID+673, -1, 0), -- Durnholde  Inner Right
+(@SGGUID+49, @CGUID+674, -1, 0), -- Durnholde  Outter Left
+(@SGGUID+49, @CGUID+675, -1, 0), -- Durnholde  Inner Right
+
+(@SGGUID+50, @CGUID+676, -1, 0), -- Durnholde  Outter Left
+(@SGGUID+50, @CGUID+677, -1, 0), -- Durnholde  Inner Right
+(@SGGUID+50, @CGUID+678, -1, 0), -- Durnholde  Outter Left
+(@SGGUID+50, @CGUID+679, -1, 0), -- Durnholde  Inner Right
+
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
 (@SGGUID+1000, @OGUID+50, -1, 0),-- Roaring Flame
@@ -3735,19 +3785,20 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+50, 5, 2197.8035, 109.45345, 89.699425, 100, 0, 0, NULL),
 (@SGGUID+50, 6, 2188.868, 114.40332, 89.596886, 100, 1000, 1787602, 'Thrall Escort - Durnholde Armorer RP'),
 (@SGGUID+50, 7, 2182.11, 120.328, 89.44687, 2.67035, 1000, 1787603, 'Thrall Escort - Getting Equipmen RP'),
-(@SGGUID+50, 8, 2193.7742, 111.67763, 89.44687, 100, 0, 0, NULL),
-(@SGGUID+50, 9, 2180.1692, 145.47646, 88.2125, 100, 0, 0, NULL),
-(@SGGUID+50, 10, 2160.9277, 134.18164, 83.1579, 100, 0, 0, NULL),
-(@SGGUID+50, 11, 2152.8525, 127.44141, 78.54106, 100, 0, 0, NULL),
-(@SGGUID+50, 12, 2142.261, 129.70703, 75.032715, 100, 0, 0, NULL),
-(@SGGUID+50, 13, 2139.8025, 140.85515, 71.36458, 100, 0, 0, NULL),
-(@SGGUID+50, 14, 2145.9836, 163.77333, 65.10501, 100, 0, 0, NULL),
-(@SGGUID+50, 15, 2136.8472, 173.66623, 66.826485, 100, 0, 0, NULL),
-(@SGGUID+50, 16, 2121.3125, 185.03407, 69.11848, 100, 0, 0, NULL),
-(@SGGUID+50, 17, 2097.8333, 198.60916, 65.19629, 100, 0, 0, NULL),
-(@SGGUID+50, 18, 2080.3723, 211.9082, 64.87357, 100, 0, 0, NULL),
-(@SGGUID+50, 19, 2063.0425, 229.17654, 64.49014, 100, 0, 0, NULL),
-(@SGGUID+50, 20, 2063.0425, 229.17654, 64.49014, 2.3561387, 100000, 0, '2nd Boss');
+(@SGGUID+50, 8, 2182.11, 120.328, 89.44687, 5.68977, 10, 1787604, 'Thrall Escort - Orientation change and Text'),
+(@SGGUID+50, 9, 2193.7742, 111.67763, 89.44687, 100, 1, 1787605, 'Spawn Group 1'),
+(@SGGUID+50, 10, 2180.1692, 145.47646, 88.2125, 100, 1, 1787606, 'Spawn Group 2'),
+(@SGGUID+50, 11, 2160.9277, 134.18164, 83.1579, 100, 0, 0, NULL),
+(@SGGUID+50, 12, 2152.8525, 127.44141, 78.54106, 100, 0, 0, NULL),
+(@SGGUID+50, 13, 2142.261, 129.70703, 75.032715, 100, 0, 0, NULL),
+(@SGGUID+50, 14, 2139.8025, 140.85515, 71.36458, 100, 0, 0, NULL),
+(@SGGUID+50, 15, 2145.9836, 163.77333, 65.10501, 100, 0, 0, NULL),
+(@SGGUID+50, 16, 2136.8472, 173.66623, 66.826485, 100, 0, 0, NULL),
+(@SGGUID+50, 17, 2121.3125, 185.03407, 69.11848, 100, 0, 0, NULL),
+(@SGGUID+50, 18, 2097.8333, 198.60916, 65.19629, 100, 0, 0, NULL),
+(@SGGUID+50, 19, 2080.3723, 211.9082, 64.87357, 100, 0, 0, NULL),
+(@SGGUID+50, 20, 2063.0425, 229.17654, 64.49014, 100, 0, 0, NULL),
+(@SGGUID+50, 21, 2063.0425, 229.17654, 64.49014, 2.3561387, 100000, 0, '2nd Boss');
 
 DELETE FROM `string_id` WHERE `Id` IN (@STRINGID+1, @STRINGID+2, @STRINGID+3, @STRINGID+4, @STRINGID+5);
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
@@ -3810,7 +3861,7 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1787601,1787602,1787603,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1787601,1787602,1787603,1787604,1787605,1787606,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Emote OneShot Point'),
 (1784801,0,1,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lieutenant Drake - Yell Text'),
@@ -3821,7 +3872,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787601,0,0,11,@OGUID+81,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Open Prison Door'),
 (1787601,0,1,29,3,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Remove NPC Flag'),
 (1787601,3000,0,0,0,0,0,0,0,0,17622,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
-(1787601,3000,1,48,2099200,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Remove UnitFlags'),
+(1787601,3000,1,48,512,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Remove UnitFlags'),
 
 (1787602,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Pause Waypoints'),
 (1787602,0,1,36,0,0,0,@STRINGID+5,15,2050,0,0,0,0,0,0,0,0,'Thrall Escort - Face Durnholde Armorer'),
@@ -3836,9 +3887,16 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787603,0,1,28,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Standstate Kneel'),
 (1787603,0,2,0,0,0,0,0,0,0,15893,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
 (1787603,4000,0,23,18165,0,0,0,0,8,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Change Display'),
+(1787603,4000,1,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Standstate Stand'),
 (1787603,8000,0,42,0,0,0,0,0,0,14880,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Change MainHand'),
 (1787603,10000,0,42,0,0,0,0,0,0,0,1961,0,0,0,0,0,0,'Thrall Escort - Thrall - Change OffHand'),
 (1787603,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - UnPause Waypoints'),
+
+(1787604,0,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Set RunMode'),
+(1787604,0,1,0,0,0,0,0,0,0,15893,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
+
+(1787605,0,0,58,@SGGUID+47,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 1'),
+(1787606,0,0,58,@SGGUID+48,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 2'),
 
 (1809201, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Pause Waypoints'),
 (1809201, 0, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Cast Transform'),
@@ -4222,6 +4280,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+11, 0, 0, 20, 2, @SGGUID+37, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - spawn_group_entry - change formation path'),
 -- Thrall RP related
 (@RELAYID+12, 0, 0, 15, 32890, 0, 0, @STRINGID+5, 5, 2049, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Thrall cast Knockout on Durnholde Armorer'),
+(@RELAYID+12, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Set WalkMode'),
 (@RELAYID+12, 3000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15892, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Thrall say Text'),
 (@RELAYID+12, 6000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Thrall unpause waypoints');
 

@@ -27,3 +27,5 @@ UPDATE creature_template SET GossipMenuId = 7499 WHERE entry = 17876;
 DELETE FROM `conditions` WHERE `condition_entry` IN (7499);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (7499, 18, 17876, 0, 0, 0, 0, 'INSTANCE_CONDITION_ID_THRALL_STARTABLE');
+
+UPDATE creature_template SET Detection = 20 WHERE entry = 17876;
