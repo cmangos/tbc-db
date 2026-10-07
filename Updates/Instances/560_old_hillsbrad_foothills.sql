@@ -3135,9 +3135,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+22, 'Old Hillsbrad Foothills - Group 003 - Patrol 001 - spawn_group_entry - Durnholde Tracking Hound', 0, 0, 0, 1, 0), -- left patrol
 (@SGGUID+23, 'Old Hillsbrad Foothills - Group 004 - Durnholde Sentry (2)', 0, 0, 0, 1, 0), -- right tower
 (@SGGUID+24, 'Old Hillsbrad Foothills - Group 005 - Patrol 002 - spawn_group_entry - Durnholde Tracking Hound', 0, 0, 0, 1, 0), -- right patrol
-(@SGGUID+25, 'Old Hillsbrad Foothills - Group 006 - Durnholde Sentry - Durnholde Rifleman', 0, 0, 0, 1, 0), -- Bridge 1
+(@SGGUID+25, 'Old Hillsbrad Foothills - Group 006 - Durnholde Sentry - Durnholde Rifleman', 0, 0, @SGGUID+5, 1, @STRINGID+6), -- Bridge 1
 -- Durnholde Sentry/Rifleman left - always Durnholde Rifleman right
-(@SGGUID+26, 'Old Hillsbrad Foothills - Group 007 - spawn_group_entry - Durnholde Rifleman', 0, 0, 0, 1, 0), -- Bridge 2
+(@SGGUID+26, 'Old Hillsbrad Foothills - Group 007 - spawn_group_entry - Durnholde Rifleman', 0, 0, @SGGUID+5, 1, @STRINGID+6), -- Bridge 2
 (@SGGUID+27, 'Old Hillsbrad Foothills - Group 008 - Patrol 003 - spawn_group_entry - Durnholde Tracking Hound', 0, 0, 0, 1, 0), -- Long Patrol
 -- Patrol around first 3 Houses
 (@SGGUID+28, 'Old Hillsbrad Foothills - Group 009 - Patrol 004 - spawn_group_entry - Durnholde Tracking Hound', 0, 0, 0, 1, 0),
@@ -3434,19 +3434,21 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 (@SGGUID+40, 2, @CGUID+434, 17860), -- Durnholde Veteran (Back Left)
 (@SGGUID+40, 2, @CGUID+416, 17833); -- Durnholde Warden (Back Right)
 
-DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3,@SGGUID+4);
+DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3,@SGGUID+4,@SGGUID+5);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@SGGUID+1, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
 (@SGGUID+2, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
 (@SGGUID+3, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal'),
-(@SGGUID+4, 'Old Hillsbrad Foothills - Lieutenant Drake - Trash respawn');
+(@SGGUID+4, 'Old Hillsbrad Foothills - Lieutenant Drake - Trash respawn'),
+(@SGGUID+5, 'Old Hillsbrad Foothills - Thrall - Trash respawn');
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3, @SGGUID+4);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3, @SGGUID+4, @SGGUID+5);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
 (@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
 (@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal'),
-(@SGGUID+4, 42, @SGGUID+4, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Lieutenant Drake - Trash respawn');
+(@SGGUID+4, 42, @SGGUID+4, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Lieutenant Drake - Trash respawn'),
+(@SGGUID+5, 42, @SGGUID+5, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Thrall - Trash respawn');
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -3800,7 +3802,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+50, 20, 2063.0425, 229.17654, 64.49014, 100, 0, 0, NULL),
 (@SGGUID+50, 21, 2063.0425, 229.17654, 64.49014, 2.3561387, 100000, 0, '2nd Boss');
 
-DELETE FROM `string_id` WHERE `Id` IN (@STRINGID+1, @STRINGID+2, @STRINGID+3, @STRINGID+4, @STRINGID+5);
+DELETE FROM `string_id` WHERE `Id` IN (@STRINGID+1, @STRINGID+2, @STRINGID+3, @STRINGID+4, @STRINGID+5, @STRINGID+6);
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+1, 'OHF_CITIZEN_CONVO_PARTNER'),
 (@STRINGID+2, 'OHF_LIEUTENANTDRAKE'),
@@ -3808,7 +3810,8 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 -- Orc Prisoners and all alive enemy NPC groups around the orc Huts will have differen RP elements after Lieutenant Drake spawned
 -- Everything gets handled via EAI activated with AI_EVENT_CUSTOM_EVENTAI_A from core script
 (@STRINGID+4, 'OHF_DRAKE_RP_SPECIAL'),
-(@STRINGID+5, 'OHF_THRALL_RP_ARMORER');
+(@STRINGID+5, 'OHF_THRALL_RP_ARMORER'),
+(@STRINGID+6, 'OHF_THRALL_BRIDGETRASH_DESPAWN');
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES
@@ -3868,9 +3871,20 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1784802,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - RunMode off'),
 (1784802,0,1,48,256,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Remove UNIT_FLAG_IMMUNE_TO_PLAYER'),
 (1784802,0,2,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - switch to path 1'),
+
 -- Thrall Escort RPs
 (1787601,0,0,11,@OGUID+81,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Open Prison Door'),
 (1787601,0,1,29,3,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Remove NPC Flag'),
+-- There are 2 groups on the bridge at the start of Burg Durnholde
+-- Both groups get despawned if they are alive cause there spawn 2 other groups
+-- Worldstate change to prevent their respawn
+(1787601,0,2,53,@SGGUID+5,1,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Change Worldstate'),
+-- SendAiEvent to despawn them only if they are out of combat
+(1787601,0,3,36,5,0,0,@STRINGID+6,200,2050,0,0,0,0,0,0,0,0,'Thrall Escort - SendAIEvent to StringID'),
+-- Actually spawn both new groups on bridge
+(1787601,0,5,58,@SGGUID+49,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 3'),
+(1787601,0,5,58,@SGGUID+50,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 4'),
+-- Start escort
 (1787601,3000,0,0,0,0,0,0,0,0,17622,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
 (1787601,3000,1,48,512,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Remove UnitFlags'),
 
