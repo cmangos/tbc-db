@@ -87,7 +87,7 @@ UPDATE `creature_template` SET `SpellList` = 1786001 WHERE `entry` = 17860;
 UPDATE `creature_template` SET `SpellList` = 2052901 WHERE `entry` = 20529;
 
 
--- Thrall - 17876 
+-- Thrall - 17876 - 20548
 DELETE FROM `creature_template_spells` WHERE `entry` IN (17876, 20548);
 
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1787601, 2054801);
@@ -100,7 +100,31 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1787601, 1, 12169, 0, -1, 2, 0, 100, 0, 5000, 16000, 5000, 16000, 'Thrall - Shield Block on self'),
 (1787601, 2, 14516, 0, -1, 1, 0, 100, 0, 7000, 22000, 8000, 22000, 'Thrall - Strike on Current'),
 -- Heroic
-
+(2054801, 1, 12169, 0, -1, 2, 0, 100, 0, 5000, 16000, 5000, 16000, 'Thrall - Shield Block on self'),
+(2054801, 2, 14516, 0, -1, 1, 0, 100, 0, 7000, 22000, 8000, 22000, 'Thrall - Strike on Current');
 
 UPDATE `creature_template` SET `SpellList` = 1787601 WHERE `entry` = 17876;
 UPDATE `creature_template` SET `SpellList` = 2054801 WHERE `entry` = 20548;
+
+-- Durnholde Mage 18934 - 20525
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18934, 20525);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1893401, 2052501);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1893401, 'Old Hillsbrad Foothills - Durnholde Mage - Normal', 0, 80),
+(2052501, 'Old Hillsbrad Foothills - Durnholde Mage - Heroic', 0, 80);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1893401, 2052501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1893401, 1, 13323, 0, -1, 101, 0, 100, 0, 6000, 11000, 14000, 20000, 'Durnholde Mage - Polymorph random not tank'),
+(1893401, 2, 15244, 0, -1, 109, 0, 100, 0, 8000, 16000, 12000, 22000, 'Durnholde Mage - Cone of Cold random player in melee range'),
+(1893401, 3, 13341, 0, -1, 1, 0, 100, 0, 8000, 15000, 10000, 17000, 'Durnholde Mage - Fire Blast current'),
+(1893401, 4, 12466, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Durnholde Mage - Fireball current'),
+-- Heroic
+(2052501, 1, 13323, 0, -1, 101, 0, 100, 0, 6000, 11000, 14000, 20000, 'Durnholde Mage - Polymorph random not tank'),
+(2052501, 2, 38384, 0, -1, 109, 0, 100, 0, 8000, 16000, 12000, 22000, 'Durnholde Mage - Cone of Cold random player in melee range'),
+(2052501, 3, 16144, 0, -1, 1, 0, 100, 0, 8000, 15000, 10000, 17000, 'Durnholde Mage - Fire Blast current'),
+(2052501, 4, 17290, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Durnholde Mage - Fireball current');
+
+UPDATE `creature_template` SET `SpellList` = 1893401 WHERE `entry` = 18934;
+UPDATE `creature_template` SET `SpellList` = 2052501 WHERE `entry` = 20525;
