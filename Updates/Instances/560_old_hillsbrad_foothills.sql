@@ -2874,25 +2874,25 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+663, 2408, 560, 3, 1817.257, 893.0259, 5.687848, 2.627696, 180, 180, 5, 1), -- Snapjaw
 -- Groups spawned during escort
 -- Group 1 - Building Exit
-(@CGUID+664, 17833, 560, 0, 2188.55859375, 138.885528564453125, 88.29986572265625, 6.060823440551757812, 7200, 7200, 0, 0), -- Front left
-(@CGUID+665, 17833, 560, 0, 2189.733642578125, 140.6455078125, 88.29986572265625, 6.069665908813476562, 7200, 7200, 0, 0), -- Front Right
-(@CGUID+666, 17833, 560, 0, 2185.916015625, 140.3883514404296875, 88.29986572265625, 6.085828304290771484, 7200, 7200, 0, 0), -- Back Left
-(@CGUID+667, 17833, 560, 0, 2186.985595703125, 142.199005126953125, 88.29986572265625, 5.293957710266113281, 7200, 7200, 0, 0), -- Back Right
+(@CGUID+664, 0, 560, 0, 2188.55859375, 138.885528564453125, 88.29986572265625, 6.060823440551757812, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+665, 0, 560, 0, 2189.733642578125, 140.6455078125, 88.29986572265625, 6.069665908813476562, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+666, 0, 560, 0, 2185.916015625, 140.3883514404296875, 88.29986572265625, 6.085828304290771484, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+667, 0, 560, 0, 2186.985595703125, 142.199005126953125, 88.29986572265625, 5.293957710266113281, 7200, 7200, 0, 0), -- spawn_group_entry
 -- Group 2
-(@CGUID+668, 17833, 560, 0, 2149.2119140625, 107.2005233764648437, 74.15676116943359375, 2.042882442474365234, 7200, 7200, 0, 0), -- Front left
-(@CGUID+669, 17833, 560, 0, 2147.328125, 106.7235336303710937, 74.3444671630859375, 1.797499537467956542, 7200, 7200, 0, 0), -- Front Right
-(@CGUID+670, 17833, 560, 0, 2149.46337890625, 104.9755935668945312, 73.63238525390625, 1.770441055297851562, 7200, 7200, 0, 0), -- Back Left
-(@CGUID+671, 17833, 560, 0, 2147.6240234375, 104.6104583740234375, 73.90929412841796875, 1.692137598991394042, 7200, 7200, 0, 0), -- Back Right
+(@CGUID+668, 0, 560, 0, 2149.2119140625, 107.2005233764648437, 74.15676116943359375, 2.042882442474365234, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+669, 0, 560, 0, 2147.328125, 106.7235336303710937, 74.3444671630859375, 1.797499537467956542, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+670, 0, 560, 0, 2149.46337890625, 104.9755935668945312, 73.63238525390625, 1.770441055297851562, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+671, 0, 560, 0, 2147.6240234375, 104.6104583740234375, 73.90929412841796875, 1.692137598991394042, 7200, 7200, 0, 0), -- Bspawn_group_entry
 -- Group 3 Bridge 1
-(@CGUID+672, 17833, 560, 0, 2138.177490234375, 168.6045989990234375, 66.30493927001953125, 2.478367567062377929, 7200, 7200, 0, 0), -- Outter Left
-(@CGUID+673, 17833, 560, 0, 2140.145751953125, 169.2364349365234375, 66.30493927001953125, 2.49582076072692871, 7200, 7200, 0, 0), -- Inner Left
-(@CGUID+674, 17833, 560, 0, 2142.36328125, 172.425994873046875, 66.30493927001953125, 2.548180580139160156, 7200, 7200, 0, 0), -- Inner Right
-(@CGUID+675, 17833, 560, 0, 2142.3720703125, 174.2906951904296875, 66.30493927001953125, 2.565634012222290039, 7200, 7200, 0, 0), -- Outter Left
+(@CGUID+672, 0, 560, 0, 2138.177490234375, 168.6045989990234375, 66.30493927001953125, 2.478367567062377929, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+673, 0, 560, 0, 2140.145751953125, 169.2364349365234375, 66.30493927001953125, 2.49582076072692871, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+674, 0, 560, 0, 2142.36328125, 172.425994873046875, 66.30493927001953125, 2.548180580139160156, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+675, 0, 560, 0, 2142.3720703125, 174.2906951904296875, 66.30493927001953125, 2.565634012222290039, 7200, 7200, 0, 0), -- spawn_group_entry
 -- Group 4 Bridge 2
-(@CGUID+676, 17833, 560, 0, 2108.485595703125, 189.9345703125, 66.30493927001953125, 2.687807083129882812, 7200, 7200, 0, 0), -- Outter Left
-(@CGUID+677, 17833, 560, 0, 2107.937744140625, 192.0753021240234375, 66.30493927001953125, 2.548180580139160156, 7200, 7200, 0, 0), -- Inner Left
-(@CGUID+678, 17833, 560, 0, 2109.851806640625, 195.1403045654296875, 66.304931640625, 2.426007747650146484, 7200, 7200, 0, 0), -- Inner Right
-(@CGUID+679, 17833, 560, 0, 2112.38720703125, 195.49468994140625, 66.30493927001953125, 2.39110112190246582, 7200, 7200, 0, 0); -- Outter Left
+(@CGUID+676, 0, 560, 0, 2108.485595703125, 189.9345703125, 66.30493927001953125, 2.687807083129882812, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+677, 0, 560, 0, 2107.937744140625, 192.0753021240234375, 66.30493927001953125, 2.548180580139160156, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+678, 0, 560, 0, 2109.851806640625, 195.1403045654296875, 66.304931640625, 2.426007747650146484, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+679, 0, 560, 0, 2112.38720703125, 195.49468994140625, 66.30493927001953125, 2.39110112190246582, 7200, 7200, 0, 0); -- spawn_group_entry
 
 -- ===========
 -- GAMEOBJECTS
@@ -3179,10 +3179,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+45, 'Old Hillsbrad Foothills - Group 025 - Durnholde Armorer', 0, 0, 0, 0, @STRINGID+5),
 
 (@SGGUID+46, 'Old Hillsbrad Foothills - Group 026 - Thrall', 0, 0, 0, 0, 0),
-(@SGGUID+47, 'Old Hillsbrad Foothills - Group 027 - Escort Group 1', 0, 0, 0, 0, 0),
-(@SGGUID+48, 'Old Hillsbrad Foothills - Group 028 - Escort Group 2', 0, 0, 0, 0, 0),
-(@SGGUID+49, 'Old Hillsbrad Foothills - Group 028 - Escort Group 3', 0, 0, 0, 0, 0),
-(@SGGUID+50, 'Old Hillsbrad Foothills - Group 028 - Escort Group 4', 0, 0, 0, 0, 0),
+-- All groups spawned during Escort to First Boss have different rules
+-- 3 Groups - Always atleast 1 (Max 2) Durnholde Veteran, and random between Durnholde Sentry (max 2) - Durnholde Mage (Max 1) - Durnholde Warden (Max 1)
+(@SGGUID+47, 'Old Hillsbrad Foothills - Group 027 - Escort Group 1', 0, 0, 0, 1, 0),
+(@SGGUID+48, 'Old Hillsbrad Foothills - Group 028 - Escort Group 2', 0, 0, 0, 1, 0),
+(@SGGUID+49, 'Old Hillsbrad Foothills - Group 028 - Escort Group 3', 0, 0, 0, 1, 0),
+-- Always 2 Durnholde Mages and 2 Durnholde Veteran
+(@SGGUID+50, 'Old Hillsbrad Foothills - Group 028 - Escort Group 4', 0, 0, 0, 1, 0),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3328,25 +3331,25 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+46, @CGUID+435, -1, 0), -- Thrall
 
-(@SGGUID+47, @CGUID+664, -1, 0), -- Durnholde  Front Left
-(@SGGUID+47, @CGUID+665, -1, 0), -- Durnholde  Front Right
-(@SGGUID+47, @CGUID+666, -1, 0), -- Durnholde  Back Left
-(@SGGUID+47, @CGUID+667, -1, 0), -- Durnholde  Back Right
+(@SGGUID+47, @CGUID+664, -1, 0), -- spawn_group_entry Front Left
+(@SGGUID+47, @CGUID+665, -1, 0), -- spawn_group_entry Front Right
+(@SGGUID+47, @CGUID+666, -1, 0), -- spawn_group_entry Back Left
+(@SGGUID+47, @CGUID+667, -1, 0), -- spawn_group_entry Back Right
 
-(@SGGUID+48, @CGUID+668, -1, 0), -- Durnholde  Front Left
-(@SGGUID+48, @CGUID+669, -1, 0), -- Durnholde  Front Right
-(@SGGUID+48, @CGUID+670, -1, 0), -- Durnholde  Back Left
-(@SGGUID+48, @CGUID+671, -1, 0), -- Durnholde  Back Right
+(@SGGUID+48, @CGUID+668, -1, 0), -- spawn_group_entry Front Left
+(@SGGUID+48, @CGUID+669, -1, 0), -- spawn_group_entry Front Right
+(@SGGUID+48, @CGUID+670, -1, 0), -- spawn_group_entry Back Left
+(@SGGUID+48, @CGUID+671, -1, 0), -- spawn_group_entry Back Right
 
-(@SGGUID+49, @CGUID+672, -1, 0), -- Durnholde  Outter Left
-(@SGGUID+49, @CGUID+673, -1, 0), -- Durnholde  Inner Right
-(@SGGUID+49, @CGUID+674, -1, 0), -- Durnholde  Outter Left
-(@SGGUID+49, @CGUID+675, -1, 0), -- Durnholde  Inner Right
+(@SGGUID+49, @CGUID+672, -1, 0), -- spawn_group_entry Outter Left
+(@SGGUID+49, @CGUID+673, -1, 0), -- spawn_group_entry Inner Right
+(@SGGUID+49, @CGUID+674, -1, 0), -- spawn_group_entry Outter Left
+(@SGGUID+49, @CGUID+675, -1, 0), -- spawn_group_entry Inner Right
 
-(@SGGUID+50, @CGUID+676, -1, 0), -- Durnholde  Outter Left
-(@SGGUID+50, @CGUID+677, -1, 0), -- Durnholde  Inner Right
-(@SGGUID+50, @CGUID+678, -1, 0), -- Durnholde  Outter Left
-(@SGGUID+50, @CGUID+679, -1, 0), -- Durnholde  Inner Right
+(@SGGUID+50, @CGUID+676, -1, 0), -- spawn_group_entry Outter Left
+(@SGGUID+50, @CGUID+677, -1, 0), -- spawn_group_entry Inner Right
+(@SGGUID+50, @CGUID+678, -1, 0), -- spawn_group_entry Outter Left
+(@SGGUID+50, @CGUID+679, -1, 0), -- spawn_group_entry Inner Right
 
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
@@ -3411,7 +3414,12 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+34, 17819, 0, 0, 0), (@SGGUID+34, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
 (@SGGUID+36, 17819, 0, 0, 0), (@SGGUID+36, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
 (@SGGUID+39, 17819, 0, 0, 0), (@SGGUID+39, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
-(@SGGUID+42, 17819, 0, 0, 0), (@SGGUID+42, 17820, 0, 0, 0); -- Durnholde Sentry, Durnholde Rifleman
+(@SGGUID+42, 17819, 0, 0, 0), (@SGGUID+42, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
+
+(@SGGUID+47, 17819, 0, 2, 0), (@SGGUID+47, 17833, 0, 1, 0), (@SGGUID+47, 17860, 1, 2, 0), (@SGGUID+47, 18934, 0, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
+(@SGGUID+48, 17819, 0, 2, 0), (@SGGUID+48, 17833, 0, 1, 0), (@SGGUID+48, 17860, 1, 2, 0), (@SGGUID+48, 18934, 0, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
+(@SGGUID+49, 17819, 0, 2, 0), (@SGGUID+49, 17833, 0, 1, 0), (@SGGUID+49, 17860, 1, 2, 0), (@SGGUID+49, 18934, 0, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
+(@SGGUID+50, 18934, 2, 2, 0), (@SGGUID+50, 17860, 2, 2, 0); -- Durnholde Mage, Durnholde Veteran
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 (@SGGUID+38, 1, @CGUID+393, 17820), -- Durnholde Rifleman (Front Left)
