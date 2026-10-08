@@ -9,6 +9,8 @@
 -- I will revert those changes if anyone can give me either
 -- a video from original tbc 2.4.3
 -- a sniff from tbc classic/anni 
+-- 
+-- select HeroicEntry, MinLevel, MaxLevel, UnitClass, SpeedWalk, SpeedRun, MeleeBaseAttackTime, DamageMultiplier, DamageVariance, MinMeleeDmg, MaxMeleeDmg from creature_template where entry = ;
 -- -----------------
 
 -- Durnholde Sentry - 17819 - 20527
@@ -93,3 +95,17 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 205
 -- Heroic - SpeedWalk 1,48 DamageMultiplier 8,61135 DamageVariance 0,4 MinDmg 2054 MaxDmg 2905
 UPDATE creature_template SET MinLevel = 68, MaxLevel = 68, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2500, DamageMultiplier = 10.4773, DamageVariance = 0.3761, MinMeleeDmg = 1911, MaxMeleeDmg = 2695 WHERE entry = 17848;
 UPDATE creature_template SET MinLevel = 71, MaxLevel = 71, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2500, DamageMultiplier = 30.7390, DamageVariance = 0.3761, MinMeleeDmg = 7331, MaxMeleeDmg = 10368 WHERE entry = 20535;
+
+-- Durnholde Mage 18934 - 20525
+-- Level 67 UnitClass 2
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+-- AttackRoundBaseTime: 2000
+-- MinControle Data
+-- Level 67 UnitClass 1
+-- MinDmg 816.96 MaxDmg 1147.81 AP 272 Armor 4755
+-- Str 146 Agi 102 Sta 266 Int 126 SP 115
+-- Old Values
+-- Normal - SpeedWalk 1,48 DamageMultiplier 1,91046 DamageVariance 0,4 MinDmg 307 MaxDmg 431
+UPDATE creature_template SET MinLevel = 67, MaxLevel = 67, UnitClass = 2, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 5, DamageVariance = 0.37, MinMeleeDmg = 816.96, MaxMeleeDmg = 1147.81 WHERE entry = 18934;
+UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 20525;
