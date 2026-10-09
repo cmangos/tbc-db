@@ -2215,6 +2215,19 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+580, 20426), (@CGUID+580, 20428), (@CGUID+580, 20429), (@CGUID+580, 20430),
 (@CGUID+581, 20426), (@CGUID+581, 20428), (@CGUID+581, 20429), (@CGUID+581, 20430);
 
+DELETE FROM creature_spawn_data WHERE Guid IN (@CGUID+680, @CGUID+681, @CGUID+682);
+INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
+-- Captain Skarloc group
+(@CGUID+680, 1786201),
+(@CGUID+681, 1786001),
+(@CGUID+682, 1783301);
+
+DELETE FROM creature_spawn_data_template WHERE Entry IN (1783301, 1786001, 1786201);
+INSERT INTO `creature_spawn_data_template` (`Entry`, `UnitFlags`, `SpawnFlags`, `Name`) VALUES 
+('1783301', 33600, 0, 'OHF - Durnholde Warden - UnitFlags and RunMode'), 
+('1786001', 33600, 0, 'OHF - Durnholde Veteran - UnitFlags and RunMode'), 
+('1786201', 33600, 1, 'OHF - Captain Skarloc - UnitFlags and RunMode');
+
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 20434, 560, 3, 1889.295, 992.3798, 15.2348, 2.251475, 7200, 7200, 0, 0), -- Horse
 (@CGUID+2, 20434, 560, 3, 1886.711, 990.3235, 15.2348, 2.164208, 7200, 7200, 0, 0), -- Horse
@@ -2906,7 +2919,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+676, 0, 560, 0, 2108.485595703125, 189.9345703125, 66.30493927001953125, 2.687807083129882812, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+677, 0, 560, 0, 2107.937744140625, 192.0753021240234375, 66.30493927001953125, 2.548180580139160156, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+678, 0, 560, 0, 2109.851806640625, 195.1403045654296875, 66.304931640625, 2.426007747650146484, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+679, 0, 560, 0, 2112.38720703125, 195.49468994140625, 66.30493927001953125, 2.39110112190246582, 7200, 7200, 0, 0); -- spawn_group_entry
+(@CGUID+679, 0, 560, 0, 2112.38720703125, 195.49468994140625, 66.30493927001953125, 2.39110112190246582, 7200, 7200, 0, 0), -- spawn_group_entry
+-- 2nd Boss
+(@CGUID+680, 17862, 560, 3, 1996.6519775390625, 276.35198974609375, 66.64183807373046875, 6.18334197998046875, 7200, 7200, 0, 0), -- Captain Skarloc
+(@CGUID+681, 17860, 560, 3, 1994.146484375, 278.217559814453125, 66.821319580078125, 5.946362495422363281, 7200, 7200, 0, 0), -- Durnholde Veteran
+(@CGUID+682, 17833, 560, 3, 1995.708740234375, 273.9462890625, 66.7578277587890625, 0.210796549916267395, 7200, 7200, 0, 0), -- Durnholde Warden
+(@CGUID+683, 18798, 560, 0, 2047.7747802734375, 253.40875244140625, 62.91183090209960937, 5.37561416625976562500, 7200, 7200, 0, 0); -- Skarloc's Mount
 
 -- ===========
 -- GAMEOBJECTS
@@ -3200,6 +3218,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+49, 'Old Hillsbrad Foothills - Group 028 - Escort Group 3', 0, 0, 0, 1, @STRINGID+7),
 -- Always 2 Durnholde Mages and 2 Durnholde Veteran
 (@SGGUID+50, 'Old Hillsbrad Foothills - Group 028 - Escort Group 4', 0, 0, 0, 1, @STRINGID+7),
+-- Captain Skarloc
+(@SGGUID+51, 'Old Hillsbrad Foothills - Group 029 - Escort Group 5 - Patrol 008 - Captain Skarloc', 0, 0, 0, 1, @STRINGID+7),
+(@SGGUID+52, 'Old Hillsbrad Foothills - Group 030 - Skarlocs Mount', 0, 0, 0, 0, @STRINGID+7),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3365,6 +3386,11 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+50, @CGUID+678, -1, 0), -- spawn_group_entry Outter Left
 (@SGGUID+50, @CGUID+679, -1, 0), -- spawn_group_entry Inner Right
 
+(@SGGUID+51, @CGUID+680, 0, 0), -- Captain Skarloc
+(@SGGUID+51, @CGUID+681, 1, 0), -- Durnholde Veteran
+(@SGGUID+51, @CGUID+682, 2, 0), -- Durnholde Warden
+
+(@SGGUID+52, @CGUID+683, -1, 0), -- Skarloc's Mount
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
 (@SGGUID+1000, @OGUID+50, -1, 0),-- Roaring Flame
@@ -3483,7 +3509,8 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+28, 1, 3, 0, @SGGUID+28, 2, 'Old Hillsbrad Foothills - Group 009 - Patrol 004 - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+29, 1, 3, 0, @SGGUID+29, 4, 'Old Hillsbrad Foothills - Group 010 - Patrol 005 - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+36, 1, 3, 0, @SGGUID+36, 2, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - spawn_group_entry - Durnholde Tracking Hound'),
-(@SGGUID+42, 1, 3, 0, @SGGUID+42, 4, 'Old Hillsbrad Foothills - Group 023 - Patrol 007 - spawn_group_entry - Durnholde Tracking Hound');
+(@SGGUID+42, 1, 3, 0, @SGGUID+42, 4, 'Old Hillsbrad Foothills - Group 023 - Patrol 007 - spawn_group_entry - Durnholde Tracking Hound'),
+(@SGGUID+51, 2, 3, 0, @SGGUID+51, 2, 'Old Hillsbrad Foothills - Group 029 - Escort Group 5 - Patrol 008 - Captain Skarloc');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+4, 'Old Hillsbrad Foothills - Scarlet Crusade Children'),
@@ -3505,7 +3532,8 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+36, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+37, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - Path 2 after Lieutenant Drake spawned - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+42, 'Old Hillsbrad Foothills - Group 023 - Patrol 007 - spawn_group_entry - Durnholde Tracking Hound'),
-(@SGGUID+50, 'Old Hillsbrad Foothills - Thrall - Escort Path');
+(@SGGUID+50, 'Old Hillsbrad Foothills - Thrall - Escort Path'),
+(@SGGUID+51, 'Old Hillsbrad Foothills - Group 029 - Escort Group 5 - Patrol 008 - Captain Skarloc');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 (@SGGUID+4, 1, 1927.6208, 969.2012, 17.91233, 100, 0, 0, ''),
@@ -3821,7 +3849,24 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+50, 18, 2097.8333, 198.60916, 65.19629, 100, 0, 0, NULL),
 (@SGGUID+50, 19, 2080.3723, 211.9082, 64.87357, 100, 0, 0, NULL),
 (@SGGUID+50, 20, 2063.0425, 229.17654, 64.49014, 100, 0, 0, NULL),
-(@SGGUID+50, 21, 2063.0425, 229.17654, 64.49014, 2.3561387, 100000, 0, '2nd Boss');
+(@SGGUID+50, 21, 2063.0425, 229.17654, 64.49014, 2.3561387, 100000, 0, '2nd Boss'),
+-- Captain Skarloc
+(@SGGUID+51, 1, 1996.652, 276.352, 66.64184, 100, 0, 0, NULL),
+(@SGGUID+51, 2, 2001.6279, 275.85352, 66.36144, 100, 0, 0, NULL),
+(@SGGUID+51, 3, 2003.6182, 275.6543, 66.095215, 100, 0, 0, NULL),
+(@SGGUID+51, 4, 2005.6084, 275.45508, 65.86561, 100, 0, 0, NULL),
+(@SGGUID+51, 5, 2007.5986, 275.25586, 65.628265, 100, 0, 0, NULL),
+(@SGGUID+51, 6, 2009.5889, 275.05664, 65.434265, 100, 0, 0, NULL),
+(@SGGUID+51, 7, 2011.5791, 274.85742, 65.21078, 100, 0, 0, NULL),
+(@SGGUID+51, 8, 2013.5693, 274.6582, 65.031075, 100, 0, 0, NULL),
+(@SGGUID+51, 9, 2017.5498, 274.25977, 64.78041, 100, 0, 0, NULL),
+(@SGGUID+51, 10, 2020.5352, 273.96094, 64.593216, 100, 0, 0, NULL),
+(@SGGUID+51, 11, 2022.5254, 273.76172, 64.371765, 100, 0, 0, NULL),
+(@SGGUID+51, 12, 2025.5107, 273.4629, 64.17653, 100, 0, 0, NULL),
+(@SGGUID+51, 13, 2027.7712, 273.25977, 64.05285, 100, 0, 0, NULL),
+(@SGGUID+51, 14, 2050.0286, 249.96962, 62.894558, 100, 1000, 1786201, 'Captain Skarloc - Unmount, change walkmode and spawn Mount'),
+(@SGGUID+51, 15, 2059.8994, 234.25934, 64.08113, 100, 1000, 1786202, 'Captain Skarlorc - Say text and remove unitstats');
+
 
 DELETE FROM `string_id` WHERE `Id` IN (@STRINGID+1, @STRINGID+2, @STRINGID+3, @STRINGID+4, @STRINGID+5, @STRINGID+6, @STRINGID+7);
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
@@ -3889,7 +3934,7 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1787601,1787602,1787603,1787604,1787605,1787606,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Emote OneShot Point'),
 (1784801,0,1,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lieutenant Drake - Yell Text'),
@@ -3901,6 +3946,16 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1786001,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'spawn_group_entry - MoveIdle'),
 (1786001,0,1,31,17876,100,0,0,0,0,0,0,0,0,0,0,0,0,'spawn_group_entry - TerminateScript if Thrall not found'),
 (1786001,1,1,26,0,0,0,17876,100,0,0,0,0,0,0,0,0,0,'spawn_group_entry - Attack Thrall'),
+-- Captain Skarloc
+(1786201,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Captain Skarloc - Set RunMode off'),
+(1786201,0,1,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Captain Skarloc - Unmount'),
+(1786201,0,2,58,@SGGUID+52,0,0,0,0,0,0,0,0,0,0,0,0,0,'Captain Skarloc - Spawn Mount'),
+
+(1786202,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Captain Skarloc - MoveIdle'),
+(1786202,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Captain Skarloc - Emote Talk'),
+(1786202,0,2,0,0,0,0,0,0,0,15909,0,0,0,0,0,0,0,'Captain Skarloc - Say Text'),
+(1786202,8000,0,48,33600,0,0,@STRINGID+7,20,2560,0,0,0,0,0,0,0,0,'Captain Skarloc - Remove UnitFlags'),
+(1786202,8000,1,26,0,0,0,17876,20,0,0,0,0,0,0,0,0,0,'Captain Skarloc - Remove UnitFlags'),
 -- Thrall Escort RPs
 (1787601,0,1,58,@SGGUID+49,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 3'),
 (1787601,0,2,58,@SGGUID+50,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 4'),
@@ -3908,13 +3963,13 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787601,0,4,48,512,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Remove UnitFlags'),
 
 (1787602,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Pause Waypoints'),
-(1787602,0,1,36,0,0,0,@STRINGID+5,15,2050,0,0,0,0,0,0,0,0,'Thrall Escort - Face Durnholde Armorer'),
-(1787602,0,2,32,1,0,0,@STRINGID+5,15,2560,0,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Pause Waypoints'),
-(1787602,0,3,1,0,0,0,@STRINGID+5,15,2560,0,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Emote None'),
-(1787602,0,4,36,0,0,0,@STRINGID+5,15,2560,0,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer face Thrall'),
-(1787602,1000,0,0,0,0,0,@STRINGID+5,15,2560,15891,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Say Text'),
-(1787602,1000,1,1,5,0,0,@STRINGID+5,15,2560,0,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Emote OneShotExclamation'),
-(1787602,3000,0,37,0,0,1,@STRINGID+5,15,2050,0,@RELAYID+12,0,0,0,0,0,0,'Thrall Escort - Move to Durnholde Armorer'),
+(1787602,0,1,36,0,0,0,@STRINGID+5,20,2050,0,0,0,0,0,0,0,0,'Thrall Escort - Face Durnholde Armorer'),
+(1787602,0,2,32,1,0,0,@STRINGID+5,20,2560,0,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Pause Waypoints'),
+(1787602,0,3,1,0,0,0,@STRINGID+5,20,2560,0,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Emote None'),
+(1787602,0,4,36,0,0,0,@STRINGID+5,20,2560,0,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer face Thrall'),
+(1787602,1000,0,0,0,0,0,@STRINGID+5,20,2560,15891,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Say Text'),
+(1787602,1000,1,1,5,0,0,@STRINGID+5,20,2560,0,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Emote OneShotExclamation'),
+(1787602,3000,0,37,0,0,1,@STRINGID+5,20,2050,0,@RELAYID+12,0,0,0,0,0,0,'Thrall Escort - Move to Durnholde Armorer'),
 
 (1787603,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Pause Waypoints'),
 (1787603,0,1,28,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Standstate Kneel'),
