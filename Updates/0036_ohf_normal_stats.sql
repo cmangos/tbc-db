@@ -109,3 +109,18 @@ UPDATE creature_template SET MinLevel = 71, MaxLevel = 71, UnitClass = 1, SpeedW
 -- Normal - SpeedWalk 1,48 DamageMultiplier 1,91046 DamageVariance 0,4 MinDmg 307 MaxDmg 431
 UPDATE creature_template SET MinLevel = 67, MaxLevel = 67, UnitClass = 2, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 5, DamageVariance = 0.37, MinMeleeDmg = 816.96, MaxMeleeDmg = 1147.81 WHERE entry = 18934;
 UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 20525;
+
+-- Captain Skarloc 17862 - 20521
+-- Level 68 UnitClass 2
+-- Level 72 Heroic
+-- WalkSpeed: 2.5
+-- RunSpeed: 10
+-- AttackRoundBaseTime: 2000
+-- Damage Values based on Dungeon Companion II Book
+-- MinDmg 1636 MaxDmg 2304
+-- Heroic MinDmg 4452 MaxDmg 6290
+-- Old Values
+-- Normal - SpeedWalk 1,48 SpeedRun 1,14286, DamageMultiplier 1,76707 DamageVariance 0,4 MinDmg 390 MaxDmg 390
+-- Heroic - SpeedWalk 1,48 SpeedRun 1,14286, DamageMultiplier 13,0053 DamageVariance 0,4 MinDmg 3889 MaxDmg 4348
+UPDATE creature_template SET MinLevel = 68, MaxLevel = 68, UnitClass = 2, SpeedWalk = 1, SpeedRun = 1.4285, MeleeBaseAttackTime = 2000, DamageMultiplier = 9.0092, DamageVariance = 0.3727, MinMeleeDmg = 1636, MaxMeleeDmg = 2304 WHERE entry = 17862;
+UPDATE creature_template SET MinLevel = 72, MaxLevel = 72, UnitClass = 2, SpeedWalk = 1, SpeedRun = 1.4285, MeleeBaseAttackTime = 2000, DamageMultiplier = 18.4059, DamageVariance = 0.3689, MinMeleeDmg = 4452, MaxMeleeDmg = 6290 WHERE entry = 20521;
