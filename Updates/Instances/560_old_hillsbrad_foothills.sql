@@ -3787,7 +3787,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+42, 20, 2203.0107, 133.8224, 103.36875, 100, 0, 0, NULL),
 
 -- Thrall Escort Path 1
-(@SGGUID+50, 1, 2231.5212, 119.13487, 82.38263, 100, 3000, 1787601, 'Thrall Escort - SpawnPoint RP and delay'),
+(@SGGUID+50, 1, 2231.5212, 119.13487, 82.38263, 100, 1, 1787601, 'Thrall Escort - SpawnPoint RP and delay'),
 (@SGGUID+50, 2, 2232.9407, 107.68382, 82.65515, 100, 0, 0, NULL),
 (@SGGUID+50, 3, 2215.8599, 116.83019, 89.59689, 100, 0, 0, NULL),
 (@SGGUID+50, 4, 2209.0264, 103.60938, 89.596886, 100, 0, 0, NULL),
@@ -3884,11 +3884,10 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1784802,0,2,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - switch to path 1'),
 
 -- Thrall Escort RPs
-(1787601,0,5,58,@SGGUID+49,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 3'),
-(1787601,0,5,58,@SGGUID+50,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 4'),
--- Start escort
-(1787601,3000,0,0,0,0,0,0,0,0,17622,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
-(1787601,3000,1,48,512,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Remove UnitFlags'),
+(1787601,0,1,58,@SGGUID+49,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 3'),
+(1787601,0,2,58,@SGGUID+50,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 4'),
+(1787601,0,3,0,0,0,0,0,0,0,17622,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
+(1787601,0,4,48,512,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Remove UnitFlags'),
 
 (1787602,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Pause Waypoints'),
 (1787602,0,1,36,0,0,0,@STRINGID+5,15,2050,0,0,0,0,0,0,0,0,'Thrall Escort - Face Durnholde Armorer'),
