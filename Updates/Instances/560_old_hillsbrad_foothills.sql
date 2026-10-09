@@ -3415,7 +3415,6 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+36, 17819, 0, 0, 0), (@SGGUID+36, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
 (@SGGUID+39, 17819, 0, 0, 0), (@SGGUID+39, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
 (@SGGUID+42, 17819, 0, 0, 0), (@SGGUID+42, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
-
 (@SGGUID+47, 17819, 0, 2, 0), (@SGGUID+47, 17833, 0, 1, 0), (@SGGUID+47, 17860, 1, 2, 0), (@SGGUID+47, 18934, 0, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
 (@SGGUID+48, 17819, 0, 2, 0), (@SGGUID+48, 17833, 0, 1, 0), (@SGGUID+48, 17860, 1, 2, 0), (@SGGUID+48, 18934, 0, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
 (@SGGUID+49, 17819, 0, 2, 0), (@SGGUID+49, 17833, 0, 1, 0), (@SGGUID+49, 17860, 1, 2, 0), (@SGGUID+49, 18934, 0, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
@@ -3810,7 +3809,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+50, 20, 2063.0425, 229.17654, 64.49014, 100, 0, 0, NULL),
 (@SGGUID+50, 21, 2063.0425, 229.17654, 64.49014, 2.3561387, 100000, 0, '2nd Boss');
 
-DELETE FROM `string_id` WHERE `Id` IN (@STRINGID+1, @STRINGID+2, @STRINGID+3, @STRINGID+4, @STRINGID+5, @STRINGID+6);
+DELETE FROM `string_id` WHERE `Id` IN (@STRINGID+1, @STRINGID+2, @STRINGID+3, @STRINGID+4, @STRINGID+5, @STRINGID+6, @STRINGID+7);
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+1, 'OHF_CITIZEN_CONVO_PARTNER'),
 (@STRINGID+2, 'OHF_LIEUTENANTDRAKE'),
@@ -3818,7 +3817,9 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 -- Orc Prisoners and all alive enemy NPC groups around the orc Huts will have differen RP elements after Lieutenant Drake spawned
 -- Everything gets handled via EAI activated with AI_EVENT_CUSTOM_EVENTAI_A from core script
 (@STRINGID+4, 'OHF_DRAKE_RP_SPECIAL'),
-(@STRINGID+5, 'OHF_THRALL_RP_ARMORER'),
+-- StringIDs used for Thrall "Escort"
+(@STRINGID+5, 'OHF_THRALL_RP_ARMORER'), -- RP Target
+-- When Escort starts 2 Groups at Durnholde Keep Entrance get despawned
 (@STRINGID+6, 'OHF_THRALL_BRIDGETRASH_DESPAWN');
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
@@ -3881,15 +3882,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1784802,0,2,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - switch to path 1'),
 
 -- Thrall Escort RPs
-(1787601,0,0,11,@OGUID+81,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Open Prison Door'),
-(1787601,0,1,29,3,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Remove NPC Flag'),
--- There are 2 groups on the bridge at the start of Burg Durnholde
--- Both groups get despawned if they are alive cause there spawn 2 other groups
--- Worldstate change to prevent their respawn
-(1787601,0,2,53,@SGGUID+5,1,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Change Worldstate'),
--- SendAiEvent to despawn them only if they are out of combat
-(1787601,0,3,36,5,0,0,@STRINGID+6,200,2050,0,0,0,0,0,0,0,0,'Thrall Escort - SendAIEvent to StringID'),
--- Actually spawn both new groups on bridge
 (1787601,0,5,58,@SGGUID+49,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 3'),
 (1787601,0,5,58,@SGGUID+50,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 4'),
 -- Start escort
