@@ -2842,7 +2842,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+631, 20391, 560, 3, 1816.784, 1031.313, 12.56942, 6.265732, 7200, 7200, 0, 0), -- Event Generator Old Hillsbrad
 (@CGUID+632, 20359, 560, 3, 1909.4442, 995.6017, 16.181616, 4.9492154, 7200, 7200, 0, 0), -- Little Jimmy Vishas
 (@CGUID+633, 20155, 560, 3, 2102.716, 95.313805, 53.068726, 3.31612, 7200, 7200, 0, 0), -- Hillsbrad Internment Lodge Quest Trigger
-(@CGUID+634, 19433, 560, 3, 2190.86, 156.63531, 88.52896, 1.44862, 7200, 7200, 0, 0), -- CoT Hillsbrad Despawn Trigger Unit
+(@CGUID+634, 19433, 560, 3, 2190.860107421875, 156.63531494140625, 88.528961181640625, 1.448623299598693847, 7200, 7200, 0, 0), -- CoT Hillsbrad Despawn Trigger Unit
 (@CGUID+635, 2408, 560, 3, 2381.204, 502.0198, 34.41981, 2.336742, 180, 180, 5, 1), -- Snapjaw
 (@CGUID+636, 2408, 560, 3, 2580.77, 486.3224, 35.85488, 1.665609, 180, 180, 5, 1), -- Snapjaw
 (@CGUID+637, 2408, 560, 3, 2512.449, 477.9257, 34.55508, 2.853929, 180, 180, 5, 1), -- Snapjaw
@@ -3181,11 +3181,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+46, 'Old Hillsbrad Foothills - Group 026 - Thrall', 0, 0, 0, 0, 0),
 -- All groups spawned during Escort to First Boss have different rules
 -- 3 Groups - Always atleast 1 (Max 2) Durnholde Veteran, and random between Durnholde Sentry (max 2) - Durnholde Mage (Max 1) - Durnholde Warden (Max 1)
-(@SGGUID+47, 'Old Hillsbrad Foothills - Group 027 - Escort Group 1', 0, 0, 0, 1, 0),
-(@SGGUID+48, 'Old Hillsbrad Foothills - Group 028 - Escort Group 2', 0, 0, 0, 1, 0),
-(@SGGUID+49, 'Old Hillsbrad Foothills - Group 028 - Escort Group 3', 0, 0, 0, 1, 0),
+(@SGGUID+47, 'Old Hillsbrad Foothills - Group 027 - Escort Group 1', 0, 0, 0, 1, @STRINGID+7),
+(@SGGUID+48, 'Old Hillsbrad Foothills - Group 028 - Escort Group 2', 0, 0, 0, 1, @STRINGID+7),
+(@SGGUID+49, 'Old Hillsbrad Foothills - Group 028 - Escort Group 3', 0, 0, 0, 1, @STRINGID+7),
 -- Always 2 Durnholde Mages and 2 Durnholde Veteran
-(@SGGUID+50, 'Old Hillsbrad Foothills - Group 028 - Escort Group 4', 0, 0, 0, 1, 0),
+(@SGGUID+50, 'Old Hillsbrad Foothills - Group 028 - Escort Group 4', 0, 0, 0, 1, @STRINGID+7),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3820,7 +3820,9 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 -- StringIDs used for Thrall "Escort"
 (@STRINGID+5, 'OHF_THRALL_RP_ARMORER'), -- RP Target
 -- When Escort starts 2 Groups at Durnholde Keep Entrance get despawned
-(@STRINGID+6, 'OHF_THRALL_BRIDGETRASH_DESPAWN');
+(@STRINGID+6, 'OHF_THRALL_BRIDGETRASH_DESPAWN'),
+-- All NPCs spawned during Escort - used for spell_script_target
+(@STRINGID+7, 'OHF_THRALL_ESCORT_SPAWNED');
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES

@@ -29,3 +29,7 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (7499, 18, 17876, 0, 0, 0, 0, 'INSTANCE_CONDITION_ID_THRALL_STARTABLE');
 
 UPDATE creature_template SET Detection = 20 WHERE entry = 17876;
+
+
+-- 33937 Stun Phase 2 Units
+INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES ('33937', '5', '5600007');
