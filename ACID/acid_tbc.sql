@@ -23542,6 +23542,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1781904','17819','30','0','100','0','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Durnholde Sentry - Set Phase 1 on ReceiveEventAI A'),
 ('1781905','17819','30','0','10','1','8','0','0','0','0','0','53','-5600003','0','0','0','0','0','0','0','0','0','0','Durnholde Sentry - Start RandomScript on ReceiveEventAI C'),
 -- GUID Based
+('5600362','-5600362','1','1','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Durnholde Sentry - ForceDespawn OOC (Phase 1)'),
 ('5600376','-5600376','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Sentry - RunMode and WaypointMovement SetPhase 0 OOC (Phase 1)'),
 ('5600369','-5600369','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Sentry - RunMode and WaypointMovement SetPhase 0 OOC (Phase 1)'),
 ('5600370','-5600370','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Sentry - RunMode and WaypointMovement SetPhase 0 OOC (Phase 1)'),
@@ -23555,6 +23556,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1782005','17820','30','0','100','0','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Durnholde Rifleman - Set Phase 1 on ReceiveEventAI A'),
 ('1782006','17820','30','0','10','1','8','0','0','0','0','0','53','-5600003','0','0','0','0','0','0','0','0','0','0','Durnholde Rifleman - Start RandomScript on ReceiveEventAI C'),
 -- GUID Based
+('5600386','-5600386','1','1','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Durnholde Rifleman - ForceDespawn OOC (Phase 1)'),
+('5600389','-5600389','1','1','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Durnholde Rifleman - ForceDespawn OOC (Phase 1)'),
 ('5600390','-5600390','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Rifleman - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
 ('5600391','-5600391','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Rifleman - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
 ('5600396','-5600396','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Rifleman - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
@@ -23856,6 +23859,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('5600373','-5600373','1','0','100','1','40000','300000','40000','300000','0','0','54','0','0','5600004','5','1','0','0','0','0','0','0','Durnholde Sentry - Emote Talk and Random Say OOC'),
 ('5600374','-5600374','1','0','100','1','40000','300000','40000','300000','0','0','54','0','0','5600004','5','1','0','0','0','0','0','0','Durnholde Sentry - Emote Talk and Random Say OOC'),
 ('5600379','-5600379','1','1','100','0','0','0','0','0','0','0','58','0','0','0','53','5600011','0','0','22','0','0','0','spawn_group_entry - RunMode and StartRelayScript SetPhase 0 OOC (Phase 1)'),
+('5600388','-5600388','1','1','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - ForceDespawn OOC (Phase 1)'),
 ('5600395','-5600395','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','spawn_group_entry - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
 ('5600397','-5600397','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','5600016','2','22','0','0','0','spawn_group_entry - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
 ('5600399','-5600399','1','0','100','1','40000','300000','40000','300000','0','0','54','0','0','5600004','5','1','0','0','0','0','0','0','spawn_group_squad - Emote Talk and Random Say OOC'),
