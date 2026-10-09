@@ -4296,7 +4296,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- Thrall RP related
 (@RELAYID+12, 0, 0, 15, 32890, 0, 0, @STRINGID+5, 5, 2049, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Thrall cast Knockout on Durnholde Armorer'),
 (@RELAYID+12, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Set WalkMode'),
-(@RELAYID+12, 3000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15892, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Thrall say Text'),
+(@RELAYID+12, 3000, 0, 0, 0, 0, 0, 0, 0, 0, 15892, 0, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Thrall say Text'),
 (@RELAYID+12, 6000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Thrall unpause waypoints');
 
 
