@@ -23570,7 +23570,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1783303','17833','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Durnholde Warden - Flee at 15% HP'),
 ('1783304','17833','30','0','100','0','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Durnholde Warden - Set Phase 1 on ReceiveEventAI A'),
 ('1783305','17833','30','0','10','1','8','0','0','0','0','0','53','-5600003','0','0','0','0','0','0','0','0','0','0','Durnholde Warden - Start RandomScript on ReceiveEventAI C'),
-('1783301','17833','8','0','100','0','33937','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Durnholde Warden - Force Despawn on Stun Phase 2 Units SpellHit'),
+('1783306','17833','8','0','100','0','33937','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Durnholde Warden - Force Despawn on Stun Phase 2 Units SpellHit'),
 -- GUID Based
 ('5600406','-5600406','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Warden - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
 ('5600407','-5600407','1','1','100','0','0','0','0','0','0','0','58','0','0','0','48','2','0','0','22','0','0','0','Durnholde Warden - RunMode and WaypointMovement SetPhase 0  OOC (Phase 1)'),
@@ -23722,7 +23722,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1893403','18934','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Durnholde Mage - Enable Range Mode on Spawn'),
 ('1893404','18934','27','0','100','1','12544','1','5000','5000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Durnholde Mage - Cast Frost Armor on Missing Buff'),
 ('1893405','18934','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Durnholde Mage - Flee at 15% HP'),
-('1893401','18934','8','0','100','0','33937','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Durnholde Veteran - Force Despawn on Stun Phase 2 Units SpellHit'),
+('1893406','18934','8','0','100','0','33937','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Durnholde Mage - Force Despawn on Stun Phase 2 Units SpellHit'),
 -- Image of Erozion (19438)
 ('1943801','19438','11','0','100','0','0','0','0','0','0','0','11','33955','0','0','1','16729','0','0','41','16000','0','0','Image of Erozion - Cast Image of Erozion Spawn Say Text and Force Despawn on Spawn'),
 -- Hal McAllister 20342 - NSR
