@@ -21882,6 +21882,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Frostbite Invisible Stalker 20061 - npc_frostbite
 -- Darkcrest Sentry 20079
 ('2007901','20079','4','0','100','0','0','0','0','0','0','0','1','16781','0','0','0','0','0','0','0','0','0','0','Darkcrest Sentry - Emote on Aggro'),
+('2007902','20079','2','0','100','1024','30','0','0','0','0','0','39','30','0','0','1','1064','0','0','0','0','0','0','Darkcrest Sentry - Call For Help, Emote at 30% HP'),
 -- Bloodscale Overseer 20088 - s.34726
 ('2008801','20088','4','0','100','0','0','0','0','0','0','0','1','17532','0','0','45','5','25','1','0','0','0','0','Bloodscale Overseer - Emote and Send AI Event A on Aggro'),
 ('2008802','20088','0','0','100','1025','9000','21000','10000','16000','0','0','11','34812','1','0','0','0','0','0','0','0','0','0','Bloodscale Overseer - Cast Curse of Nazjatar'),
@@ -21894,6 +21895,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2008905','20089','0','0','100','1537','0','0','5000','10000','0','0','11','32011','1','256','0','0','0','0','0','0','0','0','Bloodscale Wavecaller - Cast Water Bolt (Melee Mode)'),
 -- Bloodscale Sentry 20090
 ('2009001','20090','4','0','100','0','0','0','0','0','0','0','1','16781','0','0','0','0','0','0','0','0','0','0','Bloodscale Sentry - Emote on Aggro'),
+('2009002','20090','2','0','100','1024','30','0','0','0','0','0','39','30','0','0','1','1064','0','0','0','0','0','0','Bloodscale Sentry - Call For Help, Emote at 30% HP'),
 -- Umbrafen Witchdoctor 20115
 ('2011501','20115','1','0','100','1','1000','1000','120000','120000','0','0','11','34871','0','32','0','0','0','0','0','0','0','0','Umbrafen Witchdoctor - Cast Umbrafen Buff OOC'),
 ('2011502','20115','27','0','100','1','34871','1','15000','30000','0','0','11','34871','0','0','0','0','0','0','0','0','0','0','Umbrafen Witchdoctor - Cast Umbrafen Buff on Missing Buff'),
