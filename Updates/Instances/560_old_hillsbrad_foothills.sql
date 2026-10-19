@@ -2921,9 +2921,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+678, 0, 560, 0, 2109.851806640625, 195.1403045654296875, 66.304931640625, 2.426007747650146484, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+679, 0, 560, 0, 2112.38720703125, 195.49468994140625, 66.30493927001953125, 2.39110112190246582, 7200, 7200, 0, 0), -- spawn_group_entry
 -- 2nd Boss
-(@CGUID+680, 17862, 560, 3, 1996.6519775390625, 276.35198974609375, 66.64183807373046875, 6.18334197998046875, 7200, 7200, 0, 0), -- Captain Skarloc
-(@CGUID+681, 17860, 560, 3, 1994.146484375, 278.217559814453125, 66.821319580078125, 5.946362495422363281, 7200, 7200, 0, 0), -- Durnholde Veteran
-(@CGUID+682, 17833, 560, 3, 1995.708740234375, 273.9462890625, 66.7578277587890625, 0.210796549916267395, 7200, 7200, 0, 0), -- Durnholde Warden
+(@CGUID+680, 17862, 560, 0, 1996.6519775390625, 276.35198974609375, 66.64183807373046875, 6.18334197998046875, 7200, 7200, 0, 0), -- Captain Skarloc
+(@CGUID+681, 17860, 560, 0, 1994.146484375, 278.217559814453125, 66.821319580078125, 5.946362495422363281, 7200, 7200, 0, 0), -- Durnholde Veteran
+(@CGUID+682, 17833, 560, 0, 1995.708740234375, 273.9462890625, 66.7578277587890625, 0.210796549916267395, 7200, 7200, 0, 0), -- Durnholde Warden
 (@CGUID+683, 18798, 560, 0, 2047.7747802734375, 253.40875244140625, 62.91183090209960937, 5.37561416625976562500, 7200, 7200, 0, 0); -- Skarloc's Mount
 
 -- ===========
@@ -3212,7 +3212,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 
 (@SGGUID+46, 'Old Hillsbrad Foothills - Group 026 - Thrall', 0, 0, 0, 0, 0),
 -- All groups spawned during Escort to First Boss have different rules
--- 3 Groups - Always atleast 1 (Max 2) Durnholde Veteran, and random between Durnholde Sentry (max 2) - Durnholde Mage (Max 1) - Durnholde Warden (Max 1)
+-- 3 Groups - Always atleast 1 (Max 2) Durnholde Veteran and 1 Durnholde Mage, and random between Durnholde Sentry (max 2) - Durnholde Warden (Max 1)
 (@SGGUID+47, 'Old Hillsbrad Foothills - Group 027 - Escort Group 1', 0, 0, 0, 1, @STRINGID+7),
 (@SGGUID+48, 'Old Hillsbrad Foothills - Group 028 - Escort Group 2', 0, 0, 0, 1, @STRINGID+7),
 (@SGGUID+49, 'Old Hillsbrad Foothills - Group 028 - Escort Group 3', 0, 0, 0, 1, @STRINGID+7),
@@ -3455,9 +3455,9 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+36, 17819, 0, 0, 0), (@SGGUID+36, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
 (@SGGUID+39, 17819, 0, 0, 0), (@SGGUID+39, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
 (@SGGUID+42, 17819, 0, 0, 0), (@SGGUID+42, 17820, 0, 0, 0), -- Durnholde Sentry, Durnholde Rifleman
-(@SGGUID+47, 17819, 0, 2, 0), (@SGGUID+47, 17833, 0, 1, 0), (@SGGUID+47, 17860, 1, 2, 0), (@SGGUID+47, 18934, 0, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
-(@SGGUID+48, 17819, 0, 2, 0), (@SGGUID+48, 17833, 0, 1, 0), (@SGGUID+48, 17860, 1, 2, 0), (@SGGUID+48, 18934, 0, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
-(@SGGUID+49, 17819, 0, 2, 0), (@SGGUID+49, 17833, 0, 1, 0), (@SGGUID+49, 17860, 1, 2, 0), (@SGGUID+49, 18934, 0, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
+(@SGGUID+47, 17819, 0, 2, 0), (@SGGUID+47, 17833, 0, 1, 0), (@SGGUID+47, 17860, 1, 2, 0), (@SGGUID+47, 18934, 1, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
+(@SGGUID+48, 17819, 0, 2, 0), (@SGGUID+48, 17833, 0, 1, 0), (@SGGUID+48, 17860, 1, 2, 0), (@SGGUID+48, 18934, 1, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
+(@SGGUID+49, 17819, 0, 2, 0), (@SGGUID+49, 17833, 0, 1, 0), (@SGGUID+49, 17860, 1, 2, 0), (@SGGUID+49, 18934, 1, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
 (@SGGUID+50, 18934, 2, 2, 0), (@SGGUID+50, 17860, 2, 2, 0); -- Durnholde Mage, Durnholde Veteran
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
@@ -3847,9 +3847,8 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+50, 16, 2136.8472, 173.66623, 66.826485, 100, 0, 0, NULL),
 (@SGGUID+50, 17, 2121.3125, 185.03407, 69.11848, 100, 0, 0, NULL),
 (@SGGUID+50, 18, 2097.8333, 198.60916, 65.19629, 100, 0, 0, NULL),
-(@SGGUID+50, 19, 2080.3723, 211.9082, 64.87357, 100, 0, 0, NULL),
-(@SGGUID+50, 20, 2063.0425, 229.17654, 64.49014, 100, 0, 0, NULL),
-(@SGGUID+50, 21, 2063.0425, 229.17654, 64.49014, 2.3561387, 100000, 0, '2nd Boss'),
+(@SGGUID+50, 19, 2080.3723, 211.9082, 64.87357, 100, 1, 1787607, 'Spawn 2nd Boss'),
+(@SGGUID+50, 20, 2063.0425, 229.17654, 64.49014, 100, 1000, 1787608, 'RP Before 2nd Boss'),
 -- Captain Skarloc
 (@SGGUID+51, 1, 1996.652, 276.352, 66.64184, 100, 0, 0, NULL),
 (@SGGUID+51, 2, 2001.6279, 275.85352, 66.36144, 100, 0, 0, NULL),
@@ -3934,7 +3933,7 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Emote OneShot Point'),
 (1784801,0,1,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lieutenant Drake - Yell Text'),
@@ -3981,10 +3980,16 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787603,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - UnPause Waypoints'),
 
 (1787604,0,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Set RunMode'),
-(1787604,0,1,0,0,0,0,0,0,0,15893,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
+(1787604,0,1,0,0,0,0,0,0,0,15894,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
 
 (1787605,0,0,58,@SGGUID+47,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 1'),
 (1787606,0,0,58,@SGGUID+48,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 2'),
+
+(1787607,0,0,58,@SGGUID+51,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Captain Skarloc'),
+
+(1787608,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Pause Waypoints'),
+(1787608,100,1,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Emote OneshotPoint'),
+(1787608,100,2,0,0,0,0,0,0,0,15908,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
 
 (1809201, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Pause Waypoints'),
 (1809201, 0, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Cast Transform'),
