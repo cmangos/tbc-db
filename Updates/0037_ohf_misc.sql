@@ -62,14 +62,34 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 (7830, 9578, 0, 0),
 (7831, 9580, 0, 0);
 
-
 DELETE FROM gossip_menu_option WHERE menu_id IN (7829, 7830, 7831);
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `condition_id`) VALUES 
 (7829, 1, 0, 'The situation is rather complicated, Thrall. It would be best for you to head into the mountains now, before more of Blackmoore\'s men show up. We\'ll make sure Taretha is safe..', 15913, 102, 1, 7831, 0, 0, 0),
 (7830, 1, 0, 'Taretha cannot see you, Thrall.', 15911, 101, 1, 7829, 0, 0, 0),
 (7831, 1, 0, 'Tarren Mill.', 15915, 103, 1, 0, 0, 0, 0);
 
+
+-- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 96 ConnIdx: 0 Time: 10/08/2026 16:56:53.298 Number: 48326
+-- GossipID: 7840
+-- (GossipOptions) Text: We're ready, Thrall.
+-- BroadcastTextID: 15953
+
+DELETE FROM npc_text_broadcast_text WHERE Id IN (9597);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(9597, 1, 15953); -- Tarren Mill lies beyond these trees. The commotion at Durnholde should give us a little time to find Taretha before the entire countryside is flooded with human soldiers. Let's check the nearby barn, then head into town.
+
+DELETE FROM gossip_menu WHERE entry IN (7840);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(7840, 9597, 0, 0);
+
+DELETE FROM gossip_menu_option WHERE menu_id IN (7840);
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `condition_id`) VALUES 
+(7840, 1, 0, 'We\'re ready, Thrall.', 15956, 104, 1, 0, 0, 0, 0);
+
+-- We cant handle multiple gossips via DB - use core instead
 UPDATE creature_template SET GossipMenuId = 0 WHERE entry = 17876;
 
+
+-- Equipment for respawn
 DELETE FROM creature_equip_template WHERE entry = 17876;
 INSERT INTO `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`) VALUES ('17876', '14880', '1961');
