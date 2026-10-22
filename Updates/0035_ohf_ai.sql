@@ -138,7 +138,7 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 (2317701, 'Old Hillsbrad Foothills - Tarren Mill Lookout - Normal', 0, 80),
 (2318301, 'Old Hillsbrad Foothills - Tarren Mill Lookout - Heroic', 0, 80);
 
-DELETE FROM `creature_spell_list` WHERE `Id` IN (2317701, 2054601);
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2317701, 2318301);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (2317701, 1, 35511, 0, -1, 1, 0, 100, 0, 8000, 18000, 8000, 18000, 'Tarren Mill Lookout - Serpent Sting - current'),
 (2317701, 2, 17174, 0, -1, 100, 0, 100, 0, 4000, 8000, 8000, 14000, 'Tarren Mill Lookout - Concussive Shot - random'),
