@@ -110,7 +110,7 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 -- (GossipOptions) Text: Strange wizard?
 -- BroadcastTextID: 15987
 
-S-- erverToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 163 ConnIdx: 0 Time: 10/08/2026 16:58:56.929 Number: 52991
+-- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 163 ConnIdx: 0 Time: 10/08/2026 16:58:56.929 Number: 52991
 -- GossipGUID: Full: 0x20424446001271C0001B38000047AF8A Creature/0 R4241/S6968 Map: 560 Entry: 18887 Low: 4697994
 -- GossipID: 7852
 -- (GossipOptions) Text: We'll get you out, Taretha. Don't worry. I doubt the wizard would wander too far away.
@@ -119,7 +119,7 @@ S-- erverToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 163 ConnIdx: 0 Time: 1
 
 DELETE FROM npc_text_broadcast_text WHERE Id IN (9610, 9613);
 INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
-(9610, 1, 15987); -- Thank you for helping Thrall escape, friends. Now I only hope you can help me as well. I awoke this morning to find myself trapped in this magical prison. A strange wizard told me that I would have to stay here for a while.
+(9610, 1, 15987), -- Thank you for helping Thrall escape, friends. Now I only hope you can help me as well. I awoke this morning to find myself trapped in this magical prison. A strange wizard told me that I would have to stay here for a while.
 (9613, 1, 15993); -- Yes, friends. This man was no wizard of Dalaran. His clothes looked quite foreign, and his accent was unfamiliar. All he could mumble about was time this, time that. You'll have to find that wizard and convince him to release me.
 DELETE FROM npc_text WHERE ID IN (9610, 9613);
 
@@ -130,7 +130,7 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 
 DELETE FROM gossip_menu_option WHERE menu_id IN (7849, 7852);
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `condition_id`) VALUES 
-(7849, 1, 0, 'Strange wizard?', 15992, 100, 1, 7852, 0, 0, 0);
+(7849, 1, 0, 'Strange wizard?', 15992, 100, 1, 7852, 0, 0, 0),
 (7852, 1, 0, 'We\'ll get you out, Taretha. Don\'t worry. I doubt the wizard would wander too far away.', 15994, 101, 1, 0, 0, 0, 0);
 
 UPDATE creature_template SET GossipMenuId = 7849 WHERE entry = 18887;
