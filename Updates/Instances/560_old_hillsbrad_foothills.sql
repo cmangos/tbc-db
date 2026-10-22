@@ -2220,7 +2220,7 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+580, 20426), (@CGUID+580, 20428), (@CGUID+580, 20429), (@CGUID+580, 20430),
 (@CGUID+581, 20426), (@CGUID+581, 20428), (@CGUID+581, 20429), (@CGUID+581, 20430);
 
-DELETE FROM creature_spawn_data WHERE Guid IN (@CGUID+684, @CGUID+685, @CGUID+686, @CGUID+665, @CGUID+666, @CGUID+667, @CGUID+687);
+DELETE FROM creature_spawn_data WHERE Guid IN (@CGUID+684, @CGUID+685, @CGUID+686, @CGUID+665, @CGUID+666, @CGUID+667);
 INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
 -- Captain Skarloc group
 (@CGUID+684, 1786201),
@@ -2229,16 +2229,14 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 
 (@CGUID+665, 1787601),
 (@CGUID+666, 1787601),
-(@CGUID+667, 1787601),
-(@CGUID+687, 1879801);
+(@CGUID+667, 1787601);
 
-DELETE FROM creature_spawn_data_template WHERE Entry IN (1783301, 1786001, 1786201, 1787601, 1879801);
+DELETE FROM creature_spawn_data_template WHERE Entry IN (1783301, 1786001, 1786201, 1787601);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `ModelId`, `EquipmentId`, `SpawnFlags`, `StringId`, `Name`) VALUES 
 ('1783301', 0, 33600, 0, -1, 0, 0, 'OHF - Durnholde Warden - UnitFlags and RunMode'), 
 ('1786001', 0, 33600, 0, -1, 0, 0, 'OHF - Durnholde Veteran - UnitFlags and RunMode'), 
 ('1786201', 0, 33600, 0, -1, 1, 0, 'OHF - Captain Skarloc - UnitFlags and RunMode'),
-('1787601', 1, -1, 18165, 17876, 0, 0, 'OHF - Thrall - Equipment'),
-('1879801', -1, -1, 0, -1, 0, @STRINGID+12, 'OHF - Skarloc Mount - StringID');
+('1787601', 1, -1, 18165, 17876, 0, 0, 'OHF - Thrall - Equipment');
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 20434, 560, 3, 1889.295, 992.3798, 15.2348, 2.251475, 7200, 7200, 0, 0), -- Horse
