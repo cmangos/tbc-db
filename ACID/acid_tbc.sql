@@ -23715,6 +23715,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Durnholde Cook (18765)
 ('1876501','18765','30','0','100','1','5','0','0','0','0','0','51','1','0','0','22','1','0','0','0','0','0','0','Durnholde Cook - Set Phase 1 and stop waypoints on ReceiveEventAIvent A'),
 ('1876502','18765','1','1','100','1','10000','16000','10000','16000','0','0','51','0','0','0','5','0','0','0','22','0','0','0','Durnholde Cook - Phase 0 EmoteState 0 Start Waypoints (Phase 1)'),
+-- Skarloc's Mount (18798)
+('1879801','18798','30','0','100','1','5','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Skarloc Mount - Force Despawn ReceiveEventAIvent A'),
 -- Taretha (18887) - npc_taretha
 -- Durnholde Mage 18934 - spell_list
 ('1893401','18934','4','0','10','32','0','0','0','0','0','0','54','0','0','5600001','0','0','0','0','0','0','0','0','Durnholde Mage - Random Say on Aggro'),

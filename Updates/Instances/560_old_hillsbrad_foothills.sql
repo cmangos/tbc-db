@@ -3849,6 +3849,34 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+50, 18, 2097.8333, 198.60916, 65.19629, 100, 0, 0, NULL),
 (@SGGUID+50, 19, 2080.3723, 211.9082, 64.87357, 100, 1, 1787607, 'Spawn 2nd Boss'),
 (@SGGUID+50, 20, 2063.0425, 229.17654, 64.49014, 100, 1000, 1787608, 'RP Before 2nd Boss'),
+-- 
+(@SGGUID+50, 21, 2063.0425, 229.17654, 64.49014, 100, 1000, 1787609, 'NPC Flags'),
+(@SGGUID+50, 22, 2063.0425, 229.17654, 64.49014, 100, 1, 1787610, 'Say Text'),
+(@SGGUID+50, 23, 2047.117, 252.40723, 62.80693, 0.89011, 2000, 0, 'Horse RP'),
+(@SGGUID+50, 24, 2047.117, 252.40723, 62.80693, 5.236, 7000, 1787611, 'Horse RP'),
+(@SGGUID+50, 25, 2034.3387, 272.43912, 63.64704, 100, 0, 0, NULL),
+(@SGGUID+50, 26, 2001.0026, 283.85364, 66.20713, 100, 0, 0, NULL),
+(@SGGUID+50, 27, 2025.5603, 326.64444, 66.09961, 100, 0, 0, NULL),
+(@SGGUID+50, 28, 2048.9814, 370.19327, 66.02355, 100, 0, 0, NULL),
+(@SGGUID+50, 29, 2069.5254, 415.4682, 66.08829, 100, 0, 0, NULL),
+(@SGGUID+50, 30, 2084.763, 461.4977, 66.056854, 100, 0, 0, NULL),
+(@SGGUID+50, 31, 2106.7715, 504.5486, 60.567806, 100, 0, 0, NULL),
+(@SGGUID+50, 32, 2140.057, 539.7758, 53.48757, 100, 0, 0, NULL),
+(@SGGUID+50, 33, 2162.9114, 570.4435, 45.900536, 100, 0, 0, NULL),
+(@SGGUID+50, 34, 2172.2168, 618.90204, 37.60035, 100, 0, 0, NULL),
+(@SGGUID+50, 35, 2175.4136, 641.25226, 33.80142, 100, 0, 0, NULL),
+(@SGGUID+50, 36, 2183.2444, 670.6356, 34.010624, 100, 0, 0, NULL),
+(@SGGUID+50, 37, 2206.7988, 666.0879, 36.338615, 100, 0, 0, NULL),
+(@SGGUID+50, 38, 2239.8643, 629.9121, 37.03885, 100, 0, 0, NULL),
+(@SGGUID+50, 39, 2265.591, 587.5455, 40.713608, 100, 0, 0, NULL),
+(@SGGUID+50, 40, 2294.7498, 547.2144, 38.946674, 100, 0, 0, NULL),
+(@SGGUID+50, 41, 2339.0718, 528.21497, 40.91764, 100, 0, 0, NULL),
+(@SGGUID+50, 42, 2388.3496, 523.9132, 39.694645, 100, 0, 0, NULL),
+(@SGGUID+50, 43, 2437.737, 521.23425, 43.575535, 100, 0, 0, NULL),
+(@SGGUID+50, 44, 2482.7017, 542.7182, 48.31146, 100, 0, 0, NULL),
+(@SGGUID+50, 45, 2483.695, 590.4017, 56.680336, 100, 0, 0, NULL),
+(@SGGUID+50, 46, 2486.8828, 624.26953, 57.930817, 100, 10000, 0, NULL),
+
 -- Captain Skarloc
 (@SGGUID+51, 1, 1996.652, 276.352, 66.64184, 100, 0, 0, NULL),
 (@SGGUID+51, 2, 2001.6279, 275.85352, 66.36144, 100, 0, 0, NULL),
@@ -3867,7 +3895,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+51, 15, 2059.8994, 234.25934, 64.08113, 100, 1000, 1786202, 'Captain Skarlorc - Say text and remove unitstats');
 
 
-DELETE FROM `string_id` WHERE `Id` IN (@STRINGID+1, @STRINGID+2, @STRINGID+3, @STRINGID+4, @STRINGID+5, @STRINGID+6, @STRINGID+7, @STRINGID+8);
+DELETE FROM `string_id` WHERE `Id` IN (@STRINGID+1, @STRINGID+2, @STRINGID+3, @STRINGID+4, @STRINGID+5, @STRINGID+6, @STRINGID+7, @STRINGID+8, @STRINGID+9);
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+1, 'OHF_CITIZEN_CONVO_PARTNER'),
 (@STRINGID+2, 'OHF_LIEUTENANTDRAKE'),
@@ -3881,7 +3909,8 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+6, 'OHF_THRALL_BRIDGETRASH_DESPAWN'),
 -- All NPCs spawned during Escort - used for spell_script_target
 (@STRINGID+7, 'OHF_THRALL_ESCORT_SPAWNED'),
-(@STRINGID+8, 'OHF_THRALL');
+(@STRINGID+8, 'OHF_THRALL'),
+(@STRINGID+9, 'OHF_SKARLOC_MOUNT');
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES
@@ -3934,7 +3963,7 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Emote OneShot Point'),
 (1784801,0,1,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lieutenant Drake - Yell Text'),
@@ -3991,6 +4020,17 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787608,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Pause Waypoints'),
 (1787608,100,1,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Emote OneshotPoint'),
 (1787608,100,2,0,0,0,0,0,0,0,15908,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
+
+-- Skarloc Died readd NPC Flags
+(1787609,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Pause Waypoints'),
+(1787609,0,0,29,1,1,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Add NPC Flag Gossip'),
+
+(1787610,100,2,0,0,0,0,0,0,0,15916,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
+
+(1787611,0,0,24,8469,0,0,0,0,8,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Mount'),
+(1787611,2000,0,35,5,0,0,18798,10,1,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - SendAI Event to Skarloc Mount'),
+(1787611,4000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Emote OneShotExclamation'),
+(1787611,4000,1,0,0,0,0,0,0,0,15948,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
 
 (1809201, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Pause Waypoints'),
 (1809201, 0, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Cast Transform'),

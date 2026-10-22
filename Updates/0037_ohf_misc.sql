@@ -69,4 +69,4 @@ INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`,
 (7830, 1, 0, 'Taretha cannot see you, Thrall.', 15911, 101, 1, 7829, 0, 0, 0),
 (7831, 1, 0, 'Tarren Mill.', 15915, 103, 1, 0, 0, 0, 0);
 
-UPDATE creature_template SET GossipMenuId = 7830 WHERE entry = 17876;
+UPDATE creature_template SET GossipMenuId = 0 WHERE entry = 17876;
