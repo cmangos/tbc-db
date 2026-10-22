@@ -3524,6 +3524,7 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+54, 2, 3, 0, @SGGUID+54, 2, 'Old Hillsbrad Foothills - Group 029 - Escort Group 5 - Patrol 008 - Captain Skarloc');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+0, 'Old Hillsbrad Foothills - Thrall - Escort Path'),
 (@SGGUID+4, 'Old Hillsbrad Foothills - Scarlet Crusade Children'),
 (@SGGUID+5, 'Old Hillsbrad Foothills - Hillsbrad Citizen Patrol'),
 (@SGGUID+6, 'Old Hillsbrad Foothills - Pirate Captains'),
@@ -3543,10 +3544,57 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+36, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+37, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - Path 2 after Lieutenant Drake spawned - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+42, 'Old Hillsbrad Foothills - Group 023 - Patrol 007 - spawn_group_entry - Durnholde Tracking Hound'),
-(@SGGUID+53, 'Old Hillsbrad Foothills - Thrall - Escort Path'),
 (@SGGUID+54, 'Old Hillsbrad Foothills - Group 029 - Escort Group 5 - Patrol 008 - Captain Skarloc');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+-- Thrall Escort 
+(@SGGUID+0, 1, 2231.5212, 119.13487, 82.38263, 100, 1, 1787601, 'Thrall Escort - StartRP'),
+(@SGGUID+0, 2, 2232.9407, 107.68382, 82.65515, 100, 0, 0, NULL),
+(@SGGUID+0, 3, 2215.8599, 116.83019, 89.59689, 100, 0, 0, NULL),
+(@SGGUID+0, 4, 2209.0264, 103.60938, 89.596886, 100, 0, 0, NULL),
+(@SGGUID+0, 5, 2197.8035, 109.45345, 89.699425, 100, 0, 0, NULL),
+(@SGGUID+0, 6, 2188.868, 114.40332, 89.596886, 100, 1000, 1787602, 'Thrall Escort - Durnholde Armorer RP'),
+(@SGGUID+0, 7, 2182.11, 120.328, 89.44687, 2.67035, 1000, 1787603, 'Thrall Escort - Getting Equipmen RP'),
+(@SGGUID+0, 8, 2182.11, 120.328, 89.44687, 5.68977, 10, 1787604, 'Thrall Escort - Orientation change and Text'),
+(@SGGUID+0, 9, 2193.7742, 111.67763, 89.44687, 100, 1, 1787605, 'Spawn Group 1'),
+(@SGGUID+0, 10, 2180.1692, 145.47646, 88.2125, 100, 1, 1787606, 'Spawn Group 2'),
+(@SGGUID+0, 11, 2160.9277, 134.18164, 83.1579, 100, 0, 0, NULL),
+(@SGGUID+0, 12, 2152.8525, 127.44141, 78.54106, 100, 0, 0, NULL),
+(@SGGUID+0, 13, 2142.261, 129.70703, 75.032715, 100, 0, 0, NULL),
+(@SGGUID+0, 14, 2139.8025, 140.85515, 71.36458, 100, 0, 0, NULL),
+(@SGGUID+0, 15, 2145.9836, 163.77333, 65.10501, 100, 0, 0, NULL),
+(@SGGUID+0, 16, 2136.8472, 173.66623, 66.826485, 100, 0, 0, NULL),
+(@SGGUID+0, 17, 2121.3125, 185.03407, 69.11848, 100, 0, 0, NULL),
+(@SGGUID+0, 18, 2097.8333, 198.60916, 65.19629, 100, 0, 0, NULL),
+(@SGGUID+0, 19, 2080.3723, 211.9082, 64.87357, 100, 1, 1787607, 'Spawn 2nd Boss'),
+(@SGGUID+0, 20, 2063.0425, 229.17654, 64.49014, 100, 1000, 1787608, 'RP Before 2nd Boss'),
+(@SGGUID+0, 21, 2063.0425, 229.17654, 64.49014, 100, 1000, 1787609, 'NPC Flags'),
+(@SGGUID+0, 22, 2063.0425, 229.17654, 64.49014, 100, 1, 1787610, 'Say Text'),
+(@SGGUID+0, 23, 2047.117, 252.40723, 62.80693, 0.89011, 2000, 0, 'Horse RP'),
+(@SGGUID+0, 24, 2047.117, 252.40723, 62.80693, 5.236, 7000, 1787611, 'Horse RP'),
+(@SGGUID+0, 25, 2034.3387, 272.43912, 63.64704, 100, 0, 0, NULL),
+(@SGGUID+0, 26, 2001.0026, 283.85364, 66.20713, 100, 0, 0, NULL),
+(@SGGUID+0, 27, 2025.5603, 326.64444, 66.09961, 100, 0, 0, NULL),
+(@SGGUID+0, 28, 2048.9814, 370.19327, 66.02355, 100, 0, 0, NULL),
+(@SGGUID+0, 29, 2069.5254, 415.4682, 66.08829, 100, 0, 0, NULL),
+(@SGGUID+0, 30, 2084.763, 461.4977, 66.056854, 100, 0, 0, NULL),
+(@SGGUID+0, 31, 2106.7715, 504.5486, 60.567806, 100, 0, 0, NULL),
+(@SGGUID+0, 32, 2140.057, 539.7758, 53.48757, 100, 0, 0, NULL),
+(@SGGUID+0, 33, 2162.9114, 570.4435, 45.900536, 100, 0, 0, NULL),
+(@SGGUID+0, 34, 2172.2168, 618.90204, 37.60035, 100, 0, 0, NULL),
+(@SGGUID+0, 35, 2175.4136, 641.25226, 33.80142, 100, 0, 0, NULL),
+(@SGGUID+0, 36, 2183.2444, 670.6356, 34.010624, 100, 0, 0, NULL),
+(@SGGUID+0, 37, 2206.7988, 666.0879, 36.338615, 100, 0, 0, NULL),
+(@SGGUID+0, 38, 2239.8643, 629.9121, 37.03885, 100, 0, 0, NULL),
+(@SGGUID+0, 39, 2265.591, 587.5455, 40.713608, 100, 0, 0, NULL),
+(@SGGUID+0, 40, 2294.7498, 547.2144, 38.946674, 100, 0, 0, NULL),
+(@SGGUID+0, 41, 2339.0718, 528.21497, 40.91764, 100, 0, 0, NULL),
+(@SGGUID+0, 42, 2388.3496, 523.9132, 39.694645, 100, 0, 0, NULL),
+(@SGGUID+0, 43, 2437.737, 521.23425, 43.575535, 100, 0, 0, NULL),
+(@SGGUID+0, 44, 2482.7017, 542.7182, 48.31146, 100, 0, 0, NULL),
+(@SGGUID+0, 45, 2483.695, 590.4017, 56.680336, 100, 0, 0, NULL),
+(@SGGUID+0, 46, 2486.8828, 624.26953, 57.930817, 100, 10000, 0, NULL),
+--
 (@SGGUID+4, 1, 1927.6208, 969.2012, 17.91233, 100, 0, 0, ''),
 (@SGGUID+4, 2, 1935.2817, 973.1046, 19.765339, 100, 0, 0, ''),
 (@SGGUID+4, 3, 1947.6158, 971.5432, 21.53548, 100, 0, 0, ''),
@@ -3838,56 +3886,6 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+42, 18, 2212.6685, 106.44711, 98.275024, 100, 0, 0, NULL),
 (@SGGUID+42, 19, 2195.4954, 116.26254, 103.36876, 100, 0, 0, NULL),
 (@SGGUID+42, 20, 2203.0107, 133.8224, 103.36875, 100, 0, 0, NULL),
-
--- Thrall Escort Path 1
-(@SGGUID+53, 1, 2231.5212, 119.13487, 82.38263, 100, 1, 1787601, 'Thrall Escort - SpawnPoint RP and delay'),
-(@SGGUID+53, 2, 2232.9407, 107.68382, 82.65515, 100, 0, 0, NULL),
-(@SGGUID+53, 3, 2215.8599, 116.83019, 89.59689, 100, 0, 0, NULL),
-(@SGGUID+53, 4, 2209.0264, 103.60938, 89.596886, 100, 0, 0, NULL),
-(@SGGUID+53, 5, 2197.8035, 109.45345, 89.699425, 100, 0, 0, NULL),
-(@SGGUID+53, 6, 2188.868, 114.40332, 89.596886, 100, 1000, 1787602, 'Thrall Escort - Durnholde Armorer RP'),
-(@SGGUID+53, 7, 2182.11, 120.328, 89.44687, 2.67035, 1000, 1787603, 'Thrall Escort - Getting Equipmen RP'),
-(@SGGUID+53, 8, 2182.11, 120.328, 89.44687, 5.68977, 10, 1787604, 'Thrall Escort - Orientation change and Text'),
-(@SGGUID+53, 9, 2193.7742, 111.67763, 89.44687, 100, 1, 1787605, 'Spawn Group 1'),
-(@SGGUID+53, 10, 2180.1692, 145.47646, 88.2125, 100, 1, 1787606, 'Spawn Group 2'),
-(@SGGUID+53, 11, 2160.9277, 134.18164, 83.1579, 100, 0, 0, NULL),
-(@SGGUID+53, 12, 2152.8525, 127.44141, 78.54106, 100, 0, 0, NULL),
-(@SGGUID+53, 13, 2142.261, 129.70703, 75.032715, 100, 0, 0, NULL),
-(@SGGUID+53, 14, 2139.8025, 140.85515, 71.36458, 100, 0, 0, NULL),
-(@SGGUID+53, 15, 2145.9836, 163.77333, 65.10501, 100, 0, 0, NULL),
-(@SGGUID+53, 16, 2136.8472, 173.66623, 66.826485, 100, 0, 0, NULL),
-(@SGGUID+53, 17, 2121.3125, 185.03407, 69.11848, 100, 0, 0, NULL),
-(@SGGUID+53, 18, 2097.8333, 198.60916, 65.19629, 100, 0, 0, NULL),
-(@SGGUID+53, 19, 2080.3723, 211.9082, 64.87357, 100, 1, 1787607, 'Spawn 2nd Boss'),
-(@SGGUID+53, 20, 2063.0425, 229.17654, 64.49014, 100, 1000, 1787608, 'RP Before 2nd Boss'),
--- 
-(@SGGUID+53, 21, 2063.0425, 229.17654, 64.49014, 100, 1000, 1787609, 'NPC Flags'),
-(@SGGUID+53, 22, 2063.0425, 229.17654, 64.49014, 100, 1, 1787610, 'Say Text'),
-(@SGGUID+53, 23, 2047.117, 252.40723, 62.80693, 0.89011, 2000, 0, 'Horse RP'),
-(@SGGUID+53, 24, 2047.117, 252.40723, 62.80693, 5.236, 7000, 1787611, 'Horse RP'),
-(@SGGUID+53, 25, 2034.3387, 272.43912, 63.64704, 100, 0, 0, NULL),
-(@SGGUID+53, 26, 2001.0026, 283.85364, 66.20713, 100, 0, 0, NULL),
-(@SGGUID+53, 27, 2025.5603, 326.64444, 66.09961, 100, 0, 0, NULL),
-(@SGGUID+53, 28, 2048.9814, 370.19327, 66.02355, 100, 0, 0, NULL),
-(@SGGUID+53, 29, 2069.5254, 415.4682, 66.08829, 100, 0, 0, NULL),
-(@SGGUID+53, 30, 2084.763, 461.4977, 66.056854, 100, 0, 0, NULL),
-(@SGGUID+53, 31, 2106.7715, 504.5486, 60.567806, 100, 0, 0, NULL),
-(@SGGUID+53, 32, 2140.057, 539.7758, 53.48757, 100, 0, 0, NULL),
-(@SGGUID+53, 33, 2162.9114, 570.4435, 45.900536, 100, 0, 0, NULL),
-(@SGGUID+53, 34, 2172.2168, 618.90204, 37.60035, 100, 0, 0, NULL),
-(@SGGUID+53, 35, 2175.4136, 641.25226, 33.80142, 100, 0, 0, NULL),
-(@SGGUID+53, 36, 2183.2444, 670.6356, 34.010624, 100, 0, 0, NULL),
-(@SGGUID+53, 37, 2206.7988, 666.0879, 36.338615, 100, 0, 0, NULL),
-(@SGGUID+53, 38, 2239.8643, 629.9121, 37.03885, 100, 0, 0, NULL),
-(@SGGUID+53, 39, 2265.591, 587.5455, 40.713608, 100, 0, 0, NULL),
-(@SGGUID+53, 40, 2294.7498, 547.2144, 38.946674, 100, 0, 0, NULL),
-(@SGGUID+53, 41, 2339.0718, 528.21497, 40.91764, 100, 0, 0, NULL),
-(@SGGUID+53, 42, 2388.3496, 523.9132, 39.694645, 100, 0, 0, NULL),
-(@SGGUID+53, 43, 2437.737, 521.23425, 43.575535, 100, 0, 0, NULL),
-(@SGGUID+53, 44, 2482.7017, 542.7182, 48.31146, 100, 0, 0, NULL),
-(@SGGUID+53, 45, 2483.695, 590.4017, 56.680336, 100, 0, 0, NULL),
-(@SGGUID+53, 46, 2486.8828, 624.26953, 57.930817, 100, 10000, 0, NULL),
-
 -- Captain Skarloc
 (@SGGUID+54, 1, 1996.652, 276.352, 66.64184, 100, 0, 0, NULL),
 (@SGGUID+54, 2, 2001.6279, 275.85352, 66.36144, 100, 0, 0, NULL),
@@ -3997,11 +3995,12 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1786202,8000,0,48,33600,0,0,@STRINGID+7,20,2560,0,0,0,0,0,0,0,0,'Captain Skarloc - Remove UnitFlags'),
 (1786202,8000,1,26,0,0,0,17876,20,0,0,0,0,0,0,0,0,0,'Captain Skarloc - Remove UnitFlags'),
 -- Thrall Escort RPs
+-- Escort started spawn bridge groups, say text and remove UnitFlags
 (1787601,0,1,58,@SGGUID+52,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 3'),
 (1787601,0,2,58,@SGGUID+53,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 4'),
 (1787601,0,3,0,0,0,0,0,0,0,17622,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
 (1787601,0,4,48,512,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Remove UnitFlags'),
-
+-- Durnholde Armorer RP - stop waypoints move to Armorer and start RelayScript on waypoint reached
 (1787602,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Pause Waypoints'),
 (1787602,0,1,36,0,0,0,@STRINGID+5,20,2050,0,0,0,0,0,0,0,0,'Thrall Escort - Face Durnholde Armorer'),
 (1787602,0,2,32,1,0,0,@STRINGID+5,20,2560,0,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Pause Waypoints'),
@@ -4010,7 +4009,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787602,1000,0,0,0,0,0,@STRINGID+5,20,2560,15891,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Say Text'),
 (1787602,1000,1,1,5,0,0,@STRINGID+5,20,2560,0,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Emote OneShotExclamation'),
 (1787602,3000,0,37,0,0,1,@STRINGID+5,20,2050,0,@RELAYID+12,0,0,0,0,0,0,'Thrall Escort - Move to Durnholde Armorer'),
-
+-- Change Equipment 
 (1787603,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Pause Waypoints'),
 (1787603,0,1,28,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Standstate Kneel'),
 (1787603,0,2,0,0,0,0,0,0,0,15893,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
@@ -4019,25 +4018,25 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787603,8000,0,42,0,0,0,0,0,0,14880,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Change MainHand'),
 (1787603,10000,0,42,0,0,0,0,0,0,0,1961,0,0,0,0,0,0,'Thrall Escort - Thrall - Change OffHand'),
 (1787603,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - UnPause Waypoints'),
-
+-- Restore runmode, continue escort and say text
 (1787604,0,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Set RunMode'),
 (1787604,0,1,0,0,0,0,0,0,0,15894,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
-
+-- Spawn Durnholde Keep exit Group  
 (1787605,0,0,58,@SGGUID+50,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 1'),
+-- Spawn Patrol Group
 (1787606,0,0,58,@SGGUID+51,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 2'),
-
+-- Spawn Skarloc Boss
 (1787607,0,0,58,@SGGUID+54,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Captain Skarloc'),
-
+-- Stop Escort - Say Text and wait for Boss
 (1787608,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Pause Waypoints'),
 (1787608,100,1,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Emote OneshotPoint'),
 (1787608,100,2,0,0,0,0,0,0,0,15908,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
-
--- Skarloc Died readd NPC Flags
+-- Skarloc Died readd NPC Flags so we can continue Escort
 (1787609,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Pause Waypoints'),
 (1787609,0,0,29,1,1,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Add NPC Flag Gossip'),
-
+-- 2nd part of Escort started - say text
 (1787610,100,2,0,0,0,0,0,0,0,15916,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
-
+-- Thrall change to Mount - despawn Skarloc Mount
 (1787611,0,0,24,8469,0,0,0,0,8,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Mount'),
 (1787611,2000,0,35,5,0,0,18798,10,1,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - SendAI Event to Skarloc Mount'),
 (1787611,4000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Emote OneShotExclamation'),
