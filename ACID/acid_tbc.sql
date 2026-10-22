@@ -23713,7 +23713,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1876401','18764','30','0','100','1','5','0','0','0','0','0','51','1','0','0','5','69','0','0','22','1','0','0','Durnholde Armorer - Set Phase 1 stop waypoints and EmoteState 69 on ReceiveEventAIvent A'),
 ('1876402','18764','1','1','100','1','10000','20000','10000','20000','0','0','51','0','0','0','5','0','0','0','22','0','0','0','Durnholde Armorer - Phase 0 EmoteState 0 Start Waypoints (Phase 1)'),
 ('1876403','18764','30','0','100','1','6','0','0','0','0','0','47','0','0','0','5','0','0','0','22','0','0','0','Durnholde Armorer - StandState Stand Set Phase 0 EmoteState 0 on ReceiveEventAIvent B'),
-('1876403','18764','30','0','100','1','6','0','0','0','0','0','28','0','32890','0','0','0','0','0','0','0','0','0','Durnholde Armorer - Remove Aura on ReceiveEventAIvent B'),
+('1876404','18764','30','0','100','1','6','0','0','0','0','0','28','0','32890','0','0','0','0','0','0','0','0','0','Durnholde Armorer - Remove Aura on ReceiveEventAIvent B'),
 -- Durnholde Cook (18765)
 ('1876501','18765','30','0','100','1','5','0','0','0','0','0','51','1','0','0','22','1','0','0','0','0','0','0','Durnholde Cook - Set Phase 1 and stop waypoints on ReceiveEventAIvent A'),
 ('1876502','18765','1','1','100','1','10000','16000','10000','16000','0','0','51','0','0','0','5','0','0','0','22','0','0','0','Durnholde Cook - Phase 0 EmoteState 0 Start Waypoints (Phase 1)'),
