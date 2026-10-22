@@ -1291,7 +1291,12 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+674, 1, 2149.4634, 104.97559, 73.632385, 100, 1, 5),
 (@CGUID+674, 2, 2146.576, 122.90082, 76.29469, 100, 1, 1786001),
 (@CGUID+675, 1, 2147.624, 104.61046, 73.909294, 100, 1, 5),
-(@CGUID+675, 2, 2143.2612, 123.9075, 75.87136, 100, 1, 1786001);
+(@CGUID+675, 2, 2143.2612, 123.9075, 75.87136, 100, 1, 1786001),
+-- Skarloc Mount run away
+(@CGUID+688, 1, 2488.7786, 623.97235, 58.07383, 100, 3000, 0),
+(@CGUID+688, 2, 2494.3225, 599.8073, 55.382885, 100, 0, 0),
+(@CGUID+688, 3, 2499.138, 570.8774, 54.196888, 100, 0, 0),
+(@CGUID+688, 4, 2502.895, 558.7042, 45.806004, 100, 1000, 1);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (17848,18092,18093,18094,18598,18649,18664,18764,18765,28132,18672,18655,18656,20350,20360,20373,20378,20401);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
@@ -2910,7 +2915,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- 4 different possible respawns depending on escort state - using spawnmask 0 do despawn all except inn
 (@CGUID+664, 17876, 560, 3, 2231.5212, 119.13487, 82.38263, 4.18879, 86400, 86400, 0, 0), -- Thrall - Prison
 (@CGUID+665, 17876, 560, 0, 2063.0425, 229.17654, 64.49014, 2.67035, 86400, 86400, 0, 0), -- Thrall - Skarloc
-(@CGUID+666, 17876, 560, 0, 2231.5212, 119.13487, 82.38263, 4.18879, 86400, 86400, 0, 0), -- Thrall - Barn
+(@CGUID+666, 17876, 560, 0, 2486.8828, 624.26953, 57.930817, 4.136430, 86400, 86400, 0, 0), -- Thrall - Barn
 (@CGUID+667, 17876, 560, 0, 2231.5212, 119.13487, 82.38263, 4.18879, 86400, 86400, 0, 0), -- Thrall - Inn
 -- Group 1 - Building Exit
 (@CGUID+668, 0, 560, 0, 2188.55859375, 138.885528564453125, 88.29986572265625, 6.060823440551757812, 10, 10, 0, 2), -- spawn_group_entry
@@ -2936,7 +2941,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+684, 17862, 560, 0, 1996.6519775390625, 276.35198974609375, 66.64183807373046875, 6.18334197998046875, 10, 10, 0, 0), -- Captain Skarloc
 (@CGUID+685, 17860, 560, 0, 1994.146484375, 278.217559814453125, 66.821319580078125, 5.946362495422363281, 10, 10, 0, 0), -- Durnholde Veteran
 (@CGUID+686, 17833, 560, 0, 1995.708740234375, 273.9462890625, 66.7578277587890625, 0.210796549916267395, 10, 10, 0, 0), -- Durnholde Warden
-(@CGUID+687, 18798, 560, 0, 2047.7747802734375, 253.40875244140625, 62.91183090209960937, 5.37561416625976562500, 10, 10, 0, 0); -- Skarloc's Mount
+(@CGUID+687, 18798, 560, 0, 2047.7747802734375, 253.40875244140625, 62.91183090209960937, 5.37561416625976562500, 10, 10, 0, 0), -- Skarloc's Mount
+(@CGUID+688, 18798, 560, 0, 2488.7786, 623.97235, 58.07383, 1.37881, 10, 10, 0, 2); -- Skarloc's Mount
 
 -- ===========
 -- GAMEOBJECTS
@@ -3236,6 +3242,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Captain Skarloc
 (@SGGUID+54, 'Old Hillsbrad Foothills - Group 029 - Escort Group 5 - Patrol 008 - Captain Skarloc', 0, 0, 0, 1, @STRINGID+7),
 (@SGGUID+55, 'Old Hillsbrad Foothills - Group 030 - Skarlocs Mount', 0, 0, 0, 0, @STRINGID+7),
+(@SGGUID+56, 'Old Hillsbrad Foothills - Group 031 - Skarlocs Mount - Barn', 0, 0, 0, 0, @STRINGID+7),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3409,6 +3416,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+54, @CGUID+686, 2, 0), -- Durnholde Warden
 
 (@SGGUID+55, @CGUID+687, -1, 0), -- Skarloc's Mount
+(@SGGUID+56, @CGUID+688, -1, 0), -- Skarloc's Mount
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
 (@SGGUID+1000, @OGUID+50, -1, 0),-- Roaring Flame
@@ -3600,7 +3608,9 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+0, 43, 2437.737, 521.23425, 43.575535, 100, 0, 0, NULL),
 (@SGGUID+0, 44, 2482.7017, 542.7182, 48.31146, 100, 0, 0, NULL),
 (@SGGUID+0, 45, 2483.695, 590.4017, 56.680336, 100, 0, 0, NULL),
-(@SGGUID+0, 46, 2486.8828, 624.26953, 57.930817, 100, 10000, 0, NULL),
+(@SGGUID+0, 46, 2486.8828, 624.26953, 57.930817, 100, 1000, 1787612, 'Thrall - Unmount'),
+(@SGGUID+0, 46, 2486.8828, 624.26953, 57.930817, 6.038839, 5000, 1787613, 'Thrall - Unmount'),
+(@SGGUID+0, 46, 2486.8828, 624.26953, 57.930817, 4.136430, 5000, 1787609, 'Thrall - Readd NPC Flags'),
 --
 (@SGGUID+4, 1, 1927.6208, 969.2012, 17.91233, 100, 0, 0, ''),
 (@SGGUID+4, 2, 1935.2817, 973.1046, 19.765339, 100, 0, 0, ''),
@@ -3983,7 +3993,7 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Emote OneShot Point'),
 (1784801,0,1,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lieutenant Drake - Yell Text'),
@@ -4052,6 +4062,12 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787611,2000,0,35,5,0,0,18798,10,1,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - SendAI Event to Skarloc Mount'),
 (1787611,4000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Emote OneShotExclamation'),
 (1787611,4000,1,0,0,0,0,0,0,0,15948,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
+
+(1787612,0,0,24,0,0,0,0,0,8,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Unmount'),
+(1787612,0,0,58,@SGGUID+56,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Summon Skarloc Mount'),
+
+(1787613,2000,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Emote OneShotCheer'),
+(1787613,3000,1,0,0,0,0,0,0,0,16499,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
 
 (1809201, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Pause Waypoints'),
 (1809201, 0, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Cast Transform'),
