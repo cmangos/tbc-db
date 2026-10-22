@@ -2215,18 +2215,25 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+580, 20426), (@CGUID+580, 20428), (@CGUID+580, 20429), (@CGUID+580, 20430),
 (@CGUID+581, 20426), (@CGUID+581, 20428), (@CGUID+581, 20429), (@CGUID+581, 20430);
 
-DELETE FROM creature_spawn_data WHERE Guid IN (@CGUID+684, @CGUID+685, @CGUID+686);
+DELETE FROM creature_spawn_data WHERE Guid IN (@CGUID+684, @CGUID+685, @CGUID+686, @CGUID+665, @CGUID+666, @CGUID+667, @CGUID+687);
 INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
 -- Captain Skarloc group
 (@CGUID+684, 1786201),
 (@CGUID+685, 1786001),
-(@CGUID+686, 1783301);
+(@CGUID+686, 1783301),
 
-DELETE FROM creature_spawn_data_template WHERE Entry IN (1783301, 1786001, 1786201);
-INSERT INTO `creature_spawn_data_template` (`Entry`, `UnitFlags`, `SpawnFlags`, `Name`) VALUES 
-('1783301', 33600, 0, 'OHF - Durnholde Warden - UnitFlags and RunMode'), 
-('1786001', 33600, 0, 'OHF - Durnholde Veteran - UnitFlags and RunMode'), 
-('1786201', 33600, 1, 'OHF - Captain Skarloc - UnitFlags and RunMode');
+(@CGUID+665, 1787601),
+(@CGUID+666, 1787601),
+(@CGUID+667, 1787601),
+(@CGUID+687, 1879801);
+
+DELETE FROM creature_spawn_data_template WHERE Entry IN (1783301, 1786001, 1786201, 1787601, 1879801);
+INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `ModelId`, `EquipmentId`, `SpawnFlags`, `StringId`, `Name`) VALUES 
+('1783301', 0, 33600, 0, -1, 0, 0, 'OHF - Durnholde Warden - UnitFlags and RunMode'), 
+('1786001', 0, 33600, 0, -1, 0, 0, 'OHF - Durnholde Veteran - UnitFlags and RunMode'), 
+('1786201', 0, 33600, 0, -1, 1, 0, 'OHF - Captain Skarloc - UnitFlags and RunMode'),
+('1787601', 1, -1, 18165, 17876, 0, 0, 'OHF - Thrall - Equipment'),
+('1879801', -1, -1, 0, -1, 0, @STRINGID+12, 'OHF - Skarloc Mount - StringID');
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 20434, 560, 3, 1889.295, 992.3798, 15.2348, 2.251475, 7200, 7200, 0, 0), -- Horse
@@ -3216,9 +3223,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+45, 'Old Hillsbrad Foothills - Group 025 - Durnholde Armorer', 0, 0, 0, 0, @STRINGID+5),
 -- Thrall 4 different spawns depending on Escort State
 (@SGGUID+46, 'Old Hillsbrad Foothills - Group 026 - Thrall - Prison', 0, 0, 0, 0, @STRINGID+8),
-(@SGGUID+47, 'Old Hillsbrad Foothills - Group 026 - Thrall - Skarloc', 0, 0, 0, 0, @STRINGID+8),
-(@SGGUID+48, 'Old Hillsbrad Foothills - Group 026 - Thrall - Barn', 0, 0, 0, 0, @STRINGID+8),
-(@SGGUID+49, 'Old Hillsbrad Foothills - Group 026 - Thrall - Inn', 0, 0, 0, 0, @STRINGID+8),
+(@SGGUID+47, 'Old Hillsbrad Foothills - Group 026 - Thrall - Skarloc', 0, 0, 0, 0, @STRINGID+9),
+(@SGGUID+48, 'Old Hillsbrad Foothills - Group 026 - Thrall - Barn', 0, 0, 0, 0, @STRINGID+10),
+(@SGGUID+49, 'Old Hillsbrad Foothills - Group 026 - Thrall - Inn', 0, 0, 0, 0, @STRINGID+11),
 -- All groups spawned during Escort to First Boss have different rules
 -- 3 Groups - Always atleast 1 (Max 2) Durnholde Veteran and 1 Durnholde Mage, and random between Durnholde Sentry (max 2) - Durnholde Warden (Max 1)
 (@SGGUID+50, 'Old Hillsbrad Foothills - Group 027 - Escort Group 1', 0, 0, 0, 1, @STRINGID+7),
@@ -3904,7 +3911,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+54, 15, 2059.8994, 234.25934, 64.08113, 100, 1000, 1786202, 'Captain Skarlorc - Say text and remove unitstats');
 
 
-DELETE FROM `string_id` WHERE `Id` IN (@STRINGID+1, @STRINGID+2, @STRINGID+3, @STRINGID+4, @STRINGID+5, @STRINGID+6, @STRINGID+7, @STRINGID+8, @STRINGID+9);
+DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+12;
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+1, 'OHF_CITIZEN_CONVO_PARTNER'),
 (@STRINGID+2, 'OHF_LIEUTENANTDRAKE'),
@@ -3918,8 +3925,12 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+6, 'OHF_THRALL_BRIDGETRASH_DESPAWN'),
 -- All NPCs spawned during Escort - used for spell_script_target
 (@STRINGID+7, 'OHF_THRALL_ESCORT_SPAWNED'),
-(@STRINGID+8, 'OHF_THRALL'),
-(@STRINGID+9, 'OHF_SKARLOC_MOUNT');
+-- StringIDs for all Thrall spawns
+(@STRINGID+8, 'OHF_THRALL_PRISON'),
+(@STRINGID+9, 'OHF_THRALL_SKARLOC'),
+(@STRINGID+10, 'OHF_THRALL_BARN'),
+(@STRINGID+11, 'OHF_THRALL_INN'),
+(@STRINGID+12, 'OHF_SKARLOC_MOUNT');
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES
@@ -4016,7 +4027,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787603,4000,0,23,18165,0,0,0,0,8,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Change Display'),
 (1787603,4000,1,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Standstate Stand'),
 (1787603,8000,0,42,0,0,0,0,0,0,14880,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Change MainHand'),
-(1787603,10000,0,42,0,0,0,0,0,0,0,1961,0,0,0,0,0,0,'Thrall Escort - Thrall - Change OffHand'),
+(1787603,10000,0,42,0,0,0,0,0,0,14880,1961,0,0,0,0,0,0,'Thrall Escort - Thrall - Change OffHand'),
 (1787603,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - UnPause Waypoints'),
 -- Restore runmode, continue escort and say text
 (1787604,0,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Set RunMode'),

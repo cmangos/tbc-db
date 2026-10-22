@@ -70,3 +70,6 @@ INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`,
 (7831, 1, 0, 'Tarren Mill.', 15915, 103, 1, 0, 0, 0, 0);
 
 UPDATE creature_template SET GossipMenuId = 0 WHERE entry = 17876;
+
+DELETE FROM creature_equip_template WHERE entry = 17876;
+INSERT INTO `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`) VALUES ('17876', '14880', '1961');
