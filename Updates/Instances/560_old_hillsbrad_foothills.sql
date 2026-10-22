@@ -2949,9 +2949,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- Church group
 (@CGUID+693, 23177, 560, 0, 2628.370361328125, 658.505859375, 55.64336776733398437, 4.426807403564453125, 10, 10, 0, 0), -- Tarren Mill Lookout
 (@CGUID+694, 23177, 560, 0, 2630.338623046875, 657.8673095703125, 55.62746429443359375, 4.342343807220458984, 10, 10, 0, 0), -- Tarren Mill Lookout
-(@CGUID+695, 23175, 560, 0, 2629.108642578125, 660.787109375, 54.613433837890625, 4.424306869506835937, 10, 10, 0, 0), -- Tarren Mill Guardsman
-(@CGUID+696, 23179, 560, 0, 2631.073974609375, 660.1329345703125, 54.60430145263671875, 4.347332954406738281, 10, 10, 0, 0); -- Tarren Mill Protector
-
+(@CGUID+695, 23179, 560, 0, 2629.108642578125, 660.787109375, 54.613433837890625, 4.424306869506835937, 10, 10, 0, 0), -- Tarren Mill Protector
+(@CGUID+696, 23175, 560, 0, 2631.073974609375, 660.1329345703125, 54.60430145263671875, 4.347332954406738281, 10, 10, 0, 0), -- Tarren Mill Guardsman
+-- Inn Group
+(@CGUID+697, 23177, 560, 0, 2646.6533203125, 659.1583251953125, 62.01339340209960937, 1.01229095458984375, 10, 10, 0, 0), -- Tarren Mill Lookout
+(@CGUID+698, 23177, 560, 0, 2656.42138671875, 659.76336669921875, 62.01339340209960937, 1.854856848716735839, 10, 10, 0, 0), -- Tarren Mill Lookout
+(@CGUID+699, 23175, 560, 0, 2649.920654296875, 657.50323486328125, 62.01339340209960937, 1.353629350662231445, 10, 10, 0, 0), -- Tarren Mill Guardsman
+(@CGUID+700, 23179, 560, 0, 2656.42138671875, 659.76336669921875, 62.01339340209960937, 1.854856848716735839, 10, 10, 0, 0); -- Tarren Mill Protector
 
 -- ===========
 -- GAMEOBJECTS
@@ -3256,6 +3260,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+57, 'Old Hillsbrad Foothills - Group 032 - Escort Group 6', 0, 0, 0, 1, @STRINGID+13),
 -- Group at church
 (@SGGUID+58, 'Old Hillsbrad Foothills - Group 033 - Escort Group 6', 0, 0, 0, 1, @STRINGID+13),
+-- Group inside Inn
+(@SGGUID+59, 'Old Hillsbrad Foothills - Group 034 - Escort Group 6', 0, 0, 0, 1, @STRINGID+13),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3438,8 +3444,13 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+58, @CGUID+693, 1, 0), -- Tarren Mill Lookout
 (@SGGUID+58, @CGUID+694, 0, 0), -- Tarren Mill Lookout
-(@SGGUID+58, @CGUID+695, 3, 0), -- Tarren Mill Guardsman
-(@SGGUID+58, @CGUID+696, 2, 0), -- Tarren Mill Protector
+(@SGGUID+58, @CGUID+695, 3, 0), -- Tarren Mill Protector
+(@SGGUID+58, @CGUID+696, 2, 0), -- Tarren Mill Guardsman
+
+(@SGGUID+59, @CGUID+697, 1, 0), -- Tarren Mill Lookout
+(@SGGUID+59, @CGUID+698, 0, 0), -- Tarren Mill Lookout
+(@SGGUID+59, @CGUID+699, 3, 0), -- Tarren Mill Guardsman
+(@SGGUID+59, @CGUID+700, 2, 0), -- Tarren Mill Protector
 
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
