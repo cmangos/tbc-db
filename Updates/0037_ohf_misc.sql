@@ -22,12 +22,6 @@ DELETE FROM gossip_menu_option WHERE menu_id IN (7499);
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `condition_id`) VALUES 
 (7499, 1, 0, 'We are ready to get you out of here, Thrall. Let\s go!', 14468, 100, 1, 0, 0, 0, 0);
 
-UPDATE creature_template SET GossipMenuId = 7499 WHERE entry = 17876;
-
-DELETE FROM `conditions` WHERE `condition_entry` IN (7499);
-INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(7499, 18, 17876, 0, 0, 0, 0, 'INSTANCE_CONDITION_ID_THRALL_STARTABLE');
-
 UPDATE creature_template SET Detection = 20 WHERE entry = 17876;
 
 
@@ -71,8 +65,8 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 
 DELETE FROM gossip_menu_option WHERE menu_id IN (7829, 7830, 7831);
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `condition_id`) VALUES 
-(7829, 1, 0, 'The situation is rather complicated, Thrall. It would be best for you to head into the mountains now, before more of Blackmoore\'s men show up. We\'ll make sure Taretha is safe..', 15913, 1, 1, 7831, 0, 0, 0),
-(7830, 1, 0, 'Taretha cannot see you, Thrall.', 15911, 1, 1, 7829, 0, 0, 0),
+(7829, 1, 0, 'The situation is rather complicated, Thrall. It would be best for you to head into the mountains now, before more of Blackmoore\'s men show up. We\'ll make sure Taretha is safe..', 15913, 102, 1, 7831, 0, 0, 0),
+(7830, 1, 0, 'Taretha cannot see you, Thrall.', 15911, 101, 1, 7829, 0, 0, 0),
 (7831, 1, 0, 'Tarren Mill.', 15915, 103, 1, 0, 0, 0, 0);
 
 UPDATE creature_template SET GossipMenuId = 7830 WHERE entry = 17876;
