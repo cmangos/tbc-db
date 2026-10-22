@@ -27,8 +27,9 @@ UPDATE creature_template SET Detection = 20 WHERE entry = 17876;
 
 -- 33937 Stun Phase 2 Units
 DELETE FROM spell_script_target WHERE entry = 33937;
-INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES ('33937', '5', '5600007');
-
+INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES 
+('33937', '5', '5600007'), -- Most EscortNPCs
+('33937', '5', '5600012'); -- Horse Special StringID
 
 -- Part 2 Gossip
 -- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 107 ConnIdx: 0 Time: 10/08/2026 16:54:27.895 Number: 44301

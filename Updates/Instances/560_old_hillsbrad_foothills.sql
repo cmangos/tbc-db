@@ -3239,7 +3239,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+53, 'Old Hillsbrad Foothills - Group 028 - Escort Group 4', 0, 0, 0, 1, @STRINGID+7),
 -- Captain Skarloc
 (@SGGUID+54, 'Old Hillsbrad Foothills - Group 029 - Escort Group 5 - Patrol 008 - Captain Skarloc', 0, 0, 0, 1, @STRINGID+7),
-(@SGGUID+55, 'Old Hillsbrad Foothills - Group 030 - Skarlocs Mount', 0, 0, 0, 0, @STRINGID+7),
+(@SGGUID+55, 'Old Hillsbrad Foothills - Group 030 - Skarlocs Mount', 0, 0, 0, 0, STRINGID+12),
 (@SGGUID+56, 'Old Hillsbrad Foothills - Group 031 - Skarlocs Mount - Barn', 0, 0, 0, 0, @STRINGID+7),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
@@ -3609,6 +3609,14 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+0, 46, 2486.8828, 624.26953, 57.930817, 100, 1000, 1787612, 'Thrall - Unmount'),
 (@SGGUID+0, 47, 2486.8828, 624.26953, 57.930817, 6.038839, 5000, 1787613, 'Thrall - Unmount'),
 (@SGGUID+0, 48, 2486.8828, 624.26953, 57.930817, 4.136430, 5000, 1787609, 'Thrall - Readd NPC Flags'),
+(@SGGUID+0, 49, 2488.8918, 658.01294, 57.452644, 100, 0, 0, NULL),
+(@SGGUID+0, 50, 2500.806, 684.1419, 55.769806, 100, 0, 0, NULL),
+(@SGGUID+0, 51, 2501.0095, 694.20874, 55.50687, 100, 0, 0, NULL),
+(@SGGUID+0, 52, 2491.6675, 694.55133, 55.709423, 100, 0, 0, NULL),
+(@SGGUID+0, 53, 2490.9133, 703.16986, 55.7576, 100, 0, 0, NULL),
+(@SGGUID+0, 54, 2486.217, 703.2291, 55.78091, 100, 0, 0, NULL),
+(@SGGUID+0, 55, 2481.8752, 697.898, 55.78235, 100, 0, 0, NULL),
+(@SGGUID+0, 56, 2475.9414, 695.6856, 55.7991, 100, 0, 0, NULL),
 --
 (@SGGUID+4, 1, 1927.6208, 969.2012, 17.91233, 100, 0, 0, ''),
 (@SGGUID+4, 2, 1935.2817, 973.1046, 19.765339, 100, 0, 0, ''),
