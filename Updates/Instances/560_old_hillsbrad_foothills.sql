@@ -3665,18 +3665,15 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+0, 64, 2614.0342, 663.03125, 55.437977, 100, 0, 0, NULL),
 (@SGGUID+0, 65, 2631.22, 663.2077, 54.287354, 100, 0, 0, NULL),
 (@SGGUID+0, 66, 2621.4622, 634.98505, 56.018017, 100, 0, 0, NULL),
-(@SGGUID+0, 70, 2621.4622, 634.98505, 56.018017, 0.48869, 2000, 0, 'Church'),
-(@SGGUID+0, 71, 2621.4622, 634.98505, 56.018017,1.518, 1000, 1787617, 'Church'),
-(@SGGUID+0, 72, 2621.4622, 634.98505, 56.018017,1.518, 1, 1787618, 'Church'),
-(@SGGUID+0, 73, 2627.2292, 651.73047, 56.01803, 100, 0, 0, NULL),
-(@SGGUID+0, 74, 2634.081, 673.42175, 54.46439, 100, 0, 0, NULL),
-(@SGGUID+0, 75, 2649.5442, 665.39325, 57.15862, 100, 0, 0, NULL),
-(@SGGUID+0, 76, 2653.0952, 668.7606, 57.158646, 100, 0, 0, NULL),
-(@SGGUID+0, 77, 2659.8813, 675.0325, 57.158646, 100, 0, 0, NULL),
-(@SGGUID+0, 78, 2653.0027, 671.4722, 61.346466, 100, 0, 0, NULL),
-(@SGGUID+0, 79, 2651.9387, 665.7878, 61.90751, 100, 0, 0, NULL),
-(@SGGUID+0, 80, 2655.2185, 663.22565, 61.91457,100, 0, 0, NULL),
-(@SGGUID+0, 81, 2648.774, 662.148, 61.924274, 100, 0, 0, NULL),
+(@SGGUID+0, 70, 2621.4622, 634.98505, 56.018017, 0.48869, 2000, 1787617, 'Church'),
+(@SGGUID+0, 71, 2621.4622, 634.98505, 56.018017,1.518, 1, 1787618, 'Church'),
+(@SGGUID+0, 72, 2627.2292, 651.73047, 56.01803, 100, 0, 0, NULL),
+(@SGGUID+0, 73, 2634.081, 673.42175, 54.46439, 100, 0, 0, NULL),
+(@SGGUID+0, 74, 2649.5442, 665.39325, 57.15862, 100, 0, 0, NULL),
+(@SGGUID+0, 75, 2653.0952, 668.7606, 57.158646, 100, 0, 0, NULL),
+(@SGGUID+0, 76, 2659.8813, 675.0325, 57.158646, 100, 0, 0, NULL),
+(@SGGUID+0, 77, 2653.0027, 671.4722, 61.346466, 100, 1, 1787619, 'Spawn group'),
+(@SGGUID+0, 78, 2660.4854, 659.4092, 61.923397, 100, 1000, 1787620, 'Taretha');
 --
 (@SGGUID+4, 1, 1927.6208, 969.2012, 17.91233, 100, 0, 0, ''),
 (@SGGUID+4, 2, 1935.2817, 973.1046, 19.765339, 100, 0, 0, ''),
@@ -3970,10 +3967,9 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+42, 19, 2195.4954, 116.26254, 103.36876, 100, 0, 0, NULL),
 (@SGGUID+42, 20, 2203.0107, 133.8224, 103.36875, 100, 0, 0, NULL),
 -- Captain Skarloc
-(@SGGUID+54, 1, 1996.652, 276.352, 66.64184, 100, 0, 0, NULL),
-(@SGGUID+54, 2, 2027.7712, 273.25977, 64.05285, 100, 0, 0, NULL),
-(@SGGUID+54, 3, 2050.0286, 249.96962, 62.894558, 100, 1000, 1786201, 'Captain Skarloc - Unmount, change walkmode and spawn Mount'),
-(@SGGUID+54, 4, 2059.8994, 234.25934, 64.08113, 100, 1000, 1786202, 'Captain Skarlorc - Say text and remove unitstats'),
+(@SGGUID+54, 1, 2027.7712, 273.25977, 64.05285, 100, 0, 0, NULL),
+(@SGGUID+54, 2, 2050.0286, 249.96962, 62.894558, 100, 1000, 1786201, 'Captain Skarloc - Unmount, change walkmode and spawn Mount'),
+(@SGGUID+54, 3, 2059.8994, 234.25934, 64.08113, 100, 1000, 1786202, 'Captain Skarlorc - Say text and remove unitstats'),
 -- Barn Group
 (@SGGUID+57, 1, 2495.4795, 694.95447, 55.507145, 100, 0, 0, NULL),
 (@SGGUID+57, 2, 2491.4536, 694.1376, 55.708958, 100, 0, 0, NULL),
@@ -4054,7 +4050,7 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1787619,1787620,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Emote OneShot Point'),
 (1784801,0,1,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lieutenant Drake - Yell Text'),
@@ -4147,6 +4143,15 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787617,0,0,58,@SGGUID+58,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 2'),
 
 (1787618,0,1,0,0,0,0,0,0,0,15977,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
+
+(1787619,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - WalkMode'),
+(1787619,0,1,58,@SGGUID+59,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 3'),
+
+(1787620,0,0,1,4,0,0,18887,10,0,0,0,0,0,0,0,0,0,'Thrall Escort - Taretha - Emote OneShotCheer'),
+(1787620,0,1,0,0,0,0,18887,10,0,15979,0,0,0,0,0,0,0,'Thrall Escort - Taretha - Say Text'),
+(1787620,4000,0,0,0,0,0,0,0,0,15978,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
+(1787620,4000,1,29,1,1,0,18887,10,0,0,0,0,0,0,0,0,0,'Thrall Escort - Taretha - Add NpcFlags'),
+(1787620,4000,2,29,1,1,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Add NpcFlags'),
 
 (1809201, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Pause Waypoints'),
 (1809201, 0, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Cast Transform'),
@@ -4539,7 +4544,10 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+13, 14000, 0, 0, 0, 0, 0, 0, 0, 0, 15969, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Say Text'),
 (@RELAYID+13, 15000, 0, 51, 150, @SGGUID+57, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 'OHF - Durnholde Lookout Create Formation'),
 (@RELAYID+13, 16000, 0, 48, 768, 0, 0, @SGGUID+57, 10, 768, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Remove UnitFlags'),
-(@RELAYID+13, 16000, 1, 20, 2, @SGGUID+57, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Change movement');
+(@RELAYID+13, 16000, 1, 20, 2, @SGGUID+57, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Change movement'),
+
+(@RELAYID+14, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 15976, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Say Text'),
+(@RELAYID+14, 1000, 1, 26, 0, 0, 0, @SGGUID+57, 10, 768, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Attack Thrall');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

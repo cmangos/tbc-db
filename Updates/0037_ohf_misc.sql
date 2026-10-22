@@ -89,6 +89,52 @@ DELETE FROM gossip_menu_option WHERE menu_id IN (7840);
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `condition_id`) VALUES 
 (7840, 1, 0, 'We\'re ready, Thrall.', 15956, 104, 1, 0, 0, 0, 0);
 
+
+-- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 38 ConnIdx: 0 Time: 10/01/2026 22:23:19.928 Number: 39222
+-- GossipGUID: Full: 0x204230460011750000339F00003EBD48 Creature/0 R4236/S13215 Map: 560 Entry: 17876 Low: 4111688
+-- GossipID: 7853
+-- BroadcastTextID: 15995
+DELETE FROM npc_text_broadcast_text WHERE Id IN (9614);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(9614, 1, 15995); -- I'm glad Taretha is alive. We now must find a way to free her from her magical bindings.
+DELETE FROM npc_text WHERE ID IN (9614);
+
+DELETE FROM gossip_menu WHERE entry IN (7853);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(7853, 9614, 0, 0);
+
+
+-- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 92 ConnIdx: 0 Time: 10/08/2026 16:58:56.082 Number: 52972
+-- GossipGUID: Full: 0x20424446001271C0001B38000047AF8A Creature/0 R4241/S6968 Map: 560 Entry: 18887 Low: 4697994
+-- GossipID: 7849
+-- (GossipOptions) Text: Strange wizard?
+-- BroadcastTextID: 15987
+
+S-- erverToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 163 ConnIdx: 0 Time: 10/08/2026 16:58:56.929 Number: 52991
+-- GossipGUID: Full: 0x20424446001271C0001B38000047AF8A Creature/0 R4241/S6968 Map: 560 Entry: 18887 Low: 4697994
+-- GossipID: 7852
+-- (GossipOptions) Text: We'll get you out, Taretha. Don't worry. I doubt the wizard would wander too far away.
+-- BroadcastTextID: 15993
+
+
+DELETE FROM npc_text_broadcast_text WHERE Id IN (9610, 9613);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(9610, 1, 15987); -- Thank you for helping Thrall escape, friends. Now I only hope you can help me as well. I awoke this morning to find myself trapped in this magical prison. A strange wizard told me that I would have to stay here for a while.
+(9613, 1, 15993); -- Yes, friends. This man was no wizard of Dalaran. His clothes looked quite foreign, and his accent was unfamiliar. All he could mumble about was time this, time that. You'll have to find that wizard and convince him to release me.
+DELETE FROM npc_text WHERE ID IN (9610, 9613);
+
+DELETE FROM gossip_menu WHERE entry IN (7849, 7852);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(7849, 9610, 0, 0),
+(7852, 9613, 0, 0);
+
+DELETE FROM gossip_menu_option WHERE menu_id IN (7849, 7852);
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `condition_id`) VALUES 
+(7849, 1, 0, 'Strange wizard?', 15992, 100, 1, 7852, 0, 0, 0);
+(7852, 1, 0, 'We\'ll get you out, Taretha. Don\'t worry. I doubt the wizard would wander too far away.', 15994, 101, 1, 0, 0, 0, 0);
+
+UPDATE creature_template SET GossipMenuId = 7849 WHERE entry = 18887;
+
 -- We cant handle multiple gossips via DB - use core instead
 UPDATE creature_template SET GossipMenuId = 0 WHERE entry = 17876;
 
@@ -99,3 +145,5 @@ INSERT INTO `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`) VA
 
 -- Thrall should have ActiveState all the time
 UPDATE creature_template SET ExtraFlags = 4096 WHERE entry = 17876;
+
+UPDATE `broadcast_text` SET `EmoteID1`='0' WHERE (`Id`='16499');
