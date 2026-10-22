@@ -3247,7 +3247,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+55, 'Old Hillsbrad Foothills - Group 030 - Skarlocs Mount', 0, 0, 0, 0, @STRINGID+12),
 (@SGGUID+56, 'Old Hillsbrad Foothills - Group 031 - Skarlocs Mount - Barn', 0, 0, 0, 0, @STRINGID+7),
 -- Group at Barn
-(@SGGUID+57, 'Old Hillsbrad Foothills - Group 032 - Escort Group 6', 0, 0, 0, 1, @STRINGID+7),
+(@SGGUID+57, 'Old Hillsbrad Foothills - Group 032 - Escort Group 6', 0, 0, 0, 1, @STRINGID+13),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3423,10 +3423,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+55, @CGUID+687, -1, 0), -- Skarloc's Mount
 (@SGGUID+56, @CGUID+688, -1, 0), -- Skarloc's Mount
 
-(@SGGUID+57, @CGUID+689, -1, 0), -- Tarren Mill Lookout
-(@SGGUID+57, @CGUID+690, -1, 0), -- Tarren Mill Lookout
-(@SGGUID+57, @CGUID+691, -1, 0), -- Tarren Mill Guardsman
-(@SGGUID+57, @CGUID+692, -1, 0), -- Tarren Mill Protector
+(@SGGUID+57, @CGUID+689, 1, 0), -- Tarren Mill Lookout
+(@SGGUID+57, @CGUID+690, 0, 0), -- Tarren Mill Lookout
+(@SGGUID+57, @CGUID+691, 2, 0), -- Tarren Mill Guardsman
+(@SGGUID+57, @CGUID+692, 3, 0), -- Tarren Mill Protector
 
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
@@ -3632,6 +3632,28 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+0, 55, 2481.8752, 697.898, 55.78235, 5.00909, 2000, 0, NULL),
 (@SGGUID+0, 56, 2475.9414, 695.6856, 55.7991, 2.00712, 2000, 1787614, NULL),
 (@SGGUID+0, 57, 2475.9414, 695.6856, 55.7991, 0.349065, 1000, 1787615, NULL),
+(@SGGUID+0, 58, 2490.852, 701.3779, 55.74949, 100, 0, 0, NULL),
+(@SGGUID+0, 59, 2502.0981, 691.1873, 55.506924, 100, 0, 0, NULL),
+(@SGGUID+0, 60, 2515.387, 668.5364, 55.162544, 100, 0, 0, NULL),
+(@SGGUID+0, 61, 2544.164, 663.2996, 56.55632, 100, 0, 0, NULL),
+(@SGGUID+0, 62, 2578.6667, 656.2806, 55.619366, 100, 0, 0, NULL),
+(@SGGUID+0, 63, 2614.0342, 663.03125, 55.437977, 100, 0, 0, NULL),
+(@SGGUID+0, 64, 2631.22, 663.2077, 54.287354, 100, 0, 0, NULL),
+(@SGGUID+0, 65, 2621.4622, 634.98505, 56.018017, 100, 0, 0, NULL),
+(@SGGUID+0, 66, 2628.1423, 657.5258, 55.98261, 100, 0, 0, NULL),
+(@SGGUID+0, 67, 2623.7334, 642.70685, 56.01803, 100, 0, 0, NULL),
+(@SGGUID+0, 68, 2623.828, 643.0265, 56.01803, 100, 0, 0, NULL),
+(@SGGUID+0, 69, 2621.4622, 634.98505, 56.018017, 1.5184364, 0, 0, NULL),
+(@SGGUID+0, 70, 2627.2292, 651.73047, 56.01803, 100, 0, 0, NULL),
+(@SGGUID+0, 71, 2634.081, 673.42175, 54.46439, 100, 0, 0, NULL),
+(@SGGUID+0, 72, 2649.5442, 665.39325, 57.15862, 100, 0, 0, NULL),
+(@SGGUID+0, 73, 2653.0952, 668.7606, 57.158646, 100, 0, 0, NULL),
+(@SGGUID+0, 74, 2659.8813, 675.0325, 57.158646, 100, 0, 0, NULL),
+(@SGGUID+0, 75, 2653.0027, 671.4722, 61.346466, 100, 0, 0, NULL),
+(@SGGUID+0, 76, 2651.9387, 665.7878, 61.90751, 100, 0, 0, NULL),
+(@SGGUID+0, 77, 2655.2185, 663.22565, 61.91457,100, 0, 0, NULL),
+(@SGGUID+0, 78, 2648.774, 662.148, 61.924274, 100, 0, 0, NULL),
+(@SGGUID+0, 79, 2653.0027, 671.4722, 61.346466, 4.5273533, 0, 0, NULL),
 --
 (@SGGUID+4, 1, 1927.6208, 969.2012, 17.91233, 100, 0, 0, ''),
 (@SGGUID+4, 2, 1935.2817, 973.1046, 19.765339, 100, 0, 0, ''),
@@ -3947,7 +3969,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+57, 4, 2487.528, 703.4704, 55.777874, 100, 0, 0, NULL);
 
 
-DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+12;
+DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+13;
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+1, 'OHF_CITIZEN_CONVO_PARTNER'),
 (@STRINGID+2, 'OHF_LIEUTENANTDRAKE'),
@@ -3966,7 +3988,8 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+9, 'OHF_THRALL_SKARLOC'),
 (@STRINGID+10, 'OHF_THRALL_BARN'),
 (@STRINGID+11, 'OHF_THRALL_INN'),
-(@STRINGID+12, 'OHF_SKARLOC_MOUNT');
+(@STRINGID+12, 'OHF_SKARLOC_MOUNT'),
+(@STRINGID+13, 'OHF_BARN_GROUP');
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES
@@ -4490,10 +4513,11 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+12, 6000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Thrall unpause waypoints'),
 -- Barn Group spawn RP
 (@RELAYID+13, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 15958, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Say Text'),
-(@RELAYID+13, 5000, 0, 0, 0, 0, 0, @CGUID+691, 10, 16, 15968, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Protector Say Text'),
+(@RELAYID+13, 5000, 0, 0, 0, 0, 0, 23179, @CGUID+691, 16, 15968, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Protector Say Text'),
 (@RELAYID+13, 14000, 0, 0, 0, 0, 0, 0, 0, 0, 15969, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Say Text'),
-(@RELAYID+13, 15000, 0, 51, 150, @SGGUID+57, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 'OHF - Durnholde Lookout Create Formation'),
-(@RELAYID+13, 16000, 0, 20, 2, @SGGUID+57, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Change movement');
+(@RELAYID+13, 15000, 0, 51, 150, @SGGUID+57, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 'OHF - Durnholde Lookout Create Formation'),
+(@RELAYID+13, 16000, 0, 48, 768, 0, 0, @SGGUID+57, 10, 768, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Remove UnitFlags'),
+(@RELAYID+13, 16000, 1, 20, 2, @SGGUID+57, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Change movement');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

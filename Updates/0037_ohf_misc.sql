@@ -29,7 +29,8 @@ UPDATE creature_template SET Detection = 20 WHERE entry = 17876;
 DELETE FROM spell_script_target WHERE entry = 33937;
 INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES 
 ('33937', '5', '5600007'), -- Most EscortNPCs
-('33937', '5', '5600012'); -- Horse Special StringID
+('33937', '5', '5600012'), -- Horse Special StringID
+('33937', '5', '5600013'); -- BarnGroup StringID
 
 -- Part 2 Gossip
 -- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 107 ConnIdx: 0 Time: 10/08/2026 16:54:27.895 Number: 44301
@@ -95,3 +96,6 @@ UPDATE creature_template SET GossipMenuId = 0 WHERE entry = 17876;
 -- Equipment for respawn
 DELETE FROM creature_equip_template WHERE entry = 17876;
 INSERT INTO `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`) VALUES ('17876', '14880', '1961');
+
+-- Thrall should have ActiveState all the time
+UPDATE creature_template SET ExtraFlags = 4096 WHERE entry = 17876;
