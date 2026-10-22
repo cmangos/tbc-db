@@ -3244,7 +3244,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+53, 'Old Hillsbrad Foothills - Group 028 - Escort Group 4', 0, 0, 0, 1, @STRINGID+7),
 -- Captain Skarloc
 (@SGGUID+54, 'Old Hillsbrad Foothills - Group 029 - Escort Group 5 - Patrol 008 - Captain Skarloc', 0, 0, 0, 1, @STRINGID+7),
-(@SGGUID+55, 'Old Hillsbrad Foothills - Group 030 - Skarlocs Mount', 0, 0, 0, 0, STRINGID+12),
+(@SGGUID+55, 'Old Hillsbrad Foothills - Group 030 - Skarlocs Mount', 0, 0, 0, 0, @STRINGID+12),
 (@SGGUID+56, 'Old Hillsbrad Foothills - Group 031 - Skarlocs Mount - Barn', 0, 0, 0, 0, @STRINGID+7),
 -- Group at Barn
 (@SGGUID+57, 'Old Hillsbrad Foothills - Group 032 - Escort Group 6', 0, 0, 0, 1, @STRINGID+7),
