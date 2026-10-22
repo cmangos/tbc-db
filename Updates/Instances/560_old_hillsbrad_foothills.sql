@@ -3570,7 +3570,8 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+36, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+37, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - Path 2 after Lieutenant Drake spawned - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+42, 'Old Hillsbrad Foothills - Group 023 - Patrol 007 - spawn_group_entry - Durnholde Tracking Hound'),
-(@SGGUID+54, 'Old Hillsbrad Foothills - Group 029 - Escort Group 5 - Patrol 008 - Captain Skarloc');
+(@SGGUID+54, 'Old Hillsbrad Foothills - Group 029 - Escort Group 5 - Patrol 008 - Captain Skarloc'),
+(@SGGUID+57, 'Old Hillsbrad Foothills - Group 033 - Escort Group 6 - Patrol 009 - Barn Group');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 -- Thrall Escort 
@@ -3938,7 +3939,12 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+54, 12, 2025.5107, 273.4629, 64.17653, 100, 0, 0, NULL),
 (@SGGUID+54, 13, 2027.7712, 273.25977, 64.05285, 100, 0, 0, NULL),
 (@SGGUID+54, 14, 2050.0286, 249.96962, 62.894558, 100, 1000, 1786201, 'Captain Skarloc - Unmount, change walkmode and spawn Mount'),
-(@SGGUID+54, 15, 2059.8994, 234.25934, 64.08113, 100, 1000, 1786202, 'Captain Skarlorc - Say text and remove unitstats');
+(@SGGUID+54, 15, 2059.8994, 234.25934, 64.08113, 100, 1000, 1786202, 'Captain Skarlorc - Say text and remove unitstats'),
+-- Barn Group
+(@SGGUID+57, 1, 2495.4795, 694.95447, 55.507145, 100, 0, 0, NULL),
+(@SGGUID+57, 2, 2491.4536, 694.1376, 55.708958, 100, 0, 0, NULL),
+(@SGGUID+57, 3, 2490.363, 703.972, 55.764732, 100, 0, 0, NULL),
+(@SGGUID+57, 4, 2487.528, 703.4704, 55.777874, 100, 0, 0, NULL);
 
 
 DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+12;
@@ -4236,7 +4242,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN 10220 AND 10242;
-DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN @RELAYID+1 AND @RELAYID+10;
+DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN @RELAYID+1 AND @RELAYID+13;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10220, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12742, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Brown'),
 (10221, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12750, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Black Skull Glowing'),
@@ -4481,8 +4487,13 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+12, 0, 0, 15, 32890, 0, 0, @STRINGID+5, 5, 2049, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Thrall cast Knockout on Durnholde Armorer'),
 (@RELAYID+12, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Set WalkMode'),
 (@RELAYID+12, 3000, 0, 0, 0, 0, 0, 0, 0, 0, 15892, 0, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Thrall say Text'),
-(@RELAYID+12, 6000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Thrall unpause waypoints');
-
+(@RELAYID+12, 6000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Thrall Escort - Thrall unpause waypoints'),
+-- Barn Group spawn RP
+(@RELAYID+13, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 15958, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Say Text'),
+(@RELAYID+13, 5000, 0, 0, 0, 0, 0, @CGUID+691, 10, 16, 15968, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Protector Say Text'),
+(@RELAYID+13, 14000, 0, 0, 0, 0, 0, 0, 0, 0, 15969, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Say Text'),
+(@RELAYID+13, 15000, 0, 51, 150, @SGGUID+57, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 'OHF - Durnholde Lookout Create Formation'),
+(@RELAYID+13, 16000, 0, 20, 2, @SGGUID+57, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Change movement');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

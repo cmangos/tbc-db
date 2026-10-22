@@ -128,3 +128,25 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1893401 WHERE `entry` = 18934;
 UPDATE `creature_template` SET `SpellList` = 2052501 WHERE `entry` = 20525;
+
+
+-- Tarren Mill Lookout 23177 - 23183
+DELETE FROM `creature_template_spells` WHERE `entry` IN (23177, 23183);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2317701, 2318301);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2317701, 'Old Hillsbrad Foothills - Tarren Mill Lookout - Normal', 0, 80),
+(2318301, 'Old Hillsbrad Foothills - Tarren Mill Lookout - Heroic', 0, 80);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2317701, 2054601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2317701, 1, 35511, 0, -1, 1, 0, 100, 0, 8000, 18000, 8000, 18000, 'Tarren Mill Lookout - Serpent Sting - current'),
+(2317701, 2, 17174, 0, -1, 100, 0, 100, 0, 4000, 8000, 8000, 14000, 'Tarren Mill Lookout - Concussive Shot - random'),
+(2317701, 3, 15620, 2, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Tarren Mill Lookout - Shoot - current'),
+-- Heroic
+(2318301, 1, 35511, 0, -1, 1, 0, 100, 0, 8000, 18000, 8000, 18000, 'Tarren Mill Lookout - Serpent Sting - current'),
+(2318301, 2, 17174, 0, -1, 100, 0, 100, 0, 4000, 8000, 8000, 14000, 'Tarren Mill Lookout - Concussive Shot - random'),
+(2318301, 3, 16100, 2, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Tarren Mill Lookout - Shoot - current');
+
+UPDATE `creature_template` SET `SpellList` = 2317701 WHERE `entry` = 23177;
+UPDATE `creature_template` SET `SpellList` = 2318301 WHERE `entry` = 23183;

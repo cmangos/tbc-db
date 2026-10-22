@@ -78,6 +78,7 @@ INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`,
 DELETE FROM npc_text_broadcast_text WHERE Id IN (9597);
 INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
 (9597, 1, 15953); -- Tarren Mill lies beyond these trees. The commotion at Durnholde should give us a little time to find Taretha before the entire countryside is flooded with human soldiers. Let's check the nearby barn, then head into town.
+DELETE FROM npc_text WHERE ID IN (9597);
 
 DELETE FROM gossip_menu WHERE entry IN (7840);
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
