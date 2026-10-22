@@ -2940,7 +2940,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+685, 17860, 560, 0, 1994.146484375, 278.217559814453125, 66.821319580078125, 5.946362495422363281, 10, 10, 0, 0), -- Durnholde Veteran
 (@CGUID+686, 17833, 560, 0, 1995.708740234375, 273.9462890625, 66.7578277587890625, 0.210796549916267395, 10, 10, 0, 0), -- Durnholde Warden
 (@CGUID+687, 18798, 560, 0, 2047.7747802734375, 253.40875244140625, 62.91183090209960937, 5.37561416625976562500, 10, 10, 0, 0), -- Skarloc's Mount
-(@CGUID+688, 18798, 560, 0, 2488.7786, 623.97235, 58.07383, 1.37881, 10, 10, 0, 2); -- Skarloc's Mount
+(@CGUID+688, 18798, 560, 0, 2488.7786, 623.97235, 58.07383, 1.37881, 10, 10, 0, 2), -- Skarloc's Mount
+-- Barn group
+(@CGUID+689, 23177, 560, 0, 2499.057861328125, 698.99725341796875, 55.61115646362304687, 4.572762489318847656, 10, 10, 0, 0), -- Tarren Mill Lookout
+(@CGUID+690, 23177, 560, 0, 2500.7001953125, 698.2674560546875, 55.61824798583984375, 3.735004663467407226, 10, 10, 0, 0), -- Tarren Mill Lookout
+(@CGUID+691, 23175, 560, 0, 2500.0908203125, 699.93890380859375, 55.62955474853515625, 4.293509960174560546, 10, 10, 0, 0), -- Tarren Mill Guardsman
+(@CGUID+692, 23179, 560, 0, 2501.57080078125, 699.380859375, 55.64138031005859375, 3.857177734375, 10, 10, 0, 0); -- Tarren Mill Protector
 
 -- ===========
 -- GAMEOBJECTS
@@ -3241,6 +3246,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+54, 'Old Hillsbrad Foothills - Group 029 - Escort Group 5 - Patrol 008 - Captain Skarloc', 0, 0, 0, 1, @STRINGID+7),
 (@SGGUID+55, 'Old Hillsbrad Foothills - Group 030 - Skarlocs Mount', 0, 0, 0, 0, STRINGID+12),
 (@SGGUID+56, 'Old Hillsbrad Foothills - Group 031 - Skarlocs Mount - Barn', 0, 0, 0, 0, @STRINGID+7),
+-- Group at Barn
+(@SGGUID+57, 'Old Hillsbrad Foothills - Group 032 - Escort Group 6', 0, 0, 0, 1, @STRINGID+7),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3415,6 +3422,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+55, @CGUID+687, -1, 0), -- Skarloc's Mount
 (@SGGUID+56, @CGUID+688, -1, 0), -- Skarloc's Mount
+
+(@SGGUID+57, @CGUID+689, -1, 0), -- Tarren Mill Lookout
+(@SGGUID+57, @CGUID+690, -1, 0), -- Tarren Mill Lookout
+(@SGGUID+57, @CGUID+691, -1, 0), -- Tarren Mill Guardsman
+(@SGGUID+57, @CGUID+692, -1, 0), -- Tarren Mill Protector
+
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
 (@SGGUID+1000, @OGUID+50, -1, 0),-- Roaring Flame
@@ -3612,11 +3625,12 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+0, 49, 2488.8918, 658.01294, 57.452644, 100, 0, 0, NULL),
 (@SGGUID+0, 50, 2500.806, 684.1419, 55.769806, 100, 0, 0, NULL),
 (@SGGUID+0, 51, 2501.0095, 694.20874, 55.50687, 100, 0, 0, NULL),
-(@SGGUID+0, 52, 2491.6675, 694.55133, 55.709423, 100, 0, 0, NULL),
+(@SGGUID+0, 52, 2491.6675, 694.55133, 55.709423, 100, 1, 6, NULL),
 (@SGGUID+0, 53, 2490.9133, 703.16986, 55.7576, 100, 0, 0, NULL),
 (@SGGUID+0, 54, 2486.217, 703.2291, 55.78091, 100, 0, 0, NULL),
-(@SGGUID+0, 55, 2481.8752, 697.898, 55.78235, 100, 0, 0, NULL),
-(@SGGUID+0, 56, 2475.9414, 695.6856, 55.7991, 100, 0, 0, NULL),
+(@SGGUID+0, 55, 2481.8752, 697.898, 55.78235, 5.00909, 2000, 0, NULL),
+(@SGGUID+0, 56, 2475.9414, 695.6856, 55.7991, 2.00712, 2000, 1787614, NULL),
+(@SGGUID+0, 57, 2475.9414, 695.6856, 55.7991, 0.349065, 1000, 1787615, NULL),
 --
 (@SGGUID+4, 1, 1927.6208, 969.2012, 17.91233, 100, 0, 0, ''),
 (@SGGUID+4, 2, 1935.2817, 973.1046, 19.765339, 100, 0, 0, ''),
@@ -3999,7 +4013,7 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Emote OneShot Point'),
 (1784801,0,1,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lieutenant Drake - Yell Text'),
@@ -4074,6 +4088,14 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 
 (1787613,2000,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Emote OneShotCheer'),
 (1787613,3000,1,0,0,0,0,0,0,0,16499,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
+
+(1787614,0,0,58,@SGGUID+57,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Summon Group 5'),
+
+(1787615,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Pause Waypoints'),
+(1787615,8000,0,1,35,0,0,18651,10,0,0,0,0,0,0,0,0,0,'Thrall Escort - Young Blanchy - Emote OneShotAttackUnarmed'),
+(1787615,9000,0,36,0,0,0,18651,10,1,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Face Young Blanchy'),
+(1787615,9000,1,1,274,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Emote OneShotNo'),
+(1787615,11000,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0.4363,'Thrall Escort - Thrall - Change Orientation'),
 
 (1809201, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Pause Waypoints'),
 (1809201, 0, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Cast Transform'),
