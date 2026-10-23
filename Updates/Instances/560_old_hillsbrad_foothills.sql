@@ -2238,13 +2238,13 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 (@CGUID+695, 2317703),
 (@CGUID+696, 2317703),
 
-(@CGUID+697, 2317703),
+(@CGUID+697, 2317704),
 (@CGUID+698, 2317703),
 (@CGUID+699, 2317703),
 (@CGUID+700, 2317703);
 
 
-DELETE FROM creature_spawn_data_template WHERE Entry IN (1783301, 1786001, 1786201, 1787601, 2317701);
+DELETE FROM creature_spawn_data_template WHERE Entry IN (1783301, 1786001, 1786201, 1787601, 2317701, 2317702, 2317703, 2317704);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `ModelId`, `EquipmentId`, `SpawnFlags`, `RelayId`, `Name`) VALUES 
 ('1783301', 0, 33600, 0, -1, 0, 0, 'OHF - Durnholde Warden - UnitFlags and RunMode'), 
 ('1786001', 0, 33600, 0, -1, 0, 0, 'OHF - Durnholde Veteran - UnitFlags and RunMode'), 
@@ -2252,7 +2252,8 @@ INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `M
 ('1787601', 1, -1, 18165, 17876, 0, 0, 'OHF - Thrall - Equipment'),
 ('2317701', 0, -1, 0, -1, 0, @RELAYID+13, 'OHF - Tarren Mill Lookout - Unit Flags RelayScript'),
 ('2317702', 0, 559168, 0, -1, 0, @RELAYID+14, 'OHF - Tarren Mill Lookout - Unit Flags RelayScript'),
-('2317703', 0, 559168, 0, -1, 0, @RELAYID+15, 'OHF - Generic - UnitFlags RelayScript');
+('2317703', 0, 559168, 0, -1, 0, @RELAYID+15, 'OHF - Generic - UnitFlags RelayScript'),
+('2317704', 0, 559168, 0, -1, 0, @RELAYID+16, 'OHF - Tarren Mill Lookout - Unit Flags RelayScript');
 
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -3690,7 +3691,9 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+0, 75, 2653.0952, 668.7606, 57.158646, 100, 0, 0, NULL),
 (@SGGUID+0, 76, 2659.8813, 675.0325, 57.158646, 100, 0, 0, NULL),
 (@SGGUID+0, 77, 2653.0027, 671.4722, 61.346466, 100, 1, 1787619, 'Spawn group'),
-(@SGGUID+0, 78, 2660.4854, 659.4092, 61.923397, 100, 1000, 1787620, 'Taretha'),
+(@SGGUID+0, 78, 2651.9387, 665.7878, 61.90751, 100, 0, 0, NULL),
+(@SGGUID+0, 79, 2656.5718, 661.57043, 61.90947, 100, 0, 0, NULL),
+(@SGGUID+0, 80, 2660.4854, 659.4092, 61.923397, 100, 1000, 1787620, 'Taretha'),
 --
 (@SGGUID+4, 1, 1927.6208, 969.2012, 17.91233, 100, 0, 0, ''),
 (@SGGUID+4, 2, 1935.2817, 973.1046, 19.765339, 100, 0, 0, ''),
@@ -4565,12 +4568,16 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+13, 16000, 0, 48, 768, 0, 0, @SGGUID+57, 10, 768, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Remove UnitFlags'),
 (@RELAYID+13, 16000, 1, 20, 2, @SGGUID+57, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Change movement'),
 
-(@RELAYID+14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15976, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Say Text'),
-(@RELAYID+14, 1, 1, 31, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TerminateScript if Thrall not found'),
-(@RELAYID+14, 1, 2, 26, 0, 0, 0, 17876, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - Attack Thrall'),
+(@RELAYID+14, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 15976, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Say Text'),
+(@RELAYID+14, 1100, 1, 31, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout - TerminateScript if Thrall not found'),
+(@RELAYID+14, 1101, 2, 26, 0, 0, 0, 17876, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout - Attack Thrall'),
 
-(@RELAYID+15, 0, 0, 31, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TerminateScript if Thrall not found'),
-(@RELAYID+15, 100, 1, 26, 0, 0, 0, 17876, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - Attack Thrall');
+(@RELAYID+15, 1000, 0, 31, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TerminateScript if Thrall not found'),
+(@RELAYID+15, 1100, 1, 26, 0, 0, 0, 17876, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - Attack Thrall'),
+
+(@RELAYID+16, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 15976, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Say Text'),
+(@RELAYID+16, 1100, 1, 31, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout - TerminateScript if Thrall not found'),
+(@RELAYID+16, 1101, 2, 26, 0, 0, 0, 17876, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout - Attack Thrall');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
