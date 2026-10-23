@@ -3295,6 +3295,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+58, 'Old Hillsbrad Foothills - Group 033 - Escort Group 6', 0, 0, 0, 1, @STRINGID+13),
 -- Group inside Inn
 (@SGGUID+59, 'Old Hillsbrad Foothills - Group 034 - Escort Group 6', 0, 0, 0, 1, @STRINGID+13),
+-- Epoch Hunter
+(@SGGUID+60, 'Old Hillsbrad Foothills - Group 034 - Epoch Hunter', 0, 0, 0, 1, @STRINGID+13),
+(@SGGUID+61, 'Old Hillsbrad Foothills - Group 034 - Epoc Hunter Group 1', 0, 0, 0, 1, @STRINGID+13),
+(@SGGUID+62, 'Old Hillsbrad Foothills - Group 034 - Epoc Hunter Group 2', 0, 0, 0, 1, @STRINGID+13),
+(@SGGUID+63, 'Old Hillsbrad Foothills - Group 034 - Epoc Hunter Group 3', 0, 0, 0, 1, @STRINGID+13),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3484,6 +3489,21 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+59, @CGUID+698, 0, 0), -- Tarren Mill Lookout
 (@SGGUID+59, @CGUID+699, 3, 0), -- Tarren Mill Guardsman
 (@SGGUID+59, @CGUID+700, 2, 0), -- Tarren Mill Protector
+
+(@SGGUID+60, @CGUID+701, -1, 0), -- Epoch Hunter
+
+(@SGGUID+61, @CGUID+702, -1, 0), -- Infinite Saboteur
+(@SGGUID+61, @CGUID+703, -1, 0), -- Infinite Slayer
+(@SGGUID+61, @CGUID+704, -1, 0), -- Infinite Defiler
+
+(@SGGUID+62, @CGUID+705, -1, 0), -- Infinite Saboteur
+(@SGGUID+62, @CGUID+706, -1, 0), -- Infinite Slayer
+(@SGGUID+62, @CGUID+707, -1, 0), -- Infinite Defiler
+
+(@SGGUID+63, @CGUID+708, -1, 0), -- Infinite Saboteur
+(@SGGUID+63, @CGUID+709, -1, 0), -- Infinite Slayer
+(@SGGUID+63, @CGUID+710, -1, 0), -- Infinite Slayer
+(@SGGUID+63, @CGUID+711, -1, 0), -- Infinite Defiler
 
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
