@@ -1687,12 +1687,12 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@GROUP_ID+1003, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 001', '1', '1', '0', '0'),
 (@GROUP_ID+1004, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 002', '1', '1', '0', '0'),
 (@GROUP_ID+1005, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 003', '1', '1', '0', '0'),
-(@GROUP_ID+1006, 'Zul''Gurub - Sungrass', '1', '1', '0', '0'),
-(@GROUP_ID+1007, 'Zul''Gurub - Purple Lotus', '1', '1', '0', '0'),
-(@GROUP_ID+1008, 'Zul''Gurub - Mountain Silversage', '1', '1', '0', '0'),
-(@GROUP_ID+1009, 'Zul''Gurub - Golden Sansam', '1', '1', '0', '0'),
-(@GROUP_ID+1010, 'Zul''Gurub - Dreamfoil', '1', '1', '0', '0'),
-(@GROUP_ID+1011, 'Zul''Gurub - Muddy Churning Waters', '1', '1', '0', '0');
+(@GROUP_ID+1006, 'Zul''Gurub - Sungrass', '1', '1', '2', '0'),
+(@GROUP_ID+1007, 'Zul''Gurub - Purple Lotus', '1', '1', '3', '0'),
+(@GROUP_ID+1008, 'Zul''Gurub - Mountain Silversage', '1', '1', '4', '0'),
+(@GROUP_ID+1009, 'Zul''Gurub - Golden Sansam', '1', '1', '5', '0'),
+(@GROUP_ID+1010, 'Zul''Gurub - Dreamfoil', '1', '1', '5', '0'),
+(@GROUP_ID+1011, 'Zul''Gurub - Muddy Churning Waters', '1', '1', '4', '0');
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 000
