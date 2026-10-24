@@ -30,16 +30,16 @@ INSERT INTO `skill_fishing_base_level` (`entry`, `skill`) VALUES
 (3487, -20), -- Silvermoon City (ø)
 (3557, -20), -- The Exodar (ø)
 (3479, -70), -- The Veiled Sea (ø)(TC)
-(2366, 205), -- The Black Morass (ø)(fallback value was 430)
-(2367, 205), -- Old Hillsbrad Foothills (ø)(fallback value was 430)
-(3606, 330), -- Hyjal Summit (ø)(fallback value was 430)
+-- (2366, 205), -- The Black Morass (ø)(fallback value was 430) - unclear
+-- (2367, 205), -- Old Hillsbrad Foothills (ø)(fallback value was 430) - unclear
+-- (3606, 330), -- Hyjal Summit (ø)(fallback value was 430) - unclear
 (3521, 305), -- Zangarmarsh (305)
 (3655, 305), -- Umbrafen Lake (ø, fallback was zangarmarsh see above)
 (3659, 305), -- The Lagoon (ø, fallback was zangarmarsh see above)
 (3607, 305), -- Serpentshrine Cavern (300)(fallback value was 430 - needed to fish lurker, but that is probably set in the fish go)
-(3715, 305), -- Steamvault (ø)(fallback value was 430)
-(3716, 305), -- The Underbog (ø)(fallback value was 430)
-(3717, 305), -- The Slave Pens (ø)(fallback value was 430)
+-- (3715, 305), -- Steamvault (ø)(fallback value was 430) - not fishable
+-- (3716, 305), -- The Underbog (ø)(fallback value was 430) - unclear
+-- (3717, 305), -- The Slave Pens (ø)(fallback value was 430) - unclear
 (3905, 305), -- Coilfang Reservoir (ø)(TC)
 -- Two outside sources put Nagrand at 355 -- Wowhead's TBC guide directly, and
 -- WoWWiki's table once its 95-point grace band comes off -- and the same
@@ -48,22 +48,22 @@ INSERT INTO `skill_fishing_base_level` (`entry`, `skill`) VALUES
 -- not settle it either way: those sessions were fished at an effective 395
 -- (the 375 cap plus a +20 pole), which clears 380 and 355 alike.
 (3518, 355), -- Nagrand (380)
-(3805, 355), -- Zul’Aman (ø)(fallback value was 430)
-(4075, 355), -- Sunwell Plateau (ø)(fallback value was 430)
-(4131, 355), -- Magisters’ Terrace (ø)(fallback value was 430)
+-- (3805, 355), -- Zul’Aman (ø)(fallback value was 430) - unclear
+-- (4075, 355), -- Sunwell Plateau (ø)(fallback value was 430) - unclear
+-- (4131, 355), -- Magisters’ Terrace (ø)(fallback value was 430) - unclear
 (3703, 355), -- Shattrath City (ø)
 (3653, 355), -- Serpent Lake (355)
 (3656, 355), -- Marshlight Lake (355)
 (3720, 355), -- Twin Spire Ruins (ø)
 (3519, 355), -- Terokkar Forest (355)(380) but that's wrong see DataOutland.lua
-(3679, 430), -- Skettis (ø)(405) - Setting to 430 as per bracket system
-(3621, 430), -- Lake Sunspring (395)
-(3680, 430), -- Blackwind Valley (ø)
-(3690, 430), -- Blackwind Lake (405)
-(3691, 430), -- Lake Ere’Noru (405)
-(3692, 430), -- Lake Jorune (405)
-(3693, 430), -- Skethyl Mountains (ø)
-(3975, 430); -- Terokk’s Rest (ø)
+(3679, 405), -- Skettis (ø)(405) - Setting to 405 as per research https://github.com/cmangos/mangos-tbc/commit/123a5c7655f59727a82f867ce029e4b7b0dab670
+(3621, 405), -- Lake Sunspring (395)
+(3680, 405), -- Blackwind Valley (ø)
+(3690, 405), -- Blackwind Lake (405)
+(3691, 405), -- Lake Ere’Noru (405)
+(3692, 405), -- Lake Jorune (405)
+(3693, 405), -- Skethyl Mountains (ø)
+(3975, 405); -- Terokk’s Rest (ø)
 -- WOTLK+ missing
 -- (66, 380), -- Zul’Drak (ø)(TC)
 -- (4100, 480), -- The Culling of Stratholme (ø)(TC)
