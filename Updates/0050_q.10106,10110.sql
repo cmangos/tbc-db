@@ -6,11 +6,11 @@
 -- 9226	Superior Armaments of Battle - Revered Amongst the Dawn
 -- 10106	Hellfire Fortifications
 -- 10110	Hellfire Fortifications
--- 10653	Marks of Sargeras
--- 10654	More Marks of Sargeras
--- 10655	Single Mark of Sargeras
--- 10656	Sunfury Signets
--- 10824	Sunfury Signets
--- 10826	Marks of Sargeras
-UPDATE `quest_template` SET `RequiredMaxRepValue` = 42000 WHERE `RequiredMaxRepValue` = 41999;
+UPDATE `quest_template` SET `RequiredMaxRepValue` = 42000 WHERE `RequiredMaxRepValue` = 41999 AND `entry` NOT IN (
+10653, -- Marks of Sargeras
+10654, -- More Marks of Sargeras
+10655, -- Single Mark of Sargeras
+10656, -- Sunfury Signets
+10824, -- Sunfury Signets
+10826); -- Marks of Sargeras
 
