@@ -360,7 +360,7 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+445,182951,530,1, -1625.8148193359375, 7603.236328125, -11.0126314163208007, 1.064649581909179687, 0, 0, 0.507537841796875, 0.861629426479339599,600,600),
 (@GGUID+447,182952,530,1, -197.924591064453125, 6812.376953125, 18.26761627197265625, 1.466075778007507324, 0, 0, 0.669130325317382812, 0.74314504861831665,600,600);
 
-DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+0 AND @SGGUID+20;
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+0 AND @SGGUID+11;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+0, 'Nagrand - Pure Water - Throne of Elements North', 1, 1, 0, 0),
 (@SGGUID+1, 'Nagrand - Pools - Skysong Lake', 1, 1, 0, 0),
@@ -375,7 +375,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+10, 'Zangarmarsh - The Lagoon', 1, 3, 0, 0),
 (@SGGUID+11, 'Zangarmarsh - Umbrafen Lake', 1, 3, 0, 0);
 
-DELETE FROM spawn_group_entry WHERE Id BETWEEN @SGGUID+0 AND @SGGUID+20;
+DELETE FROM spawn_group_entry WHERE Id BETWEEN @SGGUID+0 AND @SGGUID+11;
 INSERT INTO `spawn_group_entry` (Id, Entry, Chance) SELECT @SGGUID+1, entry, 0 FROM gameobject_template WHERE entry IN(182951,182958,182959);
 INSERT INTO `spawn_group_entry` (Id, Entry, Chance) SELECT @SGGUID+2, entry, 0 FROM gameobject_template WHERE entry IN(182951,182958,182959);
 INSERT INTO `spawn_group_entry` (Id, Entry, Chance) SELECT @SGGUID+3, entry, 0 FROM gameobject_template WHERE entry IN(182951,182958,182959);
@@ -385,7 +385,7 @@ INSERT INTO `spawn_group_entry` (Id, Entry, Chance) SELECT @SGGUID+9, entry, 0 F
 INSERT INTO `spawn_group_entry` (Id, Entry, Chance) SELECT @SGGUID+10, entry, 0 FROM gameobject_template WHERE entry IN(182952,182953,182954);
 INSERT INTO `spawn_group_entry` (Id, Entry, Chance) SELECT @SGGUID+11, entry, 0 FROM gameobject_template WHERE entry IN(182952,182953,182954);
 
-DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+0 AND @SGGUID+20;
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+0 AND @SGGUID+11;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+0, guid, -1 FROM gameobject WHERE guid IN(@GGUID+104,@GGUID+65,@GGUID+105,@GGUID+88,@GGUID+83,@GGUID+66);
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+1, guid, -1 FROM gameobject WHERE guid IN(@GGUID+71,@GGUID+111,@GGUID+106,@GGUID+70,@GGUID+30,@GGUID+69,@GGUID+72,@GGUID+102,@GGUID+218,@GGUID+149,@GGUID+39,@GGUID+40);
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT @SGGUID+2, guid, -1 FROM gameobject WHERE guid IN(@GGUID+422,@GGUID+372,@GGUID+371,@GGUID+431,@GGUID+144,@GGUID+385,@GGUID+397,@GGUID+445,@GGUID+180,@GGUID+398,@GGUID+339,@GGUID+16);
