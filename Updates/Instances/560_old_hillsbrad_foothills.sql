@@ -1302,10 +1302,10 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+702, 2, 2641.0024, 698.19836, 55.836227, 100, 1000, 1809301), 
 
 (@CGUID+703, 1, 2630.2979, 705.3433, 56.33664, 100, 0, 0),
-(@CGUID+703, 2, 2631.1438, 694.41296, 56.04293, 100, 1000, 1809301),
+(@CGUID+703, 2, 2631.1438, 694.41296, 56.04293, 100, 1000, 1809201),
 
 (@CGUID+704, 1, 2639.0146, 708.37976, 56.156, 100, 0, 0),
-(@CGUID+704, 2, 2638.1797, 699.70465, 56.053276, 100, 1000, 1809301);
+(@CGUID+704, 2, 2638.1797, 699.70465, 56.053276, 100, 1000, 1809401);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (17848,18092,18093,18094,18598,18649,18664,18764,18765,28132,18672,18655,18656,20350,20360,20373,20378,20401);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
@@ -1324,6 +1324,9 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17848, 1, 12, 2160.0496, 214.06728, 52.58072, 100, 0, 0),
 (17848, 1, 13, 2172.4766, 224.48166, 52.4937, 100, 0, 0),
 (17848, 1, 14, 2179.8486, 230.77225, 52.440907, 100, 0, 0),
+-- Epoch Hunter
+(18096, 0, 1, 2639.920166, 700.2586, 65.1358, 100, 8000, 1809601),
+(18096, 0, 2, 2637.677, 681.1161, 59.786484, 100, 8000, 1809602),
 -- Jay Lemieux
 (18655,0,1,2533.48,695.846,55.2602,1.85274,10,5), -- run on
 (18655,0,2,2531.96,705.666,55.2901,1.60142,0,0),
@@ -1445,29 +1448,6 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (18656,0,67,2651.38,685.593,56.0801,3.32932,0,0),
 (18656,0,68,2638.5,680.102,54.7173,3.54923,0,0),
 (18656,0,69,2622.54,672.941,54.6155,3.47462,0,0),
-
--- Epoch Hunter Event Opening Sequence
-
--- Tarren Mill Guardsman
-(18092,1,1,2629.45,716.274,56.5571,100,1000,0),
-(18092,1,2,2630.3,705.343,56.3366,100,0,0),
-(18092,1,3,2631.14,694.413,56.1161,100,0,0),
-(18092,1,4,2631.14,694.413,56.1161,100,5000,1809201),
--- Tarren Mill Protector
-(18093,1,1,2655.72,698.599,57.7215,100,1000,0),
-(18093,1,2,2654.14,698.683,57.6294,100,0,0),
-(18093,1,3,2652.56,698.768,57.5372,100,0,0),
-(18093,1,4,2651.29,698.835,57.4827,100,0,0),
-(18093,1,5,2648.96,698.959,56.324,100,0,0),
-(18093,1,6,2647.92,698.959,56.199,100,0,0),
-(18093,1,7,2644.54,697.87,55.949,100,0,0),
-(18093,1,8,2644.54,697.87,55.949,100,5000,1809301),
--- Tarren Mill Lookout
-(18094,1,1,2639.85,717.055,56.363,100,1000,0),
-(18094,1,2,2639.01,708.38,56.156,100,0,0),
-(18094,1,3,2638.18,699.705,55.949,100,0,0),
-(18094,1,4,2638.18,699.705,55.949,100,5000,1809401),
-
 -- Orc Prisoner - Patrols that get other waypoints when first boss spawns
 -- @CGUID+444
 (18598, 1, 1, 2087.4426, 105.12012, 52.906998, 100, 0, 0),
@@ -2229,7 +2209,7 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+580, 20426), (@CGUID+580, 20428), (@CGUID+580, 20429), (@CGUID+580, 20430),
 (@CGUID+581, 20426), (@CGUID+581, 20428), (@CGUID+581, 20429), (@CGUID+581, 20430);
 
-DELETE FROM creature_spawn_data WHERE Guid IN (@CGUID+684, @CGUID+685, @CGUID+686, @CGUID+665, @CGUID+666, @CGUID+667, @CGUID+693, @CGUID+694, @CGUID+695, @CGUID+696, @CGUID+697, @CGUID+698, @CGUID+699, @CGUID+700, @CGUID+701);
+DELETE FROM creature_spawn_data WHERE Guid IN (@CGUID+684, @CGUID+685, @CGUID+686, @CGUID+665, @CGUID+666, @CGUID+667, @CGUID+693, @CGUID+694, @CGUID+695, @CGUID+696, @CGUID+697, @CGUID+698, @CGUID+699, @CGUID+700, @CGUID+701, @CGUID+702, @CGUID+703, @CGUID+704);
 INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
 -- Captain Skarloc group
 (@CGUID+684, 1786201),
@@ -2252,8 +2232,20 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 (@CGUID+699, 2317703),
 (@CGUID+700, 2317703),
 
-(@CGUID+701, 1809601);
+(@CGUID+701, 1809601),
 
+(@CGUID+702, 1809301),
+(@CGUID+703, 1809201),
+(@CGUID+704, 1809401),
+
+(@CGUID+705, 1809401),
+(@CGUID+706, 1809401),
+(@CGUID+707, 1809401),
+
+(@CGUID+708, 1809401),
+(@CGUID+709, 1809401),
+(@CGUID+710, 1809401),
+(@CGUID+711, 1809401);
 
 
 DELETE FROM creature_spawn_data_template WHERE Entry IN (1783301, 1786001, 1786201, 1787601, 1809601, 2317701, 2317702, 2317703, 2317704);
@@ -2263,9 +2255,12 @@ INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `M
 ('1786201', 0, 33600, 0, -1, 1, 0, 'OHF - Captain Skarloc - UnitFlags and RunMode'),
 ('1787601', 1, -1, 18165, 17876, 0, 0, 'OHF - Thrall - Equipment'),
 ('1809601', 0, -1, 0, -1, 0, @RELAYID+17, 'OHF - Epoch Hunter - RelayScript'),
+('1809201', 0, 33600, 18247, 0, 0, 0, 'OHF - Tarren Mill Guardsman - UnitFlags and Display'),
+('1809301', 0, 33600, 18267, 0, 0, 0, 'OHF - Tarren Mill Protector - UnitFlags and Display'),
+('1809401', 0, 33600, 18262, 0, 0, 0, 'OHF - Tarren Mill Lookout - UnitFlags and Display'),
 ('2317701', 0, -1, 0, -1, 0, @RELAYID+13, 'OHF - Tarren Mill Lookout - Unit Flags RelayScript'),
 ('2317702', 0, 559168, 0, -1, 0, @RELAYID+14, 'OHF - Tarren Mill Lookout - Unit Flags RelayScript'),
-('2317703', 0, 559168, 0, -1, 0, @RELAYID+15, 'OHF - Generic - UnitFlags RelayScript'),
+('2317703', 0, -1, 0, -1, 0, @RELAYID+15, 'OHF - Generic - UnitFlags RelayScript'),
 ('2317704', 0, 559168, 0, -1, 0, @RELAYID+16, 'OHF - Tarren Mill Lookout - Unit Flags RelayScript');
 
 
@@ -2990,18 +2985,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- Epoch Hunter Groups
 (@CGUID+701, 18096, 560, 0, 2639.920166015625, 700.2586669921875, 65.135833740234375, 4.747295379638671875, 10, 10, 0, 0), -- Epoch Hunter
 -- Group 1
-(@CGUID+702, 18172, 560, 0, 2654.136474609375, 698.68353271484375, 57.6293792724609375, 3.226241588592529296, 10, 10, 0, 2), -- Infinite Saboteur
-(@CGUID+703, 18096, 560, 0, 2630.2978515625, 705.34332275390625, 56.336639404296875, 4.789629459381103515, 10, 10, 0, 2), -- Infinite Slayer
-(@CGUID+704, 18096, 560, 0, 2639.0146484375, 708.3797607421875, 56.15599822998046875, 4.616436958312988281, 10, 10, 0, 2), -- Infinite Defiler
+(@CGUID+702, 18093, 560, 0, 2654.136474609375, 698.68353271484375, 57.6293792724609375, 3.226241588592529296, 10, 10, 0, 2), -- Tarren Mill Protector
+(@CGUID+703, 18092, 560, 0, 2630.2978515625, 705.34332275390625, 56.336639404296875, 4.789629459381103515, 10, 10, 0, 2), -- Tarren Mill Guardsman
+(@CGUID+704, 18094, 560, 0, 2639.0146484375, 708.3797607421875, 56.15599822998046875, 4.616436958312988281, 10, 10, 0, 2), -- Tarren Mill Lookout
 -- Group 2
 (@CGUID+705, 18172, 560, 0, 2602.208251953125, 678.29547119140625, 56.3468170166015625, 6.0737457275390625, 10, 10, 0, 0), -- Infinite Saboteur
-(@CGUID+706, 18096, 560, 0, 2602.800048828125, 686.28448486328125, 55.79315185546875, 5.951572895050048828, 10, 10, 0, 0), -- Infinite Slayer
-(@CGUID+707, 18096, 560, 0, 2595.47705078125, 684.37384033203125, 55.9553375244140625, 6.056292533874511718, 10, 10, 0, 0), -- Infinite Defiler
+(@CGUID+706, 18170, 560, 0, 2602.800048828125, 686.28448486328125, 55.79315185546875, 5.951572895050048828, 10, 10, 0, 0), -- Infinite Slayer
+(@CGUID+707, 18171, 560, 0, 2595.47705078125, 684.37384033203125, 55.9553375244140625, 6.056292533874511718, 10, 10, 0, 0), -- Infinite Defiler
 -- Group 3
 (@CGUID+708, 18172, 560, 0, 2641.787841796875, 719.71063232421875, 57.40230178833007812, 4.468042850494384765, 10, 10, 0, 0), -- Infinite Saboteur
-(@CGUID+709, 18096, 560, 0, 2639.640625, 710.52459716796875, 56.23582077026367187, 4.607669353485107421, 10, 10, 0, 0), -- Infinite Slayer
-(@CGUID+710, 18096, 560, 0, 2645.724609375, 709.71533203125, 56.69411087036132812, 4.380776405334472656, 10, 10, 0, 0), -- Infinite Slayer
-(@CGUID+711, 18096, 560, 0, 2646.28857421875, 718.52569580078125, 57.90024185180664062, 4.328416347503662109, 10, 10, 0, 0); -- Infinite Defiler
+(@CGUID+709, 18170, 560, 0, 2639.640625, 710.52459716796875, 56.23582077026367187, 4.607669353485107421, 10, 10, 0, 0), -- Infinite Slayer
+(@CGUID+710, 18170, 560, 0, 2645.724609375, 709.71533203125, 56.69411087036132812, 4.380776405334472656, 10, 10, 0, 0), -- Infinite Slayer
+(@CGUID+711, 18171, 560, 0, 2646.28857421875, 718.52569580078125, 57.90024185180664062, 4.328416347503662109, 10, 10, 0, 0); -- Infinite Defiler
 
 -- ===========
 -- GAMEOBJECTS
@@ -4128,7 +4123,7 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1787619,1787620,1787621,1787622,1787623,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1787619,1787620,1787621,1787622,1787623,1809601, 1809602,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Emote OneShot Point'),
 (1784801,0,1,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lieutenant Drake - Yell Text'),
@@ -4245,18 +4240,21 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787623,0,1,0,0,0,0,18096,30,0,16021,0,0,0,0,0,0,0,'Thrall Escort - Epoch - Yell Text'),
 (1787623,5000,0,58,@SGGUID+61,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Epoch Group 1'),
 
+-- Epoch Hunter
+(1809601,0,1,0,0,0,0,0,0,0,16023,0,0,0,0,0,0,0,'Thrall Escort - Epoch - Yell Text'),
+
+(1809602,0,0,48,256+512,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Epoch Hunter - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
+(1809602,0,1,26,0,0,0,17876,100,0,0,0,0,0,0,0,0,0, 'Epoch Hunter - Attack Thrall'),
+
 (1809201, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Pause Waypoints'),
 (1809201, 0, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Cast Transform'),
-(1809201, 1000, 0, 44, 18170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Morph to Infinite Slayer'),
-(1809201, 1000, 0, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
-(1809201, 2000, 0, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Attack Thrall'),
+(1809201, 15000, 0, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
+(1809201, 15000, 0, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Attack Thrall'),
 
 (1809301, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Pause Waypoints'),
 (1809301, 0, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Cast Transform'),
-(1809301, 1000, 0, 44, 18172, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Morph to Infinite Saboteor'),
-(1809301, 1000, 0, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
-(1809301, 2000, 0, 0, 0, 0, 0, 0, 0, 0, 19537, 19536, 19538, 19534, 0, 0, 0, 0, 'Tarren Mill Protector - Random Say'),
-(1809301, 2000, 0, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Attack Thrall'),
+(1809301, 15000, 0, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
+(1809301, 15000, 0, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Attack Thrall'),
 
 -- Orc Prisoner
 (1859802,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Orc Prisoner - Change Movement to Idle'),
@@ -4278,9 +4276,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 
 (1809401, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Pause Waypoints'),
 (1809401, 0, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Cast Transform'),
-(1809401, 1000, 0, 44, 18171, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Morph to Infinite Defiler'),
-(1809401, 1000, 0, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
-(1809401, 2000, 0, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Attack Thrall'),
+(1809401, 15000, 0, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
+(1809401, 15000, 0, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Attack Thrall'),
 
 -- Durnholde Cook
 (1876501, 0, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Durnholde Cook - SendAiEvent A to self'),
@@ -4644,7 +4641,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+14, 1101, 2, 26, 0, 0, 0, 17876, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout - Attack Thrall'),
 
 (@RELAYID+15, 1000, 0, 31, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TerminateScript if Thrall not found'),
-(@RELAYID+15, 1100, 1, 26, 0, 0, 0, 17876, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - Attack Thrall'),
+(@RELAYID+15, 1100, 1, 26, 0, 0, 0, 17876, 150, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - Attack Thrall'),
 
 (@RELAYID+16, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 15986, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout Say Text'),
 (@RELAYID+16, 1100, 1, 31, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout - TerminateScript if Thrall not found'),
