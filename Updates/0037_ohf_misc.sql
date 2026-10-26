@@ -149,4 +149,4 @@ UPDATE creature_template SET ExtraFlags = 4096 WHERE entry = 17876;
 UPDATE `broadcast_text` SET `EmoteID1`='0' WHERE (`Id`='16499');
 
 -- Taretha doesnt have NpcFlags on spawn, she gets it during Thrall Escort
-UPDATE creature_template SET NpcFlags = 18887;
+UPDATE creature_template SET NpcFlags = 0 WHERE entry = 18887;
