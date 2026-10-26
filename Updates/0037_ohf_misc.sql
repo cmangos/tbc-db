@@ -103,6 +103,7 @@ DELETE FROM gossip_menu WHERE entry IN (7853);
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
 (7853, 9614, 0, 0);
 
+DELETE FROM gossip_menu_option WHERE menu_id IN (7853);
 
 -- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 92 ConnIdx: 0 Time: 10/08/2026 16:58:56.082 Number: 52972
 -- GossipGUID: Full: 0x20424446001271C0001B38000047AF8A Creature/0 R4241/S6968 Map: 560 Entry: 18887 Low: 4697994
