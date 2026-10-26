@@ -3310,11 +3310,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+63, 'Old Hillsbrad Foothills - Group 034 - Epoc Hunter Group 3', 0, 0, 0, 1, @STRINGID+17),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
-(@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
-(@SGGUID+1002, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel (182589)', '1', '1', '0', '0', '0'),
-(@SGGUID+1003, 'Old Hillsbrad Foothills - Orc Hut 3 - Barrel (182589)', '1', '1', '0', '0', '0'),
-(@SGGUID+1004, 'Old Hillsbrad Foothills - Orc Hut 4 - Barrel (182589)', '1', '1', '0', '0', '0'),
-(@SGGUID+1005, 'Old Hillsbrad Foothills - Orc Hut 5 - Barrel (182589)', '1', '1', '0', '0', '0');
+(@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', @SGGUID+7, '0', '0'),
+(@SGGUID+1002, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel (182589)', '1', '1', @SGGUID+7, '0', '0'),
+(@SGGUID+1003, 'Old Hillsbrad Foothills - Orc Hut 3 - Barrel (182589)', '1', '1', @SGGUID+7, '0', '0'),
+(@SGGUID+1004, 'Old Hillsbrad Foothills - Orc Hut 4 - Barrel (182589)', '1', '1', @SGGUID+7, '0', '0'),
+(@SGGUID+1005, 'Old Hillsbrad Foothills - Orc Hut 5 - Barrel (182589)', '1', '1', @SGGUID+7, '0', '0');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @OGUID+300, -1, 0), -- Mograine's Stronbox
@@ -3603,21 +3603,24 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 (@SGGUID+40, 2, @CGUID+434, 17860), -- Durnholde Veteran (Back Left)
 (@SGGUID+40, 2, @CGUID+416, 17833); -- Durnholde Warden (Back Right)
 
-DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3,@SGGUID+4,@SGGUID+5);
+DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3,@SGGUID+4,@SGGUID+5,@SGGUID+6);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@SGGUID+1, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
 (@SGGUID+2, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
 (@SGGUID+3, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal'),
 (@SGGUID+4, 'Old Hillsbrad Foothills - Lieutenant Drake - Trash respawn'),
-(@SGGUID+5, 'Old Hillsbrad Foothills - Thrall - Trash respawn');
+(@SGGUID+5, 'Old Hillsbrad Foothills - Thrall - Trash respawn'),
+(@SGGUID+6, 'Old Hillsbrad Foothills - Epoch Hunter - Trash despawn');
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3, @SGGUID+4, @SGGUID+5);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3, @SGGUID+4, @SGGUID+5, @SGGUID+6, @SGGUID+7);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
 (@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
 (@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal'),
 (@SGGUID+4, 42, @SGGUID+4, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Lieutenant Drake - Trash respawn'),
-(@SGGUID+5, 42, @SGGUID+5, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Thrall - Trash respawn');
+(@SGGUID+5, 42, @SGGUID+5, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Thrall - Trash respawn'),
+(@SGGUID+6, 42, @SGGUID+6, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Epoch Hunter - Trash despawn'),
+(@SGGUID+7, 42, 4660, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Epoch Hunter');
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -4045,7 +4048,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+57, 4, 2487.528, 703.4704, 55.777874, 100, 0, 0, NULL);
 
 
-DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+17;
+DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+18;
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+1, 'OHF_CITIZEN_CONVO_PARTNER'),
 (@STRINGID+2, 'OHF_LIEUTENANTDRAKE'),
@@ -4069,8 +4072,8 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+14, 'OHF_EPOCH_HUNTER'),
 (@STRINGID+15, 'OHF_EPOCH_WAVE_01'),
 (@STRINGID+16, 'OHF_EPOCH_WAVE_02'),
-(@STRINGID+17, 'OHF_EPOCH_WAVE_03');
-
+(@STRINGID+17, 'OHF_EPOCH_WAVE_03'),
+(@STRINGID+18, 'OHF_EPOCH_EVENT_DESPAWN');
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES
