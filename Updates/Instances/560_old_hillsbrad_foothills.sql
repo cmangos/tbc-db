@@ -2266,7 +2266,7 @@ INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `M
 ('2317701', 0, -1, 0, -1, 0, @RELAYID+13, 'OHF - Tarren Mill Lookout - Unit Flags RelayScript'),
 ('2317702', 0, 559168, 0, -1, 0, @RELAYID+14, 'OHF - Tarren Mill Lookout - Unit Flags RelayScript'),
 ('2317703', 0, 559168, 0, -1, 0, @RELAYID+15, 'OHF - Generic - UnitFlags RelayScript'),
-('2317704', 0, 559168, 0, -1, 0, @RELAYID+16, 'OHF - Tarren Mill Lookout - Unit Flags RelayScript'),
+('2317704', 0, 559168, 0, -1, 0, @RELAYID+16, 'OHF - Tarren Mill Lookout - Unit Flags RelayScript');
 
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -3309,10 +3309,10 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Group inside Inn
 (@SGGUID+59, 'Old Hillsbrad Foothills - Group 034 - Escort Group 6', 0, 0, 0, 1, @STRINGID+13),
 -- Epoch Hunter
-(@SGGUID+60, 'Old Hillsbrad Foothills - Group 034 - Epoch Hunter', 0, 0, 0, 1, @STRINGID+13),
-(@SGGUID+61, 'Old Hillsbrad Foothills - Group 034 - Epoc Hunter Group 1', 0, 0, 0, 1, @STRINGID+13),
-(@SGGUID+62, 'Old Hillsbrad Foothills - Group 034 - Epoc Hunter Group 2', 0, 0, 0, 1, @STRINGID+13),
-(@SGGUID+63, 'Old Hillsbrad Foothills - Group 034 - Epoc Hunter Group 3', 0, 0, 0, 1, @STRINGID+13),
+(@SGGUID+60, 'Old Hillsbrad Foothills - Group 034 - Epoch Hunter', 0, 0, 0, 1, @STRINGID+14),
+(@SGGUID+61, 'Old Hillsbrad Foothills - Group 034 - Epoc Hunter Group 1', 0, 0, 0, 1, @STRINGID+15),
+(@SGGUID+62, 'Old Hillsbrad Foothills - Group 034 - Epoc Hunter Group 2', 0, 0, 0, 1, @STRINGID+16),
+(@SGGUID+63, 'Old Hillsbrad Foothills - Group 034 - Epoc Hunter Group 3', 0, 0, 0, 1, @STRINGID+17),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', '0', '0', '0'),
@@ -3743,11 +3743,10 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+0, 79, 2656.5718, 661.57043, 61.90947, 100, 0, 0, NULL),
 (@SGGUID+0, 80, 2660.4854, 659.4092, 61.923397, 100, 1000, 1787620, 'Taretha'),
 (@SGGUID+0, 81, 2660.4854, 659.4092, 61.923397, 100, 8000, 1787621, 'Spawn Epoch Hunter'),
-(@SGGUID+0, 82, 2660.4854, 659.4092, 61.923397, 2.60054, 8000, 1787622, 'Say Text'),
-(@SGGUID+0, 83, 2660.4854, 659.4092, 61.923397, 5.87329, 3000, 1787623, 'Say Text'),
+(@SGGUID+0, 82, 2660.4854, 659.4092, 61.923397, 2.60054, 11000, 1787622, 'Say Text'),
 (@SGGUID+0, 84, 2656.3335, 677.86774, 57.15865, 100, 0, 0, NULL),
 (@SGGUID+0, 85, 2649.5864, 665.65063, 57.15862, 100, 0, 0, NULL),
-(@SGGUID+0, 86, 2635.069, 673.27954, 54.461433, 1.39288, 1000, 1787624, ''),
+(@SGGUID+0, 86, 2635.069, 673.27954, 54.461433, 1.39288, 1000, 1787623, 'Spawn group'),
 --
 (@SGGUID+4, 1, 1927.6208, 969.2012, 17.91233, 100, 0, 0, ''),
 (@SGGUID+4, 2, 1935.2817, 973.1046, 19.765339, 100, 0, 0, ''),
@@ -4051,7 +4050,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+57, 4, 2487.528, 703.4704, 55.777874, 100, 0, 0, NULL);
 
 
-DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+13;
+DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+17;
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+1, 'OHF_CITIZEN_CONVO_PARTNER'),
 (@STRINGID+2, 'OHF_LIEUTENANTDRAKE'),
@@ -4071,7 +4070,12 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+10, 'OHF_THRALL_BARN'),
 (@STRINGID+11, 'OHF_THRALL_INN'),
 (@STRINGID+12, 'OHF_SKARLOC_MOUNT'),
-(@STRINGID+13, 'OHF_BARN_GROUP');
+(@STRINGID+13, 'OHF_BARN_GROUP'),
+(@STRINGID+14, 'OHF_EPOCH_HUNTER'),
+(@STRINGID+15, 'OHF_EPOCH_WAVE_01'),
+(@STRINGID+16, 'OHF_EPOCH_WAVE_02'),
+(@STRINGID+17, 'OHF_EPOCH_WAVE_03');
+
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES
@@ -4124,7 +4128,7 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1787619,1787620,1787621,1787622,1787623,1787624,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1787619,1787620,1787621,1787622,1787623,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1876501, 1876502, 1876503, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Emote OneShot Point'),
 (1784801,0,1,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lieutenant Drake - Yell Text'),
@@ -4231,11 +4235,15 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787621,0,0,58,@SGGUID+60,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Epoch Hunter'),
 
 (1787622,0,1,0,0,0,0,0,0,0,16017,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
+(1787622,4000,0,15,33125,0,0,18887,10,4,0,0,0,0,0,0,0,0,'Thrall Escort - Taretha - Cast Shadow Spike'),
+(1787622,4000,1,1,34,0,0,18887,10,0,0,0,0,0,0,0,0,0,'Thrall Escort - Taretha - Emote OneShotWoundCritical'),
+(1787622,5000,0,28,7,0,0,18887,10,0,0,0,0,0,0,0,0,0,'Thrall Escort - Taretha - Standstate Dead'),
+(1787622,8000,0,36,0,0,0,18887,10,1,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Face Taretha'),
+(1787622,8000,1,0,0,0,0,0,0,0,16020,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
 
-(1787623,0,1,0,0,0,0,0,0,0,16020,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
-
-(1787624,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Pause Waypoints'),
-(1787624,0,0,58,@SGGUID+61,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Epoch Group 1'),
+(1787623,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Pause Waypoints'),
+(1787623,0,1,0,0,0,0,18096,30,0,16021,0,0,0,0,0,0,0,'Thrall Escort - Epoch - Yell Text'),
+(1787623,5000,0,58,@SGGUID+61,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Epoch Group 1'),
 
 (1809201, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Pause Waypoints'),
 (1809201, 0, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Cast Transform'),
