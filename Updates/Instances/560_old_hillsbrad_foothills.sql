@@ -3745,6 +3745,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+0, 84, 2656.3335, 677.86774, 57.15865, 100, 0, 0, NULL),
 (@SGGUID+0, 85, 2649.5864, 665.65063, 57.15862, 100, 0, 0, NULL),
 (@SGGUID+0, 86, 2635.069, 673.27954, 54.461433, 1.39288, 1000, 1787623, 'Spawn group'),
+(@SGGUID+0, 87, 2652.5547, 639.2832, 55.96842, 100, 1000, 1787624, 'End'),
 --
 (@SGGUID+4, 1, 1927.6208, 969.2012, 17.91233, 100, 0, 0, ''),
 (@SGGUID+4, 2, 1935.2817, 973.1046, 19.765339, 100, 0, 0, ''),
@@ -4250,12 +4251,14 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1809602,0,1,26,0,0,0,17876,100,0,0,0,0,0,0,0,0,0, 'Epoch Hunter - Attack Thrall'),
 
 (1809201, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Pause Waypoints'),
-(1809201, 0, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Cast Transform'),
+(1809201, 0, 1, 36, 0, 0, 0, 17876, 100, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Face Thrall'),
+(1809201, 0, 2, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Cast Transform'),
 (1809201, 15000, 0, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
 (1809201, 15000, 0, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Attack Thrall'),
 
 (1809301, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Pause Waypoints'),
-(1809301, 0, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Cast Transform'),
+(1809301, 0, 1, 36, 0, 0, 0, 17876, 100, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Face Thrall'),
+(1809301, 0, 2, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Cast Transform'),
 (1809301, 15000, 0, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
 (1809301, 15000, 0, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Attack Thrall'),
 
@@ -4278,7 +4281,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1859806,5000,2,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Orc Prisoner - UnPause Waypoints'),
 
 (1809401, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Pause Waypoints'),
-(1809401, 0, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Cast Transform'),
+(1809401, 0, 1, 36, 0, 0, 0, 17876, 100, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Face Thrall'),
+(1809401, 0, 2, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Cast Transform'),
 (1809401, 15000, 0, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
 (1809401, 15000, 0, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Attack Thrall'),
 
