@@ -150,3 +150,22 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2317701 WHERE `entry` = 23177;
 UPDATE `creature_template` SET `SpellList` = 2318301 WHERE `entry` = 23183;
+
+
+
+-- Tarren Mill Guardsman 23175 - 23181
+DELETE FROM `creature_template_spells` WHERE `entry` IN (23175, 23181);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2317501, 2318101);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2317501, 'Old Hillsbrad Foothills - Tarren Mill Guardsman - Normal', 0, 0),
+(2318101, 'Old Hillsbrad Foothills - Tarren Mill Guardsman - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2317501, 2318101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2317501, 1, 15749, 0, -1, 107, 0, 100, 0, 2000, 8000, 16000, 22000, 'Tarren Mill Guardsman - Shield Charge - random not in melee'),
+-- Heroic
+(2318101, 1, 15749, 0, -1, 107, 0, 100, 0, 2000, 8000, 16000, 22000, 'Tarren Mill Guardsman - Shield Charge - random not in melee');
+
+UPDATE `creature_template` SET `SpellList` = 2317501 WHERE `entry` = 23175;
+UPDATE `creature_template` SET `SpellList` = 2318101 WHERE `entry` = 23181;
