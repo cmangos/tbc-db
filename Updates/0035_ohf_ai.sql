@@ -140,12 +140,12 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (2317701, 2318301);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(2317701, 1, 35511, 0, -1, 1, 0, 100, 0, 8000, 18000, 8000, 18000, 'Tarren Mill Lookout - Serpent Sting - current'),
-(2317701, 2, 17174, 0, -1, 100, 0, 100, 0, 4000, 8000, 8000, 14000, 'Tarren Mill Lookout - Concussive Shot - random'),
+(2317701, 1, 35511, 0, -1, 130, 0, 100, 0, 4000, 12000, 4000, 12000, 'Tarren Mill Lookout - Serpent Sting - top aggro aura not present'),
+(2317701, 2, 17174, 0, -1, 130, 0, 100, 0, 4000, 8000, 6000, 9000, 'Tarren Mill Lookout - Concussive Shot - top aggro aura not present'),
 (2317701, 3, 15620, 2, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Tarren Mill Lookout - Shoot - current'),
 -- Heroic
-(2318301, 1, 35511, 0, -1, 1, 0, 100, 0, 8000, 18000, 8000, 18000, 'Tarren Mill Lookout - Serpent Sting - current'),
-(2318301, 2, 17174, 0, -1, 100, 0, 100, 0, 4000, 8000, 8000, 14000, 'Tarren Mill Lookout - Concussive Shot - random'),
+(2318301, 1, 35511, 0, -1, 130, 0, 100, 0, 4000, 12000, 4000, 12000, 'Tarren Mill Lookout - Serpent Sting - top aggro aura not present'),
+(2318301, 2, 17174, 0, -1, 130, 0, 100, 0, 6000, 9000, 6000, 9000, 'Tarren Mill Lookout - Concussive Shot - top aggro aura not present'),
 (2318301, 3, 16100, 2, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Tarren Mill Lookout - Shoot - current');
 
 UPDATE `creature_template` SET `SpellList` = 2317701 WHERE `entry` = 23177;

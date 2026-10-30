@@ -124,3 +124,16 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 205
 -- Heroic - SpeedWalk 1,48 SpeedRun 1,14286, DamageMultiplier 13,0053 DamageVariance 0,4 MinDmg 3889 MaxDmg 4348
 UPDATE creature_template SET MinLevel = 68, MaxLevel = 68, UnitClass = 2, SpeedWalk = 1, SpeedRun = 1.4285, MeleeBaseAttackTime = 2000, DamageMultiplier = 9.0092, DamageVariance = 0.3727, MinMeleeDmg = 1636, MaxMeleeDmg = 2304 WHERE entry = 17862;
 UPDATE creature_template SET MinLevel = 72, MaxLevel = 72, UnitClass = 2, SpeedWalk = 1, SpeedRun = 1.4285, MeleeBaseAttackTime = 2000, DamageMultiplier = 18.4059, DamageVariance = 0.3689, MinMeleeDmg = 4452, MaxMeleeDmg = 6290 WHERE entry = 20521;
+
+-- Tarren Mill Lookout 23177 - 23183
+-- Level 67-68 UnitClass 2
+-- WalkSpeed 2.5
+-- RunSpeed: 8
+-- AttackRoundBaseTime: 2000
+-- MinControle Data
+-- MinDmg 855.00 MaxDmg 1203.72 AP 276 Armor 4995 
+-- Str 148 Agi 104 Sta 271 Int 127 SP 118
+-- Old Values
+-- Normal SpeedWalk 1,2 DamageMultiplier 2,29256 DamageVariance 0,4 MinDmg 457 MaxDmg 549
+UPDATE creature_template SET MinLevel = 67, MaxLevel = 68, UnitClass = 2, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 4.7075, DamageVariance = 0.37, MinMeleeDmg = 855.00, MaxMeleeDmg = 1203.72 WHERE entry = 23177;
+UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 23183;

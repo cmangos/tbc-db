@@ -4664,7 +4664,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscript_random_templates` WHERE `id` IN (10203,10204,10205, @RELAYID+1, @RELAYID+2, @RELAYID+3, @RELAYID+4, @RELAYID+5);
+DELETE FROM `dbscript_random_templates` WHERE `id` IN (10203,10204,10205, @RELAYID+1, @RELAYID+2, @RELAYID+3, @RELAYID+4, @RELAYID+5, @RELAYID+6, @RELAYID+7);
 INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 (@RELAYID+1, 0, 19511, 0, 'OHF - Random Aggro Texts'),
 (@RELAYID+1, 0, 19512, 0, 'OHF - Random Aggro Texts'),
@@ -4691,6 +4691,13 @@ INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `c
 (@RELAYID+5, 0, 19520, 10, 'OHF - Orc Prisoner - Random OOC Texts'),
 (@RELAYID+5, 0, 19521, 10, 'OHF - Orc Prisoner - Random OOC Texts'),
 (@RELAYID+5, 0, 19522, 10, 'OHF - Orc Prisoner - Random OOC Texts'),
+
+(@RELAYID+6, 0, 19528, 0, 'OHF - Random Aggro Texts - TarrenMill NPCs'),
+(@RELAYID+6, 0, 19529, 0, 'OHF - Random Aggro Texts - TarrenMill NPCs'),
+
+(@RELAYID+7, 0, 19530, 0, 'OHF - Random Death Texts - TarrenMill NPCs'),
+(@RELAYID+7, 0, 19531, 0, 'OHF - Random Death Texts - TarrenMill NPCs'),
+(@RELAYID+7, 0, 19532, 0, 'OHF - Random Death Texts - TarrenMill NPCs'),
 
 (10203, 1, 10223, 0, 'Nat Pagle - Dream 1'),
 (10203, 1, 10224, 0, 'Nat Pagle - Dream 2'),
