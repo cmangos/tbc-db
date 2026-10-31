@@ -4658,7 +4658,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+16, 1100, 1, 31, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout - TerminateScript if Thrall not found'),
 (@RELAYID+16, 1101, 2, 26, 0, 0, 0, 17876, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout - Attack Thrall'),
 -- Epoch Hunter on Spawn RP
-(@RELAYID+17, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 16016, 0, 0, 0, 0, 0, 0, 0, 'OHF - Epoch Hunter Say Text'),
+(@RELAYID+17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16016, 0, 0, 0, 0, 0, 0, 0, 'OHF - Epoch Hunter Say Text'),
 (@RELAYID+17, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 16019, 0, 0, 0, 0, 0, 0, 0, 'OHF - Epoch Hunter Say Text');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

@@ -166,7 +166,7 @@ UPDATE creature_template SET MinLevel = 67, MaxLevel = 68, UnitClass = 2, SpeedW
 UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 23184;
 
 -- Tarren Mill Guardsman 18092 - 20545
--- Level 68 UnitClass 1
+-- Level 67-68 UnitClass 1
 -- WalkSpeed 2.5
 -- RunSpeed: 8
 -- AttackRoundBaseTime: 2000
@@ -175,11 +175,11 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 231
 -- 156 Agi 117 Sta 296 Int 32 SP 85
 -- Old Values
 -- Normal SpeedWalk 1,2 DamageMultiplier 2,45847 DamageVariance 0,4 MinDmg 457 MaxDmg 549
-UPDATE creature_template SET MinLevel = 68, MaxLevel = 68, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 5.0530, DamageVariance = 0.37, MinMeleeDmg = 921.88, MaxMeleeDmg = 1299.48 WHERE entry = 18092;
+UPDATE creature_template SET MinLevel = 67, MaxLevel = 68, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 5.0530, DamageVariance = 0.37, MinMeleeDmg = 921.88, MaxMeleeDmg = 1299.48 WHERE entry = 18092;
 UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 20545;
 
 -- Tarren Mill Guardsman 23175 - 23181
--- Level 68 UnitClass 1
+-- Level 67-68 UnitClass 1
 -- WalkSpeed 2.5
 -- RunSpeed: 8
 -- AttackRoundBaseTime: 2000
@@ -188,11 +188,11 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 205
 -- 156 Agi 117 Sta 296 Int 32 SP 85
 -- Old Values
 -- Normal SpeedWalk 1,2 DamageMultiplier 2,45847 DamageVariance 0,4 MinDmg 457 MaxDmg 549
-UPDATE creature_template SET MinLevel = 68, MaxLevel = 68, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 5.0530, DamageVariance = 0.37, MinMeleeDmg = 921.88, MaxMeleeDmg = 1299.48 WHERE entry = 23175;
+UPDATE creature_template SET MinLevel = 67, MaxLevel = 68, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 5.0530, DamageVariance = 0.37, MinMeleeDmg = 921.88, MaxMeleeDmg = 1299.48 WHERE entry = 23175;
 UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 23181;
 
 -- Tarren Mill Guardsman 23176 - 23182
--- Level 68 UnitClass 1
+-- Level 67-68 UnitClass 1
 -- WalkSpeed 2.5
 -- RunSpeed: 8
 -- AttackRoundBaseTime: 2000
@@ -201,7 +201,7 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 231
 -- 156 Agi 117 Sta 296 Int 32 SP 85
 -- Old Values
 -- Normal SpeedWalk 1,2 DamageMultiplier 2,45847 DamageVariance 0,4 MinDmg 457 MaxDmg 549
-UPDATE creature_template SET MinLevel = 68, MaxLevel = 68, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 5.0530, DamageVariance = 0.37, MinMeleeDmg = 921.88, MaxMeleeDmg = 1299.48 WHERE entry = 23176;
+UPDATE creature_template SET MinLevel = 67, MaxLevel = 68, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 5.0530, DamageVariance = 0.37, MinMeleeDmg = 921.88, MaxMeleeDmg = 1299.48 WHERE entry = 23176;
 UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 23182;
 
 -- Tarren Mill Protector 18093 - 20547
@@ -242,3 +242,19 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 231
 -- Normal SpeedWalk 1,2 DamageMultiplier 3,43884 DamageVariance 0,4 MinDmg 457 MaxDmg 549
 UPDATE creature_template SET MinLevel = 67, MaxLevel = 68, UnitClass = 2, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 3000, DamageMultiplier = 7.6342, DamageVariance = 0.37, MinMeleeDmg = 1225.45, MaxMeleeDmg = 1721.72 WHERE entry = 23180;
 UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 23186;
+
+
+-- Epoch Hunter 18096 - 20531
+-- Level 68 UnitClass 1
+-- Level 72 Heroic
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+-- AttackRoundBaseTime: 2000
+-- Damage Values based on Dungeon Companion II Book
+-- MinDmg 1536 MaxDmg 2165
+-- Heroic MinDmg 5227 MaxDmg 7393
+-- Old Values
+-- Normal - SpeedWalk 1,48 SpeedRun 1,14286, DamageMultiplier 8,47216 DamageVariance 0,4 MinDmg 1585 MaxDmg 2026
+-- Heroic - SpeedWalk 1,48 SpeedRun 1,14286, DamageMultiplier 21,4971 DamageVariance 0,4 MinDmg 3967 MaxDmg 4735
+UPDATE creature_template SET MinLevel = 68, MaxLevel = 68, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 8.4187, DamageVariance = 0.3755, MinMeleeDmg = 1536, MaxMeleeDmg = 2165 WHERE entry = 18096;
+UPDATE creature_template SET MinLevel = 72, MaxLevel = 72, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 21.5289, DamageVariance = 0.3717, MinMeleeDmg = 5227, MaxMeleeDmg = 7393 WHERE entry = 20531;

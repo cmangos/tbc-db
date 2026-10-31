@@ -168,7 +168,6 @@ UPDATE creature_template SET UnitFlags = 33600 WHERE entry IN (23179, 23185);
 -- Tarren Mill Protector 23180 - 23186 - spawned in church
 UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (23180, 23186);
 
-
 -- Tarren Mill Guardsman 18092 - 20545- spawned at inn
 UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (18092, 20545);
 -- Tarren Mill Guardsman 23175 - 23181 - spawned at Barn
