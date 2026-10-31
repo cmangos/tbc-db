@@ -154,17 +154,24 @@ UPDATE creature_template SET NpcFlags = 0 WHERE entry = 18887;
 
 
 -- UnitFlags for Tarren Mill NPCs spawned during Escort
+-- Tarren Mill Lookout 18094 - 20546 - spawned in INN
+UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (18094, 20546);
 -- Tarren Mill Lookout 23177 - 23183 - spawned at Barn
 UPDATE creature_template SET UnitFlags = 33600 WHERE entry IN (23177, 23183);
--- Tarren Mill Lookout 23178 - 23184 - spawned in church and inn
+-- Tarren Mill Lookout 23178 - 23184 - spawned in church
 UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (23178, 23184);
 
+-- Tarren Mill Protector 18093 - 20547 - spawned in church
+UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (18093, 20547);
 -- Tarren Mill Protector 23179 - 23185 - spawned at Barn
 UPDATE creature_template SET UnitFlags = 33600 WHERE entry IN (23179, 23185);
--- Tarren Mill Protector 23180 - 23186 - spawned in church and inn
+-- Tarren Mill Protector 23180 - 23186 - spawned in church
 UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (23180, 23186);
 
+
+-- Tarren Mill Guardsman 18092 - 20545- spawned at inn
+UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (18092, 20545);
 -- Tarren Mill Guardsman 23175 - 23181 - spawned at Barn
 UPDATE creature_template SET UnitFlags = 33600 WHERE entry IN (23175, 23181);
--- Tarren Mill Guardsman 23176 - 23182 - spawned in church and inn
+-- Tarren Mill Guardsman 23176 - 23182 - spawned in church
 UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (23176, 23182);
