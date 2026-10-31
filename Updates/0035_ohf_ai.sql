@@ -169,3 +169,27 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2317501 WHERE `entry` = 23175;
 UPDATE `creature_template` SET `SpellList` = 2318101 WHERE `entry` = 23181;
+
+-- Tarren Mill Protector 23179 - 23185
+DELETE FROM creature_spell_targeting WHERE Id = 211;
+INSERT INTO `creature_spell_targeting` (`Id`, `Type`, `Param1`, `Param2`, `Param3`, `Comments`) VALUES 
+('211', '2', '20', '1', '1', 'Support - Missing 20% including self');
+
+DELETE FROM `creature_template_spells` WHERE `entry` IN (23179, 23185);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2317901, 2318501);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2317901, 'Old Hillsbrad Foothills - Tarren Mill Protector - Normal', 0, 0),
+(2318101, 'Old Hillsbrad Foothills - Tarren Mill Protector - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2317901, 2318501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2317901, 1, 17843, 0, -1, 211, 0, 100, 0, 5000, 10000, 10000, 10000, 'Tarren Mill Protector - Flash Heal - missing 20% including self'),
+(2317901, 2, 32588, 0, -1, 1, 0, 100, 0, 6000, 12000, 12000, 18000, 'Tarren Mill Protector - Concussion Blow - current'),
+-- Heroic
+(2318501, 1, 29380, 0, -1, 3, 0, 100, 0, 0, 6000, 2000, 6000, 'Tarren Mill Protector - Cleanse - eligible friendly dispel'),
+(2318501, 2, 17138, 0, -1, 211, 0, 100, 0, 5000, 10000, 10000, 10000, 'Tarren Mill Protector - Flash Heal - missing 20% including self'),
+(2318501, 3, 32588, 0, -1, 1, 0, 100, 0, 6000, 12000, 12000, 18000, 'Tarren Mill Protector - Concussion Blow - current'),
+
+UPDATE `creature_template` SET `SpellList` = 2317901 WHERE `entry` = 23179;
+UPDATE `creature_template` SET `SpellList` = 2318501 WHERE `entry` = 23185;
