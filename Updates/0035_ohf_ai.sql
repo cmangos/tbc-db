@@ -151,6 +151,27 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 UPDATE `creature_template` SET `SpellList` = 2317701 WHERE `entry` = 23177;
 UPDATE `creature_template` SET `SpellList` = 2318301 WHERE `entry` = 23183;
 
+-- Tarren Mill Lookout 23178 - 23184
+ DELETE FROM `creature_template_spells` WHERE `entry` IN (23178, 23184);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2317801, 2318401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2317801, 'Old Hillsbrad Foothills - Tarren Mill Lookout - Normal', 0, 80),
+(2318401, 'Old Hillsbrad Foothills - Tarren Mill Lookout - Heroic', 0, 80);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2317801, 2318401);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2317801, 1, 35511, 0, -1, 130, 0, 100, 0, 4000, 12000, 4000, 12000, 'Tarren Mill Lookout - Serpent Sting - top aggro aura not present'),
+(2317801, 2, 17174, 0, -1, 130, 0, 100, 0, 4000, 8000, 6000, 9000, 'Tarren Mill Lookout - Concussive Shot - top aggro aura not present'),
+(2317801, 3, 15620, 2, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Tarren Mill Lookout - Shoot - current'),
+-- Heroic
+(2318401, 1, 35511, 0, -1, 130, 0, 100, 0, 4000, 12000, 4000, 12000, 'Tarren Mill Lookout - Serpent Sting - top aggro aura not present'),
+(2318401, 2, 17174, 0, -1, 130, 0, 100, 0, 6000, 9000, 6000, 9000, 'Tarren Mill Lookout - Concussive Shot - top aggro aura not present'),
+(2318401, 3, 16100, 2, -1, 1, 0, 100, 0, 0, 2000, 2000, 4000, 'Tarren Mill Lookout - Shoot - current');
+
+UPDATE `creature_template` SET `SpellList` = 2317701 WHERE `entry` = 23178;
+UPDATE `creature_template` SET `SpellList` = 2318401 WHERE `entry` = 23184;
+
 
 
 -- Tarren Mill Guardsman 23175 - 23181
@@ -170,6 +191,24 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 UPDATE `creature_template` SET `SpellList` = 2317501 WHERE `entry` = 23175;
 UPDATE `creature_template` SET `SpellList` = 2318101 WHERE `entry` = 23181;
 
+-- Tarren Mill Guardsman 23176 - 23182
+DELETE FROM `creature_template_spells` WHERE `entry` IN (23176, 23182);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2317601, 2318201);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2317601, 'Old Hillsbrad Foothills - Tarren Mill Guardsman - Normal', 0, 0),
+(2318201, 'Old Hillsbrad Foothills - Tarren Mill Guardsman - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2317601, 2318201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2317601, 1, 15749, 0, -1, 107, 0, 100, 0, 2000, 8000, 16000, 22000, 'Tarren Mill Guardsman - Shield Charge - random not in melee'),
+-- Heroic
+(2318201, 1, 15749, 0, -1, 107, 0, 100, 0, 2000, 8000, 16000, 22000, 'Tarren Mill Guardsman - Shield Charge - random not in melee');
+
+UPDATE `creature_template` SET `SpellList` = 2317601 WHERE `entry` = 23176;
+UPDATE `creature_template` SET `SpellList` = 2318201 WHERE `entry` = 23182;
+
+
 -- Tarren Mill Protector 23179 - 23185
 DELETE FROM creature_spell_targeting WHERE Id = 211;
 INSERT INTO `creature_spell_targeting` (`Id`, `Type`, `Param1`, `Param2`, `Param3`, `Comments`) VALUES 
@@ -180,7 +219,7 @@ DELETE FROM `creature_template_spells` WHERE `entry` IN (23179, 23185);
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2317901, 2318501);
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
 (2317901, 'Old Hillsbrad Foothills - Tarren Mill Protector - Normal', 0, 0),
-(2318101, 'Old Hillsbrad Foothills - Tarren Mill Protector - Heroic', 0, 0);
+(2318501, 'Old Hillsbrad Foothills - Tarren Mill Protector - Heroic', 0, 0);
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (2317901, 2318501);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
@@ -193,3 +232,23 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2317901 WHERE `entry` = 23179;
 UPDATE `creature_template` SET `SpellList` = 2318501 WHERE `entry` = 23185;
+
+-- Tarren Mill Protector 23180 - 23186
+DELETE FROM `creature_template_spells` WHERE `entry` IN (23180, 23186);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2318001, 2318601);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2318001, 'Old Hillsbrad Foothills - Tarren Mill Protector - Normal', 0, 0),
+(2318601, 'Old Hillsbrad Foothills - Tarren Mill Protector - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2318001, 2318601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2318001, 1, 17843, 0, -1, 211, 0, 100, 0, 5000, 10000, 10000, 10000, 'Tarren Mill Protector - Flash Heal - missing 20% including self'),
+(2318001, 2, 32588, 0, -1, 1, 0, 100, 0, 6000, 12000, 12000, 18000, 'Tarren Mill Protector - Concussion Blow - current'),
+-- Heroic
+(2318601, 1, 29380, 0, -1, 3, 0, 100, 0, 0, 6000, 2000, 6000, 'Tarren Mill Protector - Cleanse - eligible friendly dispel'),
+(2318601, 2, 17138, 0, -1, 211, 0, 100, 0, 5000, 10000, 10000, 10000, 'Tarren Mill Protector - Flash Heal - missing 20% including self'),
+(2318601, 3, 32588, 0, -1, 1, 0, 100, 0, 6000, 12000, 12000, 18000, 'Tarren Mill Protector - Concussion Blow - current'),
+
+UPDATE `creature_template` SET `SpellList` = 2318001 WHERE `entry` = 23180;
+UPDATE `creature_template` SET `SpellList` = 2318601 WHERE `entry` = 23186;

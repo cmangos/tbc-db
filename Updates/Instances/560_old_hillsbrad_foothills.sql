@@ -2220,10 +2220,12 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 (@CGUID+666, 1787601),
 (@CGUID+667, 1787601),
 
+-- Barn Group RP
 (@CGUID+690, 2317701),
-(@CGUID+694, 2317702),
 
+-- Church Group - Attack Thrall on Spawn
 (@CGUID+693, 2317703),
+(@CGUID+694, 2317702),
 (@CGUID+695, 2317703),
 (@CGUID+696, 2317703),
 
@@ -2258,10 +2260,10 @@ INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `M
 ('1809201', 0, 33600, 18247, 0, 0, 0, 'OHF - Tarren Mill Guardsman - UnitFlags and Display'),
 ('1809301', 0, 33600, 18267, 0, 0, 0, 'OHF - Tarren Mill Protector - UnitFlags and Display'),
 ('1809401', 0, 33600, 18262, 0, 0, 0, 'OHF - Tarren Mill Lookout - UnitFlags and Display'),
-('2317701', 0, -1, 0, -1, 0, @RELAYID+13, 'OHF - Tarren Mill Lookout - Unit Flags RelayScript'),
-('2317702', 0, 559168, 0, -1, 0, @RELAYID+14, 'OHF - Tarren Mill Lookout - Unit Flags RelayScript'),
-('2317703', 0, -1, 0, -1, 0, @RELAYID+15, 'OHF - Generic - UnitFlags RelayScript'),
-('2317704', 0, 559168, 0, -1, 0, @RELAYID+16, 'OHF - Tarren Mill Lookout - Unit Flags RelayScript');
+('2317701', 0, -1, 0, -1, 0, @RELAYID+13, 'OHF - Tarren Mill Lookout - RelayScript'),
+('2317702', 0, -1, 0, -1, 0, @RELAYID+14, 'OHF - Tarren Mill Lookout - RelayScript'),
+('2317703', 0, -1, 0, -1, 0, @RELAYID+15, 'OHF - Generic - RelayScript'),
+('2317704', 0, -1, 0, -1, 0, @RELAYID+16, 'OHF - Tarren Mill Lookout - RelayScript');
 
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -2973,10 +2975,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+691, 23175, 560, 0, 2500.0908203125, 699.93890380859375, 55.62955474853515625, 4.293509960174560546, 10, 10, 0, 0), -- Tarren Mill Guardsman
 (@CGUID+692, 23179, 560, 0, 2501.57080078125, 699.380859375, 55.64138031005859375, 3.857177734375, 10, 10, 0, 0), -- Tarren Mill Protector
 -- Church group
-(@CGUID+693, 23177, 560, 0, 2628.370361328125, 658.505859375, 55.64336776733398437, 4.426807403564453125, 10, 10, 0, 0), -- Tarren Mill Lookout
-(@CGUID+694, 23177, 560, 0, 2630.338623046875, 657.8673095703125, 55.62746429443359375, 4.342343807220458984, 10, 10, 0, 0), -- Tarren Mill Lookout
-(@CGUID+695, 23179, 560, 0, 2629.108642578125, 660.787109375, 54.613433837890625, 4.424306869506835937, 10, 10, 0, 0), -- Tarren Mill Protector
-(@CGUID+696, 23175, 560, 0, 2631.073974609375, 660.1329345703125, 54.60430145263671875, 4.347332954406738281, 10, 10, 0, 0), -- Tarren Mill Guardsman
+(@CGUID+693, 23178, 560, 0, 2628.370361328125, 658.505859375, 55.64336776733398437, 4.426807403564453125, 10, 10, 0, 0), -- Tarren Mill Lookout
+(@CGUID+694, 23178, 560, 0, 2630.338623046875, 657.8673095703125, 55.62746429443359375, 4.342343807220458984, 10, 10, 0, 0), -- Tarren Mill Lookout
+(@CGUID+695, 23180, 560, 0, 2629.108642578125, 660.787109375, 54.613433837890625, 4.424306869506835937, 10, 10, 0, 0), -- Tarren Mill Protector
+(@CGUID+696, 23176, 560, 0, 2631.073974609375, 660.1329345703125, 54.60430145263671875, 4.347332954406738281, 10, 10, 0, 0), -- Tarren Mill Guardsman
 -- Inn Group
 (@CGUID+697, 23177, 560, 0, 2646.6533203125, 659.1583251953125, 62.01339340209960937, 1.01229095458984375, 10, 10, 0, 0), -- Tarren Mill Lookout
 (@CGUID+698, 23177, 560, 0, 2656.42138671875, 659.76336669921875, 62.01339340209960937, 1.854856848716735839, 10, 10, 0, 0), -- Tarren Mill Lookout

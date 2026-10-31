@@ -151,3 +151,20 @@ UPDATE `broadcast_text` SET `EmoteID1`='0' WHERE (`Id`='16499');
 
 -- Taretha doesnt have NpcFlags on spawn, she gets it during Thrall Escort
 UPDATE creature_template SET NpcFlags = 0 WHERE entry = 18887;
+
+
+-- UnitFlags for Tarren Mill NPCs spawned during Escort
+-- Tarren Mill Lookout 23177 - 23183 - spawned at Barn
+UPDATE creature_template SET UnitFlags = 33600 WHERE entry IN (23177, 23183);
+-- Tarren Mill Lookout 23178 - 23184 - spawned in church and inn
+UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (23178, 23184);
+
+-- Tarren Mill Protector 23179 - 23185 - spawned at Barn
+UPDATE creature_template SET UnitFlags = 33600 WHERE entry IN (23179, 23185);
+-- Tarren Mill Protector 23180 - 23186 - spawned in church and inn
+UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (23180, 23186);
+
+-- Tarren Mill Guardsman 23175 - 23181 - spawned at Barn
+UPDATE creature_template SET UnitFlags = 33600 WHERE entry IN (23175, 23181);
+-- Tarren Mill Guardsman 23176 - 23182 - spawned in church and inn
+UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (23176, 23182);
