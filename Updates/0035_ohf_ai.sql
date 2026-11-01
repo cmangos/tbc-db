@@ -321,9 +321,32 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 (2053401, 'Old Hillsbrad Foothills - Infinite Slayer  - Heroic', 0, 0);
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1817001, 2053401);
-(1817001, 2, 16856, 0, -1, 1, 0, 100, 0, 5000, 14000, 12000, 11000, 'Infinite Slayer - Mortal Strike- current'),
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1817001, 2, 16856, 0, -1, 1, 0, 100, 0, 5000, 14000, 12000, 11000, 'Infinite Slayer - Mortal Strike - current'),
 -- Heroic
 (2053401, 3, 15708, 0, -1, 1, 0, 100, 0, 5000, 14000, 12000, 11000, 'Infinite Slayer - Mortal Strike - current');
 
 UPDATE `creature_template` SET `SpellList` = 1817001 WHERE `entry` = 18170;
 UPDATE `creature_template` SET `SpellList` = 2053401 WHERE `entry` = 20534;
+
+
+-- Infinite Defiler  18171 - 20532
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18171, 20532);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1817101, 2053201);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1817101, 'Old Hillsbrad Foothills - Infinite Defiler  - Normal', 0, 70),
+(2053201, 'Old Hillsbrad Foothills - Infinite Defiler  - Heroic', 0, 70);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1817101, 2053201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1817101, 1, 31977, 2, -1, 121, 0, 100, 0, 2000, 8000, 18000, 23000, 'Infinite Defiler - Curse of Infinity - random aura not present'),
+(1817101, 2, 21068, 2, -1, 121, 0, 100, 0, 4000, 12000, 10000, 22000, 'Infinite Defiler - Corruption - random aura not present'),
+(1817101, 3, 15232, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Infinite Defiler - Shadow Bolt - current'),
+-- Heroic
+(2053201, 1, 38387, 2, -1, 121, 0, 100, 0, 2000, 8000, 18000, 23000, 'Infinite Defiler - Bane of Infinity - random aura not present'),
+(2053201, 2, 21068, 2, -1, 121, 0, 100, 0, 4000, 12000, 10000, 22000, 'Infinite Defiler - Corruption - random aura not present'),
+(2053201, 3, 38386, 2, -1, 1, 0, 100, 0, 0, 0, 0, 0, 'Infinite Defiler - Shadow Bolt - current');
+
+UPDATE `creature_template` SET `SpellList` = 1817101 WHERE `entry` = 18171;
+UPDATE `creature_template` SET `SpellList` = 2053201 WHERE `entry` = 20532;

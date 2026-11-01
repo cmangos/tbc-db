@@ -268,3 +268,13 @@ UPDATE creature_template SET MinLevel = 72, MaxLevel = 72, UnitClass = 1, SpeedW
 -- No Mindcontrole Data
 -- Old Values
 -- Normal - SpeedWalk 1,48 SpeedRun 1,14286, DamageMultiplier 5,46326 DamageVariance 0,4 MinDmg 922 MaxDmg 1299
+
+
+-- Infinite Defiler  18171 - 20532
+-- Level 68 UnitClass 2
+-- WalkSpeed: 4
+-- RunSpeed: 10
+-- AttackRoundBaseTime: 2000
+-- No Mindcontrole Data
+-- Old Values
+-- Normal - SpeedWalk 1,48 SpeedRun 1,14286, DamageMultiplier 5,09457 DamageVariance 0,4 MinDmg 855 MaxDmg 1204
