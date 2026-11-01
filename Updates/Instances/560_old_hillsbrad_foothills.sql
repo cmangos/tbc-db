@@ -4658,7 +4658,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscript_random_templates` WHERE `id` IN (10203,10204,10205, @RELAYID+1, @RELAYID+2, @RELAYID+3, @RELAYID+4, @RELAYID+5, @RELAYID+6, @RELAYID+7);
+DELETE FROM `dbscript_random_templates` WHERE `id` IN (10203,10204,10205, @RELAYID+1, @RELAYID+2, @RELAYID+3, @RELAYID+4, @RELAYID+5, @RELAYID+6, @RELAYID+7, @RELAYID+8, @RELAYID+9);
 INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 (@RELAYID+1, 0, 19511, 0, 'OHF - Random Aggro Texts'),
 (@RELAYID+1, 0, 19512, 0, 'OHF - Random Aggro Texts'),
@@ -4692,6 +4692,14 @@ INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `c
 (@RELAYID+7, 0, 19530, 0, 'OHF - Random Death Texts - TarrenMill NPCs'),
 (@RELAYID+7, 0, 19531, 0, 'OHF - Random Death Texts - TarrenMill NPCs'),
 (@RELAYID+7, 0, 19532, 0, 'OHF - Random Death Texts - TarrenMill NPCs'),
+
+(@RELAYID+8, 0, 19533, 0, 'OHF - Random Aggro Texts - Epoch Wave NPCs'),
+(@RELAYID+8, 0, 19534, 0, 'OHF - Random Aggro Texts - Epoch Wave NPCs'),
+(@RELAYID+8, 0, 19535, 0, 'OHF - Random Aggro Texts - Epoch Wave NPCs'),
+
+(@RELAYID+9, 0, 19536, 0, 'OHF - Random Death Texts - Epoch Wave NPCs'),
+(@RELAYID+9, 0, 19537, 0, 'OHF - Random Death Texts - Epoch Wave NPCs'),
+(@RELAYID+9, 0, 19538, 0, 'OHF - Random Death Texts - Epoch Wave NPCs'),
 
 (10203, 1, 10223, 0, 'Nat Pagle - Dream 1'),
 (10203, 1, 10224, 0, 'Nat Pagle - Dream 2'),

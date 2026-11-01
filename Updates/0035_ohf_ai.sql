@@ -265,7 +265,7 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 -- Heroic
 (2054701, 1, 29380, 0, -1, 3, 0, 100, 0, 0, 6000, 2000, 6000, 'Tarren Mill Protector - Cleanse - eligible friendly dispel'),
 (2054701, 2, 17138, 0, -1, 211, 0, 100, 0, 5000, 10000, 10000, 10000, 'Tarren Mill Protector - Flash Heal - missing 20% including self'),
-(2054701, 3, 32588, 0, -1, 1, 0, 100, 0, 6000, 12000, 12000, 18000, 'Tarren Mill Protector - Concussion Blow - current'),
+(2054701, 3, 32588, 0, -1, 1, 0, 100, 0, 6000, 12000, 12000, 18000, 'Tarren Mill Protector - Concussion Blow - current');
 
 UPDATE `creature_template` SET `SpellList` = 1809301 WHERE `entry` = 18093;
 UPDATE `creature_template` SET `SpellList` = 2054701 WHERE `entry` = 20547;
@@ -286,7 +286,7 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 -- Heroic
 (2318501, 1, 29380, 0, -1, 3, 0, 100, 0, 0, 6000, 2000, 6000, 'Tarren Mill Protector - Cleanse - eligible friendly dispel'),
 (2318501, 2, 17138, 0, -1, 211, 0, 100, 0, 5000, 10000, 10000, 10000, 'Tarren Mill Protector - Flash Heal - missing 20% including self'),
-(2318501, 3, 32588, 0, -1, 1, 0, 100, 0, 6000, 12000, 12000, 18000, 'Tarren Mill Protector - Concussion Blow - current'),
+(2318501, 3, 32588, 0, -1, 1, 0, 100, 0, 6000, 12000, 12000, 18000, 'Tarren Mill Protector - Concussion Blow - current');
 
 UPDATE `creature_template` SET `SpellList` = 2317901 WHERE `entry` = 23179;
 UPDATE `creature_template` SET `SpellList` = 2318501 WHERE `entry` = 23185;
@@ -306,7 +306,24 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 -- Heroic
 (2318601, 1, 29380, 0, -1, 3, 0, 100, 0, 0, 6000, 2000, 6000, 'Tarren Mill Protector - Cleanse - eligible friendly dispel'),
 (2318601, 2, 17138, 0, -1, 211, 0, 100, 0, 5000, 10000, 10000, 10000, 'Tarren Mill Protector - Flash Heal - missing 20% including self'),
-(2318601, 3, 32588, 0, -1, 1, 0, 100, 0, 6000, 12000, 12000, 18000, 'Tarren Mill Protector - Concussion Blow - current'),
+(2318601, 3, 32588, 0, -1, 1, 0, 100, 0, 6000, 12000, 12000, 18000, 'Tarren Mill Protector - Concussion Blow - current');
 
 UPDATE `creature_template` SET `SpellList` = 2318001 WHERE `entry` = 23180;
 UPDATE `creature_template` SET `SpellList` = 2318601 WHERE `entry` = 23186;
+
+
+-- Infinite Slayer  18170 - 20534
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18170, 20534);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1817001, 2053401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1817001, 'Old Hillsbrad Foothills - Infinite Slayer  - Normal', 0, 0),
+(2053401, 'Old Hillsbrad Foothills - Infinite Slayer  - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1817001, 2053401);
+(1817001, 2, 16856, 0, -1, 1, 0, 100, 0, 5000, 14000, 12000, 11000, 'Infinite Slayer - Mortal Strike- current'),
+-- Heroic
+(2053401, 3, 15708, 0, -1, 1, 0, 100, 0, 5000, 14000, 12000, 11000, 'Infinite Slayer - Mortal Strike - current');
+
+UPDATE `creature_template` SET `SpellList` = 1817001 WHERE `entry` = 18170;
+UPDATE `creature_template` SET `SpellList` = 2053401 WHERE `entry` = 20534;

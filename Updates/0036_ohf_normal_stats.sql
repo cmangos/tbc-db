@@ -258,3 +258,13 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 231
 -- Heroic - SpeedWalk 1,48 SpeedRun 1,14286, DamageMultiplier 21,4971 DamageVariance 0,4 MinDmg 3967 MaxDmg 4735
 UPDATE creature_template SET MinLevel = 68, MaxLevel = 68, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 8.4187, DamageVariance = 0.3755, MinMeleeDmg = 1536, MaxMeleeDmg = 2165 WHERE entry = 18096;
 UPDATE creature_template SET MinLevel = 72, MaxLevel = 72, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 21.5289, DamageVariance = 0.3717, MinMeleeDmg = 5227, MaxMeleeDmg = 7393 WHERE entry = 20531;
+
+
+-- Infinite Slayer  18170 - 20534
+-- Level 68 UnitClass 1
+-- WalkSpeed: 4
+-- RunSpeed: 10
+-- AttackRoundBaseTime: 2000
+-- No Mindcontrole Data
+-- Old Values
+-- Normal - SpeedWalk 1,48 SpeedRun 1,14286, DamageMultiplier 5,46326 DamageVariance 0,4 MinDmg 922 MaxDmg 1299
