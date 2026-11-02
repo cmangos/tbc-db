@@ -24,14 +24,6 @@ INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`,
 
 UPDATE creature_template SET Detection = 20 WHERE entry = 17876;
 
-
--- 33937 Stun Phase 2 Units
-DELETE FROM spell_script_target WHERE entry = 33937;
-INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES 
-('33937', '5', '5600007'), -- Most EscortNPCs
-('33937', '5', '5600012'), -- Horse Special StringID
-('33937', '5', '5600013'); -- BarnGroup StringID
-
 -- Part 2 Gossip
 -- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 107 ConnIdx: 0 Time: 10/08/2026 16:54:27.895 Number: 44301
 -- GossipGUID: Full: 0x2042444600117500001B38000047AD2F Creature/0 R4241/S6968 Map: 560 Entry: 17876 Low: 4697391
@@ -105,6 +97,7 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 
 DELETE FROM gossip_menu_option WHERE menu_id IN (7853);
 
+-- Taretha Gossip
 -- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 92 ConnIdx: 0 Time: 10/08/2026 16:58:56.082 Number: 52972
 -- GossipGUID: Full: 0x20424446001271C0001B38000047AF8A Creature/0 R4241/S6968 Map: 560 Entry: 18887 Low: 4697994
 -- GossipID: 7849
@@ -116,8 +109,6 @@ DELETE FROM gossip_menu_option WHERE menu_id IN (7853);
 -- GossipID: 7852
 -- (GossipOptions) Text: We'll get you out, Taretha. Don't worry. I doubt the wizard would wander too far away.
 -- BroadcastTextID: 15993
-
-
 DELETE FROM npc_text_broadcast_text WHERE Id IN (9610, 9613);
 INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
 (9610, 1, 15987), -- Thank you for helping Thrall escape, friends. Now I only hope you can help me as well. I awoke this morning to find myself trapped in this magical prison. A strange wizard told me that I would have to stay here for a while.
@@ -139,6 +130,38 @@ UPDATE creature_template SET GossipMenuId = 7849 WHERE entry = 18887;
 -- We cant handle multiple gossips via DB - use core instead
 UPDATE creature_template SET GossipMenuId = 0 WHERE entry = 17876;
 
+-- Brazen Gossip
+-- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 38 ConnIdx: 0 Time: 08/15/2026 12:04:49.656 Number: 68263
+-- GossipGUID: Full: 0x20425C460012494000105E000000399C Creature/0 R4247/S4190 Map: 560 Entry: 18725 Low: 14748
+-- GossipID: 7959
+-- BroadcastTextID: 16460
+-- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 110 ConnIdx: 0 Time: 08/15/2026 12:04:56.269 Number: 68395
+-- GossipGUID: Full: 0x20425C460012494000105E000000399C Creature/0 R4247/S4190 Map: 560 Entry: 18725 Low: 14748
+-- GossipID: 7959
+-- BroadcastTextID: 16459
+DELETE FROM npc_text_broadcast_text WHERE Id IN (9779, 9780);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(9779, 1, 16459), -- I can take you to Durnholde directly, if that is your wish.
+(9780, 1, 16460); -- You should recieve a pack of incendiary bombs from Erozion before I fly you to Durnholde. You wouldn't want to waste time, after all.
+DELETE FROM npc_text WHERE ID IN (9779, 9780);
+
+DELETE FROM gossip_menu WHERE entry IN (7959);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(7959, 9779, 0, 416),
+(7959, 9780, 0, 417);
+
+DELETE FROM gossip_menu_option WHERE menu_id IN (7959);
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `condition_id`) VALUES 
+(7959, 0, 0, 'I\'m ready to go to Durnholde Keep.', 16461, 1, 1, -1, 0, 7959, 416);
+
+DELETE FROM conditions WHERE condition_entry IN (416, 417);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) 
+VALUES (416, 2, 25853, 1, 0, 0, 0, 'Player Has 1 or more of Item ID 25853 in Inventory'),
+VALUES (417, 2, 25853, 1, 0, 0, 1, 'Player Has Less Than 1 of Item ID 25853 in Inventory');
+
+DELETE FROM dbscripts_on_gossip WHERE ID = 7959;
+INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(7959, 0, 0, 30, 534, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Brazen - Start Taxi Path');
 
 -- Equipment for respawn
 DELETE FROM creature_equip_template WHERE entry = 17876;
@@ -174,3 +197,10 @@ UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (18092, 20545);
 UPDATE creature_template SET UnitFlags = 33600 WHERE entry IN (23175, 23181);
 -- Tarren Mill Guardsman 23176 - 23182 - spawned in church
 UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (23176, 23182);
+
+-- 33937 Stun Phase 2 Units
+DELETE FROM spell_script_target WHERE entry = 33937;
+INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES 
+('33937', '5', '5600007'), -- Most EscortNPCs
+('33937', '5', '5600012'), -- Horse Special StringID
+('33937', '5', '5600013'); -- BarnGroup StringID
