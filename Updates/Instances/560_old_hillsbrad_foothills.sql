@@ -3002,7 +3002,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+710, 18170, 560, 0, 2645.724609375, 709.71533203125, 56.69411087036132812, 4.380776405334472656, 10, 10, 0, 0), -- Infinite Slayer
 (@CGUID+711, 18171, 560, 0, 2646.28857421875, 718.52569580078125, 57.90024185180664062, 4.328416347503662109, 10, 10, 0, 0), -- Infinite Defiler
 -- Erozion position after EpochEvent
-(@CGUID+712, 18723, 560, 3, 2647.480224609375, 682.788208007812, 55.6207923889160156, 4.084070205688476562, 86400, 86400, 0, 0); -- Erozion
+(@CGUID+712, 18723, 560, 0, 2647.480224609375, 682.788208007812, 55.6207923889160156, 4.084070205688476562, 86400, 86400, 0, 0); -- Erozion
 
 -- ===========
 -- GAMEOBJECTS
@@ -3614,7 +3614,7 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 (@SGGUID+40, 2, @CGUID+434, 17860), -- Durnholde Veteran (Back Left)
 (@SGGUID+40, 2, @CGUID+416, 17833); -- Durnholde Warden (Back Right)
 
-DELETE FROM `worldstate_name` WHERE `Id` IN BETWEEN @SGGUID+1 AND @SGGUID+7;
+DELETE FROM `worldstate_name` WHERE `Id` BETWEEN @SGGUID+1 AND @SGGUID+7;
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@SGGUID+1, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
 (@SGGUID+2, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
@@ -4333,7 +4333,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1888701, 18000, 4, 0, 0, 0, 0, @STRINGID+20, 50, 2048, 16086, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Say Text'), -- 12:18:22.254 
 
 (1888701, 24000, 0, 15, 33336, 0, 0, @STRINGID+20, 50, 2048, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Cast Memory Wipe'), -- 12:18:28.148
-(1888701, 26000, 0, 0, 0, 0, 0, @STRINGID+20, 50, 2048, 16087, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Say Text'), --12:18:30.781
+(1888701, 26000, 0, 0, 0, 0, 0, @STRINGID+20, 50, 2048, 16087, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Say Text'),-- 12:18:30.781
 (1888701, 38000, 0, 0, 0, 0, 0, @STRINGID+20, 50, 2048, 16088, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Say Text'),-- 12:18:42.950
 (1888701, 44000, 0, 15, 33337, 0, 0, @STRINGID+20, 50, 2048, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Cast Memory Wipe Resume'), -- 12:18:48.830
 (1888701, 44000, 1, 1, 1, 0, 0, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Thrall - Emote OneShotTalk'),
