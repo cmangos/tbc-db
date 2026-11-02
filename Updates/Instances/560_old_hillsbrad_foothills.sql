@@ -4256,8 +4256,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- spawn Epoch wave 1
 (1787623,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Pause Waypoints'),
 (1787623,0,1,0,0,0,0,18096,30,0,16021,0,0,0,0,0,0,0,'Thrall Escort - Epoch - Yell Text'),
-(1787623,5000,0,58,@SGGUID+61,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Epoch Group 1'),
-
 -- Epoch Hunter
 (1809601,0,1,0,0,0,0,0,0,0,16023,0,0,0,0,0,0,0,'Thrall Escort - Epoch - Yell Text'),
 
@@ -4332,22 +4330,19 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1888701, 18000, 2, 58, @SGGUID+65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Spawn Erozion'),
 (1888701, 18000, 3, 15, 7791, 0, 0, @STRINGID+20, 50, 2052, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Cast Teleport'),
 (1888701, 18500, 4, 0, 0, 0, 0, @STRINGID+20, 50, 2048, 16086, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Say Text'), -- 12:18:22.254 
-
 (1888701, 24000, 0, 15, 33336, 0, 0, @STRINGID+20, 50, 2052, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Cast Memory Wipe'), -- 12:18:28.148
 (1888701, 26000, 0, 0, 0, 0, 0, @STRINGID+20, 50, 2048, 16087, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Say Text'),-- 12:18:30.781
 (1888701, 38000, 0, 0, 0, 0, 0, @STRINGID+20, 50, 2048, 16088, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Say Text'),-- 12:18:42.950
 (1888701, 44000, 0, 15, 33337, 0, 0, @STRINGID+20, 50, 2052, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Cast Memory Wipe Resume'), -- 12:18:48.830
 (1888701, 44000, 1, 1, 1, 0, 0, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Thrall - Emote OneShotTalk'),
 (1888701, 44000, 2, 0, 0, 0, 0, 17876, 50, 0, 16089, 0, 0, 0, 0, 0, 0, 0,'Taretha - Thrall - Say Text'),
-
 (1888701, 48000, 0, 32, 0, 0, 0, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Thrall - Unpaus Waypoints'),
 (1888701, 50000, 0, 36, 0, 0, 0, 17876, 150, 1, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Face Thrall'),
 (1888701, 50000, 1, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Emote OneShotWave'),
 (1888701, 50000, 2, 0, 0, 0, 0, 0, 0, 0, 16090, 0, 0, 0, 0, 0, 0, 0,'Taretha - Say Text'),
-
 (1888701, 54000, 0, 29, 3, 1, 0, @STRINGID+20, 50, 2048, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Change NPC Flags'),
 (1888701, 54000, 1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Taretha - UnPause Waypoints'),
-
+-- Chef Jessen
 (2037801, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Pause Waypoints'),
 (2037801, 1000, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Send AI Event A to Self (starts emote loop & script repeat timer)'),
 (2037802, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18140, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Say 1'),
@@ -4705,7 +4700,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+16, 1100, 1, 31, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout - TerminateScript if Thrall not found'),
 (@RELAYID+16, 1101, 2, 26, 0, 0, 0, 17876, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout - Attack Thrall'),
 -- Epoch Hunter on Spawn RP
-(@RELAYID+17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16016, 0, 0, 0, 0, 0, 0, 0, 'OHF - Epoch Hunter Say Text'),
+(@RELAYID+17, 500, 0, 0, 0, 0, 0, 0, 0, 0, 16016, 0, 0, 0, 0, 0, 0, 0, 'OHF - Epoch Hunter Say Text'),
 (@RELAYID+17, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 16019, 0, 0, 0, 0, 0, 0, 0, 'OHF - Epoch Hunter Say Text');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
