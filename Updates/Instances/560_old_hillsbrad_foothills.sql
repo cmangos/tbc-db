@@ -3000,7 +3000,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+708, 18172, 560, 0, 2641.787841796875, 719.71063232421875, 57.40230178833007812, 4.468042850494384765, 10, 10, 0, 0), -- Infinite Saboteur
 (@CGUID+709, 18170, 560, 0, 2639.640625, 710.52459716796875, 56.23582077026367187, 4.607669353485107421, 10, 10, 0, 0), -- Infinite Slayer
 (@CGUID+710, 18170, 560, 0, 2645.724609375, 709.71533203125, 56.69411087036132812, 4.380776405334472656, 10, 10, 0, 0), -- Infinite Slayer
-(@CGUID+711, 18171, 560, 0, 2646.28857421875, 718.52569580078125, 57.90024185180664062, 4.328416347503662109, 10, 10, 0, 0); -- Infinite Defiler
+(@CGUID+711, 18171, 560, 0, 2646.28857421875, 718.52569580078125, 57.90024185180664062, 4.328416347503662109, 10, 10, 0, 0), -- Infinite Defiler
+-- Erozion position after EpochEvent
+(@CGUID+712, 18723, 560, 3, 2647.480224609375, 682.788208007812, 55.6207923889160156, 4.084070205688476562, 86400, 86400, 0, 0); -- Erozion
 
 -- ===========
 -- GAMEOBJECTS
@@ -3312,6 +3314,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+61, 'Old Hillsbrad Foothills - Group 036 - Epoc Hunter Wave 1', 0, 0, 0, 1, @STRINGID+15),
 (@SGGUID+62, 'Old Hillsbrad Foothills - Group 037 - Epoc Hunter Wave 2', 0, 0, 0, 1, @STRINGID+16),
 (@SGGUID+63, 'Old Hillsbrad Foothills - Group 038 - Epoc Hunter Wave 3', 0, 0, 0, 1, @STRINGID+17),
+-- Erozion 2 different spawns
+(@SGGUID+64, 'Old Hillsbrad Foothills - Erozion - Entrance', 0, 0, 0, 0, @STRINGID+19),
+(@SGGUID+65, 'Old Hillsbrad Foothills - Erozion - Tarren Mill', 0, 0, 0, 0, @STRINGID+20),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', @SGGUID+7, '0', '0'),
@@ -3517,6 +3522,8 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+63, @CGUID+710, -1, 0), -- Infinite Slayer
 (@SGGUID+63, @CGUID+711, -1, 0), -- Infinite Defiler
 
+(@SGGUID+64, @CGUID+474, -1, 0), -- Erozion
+(@SGGUID+65, @CGUID+712, -1, 0), -- Erozion
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
 (@SGGUID+1000, @OGUID+50, -1, 0),-- Roaring Flame
@@ -4055,7 +4062,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+57, 4, 2487.528, 703.4704, 55.777874, 100, 0, 0, NULL);
 
 
-DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+18;
+DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+20;
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+1, 'OHF_CITIZEN_CONVO_PARTNER'),
 (@STRINGID+2, 'OHF_LIEUTENANTDRAKE'),
@@ -4080,7 +4087,9 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+15, 'OHF_EPOCH_WAVE_01'),
 (@STRINGID+16, 'OHF_EPOCH_WAVE_02'),
 (@STRINGID+17, 'OHF_EPOCH_WAVE_03'),
-(@STRINGID+18, 'OHF_EPOCH_EVENT_DESPAWN');
+(@STRINGID+18, 'OHF_EPOCH_EVENT_DESPAWN'),
+(@STRINGID+19, 'OHF_EROZION_ENTRANCE'),
+(@STRINGID+20, 'OHF_EROZION_TARRENMILL');
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES
@@ -4318,8 +4327,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 
 (1888701, 18000, 0, 1, 6, 0, 0, 17876, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Taretha - Thrall Emote OneShotQuestion'),
 (1888701, 18000, 1, 0, 0, 0, 0, 17876, 10, 0, 16084, 0, 0, 0, 0, 0, 0, 0, 'Taretha - Thrall Say Text'), -- 12:18:22.055
--- 12:18:22.085 [0] UpdateType: CreateObject2
-[0] Object Guid: Full: 0x20425C46001248C000105E0000003CED Creature/0 R4247/S4190 Map: 560 Entry: 18723 Low: 15597
+(1888701, 18000, 2, 58, @SGGUID+65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Spawn Erozion'),
 
 (2037801, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Pause Waypoints'),
 (2037801, 1000, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Send AI Event A to Self (starts emote loop & script repeat timer)'),
