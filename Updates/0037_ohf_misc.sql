@@ -163,6 +163,58 @@ DELETE FROM dbscripts_on_gossip WHERE ID = 7959;
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (7959, 0, 0, 30, 534, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Brazen - Start Taxi Path');
 
+-- Quest: Taretha's Diversion
+-- Brazen whispers text on quest accept
+DELETE FROM dbscripts_on_quest_start WHERE ID = 10283;
+INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(10283, 0, 0, 0, 0, 0, 0, 18725, 10, 0, 17753, 0, 0, 0, 0, 0, 0, 0,'Taretha\'s Diversion - Brazen say Text');
+
+UPDATE quest_template SET StartScript = 10283 WHERE entry = 10283;
+
+-- Erozion Gossip
+-- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 163 ConnIdx: 0 Time: 08/15/2026 12:04:51.486 Number: 68294
+-- GossipGUID: Full: 0x20425C46001248C000105E000000399C Creature/0 R4247/S4190 Map: 560 Entry: 18723 Low: 14748
+-- GossipID: 7769
+-- TextID: 9778
+-- (GossipOptions) Text: I need a pack of incendiary bombs.
+-- (GossipQuests) QuestID: 29598
+-- BroadcastTextID: 16458
+
+-- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 39 ConnIdx: 0 Time: 10/02/2026 18:37:27.095 Number: 21282
+-- GossipGUID: Full: 0x20313C46001248C0009D6200003FDDA4 Creature/0 R3151/S40290 Map: 560 Entry: 18723 Low: 4185508
+-- GossipID: 7770
+-- BroadcastTextID: 15785
+DELETE FROM npc_text_broadcast_text WHERE Id IN (9778, 9515);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(9778, 1, 16458), -- You must use the incendiary bombs at the barrels inside the internment lodges of Durnholde Keep. Once five bombs have been ignited and the diversion has been set, find Thrall in the basement prison of Durnholde and set him free. Follow him and make sure that he does not die!$B$BBrazen will fly you to Durnholde when you are ready.
+(9515, 1, 15785); -- Here are more of the incendiary devices, $n. Be careful with these, they can cause a great deal of disruption to time if used improperly.
+
+DELETE FROM gossip_menu WHERE entry IN (7769, 7770);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(7769, 9778, 0, 0),
+(7770, 9515, 0, 0);
+
+DELETE FROM gossip_menu_option WHERE menu_id IN (7769, 7770);
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `condition_id`) VALUES 
+(7769, 0, 0, 'I need a pack of incendiary bombs.', 15784, 1, 1, 7770, 0, 0, 0);
+
+-- ServerToClient: SMSG_GOSSIP_MESSAGE (0x2A98) Length: 85 ConnIdx: 0 Time: 06/13/2021 22:30:40.828 Number: 457378
+-- GossipGUID: Full: 0x2045FC46001248C000026E00004669FD Creature/0 R4479/S622 Map: 560 Entry: 18723 Low: 4614653
+-- GossipID: 8391
+-- FriendshipFactionID: 0
+-- TextID: 10475
+-- BroadcastTextID: 19500
+DELETE FROM npc_text_broadcast_text WHERE Id IN (10475);
+INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
+(10475, 1, 19500); -- Shaping the flow of time is a very difficult and quite delicate task, but you have performed admirably today.
+
+DELETE FROM gossip_menu WHERE entry IN (8391);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
+(8391, 10475, 0, 0);
+
+-- We cant handle multiple gossips via DB - use core instead
+UPDATE creature_template SET GossipMenuId = 0 WHERE entry = 18723;
+
 -- Equipment for respawn
 DELETE FROM creature_equip_template WHERE entry = 17876;
 INSERT INTO `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`) VALUES ('17876', '14880', '1961');
