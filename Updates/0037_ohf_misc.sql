@@ -188,6 +188,7 @@ DELETE FROM npc_text_broadcast_text WHERE Id IN (9778, 9515);
 INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
 (9778, 1, 16458), -- You must use the incendiary bombs at the barrels inside the internment lodges of Durnholde Keep. Once five bombs have been ignited and the diversion has been set, find Thrall in the basement prison of Durnholde and set him free. Follow him and make sure that he does not die!$B$BBrazen will fly you to Durnholde when you are ready.
 (9515, 1, 15785); -- Here are more of the incendiary devices, $n. Be careful with these, they can cause a great deal of disruption to time if used improperly.
+DELETE FROM npc_text WHERE ID IN (9778, 9515);
 
 DELETE FROM gossip_menu WHERE entry IN (7769, 7770);
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
@@ -207,6 +208,7 @@ INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`,
 DELETE FROM npc_text_broadcast_text WHERE Id IN (10475);
 INSERT INTO npc_text_broadcast_text (`Id`, `Prob0`, `BroadcastTextId0`) VALUES 
 (10475, 1, 19500); -- Shaping the flow of time is a very difficult and quite delicate task, but you have performed admirably today.
+DELETE FROM npc_text WHERE ID = 10475;
 
 DELETE FROM gossip_menu WHERE entry IN (8391);
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 

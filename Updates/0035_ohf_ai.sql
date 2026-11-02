@@ -133,12 +133,12 @@ UPDATE `creature_template` SET `SpellList` = 2052501 WHERE `entry` = 20525;
 -- Tarren Mill Lookout 18094 - 20546
 DELETE FROM `creature_template_spells` WHERE `entry` IN (18094, 20546);
 
-DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1809401, 2318301);
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1809401, 2054601);
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
 (1809401, 'Old Hillsbrad Foothills - Tarren Mill Lookout - Normal', 0, 80),
-(2318301, 'Old Hillsbrad Foothills - Tarren Mill Lookout - Heroic', 0, 80);
+(2054601, 'Old Hillsbrad Foothills - Tarren Mill Lookout - Heroic', 0, 80);
 
-DELETE FROM `creature_spell_list` WHERE `Id` IN (1809401, 2318301);
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1809401, 2054601);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (1809401, 1, 35511, 0, -1, 130, 0, 100, 0, 4000, 12000, 4000, 12000, 'Tarren Mill Lookout - Serpent Sting - top aggro aura not present'),
 (1809401, 2, 17174, 0, -1, 130, 0, 100, 0, 4000, 8000, 6000, 9000, 'Tarren Mill Lookout - Concussive Shot - top aggro aura not present'),
@@ -322,9 +322,9 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1817001, 2053401);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1817001, 1, 16856, 0, -1, 1, 0, 100, 0, 5000, 14000, 12000, 11000, 'Infinite Slayer - Mortal Strike - current'),
+(1817001, 1, 16856, 0, -1, 1, 0, 100, 0, 5000, 14000, 12000, 24000, 'Infinite Slayer - Mortal Strike - current'),
 -- Heroic
-(2053401, 1, 15708, 0, -1, 1, 0, 100, 0, 5000, 14000, 12000, 11000, 'Infinite Slayer - Mortal Strike - current');
+(2053401, 1, 15708, 0, -1, 1, 0, 100, 0, 5000, 14000, 12000, 24000, 'Infinite Slayer - Mortal Strike - current');
 
 UPDATE `creature_template` SET `SpellList` = 1817001 WHERE `entry` = 18170;
 UPDATE `creature_template` SET `SpellList` = 2053401 WHERE `entry` = 20534;
