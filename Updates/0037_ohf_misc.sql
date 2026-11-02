@@ -155,9 +155,9 @@ INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`,
 (7959, 0, 0, 'I\'m ready to go to Durnholde Keep.', 16461, 1, 1, -1, 0, 7959, 416);
 
 DELETE FROM conditions WHERE condition_entry IN (416, 417);
-INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) 
-VALUES (416, 2, 25853, 1, 0, 0, 0, 'Player Has 1 or more of Item ID 25853 in Inventory'),
-VALUES (417, 2, 25853, 1, 0, 0, 1, 'Player Has Less Than 1 of Item ID 25853 in Inventory');
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
+(416, 2, 25853, 1, 0, 0, 0, 'Player Has 1 or more of Item ID 25853 in Inventory'),
+(417, 2, 25853, 1, 0, 0, 1, 'Player Has Less Than 1 of Item ID 25853 in Inventory');
 
 DELETE FROM dbscripts_on_gossip WHERE ID = 7959;
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
