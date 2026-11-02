@@ -215,18 +215,18 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 -- We cant handle multiple gossips via DB - use core instead
 UPDATE creature_template SET GossipMenuId = 0 WHERE entry = 18723;
 
--- Equipment for respawn
+-- Thrall should have Eqiipment when respawning at Skarloc/Barn/inn
 DELETE FROM creature_equip_template WHERE entry = 17876;
 INSERT INTO `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`) VALUES ('17876', '14880', '1961');
 
--- Thrall should have ActiveState all the time
-UPDATE creature_template SET ExtraFlags = 4096 WHERE entry = 17876;
+-- Thrall and Taretha should have ActiveState all the time
+UPDATE creature_template SET ExtraFlags = 4096 WHERE entry =IN (17876,18887);
 
+-- Remove EmoteID from Broadcast Text
 UPDATE `broadcast_text` SET `EmoteID1`='0' WHERE (`Id`='16499');
 
 -- Taretha doesnt have NpcFlags on spawn, she gets it during Thrall Escort
 UPDATE creature_template SET NpcFlags = 0 WHERE entry = 18887;
-
 
 -- UnitFlags for Tarren Mill NPCs spawned during Escort
 -- Tarren Mill Lookout 18094 - 20546 - spawned in INN
