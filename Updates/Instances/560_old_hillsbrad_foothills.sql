@@ -1750,7 +1750,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (18887, 0, 5, 2639.4006, 671.1351, 54.587334, 100, 1000, 1888701),
 (18887, 0, 6, 2639.655, 689.469, 55.278675, 100, 0, 0),
 (18887, 0, 7, 2640.3135, 702.6589, 56.032166, 100, 0, 0),
-(18887, 0, 8, 2635.322, 714.20325, 56.189804, 100, 0, 0),
+(18887, 0, 8, 2635.322, 714.20325, 56.189804, 100, 1000, 1),
 
 (28132, 0, 1, 2273.88, 802.112, 54.5013, 0, 0, 0),
 (28132, 0, 2, 2255.33, 775.917, 53.5853, 0, 0, 0),
@@ -3315,15 +3315,15 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+62, 'Old Hillsbrad Foothills - Group 037 - Epoc Hunter Wave 2', 0, 0, 0, 1, @STRINGID+16),
 (@SGGUID+63, 'Old Hillsbrad Foothills - Group 038 - Epoc Hunter Wave 3', 0, 0, 0, 1, @STRINGID+17),
 -- Erozion 2 different spawns
-(@SGGUID+64, 'Old Hillsbrad Foothills - Erozion - Entrance', 0, 0, 0, 0, @STRINGID+19),
+(@SGGUID+64, 'Old Hillsbrad Foothills - Erozion - Entrance', 0, 0, @SGGUID+6, 8, @STRINGID+19),
 (@SGGUID+65, 'Old Hillsbrad Foothills - Erozion - Tarren Mill', 0, 0, 0, 0, @STRINGID+20),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
-(@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', @SGGUID+7, '0', '0'),
-(@SGGUID+1002, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel (182589)', '1', '1', @SGGUID+7, '0', '0'),
-(@SGGUID+1003, 'Old Hillsbrad Foothills - Orc Hut 3 - Barrel (182589)', '1', '1', @SGGUID+7, '0', '0'),
-(@SGGUID+1004, 'Old Hillsbrad Foothills - Orc Hut 4 - Barrel (182589)', '1', '1', @SGGUID+7, '0', '0'),
-(@SGGUID+1005, 'Old Hillsbrad Foothills - Orc Hut 5 - Barrel (182589)', '1', '1', @SGGUID+7, '0', '0');
+(@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', @SGGUID+7, '8', '0'),
+(@SGGUID+1002, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel (182589)', '1', '1', @SGGUID+7, '8', '0'),
+(@SGGUID+1003, 'Old Hillsbrad Foothills - Orc Hut 3 - Barrel (182589)', '1', '1', @SGGUID+7, '8', '0'),
+(@SGGUID+1004, 'Old Hillsbrad Foothills - Orc Hut 4 - Barrel (182589)', '1', '1', @SGGUID+7, '8', '0'),
+(@SGGUID+1005, 'Old Hillsbrad Foothills - Orc Hut 5 - Barrel (182589)', '1', '1', @SGGUID+7, '8', '0');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @OGUID+300, -1, 0), -- Mograine's Stronbox
@@ -3614,14 +3614,14 @@ INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES
 (@SGGUID+40, 2, @CGUID+434, 17860), -- Durnholde Veteran (Back Left)
 (@SGGUID+40, 2, @CGUID+416, 17833); -- Durnholde Warden (Back Right)
 
-DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3,@SGGUID+4,@SGGUID+5,@SGGUID+6);
+DELETE FROM `worldstate_name` WHERE `Id` IN BETWEEN @SGGUID+1 AND @SGGUID+7;
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@SGGUID+1, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
 (@SGGUID+2, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
 (@SGGUID+3, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal'),
 (@SGGUID+4, 'Old Hillsbrad Foothills - Lieutenant Drake - Trash respawn'),
 (@SGGUID+5, 'Old Hillsbrad Foothills - Thrall - Trash respawn'),
-(@SGGUID+6, 'Old Hillsbrad Foothills - Epoch Hunter - Trash despawn');
+(@SGGUID+6, 'Old Hillsbrad Foothills - Erozion - despawn');
 
 DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3, @SGGUID+4, @SGGUID+5, @SGGUID+6, @SGGUID+7);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
@@ -3630,7 +3630,7 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal'),
 (@SGGUID+4, 42, @SGGUID+4, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Lieutenant Drake - Trash respawn'),
 (@SGGUID+5, 42, @SGGUID+5, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Thrall - Trash respawn'),
-(@SGGUID+6, 42, @SGGUID+6, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Epoch Hunter - Trash despawn'),
+(@SGGUID+6, 42, @SGGUID+6, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Erozion Despawn'),
 (@SGGUID+7, 42, 4660, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Epoch Hunter');
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
@@ -4327,7 +4327,25 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 
 (1888701, 18000, 0, 1, 6, 0, 0, 17876, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Taretha - Thrall Emote OneShotQuestion'),
 (1888701, 18000, 1, 0, 0, 0, 0, 17876, 10, 0, 16084, 0, 0, 0, 0, 0, 0, 0, 'Taretha - Thrall Say Text'), -- 12:18:22.055
+-- Despawn Erozion
 (1888701, 18000, 2, 58, @SGGUID+65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Spawn Erozion'),
+(1888701, 18000, 3, 15, 7791, 0, 0, @STRINGID+20, 50, 2048, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Cast Teleport'),
+(1888701, 18000, 4, 0, 0, 0, 0, @STRINGID+20, 50, 2048, 16086, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Say Text'), -- 12:18:22.254 
+
+(1888701, 24000, 0, 15, 33336, 0, 0, @STRINGID+20, 50, 2048, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Cast Memory Wipe'), -- 12:18:28.148
+(1888701, 26000, 0, 0, 0, 0, 0, @STRINGID+20, 50, 2048, 16087, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Say Text'), --12:18:30.781
+(1888701, 38000, 0, 0, 0, 0, 0, @STRINGID+20, 50, 2048, 16088, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Say Text'),-- 12:18:42.950
+(1888701, 44000, 0, 15, 33337, 0, 0, @STRINGID+20, 50, 2048, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Cast Memory Wipe Resume'), -- 12:18:48.830
+(1888701, 44000, 1, 1, 1, 0, 0, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Thrall - Emote OneShotTalk'),
+(1888701, 44000, 2, 0, 0, 0, 0, 17876, 50, 0, 16089, 0, 0, 0, 0, 0, 0, 0,'Taretha - Thrall - Say Text'),
+
+(1888701, 48000, 0, 32, 0, 0, 0, 17876, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Thrall - Unpaus Waypoints'),
+(1888701, 50000, 0, 36, 0, 0, 0, 17876, 150, 1, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Face Thrall'),
+(1888701, 50000, 1, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Emote OneShotWave'),
+(1888701, 50000, 2, 0, 0, 0, 0, 0, 0, 0, 16090, 0, 0, 0, 0, 0, 0, 0,'Taretha - Say Text'),
+
+(1888701, 54000, 0, 29, 3, 1, 0, @STRINGID+20, 50, 2048, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Change NPC Flags'),
+(1888701, 54000, 1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Taretha - UnPause Waypoints'),
 
 (2037801, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Pause Waypoints'),
 (2037801, 1000, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Send AI Event A to Self (starts emote loop & script repeat timer)'),
