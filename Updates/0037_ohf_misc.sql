@@ -220,7 +220,7 @@ DELETE FROM creature_equip_template WHERE entry = 17876;
 INSERT INTO `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`) VALUES ('17876', '14880', '1961');
 
 -- Thrall and Taretha should have ActiveState all the time
-UPDATE creature_template SET ExtraFlags = 4096 WHERE entry =IN (17876,18887);
+UPDATE creature_template SET ExtraFlags = 4096 WHERE entry IN (17876,18887);
 
 -- Remove EmoteID from Broadcast Text
 UPDATE `broadcast_text` SET `EmoteID1`='0' WHERE (`Id`='16499');
