@@ -169,6 +169,9 @@ DELETE FROM dbscripts_on_quest_start WHERE ID = 10283;
 INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10283, 0, 0, 0, 0, 0, 0, 18725, 10, 0, 17753, 0, 0, 0, 0, 0, 0, 0,'Taretha\'s Diversion - Brazen say Text');
 
+-- Broadcast text should get whispered
+UPDATE broadcast_text SET ChatTypeID = 4 WHERE Id = 17753;
+
 UPDATE quest_template SET StartScript = 10283 WHERE entry = 10283;
 
 -- Erozion Gossip
@@ -197,7 +200,12 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 
 DELETE FROM gossip_menu_option WHERE menu_id IN (7769, 7770);
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `condition_id`) VALUES 
-(7769, 0, 0, 'I need a pack of incendiary bombs.', 15784, 1, 1, 7770, 0, 0, 0);
+(7769, 0, 0, 'I need a pack of incendiary bombs.', 15784, 1, 3, 7770, 0, 7769, 0);
+
+DELETE FROM dbscripts_on_gossip WHERE ID = 7769;
+INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(7769, 0, 0, 34, 416, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Terminate if condition is true'),
+(7769, 1, 1, 17, 25853, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Add Item');
 
 -- ServerToClient: SMSG_GOSSIP_MESSAGE (0x2A98) Length: 85 ConnIdx: 0 Time: 06/13/2021 22:30:40.828 Number: 457378
 -- GossipGUID: Full: 0x2045FC46001248C000026E00004669FD Creature/0 R4479/S622 Map: 560 Entry: 18723 Low: 4614653
