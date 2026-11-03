@@ -17,8 +17,8 @@ UPDATE `creature_template` SET `DamageMultiplier` = 4, `SpeedWalk` = 1 WHERE `en
 -- Old Values: DamageMultiplier: 12.09 DamageVariance: 0.40 MinDMG: 2889.48 MaxDMG: 4198.65
 -- Formula: ((198.951 – 198.951 * x / 2) + (292 / 14)) * y = 1931 = ((198.951 + 198.951 * x / 2) + (292 / 14)) * y = 3162 (~>11.5851 0.5341)
 -- Formula: ((270.666 – 270.666 * x / 2) + (314 / 14)) * y = 7996 = ((270.666 + 270.666 * x / 2) + (314 / 14)) * y = 8429 (~>28.020 0.0571)
-UPDATE `creature_template` SET `DamageMultiplier` = 10.00, `SpeedWalk` = 1, `MeleeBaseAttackTime` = 2500 WHERE `entry` = 17848; -- 7.36572 0.4
-UPDATE `creature_template` SET `DamageMultiplier` = 20.00, `SpeedWalk` = 1, `MeleeBaseAttackTime` = 2500 WHERE `entry` = 20535; -- 12.0921 0.4
+-- UPDATE `creature_template` SET `DamageMultiplier` = 10.00, `SpeedWalk` = 1, `MeleeBaseAttackTime` = 2500 WHERE `entry` = 17848; -- 7.36572 0.4 - https://github.com/cmangos/tbc-db/commit/d3e7ceec11ea894f85da29510ee9044a7109b9ae
+-- UPDATE `creature_template` SET `DamageMultiplier` = 20.00, `SpeedWalk` = 1, `MeleeBaseAttackTime` = 2500 WHERE `entry` = 20535; -- 12.0921 0.4
 
 -- Captain Skarloc (17862,20521) - ccsdb_tbc
 -- UnitClass 2, Level 68/72 - MinMeleeDmg = 1346 MaxMeleeDmg = 2199 | MinMeleeDmg = 3658 MaxMeleeDmg = 5016
