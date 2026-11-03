@@ -3315,15 +3315,15 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+62, 'Old Hillsbrad Foothills - Group 037 - Epoc Hunter Wave 2', 0, 0, 0, 1, @STRINGID+16),
 (@SGGUID+63, 'Old Hillsbrad Foothills - Group 038 - Epoc Hunter Wave 3', 0, 0, 0, 1, @STRINGID+17),
 -- Erozion 2 different spawns
-(@SGGUID+64, 'Old Hillsbrad Foothills - Erozion - Entrance', 0, 0, @SGGUID+6, 8, @STRINGID+19),
+(@SGGUID+64, 'Old Hillsbrad Foothills - Erozion - Entrance', 0, 0, @SGGUID+7, 8, @STRINGID+19),
 (@SGGUID+65, 'Old Hillsbrad Foothills - Erozion - Tarren Mill', 0, 0, 0, 0, @STRINGID+20),
 -- gameobject
-(@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', '1', '0', '0', '0', @STRINGID+3),
-(@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', '1', '1', @SGGUID+7, '8', '0'),
-(@SGGUID+1002, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel (182589)', '1', '1', @SGGUID+7, '8', '0'),
-(@SGGUID+1003, 'Old Hillsbrad Foothills - Orc Hut 3 - Barrel (182589)', '1', '1', @SGGUID+7, '8', '0'),
-(@SGGUID+1004, 'Old Hillsbrad Foothills - Orc Hut 4 - Barrel (182589)', '1', '1', @SGGUID+7, '8', '0'),
-(@SGGUID+1005, 'Old Hillsbrad Foothills - Orc Hut 5 - Barrel (182589)', '1', '1', @SGGUID+7, '8', '0');
+(@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', 1, 0, 0, 0, @STRINGID+3),
+(@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', 1, 1, @SGGUID+7, 8, 0),
+(@SGGUID+1002, 'Old Hillsbrad Foothills - Orc Hut 2 - Barrel (182589)', 1, 1, @SGGUID+7, 8, 0),
+(@SGGUID+1003, 'Old Hillsbrad Foothills - Orc Hut 3 - Barrel (182589)', 1, 1, @SGGUID+7, 8, 0),
+(@SGGUID+1004, 'Old Hillsbrad Foothills - Orc Hut 4 - Barrel (182589)', 1, 1, @SGGUID+7, 8, 0),
+(@SGGUID+1005, 'Old Hillsbrad Foothills - Orc Hut 5 - Barrel (182589)', 1, 1, @SGGUID+7, 8, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @OGUID+300, -1, 0), -- Mograine's Stronbox
@@ -3621,7 +3621,8 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@SGGUID+3, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal'),
 (@SGGUID+4, 'Old Hillsbrad Foothills - Lieutenant Drake - Trash respawn'),
 (@SGGUID+5, 'Old Hillsbrad Foothills - Thrall - Trash respawn'),
-(@SGGUID+6, 'Old Hillsbrad Foothills - Erozion - despawn');
+(@SGGUID+6, 'Old Hillsbrad Foothills - Tarren Mill - Trash Despawn'),
+(@SGGUID+7, 'Old Hillsbrad Foothills - Thrall Event Done');
 
 DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3, @SGGUID+4, @SGGUID+5, @SGGUID+6, @SGGUID+7);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
@@ -3630,8 +3631,8 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal'),
 (@SGGUID+4, 42, @SGGUID+4, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Lieutenant Drake - Trash respawn'),
 (@SGGUID+5, 42, @SGGUID+5, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Thrall - Trash respawn'),
-(@SGGUID+6, 42, @SGGUID+6, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Erozion Despawn'),
-(@SGGUID+7, 42, 4660, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Epoch Hunter');
+(@SGGUID+6, 42, @SGGUID+6, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Tarren Mill - Trash despawn'),
+(@SGGUID+7, 42, @SGGUID+7, 1, 0, 0, 0, 'Old Hillsbrad Foothills - Thrall Event Done');
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
