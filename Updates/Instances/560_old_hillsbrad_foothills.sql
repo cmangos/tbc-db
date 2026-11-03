@@ -4239,7 +4239,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787617,0,1,0,0,0,0,0,0,0,15975,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
 (1787617,0,0,58,@SGGUID+58,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 2'),
 -- leave church and say text
-(1787617,0,0,58,@SGGUID+66,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Taretha'),
+(1787618,0,0,58,@SGGUID+66,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Taretha'),
 (1787618,0,1,0,0,0,0,0,0,0,15977,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
 -- Inn spawn last wave before boss event
 (1787619,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - WalkMode'),
