@@ -3318,7 +3318,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+64, 'Old Hillsbrad Foothills - Erozion - Entrance', 0, 0, @SGGUID+7, 8, @STRINGID+19),
 (@SGGUID+65, 'Old Hillsbrad Foothills - Erozion - Tarren Mill', 0, 0, 0, 0, @STRINGID+20),
 -- Taretha should get spawned during Escort
-(@SGGUID+66, 'Old Hillsbrad Foothills - Taretha', 0, 0, 0, 0, 0),
+(@SGGUID+66, 'Old Hillsbrad Foothills - Taretha', 0, 0, 0, 0, @STRINGID+21),
 
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', 1, 0, 0, 0, @STRINGID+3),
@@ -4068,7 +4068,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+57, 4, 2487.528, 703.4704, 55.777874, 100, 0, 0, NULL);
 
 
-DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+20;
+DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+21;
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+1, 'OHF_CITIZEN_CONVO_PARTNER'),
 (@STRINGID+2, 'OHF_LIEUTENANTDRAKE'),
@@ -4095,7 +4095,8 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 (@STRINGID+17, 'OHF_EPOCH_WAVE_03'),
 (@STRINGID+18, 'OHF_EPOCH_EVENT_DESPAWN'),
 (@STRINGID+19, 'OHF_EROZION_ENTRANCE'),
-(@STRINGID+20, 'OHF_EROZION_TARRENMILL');
+(@STRINGID+20, 'OHF_EROZION_TARRENMILL'),
+(@STRINGID+21, 'OHF_TARETHA');
 
 DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES
