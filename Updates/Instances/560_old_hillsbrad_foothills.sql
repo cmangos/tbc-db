@@ -2745,7 +2745,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+475, 18725, 560, 3, 2382.0925, 1172.2079, 66.58888, 1.37881, 86400, 86400, 0, 0), -- Brazen
 (@CGUID+476, 18764, 560, 3, 2185.3196, 116.59321, 89.446884, 4.248, 86400, 86400, 0, 2), -- Durnholde Armorer
 (@CGUID+477, 18765, 560, 3, 2201.1846, 154.27734, 89.446884, 1.9630, 86400, 86400, 0, 2), -- Durnholde Cook
-(@CGUID+478, 18887, 560, 3, 2664.6575, 657.5964, 62.021294, 2.72271, 86400, 86400, 0, 0), -- Taretha
+(@CGUID+478, 18887, 560, 0, 2664.6575, 657.5964, 62.021294, 2.72271, 86400, 86400, 0, 0), -- Taretha
 (@CGUID+479, 20342, 560, 3, 1735.42, 1075.09, 6.87962, 3.17806, 86400, 86400, 0, 0), -- Hal McAllister
 (@CGUID+480, 20344, 560, 3, 1735.39, 1077.48, 6.87962, 3.1545, 86400, 86400, 0, 0), -- Nat Pagle
 (@CGUID+481, 20345, 560, 3, 1818.3458, 1031.2239, 11.097511, 3.124123, 86400, 86400, 0, 0), -- Commander Mograine
@@ -3317,6 +3317,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Erozion 2 different spawns
 (@SGGUID+64, 'Old Hillsbrad Foothills - Erozion - Entrance', 0, 0, @SGGUID+7, 8, @STRINGID+19),
 (@SGGUID+65, 'Old Hillsbrad Foothills - Erozion - Tarren Mill', 0, 0, 0, 0, @STRINGID+20),
+-- Taretha should get spawned during Escort
+(@SGGUID+66, 'Old Hillsbrad Foothills - Taretha', 0, 0, 0, 0, 0),
+
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', 1, 0, 0, 0, @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', 1, 1, @SGGUID+7, 8, 0),
@@ -3524,6 +3527,8 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+64, @CGUID+474, -1, 0), -- Erozion
 (@SGGUID+65, @CGUID+712, -1, 0), -- Erozion
+
+(@SGGUID+66, @CGUID+478, -1, 0), -- Taretha
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
 (@SGGUID+1000, @OGUID+50, -1, 0),-- Roaring Flame
@@ -4234,6 +4239,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1787617,0,1,0,0,0,0,0,0,0,15975,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
 (1787617,0,0,58,@SGGUID+58,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Group 2'),
 -- leave church and say text
+(1787617,0,0,58,@SGGUID+66,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Spawn Taretha'),
 (1787618,0,1,0,0,0,0,0,0,0,15977,0,0,0,0,0,0,0,'Thrall Escort - Thrall - Say Text'),
 -- Inn spawn last wave before boss event
 (1787619,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Thrall - WalkMode'),
