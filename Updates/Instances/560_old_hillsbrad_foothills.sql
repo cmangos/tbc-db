@@ -4333,7 +4333,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 
 (1888701, 18000, 0, 1, 6, 0, 0, 17876, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Taretha - Thrall Emote OneShotQuestion'),
 (1888701, 18000, 1, 0, 0, 0, 0, 17876, 10, 0, 16084, 0, 0, 0, 0, 0, 0, 0, 'Taretha - Thrall Say Text'), -- 12:18:22.055
--- Despawn Erozion
+(1888701, 18000, 2, 53, 0, 0, 0, 0, 0, 0, @SGGUID+7, 1, 0, 0, 0, 0, 0, 0,'Taretha - Worldstate ThrallEventFinished'),
 (1888701, 18000, 2, 58, @SGGUID+65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Spawn Erozion'),
 (1888701, 18000, 3, 15, 7791, 0, 0, @STRINGID+20, 50, 2052, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Cast Teleport'),
 (1888701, 18500, 4, 0, 0, 0, 0, @STRINGID+20, 50, 2048, 16086, 0, 0, 0, 0, 0, 0, 0,'Taretha - Erozion - Say Text'), -- 12:18:22.254 
