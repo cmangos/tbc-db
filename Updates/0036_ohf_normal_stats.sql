@@ -259,6 +259,19 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 231
 UPDATE creature_template SET MinLevel = 68, MaxLevel = 68, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 8.4187, DamageVariance = 0.3755, MinMeleeDmg = 1536, MaxMeleeDmg = 2165 WHERE entry = 18096;
 UPDATE creature_template SET MinLevel = 72, MaxLevel = 72, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 21.5289, DamageVariance = 0.3717, MinMeleeDmg = 5227, MaxMeleeDmg = 7393 WHERE entry = 20531;
 
+-- Thrall 17876 - 20548
+-- Level 67 UnitClass 1
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+-- AttackRoundBaseTime: 2000
+-- Damage Values based on TBC Anni tests
+-- 370 - 513 Avg 435 on Epoch Hunter - 6192 Armor
+-- Resulting in 620.3 - 860.0 raw damage
+-- Old Values
+-- Normal - SpeedWalk 1,1 SpeedRun 1,14286, DamageMultiplier 2,04872 DamageVariance 0,4 MinDmg 385 MaxDmg 385
+-- Heroic - SpeedWalk 1,1 SpeedRun 1,14286, DamageMultiplier 21,4971 DamageVariance 0,00645852 MinDmg 2 MaxDmg 2
+UPDATE creature_template SET MinLevel = 67, MaxLevel = 67, UnitClass = 1, SpeedWalk = 1, SpeedRun = 1.14286, MeleeBaseAttackTime = 2000, DamageMultiplier = 3.8119, DamageVariance = 0.37, MinMeleeDmg = 620, MaxMeleeDmg = 860 WHERE entry = 17876;
+UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 20548;
 
 -- Infinite Slayer  18170 - 20534
 -- Level 68 UnitClass 1
