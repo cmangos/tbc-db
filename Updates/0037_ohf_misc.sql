@@ -257,4 +257,8 @@ DELETE FROM spell_script_target WHERE entry = 33937;
 INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES 
 ('33937', '5', '5600007'), -- Most EscortNPCs
 ('33937', '5', '5600012'), -- Horse Special StringID
-('33937', '5', '5600013'); -- BarnGroup StringID
+('33937', '5', '5600013'), -- BarnGroup StringID
+('33937', '5', '5600014'), -- Epoch Hunter
+('33937', '5', '5600015'), -- Epoch Hunter Wave 1
+('33937', '5', '5600016'), -- Epoch Hunter Wave 2
+('33937', '5', '5600017'); --  Epoch Hunter Wave 3
