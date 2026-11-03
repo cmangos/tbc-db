@@ -4174,7 +4174,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Durnholde Armorer RP - stop waypoints move to Armorer and start RelayScript on waypoint reached
 (1787602,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Thrall Escort - Pause Waypoints'),
 (1787602,0,1,36,0,0,0,@STRINGID+5,20,2050,0,0,0,0,0,0,0,0,'Thrall Escort - Face Durnholde Armorer'),
-(1787602,0,2,32,1,0,0,@STRINGID+5,20,2560,0,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Pause Waypoints'),
+(1787602,0,2,35,8,0,0,@STRINGID+5,20,2049,0,0,0,0,0,0,0,0,'Thrall Escort - SendAiEvent'),
 (1787602,0,3,1,0,0,0,@STRINGID+5,20,2560,0,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Emote None'),
 (1787602,0,4,36,0,0,0,@STRINGID+5,20,2560,0,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer face Thrall'),
 (1787602,1000,0,0,0,0,0,@STRINGID+5,20,2560,15891,0,0,0,0,0,0,0,'Thrall Escort - Durnholde Armorer Say Text'),
