@@ -260,13 +260,18 @@ UPDATE creature_template SET UnitFlags = 33600 WHERE entry IN (23175, 23181);
 -- Tarren Mill Guardsman 23176 - 23182 - spawned in church
 UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (23176, 23182);
 
--- 33937 Stun Phase 2 Units
-DELETE FROM spell_script_target WHERE entry = 33937;
-INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES 
-('33937', '5', '5600007'), -- Most EscortNPCs
+-- CoT Hillsbrad Despawn Trigger Unit - active flag test
+UPDATE creature_template SET ExtraFlags = 4096 WHERE entry IN (19433);
+
+
+-- 33937, 34016, 34023, 34024 - Stun Phase 2, 3, 4, 5 Units
+DELETE FROM spell_script_target WHERE entry IN (33937, 34016, 34023, 34024);
+INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
+('33937', '5', '5600007'), -- Escort OHF_STUN_PHASE_2_UNITS
 ('33937', '5', '5600012'), -- Horse Special StringID
-('33937', '5', '5600013'), -- BarnGroup StringID
-('33937', '5', '5600014'), -- Epoch Hunter
-('33937', '5', '5600015'), -- Epoch Hunter Wave 1
-('33937', '5', '5600016'), -- Epoch Hunter Wave 2
-('33937', '5', '5600017'); --  Epoch Hunter Wave 3
+('34023', '5', '5600013'), -- Escort OHF_STUN_PHASE_4_UNIT
+-- All OHF_STUN_PHASE_5_UNIT targets - different strings for wave management inside core
+('34024', '5', '5600014'), -- Epoch Hunter
+('34024', '5', '5600015'), -- Epoch Hunter Wave 1
+('34024', '5', '5600016'), -- Epoch Hunter Wave 2
+('34024', '5', '5600017'); --  Epoch Hunter Wave 3

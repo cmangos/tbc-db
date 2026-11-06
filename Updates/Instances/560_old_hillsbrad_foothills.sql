@@ -3302,7 +3302,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Captain Skarloc
 (@SGGUID+54, 'Old Hillsbrad Foothills - Boss 02 - Escort Group 05 - Patrol 008 - Captain Skarloc', 0, 0, 0, 1, @STRINGID+7),
 (@SGGUID+55, 'Old Hillsbrad Foothills - Group 031 - Skarlocs Mount', 0, 0, 0, 0, @STRINGID+12),
-(@SGGUID+56, 'Old Hillsbrad Foothills - Group 032 - Skarlocs Mount - Barn', 0, 0, 0, 0, @STRINGID+7),
+(@SGGUID+56, 'Old Hillsbrad Foothills - Group 032 - Skarlocs Mount - Barn', 0, 0, 0, 0, 0),
 -- Group at Barn
 (@SGGUID+57, 'Old Hillsbrad Foothills - Group 033 - Escort Group 06', 0, 0, 0, 1, @STRINGID+13),
 -- Group at church
@@ -4081,14 +4081,15 @@ INSERT INTO `string_id` (`Id`, `Name`) VALUES
 -- When Escort starts 2 Groups at Durnholde Keep Entrance get despawned
 (@STRINGID+6, 'OHF_THRALL_BRIDGETRASH_DESPAWN'),
 -- All NPCs spawned during Escort - used for spell_script_target
-(@STRINGID+7, 'OHF_THRALL_ESCORT_SPAWNED'),
+(@STRINGID+7, 'OHF_STUN_PHASE_2_UNITS'),
 -- StringIDs for all Thrall spawns
 (@STRINGID+8, 'OHF_THRALL_PRISON'),
 (@STRINGID+9, 'OHF_THRALL_SKARLOC'),
 (@STRINGID+10, 'OHF_THRALL_BARN'),
 (@STRINGID+11, 'OHF_THRALL_INN'),
+-- Custom String for Skarloc Mount respawn
 (@STRINGID+12, 'OHF_SKARLOC_MOUNT'),
-(@STRINGID+13, 'OHF_BARN_GROUP'),
+(@STRINGID+13, 'OHF_STUN_PHASE_4_UNIT'),
 (@STRINGID+14, 'OHF_EPOCH_HUNTER'),
 (@STRINGID+15, 'OHF_EPOCH_WAVE_01'),
 (@STRINGID+16, 'OHF_EPOCH_WAVE_02'),
