@@ -1594,8 +1594,9 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (18646, 0, 46, 2483.6494, 701.97076, 55.916855, 100, 0, 0),
 (18646, 0, 47, 2482.6987, 697.5523, 55.78749, 100, 0, 0),
 (18646, 0, 48, 2479.437, 694.75226, 55.76618, 100, 0, 0),
-(18646, 0, 49, 2479.0908, 692.33105, 55.7875, 100, 0, 1864606), -- spawn_group
-
+(18646, 0, 49, 2479.0908, 692.33105, 55.7875, 100, 6000, 1864606),
+(18646, 0, 50, 2479.0908, 692.33105, 55.7875, 3.61283, 8000, 1864607),
+(18646, 0, 51, 2479.0908, 692.33105, 55.7875,  4.39822, 1000, 1864608),
 (18649, 0, 1, 2659.13, 661.505, 57.1724, 0, 0, 0),
 (18649, 0, 2, 2666.43, 656.46, 57.6475, 0, 0, 0),
 (18649, 0, 3, 2665.61, 653.988, 57.6495, 0, 0, 0),
@@ -2876,7 +2877,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- reuse 464
 (@CGUID+465, 18644, 560, 3, 2549.0439453125, 667.63531494140625, 55.8631591796875, 2.076941728591918945, 86400, 86400, 0, 0), -- Tarren Mill Peasant
 (@CGUID+466, 18649, 560, 3, 2655.61, 663.915, 57.1724, 2.98558, 86400, 86400, 0, 2), -- Innkeeper Monica
-(@CGUID+467, 18651, 560, 3, 2476.1685, 689.82007, 55.86352, 1.51843, 86400, 86400, 0, 0), -- Young Blanchy
+(@CGUID+467, 18651, 560, 3, 2476.1685, 689.82007, 55.86352, 1.5184, 86400, 86400, 0, 0), -- Young Blanchy
 (@CGUID+468, 18655, 560, 3, 2533.74, 695.312, 55.2551, 2.12293, 86400, 86400, 0, 2), -- Jay Lemieux
 (@CGUID+469, 18656, 560, 3, 2613.65, 674.226, 55.4534, 3.20364, 86400, 86400, 0, 2), -- Julie Honeywell
 (@CGUID+470, 18664, 560, 3, 2471.25, 879.78, 62.9179, 0.0416174, 86400, 86400, 0, 2), -- Aged Dalaran Wizard
@@ -3041,9 +3042,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+621, 18657, 560, 3, 2404.2, 740.22784, 54.419044, 4.25860, 7200, 7200, 0, 0), -- Tarren Mill Fisherman
 (@CGUID+622, 18657, 560, 3, 2399.983, 744.4286, 54.377995, 3.92699, 7200, 7200, 0, 0), -- Tarren Mill Fisherman
 (@CGUID+623, 18657, 560, 3, 2397, 747.51245, 54.26937, 4.18879, 7200, 7200, 0, 0), -- Tarren Mill Fisherman
-(@CGUID+624, 18650, 560, 3, 2478.6907, 688.9305, 55.761948, 0.50934, 7200, 7200, 0, 0), -- Tarren Mill Horse
+(@CGUID+624, 18650, 560, 3, 2476.1685, 689.82007, 55.86352, 1.5184, 7200, 7200, 0, 0), -- Tarren Mill Horse
 (@CGUID+625, 18650, 560, 3, 2486.8152, 689.45715, 55.803127, 1.65806, 7200, 7200, 0, 0), -- Tarren Mill Horse
-(@CGUID+626, 18650, 560, 3, 2479.0183, 689.6053, 55.84678, 1.51843, 7200, 7200, 0, 0), -- Tarren Mill Horse
+-- reuse 626
 (@CGUID+627, 18646, 560, 3, 2483.5867, 697.54614, 55.77194, 4.472738, 7200, 7200, 0, 2), -- Tarren Mill Horsehand
 (@CGUID+628, 20156, 560, 3, 2621.8838, 684.1758, 55.37511, 3.75245, 7200, 7200, 0, 0), -- Thrall Quest Trigger
 (@CGUID+629, 20391, 560, 3, 1815.177, 1035.551, 11.17216, 3.944444, 7200, 7200, 0, 0), -- Event Generator Old Hillsbrad
@@ -3461,7 +3462,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+65, 'Old Hillsbrad Foothills - Erozion - Tarren Mill', 0, 0, 0, 0, @STRINGID+20),
 -- Taretha should get spawned during Escort
 (@SGGUID+66, 'Old Hillsbrad Foothills - Taretha', 0, 0, 0, 0, @STRINGID+21),
-
+-- Tarren Mill Horsehand - Bessy
+(@SGGUID+67, 'Old Hillsbrad Foothills - Tarren Mill Horsehand - Bessy', 0, 0, 0, 0, 0),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', 1, 0, 0, 0, @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', 1, 1, @SGGUID+7, 8, 0),
@@ -3671,6 +3673,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+65, @CGUID+712, -1, 0), -- Erozion
 
 (@SGGUID+66, @CGUID+478, -1, 0), -- Taretha
+
+(@SGGUID+67, @CGUID+627, 0, 0), -- Tarren Mill Horsehand
+(@SGGUID+67, @CGUID+624, 1, 0), -- Tarren Mill Horse
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
 (@SGGUID+1000, @OGUID+50, -1, 0),-- Roaring Flame
@@ -3818,7 +3823,9 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+37, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - Path 2 after Lieutenant Drake spawned - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+42, 'Old Hillsbrad Foothills - Group 023 - Patrol 007 - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+54, 'Old Hillsbrad Foothills - Boss 02 - Escort Group 05 - Patrol 008 - Captain Skarloc'),
-(@SGGUID+57, 'Old Hillsbrad Foothills - Group 033 - Escort Group 6');
+(@SGGUID+57, 'Old Hillsbrad Foothills - Group 033 - Escort Group 6'),
+(@SGGUID+67, 'Old Hillsbrad Foothills - Tarren Mill Horsehand - Bessy');
+
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 -- Thrall Escort 
@@ -4207,7 +4214,35 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+57, 1, 2495.4795, 694.95447, 55.507145, 100, 0, 0, NULL),
 (@SGGUID+57, 2, 2491.4536, 694.1376, 55.708958, 100, 0, 0, NULL),
 (@SGGUID+57, 3, 2490.363, 703.972, 55.764732, 100, 0, 0, NULL),
-(@SGGUID+57, 4, 2487.528, 703.4704, 55.777874, 100, 0, 0, NULL);
+(@SGGUID+57, 4, 2487.528, 703.4704, 55.777874, 100, 0, 0, NULL),
+-- Tarren Mill Horsehand
+(@SGGUID+67, 1, 2505.2622, 706.24536, 55.720993, 100, 0, 0, NULL),
+(@SGGUID+67, 2, 2507.5117, 717.00446, 56.199284, 100, 0, 0, NULL),
+(@SGGUID+67, 3, 2514.1116, 740.4205, 57.473648, 100, 0, 0, NULL),
+(@SGGUID+67, 4, 2529.063, 757.9616, 56.87218, 100, 0, 0, NULL),
+(@SGGUID+67, 5, 2552.3213, 768.6346, 56.840004, 100, 0, 0, NULL),
+(@SGGUID+67, 6, 2589.6414, 766.45667, 57.15254, 100, 0, 0, NULL),
+(@SGGUID+67, 7, 2612.707, 760.85333, 56.346294, 100, 0, 0, NULL),
+(@SGGUID+67, 8, 2641.679, 754.33417, 62.34145, 100, 0, 0, NULL),
+(@SGGUID+67, 9, 2666.7095, 760.21814, 59.811493, 100, 0, 0, NULL),
+(@SGGUID+67, 10, 2689.0032, 752.82794, 57.64452, 100, 0, 0, NULL),
+(@SGGUID+67, 11, 2692.918, 723.44745, 58.55207, 100, 0, 0, NULL),
+(@SGGUID+67, 12, 2694.5967, 693.0447, 59.169285, 100, 0, 0, NULL),
+(@SGGUID+67, 13, 2694.4912, 666.0449, 57.2482, 100, 0, 0, NULL),
+(@SGGUID+67, 14, 2697.691, 625.08954, 56.190746, 100, 0, 0, NULL),
+(@SGGUID+67, 15, 2677.27, 603.82336, 56.22467, 100, 0, 0, NULL),
+(@SGGUID+67, 16, 2637.6335, 597.0508, 56.689125, 100, 0, 0, NULL),
+(@SGGUID+67, 17, 2593.6338, 596.8789, 57.024902, 100, 0, 0, NULL),
+(@SGGUID+67, 18, 2586.7102, 631.36255, 56.368088, 100, 0, 0, NULL),
+(@SGGUID+67, 19, 2563.7705, 655.0138, 55.501137, 100, 0, 0, NULL),
+(@SGGUID+67, 20, 2537.4597, 663.68176, 56.694, 100, 0, 0, NULL),
+(@SGGUID+67, 21, 2512.957, 669.44794, 55.433556, 100, 0, 0, NULL),
+(@SGGUID+67, 22, 2503.6145, 694.1076, 55.511864, 100, 0, 0, NULL),
+(@SGGUID+67, 23, 2491.7158, 694.3694, 55.787502, 100, 0, 0, NULL),
+(@SGGUID+67, 24, 2490.174, 703.3407, 55.78749, 100, 0, 0, NULL),
+(@SGGUID+67, 25, 2484.9788, 703.1712, 55.91619, 100, 0, 0, NULL),
+(@SGGUID+67, 26, 2483.5867, 697.54614, 55.77194, 100, 0, 0, NULL),
+(@SGGUID+67, 27, 2501.3252, 695.5871, 55.509953, 100, 0, 0, NULL);
 
 
 DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+21;
@@ -4292,7 +4327,7 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1787619,1787620,1787621,1787622,1787623,1809601, 1809602,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1864401, 1864402, 1864601, 1864602, 1864603, 1864604, 1864605,1864606,1876501, 1876502, 1876503, 1888701, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1787619,1787620,1787621,1787622,1787623,1809601, 1809602,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1864401, 1864402, 1864601, 1864602, 1864603, 1864604, 1864605,1864606,1864607,1864608,1876501, 1876502, 1876503, 1888701, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Emote OneShot Point'),
 (1784801,0,1,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lieutenant Drake - Yell Text'),
@@ -4475,6 +4510,17 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1864604, 12000, 1, 1, 173, 0, 0, 18644, @CGUID+465, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Tarren Mill Peasant Emote State'), -- 11:47:29.359
 
 (1864605, 0, 1, 0, 0, 0, 0, 0, 0, 0, 15616, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'),
+
+(1864606, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15617, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'), -- 11:48:17.219
+(1864606, 0, 1, 0, 0, 0, 0, 0, 0, 0, 15618, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say EmotedText'), 
+(1864606, 0, 2, 0, 0, 0, 0, 18651, 10, 0, 15622, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Young Blanchy EmotedText'), 
+
+(1864607, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15619, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'), 
+
+(1864608, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 15623, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'),
+(1864608, 1000, 1, 51, 150, @SGGUID+67, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 'Tarren Mill Horsehand - Create Formation'),
+(1864608, 1000, 2, 20, 2, @SGGUID+67, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Change Movement'),
+
 -- Durnholde Cook
 (1876501, 0, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Durnholde Cook - SendAiEvent A to self'),
 (1876501, 0, 1, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Durnholde Cook - Set EquipmentSlot 1 - None'), 
