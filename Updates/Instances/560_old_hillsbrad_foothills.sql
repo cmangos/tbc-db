@@ -1329,45 +1329,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+571, 3, 2195.7844, 244.01823, 52.440903, 100, 0, 0),
 (@CGUID+571, 4, 2203.0874, 236.0281, 52.71444, 100, 0, 0),
 (@CGUID+571, 5, 2204.2822, 227.64854, 52.44091, 1.06465, 1000, 1859802),
--- Tarren Mill Guardsman (18092) #1
-(@CGUID+602, 1, 2560.236, 765.303, 57.03683, 0, 0, 0),
-(@CGUID+602, 2, 2572.305, 764.4601, 56.73349, 0, 0, 0),
-(@CGUID+602, 3, 2581.665, 761.9474, 56.38046, 0, 0, 0),
-(@CGUID+602, 4, 2588.922, 758.0529, 56.52499, 0, 0, 0),
-(@CGUID+602, 5, 2581.665, 761.9474, 56.38046, 0, 0, 0),
-(@CGUID+602, 6, 2572.305, 764.4601, 56.73349, 0, 0, 0),
-(@CGUID+602, 7, 2560.236, 765.303, 57.03683, 0, 0, 0),
-(@CGUID+602, 8, 2546.823, 764.8195, 56.72848, 0, 0, 0),
-(@CGUID+602, 9, 2533.316, 758.662, 56.71073, 0, 0, 0),
-(@CGUID+602, 10, 2521.925, 751.6855, 57.56266, 0, 0, 0),
-(@CGUID+602, 11, 2519.383, 741.1541, 58.07609, 0, 0, 0),
-(@CGUID+602, 12, 2521.925, 751.6855, 57.56266, 0, 0, 0),
-(@CGUID+602, 13, 2533.316, 758.662, 56.71073, 0, 0, 0),
-(@CGUID+602, 14, 2546.823, 764.8195, 56.72848, 0, 0, 0),
 
--- Tarren Mill Guardsman (18092) #2
-(@CGUID+611, 1, 2684.725, 694.4693, 58.31737, 0, 0, 0),
-(@CGUID+611, 2, 2684.915, 684.5862, 58.11071, 0, 0, 0),
-(@CGUID+611, 3, 2684.182, 674.2352, 57.73339, 0, 0, 0),
-(@CGUID+611, 4, 2683.426, 666.6116, 57.46996, 0, 0, 0),
-(@CGUID+611, 5, 2684.182, 674.2352, 57.73339, 0, 0, 0),
-(@CGUID+611, 6, 2684.915, 684.5862, 58.11071, 0, 0, 0),
-(@CGUID+611, 7, 2684.725, 694.4693, 58.31737, 0, 0, 0),
-(@CGUID+611, 8, 2683.115, 704.3818, 58.67271, 0, 0, 0),
-(@CGUID+611, 9, 2681.388, 715.3746, 57.89256, 0, 0, 0),
-(@CGUID+611, 10, 2683.115, 704.3818, 58.67271, 0, 0, 0),
-
--- Tarren Mill Guardsman (18092) #3
-(@CGUID+614, 1, 2648.414, 627.0261, 56.18431, 0, 0, 0),
-(@CGUID+614, 2, 2660.2, 643.2328, 56.02409, 0, 0, 0),
-(@CGUID+614, 3, 2648.414, 627.0261, 56.18431, 0, 0, 0),
-(@CGUID+614, 4, 2637.223, 612.3849, 55.86766, 0, 0, 0),
-(@CGUID+614, 5, 2620.766, 592.524, 56.46237, 0, 0, 0),
-(@CGUID+614, 6, 2597.628, 603.2016, 56.02141, 0, 0, 0),
-(@CGUID+614, 7, 2587.511, 625.9022, 56.3958, 0, 0, 0),
-(@CGUID+614, 8, 2597.628, 603.2016, 56.02141, 0, 0, 0),
-(@CGUID+614, 9, 2620.766, 592.524, 56.46237, 0, 0, 0),
-(@CGUID+614, 10, 2637.223, 612.3849, 55.86766, 0, 0, 0),
 -- Escort NPCs
 (@CGUID+668, 1, 2191.9712, 138.11394, 88.2125, 100, 1, 1786001),
 (@CGUID+669, 1, 2190.5022, 139.4713, 88.2125, 100, 1, 1786001),
@@ -2305,13 +2267,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 (@CGUID+471, @CGUID+470, 515), -- Dalaran Sorceress -> Aged Dalaran Wizard
 
-(@CGUID+489, @CGUID+486, 512), -- Helcular -> Kel'thuzad
-
-(@CGUID+609, @CGUID+611, 515), -- Tarren Mill Protector -> Tarren Mill Guardsman
-(@CGUID+610, @CGUID+611, 515), -- Tarren Mill Lookout -> Tarren Mill Guardsman
-
-(@CGUID+612, @CGUID+614, 515), -- Tarren Mill Protector -> Tarren Mill Guardsman
-(@CGUID+613, @CGUID+614, 515); -- Tarren Mill Lookout -> Tarren Mill Guardsman
+(@CGUID+489, @CGUID+486, 512); -- Helcular -> Kel'thuzad
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (28163, 560, 28132, 515, 15); -- Guerrero -> Don Carlos
@@ -3013,21 +2969,21 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+601, 18093, 560, 3, 2522.2935, 744.69196, 57.975613, 1.334801, 7200, 7200, 0, 0), -- Tarren Mill Protector
 (@CGUID+602, 18094, 560, 3, 2519.8801, 743.2168, 57.951065, 0.03602893, 7200, 7200, 0, 0), -- Tarren Mill Lookout
 -- GROUP 1 - apple cart (emote to eachother)
-(@CGUID+603, 18093, 560, 3, 2613.352, 713.8514, 57.04922, 6.021386, 7200, 7200, 0, 0), -- Tarren Mill Protector
-(@CGUID+604, 18094, 560, 3, 2615.793, 710.9993, 56.74054, 1.48353, 7200, 7200, 0, 0), -- Tarren Mill Lookout
-(@CGUID+605, 18092, 560, 3, 2616.477, 714.5432, 56.596, 3.874631, 7200, 7200, 0, 0), -- Tarren Mill Guardsman
+(@CGUID+603, 0, 560, 3, 2613.352, 713.8514, 57.04922, 6.021386, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+604, 0, 560, 3, 2615.793, 710.9993, 56.74054, 1.48353, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+605, 0, 560, 3, 2616.477, 714.5432, 56.596, 3.874631, 7200, 7200, 0, 0), -- spawn_group_entry
 -- GROUP 2 - flight path
-(@CGUID+606, 18093, 560, 3, 2668.754, 728.1525, 57.96358, 0.4886922, 7200, 7200, 0, 0), -- Tarren Mill Protector
-(@CGUID+607, 18094, 560, 3, 2674.582, 730.5342, 57.67854, 4.34587, 7200, 7200, 0, 0), -- Tarren Mill Lookout
-(@CGUID+608, 18092, 560, 3, 2673.054, 727.4738, 57.72209, 1.727876, 7200, 7200, 0, 0), -- Tarren Mill Guardsman
+(@CGUID+606, 0, 560, 3, 2668.754, 728.1525, 57.96358, 0.4886922, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+607, 0, 560, 3, 2674.582, 730.5342, 57.67854, 4.34587, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+608, 0, 560, 3, 2673.054, 727.4738, 57.72209, 1.727876, 7200, 7200, 0, 0), -- spawn_group_entry
 -- PATROL 2 - goes behind buildings and starts near flight path area
-(@CGUID+609, 18093, 560, 3, 2684.239, 710.1294, 58.37837, 4.870136, 7200, 7200, 0, 0), -- Tarren Mill Protector
-(@CGUID+610, 18094, 560, 3, 2681.952, 711.7939, 58.12489, 4.869193, 7200, 7200, 0, 0), -- Tarren Mill Lookout
-(@CGUID+611, 18092, 560, 3, 2683.276, 703.3881, 58.63708, 4.873438, 7200, 7200, 0, 2), -- Tarren Mill Guardsman
+(@CGUID+609, 18092, 560, 3, 2683.8828125, 671.21563720703125, 57.69675827026367187, 4.613533973693847656, 7200, 7200, 0, 0), -- Tarren Mill Guardsman
+(@CGUID+610, 18093, 560, 3, 2685.874755859375, 671.0394287109375, 57.71581268310546875, 4.613746166229248046, 7200, 7200, 0, 0), -- Tarren Mill Protector
+(@CGUID+611, 18094, 560, 3, 2684.0595703125, 673.2093505859375, 57.69584274291992187, 4.623700618743896484, 7200, 7200, 0, 0), -- Tarren Mill Lookout
 -- PATROL 3 - starts behind church and covers other half of behind buildings
-(@CGUID+612, 18093, 560, 3, 2636.813, 615.1426, 55.86766, 0.8820669, 7200, 7200, 0, 0), -- Tarren Mill Protector
-(@CGUID+613, 18094, 560, 3, 2637.188, 612.3391, 55.86766, 0.8777851, 7200, 7200, 0, 0), -- Tarren Mill Lookout
-(@CGUID+614, 18092, 560, 3, 2644.11, 621.3955, 56.06254, 0.918177, 7200, 7200, 0, 2), -- Tarren Mill Guardsman
+(@CGUID+612, 18092, 560, 3, 2658.422119140625, 640.78692626953125, 55.78916549682617187, 0.941548764, 7200, 7200, 0, 0), -- Tarren Mill Guardsman
+(@CGUID+613, 18093, 560, 3, 2656.165283203125, 641.08380126953125, 55.923187255859375, 0.941373646259307861, 7200, 7200, 0, 0), -- Tarren Mill Protector
+(@CGUID+614, 18094, 560, 3, 2656.50830078125, 638.15875244140625, 55.88452911376953125, 0.941548764705657958, 7200, 7200, 0, 0), -- Tarren Mill Lookout
 -- GROUP 3 - stands near shack next to windmill at farm
 (@CGUID+615, 18094, 560, 3, 2544.583740234375, 756.79766845703125, 57.17652511596679687, 1.5707963, 7200, 7200, 0, 0), -- Tarren Mill Lookout
 (@CGUID+616, 18094, 560, 3, 2539.620361328125, 754.169189453125, 57.22536849975585937, 2.478367567062377929, 7200, 7200, 0, 0), -- Tarren Mill Lookout
@@ -3467,6 +3423,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Tarren Mill Enemy Groups - despawning when Epoch Hunter spawns
 (@SGGUID+70, 'Old Hillsbrad Foothills - Group 039 Tarren Mill Lookout (2)', 0, 0, @SGGUID+6, 0, @STRINGID+18),
 (@SGGUID+71, 'Old Hillsbrad Foothills - Group 040 Tarren Mill - Patrol 009', 0, 0, @SGGUID+6, 0, @STRINGID+18),
+(@SGGUID+72, 'Old Hillsbrad Foothills - Group 041 Tarren Mill - Apple Cart - spawn_group_entry', 0, 0, @SGGUID+6, 0, @STRINGID+18),
+(@SGGUID+73, 'Old Hillsbrad Foothills - Group 042 Tarren Mill - Flightmaster - spawn_group_entry', 0, 0, @SGGUID+6, 0, @STRINGID+18),
+(@SGGUID+74, 'Old Hillsbrad Foothills - Group 043 Tarren Mill Lookout (2) - Hill', 0, 0, @SGGUID+6, 0, @STRINGID+18),
+(@SGGUID+75, 'Old Hillsbrad Foothills - Group 044 Tarren Mill - Patrol 010', 0, 0, @SGGUID+6, 0, @STRINGID+18),
+(@SGGUID+76, 'Old Hillsbrad Foothills - Group 045 Tarren Mill - Patrol 011', 0, 0, @SGGUID+6, 0, @STRINGID+18),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', 1, 0, 0, 0, @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', 1, 1, @SGGUID+7, 8, 0),
@@ -3686,6 +3647,25 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+71, @CGUID+600, 0, 0), -- Tarren Mill Guardsman
 (@SGGUID+71, @CGUID+601, 1, 0), -- Tarren Mill Protector
 (@SGGUID+71, @CGUID+602, 2, 0), -- Tarren Mill Lookout
+
+(@SGGUID+72, @CGUID+603, 0, 0), -- spawn_group_entry
+(@SGGUID+72, @CGUID+604, 1, 0), -- spawn_group_entry
+(@SGGUID+72, @CGUID+605, 2, 0), -- spawn_group_entry
+
+(@SGGUID+73, @CGUID+606, 0, 0), -- spawn_group_entry
+(@SGGUID+73, @CGUID+607, 1, 0), -- spawn_group_entry
+(@SGGUID+73, @CGUID+608, 2, 0), -- spawn_group_entry
+
+(@SGGUID+74, @CGUID+617, -1, 0), -- Tarren Mill Lookout
+(@SGGUID+74, @CGUID+618, -1, 0), -- Tarren Mill Lookout
+
+(@SGGUID+75, @CGUID+609, 0, 0), -- Tarren Mill Guardsman
+(@SGGUID+75, @CGUID+610, 1, 0), -- Tarren Mill Protector
+(@SGGUID+75, @CGUID+611, 2, 0), -- Tarren Mill Lookout
+
+(@SGGUID+76, @CGUID+612, 0, 0), -- Tarren Mill Guardsman
+(@SGGUID+76, @CGUID+613, 1, 0), -- Tarren Mill Protector
+(@SGGUID+76, @CGUID+614, 2, 0), -- Tarren Mill Lookout
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
 (@SGGUID+1000, @OGUID+50, -1, 0),-- Roaring Flame
@@ -3753,7 +3733,9 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+50, 17819, 0, 2, 0), (@SGGUID+50, 17833, 0, 1, 0), (@SGGUID+50, 17860, 1, 2, 0), (@SGGUID+50, 18934, 1, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
 (@SGGUID+51, 17819, 0, 2, 0), (@SGGUID+51, 17833, 0, 1, 0), (@SGGUID+51, 17860, 1, 2, 0), (@SGGUID+51, 18934, 1, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
 (@SGGUID+52, 17819, 0, 2, 0), (@SGGUID+52, 17833, 0, 1, 0), (@SGGUID+52, 17860, 1, 2, 0), (@SGGUID+52, 18934, 1, 1, 0), -- Durnholde Sentry, Durnholde Warden, Durnholde Veteran, Durnholde Mage
-(@SGGUID+53, 18934, 2, 2, 0), (@SGGUID+53, 17860, 2, 2, 0); -- Durnholde Mage, Durnholde Veteran
+(@SGGUID+53, 18934, 2, 2, 0), (@SGGUID+53, 17860, 2, 2, 0), -- Durnholde Mage, Durnholde Veteran
+(@SGGUID+72, 18092, 1, 1, 0), (@SGGUID+72, 18093, 1, 1, 0), (@SGGUID+72, 18094, 1, 1, 0), -- Tarren Mill Guardsman, Tarren Mill Protector, Tarren Mill Lookout
+(@SGGUID+73, 18092, 1, 1, 0), (@SGGUID+73, 18093, 1, 1, 0), (@SGGUID+73, 18094, 1, 1, 0); -- Tarren Mill Guardsman, Tarren Mill Protector, Tarren Mill Lookout
 
 INSERT INTO `spawn_group_squad` (`Id`, `SquadId`, `Guid`, `Entry`) VALUES 
 (@SGGUID+38, 1, @CGUID+393, 17820), -- Durnholde Rifleman (Front Left)
@@ -3810,7 +3792,10 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+36, 1, 3, 0, @SGGUID+36, 2, 'Old Hillsbrad Foothills - Group 017 - Patrol 006 - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+42, 1, 3, 0, @SGGUID+42, 4, 'Old Hillsbrad Foothills - Group 023 - Patrol 007 - spawn_group_entry - Durnholde Tracking Hound'),
 (@SGGUID+54, 2, 3, 0, @SGGUID+54, 2, 'Old Hillsbrad Foothills - Boss 02 - Escort Group 05 - Patrol 008 - Captain Skarloc'),
-(@SGGUID+71, 4, 3, 0, @SGGUID+71, 4, 'Old Hillsbrad Foothills - Group 040 Tarren Mill - Patrol 009'),
+(@SGGUID+71, 4, 2, 0, @SGGUID+71, 4, 'Old Hillsbrad Foothills - Group 040 Tarren Mill - Patrol 009'),
+(@SGGUID+75, 4, 2, 0, @SGGUID+75, 4, 'Old Hillsbrad Foothills - Group 044 Tarren Mill - Patrol 010'),
+(@SGGUID+76, 4, 2, 0, @SGGUID+76, 4, 'Old Hillsbrad Foothills - Group 045 Tarren Mill - Patrol 011');
+
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+0, 'Old Hillsbrad Foothills - Thrall - Escort Path'),
@@ -3837,6 +3822,8 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+57, 'Old Hillsbrad Foothills - Group 033 - Escort Group 6'),
 (@SGGUID+67, 'Old Hillsbrad Foothills - Tarren Mill Horsehand - Bessy'),
 (@SGGUID+71, 'Old Hillsbrad Foothills - Group 040 Tarren Mill - Patrol 009'),
+(@SGGUID+75, 'Old Hillsbrad Foothills - Group 044 Tarren Mill - Patrol 010'),
+(@SGGUID+76, 'Old Hillsbrad Foothills - Group 044 Tarren Mill - Patrol 011');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 -- Thrall Escort 
@@ -4262,6 +4249,20 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+71, 6, 2572.3047, 764.46014, 56.65007, 100, 0, 0, NULL),
 (@SGGUID+71, 7, 2581.6646, 761.9474, 56.274055, 100, 0, 0, NULL),
 (@SGGUID+71, 8, 2588.9224, 758.05286, 56.455555, 100, 0, 0, NULL),
+-- Tarren Mill Group 02
+(@SGGUID+75, 1, 2683.4263, 666.6116, 57.698784, 100, 0, 0, NULL),
+(@SGGUID+75, 2, 2684.1824, 674.2352, 57.695427, 100, 0, 0, NULL),
+(@SGGUID+75, 3, 2684.9153, 684.5862, 58.096058, 100, 0, 0, NULL),
+(@SGGUID+75, 4, 2684.7249, 694.4693, 58.330795, 100, 0, 0, NULL),
+(@SGGUID+75, 5, 2683.1145, 704.38184, 58.388115, 100, 0, 0, NULL),
+(@SGGUID+75, 6, 2681.4062, 715.2529, 57.868988, 100, 0, 0, NULL),
+-- Tarren Mill Group 03
+(@SGGUID+76, 1, 2660.2004, 643.23285, 55.936142, 100, 0, 0, NULL),
+(@SGGUID+76, 2, 2648.4136, 627.02606, 56.10664, 100, 0, 0, NULL),
+(@SGGUID+76, 3, 2637.2227, 612.3849, 55.80577, 100, 0, 0, NULL),
+(@SGGUID+76, 4, 2620.766, 592.524, 56.41425, 100, 0, 0, NULL),
+(@SGGUID+76, 5, 2597.6282, 603.2016, 55.98645, 100, 0, 0, NULL),
+(@SGGUID+76, 6, 2587.5115, 625.9022, 56.422607, 100, 0, 0, NULL);
 
 DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+21;
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
