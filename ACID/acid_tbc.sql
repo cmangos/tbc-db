@@ -23648,8 +23648,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('5600557','-5600557','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600571','-5600571','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 -- Tarren Mill Peasant (18644) - NSR
--- Tarren Mill Horsehand (18646) - NSR
+-- Tarren Mill Horsehand (18646)
+('1864601','18646','30','0','100','0','5','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Tarren Mill Horsehand - ForceDespawn on ReceiveEventAI A'),
 -- Innkeeper Monica (18649) - NSR
+-- Tarren Mill Horse - 18650
+('1864601','18646','30','0','100','0','5','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Tarren Mill Horse - ForceDespawn on ReceiveEventAI A'),
 -- Jay Lemieux (18655)
 ('1865501','18655','1','0','100','1','30000','60000','60000','90000','0','0','1','19554','19553','0','0','0','0','0','0','0','0','0','Jay Lemieux - Random Say OOC'),
 -- Julie Honeywell (18656)

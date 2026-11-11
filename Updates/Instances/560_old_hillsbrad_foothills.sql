@@ -3463,7 +3463,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- Taretha should get spawned during Escort
 (@SGGUID+66, 'Old Hillsbrad Foothills - Taretha', 0, 0, 0, 0, @STRINGID+21),
 -- Tarren Mill Horsehand - Bessy
-(@SGGUID+67, 'Old Hillsbrad Foothills - Tarren Mill Horsehand - Bessy', 0, 0, 0, 0, 0),
+(@SGGUID+67, 'Old Hillsbrad Foothills - Tarren Mill Horsehand - Bessy', 0, 0, @SGGUID+6, 0, @STRINGID+18),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', 1, 0, 0, 0, @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', 1, 1, @SGGUID+7, 8, 0),
