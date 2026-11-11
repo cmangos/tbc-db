@@ -301,3 +301,16 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.14286 WHERE entry = 205
 -- No Mindcontrole Data
 -- Old Values
 -- Normal - SpeedWalk 1,48 SpeedRun 1,14286, DamageMultiplier 4,7153 DamageVariance 0,197541 MinDmg 855 MaxDmg 1204
+
+
+-- Tarren Mill Horsehand - 18646
+-- WalkSpeed: 2.5
+-- RunSpeed: 6
+-- Old Values SpeedWalk 1,125 SpeedRun 1,14286
+UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 0.857 WHERE entry = 18646;
+
+-- Tarren Mill Horse - 18650
+-- WalkSpeed: 2.5
+-- RunSpeed: 3
+-- Old Values SpeedWalk 1,125 SpeedRun 1,14286
+UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 0.4285 WHERE entry = 18650;

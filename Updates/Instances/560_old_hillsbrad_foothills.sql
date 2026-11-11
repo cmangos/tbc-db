@@ -6,7 +6,6 @@ DBComment:
 
 TODO
 * apple gatherers script + gaurds near apple cart emotes (Tarren Mill)
-* Tarren Mill Horsehand movement/script and interactions
 * Helcular / Kel'Thuzad - possibly missing texts, should stop waypoints when talking
 * Innkeeper Monica missing random emote? "shakes her head at all of the commotion."
 * some creatures seem to be pooled with together with other entrys (patrols in the barracks)
@@ -1589,8 +1588,8 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (18646, 0, 41, 2533.056, 663.352, 56.74547, 100, 0, 0),
 (18646, 0, 42, 2516.83, 669.8787, 55.032368, 100, 0, 0),
 (18646, 0, 43, 2503.2288, 687.0233, 55.545685, 100, 0, 0),
-(18646, 0, 44, 2502.0715, 695.5172, 55.511734, 100, 0, 0),
-(18646, 0, 45, 2491.623, 694.46173, 55.787502, 100, 3000, 1864605),
+(18646, 0, 44, 2502.0715, 695.5172, 55.511734, 100, 3000, 1864605),
+(18646, 0, 45, 2491.623, 694.46173, 55.787502, 100, 0, 0),
 (18646, 0, 46, 2483.6494, 701.97076, 55.916855, 100, 0, 0),
 (18646, 0, 47, 2482.6987, 697.5523, 55.78749, 100, 0, 0),
 (18646, 0, 48, 2479.437, 694.75226, 55.76618, 100, 0, 0),
@@ -2251,6 +2250,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+453, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
 (@CGUID+454, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
 (@CGUID+455, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
+(@CGUID+465, 0, 0, 1, 173, 0, NULL), -- Tarren Mill Peasant
 (@CGUID+526, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
 (@CGUID+527, 0, 0, 1, 173, 0, NULL), -- Hillsbrad Peasant
 (@CGUID+528, 0, 0, 1, 173, 0, NULL), -- Hillsbrad Peasant
@@ -3042,7 +3042,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+621, 18657, 560, 3, 2404.2, 740.22784, 54.419044, 4.25860, 7200, 7200, 0, 0), -- Tarren Mill Fisherman
 (@CGUID+622, 18657, 560, 3, 2399.983, 744.4286, 54.377995, 3.92699, 7200, 7200, 0, 0), -- Tarren Mill Fisherman
 (@CGUID+623, 18657, 560, 3, 2397, 747.51245, 54.26937, 4.18879, 7200, 7200, 0, 0), -- Tarren Mill Fisherman
-(@CGUID+624, 18650, 560, 3, 2476.1685, 689.82007, 55.86352, 1.5184, 7200, 7200, 0, 0), -- Tarren Mill Horse
+(@CGUID+624, 18650, 560, 3, 2478.6907, 688.9305, 55.761948, 0.576536, 7200, 7200, 0, 0), -- Tarren Mill Horse
 (@CGUID+625, 18650, 560, 3, 2486.8152, 689.45715, 55.803127, 1.65806, 7200, 7200, 0, 0), -- Tarren Mill Horse
 -- reuse 626
 (@CGUID+627, 18646, 560, 3, 2483.5867, 697.54614, 55.77194, 4.472738, 7200, 7200, 0, 2), -- Tarren Mill Horsehand
@@ -4241,8 +4241,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+67, 23, 2491.7158, 694.3694, 55.787502, 100, 0, 0, NULL),
 (@SGGUID+67, 24, 2490.174, 703.3407, 55.78749, 100, 0, 0, NULL),
 (@SGGUID+67, 25, 2484.9788, 703.1712, 55.91619, 100, 0, 0, NULL),
-(@SGGUID+67, 26, 2483.5867, 697.54614, 55.77194, 100, 0, 0, NULL),
-(@SGGUID+67, 27, 2501.3252, 695.5871, 55.509953, 100, 0, 0, NULL);
+(@SGGUID+67, 26, 2483.5867, 697.54614, 55.77194, 100, 12000, 1864609, NULL);
 
 
 DELETE FROM `string_id` WHERE `Id` BETWEEN @STRINGID+1 AND @STRINGID+21;
@@ -4327,7 +4326,7 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1787619,1787620,1787621,1787622,1787623,1809601, 1809602,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1864401, 1864402, 1864601, 1864602, 1864603, 1864604, 1864605,1864606,1864607,1864608,1876501, 1876502, 1876503, 1888701, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1787619,1787620,1787621,1787622,1787623,1809601, 1809602,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1864401, 1864402, 1864601, 1864602, 1864603, 1864604, 1864605,1864606,1864607,1864608,1864609,1876501, 1876502, 1876503, 1888701, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Emote OneShot Point'),
 (1784801,0,1,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lieutenant Drake - Yell Text'),
@@ -4503,13 +4502,14 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1864603, 9000, 1, 0, 0, 0, 0, 0, 0, 0, 15611, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'),
 
 (1864604, 0, 0, 36, 0, 0, 0, 18644, @CGUID+465, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Tarren Mill Peasant Face Horsehand'), -- 11:47:17.236
-(1864604, 0, 1, 0, 0, 0, 0, 0, 0, 0, 15612, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'),
+(1864604, 0, 1, 1, 378, 0, 0, 18644, @CGUID+465, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Tarren Mill Peasant EmoteState'),
+(1864604, 0, 2, 0, 0, 0, 0, 0, 0, 0, 15612, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'),
 (1864604, 6000, 0, 0, 0, 0, 0, 18644, @CGUID+465, 16, 15629, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Tarren Mill Peasant say Text'), -- 11:47:23.087
 (1864604, 6000, 1, 0, 0, 0, 0, 0, 0, 0, 15615, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'), -- 11:47:23.887
 (1864604, 12000, 0, 36, 1, 0, 0, 18644, @CGUID+465, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Tarren Mill Peasant ResetFacing'), -- 11:47:29.359
 (1864604, 12000, 1, 1, 173, 0, 0, 18644, @CGUID+465, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Tarren Mill Peasant Emote State'), -- 11:47:29.359
 
-(1864605, 0, 1, 0, 0, 0, 0, 0, 0, 0, 15616, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'),
+(1864605, 3000, 1, 0, 0, 0, 0, 0, 0, 0, 15616, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'),
 
 (1864606, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15617, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'), -- 11:48:17.219
 (1864606, 0, 1, 0, 0, 0, 0, 0, 0, 0, 15618, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say EmotedText'), 
@@ -4518,8 +4518,14 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1864607, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15619, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'), 
 
 (1864608, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 15623, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'),
-(1864608, 1000, 1, 51, 150, @SGGUID+67, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 'Tarren Mill Horsehand - Create Formation'),
+(1864608, 1000, 1, 51, 150, @SGGUID+67, 0, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 'Tarren Mill Horsehand - Create Formation'),
 (1864608, 1000, 2, 20, 2, @SGGUID+67, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Change Movement'),
+
+(1864609, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 15624, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'), -- 11:42:42.754
+(1864609, 1000, 1, 51, 151, @SGGUID+67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Delete Formation'),
+(1864609, 1000, 2, 3, 0, 0, 0, 18644, @CGUID+624, 16, 1, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Tarren Mill Horse Move Home'),
+(1864609, 8000, 0, 0, 0, 0, 0, 18644, @CGUID+624, 16, 15626, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Tarren Mill Horse Say EmotedText'),-- 11:42:49.196
+(1864609, 11000, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Change Movement'), -- 11:42:53.859
 
 -- Durnholde Cook
 (1876501, 0, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Durnholde Cook - SendAiEvent A to self'),
