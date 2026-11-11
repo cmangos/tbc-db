@@ -3428,6 +3428,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+74, 'Old Hillsbrad Foothills - Group 043 Tarren Mill Lookout (2) - Hill', 0, 0, @SGGUID+6, 0, @STRINGID+18),
 (@SGGUID+75, 'Old Hillsbrad Foothills - Group 044 Tarren Mill - Patrol 010', 0, 0, @SGGUID+6, 0, @STRINGID+18),
 (@SGGUID+76, 'Old Hillsbrad Foothills - Group 045 Tarren Mill - Patrol 011', 0, 0, @SGGUID+6, 0, @STRINGID+18),
+
+(@SGGUID+77, 'Old Hillsbrad Foothills - Julie Honeywell', 0, 0, @SGGUID+6, 0, @STRINGID+18),
+(@SGGUID+78, 'Old Hillsbrad Foothills - Jay Lemieux', 0, 0, @SGGUID+6, 0, @STRINGID+18),
 -- gameobject
 (@SGGUID+1000, 'Old Hillsbrad Foothills - Roaring Flames (182592)', 1, 0, 0, 0, @STRINGID+3),
 (@SGGUID+1001, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel (182589)', 1, 1, @SGGUID+7, 8, 0),
@@ -3666,6 +3669,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+76, @CGUID+612, 0, 0), -- Tarren Mill Guardsman
 (@SGGUID+76, @CGUID+613, 1, 0), -- Tarren Mill Protector
 (@SGGUID+76, @CGUID+614, 2, 0), -- Tarren Mill Lookout
+
+(@SGGUID+77, @CGUID+469, -1, 0), -- Julie Honeywell
+(@SGGUID+78, @CGUID+468, -1, 0), -- Jay Lemieux
 -- gameobject
 (@SGGUID+1000, @OGUID+49, -1, 0),-- Roaring Flame
 (@SGGUID+1000, @OGUID+50, -1, 0),-- Roaring Flame
