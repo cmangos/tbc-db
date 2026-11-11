@@ -23669,7 +23669,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tarren Mill Peasant (18644) - NSR
 -- Tarren Mill Horsehand (18646)
 ('1864601','18646','30','0','100','0','5','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Tarren Mill Horsehand - ForceDespawn on ReceiveEventAI A'),
--- Innkeeper Monica (18649) - NSR
+-- Innkeeper Monica (18649)
+('1864901','18649','1','0','100','1','1000','60000','300000','600000','0','0','1','15631','0','0','0','0','0','0','0','0','0','0','Innkeeper Monica - Random TextEmote OOC'),
+('1864902','18649','30','0','100','0','5','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Innkeeper Monica - ForceDespawn on ReceiveEventAI A'),
 -- Tarren Mill Horse - 18650
 ('1865001','18650','30','0','100','0','5','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Tarren Mill Horse - ForceDespawn on ReceiveEventAI A'),
 -- Jay Lemieux (18655)

@@ -277,4 +277,4 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 ('34024', '5', '5600017'); --  Epoch Hunter Wave 3
 
 -- Tarren Mill Horsehand RP text that should be emote
-UPDATE broadcast_text SET ChatTypeID= 2 WHERE ID in (15610, 15618, 15622, 15626);
+UPDATE broadcast_text SET ChatTypeID= 2 WHERE ID in (15610, 15618, 15622, 15626, 15631);
