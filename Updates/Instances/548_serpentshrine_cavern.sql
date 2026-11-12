@@ -899,8 +899,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+215, @CGUID+192, 1679), -- Coilfang Shatterer -> Coilfang Serpentguard
 (@CGUID+216, @CGUID+192, 1679), -- Coilfang Shatterer -> Coilfang Serpentguard
 
-(@CGUID+273, @CGUID+275, 1167), -- Greyheart Spellbinder -> Greyheart Spellbinder
-(@CGUID+274, @CGUID+275, 1167); -- Greyheart Spellbinder -> Greyheart Spellbinder
+(@CGUID+273, @CGUID+275, 143), -- Greyheart Spellbinder -> Greyheart Spellbinder
+(@CGUID+274, @CGUID+275, 143); -- Greyheart Spellbinder -> Greyheart Spellbinder
 
 DELETE FROM creature_linking_template WHERE entry IN (21964,21965,21966);
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
