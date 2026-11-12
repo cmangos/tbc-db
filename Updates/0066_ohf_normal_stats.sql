@@ -314,3 +314,9 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 0.857 WHERE entry = 18646
 -- RunSpeed: 3
 -- Old Values SpeedWalk 1,125 SpeedRun 1,14286
 UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 0.4285 WHERE entry = 18650;
+
+-- Tarren Mill Peasant - 18644
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+-- Old Values SpeedWalk 1,125 SpeedRun 1,14286
+UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.1428 WHERE entry = 18644;
