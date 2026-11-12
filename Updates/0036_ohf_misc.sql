@@ -261,7 +261,7 @@ UPDATE creature_template SET UnitFlags = 33600 WHERE entry IN (23175, 23181);
 UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (23176, 23182);
 
 -- CoT Hillsbrad Despawn Trigger Unit - active flag test
-UPDATE creature_template SET ExtraFlags = 4096 WHERE entry IN (19433);
+UPDATE creature_template SET ExtraFlags = 64 WHERE entry IN (19433);
 
 
 -- 33937, 34016, 34023, 34024 - Stun Phase 2, 3, 4, 5 Units
@@ -275,3 +275,6 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 ('34024', '5', '5600015'), -- Epoch Hunter Wave 1
 ('34024', '5', '5600016'), -- Epoch Hunter Wave 2
 ('34024', '5', '5600017'); --  Epoch Hunter Wave 3
+
+-- Tarren Mill Horsehand RP text that should be emote
+UPDATE broadcast_text SET ChatTypeID= 2 WHERE ID in (15610, 15618, 15622, 15626, 15631);
