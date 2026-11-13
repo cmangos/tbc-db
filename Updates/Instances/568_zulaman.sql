@@ -574,7 +574,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (23576, 0, 0, 1, 0, 0, '45210 42459'), -- Nalorakk
 (23577, 0, 0, 1, 0, 0, '42459'), -- Halazzi
 (23578, 0, 0, 1, 0, 0, '42459'), -- Jan'alai
-(23580, 22467, 0, 1, 0, 0, '23255 42459'), -- Amani'shi Warbringer
+(23580, 22467, 0, 1, 0, 0, '42459'), -- Amani'shi Warbringer
 (23581, 0, 0, 1, 0, 0, NULL), -- Amani'shi Medicine Man
 (23582, 0, 0, 1, 0, 0, '42459'), -- Amani'shi Tribesman
 (23584, 0, 0, 1, 0, 0, NULL), -- Amani Bear
