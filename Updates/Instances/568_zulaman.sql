@@ -615,6 +615,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (24242, 0, 0, 1, 0, 0, '43580'), -- Slither
 (24312, 0, 0, 1, 0, 0, NULL), -- Dragonhawk Egg
 (24325, 0, 0, 1, 0, 0, NULL), -- Eagle Troll Spawn Target
+(24338, 0, 0, 1, 0, 0, '34657'), -- Amani Snake
 (24358, 0, 0, 1, 0, 0, NULL), -- Harrison Jones
 (24363, 0, 0, 1, 0, 0, NULL), -- Hex Lord Malacrass (Speech Trigger)
 (24396, 0, 0, 1, 0, 0, NULL), -- Forest Frog
