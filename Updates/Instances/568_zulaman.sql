@@ -548,8 +548,12 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+66, 0, 1, 1, 0, 0, '18950'), -- Amani'shi Scout
 (@CGUID+68, 0, 1, 1, 0, 0, '18950'), -- Amani'shi Scout
 (@CGUID+96, 0, 3, 1, 0, 0, NULL), -- Amani'shi Flame Caster
-(@CGUID+120, 0, 1, 1, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+127, 0, 1, 1, 0, 0, '18950'), -- Amani'shi Guardian
+(@CGUID+101, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Flame Caster
+(@CGUID+117, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Guardian
+(@CGUID+118, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Flame Caster
+(@CGUID+120, 0, 1, 1, 0, 0, NULL), -- Amani'shi Guardian
+(@CGUID+121, 0, 1, 1, 0, 0, '18950'), -- Amani'shi Guardian
+(@CGUID+127, 0, 1, 1, 0, 0, NULL), -- Amani'shi Guardian
 (@CGUID+319, 0, 1, 1, 0, 0, '18950'), -- Amani'shi Handler
 (@CGUID+398, 0, 0, 1, 375, 0, '18950'), -- Amani'shi Wind Walker
 (@CGUID+399, 0, 0, 1, 375, 0, '18950'), -- Amani'shi Wind Walker
@@ -580,8 +584,8 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (23584, 0, 0, 1, 0, 0, NULL), -- Amani Bear
 (23586, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Scout
 (23587, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Reinforcement
-(23596, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Flame Caster
-(23597, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Guardian
+(23596, 0, 0, 1, 0, 0, NULL), -- Amani'shi Flame Caster
+(23597, 0, 0, 1, 0, 0, NULL), -- Amani'shi Guardian
 (23774, 0, 0, 1, 0, 0, NULL), -- Amani'shi Trainer
 (23790, 0, 0, 1, 0, 0, NULL), -- Tanzar
 (23807, 0, 0, 1, 0, 0, NULL), -- Zul'Aman - Bear God Invisman
@@ -755,7 +759,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+96, @CGUID+45, 1024), -- Amani'shi Flame Caster -> Jan'alai
 
 (@CGUID+117, @CGUID+101, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
-(@CGUID+118, @CGUID+101, 1167), -- creature_spawn_entry -> Amani'shi Flame Caster
+(@CGUID+118, @CGUID+101, 1167), -- Amani'shi Flame Caster -> Amani'shi Flame Caster
 (@CGUID+121, @CGUID+101, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
 (@CGUID+101, @CGUID+45, 1025), -- Amani'shi Flame Caster -> Jan'alai
 
@@ -908,7 +912,6 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+56, 23542), (@CGUID+56, 23582), -- Amani'shi Axe Thrower, Amani'shi Tribesman
 (@CGUID+57, 23542), (@CGUID+57, 23582), -- Amani'shi Axe Thrower, Amani'shi Tribesman
 (@CGUID+58, 23542), (@CGUID+58, 23582), -- Amani'shi Axe Thrower, Amani'shi Tribesman
-(@CGUID+118, 23596), (@CGUID+118, 23597), -- Amani'shi Flame Caster, Amani'shi Guardian
 (@CGUID+126, 23596), (@CGUID+126, 23597), -- Amani'shi Flame Caster, Amani'shi Guardian
 (@CGUID+129, 23596), (@CGUID+129, 23597), -- Amani'shi Flame Caster, Amani'shi Guardian
 (@CGUID+317, 24059), (@CGUID+317, 24065), -- Amani'shi Beast Tamer, Amani'shi Handler
@@ -1008,7 +1011,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+115, 23597, 568, 1, 327.933, 1030.54, 9.60501, 3.29867, 7200, 7200, 0, 0), -- Amani'shi Guardian
 (@CGUID+116, 23597, 568, 1, 358.713, 1112.35, 5.87011, 0.733038, 7200, 7200, 0, 0), -- Amani'shi Guardian
 (@CGUID+117, 23597, 568, 1, -86.4353, 1150.79, 5.67736, 6.24828, 7200, 7200, 0, 0), -- Amani'shi Guardian
-(@CGUID+118, 0, 568, 1, -78.7532, 1150.4, 5.49613, 3.07178, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+118, 23596, 568, 1, -78.7532, 1150.4, 5.49613, 3.07178, 7200, 7200, 0, 0), -- Amani'shi Flame Caster
 (@CGUID+119, 23597, 568, 1, -193.4692, 1324.2583, 0.1332, 0.45378, 7200, 7200, 0, 0), -- Amani'shi Guardian
 (@CGUID+120, 23597, 568, 1, -83.8775, 1081.24, 1.01608, 1.65806, 7200, 7200, 0, 0), -- Amani'shi Guardian
 (@CGUID+121, 23597, 568, 1, -82.9617, 1155.3148, 5.6773, 4.66002, 7200, 7200, 0, 0), -- Amani'shi Guardian
