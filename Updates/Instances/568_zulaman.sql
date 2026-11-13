@@ -1,10 +1,10 @@
 /* DBScriptData
 DBName: Zul'Aman
 DBScriptName: instance_zulaman
-DB%Complete: 70
+DB%Complete: 71
 DBComment:
-* Add s.42350 RP Script
-* Add s.42220 RP Script (Issue: Npcs dont reset their position after being affected by the aura out of combat, needs to be handled in creature_movement)
+* Add s.42350 RP Script (+71,+102,+126,+128)
+* Polish s.42220 RP Script (+100,+119)
 * c.entry 24375 is present in older data as event starter?
 EndDBScriptData */
 
@@ -1579,8 +1579,22 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (186430, 0, 0, 0, 0, 0, 23897, 10, 0, 23208, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Say Text 1'),
 (186430, 2000, 20, 2, 0, 0, 23897, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Set Waypoint Movement');
 
-DELETE FROM `dbscripts_on_relay` WHERE `id` IN (2359701);
+DELETE FROM `dbscripts_on_relay` WHERE `id` IN (2359601,2359701);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(2359601, 2000, 1, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Flame Caster (@CGUID+100) - OneShotLaugh'),
+(2359601, 9000, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Flame Caster (@CGUID+100) - OneShotRoar'),
+(2359601, 13000, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Flame Caster (@CGUID+100) - OneShotTalk'),
+(2359601, 18000, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Flame Caster (@CGUID+100) - OneShotRoar'),
+(2359601, 22000, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Flame Caster (@CGUID+100) - OneShotTalk'),
+
+(2359601, 6000, 1, 5, 0, 0, 23597, @CGUID+119, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Flame Caster (@CGUID+119) - OneShotExclamation'),
+(2359601, 9000, 3, 0, 0, 0, 23597, @CGUID+119, 23, 0, 0, 0, 0, -193.4693, 1324.258, 0.1332102, 0.4537856, 'Amani\'shi Flame Caster (@CGUID+119) - Move Back'),
+(2359601, 11000, 1, 25, 0, 0, 23597, @CGUID+119, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Flame Caster (@CGUID+119) - OneShotPoint'),
+(2359601, 15000, 1, 15, 0, 0, 23597, @CGUID+119, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Flame Caster (@CGUID+119) - OneShotRoar'),
+(2359601, 19000, 1, 25, 0, 0, 23597, @CGUID+119, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Flame Caster (@CGUID+119) - OneShotPoint'),
+(2359601, 23000, 1, 15, 0, 0, 23597, @CGUID+119, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Flame Caster (@CGUID+119) - OneShotRoar'),
+(2359601, 27000, 1, 19, 0, 0, 23597, @CGUID+119, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Flame Caster (@CGUID+119) - OneShotChicken'),
+
 (2359701, 0, 42, 0, 0, 0, 0, 0, 0, 13631, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Guardian - EquipSet 2');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -1598,4 +1612,7 @@ DELETE FROM `worldstate_name` WHERE `Id` IN (@CONDITION+1);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (@CONDITION+1, 'Zul\'Aman - first 4 bosses dead - spawn Malacrass');
 
+DELETE FROM `spell_script_target` WHERE `entry` IN (42220);
+INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`, `inverseEffectMask`) VALUES
+(42220, 3, @CGUID+119, 0); -- Amani'shi Guardian - OBSOLETE – use StringId instead
 
