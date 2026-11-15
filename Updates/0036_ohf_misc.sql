@@ -20,9 +20,11 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 
 DELETE FROM gossip_menu_option WHERE menu_id IN (7499);
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `condition_id`) VALUES 
-(7499, 1, 0, 'We are ready to get you out of here, Thrall. Let\s go!', 14468, 100, 1, 0, 0, 0, 0);
+(7499, 1, 0, 'We are ready to get you out of here, Thrall. Let\s go!', 14468, 100, 1, 0, 0, 0, 7499);
 
-UPDATE creature_template SET Detection = 20 WHERE entry = 17876;
+DELETE FROM `conditions` WHERE `condition_entry` IN (7499);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(7499, 18, 17876, 0, 0, 0, 0, 'INSTANCE_CONDITION_ID_THRALL_STARTABLE');
 
 -- Part 2 Gossip
 -- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 107 ConnIdx: 0 Time: 10/08/2026 16:54:27.895 Number: 44301
