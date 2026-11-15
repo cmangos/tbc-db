@@ -320,3 +320,9 @@ UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 0.4285 WHERE entry = 1865
 -- RunSpeed: 8
 -- Old Values SpeedWalk 1,125 SpeedRun 1,14286
 UPDATE creature_template SET SpeedWalk = 1, SpeedRun = 1.1428 WHERE entry = 18644;
+
+-- Tarren Mill Peasant (With Sack) - 18645
+-- Not in Sniffs - Tarren Mill Peasant casts Gold Peasant Transform
+-- Only difference between 18644 and 18645 should be the DisplayID 
+-- keep everything else same as 18644
+UPDATE creature_template SET MinLevel = 15, MaxLevel = 15, UnitFlags = 256, SpeedWalk = 1, SpeedRun = 1.1428 WHERE entry = 18645;

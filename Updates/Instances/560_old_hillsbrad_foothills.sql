@@ -1239,6 +1239,11 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+459, 7, 2561.218, 690.67163, 55.516094, 100, 0, 0),
 (@CGUID+459, 8, 2554.9783, 687.0314, 55.392998, 100, 1000, 0),
 
+(@CGUID+460, 1, 2574.5671, 741.9193, 55.138027, 100, 0, 0),
+(@CGUID+460, 2, 2566.1782, 736.39594, 55.13803, 100, 0, 0),
+(@CGUID+460, 3, 2560.0842, 735.0262, 55.13803, 100, 0, 0),
+(@CGUID+460, 4, 2554.5186, 733.9661, 55.13803, 100, 1000, 1864401),
+
 (@CGUID+526, 1, 2170.2908, 265.7039, 53.51977, 100, 0, 0),
 (@CGUID+526, 2, 2169.023, 271.963, 54.584507, 100, 0, 0),
 (@CGUID+526, 3, 2176.7432, 273.27127, 54.266907, 100, 0, 0),
@@ -1287,7 +1292,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+704, 1, 2639.0146, 708.37976, 56.156, 100, 0, 0),
 (@CGUID+704, 2, 2638.1797, 699.70465, 56.053276, 100, 1000, 1809401);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (17848,18092,18093,18094,18598,18646,18649,18664,18764,18765,18887,28132,18672,18655,18656,20350,20360,20373,20378,20401);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (17848,18092,18093,18094,18598,18644,18646,18649,18664,18764,18765,18887,28132,18672,18655,18656,20350,20360,20373,20378,20401);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Lieutenant Drake
 (17848, 1, 1, 2113.8572, 93.34234, 52.54737, 100, 0, 0),
@@ -1433,7 +1438,40 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (18598, 1, 1, 2087.4426, 105.12012, 52.906998, 100, 0, 0),
 (18598, 1, 2, 2091.8333, 105.95063, 52.532944, 100, 0, 0),
 (18598, 1, 3, 2096.3777, 106.39041, 52.692852, 2.80998, 1000, 3),
-
+-- Tarren Mill Peasant 18644 - multiple paths
+-- cguid+460 - main path for after getting aura
+(18644, 1, 1, 2555.2058, 743.61847, 55.138027, 100, 0, 0),
+(18644, 1, 2, 2558.5776, 752.5052, 55.231937, 100, 0, 0),
+(18644, 1, 3, 2555.683, 755.8353, 55.72979, 100, 0, 0),
+(18644, 1, 4, 2571.7463, 764.7781, 56.73681, 100, 0, 0),
+(18644, 1, 5, 2604.645, 742.22015, 56.58594, 100, 0, 0),
+(18644, 1, 6, 2604.1758, 731.3882, 56.81752, 100, 0, 0),
+(18644, 1, 7, 2612.1719, 718.78, 56.79555, 100, 0, 0),
+(18644, 1, 8, 2618.6633, 716.6666, 56.112274, 100, 10000, 1864402),
+(18644, 1, 9, 2596.1682, 722.98474, 56.825832, 100, 0, 0),
+(18644, 1, 10, 2588.9414, 729.4648, 55.954525, 100, 0, 0),
+(18644, 1, 11, 2579.839, 729.3068, 55.149864, 100, 0, 0),
+(18644, 1, 12, 2572.823, 726.1969, 55.138027, 100, 1000, 1864403),
+-- cguid+460 - random path 1
+(18644, 2, 1, 2566.1782, 736.39594, 55.13803, 100, 0, 0),
+(18644, 2, 2, 2574.5671, 741.9193, 55.138027, 100, 0, 0),
+(18644, 2, 3, 2557.624, 737.2889, 55.138027, 100, 1000, 1864401),
+-- cguid+460 - random path 2
+(18644, 3, 1, 2574.5671, 741.9193, 55.138027, 100, 0, 0),
+(18644, 3, 2, 2566.1782, 736.39594, 55.13803, 100, 0, 0),
+(18644, 3, 3, 2560.0842, 735.0262, 55.13803, 100, 0, 0),
+(18644, 3, 4, 2554.5186, 733.9661, 55.13803, 100, 1000, 1864401),
+-- cguid+460 - random path 3
+(18644, 4, 1, 2554.5186, 733.9661, 55.13803, 100, 0, 0),
+(18644, 4, 2, 2557.624, 737.2889, 55.138027, 100, 1000, 1864401),
+-- cguid+460 - random path 4
+(18644, 5, 1, 2554.5186, 733.9661, 55.13803, 100, 0, 0),
+(18644, 5, 2, 2560.0842, 735.0262, 55.13803, 100, 0, 0),
+(18644, 5, 3, 2566.1782, 736.39594, 55.13803, 100, 0, 0),
+(18644, 5, 4, 2574.5671, 741.9193, 55.138027, 100, 0, 0),
+(18644, 5, 5, 2566.1782, 736.39594, 55.13803, 100, 0, 0),
+(18644, 5, 6, 2560.0842, 735.0262, 55.13803, 100, 0, 0),
+(18644, 5, 7, 2554.5186, 733.9661, 55.13803, 100, 1000, 1864401),
 -- Tarren Mill Horsehand
 (18646, 0, 1, 2483.5867, 697.54614, 55.77194, 100, 0, 0),
 (18646, 0, 2, 2501.3252, 695.5871, 55.509953, 100, 0, 0),
@@ -2740,8 +2778,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+457, 18644, 560, 3, 2581.023, 719.0766, 55.138027, 2.8626, 86400, 86400, 0, 4), -- Tarren Mill Peasant - 24510114
 (@CGUID+458, 18644, 560, 3, 2568.0493, 694.85394, 55.38043, 2.690428, 86400, 86400, 0, 4), -- Tarren Mill Peasant - 24510115
 (@CGUID+459, 18644, 560, 3, 2561.4792, 695.0597, 55.582535, 1.57149, 86400, 86400, 0, 4), -- Tarren Mill Peasant - 32898723
+(@CGUID+460, 18644, 560, 3, 2574.5671, 741.9193, 55.138027, 3.7821, 86400, 86400, 0, 2), -- Tarren Mill Peasant - 16121507
 
-(@CGUID+460, 18644, 560, 3, 2574.5671, 741.9193, 55.138027, 3.7821, 86400, 86400, 0, 2), -- Tarren Mill Peasant
 
 (@CGUID+461, 18644, 560, 3, 2536.1128, 682.46454, 55.13803, 4.485, 86400, 86400, 0, 2), -- Tarren Mill Peasant
 
@@ -4275,7 +4313,7 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1787619,1787620,1787621,1787622,1787623,1809601, 1809602,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1864401, 1864402, 1864601, 1864602, 1864603, 1864604, 1864605,1864606,1864607,1864608,1864609,1876501, 1876502, 1876503, 1888701, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1787619,1787620,1787621,1787622,1787623,1809601, 1809602,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1864401, 1864402, 1864403, 1864601, 1864602, 1864603, 1864604, 1864605,1864606,1864607,1864608,1864609,1876501, 1876502, 1876503, 1888701, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Emote OneShot Point'),
 (1784801,0,1,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lieutenant Drake - Yell Text'),
@@ -4432,9 +4470,14 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1809401, 15000, 0, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
 (1809401, 15000, 0, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Attack Thrall'),
 
--- Tarren Mill Peasant
-(1864401, 0, 0, 23, 11354, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Change ModelID'),
-(1864402, 0, 0, 23, 18040, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Change ModelID'),
+-- Tarren Mill Peasant - cguid+460
+(1864401, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Pause Waypoints'),
+(1864401, 1000, 0, 15, 32617, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Cast Gold Peasant Transform'),
+(1864401, 1000, 1, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Start Main Path to Barn'),
+(1864402, 4000, 0, 14, 32617, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Remove Aura Gold Peasant Transform'),
+-- RP finished start a rnd path
+(1864403, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Pause Waypoints'),
+(1864403, 0, 0, 45, 0, @RELAYID+11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Start RandomScript'),
 
 -- Tarren Mill Horsehand
 (1864601, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15625, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'),
@@ -4612,7 +4655,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN 10220 AND 10242;
-DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN @RELAYID+1 AND @RELAYID+17;
+DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN @RELAYID+1 AND @RELAYID+21;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10220, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12742, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Brown'),
 (10221, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12750, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Black Skull Glowing'),
@@ -4879,8 +4922,12 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+16, 1101, 2, 26, 0, 0, 0, 17876, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Durnholde Lookout - Attack Thrall'),
 -- Epoch Hunter on Spawn RP
 (@RELAYID+17, 500, 0, 0, 0, 0, 0, 0, 0, 0, 16016, 0, 0, 0, 0, 0, 0, 0, 'OHF - Epoch Hunter Say Text'),
-(@RELAYID+17, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 16019, 0, 0, 0, 0, 0, 0, 0, 'OHF - Epoch Hunter Say Text');
-
+(@RELAYID+17, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 16019, 0, 0, 0, 0, 0, 0, 0, 'OHF - Epoch Hunter Say Text'),
+-- Tarren Mill Peasant random paths
+(@RELAYID+18, 0, 0, 20, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Tarren Mill Peason - Path 1'),
+(@RELAYID+19, 0, 0, 20, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Tarren Mill Peason - Path 2'),
+(@RELAYID+20, 0, 0, 20, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Tarren Mill Peason - Path 3'),
+(@RELAYID+21, 0, 0, 20, 2, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Tarren Mill Peason - Path 4');
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -4933,6 +4980,11 @@ INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `c
 (@RELAYID+10, 0, 15606, 0, 'OHF - Tarren Mill Horsehand - Benjamin Text 1'),
 (@RELAYID+10, 0, 15608, 0, 'OHF - Tarren Mill Horsehand - Benjamin Text 2'),
 (@RELAYID+10, 0, 15609, 0, 'OHF - Tarren Mill Horsehand - Benjamin Text 3'),
+
+(@RELAYID+11, 1, @RELAYID+18, 0, 'OHF - Tarren Mill Peasant - Random Path 1'),
+(@RELAYID+11, 1, @RELAYID+19, 0, 'OHF - Tarren Mill Peasant - Random Path 2'),
+(@RELAYID+11, 1, @RELAYID+20, 0, 'OHF - Tarren Mill Peasant - Random Path 3'),
+(@RELAYID+11, 1, @RELAYID+21, 0, 'OHF - Tarren Mill Peasant - Random Path 4'),
 
 (10203, 1, 10223, 0, 'Nat Pagle - Dream 1'),
 (10203, 1, 10224, 0, 'Nat Pagle - Dream 2'),
