@@ -23666,11 +23666,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('5600450','-5600450','1','0','100','1','2000','10000','15000','25000','0','0','5','1','0','0','54','0','0','5600005','0','0','0','0','Orc Prisoner - Emote Talk Random Say OOC'),
 ('5600557','-5600557','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600571','-5600571','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
--- Tarren Mill Peasant (18644) - NSR
+-- Tarren Mill Peasant (18644)
+('5600457','-5600457','1','0','100','1','1000','60000','300000','600000','0','0','1','15610','0','0','5','3','0','0','0','0','0','0','Tarren Mill Peasant - TextEmote and Emote OOC'),
 -- Tarren Mill Horsehand (18646)
 ('1864601','18646','30','0','100','0','5','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Tarren Mill Horsehand - ForceDespawn on ReceiveEventAI A'),
 -- Innkeeper Monica (18649)
-('1864901','18649','1','0','100','1','1000','60000','300000','600000','0','0','1','15631','0','0','0','0','0','0','0','0','0','0','Innkeeper Monica - Random TextEmote OOC'),
+('1864901','18649','1','0','100','1','1000','60000','300000','600000','0','0','1','15631','0','0','0','0','0','0','0','0','0','0','Innkeeper Monica - TextEmote OOC'),
 ('1864902','18649','30','0','100','0','5','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Innkeeper Monica - ForceDespawn on ReceiveEventAI A'),
 -- Tarren Mill Horse - 18650
 ('1865001','18650','30','0','100','0','5','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Tarren Mill Horse - ForceDespawn on ReceiveEventAI A'),
