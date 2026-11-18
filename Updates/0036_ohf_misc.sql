@@ -20,9 +20,11 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 
 DELETE FROM gossip_menu_option WHERE menu_id IN (7499);
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `condition_id`) VALUES 
-(7499, 1, 0, 'We are ready to get you out of here, Thrall. Let\s go!', 14468, 100, 1, 0, 0, 0, 0);
+(7499, 1, 0, 'We are ready to get you out of here, Thrall. Let\s go!', 14468, 100, 1, 0, 0, 0, 7499);
 
-UPDATE creature_template SET Detection = 20 WHERE entry = 17876;
+DELETE FROM `conditions` WHERE `condition_entry` IN (7499);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(7499, 18, 17876, 0, 0, 0, 0, 'INSTANCE_CONDITION_ID_THRALL_STARTABLE');
 
 -- Part 2 Gossip
 -- ServerToClient: SMSG_GOSSIP_MESSAGE (0x650018) Length: 107 ConnIdx: 0 Time: 10/08/2026 16:54:27.895 Number: 44301
@@ -204,8 +206,8 @@ INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`,
 
 DELETE FROM dbscripts_on_gossip WHERE ID = 7769;
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(7769, 0, 0, 34, 416, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Terminate if condition is true'),
-(7769, 1, 1, 17, 25853, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Add Item');
+(7769, 0, 0, 34, 416, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Erozion - Terminate if condition is true'),
+(7769, 1, 1, 17, 25853, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Erozion - Add Item');
 
 -- ServerToClient: SMSG_GOSSIP_MESSAGE (0x2A98) Length: 85 ConnIdx: 0 Time: 06/13/2021 22:30:40.828 Number: 457378
 -- GossipGUID: Full: 0x2045FC46001248C000026E00004669FD Creature/0 R4479/S622 Map: 560 Entry: 18723 Low: 4614653
@@ -261,7 +263,7 @@ UPDATE creature_template SET UnitFlags = 33600 WHERE entry IN (23175, 23181);
 UPDATE creature_template SET UnitFlags = 32832 WHERE entry IN (23176, 23182);
 
 -- CoT Hillsbrad Despawn Trigger Unit - active flag test
-UPDATE creature_template SET ExtraFlags = 4096 WHERE entry IN (19433);
+UPDATE creature_template SET ExtraFlags = 64 WHERE entry IN (19433);
 
 
 -- 33937, 34016, 34023, 34024 - Stun Phase 2, 3, 4, 5 Units
@@ -275,3 +277,6 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 ('34024', '5', '5600015'), -- Epoch Hunter Wave 1
 ('34024', '5', '5600016'), -- Epoch Hunter Wave 2
 ('34024', '5', '5600017'); --  Epoch Hunter Wave 3
+
+-- Tarren Mill Horsehand RP text that should be emote
+UPDATE broadcast_text SET ChatTypeID= 2 WHERE ID in (15610, 15618, 15622, 15626, 15631);
