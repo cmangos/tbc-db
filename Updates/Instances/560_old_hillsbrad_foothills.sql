@@ -1289,6 +1289,20 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+462, 16, 2557.9626, 696.91675, 55.588524, 100, 0, 0),
 (@CGUID+462, 17, 2539.3113, 693.7178, 55.256054, 100, 0, 0),
 (@CGUID+462, 18, 2531.8923, 704.2636, 55.294662, 100, 1000, 1864405),
+-- CGUID+463 - Main Path
+(@PATH, 1, 2558.412, 702.44305, 55.4465, NULL, 0),
+(@PATH, 2, 2561.824, 713.6516, 55.138023, NULL, 259),
+(@PATH, 3, 2558.412, 702.44305, 55.4465, NULL, 0),
+(@PATH, 4, 2547.0784, 696.1814, 55.401146, NULL, 1454),
+(@PATH, 5, 2554.8315, 701.3133, 55.45887, NULL, 0),
+(@PATH, 6, 2563.376, 706.6429, 55.27561, NULL, 0),
+(@PATH, 7, 2574.2478, 707.0303, 55.138027, NULL, 0),
+(@PATH, 8, 2584.5305, 707.47, 55.138027, NULL, 0),
+(@PATH, 9, 2588.7463, 713.8691, 55.13803, NULL, 0),
+(@PATH, 10, 2591.807, 713.58954, 55.537838, NULL, 0),
+(@PATH, 11, 2607.0369, 706.183, 56.281303, NULL, 0),
+(@PATH, 12, 2614.2766, 708.18976, 56.568512, NULL, 0),
+(@PATH, 13, 2620.3577, 713.8734, 56.157623, NULL, 7988),
 
 (@CGUID+526, 1, 2170.2908, 265.7039, 53.51977, 100, 0, 0),
 (@CGUID+526, 2, 2169.023, 271.963, 54.584507, 100, 0, 0),
@@ -1531,12 +1545,12 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (18644, 7, 9, 2518.5513, 698.5561, 55.138027, 100, 0, 0),
 (18644, 7, 10, 2524.5872, 708.29956, 55.163406, 100, 0, 0),
 (18644, 7, 11, 2536.4536, 714.06866, 55.23002, 100, 1000, 1864401),
--- CGUID+462 - random path 1
+-- CGUID+462 - random path 1 - runs it once fully, and then just partly with a chance to change back to main path again on 3 points and last point 100%
 (18644, 8, 1, 2547.0784, 696.1814, 55.401146, 100, 0, 0),
 (18644, 8, 2, 2537.2483, 698.39526, 55.327988, 100, 0, 0),
 (18644, 8, 3, 2540.1965, 707.5806, 55.338234, 100, 0, 0),
 (18644, 8, 4, 2534.49, 711.6807, 55.255302, 100, 0, 0),
-(18644, 8, 5, 2526.2415, 706.0055, 55.195984, 100, 0, 1864405),
+(18644, 8, 5, 2526.2415, 706.0055, 55.195984, 100, 0, 0),
 (18644, 8, 6, 2534.49, 711.6807, 55.255302, 100, 0, 0),
 (18644, 8, 7, 2540.1965, 707.5806, 55.338234, 100, 0, 0),
 (18644, 8, 8, 2537.2483, 698.39526, 55.327988, 100, 0, 0),
@@ -1544,8 +1558,17 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (18644, 8, 10, 2558.412, 702.44305, 55.4465, 100, 0, 0),
 (18644, 8, 11, 2561.824, 713.6516, 55.138023, 100, 1000, 0), 
 (18644, 8, 12, 2558.412, 702.44305, 55.4465, 100, 0, 0),
-(18644, 8, 13, 2547.0784, 696.1814, 55.401146, 100, 1, 1864405),
-(18644, 8, 14, 2537.2483, 698.39526, 55.327988, 100, 1, 1864405),
+(18644, 8, 13, 2547.0784, 696.1814, 55.401146, 100, 1, 1864406), -- chance to change back to main movement
+(18644, 8, 14, 2537.2483, 698.39526, 55.327988, 100, 1, 1864406), -- chance to change back to main movement
+(18644, 8, 15, 2540.1965, 707.5806, 55.338234, 100, 1, 1864406), -- chance to change back to main movement
+(18644, 8, 16, 2534.49, 711.6807, 55.255302, 100, 0, 0),
+(18644, 8, 17, 2526.2415, 706.0055, 55.195984, 100, 1, 1864401), -- if we reached this point we switch to main path
+-- CGUID+463 Path 1
+(@PATH, 26, 2534.49, 711.6807, 55.255302, NULL, 0),
+(@PATH, 27, 2526.2415, 706.0055, 55.195984, NULL, 1351),
+(@PATH, 28, 2534.49, 711.6807, 55.255302, NULL, 0),
+(@PATH, 29, 2540.1965, 707.5806, 55.338234, NULL, 0),
+
 -- Tarren Mill Horsehand
 (18646, 0, 1, 2483.5867, 697.54614, 55.77194, 100, 0, 0),
 (18646, 0, 2, 2501.3252, 695.5871, 55.509953, 100, 0, 0),
@@ -2856,7 +2879,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+461, 18644, 560, 3, 2536.1128, 682.46454, 55.13803, 4.485, 86400, 86400, 0, 2), -- Tarren Mill Peasant - 7732899
 (@CGUID+462, 18644, 560, 3, 2554.8315, 701.3133, 55.45887, 0.59184, 86400, 86400, 0, 2), -- Tarren Mill Peasant - 41287331
 
-(@CGUID+463, 18644, 560, 3, 2540.1965, 707.5806, 55.338234, 4.3949, 86400, 86400, 0, 4), -- Tarren Mill Peasant
+(@CGUID+463, 18644, 560, 3, 2540.1965, 707.5806, 55.338234, 4.3949, 86400, 86400, 0, 2), -- Tarren Mill Peasant
 
 (@CGUID+465, 18644, 560, 3, 2549.0439453125, 667.63531494140625, 55.8631591796875, 2.076941728591918945, 86400, 86400, 0, 0), -- Tarren Mill Peasant - Static
 (@CGUID+466, 18649, 560, 3, 2662.1448, 662.41003, 57.193745, 1.14933, 86400, 86400, 0, 2), -- Innkeeper Monica
@@ -4391,7 +4414,7 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1787619,1787620,1787621,1787622,1787623,1809601, 1809602,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1864401, 1864402, 1864403, 1864404, 1864601, 1864602, 1864603, 1864604, 1864605,1864606,1864607,1864608,1864609,1876501, 1876502, 1876503, 1888701, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1786001,1786201,1786202,1787601,1787602,1787603,1787604,1787605,1787606,1787607,1787608,1787609,1787610,1787611,1787612,1787613,1787614,1787615,1787616,1787617,1787618,1787619,1787620,1787621,1787622,1787623,1809601, 1809602,1809201,1809301,1809401, 1859801, 1859802,  1859803, 1859804, 1859805, 1859806, 1864401, 1864402, 1864403, 1864404, 1864405, 1864406, 1864407, 1864601, 1864602, 1864603, 1864604, 1864605,1864606,1864607,1864608,1864609,1876501, 1876502, 1876503, 1888701, 2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lieutenant Drake - Emote OneShot Point'),
 (1784801,0,1,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lieutenant Drake - Yell Text'),
@@ -4560,7 +4583,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- Tarren Mill Peasant - cguid 461
 (1864404, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Pause Waypoints'),
 (1864404, 0, 0, 45, 0, @RELAYID+12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Start RandomScript'),
--- 
+-- Tarren Mill Peasant - cguid 462
+(1864405, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Pause Waypoints'),
+(1864405, 1000, 0, 20, 2, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Start Path'),
+(1864406, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Pause Waypoints'),
+(1864406, 0, 0, 45, 0, @RELAYID+13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Start RandomScript'),
 -- Tarren Mill Horsehand
 (1864601, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15625, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Say Text'),
 (1864601, 0, 1, 0, 0, 0, 0, 18644, @CGUID+465, 16, 15630, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Horsehand - Tarren Mill Peasant Say Text'),
@@ -5012,9 +5039,13 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+20, 0, 0, 20, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Tarren Mill Peason - Path 3'),
 (@RELAYID+21, 0, 0, 20, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Tarren Mill Peason - Path 4'),
 -- Tarren Mill Peasant cguid+461 random paths
-(@RELAYID+22, 0, 0, 20, 2, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Tarren Mill Peason - Path 1'),
-(@RELAYID+23, 0, 0, 20, 2, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Tarren Mill Peason - Path 2'),
-(@RELAYID+24, 0, 0, 20, 2, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Tarren Mill Peason - Path 3'),
+(@RELAYID+22, 0, 0, 20, 2, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Tarren Mill Peason - Path 1'),
+(@RELAYID+23, 0, 0, 20, 2, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Tarren Mill Peason - Path 2'),
+(@RELAYID+24, 0, 0, 20, 2, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Tarren Mill Peason - Path 3'),
+
+(@RELAYID+25, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Pause Waypoints'),
+(@RELAYID+25, 1000, 0, 15, 32617, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Cast Gold Peasant Transform'),
+(@RELAYID+25, 1000, 1, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Peasant - Start Main Path to Barn'),
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -5077,6 +5108,8 @@ INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `c
 (@RELAYID+12, 1, @RELAYID+22, 0, 'OHF - Tarren Mill Peasant - Random Path 4'),
 (@RELAYID+12, 1, @RELAYID+23, 0, 'OHF - Tarren Mill Peasant - Random Path 4'),
 (@RELAYID+12, 1, @RELAYID+24, 0, 'OHF - Tarren Mill Peasant - Random Path 4'),
+
+(@RELAYID+13, 1, @RELAYID+25, 500, 'OHF - Tarren Mill Peasant - Change to Main Path'),
 
 (10203, 1, 10223, 0, 'Nat Pagle - Dream 1'),
 (10203, 1, 10224, 0, 'Nat Pagle - Dream 2'),
