@@ -206,8 +206,8 @@ INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`,
 
 DELETE FROM dbscripts_on_gossip WHERE ID = 7769;
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(7769, 0, 0, 34, 416, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Terminate if condition is true'),
-(7769, 1, 1, 17, 25853, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Taretha - Add Item');
+(7769, 0, 0, 34, 416, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Erozion - Terminate if condition is true'),
+(7769, 1, 1, 17, 25853, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Erozion - Add Item');
 
 -- ServerToClient: SMSG_GOSSIP_MESSAGE (0x2A98) Length: 85 ConnIdx: 0 Time: 06/13/2021 22:30:40.828 Number: 457378
 -- GossipGUID: Full: 0x2045FC46001248C000026E00004669FD Creature/0 R4479/S622 Map: 560 Entry: 18723 Low: 4614653
