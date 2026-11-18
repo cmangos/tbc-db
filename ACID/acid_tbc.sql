@@ -23667,6 +23667,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('5600557','-5600557','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 ('5600571','-5600571','30','0','100','0','5','0','0','0','0','0','47','0','0','0','58','0','0','0','48','2','0','0','Orc Prisoner - StandState Stand RunMode and WaypointMovement on ReceiveEventAI A'),
 -- Tarren Mill Peasant (18644)
+('1864401','18644','30','0','100','0','5','0','0','0','0','0','41','10000','0','0','53','5600000','0','0','0','0','0','0','Tarren Mill Peasant - ForceDespawn start on ReceiveEventAI A'),
 ('5600457','-5600457','1','0','100','1','1000','60000','300000','600000','0','0','1','15610','0','0','5','3','0','0','0','0','0','0','Tarren Mill Peasant - TextEmote and Emote OOC'),
 -- Tarren Mill Horsehand (18646)
 ('1864601','18646','30','0','100','0','5','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Tarren Mill Horsehand - ForceDespawn on ReceiveEventAI A'),

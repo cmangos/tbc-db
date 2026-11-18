@@ -3378,7 +3378,6 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+67, 'Old Hillsbrad Foothills - Tarren Mill Horsehand - Bessy', 0, 0, @SGGUID+6, 0, @STRINGID+18),
 -- Tarren Mill Peasants for despawning
 (@SGGUID+68, 'Old Hillsbrad Foothills - Tarren Mill Peasant', 0, 0, @SGGUID+6, 0, @STRINGID+18),
-(@SGGUID+69, 'Old Hillsbrad Foothills - Tarren Mill Peasant', 0, 0, @SGGUID+6, 0, @STRINGID+18),
 -- Tarren Mill Enemy Groups - despawning when Epoch Hunter spawns
 (@SGGUID+70, 'Old Hillsbrad Foothills - Group 039 Tarren Mill Lookout (2)', 0, 0, @SGGUID+6, 0, @STRINGID+18),
 (@SGGUID+71, 'Old Hillsbrad Foothills - Group 040 Tarren Mill - Patrol 009', 0, 0, @SGGUID+6, 0, @STRINGID+18),
@@ -3387,7 +3386,6 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+74, 'Old Hillsbrad Foothills - Group 043 Tarren Mill Lookout (2) - Hill', 0, 0, @SGGUID+6, 0, @STRINGID+18),
 (@SGGUID+75, 'Old Hillsbrad Foothills - Group 044 Tarren Mill - Patrol 010', 0, 0, @SGGUID+6, 0, @STRINGID+18),
 (@SGGUID+76, 'Old Hillsbrad Foothills - Group 045 Tarren Mill - Patrol 011', 0, 0, @SGGUID+6, 0, @STRINGID+18),
-
 (@SGGUID+77, 'Old Hillsbrad Foothills - Julie Honeywell', 0, 0, @SGGUID+6, 0, @STRINGID+18),
 (@SGGUID+78, 'Old Hillsbrad Foothills - Jay Lemieux', 0, 0, @SGGUID+6, 0, @STRINGID+18),
 (@SGGUID+79, 'Old Hillsbrad Foothills - Innkeeper Monica', 0, 0, @SGGUID+6, 0, @STRINGID+18),
@@ -3603,6 +3601,15 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+67, @CGUID+627, 0, 0), -- Tarren Mill Horsehand
 (@SGGUID+67, @CGUID+624, 1, 0), -- Tarren Mill Horse
+
+(@SGGUID+68, @CGUID+457, -1, 0), -- Tarren Mill Peasant
+(@SGGUID+68, @CGUID+458, -1, 0), -- Tarren Mill Peasant
+(@SGGUID+68, @CGUID+459, -1, 0), -- Tarren Mill Peasant
+(@SGGUID+68, @CGUID+460, -1, 0), -- Tarren Mill Peasant
+(@SGGUID+68, @CGUID+461, -1, 0), -- Tarren Mill Peasant
+(@SGGUID+68, @CGUID+462, -1, 0), -- Tarren Mill Peasant
+(@SGGUID+68, @CGUID+463, -1, 0), -- Tarren Mill Peasant
+(@SGGUID+68, @CGUID+465, -1, 0), -- Tarren Mill Peasant
 
 (@SGGUID+70, @CGUID+615, -1, 0), -- Tarren Mill Lookout
 (@SGGUID+70, @CGUID+616, -1, 0), -- Tarren Mill Lookout
@@ -4655,7 +4662,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN 10220 AND 10242;
-DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN @RELAYID+1 AND @RELAYID+21;
+DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN @RELAYID+0 AND @RELAYID+21;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10220, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12742, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Brown'),
 (10221, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12750, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Black Skull Glowing'),
@@ -4875,6 +4882,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10242, 13000, 0, 0, 0, 0, 0, 18657, @CGUID+622, 16, 15670, 15671, 15672, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #3 - Convo Path 3'),
 
 -- Used via ACID to get rnd movement with different times
+(@RELAYID+0, 0, 0, 20, 1, 50, 0, 0, 0, 0x04, 1, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - SET RandomMovement + RUN (dist 50)'),
 (@RELAYID+1, 0, 0, 20, 1, 3, 5000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 5 seconds'),
 (@RELAYID+2, 0, 0, 20, 1, 3, 6000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 6 seconds'),
 (@RELAYID+3, 0, 0, 20, 1, 3, 7000, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'OHF - Generic - TimedWanderMovement around point 3y - 7 seconds'),
