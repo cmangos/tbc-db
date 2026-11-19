@@ -14478,6 +14478,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('351603','3516','0','0','100','1025','8000','12000','26000','30000','0','0','11','20701','0','0','0','0','0','0','0','0','0','0','Arch Druid Fandral Staghelm - Cast Rejuvenation'),
 ('351604','3516','0','0','100','1025','5000','7000','17000','21000','0','0','11','20699','1','0','0','0','0','0','0','0','0','0','Arch Druid Fandral Staghelm - Cast Entangling Roots'),
 -- Sentinel Arynia Cloudsbreak 3519
+('351901','3519','30','0','100','0','5','0','0','0','0','0','53','351901','0','0','59','7','0','0','0','0','0','0','Sentinel Arynia Cloudsbreak - Start RelayScript and Face Sender on ReceiveEventAI A'),
 -- Blackmoss the Fetid 3535
 -- Tallonkai Swiftroot 3567
 -- Mist (3568) - npc_mist
