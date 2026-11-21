@@ -1,0 +1,28 @@
+-- Quest Junkboxes Needed (8249) should be repeatable 
+-- Also this quest should be available for all classes not only Rogues
+-- ServerToClient: SMSG_GOSSIP_MESSAGE (0x640018) Length: 95 ConnIdx: 0 Time: 11/21/2026 11:06:35.094 Number: 501
+-- GossipGUID: Full: 0x2064380000068CC000001E00007D0B09 Creature/0 R6414/S30 Map: 0 Entry: 6707 Low: 8194825
+-- GossipID: 3984
+-- LfgDungeonsID: 1056761024
+-- FriendshipFactionID: 0
+-- GossipOptionsCount: 0
+-- GossipQuestsCount: 1
+-- HasTextID: True
+-- HasBroadcastTextID: False
+-- TextID: 4839
+-- [0] (GossipQuests) QuestID: 8249
+-- [0] (GossipQuests) ContentTuningID: 28920
+-- [0] (GossipQuests) QuestType: 0
+-- [0] (GossipQuests) QuestLevel: 60
+-- [0] (GossipQuests) QuestMaxScalingLevel: 255
+-- [0] (GossipQuests) Unused1102: 0
+-- [0] (GossipQuests) Flags: 8 (Sharable)
+-- [0] (GossipQuests) FlagsEx: 0 (None)
+-- [0] (GossipQuests) FlagsEx2_Unused550: 0 (None)
+-- [0] (GossipQuests) FlagsEx3_Unused550: 0
+-- [0] (GossipQuests) Repeatable: True
+-- [0] (GossipQuests) ResetByScheduler: False
+-- [0] (GossipQuests) Important: False
+-- [0] (GossipQuests) Meta: False
+-- [0] (GossipQuests) QuestTitle: Junkboxes Needed
+UPDATE quest_template SET RequiredClasses = 0, SpecialFlags = 1 WHERE entry = 8249;
