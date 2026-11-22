@@ -116,6 +116,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (20035, 0, 0, 1, 0, 0, '38716'), -- Bloodwarder Marshal
 (20037, 0, 0, 0, 0, 0, '37318'), -- Tempest Falconer
 (20039, 0, 0, 0, 0, 0, '19818'), -- Phoenix-Hawk - Double Attack
+(20047, 0, 0, 1, 0, 0, '39086'), -- Crimson Hand Battle Mage
 (21271, 0, 0, 1, 0, 0, '12787'); -- Infinity Blades
 
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES

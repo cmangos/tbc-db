@@ -29901,6 +29901,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Astromancer Lord 20046 - spell_list
 ('2004601','20046','0','0','100','1025','1000','2000','15000','30000','0','0','11','38732','0','32','0','0','0','0','0','0','0','0','Astromancer Lord - Cast Fire Shield'),
 -- Crimson Hand Battle Mage 20047 - spell_list
+('2004701','20047','11','0','100','0','0','0','0','0','0','0','11','39086','0','34','0','0','0','0','0','0','0','0','Crimson Hand Battle Mage - Cast Frost Attack on Spawn'),
 -- Crimson Hand Centurion 20048 - spell_list
 -- Crimson Hand Blood Knight 20049 - spell_list
 -- Crimson Hand Inquisitor 20050 - spell_list
