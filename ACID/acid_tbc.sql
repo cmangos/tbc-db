@@ -29836,6 +29836,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2003301','20033','27','0','100','1','35915','1','15000','30000','0','0','11','35915','0','0','0','0','0','0','0','0','0','0','Astromancer - Cast Molten Armor on Missing Buff'),
 -- Star Scryer 20034 - spell_list
 -- Bloodwarder Marshal 20035 spell_list
+('2003501','20035','11','0','100','0','0','0','0','0','0','0','11','38716','0','34','0','0','0','0','0','0','0','0','Bloodwarder Marshal - Cast Deep Wounds on Spawn'),
 -- Bloodwarder Squire 20036 - spell_list
 -- Tempest Falconer 20037 - spell_list
 ('2003701','20037','11','0','100','0','0','0','0','0','0','0','57','2','40','0','0','0','0','0','0','0','0','0','Tempest Falconer - Enable Range Mode on Spawn'),

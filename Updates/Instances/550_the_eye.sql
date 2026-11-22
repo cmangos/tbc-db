@@ -113,6 +113,7 @@ INSERT INTO `creature_spawn_data_template` (`Entry`, `StringId`, `Name`) VALUES
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (19514, 0, 0, 1, 0, 33554432, NULL), -- Al'ar
 (19622, 0, 0, 1, 0, 0, NULL), -- Kael'thas Sunstrider
+(20035, 0, 0, 1, 0, 0, '38716'), -- Bloodwarder Marshal
 (20037, 0, 0, 0, 0, 0, '37318'), -- Tempest Falconer
 (20039, 0, 0, 0, 0, 0, '19818'), -- Phoenix-Hawk - Double Attack
 (21271, 0, 0, 1, 0, 0, '12787'); -- Infinity Blades
