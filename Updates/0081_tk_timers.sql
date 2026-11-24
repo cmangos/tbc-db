@@ -1,0 +1,40 @@
+-- Further improve some timers in Tempest Keep: The Eye
+-- ccsdb shows cast go, hence cast time has to be substracted from the timers shown.
+UPDATE `creature_spell_list` SET `RepeatMin` = 6000 WHERE `Id` = 2003201 AND `SpellId` = 37249; -- Bloodwarder Vindicator - Flash of Light - missing 50% including self (8000)
+UPDATE `creature_spell_list` SET `RepeatMin` = 2500 WHERE `Id` = 2003201 AND `SpellId` = 37251; -- Bloodwarder Vindicator - Hammer of Wrath - random player (3000)
+UPDATE `creature_spell_list` SET `InitialMax` = 3000, `RepeatMin` = 2000, `RepeatMax` = 3000 WHERE `Id` = 2003701 AND `SpellId` = 39079; -- Tempest Falconer - Shoot - current (5000 3000 5000)
+UPDATE `creature_spell_list` SET `InitialMin` = 5000 WHERE `Id` = 2003801 AND `SpellId` = 37160; -- Phoenix-Hawk Hatchling - Silence - self (6000)
+UPDATE `creature_spell_list` SET `InitialMin` = 5000, `RepeatMin` = 10000 WHERE `Id` = 2003801 AND `SpellId` = 37319; -- Phoenix-Hawk Hatchling - Wing Buffet - self (7000 11000)
+UPDATE `creature_spell_list` SET `InitialMin` = 15000, `RepeatMin` = 20000 WHERE `Id` = 2004001 AND `SpellId` = 35035; -- Crystalcore Devastator - Countercharge - self (17000 30000)
+UPDATE `creature_spell_list` SET `InitialMin` = 15000, `RepeatMin` = 14000 WHERE `Id` = 2004101 AND `SpellId` = 37104; -- Crystalcore Sentinel - Overcharge - current (18000 16000)
+UPDATE `creature_spell_list` SET `InitialMin` = 20000, `RepeatMin` = 20000 WHERE `Id` = 2004101 AND `SpellId` = 37106; -- Crystalcore Sentinel - Arcane Explosion - self (24000 24000)
+UPDATE `creature_spell_list` SET `InitialMin` = 4000, `RepeatMin` = 4000 WHERE `Id` = 2004401 AND `SpellId` = 37111; -- Novice Astromancer - Fireball - current (6000 6000)
+UPDATE `creature_spell_list` SET `InitialMin` = 5000 WHERE `Id` = 2004401 AND `SpellId` = 37279; -- Novice Astromancer - Rain of Fire - random (6000)
+UPDATE `creature_spell_list` SET `InitialMin` = 9000, `RepeatMin` = 10000 WHERE `Id` = 2004701 AND `SpellId` = 37262; -- Crimson Hand Battle Mage - Frostbolt Volley - current (11000 12000)
+UPDATE `creature_spell_list` SET `InitialMin` = 2000, `RepeatMin` = 2000 WHERE `Id` = 2004901 AND `SpellId` = 37257; -- Crimson Hand Blood Knight - Flash of Light - missing 50% including self (3000 3000)
+UPDATE `creature_spell_list` SET `RepeatMin` = 2500 WHERE `Id` = 2004901 AND `SpellId` = 37259; -- Crimson Hand Blood Knight - Hammer of Wrath - random (4000)
+UPDATE `creature_spell_list` SET `InitialMin` = 2000 WHERE `Id` = 2004901 AND `SpellId` = 39077; -- Crimson Hand Blood Knight - Hammer of Justice - current (3000)
+UPDATE `creature_spell_list` SET `InitialMax` = 30000, `RepeatMax` = 30000 WHERE `Id` = 2005201 AND `SpellId` = 37121; -- Crystalcore Mechanic - Recharge - friendly missing 25% exclude self (10000 10000, more research needed)
+-- https://github.com/cmangos/tbc-db/commit/875eaad8edd23ae1615450cc2b43e74361e6a682#diff-8344129e35190a1fe0366238d7f8994431be263a6cfe54e26376f0479744540bL29691 - should be quite spammy, as in ccsdb_tbc, cata/mop nerfed these and the Tempest-Smith 20042
+UPDATE `creature_spell_list` SET `InitialMin` = 1000, `InitialMax` = 10000, `RepeatMin` = 1000, `RepeatMax` = 10000 WHERE `Id` = 2005201 AND `SpellId` = 37123; -- Crystalcore Mechanic - Saw Blade - random (8000, 14000, 9000, 13000, might need more adjustment or return to EAI script)
+UPDATE `creature_spell_list` SET `InitialMin` = 0, `InitialMax` = 10000, `RepeatMin` = 25000, `RepeatMax` = 35000 WHERE `Id` = 2006001 AND `SpellId` = 44863; -- Lord Sanguinar - Bellowing Roar on AOE eligible target (10000 10000 30000 30000)
+UPDATE `creature_spell_list` SET `InitialMin` = 2000, `RepeatMin` = 1000 WHERE `Id` = 2006201 AND `SpellId` = 36970; -- Grand Astromancer Capernian - Arcane Burst on AOE eligible target (5000 4000)
+UPDATE `creature_spell_list` SET `InitialMin` = 15000, `RepeatMin` = 15000 WHERE `Id` = 2006201 AND `SpellId` = 37018; -- Grand Astromancer Capernian - Conflagration on random player (20000 16000)
+UPDATE `creature_spell_list` SET `RepeatMin` = 2000, `RepeatMax` = 3000 WHERE `Id` = 2006301 AND `SpellId` = 16496; -- Master Engineer Telonicus - Shoot on current (0 0)
+UPDATE `creature_spell_list` SET `InitialMin` = 10000, `InitialMax` = 10000, `RepeatMin` = 15000, `RepeatMax` = 20000 WHERE `Id` = 2006301 AND `SpellId` = 37027; -- Master Engineer Telonicus - Remote Toy on random player aura not present (5000 5000 10000 15000) - prenerf values?
+UPDATE `creature_spell_list` SET `InitialMin` = 0, `InitialMax` = 0, `RepeatMin` = 1000 WHERE `Id` = 2006301 AND `SpellId` = 37036; -- Master Engineer Telonicus - Bomb on current (4000 4000 4000)
+UPDATE `creature_spell_list` SET `InitialMin` = 0, `RepeatMin` = 4000, `RepeatMax` = 8000 WHERE `Id` = 2006401 AND `SpellId` = 30225; -- Thaladred the Darkener - Silence on eligible aoe target (5000 7000 13000)
+UPDATE `creature_spell_list` SET `InitialMin` = 0, `InitialMax` = 0, `RepeatMin` = 3000 WHERE `Id` = 2006401 AND `SpellId` = 36965; -- Thaladred the Darkener - Rend on current (4000 8000 7000)
+UPDATE `creature_spell_list` SET `InitialMin` = 15000, `RepeatMin` = 15000 WHERE `Id` = 2006401 AND `SpellId` = 36966; -- Thaladred the Darkener - Psychic Blow on current (25000 20000)
+-- Phase 3
+UPDATE `creature_spell_list` SET `InitialMin` = 0, `RepeatMin` = 4000, `RepeatMax` = 8000 WHERE `Id` = 2006402 AND `SpellId` = 30225; -- Thaladred the Darkener - Silence on eligible aoe target (5000 7000 13000)
+UPDATE `creature_spell_list` SET `InitialMin` = 0, `InitialMax` = 0, `RepeatMin` = 3000 WHERE `Id` = 2006402 AND `SpellId` = 36965; -- Thaladred the Darkener - Rend on current (4000 8000 7000)
+UPDATE `creature_spell_list` SET `InitialMin` = 15000, `RepeatMin` = 15000 WHERE `Id` = 2006402 AND `SpellId` = 36966; -- Thaladred the Darkener - Psychic Blow on current (25000 20000)
+UPDATE `creature_spell_list` SET `InitialMin` = 6000, `RepeatMin` = 14000 WHERE `Id` = 2126801 AND `SpellId` = 36979; -- Netherstrand Longbow - Multi-Shot on current (7000 12000)
+UPDATE `creature_spell_list` SET `RepeatMin` = 2000, `RepeatMax` = 3000 WHERE `Id` = 2126801 AND `SpellId` = 36980; -- Netherstrand Longbow - Shoot on current (0 0)
+UPDATE `creature_spell_list` SET `InitialMin` = 20000, `InitialMax` = 30000, `RepeatMin` = 15000 WHERE `Id` = 2126801 AND `SpellId` = 36994; -- Netherstrand Longbow - Blink (15000 20000 24000)
+UPDATE `creature_spell_list` SET `TargetId` = 200, `InitialMin` = 5000, `Comments` = 'Cosmic Infuser - Heal - Missing 10% including self' WHERE `Id` = 2127001 AND `SpellId` = 36983; -- Cosmic Infuser - Heal on friendly low hp (10000) - https://youtu.be/ujnVKpby0uk?si=5AZXpDaHWt-ThtmH&t=160 2:37
+UPDATE `creature_spell_list` SET `InitialMin` = 4000, `RepeatMin` = 5000, `RepeatMax` = 10000 WHERE `Id` = 2127001 AND `SpellId` = 36985; -- Cosmic Infuser - Holy Nova (6000 6000 6000)
+UPDATE `creature_spell_list` SET `InitialMin` = 5000, `RepeatMin` = 5000 WHERE `Id` = 2127201 AND `SpellId` = 36991; -- Warp Slicer - Rend on current (6000 6000)
+UPDATE `creature_spell_list` SET `InitialMin` = 10000, `InitialMax` = 20000, `RepeatMin` = 10000, `RepeatMax` = 20000 WHERE `Id` = 2127401 AND `SpellId` = 36989; -- Staff of Disintegration - Frost Nova (12000 15000 12000 15000)
+
