@@ -29918,8 +29918,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2126802','21268','9','0','100','1025','0','8','5000','5000','0','0','14','-100','0','0','0','0','0','0','0','0','0','0','Netherstrand Longbow - Drop Aggro'),
 -- Devastation 21269 - spell_list
 -- Cosmic Infuser 21270 - spell_list
--- Infinity Blades 21271
-('2127101','21271','11','0','100','0','0','0','0','0','0','0','11','12787','0','32','0','0','0','0','0','0','0','0','Infinity Blades - Cast Thrash on Spawn'),
+-- Infinity Blades 21271 - s.3391 manually casted
+('2127101','21271','0','0','100','1025','7000','21000','7000','21000','0','0','11','3391','15','0','0','0','0','0','0','0','0','0','Infinity Blades - Cast Thrash'),
 -- Warp Slicer 21272 - spell_list
 -- Phaseshift Bulwark 21273 - spell_list
 ('2127301','21273','11','0','100','0','0','0','0','0','0','0','11','10021','0','2','11','37016','0','2','0','0','0','0','Phaseshift Bulvark - Cast 100% Block and Cast Shield Spike on Spawn'),
